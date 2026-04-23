@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Apisense logo</title>
+  <desc id="desc">A simple amber hexagon with a stylized bee wing motif.</desc>
+  <defs>
+    <linearGradient id="amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffca28" />
+      <stop offset="100%" stop-color="#fb8c00" />
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="32" fill="#fff8e1" />
+  <path d="M80 20 127 47v54l-47 27-47-27V47Z" fill="url(#amber)" />
+  <path d="M58 83c12-20 30-29 54-26-9 5-16 11-22 19 8 1 15 5 22 12-26 2-44 0-54-5Z" fill="#4e342e" opacity=".88" />
+  <circle cx="63" cy="65" r="8" fill="#4e342e" opacity=".88" />
+</svg>
