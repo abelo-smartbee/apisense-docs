@@ -55,4 +55,4 @@ nav:
   - Opis techniczny: technical/description.md
 
 extra_css:
-  - assets/stylesheets/extra.css
+  - assets/stylesheets/brand.css
