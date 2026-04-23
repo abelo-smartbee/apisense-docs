@@ -21,14 +21,25 @@ plugins:
   - search
   - i18n:
       docs_structure: suffix
+      reconfigure_material: true
       languages:
         - locale: pl
           name: Polski
           build: true
           default: true
+          link: /apisense-docs/
+          nav:
+            - Start: index.md
+            - Instrukcja: manual/app-manual.md
+            - Opis techniczny: technical/description.md
         - locale: en
           name: English
           build: true
+          link: /apisense-docs/en/
+          nav:
+            - Home: index.md
+            - User Manual: manual/app-manual.md
+            - Technical Description: technical/description.md
 
 markdown_extensions:
   - admonition
@@ -41,12 +52,3 @@ nav:
   - Home: index.md
   - Instrukcja: manual/app-manual.md
   - Opis techniczny: technical/description.md
-
-extra:
-  alternate:
-    - name: Polski
-      link: /
-      lang: pl
-    - name: English
-      link: /en/
-      lang: en

@@ -1,19 +1,21 @@
 # Opis techniczny
 
-> Polska wersja tego dokumentu jest placeholderem do czasu przygotowania tłumaczenia.
+> Ta strona jest obecnie placeholderem. Pełny opis techniczny jest już dostępny po angielsku, a tłumaczenie na polski jest w przygotowaniu.
 
-## Cel dokumentu
+## Aktualny status
 
-Ten materiał będzie opisywać architekturę, komponenty i założenia techniczne produktu Apisense.
+- Referencyjna wersja techniczna jest opublikowana po angielsku.
+- Polska wersja zostanie dodana po przygotowaniu tłumaczenia i redakcji technicznej.
 
-## Zakres planowanej treści
+## Co jest dostępne teraz
+
+- Skorzystaj z przełącznika języka w nagłówku, aby otworzyć wersję angielską.
+- Dostępny opis techniczny obejmuje sprzęt, ekosystem aplikacyjny oraz główne wartości produktu.
+
+## Planowany zakres polskiej wersji
 
 - przegląd architektury systemu,
 - główne komponenty aplikacyjne,
 - integracje i przepływy danych,
 - wymagania operacyjne,
 - kwestie bezpieczeństwa i utrzymania.
-
-## Status
-
-Angielska wersja techniczna została zaplanowana jako dokument referencyjny. Polska wersja zostanie uzupełniona po przygotowaniu tłumaczenia.

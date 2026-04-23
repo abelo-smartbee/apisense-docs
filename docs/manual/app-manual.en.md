@@ -1,19 +1,21 @@
 # User Manual
 
-> This document is currently a placeholder and will be completed with the final product guidance.
+> This page is currently a placeholder. The full user manual is available in Polish and the English translation is still in progress.
 
-## Purpose
+## Current status
 
-This manual will describe how to use the Apisense application from the end-user perspective.
+- The complete source manual is already published in Polish.
+- The English version will be added after translation and editorial review.
 
-## Planned scope
+## Available today
+
+- If you need the full content now, use the Polish manual from the language switcher in the header.
+- The current public Polish version covers registration, login, apiary and beehive management, alerts, analytics, and account usage.
+
+## Planned English scope
 
 - sign-in and access flow,
 - overview of main screens,
 - key user scenarios,
 - configuration and settings,
 - common troubleshooting cases.
-
-## Status
-
-The source content was not available in the repository during the initial GitHub Pages setup, so this page currently provides a public placeholder.

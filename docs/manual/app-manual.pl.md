@@ -810,7 +810,7 @@ ______________________________________________________________________
 **Najważniejsze informacje:**
 - W zakładce *Pasieki* znajdują się wszystkie pasieki, do których masz dostęp - zarówno Twoje własne (sekcja *Twoje pasieki*), jak i te udostępnione dla Ciebie przez innych użytkowników (sekcja *Udostępnione pasieki*).
 - Każda pasieka prezentowana jest w formie pojedynczego, przejrzystego kafelka, zawierającego kluczowe, odpowiednio zagregowane informacje.
-- Kafelki Twoich, jak i udostępnionych pasiek są prezentowane w analogiczny sposób. Różni się natomiast możliwość korzystania z udostępnionych pasiek w zależności od przydzielonego przez właściciela poziomu dostępu [Udostępnianie pasiek - rodzaje dostępu](#udostepnij-pasieke-rodzaj-dostepu).
+- Kafelki Twoich, jak i udostępnionych pasiek są prezentowane w analogiczny sposób. Różni się natomiast możliwość korzystania z udostępnionych pasiek w zależności od przydzielonego przez właściciela poziomu dostępu Udostępnianie pasiek - rodzaje dostępu.
 - Na każdym kafelku pasieki są wyświetlane następujące informacje: 
 
   - nazwa pasieki wraz ze skrótem nazwy i ikonką,
@@ -822,9 +822,9 @@ ______________________________________________________________________
   - stan rodziny pszczelej - informujący o tym, czy rodzina w pasiece jest w zupełności zdorwa lub czy w jakimś ulu zostało wykryte zagrożenie,
   - ostrzeżenia np. o krytycznie niskim poziomie baterii.
   
-    Więcej informacji na temat interpretacji poszczególnych statusów znajdziesz w rozdziale [7. Interpretacja statusów, pomiarów, ikonek, kolorów na poszczególnych etapach](#interpretacja-statusow)
+    Więcej informacji na temat interpretacji poszczególnych statusów znajdziesz w rozdziale 7. Interpretacja statusów, pomiarów, ikonek, kolorów na poszczególnych etapach
 
-- Kliknięcie w kafelek pasieki otwiera wnętrze pasieki - listę uli ([Zakładka Ule](#zakladka-ule)).
+- Kliknięcie w kafelek pasieki otwiera wnętrze pasieki - listę uli (Zakładka Ule).
 
 
 ### 2. Omówienie mapy pasiek (zakładka Mapa)
@@ -870,14 +870,14 @@ W **zakładce *Lista*** znajdziesz listę wszystkich uli przypisanych do wybrane
   - aktualna waga ula wraz z przybytkiem miodu
   - dodatkowe ikony związane ze szczególnymi zdarzeniami w ulu np. ikona kalendarza.
   
-    Więcej informacji na temat interpretacji poszczególnych statusów znajdziesz w rozdziale [7. Interpretacja statusów, pomiarów, ikonek, kolorów na poszczególnych etapach](#interpretacja-statusow)
+    Więcej informacji na temat interpretacji poszczególnych statusów znajdziesz w rozdziale 7. Interpretacja statusów, pomiarów, ikonek, kolorów na poszczególnych etapach
 
-- Kliknięcie w kafelek ula otwiera wnętrze ula - szczegółowe dane pomiarowe wykonane przez urządzenia przypisane do wybranego ula ([Zakładka Szczegóły](#zakladka-szczegoly-ula)).
+- Kliknięcie w kafelek ula otwiera wnętrze ula - szczegółowe dane pomiarowe wykonane przez urządzenia przypisane do wybranego ula (Zakładka Szczegóły).
 
 
 #### 3.2 Porównanie
 
-**Zakładka *Porównanie*** umożliwia zestawienie kilku uli w jednym widoku i ocenę ich parametrów. Zawartość zakładki została szczegółowo omówiona w rozdziale [Porównywanie uli](#zakladka-porownywanie-uli).
+**Zakładka *Porównanie*** umożliwia zestawienie kilku uli w jednym widoku i ocenę ich parametrów. Zawartość zakładki została szczegółowo omówiona w rozdziale Porównywanie uli.
 
 #### 3.3 Zadania
 
@@ -891,7 +891,7 @@ W **zakładce *Lista*** znajdziesz listę wszystkich uli przypisanych do wybrane
 
 - **Kalendarz zadań** – w centralnej części zakładki znajduje się kalendarz (kliknij, aby rozwinąć lub zwinąć), w którym prezentowane są wszystkie zadania związane z daną pasieką. Zadania dodane na poziomie pasieki oznaczone są ikoną pasieki i są automatycznie przypisywane do wszystkich uli w tej pasiece (zobaczysz je w kalendarzach zadań dla poszczególnych uli). Natomiast zadania dodane na poziomie pojedynczego ula są widoczne tylko w tym ulu i w kalendarzu zadań dla pasieki (zakładka Ule > Zadania). W kalendarzu zadań pasieki, zadania dodane na poziomie pojedynczego ula są wyświetlane z ikoną ula, co pozwala łatwo rozróżnić ich zakres.
 - **Najbliższe zadania** – oprócz kalendarza wyświetlana jest również lista kilku najbliższych nadchodzących zadań, zawierająca bardziej szczegółowe informacje, co ułatwia szybkie sprawdzenie najpilniejszych prac do wykonania.
-- **Dodawanie zadań** – sposób dodawania zadania na poziomie pasieki został opisany w rozdziale [5.1 Dodawanie zadań z poziomu pasieki](#dodawanie-zadania-pasieki)
+- **Dodawanie zadań** – sposób dodawania zadania na poziomie pasieki został opisany w rozdziale 5.1 Dodawanie zadań z poziomu pasieki
 - **Oznaczanie wykonania zadania** – użytkownik może oznaczyć zadanie jako wykonane poprzez zaznaczenie checkboxa znajdującego się przy danym zadaniu.
 - **Wizualne oznaczenie wykonanych zadań** – po oznaczeniu zadania jako wykonane zostaje ono automatycznie wyróżnione w kalendarzu kolorem szarym, co ułatwia odróżnienie zadań zakończonych od tych, które nadal wymagają realizacji.
 - **Powiadomienia o zadaniach** – użytkownik otrzymuje powiadomienie dzień przed zaplanowanym terminem zadania, co pozwala odpowiednio przygotować się do wykonania zaplanowanych prac w pasiece.
@@ -924,7 +924,7 @@ Zakładka *Stan ula* prezentuje najważniejsze bieżące informacje o kondycji r
 - **Sekcja Warunki** – przedstawia dane środowiskowe z wnętrza ula oraz jego otoczenia, takie jak temperatura zewnętrzna, temperatura wewnętrzna, wilgotność oraz ciśnienie wewnątrz ula.
 - **Szczegółowe dane i wykresy** – po rozwinięciu poszczególnych elementów w danej sekcji użytkownik może zobaczyć bardziej szczegółowe informacje oraz wykresy zmian parametrów w czasie, co ułatwia analizę stanu ula i warunków panujących w jego wnętrzu.
   
-Więcej informacji na temat analizy i prezentacji danych w formie wykresów zawarto w rozdziałach [Monitorowanie parametrów](#monitorowanie-parametrów) oraz [Analiza danych i raporty](#analiza-danych-i-raporty)
+Więcej informacji na temat analizy i prezentacji danych w formie wykresów zawarto w rozdziałach Monitorowanie parametrów oraz Analiza danych i raporty
 
 #### 4.2 Przegląd
 
@@ -967,7 +967,7 @@ Zakładka *Zadania* służy do planowania oraz monitorowania prac wykonywanych p
 
 - **Kalendarz zadań** – w kalendarzu prezentowane są wszystkie zadania przypisane tylko do tego konkretnego ula (kliknij, aby rozwinąć lub zwinąć).
 - **Najbliższe zadania** – widoczna jest lista kilku najbliższych nadchodzących zadań, zawierająca bardziej szczegółowe informacje o planowanych pracach.
-- **Dodawanie zadań** – sposób dodawania zadania na poziomie ula został opisany w rozdziale [5.2 Dodawanie zadań z poziomu ula](#dodawanie-zadania-ul)
+- **Dodawanie zadań** – sposób dodawania zadania na poziomie ula został opisany w rozdziale 5.2 Dodawanie zadań z poziomu ula
 - **Oznaczenia zadań** – przy zadaniach wyświetlanych na liście widnieje data planowanego zadania, co pozwala łatwo priorytetyzować czynności.
 - **Oznaczanie wykonania zadania** – użytkownik może oznaczyć zadanie jako wykonane poprzez zaznaczenie checkboxa przy danym zadaniu.
 - **Wizualne oznaczenie wykonanych zadań** – po oznaczeniu zadania jako wykonane zostaje ono oznaczone w kalendarzu kolorem szarym.
@@ -1456,7 +1456,7 @@ Powiadomienia w aplikacji są dostępne w zakładce *Powiadomienia*. Powiadomien
 
 - **Problemy** – powiadomienia związane ze stanem zdrowia rodzin pszczelich, dotyczące wykrytych chorób takich jak Warroza wraz z zalecanym postępowaniem w celu zwalczenia konkretnej choroby.
 - **Techniczne** – powiadomienia dotyczące działania urządzeń monitorujących, np. niski poziom baterii lub brak zasięgu.
-- **Sugestie** – rekomendacje generowane przez system. Więcej na ten temat opisano w rozdziale [Rekomendacje](#rekomendacje).
+- **Sugestie** – rekomendacje generowane przez system. Więcej na ten temat opisano w rozdziale Rekomendacje.
 
 
 
@@ -1491,7 +1491,7 @@ Sugestie pojawiają się wtedy, gdy system na podstawie dostępnych danych uzna,
 
 #### 2.1 Gdzie znaleźć rekomendacje w aplikacji
 
-- Rekomendacje, podobnie jak pozostałe powiadomienia, znajdują się w zakładce *Powiadomienia* (zobacz [Gdzie znaleźć powiadomienia w aplikacji](#powiadoienia-gdzie)). 
+- Rekomendacje, podobnie jak pozostałe powiadomienia, znajdują się w zakładce *Powiadomienia* (zobacz Gdzie znaleźć powiadomienia w aplikacji). 
 - Po dotarciu do zakładki *Powiadomienia* należy wybrać z górnego menu zakładkę *Sugestie* (Rys. ...........) - są to sugestie związane z prowadzeniem pasieki. Sugestie dotyczące leczenia w przypadku wystąpienia określonego rodzaju choroby znajdują się w zakładce *Problemy*, po rozwinięciu wybranego wiersza z chorobą.
 
 
@@ -1624,130 +1624,130 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 - **Rejestracja:** Pobierz aplikację mobilną Apisense lub wejdź na stronę internetową systemu. Wybierz *Załóż konto*, wypełnij dane (nazwa użytkownika, e-mail, telefon), utwórz hasło spełniające wymagania i kliknij *Zarejestruj się*.
 
-  [Wideo](), [Rejestracja](#1-rejestracja)
+  Wideo (w przygotowaniu), Rejestracja
 
 - **Logowanie:** Uruchom aplikację lub stronę internetową, w widoku *Zaloguj się* wpisz nazwę użytkownika i hasło, następnie kliknij *Zaloguj się*.
 
-  [Wideo](), [Logowanie](#2-logowanie)
+  Wideo (w przygotowaniu), Logowanie
 
 ### 2. Zarządzanie pasieką
 
 - **Dodawanie pasieki:** W zakładce *Pasieki* wybierz *Dodaj pasiekę* z dolnego menu. W widoku *Dodaj pasiekę* uzupełnij nazwę, skrót, zeskanuj kod QR z Apisense Hub i zapisz.
 
-  [Wideo](), [Dodawanie pasieki](#11-dodawanie-pasieki)
+  Wideo (w przygotowaniu), Dodawanie pasieki
 
 - **Edycja pasieki:** Kliknij kafelek wybranej pasieki. Kliknij ikonę zębatki będąc w zakładce *Ule*. W widoku *Ustawienia pasieki* kliknij nagłówek sekcji, dla której chcesz zedytować dane. Zmień wartości pól i kliknij zapisz (żółty przycisk).
 
-  [Wideo](), [Edycja pasieki](#12-edycja-pasieki)
+  Wideo (w przygotowaniu), Edycja pasieki
 
 - **Usuwanie pasieki:** Kliknij kafelek wybranej pasieki. Kliknij ikonę zębatki będąc w zakładce *Ule*. W widoku *Ustawienia pasieki* kliknij przycisk *Usuń pasiekę*.
 
-  [Wideo](), [Usuwanie pasieki](#13-usuwanie-pasieki)
+  Wideo (w przygotowaniu), Usuwanie pasieki
 
 - **Dodawanie ula:** Kliknij kafelek wybranej pasieki. Wybierz *Dodaj…* → *Dodaj ul* z dolnego menu. Wypełnij dane w sekcji *Szczegóły ula*, *Informacje o matce pszczelej* oraz zeskanuj kody QR z urządzeń Scale i VitalSensor. Kliknij żółty przycisk Zapisz.
 
-  [Wideo](), [Dodawanie ula](#21-dodawanie-ula)
+  Wideo (w przygotowaniu), Dodawanie ula
 
 - **Edycja ula:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Kliknij ikonę zębatki będąc w zakładce *Szczegóły*. W widoku *Ustawienia ula* kliknij nagłówek sekcji, dla której chcesz zedytować dane. Zmień wartości pól i kliknij zapisz (żółty przycisk).
 
-  [Wideo](), [Edycja ula](#22-edycja-ula)
+  Wideo (w przygotowaniu), Edycja ula
 
 - **Usuwanie ula:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Kliknij ikonę zębatki będąc w zakładce *Szczegóły*. W widoku *Ustawienia ula* kliknij przycisk *Usuń ul*.
 
-  [Wideo](), [Usuwanie ula](#23-usuwanie-ula)
+  Wideo (w przygotowaniu), Usuwanie ula
 
 - **Dodawanie przeglądów:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Wybierz *Dodaj...* -> *Przegląd* z dolnego menu. Odpowiedz na pytania. Żółta strzałka w prawo umożliwia przejście do następnego pytania. Dodaj zdjęcia jeśli chcesz (*+*). Kliknij *Zakończ przegląd* (żółty przycisk w ostatnim oknie przeglądu) by zapisać.
 
-  [Wideo](), [Dodawanie przeglądów](#3-dodawanie-przegl%C4%85d%C3%B3w)
+  Wideo (w przygotowaniu), Dodawanie przeglądów
 
 - **Dodawanie notatek:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Wybierz *Dodaj...* -> *Notatkę* z dolnego menu. Wprowadź zawartość notatki (tekst lub nagraj notatkę głosową, możesz dodać też zdjęcia lub nagrania (*+*)). Zapisz notatkę (żółty przycisk).
 
-  [Wideo](), [Notatki](#4-notatki)
+  Wideo (w przygotowaniu), Notatki
 
 - **Dodawanie zadań z poziomu pasieki:** Kliknij kafelek wybranej pasieki. Wybierz *Dodaj...* -> *Zadanie* z dolnego menu. Wprowadź treść zadania, wybierz datę i czy powtarzać zadanie. Zapisz żółtym przyciskiem. Zadanie zostanie zapisane dla wszystkich uli (całej pasieki).
 
-  [Wideo](), [Zadania](#5-zadania)
+  Wideo (w przygotowaniu), Zadania
 
 - **Dodawanie zadań z poziomu ula:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Wybierz *Dodaj...* -> *Zadanie* z dolnego menu. Wprowadź treść zadania, wybierz datę i czy powtarzać zadanie. Zapisz żółtym przyciskiem. Zadanie zostanie zapisane tylko dla wybranego ula.
 
-  [Wideo](), [Zadania](#5-zadania)
+  Wideo (w przygotowaniu), Zadania
 
 - **Potwierdzanie chorób z poziomu pasieki:** Kliknij kafelek wybranej pasieki. Wybierz *Powiadomienia* z dolnego menu. W zakładce *Problemy* kliknij w wybrany wiersz z chorobą, aby rozwinąć szczegóły. Kliknij przycisk *Odpowiedz na kilka pytań*. Udziel odpowiedzi na pytania. Aby przejść do kolejnego kliknij żółtą strzałkę w prawo. Na koniec kliknij *Zapisz*.
 
-  [Wideo](), [Potwierdzanie chorób](#6-potwierdzanie-chor%C3%B3b)
+  Wideo (w przygotowaniu), Potwierdzanie chorób
 
 - **Potwierdzanie chorób z poziomu ula:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Wybierz *Powiadomienia* z dolnego menu. W zakładce *Problemy* kliknij w wybrany wiersz z chorobą, aby rozwinąć szczegóły. Kliknij przycisk *Odpowiedz na kilka pytań*. Udziel odpowiedzi na pytania. Aby przejść do kolejnego kliknij żółtą strzałkę w prawo. Na koniec kliknij *Zapisz*.
 
-  [Wideo](), [Potwierdzanie chorób](#6-potwierdzanie-chor%C3%B3b)
+  Wideo (w przygotowaniu), Potwierdzanie chorób
 
 - **Rejestrowanie próbki:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Wybierz *Dodaj...* -> *Zarejestruj próbkę* z dolnego menu. Wybierz rodzaj badania. Zapisz *Kod badania* na próbcę i wyślij do Apisense.
 
-  [Wideo](), [Rejestrowanie próbki](#7-rejestrowanie-pr%C3%B3bki)
+  Wideo (w przygotowaniu), Rejestrowanie próbki
 
 - **Udostępnianie pasiek:** Kliknij kafelek wybranej pasieki. Kliknij ikonę udostępniania w prawym górnym rogu (obok zębatki). Kliknij żółty przycisk *Udostępnij pasiekę*. Wprowadź dane odbiorcy i ustaw poziom dostępu. Kliknij żółty przycisk *Udostępnij*.
 
-  [Wideo](), [Udostępnianie pasiek](#8-udost%C4%99pnianie-pasiek)
+  Wideo (w przygotowaniu), Udostępnianie pasiek
 
 ### 3. Panel główny i nawigacja
 
 - **Lista pasiek (zakładka Pasieki):** Widok startowy po zalogowaniu się do aplikacji Apisense - kafelki pasiek z podstawowymi informacjami. Kliknij pasiekę, aby przejść do listy uli.
 
-  [Wideo](), [Omówienie listy pasiek (zakładka Pasieki)](#1-om%C3%B3wienie-listy-pasiek-zak%C5%82adka-pasieki)
+  Wideo (w przygotowaniu), Omówienie listy pasiek (zakładka Pasieki)
 
 - **Mapa pasiek:** Po zalogowaniu do aplikacji, z dolnego menu wybierz *Mapa*, aby zobaczyć lokalizacje pasiek. Możesz filtrować widok według problemów (np. Warroza).
 
-  [Wideo](), [Omówienie mapy pasiek (zakładka Mapa)](#2-om%C3%B3wienie-mapy-pasiek-zak%C5%82adka-mapa)
+  Wideo (w przygotowaniu), Omówienie mapy pasiek (zakładka Mapa)
 
 - **Lista uli (zakładka Ule):** Kliknij kafelek wybranej pasieki. W rezultacie pojawią się wszystkie ule przypisane do tej pasieki. Dostępne zakładki *Lista*, *Porównanie*, *Zadania*. Kliknij dowolny ul aby wyświetlić jego szczegóły.
 
-  [Wideo](), [Omówienie listy uli (zakładka Ule)](#3-om%C3%B3wienie-listy-uli-zak%C5%82adka-ule)
+  Wideo (w przygotowaniu), Omówienie listy uli (zakładka Ule)
 
 - **Zawartość ula (zakładka Szczegóły):** Tu sprawdzisz Stan ula, Przeglądy, Notatki i Zadania przypisane dla wybranego ula. Możesz wyświetlić również wykresy poszczególnych parametrów.
 
-  [Wideo](), [Omówienie zawartości ula (zakładka Szczegóły)](#4-om%C3%B3wienie-zawarto%C5%9Bci-ula-zak%C5%82adka-szczeg%C3%B3%C5%82y)
+  Wideo (w przygotowaniu), Omówienie zawartości ula (zakładka Szczegóły)
 
 - **Ustawienia pasieki i ula:** Ikona zębatki w widoku pasieki (zakładka Ule) lub ula (zakładka Szczegóły) prowadzi do ustawień. Możesz tu edytować informacje o pasiece lub ulu.
 
-  [Wideo](), [Omówienie ustawień pasieki](#5-om%C3%B3wienie-ustawie%C4%84-pasieki), [Omówienie ustawień ula](#6-om%C3%B3wienie-ustawie%C4%84-ula)
+  Wideo (w przygotowaniu), Omówienie ustawień pasieki, Omówienie ustawień ula
 
 ### 4. Monitorowanie i analiza danych
 
 - **Parametry (temperatura, wilgotność, ciśnienie, waga, przybytek miodu):** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Bieżące wartości są widoczne w zakładce *Szczegóły* ula, podzakładka *Stan ula*, w sekcjach *Waga*, *Warunki*.
 
-  [Wideo](), [Monitorowanie parametrów](#monitorowanie-parametr%C3%B3w)
+  Wideo (w przygotowaniu), Monitorowanie parametrów
 
 - **Wykresy:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. W zakładce *Szczegóły* -> *Stan ula* rozwiń sekcję *Waga* lub *Warunki* i kliknij w wybrany parametr, aby zobaczyć wykres w wybranym przedziale czasowym (24 h, 7 dni, 1–6 miesięcy).
 
-  [Wideo](), [Wizualizacja danych na wykresach](#1-wizualizacja-danych-na-wykresach)
+  Wideo (w przygotowaniu), Wizualizacja danych na wykresach
 
 - **Trendy:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. W zakładce *Szczegóły* -> *Stan ula* rozwiń sekcję *Waga* lub *Warunki* i kliknij w wybrany parametr, aby wyświetlić wykres. Na ekranie wykresu włącz przełącznik *Pokaż trend*.
 
-  [Wideo](), [Trendy](#2-trendy)
+  Wideo (w przygotowaniu), Trendy
 
 - **Porównywanie uli:** Kliknij kafelek wybranej pasieki. Z górnego menu wybierz zakładkę *Porównanie*. Rozwiń wybraną sekcję (np. Waga), by porównać dane dla wielu uli.
 
-  [Wideo](), [Porównywanie uli](#3-por%C3%B3wnywanie-uli)
+  Wideo (w przygotowaniu), Porównywanie uli
 
 ### 5. Alarmy, powiadomienia i asystent AI
 
 - **Powiadomienia:** Kliknij kafelek wybranej pasieki. Wybierz zakładkę *Powiadomienia* z dolnego menu. Kategorie powiadomień: *Problemy*, *Techniczne*, *Sugestie*.
 
-  [Wideo](), [Powiadomienia](#1-powiadomienia)
+  Wideo (w przygotowaniu), Powiadomienia
 
 - **Rekomendacje:** Kliknij kafelek wybranej pasieki. Wybierz zakładkę *Powiadomienia* z dolnego menu. Z górnego menu wybierz *Sugestie* - tu znajdziesz zalecane działania, proponowane przez system w konkretnej sytuacji.
 
-  [Wideo](), [Rekomendacje](#2-rekomendacje)
+  Wideo (w przygotowaniu), Rekomendacje
 
 - **Twój asystent AI:** Z dolnego menu wybierz *Twój asystent* (dostęp z widoków *Pasieki*, *Ule*, *Szczegóły*), wpisz pytanie (możesz dołączyć zdjęcie). Asystent przeanalizuje dane i udzieli odpowiedzi.
 
-  [Wideo](), [Twój asystent AI](#4-tw%C3%B3j-asystent-ai)
+  Wideo (w przygotowaniu), Twój asystent AI
 
 ### 6. Konto
 
 - **Edycja danych użytkownika:** W widoku startowym *Pasieki* kliknij ikonę zębatki. Możesz zmienić nazwę, e-mail, telefon, hasło, preferencje dotyczące powiadomień oraz język. Z tego miejsca możesz też usunąć konto.
 
-  [Wideo](), [Edycja danych użytkownika](#1-edycja-danych-u%C5%BCytkownika)
+  Wideo (w przygotowaniu), Edycja danych użytkownika
 
 ---
 
-W razie problemów wyszukaj problem na liście [Często zadawane pytania i proponowane rozwiązania](#1-cz%C4%99sto-zadawane-pytania-i-proponowane-rozwi%C4%85zania) lub skontaktuj się z pomocą Apisense: **bee@apisense.ai**, **+48 606 153 759**.
+W razie problemów wyszukaj problem na liście Często zadawane pytania i proponowane rozwiązania lub skontaktuj się z pomocą Apisense: **bee@apisense.ai**, **+48 606 153 759**.
