@@ -60,50 +60,50 @@ The Apisense Pro AI application provides an intuitive and modern interface for m
 
 ### Apiary Dashboard
 
-<img src="../manual/pictures/apiary_view.png" width="250">
+![Apiary dashboard](../manual/pictures/apiary_view.png)
 
 The main dashboard provides an instant overview of your apiary status. It displays real-time weather forecasts, connection status (LTE/Battery), and critical health alerts (e.g., High risk of *Nosema* or *Varroa*).
 
 ### Smart Mapping
 
-<img src="../manual/pictures/apiary_map.png" width="250">
+![Apiary map](../manual/pictures/apiary_map.png)
 
 Visualize all your apiaries on an interactive map. Filter locations by specific "problems" or diseases to prioritize your visits and optimize logistics.
 
 ### Beehive Fleet Management
 
-<img src="../manual/pictures/beehive_list.png" width="250">
+![Beehive list](../manual/pictures/beehive_list.png)
 
 A comprehensive list of all beehives within an apiary. Each entry shows the hive's health status (Healthy/Threatened), current internal temperature, total weight, and 24h weight gain/loss.
 
 ### Diagnostic & Action Center
 
-<img src="../manual/pictures/apiary_problems.png" width="250">
+![Apiary problems](../manual/pictures/apiary_problems.png)
 
 Detailed diagnostic reports for detected issues. For example, if "American Foulbrood" (Zgnilec) is detected, the app provides a step-by-step recommendation (e.g., replace old combs, queen replacement, or specific feeding instructions).
 
 ### Comprehensive Hive Telemetry
 
-<img src="../manual/pictures/beehive_details.png" width="250">
+![Beehive details](../manual/pictures/beehive_details.png)
 
 Detailed telemetry for individual hives, including health status, queen's birth year, precise weight (e.g., 12.34 kg), honey gain trends (-0.15 kg), and environmental conditions (internal/external temperature, humidity, and atmospheric pressure).
 
 ### Advanced Analytics
 
-<img src="../manual/pictures/beehive_details2.png" width="250">
+![Advanced analytics](../manual/pictures/beehive_details2.png)
 
 Interactive 24h, 7d, 1-month, and 6-month charts for weight and honey gains. The "Show Trend" feature helps identify subtle changes in colony behavior.
 
 ### Multimedia Inspection Notes
 
-<img src="../manual/pictures/beehive_note.png" width="250">
-<img src="../manual/pictures/beehive_note_edit.png" width="250">
+![Beehive note](../manual/pictures/beehive_note.png)
+![Beehive note edit](../manual/pictures/beehive_note_edit.png)
 
 Replace traditional paper notebooks with digital inspection logs. Attach photos, videos, or even voice notes directly to a hive. You can also sync a single note across multiple hives in the same apiary.
 
 ### Task Scheduler & Calendar
 
-<img src="../manual/pictures/apiary_events.png" width="250">
+![Apiary events](../manual/pictures/apiary_events.png)
 
 Plan and track all apiary activities. The built-in calendar helps you schedule honey harvesting, treatments, and inspections, ensuring no critical task is missed during the season.
 
