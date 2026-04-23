@@ -12,7 +12,8 @@ theme:
       primary: amber
       accent: orange
   features:
-    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
     - navigation.top
     - search.suggest
     - content.code.copy
@@ -24,7 +25,7 @@ plugins:
       reconfigure_material: true
       languages:
         - locale: pl
-          name: Polski
+          name: "🇵🇱 PL"
           build: true
           default: true
           link: /
@@ -33,7 +34,7 @@ plugins:
             - Instrukcja: manual/app-manual.md
             - Opis techniczny: technical/description.md
         - locale: en
-          name: English
+          name: "🇬🇧 EN"
           build: true
           link: /en/
           nav:
@@ -52,3 +53,6 @@ nav:
   - Home: index.md
   - Instrukcja: manual/app-manual.md
   - Opis techniczny: technical/description.md
+
+extra_css:
+  - assets/stylesheets/extra.css

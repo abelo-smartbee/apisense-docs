@@ -1,0 +1,12 @@
+.md-tabs {
+  display: none;
+}
+
+.md-header__option .md-select__inner {
+  min-width: 6rem;
+}
+
+.md-header__option .md-select__link,
+.md-header__option .md-select__button {
+  font-weight: 600;
+}
