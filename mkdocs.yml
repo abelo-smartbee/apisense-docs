@@ -27,7 +27,7 @@ plugins:
           name: Polski
           build: true
           default: true
-          link: /apisense-docs/
+          link: /
           nav:
             - Start: index.md
             - Instrukcja: manual/app-manual.md
@@ -35,7 +35,7 @@ plugins:
         - locale: en
           name: English
           build: true
-          link: /apisense-docs/en/
+          link: /en/
           nav:
             - Home: index.md
             - User Manual: manual/app-manual.md
