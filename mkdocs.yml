@@ -1,4 +1,4 @@
-site_name: Apisense Documentation
+site_name: Dokumentacja Apisense
 site_url: https://abelo-smartbee.github.io/apisense-docs/
 repo_url: https://github.com/abelo-smartbee/apisense-docs
 repo_name: abelo-smartbee/apisense-docs
@@ -25,18 +25,20 @@ plugins:
       reconfigure_material: true
       languages:
         - locale: pl
-          name: "🇵🇱 PL"
+          name: PL
           build: true
           default: true
           link: /
+          site_name: Dokumentacja Apisense
           nav:
             - Start: index.md
             - Instrukcja: manual/app-manual.md
             - Opis techniczny: technical/description.md
         - locale: en
-          name: "🇬🇧 EN"
+          name: EN
           build: true
           link: /en/
+          site_name: Apisense Documentation
           nav:
             - Home: index.md
             - User Manual: manual/app-manual.md
