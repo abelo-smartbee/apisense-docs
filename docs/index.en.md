@@ -1,23 +1,23 @@
 # Apisense Documentation
 
-Welcome to the public documentation site for Apisense.
+**Apisense** is an intelligent apiary monitoring system combining in-hive IoT sensors with AI-driven analysis. It enables remote readings of hive conditions, honey gain tracking, and early detection of colony health risks.
 
-This site publishes the most important materials for end users and technical teams:
+This site collects the public materials describing the solution from the product side and from the day-to-day application side.
 
-- the application user manual,
-- the technical product description,
-- future documentation sections that will grow together with the product.
+## Documentation sections
 
-## What you can find here
+### System Overview
 
-### User manual
+Product overview: hardware (Hub, VitalSensor, Scale), software ecosystem, key value propositions, and a preview of the main screens in the Apisense Pro AI app.
 
-This section explains how to use the application from the end-user perspective. The current English version is a placeholder and will be expanded later.
+[Go to system overview →](overview/index.md)
 
-### Technical description
+### App Manual
 
-This section presents the product architecture, main components, and technical assumptions. The English version is the primary draft for this document.
+Step-by-step walkthrough of Apisense Pro AI: registration and login, apiary and hive management, inspections, notes, tasks, alerts, and apiary sharing with collaborators.
+
+[Go to app manual →](manual/app-manual.md)
 
 ## Languages
 
-The documentation is published in Polish and English. You can switch languages from the navigation bar.
+The documentation is published in Polish (`/`) and English (`/en/`). Switch languages from the header.

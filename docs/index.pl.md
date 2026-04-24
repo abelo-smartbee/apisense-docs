@@ -1,23 +1,23 @@
 # Dokumentacja Apisense
 
-Witamy w publicznej dokumentacji projektu Apisense.
+**Apisense** to inteligentny system monitoringu pasieki łączący sensory IoT w ulu z analizą AI. Umożliwia zdalny odczyt warunków, śledzenie przybytku miodu oraz wczesne wykrywanie chorób rodzin pszczelich.
 
-Na tej stronie publikujemy najważniejsze materiały dla użytkowników i zespołów technicznych:
+Ta strona zbiera publiczne materiały opisujące rozwiązanie od strony produktu i od strony codziennej pracy w aplikacji.
 
-- instrukcję użytkowania aplikacji,
-- opis techniczny rozwiązania,
-- kolejne sekcje dokumentacji, które będziemy rozwijać razem z produktem.
+## Sekcje dokumentacji
 
-## Co znajdziesz tutaj
+### Opis systemu
 
-### Instrukcja użytkowania
+Przegląd produktu: sprzęt (Hub, VitalSensor, Scale), ekosystem aplikacyjny, kluczowe wartości i podgląd głównych ekranów aplikacji Apisense Pro AI.
 
-Sekcja opisuje pracę z aplikacją z perspektywy użytkownika końcowego. Obecna wersja jest szkieletem i będzie sukcesywnie uzupełniana.
+[Przejdź do opisu systemu →](overview/index.md)
 
-### Opis techniczny
+### Instrukcja aplikacji
 
-Sekcja prezentuje architekturę produktu, główne komponenty oraz założenia techniczne. Polska wersja jest obecnie placeholderem do tłumaczenia.
+Krok po kroku przez pracę w aplikacji Apisense Pro AI: rejestracja i logowanie, zarządzanie pasiekami i ulami, przeglądy, notatki, zadania, alarmy oraz udostępnianie pasiek współpracownikom.
+
+[Przejdź do instrukcji →](manual/app-manual.md)
 
 ## Wersje językowe
 
-Dokumentacja jest publikowana w językach polskim i angielskim. Przełącznik języka znajduje się w górnej części strony.
+Dokumentacja jest publikowana w wersji polskiej (`/`) oraz angielskiej (`/en/`). Języki przełączysz w nagłówku strony.
