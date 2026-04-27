@@ -2,6 +2,16 @@
   display: none;
 }
 
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 1.6rem;
+  width: auto;
+}
+
+.md-header__button.md-logo img {
+  border-radius: 0;
+}
+
 .md-search {
   order: 4 !important;
 }
@@ -83,4 +93,16 @@ html[lang="en"] .md-header__option .md-header__button::before {
   .app-screenshots {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.apisense-footer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.apisense-footer img {
+  display: block;
+  width: min(100%, 600px);
+  height: auto;
 }
