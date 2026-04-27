@@ -76,6 +76,10 @@
   background-color: var(--apisense-amber-soft);
 }
 
+.md-search-result__meta {
+  display: none;
+}
+
 .md-header__option {
   order: 5 !important;
   margin-left: 0.35rem;
