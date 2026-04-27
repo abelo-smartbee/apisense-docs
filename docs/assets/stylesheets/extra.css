@@ -117,6 +117,10 @@ html[lang="en"] .md-header__option .md-header__button::before {
   margin: 1.5rem 0;
 }
 
+.app-screenshots > p {
+  display: contents;
+}
+
 .app-screenshots img {
   width: 100%;
   height: auto;

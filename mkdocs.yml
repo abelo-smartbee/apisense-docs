@@ -33,6 +33,7 @@ plugins:
             - Start: index.md
             - Opis systemu: overview/index.md
             - Instrukcja aplikacji: manual/app-manual.md
+            - FAQ: faq/index.md
         - locale: en
           name: EN
           build: true
@@ -42,6 +43,7 @@ plugins:
             - Home: index.md
             - System Overview: overview/index.md
             - App Manual: manual/app-manual.md
+            - FAQ: faq/index.md
 
 markdown_extensions:
   - admonition
@@ -55,6 +57,7 @@ nav:
   - Home: index.md
   - Opis systemu: overview/index.md
   - Instrukcja aplikacji: manual/app-manual.md
+  - FAQ: faq/index.md
 
 extra_css:
   - assets/stylesheets/extra.css
