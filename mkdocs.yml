@@ -5,7 +5,7 @@ theme:
   name: material
   language: pl
   custom_dir: docs/overrides
-  logo: assets/branding/apisense-logo.jpg
+  logo: assets/branding/apisense-logo.png
   palette:
     - scheme: default
       primary: amber
