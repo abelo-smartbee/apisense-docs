@@ -24,7 +24,7 @@ Apisense to zaawansowany system wczesnego ostrzegania, łączący nowoczesne czu
 
 *Kluczowe urządzenie do wczesnej identyfikacji chorób — w sposób ciągły zbiera parametry środowiskowe z wnętrza ula, które zasilają modele detekcyjne AI.*
 
-- **Czujniki:** NOx, VOC, wilgotność, temperatura, rezystancja gazowa oraz dodatkowe parametry środowiskowe wewnątrz ula.
+- **Czujniki:** NOx, VOC, wilgotność, temperatura, rezystancja gazowa, mikrofon akustyczny oraz dodatkowe parametry środowiskowe wewnątrz ula.
 - **Zasilanie:** 2× baterie AA.
 - **Żywotność baterii:** Do 12 miesięcy na jednym komplecie baterii.
 - **Montaż:** Nieinwazyjny uchwyt na ramkę pszczelą (nie wymaga modyfikacji ula).
@@ -58,6 +58,11 @@ Apisense to zaawansowany system wczesnego ostrzegania, łączący nowoczesne czu
 ## 5. Apisense Pro AI – aplikacja
 
 Aplikacja Apisense Pro AI zapewnia intuicyjny i nowoczesny interfejs do zarządzania pasiekami na iOS, Androidzie i w przeglądarce.
+
+**Pobierz aplikację:** 
+- [App Store](https://apps.apple.com/app/apisense/id6741760755)
+- [Google Play](https://play.google.com/store/apps/details?id=ai.apisense)
+- [Wersja webowa](https://app.apisense.ai/)
 
 <div class="app-screenshots" markdown>
 

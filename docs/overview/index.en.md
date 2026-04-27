@@ -24,7 +24,7 @@ Apisense is an advanced early warning system that combines modern Internet of Th
 
 *Key device for early disease identification — continuously captures the environmental parameters from inside the hive that drive the AI detection models.*
 
-- **Sensors:** NOx, VOC, humidity, temperature, gas resistance, and additional in-hive environmental parameters.
+- **Sensors:** NOx, VOC, humidity, temperature, gas resistance, acoustic microphone, and additional in-hive environmental parameters.
 - **Power Supply:** 2x AA batteries.
 - **Battery Life:** Up to 12 months on a single set of batteries.
 - **Installation:** Non-invasive bracket for the bee frame (requires no hive modification).
@@ -58,6 +58,11 @@ Apisense is an advanced early warning system that combines modern Internet of Th
 ## 5. Apisense Pro AI – Application
 
 The Apisense Pro AI app delivers an intuitive, modern interface for managing apiaries on iOS, Android, and the web.
+
+**Download the app:** 
+- [App Store](https://apps.apple.com/app/apisense/id6741760755) 
+- [Google Play](https://play.google.com/store/apps/details?id=ai.apisense) 
+- [Web version](https://app.apisense.ai/)
 
 <div class="app-screenshots" markdown>
 
