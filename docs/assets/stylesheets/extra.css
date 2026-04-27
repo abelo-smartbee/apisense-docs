@@ -138,11 +138,18 @@ html[lang="en"] .md-header__option .md-header__button::before {
   width: 100%;
   padding: 1.25rem 1rem;
   border-top: 1px solid var(--apisense-border);
-  background: linear-gradient(180deg, #ffffff 0%, #fff7e6 100%);
 }
 
 .apisense-footer img {
   display: block;
-  width: min(100%, 760px);
+  width: min(100%, 380px);
   height: auto;
+}
+
+.md-footer-meta {
+  background: linear-gradient(180deg, #ffffff 0%, #fff7e6 100%) !important;
+}
+
+.md-footer-meta__inner.md-grid.apisense-footer {
+  max-width: none;
 }
