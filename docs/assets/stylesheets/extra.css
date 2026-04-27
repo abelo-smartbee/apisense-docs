@@ -23,31 +23,6 @@
   order: 4 !important;
 }
 
-@media screen and (min-width: 60em) {
-  .md-search {
-    width: 12rem;
-  }
-
-  [data-md-toggle="search"]:checked ~ .md-header .md-search {
-    width: 12rem;
-  }
-
-  [data-md-toggle="search"]:checked ~ .md-header .md-search__inner {
-    width: 12rem;
-  }
-
-  [data-md-toggle="search"]:checked ~ .md-header .md-search__form {
-    border-radius: 999px;
-  }
-
-  [data-md-toggle="search"]:checked ~ .md-header .md-search__output {
-    left: auto;
-    right: 0;
-    width: 20rem;
-    max-width: calc(100vw - 2rem);
-  }
-}
-
 .md-search__form {
   border-radius: 999px;
   background-color: rgba(255, 255, 255, 0.24);
