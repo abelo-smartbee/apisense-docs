@@ -58,3 +58,29 @@ html[lang="en"] .md-header__option .md-header__button::before {
     order: initial;
   }
 }
+
+.app-screenshots {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.app-screenshots img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+@media screen and (max-width: 960px) {
+  .app-screenshots {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .app-screenshots {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,21 +1,15 @@
-# User Manual
+# App Manual
 
-> This page is currently a placeholder. The full user manual is available in Polish and the English translation is still in progress.
+The Apisense Pro AI app manual walks you through daily work with the system — from account creation to apiary and hive management, inspections, alerts, and sharing.
 
-## Current status
+> The full English translation of the manual is being prepared and will be published shortly. In the meantime, the complete reference version is available in Polish — use the language switcher in the header.
 
-- The complete source manual is already published in Polish.
-- The English version will be added after translation and editorial review.
+## Scope of the manual
 
-## Available today
-
-- If you need the full content now, use the Polish manual from the language switcher in the header.
-- The current public Polish version covers registration, login, apiary and beehive management, alerts, analytics, and account usage.
-
-## Planned English scope
-
-- sign-in and access flow,
-- overview of main screens,
-- key user scenarios,
-- configuration and settings,
-- common troubleshooting cases.
+- **Registration and login** — creating an account, setting a password, signing in on mobile and web.
+- **Apiary and hive management** — adding apiaries, adding hives, assigning devices (Hub, VitalSensor, Scale), editing details.
+- **Inspections, notes and tasks** — creating inspections, attaching photos and voice notes, scheduling tasks, tracking history.
+- **Alerts and notifications** — push and in-app notifications for health risks, weight changes, and technical events.
+- **Analytics** — short and long-term trends, hive comparisons, honey gain tracking.
+- **Sharing apiaries** — granting access to collaborators and managing shared pairs.
+- **Account and settings** — notification preferences, password change, logout.

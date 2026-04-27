@@ -32,8 +32,8 @@ plugins:
           site_name: Dokumentacja Apisense
           nav:
             - Start: index.md
-            - Instrukcja: manual/app-manual.md
-            - Opis techniczny: technical/description.md
+            - Opis systemu: overview/index.md
+            - Instrukcja aplikacji: manual/app-manual.md
         - locale: en
           name: EN
           build: true
@@ -41,20 +41,21 @@ plugins:
           site_name: Apisense Documentation
           nav:
             - Home: index.md
-            - User Manual: manual/app-manual.md
-            - Technical Description: technical/description.md
+            - System Overview: overview/index.md
+            - App Manual: manual/app-manual.md
 
 markdown_extensions:
   - admonition
   - attr_list
+  - md_in_html
   - tables
   - toc:
       permalink: true
 
 nav:
   - Home: index.md
-  - Instrukcja: manual/app-manual.md
-  - Opis techniczny: technical/description.md
+  - Opis systemu: overview/index.md
+  - Instrukcja aplikacji: manual/app-manual.md
 
 extra_css:
   - assets/stylesheets/extra.css
