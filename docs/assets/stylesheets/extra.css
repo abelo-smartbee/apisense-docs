@@ -41,6 +41,8 @@
   }
 
   [data-md-toggle="search"]:checked ~ .md-header .md-search__output {
+    left: auto;
+    right: 0;
     width: 20rem;
     max-width: calc(100vw - 2rem);
   }
