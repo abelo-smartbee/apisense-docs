@@ -15,7 +15,7 @@
     - [4. Notatki](#4-notatki)
     - [5. Potwierdzanie chorób](#5-potwierdzanie-chor%C3%B3b)
     - [6. Rejestrowanie próbki](#6-rejestrowanie-pr%C3%B3bki)
-    - [7. Dodawanie badania](#7-dodawanie-badania)
+    - [7. Badania](#7-badania)
 - [Panel główny systemu](#panel-g%C5%82%C3%B3wny-systemu)
     - [1. Omówienie listy pasiek (zakładka Pasieki)](#1-om%C3%B3wienie-listy-pasiek-zak%C5%82adka-pasieki)
     - [2. Omówienie mapy pasiek (zakładka Mapa)](#2-om%C3%B3wienie-mapy-pasiek-zak%C5%82adka-mapa)
@@ -615,87 +615,115 @@ Gdy system Apisense Pro AI zgłosi zagrożenie (np. Nosemoza), w aplikacji pojaw
 
 <p style="text-align: center;">
   <img src="pictures/confirm_problem_questions.png" width="200" alt="Potwierdź chorobę - przykładowe pytanie">
-<br><strong>Rys. 54</strong> Potwierdź chorobę - przykładowe pytanie</p>
+<br><strong>Rys. 61</strong> Potwierdź chorobę - przykładowe pytanie</p>
 
-- Do odpowiedzi na poszczególne pytania możesz również załączyć zdjęcia lub nagrania. W tym celu kliknij przycisk *+*, znajdujący się w prawym górym rogu widoku Odpowiedz na kilka pytań (**Rys. 61**).
+- Do odpowiedzi na poszczególne pytania możesz również załączyć zdjęcia lub nagrania. W tym celu kliknij przycisk *+*, znajdujący się w prawym górym rogu widoku Odpowiedz na kilka pytań (**Rys. 62**).
 
 <p style="text-align: center;">
   <img src="pictures/confirm_problem_add_photos.png" width="200" alt="Potwierdź chorobę - załączanie zdjęć i nagrań">
-<br><strong>Rys. 55</strong> Potwierdź chorobę - załączanie zdjęć i nagrań</p>
+<br><strong>Rys. 62</strong> Potwierdź chorobę - załączanie zdjęć i nagrań</p>
 
 - Aby przejść do kolejnego pytania, kliknij ikonkę żółtej strzałki skierowanej w prawo, znajdującą się w prawym dolnym rogu ekranu.
 
-- Aby zapisać odpowiedzi i zakończyć formularz kliknij żółty przycisk *Zapisz*, umieszczony w prawym dolnym rogu ostatniego ekranu widoku Odpowiedz na kilka pytań (**Rys. 62**).
+- Aby zapisać odpowiedzi i zakończyć formularz kliknij żółty przycisk *Zapisz*, umieszczony w prawym dolnym rogu ostatniego ekranu widoku Odpowiedz na kilka pytań (**Rys. 63**).
 
 <p style="text-align: center;">
   <img src="pictures/confirm_problem_save.png" width="200" alt="Potwierdź chorobę - zapisanie formularza">
-<br><strong>Rys. 62</strong> Potwierdź chorobę - zapisanie formularza</p>
+<br><strong>Rys. 63</strong> Potwierdź chorobę - zapisanie formularza</p>
 
 
 ### 6. Rejestrowanie próbki
 
 > **Wideo (PL):** [Apisense Manual PL — 07 · Zarejestruj próbkę](https://www.youtube.com/shorts/jqS9rvhd-X0)
 
-- W zakładce Pasieki (widok startowy po zalogowaniu do aplikacji Apisense) kliknij kafelek z pasieką. Po kliknięciu w kafelek zostanie wyświetlony widok Ule (**Rys. 63**).
+- W zakładce Pasieki (widok startowy po zalogowaniu do aplikacji Apisense) kliknij kafelek z pasieką. Po kliknięciu w kafelek zostanie wyświetlony widok Ule (**Rys. 64**).
 
 <p style="text-align: center;">
   <img src="pictures/apiaries_apiary_with_beehive.png" width="200" alt="Widok pasieki w zakładce Pasieki" title="Widok pasieki w zakładce Pasieki">
   <img src="pictures/beehives.png" width="200" alt="Widok pojedynczej pasieki" title="Widok pojedynczej pasieki">
-<br><strong>Rys. 63</strong> Widok pasieki w zakładce Pasieki i widok Ule</p>
+<br><strong>Rys. 64</strong> Widok pasieki w zakładce Pasieki i widok Ule</p>
 
-- Następnie kliknij w kafelek ula, dla którego chcesz zarejestrować próbkę. W rezultacie zostanie wyświetlony widok Szczegóły ula (**Rys. 64**).
+- Następnie kliknij w kafelek ula, dla którego chcesz zarejestrować próbkę. W rezultacie zostanie wyświetlony widok Szczegóły ula (**Rys. 65**).
 
 <p style="text-align: center;">
   <img src="pictures/beehive_interior.png" width="200" alt="Szczegóły ula" title="Szczegóły ula">
-<br><strong>Rys. 64</strong> Widok Szczegóły ula</p>
+<br><strong>Rys. 65</strong> Widok Szczegóły ula</p>
 
-- Aby zarejestrować próbkę, należy z dolnego menu wybrać opcję *Dodaj...*, a następnie *Zarejestruj próbkę* (**Rys. 65**), w wyniku czego zostanie wyświetlony widok Zarejestruj próbkę (**Rys. 65**). **Uwaga:** opcja *Zarejestruj próbkę* jest dostępna tylko dla uli z powiązanym urządzeniem Apisense VitalSensor.
+- Aby zarejestrować próbkę, należy z dolnego menu wybrać opcję *Dodaj...*, a następnie *Zarejestruj próbkę* (**Rys. 66**), w wyniku czego zostanie wyświetlony widok Zarejestruj próbkę (**Rys. 67**). **Uwaga:** opcja *Zarejestruj próbkę* jest dostępna tylko dla uli z powiązanym urządzeniem Apisense VitalSensor.
 
 <p style="text-align: center;">
   <img src="pictures/add_overview_button.png" width="200" alt="Przycisk Zarejestruj próbkę">
-<br><strong>Rys. 65</strong> Przycisk Zarejestruj próbkę</p>
+<br><strong>Rys. 66</strong> Przycisk Zarejestruj próbkę</p>
 
 - W widoku Zarejestruj próbkę należy uzupełnić następujące pola:
 
   - **Data pobrania próbki** - wprowadź datę, kiedy pobrałeś próbkę (domyślnie aktualna).
   - **Rodzaj badania** - wybierz odpowiednią pozycję z listy rozwijanej np. *Martwe pszczoły*.
 
-- Po uzupełnieniu powyższych pól zostanie wyświetlony żółty przycisk *Wygeneruj kod*. Kliknij wspomniany przycisk a w polu *Kod badania* zostanie wygernerowany specjalny kod, który należy zapisać na próbce (**Rys. 66**). Tak przygotowaną próbkę z kodem należy następnie wysłać na następujący adres: **Uniwersytet Przyrodniczy w Lublinie, ul. Doświadczalna 54, 20-280 Lublin**.
+- Po uzupełnieniu powyższych pól zostanie wyświetlony żółty przycisk *Wygeneruj kod*. Kliknij wspomniany przycisk a w polu *Kod badania* zostanie wygernerowany specjalny kod, który należy zapisać na próbce (**Rys. 67**). Tak przygotowaną próbkę z kodem należy następnie wysłać na następujący adres: **Uniwersytet Przyrodniczy w Lublinie, ul. Doświadczalna 54, 20-280 Lublin**.
 
 <p style="text-align: center;">
   <img src="pictures/register_sample.png" width="200" alt="Zarejestruj próbkę">
-<br><strong>Rys. 66</strong> Widok Zarejestruj próbkę</p>
+<br><strong>Rys. 67</strong> Widok Zarejestruj próbkę</p>
 
 
-### 7. Dodawanie badania
+### 7. Badania
 
-Badanie w systemie pozwala udokumentować wykonane czynności diagnostyczne (np. spadek czerwiu, liczenie roztoczy) wraz z datą, typem badania oraz — w zależności od wybranego rodzaju — wymaganą liczbą zdjęć i dodatkowymi polami (np. liczba roztoczy warrozy). Funkcja jest dostępna na tym samym poziomie co rejestrowanie próbki: z poziomu *Szczegółów* ula, z dolnego menu *Dodaj...*.
+#### 7.1 Dodawanie badania 
 
-- W zakładce *Pasieki* (widok startowy po zalogowaniu do aplikacji Apisense) kliknij kafelek z pasieką. Po kliknięciu w kafelek zostanie wyświetlony widok *Ule*.
-- Kliknij kafelek ula, dla którego chcesz dodać badanie. Zostanie wyświetlony widok *Szczegóły* ula.
-- Z dolnego menu wybierz *Dodaj...*, a następnie opcję dodania badania (analogicznie jak *Zarejestruj próbkę*). Otworzy się formularz dodawania badania.
-- Wypełnij pola:
-    - **Data badania** — wybierz datę wykonania badania (np. dzień pobierania próbek lub przeglądu).
-    - **Rodzaj badania** — wybierz pozycję z listy rozwijanej. Od wyboru zależy, czy pojawią się dodatkowe pola (np. liczba roztoczy warrozy) oraz ile zdjęć należy dodać — dla części typów wymagane jest uzupełnienie wszystkich przewidzianych zdjęć przed zapisem wpisu.
-    - **Zdjęcia i informacje uzupełniające** — wykonaj lub wgraj wymaganą liczbę fotografii oraz uzupełnij pola tekstowe lub liczbowe zgodnie z komunikatami na ekranie.
-- Zapisz badanie, korzystając z żółtego przycisku zapisu w dolnej części ekranu. Wpis pojawi się na **liście badań** przypisanej do danego ula.
+- W zakładce Pasieki (widok startowy po zalogowaniu do aplikacji Apisense) kliknij kafelek z pasieką. Po kliknięciu w kafelek zostanie wyświetlony widok Ule (**Rys. 69**).
 
-**Lista badań** — aby ją zobaczyć, przejdź do *Szczegółów* wybranego ula. W górnym menu kliknij *Więcej*, a następnie pozycję *Badania*. Zobaczysz chronologiczną listę zapisanych badań wraz z typem i datą; po wybraniu wiersza dostępny jest podgląd szczegółów.
+<p style="text-align: center;">
+  <img src="pictures/apiaries_apiary_with_beehive.png" width="200" alt="Widok pasieki w zakładce Pasieki" title="Widok pasieki w zakładce Pasieki">
+  <img src="pictures/beehives.png" width="200" alt="Widok pojedynczej pasieki" title="Widok pojedynczej pasieki">
+<br><strong>Rys. 69</strong> Widok pasieki w zakładce Pasieki i widok Ule</p>
+
+- Następnie kliknij w kafelek ula, dla którego chcesz dodać badanie. W rezultacie zostanie wyświetlony widok Szczegóły ula (**Rys. 70**).
+
+<p style="text-align: center;">
+  <img src="pictures/beehive_interior.png" width="200" alt="Szczegóły ula" title="Szczegóły ula">
+<br><strong>Rys. 70</strong> Widok Szczegóły ula</p>
+
+- Aby dodać badanie, należy z dolnego menu wybrać opcję *Dodaj...*, a następnie *Badanie* (**Rys. 71**), w wyniku czego zostanie wyświetlony widok Dodaj badanie (**Rys. 72**). 
+
+<p style="text-align: center;">
+  <img src="pictures/add_examination_button.png" width="200" alt="Przycisk Dodaj badanie">
+<br><strong>Rys. 71</strong> Przycisk Dodaj badanie</p>
+
+
+- W widoku Dodaj badanie (**Rys. 72**) uzupełnij następujące pola:
+
+    - **Data badania** — wybierz datę wykonania badania.
+    - **Rodzaj badania** — wybierz z listy rozwijanej jedną z dostępnych opcji np. Osyp.
+    - **Zdjęcia i informacje uzupełniające** — po wyborze rodzaju badania wykonaj lub wgraj wymaganą liczbę zdjęć oraz uzupełnij pola liczbowe zgodnie z komunikatami na ekranie.
+
+<p style="text-align: center;">
+  <img src="pictures/add_examination.png" width="200" alt="Widok Dodaj badanie">
+<br><strong>Rys. 72</strong> Widok Dodaj badanie, rodzaj: Flotacja</p>
+
+- Zapisz badanie, korzystając z żółtego przycisku zapisu umieszczonego w prawej, dolnej części ekranu. Zapisane badanie zostanie wyświetlone na liście badań w zakładce Szczegóły ula > Więcej (górne menu) > Badania (**Rys. 73**).
+
+<p style="text-align: center;">
+  <img src="pictures/add_examination_list.png" width="200" alt="Zapisane badanie na liście badań w ulu">
+<br><strong>Rys. 73</strong> Zapisane badanie na liście badań w ulu</p>
+
+
+______________________________________________________________________
 
 
 ## Panel główny systemu
 
 ### 1. Omówienie listy pasiek (zakładka Pasieki)
 
-**Zakładka *Pasieki*** to podstawowa zakładka w aplikacji Apisense, którą zobaczysz zaraz po zalogowaniu się do systemu (**Rys. 67**).
+**Zakładka *Pasieki*** to podstawowa zakładka w aplikacji Apisense, którą zobaczysz zaraz po zalogowaniu się do systemu (**Rys. 74**).
 
 <p style="text-align: center;">
   <img src="pictures/apiaries.png" width="200" alt="Zakładka Pasieki - przykładowy widok pasiek" title="Zakładka Pasieki - przykładowy widok pasiek">
-<br><strong>Rys. 67</strong> Zakładka Pasieki - przykładowy widok pasiek</p>
+<br><strong>Rys. 74</strong> Zakładka Pasieki - przykładowy widok pasiek</p>
 
 **Najważniejsze informacje:**
 
-- W zakładce *Pasieki* znajdują się Twoje pasieki (sekcja *Twoje pasieki*).
+- W zakładce *Pasieki* znajdują się wszystkie Twoje pasieki.
 
 - Każda pasieka prezentowana jest w formie pojedynczego, przejrzystego kafelka, zawierającego kluczowe, odpowiednio zagregowane informacje.
 
@@ -703,9 +731,7 @@ Badanie w systemie pozwala udokumentować wykonane czynności diagnostyczne (np.
 
 - Na każdym kafelku pasieki są wyświetlane następujące informacje:
 
-    - nazwa pasieki wraz ze skrótem nazwy i ikonką,
-
-    - lokalizacja pasieki wyświetlana na podstawie lokalizacji Apisense Hub,
+    - nazwa pasieki wraz ze skrótem nazwy,
 
     - poziom baterii Apisense Hub,
 
@@ -717,19 +743,17 @@ Badanie w systemie pozwala udokumentować wykonane czynności diagnostyczne (np.
 
     - stan rodziny pszczelej - informujący o tym, czy rodzina w pasiece jest w zupełności zdorwa lub czy w jakimś ulu zostało wykryte zagrożenie,
 
-    - ostrzeżenia np. o krytycznie niskim poziomie baterii.
-
-        Więcej informacji na temat interpretacji poszczególnych statusów znajdziesz w rozdziale [7. Interpretacja statusów, pomiarów, ikonek, kolorów na poszczególnych etapach](#interpretacja-statusow)
+    Więcej informacji na temat interpretacji poszczególnych statusów znajdziesz w rozdziale [7. Interpretacja statusów, pomiarów, ikonek, kolorów na poszczególnych etapach](#interpretacja-statusow)
 
 - Kliknięcie w kafelek pasieki otwiera wnętrze pasieki - listę uli ([Zakładka Ule](#zakladka-ule)).
 
 ### 2. Omówienie mapy pasiek (zakładka Mapa)
 
-**Zakładka Mapa** prezentuje lokalizacje wszystkich pasiek na mapie, do których użytkownik posiada dostęp (**Rys. 68**). Mapa ułatwia logistykę, planowanie wizyt i szybkie zlokalizowanie pasiek wymagających interwencji.
+**Zakładka Mapa** prezentuje lokalizacje wszystkich pasiek na mapie, do których użytkownik posiada dostęp (**Rys. 75**). Mapa ułatwia logistykę, planowanie wizyt i szybkie zlokalizowanie pasiek wymagających interwencji.
 
 <p style="text-align: center;">
   <img src="pictures/apiaries_map.png" width="200" alt="Zakładka Mapa - przykładowy widok lokalizacji pasiek" title="Zakładka Mapa - przykładowy widok lokalizacji pasiek">
-<br><strong>Rys. 68</strong> Zakładka Mapa - przykładowy widok lokalizacji pasiek</p>
+<br><strong>Rys. 75</strong> Zakładka Mapa - przykładowy widok lokalizacji pasiek</p>
 
 **Najważniejsze informacje:**
 
@@ -741,19 +765,15 @@ Badanie w systemie pozwala udokumentować wykonane czynności diagnostyczne (np.
 
 ### 3. Omówienie listy uli (zakładka Ule)
 
-Zakładka *Ule* jest bardziej złożona niż poprzednie, gdyż w jej skład wchodzi podzakładka *Lista* (**Rys. 69**):
+Na liście uli znajdziesz wszytskie ule, które zostały przypisane do wybranej pasieki. Do zakładki *Ule* możesz przejść bezpośrednio z zakładki *Pasieki*, po kliknięciu w kafelek z wybraną pasieką.
 
-- Lista
+#### 3.1 Lista uli
 
-Do zakładki *Ule* możesz przejść bezpośrednio z zakładki *Pasieki*, po kliknięciu w kafelek z wybraną pasieką.
+W **zakładce *Lista*** znajdziesz listę wszystkich uli przypisanych do wybranej pasieki (**Rys. 76**). Takie ułożenie pozwala szybko porównać ule i zlokalizować te wymagające uwagi.
 
 <p style="text-align: center;">
   <img src="pictures/beehives_beehive_with_problem.png" width="200" alt="Zakładka Ule - przykładowy widok listy uli" title="Zakładka Ule - przykładowy widok listy uli">
-<br><strong>Rys. 69</strong> Zakładka Ule - przykładowy widok listy uli</p>
-
-#### 3.1 Lista
-
-W **zakładce *Lista*** znajdziesz listę wszystkich uli przypisanych do wybranej pasieki (**Rys. 69**). Takie ułożenie pozwala szybko porównać ule i zlokalizować te wymagające uwagi.
+<br><strong>Rys. 76</strong> Zakładka Ule - przykładowy widok listy uli</p>
 
 **Najważniejsze informacje:**
 
@@ -761,7 +781,7 @@ W **zakładce *Lista*** znajdziesz listę wszystkich uli przypisanych do wybrane
 
 - Każdy kafelek z ulem składa się z poniższych elementów:
 
-    - nazwa ula wraz ze skrótem nazwy i ikonką w kolorze odpowiednim dla roku wychowu matki,
+    - nazwa ula wraz z ikonką w kolorze odpowiednim dla roku wychowu matki,
 
     - stan rodziny pszczelej - informujący o tym, czy rodzina w danym ulu jest zdrowa lub, czy wykryto zagrożenie,
 
@@ -769,9 +789,9 @@ W **zakładce *Lista*** znajdziesz listę wszystkich uli przypisanych do wybrane
 
     - aktualna waga ula wraz z przybytkiem miodu
 
-    - dodatkowe ikony związane ze szczególnymi zdarzeniami w ulu np. ikona kalendarza.
+    - dodatkowe ikony związane ze szczególnymi zdarzeniami w ulu np. czerwona ikona baterii świadcząca o jej niskim poziomie.
 
-        Więcej informacji na temat interpretacji poszczególnych statusów znajdziesz w rozdziale [7. Interpretacja statusów, pomiarów, ikonek, kolorów na poszczególnych etapach](#interpretacja-statusow)
+    Więcej informacji na temat interpretacji poszczególnych statusów znajdziesz w rozdziale [7. Interpretacja statusów, pomiarów, ikonek, kolorów na poszczególnych etapach](#interpretacja-statusow)
 
 - Kliknięcie w kafelek ula otwiera wnętrze ula - szczegółowe dane pomiarowe wykonane przez urządzenia przypisane do wybranego ula ([Zakładka Szczegóły](#zakladka-szczegoly-ula)).
 
@@ -779,21 +799,25 @@ W **zakładce *Lista*** znajdziesz listę wszystkich uli przypisanych do wybrane
 
 ### 4. Omówienie zawartości ula (zakładka Szczegóły)
 
-Widok *Szczegóły* ula umożliwia monitorowanie danych pomiarowych pochodzących z urządzeń pomiarowych (Scale, VitalSensor) oraz zarządzanie zapisami dotyczącymi pracy przy konkretnym ulu (przeglądami i notatkami). Do zakładki szczegółów można przejść bezpośrednio z zakładki *Ule*, po kliknięciu w kafelek z wybranym ulem. Widok *Szczegóły* został podzielony na 3 mniejsze zakładki w dolnej części ekranu:
+Widok *Szczegóły* ula umożliwia monitorowanie danych pomiarowych pochodzących z urządzeń pomiarowych (Scale, VitalSensor) oraz zarządzanie zapisami dotyczącymi pracy przy konkretnym ulu (m.in. przeglądami czy notatkami). Do zakładki szczegółów można przejść bezpośrednio z zakładki *Ule*, po kliknięciu w kafelek z wybranym ulem. 
+
+Widok *Szczegóły* został podzielony na kilka mniejszych zakładek:
 
 - Stan ula
-- Przeglądy
+- Przegląd
 - Notatki
+- Więcej:
+  - Badania
+  - Próbki
 
-**Badania** — lista zapisanych badań diagnostycznych nie jest osobną zakładką obok powyższych: wybierz w górnym menu pozycję *Więcej*, a następnie *Badania* (zob. [7. Dodawanie badania](#7-dodawanie-badania)).
 
 #### 4.1 Stan ula
 
-Zakładka *Stan ula* prezentuje najważniejsze bieżące informacje o kondycji rodziny pszczelej oraz warunkach panujących w ulu (**Rys. 70**), na podstawie danych pomiarowych z urządzeń monitorujących.
+Zakładka *Stan ula* prezentuje najważniejsze, bieżące informacje o kondycji rodziny pszczelej oraz warunkach panujących w ulu (**Rys. 77**), określone na podstawie danych pomiarowych z urządzeń monitorujących.
 
 <p style="text-align: center;">
   <img src="pictures/behive_details_2.png" width="200" alt="Zakładka Szczegóły - przykładowy widok zakładki Stan ula" title="Zakładka Szczegóły - przykładowy widok zakładki Stan ula">
-<br><strong>Rys. 70</strong> Zakładka Szczegóły - przykładowy widok zakładki Stan ula</p>
+<br><strong>Rys. 77</strong> Zakładka Szczegóły - przykładowy widok zakładki Stan ula</p>
 
 **Najważniejsze informacje:**
 
@@ -806,12 +830,12 @@ Więcej informacji na temat analizy i prezentacji danych w formie wykresów zawa
 
 #### 4.2 Przegląd
 
-Zakładka *Przeglądy* umożliwia przeglądanie historii przeprowadzonych kontroli danego ula. Przeglądy zaprezentowane są w formie listy (**Rys. 71**).
+Zakładka *Przegląd* umożliwia przeglądanie historii przeprowadzonych kontroli danego ula. Przeglądy zaprezentowane są w formie listy (**Rys. 78**).
 
 <p style="text-align: center;">
   <img src="pictures/beehive_details_overview_list.png" width="200" alt="Zakładka Przegląd - lista przeglądów" title="Zakładka Przegląd - lista przeglądów">
   <img src="pictures/beehive_details_overview_list_expanded.png" width="200" alt="Zakładka Przegląd - rozwinięta lista przeglądów" title="Zakładka Przegląd - rozwinięta lista przeglądów">
-<br><strong>Rys. 71</strong> Zakładka Szczegóły - przykładowy widok zakładki Przegląd (lista przeglądów i szczegóły przeglądu)</p>
+<br><strong>Rys. 78</strong> Zakładka Szczegóły - przykładowy widok zakładki Przegląd (lista przeglądów i szczegóły przeglądu)</p>
 
 **Najważniejsze informacje:**
 
@@ -821,11 +845,11 @@ Zakładka *Przeglądy* umożliwia przeglądanie historii przeprowadzonych kontro
 
 #### 4.3 Notatki
 
-Zakładka *Notatki* pozwala zapisywać i przeglądać informacje dotyczące obserwacji lub zdarzeń związanych z danym ulem. Notatki, tak jak i przeglądy, zaprezentowane są w formie listy (**Rys. 72**).
+Zakładka *Notatki* pozwala zapisywać i przeglądać informacje dotyczące obserwacji lub zdarzeń związanych z danym ulem. Notatki, tak jak i przeglądy, zaprezentowane są w formie listy (**Rys. 79**).
 
 <p style="text-align: center;">
   <img src="pictures/beehive_details_notes_list.png" width="200" alt="Zakładka Szczegóły - przykładowy widok zakładki Notatki" title="Zakładka Szczegóły - przykładowy widok zakładki Notatki">
-<br><strong>Rys. 72</strong> Zakładka Szczegóły - przykładowy widok zakładki Notatki</p>
+<br><strong>Rys. 79</strong> Zakładka Szczegóły - przykładowy widok zakładki Notatki</p>
 
 **Najważniejsze informacje:**
 
@@ -833,18 +857,43 @@ Zakładka *Notatki* pozwala zapisywać i przeglądać informacje dotyczące obse
 - **Materiały dodatkowe** – przy notatkach mogą pojawić się ikony zdjęcia, nagrania wideo lub nagrania audio, jeśli takie materiały zostały do nich dołączone.
 - **Szczegóły notatki** – po kliknięciu - rozwinięciu - wybranej notatki wyświetlana jest pełna treść notatki wraz z dołączonymi materiałami.
 
+#### 4.4 Badania
+
+Zakładka *Badania* prezentuje w przejrzysty sposób listę wszystkich wykonanych oraz zapisanych badań (**Rys. 80**), przeprowadzonych w ramach wybranego ula. Dzięki temu użytkownik może szybko sprawdzić historię analiz oraz wrócić do wcześniejszych wyników.
+
+<p style="text-align: center;">
+  <img src="pictures/beehive_details_examination_list.png" width="200" alt="Zakładka Szczegóły - przykładowy widok zakładki Badania" title="Zakładka Szczegóły - przykładowy widok zakładki Badania">
+<br><strong>Rys. 80</strong> Zakładka Szczegóły - przykładowy widok zakładki Badania</p>
+
+**Najważniejsze informacje:**
+
+- **Lista badań** – prezentuje wszystkie badania zapisane dla wybranego ula, posortowane malejąco według daty wykonania badania.
+- **Szczegóły badania** – po kliknięciu w pojedyncze badanie zostają wyświetlone jego szczegóły, w tym: data badania, rodzaj badania oraz zapisane załączniki.
+
+#### 4.5 Próbki
+
+W zakładce *Próbki* znajdziesz listę wszystkich zarejestrowanych próbek dla konkretnego ula (**Rys. 80**).
+
+<p style="text-align: center;">
+  <img src="pictures/beehive_details_sample_list.png" width="200" alt="Zakładka Szczegóły - przykładowy widok zakładki Próbki" title="Zakładka Szczegóły - przykładowy widok zakładki Próbki">
+<br><strong>Rys. 80</strong> Zakładka Szczegóły - przykładowy widok zakładki Próbki</p>
+
+**Najważniejsze informacje:**
+
+- **Lista próbek** – prezentuje wszystkie próbki zapisane dla wybranego ula, posortowane malejąco według daty pobrania próbki.
+- **Szczegóły próbki** – po kliknięciu w pojedynczą próbkę zostaną wyświetlone jej szczegóły, w tym: data pobrania próbki, rodzaj badania oraz wygenerowany przez system kod badania.
+
 ### 5. Omówienie ustawień pasieki
 
 Widok *Ustawienia pasieki* pozwala zarządzać podstawowymi danymi pasieki oraz śledzić informacje na temat jej stanu wyposażenia. Do widoku można przejść będąc w zakładce *Ule* (wnętrze pasieki) i klikając ikonkę koła zębatego w prawym górnym rogu ekranu.
 Widok *Ustawienia pasieki* składa się z następujących sekcji:
 
 - Szczegóły pasieki
-- Bramka
-- Informacje dodatkowe
+- Hub
 
 <p style="text-align: center;">
   <img src="pictures/apiary_settings.png" width="200" alt="Widok Ustawienia pasieki" title="Widok Ustawienia pasieki">
-<br><strong>Rys. 73</strong> Widok Ustawienia pasieki</p>
+<br><strong>Rys. 80</strong> Widok Ustawienia pasieki</p>
 
 Aby zobaczyć zawartość danej sekcji, należy kliknąć w jej nagłówek, w wyniku czego zostanie wyświetlony pełny widok ze szczegółowymi informacjami.
 
@@ -854,39 +903,27 @@ Sekcja *Szczegóły pasieki* prezentuje podstawowe informacje identyfikujące pa
 
 <p style="text-align: center;">
   <img src="pictures/apiary_settings_details.png" width="200" alt="Widok Ustawienia pasieki - sekcja Szczegóły pasieki" title="Widok Ustawienia pasieki - sekcja Szczegóły pasieki">
-<br><strong>Rys. 74</strong> Widok Ustawienia pasieki - sekcja Szczegóły pasieki</p>
+<br><strong>Rys. 81</strong> Widok Ustawienia pasieki - sekcja Szczegóły pasieki</p>
 
 **Najważniejsze informacje:**
 
 - **Nazwa pasieki** – wyświetlana jest pełna nazwa pasieki, identyfikująca ją w systemie.
 - **Skrót nazwy pasieki** – prezentowany jest skrócony zapis nazwy, używany w różnych widokach i raportach.
 
-#### 5.2 Bramka
+#### 5.2 Hub
 
-Sekcja **Bramka** prezentuje dane techniczne urządzenia Apisense Hub, odpowiedzialnego za zbieranie danych pomiarowych z uli w pasiece.
+Sekcja **Hub** prezentuje dane techniczne urządzenia Apisense Hub, odpowiedzialnego za zbieranie danych pomiarowych z uli w pasiece.
 
 <p style="text-align: center;">
-  <img src="pictures/apiary_settings_hub.png" width="200" alt="Widok Ustawienia pasieki - sekcja Bramka" title="Widok Ustawienia pasieki - sekcja Bramka">
-<br><strong>Rys. 75</strong> Widok Ustawienia pasieki - sekcja Bramka</p>
+  <img src="pictures/apiary_settings_hub.png" width="200" alt="Widok Ustawienia pasieki - sekcja Hub" title="Widok Ustawienia pasieki - sekcja Hub">
+<br><strong>Rys. 82</strong> Widok Ustawienia pasieki - sekcja Hub</p>
 
 **Najważniejsze informacje:**
 
 - **Numer seryjny i kod potwierdzający** – prezentowane są unikalny numer seryjny urządzenia oraz kod weryfikacyjny, potwierdzający jego przypisanie do użytkownika.
-- **LTE i bateria** – wyświetlane są informacje o aktualnym stanie połączenia LTE oraz poziomie naładowania baterii urządzenia apisense Hub.
+- **LTE i bateria** – wyświetlane są informacje o aktualnym stanie połączenia LTE oraz poziomie naładowania baterii urządzenia Apisense Hub.
 - **Ostatnie zgłoszenie** – prezentowana jest data i czas ostatniej komunikacji urządzenia Apisense Hub z systemem.
 - **Wersje sprzętowa i oprogramowania** – umożliwia sprawdzenie aktualnej wersji sprzętowej oraz oprogramowania urządzenia Apisense Hub.
-
-#### 5.3 Informacje dodatkowe
-
-Sekcja *Informacje dodatkowe* pozwala sprawdzić dane uzupełniające dotyczące pasieki.
-
-<p style="text-align: center;">
-  <img src="pictures/apiary_settings_info.png" width="200" alt="Widok Ustawienia pasieki - sekcja Informacje dodatkowe" title="Widok Ustawienia pasieki - sekcja Informacje dodatkowe">
-<br><strong>Rys. 76</strong> Widok Ustawienia pasieki - sekcja Informacje dodatkowe</p>
-
-**Najważniejsze informacje:**
-
-- **Dodatkowe informacje o pasiece** - przedstawione są udzielone odpowiedzi na pytania zadane podczas tworzenia pasieki.
 
 ### 6. Omówienie ustawień ula
 
@@ -899,7 +936,7 @@ Widok *Ustawienia ula* został podzielony na następujące sekcje:
 
 <p style="text-align: center;">
   <img src="pictures/beehive_settings.png" width="200" alt="Widok Ustawienia ula" title="Widok Ustawienia ula">
-<br><strong>Rys. 77</strong> Widok Ustawienia ula</p>
+<br><strong>Rys. 84</strong> Widok Ustawienia ula</p>
 
 Aby zobaczyć zawartość danej sekcji, należy kliknąć w jej nagłówek, w wyniku czego zostanie wyświetlony pełny widok ze szczegółowymi informacjami.
 
@@ -909,13 +946,12 @@ Sekcja *Szczegóły ula* prezentuje podstawowe informacje identyfikujące ul i j
 
 <p style="text-align: center;">
   <img src="pictures/beehive_settings_details.png" width="200" alt="Widok Ustawienia ula - sekcja Szczegóły ula" title="Widok Ustawienia ula - sekcja Szczegóły ula">
-<br><strong>Rys. 78</strong> Widok Ustawienia ula - sekcja Szczegóły ula</p>
+<br><strong>Rys. 85</strong> Widok Ustawienia ula - sekcja Szczegóły ula</p>
 
 **Najważniejsze informacje:**
 
-- **Nazwa i skrót** – pełna nazwa ula oraz jej skrót, ułatwiający identyfikację w systemie.
-- **Rodzaj ula** – określa typ konstrukcji, np. dadant
-- **Typ ramek** – prezentuje zastosowany rodzaj ramki w ulu.
+- **Nazwa ula** – pełna nazwa ula ułatwiająca jego identyfikację w systemie.
+- **Maksymalna liczba ramek w korpusie gniazdowym** – informacja o maksymalnej liczbie ramek, które mogą zmieścić się w korpusie gniazdowym ula.
 - **Dennica higieniczna** – informacja, czy ul posiada dennicę higieniczną.
 
 #### 6.2 Informacje o matce
@@ -924,12 +960,12 @@ Sekcja *Informacje o matce* umożliwia przegląd szczegółowych danych dotyczą
 
 <p style="text-align: center;">
   <img src="pictures/beehive_settings_queen.png" width="200" alt="Widok Ustawienia ula - sekcja Informacje o matce" title="Widok Ustawienia ula - sekcja Informacje o matce">
-<br><strong>Rys. 79</strong> Widok Ustawienia ula - sekcja Informacje o matce</p>
+<br><strong>Rys. 86</strong> Widok Ustawienia ula - sekcja Informacje o matce</p>
 
 **Najważniejsze informacje:**
 
 - **Rok wychowu matki** – prezentuje rok wylęgu matki pszczelej.
-- **Pochodzenie matki** – informacje o pochodzeniu matki, np. hodowla własna.
+- **Pochodzenie matki** – informacja o pochodzeniu matki, np. hodowla własna.
 - **Sposób unasiennienia** – wskazuje metodę unasiennienia matki, np. naturalna.
 
 #### 6.3 Wyposażenie
@@ -938,13 +974,13 @@ Sekcja *Wyposażenie* prezentuje urządzenia pomiarowe przypisane do danego ula 
 
 <p style="text-align: center;">
   <img src="pictures/beehive_settings_devices.png" width="200" alt="Widok Ustawienia ula - sekcja Wyposażenie" title="Widok Ustawienia ula - sekcja Wyposażenie">
-<br><strong>Rys. 80</strong> Widok Ustawienia ula - sekcja Wyposażenie</p>
+<br><strong>Rys. 87</strong> Widok Ustawienia ula - sekcja Wyposażenie</p>
 
 **Najważniejsze informacje:**
 
 - **Numer seryjny i kod potwierdzający** – unikalne numery seryjne oraz kody weryfikacyjne urządzeń pomiarowych Scale i VitalSensor.
 
-- **Rozwinięcie szczegółów** – kliknięcie w wybrane urządzenie otwiera pełny widok z informacjami o stanie sprzętu w ulu (**Rys. 81**).
+- **Rozwinięcie szczegółów** – kliknięcie w wybrane urządzenie (VitalSensor/Scale) otwiera pełny widok z informacjami o stanie sprzętu w ulu (**Rys. 88**).
 
 - **Szczegóły urządzenia** – po kliknięciu w dane urządzenie wyświetlane są:
 
@@ -956,7 +992,7 @@ Sekcja *Wyposażenie* prezentuje urządzenia pomiarowe przypisane do danego ula 
 <p style="text-align: center;">
   <img src="pictures/beehive_settings_scale.png" width="200" alt="Widok Ustawienia ula - sekcja Wyposażenie - szczegóły Scale" title="Widok Ustawienia ula - sekcja Wyposażenie - szczegóły Scale">
   <img src="pictures/beehive_settings_sensor.png" width="200" alt="Widok Ustawienia ula - sekcja Wyposażenie - szczegóły VitalSensor" title="Widok Ustawienia ula - sekcja Wyposażenie - szczegóły VitalSensor">
-<br><strong>Rys. 81</strong> Widok Ustawienia ula - sekcja Wyposażenie - szczegóły Scale oraz VitalSensor</p>
+<br><strong>Rys. 88</strong> Widok Ustawienia ula - sekcja Wyposażenie - szczegóły Scale oraz VitalSensor</p>
 
 <a id="interpretacja-statusow"></a>
 
@@ -978,6 +1014,7 @@ Ikony informacyjne przedstawiają informacje dotyczące pasiek i uli oraz dane z
 | ![](pictures/beehive_weight_decrease.png)  | kafelek z ulem (zakładka Ule)        | Aktualna waga ula i dzienny ubytek miodu.                                                                                                                                                                                                                                                                                                             |
 | ![](pictures/beehive_details_temp.png)     | wnętrze ula (zakładka Szczegóły)     | Aktualna temperatura wewnątrz ula.                                                                                                                                                                                                                                                                                                                    |
 | ![](pictures/beehive_details_humidity.png) | wnętrze ula (zakładka Szczegóły)     | Aktualna wilgotność wewnątrz ula.                                                                                                                                                                                                                                                                                                                     |
+| ![](pictures/beehive_details_humidity_risk.png) | wnętrze ula (zakładka Szczegóły)     | Aktualna wartość wilgotności w ulu znajduje się poza oczekiwanym zakresem - występuje ryzyko pojawienia się chorób.                                                                                                                                                                                                                                                                                                                     |
 | ![](pictures/beehive_details_pressure.png) | wnętrze ula (zakładka Szczegóły)     | Aktualne ciśnienie atmosferyczne wewnątrz ula.                                                                                                                                                                                                                                                                                                        |
 
 #### Stan zdrowia
@@ -990,9 +1027,9 @@ Ikony stanu zdrowia informują o kondycji rodziny pszczelej w poszczególnych ul
 | ![](pictures/state_danger.png)          | kafelek z pasieką (zakładka Pasieki)             | Rodzina pszczela w tej pasiece jest zagrożona. W co najmniej jednym ulu w tej pasiece wykryto zagrożenie w postaci choroby.                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | ![](pictures/state_beehive_healthy.png) | kafelek z ulem (zakładka Ule)                    | Rodzina pszczela w tym ulu jest zdrowa. Nie wykryto żadnego zagrożenia.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | ![](pictures/state_beehive_danger.png)  | kafelek z ulem (zakładka Ule)                    | Rodzina pszczela w tym ulu jest zagrożona. Wykryto co najmniej jedno zagrożenie w postaci choroby.                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| ![](pictures/state_no_data.png)         | kafelek z pasieką i ulem (zakładka Pasieki, Ule) | Brak informacji o stanie zdrowia rodziny pszczelej. <br/>Na kafelku z ulem pojawia się, gdy:<br/> - w ulu nie ma żadnego urządzenia typu VitalSensor,<br/>- urządzenie VitalSensor lub Hub przestało się zgłaszać,<br/>- urządzenie VitalSensor jeszcze nie przesłało danych (pierwsze uruchomienie).<br/>Na kafelku z pasieką pojawia się gdy:<br/>- żaden ul nie jest powiązany z urządzeniem VitalSensor,<br/>- wszystkie urządzenia VitalSensor lub Hub przestały się zgłaszać,<br/>- urządzenie VitalSensor jeszcze nie przesłało danych (pierwsze uruchomienie). |
-| ![](pictures/varroa_low.png)            | m.in. kafelki z pasieką i ulem, mapa             | Ikona z chorobą - Warroza. Poziom porażenia - niski.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| ![](pictures/nosema_high.png)           | m.in. kafelki z pasieką i ulem, mapa             | Ikona z chorobą - Nosemoza. Poziom porażenia - wysoki.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| ![](pictures/state_no_data.png)         | kafelek z pasieką i ulem (zakładka Pasieki, Ule) | Brak informacji o stanie zdrowia rodziny pszczelej. <br/>Na kafelku z ulem pojawia się, gdy:<br/> - w ulu nie ma żadnego urządzenia typu VitalSensor,<br/>- urządzenie VitalSensor lub Hub przestało się zgłaszać,<br/>- urządzenie VitalSensor jeszcze nie przesłało danych (pierwsze uruchomienie - zmiana statusu w tym wypadku może potrwać do 4 dni).<br/>Na kafelku z pasieką pojawia się gdy:<br/>- żaden ul nie jest powiązany z urządzeniem VitalSensor,<br/>- wszystkie urządzenia VitalSensor lub Hub przestały się zgłaszać,<br/>- urządzenie VitalSensor jeszcze nie przesłało danych (pierwsze uruchomienie - zmiana statusu w tym wypadku może potrwać do 4 dni). |
+| ![](pictures/varroa_low.png)            | m.in. Szczegóły ula, mapa             | Ikona z wykrytą chorobą - Warroza. Poziom porażenia - niski.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ![](pictures/nosema_high.png)           | m.in. Szczegóły ula, mapa             | Ikona z wykrytą chorobą - Nosemoza. Poziom porażenia - wysoki.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
 #### Stan urządzeń Apisense
 
@@ -1001,11 +1038,11 @@ Ikony stanu urządzeń Apisense wskazują aktualny status pracy: jakość połą
 | Ikona                             | Występowanie                                     | Znaczenie                                                                                                                                                                               |
 | :-------------------------------- | :----------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![](pictures/LTE_high.png)        | kafelek z pasieką (zakładka Pasieki)             | Bardzo dobry poziom sygnału LTE urządzenia Apisense Hub. Żadna akcja nie jest wymagana.                                                                                                 |
-| ![](pictures/.png)                | kafelek z pasieką (zakładka Pasieki)             | Średni poziom sygnału LTE urządzenia Apisense Hub. Żadna akcja nie jest wymagana.                                                                                                       |
-| ![](pictures/LTE_low.png)         | kafelek z pasieką (zakładka Pasieki)             | Bardzo słaby poziom sygnału LTE urządzenia Apisense Hub. Urządzenie możne przestać się zgłaszać. W miarę możliwośći należy odpowiednio zmienić położenie urządzenia (Hub).              |
+| ![](pictures/LTE_medium.png)      | kafelek z pasieką (zakładka Pasieki)             | Średni poziom sygnału LTE urządzenia Apisense Hub. Żadna akcja nie jest wymagana.                                                                                                       |
+| ![](pictures/LTE_low.png)         | kafelek z pasieką (zakładka Pasieki)             | Bardzo słaby poziom sygnału LTE urządzenia Apisense Hub. Urządzenie może przestać się zgłaszać. W miarę możliwości należy odpowiednio zmienić położenie urządzenia (Hub).              |
 | ![](pictures/LTE_offline.png)     | kafelek z pasieką (zakładka Pasieki)             | Urządzenie Apisense Hub nie zgłasza się (tryb offline). Należy zweryfikować przyczynę stanu offline i podjąć odpowiednie kroki.                                                         |
 | ![](pictures/battery_high.png)    | kafelek z pasieką (zakładka Pasieki)             | Bardzo wysoki poziom baterii urządzenia Apisense Hub. Żadna akcja nie jest wymagana.                                                                                                    |
-| ![](pictures/.png)                | kafelek z pasieką (zakładka Pasieki)             | Średni poziom baterii urządzenia Apisense Hub.                                                                                                                                          |
+| ![](pictures/battery_medium.png)    | kafelek z pasieką (zakładka Pasieki)             | Średni poziom baterii urządzenia Apisense Hub.                                                                                                                                          |
 | ![](pictures/battery_low.png)     | kafelek z pasieką i ulem (zakładka Pasieki, Ule) | Bardzo słaby poziom baterii urządzenia (na kafelku z pasieką dotyczy Hub, na kafelku z ulem - Scale lub VitalSensor). Należy naładować (Hub) lub wymienić baterie (Scale, VitalSensor). |
 | ![](pictures/battery_offline.png) | kafelek z pasieką (zakładka Pasieki)             | Rozładowana bateria urządzenia Apisense Hub (tryb offline). Należy naładować urządzenie.                                                                                                |
 
@@ -1015,11 +1052,10 @@ Oznaczenia kolorystyczne ułatwiają szybkie rozpoznanie statusów, kategorii or
 
 | Ikona                                   | Występowanie                          | Znaczenie                                                                                                                                                                                           |
 | :-------------------------------------- | :------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](pictures/beehive_color.png)         | wnętrze ula (zakładka Szczegóły)      | Kolor tła ula oraz avatar (skrót nazwy ula) odpowiadają kolorowi przypisanemu do roku wychowu matki.                                                                                                |
+| ![](pictures/beehive_color.png)         | wnętrze ula (zakładka Szczegóły)      | Kolor tła ula wraz z ikoną (kolorowe kółeczko) odpowiadają kolorowi przypisanemu do roku wychowu matki.                                                                                                |
 | ![](pictures/add_task_button.png)       | różne widoki m.in. Notatki, Przeglądy | Kolor żółty w aplikacji oznacza potwierdzenie wyboru, możliwość wykonania jakiejś akcji - często widoczny na przyciskach.                                                                           |
 | ![](pictures/red_color.png)             | różne widoki m.in. Stan ula           | Kolor czerwony w aplikacji świadczy o wystąpieniu negatywnego zjawiska, przekroczeniu wartości oczekiwanych parametrów, powiadomieniach i ostrzeżeniach (nie dotyczy tła ula w zakładce Szczegóły). |
 | ![](pictures/state_beehive_healthy.png) | różne widoki m.in. kafelek z ulem     | Kolor zielony w aplikacji informuje, że wszystko jest w porządku, oznacza neutralność lub pozytywny efekt.                                                                                          |
-| ![](pictures/grey_item.png)             | różne widoki list i formularzy            | Wyszarzony element w aplikacji oznacza, że jest nieaktywny, nieaktualny lub czynność została ukończona.                                                                                             |
 
 #### Akcje
 
@@ -1027,12 +1063,12 @@ Ikony akcji umożliwiają wykonanie dostępnych operacji, takich jak dodawanie, 
 
 | Ikona                            | Występowanie                                     | Znaczenie                                                         |
 | :------------------------------- | :----------------------------------------------- | :---------------------------------------------------------------- |
-| ![](pictures/switch_disable.png) | różne widoki m.in. wykresy, dodawanie zadań itp. | Przełącznik - wybór nieaktywny.                                   |
-| ![](pictures/switch_enable.png)  | różne widoki m.in. wykresy, dodawanie zadań itp. | Przełącznik - wybór aktywny.                                      |
+| ![](pictures/switch_disable.png) | różne widoki m.in. wykresy   | Przełącznik - wybór nieaktywny.                                   |
+| ![](pictures/switch_enable.png)  | różne widoki m.in. wykresy   | Przełącznik - wybór aktywny.                                      |
 | ![](pictures/save_button.png)    | różne widoki m.in. dodawanie notatek itp.        | Potwierdź lub zapisz wybór.                                       |
 | ![](pictures/reject_button.png)  | różne widoki m.in. dodawanie notatek itp.        | Odrzuć wprowadzone dane/Nie zapisuj.                              |
-| ![](pictures/edit_item.png)      | m.in. listy, ustawienia, formularze         | Przycisk umożliwiający wprowadzanie zmian dla wybranego elementu. |
-| ![](pictures/remove_item.png)    | m.in. listy, ustawienia, formularze         | Przycisk umożliwiający usunięcie wybranego elementu.              |
+| ![](pictures/edit_item.png)      | m.in. edycja notatek         | Przycisk umożliwiający wprowadzanie zmian dla wybranego elementu. |
+| ![](pictures/remove_item.png)    | m.in. usuwanie notatek         | Przycisk umożliwiający usunięcie wybranego elementu.              |
 
 #### Nawigacja
 
@@ -1040,7 +1076,7 @@ Ikony nawigacyjne służą do poruszania się pomiędzy widokami i funkcjami apl
 
 | Ikona                           | Występowanie                                               | Znaczenie                                                                                                          |
 | :------------------------------ | :--------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
-| ![](pictures/logout.png)        | zakładka Pasieki (widok startowy) - prawy górny róg ekranu | Przycisk służący do wylogowania się z systemu.                                                                     |
+| ![](pictures/logout.png)        | różne widoki, m.in. zakładka Pasieki - prawy górny róg ekranu | Przycisk służący do wylogowania się z systemu.                                                                     |
 | ![](pictures/previous_view.png) | różne widoki - lewy górny róg ekranu                       | Przycisk służący do przejścia do poprzedniego widoku (przycisk Wstecz), np. z zakładki *Ule* do *Pasieki*.         |
 | ![](pictures/next_button.png)   | różne widoki m.in. potwierdzanie chorób, Dodaj przegląd    | Przycisk służący do przejścia do następnego widoku (przycisk Dalej), np. przejście do kolejnego pytania przeglądu. |
 
@@ -1054,7 +1090,7 @@ Dane prezentowane w systemie mogą być wyświetlane w formie **aktualnych warto
 
 <p style="text-align: center;">
   <img src="pictures/beehive_details_with_chart.png" width="200" alt="Widok Szczegóły ula - przykładowe wartości parametrów i wykres wagi" title="Widok Szczegóły ula - przykładowe wartości parametrów i wykres wagi">
-<br><strong>Rys. 82</strong> Widok Szczegóły ula - przykładowe wartości parametrów i wykres wagi</p>
+<br><strong>Rys. 89</strong> Widok Szczegóły ula - przykładowe wartości parametrów i wykres wagi</p>
 
 ### 1. Temperatura
 
@@ -1123,16 +1159,16 @@ Wykresy umożliwiają przejrzyste przedstawienie zmian poszczególnych parametr�
 
 #### 1.1 Jak wyświetlić wykres
 
-Aby wyświetlić wykresy poszczególnych parametrów dla wybranego ula (**Rys. 83**), należy przejść przez następującą ścieżkę w aplikacji:
+Aby wyświetlić wykresy poszczególnych parametrów dla wybranego ula (**Rys. 90**), należy przejść przez następującą ścieżkę w aplikacji:
 
 <p style="text-align: center;">
   <img src="pictures/beehive_details_with_chart.png" width="200" alt="Widok Szczegóły ula - przykładowe wartości parametrów i wykres wagi" title="Widok Szczegóły ula - przykładowe wartości parametrów i wykres wagi">
-<br><strong>Rys. 83</strong> Widok Szczegóły ula - przykładowe wartości parametrów i wykres wagi</p>
+<br><strong>Rys. 90</strong> Widok Szczegóły ula - przykładowe wartości parametrów i wykres wagi</p>
 
 - Z zakładki *Pasieki* (widok startowy widoczny zaraz po zalogowaniu się do aplikacji Apisense) przejdź do zakładki *Ule*. W tym celu kliknij kafelek z wybraną pasieką.
 - Z zakładki *Ule* przejdź do zakładki *Szczegóły*. Aby to zrobić kliknij w kafelek z wybranym ulem.
 - Upewnij się, że znajdujesz się w zakładce *Szczegóły* (podświetlone na dolnym menu), podzakładce *Stan ula* (podkreślone na górnym menu). Wykresy znajdują się w sekcjach *Waga* oraz *Warunki*.
-- Wykres zostanie wyświetlony (**Rys. 84**) po kliknięciu w dowolny nagłówek wybrany z wymienionych wyżej sekcji (np. Waga aktualna z sekcji *Waga*).
+- Wykres zostanie wyświetlony (**Rys. 90**) po kliknięciu w dowolny nagłówek wybrany z wymienionych wyżej sekcji (np. Waga aktualna z sekcji *Waga*).
 
 #### 1.2 Dostępne wykresy
 
@@ -1176,7 +1212,11 @@ Trendy umożliwiają analizę ogólnego kierunku zmian danego parametru w czasie
 
 #### 2.1 Jak wyświetlić trend
 
-Trendy dostępne są w tej samej sekcji, co wykresy poszczególnych parametrów. Aby je wyświetlić, należy wykonać poniższe kroki:
+Trendy dostępne są w tej samej sekcji, co wykresy poszczególnych parametrów (**Rys. 91**). Aby je wyświetlić, należy wykonać poniższe kroki:
+
+<p style="text-align: center;">
+  <img src="pictures/beehive_details_chart_with_trend.png" width="200" alt="Widok Szczegóły ula - wykres wagi wraz z naniesionym trendem" title="Widok Szczegóły ula - wykres wagi wraz z naniesionym trendem">
+<br><strong>Rys. 91</strong> Widok Szczegóły ula - wykres wagi wraz z naniesionym trendem</p>
 
 - Z zakładki *Pasieki* (widok startowy widoczny zaraz po zalogowaniu się do aplikacji Apisense) przejdź do zakładki *Ule*. W tym celu kliknij kafelek z wybraną pasieką.
 - Z zakładki *Ule* przejdź do zakładki *Szczegóły*. Aby to zrobić kliknij w kafelek z wybranym ulem.
@@ -1222,12 +1262,12 @@ Powiadomienia w aplikacji możesz znaleźć realizując poniższe kroki:
 
 - Z zakładki *Pasieki* (widok startowy widoczny zaraz po zalogowaniu się do aplikacji Apisense) przejdź do zakładki *Ule*. W tym celu kliknij kafelek z wybraną pasieką.
 - Z zakładki *Ule* przejdź do zakładki *Powiadomienia*. W tym celu kliknij ikonę z dzwonkiem znajdującą się w dolnym menu, podobnie jak zakładka *Ule*.
-- W rezultacie zostanie otwarty widok *Powiadomień*, z domyślnie wybraną zakładką *Problemy* (**Rys. 84**).
+- W rezultacie zostanie otwarty widok *Powiadomień*, z domyślnie wybraną zakładką *Problemy* (**Rys. 91**).
 - Oprócz zakładki *Problemy* możesz przejść również do zakładki *Techniczne*, wybierając odpowiednią opcję z górnego menu.
 
 #### 1.2 Kategorie powiadomień
 
-Powiadomienia w aplikacji są dostępne w zakładce *Powiadomienia*. Powiadomienia dzielą się na następujące kategorie, które odpowiadają poszczególnym zakładkom (**Rys. 84**):
+Powiadomienia w aplikacji są dostępne w zakładce *Powiadomienia*. Powiadomienia dzielą się na następujące kategorie, które odpowiadają poszczególnym zakładkom (**Rys. 91**):
 
 - **Problemy** – powiadomienia związane ze stanem zdrowia rodzin pszczelich, dotyczące wykrytych chorób takich jak Warroza wraz z zalecanym postępowaniem w celu zwalczenia konkretnej choroby.
 - **Techniczne** – powiadomienia dotyczące działania urządzeń monitorujących, np. niski poziom baterii lub brak zasięgu.
@@ -1235,7 +1275,7 @@ Powiadomienia w aplikacji są dostępne w zakładce *Powiadomienia*. Powiadomien
 <p style="text-align: center;">
   <img src="pictures/notifications_problems_details.png" width="200" alt="Zakładka Powiadomienia - przykładowe powiadomienia chorobowe w zakładce Problemy" title="Zakładka Powiadomienia - przykładowe powiadomienia chorobowe w zakładce Problemy">
   <img src="pictures/notifications_technical.png" width="200" alt="Zakładka Powiadomienia - przykładowe powiadomienia techniczne w zakładce Techniczne" title="Zakładka Powiadomienia - przykładowe powiadomienia techniczne w zakładce Techniczne">
-<br><strong>Rys. 84</strong> Zakładka Powiadomienia - przykładowe powiadomienia chorobowe i techniczne (zakładki Problemy i Techniczne)</p>
+<br><strong>Rys. 91</strong> Zakładka Powiadomienia - przykładowe powiadomienia chorobowe i techniczne (zakładki Problemy i Techniczne)</p>
 
 Nowe powiadomienia pojawiają się automatycznie na odpowiedniej liście w zależności od ich rodzaju. Nieodczytane komunikaty są wyświetlane pogrubioną czcionką, natomiast po ich otwarciu stają się lekko wyszarzone, co oznacza, że zostały już przeczytane.
 
@@ -1245,12 +1285,12 @@ Aby wyświetlić szczegóły powiadomienia, należy kliknąć jego nagłówek, c
 
 Asystent AI to funkcja wspierająca użytkownika w analizie sytuacji w pasiece oraz w interpretacji obserwowanych zjawisk. Na podstawie przekazanych informacji system generuje odpowiedzi i wskazówki, które mogą pomóc w podejmowaniu decyzji dotyczących prowadzenia pasieki.
 
-Z asystenta AI można korzystać poprzez zadawanie pytań w aplikacji (**Rys. 85**). Zapytanie może być przekazane w formie tekstu, a także uzupełnione zdjęciem, które pozwala systemowi lepiej zrozumieć problem.
+Z asystenta AI można korzystać poprzez zadawanie pytań w aplikacji (**Rys. 92**). Zapytanie może być przekazane w formie tekstu, a także uzupełnione zdjęciem, które pozwala systemowi lepiej zrozumieć problem.
 
 <p style="text-align: center;">
   <img src="pictures/apiary_beehives.png" width="200" alt="Zakładka Ule - przykładowa lista uli w pasiece" title="Zakładka Ule - przykładowa lista uli w pasiece">
   <img src="pictures/ai_assistant.png" width="200" alt="Zakładka Twój asystent - przykładowe pytanie ze zdjęciem" title="Zakładka Twój asystent - przykładowe pytanie ze zdjęciem">
-<br><strong>Rys. 85</strong> Zakładka Twój asystent - przykładowe pytanie ze zdjęciem zadane asystentowi AI</p>
+<br><strong>Rys. 92</strong> Zakładka Twój asystent - przykładowe pytanie ze zdjęciem zadane asystentowi AI</p>
 
 Po przesłaniu pytania asystent analizuje dostępne informacje i generuje odpowiedź zawierającą możliwe wyjaśnienia sytuacji lub sugestie dalszego postępowania.
 
@@ -1270,19 +1310,19 @@ Funkcja edycji danych użytkownika umożliwia aktualizację podstawowych informa
 
 Aby edytować dane użytkownika, należy:
 
-- W zakładce *Pasieki* (widok startowy aplikacji Apisense) kliknąć ikonę koła zębatego, znajdującą się w prawej górnej części ekranu. W rezultacie zostanie otwarty widok *Ustawienia konta* (**Rys. 86**).
+- W zakładce *Pasieki* (widok startowy aplikacji Apisense) kliknąć ikonę koła zębatego, znajdującą się w prawej górnej części ekranu. W rezultacie zostanie otwarty widok *Ustawienia konta* (**Rys. 93**).
 - Widok *Ustawienia konta* składa się z kilku sekcji: **Nazwa użytkownika**, **E-mail**, **Telefon komórkowy**, **Doświadczenie**, **Hasło** oraz **Język**. W każdej z nich prezentowane są aktualne dane użytkownika.
-- Aby zmienić zawartość wybranej sekcji, należy kliknąć jej nagłówek, co spowoduje otwarcie nowego widoku, w którym możliwa będzie edycja danych. Przykładowo, w przypadku zmiany hasła użytkownik zostanie poproszony o wprowadzenie nowego hasła oraz jego powtórzenie (**Rys. 86**).
+- Aby zmienić zawartość wybranej sekcji, należy kliknąć jej nagłówek, co spowoduje otwarcie nowego widoku, w którym możliwa będzie edycja danych. Przykładowo, w przypadku zmiany hasła użytkownik zostanie poproszony o wprowadzenie nowego hasła oraz jego powtórzenie (**Rys. 93**).
 - Po wprowadzeniu zmian należy je zapisać, klikając żółty przycisk znajdujący się w prawym dolnym rogu ekranu.
 
 <p style="text-align: center;">
   <img src="pictures/app_settings.png" width="200" alt="Ustawienia konta" title="Ustawienia konta">
   <img src="pictures/change_password.png" width="200" alt="Ustawienia konta - zmiana hasła" title="Ustawienia konta - zmiana hasła">
-<br><strong>Rys. 86</strong> Ustawienia konta - przykładowy widok ustawień oraz zmiana hasła</p>
+<br><strong>Rys. 93</strong> Ustawienia konta - przykładowy widok ustawień oraz zmiana hasła</p>
 
 #### 1.2 Usunięcie konta
 
-W dolnej części widoku *Ustawienia konta* (**Rys. 86**) dostępny jest również przycisk *Usuń konto*, który umożliwia trwałe usunięcie konta użytkownika.
+W dolnej części widoku *Ustawienia konta* (**Rys. 93**) dostępny jest również przycisk *Usuń konto*, który umożliwia trwałe usunięcie konta użytkownika.
 
 ______________________________________________________________________
 
@@ -1395,7 +1435,7 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 - **Dodawanie badania:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Z dolnego menu wybierz *Dodaj...*, następnie opcję dodania badania. Wybierz datę badania i rodzaj z listy rozwijanej, uzupełnij wymagane zdjęcia i pola (np. liczba roztoczy warrozy), zapisz żółtym przyciskiem. Lista zapisanych badań jest dostępna w *Szczegółach* ula: górne menu *Więcej* → *Badania*.
 
-    [Dodawanie badania](#7-dodawanie-badania)
+    [Dodawanie badania](#71-dodawanie-badania)
 
 ### 3. Panel główny i nawigacja
 
