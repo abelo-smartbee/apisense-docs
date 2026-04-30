@@ -32,6 +32,11 @@ plugins:
           nav:
             - Start: index.md
             - Opis systemu: overview/index.md
+            - Funkcje AI:
+                - Przegląd: ai/index.md
+                - Asystent AI: ai/assistant.md
+                - Tłumaczenia: ai/translation.md
+                - Możliwości i prywatność: ai/limits-privacy.md
             - Instrukcja aplikacji: manual/app-manual.md
             - Instrukcja konfiguracji: manual/configuration/index.md
             - FAQ: faq/index.md
@@ -43,6 +48,11 @@ plugins:
           nav:
             - Home: index.md
             - System Overview: overview/index.md
+            - AI Features:
+                - Overview: ai/index.md
+                - AI Assistant: ai/assistant.md
+                - Translation: ai/translation.md
+                - Capabilities & Privacy: ai/limits-privacy.md
             - App Manual: manual/app-manual.md
             - Configuration Manual: manual/configuration/index.md
             - FAQ: faq/index.md
@@ -58,6 +68,11 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Opis systemu: overview/index.md
+  - Funkcje AI:
+      - Przegląd: ai/index.md
+      - Asystent AI: ai/assistant.md
+      - Tłumaczenia: ai/translation.md
+      - Możliwości i prywatność: ai/limits-privacy.md
   - Instrukcja aplikacji: manual/app-manual.md
   - Instrukcja konfiguracji: manual/configuration/index.md
   - FAQ: faq/index.md
