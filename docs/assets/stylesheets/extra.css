@@ -164,7 +164,7 @@ html[lang="en"] .md-header__option .md-header__button::before {
 
 .yt-embed {
   aspect-ratio: 16 / 9;
-  max-width: 720px;
+  width: 100%;
   margin: 1.5rem auto;
   background: #000;
   border-radius: 0.5rem;
