@@ -1,4 +1,4 @@
-# Sugar roll na Varroa
+# Flotacja na Varroa
 
 Nieinwazyjna metoda terenowa wykrywania *Varroa destructor* w rodzinie pszczelej. Pszczoły obtacza się w cukrze pudrze w słoiku, roztocza odpadają od pszczół i są wypłukiwane do wody w celu policzenia. Pszczoły wracają do rodziny żywe.
 
@@ -60,6 +60,9 @@ Powtórz procedurę z tą samą próbką pszczół:
 - **Łączna liczba roztoczy** (suma z obu cykli)
 - Wielkość próbki (domyślnie 300 pszczół)
 - Data badania
+
+!!! note "Test wykonywany w programie sezonowym"
+    Ten sam test jest częścią programu **„Zdrowotność rodzin pszczelich, Wiosna 2026"** — patrz [Protokół 1: Varroa](../samples/protocol-1-varroa.md). Tam znajdziesz dokładne ścieżki raportowania w aplikacji (*dodaj → badanie → flotacja*) i kontekst wysyłki próbek.
 
 ## Bibliografia
 

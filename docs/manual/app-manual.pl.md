@@ -611,7 +611,7 @@ Gdy system Apisense Pro AI zgłosi zagrożenie (np. Nosemoza), w aplikacji pojaw
 <br><strong>Rys. 67</strong> Widok Zarejestruj próbkę</p>
 
 !!! tip "Jak wykonać badanie samodzielnie?"
-    Szczegółowe instrukcje pobierania próbek i wykonywania badań (mikroskopia *Nosema*, sugar roll na *Varroa*, kwestionariusz zdrowia rodziny) znajdziesz w sekcji [Badania](../procedures/index.md).
+    Szczegółowe instrukcje pobierania próbek i wykonywania badań (mikroskopia *Nosema*, flotacja na *Varroa*) znajdziesz w sekcji [Badania](../procedures/index.md).
 
 
 ### 7. Badania

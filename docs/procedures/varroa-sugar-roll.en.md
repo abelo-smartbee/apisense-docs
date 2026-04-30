@@ -61,6 +61,9 @@ Repeat the procedure with the same bee sample:
 - Sample size (300 bees by default)
 - Date of the test
 
+!!! note "Same test in the seasonal program"
+    This test is also part of the **"Honey bee colony health, Spring 2026"** program — see [Protocol 1: Varroa monitoring](../samples/protocol-1-varroa.md) for the exact app reporting paths (*add → test → flotation*) and sample shipping context.
+
 ## References
 
 1. Rinderer TE, De Guzman LI, Sylvester HA. *Reexamination of the accuracy of a detergent solution for varroa mite detection.* American Bee Journal. 2004;144(7):560–562.

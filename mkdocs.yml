@@ -45,7 +45,14 @@ plugins:
             - Badania:
                 - Przegląd: procedures/index.md
                 - Mikroskopia Nosema/Vairimorpha: procedures/nosema-microscopy.md
-                - Sugar roll na Varroa: procedures/varroa-sugar-roll.md
+                - Flotacja na Varroa: procedures/varroa-sugar-roll.md
+            - Próbki:
+                - Przegląd: samples/index.md
+                - "Protokół 1: Varroa": samples/protocol-1-varroa.md
+                - "Protokół 2: Żywe pszczoły": samples/protocol-2-live-bees.md
+                - "Protokół 3: Wycinek plastra": samples/protocol-3-brood-comb.md
+                - "Protokół 4: Martwe pszczoły": samples/protocol-4-dead-bees.md
+                - Przegląd rodziny: samples/colony-inspection.md
             - Do pobrania: downloads/index.md
             - FAQ: faq/index.md
         - locale: en
@@ -70,6 +77,13 @@ plugins:
                 - Overview: procedures/index.md
                 - Nosema/Vairimorpha microscopy: procedures/nosema-microscopy.md
                 - Varroa sugar roll: procedures/varroa-sugar-roll.md
+            - Samples:
+                - Overview: samples/index.md
+                - "Protocol 1: Varroa monitoring": samples/protocol-1-varroa.md
+                - "Protocol 2: Live bees": samples/protocol-2-live-bees.md
+                - "Protocol 3: Brood comb section": samples/protocol-3-brood-comb.md
+                - "Protocol 4: Dead bees": samples/protocol-4-dead-bees.md
+                - Colony inspection: samples/colony-inspection.md
             - Downloads: downloads/index.md
             - FAQ: faq/index.md
 
@@ -97,8 +111,14 @@ nav:
   - Badania:
       - Przegląd: procedures/index.md
       - Mikroskopia Nosema/Vairimorpha: procedures/nosema-microscopy.md
-      - Sugar roll na Varroa: procedures/varroa-sugar-roll.md
-      - Kwestionariusz zdrowia rodziny: procedures/health-questionnaire.md
+      - Flotacja na Varroa: procedures/varroa-sugar-roll.md
+  - Próbki:
+      - Przegląd: samples/index.md
+      - "Protokół 1: Varroa": samples/protocol-1-varroa.md
+      - "Protokół 2: Żywe pszczoły": samples/protocol-2-live-bees.md
+      - "Protokół 3: Wycinek plastra": samples/protocol-3-brood-comb.md
+      - "Protokół 4: Martwe pszczoły": samples/protocol-4-dead-bees.md
+      - Przegląd rodziny: samples/colony-inspection.md
   - Do pobrania: downloads/index.md
   - FAQ: faq/index.md
 
