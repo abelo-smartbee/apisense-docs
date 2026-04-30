@@ -58,7 +58,7 @@ Użyj **jednej** z poniższych opcji:
     Spory *Nosema* spp. są owalne z ciemnym, dobrze zarysowanym brzegiem (Rys. 1). Uważaj, aby nie pomylić ich z ziarnami pyłku, które są większe i idealnie okrągłe.
 
     <p style="text-align: center;">
-    <img src="pictures/nosema-spores-400x.jpeg" width="450" alt="Obraz mikroskopowy (400×) spor Nosema spp."><br>
+    <img src="../pictures/nosema-spores-400x.jpeg" width="450" alt="Obraz mikroskopowy (400×) spor Nosema spp."><br>
     <strong>Rys. 1</strong> Obraz mikroskopowy (400×) spor <em>Nosema</em> spp.
     </p>
 

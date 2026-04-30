@@ -58,7 +58,7 @@ Use **one** of the following:
     *Nosema* spp. spores are oval with a dark, well-defined edge (Fig. 1). Be careful not to confuse them with pollen grains, which are larger and perfectly round.
 
     <p style="text-align: center;">
-    <img src="pictures/nosema-spores-400x.jpeg" width="450" alt="Microscopic view (400×) of Nosema spp. spores"><br>
+    <img src="../pictures/nosema-spores-400x.jpeg" width="450" alt="Microscopic view (400×) of Nosema spp. spores"><br>
     <strong>Fig. 1</strong> Microscopic view (400×) of <em>Nosema</em> spp. spores
     </p>
 
