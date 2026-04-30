@@ -38,7 +38,11 @@ plugins:
                 - Możliwości i prywatność: ai/limits-privacy.md
             - Instrukcje:
                 - Aplikacja Apisense Pro AI: manual/app-manual.md
-                - Konfiguracja sprzętu: manual/configuration/index.md
+                - Konfiguracja sprzętu:
+                    - Przegląd: manual/configuration/index.md
+                    - Konfiguracja w skrócie: manual/configuration/quick-guide.md
+                    - Rozwiązywanie problemów: manual/configuration/troubleshooting.md
+                    - Dobre praktyki: manual/configuration/best-practices.md
             - FAQ: faq/index.md
         - locale: en
           name: EN
@@ -54,7 +58,11 @@ plugins:
                 - Capabilities & Privacy: ai/limits-privacy.md
             - Manuals:
                 - Apisense Pro AI app: manual/app-manual.md
-                - Hardware configuration: manual/configuration/index.md
+                - Hardware configuration:
+                    - Overview: manual/configuration/index.md
+                    - Quick Guide: manual/configuration/quick-guide.md
+                    - Troubleshooting: manual/configuration/troubleshooting.md
+                    - Best Practices: manual/configuration/best-practices.md
             - FAQ: faq/index.md
 
 markdown_extensions:
@@ -74,7 +82,11 @@ nav:
       - Możliwości i prywatność: ai/limits-privacy.md
   - Instrukcje:
       - Aplikacja Apisense Pro AI: manual/app-manual.md
-      - Konfiguracja sprzętu: manual/configuration/index.md
+      - Konfiguracja sprzętu:
+          - Przegląd: manual/configuration/index.md
+          - Konfiguracja w skrócie: manual/configuration/quick-guide.md
+          - Rozwiązywanie problemów: manual/configuration/troubleshooting.md
+          - Dobre praktyki: manual/configuration/best-practices.md
   - FAQ: faq/index.md
 
 extra_css:

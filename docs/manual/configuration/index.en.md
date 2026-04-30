@@ -1,26 +1,11 @@
 # Device Configuration Manual
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Purpose](#purpose)
-- [Prerequisites](#prerequisites)
-- [Apisense Kit Contents](#apisense-kit-contents)
-- [Registration / Login](#registration-login)
-- [Adding Devices to the System and First Start-up](#adding-devices-to-the-system-and-first-start-up)
-- [Device Installation](#device-installation)
-- [Verifying Device Operation](#verifying-device-operation)
-- [Troubleshooting](#troubleshooting)
-- [Quick Guide](#quick-guide)
-- [Best Practices](#best-practices)
-
----
-
 ## Introduction
 
 This manual walks you step by step through registration, adding devices to the system, and installing them. For a full description of the Apisense system, hardware, software, and key benefits see the [System Overview](../../overview/index.md).
 
-#### **Note:** Before installing any device included in the Apisense kit, complete the steps described in [Registration / Login](#registration-login) and [Adding Devices to the System and First Start-up](#adding-devices-to-the-system-and-first-start-up).
+!!! note "Note"
+    Before installing any device included in the Apisense kit, complete the steps described in [Registration / Login](#registration-login) and [Adding Devices to the System and First Start-up](#adding-devices-to-the-system-and-first-start-up).
 
 ---
 
@@ -93,7 +78,8 @@ Once logged in, you will see the app home screen (*Apiaries* tab), from which yo
 
 To access measurements from each device, you must start it up, add it to the system, and assign it to the correct apiary and hive. This is done by creating the apiary structure in the Apisense app and scanning the QR codes on the devices.
 
-#### Note: During the first device setup, the QR code stickers on each Apisense device will be required (see: [QR Code Stickers](#qr-stickers)). Have the devices with stickers ready and follow the instructions below.
+!!! note "Note"
+    During the first device setup, the QR code stickers on each Apisense device will be required (see: [QR Code Stickers](#qr-stickers)). Have the devices with stickers ready and follow the instructions below.
 
 ### 1. Creating an Apiary and Linking to the Hub
 
@@ -290,62 +276,6 @@ If measurement data has still not appeared in the Apisense app more than 2 hours
     - Wait approximately 10 seconds.
     - Reinsert the batteries, paying close attention to polarity.
 
-- **Find the issue in the troubleshooting list** — [Troubleshooting — Problem List](#1-problem-list-and-suggested-solutions) lists common problems and solutions. Check whether your issue is listed and apply the suggested solution.
+- **Find the issue in the troubleshooting list** — see [Troubleshooting](troubleshooting.md) for common problems and solutions. Check whether your issue is listed and apply the suggested solution.
 
 - **Contact technical support** — if data is still missing despite correct installation and configuration, contact Apisense support: **[bee@apisense.ai](mailto:bee@apisense.ai)**.
-
----
-
-## Troubleshooting
-
-### 1. Problem List and Suggested Solutions
-
-| No. | Problem | Device | Suggested Solution |
-| --- | ------- | ------ | ------------------ |
-| 1 | Device inactive (never checked in) | VitalSensor | 1. Check battery installation. Remove and reinsert the battery, observing polarity. 2. Check that the battery is not depleted; replace if so. **Note:** after correct battery installation the LED should light up. 3. If the problem persists or wires are damaged, contact Apisense support. |
-| 2 | Depleted / very low battery | VitalSensor | Replace the battery, observing polarity. **Note:** after correct battery installation the LED should light up. If the problem persists or wires are damaged, contact Apisense support. |
-| 3 | No communication with Apisense Hub despite correct power supply (no BLE range) | VitalSensor | Move the sensor closer to the Apisense Hub. Within 12 hours the sensor should appear in the system. If the problem persists, contact Apisense support. |
-| 4 | Weak BLE signal (below −90 dBm) | VitalSensor | Rotate the sensor in the frame or the entire frame by 180° (LED in sensor facing the Apisense Hub). Signal level should rise above −90 dBm. If the problem persists, consider relocating the Hub closer to the sensor, taking care not to degrade range for other devices. Contact Apisense support if needed. |
-| 5 | No communication with Apisense Hub (no BLE range) | Scale | Move the scale closer to the Apisense Hub. Within 12 hours the device should appear in the dashboard. If the problem persists, contact Apisense support. |
-| 6 | Weak BLE signal (below −90 dBm) | Scale | Ensure the scale electronics face the Apisense Hub. Consider relocating the Apisense Hub closer to the scale while maintaining range for other devices. Signal level should rise above −90 dBm. Contact Apisense support if needed. |
-| 7 | LED does not light up after pressing the Power button | Hub | Check power supply — if the Hub is not receiving enough light, consider changing its position (tilt, height) or use external power. Allow the Hub to charge (approx. 3 hours), then press the Power button — the LED should light up and within 90 minutes the Hub should appear in the dashboard. If the Hub has not been charged for an extended period, see problem "No charging". |
-| 8 | No charging | Hub | Check the connection of the solar panel to the Apisense Hub. Verify the panel position is correct (no shading, facing the sun, minimum 20° tilt). The dashboard should show the Hub charging. If the problem persists, contact Apisense support. |
-| 9 | Frequent "Apiary inactive" status | Hub | Point the Apisense Hub towards the sun at a minimum 20° tilt. Consider relocating; check for nearby metal objects or power lines. Ensure other devices do not lose BLE range. Contact Apisense support if the issue persists. |
-| 10 | Weak signal to devices (BLE below −90 dBm) | Hub | Rotate the Apisense Hub 90° on its vertical axis. After 12 hours check the signal level in the dashboard; repeat if needed. If the problem persists, consider relocating the Hub; check for obstacles (metal, power lines). Contact Apisense support if there is no improvement. |
-| 11 | Other problems | — | Contact Apisense: **[bee@apisense.ai](mailto:bee@apisense.ai)**. |
-
----
-
-## Quick Guide
-
-### 1. Key Steps
-
-1. **Prepare the kit** — check the box contents (Hub, Scale, VitalSensor, power supply, mounting hardware, QR code stickers).
-2. **Register in the system** — install the Apisense mobile app or go to [Apisense Pro AI](https://app.apisense.ai/) and create an account / log in.
-3. **Add your apiary and hive** — when creating the apiary, assign the Hub to it; when adding the hive, assign the Scale and VitalSensor. Assign devices by scanning the QR codes on their housings.
-4. **Start up the devices and check the LEDs** — expose the Hub to sunlight or connect a USB-C cable to a compatible power source. Insert two AA batteries into the Scale and VitalSensor, then check that the start-up indicator LEDs light up.
-5. **Wait for synchronisation** — after 2 hours check the first readings in the system. Verify data in the Apiaries, Hives, and Hive details tabs (the *No data* status will change to current readings).
-6. **Install the devices** — Hub facing the sun, 1–2 m above ground, tilted 30–50° from horizontal; Scale on stable ground within 35 m of the Hub; VitalSensor in the hive, upper corner of the central bee frame, within 35 m of the Hub.
-7. **Monitor regularly** — use 24/7 monitoring, alerts, and recommendations in the Apisense app.
-
-If problems arise, check batteries and connectivity, look up the issue in [Problem List and Suggested Solutions](#1-problem-list-and-suggested-solutions), or contact Apisense support at **[bee@apisense.ai](mailto:bee@apisense.ai)**.
-
-## Best Practices
-
-### 1. Do's and Don'ts for VitalSensor
-
-- Regularly check that the VitalSensor vents have not been sealed with wax by the bees — if so, clean them or replace the mesh with a new one.
-- Do not move the VitalSensor between frames after installation.
-- Try to keep the frame with the VitalSensor in the same position at the centre of the brood nest.
-- Do not move the frame with the VitalSensor and/or the VitalSensor itself between hives — this risks infecting other colonies with pathogens from the previous one.
-- Do not install more than one VitalSensor in a single hive.
-- Place the QR code label attached to the VitalSensor on the outer wall of the hive in which it is installed.
-- Do not submerge the entire VitalSensor in alcohol / caustic soda. You may use these substances to remove wax from the detached mesh insert only.
-- Do not place the frame with the VitalSensor in a honey extractor.
-- Do not expose the sensor to open flame.
-- Before removing a frame for honey harvesting / storage / transport, remove the sensor from the frame first.
-- Regularly check the battery level in the app for both sensors and the gateway.
-- Report any damage immediately to Apisense support ([bee@apisense.ai](mailto:bee@apisense.ai)).
-- Do not wash the sensor under running water.
-- Do not disinfect the sensor by submerging it (do not soak in alcohol, disinfectants, water, etc.).
-- Do not open, disassemble, unscrew, or modify the sensor in any way.
