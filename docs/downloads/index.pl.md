@@ -8,7 +8,7 @@ ______________________________________________________________________
 
 Rysunki montażowe z wymiarami — przydatne przy planowaniu instalacji oraz integracji z istniejącą infrastrukturą pasieki.
 
-- **Apisense Hub** — [rysunek techniczny (PDF)](files/Hub_Asm.pdf)
-- **Apisense VitalSensor** — [rysunek techniczny (PDF)](files/SENSOR_ASM.pdf)
+- **Apisense Hub** — <a href="files/Hub_Asm.pdf">rysunek techniczny (PDF)</a>
+- **Apisense VitalSensor** — <a href="files/SENSOR_ASM.pdf">rysunek techniczny (PDF)</a>
 
 <!-- TODO: dodać rysunek techniczny Apisense Scale -->

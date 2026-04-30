@@ -8,7 +8,7 @@ ______________________________________________________________________
 
 Assembly drawings with dimensions — useful for planning installation and integrating with your existing apiary setup.
 
-- **Apisense Hub** — [technical drawing (PDF)](files/Hub_Asm.pdf)
-- **Apisense VitalSensor** — [technical drawing (PDF)](files/SENSOR_ASM.pdf)
+- **Apisense Hub** — <a href="files/Hub_Asm.pdf">technical drawing (PDF)</a>
+- **Apisense VitalSensor** — <a href="files/SENSOR_ASM.pdf">technical drawing (PDF)</a>
 
 <!-- TODO: add Apisense Scale technical drawing -->
