@@ -1252,7 +1252,7 @@ System powiadomień w aplikacji informuje użytkownika o istotnych zdarzeniach w
 
 ### 1. Powiadomienia
 
-Powiadomienia generowane przez system są dostępne **w aplikacji** — w sekcji powiadomień można przeglądać komunikaty i zapoznać się z ich szczegółami. Powiadomienia push (poza aplikacją) nie są w tej wersji obsługiwane.
+Powiadomienia generowane przez system są dostępne **w aplikacji** — w sekcji powiadomień można przeglądać komunikaty i zapoznać się z ich szczegółami. 
 
 <a id="powiadoienia-gdzie"></a>
 
@@ -1285,12 +1285,12 @@ Aby wyświetlić szczegóły powiadomienia, należy kliknąć jego nagłówek, c
 
 Asystent AI to funkcja wspierająca użytkownika w analizie sytuacji w pasiece oraz w interpretacji obserwowanych zjawisk. Na podstawie przekazanych informacji system generuje odpowiedzi i wskazówki, które mogą pomóc w podejmowaniu decyzji dotyczących prowadzenia pasieki.
 
-Z asystenta AI można korzystać poprzez zadawanie pytań w aplikacji (**Rys. 92**). Zapytanie może być przekazane w formie tekstu, a także uzupełnione zdjęciem, które pozwala systemowi lepiej zrozumieć problem.
+Z asystenta AI można korzystać poprzez zadawanie pytań w aplikacji (**Rys. 92**).
 
 <p style="text-align: center;">
   <img src="pictures/apiary_beehives.png" width="200" alt="Zakładka Ule - przykładowa lista uli w pasiece" title="Zakładka Ule - przykładowa lista uli w pasiece">
-  <img src="pictures/ai_assistant.png" width="200" alt="Zakładka Twój asystent - przykładowe pytanie ze zdjęciem" title="Zakładka Twój asystent - przykładowe pytanie ze zdjęciem">
-<br><strong>Rys. 92</strong> Zakładka Twój asystent - przykładowe pytanie ze zdjęciem zadane asystentowi AI</p>
+  <img src="pictures/ai_assistant.png" width="200" alt="Zakładka Twój asystent - przykładowe pytanie" title="Zakładka Twój asystent - przykładowe pytanie">
+<br><strong>Rys. 92</strong> Zakładka Twój asystent - przykładowe pytanie zadane asystentowi AI</p>
 
 Po przesłaniu pytania asystent analizuje dostępne informacje i generuje odpowiedź zawierającą możliwe wyjaśnienia sytuacji lub sugestie dalszego postępowania.
 
@@ -1304,14 +1304,14 @@ Użytkownik może przeglądać oraz modyfikować swoje dane, zmieniać ustawieni
 
 ### 1. Edycja danych użytkownika
 
-Funkcja edycji danych użytkownika umożliwia aktualizację podstawowych informacji przypisanych do konta, takich jak nazwa użytkownika, dane kontaktowe czy hasło. Dzięki temu użytkownik może na bieżąco zarządzać swoimi danymi oraz dostosować ustawienia konta do własnych potrzeb.
+Funkcja edycji danych użytkownika umożliwia aktualizację podstawowych informacji przypisanych do konta, takich jak wyświetlana nazwa użytkownika, dane kontaktowe czy hasło. Dzięki temu użytkownik może na bieżąco zarządzać swoimi danymi oraz dostosować ustawienia konta do własnych potrzeb.
 
 #### 1.1 Edycja danych
 
 Aby edytować dane użytkownika, należy:
 
 - W zakładce *Pasieki* (widok startowy aplikacji Apisense) kliknąć ikonę koła zębatego, znajdującą się w prawej górnej części ekranu. W rezultacie zostanie otwarty widok *Ustawienia konta* (**Rys. 93**).
-- Widok *Ustawienia konta* składa się z kilku sekcji: **Nazwa użytkownika**, **E-mail**, **Telefon komórkowy**, **Doświadczenie**, **Hasło** oraz **Język**. W każdej z nich prezentowane są aktualne dane użytkownika.
+- Widok *Ustawienia konta* składa się z kilku sekcji: **Wyświetlana nazwa**, **E-mail**, **Telefon komórkowy**, **Doświadczenie**, **Hasło** oraz **Język**. W każdej z nich prezentowane są aktualne dane użytkownika.
 - Aby zmienić zawartość wybranej sekcji, należy kliknąć jej nagłówek, co spowoduje otwarcie nowego widoku, w którym możliwa będzie edycja danych. Przykładowo, w przypadku zmiany hasła użytkownik zostanie poproszony o wprowadzenie nowego hasła oraz jego powtórzenie (**Rys. 93**).
 - Po wprowadzeniu zmian należy je zapisać, klikając żółty przycisk znajdujący się w prawym dolnym rogu ekranu.
 
@@ -1347,7 +1347,7 @@ ______________________________________________________________________
 ### 5. Aktualizacje
 
 - Aktualizuj aplikację mobilną do najnowszej wersji (Google Play / App Store), aby mieć dostęp do ulepszeń i nowych funkcji.
-- Aktualizacje systemu operacyjnego urządzenia również wpływają na stabilność działania aplikacji i połączenia z urządzeniami.
+- Aktualizacje systemu operacyjnego urządzenia również wpływają na stabilność działania aplikacji.
 
 ______________________________________________________________________
 
@@ -1357,17 +1357,13 @@ ______________________________________________________________________
 
 #### 1.1 Brak danych w aplikacji
 
-**Rozwiązanie:** upewnij się, że urządzenia (Hub, Scale, VitalSensor) są włączone, w zasięgu BLE (do ok. 35 m od Hub) i że minęło do ok. 1 godziny od pierwszego uruchomienia. Sprawdź baterie i zasilanie Hub (panel PV lub sieć). Szczegółowa lista problemów i rozwiązań związanych z komunikacją urządzeń znajduje się w **Instrukcji konfiguracji urządzeń** (rozdział Rozwiązywanie problemów).
+**Rozwiązanie:** upewnij się, że urządzenia (Hub, Scale, VitalSensor) są włączone, w zasięgu BLE (do ok. 35 m od Hub) i że minęło do ok. 2 godzin od pierwszego uruchomienia. Sprawdź baterie i zasilanie Hub (panel PV lub sieć). Szczegółowa lista problemów i rozwiązań związanych z komunikacją urządzeń znajduje się w **Instrukcji konfiguracji urządzeń** (rozdział Rozwiązywanie problemów).
 
 #### 1.2 Nie mogę się zalogować
 
 **Rozwiązanie:** sprawdź poprawność wprowadzonej nazwy użytkownika i hasła. Jeśli zapomniałeś hasła skontaktuj się z z pomocą Apisense: **bee@apisense.ai**.
 
-#### 1.3 Powiadomienia nie dochodzą
-
-**Rozwiązanie:** komunikaty o zdarzeniach są dostępne w aplikacji w zakładce *Powiadomienia* (oraz w widokach pasieki i ula). Powiadomienia push spoza aplikacji nie są w tej wersji obsługiwane — jeśli oczekujesz alertów na ekranie blokady, sprawdź w przyszłych wersjach aplikacji lub skontaktuj się z pomocą Apisense.
-
-#### 1.4 Inne problemy
+#### 1.3 Inne problemy
 
 **Rozwiązanie:** skontaktuj się z pomocą techniczną Apisense: **bee@apisense.ai**.
 
@@ -1381,113 +1377,115 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 - **Rejestracja:** Pobierz aplikację mobilną Apisense lub wejdź na stronę internetową systemu. Wybierz *Załóż konto*, wypełnij dane (nazwa użytkownika, e-mail, telefon), utwórz hasło spełniające wymagania i kliknij *Zarejestruj się*.
 
-    [Wideo](https://www.youtube.com/shorts/sYDT5N7eUi8), [Rejestracja](#1-rejestracja)
+> [Wideo](https://www.youtube.com/shorts/sYDT5N7eUi8), [Rejestracja](#1-rejestracja)
 
 - **Logowanie:** Uruchom aplikację lub stronę internetową, w widoku *Zaloguj się* wpisz nazwę użytkownika i hasło, następnie kliknij *Zaloguj się*.
 
-    [Logowanie](#2-logowanie)
+> [Logowanie](#2-logowanie)
 
 ### 2. Zarządzanie pasieką
 
 - **Dodawanie pasieki:** W zakładce *Pasieki* wybierz *Dodaj pasiekę* z dolnego menu. W widoku *Dodaj pasiekę* uzupełnij nazwę, skrót, zeskanuj kod QR z Apisense Hub i zapisz.
 
-    [Wideo](https://www.youtube.com/shorts/wJrFummpo7Y), [Dodawanie pasieki](#11-dodawanie-pasieki)
+> [Wideo](https://www.youtube.com/shorts/wJrFummpo7Y), [Dodawanie pasieki](#11-dodawanie-pasieki)
 
 - **Edycja pasieki:** Kliknij kafelek wybranej pasieki. Kliknij ikonę zębatki będąc w zakładce *Ule*. W widoku *Ustawienia pasieki* kliknij nagłówek sekcji, dla której chcesz zedytować dane. Zmień wartości pól i kliknij zapisz (żółty przycisk).
 
-    [Edycja pasieki](#12-edycja-pasieki)
+> [Edycja pasieki](#12-edycja-pasieki)
 
 - **Usuwanie pasieki:** Kliknij kafelek wybranej pasieki. Kliknij ikonę zębatki będąc w zakładce *Ule*. W widoku *Ustawienia pasieki* kliknij przycisk *Usuń pasiekę*.
 
-    [Usuwanie pasieki](#13-usuwanie-pasieki)
+> [Usuwanie pasieki](#13-usuwanie-pasieki)
 
 - **Dodawanie ula:** Kliknij kafelek wybranej pasieki. Wybierz *Dodaj…* → *Dodaj ul* z dolnego menu. Wypełnij dane w sekcji *Szczegóły ula*, *Informacje o matce pszczelej* oraz zeskanuj kody QR z urządzeń Scale i VitalSensor. Kliknij żółty przycisk Zapisz.
 
-    [Wideo](https://www.youtube.com/shorts/L_XWlMFRbbE), [Dodawanie ula](#21-dodawanie-ula)
+> [Wideo](https://www.youtube.com/shorts/L_XWlMFRbbE), [Dodawanie ula](#21-dodawanie-ula)
 
 - **Edycja ula:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Kliknij ikonę zębatki będąc w zakładce *Szczegóły*. W widoku *Ustawienia ula* kliknij nagłówek sekcji, dla której chcesz zedytować dane. Zmień wartości pól i kliknij zapisz (żółty przycisk).
 
-    [Edycja ula](#22-edycja-ula)
+> [Edycja ula](#22-edycja-ula)
 
 - **Usuwanie ula:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Kliknij ikonę zębatki będąc w zakładce *Szczegóły*. W widoku *Ustawienia ula* kliknij przycisk *Usuń ul*.
 
-    [Usuwanie ula](#23-usuwanie-ula)
+> [Usuwanie ula](#23-usuwanie-ula)
 
-- **Dodawanie przeglądów:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Wybierz *Dodaj...* -> *Przegląd* z dolnego menu. Odpowiedz na pytania. Żółta strzałka w prawo umożliwia przejście do następnego pytania. Dodaj zdjęcia jeśli chcesz (*+*). Kliknij *Zakończ przegląd* (żółty przycisk w ostatnim oknie przeglądu) by zapisać.
+- **Dodawanie przeglądów:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Wybierz *Dodaj...* -> *Przegląd* z dolnego menu. Załącz łącznie 4 wymagane zdjęcia ramek. Odpowiedz na pytania. Żółta strzałka w prawo umożliwia przejście do następnego pytania. Kliknij *Zakończ przegląd* (żółty przycisk w ostatnim oknie przeglądu) by zapisać.
 
-    [Wideo](https://www.youtube.com/shorts/1kHqvSh838o), [Dodawanie przeglądów](#3-dodawanie-przegl%C4%85d%C3%B3w)
+> [Wideo](https://www.youtube.com/shorts/1kHqvSh838o), [Dodawanie przeglądów](#3-dodawanie-przegl%C4%85d%C3%B3w)
 
 - **Dodawanie notatek:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Wybierz *Dodaj...* -> *Notatkę* z dolnego menu. Wprowadź zawartość notatki (tekst lub nagraj notatkę głosową, możesz dodać też zdjęcia lub nagrania (*+*)). Zapisz notatkę (żółty przycisk).
 
-    [Wideo — notatka tekstowa](https://www.youtube.com/shorts/nZdzxrNIyZA), [Wideo — notatka audio](https://www.youtube.com/shorts/_QLzIfwcRMs), [Notatki](#4-notatki)
+> [Wideo — notatka tekstowa](https://www.youtube.com/shorts/nZdzxrNIyZA)
+> [Wideo — notatka audio](https://www.youtube.com/shorts/_QLzIfwcRMs) 
+> [Notatki](#4-notatki)
 
 - **Potwierdzanie chorób z poziomu pasieki:** Kliknij kafelek wybranej pasieki. Wybierz *Powiadomienia* z dolnego menu. W zakładce *Problemy* kliknij w wybrany wiersz z chorobą, aby rozwinąć szczegóły. Kliknij przycisk *Odpowiedz na kilka pytań*. Udziel odpowiedzi na pytania. Aby przejść do kolejnego kliknij żółtą strzałkę w prawo. Na koniec kliknij *Zapisz*.
 
-    [Wideo](https://www.youtube.com/shorts/iGNXm9qu8X8), [Potwierdzanie chorób](#5-potwierdzanie-chor%C3%B3b)
+> [Wideo](https://www.youtube.com/shorts/iGNXm9qu8X8), [Potwierdzanie chorób](#5-potwierdzanie-chor%C3%B3b)
 
 - **Potwierdzanie chorób z poziomu ula:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Wybierz *Powiadomienia* z dolnego menu. W zakładce *Problemy* kliknij w wybrany wiersz z chorobą, aby rozwinąć szczegóły. Kliknij przycisk *Odpowiedz na kilka pytań*. Udziel odpowiedzi na pytania. Aby przejść do kolejnego kliknij żółtą strzałkę w prawo. Na koniec kliknij *Zapisz*.
 
-    [Wideo](https://www.youtube.com/shorts/iGNXm9qu8X8), [Potwierdzanie chorób](#5-potwierdzanie-chor%C3%B3b)
+> [Wideo](https://www.youtube.com/shorts/iGNXm9qu8X8), [Potwierdzanie chorób](#5-potwierdzanie-chor%C3%B3b)
 
-- **Rejestrowanie próbki:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Wybierz *Dodaj...* -> *Zarejestruj próbkę* z dolnego menu. Wybierz rodzaj badania. Zapisz *Kod badania* na próbcę i wyślij do Apisense.
+- **Rejestrowanie próbki:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Wybierz *Dodaj...* -> *Zarejestruj próbkę* z dolnego menu. Wybierz datę pobrania próbki i rodzaj badania. Kliknij przycisk *Wygeneruj kod*. Zapisz *Kod badania* na próbce i wyślij do Apisense. (Uwaga: opcja Zarejestruj próbkę jest dostępna tylko w ulu z przypisanym urządzeniem VitalSensor).
 
-    [Wideo](https://www.youtube.com/shorts/jqS9rvhd-X0), [Rejestrowanie próbki](#6-rejestrowanie-pr%C3%B3bki)
+> [Wideo](https://www.youtube.com/shorts/jqS9rvhd-X0), [Rejestrowanie próbki](#6-rejestrowanie-pr%C3%B3bki)
 
-- **Dodawanie badania:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Z dolnego menu wybierz *Dodaj...*, następnie opcję dodania badania. Wybierz datę badania i rodzaj z listy rozwijanej, uzupełnij wymagane zdjęcia i pola (np. liczba roztoczy warrozy), zapisz żółtym przyciskiem. Lista zapisanych badań jest dostępna w *Szczegółach* ula: górne menu *Więcej* → *Badania*.
+- **Dodawanie badania:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Z dolnego menu wybierz *Dodaj... -> Badanie*. Wybierz datę i rodzaj badania z listy rozwijanej, uzupełnij wymagane zdjęcia i pola (np. liczba roztoczy warrozy), następnie zapisz żółtym przyciskiem.
 
-    [Dodawanie badania](#71-dodawanie-badania)
+> [Dodawanie badania](#71-dodawanie-badania)
 
 ### 3. Panel główny i nawigacja
 
 - **Lista pasiek (zakładka Pasieki):** Widok startowy po zalogowaniu się do aplikacji Apisense - kafelki pasiek z podstawowymi informacjami. Kliknij pasiekę, aby przejść do listy uli.
 
-    [Wideo](https://www.youtube.com/shorts/wJrFummpo7Y), [Omówienie listy pasiek (zakładka Pasieki)](#1-om%C3%B3wienie-listy-pasiek-zak%C5%82adka-pasieki)
+> [Wideo](https://www.youtube.com/shorts/wJrFummpo7Y), [Omówienie listy pasiek (zakładka Pasieki)](#1-om%C3%B3wienie-listy-pasiek-zak%C5%82adka-pasieki)
 
 - **Mapa pasiek:** Po zalogowaniu do aplikacji, z dolnego menu wybierz *Mapa*, aby zobaczyć lokalizacje pasiek. Możesz filtrować widok według problemów (np. Warroza).
 
-    [Omówienie mapy pasiek (zakładka Mapa)](#2-om%C3%B3wienie-mapy-pasiek-zak%C5%82adka-mapa)
+> [Omówienie mapy pasiek (zakładka Mapa)](#2-om%C3%B3wienie-mapy-pasiek-zak%C5%82adka-mapa)
 
 - **Lista uli (zakładka Ule):** Kliknij kafelek wybranej pasieki. W rezultacie pojawią się wszystkie ule przypisane do tej pasieki. Widok *Ule* prezentuje listę uli; kliknij wybrany ul, aby przejść do szczegółów.
 
-    [Wideo](https://www.youtube.com/shorts/L_XWlMFRbbE), [Omówienie listy uli (zakładka Ule)](#3-om%C3%B3wienie-listy-uli-zak%C5%82adka-ule)
+> [Wideo](https://www.youtube.com/shorts/L_XWlMFRbbE), [Omówienie listy uli (zakładka Ule)](#3-om%C3%B3wienie-listy-uli-zak%C5%82adka-ule)
 
-- **Zawartość ula (zakładka Szczegóły):** Tu sprawdzisz *Stan ula*, przeglądy, notatki oraz listę badań (*Więcej* → *Badania*). Możesz wyświetlić również wykresy poszczególnych parametrów.
+- **Zawartość ula (zakładka Szczegóły):** Tu sprawdzisz *Stan ula*, zapisane przeglądy, notatki oraz listę badań i próbek. Możesz wyświetlić również wykresy poszczególnych parametrów np. Przybytek miodu.
 
-    [Omówienie zawartości ula (zakładka Szczegóły)](#4-om%C3%B3wienie-zawarto%C5%9Bci-ula-zak%C5%82adka-szczeg%C3%B3%C5%82y)
+> [Omówienie zawartości ula (zakładka Szczegóły)](#4-om%C3%B3wienie-zawarto%C5%9Bci-ula-zak%C5%82adka-szczeg%C3%B3%C5%82y)
 
 - **Ustawienia pasieki i ula:** Ikona zębatki w widoku pasieki (zakładka Ule) lub ula (zakładka Szczegóły) prowadzi do ustawień. Możesz tu edytować informacje o pasiece lub ulu.
 
-    [Omówienie ustawień pasieki](#5-om%C3%B3wienie-ustawie%C4%84-pasieki), [Omówienie ustawień ula](#6-om%C3%B3wienie-ustawie%C4%84-ula)
+> [Omówienie ustawień pasieki](#5-om%C3%B3wienie-ustawie%C4%84-pasieki), [Omówienie ustawień ula](#6-om%C3%B3wienie-ustawie%C4%84-ula)
 
 ### 4. Monitorowanie i analiza danych
 
 - **Parametry (temperatura, wilgotność, ciśnienie, waga, przybytek miodu):** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Bieżące wartości są widoczne w zakładce *Szczegóły* ula, podzakładka *Stan ula*, w sekcjach *Waga*, *Warunki*.
 
-    [Monitorowanie parametrów](#monitorowanie-parametr%C3%B3w)
+> [Monitorowanie parametrów](#monitorowanie-parametr%C3%B3w)
 
 - **Wykresy:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. W zakładce *Szczegóły* -> *Stan ula* rozwiń sekcję *Waga* lub *Warunki* i kliknij w wybrany parametr, aby zobaczyć wykres w wybranym przedziale czasowym (24 h, 7 dni, 1–6 miesięcy).
 
-    [Wizualizacja danych na wykresach](#1-wizualizacja-danych-na-wykresach)
+> [Wizualizacja danych na wykresach](#1-wizualizacja-danych-na-wykresach)
 
 - **Trendy:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. W zakładce *Szczegóły* -> *Stan ula* rozwiń sekcję *Waga* lub *Warunki* i kliknij w wybrany parametr, aby wyświetlić wykres. Na ekranie wykresu włącz przełącznik *Pokaż trend*.
 
-    [Trendy](#2-trendy)
+> [Trendy](#2-trendy)
 
 ### 5. Alarmy, powiadomienia i asystent AI
 
 - **Powiadomienia:** Kliknij kafelek wybranej pasieki. Wybierz zakładkę *Powiadomienia* z dolnego menu. Dostępne są kategorie: *Problemy* (m.in. choroby) oraz *Techniczne* (urządzenia, łączność).
 
-    [Wideo](https://www.youtube.com/shorts/iGNXm9qu8X8), [Powiadomienia](#1-powiadomienia)
+> [Powiadomienia](#1-powiadomienia)
 
-- **Twój asystent AI:** Z dolnego menu wybierz *Twój asystent* (dostęp z widoków *Pasieki*, *Ule*, *Szczegóły*), wpisz pytanie (możesz dołączyć zdjęcie). Asystent przeanalizuje dane i udzieli odpowiedzi.
+- **Twój asystent AI:** Z dolnego menu wybierz *Twój asystent* (dostęp z widoków *Pasieki*, *Ule*, *Szczegóły*), następnie wpisz pytanie i wyślij do asystenta. Asystent przeanalizuje dane i udzieli odpowiedzi.
 
-    [Twój asystent AI](#2-tw%C3%B3j-asystent-ai)
+> [Twój asystent AI](#2-tw%C3%B3j-asystent-ai)
 
 ### 6. Konto
 
 - **Edycja danych użytkownika:** W widoku startowym *Pasieki* kliknij ikonę zębatki. Możesz zmienić nazwę, e-mail, telefon, hasło oraz język. Z tego miejsca możesz też usunąć konto.
 
-    [Wideo](https://www.youtube.com/shorts/sYDT5N7eUi8), [Edycja danych użytkownika](#1-edycja-danych-u%C5%BCytkownika)
+> [Edycja danych użytkownika](#1-edycja-danych-u%C5%BCytkownika)
 
 ______________________________________________________________________
 
