@@ -1,12 +1,12 @@
-# Asystent AI
+# Asystent — pełny opis
 
-Asystent AI to **Twój cyfrowy pomocnik w pasiece** — zadasz pytanie, dostaniesz odpowiedź. Działa w aplikacji Apisense Pro AI (mobilnej i w przeglądarce) pod zakładką **Twój asystent** w dolnym menu.
+Asystent to **Twój cyfrowy pomocnik w pasiece** — zadasz pytanie, dostaniesz odpowiedź. Działa w aplikacji Apisense Pro AI (mobilnej i w przeglądarce) pod zakładką **Twój asystent** w dolnym menu.
 
 Asystent zna Twoje pasieki, ule, urządzenia, kalendarz przeglądów i pogodę nad ulami. Potrafi też odpowiadać na pytania o pszczelarstwo i podpowiadać, jak coś zrobić w aplikacji.
 
 ______________________________________________________________________
 
-## 1. Po co Ci Asystent AI
+## 1. Po co Ci Asystent
 
 W codziennej pracy w pasiece pojawiają się pytania, na które trudno szybko znaleźć odpowiedź:
 
@@ -22,7 +22,7 @@ ______________________________________________________________________
 
 ## 1a. Asystent tłumaczy techniczne dane z czujników
 
-Twój ul przesyła do Apisense dziesiątki odczytów dziennie: masa, temperatura, wilgotność, ciśnienie, status połączenia, poziom baterii. Surowe liczby same w sobie niewiele mówią — trzeba znać kontekst, normy i trendy. Asystent AI bierze te dane i **przekłada je na zwięzłą diagnozę po polsku**.
+Twój ul przesyła do Apisense dziesiątki odczytów dziennie: masa, temperatura, wilgotność, ciśnienie, status połączenia, poziom baterii. Surowe liczby same w sobie niewiele mówią — trzeba znać kontekst, normy i trendy. Asystent bierze te dane i **przekłada je na zwięzłą diagnozę po polsku**.
 
 !!! example "Przykład — surowe dane → zrozumiała odpowiedź"
     **Surowe dane** w bazie Apisense (czego pszczelarz na co dzień nie ogląda):
@@ -212,7 +212,7 @@ Im konkretniej zapytasz, tym konkretniej dostaniesz odpowiedź. Kilka prostych z
 
 ______________________________________________________________________
 
-## 7. Kiedy AI nie zna odpowiedzi
+## 7. Kiedy Asystent nie zna odpowiedzi
 
 Asystent jest pomocny, ale nie wszechwiedzący. W kilku sytuacjach uczciwie powie *„nie wiem"* zamiast zgadywać:
 

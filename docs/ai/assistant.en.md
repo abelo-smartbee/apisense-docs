@@ -1,12 +1,12 @@
-# AI Assistant
+# Assistant — full description
 
-The AI Assistant is **your digital helper in the apiary** — ask a question, get an answer. It works in the Apisense Pro AI app (mobile and browser) under the **Your assistant** tab in the bottom menu.
+The Assistant is **your digital helper in the apiary** — ask a question, get an answer. It works in the Apisense Pro AI app (mobile and browser) under the **Your assistant** tab in the bottom menu.
 
 The Assistant knows your apiaries, hives, devices, inspection calendar, and the weather above your hives. It also answers questions about beekeeping and shows you how to do things in the app.
 
 ______________________________________________________________________
 
-## 1. Why you want the AI Assistant
+## 1. Why you want the Assistant
 
 In day-to-day apiary work, you keep running into questions that are slow to answer:
 
@@ -22,7 +22,7 @@ ______________________________________________________________________
 
 ## 1a. The Assistant translates technical sensor data
 
-Your hive sends Apisense dozens of readings every day: mass, temperature, humidity, pressure, connection status, battery level. Raw numbers on their own do not say much — you need context, baselines, and trends. The AI Assistant takes that data and **turns it into a concise diagnosis in plain language**.
+Your hive sends Apisense dozens of readings every day: mass, temperature, humidity, pressure, connection status, battery level. Raw numbers on their own do not say much — you need context, baselines, and trends. The Assistant takes that data and **turns it into a concise diagnosis in plain language**.
 
 !!! example "Example — raw data → readable answer"
     **Raw data** in the Apisense database (which the beekeeper does not look at every day):
@@ -212,7 +212,7 @@ The more concrete the question, the more concrete the answer. A few simple rules
 
 ______________________________________________________________________
 
-## 7. When the AI does not know the answer
+## 7. When the Assistant does not know the answer
 
 The Assistant is helpful, but not all-knowing. In a handful of situations it will honestly say *"I don't know"* instead of guessing:
 

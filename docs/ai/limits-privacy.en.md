@@ -1,12 +1,12 @@
 # Capabilities & Privacy
 
-The AI Assistant is a powerful tool, but it has clear boundaries. This page brings together the information about **what AI in Apisense can do**, **what it will not do**, and **how we protect your data**.
+The Assistant is a powerful tool, but it has clear boundaries. This page brings together the information about **what the Assistant in Apisense can do**, **what it will not do**, and **how we protect your data**.
 
 ______________________________________________________________________
 
-## 1. AI is a helper, not a replacement for the beekeeper
+## 1. The Assistant is a helper, not a replacement for the beekeeper
 
-The AI Assistant **supports** your decisions — it does not make them for you. The beekeeper's experience, hands-on apiary observation, and veterinary knowledge are irreplaceable. AI:
+The Assistant **supports** your decisions — it does not make them for you. The beekeeper's experience, hands-on apiary observation, and veterinary knowledge are irreplaceable. The Assistant:
 
 - helps you **find information faster** (device status, weather, calendar);
 - **summarises** scattered data in the app;
@@ -16,7 +16,7 @@ Decisions about treatments, medication, and apiary interventions are always your
 
 ______________________________________________________________________
 
-## 2. AI works on text only
+## 2. The Assistant works on text only
 
 The Assistant **understands text** — both your questions and the data in the app. It will not process:
 
@@ -29,9 +29,9 @@ If you want the Assistant to comment on a photo or recording — describe it in 
 
 ______________________________________________________________________
 
-## 3. AI does not change data in your apiary
+## 3. The Assistant does not change data in your apiary
 
-The AI Assistant has **read-only** access to your data. This means the Assistant:
+The Assistant has **read-only** access to your data. This means the Assistant:
 
 - **will not delete** a hive, an apiary, or a note;
 - **will not add** an inspection, an alert, or a treatment;
@@ -43,11 +43,11 @@ This is a deliberate design choice: it protects you from a situation in which an
 
 ______________________________________________________________________
 
-## 4. What the AI sees, and what it does not
+## 4. What the Assistant sees, and what it does not
 
 The data the Assistant has access to is limited by **the same access you have in the app**. If you cannot see an apiary in the app — neither can the Assistant.
 
-| Data | Does AI see it? |
+| Data | Does the Assistant see it? |
 |---|---|
 | Your own apiaries, hives, devices | **Yes** |
 | Apiaries shared with you by another user | **Yes**, within your permissions |
@@ -62,8 +62,8 @@ ______________________________________________________________________
 
 - **Knowledge sources stay on the server side.** When the Assistant uses the Apisense knowledge base, fragments of that base are not exposed to other users or to third-party companies.
 - **Your conversations are saved** so you can come back to them. You can **delete a conversation** or wipe its history at any time from the settings.
-- **Apisense data is not used to train third-party models.** Your notes, measurements, and conversations do not feed public AI models.
-- **Communication is encrypted** — between the app and the server, and between Apisense servers and the cloud services powering the AI.
+- **Apisense data is not used to train third-party models.** Your notes, measurements, and conversations do not feed public language models from other companies.
+- **Communication is encrypted** — between the app and the server, and between Apisense servers and the cloud services powering the Assistant.
 - **The full privacy policy** is available from the operator of the Apisense Pro AI app.
 
 ______________________________________________________________________
@@ -80,9 +80,9 @@ If you care about an **exact number** (for example, "how many hives") — the As
 
 ______________________________________________________________________
 
-## 7. What to do if the AI gives a wrong answer
+## 7. What to do if the Assistant gives a wrong answer
 
-AI is not infallible. Sometimes it can misinterpret a question, miss context, or return an imprecise answer. What you can do:
+The Assistant is not infallible. Sometimes it can misinterpret a question, miss context, or return an imprecise answer. What you can do:
 
 1. **Verify key data in the app** — if the Assistant says a gateway is offline, take a quick look at the devices tab yourself. The Assistant is meant not to make mistakes, but you know your apiary best.
 2. **Refine the question** — often it is enough to add an apiary name, a date, or a specific detail ("Only from the last week").

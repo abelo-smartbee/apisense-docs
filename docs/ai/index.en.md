@@ -1,6 +1,6 @@
-# AI Features
+# Assistant
 
-AI in Apisense is not a generic chatbot from the internet. It is a **dedicated assistant integrated with your entire Apisense system** — it reads live data from the IoT sensors in your hives, knows every note and every inspection you have entered in the app, pulls in the weather forecast for your apiary location, and is grounded in the official Apisense user manuals, configuration guides, and the videos on our YouTube channel.
+The Assistant in Apisense is not a generic chatbot from the internet. It is a **dedicated assistant integrated with your entire Apisense system** — it reads live data from the IoT sensors in your hives, knows every note and every inspection you have entered in the app, pulls in the weather forecast for your apiary location, and is grounded in the official Apisense user manuals, configuration guides, and the videos on our YouTube channel.
 
 In other words: the Assistant **translates raw technical data from the IoT system into simple answers in plain language**. Instead of scanning a table of scale readings from the last 24 hours, you ask "is anything worrying happening in hive number 3?" and get a concrete answer.
 
@@ -8,27 +8,17 @@ You do not need to learn any commands or filters. Just ask the question the way 
 
 ______________________________________________________________________
 
-## 1. What AI in Apisense can do
+## 1. What the Assistant can do
 
-AI in Apisense is **two tools** already working in the app today:
+The Assistant is **an intelligent chat available in the mobile app and the browser**. You ask a question, you get an answer. The Assistant knows your apiaries, hives, device status, scheduled inspections, and weather — and can answer questions ranging from "How many hives do I have?" to "How do I recognise Varroa?" and "How do I set a scale alarm in the app?".
 
-### AI Assistant
-
-An intelligent chat available in the mobile app and the browser. You ask a question, you get an answer. The Assistant knows your apiaries, hives, device status, scheduled inspections, and weather — and can answer questions ranging from "How many hives do I have?" to "How do I recognise Varroa?".
-
-[Go to the AI Assistant page →](assistant.md)
-
-### Translation
-
-Automatic translation of content between the languages supported by the app. Write a note in Polish — a teammate from another country will read it in English, German, or Italian. The app keeps translations consistent across the whole system.
-
-[Go to the Translation page →](translation.md)
+[Go to the full Assistant description →](assistant.md)
 
 ______________________________________________________________________
 
-## 2. Where the AI gets its knowledge from
+## 2. Where the Assistant gets its knowledge from
 
-The AI Assistant combines **six independent sources** of your apiary data and Apisense knowledge so it can answer concretely and on point. This is exactly what sets it apart from a generic chatbot:
+The Assistant combines **six independent sources** of your apiary data and Apisense knowledge so it can answer concretely and on point. This is exactly what sets it apart from a generic chatbot:
 
 - **IoT system data** — the Assistant reads the raw readings from your devices live: scales (Scale) — hive mass, temperature, humidity; sensors (VitalSensor) — temperature and parameters inside the hive; gateways (Hub) — LTE signal, battery level, last connection time. It turns those numbers into a readable comment ("everything is normal", "battery needs replacing next week", "no contact for 2 days — check the device").
 - **Your entries in the app** — everything you yourself enter: notes, inspection descriptions, treatment calendar, recorded diseases, registered samples and tests. The Assistant cross-references this with the current sensor readings.
@@ -39,9 +29,9 @@ The AI Assistant combines **six independent sources** of your apiary data and Ap
 
 ______________________________________________________________________
 
-## 3. What the AI will not do
+## 3. What the Assistant will not do
 
-AI in Apisense is a helper — it does not perform actions in your apiary on your behalf:
+The Assistant in Apisense is a helper — it does not perform actions in your apiary on your behalf:
 
 - It does not change or delete data in the app (it will not remove a hive, add an inspection, or raise an alert).
 - It does not analyse photos, audio, or video. It works on text only.
@@ -53,7 +43,7 @@ ______________________________________________________________________
 
 ## 4. Your privacy
 
-The AI Assistant sees only **your** data (or apiaries you have access to). Your conversations are saved so you can come back to them — but you can delete them at any time. Your data is not used to train third-party models.
+The Assistant sees only **your** data (or apiaries you have access to). Your conversations are saved so you can come back to them — but you can delete them at any time. Your data is not used to train third-party models.
 
 Details: [Capabilities & Privacy →](limits-privacy.md)
 
@@ -61,7 +51,7 @@ ______________________________________________________________________
 
 ## 5. Getting started
 
-The AI Assistant is built into the Apisense Pro AI app:
+The Assistant is built into the Apisense Pro AI app:
 
 - In the mobile app and in the web version it is available under the **Your assistant** icon in the bottom menu.
 - It works in the *Apiaries*, *Hives*, and *Hive* views, so help is at hand wherever you are working.
