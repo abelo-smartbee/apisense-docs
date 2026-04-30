@@ -1,12 +1,11 @@
 site_name: Dokumentacja Apisense
 site_url: https://abelo-smartbee.github.io/apisense-docs/
-repo_url: https://github.com/abelo-smartbee/apisense-docs
-repo_name: abelo-smartbee/apisense-docs
 
 theme:
   name: material
   language: pl
-  logo: assets/logo.svg
+  custom_dir: docs/overrides
+  logo: assets/branding/apisense-logo.png
   palette:
     - scheme: default
       primary: amber
@@ -35,6 +34,7 @@ plugins:
             - Opis systemu: overview/index.md
             - Instrukcja aplikacji: manual/app-manual.md
             - Instrukcja konfiguracji: manual/configuration/index.md
+            - FAQ: faq/index.md
         - locale: en
           name: EN
           build: true
@@ -45,6 +45,7 @@ plugins:
             - System Overview: overview/index.md
             - App Manual: manual/app-manual.md
             - Configuration Manual: manual/configuration/index.md
+            - FAQ: faq/index.md
 
 markdown_extensions:
   - admonition
@@ -59,6 +60,7 @@ nav:
   - Opis systemu: overview/index.md
   - Instrukcja aplikacji: manual/app-manual.md
   - Instrukcja konfiguracji: manual/configuration/index.md
+  - FAQ: faq/index.md
 
 extra_css:
   - assets/stylesheets/extra.css
