@@ -210,13 +210,17 @@ Przed przystąpieniem do montażu poszczególnych urządzeń wchodzących w skł
     - zwrócony w miarę możliwości **w kierunku słońca** (dopuszczalne nieznaczne odchylenie na wschód/zachód),
     - **nachylony min. 20°** względem poziomu (zalecane **30–50°**), tak aby panel fotowoltaiczny miał optymalny dostęp do promieni słonecznych (panel nie może być zacieniony).
     - Kluczowa jest również **wysokość** na jakiej zostanie umieszczony Hub - urządzenie nie może być zamontowane zbyt nisko. **Zalecana wysokość to 1-2 m nad ziemią**. W przeciwnym przypadku panel może nie otrzymywać wystarczającej ilości światła do prawidłowego działania - w szczególności zimą, gdy słońce jest nisko na niebie.
-  - Zapewnij, aby anteny stanowiące integralną część urządzenia Apisense Hub były skierowane ku górze.
+  - Zapewnij, aby anteny stanowiące integralną część urządzenia Apisense Hub znajdowały się w dolnej części urządzenia i były skierowane poziomo na zewnątrz (**Rys. 15**).
   - Apisense Hub powinien być montowany w centrum pasieki, **maksymalnie 35 m** od najdalszego ula wyposażonego w VitalSensor lub Scale — zapewnia to stabilną łączność BLE (Bluetooth Low Energy) ze wszystkimi urządzeniami pomiarowymi.
   - **Nie montuj Apisense Hub do elementów metalowych** — metal zakłóca sygnał radiowy i pogarsza działanie łączności BLE oraz transmisji LTE. Użyj słupka wbitego w ziemię, drzewa, drewnianego słupka ogrodzenia lub innej stabilnej, niemagnetycznej konstrukcji. Apisense Hub nie musi być zamocowany bezpośrednio do ula.
   - Do montażu użyj **uchwytu aparatowego** dołączonego do zestawu. Pamiętaj, że miejsce montażu musi gwarantować **stabilne ustawienie z nachyleniem w stronę słońca** (najlepiej 30–50°).
     Przykład poprawnie zamontowanego Apisense Hub, został zaprezentowany na rysunku poniżej (**Rys. 15**):
-    
-  **Rys. 15** Prawidłowy montaż Apisense Hub
+
+
+  <p style="text-align: center;">
+  <img src="../pictures/hub_antennas.png" width="200" alt="Prawidłowe rozstawienie anten" title="Prawidłowe rozstawienie anten">
+  <img src="../pictures/hub_installation.png" width="200" alt="Prawidłowy montaż Apisense Hub" title="Prawidłowy montaż Apisense Hub">
+  <br><strong>Rys. 15</strong> Prawidłowe rozstawienie anten i montaż Hub w pasiece</p>
 
 ### 2. Montaż Apisense Scale (waga pasieczna)
 
