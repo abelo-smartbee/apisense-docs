@@ -8,11 +8,11 @@ Nie musisz uczyć się żadnych komend ani filtrów. Wystarczy, że zadasz pytan
 
 ______________________________________________________________________
 
-## 1. Co potrafi Asystent
+## 1. Po co Ci Asystent
 
-Asystent to **inteligentny czat dostępny w aplikacji mobilnej i przeglądarce**. Zadajesz pytanie, dostajesz odpowiedź. Asystent zna Twoje pasieki, ule, status urządzeń, zaplanowane przeglądy i pogodę — i potrafi odpowiedzieć na pytania od „Ile mam uli?” po „Jak rozpoznać warrozę?” i „Jak ustawić alarm wagi w aplikacji?”.
+Asystent to **inteligentny czat dostępny w aplikacji mobilnej i w przeglądarce**. Zadajesz pytanie, dostajesz odpowiedź. Asystent zna Twoje pasieki, ule, status urządzeń, zaplanowane przeglądy i pogodę — i potrafi odpowiedzieć na pytania od „Ile mam uli?” po „Jak rozpoznać warrozę?” i „Jak ustawić alarm wagi w aplikacji?”.
 
-[Przejdź do pełnego opisu Asystenta →](assistant.md)
+Wszystkie szczegóły, przykłady rozmów i dobre praktyki znajdziesz w [pełnym opisie Asystenta →](assistant.md)
 
 ______________________________________________________________________
 
@@ -29,7 +29,20 @@ Asystent łączy **sześć niezależnych źródeł** Twojej pasieki i wiedzy Api
 
 ______________________________________________________________________
 
-## 3. Czego Asystent nie zrobi
+## 3. O co możesz zapytać Asystenta
+
+Asystent odpowiada na pytania w sześciu głównych obszarach. Pełne przykłady rozmów i odpowiedzi znajdziesz w [pełnym opisie Asystenta](assistant.md):
+
+- **Twoja pasieka i ule** — np. „Ile mam aktywnych uli?”, „Pokaż status pasieki Lipowa”.
+- **Urządzenia i bramki** — np. „Które wagi mają niski poziom baterii?”, „Czy moja bramka ma sygnał LTE?”.
+- **Kalendarz i przeglądy** — np. „Jakie zabiegi mam zaplanowane w tym tygodniu?”, „Kiedy ostatni raz robiłem przegląd ula 7?”.
+- **Pogoda nad pasieką** — np. „Jaka pogoda w pasiece Lipowa dziś?”, „Czy jutro będzie deszczowo?”.
+- **Wiedza o pszczelarstwie** — np. „Jak rozpoznać warrozę?”, „Kiedy zacząć dokarmianie zimowe?”.
+- **Instrukcje aplikacji i konfiguracji urządzeń** — np. „Jak dodać nowy ul w aplikacji?”, „Jak ustawić alarm spadku masy?”.
+
+______________________________________________________________________
+
+## 4. Czego Asystent nie zrobi
 
 Asystent to pomocnik — nie wykonuje działań w pasiece za Ciebie:
 
@@ -41,7 +54,7 @@ Pełną listę ograniczeń i zasady prywatności znajdziesz na osobnej stronie.
 
 ______________________________________________________________________
 
-## 4. Twoja prywatność
+## 5. Twoja prywatność
 
 Asystent widzi tylko **Twoje** dane (lub pasieki, do których masz dostęp). Twoje rozmowy są zapisywane, żebyś mógł do nich wrócić — ale możesz je w każdej chwili usunąć. Dane nie są wykorzystywane do trenowania modeli zewnętrznych firm.
 
@@ -49,13 +62,12 @@ Szczegóły: [Możliwości i prywatność →](limits-privacy.md)
 
 ______________________________________________________________________
 
-## 5. Jak zacząć
+## 6. Jak zacząć
 
 Asystent jest wbudowany w aplikację Apisense Pro AI:
 
 - W aplikacji mobilnej i w wersji przeglądarkowej dostępny jest pod ikoną **Twój asystent** w dolnym menu.
 - Działa w widokach *Pasieki*, *Ule* i *Ul*, więc pomoc jest pod ręką niezależnie od tego, gdzie aktualnie pracujesz.
+- Pisz w swoim języku — Asystent odpowiada w tym samym języku, w którym zadałeś pytanie.
 
 <!-- TODO: screenshot - widok zakładki "Twój asystent" z otwartą pustą rozmową -->
-
-Konfigurację języka i ustawień konta znajdziesz w [Instrukcji aplikacji](../manual/app-manual.md).
