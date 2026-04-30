@@ -610,6 +610,9 @@ When the Apisense Pro AI system reports a threat (e.g. Nosema), **alerts** will 
   <img src="../pictures/register_sample.png" width="200" alt="Register sample">
 <br><strong>Fig. 67</strong> Register sample view</p>
 
+!!! tip "How to perform the test yourself?"
+    Detailed instructions for sample collection and field testing (*Nosema* microscopy, *Varroa* sugar roll, colony health questionnaire) are available in the [Lab procedures](../procedures/index.md) section.
+
 
 ### 7. Tests
 

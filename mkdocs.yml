@@ -42,6 +42,11 @@ plugins:
                     - Konfiguracja w skrócie: manual/configuration/quick-guide.md
                     - Rozwiązywanie problemów: manual/configuration/troubleshooting.md
                     - Dobre praktyki: manual/configuration/best-practices.md
+            - Badania:
+                - Przegląd: procedures/index.md
+                - Mikroskopia Nosema/Vairimorpha: procedures/nosema-microscopy.md
+                - Sugar roll na Varroa: procedures/varroa-sugar-roll.md
+                - Kwestionariusz zdrowia rodziny: procedures/health-questionnaire.md
             - Do pobrania: downloads/index.md
             - FAQ: faq/index.md
         - locale: en
@@ -62,6 +67,11 @@ plugins:
                     - Quick Guide: manual/configuration/quick-guide.md
                     - Troubleshooting: manual/configuration/troubleshooting.md
                     - Best Practices: manual/configuration/best-practices.md
+            - Lab procedures:
+                - Overview: procedures/index.md
+                - Nosema/Vairimorpha microscopy: procedures/nosema-microscopy.md
+                - Varroa sugar roll: procedures/varroa-sugar-roll.md
+                - Colony health questionnaire: procedures/health-questionnaire.md
             - Downloads: downloads/index.md
             - FAQ: faq/index.md
 
@@ -86,6 +96,11 @@ nav:
           - Konfiguracja w skrócie: manual/configuration/quick-guide.md
           - Rozwiązywanie problemów: manual/configuration/troubleshooting.md
           - Dobre praktyki: manual/configuration/best-practices.md
+  - Badania:
+      - Przegląd: procedures/index.md
+      - Mikroskopia Nosema/Vairimorpha: procedures/nosema-microscopy.md
+      - Sugar roll na Varroa: procedures/varroa-sugar-roll.md
+      - Kwestionariusz zdrowia rodziny: procedures/health-questionnaire.md
   - Do pobrania: downloads/index.md
   - FAQ: faq/index.md
 
