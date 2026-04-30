@@ -47,18 +47,21 @@ W skład zestawu Apisense wchodzą:
 
 - **Apisense Hub** (**Rys. 1**)
 
-  
-**Rys. 1** Apisense Hub w zestawie
+<p style="text-align: center;">
+<img src="../pictures/hub.png" width="200" alt="Hub" title="Hub">
+<br><strong>Rys. 1</strong> Apisense Hub w zestawie</p>  
 
 - **Apisense Scale** (**Rys. 2**)
 
-  
-**Rys. 2** Apisense Scale w zestawie
+<p style="text-align: center;">
+<img src="../pictures/scale.png" width="200" alt="Scale" title="Scale">
+<br><strong>Rys. 2</strong> Apisense Scale w zestawie</p>  
 
 - **Apisense VitalSensor** (**Rys. 3**)
 
-  
-**Rys. 3** Apisense VitalSensor w zestawie
+<p style="text-align: center;">
+<img src="../pictures/sensor.png" width="200" alt="VitalSensor" title="VitalSensor">
+<br><strong>Rys. 3</strong> Apisense VitalSensor w zestawie</p>  
 
 - **Elementy montażowe** — do bezpiecznego i stabilnego zamocowania urządzeń (montaż nie wymaga wymiany uli ani ingerencji w ich budowę). W skład elementów montażowych wchodzą:
   - **Uchwyt aparatowy** — element wykorzystywany do montażu Apisense Hub, umożliwiający stabilne zamocowanie urządzenia.
@@ -105,12 +108,16 @@ W pierwszym kroku należy utworzyć nową pasiekę w systemie oraz przypisać do
   - Kod potwierdzający - zostanie wypełniony automatycznie, po poprawnym zeskanowaniu kodu QR.
     Pola *Nazwa* oraz *Skrót nazwy* będą mogły zostać zedytowane przez użytkownika w dowolnym momencie.
     
-  **Rys. 6** Dodawanie pasieki z powiązanym Apisense Hub w systemie
+    <p style="text-align: center;">
+    <img src="../pictures/add_apiary.png" width="200" alt="Dodawanie pasieki" title="Dodawanie pasieki">
+    <br><strong>Rys. 6</strong> Dodawanie pasieki z powiązanym Apisense Hub w systemie</p>
+
     **Po uzupełnieniu niezbędnych danych kliknij żółty przycisk na dole ekranu, potwierdzający utworzenie pasieki z powiązanym urządzeniem Apisense Hub.**
 - Jeśli utworzenie pasieki się powiodło, zostaniesz przekierowany do widoku Pasieki, a na Twojej liście pasiek pojawi się pasieka, którą właśnie utworzyłeś (**Rys. 7**).
 
-  
-**Rys. 7** Pomyślnie dodana pasieka z powiązanym Apisense Hub w widoku pasiek w systemie
+  <p style="text-align: center;">
+  <img src="../pictures/apiaries_list.png" width="200" alt="Dodana pasieka na liście pasiek" title="Dodana pasieka na liście pasiek">
+  <br><strong>Rys. 7</strong> Pomyślnie dodana pasieka z powiązanym Apisense Hub w widoku pasiek w systemie</p>  
 
 Aby dodać pozostałe urządzenia (Scale i VitalSensor) do systemu przejdź do punktu 2. w tym rozdziale.
 
@@ -121,7 +128,9 @@ Na tym etapie należy utworzyć ul w ramach wybranej pasieki, a następnie przyp
 - Będąc w zakładce Pasieki (widok startowy po zalogowaniu) kliknij kafelek z pasieką, do której chcesz dodać ul i przypisać urządzenia (Scale i VitalSensor). Po kliknięciu w kafelek zostanie wyświetlony widok pojedynczej pasieki (**Rys. 8**).
 
   
-**Rys. 8** Widok zawartości pojedynczej pasieki w systemie
+  <p style="text-align: center;">
+  <img src="../pictures/apiary_interior.png" width="200" alt="Widok pojedynczej pasieki" title="Widok pojedynczej pasieki">
+  <br><strong>Rys. 8</strong> Widok zawartości pojedynczej pasieki w systemie</p>
 
 - Aby dodać ul do tej pasieki kliknij zakładkę *Dodaj...* na dolnym pasku menu i wybierz opcję *Dodaj ul*, w wyniku czego zostanie wyświetlony widok Dodaj ul (**Rys. 9**).
 - Wypełnij poszczególne pola w widoku Dodaj ul - sekcja Szczegóły ula (**Rys. 9**):
@@ -130,7 +139,10 @@ Na tym etapie należy utworzyć ul w ramach wybranej pasieki, a następnie przyp
   - Pole wyboru - zaznacz, jeśli ul posiada dennicę higieniczną.
     Powyższe informacje będą mogły zostać zedytowane przez użytkownika w dowolnym momencie.
     
-  **Rys. 9** Dodawanie ula w systemie — sekcja Szczegóły ula
+    <p style="text-align: center;">
+    <img src="../pictures/add_beehive_details.png" width="200" alt="Dodawanie ula - szczegóły" title="Dodawanie ula - szczegóły">
+    <br><strong>Rys. 9</strong> Dodawanie ula w systemie — sekcja Szczegóły ula</p>
+
     Aby przejść do kolejnego etapu dodawania ula kliknij żółty przycisk ze strzałką w prawo, znajdujący się na dole ekranu.
 - **Sekcja Informacje o matce pszczelej:** Na tym etapie dodawania ula należy wypełnić informacje o matce pszczelej (**Rys. 10**):
   - Rok wychowu matki - wybierz rok wychowu matki pszczelej z listy rozwijanej (kliknij strzałkę w dół widoczną przy tym polu po prawej stronie).
@@ -138,7 +150,10 @@ Na tym etapie należy utworzyć ul w ramach wybranej pasieki, a następnie przyp
   - Sposób unasiennienia matki - wybierz jedną z trzech opcji: Naturalny, Sztuczny lub Nieznany.
       Powyższe informacje będą mogły zostać zedytowane przez użytkownika w dowolnym momencie.
     
-  **Rys. 10** Dodawanie ula w systemie — sekcja Informacje o matce pszczelej
+    <p style="text-align: center;">
+    <img src="../pictures/add_beehive_queen.png" width="200" alt="Dodawanie ula - informacje o matce pszczelej" title="Dodawanie ula - informacje o matce pszczelej">
+    <br><strong>Rys. 10</strong> Dodawanie ula w systemie — sekcja Informacje o matce pszczelej</p>
+
     Następnie kliknij żółty przycisk ze strzałką w prawo, znajdujący się na dole ekranu, w celu przejścia do ostatniego kroku dodawania ula.
 - **Wyposażenie:** Ostatni etap obejmuje powiązanie urządzeń z tym konkretnym ulem. **Uwaga:** Kluczowe jest, aby urządzenia skonfigurowane w ramach ula (Scale i VitalSensor) były w rzeczywistości zainstalowane w tym samym fizycznym ulu.
   Aby powiązać urządzenia z ulem wypełnij następujące pola (**Rys. 11**):
@@ -147,12 +162,18 @@ Na tym etapie należy utworzyć ul w ramach wybranej pasieki, a następnie przyp
   - Scale - kliknij w ikonę kodu QR znajdującą się w prawej części tego pola i zeskanuj kod QR z naklejki umieszczonej na Apisense Scale. Kolejne pole *Kod potwierdzający* zostanie wypełnione automatycznie.
   - Kod potwierdzający - zostanie wypełniony automatycznie, po poprawnym zeskanowaniu kodu QR.
     
-  **Rys. 11** Dodawanie ula w systemie — sekcja Wyposażenie
+    <p style="text-align: center;">
+    <img src="../pictures/add_beehive_devices.png" width="200" alt="Dodawanie ula - wyposażenie" title="Dodawanie ula - wyposażenie">
+    <br><strong>Rys. 11</strong> Dodawanie ula w systemie — sekcja Wyposażenie</p>
+
 - Po wypełnieniu wszystkich sekcji i niezbędnych pól kliknij żółty przycisk *Zapisz*, aby dodać ul z powiązanymi urządzeniami (Scale, VitalSensor).
 - Jeśli utworzenie ula się powiodło, zostaniesz przekierowany do widoku *Ule*, a na Twojej liście uli pojawi się ul, który właśnie utworzyłeś (**Rys. 12**).
 
   
-**Rys. 12** Pomyślnie dodany ul z powiązanymi Apisense Scale oraz VitalSensor w widoku Ule oraz Szczegóły ula
+  <p style="text-align: center;">
+  <img src="../pictures/beehives_beehive_with_problem.png" width="200" alt="Dodany ul na liście uli" title="Dodany ul na liście uli">
+  <img src="../pictures/beehive_interior.png" width="200" alt="Dodany ul - szczegóły ula" title="Dodany ul - szczegóły ula">
+  <br><strong>Rys. 12</strong> Pomyślnie dodany ul z powiązanymi Apisense Scale oraz VitalSensor w widoku Ule oraz Szczegóły ula</p>
 
 Gratulacje! Masz już pasiekę i ul z zarejestrowanymi urządzeniami w Systemie Apisense Pro AI. Teraz możesz przejść do uruchomienia fizycznych urządzeń.
 
