@@ -9,7 +9,7 @@ import shutil
 from pathlib import Path
 
 
-ASSET_DIRS = ["manual/pictures", "overview/pictures"]
+ASSET_DIRS = ["manual/pictures", "overview/pictures", "downloads/files"]
 
 
 def on_post_build(config):
