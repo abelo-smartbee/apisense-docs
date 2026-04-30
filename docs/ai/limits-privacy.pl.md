@@ -31,7 +31,7 @@ ______________________________________________________________________
 
 ## 3. Asystent nie zmienia danych w Twojej pasiece
 
-Asystent ma dostęp do Twoich danych w trybie **„tylko odczyt"**. Oznacza to, że Asystent:
+Asystent ma dostęp do Twoich danych w trybie **„tylko odczyt”**. Oznacza to, że Asystent:
 
 - **nie usunie** ula, pasieki ani notatki;
 - **nie doda** przeglądu, alarmu ani zabiegu;
@@ -76,7 +76,7 @@ Asystent generuje odpowiedzi **na bieżąco**, na podstawie Twojego pytania i ak
 - **Te same pytania zadane przez różnych użytkowników** mają różne odpowiedzi (każdy widzi swoje pasieki).
 - **Identyczne pytania** zadane jeden po drugim mogą się drobno różnić sformułowaniem — istota odpowiedzi pozostaje ta sama.
 
-Jeśli zależy Ci na **dokładnej liczbie** (np. „ile uli") — Asystent ją sprawdzi w bazie i poda. Jeśli pytasz o **interpretację** (np. „czy to dobrze?") — odpowiedź może być nieco inaczej sformułowana za każdym razem.
+Jeśli zależy Ci na **dokładnej liczbie** (np. „ile uli”) — Asystent ją sprawdzi w bazie i poda. Jeśli pytasz o **interpretację** (np. „czy to dobrze?”) — odpowiedź może być nieco inaczej sformułowana za każdym razem.
 
 ______________________________________________________________________
 
@@ -85,7 +85,7 @@ ______________________________________________________________________
 Asystent nie jest niezawodny. Czasem może źle zinterpretować pytanie, pominąć kontekst albo zwrócić nieprecyzyjną odpowiedź. Co możesz zrobić:
 
 1. **Zweryfikuj kluczowe dane w aplikacji** — jeśli Asystent powie, że bramka jest offline, zerknij sam na zakładkę urządzeń. Asystent ma się nie mylić, ale Ty znasz swoją pasiekę najlepiej.
-2. **Doprecyzuj pytanie** — często wystarczy dodać nazwę pasieki, datę lub konkret („Tylko z ostatniego tygodnia").
+2. **Doprecyzuj pytanie** — często wystarczy dodać nazwę pasieki, datę lub konkret („Tylko z ostatniego tygodnia”).
 3. **Oceń rozmowę** — w aplikacji znajdziesz przycisk oceny odpowiedzi (kciuk w górę/w dół). Twoja opinia pomaga ulepszać Asystenta.
 4. **Zacznij nową rozmowę** — jeśli kontekst rozmowy zaczął prowadzić w niepoprawnym kierunku, czysta rozmowa daje świeży start.
 5. **Zgłoś poważny błąd** — przez kanał kontaktu wskazany w aplikacji.

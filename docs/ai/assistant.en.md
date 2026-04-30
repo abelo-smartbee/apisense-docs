@@ -161,7 +161,7 @@ In addition, when an **official Apisense YouTube video tutorial** matches your q
     3. Enter the hive name and (optionally) the sensor serial number.
     4. Confirm.
 
-    Short video tutorial: [Apisense — adding a hive](https://www.youtube.com/) *(the link only appears if an official Apisense video is available in your language)*.
+    Short video tutorial: [official Apisense YouTube channel](https://www.youtube.com/@Apisense.Global) *(the Assistant adds a specific film URL if one exists in your language)*.
 
 !!! example "Sample conversation — device configuration"
     **You:** How do I set an alarm for when a hive's mass suddenly drops by 5 kg?

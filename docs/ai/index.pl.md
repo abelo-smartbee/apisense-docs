@@ -2,7 +2,7 @@
 
 Asystent w Apisense to nie ogólny chatbot z internetu. To **dedykowany asystent zintegrowany z całym Twoim systemem Apisense** — czyta na bieżąco dane z czujników IoT w Twoich ulach, zna każdą notatkę i każdy przegląd, który wpisałeś w aplikacji, sięga po prognozę pogody dla Twojej pasieki, zna oficjalne instrukcje obsługi i konfiguracji systemu Apisense oraz materiały wideo na naszym kanale YouTube.
 
-Innymi słowy: Asystent **tłumaczy surowe dane techniczne z systemu IoT na proste odpowiedzi po polsku**. Zamiast przeglądać tabelę z odczytami wagi sprzed 24 godzin — pytasz „czy w ulu numer 3 dzieje się coś niepokojącego?" i dostajesz konkretną odpowiedź.
+Innymi słowy: Asystent **tłumaczy surowe dane techniczne z systemu IoT na proste odpowiedzi po polsku**. Zamiast przeglądać tabelę z odczytami wagi sprzed 24 godzin — pytasz „czy w ulu numer 3 dzieje się coś niepokojącego?” i dostajesz konkretną odpowiedź.
 
 Nie musisz uczyć się żadnych komend ani filtrów. Wystarczy, że zadasz pytanie tak, jak zadałbyś je sąsiadowi-pszczelarzowi.
 
@@ -10,7 +10,7 @@ ______________________________________________________________________
 
 ## 1. Co potrafi Asystent
 
-Asystent to **inteligentny czat dostępny w aplikacji mobilnej i przeglądarce**. Zadajesz pytanie, dostajesz odpowiedź. Asystent zna Twoje pasieki, ule, status urządzeń, zaplanowane przeglądy i pogodę — i potrafi odpowiedzieć na pytania od „Ile mam uli?" po „Jak rozpoznać warrozę?" i „Jak ustawić alarm wagi w aplikacji?".
+Asystent to **inteligentny czat dostępny w aplikacji mobilnej i przeglądarce**. Zadajesz pytanie, dostajesz odpowiedź. Asystent zna Twoje pasieki, ule, status urządzeń, zaplanowane przeglądy i pogodę — i potrafi odpowiedzieć na pytania od „Ile mam uli?” po „Jak rozpoznać warrozę?” i „Jak ustawić alarm wagi w aplikacji?”.
 
 [Przejdź do pełnego opisu Asystenta →](assistant.md)
 
@@ -20,11 +20,11 @@ ______________________________________________________________________
 
 Asystent łączy **sześć niezależnych źródeł** Twojej pasieki i wiedzy Apisense, żeby odpowiadać konkretnie i na temat. To jest właśnie to, co odróżnia go od ogólnego chatbota:
 
-- **Dane z systemu IoT** — Asystent czyta na bieżąco surowe odczyty z Twoich urządzeń: wagi (Scale) — masa ula, temperatura, wilgotność; czujniki (VitalSensor) — temperatura i parametry wewnątrz ula; bramki (Hub) — sygnał LTE, poziom baterii, ostatni czas połączenia. Te liczby przekłada na zrozumiały komentarz („wszystko w normie", „bateria do wymiany w przyszłym tygodniu", „brak kontaktu od 2 dni — sprawdź urządzenie").
+- **Dane z systemu IoT** — Asystent czyta na bieżąco surowe odczyty z Twoich urządzeń: wagi (Scale) — masa ula, temperatura, wilgotność; czujniki (VitalSensor) — temperatura i parametry wewnątrz ula; bramki (Hub) — sygnał LTE, poziom baterii, ostatni czas połączenia. Te liczby przekłada na zrozumiały komentarz („wszystko w normie”, „bateria do wymiany w przyszłym tygodniu”, „brak kontaktu od 2 dni — sprawdź urządzenie”).
 - **Twoje wpisy w aplikacji** — wszystko, co sam wprowadzasz: notatki, opisy przeglądów, kalendarz zabiegów, oznaczone choroby, zarejestrowane próbki i badania. Asystent zestawia te informacje z aktualnymi pomiarami z czujników.
 - **Pogoda dla Twoich pasiek** — Asystent automatycznie pobiera prognozę pogody dla **konkretnej lokalizacji** każdej Twojej pasieki. Nie musisz podawać miasta — Asystent wie, gdzie stoją Twoje ule.
 - **Baza wiedzy Apisense o pszczelarstwie** — choroby pszczół (warroza, nosema, zgnilec), zalecane terminy zabiegów, dobre praktyki zarządzania pasieką. Materiały przygotowane przez ekspertów Apisense.
-- **Oficjalne instrukcje systemu Apisense** — pełna dokumentacja konfiguracji urządzeń (Hub, Scale, VitalSensor), instrukcja aplikacji Apisense Pro AI, opis ustawień konta i powiadomień. Gdy pytasz „jak ustawić alarm wagi" albo „jak podłączyć nową bramkę" — Asystent odpowiada wprost z naszej dokumentacji.
+- **Oficjalne instrukcje systemu Apisense** — pełna dokumentacja konfiguracji urządzeń (Hub, Scale, VitalSensor), instrukcja aplikacji Apisense Pro AI, opis ustawień konta i powiadomień. Gdy pytasz „jak ustawić alarm wagi” albo „jak podłączyć nową bramkę” — Asystent odpowiada wprost z naszej dokumentacji.
 - **Materiały wideo Apisense na YouTube** — gdy do Twojego pytania istnieje **oficjalny tutorial wideo Apisense**, Asystent dorzuci do odpowiedzi konkretny link do filmu — w Twoim języku, jeśli taka wersja jest dostępna.
 
 ______________________________________________________________________
