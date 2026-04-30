@@ -141,8 +141,12 @@ Na tym etapie należy utworzyć ul w ramach wybranej pasieki, a następnie przyp
     <br><strong>Rys. 10</strong> Dodawanie ula w systemie — sekcja Informacje o matce pszczelej</p>
 
     Następnie kliknij żółty przycisk ze strzałką w prawo, znajdujący się na dole ekranu, w celu przejścia do ostatniego kroku dodawania ula.
-- **Wyposażenie:** Ostatni etap obejmuje powiązanie urządzeń z tym konkretnym ulem. **Uwaga:** Kluczowe jest, aby urządzenia skonfigurowane w ramach ula (Scale i VitalSensor) były w rzeczywistości zainstalowane w tym samym fizycznym ulu.
-  Aby powiązać urządzenia z ulem wypełnij następujące pola (**Rys. 11**):
+- **Wyposażenie:** Ostatni etap obejmuje powiązanie urządzeń z tym konkretnym ulem.
+
+    !!! note "Uwaga"
+        Kluczowe jest, aby urządzenia skonfigurowane w ramach ula (Scale i VitalSensor) były w rzeczywistości zainstalowane w tym samym fizycznym ulu.
+
+    Aby powiązać urządzenia z ulem wypełnij następujące pola (**Rys. 11**):
   - VitalSensor - kliknij w ikonę kodu QR znajdującą się w prawej części tego pola i zeskanuj kod QR z naklejki umieszczonej na Apisense VitalSensor. Kolejne pole *Kod potwierdzający* zostanie wypełnione automatycznie.
   - Kod potwierdzający - zostanie wypełniony automatycznie, po poprawnym zeskanowaniu kodu QR.
   - Scale - kliknij w ikonę kodu QR znajdującą się w prawej części tego pola i zeskanuj kod QR z naklejki umieszczonej na Apisense Scale. Kolejne pole *Kod potwierdzający* zostanie wypełnione automatycznie.
@@ -169,7 +173,10 @@ W tym kroku po raz pierwszy uruchomisz urządzenia Apisense (Hub, Scale, VitalSe
 
 - **Apisense Hub** - uruchamia się automatycznie po wystawieniu panelu na słońce lub podłączeniu zewnętrznego źródła zasilania.
   1. Możliwe sposoby zasilania:
-    - **Panel fotowoltaiczny (PV)** – wystarczy wystawić panel na światło słoneczne. Uwaga: urządzenie może uruchomić się również przy silnym oświetleniu sztucznym (np. mocna żarówka). Jeżeli ilość dostarczonego światła jest niewystarczająca rozważ pozostałe sposoby zasilania.
+    - **Panel fotowoltaiczny (PV)** – wystarczy wystawić panel na światło słoneczne.
+
+        !!! note "Uwaga"
+            Urządzenie może uruchomić się również przy silnym oświetleniu sztucznym (np. mocna żarówka). Jeżeli ilość dostarczonego światła jest niewystarczająca rozważ pozostałe sposoby zasilania.
     - USB-C – podłącz przewód USB-C do kompatybilnego źródła zasilania.
     - Dodatkowy panel PV – podłącz panel i wystaw go na światło słoneczne.
 - **Apisense Scale** — umieść dwie baterie typu AA w komorze baterii wagi, zwracając uwagę na prawidłową polaryzację (+ i −) zgodnie z oznaczeniami wewnątrz komory. Przed zamknięciem komory i skręceniem upewnij się, że dioda sygnalizacyjna Scale zaświeciła się, co potwierdza, że baterie zostały umieszczone prawidłowo i urządzenie zostało pomyślnie uruchomione (**Rys. 13**). Następnie szczelnie zamknij pokrywę komory i skręć obudowę.
@@ -179,7 +186,8 @@ W tym kroku po raz pierwszy uruchomisz urządzenia Apisense (Hub, Scale, VitalSe
     
   **Rys. 14** Dioda sygnalizacyjna VitalSensor oznaczająca pomyślne uruchomienie urządzenia
 
-**Uwaga:** pierwsze odczyty z urządzeń pomiarowych w aplikacji powinny pojawić się w ciągu maksymalnie 2 godzin od ich uruchomienia. Przed przystąpieniem do montażu należy zweryfikować w aplikacji, czy odczyty są widoczne — pozwoli to upewnić się, że urządzenia zostały prawidłowo zarejestrowane w systemie i działają poprawnie.
+!!! note "Uwaga"
+    Pierwsze odczyty z urządzeń pomiarowych w aplikacji powinny pojawić się w ciągu maksymalnie 2 godzin od ich uruchomienia. Przed przystąpieniem do montażu należy zweryfikować w aplikacji, czy odczyty są widoczne — pozwoli to upewnić się, że urządzenia zostały prawidłowo zarejestrowane w systemie i działają poprawnie.
 
 Sposób sprawdzenia pierwszych odczytów opisano w rozdziale: [Test poprawności działania urządzeń](#test-poprawnosci-dziaania-urzadzen).
 

@@ -137,8 +137,12 @@ At this stage, create a hive within the selected apiary and assign the Scale and
 
   Tap the yellow right-arrow button at the bottom of the screen to proceed to the final step.
 
-- **Equipment:** The final step links devices to this specific hive. **Note:** It is critical that the devices configured for a hive (Scale and VitalSensor) are physically installed in that same hive.
-  Fill in the following fields (**Fig. 11**):
+- **Equipment:** The final step links devices to this specific hive.
+
+    !!! note "Note"
+        It is critical that the devices configured for a hive (Scale and VitalSensor) are physically installed in that same hive.
+
+    Fill in the following fields (**Fig. 11**):
   - VitalSensor — tap the QR code icon on the right side of the field and scan the QR code sticker on the Apisense VitalSensor. The *Confirmation code* field will be filled in automatically.
   - Confirmation code — filled in automatically after a successful QR scan.
   - Scale — tap the QR code icon on the right side of the field and scan the QR code sticker on the Apisense Scale. The *Confirmation code* field will be filled in automatically.
@@ -160,7 +164,10 @@ In this step you will start up the Apisense devices (Hub, Scale, VitalSensor) fo
 
 - **Apisense Hub** — starts up automatically when the panel is exposed to sunlight or an external power source is connected.
   1. Available power options:
-    - **Photovoltaic panel (PV)** — simply expose the panel to sunlight. Note: the device may also start up under strong artificial lighting (e.g. a powerful bulb). If the light level is insufficient, consider the other power options.
+    - **Photovoltaic panel (PV)** — simply expose the panel to sunlight.
+
+        !!! note "Note"
+            The device may also start up under strong artificial lighting (e.g. a powerful bulb). If the light level is insufficient, consider the other power options.
     - USB-C — connect a USB-C cable to a compatible power source.
     - Additional PV panel — connect the panel and expose it to sunlight.
 
@@ -172,7 +179,8 @@ In this step you will start up the Apisense devices (Hub, Scale, VitalSensor) fo
 
   **Fig. 14** VitalSensor indicator LED confirming successful device start-up
 
-**Note:** The first readings from the measurement devices should appear in the app within a maximum of 2 hours of start-up. Before proceeding with installation, verify in the app that readings are visible — this confirms the devices are correctly registered in the system and operating properly.
+!!! note "Note"
+    The first readings from the measurement devices should appear in the app within a maximum of 2 hours of start-up. Before proceeding with installation, verify in the app that readings are visible — this confirms the devices are correctly registered in the system and operating properly.
 
 How to check the first readings is described in: [Verifying Device Operation](#verifying-device-operation).
 
