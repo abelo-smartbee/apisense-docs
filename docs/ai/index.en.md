@@ -8,11 +8,11 @@ You do not need to learn any commands or filters. Just ask the question the way 
 
 ______________________________________________________________________
 
-## 1. What the Assistant can do
+## 1. Why you want the Assistant
 
-The Assistant is **an intelligent chat available in the mobile app and the browser**. You ask a question, you get an answer. The Assistant knows your apiaries, hives, device status, scheduled inspections, and weather — and can answer questions ranging from "How many hives do I have?" to "How do I recognise Varroa?" and "How do I set a scale alarm in the app?".
+The Assistant is **an intelligent chat available in the mobile app and in the browser**. You ask a question, you get an answer. The Assistant knows your apiaries, hives, device status, scheduled inspections, and weather — and can answer questions ranging from "How many hives do I have?" to "How do I recognise Varroa?" and "How do I set a scale alarm in the app?".
 
-[Go to the full Assistant description →](assistant.md)
+You will find every detail, sample conversation, and best practice in the [full Assistant description →](assistant.md)
 
 ______________________________________________________________________
 
@@ -29,7 +29,20 @@ The Assistant combines **six independent sources** of your apiary data and Apise
 
 ______________________________________________________________________
 
-## 3. What the Assistant will not do
+## 3. What you can ask the Assistant
+
+The Assistant answers questions in six main areas. You will find full sample conversations and answers in the [full Assistant description](assistant.md):
+
+- **Your apiaries and hives** — e.g. "How many active hives do I have?", "Show the status of the Linden apiary".
+- **Devices and gateways** — e.g. "Which scales have a low battery?", "Does my gateway have an LTE signal?".
+- **Calendar and inspections** — e.g. "What treatments do I have scheduled this week?", "When did I last inspect hive 7?".
+- **Weather above the apiary** — e.g. "What is the weather at the Linden apiary today?", "Will it rain tomorrow?".
+- **Beekeeping knowledge** — e.g. "How do I recognise Varroa?", "When should I start winter feeding?".
+- **App instructions and device configuration** — e.g. "How do I add a new hive in the app?", "How do I set a mass-drop alarm?".
+
+______________________________________________________________________
+
+## 4. What the Assistant will not do
 
 The Assistant in Apisense is a helper — it does not perform actions in your apiary on your behalf:
 
@@ -41,7 +54,7 @@ The full list of limits and privacy rules is on a dedicated page.
 
 ______________________________________________________________________
 
-## 4. Your privacy
+## 5. Your privacy
 
 The Assistant sees only **your** data (or apiaries you have access to). Your conversations are saved so you can come back to them — but you can delete them at any time. Your data is not used to train third-party models.
 
@@ -49,13 +62,12 @@ Details: [Capabilities & Privacy →](limits-privacy.md)
 
 ______________________________________________________________________
 
-## 5. Getting started
+## 6. Getting started
 
 The Assistant is built into the Apisense Pro AI app:
 
 - In the mobile app and in the web version it is available under the **Your assistant** icon in the bottom menu.
 - It works in the *Apiaries*, *Hives*, and *Hive* views, so help is at hand wherever you are working.
+- Write in your own language — the Assistant answers in the same language you asked your question in.
 
 <!-- TODO: screenshot - "Your assistant" tab with an empty conversation -->
-
-Language and account settings are covered in the [App Manual](../manual/app-manual.md).
