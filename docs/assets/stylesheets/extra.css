@@ -161,3 +161,24 @@ html[lang="en"] .md-header__option .md-header__button::before {
 .md-footer-meta__inner.md-grid.apisense-footer {
   max-width: none;
 }
+
+.yt-embed {
+  aspect-ratio: 16 / 9;
+  max-width: 720px;
+  margin: 1.5rem auto;
+  background: #000;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.yt-embed.short {
+  aspect-ratio: 9 / 16;
+  max-width: 320px;
+}
+
+.yt-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}

@@ -2,6 +2,15 @@
 
 Procedura wykrywania i ilościowego oznaczania spor *Nosema*/*Vairimorpha* w rodzinie pszczelej.
 
+## Tutorial wideo
+
+<div class="yt-embed">
+  <iframe src="https://www.youtube.com/embed/fMrCL1EB6G4"
+          title="Testing for Nosema — pełna procedura mikroskopowa"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+</div>
+
 ## Materiały
 
 - **Mikroskop optyczny z wbudowaną kamerą.** Wymagana specyfikacja:

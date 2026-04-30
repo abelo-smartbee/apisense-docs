@@ -30,6 +30,24 @@ Pierwsze uruchomienie sprzętu Apisense: zawartość zestawu, podłączenie bram
 
 [Przejdź do instrukcji konfiguracji →](manual/configuration/index.md)
 
+### Badania
+
+Procedury terenowe wykonywane samodzielnie przez pszczelarza: mikroskopia *Nosema*/*Vairimorpha* oraz flotacja na *Varroa destructor* z użyciem cukru pudru.
+
+[Przejdź do badań →](procedures/index.md)
+
+### Próbki
+
+Sezonowy program „Zdrowotność rodzin pszczelich, Wiosna 2026" — cztery protokoły pobierania próbek (Varroa, żywe pszczoły, wycinek plastra, martwe pszczoły), zalecenia przeglądu rodziny i kontakt do koordynatorów oraz adres wysyłki.
+
+[Przejdź do próbek →](samples/index.md)
+
+### Do pobrania
+
+Rysunki techniczne urządzeń Apisense (Hub, VitalSensor) w formacie PDF — do druku lub poglądu w terenie.
+
+[Przejdź do plików →](downloads/index.md)
+
 ### FAQ
 
 Najczęściej zadawane pytania i odpowiedzi.

@@ -2,6 +2,15 @@
 
 Procedure for detection and quantification of *Nosema*/*Vairimorpha* spores in a honey bee colony.
 
+## Video tutorial
+
+<div class="yt-embed">
+  <iframe src="https://www.youtube.com/embed/fMrCL1EB6G4"
+          title="Testing for Nosema — full microscopy procedure"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+</div>
+
 ## Materials
 
 - **Light microscope with built-in camera.** Required specification:
