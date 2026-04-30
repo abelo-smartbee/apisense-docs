@@ -6,7 +6,6 @@ Instrukcje krok po kroku dotyczące pobierania próbek i badań terenowych, któ
 
 - **[Mikroskopia Nosema/Vairimorpha](nosema-microscopy.md)** — wykrywanie i liczenie spor *Nosema* spp. pod mikroskopem 400×. Próbka: 25 pszczół robotnic.
 - **[Sugar roll na Varroa](varroa-sugar-roll.md)** — nieinwazyjne liczenie *Varroa destructor* z użyciem cukru pudru. Próbka: ~300 pszczół, zwracane do ula po badaniu.
-- **[Kwestionariusz oceny stanu zdrowia rodziny](health-questionnaire.md)** — 10 pytań tak/nie obejmujących widoczne objawy chorób, obraz czerwiu, ostatnie zabiegi i czystość ula.
 
 ## Kiedy wykonywać te badania
 

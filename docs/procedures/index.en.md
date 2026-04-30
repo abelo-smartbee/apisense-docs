@@ -6,7 +6,6 @@ Step-by-step guides for sample collection and field tests that complement Apisen
 
 - **[Nosema/Vairimorpha microscopy](nosema-microscopy.md)** — detect and count *Nosema* spp. spores under a 400× microscope. Sample: 25 worker bees.
 - **[Varroa sugar roll test](varroa-sugar-roll.md)** — non-lethal *Varroa destructor* count using powdered sugar. Sample: ~300 bees, returned to the colony after the test.
-- **[Colony health assessment questionnaire](health-questionnaire.md)** — 10 yes/no questions covering visible disease symptoms, brood pattern, recent treatments, and hive cleanliness.
 
 ## When to perform these tests
 
