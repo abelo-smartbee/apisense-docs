@@ -34,7 +34,6 @@ plugins:
             - Opis systemu: overview/index.md
             - Asystent:
                 - Przegląd: ai/index.md
-                - Pełny opis: ai/assistant.md
                 - Możliwości i prywatność: ai/limits-privacy.md
             - Instrukcje:
                 - Aplikacja Apisense Pro AI: manual/app-manual.md
@@ -54,7 +53,6 @@ plugins:
             - System Overview: overview/index.md
             - Assistant:
                 - Overview: ai/index.md
-                - Full description: ai/assistant.md
                 - Capabilities & Privacy: ai/limits-privacy.md
             - Manuals:
                 - Apisense Pro AI app: manual/app-manual.md
@@ -78,7 +76,6 @@ nav:
   - Opis systemu: overview/index.md
   - Asystent:
       - Przegląd: ai/index.md
-      - Pełny opis: ai/assistant.md
       - Możliwości i prywatność: ai/limits-privacy.md
   - Instrukcje:
       - Aplikacja Apisense Pro AI: manual/app-manual.md
