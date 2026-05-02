@@ -197,7 +197,10 @@ Before installing any Apisense device, complete the steps in [Registration / Log
     - facing **towards the sun** as much as possible (slight east/west deviation is acceptable),
     - tilted **at least 20°** from horizontal (recommended **30–50°**) so the photovoltaic panel has optimal access to sunlight (the panel must not be shaded).
     - **Height** is also critical — the device must not be mounted too low. **Recommended height: 1–2 m above ground.** At lower heights the panel may not receive enough light to operate correctly, especially in winter when the sun is low.
-  - Ensure the antennas that are an integral part of the Apisense Hub are pointing upwards.
+  - **The Apisense Hub has two external antennas — BLE and LTE.** Each uses a **different connector type (one male, one female)**, so **they cannot be confused or swapped** — each antenna only screws into its matching socket. **Do not force an antenna into the wrong connector** — this can damage the socket.
+      - **BLE antenna** — connectivity to in-apiary measurement devices (VitalSensor, Scale).
+      - **LTE antenna** — data transmission to the Apisense cloud.
+  - The antennas are mounted at the bottom of the device. Ensure they are **oriented downwards and bent horizontally outwards** (**Fig. 15**) — this orientation is critical for proper BLE and LTE range.
   - Mount the Apisense Hub in the centre of the apiary, **no more than 35 m** from the furthest hive equipped with a VitalSensor or Scale — this ensures stable BLE (Bluetooth Low Energy) connectivity to all measurement devices.
   - **Do not mount the Apisense Hub on metal structures** — metal interferes with the radio signal and degrades BLE and LTE performance. Use a post driven into the ground, a tree, a wooden fence post, or another stable non-metallic structure. The Hub does not need to be attached directly to a hive.
   - Use the **camera mount bracket** included in the kit. The mounting location must provide a **stable position tilted towards the sun** (ideally 30–50°).
