@@ -42,7 +42,7 @@ Do około 30–40 metrów.
 
 Postępuj zgodnie z instrukcją w podręczniku użytkownika; możesz też zapytać asystenta w aplikacji o instrukcje. Ogólne zalecenia:
 
-- Sprawdź orientację (logo czytelne, anteny poziomo).
+- Sprawdź orientację (logo czytelne, anteny pionowo do góry).
 - Pozostaw urządzenie na zewnątrz przez ~15 minut.
 - Spróbuj podłączyć ładowanie USB-C.
 

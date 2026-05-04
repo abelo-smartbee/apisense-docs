@@ -42,7 +42,7 @@ Up to approx. 30–40 metres.
 
 Follow the instructions in the user manual; you can also ask the assistant in the app for instructions. The general recommendations are:
 
-- Check orientation (logo readable, antennas horizontal).
+- Check orientation (logo readable, antennas pointing vertically upwards).
 - Leave it outdoors for ~15 minutes.
 - Try USB-C charging.
 

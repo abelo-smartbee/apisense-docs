@@ -207,7 +207,7 @@ Przed przystąpieniem do montażu poszczególnych urządzeń wchodzących w skł
   - **Apisense Hub posiada dwie zewnętrzne anteny — BLE oraz LTE.** Każda z nich ma **inny typ złącza (męskie i żeńskie)**, dzięki czemu **nie da się ich pomylić ani zamienić miejscami** — antenę można wkręcić wyłącznie w odpowiadające jej gniazdo. **Nie próbuj wkręcać anteny na siłę do nieodpowiedniego złącza** — grozi to uszkodzeniem gniazda.
       - Antena **BLE** — łączność z urządzeniami pomiarowymi w pasiece (VitalSensor, Scale).
       - Antena **LTE** — transmisja danych do chmury Apisense.
-  - Anteny montowane są w dolnej części urządzenia. Zapewnij, aby były **skierowane w dół oraz odchylone horyzontalnie (poziomo) na zewnątrz** (**Rys. 15**) — taka orientacja jest kluczowa dla prawidłowego zasięgu BLE i LTE.
+  - Anteny montowane są w dolnej części urządzenia. Zapewnij, aby były **skierowane pionowo do góry** (**Rys. 15**) — taka orientacja jest kluczowa dla prawidłowego zasięgu BLE i LTE.
   - Apisense Hub powinien być montowany w centrum pasieki, **maksymalnie 35 m** od najdalszego ula wyposażonego w VitalSensor lub Scale — zapewnia to stabilną łączność BLE (Bluetooth Low Energy) ze wszystkimi urządzeniami pomiarowymi.
   - **Nie montuj Apisense Hub do elementów metalowych** — metal zakłóca sygnał radiowy i pogarsza działanie łączności BLE oraz transmisji LTE. Użyj słupka wbitego w ziemię, drzewa, drewnianego słupka ogrodzenia lub innej stabilnej, niemagnetycznej konstrukcji. Apisense Hub nie musi być zamocowany bezpośrednio do ula.
   - Do montażu użyj **uchwytu aparatowego** dołączonego do zestawu. Pamiętaj, że miejsce montażu musi gwarantować **stabilne ustawienie z nachyleniem w stronę słońca** (najlepiej 30–50°).
