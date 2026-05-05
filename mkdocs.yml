@@ -86,6 +86,14 @@ plugins:
                 - Colony inspection: samples/colony-inspection.md
             - Downloads: downloads/index.md
             - FAQ: faq/index.md
+  - caption:
+      figure:
+        caption_prefix: 'Rys. {index}:'
+        reference_text: 'Rys. {index}'
+        position: bottom
+        ignore_alt: false
+      table:
+        enable: false
 
 markdown_extensions:
   - admonition

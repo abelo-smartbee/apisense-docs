@@ -1,3 +1,10 @@
+---
+caption:
+  figure:
+    caption_prefix: 'Fig. {index}:'
+    reference_text: 'Fig. {index}'
+---
+
 # Device Configuration Manual
 
 ## Introduction
@@ -30,32 +37,45 @@ This manual walks you step by step through registration, adding devices to the s
 
 The Apisense kit includes:
 
-- **Apisense Hub** (**Fig. 1**)
+- **Apisense Hub** ([](#fig-hub))
 
-  
-**Fig. 1** Apisense Hub included in the kit
+    Figure: Apisense Hub included in the kit {#fig-hub}
 
-- **Apisense Scale** (**Fig. 2**)
+    ![Apisense Hub](../pictures/hub.png){width=200}
 
-  
-**Fig. 2** Apisense Scale included in the kit
+- **Apisense Scale** ([](#fig-scale))
 
-- **Apisense VitalSensor** (**Fig. 3**)
+    Figure: Apisense Scale included in the kit {#fig-scale}
 
-  
-**Fig. 3** Apisense VitalSensor included in the kit
+    ![Apisense Scale](../pictures/scale.png){width=200}
+
+- **Apisense VitalSensor** ([](#fig-sensor))
+
+    Figure: Apisense VitalSensor included in the kit {#fig-sensor}
+
+    ![Apisense VitalSensor](../pictures/sensor.png){width=200}
 
 - **Mounting hardware** — for secure, stable device installation (no hive replacement or structural modification required). Includes:
   - **Camera mount bracket** — used to mount the Apisense Hub, ensuring a stable and adjustable position.
   - **Wooden levelling beam** — stabilising element that enables correct positioning and levelling of the Scale beneath the hive. Distributes the hive load evenly across the scale sensors and maintains structural stability.
   - **Frame mounting clips** — allow secure, stable attachment of the Apisense VitalSensor directly to the bee frame. Designed for tool-free mounting without permanent hive modifications or disruption to the colony.
-- <a id="qr-stickers"></a>**QR code stickers** — for quick apiary and hive registration and device identification. Stickers (**Fig. 4**) are affixed to each device (Hub, Scale, VitalSensor) and to the VitalSensor frame clip (**Fig. 5**).
+- <a id="qr-stickers"></a>**QR code stickers** — for quick apiary and hive registration and device identification. Stickers are affixed to each device: Apisense Hub ([](#fig-qr-hub)), Apisense Scale ([](#fig-qr-scale)) and Apisense VitalSensor ([](#fig-qr-sensor)), and to the VitalSensor frame clip ([](#fig-qr-frame-clip)).
 
-  
-**Fig. 4** QR code sticker on Apisense Hub, Scale and VitalSensor
+    Figure: QR code sticker on Apisense Hub {#fig-qr-hub}
 
-  
-**Fig. 5** QR code sticker on the VitalSensor frame clip
+    ![QR Hub](../pictures/hub_qr.jpg){width=200}
+
+    Figure: QR code sticker on Apisense Scale {#fig-qr-scale}
+
+    ![QR Scale](../pictures/scale_qr.jpg){width=200}
+
+    Figure: QR code sticker on Apisense VitalSensor {#fig-qr-sensor}
+
+    ![QR VitalSensor](../pictures/sensor_qr.jpg){width=200}
+
+    Figure: QR code sticker on the VitalSensor frame clip {#fig-qr-frame-clip}
+
+    ![QR frame clip](../pictures/sensor_tag.jpg){width=200}
 
 For a detailed description of each device (Hub, Scale, VitalSensor), technical specifications, and power information see the [System Overview](../../overview/index.md#2-hardware-technical-specifications).
 
@@ -86,7 +106,7 @@ To access measurements from each device, you must start it up, add it to the sys
 The first step is to create a new apiary in the system and assign the Apisense Hub to it by scanning the QR code on the device.
 
 - In the *Apiaries* tab (home screen after login) tap *Add apiary* at the bottom of the screen. The Add apiary view will open.
-- Fill in the fields in the Add apiary view (**Fig. 6**):
+- Fill in the fields in the Add apiary view ([](#fig-add-apiary)):
   - Name — enter a name for your apiary; this is how it will appear in the dashboard.
   - Name abbreviation — set automatically for easier identification. You can enter your own abbreviation — maximum 3 characters.
   - Serial number — the device identifier. Tap the QR code icon on the right side of the field and scan the QR code sticker on the Apisense Hub. The *Confirmation code* field will be filled in automatically.
@@ -94,14 +114,17 @@ The first step is to create a new apiary in the system and assign the Apisense H
 
     The *Name* and *Name abbreviation* fields can be edited at any time.
 
-  **Fig. 6** Adding an apiary with the linked Apisense Hub
+    Figure: Adding an apiary with the linked Apisense Hub {#fig-add-apiary}
+
+    ![Adding an apiary](../pictures/add_apiary.png){width=200}
 
   **After filling in all required fields, tap the yellow button at the bottom of the screen to confirm creating the apiary with the linked Apisense Hub.**
 
-- If the apiary was created successfully, you will be redirected to the Apiaries view and your new apiary will appear in the list (**Fig. 7**).
+- If the apiary was created successfully, you will be redirected to the Apiaries view and your new apiary will appear in the list ([](#fig-apiaries-list)).
 
-  
-**Fig. 7** Successfully added apiary with linked Apisense Hub in the Apiaries view
+    Figure: Successfully added apiary with linked Apisense Hub in the Apiaries view {#fig-apiaries-list}
+
+    ![Added apiary in the apiaries list](../pictures/apiaries_list.png){width=200}
 
 To add the remaining devices (Scale and VitalSensor) to the system, proceed to step 2 of this chapter.
 
@@ -109,31 +132,36 @@ To add the remaining devices (Scale and VitalSensor) to the system, proceed to s
 
 At this stage, create a hive within the selected apiary and assign the Scale and VitalSensor devices to it by scanning the QR codes on their housings.
 
-- In the *Apiaries* tab (home screen after login) tap the tile of the apiary to which you want to add a hive and assign devices (Scale and VitalSensor). The single-apiary view will open (**Fig. 8**).
+- In the *Apiaries* tab (home screen after login) tap the tile of the apiary to which you want to add a hive and assign devices (Scale and VitalSensor). The single-apiary view will open ([](#fig-apiary-view)).
 
-  
-**Fig. 8** Single apiary view in the system
+    Figure: Single apiary view in the system {#fig-apiary-view}
 
-- To add a hive tap *Add...* in the bottom menu bar and select *Add hive*. The Add hive view will open (**Fig. 9**).
-- Fill in the fields in the Add hive view — Hive details section (**Fig. 9**):
+    ![Single apiary view](../pictures/apiary_interior.png){width=200}
+
+- To add a hive tap *Add...* in the bottom menu bar and select *Add hive*. The Add hive view will open ([](#fig-add-beehive-details)).
+- Fill in the fields in the Add hive view — Hive details section ([](#fig-add-beehive-details)):
   - Hive name — enter a name for your hive; this is how it will appear in the dashboard.
   - Maximum number of frames in the brood box — enter the maximum number of frames that fit in the brood box.
   - Checkbox — tick if the hive has a hygienic floor.
 
     These details can be edited at any time.
 
-  **Fig. 9** Adding a hive — Hive details section
+    Figure: Adding a hive — Hive details section {#fig-add-beehive-details}
+
+    ![Adding a hive — details](../pictures/add_beehive_details.png){width=200}
 
   Tap the yellow right-arrow button at the bottom of the screen to proceed to the next step.
 
-- **Queen bee information section:** Fill in the queen information (**Fig. 10**):
+- **Queen bee information section:** Fill in the queen information ([](#fig-add-beehive-queen)):
   - Queen rearing year — select from the dropdown list (tap the down arrow on the right of the field).
   - Queen origin — select from the dropdown list.
   - Mating method — choose one of three options: Natural, Artificial, or Unknown.
 
     These details can be edited at any time.
 
-  **Fig. 10** Adding a hive — Queen bee information section
+    Figure: Adding a hive — Queen bee information section {#fig-add-beehive-queen}
+
+    ![Adding a hive — queen bee information](../pictures/add_beehive_queen.png){width=200}
 
   Tap the yellow right-arrow button at the bottom of the screen to proceed to the final step.
 
@@ -142,19 +170,26 @@ At this stage, create a hive within the selected apiary and assign the Scale and
     !!! note "Note"
         It is critical that the devices configured for a hive (Scale and VitalSensor) are physically installed in that same hive.
 
-    Fill in the following fields (**Fig. 11**):
+    Fill in the following fields ([](#fig-add-beehive-devices)):
   - VitalSensor — tap the QR code icon on the right side of the field and scan the QR code sticker on the Apisense VitalSensor. The *Confirmation code* field will be filled in automatically.
   - Confirmation code — filled in automatically after a successful QR scan.
   - Scale — tap the QR code icon on the right side of the field and scan the QR code sticker on the Apisense Scale. The *Confirmation code* field will be filled in automatically.
   - Confirmation code — filled in automatically after a successful QR scan.
 
-  **Fig. 11** Adding a hive — Equipment section
+    Figure: Adding a hive — Equipment section {#fig-add-beehive-devices}
+
+    ![Adding a hive — equipment](../pictures/add_beehive_devices.png){width=200}
 
 - Once all sections are complete tap the yellow *Save* button to add the hive with its linked devices (Scale, VitalSensor).
-- If the hive was created successfully, you will be redirected to the *Hives* view and your new hive will appear in the list (**Fig. 12**).
+- If the hive was created successfully, you will be redirected to the *Hives* view and your new hive will appear in the list ([](#fig-beehives-list), [](#fig-beehive-details)).
 
-  
-**Fig. 12** Successfully added hive with linked Apisense Scale and VitalSensor in the Hives and Hive details views
+  Figure: Successfully added hive with linked Apisense Scale and VitalSensor in the Hives view {#fig-beehives-list}
+
+  ![Added hive in the hives list](../pictures/beehives_beehive_with_problem.png){width=200}
+
+  Figure: Hive details for the added hive with linked devices {#fig-beehive-details}
+
+  ![Hive details](../pictures/beehive_interior.png){width=200}
 
 Congratulations! You now have an apiary and a hive with registered devices in the Apisense Pro AI system. You can now proceed to starting up the physical devices.
 
@@ -171,13 +206,9 @@ In this step you will start up the Apisense devices (Hub, Scale, VitalSensor) fo
     - USB-C — connect a USB-C cable to a compatible power source.
     - Additional PV panel — connect the panel and expose it to sunlight.
 
-- **Apisense Scale** — insert two AA batteries into the scale battery compartment, observing correct polarity (+ and −) as marked inside the compartment. Before closing and screwing the compartment shut, verify that the Scale indicator LED lights up, confirming the batteries are correctly installed and the device has started successfully (**Fig. 13**). Then close the compartment lid securely and tighten the housing.
+- **Apisense Scale** — insert two AA batteries into the scale battery compartment, observing correct polarity (+ and −) as marked inside the compartment. Before closing and screwing the compartment shut, verify that the Scale indicator LED lights up, confirming the batteries are correctly installed and the device has started successfully. Then close the compartment lid securely and tighten the housing.
 
-  **Fig. 13** Scale indicator LED confirming successful device start-up
-
-- **Apisense VitalSensor** — insert two AA batteries into the device battery compartment, observing correct polarity (+ and −) as marked inside the compartment. After inserting the batteries, make sure the compartment cover is closed. If the batteries are installed correctly, the VitalSensor indicator LED should light up (**Fig. 14**).
-
-  **Fig. 14** VitalSensor indicator LED confirming successful device start-up
+- **Apisense VitalSensor** — insert two AA batteries into the device battery compartment, observing correct polarity (+ and −) as marked inside the compartment. After inserting the batteries, make sure the compartment cover is closed. If the batteries are installed correctly, the VitalSensor indicator LED should light up.
 
 !!! note "Note"
     The first readings from the measurement devices should appear in the app within a maximum of 2 hours of start-up. Before proceeding with installation, verify in the app that readings are visible — this confirms the devices are correctly registered in the system and operating properly.
@@ -200,14 +231,16 @@ Before installing any Apisense device, complete the steps in [Registration / Log
   - **The Apisense Hub has two external antennas — BLE and LTE.** Each uses a **different connector type (one male, one female)**, so **they cannot be confused or swapped** — each antenna only screws into its matching socket. **Do not force an antenna into the wrong connector** — this can damage the socket.
       - **BLE antenna** — connectivity to in-apiary measurement devices (VitalSensor, Scale).
       - **LTE antenna** — data transmission to the Apisense cloud.
-  - The antennas are mounted at the bottom of the device. Ensure they are **oriented vertically upwards** (**Fig. 15**) — this orientation is critical for proper BLE and LTE range.
+  - The antennas are mounted at the bottom of the device. Ensure they are **oriented vertically upwards** ([](#fig-hub-installation)) — this orientation is critical for proper BLE and LTE range.
   - Mount the Apisense Hub in the centre of the apiary, **no more than 35 m** from the furthest hive equipped with a VitalSensor or Scale — this ensures stable BLE (Bluetooth Low Energy) connectivity to all measurement devices.
   - **Do not mount the Apisense Hub on metal structures** — metal interferes with the radio signal and degrades BLE and LTE performance. Use a post driven into the ground, a tree, a wooden fence post, or another stable non-metallic structure. The Hub does not need to be attached directly to a hive.
   - Use the **camera mount bracket** included in the kit. The mounting location must provide a **stable position tilted towards the sun** (ideally 30–50°).
 
-    An example of a correctly installed Apisense Hub is shown below (**Fig. 15**):
+    An example of a correctly installed Apisense Hub is shown below ([](#fig-hub-installation)):
 
-  **Fig. 15** Correct Apisense Hub installation
+  Figure: Correct antenna placement and Hub installation in the apiary {#fig-hub-installation}
+
+  ![Correct Apisense Hub installation](../pictures/hub_installation.png){width=200}
 
 ### 2. Installing the Apisense Scale (Hive Scale)
 
@@ -217,9 +250,12 @@ Before installing any Apisense device, complete the steps in [Registration / Log
 
   1. **Position the Scale** — place the started Scale on stable, level ground, oriented perpendicular to the hive frames.
   2. **Place the wooden levelling beam** — an integral part of the assembly — parallel to the Scale and at the correct distance so that the hive weight is distributed evenly across both the scale and the beam.
-  3. **Place the hive on the Scale** (if not already in position) — set the hive on the prepared assembly (**Fig. 16**) and verify that the load is still evenly distributed.
+  3. **Place the hive on the Scale** (if not already in position) — set the hive on the prepared assembly ([](#fig-scale-installation)) and verify that the load is still evenly distributed.
 
-    **Fig. 16** Correct hive placement on the scale and levelling beam
+  Figure: Correct hive placement on the scale and levelling beam {#fig-scale-installation}
+
+  ![Correct hive placement on the scale and levelling beam](../pictures/scale_installation.jpg){width=200}
+
 
   4. **Verify in Apisense Pro AI** — if the device has been correctly installed and has not lost connectivity with the Hub, new readings should appear in the system within the next few hours. For instructions on adding the Scale to the dashboard see [Adding Devices to the System and First Start-up](#adding-devices-to-the-system-and-first-start-up); for checking first readings see [Verifying Device Operation](#verifying-device-operation).
 
@@ -231,13 +267,18 @@ Before installing any Apisense device, complete the steps in [Registration / Log
 
 - **Installation — step by step**
 
-  1. **Attach the VitalSensor to the central frame** — mount the started VitalSensor to the bee frame using the special mounting clips included in the kit. The Apisense VitalSensor should be seated securely on the central frame (at the cluster), so it cannot shift, and mounted vertically so the QR code sticker is visible from above when the frame is inserted. A correctly mounted VitalSensor is shown in **Fig. 17**.
+  1. **Attach the VitalSensor to the central frame** — mount the started VitalSensor to the bee frame using the special mounting clips included in the kit. The Apisense VitalSensor should be seated securely on the central frame (at the cluster), so it cannot shift, and mounted vertically so the QR code sticker is visible from above when the frame is inserted. A correctly mounted VitalSensor is shown in [](#fig-sensor-on-frame).
 
-  **Fig. 17** Correct VitalSensor installation on the bee frame
+  Figure: Correct VitalSensor installation on the bee frame {#fig-sensor-on-frame}
 
-  2. **Insert the frame into the hive** — carefully slide the frame with the attached device into the hive — ideally position it in the centre of the brood box (**Fig. 18**).
+  ![Correct VitalSensor installation on the bee frame](../pictures/sensor_installation_1.jpg){width=200}
 
-  **Fig. 18** Recommended placement of the bee frame with VitalSensor in the hive
+  2. **Insert the frame into the hive** — carefully slide the frame with the attached device into the hive — ideally position it in the centre of the brood box ([](#fig-frame-in-hive)).
+
+  Figure: Recommended placement of the bee frame with VitalSensor in the hive {#fig-frame-in-hive}
+
+  ![Recommended placement of the bee frame with VitalSensor in the hive](../pictures/sensor_installation_2.jpg){width=200}
+
 
   3. **Verify in Apisense Pro AI** — if the device has been correctly installed and has not lost connectivity with the Hub, new readings should appear in the system within the next few hours. For instructions on adding the VitalSensor to the dashboard see [Adding Devices to the System and First Start-up](#adding-devices-to-the-system-and-first-start-up); for checking first readings see [Verifying Device Operation](#verifying-device-operation).
 

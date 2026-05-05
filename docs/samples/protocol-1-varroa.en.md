@@ -1,3 +1,10 @@
+---
+caption:
+  figure:
+    caption_prefix: 'Fig. {index}:'
+    reference_text: 'Fig. {index}'
+---
+
 # Protocol 1 — *Varroa destructor* monitoring (mandatory)
 
 Two steps: live sugar-roll flotation, and monitoring mite drop on a sticky board.
@@ -14,10 +21,9 @@ Two steps: live sugar-roll flotation, and monitoring mite drop on a sticky board
 - Flat dish (tray, baking sheet, plate) filled with water to a depth of **~1 cm**
 - Dry cloth
 
-<p style="text-align: center;">
-<img src="../pictures/varroa-jar-mesh.jpg" width="450" alt="Homemade jar with ~3 mm mesh in the lid"><br>
-<strong>Fig. 1</strong> Example homemade flotation container — glass jar with ~3 mm mesh in the lid
-</p>
+Figure: Example homemade flotation container — glass jar with ~3 mm mesh in the lid {#fig-varroa-jar-mesh}
+
+![figure](pictures/varroa-jar-mesh.jpg){width=450}
 
 ### Procedure
 
@@ -27,10 +33,9 @@ Two steps: live sugar-roll flotation, and monitoring mite drop on a sticky board
     !!! warning "Do not collect the queen"
         Be careful not to scoop the queen with the sample.
 
-    <p style="text-align: center;">
-    <img src="../pictures/bee-brush-collection.jpg" width="450" alt="Collecting bees from a frame with a brush"><br>
-    <strong>Fig. 2</strong> Collecting 300 bees from a brood-nest frame with a brush (disposable gloves)
-    </p>
+Figure: Collecting 300 bees from a brood-nest frame with a brush (disposable gloves) {#fig-bee-brush-collection}
+
+![Collecting bees](pictures/bee-brush-collection.jpg){width=450}
 
 3. Close the container with the mesh lid.
 4. Roll and gently shake the container for **1 minute** so the bees are fully coated with sugar.

@@ -1,3 +1,10 @@
+---
+caption:
+  figure:
+    caption_prefix: 'Fig. {index}:'
+    reference_text: 'Fig. {index}'
+---
+
 # Apisense Pro AI System User Manual
 
 ## System overview
@@ -26,11 +33,11 @@ The Apisense Pro AI system is available at the following address: [Apisense Pro 
 
 ### 1. Registration
 
-- Download the mobile app and launch it, or go to the following address: [Apisense Pro AI](https://app.apisense.ai/). After launching the app, a screen will appear with the option to create an account (**Fig. 1**).
+- Download the mobile app and launch it, or go to the following address: [Apisense Pro AI](https://app.apisense.ai/). After launching the app, a screen will appear with the option to create an account ([](#fig-rejestracja)).
 
-<p style="text-align: center;">
-<img src="../pictures/rejestracja.png" width="200" alt="Registering with the Apisense Pro AI System" title="Registering with the Apisense Pro AI System">
-<br><strong>Fig. 1</strong> Registering with the Apisense Pro AI System - Create account start view</p>
+Figure: Registering with the Apisense Pro AI System - Create account start view {#fig-rejestracja}
+
+![figure](pictures/rejestracja.png){width=200}
 
 - Enter the following details in the designated fields:
 
@@ -38,13 +45,13 @@ The Apisense Pro AI system is available at the following address: [Apisense Pro 
     - Email address
     - Mobile phone number
 
-    Confirm that you have read the terms and conditions and the privacy policy by checking the appropriate box, and then click *Next* (**Fig. 2**).
+    Confirm that you have read the terms and conditions and the privacy policy by checking the appropriate box, and then click *Next* ([](#fig-zaloz-konto)).
 
-<p style="text-align: center;">
-<img src="../pictures/zaloz_konto.png" width="200" alt="Create account" title="Create account">
-<br><strong>Fig. 2</strong> Registering with the Apisense Pro AI System - example of correctly filled-in registration data in the Create account view</p>
+Figure: Registering with the Apisense Pro AI System - example of correctly filled-in registration data in the Create account view {#fig-zaloz-konto}
 
-- The next view will appear - Create password. In this view you will be asked to create a strong password (**Fig. 3**), which you will then use to log in to the system. The password must contain:
+![figure](pictures/zaloz_konto.png){width=200}
+
+- The next view will appear - Create password. In this view you will be asked to create a strong password ([](#fig-utworz-haslo)), which you will then use to log in to the system. The password must contain:
 
     - At least 1 special character (e.g. #, $, %, \_)
     - At least 1 digit
@@ -53,21 +60,21 @@ The Apisense Pro AI system is available at the following address: [Apisense Pro 
 
     Then enter the same password again in the *Repeat password* field and proceed to the next step by clicking *Next*.
 
-<p style="text-align: center;">
-<img src="../pictures/utworz_haslo.png" width="200" alt="Create password" title="Create password">
-<br><strong>Fig. 3</strong> Registering with the Apisense Pro AI System - example of correctly filled-in fields in the Create password view</p>
+Figure: Registering with the Apisense Pro AI System - example of correctly filled-in fields in the Create password view {#fig-utworz-haslo}
 
-- This is the last stage of registration. In this step, answer the question about how many years you have been beekeeping by selecting one of the two available answers, then click *Next* (**Fig. 4**).
+![figure](pictures/utworz_haslo.png){width=200}
 
-<p style="text-align: center;">
-<img src="../pictures/pytanie_o_doswiadczenie.png" width="200" alt="Experience question" title="Experience question">
-<br><strong>Fig. 4</strong> Registering with the Apisense Pro AI System - example answer to the experience question</p>
+- This is the last stage of registration. In this step, answer the question about how many years you have been beekeeping by selecting one of the two available answers, then click *Next* ([](#fig-pytanie-o-doswiadczenie)).
 
-- If everything went smoothly you should see the following start screen - Welcome to Apisense! (**Fig. 5**):
+Figure: Registering with the Apisense Pro AI System - example answer to the experience question {#fig-pytanie-o-doswiadczenie}
 
-<p style="text-align: center;">
-<img src="../pictures/empty_state_apiary.png" width="200" alt="Start screen - Welcome to Apisense" title="Start screen - Welcome to Apisense">
-<br><strong>Fig. 5</strong> Start screen after successful registration with the Apisense Pro AI System - Welcome to Apisense!</p>
+![figure](pictures/pytanie_o_doswiadczenie.png){width=200}
+
+- If everything went smoothly you should see the following start screen - Welcome to Apisense! ([](#fig-empty-state-apiary)):
+
+Figure: Start screen after successful registration with the Apisense Pro AI System - Welcome to Apisense! {#fig-empty-state-apiary}
+
+![figure](pictures/empty_state_apiary.png){width=200}
 
 ### 2. Login
 
@@ -75,16 +82,16 @@ If you already have an account in the Apisense Pro AI System, follow these steps
 
 - Launch the Apisense mobile app or go to the following address: [Apisense Pro AI](https://app.apisense.ai/).
 
-- In the *Sign in* view (**Fig. 6**), enter the appropriate data into the designated fields, the same data you provided during registration:
+- In the *Sign in* view ([](#fig-logowanie)), enter the appropriate data into the designated fields, the same data you provided during registration:
 
     - user name
     - password
 
     Then click *Sign in*; you should see the Apisense app start view - the Apiaries tab.
 
-<p style="text-align: center;">
-<img src="../pictures/logowanie.png" width="200" alt="Logging in to the Apisense Pro AI System" title="Logging in to the Apisense Pro AI System">
-<br><strong>Fig. 6</strong> Logging in to the Apisense Pro AI System - Sign in view</p>
+Figure: Logging in to the Apisense Pro AI System - Sign in view {#fig-logowanie}
+
+![figure](pictures/logowanie.png){width=200}
 
 ______________________________________________________________________
 
@@ -96,13 +103,13 @@ ______________________________________________________________________
 
 > **Video (PL):** [Apisense Manual PL — 02 · Add apiary](https://www.youtube.com/shorts/wJrFummpo7Y)
 
-- In the **Apiaries** tab (the start view after logging in to the Apisense app) click the *Add apiary* tab in the menu at the bottom of the screen or — if you do not yet have any apiary — the yellow *Add apiary* button visible in the center of the screen (**Fig. 7**).
+- In the **Apiaries** tab (the start view after logging in to the Apisense app) click the *Add apiary* tab in the menu at the bottom of the screen or — if you do not yet have any apiary — the yellow *Add apiary* button visible in the center of the screen ([](#fig-apiaries)).
 
-<p style="text-align: center;">
-<img src="../pictures/apiaries.png" width="200" alt="Adding an apiary - Apiaries start view" title="Adding an apiary - Apiaries start view">
-<br><strong>Fig. 7</strong> Adding an apiary - Apiaries start view</p>
+Figure: Adding an apiary - Apiaries start view {#fig-apiaries}
 
-- As a result, the *Add apiary* view will be displayed (**Fig. 8**). In this view, fill in the following fields:
+![figure](pictures/apiaries.png){width=200}
+
+- As a result, the *Add apiary* view will be displayed ([](#fig-add-apiary)). In this view, fill in the following fields:
 
     - **Name** — the apiary name that will be displayed in the panel,
     - **Name abbreviation** — the apiary name abbreviation set by default (consisting of up to 3 characters); you can change it,
@@ -111,64 +118,70 @@ ______________________________________________________________________
 
      The *Name* and *Name abbreviation* fields can be edited by the user at any time.
 
-<p style="text-align: center;">
-<img src="../pictures/add_apiary.png" width="200" alt="Adding an apiary" title="Adding an apiary">
-<br><strong>Fig. 8</strong> Adding an apiary with a linked Apisense Hub in the system</p>
+Figure: Adding an apiary with a linked Apisense Hub in the system {#fig-add-apiary}
+
+![figure](pictures/add_apiary.png){width=200}
 
 **Once you have filled in the required data, click the yellow button at the bottom of the screen to confirm creation of the apiary with the linked Apisense Hub device.**
 
-- If the apiary was created successfully, you will be redirected to the Apiaries view, and the apiary you just created will appear in your apiary list (**Fig. 9**).
+- If the apiary was created successfully, you will be redirected to the Apiaries view, and the apiary you just created will appear in your apiary list ([](#fig-apiaries-list)).
 
-<p style="text-align: center;">
-  <img src="../pictures/apiaries_list.png" width="200" alt="Added apiary in the apiary list" title="Added apiary in the apiary list">
-  <br><strong>Fig. 9</strong> Successfully added apiary with a linked Apisense Hub in the apiary view of the system</p>
+Figure: Successfully added apiary with a linked Apisense Hub in the apiary view of the system {#fig-apiaries-list}
+
+![figure](pictures/apiaries_list.png){width=200}
 
 #### 1.2 Editing an apiary
 
-- In the **Apiaries** tab (the start view after logging in to the Apisense app), click the tile of the chosen apiary. As a result, the *Hives* tab will open (**Fig. 10**).
+- In the **Apiaries** tab (the start view after logging in to the Apisense app), click the tile of the chosen apiary. As a result, the *Hives* tab will open ([](#fig-apiaries-list-2)).
 
-<p style="text-align: center;">
-  <img src="../pictures/apiaries_list.png" width="200" alt="Apiary in the apiary list" title="Apiary in the apiary list">
-  <img src="../pictures/beehives.png" width="200" alt="Hive in the hive list" title="Hive in the hive list">
-  <br><strong>Fig. 10</strong> Apiaries tab with one apiary and Hives tab with one hive</p>
+Figure: Apiaries tab with one apiary and Hives tab with one hive (1) {#fig-apiaries-list-2}
 
-- In the *Hives* tab click the cog icon in the upper right corner of the screen. After clicking the cog, the *Apiary settings* view will open (**Fig. 11**).
+![figure](pictures/apiaries_list.png){width=200}
 
-<p style="text-align: center;">
-  <img src="../pictures/apiary_settings.png" width="200" alt="Apiary settings view" title="Apiary settings view">
-  <br><strong>Fig. 11</strong> Apiary settings view</p>
+Figure: Apiaries tab with one apiary and Hives tab with one hive (2) {#fig-beehives}
+
+![figure](pictures/beehives.png){width=200}
+
+- In the *Hives* tab click the cog icon in the upper right corner of the screen. After clicking the cog, the *Apiary settings* view will open ([](#fig-apiary-settings)).
+
+Figure: Apiary settings view {#fig-apiary-settings}
+
+![figure](pictures/apiary_settings.png){width=200}
 
 - The *Apiary settings* view is divided into 2 sections. To update the information in a given section, click its header. Available sections:
 
     - **Apiary details** - this section allows you to edit parameters such as the apiary name and its abbreviation. To do so, click the chosen field and enter the changes.
     - **Hub** - this section concerns parameters related to the Apisense Hub device. The information in this section cannot be edited.
 
-- To save your changes, click the yellow button in the lower right corner of the screen (**Fig. 12**).
+- To save your changes, click the yellow button in the lower right corner of the screen ([](#fig-apiary-settings-details)).
 
-<p style="text-align: center;">
-  <img src="../pictures/apiary_settings_details.png" width="200" alt="Apiary settings - Apiary details" title="Apiary settings - Apiary details">
-  <br><strong>Fig. 12</strong> Apiary settings - editing data in the Apiary details section</p>
+Figure: Apiary settings - editing data in the Apiary details section {#fig-apiary-settings-details}
+
+![figure](pictures/apiary_settings_details.png){width=200}
 
 #### 1.3 Deleting an apiary
 
-- In the **Apiaries** tab (the start view after logging in to the Apisense app), click the tile of the chosen apiary. As a result, the *Hives* tab will open (**Fig. 13**).
+- In the **Apiaries** tab (the start view after logging in to the Apisense app), click the tile of the chosen apiary. As a result, the *Hives* tab will open ([](#fig-apiaries-list-3)).
 
-<p style="text-align: center;">
-  <img src="../pictures/apiaries_list.png" width="200" alt="Apiary in the apiary list" title="Apiary in the apiary list">
-  <img src="../pictures/beehives.png" width="200" alt="Hive in the hive list" title="Hive in the hive list">
-  <br><strong>Fig. 13</strong> Apiaries tab with one apiary and Hives tab with one hive</p>
+Figure: Apiaries tab with one apiary and Hives tab with one hive (1) {#fig-apiaries-list-3}
 
-- In the *Hives* tab click the cog icon in the upper right corner of the screen. After clicking the cog, the *Apiary settings* view will open (**Fig. 14**).
+![figure](pictures/apiaries_list.png){width=200}
 
-<p style="text-align: center;">
-  <img src="../pictures/apiary_settings.png" width="200" alt="Apiary settings view" title="Apiary settings view">
-  <br><strong>Fig. 14</strong> Apiary settings view</p>
+Figure: Apiaries tab with one apiary and Hives tab with one hive (2) {#fig-beehives-2}
 
-- In the *Apiary settings* view click the *Delete apiary* button. As a result, the *Delete apiary* view will be displayed (**Fig. 15**), where you must confirm your choice with the *Yes, delete* button.
+![figure](pictures/beehives.png){width=200}
 
-<p style="text-align: center;">
-  <img src="../pictures/apiary_settings_remove_apiary.png" width="200" alt="Apiary settings - Delete apiary view" title="Apiary settings - Delete apiary view">
-  <br><strong>Fig. 15</strong> Apiary settings - Delete apiary view</p>
+- In the *Hives* tab click the cog icon in the upper right corner of the screen. After clicking the cog, the *Apiary settings* view will open ([](#fig-apiary-settings-2)).
+
+Figure: Apiary settings view {#fig-apiary-settings-2}
+
+![figure](pictures/apiary_settings.png){width=200}
+
+- In the *Apiary settings* view click the *Delete apiary* button. As a result, the *Delete apiary* view will be displayed ([](#fig-apiary-settings-remove-apiary)), where you must confirm your choice with the *Yes, delete* button.
+
+Figure: Apiary settings - Delete apiary view {#fig-apiary-settings-remove-apiary}
+
+![figure](pictures/apiary_settings_remove_apiary.png){width=200}
 
 - Together with the deleted apiary, all of its contents (hives, notes, inspections, etc.) are also deleted. Individual devices (Hub, Scale, VitalSensor) are also unlinked and their measurement history is cleared. Therefore, for example, you will be able to use the same Apisense Hub when creating a new apiary.
 
@@ -178,20 +191,23 @@ ______________________________________________________________________
 
 > **Video (PL):** [Apisense Manual PL — 03 · Add hive](https://www.youtube.com/shorts/L_XWlMFRbbE)
 
-- While in the Apiaries tab (the start view after logging in to the Apisense app) click the tile of the apiary to which you want to add a hive and assign devices (Scale and VitalSensor). After clicking the tile, the single apiary view will be displayed (**Fig. 16**).
+- While in the Apiaries tab (the start view after logging in to the Apisense app) click the tile of the apiary to which you want to add a hive and assign devices (Scale and VitalSensor). After clicking the tile, the single apiary view will be displayed ([](#fig-apiaries-apiary)).
 
-<p style="text-align: center;">
-  <img src="../pictures/apiaries_apiary.png" width="200" alt="Apiary view in the Apiaries tab" title="Apiary view in the Apiaries tab">
-  <img src="../pictures/apiary_interior.png" width="200" alt="Single apiary view" title="Single apiary view">
-<br><strong>Fig. 16</strong> Apiary view in the Apiaries tab and single apiary view (Hives)</p>
+Figure: Apiary view in the Apiaries tab and single apiary view (Hives) (1) {#fig-apiaries-apiary}
 
-- To add a hive to this apiary click the *Add...* tab on the bottom menu bar and select the *Add hive* option (**Fig. 17**); the Add hive view will be displayed (**Fig. 17**).
+![figure](pictures/apiaries_apiary.png){width=200}
 
-<p style="text-align: center;">
-  <img src="../pictures/apiary_add_beehive_button.png" width="200" alt="Add hive button" title="Add hive button">
-<br><strong>Fig. 17</strong> Hives view - Add hive button</p>
+Figure: Apiary view in the Apiaries tab and single apiary view (Hives) (2) {#fig-apiary-interior}
 
-- Fill in the individual fields in the Add hive view - the **Hive details** section (**Fig. 18**):
+![figure](pictures/apiary_interior.png){width=200}
+
+- To add a hive to this apiary click the *Add...* tab on the bottom menu bar and select the *Add hive* option ([](#fig-apiary-add-beehive-button)); the Add hive view will be displayed ([](#fig-apiary-add-beehive-button)).
+
+Figure: Hives view - Add hive button {#fig-apiary-add-beehive-button}
+
+![figure](pictures/apiary_beehives.png){width=200}
+
+- Fill in the individual fields in the Add hive view - the **Hive details** section ([](#fig-add-beehive-details)):
 
     - **Hive name** - enter a name for your hive - the hive will be displayed in the panel under this name.
     - **Maximum number of frames in the brood box** - enter the maximum number of frames that can fit in the hive's brood box.
@@ -199,13 +215,13 @@ ______________________________________________________________________
 
     The information above can be edited by the user at any time.
 
-<p style="text-align: center;">
-<img src="../pictures/add_beehive_details.png" width="200" alt="Adding a hive - details" title="Adding a hive - details">
-<br><strong>Fig. 18</strong> Adding a hive in the system - Hive details section</p>
+Figure: Adding a hive in the system - Hive details section {#fig-add-beehive-details}
+
+![figure](pictures/add_beehive_details.png){width=200}
 
 - To proceed to the next stage of adding a hive, click the yellow button with the right-pointing arrow at the bottom of the screen.
 
-- **Queen bee information:** At this stage of adding a hive, fill in the queen bee information (**Fig. 19**):
+- **Queen bee information:** At this stage of adding a hive, fill in the queen bee information ([](#fig-add-beehive-queen)):
 
     - **Year the queen was raised** - select the year the queen bee was raised from the drop-down list (click the down arrow visible to the right of this field).
     - **Queen origin** - select one of the options available in the drop-down list (click the down arrow visible to the right of this field).
@@ -213,9 +229,9 @@ ______________________________________________________________________
 
     The information above can be edited by the user at any time.
 
-<p style="text-align: center;">
-<img src="../pictures/add_beehive_queen.png" width="200" alt="Adding a hive - queen bee information" title="Adding a hive - queen bee information">
-<br><strong>Fig. 19</strong> Adding a hive in the system - Queen bee information section</p>
+Figure: Adding a hive in the system - Queen bee information section {#fig-add-beehive-queen}
+
+![figure](pictures/add_beehive_queen.png){width=200}
 
 - Then click the yellow button with the right-pointing arrow at the bottom of the screen to proceed to the last step of adding a hive.
 
@@ -228,39 +244,45 @@ ______________________________________________________________________
     - **Scale** - click the QR code icon on the right side of this field and scan the QR code from the sticker on the Apisense Scale. The next *Confirmation code* field will be filled in automatically.
     - **Confirmation code** - will be filled in automatically once the QR code has been scanned correctly.
 
-<p style="text-align: center;">
-<img src="../pictures/add_beehive_devices.png" width="200" alt="Adding a hive - equipment" title="Adding a hive - equipment">
-<br><strong>Fig. 20</strong> Adding a hive in the system - Equipment section</p>
+Figure: Adding a hive in the system - Equipment section {#fig-add-beehive-devices}
+
+![figure](pictures/add_beehive_devices.png){width=200}
 
 - After filling in all sections and required fields, click the yellow *Save* button to add the hive with the linked devices (Scale, VitalSensor).
 
-- If the hive was created successfully, you will be redirected to the *Hives* view, and the hive you just created will appear in your hive list (**Fig. 21**).
+- If the hive was created successfully, you will be redirected to the *Hives* view, and the hive you just created will appear in your hive list ([](#fig-beehives-beehive-with-problem)).
 
-<p style="text-align: center;">
-  <img src="../pictures/beehives_beehive_with_problem.png" width="200" alt="Added hive in the hive list" title="Added hive in the hive list">
-  <img src="../pictures/beehive_interior.png" width="200" alt="Added hive - hive details" title="Added hive - hive details">
-  <br><strong>Fig. 21</strong> Successfully added hive with linked Apisense Scale and VitalSensor in the Hives view and Hive details</p>
+Figure: Successfully added hive with linked Apisense Scale and VitalSensor in the Hives view and Hive details (1) {#fig-beehives-beehive-with-problem}
+
+![figure](pictures/beehives_beehive_with_problem.png){width=200}
+
+Figure: Successfully added hive with linked Apisense Scale and VitalSensor in the Hives view and Hive details (2) {#fig-beehive-interior}
+
+![figure](pictures/beehive_interior.png){width=200}
 
 #### 2.2 Editing a hive
 
-- In the **Apiaries** tab (the start view after logging in to the Apisense app), click the tile of the chosen apiary. As a result, the *Hives* tab will open (**Fig. 22**).
+- In the **Apiaries** tab (the start view after logging in to the Apisense app), click the tile of the chosen apiary. As a result, the *Hives* tab will open ([](#fig-apiaries-list-4)).
 
-<p style="text-align: center;">
-  <img src="../pictures/apiaries_list.png" width="200" alt="Apiary in the apiary list" title="Apiary in the apiary list">
-  <img src="../pictures/beehives.png" width="200" alt="Hive in the hive list" title="Hive in the hive list">
-  <br><strong>Fig. 22</strong> Apiaries tab with one apiary and Hives tab with one hive</p>
+Figure: Apiaries tab with one apiary and Hives tab with one hive (1) {#fig-apiaries-list-4}
 
-- In the *Hives* tab click the tile of the chosen hive; this will open the *Details* tab (**Fig. 23**).
+![figure](pictures/apiaries_list.png){width=200}
 
-<p style="text-align: center;">
-  <img src="../pictures/beehive_interior.png" width="200" alt="Sample view of the hive Details tab" title="Sample view of the hive Details tab">
-<br><strong>Fig. 23</strong> Sample view of the hive Details tab</p>
+Figure: Apiaries tab with one apiary and Hives tab with one hive (2) {#fig-beehives-3}
 
-- Then click the cog icon in the upper right corner of the *Details* tab; the *Hive settings* view will be displayed (**Fig. 24**).
+![figure](pictures/beehives.png){width=200}
 
-<p style="text-align: center;">
-  <img src="../pictures/beehive_settings.png" width="200" alt="Hive settings view" title="Hive settings view">
-<br><strong>Fig. 24</strong> Hive settings view</p>
+- In the *Hives* tab click the tile of the chosen hive; this will open the *Details* tab ([](#fig-beehive-interior-2)).
+
+Figure: Sample view of the hive Details tab {#fig-beehive-interior-2}
+
+![figure](pictures/beehive_interior.png){width=200}
+
+- Then click the cog icon in the upper right corner of the *Details* tab; the *Hive settings* view will be displayed ([](#fig-beehive-settings)).
+
+Figure: Hive settings view {#fig-beehive-settings}
+
+![figure](pictures/beehive_settings.png){width=200}
 
 - The *Hive settings* view is divided into 3 sections. To update the information in a given section, click its header. Available sections:
 
@@ -268,42 +290,48 @@ ______________________________________________________________________
 
     - **Queen information** - this section concerns data related to the queen bee (year raised, origin, insemination method). To update the data in this section, select the appropriate item from the relevant drop-down list (e.g. Queen origin -> item: Own breeding).
 
-    - **Equipment** - this section contains information about devices linked to the hive (VitalSensor, Scale). The section allows you to remove the device assignment from this hive. To do so, click the *Disconnect VitalSensor* / *Disconnect Scale* button depending on which device is to be unlinked, and then confirm your choice using the yellow *Disconnect* button (**Fig. 25**). When unlinking devices, their measurement history is preserved by default, which means past measurement data will be available on charts until this hive is deleted. To clear the measurement history in the hive from the device being unlinked, use the toggle. If the hive equipment does not include one of the devices (the fields are empty), you can also link a Scale/VitalSensor to the hive from this place. To do so, click the QR code icon on the right side of the VitalSensor/Scale field and scan the QR code from the appropriate measurement devices.
+    - **Equipment** - this section contains information about devices linked to the hive (VitalSensor, Scale). The section allows you to remove the device assignment from this hive. To do so, click the *Disconnect VitalSensor* / *Disconnect Scale* button depending on which device is to be unlinked, and then confirm your choice using the yellow *Disconnect* button ([](#fig-beehive-settings-devices-edit)). When unlinking devices, their measurement history is preserved by default, which means past measurement data will be available on charts until this hive is deleted. To clear the measurement history in the hive from the device being unlinked, use the toggle. If the hive equipment does not include one of the devices (the fields are empty), you can also link a Scale/VitalSensor to the hive from this place. To do so, click the QR code icon on the right side of the VitalSensor/Scale field and scan the QR code from the appropriate measurement devices.
 
-        <p style="text-align: center;">
-        <img src="../pictures/beehive_settings_devices_edit.png" width="200" alt="Hive settings view - Equipment section" title="Hive settings view - Equipment section">
-        <img src="../pictures/disconnect_scale.png" width="200" alt="Hive settings view - disconnecting Scale" title="Hive settings view - disconnecting Scale">
-        <br><strong>Fig. 25</strong> Hive settings view - Equipment section, confirmation of Scale disconnection while preserving measurement history</p>
+Figure: Hive settings view - Equipment section, confirmation of Scale disconnection while preserving measurement history (1) {#fig-beehive-settings-devices-edit}
+
+![figure](pictures/beehive_settings_devices_edit.png){width=200}
+
+Figure: Hive settings view - Equipment section, confirmation of Scale disconnection while preserving measurement history (2) {#fig-disconnect-scale}
+
+![figure](pictures/disconnect_scale.png){width=200}
 
 - To save the changes you made in the chosen section, click the yellow button in the lower right corner of the screen.
 
 
 #### 2.3 Deleting a hive
 
-- In the **Apiaries** tab (the start view after logging in to the Apisense app), click the tile of the chosen apiary. As a result, the *Hives* tab will open (**Fig. 26**).
+- In the **Apiaries** tab (the start view after logging in to the Apisense app), click the tile of the chosen apiary. As a result, the *Hives* tab will open ([](#fig-apiaries-list-5)).
 
-<p style="text-align: center;">
-  <img src="../pictures/apiaries_list.png" width="200" alt="Apiary in the apiary list" title="Apiary in the apiary list">
-  <img src="../pictures/beehives.png" width="200" alt="Hive in the hive list" title="Hive in the hive list">
-  <br><strong>Fig. 26</strong> Apiaries tab with one apiary and Hives tab with one hive</p>
+Figure: Apiaries tab with one apiary and Hives tab with one hive (1) {#fig-apiaries-list-5}
 
-- In the *Hives* tab click the tile of the chosen hive; this will open the *Details* tab (**Fig. 27**).
+![figure](pictures/apiaries_list.png){width=200}
 
-<p style="text-align: center;">
-  <img src="../pictures/beehive_interior.png" width="200" alt="Sample view of the hive Details tab" title="Sample view of the hive Details tab">
-<br><strong>Fig. 27</strong> Sample view of the hive Details tab</p>
+Figure: Apiaries tab with one apiary and Hives tab with one hive (2) {#fig-beehives-4}
 
-- Then click the cog icon in the upper right corner of the *Details* tab; the *Hive settings* view will be displayed (**Fig. 28**).
+![figure](pictures/beehives.png){width=200}
 
-<p style="text-align: center;">
-  <img src="../pictures/beehive_settings.png" width="200" alt="Hive settings view" title="Hive settings view">
-<br><strong>Fig. 28</strong> Hive settings view</p>
+- In the *Hives* tab click the tile of the chosen hive; this will open the *Details* tab ([](#fig-beehive-interior-3)).
 
-- In the *Hive settings* view click the *Delete hive* button. As a result, the *Delete hive* view will be displayed (**Fig. 29**), where you must confirm your choice with the *Yes, delete* button.
+Figure: Sample view of the hive Details tab {#fig-beehive-interior-3}
 
-<p style="text-align: center;">
-  <img src="../pictures/beehive_settings_remove_beehive.png" width="200" alt="Hive settings - Delete hive view" title="Hive settings - Delete hive view">
-  <br><strong>Fig. 29</strong> Hive settings - Delete hive view</p>
+![figure](pictures/beehive_interior.png){width=200}
+
+- Then click the cog icon in the upper right corner of the *Details* tab; the *Hive settings* view will be displayed ([](#fig-beehive-settings-2)).
+
+Figure: Hive settings view {#fig-beehive-settings-2}
+
+![figure](pictures/beehive_settings.png){width=200}
+
+- In the *Hive settings* view click the *Delete hive* button. As a result, the *Delete hive* view will be displayed ([](#fig-beehive-settings-remove-beehive)), where you must confirm your choice with the *Yes, delete* button.
+
+Figure: Hive settings - Delete hive view {#fig-beehive-settings-remove-beehive}
+
+![figure](pictures/beehive_settings_remove_beehive.png){width=200}
 
 - Together with the deleted hive, all of its contents (notes, inspections, etc.) are also deleted. Individual devices (Scale, VitalSensor) are also unlinked and their measurement history is cleared. Therefore, for example, the same Apisense VitalSensor can be linked to another hive (one that does not have this type of device).
 
@@ -311,56 +339,59 @@ ______________________________________________________________________
 
 > **Video (PL):** [Apisense Manual PL — 04 · Add inspection](https://www.youtube.com/shorts/1kHqvSh838o)
 
-- While in the Apiaries tab (the start view after logging in to the Apisense app) click the apiary tile. After clicking the tile, the Hives view will be displayed (**Fig. 30**).
+- While in the Apiaries tab (the start view after logging in to the Apisense app) click the apiary tile. After clicking the tile, the Hives view will be displayed ([](#fig-apiaries-apiary-with-beehive)).
 
-<p style="text-align: center;">
-  <img src="../pictures/apiaries_apiary_with_beehive.png" width="200" alt="Apiary view in the Apiaries tab" title="Apiary view in the Apiaries tab">
-  <img src="../pictures/beehives.png" width="200" alt="Single apiary view" title="Single apiary view">
-<br><strong>Fig. 30</strong> Apiary view in the Apiaries tab and Hives view</p>
+Figure: Apiary view in the Apiaries tab and Hives view (1) {#fig-apiaries-apiary-with-beehive}
 
-- Then click the tile of the hive for which you want to perform an inspection. As a result, the Hive details view will be displayed (**Fig. 31**).
+![figure](pictures/apiaries_apiary_with_beehive.png){width=200}
 
-<p style="text-align: center;">
-  <img src="../pictures/beehive_interior.png" width="200" alt="Hive details" title="Hive details">
-<br><strong>Fig. 31</strong> Hive details view</p>
+Figure: Apiary view in the Apiaries tab and Hives view (2) {#fig-beehives-5}
 
-- To add an inspection, choose the *Add...* option from the bottom menu, then *Inspection* (**Fig. 32**); the *Add inspection* view will be displayed (**Fig. 32**).
+![figure](pictures/beehives.png){width=200}
 
-<p style="text-align: center;">
-  <img src="../pictures/add_overview_button.png" width="200" alt="Add Inspection button">
-<br><strong>Fig. 32</strong> Hive details view - Add Inspection button</p>
+- Then click the tile of the hive for which you want to perform an inspection. As a result, the Hive details view will be displayed ([](#fig-beehive-interior-4)).
 
-- In the Add inspection view (**Fig. 33**), attach 2 photos each for:
+Figure: Hive details view {#fig-beehive-interior-4}
+
+![figure](pictures/beehive_interior.png){width=200}
+
+- To add an inspection, choose the *Add...* option from the bottom menu, then *Inspection* ([](#fig-add-overview-button)); the *Add inspection* view will be displayed ([](#fig-add-overview-button)).
+
+Figure: Hive details view - Add Inspection button {#fig-add-overview-button}
+
+![figure](pictures/add_overview_button.png){width=200}
+
+- In the Add inspection view ([](#fig-add-inspection-photos)), attach 2 photos each for:
 
   - the frame with the sensor,
   - the outer frame on the holders we provided.
 
 To add photos, click the *Add photo* button and then choose the *Take photo* or *Add photo from gallery* option.
 
-<p style="text-align: center;">
-<img src="../pictures/add_inspection_photos.png" width="200" alt="Adding an inspection - adding photos" title="Adding an inspection - adding photos">
-<br><strong>Fig. 33</strong> Adding an inspection - adding photos</p>
+Figure: Adding an inspection - adding photos {#fig-add-inspection-photos}
+
+![figure](pictures/add_inspection_photos.png){width=200}
 
 - Once you have added the photos correctly, click the yellow arrow in the lower right corner to proceed to the next step.
 
-- Then answer a few questions (**Fig. 34**). Choose Yes, No or Skip.
+- Then answer a few questions ([](#fig-add-overview-question)). Choose Yes, No or Skip.
 
-<p style="text-align: center;">
-<img src="../pictures/add_overview_question.png" width="200" alt="Adding an inspection - sample question" title="Adding an inspection - sample question">
-<br><strong>Fig. 34</strong> Adding an inspection - sample question</p>
+Figure: Adding an inspection - sample question {#fig-add-overview-question}
+
+![figure](pictures/add_overview_question.png){width=200}
 
 - To proceed to the next inspection question, click the yellow button with the right-pointing arrow at the bottom of the screen.
-- After answering all of the inspection questions, the final view will be displayed (**Fig. 35**), where you must select the inspection date (the current date is set by default).
+- After answering all of the inspection questions, the final view will be displayed ([](#fig-add-overview-save)), where you must select the inspection date (the current date is set by default).
 
-<p style="text-align: center;">
-<img src="../pictures/add_overview_save.png" width="200" alt="Saving an inspection" title="Saving an inspection">
-<br><strong>Fig. 35</strong> Adding an inspection - saving the inspection</p>
+Figure: Adding an inspection - saving the inspection {#fig-add-overview-save}
 
-- To save the inspection, click the yellow *Finish inspection* button in the lower right corner of the screen. The saved inspection will be displayed in the inspection list under Hive details > Inspection (**Fig. 36**).
+![figure](pictures/add_overview_save.png){width=200}
 
-<p style="text-align: center;">
-<img src="../pictures/beehive_details_overview.png" width="200" alt="Inspection in the hive inspection list" title="Inspection in the hive inspection list">
-<br><strong>Fig. 36</strong> Inspection in the hive inspection list</p>
+- To save the inspection, click the yellow *Finish inspection* button in the lower right corner of the screen. The saved inspection will be displayed in the inspection list under Hive details > Inspection ([](#fig-beehive-details-overview)).
+
+Figure: Inspection in the hive inspection list {#fig-beehive-details-overview}
+
+![figure](pictures/beehive_details_overview.png){width=200}
 
 ### 4. Notes
 
@@ -372,47 +403,53 @@ To add photos, click the *Add photo* button and then choose the *Take photo* or 
 
 The steps below refer to adding a note from the hive level.
 
-- In the Apiaries tab (the start view after logging in to the Apisense app) click the apiary tile. After clicking the tile, the Hives view will be displayed (**Fig. 37**).
+- In the Apiaries tab (the start view after logging in to the Apisense app) click the apiary tile. After clicking the tile, the Hives view will be displayed ([](#fig-apiaries-apiary-with-beehive-2)).
 
-<p style="text-align: center;">
-  <img src="../pictures/apiaries_apiary_with_beehive.png" width="200" alt="Apiary view in the Apiaries tab" title="Apiary view in the Apiaries tab">
-  <img src="../pictures/beehives.png" width="200" alt="Single apiary view" title="Single apiary view">
-<br><strong>Fig. 37</strong> Apiary view in the Apiaries tab and Hives view</p>
+Figure: Apiary view in the Apiaries tab and Hives view (1) {#fig-apiaries-apiary-with-beehive-2}
 
-- Then click the tile of the hive to which you want to add a note. As a result, the Hive details view will be displayed (**Fig. 38**).
+![figure](pictures/apiaries_apiary_with_beehive.png){width=200}
 
-<p style="text-align: center;">
-  <img src="../pictures/beehive_interior.png" width="200" alt="Hive details" title="Hive details">
-<br><strong>Fig. 38</strong> Hive details view</p>
+Figure: Apiary view in the Apiaries tab and Hives view (2) {#fig-beehives-6}
 
-- To add a note, choose the *Add...* option from the bottom menu, then *Note* (**Fig. 39**); the Add note view will be displayed (**Fig. 40**).
+![figure](pictures/beehives.png){width=200}
 
-<p style="text-align: center;">
-  <img src="../pictures/add_overview_button.png" width="200" alt="Add Note button">
-<br><strong>Fig. 39</strong> Hive details view - Add Note button</p>
+- Then click the tile of the hive to which you want to add a note. As a result, the Hive details view will be displayed ([](#fig-beehive-interior-5)).
 
-- In the Add note view (**Fig. 40**), fill in the following fields:
+Figure: Hive details view {#fig-beehive-interior-5}
+
+![figure](pictures/beehive_interior.png){width=200}
+
+- To add a note, choose the *Add...* option from the bottom menu, then *Note* ([](#fig-add-overview-button-2)); the Add note view will be displayed ([](#fig-add-note-add-text)).
+
+Figure: Hive details view - Add Note button {#fig-add-overview-button-2}
+
+![figure](pictures/add_overview_button.png){width=200}
+
+- In the Add note view ([](#fig-add-note-add-text)), fill in the following fields:
 
     - **Date** - choose the date you want the note saved with (current by default).
     - **Title** - enter the note title (optional field).
     - **Note** - enter the note content (text), or click the microphone icon on the right side of this field to record a voice note.
 
-<p style="text-align: center;">
-<img src="../pictures/add_note_add_text.png" width="200" alt="Adding a text note" title="Adding a text note">
-<img src="../pictures/add_note_add_audio.png" width="200" alt="Adding a voice note" title="Adding a voice note">
-<br><strong>Fig. 40</strong> Adding a text or voice note</p>
+Figure: Adding a text or voice note (1) {#fig-add-note-add-text}
 
-- You can also add a photo or recording to the note. To do so, click the *+* button in the upper right corner of the Add note view (**Fig. 41**).
+![figure](pictures/add_note_add_text.png){width=200}
 
-<p style="text-align: center;">
-<img src="../pictures/add_note_add_photos.png" width="200" alt="Adding a note with attachments" title="Adding a note with attachments">
-<br><strong>Fig. 41</strong> Adding a text note with attachments</p>
+Figure: Adding a text or voice note (2) {#fig-add-note-add-audio}
 
-- To save the note, click the yellow button in the lower right corner of the screen. The saved note will be displayed in the note list under Hive details > Notes (**Fig. 42**).
+![figure](pictures/add_note_add_audio.png){width=200}
 
-<p style="text-align: center;">
-<img src="../pictures/beehive_details_note.png" width="200" alt="Note in the hive note list" title="Note in the hive note list">
-<br><strong>Fig. 42</strong> Note in the hive note list</p>
+- You can also add a photo or recording to the note. To do so, click the *+* button in the upper right corner of the Add note view ([](#fig-add-note-add-photos)).
+
+Figure: Adding a text note with attachments {#fig-add-note-add-photos}
+
+![figure](pictures/add_note_add_photos.png){width=200}
+
+- To save the note, click the yellow button in the lower right corner of the screen. The saved note will be displayed in the note list under Hive details > Notes ([](#fig-beehive-details-note)).
+
+Figure: Note in the hive note list {#fig-beehive-details-note}
+
+![figure](pictures/beehive_details_note.png){width=200}
 
 **Note — adding a note from the apiary level:** A note can also be created from the apiary level. To do so, follow this path: in the *Apiaries* tab click the chosen apiary, then in the *Hives* tab choose the *Add...* option from the bottom menu and the *Note* option. As a result, the same note will be saved automatically to all hives in the chosen apiary and will be visible in the note list of every hive (*Details > Notes*). **Editing** such a note applies only to the copy in a specific hive — changes made to one note will not be visible in the other notes added in this way. Likewise, **deleting** such a note in one of the hives will leave notes in the other hives untouched.
 
@@ -420,30 +457,33 @@ The steps below refer to adding a note from the hive level.
 
 > **Video (PL):** [06 · Editing a voice note](https://www.youtube.com/shorts/_QLzIfwcRMs)
 
-- In the Apiaries tab (the start view after logging in to the Apisense app) click the apiary tile. After clicking the tile, the Hives view will be displayed (**Fig. 43**).
+- In the Apiaries tab (the start view after logging in to the Apisense app) click the apiary tile. After clicking the tile, the Hives view will be displayed ([](#fig-apiaries-apiary-with-beehive-3)).
 
-<p style="text-align: center;">
-  <img src="../pictures/apiaries_apiary_with_beehive.png" width="200" alt="Apiary view in the Apiaries tab" title="Apiary view in the Apiaries tab">
-  <img src="../pictures/beehives.png" width="200" alt="Single apiary view" title="Single apiary view">
-<br><strong>Fig. 43</strong> Apiary view in the Apiaries tab and Hives view</p>
+Figure: Apiary view in the Apiaries tab and Hives view (1) {#fig-apiaries-apiary-with-beehive-3}
 
-- Then click the tile of the hive in which you want to edit a note. As a result, the Hive details view will be displayed (**Fig. 44**).
+![figure](pictures/apiaries_apiary_with_beehive.png){width=200}
 
-<p style="text-align: center;">
-  <img src="../pictures/beehive_interior.png" width="200" alt="Hive details" title="Hive details">
-<br><strong>Fig. 44</strong> Hive details view</p>
+Figure: Apiary view in the Apiaries tab and Hives view (2) {#fig-beehives-7}
 
-- Go to the *Notes* tab (top menu); the view with the list of notes assigned to the chosen hive will open (**Fig. 45**).
+![figure](pictures/beehives.png){width=200}
 
-<p style="text-align: center;">
-<img src="../pictures/beehive_details_note.png" width="200" alt="Note in the hive note list" title="Note in the hive note list">
-<br><strong>Fig. 45</strong> Note in the hive note list</p>
+- Then click the tile of the hive in which you want to edit a note. As a result, the Hive details view will be displayed ([](#fig-beehive-interior-6)).
 
-- To update a note, click the pencil icon next to the note that needs editing. After clicking the pencil icon, the *Edit note* view will be displayed (**Fig. 46**).
+Figure: Hive details view {#fig-beehive-interior-6}
 
-<p style="text-align: center;">
-<img src="../pictures/edit_note.png" width="200" alt="Edit note view" title="Edit note view">
-<br><strong>Fig. 46</strong> Edit note view</p>
+![figure](pictures/beehive_interior.png){width=200}
+
+- Go to the *Notes* tab (top menu); the view with the list of notes assigned to the chosen hive will open ([](#fig-beehive-details-note-2)).
+
+Figure: Note in the hive note list {#fig-beehive-details-note-2}
+
+![figure](pictures/beehive_details_note.png){width=200}
+
+- To update a note, click the pencil icon next to the note that needs editing. After clicking the pencil icon, the *Edit note* view will be displayed ([](#fig-edit-note)).
+
+Figure: Edit note view {#fig-edit-note}
+
+![figure](pictures/edit_note.png){width=200}
 
 - In the *Edit note* view you can update the values for the following fields:
 
@@ -456,30 +496,33 @@ The steps below refer to adding a note from the hive level.
 
 #### 4.3 Deleting a note
 
-- In the Apiaries tab (the start view after logging in to the Apisense app) click the apiary tile. After clicking the tile, the Hives view will be displayed (**Fig. 47**).
+- In the Apiaries tab (the start view after logging in to the Apisense app) click the apiary tile. After clicking the tile, the Hives view will be displayed ([](#fig-apiaries-apiary-with-beehive-4)).
 
-<p style="text-align: center;">
-  <img src="../pictures/apiaries_apiary_with_beehive.png" width="200" alt="Apiary view in the Apiaries tab" title="Apiary view in the Apiaries tab">
-  <img src="../pictures/beehives.png" width="200" alt="Single apiary view" title="Single apiary view">
-<br><strong>Fig. 47</strong> Apiary view in the Apiaries tab and Hives view</p>
+Figure: Apiary view in the Apiaries tab and Hives view (1) {#fig-apiaries-apiary-with-beehive-4}
 
-- Then click the tile of the hive from which you want to delete a note. As a result, the Hive details view will be displayed (**Fig. 48**).
+![figure](pictures/apiaries_apiary_with_beehive.png){width=200}
 
-<p style="text-align: center;">
-  <img src="../pictures/beehive_interior.png" width="200" alt="Hive details" title="Hive details">
-<br><strong>Fig. 48</strong> Hive details view</p>
+Figure: Apiary view in the Apiaries tab and Hives view (2) {#fig-beehives-8}
 
-- Go to the *Notes* tab (top menu); the view with the list of notes assigned to the chosen hive will open (**Fig. 49**).
+![figure](pictures/beehives.png){width=200}
 
-<p style="text-align: center;">
-<img src="../pictures/beehive_details_note.png" width="200" alt="Note in the hive note list" title="Note in the hive note list">
-<br><strong>Fig. 49</strong> Note in the hive note list</p>
+- Then click the tile of the hive from which you want to delete a note. As a result, the Hive details view will be displayed ([](#fig-beehive-interior-7)).
 
-- To delete a note, grab and swipe the row with the chosen note to the left. As a result, a red button with a bin icon will be displayed on the right side of that row. Click the bin icon (**Fig. 50**) and choose the *Delete* option in the message that appears to confirm note deletion.
+Figure: Hive details view {#fig-beehive-interior-7}
 
-<p style="text-align: center;">
-<img src="../pictures/beehive_details_remove_note.png" width="200" alt="Deleting a note from the hive note list" title="Deleting a note from the hive note list">
-<br><strong>Fig. 50</strong> Deleting a note from the hive note list</p>
+![figure](pictures/beehive_interior.png){width=200}
+
+- Go to the *Notes* tab (top menu); the view with the list of notes assigned to the chosen hive will open ([](#fig-beehive-details-note-3)).
+
+Figure: Note in the hive note list {#fig-beehive-details-note-3}
+
+![figure](pictures/beehive_details_note.png){width=200}
+
+- To delete a note, grab and swipe the row with the chosen note to the left. As a result, a red button with a bin icon will be displayed on the right side of that row. Click the bin icon ([](#fig-beehive-details-remove-note)) and choose the *Delete* option in the message that appears to confirm note deletion.
+
+Figure: Deleting a note from the hive note list {#fig-beehive-details-remove-note}
+
+![figure](pictures/beehive_details_note.png){width=200}
 
 ### 5. Confirming diseases
 
@@ -487,128 +530,137 @@ When the Apisense Pro AI system reports a threat (e.g. Nosema), **alerts** will 
 
 #### 5.1 Confirming diseases from the apiary level
 
-- In the Apiaries tab (the start view after logging in to the Apisense app) click the tile of the apiary in which a threat was detected (red bee icon and "Threat" label on the apiary tile). After clicking the tile, the Hives view will be displayed (**Fig. 51**).
+- In the Apiaries tab (the start view after logging in to the Apisense app) click the tile of the apiary in which a threat was detected (red bee icon and "Threat" label on the apiary tile). After clicking the tile, the Hives view will be displayed ([](#fig-apiaries-apiary-with-problem)).
 
-<p style="text-align: center;">
-  <img src="../pictures/apiaries_apiary_with_problem.png" width="200" alt="Apiary view with a threat in the Apiaries tab" title="Apiary view with a threat in the Apiaries tab">
-  <img src="../pictures/beehives_beehive_with_problem.png" width="200" alt="Single apiary view with a threat" title="Single apiary view with a threat">
-<br><strong>Fig. 51</strong> Apiary view with a threat in the Apiaries tab and Hives view</p>
+Figure: Apiary view with a threat in the Apiaries tab and Hives view (1) {#fig-apiaries-apiary-with-problem}
 
-- Then choose the *Notifications* tab from the bottom menu. As a result, the *Problems* tab will be displayed, and in it a list of current and historical problems detected in this apiary (a list of diseases from all hives in the apiary, **Fig. 52**).
+![figure](pictures/apiaries_apiary_with_problem.png){width=200}
 
-<p style="text-align: center;">
-  <img src="../pictures/problems_tab.png" width="200" alt="Problems tab" title="Problems tab">
-<br><strong>Fig. 52</strong> Problems tab</p>
+Figure: Apiary view with a threat in the Apiaries tab and Hives view (2) {#fig-beehives-beehive-with-problem-2}
 
-- Go to the details of the detected disease by clicking the row with the disease, e.g. American foulbrood (**Fig. 53**). After going to the details, you will see the duration of the disease, its severity level, recommended protective actions and the *Answer a few questions* button (the *Recommendations* tab), as well as previously given answers (the *Answers* tab).
+![figure](pictures/beehives_beehive_with_problem.png){width=200}
 
-<p style="text-align: center;">
-  <img src="../pictures/problems_tab_disease_details.png" width="200" alt="Confirm disease - disease details">
-<br><strong>Fig. 53</strong> Confirm disease - disease details</p>
+- Then choose the *Notifications* tab from the bottom menu. As a result, the *Problems* tab will be displayed, and in it a list of current and historical problems detected in this apiary (a list of diseases from all hives in the apiary, [](#fig-problems-tab)).
 
-- To confirm the disease detected by the system, click the *Answer a few questions* button. After clicking the button, the Answer a few questions view will be displayed (**Fig. 54**). Then answer all the questions, choosing one of the available options: Yes, No or Skip.
+Figure: Problems tab {#fig-problems-tab}
 
-<p style="text-align: center;">
-  <img src="../pictures/confirm_problem_questions.png" width="200" alt="Confirm disease - sample question">
-<br><strong>Fig. 54</strong> Confirm disease - sample question</p>
+![figure](pictures/beehive_details_problems_tab.png){width=200}
 
-- You can also attach photos or recordings to your answers to individual questions. To do so, click the *+* button in the upper right corner of the Answer a few questions view (**Fig. 55**).
+- Go to the details of the detected disease by clicking the row with the disease, e.g. American foulbrood ([](#fig-problems-tab-disease-details)). After going to the details, you will see the duration of the disease, its severity level, recommended protective actions and the *Answer a few questions* button (the *Recommendations* tab), as well as previously given answers (the *Answers* tab).
 
-<p style="text-align: center;">
-  <img src="../pictures/confirm_problem_add_photos.png" width="200" alt="Confirm disease - attaching photos and recordings">
-<br><strong>Fig. 55</strong> Confirm disease - attaching photos and recordings</p>
+Figure: Confirm disease - disease details {#fig-problems-tab-disease-details}
+
+![figure](pictures/problems_tab_disease_details.png){width=200}
+
+- To confirm the disease detected by the system, click the *Answer a few questions* button. After clicking the button, the Answer a few questions view will be displayed ([](#fig-confirm-problem-questions)). Then answer all the questions, choosing one of the available options: Yes, No or Skip.
+
+Figure: Confirm disease - sample question {#fig-confirm-problem-questions}
+
+![figure](pictures/confirm_problem_questions.png){width=200}
+
+- You can also attach photos or recordings to your answers to individual questions. To do so, click the *+* button in the upper right corner of the Answer a few questions view ([](#fig-confirm-problem-add-photos)).
+
+Figure: Confirm disease - attaching photos and recordings {#fig-confirm-problem-add-photos}
+
+![figure](pictures/confirm_problem_add_photos.png){width=200}
 
 - To proceed to the next question, click the yellow right-pointing arrow icon in the lower right corner of the screen.
 
-- To save your answers and finish the form, click the yellow *Save* button in the lower right corner of the last screen of the Answer a few questions view (**Fig. 56**).
+- To save your answers and finish the form, click the yellow *Save* button in the lower right corner of the last screen of the Answer a few questions view ([](#fig-confirm-problem-save)).
 
-<p style="text-align: center;">
-  <img src="../pictures/confirm_problem_save.png" width="200" alt="Confirm disease - saving the form">
-<br><strong>Fig. 56</strong> Confirm disease - saving the form</p>
+Figure: Confirm disease - saving the form {#fig-confirm-problem-save}
+
+![figure](pictures/confirm_problem_save.png){width=200}
 
 #### 5.2 Confirming diseases from the hive level
 
 > **Video (PL):** [Apisense Manual PL — 08 · Confirm disease in the hive](https://www.youtube.com/shorts/iGNXm9qu8X8) 
 
-- In the Apiaries tab (the start view after logging in to the Apisense app) click the tile of the apiary in which a threat was detected (red bee icon and "Threat" label on the apiary tile). After clicking the tile, the Hives view will be displayed (**Fig. 57**).
+- In the Apiaries tab (the start view after logging in to the Apisense app) click the tile of the apiary in which a threat was detected (red bee icon and "Threat" label on the apiary tile). After clicking the tile, the Hives view will be displayed ([](#fig-apiaries-apiary-with-problem-2)).
 
-<p style="text-align: center;">
-  <img src="../pictures/apiaries_apiary_with_problem.png" width="200" alt="Apiary view with a threat in the Apiaries tab" title="Apiary view with a threat in the Apiaries tab">
-  <img src="../pictures/beehives_beehive_with_problem.png" width="200" alt="Single apiary view with a threat" title="Single apiary view with a threat">
-<br><strong>Fig. 57</strong> Apiary view with a threat in the Apiaries tab and Hives view</p>
+Figure: Apiary view with a threat in the Apiaries tab and Hives view (1) {#fig-apiaries-apiary-with-problem-2}
 
-- Click the tile of the hive in which a threat was detected. After clicking the tile, the *Details* tab of the hive will open (**Fig. 58**).
+![figure](pictures/apiaries_apiary_with_problem.png){width=200}
 
-<p style="text-align: center;">
-  <img src="../pictures/beehive_details_with_problems.png" width="200" alt="Hive Details tab - hive with detected threat" title="Hive Details tab - hive with detected threat">
-<br><strong>Fig. 58</strong> Hive Details tab - hive with detected threat</p>
+Figure: Apiary view with a threat in the Apiaries tab and Hives view (2) {#fig-beehives-beehive-with-problem-3}
 
-- Then choose the *Notifications* tab from the bottom menu. As a result, the *Problems* tab will be displayed, and in it a list of current and historical problems detected in this hive only (**Fig. 59**).
+![figure](pictures/beehives_beehive_with_problem.png){width=200}
 
-<p style="text-align: center;">
-  <img src="../pictures/beehive_details_problems_tab.png" width="200" alt="Problems tab" title="Problems tab">
-<br><strong>Fig. 59</strong> Problems tab at the level of a single hive</p>
+- Click the tile of the hive in which a threat was detected. After clicking the tile, the *Details* tab of the hive will open ([](#fig-beehive-details-with-problems)).
 
-- Go to the details of the detected disease by clicking the row with the disease, e.g. American foulbrood (**Fig. 60**). After going to the details, you will see the duration of the disease, its severity level, recommended protective actions and the *Answer a few questions* button (the *Recommendations* tab), as well as previously given answers (the *Answers* tab).
+Figure: Hive Details tab - hive with detected threat {#fig-beehive-details-with-problems}
 
-<p style="text-align: center;">
-  <img src="../pictures/problems_tab_disease_details.png" width="200" alt="Confirm disease - disease details">
-<br><strong>Fig. 60</strong> Confirm disease - disease details</p>
+![figure](pictures/beehive_details_with_problems.png){width=200}
 
-- To confirm the disease detected by the system, click the *Answer a few questions* button. After clicking the button, the Answer a few questions view will be displayed (**Fig. 61**). Then answer all the questions, choosing one of the available options: Yes, No or Skip.
+- Then choose the *Notifications* tab from the bottom menu. As a result, the *Problems* tab will be displayed, and in it a list of current and historical problems detected in this hive only ([](#fig-beehive-details-problems-tab)).
 
-<p style="text-align: center;">
-  <img src="../pictures/confirm_problem_questions.png" width="200" alt="Confirm disease - sample question">
-<br><strong>Fig. 61</strong> Confirm disease - sample question</p>
+Figure: Problems tab at the level of a single hive {#fig-beehive-details-problems-tab}
 
-- You can also attach photos or recordings to your answers to individual questions. To do so, click the *+* button in the upper right corner of the Answer a few questions view (**Fig. 62**).
+![figure](pictures/beehive_details_problems_tab.png){width=200}
 
-<p style="text-align: center;">
-  <img src="../pictures/confirm_problem_add_photos.png" width="200" alt="Confirm disease - attaching photos and recordings">
-<br><strong>Fig. 62</strong> Confirm disease - attaching photos and recordings</p>
+- Go to the details of the detected disease by clicking the row with the disease, e.g. American foulbrood ([](#fig-problems-tab-disease-details-2)). After going to the details, you will see the duration of the disease, its severity level, recommended protective actions and the *Answer a few questions* button (the *Recommendations* tab), as well as previously given answers (the *Answers* tab).
+
+Figure: Confirm disease - disease details {#fig-problems-tab-disease-details-2}
+
+![figure](pictures/problems_tab_disease_details.png){width=200}
+
+- To confirm the disease detected by the system, click the *Answer a few questions* button. After clicking the button, the Answer a few questions view will be displayed ([](#fig-confirm-problem-questions-2)). Then answer all the questions, choosing one of the available options: Yes, No or Skip.
+
+Figure: Confirm disease - sample question {#fig-confirm-problem-questions-2}
+
+![figure](pictures/confirm_problem_questions.png){width=200}
+
+- You can also attach photos or recordings to your answers to individual questions. To do so, click the *+* button in the upper right corner of the Answer a few questions view ([](#fig-confirm-problem-add-photos-2)).
+
+Figure: Confirm disease - attaching photos and recordings {#fig-confirm-problem-add-photos-2}
+
+![figure](pictures/confirm_problem_add_photos.png){width=200}
 
 - To proceed to the next question, click the yellow right-pointing arrow icon in the lower right corner of the screen.
 
-- To save your answers and finish the form, click the yellow *Save* button in the lower right corner of the last screen of the Answer a few questions view (**Fig. 63**).
+- To save your answers and finish the form, click the yellow *Save* button in the lower right corner of the last screen of the Answer a few questions view ([](#fig-confirm-problem-save-2)).
 
-<p style="text-align: center;">
-  <img src="../pictures/confirm_problem_save.png" width="200" alt="Confirm disease - saving the form">
-<br><strong>Fig. 63</strong> Confirm disease - saving the form</p>
+Figure: Confirm disease - saving the form {#fig-confirm-problem-save-2}
+
+![figure](pictures/confirm_problem_save.png){width=200}
 
 
 ### 6. Registering a sample
 
 > **Video (PL):** [Apisense Manual PL — 07 · Register sample](https://www.youtube.com/shorts/jqS9rvhd-X0)
 
-- In the Apiaries tab (the start view after logging in to the Apisense app) click the apiary tile. After clicking the tile, the Hives view will be displayed (**Fig. 64**).
+- In the Apiaries tab (the start view after logging in to the Apisense app) click the apiary tile. After clicking the tile, the Hives view will be displayed ([](#fig-apiaries-apiary-with-beehive-5)).
 
-<p style="text-align: center;">
-  <img src="../pictures/apiaries_apiary_with_beehive.png" width="200" alt="Apiary view in the Apiaries tab" title="Apiary view in the Apiaries tab">
-  <img src="../pictures/beehives.png" width="200" alt="Single apiary view" title="Single apiary view">
-<br><strong>Fig. 64</strong> Apiary view in the Apiaries tab and Hives view</p>
+Figure: Apiary view in the Apiaries tab and Hives view (1) {#fig-apiaries-apiary-with-beehive-5}
 
-- Then click the tile of the hive for which you want to register a sample. As a result, the Hive details view will be displayed (**Fig. 65**).
+![figure](pictures/apiaries_apiary_with_beehive.png){width=200}
 
-<p style="text-align: center;">
-  <img src="../pictures/beehive_interior.png" width="200" alt="Hive details" title="Hive details">
-<br><strong>Fig. 65</strong> Hive details view</p>
+Figure: Apiary view in the Apiaries tab and Hives view (2) {#fig-beehives-9}
 
-- To register a sample, choose the *Add...* option from the bottom menu, then *Register sample* (**Fig. 66**); the Register sample view will be displayed (**Fig. 67**). **Note:** the *Register sample* option is only available for hives with a linked Apisense VitalSensor device.
+![figure](pictures/beehives.png){width=200}
 
-<p style="text-align: center;">
-  <img src="../pictures/add_overview_button.png" width="200" alt="Register sample button">
-<br><strong>Fig. 66</strong> Register sample button</p>
+- Then click the tile of the hive for which you want to register a sample. As a result, the Hive details view will be displayed ([](#fig-beehive-interior-8)).
+
+Figure: Hive details view {#fig-beehive-interior-8}
+
+![figure](pictures/beehive_interior.png){width=200}
+
+- To register a sample, choose the *Add...* option from the bottom menu, then *Register sample* ([](#fig-add-overview-button-3)); the Register sample view will be displayed ([](#fig-register-sample)). **Note:** the *Register sample* option is only available for hives with a linked Apisense VitalSensor device.
+
+Figure: Register sample button {#fig-add-overview-button-3}
+
+![figure](pictures/add_overview_button.png){width=200}
 
 - In the Register sample view, fill in the following fields:
 
   - **Sample collection date** - enter the date when you collected the sample (current by default).
   - **Test type** - select the appropriate item from the drop-down list, e.g. *Dead bees*.
 
-- After filling in the above fields, the yellow *Generate code* button will be displayed. Click that button and a special code will be generated in the *Test code* field, which should be written on the sample (**Fig. 67**). The sample prepared this way with the code should then be sent to the following address: **University of Life Sciences in Lublin, ul. Doświadczalna 54, 20-280 Lublin**.
+- After filling in the above fields, the yellow *Generate code* button will be displayed. Click that button and a special code will be generated in the *Test code* field, which should be written on the sample ([](#fig-register-sample)). The sample prepared this way with the code should then be sent to the following address: **University of Life Sciences in Lublin, ul. Doświadczalna 54, 20-280 Lublin**.
 
-<p style="text-align: center;">
-  <img src="../pictures/register_sample.png" width="200" alt="Register sample">
-<br><strong>Fig. 67</strong> Register sample view</p>
+Figure: Register sample view {#fig-register-sample}
+
+![figure](pictures/register_sample.png){width=200}
 
 !!! tip "How to perform the test yourself?"
     Detailed instructions for sample collection and field testing (*Nosema* microscopy, *Varroa* sugar roll, colony health questionnaire) are available in the [Lab procedures](../procedures/index.md) section.
@@ -618,41 +670,44 @@ When the Apisense Pro AI system reports a threat (e.g. Nosema), **alerts** will 
 
 #### 7.1 Adding a test 
 
-- In the Apiaries tab (the start view after logging in to the Apisense app) click the apiary tile. After clicking the tile, the Hives view will be displayed (**Fig. 69**).
+- In the Apiaries tab (the start view after logging in to the Apisense app) click the apiary tile. After clicking the tile, the Hives view will be displayed ([](#fig-apiaries-apiary-with-beehive-6)).
 
-<p style="text-align: center;">
-  <img src="../pictures/apiaries_apiary_with_beehive.png" width="200" alt="Apiary view in the Apiaries tab" title="Apiary view in the Apiaries tab">
-  <img src="../pictures/beehives.png" width="200" alt="Single apiary view" title="Single apiary view">
-<br><strong>Fig. 69</strong> Apiary view in the Apiaries tab and Hives view</p>
+Figure: Apiary view in the Apiaries tab and Hives view (1) {#fig-apiaries-apiary-with-beehive-6}
 
-- Then click the tile of the hive for which you want to add a test. As a result, the Hive details view will be displayed (**Fig. 70**).
+![figure](pictures/apiaries_apiary_with_beehive.png){width=200}
 
-<p style="text-align: center;">
-  <img src="../pictures/beehive_interior.png" width="200" alt="Hive details" title="Hive details">
-<br><strong>Fig. 70</strong> Hive details view</p>
+Figure: Apiary view in the Apiaries tab and Hives view (2) {#fig-beehives-10}
 
-- To add a test, choose the *Add...* option from the bottom menu, then *Test* (**Fig. 71**); the Add test view will be displayed (**Fig. 72**). 
+![figure](pictures/beehives.png){width=200}
 
-<p style="text-align: center;">
-  <img src="../pictures/add_examination_button.png" width="200" alt="Add test button">
-<br><strong>Fig. 71</strong> Add test button</p>
+- Then click the tile of the hive for which you want to add a test. As a result, the Hive details view will be displayed ([](#fig-beehive-interior-9)).
+
+Figure: Hive details view {#fig-beehive-interior-9}
+
+![figure](pictures/beehive_interior.png){width=200}
+
+- To add a test, choose the *Add...* option from the bottom menu, then *Test* ([](#fig-add-examination-button)); the Add test view will be displayed ([](#fig-add-examination)). 
+
+Figure: Add test button {#fig-add-examination-button}
+
+![figure](pictures/add_examination_button.png){width=200}
 
 
-- In the Add test view (**Fig. 72**), fill in the following fields:
+- In the Add test view ([](#fig-add-examination)), fill in the following fields:
 
     - **Test date** — choose the date the test was performed.
     - **Test type** — choose one of the available options from the drop-down list, e.g. Mite drop.
     - **Photos and supplementary information** — after choosing the test type, take or upload the required number of photos and fill in the numeric fields according to the on-screen prompts.
 
-<p style="text-align: center;">
-  <img src="../pictures/add_examination.png" width="200" alt="Add test view">
-<br><strong>Fig. 72</strong> Add test view, type: Flotation</p>
+Figure: Add test view, type: Flotation {#fig-add-examination}
 
-- Save the test using the yellow save button in the lower right corner of the screen. The saved test will be displayed in the test list under Hive details > More (top menu) > Tests (**Fig. 73**).
+![figure](pictures/add_examination.png){width=200}
 
-<p style="text-align: center;">
-  <img src="../pictures/add_examination_list.png" width="200" alt="Saved test in the hive test list">
-<br><strong>Fig. 73</strong> Saved test in the hive test list</p>
+- Save the test using the yellow save button in the lower right corner of the screen. The saved test will be displayed in the test list under Hive details > More (top menu) > Tests ([](#fig-add-examination-list)).
+
+Figure: Saved test in the hive test list {#fig-add-examination-list}
+
+![figure](pictures/add_examination_list.png){width=200}
 
 
 ______________________________________________________________________
@@ -662,11 +717,11 @@ ______________________________________________________________________
 
 ### 1. Apiary list overview (Apiaries tab)
 
-The ***Apiaries* tab** is the basic tab in the Apisense app, which you will see right after logging in to the system (**Fig. 74**).
+The ***Apiaries* tab** is the basic tab in the Apisense app, which you will see right after logging in to the system ([](#fig-apiaries-2)).
 
-<p style="text-align: center;">
-  <img src="../pictures/apiaries.png" width="200" alt="Apiaries tab - sample apiary view" title="Apiaries tab - sample apiary view">
-<br><strong>Fig. 74</strong> Apiaries tab - sample apiary view</p>
+Figure: Apiaries tab - sample apiary view {#fig-apiaries-2}
+
+![figure](pictures/apiaries.png){width=200}
 
 **Most important information:**
 
@@ -696,11 +751,11 @@ The ***Apiaries* tab** is the basic tab in the Apisense app, which you will see 
 
 ### 2. Apiary map overview (Map tab)
 
-**The Map tab** presents the locations of all apiaries the user has access to on a map (**Fig. 75**). The map makes logistics easier, helps plan visits and quickly locate apiaries that require intervention.
+**The Map tab** presents the locations of all apiaries the user has access to on a map ([](#fig-apiaries-map)). The map makes logistics easier, helps plan visits and quickly locate apiaries that require intervention.
 
-<p style="text-align: center;">
-  <img src="../pictures/apiaries_map.png" width="200" alt="Map tab - sample view of apiary locations" title="Map tab - sample view of apiary locations">
-<br><strong>Fig. 75</strong> Map tab - sample view of apiary locations</p>
+Figure: Map tab - sample view of apiary locations {#fig-apiaries-map}
+
+![figure](pictures/apiaries_map.png){width=200}
 
 **Most important information:**
 
@@ -716,11 +771,11 @@ In the hive list you will find all the hives that have been assigned to the chos
 
 #### 3.1 Hive list
 
-In the **List tab** you will find a list of all hives assigned to the chosen apiary (**Fig. 76**). This layout lets you quickly compare hives and locate those that require attention.
+In the **List tab** you will find a list of all hives assigned to the chosen apiary ([](#fig-beehives-beehive-with-problem-4)). This layout lets you quickly compare hives and locate those that require attention.
 
-<p style="text-align: center;">
-  <img src="../pictures/beehives_beehive_with_problem.png" width="200" alt="Hives tab - sample view of the hive list" title="Hives tab - sample view of the hive list">
-<br><strong>Fig. 76</strong> Hives tab - sample view of the hive list</p>
+Figure: Hives tab - sample view of the hive list {#fig-beehives-beehive-with-problem-4}
+
+![figure](pictures/beehives_beehive_with_problem.png){width=200}
 
 **Most important information:**
 
@@ -760,11 +815,11 @@ The *Details* view is divided into several smaller tabs:
 
 #### 4.1 Hive status
 
-The *Hive status* tab presents the most important, current information about the condition of the bee colony and conditions inside the hive (**Fig. 77**), determined on the basis of measurement data from the monitoring devices.
+The *Hive status* tab presents the most important, current information about the condition of the bee colony and conditions inside the hive ([](#fig-behive-details-2)), determined on the basis of measurement data from the monitoring devices.
 
-<p style="text-align: center;">
-  <img src="../pictures/behive_details_2.png" width="200" alt="Details tab - sample view of the Hive status tab" title="Details tab - sample view of the Hive status tab">
-<br><strong>Fig. 77</strong> Details tab - sample view of the Hive status tab</p>
+Figure: Details tab - sample view of the Hive status tab {#fig-behive-details-2}
+
+![figure](pictures/behive_details_2.png){width=200}
 
 **Most important information:**
 
@@ -777,12 +832,15 @@ More information about data analysis and presentation in chart form can be found
 
 #### 4.2 Inspection
 
-The *Inspection* tab enables you to review the history of inspections of a given hive. Inspections are presented as a list (**Fig. 78**).
+The *Inspection* tab enables you to review the history of inspections of a given hive. Inspections are presented as a list ([](#fig-beehive-details-overview-list)).
 
-<p style="text-align: center;">
-  <img src="../pictures/beehive_details_overview_list.png" width="200" alt="Inspection tab - inspection list" title="Inspection tab - inspection list">
-  <img src="../pictures/beehive_details_overview_list_expanded.png" width="200" alt="Inspection tab - expanded inspection list" title="Inspection tab - expanded inspection list">
-<br><strong>Fig. 78</strong> Details tab - sample view of the Inspection tab (inspection list and inspection details)</p>
+Figure: Details tab - sample view of the Inspection tab (inspection list and inspection details) (1) {#fig-beehive-details-overview-list}
+
+![figure](pictures/beehive_details_overview_list.png){width=200}
+
+Figure: Details tab - sample view of the Inspection tab (inspection list and inspection details) (2) {#fig-beehive-details-overview-list-expanded}
+
+![figure](pictures/beehive_details_overview_list_expanded.png){width=200}
 
 **Most important information:**
 
@@ -792,11 +850,11 @@ The *Inspection* tab enables you to review the history of inspections of a given
 
 #### 4.3 Notes
 
-The *Notes* tab lets you save and review information about observations or events related to a given hive. Notes, like inspections, are presented as a list (**Fig. 79**).
+The *Notes* tab lets you save and review information about observations or events related to a given hive. Notes, like inspections, are presented as a list ([](#fig-beehive-details-notes-list)).
 
-<p style="text-align: center;">
-  <img src="../pictures/beehive_details_notes_list.png" width="200" alt="Details tab - sample view of the Notes tab" title="Details tab - sample view of the Notes tab">
-<br><strong>Fig. 79</strong> Details tab - sample view of the Notes tab</p>
+Figure: Details tab - sample view of the Notes tab {#fig-beehive-details-notes-list}
+
+![figure](pictures/beehive_details_notes_list.png){width=200}
 
 **Most important information:**
 
@@ -806,11 +864,11 @@ The *Notes* tab lets you save and review information about observations or event
 
 #### 4.4 Tests
 
-The *Tests* tab presents in a clear way a list of all performed and saved tests (**Fig. 80**) carried out for the chosen hive. Thanks to this, the user can quickly check the analysis history and return to earlier results.
+The *Tests* tab presents in a clear way a list of all performed and saved tests ([](#fig-apiary-settings-3)) carried out for the chosen hive. Thanks to this, the user can quickly check the analysis history and return to earlier results.
 
-<p style="text-align: center;">
-  <img src="../pictures/beehive_details_examination_list.png" width="200" alt="Details tab - sample view of the Tests tab" title="Details tab - sample view of the Tests tab">
-<br><strong>Fig. 80</strong> Details tab - sample view of the Tests tab</p>
+Figure: Details tab - sample view of the Tests tab {#fig-beehive-details-examination-list}
+
+![figure](pictures/beehive_details_examination_list.png){width=200}
 
 **Most important information:**
 
@@ -819,11 +877,11 @@ The *Tests* tab presents in a clear way a list of all performed and saved tests 
 
 #### 4.5 Samples
 
-In the *Samples* tab you will find a list of all registered samples for a specific hive (**Fig. 80**).
+In the *Samples* tab you will find a list of all registered samples for a specific hive ([](#fig-apiary-settings-3)).
 
-<p style="text-align: center;">
-  <img src="../pictures/beehive_details_sample_list.png" width="200" alt="Details tab - sample view of the Samples tab" title="Details tab - sample view of the Samples tab">
-<br><strong>Fig. 80</strong> Details tab - sample view of the Samples tab</p>
+Figure: Details tab - sample view of the Samples tab {#fig-beehive-details-sample-list}
+
+![figure](pictures/beehive_details_sample_list.png){width=200}
 
 **Most important information:**
 
@@ -838,9 +896,9 @@ The *Apiary settings* view consists of the following sections:
 - Apiary details
 - Hub
 
-<p style="text-align: center;">
-  <img src="../pictures/apiary_settings.png" width="200" alt="Apiary settings view" title="Apiary settings view">
-<br><strong>Fig. 80</strong> Apiary settings view</p>
+Figure: Apiary settings view {#fig-apiary-settings-3}
+
+![figure](pictures/apiary_settings.png){width=200}
 
 To see the contents of a given section, click its header; the full view with detailed information will be displayed.
 
@@ -848,9 +906,9 @@ To see the contents of a given section, click its header; the full view with det
 
 The *Apiary details* section presents basic information identifying the apiary.
 
-<p style="text-align: center;">
-  <img src="../pictures/apiary_settings_details.png" width="200" alt="Apiary settings view - Apiary details section" title="Apiary settings view - Apiary details section">
-<br><strong>Fig. 81</strong> Apiary settings view - Apiary details section</p>
+Figure: Apiary settings view - Apiary details section {#fig-apiary-settings-details-2}
+
+![figure](pictures/apiary_settings_details.png){width=200}
 
 **Most important information:**
 
@@ -861,9 +919,9 @@ The *Apiary details* section presents basic information identifying the apiary.
 
 The **Hub** section presents technical data of the Apisense Hub device, which is responsible for collecting measurement data from the hives in the apiary.
 
-<p style="text-align: center;">
-  <img src="../pictures/apiary_settings_hub.png" width="200" alt="Apiary settings view - Hub section" title="Apiary settings view - Hub section">
-<br><strong>Fig. 82</strong> Apiary settings view - Hub section</p>
+Figure: Apiary settings view - Hub section {#fig-apiary-settings-hub}
+
+![figure](pictures/apiary_settings_hub.png){width=200}
 
 **Most important information:**
 
@@ -881,9 +939,9 @@ The *Hive settings* view is divided into the following sections:
 - Queen information
 - Equipment
 
-<p style="text-align: center;">
-  <img src="../pictures/beehive_settings.png" width="200" alt="Hive settings view" title="Hive settings view">
-<br><strong>Fig. 84</strong> Hive settings view</p>
+Figure: Hive settings view {#fig-beehive-settings-3}
+
+![figure](pictures/beehive_settings.png){width=200}
 
 To see the contents of a given section, click its header; the full view with detailed information will be displayed.
 
@@ -891,9 +949,9 @@ To see the contents of a given section, click its header; the full view with det
 
 The *Hive details* section presents basic information identifying the hive and its construction.
 
-<p style="text-align: center;">
-  <img src="../pictures/beehive_settings_details.png" width="200" alt="Hive settings view - Hive details section" title="Hive settings view - Hive details section">
-<br><strong>Fig. 85</strong> Hive settings view - Hive details section</p>
+Figure: Hive settings view - Hive details section {#fig-beehive-settings-details}
+
+![figure](pictures/beehive_settings_details.png){width=200}
 
 **Most important information:**
 
@@ -905,9 +963,9 @@ The *Hive details* section presents basic information identifying the hive and i
 
 The *Queen information* section enables you to review detailed data about the queen bee in the hive. Click the chosen header to display the details.
 
-<p style="text-align: center;">
-  <img src="../pictures/beehive_settings_queen.png" width="200" alt="Hive settings view - Queen information section" title="Hive settings view - Queen information section">
-<br><strong>Fig. 86</strong> Hive settings view - Queen information section</p>
+Figure: Hive settings view - Queen information section {#fig-beehive-settings-queen}
+
+![figure](pictures/beehive_settings_queen.png){width=200}
 
 **Most important information:**
 
@@ -919,15 +977,15 @@ The *Queen information* section enables you to review detailed data about the qu
 
 The *Equipment* section presents the measurement devices assigned to a given hive and their current status.
 
-<p style="text-align: center;">
-  <img src="../pictures/beehive_settings_devices.png" width="200" alt="Hive settings view - Equipment section" title="Hive settings view - Equipment section">
-<br><strong>Fig. 87</strong> Hive settings view - Equipment section</p>
+Figure: Hive settings view - Equipment section {#fig-beehive-settings-devices}
+
+![figure](pictures/beehive_settings_devices.png){width=200}
 
 **Most important information:**
 
 - **Serial number and confirmation code** – the unique serial numbers and verification codes of the Scale and VitalSensor measurement devices.
 
-- **Expand details** – clicking the chosen device (VitalSensor/Scale) opens the full view with information about the equipment status in the hive (**Fig. 88**).
+- **Expand details** – clicking the chosen device (VitalSensor/Scale) opens the full view with information about the equipment status in the hive ([](#fig-beehive-settings-scale)).
 
 - **Device details** – after clicking a given device, the following are displayed:
 
@@ -936,10 +994,13 @@ The *Equipment* section presents the measurement devices assigned to a given hiv
     - **Last measurement** – the date and time of the latest measurement taken by the device.
     - **Hardware and software versions** – allows you to check the current hardware and software version of the Apisense Scale/Apisense VitalSensor device.
 
-<p style="text-align: center;">
-  <img src="../pictures/beehive_settings_scale.png" width="200" alt="Hive settings view - Equipment section - Scale details" title="Hive settings view - Equipment section - Scale details">
-  <img src="../pictures/beehive_settings_sensor.png" width="200" alt="Hive settings view - Equipment section - VitalSensor details" title="Hive settings view - Equipment section - VitalSensor details">
-<br><strong>Fig. 88</strong> Hive settings view - Equipment section - Scale and VitalSensor details</p>
+Figure: Hive settings view - Equipment section - Scale and VitalSensor details (1) {#fig-beehive-settings-scale}
+
+![figure](pictures/beehive_settings_scale.png){width=200}
+
+Figure: Hive settings view - Equipment section - Scale and VitalSensor details (2) {#fig-beehive-settings-sensor}
+
+![figure](pictures/beehive_settings_sensor.png){width=200}
 
 <a id="interpretacja-statusow"></a>
 
@@ -1037,9 +1098,9 @@ The system enables continuous monitoring of the most important environmental and
 
 The data presented in the system can be displayed in the form of **current values, charts of changes over time and summaries**, which makes it easy to track trends and analyze bee colony behavior over a longer period.
 
-<p style="text-align: center;">
-  <img src="../pictures/beehive_details_with_chart.png" width="200" alt="Hive Details view - sample parameter values and weight chart" title="Hive Details view - sample parameter values and weight chart">
-<br><strong>Fig. 89</strong> Hive Details view - sample parameter values and weight chart</p>
+Figure: Hive Details view - sample parameter values and weight chart {#fig-beehive-details-with-chart}
+
+![figure](pictures/beehive_details_with_chart.png){width=200}
 
 ### 1. Temperature
 
@@ -1108,16 +1169,16 @@ Charts allow for a clear presentation of changes in individual parameters over t
 
 #### 1.1 How to display a chart
 
-To display the charts of individual parameters for the chosen hive (**Fig. 90**), follow this path in the app:
+To display the charts of individual parameters for the chosen hive ([](#fig-beehive-details-with-chart-2)), follow this path in the app:
 
-<p style="text-align: center;">
-  <img src="../pictures/beehive_details_with_chart.png" width="200" alt="Hive Details view - sample parameter values and weight chart" title="Hive Details view - sample parameter values and weight chart">
-<br><strong>Fig. 90</strong> Hive Details view - sample parameter values and weight chart</p>
+Figure: Hive Details view - sample parameter values and weight chart {#fig-beehive-details-with-chart-2}
+
+![figure](pictures/beehive_details_with_chart.png){width=200}
 
 - From the *Apiaries* tab (the start view shown right after logging in to the Apisense app) go to the *Hives* tab. To do so, click the tile of the chosen apiary.
 - From the *Hives* tab go to the *Details* tab. To do so, click the tile of the chosen hive.
 - Make sure you are in the *Details* tab (highlighted in the bottom menu), *Hive status* sub-tab (underlined in the top menu). The charts are located in the *Weight* and *Conditions* sections.
-- The chart will be displayed (**Fig. 90**) after clicking any header chosen from the sections listed above (e.g. Current weight from the *Weight* section).
+- The chart will be displayed ([](#fig-beehive-details-with-chart-2)) after clicking any header chosen from the sections listed above (e.g. Current weight from the *Weight* section).
 
 #### 1.2 Available charts
 
@@ -1161,11 +1222,11 @@ Trends enable analysis of the general direction of changes of a given parameter 
 
 #### 2.1 How to display a trend
 
-Trends are available in the same section as the charts of individual parameters (**Fig. 91**). To display them, follow these steps:
+Trends are available in the same section as the charts of individual parameters ([](#fig-notifications-problems-details)). To display them, follow these steps:
 
-<p style="text-align: center;">
-  <img src="../pictures/beehive_details_chart_with_trend.png" width="200" alt="Hive Details view - weight chart with overlaid trend" title="Hive Details view - weight chart with overlaid trend">
-<br><strong>Fig. 91</strong> Hive Details view - weight chart with overlaid trend</p>
+Figure: Hive Details view - weight chart with overlaid trend {#fig-beehive-details-chart-with-trend}
+
+![figure](pictures/beehive_details_with_chart.png){width=200}
 
 - From the *Apiaries* tab (the start view shown right after logging in to the Apisense app) go to the *Hives* tab. To do so, click the tile of the chosen apiary.
 - From the *Hives* tab go to the *Details* tab. To do so, click the tile of the chosen hive.
@@ -1211,20 +1272,23 @@ You can find notifications in the app by following these steps:
 
 - From the *Apiaries* tab (the start view shown right after logging in to the Apisense app) go to the *Hives* tab. To do so, click the tile of the chosen apiary.
 - From the *Hives* tab go to the *Notifications* tab. To do so, click the bell icon in the bottom menu, similar to the *Hives* tab.
-- As a result, the *Notifications* view will open, with the *Problems* tab selected by default (**Fig. 91**).
+- As a result, the *Notifications* view will open, with the *Problems* tab selected by default ([](#fig-notifications-problems-details)).
 - In addition to the *Problems* tab, you can also go to the *Technical* tab by choosing the appropriate option from the top menu.
 
 #### 1.2 Notification categories
 
-Notifications in the app are available in the *Notifications* tab. Notifications are divided into the following categories that correspond to individual tabs (**Fig. 91**):
+Notifications in the app are available in the *Notifications* tab. Notifications are divided into the following categories that correspond to individual tabs ([](#fig-notifications-problems-details)):
 
 - **Problems** – notifications related to the health status of bee colonies, regarding detected diseases such as Varroa, along with recommended steps to combat the specific disease.
 - **Technical** – notifications regarding the operation of monitoring devices, e.g. low battery level or no signal coverage.
 
-<p style="text-align: center;">
-  <img src="../pictures/notifications_problems_details.png" width="200" alt="Notifications tab - sample disease notifications in the Problems tab" title="Notifications tab - sample disease notifications in the Problems tab">
-  <img src="../pictures/notifications_technical.png" width="200" alt="Notifications tab - sample technical notifications in the Technical tab" title="Notifications tab - sample technical notifications in the Technical tab">
-<br><strong>Fig. 91</strong> Notifications tab - sample disease and technical notifications (Problems and Technical tabs)</p>
+Figure: Notifications tab - sample disease and technical notifications (Problems and Technical tabs) (1) {#fig-notifications-problems-details}
+
+![figure](pictures/notifications_problems_details.png){width=200}
+
+Figure: Notifications tab - sample disease and technical notifications (Problems and Technical tabs) (2) {#fig-notifications-technical}
+
+![figure](pictures/notifications_technical.png){width=200}
 
 New notifications appear automatically on the appropriate list depending on their type. Unread messages are displayed in bold, while after they are opened they become slightly grayed out, indicating that they have already been read.
 
@@ -1234,12 +1298,15 @@ To display the details of a notification, click its header; this will expand the
 
 The AI Assistant is a feature that supports the user in analyzing the situation in the apiary and in interpreting the observed phenomena. Based on the information provided, the system generates answers and tips that can help in making decisions about running the apiary.
 
-You can use the AI Assistant by asking questions in the app (**Fig. 92**).
+You can use the AI Assistant by asking questions in the app ([](#fig-apiary-beehives)).
 
-<p style="text-align: center;">
-  <img src="../pictures/apiary_beehives.png" width="200" alt="Hives tab - sample list of hives in the apiary" title="Hives tab - sample list of hives in the apiary">
-  <img src="../pictures/ai_assistant.png" width="200" alt="Your assistant tab - sample question" title="Your assistant tab - sample question">
-<br><strong>Fig. 92</strong> Your assistant tab - sample question asked of the AI Assistant</p>
+Figure: Your assistant tab - sample question asked of the AI Assistant (1) {#fig-apiary-beehives}
+
+![figure](pictures/apiary_beehives.png){width=200}
+
+Figure: Your assistant tab - sample question asked of the AI Assistant (2) {#fig-ai-assistant}
+
+![figure](pictures/ai_assistant.png){width=200}
 
 After submitting a question, the assistant analyzes the available information and generates an answer containing possible explanations of the situation or suggestions for further action.
 
@@ -1259,19 +1326,22 @@ The user data editing feature enables you to update basic information assigned t
 
 To edit user data:
 
-- In the *Apiaries* tab (the Apisense app start view), click the cog icon in the upper right part of the screen. As a result, the *Account settings* view will open (**Fig. 93**).
+- In the *Apiaries* tab (the Apisense app start view), click the cog icon in the upper right part of the screen. As a result, the *Account settings* view will open ([](#fig-app-settings)).
 - The *Account settings* view consists of several sections: **Display name**, **Email**, **Mobile phone**, **Experience**, **Password** and **Language**. Each one shows the user's current data.
-- To change the contents of the chosen section, click its header; this will open a new view in which the data can be edited. For example, when changing the password, the user will be asked to enter a new password and to repeat it (**Fig. 93**).
+- To change the contents of the chosen section, click its header; this will open a new view in which the data can be edited. For example, when changing the password, the user will be asked to enter a new password and to repeat it ([](#fig-app-settings)).
 - After making changes, save them by clicking the yellow button in the lower right corner of the screen.
 
-<p style="text-align: center;">
-  <img src="../pictures/app_settings.png" width="200" alt="Account settings" title="Account settings">
-  <img src="../pictures/change_password.png" width="200" alt="Account settings - changing the password" title="Account settings - changing the password">
-<br><strong>Fig. 93</strong> Account settings - sample view of the settings and password change</p>
+Figure: Account settings - sample view of the settings and password change (1) {#fig-app-settings}
+
+![figure](pictures/app_settings.png){width=200}
+
+Figure: Account settings - sample view of the settings and password change (2) {#fig-change-password}
+
+![figure](pictures/change_password.png){width=200}
 
 #### 1.2 Deleting the account
 
-In the lower part of the *Account settings* view (**Fig. 93**) there is also a *Delete account* button, which enables permanent deletion of the user account.
+In the lower part of the *Account settings* view ([](#fig-app-settings)) there is also a *Delete account* button, which enables permanent deletion of the user account.
 
 ______________________________________________________________________
 
