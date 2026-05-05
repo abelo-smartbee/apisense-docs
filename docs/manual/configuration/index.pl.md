@@ -54,11 +54,18 @@ W skład zestawu Apisense wchodzą:
   - **Uchwyty montażowe do ramki** — elementy umożliwiające bezpieczne i stabilne zamocowanie Apisense VitalSensor bezpośrednio na ramce ula. Konstrukcja uchwytów pozwala na montaż bez trwałych modyfikacji ula oraz bez zakłócania pracy rodziny pszczelej.
 - <a id="naklejki-qr"></a>**Naklejki z kodem QR** — do szybkiej rejestracji pasieki i uli w systemie oraz identyfikacji urządzeń. Naklejki (**Rys. 4**) umieszczone są na poszczególnych urządzeniach (Hub, Scale, VitalSensor) oraz na uchwycie do VitalSensor (**Rys. 5**).
 
-  
-**Rys. 4** Naklejka z kodem QR na Apisense Hub, Scale i VitalSensor
 
-  
-**Rys. 5** Naklejka z kodem QR na uchwycie do VitalSensor
+  <p style="text-align: center;">
+  <img src="../pictures/hub_qr.png" width="200" alt="Hub" title="Hub">
+  <img src="../pictures/scale_qr.png" width="200" alt="Scale" title="Scale">
+  <img src="../pictures/sensor_qr.png" width="200" alt="VitalSensor" title="VitalSensor">
+  <br><strong>Rys. 4</strong> Naklejka z kodem QR na Apisense Hub, Scale i VitalSensor</p>    
+
+
+  <p style="text-align: center;">
+  <img src="../pictures/sensor_tag.png" width="200" alt="Sensor" title="Sensor">
+  <br><strong>Rys. 5</strong> Naklejka z kodem QR na uchwycie do VitalSensor</p>  
+
 
 Szczegółowy opis każdego z urządzeń (Hub, Scale, VitalSensor), specyfikacja techniczna i informacje o zasilaniu znajdują się w [Przeglądzie systemu](../../overview/index.md#2-specyfikacja-sprzetowa).
 
@@ -215,7 +222,6 @@ Przed przystąpieniem do montażu poszczególnych urządzeń wchodzących w skł
 
 
   <p style="text-align: center;">
-  <img src="../pictures/hub_antennas.png" width="200" alt="Prawidłowe rozstawienie anten" title="Prawidłowe rozstawienie anten">
   <img src="../pictures/hub_installation.png" width="200" alt="Prawidłowy montaż Apisense Hub" title="Prawidłowy montaż Apisense Hub">
   <br><strong>Rys. 15</strong> Prawidłowe rozstawienie anten i montaż Hub w pasiece</p>
 
@@ -226,8 +232,12 @@ Przed przystąpieniem do montażu poszczególnych urządzeń wchodzących w skł
   1. **Umieść Scale w docelowym miejscu** — uruchomioną Scale ustaw tak, aby była położona na stabilnym i równym podłożu oraz zorientowana prostopadle do ramek w ulu.
   2. **Umieść drewnianą kantówkę** — stanowiącą integralny element konstrukcji — równolegle do Scale i w odpowiedniej odległości tak, aby ciężar ula rozkładał się równomiernie na całej powierzchni zarówno wagi jak i kantówki.
   3. **Zamontuj ul na Scale** (jeśli jeszcze nie stoi) — umieść ul na przygotowanej konstrukcji (**Rys. 16**) i upewnij się, że obciążenie nadal rozkłada się równomiernie.
-      
-    **Rys. 16** Prawidłowe ustawienie ula na wadze oraz kantówce
+
+  <p style="text-align: center;">
+  <img src="../pictures/scale_installation.png" width="200" alt="Prawidłowe ustawienie ula na wadze oraz kantówce" title="Prawidłowe ustawienie ula na wadze oraz kantówce">
+  <br><strong>Rys. 16</strong> Prawidłowe ustawienie ula na wadze oraz kantówce</p>
+
+
   4. **Zweryfikuj w Systemie Apisense Pro AI** — jeśli urządzenie zostało prawidłowo zamontowane i nie utraciło łączności z Hub, w ciągu najbliższych kilku godzin w systemie powinny pojawić się kolejne odczyty. Szczegółowa instrukcja jak dodać Scale do panelu została przedstawiona w rozdziale [Dodanie urządzeń do systemu i pierwsze uruchomienie](#dodanie-urzadzen-do-systemu-i-pierwsze-uruchomienie), natomiast jak sprawdzić pierwsze odczyty - w rozdziale [Test poprawności działania urządzeń](#test-poprawnosci-dziaania-urzadzen).
     Po dokładnym wykonaniu powyższych czynności można uznać Apisense Scale za bezpiecznie podłączoną do systemu i korzystać z odczytów w panelu.
 
@@ -237,10 +247,20 @@ Przed przystąpieniem do montażu poszczególnych urządzeń wchodzących w skł
 - **Montaż - krok po kroku**
   1. **Umieść VitalSensor na centralnej ramce** — uruchomiony VitalSensor zamontuj do ramki pszczelej przy użyciu specjalnych uchwytów montażowych dołączonych do zestawu. Apisense VitalSensor powinien zostać stabilnie osadzony na centralnej ramce (w kłębie), tak, aby się nie przemieszczał, a także zamontowany pionowo, aby naklejka z kodem QR była widoczna od góry po włożeniu ramki do ula. Prawidłowo przymocowany VitalSensor do ramki pszczelej został przedstawiony na **Rys. 17**.
     
-  **Rys. 17** Prawidłowy montaż VitalSensor do ramki pszczelej
+
+  <p style="text-align: center;">
+  <img src="../pictures/sensor_installation_1.png" width="200" alt="Prawidłowy montaż VitalSensor do ramki pszczelej" title="Prawidłowy montaż VitalSensor do ramki pszczelej">
+  <br><strong>Rys. 17</strong> Prawidłowy montaż VitalSensor do ramki pszczelej</p>
+  
+
   2. **Umieść ramkę w ulu** — ostrożnie włóż ramkę z przymocowanym urządzeniem do ula - najlepiej umieść ją w środkowej części korpusu gniazdowego (**Rys. 18**).
     
-  **Rys. 18** Zalecane umieszczenie ramki pszczelej z VitalSensor w ulu
+
+  <p style="text-align: center;">
+  <img src="../pictures/sensor_installation_2.png" width="200" alt="Zalecane umieszczenie ramki pszczelej z VitalSensor w ulu" title="Zalecane umieszczenie ramki pszczelej z VitalSensor w ulu">
+  <br><strong>Rys. 18</strong> Zalecane umieszczenie ramki pszczelej z VitalSensor w ulu</p>  
+
+
   3. **Zweryfikuj w Systemie Apisense Pro AI** — jeśli urządzenie zostało prawidłowo zamontowane i nie utraciło łączności z Hub, w ciągu najbliższych kilku godzin w systemie powinny pojawić się kolejne odczyty. Szczegółowa instrukcja jak dodać VitalSensor do panelu została przedstawiona w rozdziale [Dodanie urządzeń do systemu i pierwsze uruchomienie](#dodanie-urzadzen-do-systemu-i-pierwsze-uruchomienie), natomiast jak sprawdzić pierwsze odczyty - w rozdziale [Test poprawności działania urządzeń](#test-poprawnosci-dziaania-urzadzen).
     Po dokładnym wykonaniu powyższych czynności można uznać Apisense VitalSensor za bezpiecznie podłączony do systemu i korzystać z odczytów w panelu.
 
