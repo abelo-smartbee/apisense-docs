@@ -59,7 +59,7 @@ The Apisense kit includes:
   - **Camera mount bracket** — used to mount the Apisense Hub, ensuring a stable and adjustable position.
   - **Wooden levelling beam** — stabilising element that enables correct positioning and levelling of the Scale beneath the hive. Distributes the hive load evenly across the scale sensors and maintains structural stability.
   - **Frame mounting clips** — allow secure, stable attachment of the Apisense VitalSensor directly to the bee frame. Designed for tool-free mounting without permanent hive modifications or disruption to the colony.
-- <a id="qr-stickers"></a>**QR code stickers** — for quick apiary and hive registration and device identification. Stickers are affixed to each device: Apisense Hub ([](#fig-qr-hub)), Apisense Scale ([](#fig-qr-scale)) and Apisense VitalSensor ([](#fig-qr-sensor)), and to the VitalSensor frame clip ([](#fig-qr-frame-clip)).
+- <a id="qr-stickers"></a>**QR code stickers** — for quick apiary and hive registration and device identification. Stickers are affixed to each device: Apisense Hub ([](#fig-qr-hub)), Apisense Scale ([](#fig-qr-scale)) and Apisense VitalSensor ([](#fig-qr-sensor)), and on the Apisense Tag ([](#fig-apisense-tag)).
 
     Figure: QR code sticker on Apisense Hub {#fig-qr-hub}
 
@@ -73,9 +73,9 @@ The Apisense kit includes:
 
     ![QR VitalSensor](../pictures/sensor_qr.jpg){width=200}
 
-    Figure: QR code sticker on the VitalSensor frame clip {#fig-qr-frame-clip}
+    Figure: Apisense Tag with QR code {#fig-apisense-tag}
 
-    ![QR frame clip](../pictures/sensor_tag.jpg){width=200}
+    ![Apisense Tag](../pictures/sensor_tag.jpg){width=200}
 
 For a detailed description of each device (Hub, Scale, VitalSensor), technical specifications, and power information see the [System Overview](../../overview/index.md#2-hardware-technical-specifications).
 

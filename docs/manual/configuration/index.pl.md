@@ -52,7 +52,7 @@ W skład zestawu Apisense wchodzą:
   - **Uchwyt aparatowy** — element wykorzystywany do montażu Apisense Hub, umożliwiający stabilne zamocowanie urządzenia.
   - **Drewniana kantówka** — element stabilizujący, umożliwiający prawidłowe ustawienie i wypoziomowanie wagi (Scale) pod ulem. Zapewnia równomierne rozłożenie ciężaru ula na czujniki pomiarowe oraz utrzymuje stabilność całej konstrukcji.
   - **Uchwyty montażowe do ramki** — elementy umożliwiające bezpieczne i stabilne zamocowanie Apisense VitalSensor bezpośrednio na ramce ula. Konstrukcja uchwytów pozwala na montaż bez trwałych modyfikacji ula oraz bez zakłócania pracy rodziny pszczelej.
-- <a id="naklejki-qr"></a>**Naklejki z kodem QR** — do szybkiej rejestracji pasieki i uli w systemie oraz identyfikacji urządzeń. Naklejki umieszczone są na poszczególnych urządzeniach: Apisense Hub ([](#fig-qr-hub)), Apisense Scale ([](#fig-qr-scale)) i Apisense VitalSensor ([](#fig-qr-sensor)) oraz na uchwycie do VitalSensor ([](#fig-qr-frame-clip)).
+- <a id="naklejki-qr"></a>**Naklejki z kodem QR** — do szybkiej rejestracji pasieki i uli w systemie oraz identyfikacji urządzeń. Naklejki umieszczone są na poszczególnych urządzeniach: Apisense Hub ([](#fig-qr-hub)), Apisense Scale ([](#fig-qr-scale)) i Apisense VitalSensor ([](#fig-qr-sensor)) oraz na Apisense Tag ([](#fig-apisense-tag)).
 
     Figure: Naklejka z kodem QR na Apisense Hub {#fig-qr-hub}
 
@@ -66,9 +66,9 @@ W skład zestawu Apisense wchodzą:
 
     ![QR VitalSensor](../pictures/sensor_qr.jpg){width=200}
 
-    Figure: Naklejka z kodem QR na uchwycie do VitalSensor {#fig-qr-frame-clip}
+    Figure: Apisense Tag z kodem QR {#fig-apisense-tag}
 
-    ![QR uchwyt](../pictures/sensor_tag.jpg){width=200}
+    ![Apisense Tag](../pictures/sensor_tag.jpg){width=200}
 
 
 Szczegółowy opis każdego z urządzeń (Hub, Scale, VitalSensor), specyfikacja techniczna i informacje o zasilaniu znajdują się w [Przeglądzie systemu](../../overview/index.md#2-specyfikacja-sprzetowa).
