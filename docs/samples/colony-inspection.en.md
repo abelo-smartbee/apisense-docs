@@ -1,3 +1,10 @@
+---
+caption:
+  figure:
+    caption_prefix: 'Fig. {index}:'
+    reference_text: 'Fig. {index}'
+---
+
 # Colony inspection
 
 Guidelines for photographic documentation and observations to record during a colony inspection within the "Spring 2026" program.
@@ -13,10 +20,9 @@ During the colony inspection, attach the following photos in the app:
 !!! tip "Apisense holders make it easier"
     The **Apisense holders** included in the kit — yellow brackets that mount on the hive walls and hold the frame steady while you photograph it — make these shots much easier.
 
-<p style="text-align: center;">
-<img src="../pictures/apisense-frame-holders.jpg" width="450" alt="Yellow Apisense holders mounted on a hive body"><br>
-<strong>Fig. 1</strong> Apisense holders for easier frame photography
-</p>
+Figure: Apisense holders for easier frame photography {#fig-apisense-frame-holders}
+
+![figure](pictures/apisense-frame-holders.jpg){width=450}
 
 ## Observations to record in the app
 

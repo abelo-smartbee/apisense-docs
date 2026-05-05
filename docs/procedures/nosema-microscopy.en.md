@@ -1,3 +1,10 @@
+---
+caption:
+  figure:
+    caption_prefix: 'Fig. {index}:'
+    reference_text: 'Fig. {index}'
+---
+
 # Nosema/Vairimorpha microscopy
 
 Procedure for detection and quantification of *Nosema*/*Vairimorpha* spores in a honey bee colony.
@@ -64,12 +71,11 @@ Use **one** of the following:
 3. If a field contains excessive debris, choose another at random.
 4. Search for *Nosema* spores in each field of view.
 
-    *Nosema* spp. spores are oval with a dark, well-defined edge (Fig. 1). Be careful not to confuse them with pollen grains, which are larger and perfectly round.
+    *Nosema* spp. spores are oval with a dark, well-defined edge ([](#fig-nosema-spores-400x)). Be careful not to confuse them with pollen grains, which are larger and perfectly round.
 
-    <p style="text-align: center;">
-    <img src="../pictures/nosema-spores-400x.jpeg" width="450" alt="Microscopic view (400×) of Nosema spp. spores"><br>
-    <strong>Fig. 1</strong> Microscopic view (400×) of <em>Nosema</em> spp. spores
-    </p>
+Figure: Microscopic view (400×) of *Nosema* spp. spores {#fig-nosema-spores-400x}
+
+![Nosema spores](pictures/nosema-spores-400x.jpeg){width=450}
 
 5. Count the number of spores in each field of view and record the values.
 6. **Take a photo of each of the five fields of view** to upload them to the Apisense app.

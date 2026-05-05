@@ -14,10 +14,9 @@ Dwa kroki: flotacja cukrem pudrem (na żywo) oraz monitorowanie osypu roztoczy n
 - Płaskie naczynie (taca, blaszka, talerz) z wodą do poziomu **~1 cm**
 - Suchy ręcznik
 
-<p style="text-align: center;">
-<img src="../pictures/varroa-jar-mesh.jpg" width="450" alt="Samodzielnie wykonany słoik z siatką ~3 mm w nakrętce"><br>
-<strong>Rys. 1</strong> Przykład samodzielnego pojemnika do flotacji — szklany słoik z siatką ~3 mm w nakrętce
-</p>
+Figure: Przykład samodzielnego pojemnika do flotacji — szklany słoik z siatką ~3 mm w nakrętce {#fig-varroa-jar-mesh}
+
+![figure](pictures/varroa-jar-mesh.jpg){width=450}
 
 ### Procedura
 
@@ -27,10 +26,9 @@ Dwa kroki: flotacja cukrem pudrem (na żywo) oraz monitorowanie osypu roztoczy n
     !!! warning "Nie pobieraj matki"
         Uważaj, aby przy zbieraniu próbki nie zgarnąć matki.
 
-    <p style="text-align: center;">
-    <img src="../pictures/bee-brush-collection.jpg" width="450" alt="Pobieranie pszczół z ramki przy pomocy szczotki"><br>
-    <strong>Rys. 2</strong> Pobieranie 300 pszczół z ramki gniazdowej szczotką (rękawiczki jednorazowe)
-    </p>
+Figure: Pobieranie 300 pszczół z ramki gniazdowej szczotką (rękawiczki jednorazowe) {#fig-bee-brush-collection}
+
+![Pobieranie pszczół z ramki](pictures/bee-brush-collection.jpg){width=450}
 
 3. Zakręć pojemnik nakrętką z siatką.
 4. Obracaj i delikatnie potrząsaj pojemnikiem przez **1 minutę**, aby pszczoły pokryły się całkowicie cukrem.

@@ -13,10 +13,9 @@ Podczas przeglądu rodziny pszczelej załącz w aplikacji zdjęcia:
 !!! tip "Uchwyty Apisense ułatwiają wykonanie zdjęć"
     Wykonanie poprawnych zdjęć ułatwią dołączone do zestawu **uchwyty Apisense** — żółte podpórki montowane na ścianach ula trzymające ramkę nieruchomo podczas fotografowania.
 
-<p style="text-align: center;">
-<img src="../pictures/apisense-frame-holders.jpg" width="450" alt="Żółte uchwyty Apisense montowane na korpusie ula"><br>
-<strong>Rys. 1</strong> Uchwyty Apisense ułatwiające wykonanie zdjęć ramek
-</p>
+Figure: Uchwyty Apisense ułatwiające wykonanie zdjęć ramek {#fig-apisense-frame-holders}
+
+![figure](pictures/apisense-frame-holders.jpg){width=450}
 
 ## Obserwacje do odnotowania w aplikacji
 

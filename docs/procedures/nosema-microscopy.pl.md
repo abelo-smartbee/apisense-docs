@@ -64,12 +64,11 @@ Użyj **jednej** z poniższych opcji:
 3. Jeśli pole zawiera nadmiar zanieczyszczeń, wybierz losowo inne.
 4. W każdym polu widzenia szukaj spor *Nosema*.
 
-    Spory *Nosema* spp. są owalne z ciemnym, dobrze zarysowanym brzegiem (Rys. 1). Uważaj, aby nie pomylić ich z ziarnami pyłku, które są większe i idealnie okrągłe.
+    Spory *Nosema* spp. są owalne z ciemnym, dobrze zarysowanym brzegiem ([](#fig-nosema-spores-400x)). Uważaj, aby nie pomylić ich z ziarnami pyłku, które są większe i idealnie okrągłe.
 
-    <p style="text-align: center;">
-    <img src="../pictures/nosema-spores-400x.jpeg" width="450" alt="Obraz mikroskopowy (400×) spor Nosema spp."><br>
-    <strong>Rys. 1</strong> Obraz mikroskopowy (400×) spor <em>Nosema</em> spp.
-    </p>
+Figure: Obraz mikroskopowy (400×) spor *Nosema* spp. {#fig-nosema-spores-400x}
+
+![Spory Nosema](pictures/nosema-spores-400x.jpeg){width=450}
 
 5. Policz spory w każdym polu widzenia i zapisz wartości.
 6. **Zrób zdjęcie każdego z pięciu pól widzenia**, aby przesłać je do aplikacji Apisense.
