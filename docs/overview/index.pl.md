@@ -1,3 +1,9 @@
+---
+caption:
+  figure:
+    enable: false
+---
+
 # Apisense – Tłumaczymy język pszczół na zrozumiałe dane
 
 **Kompleksowe rozwiązanie IoT dla nowoczesnego pszczelarstwa**
@@ -59,7 +65,8 @@ Apisense to zaawansowany system wczesnego ostrzegania, łączący nowoczesne czu
 
 Aplikacja Apisense Pro AI zapewnia intuicyjny i nowoczesny interfejs do zarządzania pasiekami na iOS, Androidzie i w przeglądarce.
 
-**Pobierz aplikację:** 
+**Pobierz aplikację:**
+
 - [App Store](https://apps.apple.com/app/apisense/id6741760755)
 - [Google Play](https://play.google.com/store/apps/details?id=ai.apisense)
 - [Wersja webowa](https://app.apisense.ai/)

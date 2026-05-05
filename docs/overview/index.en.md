@@ -1,3 +1,9 @@
+---
+caption:
+  figure:
+    enable: false
+---
+
 # Apisense – Translating the language of bees into clear data
 
 **Comprehensive IoT Solution for Modern Beekeeping**
@@ -59,8 +65,9 @@ Apisense is an advanced early warning system that combines modern Internet of Th
 
 The Apisense Pro AI app delivers an intuitive, modern interface for managing apiaries on iOS, Android, and the web.
 
-**Download the app:** 
-- [App Store](https://apps.apple.com/app/apisense/id6741760755) 
+**Download the app:**
+
+- [App Store](https://apps.apple.com/app/apisense/id6741760755)
 - [Google Play](https://play.google.com/store/apps/details?id=ai.apisense) 
 - [Web version](https://app.apisense.ai/)
 
