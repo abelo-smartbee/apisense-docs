@@ -9,6 +9,14 @@ Step-by-step guides for sample collection and field tests that complement Apisen
 
 ## When to perform these tests
 
-The three procedures are independent — run them based on what you need to assess. The questionnaire is quick and can be done at every inspection. The sugar roll is typically run during the active season to monitor *Varroa* pressure. Microscopy is used when *Nosema* infection is suspected (dripping feces, weakened colony, no other obvious cause) or as part of routine spring/autumn checks.
+For every colony equipped with Apisense sensors, run these tests three times per season:
+
+1. **Test 1 — ±7 days after sensor installation.** Baseline reading once monitoring is live.
+2. **Test 2 — 2 months after the first test.** Mid-season check during the active period.
+3. **Test 3 — before wintering.**\*
+
+\* In countries without a distinct wintering period, the third test date is set individually.
+
+Each round covers **both procedures** (Varroa sugar roll + Nosema/Vairimorpha microscopy) for every monitored colony. Microscopy can additionally be run outside the schedule when *Nosema* infection is suspected (dripping feces, weakened colony with no other obvious cause).
 
 Each procedure ends with a list of fields to report in the Apisense app so results can be tracked over time and across hives.
