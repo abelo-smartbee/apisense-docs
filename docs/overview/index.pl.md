@@ -1,9 +1,3 @@
----
-caption:
-  figure:
-    enable: false
----
-
 # Apisense – Tłumaczymy język pszczół na zrozumiałe dane
 
 **Kompleksowe rozwiązanie IoT dla nowoczesnego pszczelarstwa**

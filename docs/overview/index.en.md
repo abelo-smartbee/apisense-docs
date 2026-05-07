@@ -1,9 +1,3 @@
----
-caption:
-  figure:
-    enable: false
----
-
 # Apisense – Translating the language of bees into clear data
 
 **Comprehensive IoT Solution for Modern Beekeeping**

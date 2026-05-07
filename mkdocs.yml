@@ -91,7 +91,7 @@ plugins:
         caption_prefix: 'Rys. {index}:'
         reference_text: 'Rys. {index}'
         position: bottom
-        ignore_alt: false
+        ignore_alt: true
       table:
         enable: false
 
