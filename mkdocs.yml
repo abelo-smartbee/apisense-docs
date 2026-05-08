@@ -40,8 +40,8 @@ plugins:
                 - Konfiguracja sprzętu:
                     - Przegląd: manual/configuration/index.md
                     - Konfiguracja w skrócie: manual/configuration/quick-guide.md
-                    - Rozwiązywanie problemów: manual/configuration/troubleshooting.md
                     - Dobre praktyki: manual/configuration/best-practices.md
+            - Rozwiązywanie problemów: manual/configuration/troubleshooting.md
             - Badania:
                 - Przegląd: procedures/index.md
                 - Mikroskopia Nosema/Vairimorpha: procedures/nosema-microscopy.md
@@ -71,8 +71,8 @@ plugins:
                 - Hardware configuration:
                     - Overview: manual/configuration/index.md
                     - Quick Guide: manual/configuration/quick-guide.md
-                    - Troubleshooting: manual/configuration/troubleshooting.md
                     - Best Practices: manual/configuration/best-practices.md
+            - Troubleshooting: manual/configuration/troubleshooting.md
             - Lab procedures:
                 - Overview: procedures/index.md
                 - Nosema/Vairimorpha microscopy: procedures/nosema-microscopy.md
@@ -114,8 +114,8 @@ nav:
       - Konfiguracja sprzętu:
           - Przegląd: manual/configuration/index.md
           - Konfiguracja w skrócie: manual/configuration/quick-guide.md
-          - Rozwiązywanie problemów: manual/configuration/troubleshooting.md
           - Dobre praktyki: manual/configuration/best-practices.md
+  - Rozwiązywanie problemów: manual/configuration/troubleshooting.md
   - Badania:
       - Przegląd: procedures/index.md
       - Mikroskopia Nosema/Vairimorpha: procedures/nosema-microscopy.md

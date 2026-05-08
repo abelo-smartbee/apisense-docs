@@ -17,3 +17,13 @@
 - Nie myj czujnika pod bieżącą wodą.
 - Nie dezynfekuj czujnika poprzez zanurzenie (nie moczyć go w alkoholu, środkach dezynfekujących, wodzie itp.).
 - Nie otwieraj, nie rozbieraj, nie odkręcaj ani nie modyfikuj czujnika w żaden sposób.
+
+## 2. Co robić a czego nie robić z HUB
+
+- Hub ładuje się ze światła słonecznego — jeśli planujesz montaż w miejscu **zacienionym lub o ograniczonym nasłonecznieniu**, doładuj wcześniej Hub przewodem USB-C (ok. 3 godz.) zanim wystawisz go w terenie.
+- Anteny BLE i LTE muszą być skierowane **pionowo do góry** — nigdy poziomo ani w dół.
+- Przed montażem upewnij się, że obie anteny są **dokręcone** do gniazd Hub.
+- Hub musi znajdować się **na zewnątrz** — nie pod dachem, nie w pomieszczeniu (wymagane przez GPS i zasięg sieci komórkowej).
+- Panel solarny ustaw w kierunku słońca, z nachyleniem minimum 20°, dbając o brak zacienienia.
+- Trzymaj Hub z dala od metalowych przedmiotów i linii energetycznych — pogarszają zasięg BLE.
+- Regularnie sprawdzaj poziom naładowania Hub w aplikacji.

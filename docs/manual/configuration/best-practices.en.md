@@ -17,3 +17,13 @@
 - Do not wash the sensor under running water.
 - Do not disinfect the sensor by submerging it (do not soak in alcohol, disinfectants, water, etc.).
 - Do not open, disassemble, unscrew, or modify the sensor in any way.
+
+## 2. Do's and Don'ts for the Hub
+
+- The Hub charges from sunlight — if you plan to mount it in a **shaded or low-sunlight location**, pre-charge the Hub via USB-C (approx. 3 hours) before deploying it in the field.
+- The BLE and LTE antennas must point **vertically upwards** — never horizontally or downwards.
+- Before mounting, make sure both antennas are **screwed in tight** to the Hub sockets.
+- The Hub must be **outdoors** — not under a roof, not indoors (required for GPS and cellular coverage).
+- Position the solar panel facing the sun, tilted at least 20°, with no shading.
+- Keep the Hub away from metal objects and power lines — they degrade BLE range.
+- Regularly check the Hub battery level in the app.

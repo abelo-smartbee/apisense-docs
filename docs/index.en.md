@@ -30,6 +30,12 @@ First-time setup of Apisense hardware: kit contents, connecting the Hub, install
 
 [Go to hardware setup →](manual/configuration/index.md)
 
+### Troubleshooting
+
+A list of common problems with the devices (Hub, VitalSensor, Scale) and suggested solutions, including a diagnostic checklist for no Hub coverage.
+
+[Go to troubleshooting →](manual/configuration/troubleshooting.md)
+
 ### Lab procedures
 
 Field procedures the beekeeper performs independently: *Nosema*/*Vairimorpha* microscopy and the *Varroa destructor* sugar-roll test.

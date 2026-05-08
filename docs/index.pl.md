@@ -30,6 +30,12 @@ Pierwsze uruchomienie sprzętu Apisense: zawartość zestawu, podłączenie bram
 
 [Przejdź do instrukcji konfiguracji →](manual/configuration/index.md)
 
+### Rozwiązywanie problemów
+
+Lista typowych problemów z urządzeniami (Hub, VitalSensor, Scale) i proponowane rozwiązania, w tym checklista diagnostyczna braku zasięgu Hub.
+
+[Przejdź do rozwiązywania problemów →](manual/configuration/troubleshooting.md)
+
 ### Badania
 
 Procedury terenowe wykonywane samodzielnie przez pszczelarza: mikroskopia *Nosema*/*Vairimorpha* oraz flotacja na *Varroa destructor* z użyciem cukru pudru.
