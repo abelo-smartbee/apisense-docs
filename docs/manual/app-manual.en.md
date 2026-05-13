@@ -372,6 +372,10 @@ Figure: Adding an inspection - adding photos {#fig-add-inspection-photos}
 
 ![figure](pictures/add_inspection_photos.png){width=200}
 
+Figure: Example photo of a frame with the sensor attached to an inspection {#fig-inspection-photo-example}
+
+![figure](pictures/inspection_photo_example.png){width=400}
+
 - Once you have added the photos correctly, click the yellow arrow in the lower right corner to proceed to the next step.
 
 - Then answer a few questions ([](#fig-add-overview-question)). Choose Yes, No or Skip.

@@ -365,6 +365,10 @@ Figure: Dodawanie przeglądu - dodawanie zdjęć {#fig-add-inspection-photos}
 
 ![figure](pictures/add_inspection_photos.png){width=200}
 
+Figure: Przykładowe zdjęcie ramki z czujnikiem dołączane do przeglądu {#fig-inspection-photo-example}
+
+![figure](pictures/inspection_photo_example.png){width=400}
+
 - Po poprawnym dodaniu zdjęć kliknij żółtą strzałkę, umieszczoną w prawym dolnym rogu, co spowoduje przejście do kolejnego kroku.
 
 - Następnie odpowedz na kilka pytań ([](#fig-add-overview-question)). Zaznacz odpowiedź Tak, Nie lub Pomiń.
