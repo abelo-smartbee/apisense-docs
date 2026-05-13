@@ -80,7 +80,6 @@ plugins:
             - Samples:
                 - Overview: samples/index.md
                 - "Protocol 1: Varroa monitoring": samples/protocol-1-varroa.md
-                - "Protocol 2: Live bees": samples/protocol-2-live-bees.md
                 - "Protocol 3: Brood comb section": samples/protocol-3-brood-comb.md
                 - "Protocol 4: Dead bees": samples/protocol-4-dead-bees.md
                 - Colony inspection: samples/colony-inspection.md

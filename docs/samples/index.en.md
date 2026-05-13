@@ -10,7 +10,7 @@ A seasonal honey bee health monitoring program run by Apisense in collaboration 
 | | Protocol | Status |
 |---|---|---|
 | 1 | [*Varroa destructor* monitoring](protocol-1-varroa.md) — sugar roll + mite drop on sticky board | Mandatory |
-| 2 | [Live bee collection](protocol-2-live-bees.md) — ~40 workers from the brood nest | Mandatory |
+| 2 | Live bee collection — ~40 workers from the brood nest | PL group only |
 | 3 | [Brood comb section](protocol-3-brood-comb.md) — 10×10 cm with affected brood | Conditional (contact first) |
 | 4 | [Dead bees](protocol-4-dead-bees.md) — bottom-board collection | Recommended |
 

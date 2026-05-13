@@ -26,6 +26,13 @@ System Apisense Pro AI jest dostępny pod następującym adresem: [Apisense Pro 
 
 ### 1. Rejestracja
 
+<div class="yt-embed short" id="wideo-rejestracja">
+  <iframe src="https://www.youtube.com/embed/sYDT5N7eUi8"
+          title="Apisense Manual PL — 01 · Rejestracja"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+</div>
+
 - Pobierz aplikację mobilną i uruchom ją lub przejdź pod podany adres: [Apisense Pro AI](https://app.apisense.ai/). Po uruchomieniu aplikacji pojawi się ekran z możliwością założenia konta ([](#fig-rejestracja)).
 
 Figure: Rejestracja do Systemu Apisense Pro AI - widok startowy Załóż konto {#fig-rejestracja}
@@ -94,7 +101,12 @@ ______________________________________________________________________
 
 #### 1.1 Dodawanie pasieki
 
-> **Wideo (PL):** [Apisense Manual PL — 02 · Dodaj pasiekę](https://www.youtube.com/shorts/wJrFummpo7Y)
+<div class="yt-embed short" id="wideo-dodaj-pasieke">
+  <iframe src="https://www.youtube.com/embed/wJrFummpo7Y"
+          title="Apisense Manual PL — 02 · Dodaj pasiekę"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+</div>
 
 - W zakładce **Pasieki** (widok startowy po zalogowaniu do aplikacji Apisense) kliknij zakładkę *Dodaj pasiekę* znajdującą się w menu na dole ekranu lub - jeśli jeszcze nie masz żadnej pasieki - żółty przycisk *Dodaj pasiekę* widoczny w centrum ekranu ([](#fig-apiaries)).
 
@@ -182,7 +194,12 @@ Figure: Ustawienia pasieki - widok Usuń pasiekę {#fig-apiary-settings-remove-a
 
 #### 2.1 Dodawanie ula
 
-> **Wideo (PL):** [Apisense Manual PL — 03 · Dodaj ul](https://www.youtube.com/shorts/L_XWlMFRbbE)
+<div class="yt-embed short" id="wideo-dodaj-ul">
+  <iframe src="https://www.youtube.com/embed/L_XWlMFRbbE"
+          title="Apisense Manual PL — 03 · Dodaj ul"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+</div>
 
 - Będąc w zakładce Pasieki (widok startowy po zalogowaniu do aplikacji Apisense) kliknij kafelek z pasieką, do której chcesz dodać ul i przypisać urządzenia (Scale i VitalSensor). Po kliknięciu w kafelek zostanie wyświetlony widok pojedynczej pasieki ([](#fig-apiaries-apiary)).
 
@@ -330,7 +347,12 @@ Figure: Ustawienia ula - widok Usuń ul {#fig-beehive-settings-remove-beehive}
 
 ### 3. Dodawanie przeglądów
 
-> **Wideo (PL):** [Apisense Manual PL — 04 · Dodaj przegląd](https://www.youtube.com/shorts/1kHqvSh838o)
+<div class="yt-embed short" id="wideo-dodaj-przeglad">
+  <iframe src="https://www.youtube.com/embed/1kHqvSh838o"
+          title="Apisense Manual PL — 04 · Dodaj przegląd"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+</div>
 
 - Będąc w zakładce Pasieki (widok startowy po zalogowaniu do aplikacji Apisense) kliknij kafelek z pasieką. Po kliknięciu w kafelek zostanie wyświetlony widok Ule ([](#fig-apiaries-apiary-with-beehive)).
 
@@ -394,9 +416,19 @@ Figure: Przegląd na liście przeglądów w ulu {#fig-beehive-details-overview}
 
 #### 4.1 Dodawanie notatki
 
-> **Wideo (PL)** — seria *Apisense Manual PL*  
-> · [05 · Dodaj notatkę tekstową](https://www.youtube.com/shorts/nZdzxrNIyZA)  
-> · [06 · Dodaj notatkę głosową](https://www.youtube.com/shorts/_QLzIfwcRMs)
+<div class="yt-embed short" id="wideo-notatka-tekst">
+  <iframe src="https://www.youtube.com/embed/nZdzxrNIyZA"
+          title="Apisense Manual PL — 05 · Dodaj notatkę tekstową"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+</div>
+
+<div class="yt-embed short" id="wideo-notatka-audio">
+  <iframe src="https://www.youtube.com/embed/_QLzIfwcRMs"
+          title="Apisense Manual PL — 06 · Dodaj notatkę głosową"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+</div>
 
 Poniższe kroki odnoszą się do dodawania notatki z poziomu ula.
 
@@ -452,7 +484,12 @@ Figure: Notatka na liście notatek w ulu {#fig-beehive-details-note}
 
 #### 4.2 Edycja notatki
 
-> **Wideo (PL):** [06 · Edycja notatki głosowej](https://www.youtube.com/shorts/_QLzIfwcRMs)
+<div class="yt-embed short" id="wideo-edycja-notatki">
+  <iframe src="https://www.youtube.com/embed/_QLzIfwcRMs"
+          title="Apisense Manual PL — 06 · Edycja notatki głosowej"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+</div>
 
 - W zakładce Pasieki (widok startowy po zalogowaniu do aplikacji Apisense) kliknij kafelek z pasieką. Po kliknięciu w kafelek zostanie wyświetlony widok Ule ([](#fig-apiaries-apiary-with-beehive-3)).
 
@@ -571,7 +608,12 @@ Figure: Potwierdź chorobę - zapisanie formularza {#fig-confirm-problem-save}
 
 #### 5.2 Potwierdzanie chorób z poziomu ula
 
-> **Wideo (PL):** [Apisense Manual PL — 08 · Potwierdź chorobę w ulu](https://www.youtube.com/shorts/iGNXm9qu8X8) 
+<div class="yt-embed short" id="wideo-potwierdz-chorobe">
+  <iframe src="https://www.youtube.com/embed/iGNXm9qu8X8"
+          title="Apisense Manual PL — 08 · Potwierdź chorobę w ulu"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+</div>
 
 - W zakładce Pasieki (widok startowy po zalogowaniu do aplikacji Apisense) kliknij kafelek z pasieką, w której wykryto zagrożenie (czerwona ikonka z pszczołą i napisem Zagrożenie na kafelku z pasieką). Po kliknięciu w kafelek zostanie wyświetlony widok Ule ([](#fig-apiaries-apiary-with-problem-2)).
 
@@ -624,7 +666,12 @@ Figure: Potwierdź chorobę - zapisanie formularza {#fig-confirm-problem-save-2}
 
 ### 6. Rejestrowanie próbki
 
-> **Wideo (PL):** [Apisense Manual PL — 07 · Zarejestruj próbkę](https://www.youtube.com/shorts/jqS9rvhd-X0)
+<div class="yt-embed short" id="wideo-zarejestruj-probke">
+  <iframe src="https://www.youtube.com/embed/jqS9rvhd-X0"
+          title="Apisense Manual PL — 07 · Zarejestruj próbkę"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+</div>
 
 - W zakładce Pasieki (widok startowy po zalogowaniu do aplikacji Apisense) kliknij kafelek z pasieką. Po kliknięciu w kafelek zostanie wyświetlony widok Ule ([](#fig-apiaries-apiary-with-beehive-5)).
 
@@ -1393,7 +1440,7 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 - **Rejestracja:** Pobierz aplikację mobilną Apisense lub wejdź na stronę internetową systemu. Wybierz *Załóż konto*, wypełnij dane (nazwa użytkownika, e-mail, telefon), utwórz hasło spełniające wymagania i kliknij *Zarejestruj się*.
 
-> [Wideo](https://www.youtube.com/shorts/sYDT5N7eUi8), [Rejestracja](#1-rejestracja)
+> [Wideo](#wideo-rejestracja), [Rejestracja](#1-rejestracja)
 
 - **Logowanie:** Uruchom aplikację lub stronę internetową, w widoku *Zaloguj się* wpisz nazwę użytkownika i hasło, następnie kliknij *Zaloguj się*.
 
@@ -1403,7 +1450,7 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 - **Dodawanie pasieki:** W zakładce *Pasieki* wybierz *Dodaj pasiekę* z dolnego menu. W widoku *Dodaj pasiekę* uzupełnij nazwę, skrót, zeskanuj kod QR z Apisense Hub i zapisz.
 
-> [Wideo](https://www.youtube.com/shorts/wJrFummpo7Y), [Dodawanie pasieki](#11-dodawanie-pasieki)
+> [Wideo](#wideo-dodaj-pasieke), [Dodawanie pasieki](#11-dodawanie-pasieki)
 
 - **Edycja pasieki:** Kliknij kafelek wybranej pasieki. Kliknij ikonę zębatki będąc w zakładce *Ule*. W widoku *Ustawienia pasieki* kliknij nagłówek sekcji, dla której chcesz zedytować dane. Zmień wartości pól i kliknij zapisz (żółty przycisk).
 
@@ -1415,7 +1462,7 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 - **Dodawanie ula:** Kliknij kafelek wybranej pasieki. Wybierz *Dodaj…* → *Dodaj ul* z dolnego menu. Wypełnij dane w sekcji *Szczegóły ula*, *Informacje o matce pszczelej* oraz zeskanuj kody QR z urządzeń Scale i VitalSensor. Kliknij żółty przycisk Zapisz.
 
-> [Wideo](https://www.youtube.com/shorts/L_XWlMFRbbE), [Dodawanie ula](#21-dodawanie-ula)
+> [Wideo](#wideo-dodaj-ul), [Dodawanie ula](#21-dodawanie-ula)
 
 - **Edycja ula:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Kliknij ikonę zębatki będąc w zakładce *Szczegóły*. W widoku *Ustawienia ula* kliknij nagłówek sekcji, dla której chcesz zedytować dane. Zmień wartości pól i kliknij zapisz (żółty przycisk).
 
@@ -1427,25 +1474,25 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 - **Dodawanie przeglądów:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Wybierz *Dodaj...* -> *Przegląd* z dolnego menu. Załącz łącznie 4 wymagane zdjęcia ramek. Odpowiedz na pytania. Żółta strzałka w prawo umożliwia przejście do następnego pytania. Kliknij *Zakończ przegląd* (żółty przycisk w ostatnim oknie przeglądu) by zapisać.
 
-> [Wideo](https://www.youtube.com/shorts/1kHqvSh838o), [Dodawanie przeglądów](#3-dodawanie-przegl%C4%85d%C3%B3w)
+> [Wideo](#wideo-dodaj-przeglad), [Dodawanie przeglądów](#3-dodawanie-przegl%C4%85d%C3%B3w)
 
 - **Dodawanie notatek:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Wybierz *Dodaj...* -> *Notatkę* z dolnego menu. Wprowadź zawartość notatki (tekst lub nagraj notatkę głosową, możesz dodać też zdjęcia lub nagrania (*+*)). Zapisz notatkę (żółty przycisk).
 
-> [Wideo — notatka tekstowa](https://www.youtube.com/shorts/nZdzxrNIyZA)
-> [Wideo — notatka audio](https://www.youtube.com/shorts/_QLzIfwcRMs) 
+> [Wideo — notatka tekstowa](#wideo-notatka-tekst)
+> [Wideo — notatka audio](#wideo-notatka-audio) 
 > [Notatki](#4-notatki)
 
 - **Potwierdzanie chorób z poziomu pasieki:** Kliknij kafelek wybranej pasieki. Wybierz *Powiadomienia* z dolnego menu. W zakładce *Problemy* kliknij w wybrany wiersz z chorobą, aby rozwinąć szczegóły. Kliknij przycisk *Odpowiedz na kilka pytań*. Udziel odpowiedzi na pytania. Aby przejść do kolejnego kliknij żółtą strzałkę w prawo. Na koniec kliknij *Zapisz*.
 
-> [Wideo](https://www.youtube.com/shorts/iGNXm9qu8X8), [Potwierdzanie chorób](#5-potwierdzanie-chor%C3%B3b)
+> [Wideo](#wideo-potwierdz-chorobe), [Potwierdzanie chorób](#5-potwierdzanie-chor%C3%B3b)
 
 - **Potwierdzanie chorób z poziomu ula:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Wybierz *Powiadomienia* z dolnego menu. W zakładce *Problemy* kliknij w wybrany wiersz z chorobą, aby rozwinąć szczegóły. Kliknij przycisk *Odpowiedz na kilka pytań*. Udziel odpowiedzi na pytania. Aby przejść do kolejnego kliknij żółtą strzałkę w prawo. Na koniec kliknij *Zapisz*.
 
-> [Wideo](https://www.youtube.com/shorts/iGNXm9qu8X8), [Potwierdzanie chorób](#5-potwierdzanie-chor%C3%B3b)
+> [Wideo](#wideo-potwierdz-chorobe), [Potwierdzanie chorób](#5-potwierdzanie-chor%C3%B3b)
 
 - **Rejestrowanie próbki:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Wybierz *Dodaj...* -> *Zarejestruj próbkę* z dolnego menu. Wybierz datę pobrania próbki i rodzaj badania. Kliknij przycisk *Wygeneruj kod*. Zapisz *Kod badania* na próbce i wyślij do Apisense. (Uwaga: opcja Zarejestruj próbkę jest dostępna tylko w ulu z przypisanym urządzeniem VitalSensor).
 
-> [Wideo](https://www.youtube.com/shorts/jqS9rvhd-X0), [Rejestrowanie próbki](#6-rejestrowanie-pr%C3%B3bki)
+> [Wideo](#wideo-zarejestruj-probke), [Rejestrowanie próbki](#6-rejestrowanie-pr%C3%B3bki)
 
 - **Dodawanie badania:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Z dolnego menu wybierz *Dodaj... -> Badanie*. Wybierz datę i rodzaj badania z listy rozwijanej, uzupełnij wymagane zdjęcia i pola (np. liczba roztoczy warrozy), następnie zapisz żółtym przyciskiem.
 
@@ -1455,7 +1502,7 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 - **Lista pasiek (zakładka Pasieki):** Widok startowy po zalogowaniu się do aplikacji Apisense - kafelki pasiek z podstawowymi informacjami. Kliknij pasiekę, aby przejść do listy uli.
 
-> [Wideo](https://www.youtube.com/shorts/wJrFummpo7Y), [Omówienie listy pasiek (zakładka Pasieki)](#1-om%C3%B3wienie-listy-pasiek-zak%C5%82adka-pasieki)
+> [Wideo](#wideo-dodaj-pasieke), [Omówienie listy pasiek (zakładka Pasieki)](#1-om%C3%B3wienie-listy-pasiek-zak%C5%82adka-pasieki)
 
 - **Mapa pasiek:** Po zalogowaniu do aplikacji, z dolnego menu wybierz *Mapa*, aby zobaczyć lokalizacje pasiek. Możesz filtrować widok według problemów (np. Warroza).
 
@@ -1463,7 +1510,7 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 - **Lista uli (zakładka Ule):** Kliknij kafelek wybranej pasieki. W rezultacie pojawią się wszystkie ule przypisane do tej pasieki. Widok *Ule* prezentuje listę uli; kliknij wybrany ul, aby przejść do szczegółów.
 
-> [Wideo](https://www.youtube.com/shorts/L_XWlMFRbbE), [Omówienie listy uli (zakładka Ule)](#3-om%C3%B3wienie-listy-uli-zak%C5%82adka-ule)
+> [Wideo](#wideo-dodaj-ul), [Omówienie listy uli (zakładka Ule)](#3-om%C3%B3wienie-listy-uli-zak%C5%82adka-ule)
 
 - **Zawartość ula (zakładka Szczegóły):** Tu sprawdzisz *Stan ula*, zapisane przeglądy, notatki oraz listę badań i próbek. Możesz wyświetlić również wykresy poszczególnych parametrów np. Przybytek miodu.
 

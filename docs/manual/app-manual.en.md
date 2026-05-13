@@ -33,6 +33,13 @@ The Apisense Pro AI system is available at the following address: [Apisense Pro 
 
 ### 1. Registration
 
+<div class="yt-embed short" id="video-registration">
+  <iframe src="https://www.youtube.com/embed/sYDT5N7eUi8"
+          title="Apisense Manual PL — 01 · Registration"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+</div>
+
 - Download the mobile app and launch it, or go to the following address: [Apisense Pro AI](https://app.apisense.ai/). After launching the app, a screen will appear with the option to create an account ([](#fig-rejestracja)).
 
 Figure: Registering with the Apisense Pro AI System - Create account start view {#fig-rejestracja}
@@ -101,7 +108,12 @@ ______________________________________________________________________
 
 #### 1.1 Adding an apiary
 
-> **Video (PL):** [Apisense Manual PL — 02 · Add apiary](https://www.youtube.com/shorts/wJrFummpo7Y)
+<div class="yt-embed short" id="video-add-apiary">
+  <iframe src="https://www.youtube.com/embed/wJrFummpo7Y"
+          title="Apisense Manual PL — 02 · Add apiary"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+</div>
 
 - In the **Apiaries** tab (the start view after logging in to the Apisense app) click the *Add apiary* tab in the menu at the bottom of the screen or — if you do not yet have any apiary — the yellow *Add apiary* button visible in the center of the screen ([](#fig-apiaries)).
 
@@ -189,7 +201,12 @@ Figure: Apiary settings - Delete apiary view {#fig-apiary-settings-remove-apiary
 
 #### 2.1 Adding a hive
 
-> **Video (PL):** [Apisense Manual PL — 03 · Add hive](https://www.youtube.com/shorts/L_XWlMFRbbE)
+<div class="yt-embed short" id="video-add-hive">
+  <iframe src="https://www.youtube.com/embed/L_XWlMFRbbE"
+          title="Apisense Manual PL — 03 · Add hive"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+</div>
 
 - While in the Apiaries tab (the start view after logging in to the Apisense app) click the tile of the apiary to which you want to add a hive and assign devices (Scale and VitalSensor). After clicking the tile, the single apiary view will be displayed ([](#fig-apiaries-apiary)).
 
@@ -337,7 +354,12 @@ Figure: Hive settings - Delete hive view {#fig-beehive-settings-remove-beehive}
 
 ### 3. Adding inspections
 
-> **Video (PL):** [Apisense Manual PL — 04 · Add inspection](https://www.youtube.com/shorts/1kHqvSh838o)
+<div class="yt-embed short" id="video-add-inspection">
+  <iframe src="https://www.youtube.com/embed/1kHqvSh838o"
+          title="Apisense Manual PL — 04 · Add inspection"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+</div>
 
 - While in the Apiaries tab (the start view after logging in to the Apisense app) click the apiary tile. After clicking the tile, the Hives view will be displayed ([](#fig-apiaries-apiary-with-beehive)).
 
@@ -401,9 +423,19 @@ Figure: Inspection in the hive inspection list {#fig-beehive-details-overview}
 
 #### 4.1 Adding a note
 
-> **Video (PL)** — *Apisense Manual PL* series  
-> · [05 · Add text note](https://www.youtube.com/shorts/nZdzxrNIyZA)  
-> · [06 · Add voice note](https://www.youtube.com/shorts/_QLzIfwcRMs)
+<div class="yt-embed short" id="video-note-text">
+  <iframe src="https://www.youtube.com/embed/nZdzxrNIyZA"
+          title="Apisense Manual PL — 05 · Add text note"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+</div>
+
+<div class="yt-embed short" id="video-note-voice">
+  <iframe src="https://www.youtube.com/embed/_QLzIfwcRMs"
+          title="Apisense Manual PL — 06 · Add voice note"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+</div>
 
 The steps below refer to adding a note from the hive level.
 
@@ -459,7 +491,12 @@ Figure: Note in the hive note list {#fig-beehive-details-note}
 
 #### 4.2 Editing a note
 
-> **Video (PL):** [06 · Editing a voice note](https://www.youtube.com/shorts/_QLzIfwcRMs)
+<div class="yt-embed short" id="video-edit-note">
+  <iframe src="https://www.youtube.com/embed/_QLzIfwcRMs"
+          title="Apisense Manual PL — 06 · Editing a voice note"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+</div>
 
 - In the Apiaries tab (the start view after logging in to the Apisense app) click the apiary tile. After clicking the tile, the Hives view will be displayed ([](#fig-apiaries-apiary-with-beehive-3)).
 
@@ -578,7 +615,12 @@ Figure: Confirm disease - saving the form {#fig-confirm-problem-save}
 
 #### 5.2 Confirming diseases from the hive level
 
-> **Video (PL):** [Apisense Manual PL — 08 · Confirm disease in the hive](https://www.youtube.com/shorts/iGNXm9qu8X8) 
+<div class="yt-embed short" id="video-confirm-disease">
+  <iframe src="https://www.youtube.com/embed/iGNXm9qu8X8"
+          title="Apisense Manual PL — 08 · Confirm disease in the hive"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+</div>
 
 - In the Apiaries tab (the start view after logging in to the Apisense app) click the tile of the apiary in which a threat was detected (red bee icon and "Threat" label on the apiary tile). After clicking the tile, the Hives view will be displayed ([](#fig-apiaries-apiary-with-problem-2)).
 
@@ -631,7 +673,12 @@ Figure: Confirm disease - saving the form {#fig-confirm-problem-save-2}
 
 ### 6. Registering a sample
 
-> **Video (PL):** [Apisense Manual PL — 07 · Register sample](https://www.youtube.com/shorts/jqS9rvhd-X0)
+<div class="yt-embed short" id="video-register-sample">
+  <iframe src="https://www.youtube.com/embed/jqS9rvhd-X0"
+          title="Apisense Manual PL — 07 · Register sample"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+</div>
 
 - In the Apiaries tab (the start view after logging in to the Apisense app) click the apiary tile. After clicking the tile, the Hives view will be displayed ([](#fig-apiaries-apiary-with-beehive-5)).
 
@@ -1400,7 +1447,7 @@ Below you will find a summary of the most important activities in the Apisense P
 
 - **Registration:** Download the Apisense mobile app or go to the system's website. Choose *Create account*, fill in the data (user name, email, phone), create a password meeting the requirements, and click *Sign up*.
 
-> [Video](https://www.youtube.com/shorts/sYDT5N7eUi8), [Registration](#1-registration)
+> [Video](#video-registration), [Registration](#1-registration)
 
 - **Login:** Launch the app or website, in the *Sign in* view enter your user name and password, then click *Sign in*.
 
@@ -1410,7 +1457,7 @@ Below you will find a summary of the most important activities in the Apisense P
 
 - **Adding an apiary:** In the *Apiaries* tab choose *Add apiary* from the bottom menu. In the *Add apiary* view fill in the name, abbreviation, scan the QR code from the Apisense Hub and save.
 
-> [Video](https://www.youtube.com/shorts/wJrFummpo7Y), [Adding an apiary](#11-adding-an-apiary)
+> [Video](#video-add-apiary), [Adding an apiary](#11-adding-an-apiary)
 
 - **Editing an apiary:** Click the chosen apiary tile. Click the cog icon while in the *Hives* tab. In the *Apiary settings* view click the header of the section whose data you want to edit. Change the field values and click save (yellow button).
 
@@ -1422,7 +1469,7 @@ Below you will find a summary of the most important activities in the Apisense P
 
 - **Adding a hive:** Click the chosen apiary tile. Choose *Add…* → *Add hive* from the bottom menu. Fill in the data in the *Hive details* and *Queen bee information* sections and scan the QR codes from the Scale and VitalSensor devices. Click the yellow Save button.
 
-> [Video](https://www.youtube.com/shorts/L_XWlMFRbbE), [Adding a hive](#21-adding-a-hive)
+> [Video](#video-add-hive), [Adding a hive](#21-adding-a-hive)
 
 - **Editing a hive:** Click the chosen apiary tile. Click the chosen hive tile. Click the cog icon while in the *Details* tab. In the *Hive settings* view click the header of the section whose data you want to edit. Change the field values and click save (yellow button).
 
@@ -1434,25 +1481,25 @@ Below you will find a summary of the most important activities in the Apisense P
 
 - **Adding inspections:** Click the chosen apiary tile. Click the chosen hive tile. Choose *Add...* -> *Inspection* from the bottom menu. Attach a total of 4 required frame photos. Answer the questions. The yellow right-pointing arrow lets you proceed to the next question. Click *Finish inspection* (yellow button on the last inspection screen) to save.
 
-> [Video](https://www.youtube.com/shorts/1kHqvSh838o), [Adding inspections](#3-adding-inspections)
+> [Video](#video-add-inspection), [Adding inspections](#3-adding-inspections)
 
 - **Adding notes:** Click the chosen apiary tile. Click the chosen hive tile. Choose *Add...* -> *Note* from the bottom menu. Enter the note content (text or record a voice note; you can also add photos or recordings (*+*)). Save the note (yellow button).
 
-> [Video — text note](https://www.youtube.com/shorts/nZdzxrNIyZA)
-> [Video — audio note](https://www.youtube.com/shorts/_QLzIfwcRMs) 
+> [Video — text note](#video-note-text)
+> [Video — audio note](#video-note-voice) 
 > [Notes](#4-notes)
 
 - **Confirming diseases from the apiary level:** Click the chosen apiary tile. Choose *Notifications* from the bottom menu. In the *Problems* tab click the chosen disease row to expand the details. Click the *Answer a few questions* button. Answer the questions. To proceed to the next, click the yellow right-pointing arrow. At the end click *Save*.
 
-> [Video](https://www.youtube.com/shorts/iGNXm9qu8X8), [Confirming diseases](#5-confirming-diseases)
+> [Video](#video-confirm-disease), [Confirming diseases](#5-confirming-diseases)
 
 - **Confirming diseases from the hive level:** Click the chosen apiary tile. Click the chosen hive tile. Choose *Notifications* from the bottom menu. In the *Problems* tab click the chosen disease row to expand the details. Click the *Answer a few questions* button. Answer the questions. To proceed to the next, click the yellow right-pointing arrow. At the end click *Save*.
 
-> [Video](https://www.youtube.com/shorts/iGNXm9qu8X8), [Confirming diseases](#5-confirming-diseases)
+> [Video](#video-confirm-disease), [Confirming diseases](#5-confirming-diseases)
 
 - **Registering a sample:** Click the chosen apiary tile. Click the chosen hive tile. Choose *Add...* -> *Register sample* from the bottom menu. Choose the sample collection date and the test type. Click the *Generate code* button. Write the *Test code* on the sample and send it to Apisense. (Note: the Register sample option is only available for a hive with an assigned VitalSensor device).
 
-> [Video](https://www.youtube.com/shorts/jqS9rvhd-X0), [Registering a sample](#6-registering-a-sample)
+> [Video](#video-register-sample), [Registering a sample](#6-registering-a-sample)
 
 - **Adding a test:** Click the chosen apiary tile. Click the chosen hive tile. From the bottom menu choose *Add... -> Test*. Choose the date and test type from the drop-down list, fill in the required photos and fields (e.g. number of varroa mites), then save with the yellow button.
 
@@ -1462,7 +1509,7 @@ Below you will find a summary of the most important activities in the Apisense P
 
 - **Apiary list (Apiaries tab):** The start view after logging in to the Apisense app - apiary tiles with basic information. Click an apiary to go to the hive list.
 
-> [Video](https://www.youtube.com/shorts/wJrFummpo7Y), [Apiary list overview (Apiaries tab)](#1-apiary-list-overview-apiaries-tab)
+> [Video](#video-add-apiary), [Apiary list overview (Apiaries tab)](#1-apiary-list-overview-apiaries-tab)
 
 - **Apiary map:** After logging in to the app, choose *Map* from the bottom menu to see the apiary locations. You can filter the view by problems (e.g. Varroa).
 
@@ -1470,7 +1517,7 @@ Below you will find a summary of the most important activities in the Apisense P
 
 - **Hive list (Hives tab):** Click the chosen apiary tile. As a result, all hives assigned to this apiary will appear. The *Hives* view presents a list of hives; click the chosen hive to go to the details.
 
-> [Video](https://www.youtube.com/shorts/L_XWlMFRbbE), [Hive list overview (Hives tab)](#3-hive-list-overview-hives-tab)
+> [Video](#video-add-hive), [Hive list overview (Hives tab)](#3-hive-list-overview-hives-tab)
 
 - **Hive contents (Details tab):** Here you check the *Hive status*, saved inspections, notes, and the list of tests and samples. You can also display charts of individual parameters, e.g. Honey gain.
 
