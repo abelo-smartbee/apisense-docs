@@ -17,6 +17,10 @@ During the colony inspection, attach the following photos in the app:
 - **Outermost frame** without bees — front and back of the comb
 - Any other photos relevant from the beekeeper's perspective
 
+Figure: Example photo of a frame with the sensor {#fig-inspection-photo-example}
+
+![figure](pictures/inspection_photo_example.png){width=500}
+
 !!! tip "Apisense holders make it easier"
     The **Apisense holders** included in the kit — yellow brackets that mount on the hive walls and hold the frame steady while you photograph it — make these shots much easier.
 

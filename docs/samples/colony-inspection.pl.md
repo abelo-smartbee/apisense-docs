@@ -10,6 +10,10 @@ Podczas przeglądu rodziny pszczelej załącz w aplikacji zdjęcia:
 - **Najbardziej zewnętrznej ramki** bez pszczół — przód i tył plastra
 - Inne zdjęcia istotne z punktu widzenia pszczelarza
 
+Figure: Przykładowe zdjęcie ramki z czujnikiem {#fig-inspection-photo-example}
+
+![figure](pictures/inspection_photo_example.png){width=500}
+
 !!! tip "Uchwyty Apisense ułatwiają wykonanie zdjęć"
     Wykonanie poprawnych zdjęć ułatwią dołączone do zestawu **uchwyty Apisense** — żółte podpórki montowane na ścianach ula trzymające ramkę nieruchomo podczas fotografowania.
 
