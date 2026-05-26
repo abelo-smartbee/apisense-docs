@@ -1,10 +1,25 @@
 {% extends "base.html" %}
 
 {% block footer %}
+  {% set page_url = page.url if page and page.url else '' %}
+  {% set normalized_page_url = page_url.lstrip('/') %}
+  {% set is_english = config.theme.language == 'en' or normalized_page_url.startswith('en/') %}
   <footer class="md-footer">
     <div class="md-footer-meta md-typeset">
       <div class="md-footer-meta__inner md-grid apisense-footer">
-        <img src="{{ 'assets/branding/apisense-footer.png' | url }}" alt="Apisense footer">
+        <div class="apisense-footer__brand">
+          <img src="{{ 'assets/branding/apisense-footer.png' | url }}" alt="{% if is_english %}Apisense logo{% else %}Logo Apisense{% endif %}">
+        </div>
+        <div class="apisense-footer__contact" aria-label="{% if is_english %}Apisense contact{% else %}Kontakt Apisense{% endif %}">
+          <h2 class="apisense-footer__heading">{% if is_english %}Contact{% else %}Kontakt{% endif %}</h2>
+          <a class="apisense-footer__mail" href="mailto:bee@apisense.ai">bee@apisense.ai</a>
+          <nav class="apisense-footer__socials" aria-label="{% if is_english %}Apisense social media{% else %}Media społecznościowe Apisense{% endif %}">
+            <a href="https://www.facebook.com/apisenseai/" target="_blank" rel="noopener noreferrer" aria-label="Facebook {% if is_english %}(opens in a new window){% else %}(otwiera się w nowym oknie){% endif %}">Facebook</a>
+            <a href="https://www.linkedin.com/company/apisense/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn {% if is_english %}(opens in a new window){% else %}(otwiera się w nowym oknie){% endif %}">LinkedIn</a>
+            <a href="https://www.instagram.com/apisense.global/" target="_blank" rel="noopener noreferrer" aria-label="Instagram {% if is_english %}(opens in a new window){% else %}(otwiera się w nowym oknie){% endif %}">Instagram</a>
+            <a href="https://www.youtube.com/@Apisense.Global" target="_blank" rel="noopener noreferrer" aria-label="YouTube {% if is_english %}(opens in a new window){% else %}(otwiera się w nowym oknie){% endif %}">YouTube</a>
+          </nav>
+        </div>
       </div>
     </div>
   </footer>
