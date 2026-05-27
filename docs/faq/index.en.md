@@ -78,6 +78,16 @@ Yes. Please add a note in the app once doing so.
 
 Do not move sensors without letting the Apisense team know first! To prevent the risk of disease spread and for data integrity reasons, in such a situation always contact us directly and wait for further instructions.
 
+### I'm moving a sensor to another colony (e.g. after a colony died) — how do I reflect this in the app?
+
+A new colony = a new hive in the app. Do it in three steps:
+
+1. **Create a new hive** in the app — the old hive stays unchanged.
+2. **Unbind the devices from the old hive** and **bind them to the new one** (after disinfecting the sensor).
+3. From now on new measurements go to the new hive.
+
+Measurement history is **not** transferred between hives — it was a different colony, so the old hive's data does not describe the new one. That is why the data starts fresh with the new hive. You don't need to let us know — once you create the new hive and re-assign the devices to it, we have the full picture.
+
 ### What about splitting colonies or adding/removing supers?
 
 Always add a note on such activities — it supports correct data interpretation.

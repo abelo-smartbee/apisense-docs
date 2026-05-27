@@ -78,6 +78,16 @@ Tak. Pamiętaj, aby zaznaczyć to w notatce w aplikacji.
 
 Nie przenoś czujników bez wcześniejszego poinformowania zespołu Apisense! Ze względu na ryzyko rozprzestrzeniania chorób oraz integralność danych, w takiej sytuacji za każdym razem skontaktuj się z nami bezpośrednio i poczekaj na dalsze instrukcje.
 
+### Przekładam czujnik do innej rodziny (np. po osypaniu się rodziny) — jak odwzorować to w aplikacji?
+
+Nowa rodzina = nowy ul w aplikacji. Wykonaj to w trzech krokach:
+
+1. **Utwórz nowy ul** w aplikacji — stary ul zostaje bez zmian.
+2. **Odepnij urządzenia od starego ula** i **przypnij je do nowego** (po odkażeniu czujnika).
+3. Od tej pory nowe pomiary trafiają do nowego ula.
+
+Historii pomiarów **nie przenosimy** między ulami — to była inna rodzina, więc dane ze starego ula nie opisują nowej. Dlatego dane zaczynają się od nowa wraz z utworzeniem nowego ula. Nie musisz nas o tym informować — gdy utworzysz nowy ul i przepniesz tam urządzenia, mamy pełen obraz sytuacji.
+
 ### A co z odkładami lub dodawaniem/zdejmowaniem nadstawek?
 
 Zawsze dodawaj notatkę o takich czynnościach — pomaga to w prawidłowej interpretacji danych.
