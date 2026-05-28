@@ -558,11 +558,142 @@ Figure: Usuwanie notatki z listy notatek w ulu {#fig-beehive-details-remove-note
 
 ![figure](pictures/beehive_details_note.png){width=200}
 
-### 5. Potwierdzanie chorób
+### 5. Zadania
+
+Zadania (kalendarz) pozwalają planować pracę w pasiece — przeglądy, podkarmianie, miodobrania, prace porządkowe. Każde zadanie ma datę, status (*Do zrobienia* / *Wykonane*) i **zakres** określający, których pasiek i uli dotyczy. Zadania można powtarzać (serie) oraz oznaczać jako wykonane w miarę realizacji.
+
+#### 5.1 Czym jest zadanie
+
+Każde zadanie zawiera następujące informacje:
+
+- **Nazwa** — krótki tytuł (pole wymagane).
+- **Opis** — szczegóły, notatka kontekstowa (pole opcjonalne).
+- **Data** — kiedy zadanie ma być wykonane.
+- **Status** — *Do zrobienia* (planowane) lub *Wykonane*.
+- **Zakres** — czy zadanie dotyczy całej pasieki, wybranych uli, czy jednego ula (patrz [5.2 Zakres zadania](#52-zakres-zadania-gdzie-jest-widoczne-i-edytowalne)).
+- **Powtarzanie** — opcjonalne; co 7 dni, 14 dni, 1 miesiąc lub 3 miesiące, z datą końca serii (patrz [5.5 Powtarzanie zadań](#55-powtarzanie-zadan)).
+
+#### 5.2 Zakres zadania (gdzie jest widoczne i edytowalne)
+
+Zakres określa, gdzie zadanie jest widoczne oraz skąd można je edytować i usunąć.
+
+| Zakres            | Widoczne w widoku pasieki | Widoczne w widokach uli       | Edytowalne z poziomu ula |
+|-------------------|---------------------------|--------------------------------|--------------------------|
+| Cała pasieka      | Tak                       | Tak — we wszystkich ulach      | Nie                      |
+| Wybrane ule       | Tak                       | Tak — tylko w wybranych ulach  | Nie                      |
+| Pojedynczy ul     | Tak                       | Tak — tylko w tym jednym ulu   | Tak                      |
+
+!!! tip
+    Zadania o zakresie *Cała pasieka* i *Wybrane ule* są edytowalne i usuwane wyłącznie z poziomu pasieki — z poziomu ula są dostępne tylko do podglądu. Zadanie utworzone dla pojedynczego ula można edytować i usunąć z poziomu tego ula.
+
+#### 5.3 Dodawanie zadania z poziomu pasieki
+
+Z poziomu pasieki możesz utworzyć zadanie dla **całej pasieki**, dla **wybranych uli** lub kilka zadań w serii.
+
+- W zakładce *Pasieki* kliknij kafelek z pasieką, dla której chcesz dodać zadanie. Zostanie wyświetlony widok *Ule*.
+- Z dolnego menu wybierz opcję *Dodaj...*, a następnie *Zadanie* ([](#fig-apiary-add-task)). Zostanie wyświetlony widok *Dodaj zadanie*.
+
+Figure: Widok Dodaj zadanie z poziomu pasieki {#fig-apiary-add-task}
+
+![figure](pictures/apiary_add_task.png){width=200}
+
+- W widoku *Dodaj zadanie* wypełnij następujące pola:
+
+    - **Nazwa** — wpisz tytuł zadania (np. *Przegląd wiosenny*).
+    - **Opis** — opcjonalnie dodaj szczegóły (np. *Sprawdzić zapasy zimowe, ocenić siłę rodziny*).
+    - **Data** — wybierz datę zadania (domyślnie aktualna).
+    - **Zakres** — wybierz jedną z opcji:
+        - *Cała pasieka* — zadanie pojawi się we wszystkich ulach tej pasieki.
+        - *Wybrane ule* — po wyborze opcji zaznacz konkretne ule z listy.
+    - **Powtarzanie** (opcjonalnie) — patrz [5.5 Powtarzanie zadań](#55-powtarzanie-zadan).
+
+- Aby zapisać zadanie, kliknij żółty przycisk w prawym dolnym rogu ekranu. Zapisane zadanie pojawi się na liście zadań pasieki (zakładka *Zadania*).
+
+#### 5.4 Dodawanie zadania z poziomu ula
+
+Zadanie dodane z poziomu ula ma automatycznie zakres *Pojedynczy ul* — jest widoczne tylko w tym ulu i można je edytować z jego poziomu.
+
+- W zakładce *Pasieki* kliknij kafelek z pasieką, a następnie kafelek ula, dla którego chcesz dodać zadanie. Zostanie wyświetlony widok *Szczegóły ula*.
+- Z dolnego menu wybierz opcję *Dodaj...*, a następnie *Zadanie* ([](#fig-beehive-add-task)). Zostanie wyświetlony widok *Dodaj zadanie*.
+
+Figure: Widok Dodaj zadanie z poziomu ula {#fig-beehive-add-task}
+
+![figure](pictures/beehive_add_task.png){width=200}
+
+- Uzupełnij pola **Nazwa**, **Opis** (opcjonalnie), **Data** oraz opcjonalnie **Powtarzanie**. Brak wyboru zakresu — zadanie automatycznie dotyczy tego ula.
+- Kliknij żółty przycisk zapisu w prawym dolnym rogu.
+
+#### 5.5 Powtarzanie zadań
+
+Zadanie można skonfigurować jako powtarzające się. W sekcji *Powtarzanie* w widoku *Dodaj zadanie* wybierz:
+
+- **Częstotliwość** — co 7 dni, 14 dni, 1 miesiąc lub 3 miesiące.
+- **Data końca serii** — maksymalnie 1 rok od daty pierwszego zadania.
+
+Aplikacja utworzy osobne wystąpienia zadania dla każdej daty z tego zakresu. Wszystkie wystąpienia należą do jednej **serii** i mogą być edytowane lub usunięte razem.
+
+!!! tip
+    Przy edycji lub usunięciu powtarzającego się zadania wybierasz, czego ma dotyczyć zmiana: **tylko to wystąpienie**, **to i przyszłe wystąpienia** lub **wszystkie wystąpienia w serii** ([](#fig-task-series-apply-to)). Przy zmianie daty zadania w serii dostępna jest wyłącznie opcja *tylko to wystąpienie*.
+
+Figure: Wybór zakresu zmiany w serii {#fig-task-series-apply-to}
+
+![figure](pictures/task_series_apply_to.png){width=200}
+
+#### 5.6 Oznaczanie zadania jako wykonane
+
+- Otwórz listę zadań w zakładce *Zadania* (z poziomu pasieki lub ula).
+- Przy wybranym zadaniu kliknij ikonę zaznaczenia / przycisk *Wykonane* ([](#fig-task-mark-done)). Status zmieni się z *Do zrobienia* na *Wykonane*.
+
+Figure: Oznaczanie zadania jako wykonane {#fig-task-mark-done}
+
+![figure](pictures/task_mark_done.png){width=200}
+
+#### 5.7 Edycja zadania
+
+- Na liście zadań kliknij wybrane zadanie lub ikonę ołówka, aby otworzyć widok *Edycja zadania* ([](#fig-task-edit)).
+- Zaktualizuj pola: **Nazwa**, **Opis**, **Data**, **Status** lub (dla zadań pojedynczego ula z poziomu pasieki) **Zakres**.
+- Dla zadania powtarzającego się wybierz, czy zmiana ma dotyczyć tylko tego wystąpienia, tego i przyszłych, czy wszystkich w serii (patrz [5.5 Powtarzanie zadań](#55-powtarzanie-zadan)).
+- Zapisz zmiany żółtym przyciskiem w prawym dolnym rogu.
+
+Figure: Edycja zadania {#fig-task-edit}
+
+![figure](pictures/task_edit.png){width=200}
+
+!!! note
+    Zadania o zakresie *Cała pasieka* lub *Wybrane ule* można edytować i usuwać **wyłącznie z poziomu pasieki**. Z poziomu ula zobaczysz takie zadanie tylko jako podgląd — bez ikon edycji i usunięcia.
+
+#### 5.8 Usuwanie zadania
+
+- Na liście zadań przesuń wiersz z wybranym zadaniem w lewą stronę lub użyj ikony kosza dostępnej w widoku zadania ([](#fig-task-delete)).
+- Potwierdź usunięcie. Dla zadań w serii potwierdź również zakres usunięcia (tylko to wystąpienie / to i przyszłe / wszystkie).
+
+Figure: Usuwanie zadania {#fig-task-delete}
+
+![figure](pictures/task_delete.png){width=200}
+
+#### 5.9 Lista zadań i filtrowanie
+
+Listę zadań znajdziesz w zakładce *Zadania*:
+
+- **Z poziomu pasieki** — wyświetla wszystkie zadania pasieki: o zakresie *Cała pasieka*, *Wybrane ule* oraz zadania pojedynczych uli należących do tej pasieki ([](#fig-apiary-tasks-list)).
+
+Figure: Lista zadań w widoku pasieki {#fig-apiary-tasks-list}
+
+![figure](pictures/apiary_tasks.png){width=200}
+
+- **Z poziomu ula** — wyświetla zadania widoczne w tym ulu: zadania o zakresie *Cała pasieka*, zadania *Wybrane ule* obejmujące ten ul, oraz zadania *Pojedynczy ul* dla tego ula ([](#fig-beehive-tasks-list)).
+
+Figure: Lista zadań w widoku ula {#fig-beehive-tasks-list}
+
+![figure](pictures/beehive_details_tasks_list.png){width=200}
+
+Listę zadań możesz filtrować po dacie oraz statusie (*Do zrobienia* / *Wykonane*). W widoku ula obok zadań niedotyczących bezpośrednio tego ula (zakres *Cała pasieka* lub *Wybrane ule*) brak ikon edycji — takie zadania są tylko do podglądu.
+
+### 6. Potwierdzanie chorób
 
 Gdy system Apisense Pro AI zgłosi zagrożenie (np. Nosemoza), w aplikacji pojawią się **alarmy** w zakładce *Powiadomienia* z opisem i zaleceniami. Potwierdzając wykrytą chorobę w aplikacji, ułatwiasz systemowi dopasowanie komunikatów do rzeczywistych warunków w Twojej pasiece.
 
-#### 5.1 Potwierdzanie chorób z poziomu pasieki
+#### 6.1 Potwierdzanie chorób z poziomu pasieki
 
 - W zakładce Pasieki (widok startowy po zalogowaniu do aplikacji Apisense) kliknij kafelek z pasieką, w której wykryto zagrożenie (czerwona ikonka z pszczołą i napisem Zagrożenie na kafelku z pasieką). Po kliknięciu w kafelek zostanie wyświetlony widok Ule ([](#fig-apiaries-apiary-with-problem)).
 
@@ -606,7 +737,7 @@ Figure: Potwierdź chorobę - zapisanie formularza {#fig-confirm-problem-save}
 
 ![figure](pictures/confirm_problem_save.png){width=200}
 
-#### 5.2 Potwierdzanie chorób z poziomu ula
+#### 6.2 Potwierdzanie chorób z poziomu ula
 
 <div class="yt-embed short" id="wideo-potwierdz-chorobe">
   <iframe src="https://www.youtube.com/embed/iGNXm9qu8X8"
@@ -664,7 +795,7 @@ Figure: Potwierdź chorobę - zapisanie formularza {#fig-confirm-problem-save-2}
 ![figure](pictures/confirm_problem_save.png){width=200}
 
 
-### 6. Rejestrowanie próbki
+### 7. Rejestrowanie próbki
 
 <div class="yt-embed short" id="wideo-zarejestruj-probke">
   <iframe src="https://www.youtube.com/embed/jqS9rvhd-X0"
@@ -710,9 +841,9 @@ Figure: Widok Zarejestruj próbkę {#fig-register-sample}
     Szczegółowe instrukcje pobierania próbek i wykonywania badań (mikroskopia *Nosema*, flotacja na *Varroa*) znajdziesz w sekcji [Badania](../procedures/index.md).
 
 
-### 7. Badania
+### 8. Badania
 
-#### 7.1 Dodawanie badania 
+#### 8.1 Dodawanie badania 
 
 - W zakładce Pasieki (widok startowy po zalogowaniu do aplikacji Apisense) kliknij kafelek z pasieką. Po kliknięciu w kafelek zostanie wyświetlony widok Ule ([](#fig-apiaries-apiary-with-beehive-6)).
 
@@ -1484,19 +1615,19 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 - **Potwierdzanie chorób z poziomu pasieki:** Kliknij kafelek wybranej pasieki. Wybierz *Powiadomienia* z dolnego menu. W zakładce *Problemy* kliknij w wybrany wiersz z chorobą, aby rozwinąć szczegóły. Kliknij przycisk *Odpowiedz na kilka pytań*. Udziel odpowiedzi na pytania. Aby przejść do kolejnego kliknij żółtą strzałkę w prawo. Na koniec kliknij *Zapisz*.
 
-> [Wideo](#wideo-potwierdz-chorobe), [Potwierdzanie chorób](#5-potwierdzanie-chor%C3%B3b)
+> [Wideo](#wideo-potwierdz-chorobe), [Potwierdzanie chorób](#6-potwierdzanie-chor%C3%B3b)
 
 - **Potwierdzanie chorób z poziomu ula:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Wybierz *Powiadomienia* z dolnego menu. W zakładce *Problemy* kliknij w wybrany wiersz z chorobą, aby rozwinąć szczegóły. Kliknij przycisk *Odpowiedz na kilka pytań*. Udziel odpowiedzi na pytania. Aby przejść do kolejnego kliknij żółtą strzałkę w prawo. Na koniec kliknij *Zapisz*.
 
-> [Wideo](#wideo-potwierdz-chorobe), [Potwierdzanie chorób](#5-potwierdzanie-chor%C3%B3b)
+> [Wideo](#wideo-potwierdz-chorobe), [Potwierdzanie chorób](#6-potwierdzanie-chor%C3%B3b)
 
 - **Rejestrowanie próbki:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Wybierz *Dodaj...* -> *Zarejestruj próbkę* z dolnego menu. Wybierz datę pobrania próbki i rodzaj badania. Kliknij przycisk *Wygeneruj kod*. Zapisz *Kod badania* na próbce i wyślij do Apisense. (Uwaga: opcja Zarejestruj próbkę jest dostępna tylko w ulu z przypisanym urządzeniem VitalSensor).
 
-> [Wideo](#wideo-zarejestruj-probke), [Rejestrowanie próbki](#6-rejestrowanie-pr%C3%B3bki)
+> [Wideo](#wideo-zarejestruj-probke), [Rejestrowanie próbki](#7-rejestrowanie-pr%C3%B3bki)
 
 - **Dodawanie badania:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Z dolnego menu wybierz *Dodaj... -> Badanie*. Wybierz datę i rodzaj badania z listy rozwijanej, uzupełnij wymagane zdjęcia i pola (np. liczba roztoczy warrozy), następnie zapisz żółtym przyciskiem.
 
-> [Dodawanie badania](#71-dodawanie-badania)
+> [Dodawanie badania](#81-dodawanie-badania)
 
 ### 3. Panel główny i nawigacja
 

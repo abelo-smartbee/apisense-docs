@@ -565,11 +565,142 @@ Figure: Deleting a note from the hive note list {#fig-beehive-details-remove-not
 
 ![figure](pictures/beehive_details_note.png){width=200}
 
-### 5. Confirming diseases
+### 5. Tasks
+
+Tasks (calendar) let you plan apiary work — inspections, feeding, honey harvests, maintenance. Each task has a date, a status (*To do* / *Done*) and a **scope** that defines which apiaries and hives it applies to. Tasks can be configured to repeat (series) and marked as done as you carry them out.
+
+#### 5.1 What is a task
+
+Each task contains the following information:
+
+- **Name** — short title (required).
+- **Description** — details, contextual note (optional).
+- **Date** — when the task is to be done.
+- **Status** — *To do* (planned) or *Done*.
+- **Scope** — whether the task applies to the whole apiary, selected hives, or a single hive (see [5.2 Task scope](#52-task-scope-where-it-is-visible-and-editable)).
+- **Recurrence** — optional; every 7 days, 14 days, 1 month or 3 months, with a series end date (see [5.5 Repeating tasks](#55-repeating-tasks)).
+
+#### 5.2 Task scope (where it is visible and editable)
+
+The scope defines where the task is visible and from where it can be edited and deleted.
+
+| Scope            | Visible in apiary view | Visible in hive views        | Editable from hive level |
+|------------------|------------------------|-------------------------------|--------------------------|
+| Whole apiary     | Yes                    | Yes — in all hives            | No                       |
+| Selected hives   | Yes                    | Yes — only in selected hives  | No                       |
+| Single hive      | Yes                    | Yes — only in that one hive   | Yes                      |
+
+!!! tip
+    Tasks with scope *Whole apiary* or *Selected hives* can be edited and deleted **only from the apiary level** — from the hive level they are read-only. A task created for a single hive can be edited and deleted from that hive's level.
+
+#### 5.3 Adding a task from the apiary level
+
+From the apiary level you can create a task for the **whole apiary**, for **selected hives**, or as a recurring series.
+
+- In the *Apiaries* tab, click the tile of the apiary for which you want to add a task. The *Hives* view will be displayed.
+- From the bottom menu choose *Add...*, then *Task* ([](#fig-apiary-add-task)). The *Add task* view will be displayed.
+
+Figure: Add task view from the apiary level {#fig-apiary-add-task}
+
+![figure](pictures/apiary_add_task.png){width=200}
+
+- In the *Add task* view fill in the following fields:
+
+    - **Name** — enter the task title (e.g. *Spring inspection*).
+    - **Description** — optionally add details (e.g. *Check winter stores, assess colony strength*).
+    - **Date** — choose the task date (current date by default).
+    - **Scope** — select one of:
+        - *Whole apiary* — the task will appear in all hives in this apiary.
+        - *Selected hives* — after choosing this option, pick the specific hives from the list.
+    - **Recurrence** (optional) — see [5.5 Repeating tasks](#55-repeating-tasks).
+
+- To save the task, click the yellow button in the bottom right corner of the screen. The saved task will appear on the apiary task list (*Tasks* tab).
+
+#### 5.4 Adding a task from the hive level
+
+A task added from the hive level automatically has scope *Single hive* — it is visible only in that hive and can be edited from its level.
+
+- In the *Apiaries* tab click the apiary tile, then click the hive tile for which you want to add a task. The *Hive details* view will be displayed.
+- From the bottom menu choose *Add...*, then *Task* ([](#fig-beehive-add-task)). The *Add task* view will be displayed.
+
+Figure: Add task view from the hive level {#fig-beehive-add-task}
+
+![figure](pictures/beehive_add_task.png){width=200}
+
+- Fill in **Name**, **Description** (optional), **Date** and optionally **Recurrence**. There is no scope picker — the task automatically applies to this hive.
+- Click the yellow save button in the bottom right corner.
+
+#### 5.5 Repeating tasks
+
+A task can be configured to repeat. In the *Recurrence* section of the *Add task* view choose:
+
+- **Frequency** — every 7 days, 14 days, 1 month or 3 months.
+- **Series end date** — at most 1 year from the first task date.
+
+The app will create separate task occurrences for every date in this range. All occurrences belong to one **series** and can be edited or deleted together.
+
+!!! tip
+    When editing or deleting a recurring task, you choose the scope of the change: **this occurrence only**, **this and future occurrences**, or **all occurrences in the series** ([](#fig-task-series-apply-to)). When changing the task date in a series, only the *this occurrence only* option is available.
+
+Figure: Choosing the series change scope {#fig-task-series-apply-to}
+
+![figure](pictures/task_series_apply_to.png){width=200}
+
+#### 5.6 Marking a task as done
+
+- Open the task list in the *Tasks* tab (from the apiary or hive level).
+- Next to the chosen task, click the check icon / *Done* button ([](#fig-task-mark-done)). The status will change from *To do* to *Done*.
+
+Figure: Marking a task as done {#fig-task-mark-done}
+
+![figure](pictures/task_mark_done.png){width=200}
+
+#### 5.7 Editing a task
+
+- On the task list click the chosen task or the pencil icon to open the *Edit task* view ([](#fig-task-edit)).
+- Update fields: **Name**, **Description**, **Date**, **Status** or (for single-hive tasks edited from the apiary level) **Scope**.
+- For a recurring task, choose whether the change applies to this occurrence only, this and future, or all occurrences in the series (see [5.5 Repeating tasks](#55-repeating-tasks)).
+- Save the changes with the yellow button in the bottom right corner.
+
+Figure: Editing a task {#fig-task-edit}
+
+![figure](pictures/task_edit.png){width=200}
+
+!!! note
+    Tasks with scope *Whole apiary* or *Selected hives* can be edited and deleted **only from the apiary level**. From the hive level you will see such a task only as a read-only preview — without edit and delete icons.
+
+#### 5.8 Deleting a task
+
+- On the task list swipe the row with the chosen task to the left, or use the bin icon available in the task view ([](#fig-task-delete)).
+- Confirm the deletion. For tasks in a series, also confirm the deletion scope (this occurrence only / this and future / all).
+
+Figure: Deleting a task {#fig-task-delete}
+
+![figure](pictures/task_delete.png){width=200}
+
+#### 5.9 Task list and filtering
+
+You will find the task list in the *Tasks* tab:
+
+- **From the apiary level** — displays all apiary tasks: scope *Whole apiary*, *Selected hives*, and single-hive tasks belonging to that apiary ([](#fig-apiary-tasks-list)).
+
+Figure: Task list in the apiary view {#fig-apiary-tasks-list}
+
+![figure](pictures/apiary_tasks.png){width=200}
+
+- **From the hive level** — displays the tasks visible in this hive: *Whole apiary* tasks, *Selected hives* tasks covering this hive, and *Single hive* tasks for this hive ([](#fig-beehive-tasks-list)).
+
+Figure: Task list in the hive view {#fig-beehive-tasks-list}
+
+![figure](pictures/beehive_details_tasks_list.png){width=200}
+
+You can filter the task list by date and status (*To do* / *Done*). In the hive view, tasks that do not apply directly to this hive (scope *Whole apiary* or *Selected hives*) have no edit icons — such tasks are read-only.
+
+### 6. Confirming diseases
 
 When the Apisense Pro AI system reports a threat (e.g. Nosema), **alerts** will appear in the *Notifications* tab in the app, along with a description and recommendations. By confirming the detected disease in the app, you help the system tailor messages to the actual conditions in your apiary.
 
-#### 5.1 Confirming diseases from the apiary level
+#### 6.1 Confirming diseases from the apiary level
 
 - In the Apiaries tab (the start view after logging in to the Apisense app) click the tile of the apiary in which a threat was detected (red bee icon and "Threat" label on the apiary tile). After clicking the tile, the Hives view will be displayed ([](#fig-apiaries-apiary-with-problem)).
 
@@ -613,7 +744,7 @@ Figure: Confirm disease - saving the form {#fig-confirm-problem-save}
 
 ![figure](pictures/confirm_problem_save.png){width=200}
 
-#### 5.2 Confirming diseases from the hive level
+#### 6.2 Confirming diseases from the hive level
 
 <div class="yt-embed short" id="video-confirm-disease">
   <iframe src="https://www.youtube.com/embed/iGNXm9qu8X8"
@@ -671,7 +802,7 @@ Figure: Confirm disease - saving the form {#fig-confirm-problem-save-2}
 ![figure](pictures/confirm_problem_save.png){width=200}
 
 
-### 6. Registering a sample
+### 7. Registering a sample
 
 <div class="yt-embed short" id="video-register-sample">
   <iframe src="https://www.youtube.com/embed/jqS9rvhd-X0"
@@ -717,9 +848,9 @@ Figure: Register sample view {#fig-register-sample}
     Detailed instructions for sample collection and field testing (*Nosema* microscopy, *Varroa* sugar roll, colony health questionnaire) are available in the [Lab procedures](../procedures/index.md) section.
 
 
-### 7. Tests
+### 8. Tests
 
-#### 7.1 Adding a test 
+#### 8.1 Adding a test 
 
 - In the Apiaries tab (the start view after logging in to the Apisense app) click the apiary tile. After clicking the tile, the Hives view will be displayed ([](#fig-apiaries-apiary-with-beehive-6)).
 
@@ -1491,19 +1622,19 @@ Below you will find a summary of the most important activities in the Apisense P
 
 - **Confirming diseases from the apiary level:** Click the chosen apiary tile. Choose *Notifications* from the bottom menu. In the *Problems* tab click the chosen disease row to expand the details. Click the *Answer a few questions* button. Answer the questions. To proceed to the next, click the yellow right-pointing arrow. At the end click *Save*.
 
-> [Video](#video-confirm-disease), [Confirming diseases](#5-confirming-diseases)
+> [Video](#video-confirm-disease), [Confirming diseases](#6-confirming-diseases)
 
 - **Confirming diseases from the hive level:** Click the chosen apiary tile. Click the chosen hive tile. Choose *Notifications* from the bottom menu. In the *Problems* tab click the chosen disease row to expand the details. Click the *Answer a few questions* button. Answer the questions. To proceed to the next, click the yellow right-pointing arrow. At the end click *Save*.
 
-> [Video](#video-confirm-disease), [Confirming diseases](#5-confirming-diseases)
+> [Video](#video-confirm-disease), [Confirming diseases](#6-confirming-diseases)
 
 - **Registering a sample:** Click the chosen apiary tile. Click the chosen hive tile. Choose *Add...* -> *Register sample* from the bottom menu. Choose the sample collection date and the test type. Click the *Generate code* button. Write the *Test code* on the sample and send it to Apisense. (Note: the Register sample option is only available for a hive with an assigned VitalSensor device).
 
-> [Video](#video-register-sample), [Registering a sample](#6-registering-a-sample)
+> [Video](#video-register-sample), [Registering a sample](#7-registering-a-sample)
 
 - **Adding a test:** Click the chosen apiary tile. Click the chosen hive tile. From the bottom menu choose *Add... -> Test*. Choose the date and test type from the drop-down list, fill in the required photos and fields (e.g. number of varroa mites), then save with the yellow button.
 
-> [Adding a test](#71-adding-a-test)
+> [Adding a test](#81-adding-a-test)
 
 ### 3. Main panel and navigation
 
