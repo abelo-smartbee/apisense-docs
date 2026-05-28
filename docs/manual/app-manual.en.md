@@ -625,7 +625,7 @@ A task added from the hive level automatically has scope *Single hive* — it is
 
 Figure: Add task view from the hive level {#fig-beehive-add-task}
 
-![figure](pictures/beehive_add_task.png){width=200}
+![figure](pictures/beehive_add_task.PNG){width=200}
 
 - Fill in **Name**, **Description** (optional), **Date** and optionally **Recurrence**. There is no scope picker — the task automatically applies to this hive.
 - Click the yellow save button in the bottom right corner.
@@ -644,7 +644,7 @@ The app will create separate task occurrences for every date in this range. All 
 
 Figure: Choosing the series change scope {#fig-task-series-apply-to}
 
-![figure](pictures/task_series_apply_to.png){width=200}
+![figure](pictures/task_series_apply_to.PNG){width=200}
 
 #### 5.6 Marking a task as done
 
@@ -653,7 +653,7 @@ Figure: Choosing the series change scope {#fig-task-series-apply-to}
 
 Figure: Marking a task as done {#fig-task-mark-done}
 
-![figure](pictures/task_mark_done.png){width=200}
+![figure](pictures/task_mark_done.PNG){width=200}
 
 #### 5.7 Editing a task
 
@@ -676,7 +676,7 @@ Figure: Editing a task {#fig-task-edit}
 
 Figure: Deleting a task {#fig-task-delete}
 
-![figure](pictures/task_delete.png){width=200}
+![figure](pictures/task_delete.PNG){width=200}
 
 #### 5.9 Task list and filtering
 

@@ -618,7 +618,7 @@ Zadanie dodane z poziomu ula ma automatycznie zakres *Pojedynczy ul* — jest wi
 
 Figure: Widok Dodaj zadanie z poziomu ula {#fig-beehive-add-task}
 
-![figure](pictures/beehive_add_task.png){width=200}
+![figure](pictures/beehive_add_task.PNG){width=200}
 
 - Uzupełnij pola **Nazwa**, **Opis** (opcjonalnie), **Data** oraz opcjonalnie **Powtarzanie**. Brak wyboru zakresu — zadanie automatycznie dotyczy tego ula.
 - Kliknij żółty przycisk zapisu w prawym dolnym rogu.
@@ -637,7 +637,7 @@ Aplikacja utworzy osobne wystąpienia zadania dla każdej daty z tego zakresu. W
 
 Figure: Wybór zakresu zmiany w serii {#fig-task-series-apply-to}
 
-![figure](pictures/task_series_apply_to.png){width=200}
+![figure](pictures/task_series_apply_to.PNG){width=200}
 
 #### 5.6 Oznaczanie zadania jako wykonane
 
@@ -646,7 +646,7 @@ Figure: Wybór zakresu zmiany w serii {#fig-task-series-apply-to}
 
 Figure: Oznaczanie zadania jako wykonane {#fig-task-mark-done}
 
-![figure](pictures/task_mark_done.png){width=200}
+![figure](pictures/task_mark_done.PNG){width=200}
 
 #### 5.7 Edycja zadania
 
@@ -669,7 +669,7 @@ Figure: Edycja zadania {#fig-task-edit}
 
 Figure: Usuwanie zadania {#fig-task-delete}
 
-![figure](pictures/task_delete.png){width=200}
+![figure](pictures/task_delete.PNG){width=200}
 
 #### 5.9 Lista zadań i filtrowanie
 
