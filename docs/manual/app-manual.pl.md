@@ -566,10 +566,9 @@ Zadania (kalendarz) pozwalają planować pracę w pasiece — przeglądy, podkar
 
 Każde zadanie zawiera następujące informacje:
 
-- **Nazwa** — krótki tytuł (pole wymagane).
-- **Opis** — szczegóły, notatka kontekstowa (pole opcjonalne).
-- **Data** — kiedy zadanie ma być wykonane.
-- **Status** — *Do zrobienia* (planowane) lub *Wykonane*.
+- **Zadanie** — krótki opis/nazwa zadania, notatka kontekstowa (pole wymagane).
+- **Data zadania** — kiedy zadanie ma być wykonane.
+- **Status** — *Do zrobienia* (planowane) lub *Wykonane*. Uwaga: Status zadania można zmienić dopiero po dodaniu zadania do kalendarza.
 - **Zakres** — czy zadanie dotyczy całej pasieki, wybranych uli, czy jednego ula (patrz [5.2 Zakres zadania](#52-zakres-zadania-gdzie-jest-widoczne-i-edytowalne)).
 - **Powtarzanie** — opcjonalne; co 7 dni, 14 dni, 1 miesiąc lub 3 miesiące, z datą końca serii (patrz [5.5 Powtarzanie zadań](#55-powtarzanie-zadan)).
 
@@ -583,12 +582,12 @@ Zakres określa, gdzie zadanie jest widoczne oraz skąd można je edytować i us
 | Wybrane ule       | Tak                       | Tak — tylko w wybranych ulach  | Nie                      |
 | Pojedynczy ul     | Tak                       | Tak — tylko w tym jednym ulu   | Tak                      |
 
-!!! tip
-    Zadania o zakresie *Cała pasieka* i *Wybrane ule* są edytowalne i usuwane wyłącznie z poziomu pasieki — z poziomu ula są dostępne tylko do podglądu. Zadanie utworzone dla pojedynczego ula można edytować i usunąć z poziomu tego ula.
+!!! Wskazówka
+    Zadania o zakresie *Cała pasieka* i *Wybrane ule* są edytowalne i usuwane wyłącznie z poziomu pasieki — z poziomu ula są dostępne tylko do podglądu. Zadanie utworzone dla pojedynczego ula można edytować i usunąć z poziomu tego ula, jak i z poziomu pasieki.
 
 #### 5.3 Dodawanie zadania z poziomu pasieki
 
-Z poziomu pasieki możesz utworzyć zadanie dla **całej pasieki**, dla **wybranych uli** lub kilka zadań w serii.
+Z poziomu pasieki możesz utworzyć zadanie dla **całej pasieki** (Zakres: Pasieka), dla **wybranych uli** lub kilka zadań w serii.
 
 - W zakładce *Pasieki* kliknij kafelek z pasieką, dla której chcesz dodać zadanie. Zostanie wyświetlony widok *Ule*.
 - Z dolnego menu wybierz opcję *Dodaj...*, a następnie *Zadanie* ([](#fig-apiary-add-task)). Zostanie wyświetlony widok *Dodaj zadanie*.
@@ -599,19 +598,20 @@ Figure: Widok Dodaj zadanie z poziomu pasieki {#fig-apiary-add-task}
 
 - W widoku *Dodaj zadanie* wypełnij następujące pola:
 
-    - **Nazwa** — wpisz tytuł zadania (np. *Przegląd wiosenny*).
-    - **Opis** — opcjonalnie dodaj szczegóły (np. *Sprawdzić zapasy zimowe, ocenić siłę rodziny*).
-    - **Data** — wybierz datę zadania (domyślnie aktualna).
     - **Zakres** — wybierz jedną z opcji:
-        - *Cała pasieka* — zadanie pojawi się we wszystkich ulach tej pasieki.
+        - *Pasieka* — zadanie pojawi się we wszystkich ulach tej pasieki.
         - *Wybrane ule* — po wyborze opcji zaznacz konkretne ule z listy.
+    - **Zadanie** — wpisz treść zadania (np. *Przegląd wiosenny*).
+    - **Data zadania** — wybierz datę zadania (domyślnie aktualna).    
     - **Powtarzanie** (opcjonalnie) — patrz [5.5 Powtarzanie zadań](#55-powtarzanie-zadan).
 
-- Aby zapisać zadanie, kliknij żółty przycisk w prawym dolnym rogu ekranu. Zapisane zadanie pojawi się na liście zadań pasieki (zakładka *Zadania*).
+- Aby zapisać zadanie, kliknij żółty przycisk w prawym dolnym rogu ekranu. Zapisane zadanie pojawi się na liście zadań pasieki (zakładka *Zadania*) oraz we wszystkich ulach w tej pasiece (*Szczegóły ula > Więcej > Zadania*).
 
 #### 5.4 Dodawanie zadania z poziomu ula
 
-Zadanie dodane z poziomu ula ma automatycznie zakres *Pojedynczy ul* — jest widoczne tylko w tym ulu i można je edytować z jego poziomu.
+Zadanie dodane z poziomu ula będzie widoczne na liście zadań, zarówno w tym konkretnym ulu jak i w pasiece. Takie zadanie będzie można również edytować lub usunąć z obu tych poziomów - pasieki i ula. 
+
+Aby dodać zadanie z poziomu ula:
 
 - W zakładce *Pasieki* kliknij kafelek z pasieką, a następnie kafelek ula, dla którego chcesz dodać zadanie. Zostanie wyświetlony widok *Szczegóły ula*.
 - Z dolnego menu wybierz opcję *Dodaj...*, a następnie *Zadanie* ([](#fig-beehive-add-task)). Zostanie wyświetlony widok *Dodaj zadanie*.
@@ -620,22 +620,19 @@ Figure: Widok Dodaj zadanie z poziomu ula {#fig-beehive-add-task}
 
 ![figure](pictures/beehive_add_task.PNG){width=200}
 
-- Uzupełnij pola **Nazwa**, **Opis** (opcjonalnie), **Data** oraz opcjonalnie **Powtarzanie**. Brak wyboru zakresu — zadanie automatycznie dotyczy tego ula.
+- Uzupełnij pola **Zadanie** (wymagane), **Data zadania** oraz opcjonalnie zaznacz **Powtarzaj zadanie**. Brak wyboru zakresu — zadanie automatycznie dotyczy tego ula.
 - Kliknij żółty przycisk zapisu w prawym dolnym rogu.
 
 #### 5.5 Powtarzanie zadań
 
-Zadanie można skonfigurować jako powtarzające się. W sekcji *Powtarzanie* w widoku *Dodaj zadanie* wybierz:
+Zadanie można skonfigurować jako powtarzające się ([](#fig-task-series-apply-to)). W sekcji *Powtarzaj zadanie* w widoku *Dodaj zadanie* wybierz:
 
-- **Częstotliwość** — co 7 dni, 14 dni, 1 miesiąc lub 3 miesiące.
-- **Data końca serii** — maksymalnie 1 rok od daty pierwszego zadania.
+- **Częstotliwość** — co 1 tydzień, 2 tygodnie, 1 miesiąc lub 3 miesiące.
+- **Data zakończenia zadania** — maksymalnie 1 rok od daty pierwszego zadania.
 
-Aplikacja utworzy osobne wystąpienia zadania dla każdej daty z tego zakresu. Wszystkie wystąpienia należą do jednej **serii** i mogą być edytowane lub usunięte razem.
+Aplikacja utworzy osobne wystąpienia zadania zgodnie z wybraną częstotliwością (np. co tydzień) w podanym zakresie dat. Każde wystąpienie jest niezależnym zadaniem i może być edytowane lub usunięte osobno.
 
-!!! tip
-    Przy edycji lub usunięciu powtarzającego się zadania wybierasz, czego ma dotyczyć zmiana: **tylko to wystąpienie**, **to i przyszłe wystąpienia** lub **wszystkie wystąpienia w serii** ([](#fig-task-series-apply-to)). Przy zmianie daty zadania w serii dostępna jest wyłącznie opcja *tylko to wystąpienie*.
-
-Figure: Wybór zakresu zmiany w serii {#fig-task-series-apply-to}
+Figure: Utworzenie cyklicznego zadania {#fig-task-series-apply-to}
 
 ![figure](pictures/task_series_apply_to.PNG){width=200}
 
@@ -648,46 +645,52 @@ Figure: Oznaczanie zadania jako wykonane {#fig-task-mark-done}
 
 ![figure](pictures/task_mark_done.PNG){width=200}
 
+!!! Uwaga
+    Z poziomu pasieki można oznaczyć dowolne zadanie jako wykonane. Z poziomu ula można oznaczyć jako wykonane wyłącznie zadanie, które zostało dodane z poziomu tego konkretnego ula.
+
 #### 5.7 Edycja zadania
 
-- Na liście zadań kliknij wybrane zadanie lub ikonę ołówka, aby otworzyć widok *Edycja zadania* ([](#fig-task-edit)).
-- Zaktualizuj pola: **Nazwa**, **Opis**, **Data**, **Status** lub (dla zadań pojedynczego ula z poziomu pasieki) **Zakres**.
-- Dla zadania powtarzającego się wybierz, czy zmiana ma dotyczyć tylko tego wystąpienia, tego i przyszłych, czy wszystkich w serii (patrz [5.5 Powtarzanie zadań](#55-powtarzanie-zadan)).
+- Na liście zadań przy wybranym zadaniu kliknij ikonę ołówka, aby otworzyć widok *Edycja zadania* ([](#fig-task-edit)).
+- Zaktualizuj pola: **Zadanie**, **Data zadania**, **Powtarzaj zadanie**.
+- Dla zadania powtarzającego się wybierz częstotliwość (np. *Co miesiąc*) oraz uzupełnij *Datę zakończenia zadania* (patrz [5.5 Powtarzanie zadań](#55-powtarzanie-zadan)).
 - Zapisz zmiany żółtym przyciskiem w prawym dolnym rogu.
 
 Figure: Edycja zadania {#fig-task-edit}
 
 ![figure](pictures/task_edit.png){width=200}
 
-!!! note
-    Zadania o zakresie *Cała pasieka* lub *Wybrane ule* można edytować i usuwać **wyłącznie z poziomu pasieki**. Z poziomu ula zobaczysz takie zadanie tylko jako podgląd — bez ikon edycji i usunięcia.
+!!! Uwaga
+    Zadania o zakresie *Pasieka* lub *Wybrane ule* można edytować i usuwać **wyłącznie z poziomu pasieki**. Z poziomu ula zobaczysz takie zadanie tylko jako podgląd — z wyszarzona ikoną ołówka.
 
 #### 5.8 Usuwanie zadania
 
-- Na liście zadań przesuń wiersz z wybranym zadaniem w lewą stronę lub użyj ikony kosza dostępnej w widoku zadania ([](#fig-task-delete)).
-- Potwierdź usunięcie. Dla zadań w serii potwierdź również zakres usunięcia (tylko to wystąpienie / to i przyszłe / wszystkie).
+- Na liście zadań przesuń wiersz z wybranym zadaniem w lewą stronę ([](#fig-task-delete)).
+- Aby usunąć wybrane zadanie kliknij ikonę kosza na czerwonym tle.
 
 Figure: Usuwanie zadania {#fig-task-delete}
 
 ![figure](pictures/task_delete.PNG){width=200}
 
+!!! Uwaga
+    Zadania o zakresie *Pasieka* lub *Wybrane ule* można edytować i usuwać **wyłącznie z poziomu pasieki**. Usunięcie takiego zadania z poziomu pasieki spowoduje automatyczne usunięcie powiązanych z nim zadań z widoku wszystkich uli.
+
 #### 5.9 Lista zadań i filtrowanie
 
 Listę zadań znajdziesz w zakładce *Zadania*:
 
-- **Z poziomu pasieki** — wyświetla wszystkie zadania pasieki: o zakresie *Cała pasieka*, *Wybrane ule* oraz zadania pojedynczych uli należących do tej pasieki ([](#fig-apiary-tasks-list)).
+- **Z poziomu pasieki** — wyświetla wszystkie zadania pasieki: o zakresie *Pasieka*, *Wybrane ule* oraz zadania pojedynczych uli należących do tej pasieki ([](#fig-apiary-tasks-list)).
 
 Figure: Lista zadań w widoku pasieki {#fig-apiary-tasks-list}
 
 ![figure](pictures/apiary_tasks.png){width=200}
 
-- **Z poziomu ula** — wyświetla zadania widoczne w tym ulu: zadania o zakresie *Cała pasieka*, zadania *Wybrane ule* obejmujące ten ul, oraz zadania *Pojedynczy ul* dla tego ula ([](#fig-beehive-tasks-list)).
+- **Z poziomu ula** — wyświetla zadania widoczne w tym ulu: zadania o zakresie *Pasieka*, zadania *Wybrane ule* obejmujące ten ul, oraz zadania *Pojedynczy ul* dla tego ula ([](#fig-beehive-tasks-list)).
 
 Figure: Lista zadań w widoku ula {#fig-beehive-tasks-list}
 
 ![figure](pictures/beehive_details_tasks_list.png){width=200}
 
-Listę zadań możesz filtrować po dacie oraz statusie (*Do zrobienia* / *Wykonane*). W widoku ula obok zadań niedotyczących bezpośrednio tego ula (zakres *Cała pasieka* lub *Wybrane ule*) brak ikon edycji — takie zadania są tylko do podglądu.
+Listę zadań możesz filtrować po statusie (*Wszystkie*, *Do zrobienia*, *Wykonane*).
 
 ### 6. Potwierdzanie chorób
 
