@@ -618,7 +618,7 @@ Aby dodać zadanie z poziomu ula:
 
 Figure: Widok Dodaj zadanie z poziomu ula {#fig-beehive-add-task}
 
-![figure](pictures/beehive_add_task.PNG){width=200}
+![figure](pictures/beehive_add_task.png){width=200}
 
 - Uzupełnij pola **Zadanie** (wymagane), **Data zadania** oraz opcjonalnie zaznacz **Powtarzaj zadanie**. Brak wyboru zakresu — zadanie automatycznie dotyczy tego ula.
 - Kliknij żółty przycisk zapisu w prawym dolnym rogu.
@@ -634,7 +634,7 @@ Aplikacja utworzy osobne wystąpienia zadania zgodnie z wybraną częstotliwośc
 
 Figure: Utworzenie cyklicznego zadania {#fig-task-series-apply-to}
 
-![figure](pictures/task_series_apply_to.PNG){width=200}
+![figure](pictures/task_series_apply_to.png){width=200}
 
 #### 5.6 Oznaczanie zadania jako wykonane
 
@@ -643,7 +643,7 @@ Figure: Utworzenie cyklicznego zadania {#fig-task-series-apply-to}
 
 Figure: Oznaczanie zadania jako wykonane {#fig-task-mark-done}
 
-![figure](pictures/task_mark_done.PNG){width=200}
+![figure](pictures/task_mark_done.png){width=200}
 
 !!! Uwaga
     Z poziomu pasieki można oznaczyć dowolne zadanie jako wykonane. Z poziomu ula można oznaczyć jako wykonane wyłącznie zadanie, które zostało dodane z poziomu tego konkretnego ula.
@@ -669,7 +669,7 @@ Figure: Edycja zadania {#fig-task-edit}
 
 Figure: Usuwanie zadania {#fig-task-delete}
 
-![figure](pictures/task_delete.PNG){width=200}
+![figure](pictures/task_delete.png){width=200}
 
 !!! Uwaga
     Zadania o zakresie *Pasieka* lub *Wybrane ule* można edytować i usuwać **wyłącznie z poziomu pasieki**. Usunięcie takiego zadania z poziomu pasieki spowoduje automatyczne usunięcie powiązanych z nim zadań z widoku wszystkich uli.

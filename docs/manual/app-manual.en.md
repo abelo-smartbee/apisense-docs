@@ -625,7 +625,7 @@ To add a task from the hive level:
 
 Figure: Add task view from the hive level {#fig-beehive-add-task}
 
-![figure](pictures/beehive_add_task.PNG){width=200}
+![figure](pictures/beehive_add_task.png){width=200}
 
 - Fill in **Task** (required), **Task date**, and optionally check **Repeat task**. There is no scope picker — the task automatically applies to this hive.
 - Click the yellow save button in the bottom right corner.
@@ -641,7 +641,7 @@ The app will create separate task occurrences according to the chosen frequency 
 
 Figure: Creating a recurring task {#fig-task-series-apply-to}
 
-![figure](pictures/task_series_apply_to.PNG){width=200}
+![figure](pictures/task_series_apply_to.png){width=200}
 
 #### 5.6 Marking a task as done
 
@@ -650,7 +650,7 @@ Figure: Creating a recurring task {#fig-task-series-apply-to}
 
 Figure: Marking a task as done {#fig-task-mark-done}
 
-![figure](pictures/task_mark_done.PNG){width=200}
+![figure](pictures/task_mark_done.png){width=200}
 
 !!! note
     From the apiary level you can mark any task as done. From the hive level you can mark as done only a task that was added from that specific hive.
@@ -676,7 +676,7 @@ Figure: Editing a task {#fig-task-edit}
 
 Figure: Deleting a task {#fig-task-delete}
 
-![figure](pictures/task_delete.PNG){width=200}
+![figure](pictures/task_delete.png){width=200}
 
 !!! note
     Tasks with scope *Apiary* or *Selected hives* can be edited and deleted **only from the apiary level**. Deleting such a task from the apiary level will automatically remove the related tasks from the view in all hives.
