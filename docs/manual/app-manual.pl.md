@@ -114,42 +114,55 @@ Figure: Dodawanie pasieki - widok startowy Pasieki {#fig-apiaries}
 
 ![figure](pictures/apiaries.png){width=200}
 
-- W rezultacie zostanie wyświetlony widok *Dodaj pasiekę* ([](#fig-add-apiary)). W tym widoku wypełnij następujące pola:
-
-    - **Nazwa** — nazwa pasieki, która będzie wyświetlana w panelu,
-    - **Skrót nazwy** — domyślnie ustawiony skrót nazwy pasieki (składający się maksymalnie z 3 znaków), możesz go zmienić,
-    - **Numer seryjny** - to numer identyfikacyjny urządzenia. Kliknij w ikonę kodu QR znajdującą się w prawej części tego pola i zeskanuj kod QR z naklejki umieszczonej na Apisense Hub. Kolejne pole *Kod potwierdzający* zostanie wypełnione automatycznie.
-    - **Kod potwierdzający** - zostanie wypełniony automatycznie, po poprawnym zeskanowaniu kodu QR.
-
-     Pola *Nazwa* oraz *Skrót nazwy* będą mogły zostać zedytowane przez użytkownika w dowolnym momencie.
-
-!!! Uwaga:
-    **Pasieka bez urządzeń:** Pola *Numer seryjny* i *Kod potwierdzający* (Apisense Hub) są **opcjonalne**. Możesz utworzyć pasiekę, podając wyłącznie nazwę i skrót nazwy, ale do pasieki utworzonej bez Huba nie będzie już możliwości przypisania tego urządzenia nawet na poziomie edycji tej pasieki. Ponadto, jeżeli pasieka została utworzona bez Huba, to do żadnego ula w takiej pasiece nie będzie mozliwości przypisania urządzeń Scale ani VitalSensor — podczas dodawania uli sekcja *Wyposażenie* nie będzie dostępna.
+- W rezultacie zostanie wyświetlony widok *Dodaj pasiekę* ([](#fig-add-apiary)). 
 
 Figure: Dodawanie pasieki z powiązanym Apisense Hub w systemie {#fig-add-apiary}
 
 ![figure](pictures/add_apiary.png){width=200}
 
-**Po uzupełnieniu niezbędnych danych kliknij żółty przycisk na dole ekranu, potwierdzający utworzenie pasieki z powiązanym urządzeniem Apisense Hub.**
+#### 1.1.1 Dodawanie pasieki z urządzeniami
 
-- Jeśli utworzenie pasieki się powiodło, zostaniesz przekierowany do widoku Pasieki, a na Twojej liście pasiek pojawi się pasieka, którą właśnie utworzyłeś ([](#fig-apiaries-list)).
+W widoku *Dodaj pasiekę* wypełnij następujące pola:
+
+- **Nazwa** — nazwa pasieki, która będzie wyświetlana w panelu,
+- **Z urządzeniami** - zaznacz tę opcję, aby dodać pasiekę i powiązać z nią urządzenie Apisense Hub.
+
+Pole *Nazwa* będzie mogło zostać zedytowane przez użytkownika w dowolnym momencie.
+
+Po uzupełnieniu powyższych informacji kliknij żółty przycisk ze strzałką, znajdujący się prawym dolnym rogu ekranu. W rezultacie zostaniesz przeniesiony do kolejnego kroku dodawania pasieki, gdzie powiążesz urządzenie Apisense Hub ze swoją pasieką. W tym celu uzupełnij poniższe pola:
+
+- **Hub** - kliknij w ikonę kodu QR znajdującą się w prawej części tego pola i zeskanuj kod QR z naklejki umieszczonej na urządzeniu Apisense Hub. Kolejne pole *Kod potwierdzający* zostanie wypełnione automatycznie.
+- **Kod potwierdzający** - zostanie wypełniony automatycznie, po poprawnym zeskanowaniu kodu QR.
+
+**Po uzupełnieniu niezbędnych danych i zeskanowaniu kodu QR kliknij żółty przycisk na dole ekranu, potwierdzający utworzenie pasieki z powiązanym urządzeniem Apisense Hub.**
+
+Jeśli utworzenie pasieki się powiodło, zostaniesz przekierowany do jej wnętrza (widok *Ule*), natomiast po przejściu do zakładki *Pasieki* na Twojej liście pasiek pojawi się pasieka, którą właśnie utworzyłeś ([](#fig-apiaries-list)). Na kafelku z pasieką zostaną wyświetlone odpowiednie statusy lub wskazówki jak uruchomić Apisense Hub. Aby dowiedzieć się więcej o statusach, przejdź do rozdziału [7. Interpretacja statusów i ikon wykorzystywanych w systemie](#interpretacja-statusow).
+
 
 Figure: Pomyślnie dodana pasieka z powiązanym Apisense Hub w widoku pasiek w systemie {#fig-apiaries-list}
 
 ![figure](pictures/apiaries_list.png){width=200}
 
-#### 1.1.1 Dodawanie pasieki bez urządzeń (bez Apisense Hub)
 
-Jeśli chcesz najpierw utworzyć pasiekę w systemie, a sprzęt podłączyć później:
+#### 1.1.2 Dodawanie pasieki bez urządzeń
 
-- W widoku *Dodaj pasiekę* wypełnij wyłącznie pola **Nazwa** oraz **Skrót nazwy**. Pola *Numer seryjny* i *Kod potwierdzający* pozostaw puste.
-- Kliknij żółty przycisk na dole ekranu, aby zapisać pasiekę.
+Aby dodać pasiekę bez urządzeń, w widoku *Dodaj pasiekę*:
 
-**Po utworzeniu pasieki bez Huba:**
+- w polu *Nazwa* wpisz nazwę pod jaką ma zostać wyświetlana pasieka w aplikacji,
+- zaznacz opcję *Bez urządzeń*.
 
-- Na kafelku pasieki **nie będą widoczne** ikony baterii i LTE Huba ani dane pogodowe pochodzące z Hub.
-- Możesz dodawać ule i prowadzić dokumentację (notatki, przeglądy, zadania), ale **nie przypiszesz** do ula urządzeń Scale ani VitalSensor, dopóki w pasiece nie zostanie powiązany Apisense Hub.
-- Hub możesz dodać później w *Ustawieniach pasieki* → sekcja **Hub** (zeskanuj kod QR z urządzenia).
+**Po uzupełnieniu powyższych informacji kliknij żółty przycisk na dole ekranu, potwierdzający utworzenie pasieki bez urządzeń.**
+
+Jeśli utworzenie pasieki się powiodło, zostaniesz przekierowany do jej wnętrza (widok *Ule*), natomiast po przejściu do zakładki *Pasieki* na Twojej liście pasiek pojawi się pasieka, którą właśnie utworzyłeś ([](#fig-apiaries-list-without-hub)). Na kafelku pasieki **nie będą widoczne** ikony baterii i LTE Huba ani dane pogodowe. Zostanie wyświetlona jedynie nazwa pasieki.
+
+Figure: Pomyślnie dodana pasieka bez urządzeń w widoku pasiek w systemie {#fig-apiaries-list-without-hub}
+
+![figure](pictures/apiaries_list_without_hub.png){width=200}
+
+
+!!! Uwaga:
+    **Pasieka bez urządzeń:** Możesz utworzyć pasiekę, podając wyłącznie nazwę i wybierając opcję *Bez urządzeń*, ale do pasieki utworzonej bez Huba nie będzie już możliwości przypisania tego urządzenia nawet na poziomie edycji  pasieki. Ponadto, jeżeli pasieka została utworzona bez Huba, to do żadnego ula w takiej pasiece nie będzie możliwości przypisania urządzeń Scale ani VitalSensor — podczas dodawania uli sekcja *Wyposażenie* nie będzie dostępna. Możesz jednak dodawać ule bez urządzeń oraz prowadzić dokumentację (notatki, przeglądy, zadania).
+
 
 #### 1.2 Edycja pasieki
 
@@ -263,9 +276,11 @@ Figure: Dodawanie ula w systemie - sekcja Informacje o matce pszczelej {#fig-add
 
 - **Wyposażenie:** Ostatni etap obejmuje powiązanie urządzeń z tym konkretnym ulem. **Uwaga:** Kluczowe jest, aby urządzenia skonfigurowane w ramach ula (Scale i VitalSensor) były w rzeczywistości zainstalowane w tym samym fizycznym ulu.
 
-    **Uwaga — ul bez urządzeń:** Pola VitalSensor i Scale są **opcjonalne** — jeśli oba pary pól (numer seryjny i kod potwierdzający) pozostawisz puste, ul zostanie utworzony bez sprzętu pomiarowego. Urządzenia możesz przypisać później w *Ustawieniach ula* → sekcja **Wyposażenie**.
+    !!! Uwaga:
+        **Ul bez urządzeń:** Pola VitalSensor i Scale są **opcjonalne** — jeśli nie zeskanujesz kodu QR z urządzeń i obie pary pól (numer seryjny i kod potwierdzający) pozostawisz puste, ul zostanie utworzony bez sprzętu pomiarowego. Urządzenia bedziesz mógł przypisać później w *Ustawieniach ula* > sekcja **Wyposażenie** (pod warunkiem, że Hub jest powiązany z pasieką).
 
-    **Uwaga — wymóg Huba:** Aby powiązać Scale lub VitalSensor z ulem, w pasiece musi być przypisany **Apisense Hub**. Próba dodania urządzeń do ula w pasiece bez Huba zakończy się komunikatem, że Scale i VitalSensor wymagają podłączonego Huba do pasieki.
+    !!! Uwaga:
+        **Wymóg Huba:** Aby powiązać Scale lub VitalSensor z ulem, do pasieki musi być przypisany **Apisense Hub**. W przeciwnym razie zarówno podczas dodawania jak i edycji ula, sekcja *Wyposażenie* nie będzie dostępna.
 
     Aby powiązać urządzenia z ulem wypełnij następujące pola:
 
@@ -378,6 +393,8 @@ Figure: Ustawienia ula - widok Usuń ul {#fig-beehive-settings-remove-beehive}
 ![figure](pictures/beehive_settings_remove_beehive.png){width=200}
 
 - Wraz z usuniętym ulem usunięta zostaje również cała jego zawartość (notatki, przeglądy itp.). Odpinane są także poszczególne urządzenia (Scale, VitalSensor) i zostaje wyczyszczona historia ich pomiarów. W związku z tym, przykładowo ten sam Apisense VitalSensor będzie mógł zostać powiązany z innym ulem (który nie posiada tego typu urządzenia).
+
+<a id="dodawanie-przegladow"></a>
 
 ### 3. Dodawanie przeglądów
 
@@ -728,30 +745,35 @@ Listę zadań możesz filtrować po statusie (*Wszystkie*, *Do zrobienia*, *Wyko
 
 ### 6. Potwierdzanie chorób
 
-Gdy system Apisense Pro AI zgłosi zagrożenie (np. Nosemoza), w aplikacji pojawią się **alarmy** w zakładce *Powiadomienia* z opisem i zaleceniami. Potwierdzając wykrytą chorobę w aplikacji, ułatwiasz systemowi dopasowanie komunikatów do rzeczywistych warunków w Twojej pasiece.
+Gdy system Apisense Pro AI zgłosi zagrożenie (np. Nosemoza), w aplikacji pojawią się **alarmy** w zakładce *Powiadomienia* z opisem i zaleceniami. Wypełniając **formularz chorobowy** (*Odpowiedz na kilka pytań*), przekazujesz systemowi informację zwrotną i pomagasz dopasować komunikaty do rzeczywistych warunków w Twojej pasiece.
 
-#### Co oznaczają alerty o chorobach?
+#### 6.1 Co oznaczają alerty o chorobach?
 
-Alerty w zakładce *Powiadomienia* → *Problemy* dotyczą **chorób wykrytych automatycznie przez model sztucznej inteligencji** Apisense Pro AI na podstawie danych z czujników i analizy systemowej. To nie jest diagnoza weterynaryjna — system sygnalizuje **prawdopodobne** zagrożenie (np. warroza, nosemoza, zgnilec), wraz z poziomem porażenia i zaleceniami działań.
+Alerty w zakładce *Powiadomienia* > *Problemy*, jak i w *Szczegółach* ula (*Szczegóły > Sekcja Zdrowie > Alert w rodzinie*) dotyczą **chorób wykrytych automatycznie przez model sztucznej inteligencji** Apisense Pro AI na podstawie danych z czujników i analizy systemowej. To nie jest diagnoza weterynaryjna — system sygnalizuje **prawdopodobne** zagrożenie (np. Warroza, Nosemoza, Zgnilec), wraz z poziomem porażenia i zalecanymi działaniami, które zobaczysz po rozwinięciu szczegółów choroby (zakładka *Problemy*).
 
-Model ma **wysoką dokładność**, jednak — jak każda analiza predykcyjna — **może się czasem mylić**. Dlatego warto każdy alert zweryfikować w terenie i uzupełnić **formularz chorobowy** (*Odpowiedz na kilka pytań*).
+Na kafelkach pasieki/ula alerty chorobowe objawiają się m.in. jako status **Zagrożony**/**nazwa wykrytej choroby** (czasem z oznaczeniem „+N”, gdy w ulu wykryto więcej niż jedno zagrożenie).
 
-Na kafelkach pasieki i ula alerty chorobowe objawiają się m.in. jako status **Zagrożony** lub nazwa wykrytej choroby (czasem z oznaczeniem „+N”, gdy w ulu wykryto więcej niż jedno zagrożenie).
+Model posiada **bardzo wysoką dokładność**, jednak — jak każda analiza predykcyjna — **może się czasem mylić**. Dlatego warto taki alert zweryfikować w terenie i uzupełnić **formularz chorobowy** (zakładka *Problemy > Szczegóły choroby > Odpowiedz na kilka pytań*). Wypełnienie formularza jest bardzo ważne, ponieważ zebrane odpowiedzi pomagają w dalszym doskonaleniu modelu i zwiększaniu skuteczności wykrywania chorób. Dzięki informacjom zwrotnym system może lepiej rozpoznawać rzeczywiste przypadki oraz ograniczać liczbę fałszywych alarmów.
 
-#### Gdy choroba nie występuje w ulu
+Warto również pamiętać, że model potrafi wykrywać oznaki choroby na bardzo wczesnym etapie rozwoju, kiedy symptomy mogą być jeszcze niewidoczne lub trudne do zauważenia podczas standardowej obserwacji. Dlatego nawet jeśli na pierwszy rzut oka nie widać wyraźnych objawów, warto sprawdzić wskazany w alercie ul i przekazać informację zwrotną poprzez formularz.
+
+
+#### 6.2 Co zrobić gdy choroba nie występuje w ulu
 
 Jeśli po wizycie w pasiece uznasz, że **choroba faktycznie nie występuje** w danym ulu:
 
-1. Wejdź w szczegóły alertu (zakładka *Powiadomienia* → *Problemy* → wiersz z chorobą).
+1. Wejdź w szczegóły alertu (zakładka *Powiadomienia* > *Problemy* > wiersz z chorobą).
 2. Kliknij *Odpowiedz na kilka pytań*.
-3. Na pytania dotyczące obecności objawów odpowiedz **Nie** (możesz też dołączyć zdjęcia z przeglądu).
-4. Zapisz formularz przyciskiem *Zapisz*.
+3. Na pytania dotyczące obecności objawów odpowiedz **Nie** (do każdego pytania możesz też dołączyć zdjęcia z przeglądu).
+4. Prześlij formularz klikając przycisk *Zapisz*.
 
-Twoje odpowiedzi pomagają systemowi lepiej dopasować przyszłe komunikaty do warunków w Twojej pasiece. Możesz ponownie wypełnić kwestionariusz dla tego samego epizodu choroby po upływie określonego czasu (system wyświetli informację, jeśli ponowne wysłanie nie jest jeszcze możliwe).
+Twoje odpowiedzi pomagają systemowi lepiej dopasować przyszłe komunikaty do warunków w Twojej pasiece. Możesz ponownie wypełnić kwestionariusz dla tego samego epizodu choroby po upływie kilku dni, jeśli model nadal będzie wykrywał chorobę.
 
-Opcja **Pomiń** pozwala przejść dalej bez odpowiedzi na dane pytanie — formularz i tak warto uzupełnić choćby częściowo, gdy masz wątpliwości co do alertu.
+Opcja **Pomiń** pozwala przejść dalej bez odpowiedzi na dane pytanie — formularz i tak warto uzupełnić choćby częściowo, w szczególności gdy masz wątpliwości co do alertu.
 
-#### 6.1 Potwierdzanie chorób z poziomu pasieki
+<a id="formularz-chorobowy-pasieka"></a>
+
+#### 6.3 Wypełnianie formularza chorobowego z poziomu pasieki
 
 - W zakładce Pasieki (widok startowy po zalogowaniu do aplikacji Apisense) kliknij kafelek z pasieką, w której wykryto zagrożenie (czerwona ikonka z pszczołą i napisem Zagrożenie na kafelku z pasieką). Po kliknięciu w kafelek zostanie wyświetlony widok Ule ([](#fig-apiaries-apiary-with-problem)).
 
@@ -771,35 +793,37 @@ Figure: Zakładka Problemy {#fig-problems-tab}
 
 - Przejdź do szczegółów wykrytej choroby, klikając na wiersz z chorobą np. Zgnilec amerykański ([](#fig-problems-tab-disease-details)). Po przejściu do szczegółów zobaczysz czas trwania choroby, poziom jej porażenia, zalecane działania zabezpieczające oraz przycisk *Odpowiedz na kilka pytań* (zakładka *Zalecenia*), a także wcześniej udzielone odpowiedzi (zakładka *Odpowiedzi*).
 
-Figure: Potwierdź chorobę - szczegóły choroby {#fig-problems-tab-disease-details}
+Figure: Formularz chorobowy - szczegóły choroby {#fig-problems-tab-disease-details}
 
 ![figure](pictures/problems_tab_disease_details.png){width=200}
 
-- Aby potwierdzić chorobę wykrytą przez system, kliknij przycisk *Odpowiedz na kilka pytań*. Po kliknięciu w przycisk zostanie wyświetlony widok Odpowiedz na kilka pytań ([](#fig-confirm-problem-questions)). Następnie odpowiedz na wszystkie pytania, wybierając jedną z dostępnych opcji: Tak, Nie lub Pomiń.
+- Aby wypełnić formularz chorobowy dotyczący alertu wykrytego przez system, kliknij przycisk *Odpowiedz na kilka pytań*. Po kliknięciu w przycisk zostanie wyświetlony widok *Odpowiedz na kilka pytań* ([](#fig-confirm-problem-questions)). Następnie odpowiedz na wszystkie pytania, wybierając jedną z dostępnych opcji: **Tak**, **Nie** lub **Pomiń** — w zależności od tego, co zaobserwowałeś w ulu.
 
-Figure: Potwierdź chorobę - przykładowe pytanie {#fig-confirm-problem-questions}
+Figure: Formularz chorobowy - przykładowe pytanie {#fig-confirm-problem-questions}
 
 ![figure](pictures/confirm_problem_questions.png){width=200}
 
 - Do odpowiedzi na poszczególne pytania możesz również załączyć zdjęcia lub nagrania. W tym celu kliknij przycisk *+*, znajdujący się w prawym górym rogu widoku Odpowiedz na kilka pytań ([](#fig-confirm-problem-add-photos)).
 
-Figure: Potwierdź chorobę - załączanie zdjęć i nagrań {#fig-confirm-problem-add-photos}
+Figure: Formularz chorobowy - załączanie zdjęć i nagrań {#fig-confirm-problem-add-photos}
 
 ![figure](pictures/confirm_problem_add_photos.png){width=200}
 
 - Aby przejść do kolejnego pytania, kliknij ikonkę żółtej strzałki skierowanej w prawo, znajdującą się w prawym dolnym rogu ekranu.
 
-- Aby zapisać odpowiedzi i zakończyć formularz kliknij żółty przycisk *Zapisz*, umieszczony w prawym dolnym rogu ostatniego ekranu widoku Odpowiedz na kilka pytań ([](#fig-confirm-problem-save)).
+- Aby zapisać odpowiedzi i przesłać formularz, kliknij żółty przycisk *Zapisz*, umieszczony w prawym dolnym rogu ostatniego ekranu widoku *Odpowiedz na kilka pytań* ([](#fig-confirm-problem-save)).
 
-Figure: Potwierdź chorobę - zapisanie formularza {#fig-confirm-problem-save}
+Figure: Formularz chorobowy - zapisanie formularza {#fig-confirm-problem-save}
 
 ![figure](pictures/confirm_problem_save.png){width=200}
 
-#### 6.2 Potwierdzanie chorób z poziomu ula
+<a id="formularz-chorobowy-ul"></a>
+
+#### 6.4 Wypełnianie formularza chorobowego z poziomu ula
 
 <div class="yt-embed short" id="wideo-potwierdz-chorobe">
   <iframe src="https://www.youtube.com/embed/iGNXm9qu8X8"
-          title="Apisense Manual PL — 08 · Potwierdź chorobę w ulu"
+          title="Apisense Manual PL — 08 · Formularz chorobowy w ulu"
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
 </div>
@@ -828,30 +852,32 @@ Figure: Zakładka Problemy na poziomie pojedynczego ula {#fig-beehive-details-pr
 
 - Przejdź do szczegółów wykrytej choroby, klikając na wiersz z chorobą np. Zgnilec amerykański ([](#fig-problems-tab-disease-details-2)). Po przejściu do szczegółów zobaczysz czas trwania choroby, poziom jej porażenia, zalecane działania zabezpieczające oraz przycisk *Odpowiedz na kilka pytań* (zakładka *Zalecenia*), a także wcześniej udzielone odpowiedzi (zakładka *Odpowiedzi*).
 
-Figure: Potwierdź chorobę - szczegóły choroby {#fig-problems-tab-disease-details-2}
+Figure: Formularz chorobowy - szczegóły choroby {#fig-problems-tab-disease-details-2}
 
 ![figure](pictures/problems_tab_disease_details.png){width=200}
 
-- Aby potwierdzić chorobę wykrytą przez system, kliknij przycisk *Odpowiedz na kilka pytań*. Po kliknięciu w przycisk zostanie wyświetlony widok Odpowiedz na kilka pytań ([](#fig-confirm-problem-questions-2)). Następnie odpowiedz na wszystkie pytania, wybierając jedną z dostępnych opcji: Tak, Nie lub Pomiń.
+- Aby wypełnić formularz chorobowy dotyczący alertu wykrytego przez system, kliknij przycisk *Odpowiedz na kilka pytań*. Po kliknięciu w przycisk zostanie wyświetlony widok *Odpowiedz na kilka pytań* ([](#fig-confirm-problem-questions-2)). Następnie odpowiedz na wszystkie pytania, wybierając jedną z dostępnych opcji: **Tak**, **Nie** lub **Pomiń**.
 
-Figure: Potwierdź chorobę - przykładowe pytanie {#fig-confirm-problem-questions-2}
+Figure: Formularz chorobowy - przykładowe pytanie {#fig-confirm-problem-questions-2}
 
 ![figure](pictures/confirm_problem_questions.png){width=200}
 
 - Do odpowiedzi na poszczególne pytania możesz również załączyć zdjęcia lub nagrania. W tym celu kliknij przycisk *+*, znajdujący się w prawym górym rogu widoku Odpowiedz na kilka pytań ([](#fig-confirm-problem-add-photos-2)).
 
-Figure: Potwierdź chorobę - załączanie zdjęć i nagrań {#fig-confirm-problem-add-photos-2}
+Figure: Formularz chorobowy - załączanie zdjęć i nagrań {#fig-confirm-problem-add-photos-2}
 
 ![figure](pictures/confirm_problem_add_photos.png){width=200}
 
 - Aby przejść do kolejnego pytania, kliknij ikonkę żółtej strzałki skierowanej w prawo, znajdującą się w prawym dolnym rogu ekranu.
 
-- Aby zapisać odpowiedzi i zakończyć formularz kliknij żółty przycisk *Zapisz*, umieszczony w prawym dolnym rogu ostatniego ekranu widoku Odpowiedz na kilka pytań ([](#fig-confirm-problem-save-2)).
+- Aby zapisać odpowiedzi i przesłać formularz, kliknij żółty przycisk *Zapisz*, umieszczony w prawym dolnym rogu ostatniego ekranu widoku *Odpowiedz na kilka pytań* ([](#fig-confirm-problem-save-2)).
 
-Figure: Potwierdź chorobę - zapisanie formularza {#fig-confirm-problem-save-2}
+Figure: Formularz chorobowy - zapisanie formularza {#fig-confirm-problem-save-2}
 
 ![figure](pictures/confirm_problem_save.png){width=200}
 
+
+<a id="rejestrowanie-probki"></a>
 
 ### 7. Rejestrowanie próbki
 
@@ -948,6 +974,8 @@ ______________________________________________________________________
 
 ## Panel główny systemu
 
+<a id="omowienie-listy-pasiek"></a>
+
 ### 1. Omówienie listy pasiek (zakładka Pasieki)
 
 **Zakładka *Pasieki*** to podstawowa zakładka w aplikacji Apisense, którą zobaczysz zaraz po zalogowaniu się do systemu ([](#fig-apiaries-2)).
@@ -982,6 +1010,8 @@ Figure: Zakładka Pasieki - przykładowy widok pasiek {#fig-apiaries-2}
 
 - Kliknięcie w kafelek pasieki otwiera wnętrze pasieki - listę uli ([Zakładka Ule](#zakladka-ule)).
 
+<a id="omowienie-mapy-pasiek"></a>
+
 ### 2. Omówienie mapy pasiek (zakładka Mapa)
 
 **Zakładka Mapa** prezentuje lokalizacje wszystkich pasiek na mapie, do których użytkownik posiada dostęp ([](#fig-apiaries-map)). Mapa ułatwia logistykę, planowanie wizyt i szybkie zlokalizowanie pasiek wymagających interwencji.
@@ -997,6 +1027,7 @@ Figure: Zakładka Mapa - przykładowy widok lokalizacji pasiek {#fig-apiaries-ma
 - Widok mapy można filtrować według problemów wykrytych w pasiekach. W tym celu należy kliknąć opcję np. *Warroza* znajdującą się powyżej mapy, w wyniku czego widok mapy zostanie ograniczony tylko do pasiek, w których występuje zagrożenie tą chorobą.
 
 <a id="zakladka-ule"></a>
+<a id="omowienie-listy-uli"></a>
 
 ### 3. Omówienie listy uli (zakładka Ule)
 
@@ -1031,6 +1062,7 @@ Figure: Zakładka Ule - przykładowy widok listy uli {#fig-beehives-beehive-with
 - Kliknięcie w kafelek ula otwiera wnętrze ula - szczegółowe dane pomiarowe wykonane przez urządzenia przypisane do wybranego ula ([Zakładka Szczegóły](#zakladka-szczegoly-ula)).
 
 <a id="zakladka-szczegoly-ula"></a>
+<a id="omowienie-zawartosci-ula"></a>
 
 ### 4. Omówienie zawartości ula (zakładka Szczegóły)
 
@@ -1061,7 +1093,7 @@ Figure: Zakładka Szczegóły - przykładowy widok zakładki Stan ula {#fig-behi
 - **Sekcja Warunki** – przedstawia dane środowiskowe z wnętrza ula oraz jego otoczenia, takie jak temperatura zewnętrzna, temperatura wewnętrzna, wilgotność oraz ciśnienie wewnątrz ula.
 - **Szczegółowe dane i wykresy** – po rozwinięciu poszczególnych elementów w danej sekcji użytkownik może zobaczyć bardziej szczegółowe informacje oraz wykresy zmian parametrów w czasie, co ułatwia analizę stanu ula i warunków panujących w jego wnętrzu.
 
-Więcej informacji na temat analizy i prezentacji danych w formie wykresów zawarto w rozdziałach [Monitorowanie parametrów](#monitorowanie-parametr%C3%B3w) oraz [Analiza danych i raporty](#analiza-danych-i-raporty)
+Więcej informacji na temat analizy i prezentacji danych w formie wykresów zawarto w rozdziałach [Monitorowanie parametrów](#monitorowanie-parametrow) oraz [Analiza danych i raporty](#analiza-danych-i-raporty)
 
 #### 4.2 Przegląd
 
@@ -1121,6 +1153,8 @@ Figure: Zakładka Szczegóły - przykładowy widok zakładki Próbki {#fig-beehi
 - **Lista próbek** – prezentuje wszystkie próbki zapisane dla wybranego ula, posortowane malejąco według daty pobrania próbki.
 - **Szczegóły próbki** – po kliknięciu w pojedynczą próbkę zostaną wyświetlone jej szczegóły, w tym: data pobrania próbki, rodzaj badania oraz wygenerowany przez system kod badania.
 
+<a id="omowienie-ustawien-pasieki"></a>
+
 ### 5. Omówienie ustawień pasieki
 
 Widok *Ustawienia pasieki* pozwala zarządzać podstawowymi danymi pasieki oraz śledzić informacje na temat jej stanu wyposażenia. Do widoku można przejść będąc w zakładce *Ule* (wnętrze pasieki) i klikając ikonkę koła zębatego w prawym górnym rogu ekranu.
@@ -1162,6 +1196,8 @@ Figure: Widok Ustawienia pasieki - sekcja Hub {#fig-apiary-settings-hub}
 - **LTE i bateria** – wyświetlane są informacje o aktualnym stanie połączenia LTE oraz poziomie naładowania baterii urządzenia Apisense Hub.
 - **Ostatnie zgłoszenie** – prezentowana jest data i czas ostatniej komunikacji urządzenia Apisense Hub z systemem.
 - **Wersje sprzętowa i oprogramowania** – umożliwia sprawdzenie aktualnej wersji sprzętowej oraz oprogramowania urządzenia Apisense Hub.
+
+<a id="omowienie-ustawien-ula"></a>
 
 ### 6. Omówienie ustawień ula
 
@@ -1360,9 +1396,11 @@ Ikony nawigacyjne służą do poruszania się pomiędzy widokami i funkcjami apl
 | :------------------------------ | :--------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
 | ![](pictures/logout.png)        | różne widoki, m.in. zakładka Pasieki - prawy górny róg ekranu | Przycisk służący do wylogowania się z systemu.                                                                     |
 | ![](pictures/previous_view.png) | różne widoki - lewy górny róg ekranu                       | Przycisk służący do przejścia do poprzedniego widoku (przycisk Wstecz), np. z zakładki *Ule* do *Pasieki*.         |
-| ![](pictures/next_button.png)   | różne widoki m.in. potwierdzanie chorób, Dodaj przegląd    | Przycisk służący do przejścia do następnego widoku (przycisk Dalej), np. przejście do kolejnego pytania przeglądu. |
+| ![](pictures/next_button.png)   | różne widoki m.in. formularz chorobowy, Dodaj przegląd    | Przycisk służący do przejścia do następnego widoku (przycisk Dalej), np. przejście do kolejnego pytania przeglądu lub formularza chorobowego. |
 
 ______________________________________________________________________
+
+<a id="monitorowanie-parametrow"></a>
 
 ## Monitorowanie parametrów
 
@@ -1488,6 +1526,8 @@ Analiza wykresów umożliwia między innymi:
 
 Regularne korzystanie z wykresów pozwala lepiej zrozumieć funkcjonowanie poszczególnych rodzin pszczelich oraz szybciej reagować na pojawiające się zmiany.
 
+Podczas interpretacji wykresów należy również zwrócić uwagę na występujące w nich przerwy. Brak połączenia i duże odstępy między sąsiednimi punktami (pomiarami) oznaczają brak dostępnych danych w danym przedziale czasu. Taka sytuacja może wystąpić na przykład wtedy, gdy pomiar nie został wykonany z powodu rozładowanej baterii urządzenia pomiarowego, problemów z komunikacją lub innych przyczyn technicznych. W okresach, dla których występują takie przerwy, rzeczywista wartość parametru nie jest znana, dlatego system nie interpoluje ani nie szacuje brakujących danych.
+
 ### 2. Trendy
 
 Trendy umożliwiają analizę ogólnego kierunku zmian danego parametru w czasie. Funkcja ta pomaga odróżnić krótkotrwałe wahania od długoterminowych tendencji.
@@ -1566,6 +1606,8 @@ Nowe powiadomienia pojawiają się automatycznie na odpowiedniej liście w zale�
 
 Aby wyświetlić szczegóły powiadomienia, należy kliknąć jego nagłówek, co spowoduje rozwinięcie pełnej treści komunikatu.
 
+<a id="twoj-asystent-ai"></a>
+
 ### 2. Twój asystent AI
 
 Asystent AI to funkcja wspierająca użytkownika w analizie sytuacji w pasiece oraz w interpretacji obserwowanych zjawisk. Na podstawie przekazanych informacji system generuje odpowiedzi i wskazówki, które mogą pomóc w podejmowaniu decyzji dotyczących prowadzenia pasieki.
@@ -1586,9 +1628,37 @@ Z asystenta AI można skorzystać poprzez wybór zakładki *Twój asystent* z do
 
 ______________________________________________________________________
 
+<a id="zglaszanie-problemow-i-sugestii"></a>
+
+## Zgłaszanie problemów i sugestii
+
+Jeśli podczas korzystania z aplikacji zauważysz błąd, nieprawidłowe działanie funkcji lub masz pomysł na usprawnienie systemu, możesz zgłosić to bezpośrednio z poziomu aplikacji. Zachęcamy również do przesyłania propozycji nowych funkcji, które mogłyby ułatwić codzienną pracę z systemem.
+
+Każde zgłoszenie jest analizowane przez zespół odpowiedzialny za rozwój aplikacji. Informacje zwrotne od użytkowników pomagają szybciej identyfikować problemy, poprawiać istniejące rozwiązania oraz rozwijać funkcje najlepiej odpowiadające potrzebom pszczelarzy.
+
+### 1. Zgłaszanie problemów i sugestii w aplikacji
+
+Aby zgłosić problem lub sugestię w aplikacji, należy wykonać poniższe kroki:
+
+- Kliknij ikonę *żarówki* dostępną z każdego widoku w aplikacji, znajdującą się w prawym górnym rogu ekranu (obok przycisków ustawienia i wyloguj). W efekcie zostanie otwarty widok *Dodaj sugestię* ([](#fig-add-suggestion)).
+- W widoku *Dodaj sugestię* uzupełnij następujące, wymagane pola:
+
+    - **Wybierz kategorię** - wybierz jedną z dostępnych kategorii w zależności od tego, czy chcesz zgłosić problem czy sugestię ulepszenia aplikacji.
+    - **Opis** - wprowadź opis problemu lub tego, co chciałbyś zmienić w aplikacji
+
+- Opcjonalnie możesz załączyć również zdjęcia do swojego zgłoszenia, co jest szczególnie przydatne jeśli zgłaszasz problem znaleziony w aplikacji. Uwaga: do zgłoszenia możesz dołączyć jedynie zdjęcia - nagrania nie są akceptowane. 
+- Po uzupełnieniu powyższych informacji kliknij żółty przycisk *Wyślij sugestię*, wyświetlany w prawym dolnym rogu widoku, co spowoduje przesłanie zgłoszenia.
+
+Figure: Widok Dodaj sugestię - przykładowy problem zgłoszony poprzez aplikację {#fig-add-suggestion}
+
+![figure](pictures/add_suggestion.png){width=200}
+______________________________________________________________________
+
 ## Zarządzanie kontem
 
 Użytkownik może przeglądać oraz modyfikować swoje dane, zmieniać ustawienia konta, a także zarządzać preferencjami dotyczącymi działania aplikacji.
+
+<a id="edycja-danych-uzytkownika"></a>
 
 ### 1. Edycja danych użytkownika
 
@@ -1603,16 +1673,6 @@ Aby edytować dane użytkownika, należy:
 - Aby zmienić zawartość wybranej sekcji, należy kliknąć jej nagłówek, co spowoduje otwarcie nowego widoku, w którym możliwa będzie edycja danych. Przykładowo, w przypadku zmiany hasła użytkownik zostanie poproszony o wprowadzenie nowego hasła oraz jego powtórzenie ([](#fig-app-settings)).
 - Po wprowadzeniu zmian należy je zapisać, klikając żółty przycisk znajdujący się w prawym dolnym rogu ekranu.
 
-#### 1.1.1 Sprawdzenie wersji aplikacji
-
-Aby sprawdzić, jaka wersja aplikacji Apisense jest aktualnie zainstalowana na Twoim urządzeniu:
-
-- Przejdź do widoku *Ustawienia konta* (ikona koła zębatego w prawym górnym rogu zakładki *Pasieki*).
-- Przewiń widok **na sam dół**.
-- Na dole ekranu zobaczysz wpis w formacie **Wersja X.Y.Z** (np. *Wersja 1.2.3*) — to numer zainstalowanej wersji aplikacji.
-
-Warto porównyć ten numer z wersją dostępną w sklepie Google Play lub App Store przed zgłoszeniem problemu technicznego.
-
 Figure: Ustawienia konta - przykładowy widok ustawień oraz zmiana hasła (1) {#fig-app-settings}
 
 ![figure](pictures/app_settings.png){width=200}
@@ -1625,6 +1685,16 @@ Figure: Ustawienia konta - przykładowy widok ustawień oraz zmiana hasła (2) {
 
 W dolnej części widoku *Ustawienia konta* ([](#fig-app-settings)) dostępny jest również przycisk *Usuń konto*, który umożliwia trwałe usunięcie konta użytkownika.
 
+
+### 2. Sprawdzenie wersji aplikacji
+
+Aby sprawdzić, jaka wersja aplikacji Apisense jest aktualnie zainstalowana na Twoim urządzeniu:
+
+- Przejdź do widoku *Ustawienia konta*. W tym celu kliknij ikonę koła zębatego, znajdującą się w prawym górnym rogu zakładki *Pasieki*.
+- Przewiń widok **na sam dół**.
+- Na dole ekranu, w centralnej części zobaczysz wpis w formacie **Wersja X.Y.Z** (np. *Wersja 1.2.3*) - to numer zainstalowanej wersji aplikacji.
+
+Warto porównyć ten numer z wersją dostępną w sklepie Google Play lub App Store przed zgłoszeniem problemu technicznego.
 ______________________________________________________________________
 
 ## Dobre praktyki użytkowania systemu
@@ -1653,6 +1723,8 @@ ______________________________________________________________________
 ______________________________________________________________________
 
 ## Rozwiązywanie problemów
+
+<a id="faq-czesto-zadawane"></a>
 
 ### 1. Często zadawane pytania i proponowane rozwiązania
 
@@ -1686,9 +1758,9 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 ### 2. Zarządzanie pasieką
 
-- **Dodawanie pasieki:** W zakładce *Pasieki* wybierz *Dodaj pasiekę* z dolnego menu. W widoku *Dodaj pasiekę* uzupełnij nazwę, skrót, zeskanuj kod QR z Apisense Hub i zapisz.
+- **Dodawanie pasieki:** W zakładce *Pasieki* wybierz *Dodaj pasiekę* z dolnego menu. W widoku *Dodaj pasiekę* wpisz nazwę i wybierz *Z urządzeniami* (zeskanuj kod QR z Huba) lub *Bez urządzeń*, następnie zapisz.
 
-> [Wideo](#wideo-dodaj-pasieke), [Dodawanie pasieki](#11-dodawanie-pasieki)
+> [Wideo](#wideo-dodaj-pasieke), [Dodawanie pasieki z urządzeniami](#111-dodawanie-pasieki-z-urzadzeniami), [Dodawanie pasieki bez urządzeń](#112-dodawanie-pasieki-bez-urzadzen)
 
 - **Edycja pasieki:** Kliknij kafelek wybranej pasieki. Kliknij ikonę zębatki będąc w zakładce *Ule*. W widoku *Ustawienia pasieki* kliknij nagłówek sekcji, dla której chcesz zedytować dane. Zmień wartości pól i kliknij zapisz (żółty przycisk).
 
@@ -1712,7 +1784,7 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 - **Dodawanie przeglądów:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Wybierz *Dodaj...* -> *Przegląd* z dolnego menu. Załącz łącznie 4 wymagane zdjęcia ramek. Odpowiedz na pytania. Żółta strzałka w prawo umożliwia przejście do następnego pytania. Kliknij *Zakończ przegląd* (żółty przycisk w ostatnim oknie przeglądu) by zapisać.
 
-> [Wideo](#wideo-dodaj-przeglad), [Dodawanie przeglądów](#3-dodawanie-przegl%C4%85d%C3%B3w)
+> [Wideo](#wideo-dodaj-przeglad), [Dodawanie przeglądów](#dodawanie-przegladow)
 
 - **Dodawanie notatek:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Wybierz *Dodaj...* -> *Notatkę* z dolnego menu. Wprowadź zawartość notatki (tekst lub nagraj notatkę głosową, możesz dodać też zdjęcia lub nagrania (*+*)). Zapisz notatkę (żółty przycisk).
 
@@ -1720,17 +1792,17 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 > [Wideo — notatka audio](#wideo-notatka-audio) 
 > [Notatki](#4-notatki)
 
-- **Potwierdzanie chorób z poziomu pasieki:** Kliknij kafelek wybranej pasieki. Wybierz *Powiadomienia* z dolnego menu. W zakładce *Problemy* kliknij w wybrany wiersz z chorobą, aby rozwinąć szczegóły. Kliknij przycisk *Odpowiedz na kilka pytań*. Udziel odpowiedzi na pytania. Aby przejść do kolejnego kliknij żółtą strzałkę w prawo. Na koniec kliknij *Zapisz*.
+- **Wypełnianie formularza chorobowego z poziomu pasieki:** Kliknij kafelek wybranej pasieki. Wybierz *Powiadomienia* z dolnego menu. W zakładce *Problemy* kliknij w wybrany wiersz z chorobą, aby rozwinąć szczegóły. Kliknij przycisk *Odpowiedz na kilka pytań*. Udziel odpowiedzi na pytania (Tak / Nie / Pomiń). Aby przejść do kolejnego, kliknij żółtą strzałkę w prawo. Na koniec kliknij *Zapisz*.
 
-> [Wideo](#wideo-potwierdz-chorobe), [Potwierdzanie chorób](#6-potwierdzanie-chor%C3%B3b)
+> [Wideo](#wideo-potwierdz-chorobe), [Wypełnianie formularza z poziomu pasieki](#formularz-chorobowy-pasieka)
 
-- **Potwierdzanie chorób z poziomu ula:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Wybierz *Powiadomienia* z dolnego menu. W zakładce *Problemy* kliknij w wybrany wiersz z chorobą, aby rozwinąć szczegóły. Kliknij przycisk *Odpowiedz na kilka pytań*. Udziel odpowiedzi na pytania. Aby przejść do kolejnego kliknij żółtą strzałkę w prawo. Na koniec kliknij *Zapisz*.
+- **Wypełnianie formularza chorobowego z poziomu ula:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Wybierz *Powiadomienia* z dolnego menu. W zakładce *Problemy* kliknij w wybrany wiersz z chorobą, aby rozwinąć szczegóły. Kliknij przycisk *Odpowiedz na kilka pytań*. Udziel odpowiedzi na pytania (Tak / Nie / Pomiń). Aby przejść do kolejnego, kliknij żółtą strzałkę w prawo. Na koniec kliknij *Zapisz*.
 
-> [Wideo](#wideo-potwierdz-chorobe), [Potwierdzanie chorób](#6-potwierdzanie-chor%C3%B3b)
+> [Wideo](#wideo-potwierdz-chorobe), [Wypełnianie formularza z poziomu ula](#formularz-chorobowy-ul)
 
 - **Rejestrowanie próbki:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Wybierz *Dodaj...* -> *Zarejestruj próbkę* z dolnego menu. Wybierz datę pobrania próbki i rodzaj badania. Kliknij przycisk *Wygeneruj kod*. Zapisz *Kod badania* na próbce i wyślij do Apisense. (Uwaga: opcja Zarejestruj próbkę jest dostępna tylko w ulu z przypisanym urządzeniem VitalSensor).
 
-> [Wideo](#wideo-zarejestruj-probke), [Rejestrowanie próbki](#7-rejestrowanie-pr%C3%B3bki)
+> [Wideo](#wideo-zarejestruj-probke), [Rejestrowanie próbki](#rejestrowanie-probki)
 
 - **Dodawanie badania:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Z dolnego menu wybierz *Dodaj... -> Badanie*. Wybierz datę i rodzaj badania z listy rozwijanej, uzupełnij wymagane zdjęcia i pola (np. liczba roztoczy warrozy), następnie zapisz żółtym przyciskiem.
 
@@ -1740,29 +1812,29 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 - **Lista pasiek (zakładka Pasieki):** Widok startowy po zalogowaniu się do aplikacji Apisense - kafelki pasiek z podstawowymi informacjami. Kliknij pasiekę, aby przejść do listy uli.
 
-> [Wideo](#wideo-dodaj-pasieke), [Omówienie listy pasiek (zakładka Pasieki)](#1-om%C3%B3wienie-listy-pasiek-zak%C5%82adka-pasieki)
+> [Wideo](#wideo-dodaj-pasieke), [Omówienie listy pasiek (zakładka Pasieki)](#omowienie-listy-pasiek)
 
 - **Mapa pasiek:** Po zalogowaniu do aplikacji, z dolnego menu wybierz *Mapa*, aby zobaczyć lokalizacje pasiek. Możesz filtrować widok według problemów (np. Warroza).
 
-> [Omówienie mapy pasiek (zakładka Mapa)](#2-om%C3%B3wienie-mapy-pasiek-zak%C5%82adka-mapa)
+> [Omówienie mapy pasiek (zakładka Mapa)](#omowienie-mapy-pasiek)
 
 - **Lista uli (zakładka Ule):** Kliknij kafelek wybranej pasieki. W rezultacie pojawią się wszystkie ule przypisane do tej pasieki. Widok *Ule* prezentuje listę uli; kliknij wybrany ul, aby przejść do szczegółów.
 
-> [Wideo](#wideo-dodaj-ul), [Omówienie listy uli (zakładka Ule)](#3-om%C3%B3wienie-listy-uli-zak%C5%82adka-ule)
+> [Wideo](#wideo-dodaj-ul), [Omówienie listy uli (zakładka Ule)](#omowienie-listy-uli)
 
 - **Zawartość ula (zakładka Szczegóły):** Tu sprawdzisz *Stan ula*, zapisane przeglądy, notatki oraz listę badań i próbek. Możesz wyświetlić również wykresy poszczególnych parametrów np. Przybytek miodu.
 
-> [Omówienie zawartości ula (zakładka Szczegóły)](#4-om%C3%B3wienie-zawarto%C5%9Bci-ula-zak%C5%82adka-szczeg%C3%B3%C5%82y)
+> [Omówienie zawartości ula (zakładka Szczegóły)](#omowienie-zawartosci-ula)
 
 - **Ustawienia pasieki i ula:** Ikona zębatki w widoku pasieki (zakładka Ule) lub ula (zakładka Szczegóły) prowadzi do ustawień. Możesz tu edytować informacje o pasiece lub ulu.
 
-> [Omówienie ustawień pasieki](#5-om%C3%B3wienie-ustawie%C4%84-pasieki), [Omówienie ustawień ula](#6-om%C3%B3wienie-ustawie%C4%84-ula)
+> [Omówienie ustawień pasieki](#omowienie-ustawien-pasieki), [Omówienie ustawień ula](#omowienie-ustawien-ula)
 
 ### 4. Monitorowanie i analiza danych
 
 - **Parametry (temperatura, wilgotność, ciśnienie, waga, przybytek miodu):** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Bieżące wartości są widoczne w zakładce *Szczegóły* ula, podzakładka *Stan ula*, w sekcjach *Waga*, *Warunki*.
 
-> [Monitorowanie parametrów](#monitorowanie-parametr%C3%B3w)
+> [Monitorowanie parametrów](#monitorowanie-parametrow)
 
 - **Wykresy:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. W zakładce *Szczegóły* -> *Stan ula* rozwiń sekcję *Waga* lub *Warunki* i kliknij w wybrany parametr, aby zobaczyć wykres w wybranym przedziale czasowym (24 h, 7 dni, 1–6 miesięcy).
 
@@ -1780,14 +1852,24 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 - **Twój asystent AI:** Z dolnego menu wybierz *Twój asystent* (dostęp z widoków *Pasieki*, *Ule*, *Szczegóły*), następnie wpisz pytanie i wyślij do asystenta. Asystent przeanalizuje dane i udzieli odpowiedzi.
 
-> [Twój asystent AI](#2-tw%C3%B3j-asystent-ai)
+> [Twój asystent AI](#twoj-asystent-ai)
 
 ### 6. Konto
 
 - **Edycja danych użytkownika:** W widoku startowym *Pasieki* kliknij ikonę zębatki. Możesz zmienić nazwę, e-mail, telefon, hasło oraz język. Z tego miejsca możesz też usunąć konto.
 
-> [Edycja danych użytkownika](#1-edycja-danych-u%C5%BCytkownika)
+> [Edycja danych użytkownika](#edycja-danych-uzytkownika)
+
+- **Sprawdzenie wersji aplikacji:** W widoku *Ustawienia konta* przewiń na sam dół ekranu — zobaczysz wpis **Wersja X.Y.Z**.
+
+> [Sprawdzenie wersji aplikacji](#2-sprawdzenie-wersji-aplikacji)
+
+### 7. Zgłaszanie problemów i sugestii
+
+- **Zgłaszanie w aplikacji:** Kliknij ikonę żarówki w prawym górnym rogu dowolnego widoku. Wypełnij kategorię i opis, opcjonalnie dołącz zdjęcia. Kliknij *Wyślij sugestię*.
+
+> [Zgłaszanie problemów i sugestii](#zglaszanie-problemow-i-sugestii)
 
 ______________________________________________________________________
 
-W razie problemów wyszukaj problem na liście [Często zadawane pytania i proponowane rozwiązania](#1-cz%C4%99sto-zadawane-pytania-i-proponowane-rozwi%C4%85zania) lub skontaktuj się z pomocą Apisense: **bee@apisense.ai**.
+W razie problemów wyszukaj problem na liście [Często zadawane pytania i proponowane rozwiązania](#faq-czesto-zadawane) lub skontaktuj się z pomocą Apisense: **bee@apisense.ai**.

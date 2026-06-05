@@ -121,42 +121,51 @@ Figure: Adding an apiary - Apiaries start view {#fig-apiaries}
 
 ![figure](pictures/apiaries.png){width=200}
 
-- As a result, the *Add apiary* view will be displayed ([](#fig-add-apiary)). In this view, fill in the following fields:
-
-    - **Name** — the apiary name that will be displayed in the panel,
-    - **Name abbreviation** — the apiary name abbreviation set by default (consisting of up to 3 characters); you can change it,
-    - **Serial number** - the device's identification number. Click the QR code icon on the right side of this field and scan the QR code from the sticker on the Apisense Hub. The next field, *Confirmation code*, will be filled in automatically.
-    - **Confirmation code** - will be filled in automatically once the QR code has been scanned correctly.
-
-     The *Name* and *Name abbreviation* fields can be edited by the user at any time.
-
-!!! Warning:
-    **Apiary without devices:** The *Serial Number* and *Confirmation Code* (Apisense Hub) fields are optional. You can create an apiary by providing only the name and abbreviation. However, if the apiary is created without a Hub, it will no longer be possible to assign this device to the apiary later, even when editing the apiary settings. Additionally, if an apiary is created without a Hub, it will not be possible to assign Scale or VitalSensor devices to any hive within that apiary — the *Equipment* section will not be available when adding hives.
+- As a result, the *Add apiary* view will be displayed ([](#fig-add-apiary)).
 
 Figure: Adding an apiary with a linked Apisense Hub in the system {#fig-add-apiary}
 
 ![figure](pictures/add_apiary.png){width=200}
 
-**Once you have filled in the required data, click the yellow button at the bottom of the screen to confirm creation of the apiary with the linked Apisense Hub device.**
+#### 1.1.1 Adding an apiary with devices
 
-- If the apiary was created successfully, you will be redirected to the Apiaries view, and the apiary you just created will appear in your apiary list ([](#fig-apiaries-list)).
+In the *Add apiary* view, fill in the following fields:
+
+- **Name** — the apiary name that will be displayed in the panel,
+- **With devices** — check this option to add an apiary and link it with an Apisense Hub device.
+
+The *Name* field can be edited by the user at any time.
+
+After filling in the information above, click the yellow button with the arrow in the lower right corner of the screen. You will be taken to the next step of adding the apiary, where you link the Apisense Hub to your apiary. Fill in the following fields:
+
+- **Hub** — click the QR code icon on the right side of this field and scan the QR code from the sticker on the Apisense Hub device. The next field, *Confirmation code*, will be filled in automatically.
+- **Confirmation code** — filled in automatically after the QR code is scanned correctly.
+
+**After filling in the required data and scanning the QR code, click the yellow button at the bottom of the screen to confirm creation of the apiary with the linked Apisense Hub device.**
+
+If the apiary was created successfully, you will be redirected to its interior (the *Hives* view), and when you go to the *Apiaries* tab the apiary you just created will appear on your apiary list ([](#fig-apiaries-list)). The apiary tile will show the relevant statuses or tips on how to start the Apisense Hub. To learn more about statuses, go to [chapter 7. Interpretation of statuses and icons used in the system](#interpretacja-statusow).
 
 Figure: Successfully added apiary with a linked Apisense Hub in the apiary view of the system {#fig-apiaries-list}
 
 ![figure](pictures/apiaries_list.png){width=200}
 
-#### 1.1.1 Adding an apiary without devices (without Apisense Hub)
+#### 1.1.2 Adding an apiary without devices
 
-If you want to create the apiary in the system first and connect hardware later:
+To add an apiary without devices, in the *Add apiary* view:
 
-- In the *Add apiary* view, fill in only the **Name** and **Name abbreviation** fields. Leave *Serial number* and *Confirmation code* empty.
-- Click the yellow button at the bottom of the screen to save the apiary.
+- in the *Name* field, enter the name under which the apiary will be displayed in the app,
+- check the *Without devices* option.
 
-**After creating an apiary without a Hub:**
+**After filling in the information above, click the yellow button at the bottom of the screen to confirm creation of the apiary without devices.**
 
-- The apiary tile will **not show** Hub battery and LTE icons or weather data from the Hub.
-- You can add hives and keep records (notes, inspections, tasks), but you **cannot** assign Scale or VitalSensor devices to hives until an Apisense Hub is linked to the apiary.
-- You can add a Hub later in *Apiary settings* → **Hub** section (scan the QR code on the device).
+If the apiary was created successfully, you will be redirected to its interior (the *Hives* view), and when you go to the *Apiaries* tab the apiary you just created will appear on your apiary list ([](#fig-apiaries-list-without-hub)). The apiary tile will **not show** Hub battery and LTE icons or weather data — only the apiary name will be displayed.
+
+Figure: Successfully added apiary without devices in the apiary view of the system {#fig-apiaries-list-without-hub}
+
+![figure](pictures/apiaries_list_without_hub.png){width=200}
+
+!!! Note
+    **Apiary without devices:** You can create an apiary by providing only the name and selecting *Without devices*, but an apiary created without a Hub **cannot** have a Hub assigned later, even when editing apiary settings. Furthermore, if an apiary was created without a Hub, you cannot assign Scale or VitalSensor devices to any hive in that apiary — the *Equipment* section will not be available when adding hives. You can still add hives without devices and keep records (notes, inspections, tasks).
 
 #### 1.2 Editing an apiary
 
@@ -270,9 +279,11 @@ Figure: Adding a hive in the system - Queen bee information section {#fig-add-be
 
 - **Equipment:** The last stage involves linking devices to this specific hive. **Note:** It is essential that the devices configured for the hive (Scale and VitalSensor) are actually installed in the same physical hive.
 
-    **Note — hive without devices:** VitalSensor and Scale fields are **optional** — if you leave both pairs of fields (serial number and confirmation code) empty, the hive will be created without measurement hardware. You can assign devices later in *Hive settings* → **Equipment** section.
+    !!! Note
+        **Hive without devices:** VitalSensor and Scale fields are **optional** — if you do not scan the device QR codes and leave both pairs of fields (serial number and confirmation code) empty, the hive will be created without measurement hardware. You can assign devices later in *Hive settings* → **Equipment** (provided the apiary has a linked Hub).
 
-    **Note — Hub requirement:** To link Scale or VitalSensor to a hive, the apiary must have an **Apisense Hub** assigned. Trying to add devices to a hive in an apiary without a Hub will end with a message that Scale and VitalSensor require a Hub linked to the apiary.
+    !!! Note
+        **Hub requirement:** To link Scale or VitalSensor to a hive, the apiary must have an **Apisense Hub** assigned. Otherwise, the *Equipment* section will not be available when adding or editing a hive.
 
     To link devices with the hive, fill in the following fields:
 
@@ -733,32 +744,36 @@ Figure: Task list in the hive view {#fig-beehive-tasks-list}
 
 You can filter the task list by status (*All*, *To do*, *Done*).
 
-### 6. Confirming diseases
+### 6. Disease alerts and the health questionnaire
 
-When the Apisense Pro AI system reports a threat (e.g. Nosema), **alerts** will appear in the *Notifications* tab in the app, along with a description and recommendations. By confirming the detected disease in the app, you help the system tailor messages to the actual conditions in your apiary.
+When the Apisense Pro AI system reports a threat (e.g. Nosema), **alerts** will appear in the *Notifications* tab in the app, along with a description and recommendations. By filling in the **disease questionnaire** (*Answer a few questions*), you provide feedback to the system and help tailor messages to the actual conditions in your apiary.
 
-#### What do disease alerts mean?
+#### 6.1 What do disease alerts mean?
 
-Alerts in *Notifications* → *Problems* refer to **diseases detected automatically by the Apisense Pro AI machine learning model** based on sensor data and system analysis. This is not a veterinary diagnosis — the system signals a **probable** threat (e.g. varroa, nosema, foulbrood), together with severity level and recommended actions.
-
-The model is **highly accurate**, but — like any predictive analysis — it **can sometimes be wrong**. Therefore it is worth checking every alert in the field and completing the **disease questionnaire** (*Answer a few questions*).
+Alerts in *Notifications* → *Problems*, as well as in hive *Details* (*Details* → *Health* section → *Alert in colony*), refer to **diseases detected automatically by the Apisense Pro AI machine learning model** based on sensor data and system analysis. This is not a veterinary diagnosis — the system signals a **probable** threat (e.g. varroa, nosema, foulbrood), together with severity level and recommended actions, which you will see after expanding the disease details (*Problems* tab).
 
 On apiary and hive tiles, disease alerts appear as **Threatened** status or the name of the detected disease (sometimes with a “+N” badge when more than one threat was found in the hive).
 
-#### When the disease is not present in the hive
+The model is **highly accurate**, but — like any predictive analysis — it **can sometimes be wrong**. Therefore it is worth checking every alert in the field and completing the **disease questionnaire** (*Problems* → disease details → *Answer a few questions*). Filling in the form is very important because your answers help improve the model and increase disease detection accuracy. Thanks to this feedback, the system can better recognize real cases and reduce false alarms.
+
+It is also worth remembering that the model can detect signs of disease at a very early stage, when symptoms may not yet be visible or may be hard to notice during a standard inspection. Therefore, even if you do not see clear symptoms at first glance, it is worth checking the hive indicated in the alert and providing feedback through the form.
+
+#### 6.2 What to do when the disease is not present in the hive
 
 If after visiting the apiary you conclude that the **disease is not actually present** in that hive:
 
 1. Open the alert details (*Notifications* → *Problems* → the disease row).
 2. Click *Answer a few questions*.
-3. For questions about symptoms, answer **No** (you can also attach photos from the inspection).
-4. Save the form with the *Save* button.
+3. For questions about symptoms, answer **No** (you can attach photos from the inspection to each question).
+4. Submit the form by clicking *Save*.
 
-Your answers help the system better tailor future messages to conditions in your apiary. You can fill in the questionnaire again for the same disease episode after a set period (the system will inform you if resubmission is not yet allowed).
+Your answers help the system better tailor future messages to conditions in your apiary. You can fill in the questionnaire again for the same disease episode after a few days if the model still detects the disease.
 
-The **Skip** option lets you move on without answering a given question — it is still worth completing at least part of the form when you are unsure about the alert.
+The **Skip** option lets you move on without answering a given question — it is still worth completing at least part of the form, especially when you are unsure about the alert.
 
-#### 6.1 Confirming diseases from the apiary level
+<a id="disease-questionnaire-apiary"></a>
+
+#### 6.3 Filling in the disease questionnaire from the apiary level
 
 - In the Apiaries tab (the start view after logging in to the Apisense app) click the tile of the apiary in which a threat was detected (red bee icon and "Threat" label on the apiary tile). After clicking the tile, the Hives view will be displayed ([](#fig-apiaries-apiary-with-problem)).
 
@@ -778,35 +793,37 @@ Figure: Problems tab {#fig-problems-tab}
 
 - Go to the details of the detected disease by clicking the row with the disease, e.g. American foulbrood ([](#fig-problems-tab-disease-details)). After going to the details, you will see the duration of the disease, its severity level, recommended protective actions and the *Answer a few questions* button (the *Recommendations* tab), as well as previously given answers (the *Answers* tab).
 
-Figure: Confirm disease - disease details {#fig-problems-tab-disease-details}
+Figure: Disease questionnaire - disease details {#fig-problems-tab-disease-details}
 
 ![figure](pictures/problems_tab_disease_details.png){width=200}
 
-- To confirm the disease detected by the system, click the *Answer a few questions* button. After clicking the button, the Answer a few questions view will be displayed ([](#fig-confirm-problem-questions)). Then answer all the questions, choosing one of the available options: Yes, No or Skip.
+- To fill in the disease questionnaire for an alert detected by the system, click the *Answer a few questions* button. After clicking the button, the *Answer a few questions* view will be displayed ([](#fig-confirm-problem-questions)). Then answer all the questions, choosing one of the available options: **Yes**, **No** or **Skip** — depending on what you observed in the hive.
 
-Figure: Confirm disease - sample question {#fig-confirm-problem-questions}
+Figure: Disease questionnaire - sample question {#fig-confirm-problem-questions}
 
 ![figure](pictures/confirm_problem_questions.png){width=200}
 
 - You can also attach photos or recordings to your answers to individual questions. To do so, click the *+* button in the upper right corner of the Answer a few questions view ([](#fig-confirm-problem-add-photos)).
 
-Figure: Confirm disease - attaching photos and recordings {#fig-confirm-problem-add-photos}
+Figure: Disease questionnaire - attaching photos and recordings {#fig-confirm-problem-add-photos}
 
 ![figure](pictures/confirm_problem_add_photos.png){width=200}
 
 - To proceed to the next question, click the yellow right-pointing arrow icon in the lower right corner of the screen.
 
-- To save your answers and finish the form, click the yellow *Save* button in the lower right corner of the last screen of the Answer a few questions view ([](#fig-confirm-problem-save)).
+- To save your answers and submit the form, click the yellow *Save* button in the lower right corner of the last screen of the *Answer a few questions* view ([](#fig-confirm-problem-save)).
 
-Figure: Confirm disease - saving the form {#fig-confirm-problem-save}
+Figure: Disease questionnaire - saving the form {#fig-confirm-problem-save}
 
 ![figure](pictures/confirm_problem_save.png){width=200}
 
-#### 6.2 Confirming diseases from the hive level
+<a id="disease-questionnaire-hive"></a>
+
+#### 6.4 Filling in the disease questionnaire from the hive level
 
 <div class="yt-embed short" id="video-confirm-disease">
   <iframe src="https://www.youtube.com/embed/iGNXm9qu8X8"
-          title="Apisense Manual PL — 08 · Confirm disease in the hive"
+          title="Apisense Manual EN — 08 · Disease questionnaire in the hive"
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
 </div>
@@ -835,27 +852,27 @@ Figure: Problems tab at the level of a single hive {#fig-beehive-details-problem
 
 - Go to the details of the detected disease by clicking the row with the disease, e.g. American foulbrood ([](#fig-problems-tab-disease-details-2)). After going to the details, you will see the duration of the disease, its severity level, recommended protective actions and the *Answer a few questions* button (the *Recommendations* tab), as well as previously given answers (the *Answers* tab).
 
-Figure: Confirm disease - disease details {#fig-problems-tab-disease-details-2}
+Figure: Disease questionnaire - disease details {#fig-problems-tab-disease-details-2}
 
 ![figure](pictures/problems_tab_disease_details.png){width=200}
 
-- To confirm the disease detected by the system, click the *Answer a few questions* button. After clicking the button, the Answer a few questions view will be displayed ([](#fig-confirm-problem-questions-2)). Then answer all the questions, choosing one of the available options: Yes, No or Skip.
+- To fill in the disease questionnaire for an alert detected by the system, click the *Answer a few questions* button. After clicking the button, the *Answer a few questions* view will be displayed ([](#fig-confirm-problem-questions-2)). Then answer all the questions, choosing one of the available options: **Yes**, **No** or **Skip** — depending on what you observed in the hive.
 
-Figure: Confirm disease - sample question {#fig-confirm-problem-questions-2}
+Figure: Disease questionnaire - sample question {#fig-confirm-problem-questions-2}
 
 ![figure](pictures/confirm_problem_questions.png){width=200}
 
 - You can also attach photos or recordings to your answers to individual questions. To do so, click the *+* button in the upper right corner of the Answer a few questions view ([](#fig-confirm-problem-add-photos-2)).
 
-Figure: Confirm disease - attaching photos and recordings {#fig-confirm-problem-add-photos-2}
+Figure: Disease questionnaire - attaching photos and recordings {#fig-confirm-problem-add-photos-2}
 
 ![figure](pictures/confirm_problem_add_photos.png){width=200}
 
 - To proceed to the next question, click the yellow right-pointing arrow icon in the lower right corner of the screen.
 
-- To save your answers and finish the form, click the yellow *Save* button in the lower right corner of the last screen of the Answer a few questions view ([](#fig-confirm-problem-save-2)).
+- To save your answers and submit the form, click the yellow *Save* button in the lower right corner of the last screen of the *Answer a few questions* view ([](#fig-confirm-problem-save-2)).
 
-Figure: Confirm disease - saving the form {#fig-confirm-problem-save-2}
+Figure: Disease questionnaire - saving the form {#fig-confirm-problem-save-2}
 
 ![figure](pictures/confirm_problem_save.png){width=200}
 
@@ -1367,7 +1384,7 @@ Navigation icons are used to move between views and app functions.
 | :------------------------------ | :---------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------- |
 | ![](pictures/logout.png)        | various views, including Apiaries tab - upper right corner of the screen | Button used to log out of the system.                                                                            |
 | ![](pictures/previous_view.png) | various views - upper left corner of the screen                   | Button used to go to the previous view (Back button), e.g. from the *Hives* tab to *Apiaries*.                   |
-| ![](pictures/next_button.png)   | various views including disease confirmation, Add inspection      | Button used to go to the next view (Next button), e.g. moving on to the next inspection question.                |
+| ![](pictures/next_button.png)   | various views including disease questionnaire, Add inspection      | Button used to go to the next view (Next button), e.g. moving on to the next inspection or disease questionnaire question.                |
 
 ______________________________________________________________________
 
@@ -1593,6 +1610,33 @@ You can use the AI Assistant by selecting the *Your assistant* tab from the bott
 
 ______________________________________________________________________
 
+<a id="reporting-problems-and-suggestions"></a>
+
+## Reporting problems and suggestions
+
+If while using the app you notice a bug, incorrect behavior of a feature, or have an idea for improving the system, you can report it directly from within the app. We also encourage you to submit proposals for new features that could make everyday work with the system easier.
+
+Each report is reviewed by the team responsible for app development. User feedback helps identify problems faster, improve existing solutions, and develop features that best meet beekeepers' needs.
+
+### 1. Reporting problems and suggestions in the app
+
+To report a problem or suggestion in the app, follow these steps:
+
+- Click the *light bulb* icon available from any view in the app, in the upper right corner of the screen (next to the settings and log out buttons). As a result, the *Add suggestion* view will open ([](#fig-add-suggestion)).
+- In the *Add suggestion* view, fill in the following required fields:
+
+    - **Choose category** — select one of the available categories depending on whether you want to report a problem or suggest an app improvement.
+    - **Description** — enter a description of the problem or what you would like to change in the app.
+
+- Optionally, you can also attach photos to your report, which is especially useful when reporting a problem found in the app. Note: you can attach photos only — recordings are not accepted.
+- After filling in the information above, click the yellow *Send suggestion* button in the lower right corner of the view to submit the report.
+
+Figure: Add suggestion view - sample problem reported through the app {#fig-add-suggestion}
+
+![figure](pictures/add_suggestion.png){width=200}
+
+______________________________________________________________________
+
 ## Account management
 
 The user can review and modify their data, change account settings, and manage preferences regarding how the app works.
@@ -1610,16 +1654,6 @@ To edit user data:
 - To change the contents of the chosen section, click its header; this will open a new view in which the data can be edited. For example, when changing the password, the user will be asked to enter a new password and to repeat it ([](#fig-app-settings)).
 - After making changes, save them by clicking the yellow button in the lower right corner of the screen.
 
-#### 1.1.1 Checking the app version
-
-To see which version of the Apisense app is currently installed on your device:
-
-- Go to the *Account settings* view (cog icon in the upper right corner of the *Apiaries* tab).
-- Scroll **to the very bottom** of the screen.
-- At the bottom you will see an entry in the form **Version X.Y.Z** (e.g. *Version 1.2.3*) — that is the installed app version number.
-
-It is worth comparing this number with the version available in Google Play or the App Store before reporting a technical issue.
-
 Figure: Account settings - sample view of the settings and password change (1) {#fig-app-settings}
 
 ![figure](pictures/app_settings.png){width=200}
@@ -1631,6 +1665,16 @@ Figure: Account settings - sample view of the settings and password change (2) {
 #### 1.2 Deleting the account
 
 In the lower part of the *Account settings* view ([](#fig-app-settings)) there is also a *Delete account* button, which enables permanent deletion of the user account.
+
+### 2. Checking the app version
+
+To see which version of the Apisense app is currently installed on your device:
+
+- Go to the *Account settings* view. To do so, click the cog icon in the upper right corner of the *Apiaries* tab.
+- Scroll **to the very bottom** of the screen.
+- At the bottom, in the central part of the screen, you will see an entry in the form **Version X.Y.Z** (e.g. *Version 1.2.3*) — that is the installed app version number.
+
+It is worth comparing this number with the version available in Google Play or the App Store before reporting a technical issue.
 
 ______________________________________________________________________
 
@@ -1693,9 +1737,9 @@ Below you will find a summary of the most important activities in the Apisense P
 
 ### 2. Apiary management
 
-- **Adding an apiary:** In the *Apiaries* tab choose *Add apiary* from the bottom menu. In the *Add apiary* view fill in the name, abbreviation, scan the QR code from the Apisense Hub and save.
+- **Adding an apiary:** In the *Apiaries* tab choose *Add apiary* from the bottom menu. In the *Add apiary* view enter the name and choose *With devices* (scan the Hub QR code) or *Without devices*, then save.
 
-> [Video](#video-add-apiary), [Adding an apiary](#11-adding-an-apiary)
+> [Video](#video-add-apiary), [Adding an apiary with devices](#111-adding-an-apiary-with-devices), [Adding an apiary without devices](#112-adding-an-apiary-without-devices)
 
 - **Editing an apiary:** Click the chosen apiary tile. Click the cog icon while in the *Hives* tab. In the *Apiary settings* view click the header of the section whose data you want to edit. Change the field values and click save (yellow button).
 
@@ -1727,13 +1771,13 @@ Below you will find a summary of the most important activities in the Apisense P
 > [Video — audio note](#video-note-voice) 
 > [Notes](#4-notes)
 
-- **Confirming diseases from the apiary level:** Click the chosen apiary tile. Choose *Notifications* from the bottom menu. In the *Problems* tab click the chosen disease row to expand the details. Click the *Answer a few questions* button. Answer the questions. To proceed to the next, click the yellow right-pointing arrow. At the end click *Save*.
+- **Filling in the disease questionnaire from the apiary level:** Click the chosen apiary tile. Choose *Notifications* from the bottom menu. In the *Problems* tab click the chosen disease row to expand the details. Click the *Answer a few questions* button. Answer the questions (Yes / No / Skip). To proceed to the next, click the yellow right-pointing arrow. At the end click *Save*.
 
-> [Video](#video-confirm-disease), [Confirming diseases](#6-confirming-diseases)
+> [Video](#video-confirm-disease), [Filling in the questionnaire from the apiary level](#disease-questionnaire-apiary)
 
-- **Confirming diseases from the hive level:** Click the chosen apiary tile. Click the chosen hive tile. Choose *Notifications* from the bottom menu. In the *Problems* tab click the chosen disease row to expand the details. Click the *Answer a few questions* button. Answer the questions. To proceed to the next, click the yellow right-pointing arrow. At the end click *Save*.
+- **Filling in the disease questionnaire from the hive level:** Click the chosen apiary tile. Click the chosen hive tile. Choose *Notifications* from the bottom menu. In the *Problems* tab click the chosen disease row to expand the details. Click the *Answer a few questions* button. Answer the questions (Yes / No / Skip). To proceed to the next, click the yellow right-pointing arrow. At the end click *Save*.
 
-> [Video](#video-confirm-disease), [Confirming diseases](#6-confirming-diseases)
+> [Video](#video-confirm-disease), [Filling in the questionnaire from the hive level](#disease-questionnaire-hive)
 
 - **Registering a sample:** Click the chosen apiary tile. Click the chosen hive tile. Choose *Add...* -> *Register sample* from the bottom menu. Choose the sample collection date and the test type. Click the *Generate code* button. Write the *Test code* on the sample and send it to Apisense. (Note: the Register sample option is only available for a hive with an assigned VitalSensor device).
 
@@ -1794,6 +1838,16 @@ Below you will find a summary of the most important activities in the Apisense P
 - **Editing user data:** In the *Apiaries* start view click the cog icon. You can change your name, email, phone, password and language. From this place you can also delete your account.
 
 > [Editing user data](#1-editing-user-data)
+
+- **Checking the app version:** In the *Account settings* view scroll to the bottom of the screen — you will see the **Version X.Y.Z** entry.
+
+> [Checking the app version](#2-checking-the-app-version)
+
+### 7. Reporting problems and suggestions
+
+- **Reporting in the app:** Click the light bulb icon in the upper right corner of any view. Fill in the category and description, optionally attach photos. Click *Send suggestion*.
+
+> [Reporting problems and suggestions](#reporting-problems-and-suggestions)
 
 ______________________________________________________________________
 
