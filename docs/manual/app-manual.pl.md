@@ -136,7 +136,7 @@ Po uzupełnieniu powyższych informacji kliknij żółty przycisk ze strzałką,
 
 **Po uzupełnieniu niezbędnych danych i zeskanowaniu kodu QR kliknij żółty przycisk na dole ekranu, potwierdzający utworzenie pasieki z powiązanym urządzeniem Apisense Hub.**
 
-Jeśli utworzenie pasieki się powiodło, zostaniesz przekierowany do jej wnętrza (widok *Ule*), natomiast po przejściu do zakładki *Pasieki* na Twojej liście pasiek pojawi się pasieka, którą właśnie utworzyłeś ([](#fig-apiaries-list)). Na kafelku z pasieką zostaną wyświetlone odpowiednie statusy lub wskazówki jak uruchomić Apisense Hub. Aby dowiedzieć się więcej o statusach, przejdź do rozdziału [7. Interpretacja statusów i ikon wykorzystywanych w systemie](#interpretacja-statusow).
+Jeśli utworzenie pasieki się powiodło, zostaniesz przekierowany do jej wnętrza (widok *Ule*), natomiast po przejściu do zakładki *Pasieki* na Twojej liście pasiek pojawi się pasieka, którą właśnie utworzyłeś ([](#fig-apiaries-list)). Na kafelku z pasieką zostaną wyświetlone odpowiednie statusy lub wskazówki jak uruchomić Apisense Hub (patrz [Pierwsze uruchomienie urządzeń](#pierwsze-uruchomienie)). Aby dowiedzieć się więcej o statusach, przejdź do rozdziału [7. Interpretacja statusów i ikon wykorzystywanych w systemie](#interpretacja-statusow).
 
 
 Figure: Pomyślnie dodana pasieka z powiązanym Apisense Hub w widoku pasiek w systemie {#fig-apiaries-list}
@@ -230,13 +230,13 @@ Figure: Ustawienia pasieki - widok Usuń pasiekę {#fig-apiary-settings-remove-a
           allowfullscreen></iframe>
 </div>
 
-- Będąc w zakładce Pasieki (widok startowy po zalogowaniu do aplikacji Apisense) kliknij kafelek z pasieką, do której chcesz dodać ul i przypisać urządzenia (Scale i VitalSensor). Po kliknięciu w kafelek zostanie wyświetlony widok pojedynczej pasieki ([](#fig-apiaries-apiary)).
+- Będąc w zakładce Pasieki (widok startowy po zalogowaniu do aplikacji Apisense [](#fig-apiaries-apiary)) kliknij kafelek z pasieką, do której chcesz dodać ul. Po kliknięciu w kafelek zostanie wyświetlony widok pojedynczej pasieki ([](#fig-apiary-interior)).
 
-Figure: Widok pasieki w zakładce Pasieki i widok pojedynczej pasieki (Ule) (1) {#fig-apiaries-apiary}
+Figure: Widok pasieki w zakładce Pasieki {#fig-apiaries-apiary}
 
 ![figure](pictures/apiaries_apiary.png){width=200}
 
-Figure: Widok pasieki w zakładce Pasieki i widok pojedynczej pasieki (Ule) (2) {#fig-apiary-interior}
+Figure: Widok zawartości pojedynczej pasieki (Ule) {#fig-apiary-interior}
 
 ![figure](pictures/apiary_interior.png){width=200}
 
@@ -272,52 +272,68 @@ Figure: Dodawanie ula w systemie - sekcja Informacje o matce pszczelej {#fig-add
 
 ![figure](pictures/add_beehive_queen.png){width=200}
 
-- Następnie kliknij żółty przycisk ze strzałką w prawo, znajdujący się na dole ekranu, w celu przejścia do ostatniego kroku dodawania ula.
+- Następnie kliknij żółty przycisk ze strzałką w prawo, znajdujący się na dole ekranu, w celu przejścia do sekcji *Wyposażenie*.
+
+!!! Uwaga:
+    Sekcja *Wyposażenie* jest dostępna tylko wtedy, gdy do pasieki jest przypisane urządzenie Apisense Hub. Jeżeli pasieka nie posiada Apisense Hub, kliknięcie żółtego przycisku znajdującego się w prawym dolnym rogu ekranu, spowoduje zapisanie i dodanie pustego ula (bez urządzeń pomiarowych) z wprowadzonymi wyżej informacjami.
+
+#### 2.1.1 Dodawanie ula z urządzeniami
 
 - **Wyposażenie:** Ostatni etap obejmuje powiązanie urządzeń z tym konkretnym ulem. **Uwaga:** Kluczowe jest, aby urządzenia skonfigurowane w ramach ula (Scale i VitalSensor) były w rzeczywistości zainstalowane w tym samym fizycznym ulu.
 
     !!! Uwaga:
-        **Ul bez urządzeń:** Pola VitalSensor i Scale są **opcjonalne** — jeśli nie zeskanujesz kodu QR z urządzeń i obie pary pól (numer seryjny i kod potwierdzający) pozostawisz puste, ul zostanie utworzony bez sprzętu pomiarowego. Urządzenia bedziesz mógł przypisać później w *Ustawieniach ula* > sekcja **Wyposażenie** (pod warunkiem, że Hub jest powiązany z pasieką).
-
-    !!! Uwaga:
         **Wymóg Huba:** Aby powiązać Scale lub VitalSensor z ulem, do pasieki musi być przypisany **Apisense Hub**. W przeciwnym razie zarówno podczas dodawania jak i edycji ula, sekcja *Wyposażenie* nie będzie dostępna.
 
-    Aby powiązać urządzenia z ulem wypełnij następujące pola:
+    Aby powiązać urządzenie Apisense Scale z ulem wypełnij następujące pola:
 
-    - **VitalSensor** - kliknij w ikonę kodu QR znajdującą się w prawej części tego pola i zeskanuj kod QR z naklejki umieszczonej na Apisense VitalSensor. Kolejne pole *Kod potwierdzający* zostanie wypełnione automatycznie.
-    - **Kod potwierdzający** - zostanie wypełniony automatycznie, po poprawnym zeskanowaniu kodu QR.
     - **Scale** - kliknij w ikonę kodu QR znajdującą się w prawej części tego pola i zeskanuj kod QR z naklejki umieszczonej na Apisense Scale. Kolejne pole *Kod potwierdzający* zostanie wypełnione automatycznie.
     - **Kod potwierdzający** - zostanie wypełniony automatycznie, po poprawnym zeskanowaniu kodu QR.
 
-Figure: Dodawanie ula w systemie - sekcja Wyposażenie {#fig-add-beehive-devices}
+    Figure: Dodawanie ula w systemie - sekcja Wyposażenie - przypisywanie urządzenia Scale {#fig-add-beehive-devices}
 
-![figure](pictures/add_beehive_devices.png){width=200}
+    ![figure](pictures/add_beehive_devices.png){width=200}
 
-- Po wypełnieniu wszystkich sekcji i niezbędnych pól kliknij żółty przycisk *Zapisz*, aby dodać ul z powiązanymi urządzeniami (Scale, VitalSensor).
+    Następnie kliknij żółty przycisk, widoczny w lewym dolnym rogu ekranu, aby przejść do etapu przypisywania urządzenia Apisense VitalSensor do ula:
 
-- Jeśli utworzenie ula się powiodło, zostaniesz przekierowany do widoku *Ule*, a na Twojej liście uli pojawi się ul, który właśnie utworzyłeś ([](#fig-beehives-beehive-with-problem)).
+    - **VitalSensor** - kliknij w ikonę kodu QR znajdującą się w prawej części tego pola i zeskanuj kod QR z naklejki umieszczonej na urządzeniu Apisense VitalSensor **lub** z Apisense Tag. Kolejne pole *Kod potwierdzający* zostanie wypełnione automatycznie.
+    - **Kod potwierdzający** - zostanie wypełniony automatycznie, po poprawnym zeskanowaniu kodu QR.
 
-Figure: Pomyślnie dodany ul z powiązanymi Apisense Scale oraz VitalSensor w widoku Ule oraz Szczegóły ula (1) {#fig-beehives-beehive-with-problem}
+    Figure: Dodawanie ula w systemie - sekcja Wyposażenie - przypisywanie urządzenia VitalSensor {#fig-add-beehive-devices}
+
+    ![figure](pictures/add_beehive_devices.png){width=200}
+
+!!! Uwaga:
+    Do ula możesz również przypisać tylko jedno urządzenie. Aby utworzyć ul tylko z VitalSensor pozostaw pole Scale i Kod potwierdzający puste, a następnie przejdź do etapu dodawania urządzenia VitalSensor i zeskanuj odpowiedni kod QR, po czym zapisz. Aby utworzyć ul tylko ze Scale pozostaw pole VitalSensor i Kod potwierdzający puste i kliknij żółty przycisk na dole ekranu w celu zapisania.
+
+- Po wypełnieniu wybranych sekcji i niezbędnych pól kliknij żółty przycisk w prawej dolnej części ekranu, aby dodać ul z powiązanymi urządzeniami (Scale i/lub VitalSensor).
+
+- Jeśli utworzenie ula się powiodło, zostaniesz przekierowany do widoku *Ule*, a na Twojej liście uli pojawi się ul, który właśnie utworzyłeś ([](#fig-beehives-beehive-with-problem), [](#fig-beehive-interior)).
+
+Figure: Pomyślnie dodany ul z powiązanymi Apisense Scale oraz VitalSensor w widoku Ule {#fig-beehives-beehive-with-problem}
 
 ![figure](pictures/beehives_beehive_with_problem.png){width=200}
 
-Figure: Pomyślnie dodany ul z powiązanymi Apisense Scale oraz VitalSensor w widoku Ule oraz Szczegóły ula (2) {#fig-beehive-interior}
+Figure: Pomyślnie dodany ul z powiązanymi Apisense Scale oraz VitalSensor w widoku Szczegóły ula {#fig-beehive-interior}
 
 ![figure](pictures/beehive_interior.png){width=200}
 
-#### 2.1.1 Dodawanie ula bez urządzeń (bez Scale i VitalSensor)
+#### 2.1.2 Dodawanie ula bez urządzeń (bez Scale i VitalSensor)
 
 Jeśli chcesz utworzyć ul tylko do ewidencji (bez monitoringu):
 
 - Przejdź przez kroki **Szczegóły ula** oraz **Informacje o matce pszczelej** jak przy standardowym dodawaniu ula.
-- W sekcji **Wyposażenie** **nie wypełniaj** pól VitalSensor ani Scale — pozostaw je puste.
-- Kliknij żółty przycisk *Zapisz*.
+- W sekcji **Wyposażenie** **nie wypełniaj** pól Scale, VitalSensor ani Kod potwierdzający — pozostaw je puste (nie skanuj kodów QR).
+- Na koniec kliknij żółty przycisk, znajdujący się w prawym dolnym rogu ekranu, aby zapisać ul bez urządzeń.
 
 **Po utworzeniu ula bez urządzeń:**
 
-- Na kafelku ula nie zobaczysz bieżących pomiarów (temperatura, waga) ani pełnej oceny stanu rodziny opartej na czujnikach — status zdrowia może być niedostępny lub ograniczony (patrz [Statusy na kafelkach](#statusy-na-kafelkach)).
+- Na kafelku ula nie zobaczysz bieżących pomiarów (temperatura, waga) ani oceny stanu zdrowia rodziny opartej na czujnikach ([](#fig-beehives-beehive-without-devices)).
 - Funkcje wymagające VitalSensor (np. *Zarejestruj próbkę*) nie będą dostępne, dopóki nie przypiszesz urządzenia.
-- Scale i VitalSensor możesz dodać później w *Ustawieniach ula* → **Wyposażenie**, o ile pasieka ma już powiązany Hub.
+- Scale i VitalSensor możesz dodać później w *Ustawieniach ula* → **Wyposażenie**, pod warunkiem, że pasieka ma przypisany Hub.
+
+Figure: Pomyślnie dodany ul bez urządzeń w widoku Ule {#fig-beehives-beehive-without-devices}
+
+![figure](pictures/beehive_interior.png){width=200}
 
 #### 2.2 Edycja ula
 
@@ -350,6 +366,9 @@ Figure: Widok Ustawienia ula {#fig-beehive-settings}
     - **Informacje o matce** - sekcja dotyczy danych związanych z matką pszczelą (rok wychowu, pochodzenie, sposób unasiennienia). Aby zaktualizować dane w tej sekcji należy wybrać odpowiednią pozycję z określonej listy rowijanej (np. Pochodzenie matki -> pozycja: Hodowla własna).
 
     - **Wyposażenie** - sekcja zawiera informacje na temat powiązanych urządzeń z ulem (VitalSensor, Scale). Sekcja umożliwia usunięcie przypisania urządzenia do tego ula. Aby to zrobić należy kliknąć przycisk *Odłącz VitalSensor*/*Odłącz Scale* w zależności od tego, które urządzenie ma zostać odpięte, a następnie potwierdzić wybór przy użyciu żółtego przycisku *Odłącz* ([](#fig-beehive-settings-devices-edit)). Podczas odpinania urządzeń historia ich pomiarów zostaje domyślnie zachowana, co oznacza, że przeszłe dane pomiarowe będą dostępne na wykresach, dopóki ten ul nie zostanie usunięty. Aby wyczyścić historię pomiarów w ulu z odpinanego urządzenia użyj przełącznika. Jeżeli w skład wyposażenia ula nie wchodzi któreś z urządzeń (pola nie są wypełnione), z tego miejsca można również powiązać Scale/VitalSensor z ulem. W tym celu należy kliknąć ikonę kodu QR, znajdującą się w prawej części pola VitalSensor/Scale i zeskanować kod QR z odpowiednich urządzeń pomiarowych.
+
+    !!! Uwaga:
+        Sekcja *Wyposażenie* nie jest dostępna, jeśli do pasieki nie jest przypisane urządzenie Apisense Hub.
 
 Figure: Widok Ustawienia ula - sekcja Wyposażenie, potwierdzenie odłączenia Scale z zachowaniem historii pomiarów (1) {#fig-beehive-settings-devices-edit}
 
@@ -1280,29 +1299,59 @@ W systemie wykorzystywane są różne statusy oraz ikony, które ułatwiają szy
 W niniejszym rozdziale przedstawiono znaczenie poszczególnych ikon, symboli oraz oznaczeń kolorystycznych stosowanych w interfejsie systemu, co pozwoli na ich prawidłową interpretację podczas codziennej pracy z aplikacją.
 
 <a id="statusy-na-kafelkach"></a>
+<a id="pierwsze-uruchomienie"></a>
 
-#### Statusy na kafelkach pasieki i ula
+#### Pierwsze uruchomienie urządzeń
 
-Poniższa tabela zbiera **wszystkie najczęstsze statusy tekstowe** widoczne na kafelkach w zakładkach *Pasieki* i *Ule*, na wierszach urządzeń (VitalSensor, Scale) oraz w powiadomieniach wewnątrz kafelka pasieki. Wiersze ze znacznikiem zdjęcia — uzupełnij pliki graficzne w katalogu `docs/manual/pictures/` (wklej własne zrzuty ekranu).
+Po utworzeniu pasieki z Hubem oraz przypisaniu Scale/VitalSensor do ula, zanim urządzenia nawiążą łączność z systemem na kafelkach bedą prezentowane następujące informacje: 
 
-| Zdjęcie (uzupełnij) | Gdzie widać | Status / napis | Kiedy się pojawia | Co oznacza |
-| :------------------ | :---------- | :------------- | :---------------- | :--------- |
-| ![](pictures/state_healthy_family.png) | kafelek pasieki | **Rodzina zdrowa** | Co najmniej jeden ul ma dane z czujników; w żadnym ulu nie wykryto choroby. | Zagregowany stan pasieki: rodziny pszczele w pasiece uznane za zdrowe. |
-| ![](pictures/state_danger.png) | kafelek pasieki | **Zagrożony** | W co najmniej jednym ulu wykryto chorobę lub zagrożenie. | W pasiece jest ul wymagający uwagi — sprawdź zakładkę *Ule* i *Powiadomienia*. |
-| *(zrzut — `status_zbieramy_dane_pasieka.png`)* | kafelek pasieki | **Zbieramy dane** | Hub działa, ale system jeszcze nie ma wystarczających danych do oceny zdrowia (np. świeżo dodane ule z czujnikami). | Trwa zbieranie danych do analizy AI — może potrwać **do ok. 3 dni**. Na kafelku może być też baner: *Zbieramy dane o zdrowiu X z Y uli…* |
-| *(zrzut — `status_czekamy_hub.png`)* | kafelek pasieki (bez pogody) | **Czekamy na połączenie Hub…** / komunikat o uruchomieniu Huba | Hub przypisany, ale jeszcze nie nawiązał pierwszego połączenia (np. brak zasilania). | Wystaw Hub na słońce lub podłącz ładowarkę; pierwsze połączenie może zająć kilkanaście minut (przy aktualizacji firmware — do ok. 30 min). |
-| *(zrzut — `status_czekamy_pogoda.png`)* | kafelek pasieki | **Czekamy na dane pogodowe z twojej lokalizacji** | Hub jest online, ale prognoza pogody jeszcze nie dotarła. | Dane pogodowe pojawią się po pierwszej poprawnej komunikacji Huba z systemem. |
-| ![](pictures/state_beehive_healthy.png) | kafelek ula, wiersz *Stan rodziny* | **Zdrowa** | VitalSensor przekazuje dane; model nie wykrył choroby. | Rodzina w tym ulu uznana za zdrową. |
-| ![](pictures/state_beehive_danger.png) | kafelek ula | **Zagrożony** lub **nazwa choroby** (np. Warroza) | Wykryto chorobę — wysokie ryzyko lub potwierdzony epizod. | Sprawdź *Powiadomienia* → *Problemy* i rozważ działania zalecane w szczegółach choroby. Przy kilku chorobach może być dopisek **+N**. |
-| *(zrzut — `status_choroba_niska.png`)* | kafelek ula | Nazwa choroby (np. Warroza) — chip **pomarańczowy** | Wykryto chorobę o **niższym** poziomie porażenia. | Wczesne ostrzeżenie — monitoruj ul i wypełnij formularz chorobowy. |
-| *(zrzut — `status_zbieramy_dane_ul.png`)* | kafelek ula, wiersz *Stan rodziny* | **Zbieramy dane** | Urządzenia przypisane, ale trwa pierwsza analiza (wszystkie urządzenia w stanie „czekamy na połączenie”) lub system nie ma jeszcze pełnej oceny. | Poczekaj na zakończenie zbierania danych (**do ok. 3 dni**). Na kafelku może być sekcja konfiguracji urządzenia z odliczaniem czasu. |
-| ![](pictures/state_no_data.png) | kafelek ula, zakładka *Stan ula* (sekcja Rodzina) | **Brak danych** | Brak VitalSensor w ulu, brak komunikacji czujnika/Hub, lub brak danych do oceny zdrowia. | System **nie może** określić stanu rodziny — to nie jest potwierdzenie zdrowia ani choroby. Sprawdź wyposażenie ula i komunikację urządzeń. |
-| *(zrzut — `status_stan_nieznany.png`)* | zakładka *Stan ula* | **Nieznany** | Rzadki stan początkowy lub brak jednoznacznej klasyfikacji. | Uzupełnij dane z przeglądu; sprawdź komunikację urządzeń. |
-| *(zrzut — `status_czekamy_polaczenie.png`)* | kafelek ula, wiersz VitalSensor lub Scale | **Czekamy na połączenie** | Urządzenie dopiero dodane lub oczekuje na pierwszy kontakt z Hub (BLE). | Upewnij się, że urządzenie jest zamontowane w zasięgu Huba (do ok. 35 m) i ma zasilanie. |
-| *(zrzut — `status_brak_polaczenia.png`)* | kafelek ula, wiersz urządzenia | **Brak połączenia** | Urządzenie było już łączone, ale przestało się komunikować (przy ostatnim znanym poziomie baterii innym niż „martwa”). | Sprawdź baterie (Scale, VitalSensor) lub zasięg BLE; Hub musi być online. |
-| *(zrzut — `status_bateria_wyczerpana.png`)* | kafelek ula, wiersz urządzenia | **Bateria wyczerpana** | Ostatni znany stan baterii to „martwa” / urządzenie offline z rozładowaną baterią. | Wymień baterie 2×AA w Scale lub VitalSensor. |
+- **Hub — kafelek pasieki** - na kafelku pasieki zobaczysz komunikat z instrukcją uruchomienia urządzenia oraz trzeba przyciskami - wybierz tę, która odpowiada Twojej sytuacji:
 
-**Uwaga — „Rodzina” i „Brak danych”:** W kafelku ula etykieta wiersza to *Stan rodziny*, a obok chip z wartością (np. *Zdrowa*, *Zbieramy dane*). W zakładce *Szczegóły* → *Stan ula* w sekcji zdrowia nagłówek **Rodzina** z wartością **Brak danych** oznacza, że aplikacja nie dysponuje danymi do oceny — **nie mylić** z „Zbieramy dane” (trwa aktywna analiza) ani z „Zdrowa”.
+| Opcja | Maksymalny czas oczekiwania | Kiedy wybrać |
+| :---- | :---------------------- | :------------ |
+| **Ładowarka** | ok. 30 min | Hub jest podłączony do zewnętrznego zasilania |
+| **Pełne słońce** | ok. 3 h | Hub wystawiony na słońce przy sprzyjającym nasłonecznieniu |
+| **Słabe słońce** | ok. 24 h | Rozładowany Hub przy słabym nasłonecznieniu |
+
+Po wybraniu opcji uruchamia się **odliczanie** (zegar) z szacowanym maksymalnym czasem, jaki należy odczekać do pierwszego połączenia. To **szacunek**, nie gwarancja - rozładowany Hub bez dostępu do światła może potrzebować więcej czasu. Jeśli po upływie czasu Hub nadal się nie zgłasza, aplikacja zaproponuje ponowienie próby. 
+
+*(zrzut — `status_pierwsze_uruchomienie_hub.png`)*
+
+- **Scale i VitalSensor — kafelek ula** - na kafelku ula pojawia się pytanie czy urządzenie jest prawidłowo zamontowane oraz czy znajduje się w zasięgu Huba (do ok. 35 m). Po potwierdzeniu uruchamia się **zegar** z szacowanym maksymalnym czasem nawiązania komunikacji urządzenia pomiarowego z Hubem. 
+
+*(zrzut — `status_pierwsze_uruchomienie_ul.png`)*
+
+**Dodatkowe komunikaty na kafelku pasieki**
+
+Po pierwszym zgłoszeniu się urządzeń i wyświetleniu pierwszych danych, na kafelku z pasieką czy ulem, nadal mogą nie być zaprezentowane pełne informacje. Niektóre dane będą widoczne dopiero po kilku dniach: 
+
+| Komunikat | Znaczenie |
+| :---- | :--------- |
+|  **Czekamy na dane pogodowe z twojej lokalizacji** | Hub jest online, ale prognoza pogody nie jest jeszcze znana. Prognoza pogody powinna pojawić się w kolejnym dniu po stabilnej komunikacji Huba. |
+| **Zbieramy dane o zdrowiu X z Y uli** | Patrz [Stan zdrowia](#stan-zdrowia). |
+
+
+<a id="stan-zdrowia"></a>
+
+#### Stan zdrowia rodziny
+
+Ikony stanu zdrowia informują o kondycji rodziny pszczelej w poszczególnych ulach i całej pasiece. Ocena zdrowia opiera się na danych z **VitalSensor** i modelu AI. 
+
+| Ikona | Występowanie | Znaczenie |
+| :----------- | :---------------- | :--------- |
+| ![](pictures/state_healthy_family.png) | kafelek z pasieką (zakładka Pasieki) | **Rodzina zdrowa** | Co najmniej jeden ul ma wiarygodne dane z urządzenia VitalSensor (poza okresem *Zbieramy dane*). Rodzina pszczela w tej pasiece jest zdrowa. W żadnym ulu w tej pasiece nie wykryto zagrożenia.| 
+| ![](pictures/state_danger.png) | kafelek z pasieką (zakładka Pasieki) | **Zagrożenie** - rodzina pszczela w tej pasiece jest zagrożona. W co najmniej jednym ulu w tej pasiece będącym poza okresem *Zbieramy dane* wykryto zagrożenie w postaci choroby. |
+| *(zrzut — `status_zbieramy_dane_pasieka.png`)* | kafelek z pasieką (zakładka Pasieki), kafelek z ulem (zakładka Ule) | **Zbieramy dane na kafelku z pasieką** -  oznacza, że wszystkie urządzenia typu VitalSensor w pasiece są w okresie zbierania  danych o zdrowiu rodziny (pierwsze ok. 3 dni od przypisania), trwa pierwsza analiza AI - system zbiera dane, ale model nie ma jeszcze wystarczającej historii, aby wiarygodnie ocenić stan zdrowia rodziny. **Zbieramy dane na kafelku z ulem** - występuje na ulu, do którego przypisany jest VitalSensor znajdujący się w okresie zbierania danych o zdrowiu rodziny (analogicznie jak w przypadku pasieki)|
+| *(zrzut — `status_baner_zbieramy_dane.png`)* | kafelek pasieki (zakładka Pasieki) | *Zbieramy dane o zdrowiu X z Y uli…* - oznacza, że w co najmniej jednym ulu w pasiece istnieje VitalSensor, który wciąż jest w okresie zbierania danych o zdrowiu rodziny. Przykład: w pasiece jest 5 uli, w 4 z nich od dłuższego czasu jest VitalSensor i każdy z nich wskazuje, że rodzina jest zdrowa. Do 1 ula VitalSensor został przypisany dzisiaj. Na kafelku z pasieką zobaczysz mniejszy kafelek *Rodzina zdrowa* i informację *Zbieramy dane o zdrowiu 1 z 5 uli.* |
+| Brak kafelka o stanie zdrowia | kafelek pasieki (zakładka Pasieki), kafelek ula (zakładka Ule) | *(brak statusu zdrowia)* | Pasieka bez Huba lub pasieka z Hubem, ale w żadnym ulu w tej pasiece nie ma urządzeń typu VitalSensor. System nie ma podstaw do oceny zdrowia rodziny. |
+| *(zrzut — `status_baner_zbieramy_dane.png`)* | kafelek ula - wiersz *Stan rodziny*, zakładka *Stan ula* w *Szczegóły* | **Zdrowa** - VitalSensor poza okresem zbierania danych; model nie wykrył choroby. Rodzina w tym ulu uznana za zdrową. |
+| *(zrzut — `status_choroba_wysoka.png`)* | kafelek ula (zakładka Ule)| Nazwa choroby na żółtym tle - wykryto chorobę w ulu o niskim/umiarkowanym poziomie porażenia. Nazwa choroby na czerwonym tle - wykryto chorobę w ulu o wysokim poziomie porażenia. *+N obok nazwy choroby* - oznacza, że w ulu wykryto więcej niż jedną chorobę. |
+| ![](pictures/state_no_data.png) | kafelek pasieki (zakładka Pasieki), kafelek ula (zakładka Ule) | **Brak danych** - oznacza, że system nie może ocenić stanu zdrowia rodziny pszczelej (na kafelku z ulem dotyczy danych z konkretnego VitalSensor, na kafelku z pasieką odnosi się do wszystkich urządzeń typu VitalSensor w tej pasiece). Przykładowo może wystąpić gdy VitalSensor był w okresie zbierania danych, ale nagle przestał komunikować się z Hub i dane nie zdążyły zostać zebrane oraz przeanalizowane przez model AI. |
+| ![](pictures/varroa_low.png) | m.in. *Szczegóły*, *Mapa* | Ikona choroby — Warroza.  Wykryto chorobę (Warroza) o niskim poziomie porażenia. |
+| ![](pictures/nosema_high.png) | m.in. *Szczegóły*, *Mapa* | Ikona choroby — Nosemoza. Wykryto chorobę (Nosemoza) o wysokim poziomie porażenia. Sprawdź zalecenia w zakładce *Problemy*. |
+
+
+<a id="ikony-informacyjne"></a>
 
 #### Ikony informacyjne
 
@@ -1321,24 +1370,9 @@ Ikony informacyjne przedstawiają informacje dotyczące pasiek i uli oraz dane z
 -->
 | ![](pictures/beehive_details_pressure.png) | wnętrze ula (zakładka Szczegóły)     | Aktualne ciśnienie atmosferyczne wewnątrz ula.                                                                                                                                                                                                                                                                                                        |
 
-#### Stan zdrowia
-
-Ikony stanu zdrowia informują o kondycji rodziny pszczelej w poszczególnych ulach i całej pasiece.
-
-| Ikona                                   | Występowanie                                     | Znaczenie                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| :-------------------------------------- | :----------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](pictures/state_healthy_family.png)  | kafelek z pasieką (zakładka Pasieki)             | Rodzina pszczela w tej pasiece jest zdrowa. W żadnym ulu w tej pasiece nie wykryto zagrożenia.                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| ![](pictures/state_danger.png)          | kafelek z pasieką (zakładka Pasieki)             | Rodzina pszczela w tej pasiece jest zagrożona. W co najmniej jednym ulu w tej pasiece wykryto zagrożenie w postaci choroby.                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| ![](pictures/state_beehive_healthy.png) | kafelek z ulem (zakładka Ule)                    | Rodzina pszczela w tym ulu jest zdrowa. Nie wykryto żadnego zagrożenia.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| ![](pictures/state_beehive_danger.png)  | kafelek z ulem (zakładka Ule)                    | Rodzina pszczela w tym ulu jest zagrożona. Wykryto co najmniej jedno zagrożenie w postaci choroby.                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| ![](pictures/state_no_data.png)         | kafelek z ulem; zakładka *Stan ula* (Rodzina: **Brak danych**) | Brak informacji o stanie zdrowia rodziny. <br/>Na kafelku ula / w sekcji Rodzina pojawia się, gdy:<br/>- w ulu nie ma VitalSensor,<br/>- VitalSensor lub Hub przestały się zgłaszać,<br/>- brak wystarczających danych do oceny.<br/>**Nie mylić** ze statusem **Zbieramy dane** — ten oznacza trwającą analizę (do ok. 3 dni) i widoczny jest jako osobny chip. |
-| *(zrzut — `status_zbieramy_dane_pasieka.png`)* | kafelek z pasieką lub ulem | **Zbieramy dane** | Hub/urządzenia działają, trwa pierwsza analiza zdrowia. | Poczekaj do ok. 3 dni; upewnij się, że czujniki są w zasięgu Huba. |
-| ![](pictures/varroa_low.png)            | m.in. Szczegóły ula, mapa             | Ikona z wykrytą chorobą - Warroza. Poziom porażenia - niski.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| ![](pictures/nosema_high.png)           | m.in. Szczegóły ula, mapa             | Ikona z wykrytą chorobą - Nosemoza. Poziom porażenia - wysoki.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-
 #### Stan urządzeń Apisense
 
-Ikony stanu urządzeń Apisense wskazują aktualny status pracy: jakość połączenia oraz poziom naładowania baterii urządzeń monitorujących pasieki i ule.
+Ikony stanu urządzeń Apisense wskazują aktualny status pracy: jakość połączenia oraz poziom naładowania baterii urządzeń monitorujących pasieki i ule. 
 
 | Ikona                             | Występowanie                                     | Znaczenie                                                                                                                                                                               |
 | :-------------------------------- | :----------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1349,20 +1383,13 @@ Ikony stanu urządzeń Apisense wskazują aktualny status pracy: jakość połą
 | ![](pictures/battery_high.png)    | kafelek z pasieką (zakładka Pasieki)             | Bardzo wysoki poziom baterii urządzenia Apisense Hub. Żadna akcja nie jest wymagana.                                                                                                    |
 | ![](pictures/battery_medium.png)    | kafelek z pasieką (zakładka Pasieki)             | Średni poziom baterii urządzenia Apisense Hub.                                                                                                                                          |
 | ![](pictures/battery_low.png)     | kafelek z pasieką i ulem (zakładka Pasieki, Ule) | Bardzo słaby poziom baterii urządzenia (na kafelku z pasieką dotyczy Hub, na kafelku z ulem - Scale lub VitalSensor). Należy naładować (Hub) lub wymienić baterie (Scale, VitalSensor). |
-| ![](pictures/battery_offline.png) | kafelek z pasieką (zakładka Pasieki)             | Rozładowana bateria urządzenia Apisense Hub (tryb offline). Należy naładować urządzenie.                                                                                                |
-
-#### Wyszarzona ikona baterii
-
-Gdy urządzenie **przestaje się komunikować**, ikona baterii (oraz na kafelku pasieki także ikona baterii Huba) może zostać **wyszarzona**. Oznacza to, że aplikacja pokazuje **ostatni znany** stan sprzed utraty łączności — nie jest to bieżący odczyt na żywo.
-
-| Zdjęcie (uzupełnij) | Gdzie widać | Wygląd | Co oznacza |
-| :------------------ | :---------- | :----- | :--------- |
-| *(zrzut — `battery_grey_high.png`)* | kafelek pasieki lub ula | Wyszarzona ikona baterii (pełna / wysoka) + przy Hub często szary kafelek | Hub lub Scale/VitalSensor **nie zgłasza się**, ale ostatni znany poziom baterii był **wysoki** (full/high). | Sprawdź zasilanie i zasięg; urządzenie mogło stracić łączność z innych powodów niż rozładowanie. |
-| *(zrzut — `battery_grey_medium.png`)* | j.w. | Wyszarzona ikona baterii (średnia) | Ostatni znany poziom baterii był **średni** (medium). | Zaplanuj wymianę/ładowanie; zweryfikuj komunikację BLE (ule) lub LTE (Hub). |
-| *(zrzut — `battery_grey_low.png`)* | j.w. | Wyszarzona ikona baterii (niska) | Ostatni znany poziom baterii był **niski** (low). | Prawdopodobna bliska utrata zasilania — wymień baterie (Scale, VitalSensor) lub naładuj Hub. |
-| *(zrzut — `battery_grey_empty.png`)* | j.w. | Wyszarzona ikona baterii (pusta) lub badge **Bateria wyczerpana** | Ostatni znany stan to rozładowanie (**dead**) lub brak połączenia przy wyczerpanej baterii. | Wymień baterie lub naładuj Hub; bez zasilania urządzenie nie wróci do transmisji danych. |
-
-Na kafelku ula przy statusie **Brak połączenia** obok wyszarzonej baterii widoczna jest też ikona Bluetooth w kolorze szarym — oznacza utratę łączności BLE między urządzeniem a Hub.
+| ![](pictures/battery_offline.png) | kafelek z pasieką (zakładka Pasieki), kafelek z ulem (zakładka Ule)             | Poziom baterii urządzenia nieznany. Należy poczekać na kolejne zgłoszenie się urządzenia. Jeżeli stan długo się utrzymuje np. kilka godzin (ikona baterii szara i przekreślona, ale aktualne dane są wyświetlane np. temperatura) należy zgłosić problem w aplikacji.                                                                                              |
+| *(zrzut — `battery_grey_high.png`)* | kafelek z pasieką (zakładka Pasieki), kafelek z ulem (zakładka Ule) | Pełna/wysoka, wyszarzona ikona baterii oznacza, że Hub lub Scale/VitalSensor **nie zgłasza się**, ale ostatni znany poziom baterii był **wysoki**. Sprawdź zasilanie i zasięg; urządzenie mogło stracić łączność z innych powodów niż rozładowanie baterii. |
+| *(zrzut — `battery_grey_medium.png`)* | kafelek z pasieką (zakładka Pasieki), kafelek z ulem (zakładka Ule) | Wyszarzona ikona baterii z dwiema kreskami - ostatni znany poziom baterii był na poziomie **średnim**. Brak komunikacji wynika najprawdopodobniej z problemów z zasięgiem BLE (ule) lub LTE (Hub). |
+| *(zrzut — `battery_grey_low.png`)* | kafelek z pasieką (zakładka Pasieki), kafelek z ulem (zakładka Ule) | Wyszarzona ikona baterii z jedną kreską - ostatni znany poziom baterii był **niski**. Problemy z komunikacją urządzenia wynikają najprawdopodobnie z krytycznie niskiego stanu baterii. Wymień baterie (Scale, VitalSensor) lub naładuj Hub. |
+| *(zrzut — `status_czekamy_polaczenie.png`)* | kafelek ula (zakładka Ule) | **Czekamy na połączenie** - oznacza, że czekamy na kontakt urządzenia z Hubem. |
+| *(zrzut — `status_brak_polaczenia.png`)* | kafelek ula (zakładka Ule) | **Brak połączenia** - urządzenie przestało komunikować się z Hub. |
+| *(zrzut — `status_bateria_wyczerpana.png`)* | kafelek ula (zakładka Ule) | **Bateria wyczerpana** - Ostatni znany stan baterii: rozładowana. Należy wymienić baterię urządzenia. |
 
 #### Oznaczenia kolorystyczne
 

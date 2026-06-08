@@ -143,7 +143,7 @@ After filling in the information above, click the yellow button with the arrow i
 
 **After filling in the required data and scanning the QR code, click the yellow button at the bottom of the screen to confirm creation of the apiary with the linked Apisense Hub device.**
 
-If the apiary was created successfully, you will be redirected to its interior (the *Hives* view), and when you go to the *Apiaries* tab the apiary you just created will appear on your apiary list ([](#fig-apiaries-list)). The apiary tile will show the relevant statuses or tips on how to start the Apisense Hub. To learn more about statuses, go to [chapter 7. Interpretation of statuses and icons used in the system](#interpretacja-statusow).
+If the apiary was created successfully, you will be redirected to its interior (the *Hives* view), and when you go to the *Apiaries* tab the apiary you just created will appear on your apiary list ([](#fig-apiaries-list)). The apiary tile will show the relevant statuses or tips on how to start the Apisense Hub (see [First device startup](#pierwsze-uruchomienie)). To learn more about statuses, go to [chapter 7. Interpretation of statuses and icons used in the system](#interpretacja-statusow).
 
 Figure: Successfully added apiary with a linked Apisense Hub in the apiary view of the system {#fig-apiaries-list}
 
@@ -233,13 +233,13 @@ Figure: Apiary settings - Delete apiary view {#fig-apiary-settings-remove-apiary
           allowfullscreen></iframe>
 </div>
 
-- While in the Apiaries tab (the start view after logging in to the Apisense app) click the tile of the apiary to which you want to add a hive and assign devices (Scale and VitalSensor). After clicking the tile, the single apiary view will be displayed ([](#fig-apiaries-apiary)).
+- While in the Apiaries tab (the start view after logging in to the Apisense app ([](#fig-apiaries-apiary))) click the tile of the apiary to which you want to add a hive. After clicking the tile, the single apiary view will be displayed ([](#fig-apiary-interior)).
 
-Figure: Apiary view in the Apiaries tab and single apiary view (Hives) (1) {#fig-apiaries-apiary}
+Figure: Apiary view in the Apiaries tab {#fig-apiaries-apiary}
 
 ![figure](pictures/apiaries_apiary.png){width=200}
 
-Figure: Apiary view in the Apiaries tab and single apiary view (Hives) (2) {#fig-apiary-interior}
+Figure: Single apiary contents view (Hives) {#fig-apiary-interior}
 
 ![figure](pictures/apiary_interior.png){width=200}
 
@@ -275,52 +275,68 @@ Figure: Adding a hive in the system - Queen bee information section {#fig-add-be
 
 ![figure](pictures/add_beehive_queen.png){width=200}
 
-- Then click the yellow button with the right-pointing arrow at the bottom of the screen to proceed to the last step of adding a hive.
+- Then click the yellow button with the right-pointing arrow at the bottom of the screen to proceed to the **Equipment** section.
+
+!!! Note
+    The *Equipment* section is available only when the apiary has an **Apisense Hub** assigned. If the apiary has no Hub, clicking the yellow button in the lower right corner of the screen will save and add an empty hive (without measurement devices) with the information entered above.
+
+#### 2.1.1 Adding a hive with devices
 
 - **Equipment:** The last stage involves linking devices to this specific hive. **Note:** It is essential that the devices configured for the hive (Scale and VitalSensor) are actually installed in the same physical hive.
 
     !!! Note
-        **Hive without devices:** VitalSensor and Scale fields are **optional** — if you do not scan the device QR codes and leave both pairs of fields (serial number and confirmation code) empty, the hive will be created without measurement hardware. You can assign devices later in *Hive settings* → **Equipment** (provided the apiary has a linked Hub).
+        **Hub requirement:** To link Scale or VitalSensor to a hive, the apiary must have an **Apisense Hub** assigned. Otherwise the *Equipment* section will not be available when adding or editing a hive.
 
-    !!! Note
-        **Hub requirement:** To link Scale or VitalSensor to a hive, the apiary must have an **Apisense Hub** assigned. Otherwise, the *Equipment* section will not be available when adding or editing a hive.
+    To link an Apisense Scale to the hive, fill in the following fields:
 
-    To link devices with the hive, fill in the following fields:
+    - **Scale** — click the QR code icon on the right side of this field and scan the QR code from the sticker on the Apisense Scale. The next *Confirmation code* field will be filled in automatically.
+    - **Confirmation code** — filled in automatically after a successful QR scan.
 
-    - **VitalSensor** - click the QR code icon on the right side of this field and scan the QR code from the sticker on the Apisense VitalSensor. The next *Confirmation code* field will be filled in automatically.
-    - **Confirmation code** - will be filled in automatically once the QR code has been scanned correctly.
-    - **Scale** - click the QR code icon on the right side of this field and scan the QR code from the sticker on the Apisense Scale. The next *Confirmation code* field will be filled in automatically.
-    - **Confirmation code** - will be filled in automatically once the QR code has been scanned correctly.
+    Figure: Adding a hive — Equipment section, linking Scale {#fig-add-beehive-devices}
 
-Figure: Adding a hive in the system - Equipment section {#fig-add-beehive-devices}
+    ![figure](pictures/add_beehive_devices.png){width=200}
 
-![figure](pictures/add_beehive_devices.png){width=200}
+    Then click the yellow button in the lower left corner of the screen to proceed to linking the Apisense VitalSensor:
 
-- After filling in all sections and required fields, click the yellow *Save* button to add the hive with the linked devices (Scale, VitalSensor).
+    - **VitalSensor** — click the QR code icon on the right side of this field and scan the QR code from the sticker on the Apisense VitalSensor **or** from an Apisense Tag. The next *Confirmation code* field will be filled in automatically.
+    - **Confirmation code** — filled in automatically after a successful QR scan.
 
-- If the hive was created successfully, you will be redirected to the *Hives* view, and the hive you just created will appear in your hive list ([](#fig-beehives-beehive-with-problem)).
+    Figure: Adding a hive — Equipment section, linking VitalSensor {#fig-add-beehive-devices}
 
-Figure: Successfully added hive with linked Apisense Scale and VitalSensor in the Hives view and Hive details (1) {#fig-beehives-beehive-with-problem}
+    ![figure](pictures/add_beehive_devices.png){width=200}
+
+!!! Note
+    You can also assign only one device to a hive. To create a hive with VitalSensor only, leave the Scale and confirmation code fields empty, proceed to VitalSensor and scan the QR code, then save. To create a hive with Scale only, leave the VitalSensor and confirmation code fields empty and click the yellow save button.
+
+- After filling in the chosen sections and required fields, click the yellow button in the lower right corner of the screen to add the hive with the linked devices (Scale and/or VitalSensor).
+
+- If the hive was created successfully, you will be redirected to the *Hives* view, and the hive you just created will appear in your hive list ([](#fig-beehives-beehive-with-problem), [](#fig-beehive-interior)).
+
+Figure: Successfully added hive with linked Apisense Scale and VitalSensor in the Hives view {#fig-beehives-beehive-with-problem}
 
 ![figure](pictures/beehives_beehive_with_problem.png){width=200}
 
-Figure: Successfully added hive with linked Apisense Scale and VitalSensor in the Hives view and Hive details (2) {#fig-beehive-interior}
+Figure: Successfully added hive with linked devices in Hive details {#fig-beehive-interior}
 
 ![figure](pictures/beehive_interior.png){width=200}
 
-#### 2.1.1 Adding a hive without devices (without Scale and VitalSensor)
+#### 2.1.2 Adding a hive without devices (without Scale and VitalSensor)
 
 If you want to create a hive for record-keeping only (without monitoring):
 
 - Go through the **Hive details** and **Queen bee information** steps as when adding a hive normally.
-- In the **Equipment** section, **do not fill in** the VitalSensor or Scale fields — leave them empty.
-- Click the yellow *Save* button.
+- In the **Equipment** section, **do not fill in** the Scale, VitalSensor or confirmation code fields — leave them empty (do not scan QR codes).
+- Click the yellow button in the lower right corner of the screen to save the hive without devices.
 
 **After creating a hive without devices:**
 
-- The hive tile will not show live measurements (temperature, weight) or a full sensor-based colony health assessment — health status may be unavailable or limited (see [Tile statuses](#statusy-na-kafelkach)).
+- The hive tile will not show live measurements (temperature, weight) or sensor-based colony health assessment ([](#fig-beehives-beehive-without-devices)).
 - Features that require VitalSensor (e.g. *Register sample*) will not be available until you assign a device.
-- You can add Scale and VitalSensor later in *Hive settings* → **Equipment**, provided the apiary already has a linked Hub.
+- You can add Scale and VitalSensor later in *Hive settings* → **Equipment**, provided the apiary has a linked Hub.
+
+Figure: Successfully added hive without devices in the Hives view {#fig-beehives-beehive-without-devices}
+
+![figure](pictures/beehive_interior.png){width=200}
 
 #### 2.2 Editing a hive
 
@@ -353,6 +369,9 @@ Figure: Hive settings view {#fig-beehive-settings}
     - **Queen information** - this section concerns data related to the queen bee (year raised, origin, insemination method). To update the data in this section, select the appropriate item from the relevant drop-down list (e.g. Queen origin -> item: Own breeding).
 
     - **Equipment** - this section contains information about devices linked to the hive (VitalSensor, Scale). The section allows you to remove the device assignment from this hive. To do so, click the *Disconnect VitalSensor* / *Disconnect Scale* button depending on which device is to be unlinked, and then confirm your choice using the yellow *Disconnect* button ([](#fig-beehive-settings-devices-edit)). When unlinking devices, their measurement history is preserved by default, which means past measurement data will be available on charts until this hive is deleted. To clear the measurement history in the hive from the device being unlinked, use the toggle. If the hive equipment does not include one of the devices (the fields are empty), you can also link a Scale/VitalSensor to the hive from this place. To do so, click the QR code icon on the right side of the VitalSensor/Scale field and scan the QR code from the appropriate measurement devices.
+
+    !!! Note
+        The *Equipment* section is not available if the apiary does not have an **Apisense Hub** assigned.
 
 Figure: Hive settings view - Equipment section, confirmation of Scale disconnection while preserving measurement history (1) {#fig-beehive-settings-devices-edit}
 
@@ -1269,28 +1288,71 @@ This chapter presents the meaning of the individual icons, symbols and color cod
 
 <a id="statusy-na-kafelkach"></a>
 
-#### Tile statuses on apiary and hive cards
+Statuses and icons are grouped below: **first device startup**, **colony health**, **apiary tile messages**, **device status**, and **measurement icons**. Descriptions follow Apisense Pro AI logic (including the health **grace period** — up to about 3 days after assigning a VitalSensor).
 
-The table below lists **all common text statuses** visible on tiles in the *Apiaries* and *Hives* tabs, on device rows (VitalSensor, Scale) and in notifications inside the apiary tile. Rows marked for screenshots — add image files under `docs/manual/pictures/` (paste your own screenshots).
+<a id="pierwsze-uruchomienie"></a>
 
-| Screenshot (add) | Where it appears | Status / label | When it appears | What it means |
-| :--------------- | :--------------- | :------------- | :-------------- | :------------ |
-| ![](pictures/state_healthy_family.png) | apiary tile | **Healthy colony** | At least one hive has sensor data; no disease detected in any hive. | Aggregated apiary status: colonies considered healthy. |
-| ![](pictures/state_danger.png) | apiary tile | **Threatened** | At least one hive has a detected disease or threat. | The apiary has a hive that needs attention — check *Hives* and *Notifications*. |
-| *(screenshot — `status_zbieramy_dane_pasieka.png`)* | apiary tile | **Collecting data** | Hub is working but the system does not yet have enough data for health assessment (e.g. newly added hives with sensors). | Health data is being collected for AI analysis — may take **up to about 3 days**. The tile may also show a banner: *Collecting health data for X of Y hives…* |
-| *(screenshot — `status_czekamy_hub.png`)* | apiary tile (no weather) | **Waiting for Hub connection…** / message to power the Hub | Hub is assigned but has not established the first connection yet (e.g. no power). | Place the Hub in the sun or connect a charger; the first connection may take several minutes (with firmware update — up to about 30 min). |
-| *(screenshot — `status_czekamy_pogoda.png`)* | apiary tile | **Waiting for weather data from your location** | Hub is online but the weather forecast has not arrived yet. | Weather data will appear after the Hub's first successful communication with the system. |
-| ![](pictures/state_beehive_healthy.png) | hive tile, *Colony state* row | **Healthy** | VitalSensor is sending data; the model detected no disease. | The colony in this hive is considered healthy. |
-| ![](pictures/state_beehive_danger.png) | hive tile | **Threatened** or **disease name** (e.g. Varroa) | A disease was detected — high risk or an active episode. | Check *Notifications* → *Problems* and consider the recommended actions in the disease details. With several diseases a **+N** badge may appear. |
-| *(screenshot — `status_choroba_niska.png`)* | hive tile | Disease name (e.g. Varroa) — **orange** chip | A disease was detected at **low** severity. | Early warning — monitor the hive and complete the disease questionnaire. |
-| *(screenshot — `status_zbieramy_dane_ul.png`)* | hive tile, *Colony state* row | **Collecting data** | Devices are assigned but the first analysis is in progress (all devices in “waiting for connection”) or the system does not yet have a full assessment. | Wait for data collection to finish (**up to about 3 days**). The tile may show a device setup section with a countdown. |
-| ![](pictures/state_no_data.png) | hive tile, *Hive status* tab (Colony: **No data**) | **No data** | No VitalSensor in the hive, no sensor/Hub communication, or insufficient data for health assessment. | The system **cannot** determine colony state — this is neither confirmation of health nor disease. Check hive equipment and device communication. |
-| *(screenshot — `status_stan_nieznany.png`)* | *Hive status* tab | **Unknown** | Rare initial state or no clear classification. | Add inspection data; check device communication. |
-| *(screenshot — `status_czekamy_polaczenie.png`)* | hive tile, VitalSensor or Scale row | **Awaiting connection** | Device was just added or is waiting for first contact with the Hub (BLE). | Make sure the device is mounted within Hub range (up to about 35 m) and powered. |
-| *(screenshot — `status_brak_polaczenia.png`)* | hive tile, device row | **No connection** | The device was connected before but stopped communicating (last known battery level other than “dead”). | Check batteries (Scale, VitalSensor) or BLE range; the Hub must be online. |
-| *(screenshot — `status_bateria_wyczerpana.png`)* | hive tile, device row | **Battery depleted** | Last known battery state is “dead” / device offline with a depleted battery. | Replace 2×AA batteries in Scale or VitalSensor. |
+#### First device startup
 
-**Note — “Colony” and “No data”:** On the hive tile the row label is *Colony state*, with a chip value (e.g. *Healthy*, *Collecting data*). In *Details* → *Hive status*, the **Colony** heading with **No data** means the app has no data for assessment — **do not confuse** this with *Collecting data* (analysis in progress) or *Healthy*.
+After creating an apiary with a Hub or assigning Scale/VitalSensor to a hive, the tile may show **first-startup** state until devices connect to the system.
+
+**Hub — apiary tile**
+
+When a Hub is assigned but has **never yet connected** to the server, instead of weather and health statuses you will see instructions to start it: place the Hub in the sun (antennas pointing vertically up) or connect a USB-C charger.
+
+The tile shows **three options** — choose the one that matches your situation:
+
+| Option | Typical wait time | When to choose |
+| :----- | :---------------- | :------------- |
+| **Charged via cable** | about 30 min | The Hub was connected to power (charger / cable) |
+| **Good weather** | about 3 h | Hub placed in the sun in favourable weather |
+| **Bad weather** | about 24 h | Discharged Hub with weak sunlight or overcast skies |
+
+After you select an option, a **countdown timer** starts with the estimated time to first connection. This is an **estimate**, not a guarantee — a fully discharged Hub without light may need longer. If the Hub still does not report when the timer ends, the app will suggest trying again.
+
+*(screenshot — `status_pierwsze_uruchomienie_hub.png`)*
+
+**Scale and VitalSensor — hive tile**
+
+When a device is waiting for its **first BLE contact** with the Hub, the hive tile shows a setup section asking whether the device is mounted within Hub range (up to about 35 m). After you confirm, a **timer** starts. While the Hub is still awaiting power, the device timer uses the same time scenario you chose on the apiary tile.
+
+*(screenshot — `status_pierwsze_uruchomienie_ul.png`)*
+
+<a id="stan-zdrowia"></a>
+
+#### Colony health status
+
+Health assessment is based on **VitalSensor** data and the AI model. The Scale **does not** affect disease status — a hive or apiary without a VitalSensor gets **No data**, not “healthy”.
+
+| Icon / chip | Where it appears | Status | When it appears | What it means |
+| :---------- | :--------------- | :----- | :-------------- | :------------ |
+| ![](pictures/state_healthy_family.png) | apiary tile — main chip | **Healthy colony** | At least one hive has reliable sensor data outside the grace period; no disease in any hive. | Aggregated apiary status: colonies considered healthy. |
+| ![](pictures/state_danger.png) | apiary tile — main chip | **Threatened** | At least one hive has a detected disease. | Check *Hives* and *Notifications* → *Problems*. |
+| *(screenshot — `status_zbieramy_dane_pasieka.png`)* | apiary tile — main chip | **Collecting data** | **All** VitalSensors in the apiary are in the grace period (first ~3 days after assignment). | First AI analysis in progress — wait for data collection to finish. |
+| *(screenshot — `status_baner_zbieramy_dane.png`)* | apiary tile — banner below chip | *Collecting health data for X of Y hives…* | At least one hive still in grace (`analysing`), even when the main chip is e.g. **Healthy colony**. | **Separate signal** from the main chip — some hives are still calibrating. |
+| — (no chip) | apiary tile | *(no health status)* | Apiary without VitalSensors, Hub offline with no predictions, or insufficient data. | The system cannot assess apiary-wide health. |
+| ![](pictures/state_beehive_healthy.png) | hive tile — *Colony state* row; *Hive status* tab | **Healthy** | VitalSensor outside grace period; model detected no disease. | Colony in this hive is considered healthy. |
+| ![](pictures/state_beehive_danger.png) | hive tile | **Threatened** or **disease name** (e.g. Varroa) | Disease detected — high risk. **+N** when several diseases. | Check *Notifications* → *Problems* and complete the disease questionnaire. |
+| *(screenshot — `status_choroba_niska.png`)* | hive tile | Disease name — **orange** chip | Disease at **low** severity. | Early warning — monitor the hive. |
+| *(screenshot — `status_zbieramy_dane_ul.png`)* | hive tile — *Colony state*; *Hive status* tab | **Collecting data** | VitalSensor in grace period (up to ~3 days). Question-mark icon. | First analysis in progress — **not** the same as No data. Chip may be hidden while all devices await first connection. |
+| ![](pictures/state_no_data.png) | *Details* → *Hive status* — **Colony** section | **No data** | No VitalSensor, no sensor/Hub communication, or model has no predictions (outside grace). | The system **cannot** assess state — neither health nor disease. **No health chip** on the hive tile in this case. |
+| *(screenshot — `status_stan_nieznany.png`)* | *Hive status* tab — **Colony** | **Unknown** | Rare state without clear classification. | Add an inspection; check device communication. |
+| ![](pictures/varroa_low.png) | e.g. *Details*, map | Disease icon — Varroa (**low** severity) | Low infestation detected. | Early warning. |
+| ![](pictures/nosema_high.png) | e.g. *Details*, map | Disease icon — Nosema (**high** severity) | High infestation detected. | See recommendations in *Problems*. |
+
+**No data — where and when:** On the **hive tile**, the *Colony state* chip is **not shown** for `no_data` or `unknown` — you see it in *Details* → *Hive status* (**Colony: No data**, question-mark icon). **Collecting data** is a separate beige chip with ? meaning active grace-period analysis.
+
+#### Messages on the apiary tile
+
+Besides the health chip, the apiary tile may show **additional messages** (not disease statuses):
+
+| Where | Message | When | What it means |
+| :---- | :------ | :--- | :------------ |
+| apiary tile | **Waiting for weather data from your location** | Hub is online but forecast not received yet. | Weather appears after stable Hub communication. |
+| apiary tile | *Collecting health data for X of Y hives…* | See [Colony health](#stan-zdrowia) — banner when some hives are in grace. | Does not replace the main health chip. |
+| apiary tile | Hub startup instructions | See [First device startup](#pierwsze-uruchomienie). | Hub awaiting first power / connection. |
+
+<a id="ikony-informacyjne"></a>
 
 #### Information icons
 
@@ -1309,48 +1371,34 @@ Information icons present information about apiaries and hives as well as data c
 -->
 | ![](pictures/beehive_details_pressure.png) | hive interior (Details tab)            | Current atmospheric pressure inside the hive.                                                                                                                                                                                                                                                                                                 |
 
-#### Health status
-
-Health status icons inform about the condition of the bee colony in individual hives and the entire apiary.
-
-| Icon                                    | Where it appears                                 | Meaning                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| :-------------------------------------- | :----------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](pictures/state_healthy_family.png)  | apiary tile (Apiaries tab)                       | The bee colony in this apiary is healthy. No threat has been detected in any hive in this apiary.                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| ![](pictures/state_danger.png)          | apiary tile (Apiaries tab)                       | The bee colony in this apiary is at risk. A disease threat has been detected in at least one hive in this apiary.                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| ![](pictures/state_beehive_healthy.png) | hive tile (Hives tab)                            | The bee colony in this hive is healthy. No threat has been detected.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| ![](pictures/state_beehive_danger.png)  | hive tile (Hives tab)                            | The bee colony in this hive is at risk. At least one threat in the form of a disease has been detected.                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| ![](pictures/state_no_data.png)         | hive tile; *Hive status* tab (Colony: **No data**) | No information about colony health. <br/>On the hive tile / in the Colony section when:<br/>- the hive has no VitalSensor,<br/>- VitalSensor or Hub stopped reporting,<br/>- insufficient data for assessment.<br/>**Do not confuse** with **Collecting data** — that means analysis in progress (up to about 3 days) and appears as a separate chip. |
-| *(screenshot — `status_zbieramy_dane_pasieka.png`)* | apiary or hive tile | **Collecting data** | Hub/devices are working; first health analysis is in progress. | Wait up to about 3 days; ensure sensors are within Hub range. |
-| ![](pictures/varroa_low.png)            | including hive Details, map                      | Icon with the detected disease - Varroa. Severity level - low.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| ![](pictures/nosema_high.png)           | including hive Details, map                      | Icon with the detected disease - Nosema. Severity level - high.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-
 #### Apisense device status
 
-The Apisense device status icons indicate the current operating status: connection quality and battery level of the devices monitoring apiaries and hives.
+Icons and labels describe **connectivity** (Hub LTE, Scale/VitalSensor BLE) and **battery**. For first startup see [First device startup](#pierwsze-uruchomienie).
 
-| Icon                              | Where it appears                                 | Meaning                                                                                                                                                                                 |
-| :-------------------------------- | :----------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](pictures/LTE_high.png)        | apiary tile (Apiaries tab)                       | Very good LTE signal level of the Apisense Hub device. No action is required.                                                                                                           |
-| ![](pictures/LTE_medium.png)      | apiary tile (Apiaries tab)                       | Medium LTE signal level of the Apisense Hub device. No action is required.                                                                                                              |
-| ![](pictures/LTE_low.png)         | apiary tile (Apiaries tab)                       | Very weak LTE signal level of the Apisense Hub device. The device may stop reporting. If possible, change the position of the device (Hub).                                             |
-| ![](pictures/LTE_offline.png)     | apiary tile (Apiaries tab)                       | The Apisense Hub device is not reporting (offline mode). The reason for the offline state should be verified and appropriate steps taken.                                               |
-| ![](pictures/battery_high.png)    | apiary tile (Apiaries tab)                       | Very high battery level of the Apisense Hub device. No action is required.                                                                                                              |
-| ![](pictures/battery_medium.png)    | apiary tile (Apiaries tab)                       | Medium battery level of the Apisense Hub device.                                                                                                                                        |
-| ![](pictures/battery_low.png)     | apiary and hive tile (Apiaries, Hives tabs)      | Very low device battery level (on the apiary tile this refers to the Hub, on the hive tile - to Scale or VitalSensor). The device should be charged (Hub) or the batteries replaced (Scale, VitalSensor). |
-| ![](pictures/battery_offline.png) | apiary tile (Apiaries tab)                       | Discharged battery of the Apisense Hub device (offline mode). The device should be charged.                                                                                             |
+When a device **stops communicating**, the battery icon (and LTE on the apiary tile) becomes **greyed out** — the app shows the **last known** level, not a live reading. With **No connection**, a grey Bluetooth icon appears on the device row.
 
-#### Greyed-out battery icon
+| Icon | Where it appears | Meaning |
+| :--- | :--------------- | :------ |
+| ![](pictures/LTE_high.png) | apiary tile | Very good Hub LTE signal. |
+| ![](pictures/LTE_medium.png) | apiary tile | Medium Hub LTE signal. |
+| ![](pictures/LTE_low.png) | apiary tile | Weak LTE — consider repositioning the Hub. |
+| ![](pictures/LTE_offline.png) | apiary tile | Hub offline — check power and network coverage. |
+| ![](pictures/battery_high.png) | apiary / hive tile | High battery level. |
+| ![](pictures/battery_medium.png) | apiary tile | Medium Hub battery level. |
+| ![](pictures/battery_low.png) | apiary / hive tile | Low battery — charge Hub or replace Scale/VitalSensor batteries. |
+| ![](pictures/battery_offline.png) | apiary / hive tile | Unknown battery level — wait for next report; report a problem via the light bulb icon if it persists. |
+| *(screenshot — `battery_grey_high.png`)* | apiary / hive tile | Greyed icon — last known level **high**; connectivity lost for reasons other than drain. |
+| *(screenshot — `battery_grey_medium.png`)* | apiary / hive tile | Last level **medium** — likely BLE (hive) or LTE (Hub) issue. |
+| *(screenshot — `battery_grey_low.png`)* | apiary / hive tile | Last level **low** — replace batteries or charge Hub. |
+| *(screenshot — `battery_grey_empty.png`)* | apiary / hive tile | Depleted — **Battery depleted** label; no transmission without power. |
 
-When a device **stops communicating**, the battery icon (and on the apiary tile also the Hub battery icon) may become **greyed out**. This means the app is showing the **last known** state from before connectivity was lost — not a live reading.
+**Text statuses on Scale/VitalSensor rows (hive tile)**
 
-| Screenshot (add) | Where it appears | Appearance | What it means |
-| :--------------- | :--------------- | :--------- | :------------ |
-| *(screenshot — `battery_grey_high.png`)* | apiary or hive tile | Greyed battery icon (full / high); apiary tile may also look grey | Hub or Scale/VitalSensor **is not reporting**, but the last known battery level was **high** (full/high). | Check power and range; the device may have lost connection for reasons other than battery drain. |
-| *(screenshot — `battery_grey_medium.png`)* | same | Greyed battery icon (medium) | Last known battery level was **medium**. | Plan replacement/charging; verify BLE communication (hives) or LTE (Hub). |
-| *(screenshot — `battery_grey_low.png`)* | same | Greyed battery icon (low) | Last known battery level was **low**. | Power loss is likely soon — replace batteries (Scale, VitalSensor) or charge the Hub. |
-| *(screenshot — `battery_grey_empty.png`)* | same | Greyed empty battery icon or **Battery depleted** badge | Last known state is depleted (**dead**) or no connection with a dead battery. | Replace batteries or charge the Hub; without power the device will not resume data transmission. |
-
-On the hive tile, with **No connection** status, a grey Bluetooth icon appears next to the greyed battery — meaning BLE connectivity between the device and the Hub was lost.
+| Screenshot (add) | Status | When |
+| :--------------- | :----- | :--- |
+| *(screenshot — `status_czekamy_polaczenie.png`)* | **Awaiting connection** | First BLE contact with Hub — see [First device startup](#pierwsze-uruchomienie). |
+| *(screenshot — `status_brak_polaczenia.png`)* | **No connection** | Device was online but stopped reporting. |
+| *(screenshot — `status_bateria_wyczerpana.png`)* | **Battery depleted** | Last known battery state: dead. |
 
 #### Color coding
 
