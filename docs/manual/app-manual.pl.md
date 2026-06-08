@@ -1303,7 +1303,7 @@ W niniejszym rozdziale przedstawiono znaczenie poszczególnych ikon, symboli ora
 
 #### Pierwsze uruchomienie urządzeń
 
-Po utworzeniu pasieki z Hubem oraz przypisaniu Scale/VitalSensor do ula, zanim urządzenia nawiążą łączność z systemem na kafelkach bedą prezentowane następujące informacje: 
+Po utworzeniu pasieki z Hubem oraz przypisaniu Scale/VitalSensor do ula, zanim urządzenia nawiążą łączność z systemem na kafelkach będą prezentowane następujące informacje: 
 
 - **Hub — kafelek pasieki** - na kafelku pasieki zobaczysz komunikat z instrukcją uruchomienia urządzenia oraz trzeba przyciskami - wybierz tę, która odpowiada Twojej sytuacji:
 
