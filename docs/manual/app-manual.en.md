@@ -123,13 +123,13 @@ Figure: Adding an apiary - Apiaries start view {#fig-apiaries}
 
 - As a result, the *Add apiary* view will be displayed ([](#fig-add-apiary)).
 
-Figure: Adding an apiary with a linked Apisense Hub in the system {#fig-add-apiary}
+Figure: Add apiary view {#fig-add-apiary}
 
 ![figure](pictures/add_apiary.png){width=200}
 
 #### 1.1.1 Adding an apiary with devices
 
-In the *Add apiary* view, fill in the following fields:
+In the *Add apiary* view ([](#fig-add-apiary)), fill in the following fields:
 
 - **Name** — the apiary name that will be displayed in the panel,
 - **With devices** — check this option to add an apiary and link it with an Apisense Hub device.
@@ -287,23 +287,23 @@ Figure: Adding a hive in the system - Queen bee information section {#fig-add-be
     !!! Note
         **Hub requirement:** To link Scale or VitalSensor to a hive, the apiary must have an **Apisense Hub** assigned. Otherwise the *Equipment* section will not be available when adding or editing a hive.
 
-    To link an Apisense Scale to the hive, fill in the following fields:
+    To link an Apisense Scale to the hive, fill in the following fields ([](#fig-add-beehive-devices-scale)):
 
     - **Scale** — click the QR code icon on the right side of this field and scan the QR code from the sticker on the Apisense Scale. The next *Confirmation code* field will be filled in automatically.
     - **Confirmation code** — filled in automatically after a successful QR scan.
 
-    Figure: Adding a hive — Equipment section, linking Scale {#fig-add-beehive-devices}
+    Figure: Adding a hive — Equipment section, linking Scale {#fig-add-beehive-devices-scale}
 
-    ![figure](pictures/add_beehive_devices.png){width=200}
+    ![figure](pictures/add_beehive_devices_scale.png){width=200}
 
-    Then click the yellow button in the lower left corner of the screen to proceed to linking the Apisense VitalSensor:
+    Then click the yellow button in the lower left corner of the screen to proceed to linking the Apisense VitalSensor ([](#fig-add-beehive-devices-sensor)):
 
     - **VitalSensor** — click the QR code icon on the right side of this field and scan the QR code from the sticker on the Apisense VitalSensor **or** from an Apisense Tag. The next *Confirmation code* field will be filled in automatically.
     - **Confirmation code** — filled in automatically after a successful QR scan.
 
-    Figure: Adding a hive — Equipment section, linking VitalSensor {#fig-add-beehive-devices}
+    Figure: Adding a hive — Equipment section, linking VitalSensor {#fig-add-beehive-devices-sensor}
 
-    ![figure](pictures/add_beehive_devices.png){width=200}
+    ![figure](pictures/add_beehive_devices_sensor.png){width=200}
 
 !!! Note
     You can also assign only one device to a hive. To create a hive with VitalSensor only, leave the Scale and confirmation code fields empty, proceed to VitalSensor and scan the QR code, then save. To create a hive with Scale only, leave the VitalSensor and confirmation code fields empty and click the yellow save button.
@@ -336,7 +336,7 @@ If you want to create a hive for record-keeping only (without monitoring):
 
 Figure: Successfully added hive without devices in the Hives view {#fig-beehives-beehive-without-devices}
 
-![figure](pictures/beehive_interior.png){width=200}
+![figure](pictures/beehives_beehive_without_devices.png){width=200}
 
 #### 2.2 Editing a hive
 
@@ -1309,7 +1309,7 @@ This chapter presents the meaning of the individual icons, symbols and color cod
 
 After creating an apiary with a Hub and assigning Scale/VitalSensor to a hive, before the devices connect to the system the tiles will show the following information:
 
-- **Hub — apiary tile** — on the apiary tile you will see a message with instructions to start the device and three buttons — choose the one that matches your situation:
+- **Hub — apiary tile** — on the apiary tile you will see a message with instructions to start the device and three buttons ([](#fig-apiary-instruction)) — choose the one that matches your situation:
 
 | Option | Maximum wait time | When to choose |
 | :----- | :---------------- | :------------- |
@@ -1317,13 +1317,25 @@ After creating an apiary with a Hub and assigning Scale/VitalSensor to a hive, b
 | **Full sun** | about 3 h | Hub placed in the sun with favourable sunlight |
 | **Weak sun** | about 24 h | Discharged Hub with weak sunlight |
 
-After you select an option, a **countdown** (timer) starts with the estimated maximum time to wait for the first connection. This is an **estimate**, not a guarantee — a discharged Hub without access to light may need more time. If the Hub still does not report when the time elapses, the app will suggest trying again.
+Figure: Apiary tile — first startup of the Apisense Hub — startup instructions {#fig-apiary-instruction}
 
-*(screenshot — `status_pierwsze_uruchomienie_hub.png`)*
+![figure](pictures/apiary_hub_first_contact.png){width=200}
 
-- **Scale and VitalSensor — hive tile** — on the hive tile you will be asked whether the device is mounted correctly and whether it is within Hub range (up to about 35 m). After you confirm, a **timer** starts with the estimated maximum time for the measurement device to establish communication with the Hub.
+After you select an option, a **countdown** (timer) starts with the estimated maximum time to wait for the first connection ([](#fig-apiary-timer)). This is an **estimate**, not a guarantee — a discharged Hub without access to light may need more time. If the Hub still does not report when the time elapses, the app will suggest trying again.
 
-*(screenshot — `status_pierwsze_uruchomienie_ul.png`)*
+Figure: Apiary tile — first startup of the Apisense Hub — timer {#fig-apiary-timer}
+
+![figure](pictures/apiary_timer.png){width=200}
+
+- **Scale and VitalSensor — hive tile** — on the hive tile you will be asked ([](#fig-beehive-device-first-contact)) whether the device is mounted correctly and whether it is within Hub range (up to about 35 m). After you confirm, a **timer** starts with the estimated maximum time for the measurement device to establish communication with the Hub ([](#fig-beehive-timer)).
+
+Figure: Hive tile — first startup of the Apisense Scale/VitalSensor — prompt {#fig-beehive-device-first-contact}
+
+![figure](pictures/beehive_device_first_contact.png){width=200}
+
+Figure: Hive tile — first startup of the Apisense Scale/VitalSensor — timer {#fig-beehive-timer}
+
+![figure](pictures/beehive_timer.png){width=200}
 
 **Additional messages on the apiary tile**
 
@@ -1344,11 +1356,11 @@ Colony health icons inform about the condition of bee colonies in individual hiv
 | :----------- | :---------------- | :--------- |
 | ![](pictures/state_healthy_family.png) | apiary tile (Apiaries tab) | **Healthy colony** | At least one hive has reliable data from a VitalSensor device (outside the *Collecting data* period). The bee colony in this apiary is healthy. No threat was detected in any hive in this apiary. |
 | ![](pictures/state_danger.png) | apiary tile (Apiaries tab) | **Threatened** — the bee colony in this apiary is threatened. A disease threat was detected in at least one hive in this apiary that is outside the *Collecting data* period. |
-| *(screenshot — `status_zbieramy_dane_pasieka.png`)* | apiary tile (Apiaries tab), hive tile (Hives tab) | **Collecting data on the apiary tile** — means that all VitalSensor devices in the apiary are in the colony health data collection period (first ~3 days after assignment); the first AI analysis is in progress — the system is collecting data, but the model does not yet have enough history to reliably assess colony health. **Collecting data on the hive tile** — appears on a hive with an assigned VitalSensor that is in the colony health data collection period (analogous to the apiary case). |
-| *(screenshot — `status_baner_zbieramy_dane.png`)* | apiary tile (Apiaries tab) | *Collecting health data for X of Y hives…* — means that at least one hive in the apiary has a VitalSensor that is still in the colony health data collection period. Example: there are 5 hives in the apiary; 4 of them have had a VitalSensor for a longer time and each indicates a healthy colony. A VitalSensor was assigned to the 5th hive today. On the apiary tile you will see a smaller *Healthy colony* chip and the message *Collecting health data for 1 of 5 hives.* |
+| ![](pictures/apiary_statuses_collect_data_chip.png) | apiary tile (Apiaries tab), hive tile (Hives tab) | **Collecting data on the apiary tile** — means that all VitalSensor devices in the apiary are in the colony health data collection period (first ~3 days after assignment); the first AI analysis is in progress — the system is collecting data, but the model does not yet have enough history to reliably assess colony health. **Collecting data on the hive tile** — appears on a hive with an assigned VitalSensor that is in the colony health data collection period (analogous to the apiary case). |
+| ![](pictures/apiary_statuses_collect_data.png) | apiary tile (Apiaries tab) | *Collecting health data for X of Y hives…* — means that at least one hive in the apiary has a VitalSensor that is still in the colony health data collection period. Example: there are 5 hives in the apiary; 4 of them have had a VitalSensor for a longer time and each indicates a healthy colony. A VitalSensor was assigned to the 5th hive today. On the apiary tile you will see a smaller *Healthy colony* chip and the message *Collecting health data for 1 of 5 hives.* |
 | No health status chip | apiary tile (Apiaries tab), hive tile (Hives tab) | *(no health status)* | Apiary without a Hub, or apiary with a Hub but no VitalSensor devices in any hive in this apiary. The system has no basis to assess colony health. |
-| *(screenshot — `status_baner_zbieramy_dane.png`)* | hive tile — *Colony state* row, *Hive status* tab in *Details* | **Healthy** — VitalSensor outside the data collection period; the model detected no disease. The colony in this hive is considered healthy. |
-| *(screenshot — `status_choroba_wysoka.png`)* | hive tile (Hives tab) | Disease name on a yellow background — disease detected at low/moderate infestation level. Disease name on a red background — disease detected at high infestation level. *+N next to the disease name* — means that more than one disease was detected in the hive. |
+| ![](pictures/beehive_statuses_health_family.png) | hive tile — *Colony state* row, *Hive status* tab in *Details* | **Healthy** — VitalSensor outside the data collection period; the model detected no disease. The colony in this hive is considered healthy. |
+| ![](pictures/statuses_disease_low.png) | hive tile (Hives tab) | Disease name on a yellow background — disease detected at low/moderate infestation level. Disease name on a red background — disease detected at high infestation level. *+N next to the disease name* — means that more than one disease was detected in the hive. |
 | ![](pictures/state_no_data.png) | apiary tile (Apiaries tab), hive tile (Hives tab) | **No data** — means that the system cannot assess the health of the bee colony (on the hive tile this concerns data from a specific VitalSensor; on the apiary tile it refers to all VitalSensor devices in this apiary). For example, it may occur when a VitalSensor was in the data collection period but suddenly stopped communicating with the Hub and the data were not collected and analysed by the AI model in time. |
 | ![](pictures/varroa_low.png) | e.g. *Details*, *Map* | Disease icon — Varroa. Disease detected (Varroa) at low infestation level. |
 | ![](pictures/nosema_high.png) | e.g. *Details*, *Map* | Disease icon — Nosema. Disease detected (Nosema) at high infestation level. Check recommendations in the *Problems* tab. |
@@ -1386,12 +1398,12 @@ Apisense device status icons indicate the current operating status: connection q
 | ![](pictures/battery_medium.png)    | apiary tile (Apiaries tab)             | Medium battery level of the Apisense Hub device.                                                                                                                                          |
 | ![](pictures/battery_low.png)     | apiary and hive tile (Apiaries, Hives tabs) | Very low battery level of the device (on the apiary tile this concerns the Hub; on the hive tile — Scale or VitalSensor). Charge (Hub) or replace the batteries (Scale, VitalSensor). |
 | ![](pictures/battery_offline.png) | apiary tile (Apiaries tab), hive tile (Hives tab)             | Unknown device battery level. Wait for the next device report. If the state persists for a long time, e.g. several hours (grey crossed-out battery icon, but current data such as temperature are displayed), report a problem in the app.                                                                                              |
-| *(screenshot — `battery_grey_high.png`)* | apiary tile (Apiaries tab), hive tile (Hives tab) | A full/high greyed battery icon means that the Hub or Scale/VitalSensor **is not reporting**, but the last known battery level was **high**. Check power and range; the device may have lost connectivity for reasons other than battery drain. |
-| *(screenshot — `battery_grey_medium.png`)* | apiary tile (Apiaries tab), hive tile (Hives tab) | Greyed battery icon with two bars — the last known battery level was **medium**. Lack of communication most likely results from BLE range issues (hives) or LTE (Hub). |
-| *(screenshot — `battery_grey_low.png`)* | apiary tile (Apiaries tab), hive tile (Hives tab) | Greyed battery icon with one bar — the last known battery level was **low**. Device communication problems most likely result from a critically low battery level. Replace the batteries (Scale, VitalSensor) or charge the Hub. |
-| *(screenshot — `status_czekamy_polaczenie.png`)* | hive tile (Hives tab) | **Awaiting connection** — waiting for the device to contact the Hub. |
-| *(screenshot — `status_brak_polaczenia.png`)* | hive tile (Hives tab) | **No connection** — the device stopped communicating with the Hub. |
-| *(screenshot — `status_bateria_wyczerpana.png`)* | hive tile (Hives tab) | **Battery depleted** — last known battery state: dead. Replace the device battery. |
+| ![](pictures/battery_grey_high.png) | apiary tile (Apiaries tab), hive tile (Hives tab) | A full/high greyed battery icon means that the Hub or Scale/VitalSensor **is not reporting**, but the last known battery level was **high**. Check power and range; the device may have lost connectivity for reasons other than battery drain. |
+| ![](pictures/battery_grey_medium.png) | apiary tile (Apiaries tab), hive tile (Hives tab) | Greyed battery icon with two bars — the last known battery level was **medium**. Lack of communication most likely results from BLE range issues (hives) or LTE (Hub). |
+| ![](pictures/battery_grey_low.png) | apiary tile (Apiaries tab), hive tile (Hives tab) | Greyed battery icon with one bar — the last known battery level was **low**. Device communication problems most likely result from a critically low battery level. Replace the batteries (Scale, VitalSensor) or charge the Hub. |
+| ![](pictures/statuses_waiting_for_connection.png) | hive tile (Hives tab) | **Awaiting connection** — waiting for the device to contact the Hub. |
+| ![](pictures/statuses_connection_lost_ble.png) | hive tile (Hives tab) | **No connection** — the device stopped communicating with the Hub. |
+| ![](pictures/statuses_connection_lost_battery.png) | hive tile (Hives tab) | **Battery depleted** — last known battery state: dead. Replace the device battery. |
 
 #### Color coding
 
@@ -1679,7 +1691,7 @@ To report a problem or suggestion in the app, follow these steps:
 
 Figure: Add suggestion view - sample problem reported through the app {#fig-add-suggestion}
 
-![figure](pictures/add_suggestion.png){width=200}
+![figure](pictures/report_suggestion.png){width=200}
 
 ______________________________________________________________________
 
