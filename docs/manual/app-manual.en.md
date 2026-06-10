@@ -121,26 +121,51 @@ Figure: Adding an apiary - Apiaries start view {#fig-apiaries}
 
 ![figure](pictures/apiaries.png){width=200}
 
-- As a result, the *Add apiary* view will be displayed ([](#fig-add-apiary)). In this view, fill in the following fields:
+- As a result, the *Add apiary* view will be displayed ([](#fig-add-apiary)).
 
-    - **Name** — the apiary name that will be displayed in the panel,
-    - **Name abbreviation** — the apiary name abbreviation set by default (consisting of up to 3 characters); you can change it,
-    - **Serial number** - the device's identification number. Click the QR code icon on the right side of this field and scan the QR code from the sticker on the Apisense Hub. The next field, *Confirmation code*, will be filled in automatically.
-    - **Confirmation code** - will be filled in automatically once the QR code has been scanned correctly.
-
-     The *Name* and *Name abbreviation* fields can be edited by the user at any time.
-
-Figure: Adding an apiary with a linked Apisense Hub in the system {#fig-add-apiary}
+Figure: Add apiary view {#fig-add-apiary}
 
 ![figure](pictures/add_apiary.png){width=200}
 
-**Once you have filled in the required data, click the yellow button at the bottom of the screen to confirm creation of the apiary with the linked Apisense Hub device.**
+#### 1.1.1 Adding an apiary with devices
 
-- If the apiary was created successfully, you will be redirected to the Apiaries view, and the apiary you just created will appear in your apiary list ([](#fig-apiaries-list)).
+In the *Add apiary* view ([](#fig-add-apiary)), fill in the following fields:
+
+- **Name** — the apiary name that will be displayed in the panel,
+- **With devices** — check this option to add an apiary and link it with an Apisense Hub device.
+
+The *Name* field can be edited by the user at any time.
+
+After filling in the information above, click the yellow button with the arrow in the lower right corner of the screen. You will be taken to the next step of adding the apiary, where you link the Apisense Hub to your apiary. Fill in the following fields:
+
+- **Hub** — click the QR code icon on the right side of this field and scan the QR code from the sticker on the Apisense Hub device. The next field, *Confirmation code*, will be filled in automatically.
+- **Confirmation code** — filled in automatically after the QR code is scanned correctly.
+
+**After filling in the required data and scanning the QR code, click the yellow button at the bottom of the screen to confirm creation of the apiary with the linked Apisense Hub device.**
+
+If the apiary was created successfully, you will be redirected to its interior (the *Hives* view), and when you go to the *Apiaries* tab the apiary you just created will appear on your apiary list ([](#fig-apiaries-list)). The apiary tile will show the relevant statuses or tips on how to start the Apisense Hub (see [First device startup](#pierwsze-uruchomienie)). To learn more about statuses, go to [chapter 7. Interpretation of statuses and icons used in the system](#interpretacja-statusow).
 
 Figure: Successfully added apiary with a linked Apisense Hub in the apiary view of the system {#fig-apiaries-list}
 
 ![figure](pictures/apiaries_list.png){width=200}
+
+#### 1.1.2 Adding an apiary without devices
+
+To add an apiary without devices, in the *Add apiary* view:
+
+- in the *Name* field, enter the name under which the apiary will be displayed in the app,
+- check the *Without devices* option.
+
+**After filling in the information above, click the yellow button at the bottom of the screen to confirm creation of the apiary without devices.**
+
+If the apiary was created successfully, you will be redirected to its interior (the *Hives* view), and when you go to the *Apiaries* tab the apiary you just created will appear on your apiary list ([](#fig-apiaries-list-without-hub)). The apiary tile will **not show** Hub battery and LTE icons or weather data — only the apiary name will be displayed.
+
+Figure: Successfully added apiary without devices in the apiary view of the system {#fig-apiaries-list-without-hub}
+
+![figure](pictures/apiaries_list_without_hub.png){width=200}
+
+!!! Note
+    **Apiary without devices:** You can create an apiary by providing only the name and selecting *Without devices*, but an apiary created without a Hub **cannot** have a Hub assigned later, even when editing apiary settings. Furthermore, if an apiary was created without a Hub, you cannot assign Scale or VitalSensor devices to any hive in that apiary — the *Equipment* section will not be available when adding hives. You can still add hives without devices and keep records (notes, inspections, tasks).
 
 #### 1.2 Editing an apiary
 
@@ -208,13 +233,13 @@ Figure: Apiary settings - Delete apiary view {#fig-apiary-settings-remove-apiary
           allowfullscreen></iframe>
 </div>
 
-- While in the Apiaries tab (the start view after logging in to the Apisense app) click the tile of the apiary to which you want to add a hive and assign devices (Scale and VitalSensor). After clicking the tile, the single apiary view will be displayed ([](#fig-apiaries-apiary)).
+- While in the Apiaries tab (the start view after logging in to the Apisense app ([](#fig-apiaries-apiary))) click the tile of the apiary to which you want to add a hive. After clicking the tile, the single apiary view will be displayed ([](#fig-apiary-interior)).
 
-Figure: Apiary view in the Apiaries tab and single apiary view (Hives) (1) {#fig-apiaries-apiary}
+Figure: Apiary view in the Apiaries tab {#fig-apiaries-apiary}
 
 ![figure](pictures/apiaries_apiary.png){width=200}
 
-Figure: Apiary view in the Apiaries tab and single apiary view (Hives) (2) {#fig-apiary-interior}
+Figure: Single apiary contents view (Hives) {#fig-apiary-interior}
 
 ![figure](pictures/apiary_interior.png){width=200}
 
@@ -250,32 +275,68 @@ Figure: Adding a hive in the system - Queen bee information section {#fig-add-be
 
 ![figure](pictures/add_beehive_queen.png){width=200}
 
-- Then click the yellow button with the right-pointing arrow at the bottom of the screen to proceed to the last step of adding a hive.
+- Then click the yellow button with the right-pointing arrow at the bottom of the screen to proceed to the **Equipment** section.
+
+!!! Note
+    The *Equipment* section is available only when the apiary has an **Apisense Hub** assigned. If the apiary has no Hub, clicking the yellow button in the lower right corner of the screen will save and add an empty hive (without measurement devices) with the information entered above.
+
+#### 2.1.1 Adding a hive with devices
 
 - **Equipment:** The last stage involves linking devices to this specific hive. **Note:** It is essential that the devices configured for the hive (Scale and VitalSensor) are actually installed in the same physical hive.
 
-    To link devices with the hive, fill in the following fields:
+    !!! Note
+        **Hub requirement:** To link Scale or VitalSensor to a hive, the apiary must have an **Apisense Hub** assigned. Otherwise the *Equipment* section will not be available when adding or editing a hive.
 
-    - **VitalSensor** - click the QR code icon on the right side of this field and scan the QR code from the sticker on the Apisense VitalSensor. The next *Confirmation code* field will be filled in automatically.
-    - **Confirmation code** - will be filled in automatically once the QR code has been scanned correctly.
-    - **Scale** - click the QR code icon on the right side of this field and scan the QR code from the sticker on the Apisense Scale. The next *Confirmation code* field will be filled in automatically.
-    - **Confirmation code** - will be filled in automatically once the QR code has been scanned correctly.
+    To link an Apisense Scale to the hive, fill in the following fields ([](#fig-add-beehive-devices-scale)):
 
-Figure: Adding a hive in the system - Equipment section {#fig-add-beehive-devices}
+    - **Scale** — click the QR code icon on the right side of this field and scan the QR code from the sticker on the Apisense Scale. The next *Confirmation code* field will be filled in automatically.
+    - **Confirmation code** — filled in automatically after a successful QR scan.
 
-![figure](pictures/add_beehive_devices.png){width=200}
+    Figure: Adding a hive — Equipment section, linking Scale {#fig-add-beehive-devices-scale}
 
-- After filling in all sections and required fields, click the yellow *Save* button to add the hive with the linked devices (Scale, VitalSensor).
+    ![figure](pictures/add_beehive_devices_scale.png){width=200}
 
-- If the hive was created successfully, you will be redirected to the *Hives* view, and the hive you just created will appear in your hive list ([](#fig-beehives-beehive-with-problem)).
+    Then click the yellow button in the lower left corner of the screen to proceed to linking the Apisense VitalSensor ([](#fig-add-beehive-devices-sensor)):
 
-Figure: Successfully added hive with linked Apisense Scale and VitalSensor in the Hives view and Hive details (1) {#fig-beehives-beehive-with-problem}
+    - **VitalSensor** — click the QR code icon on the right side of this field and scan the QR code from the sticker on the Apisense VitalSensor **or** from an Apisense Tag. The next *Confirmation code* field will be filled in automatically.
+    - **Confirmation code** — filled in automatically after a successful QR scan.
+
+    Figure: Adding a hive — Equipment section, linking VitalSensor {#fig-add-beehive-devices-sensor}
+
+    ![figure](pictures/add_beehive_devices_sensor.png){width=200}
+
+!!! Note
+    You can also assign only one device to a hive. To create a hive with VitalSensor only, leave the Scale and confirmation code fields empty, proceed to VitalSensor and scan the QR code, then save. To create a hive with Scale only, leave the VitalSensor and confirmation code fields empty and click the yellow save button.
+
+- After filling in the chosen sections and required fields, click the yellow button in the lower right corner of the screen to add the hive with the linked devices (Scale and/or VitalSensor).
+
+- If the hive was created successfully, you will be redirected to the *Hives* view, and the hive you just created will appear in your hive list ([](#fig-beehives-beehive-with-problem), [](#fig-beehive-interior)).
+
+Figure: Successfully added hive with linked Apisense Scale and VitalSensor in the Hives view {#fig-beehives-beehive-with-problem}
 
 ![figure](pictures/beehives_beehive_with_problem.png){width=200}
 
-Figure: Successfully added hive with linked Apisense Scale and VitalSensor in the Hives view and Hive details (2) {#fig-beehive-interior}
+Figure: Successfully added hive with linked devices in Hive details {#fig-beehive-interior}
 
 ![figure](pictures/beehive_interior.png){width=200}
+
+#### 2.1.2 Adding a hive without devices (without Scale and VitalSensor)
+
+If you want to create a hive for record-keeping only (without monitoring):
+
+- Go through the **Hive details** and **Queen bee information** steps as when adding a hive normally.
+- In the **Equipment** section, **do not fill in** the Scale, VitalSensor or confirmation code fields — leave them empty (do not scan QR codes).
+- Click the yellow button in the lower right corner of the screen to save the hive without devices.
+
+**After creating a hive without devices:**
+
+- The hive tile will not show live measurements (temperature, weight) or sensor-based colony health assessment ([](#fig-beehives-beehive-without-devices)).
+- Features that require VitalSensor (e.g. *Register sample*) will not be available until you assign a device.
+- You can add Scale and VitalSensor later in *Hive settings* → **Equipment**, provided the apiary has a linked Hub.
+
+Figure: Successfully added hive without devices in the Hives view {#fig-beehives-beehive-without-devices}
+
+![figure](pictures/beehives_beehive_without_devices.png){width=200}
 
 #### 2.2 Editing a hive
 
@@ -308,6 +369,9 @@ Figure: Hive settings view {#fig-beehive-settings}
     - **Queen information** - this section concerns data related to the queen bee (year raised, origin, insemination method). To update the data in this section, select the appropriate item from the relevant drop-down list (e.g. Queen origin -> item: Own breeding).
 
     - **Equipment** - this section contains information about devices linked to the hive (VitalSensor, Scale). The section allows you to remove the device assignment from this hive. To do so, click the *Disconnect VitalSensor* / *Disconnect Scale* button depending on which device is to be unlinked, and then confirm your choice using the yellow *Disconnect* button ([](#fig-beehive-settings-devices-edit)). When unlinking devices, their measurement history is preserved by default, which means past measurement data will be available on charts until this hive is deleted. To clear the measurement history in the hive from the device being unlinked, use the toggle. If the hive equipment does not include one of the devices (the fields are empty), you can also link a Scale/VitalSensor to the hive from this place. To do so, click the QR code icon on the right side of the VitalSensor/Scale field and scan the QR code from the appropriate measurement devices.
+
+    !!! Note
+        The *Equipment* section is not available if the apiary does not have an **Apisense Hub** assigned.
 
 Figure: Hive settings view - Equipment section, confirmation of Scale disconnection while preserving measurement history (1) {#fig-beehive-settings-devices-edit}
 
@@ -351,6 +415,8 @@ Figure: Hive settings - Delete hive view {#fig-beehive-settings-remove-beehive}
 ![figure](pictures/beehive_settings_remove_beehive.png){width=200}
 
 - Together with the deleted hive, all of its contents (notes, inspections, etc.) are also deleted. Individual devices (Scale, VitalSensor) are also unlinked and their measurement history is cleared. Therefore, for example, the same Apisense VitalSensor can be linked to another hive (one that does not have this type of device).
+
+<a id="dodawanie-przegladow"></a>
 
 ### 3. Adding inspections
 
@@ -699,11 +765,37 @@ Figure: Task list in the hive view {#fig-beehive-tasks-list}
 
 You can filter the task list by status (*All*, *To do*, *Done*).
 
-### 6. Confirming diseases
+### 6. Disease alerts and the health questionnaire
 
-When the Apisense Pro AI system reports a threat (e.g. Nosema), **alerts** will appear in the *Notifications* tab in the app, along with a description and recommendations. By confirming the detected disease in the app, you help the system tailor messages to the actual conditions in your apiary.
+When the Apisense Pro AI system reports a threat (e.g. Nosema), **alerts** will appear in the *Notifications* tab in the app, along with a description and recommendations. By filling in the **disease questionnaire** (*Answer a few questions*), you provide feedback to the system and help tailor messages to the actual conditions in your apiary.
 
-#### 6.1 Confirming diseases from the apiary level
+#### 6.1 What do disease alerts mean?
+
+Alerts in *Notifications* → *Problems*, as well as in hive *Details* (*Details* → *Health* section → *Alert in colony*), refer to **diseases detected automatically by the Apisense Pro AI machine learning model** based on sensor data and system analysis. This is not a veterinary diagnosis — the system signals a **probable** threat (e.g. varroa, nosema, foulbrood), together with severity level and recommended actions, which you will see after expanding the disease details (*Problems* tab).
+
+On apiary and hive tiles, disease alerts appear as **Threatened** status or the name of the detected disease (sometimes with a “+N” badge when more than one threat was found in the hive).
+
+The model is **highly accurate**, but — like any predictive analysis — it **can sometimes be wrong**. Therefore it is worth checking every alert in the field and completing the **disease questionnaire** (*Problems* → disease details → *Answer a few questions*). Filling in the form is very important because your answers help improve the model and increase disease detection accuracy. Thanks to this feedback, the system can better recognize real cases and reduce false alarms.
+
+It is also worth remembering that the model can detect signs of disease at a very early stage, when symptoms may not yet be visible or may be hard to notice during a standard inspection. Therefore, even if you do not see clear symptoms at first glance, it is worth checking the hive indicated in the alert and providing feedback through the form.
+
+#### 6.2 What to do when the disease is not present in the hive
+
+If after visiting the apiary you conclude that the **disease is not actually present** in that hive:
+
+1. Open the alert details (*Notifications* → *Problems* → the disease row).
+2. Click *Answer a few questions*.
+3. For questions about symptoms, answer **No** (you can attach photos from the inspection to each question).
+4. Submit the form by clicking *Save*.
+
+Your answers help the system better tailor future messages to conditions in your apiary. You can fill in the questionnaire again for the same disease episode after a few days if the model still detects the disease.
+
+The **Skip** option lets you move on without answering a given question — it is still worth completing at least part of the form, especially when you are unsure about the alert.
+
+<a id="formularz-chorobowy-pasieka"></a>
+<a id="disease-questionnaire-apiary"></a>
+
+#### 6.3 Filling in the disease questionnaire from the apiary level
 
 - In the Apiaries tab (the start view after logging in to the Apisense app) click the tile of the apiary in which a threat was detected (red bee icon and "Threat" label on the apiary tile). After clicking the tile, the Hives view will be displayed ([](#fig-apiaries-apiary-with-problem)).
 
@@ -723,35 +815,38 @@ Figure: Problems tab {#fig-problems-tab}
 
 - Go to the details of the detected disease by clicking the row with the disease, e.g. American foulbrood ([](#fig-problems-tab-disease-details)). After going to the details, you will see the duration of the disease, its severity level, recommended protective actions and the *Answer a few questions* button (the *Recommendations* tab), as well as previously given answers (the *Answers* tab).
 
-Figure: Confirm disease - disease details {#fig-problems-tab-disease-details}
+Figure: Disease questionnaire - disease details {#fig-problems-tab-disease-details}
 
 ![figure](pictures/problems_tab_disease_details.png){width=200}
 
-- To confirm the disease detected by the system, click the *Answer a few questions* button. After clicking the button, the Answer a few questions view will be displayed ([](#fig-confirm-problem-questions)). Then answer all the questions, choosing one of the available options: Yes, No or Skip.
+- To fill in the disease questionnaire for an alert detected by the system, click the *Answer a few questions* button. After clicking the button, the *Answer a few questions* view will be displayed ([](#fig-confirm-problem-questions)). Then answer all the questions, choosing one of the available options: **Yes**, **No** or **Skip** — depending on what you observed in the hive.
 
-Figure: Confirm disease - sample question {#fig-confirm-problem-questions}
+Figure: Disease questionnaire - sample question {#fig-confirm-problem-questions}
 
 ![figure](pictures/confirm_problem_questions.png){width=200}
 
 - You can also attach photos or recordings to your answers to individual questions. To do so, click the *+* button in the upper right corner of the Answer a few questions view ([](#fig-confirm-problem-add-photos)).
 
-Figure: Confirm disease - attaching photos and recordings {#fig-confirm-problem-add-photos}
+Figure: Disease questionnaire - attaching photos and recordings {#fig-confirm-problem-add-photos}
 
 ![figure](pictures/confirm_problem_add_photos.png){width=200}
 
 - To proceed to the next question, click the yellow right-pointing arrow icon in the lower right corner of the screen.
 
-- To save your answers and finish the form, click the yellow *Save* button in the lower right corner of the last screen of the Answer a few questions view ([](#fig-confirm-problem-save)).
+- To save your answers and submit the form, click the yellow *Save* button in the lower right corner of the last screen of the *Answer a few questions* view ([](#fig-confirm-problem-save)).
 
-Figure: Confirm disease - saving the form {#fig-confirm-problem-save}
+Figure: Disease questionnaire - saving the form {#fig-confirm-problem-save}
 
 ![figure](pictures/confirm_problem_save.png){width=200}
 
-#### 6.2 Confirming diseases from the hive level
+<a id="formularz-chorobowy-ul"></a>
+<a id="disease-questionnaire-hive"></a>
+
+#### 6.4 Filling in the disease questionnaire from the hive level
 
 <div class="yt-embed short" id="video-confirm-disease">
   <iframe src="https://www.youtube.com/embed/iGNXm9qu8X8"
-          title="Apisense Manual PL — 08 · Confirm disease in the hive"
+          title="Apisense Manual EN — 08 · Disease questionnaire in the hive"
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
 </div>
@@ -780,30 +875,32 @@ Figure: Problems tab at the level of a single hive {#fig-beehive-details-problem
 
 - Go to the details of the detected disease by clicking the row with the disease, e.g. American foulbrood ([](#fig-problems-tab-disease-details-2)). After going to the details, you will see the duration of the disease, its severity level, recommended protective actions and the *Answer a few questions* button (the *Recommendations* tab), as well as previously given answers (the *Answers* tab).
 
-Figure: Confirm disease - disease details {#fig-problems-tab-disease-details-2}
+Figure: Disease questionnaire - disease details {#fig-problems-tab-disease-details-2}
 
 ![figure](pictures/problems_tab_disease_details.png){width=200}
 
-- To confirm the disease detected by the system, click the *Answer a few questions* button. After clicking the button, the Answer a few questions view will be displayed ([](#fig-confirm-problem-questions-2)). Then answer all the questions, choosing one of the available options: Yes, No or Skip.
+- To fill in the disease questionnaire for an alert detected by the system, click the *Answer a few questions* button. After clicking the button, the *Answer a few questions* view will be displayed ([](#fig-confirm-problem-questions-2)). Then answer all the questions, choosing one of the available options: **Yes**, **No** or **Skip** — depending on what you observed in the hive.
 
-Figure: Confirm disease - sample question {#fig-confirm-problem-questions-2}
+Figure: Disease questionnaire - sample question {#fig-confirm-problem-questions-2}
 
 ![figure](pictures/confirm_problem_questions.png){width=200}
 
 - You can also attach photos or recordings to your answers to individual questions. To do so, click the *+* button in the upper right corner of the Answer a few questions view ([](#fig-confirm-problem-add-photos-2)).
 
-Figure: Confirm disease - attaching photos and recordings {#fig-confirm-problem-add-photos-2}
+Figure: Disease questionnaire - attaching photos and recordings {#fig-confirm-problem-add-photos-2}
 
 ![figure](pictures/confirm_problem_add_photos.png){width=200}
 
 - To proceed to the next question, click the yellow right-pointing arrow icon in the lower right corner of the screen.
 
-- To save your answers and finish the form, click the yellow *Save* button in the lower right corner of the last screen of the Answer a few questions view ([](#fig-confirm-problem-save-2)).
+- To save your answers and submit the form, click the yellow *Save* button in the lower right corner of the last screen of the *Answer a few questions* view ([](#fig-confirm-problem-save-2)).
 
-Figure: Confirm disease - saving the form {#fig-confirm-problem-save-2}
+Figure: Disease questionnaire - saving the form {#fig-confirm-problem-save-2}
 
 ![figure](pictures/confirm_problem_save.png){width=200}
 
+
+<a id="rejestrowanie-probki"></a>
 
 ### 7. Registering a sample
 
@@ -900,6 +997,8 @@ ______________________________________________________________________
 
 ## Main system panel
 
+<a id="omowienie-listy-pasiek"></a>
+
 ### 1. Apiary list overview (Apiaries tab)
 
 The ***Apiaries* tab** is the basic tab in the Apisense app, which you will see right after logging in to the system ([](#fig-apiaries-2)).
@@ -934,6 +1033,8 @@ Figure: Apiaries tab - sample apiary view {#fig-apiaries-2}
 
 - Clicking the apiary tile opens the apiary interior - the hive list ([Hives tab](#zakladka-ule)).
 
+<a id="omowienie-mapy-pasiek"></a>
+
 ### 2. Apiary map overview (Map tab)
 
 **The Map tab** presents the locations of all apiaries the user has access to on a map ([](#fig-apiaries-map)). The map makes logistics easier, helps plan visits and quickly locate apiaries that require intervention.
@@ -949,6 +1050,7 @@ Figure: Map tab - sample view of apiary locations {#fig-apiaries-map}
 - The map view can be filtered by problems detected in the apiaries. To do so, click an option such as *Varroa* above the map; the map view will be limited to only those apiaries where this disease threat is present.
 
 <a id="zakladka-ule"></a>
+<a id="omowienie-listy-uli"></a>
 
 ### 3. Hive list overview (Hives tab)
 
@@ -983,6 +1085,7 @@ Figure: Hives tab - sample view of the hive list {#fig-beehives-beehive-with-pro
 - Clicking the hive tile opens the hive interior - detailed measurement data taken by the devices assigned to the chosen hive ([Details tab](#zakladka-szczegoly-ula)).
 
 <a id="zakladka-szczegoly-ula"></a>
+<a id="omowienie-zawartosci-ula"></a>
 
 ### 4. Hive contents overview (Details tab)
 
@@ -1073,6 +1176,8 @@ Figure: Details tab - sample view of the Samples tab {#fig-beehive-details-sampl
 - **Sample list** – presents all samples saved for the chosen hive, sorted in descending order by sample collection date.
 - **Sample details** – after clicking a single sample, its details are displayed, including: sample collection date, test type and the test code generated by the system.
 
+<a id="omowienie-ustawien-pasieki"></a>
+
 ### 5. Apiary settings overview
 
 The *Apiary settings* view enables you to manage basic apiary data and to track information about the status of its equipment. You can access the view while in the *Hives* tab (the apiary interior) and clicking the cog icon in the upper right corner of the screen.
@@ -1114,6 +1219,8 @@ Figure: Apiary settings view - Hub section {#fig-apiary-settings-hub}
 - **LTE and battery** – information about the current LTE connection status and battery level of the Apisense Hub device is displayed.
 - **Last report** – the date and time of the last communication of the Apisense Hub device with the system is displayed.
 - **Hardware and software versions** – allows you to check the current hardware and software version of the Apisense Hub device.
+
+<a id="omowienie-ustawien-ula"></a>
 
 ### 6. Hive settings overview
 
@@ -1195,6 +1302,71 @@ The system uses various statuses and icons that make it easier to quickly recogn
 
 This chapter presents the meaning of the individual icons, symbols and color coding used in the system interface, which will allow them to be interpreted correctly during daily work with the app.
 
+<a id="statusy-na-kafelkach"></a>
+<a id="pierwsze-uruchomienie"></a>
+
+#### First device startup
+
+After creating an apiary with a Hub and assigning Scale/VitalSensor to a hive, before the devices connect to the system the tiles will show the following information:
+
+- **Hub — apiary tile** — on the apiary tile you will see a message with instructions to start the device and three buttons ([](#fig-apiary-instruction)) — choose the one that matches your situation:
+
+| Option | Maximum wait time | When to choose |
+| :----- | :---------------- | :------------- |
+| **Charger** | about 30 min | The Hub is connected to external power |
+| **Full sun** | about 3 h | Hub placed in the sun with favourable sunlight |
+| **Weak sun** | about 24 h | Discharged Hub with weak sunlight |
+
+Figure: Apiary tile — first startup of the Apisense Hub — startup instructions {#fig-apiary-instruction}
+
+![figure](pictures/apiary_hub_first_contact.png){width=200}
+
+After you select an option, a **countdown** (timer) starts with the estimated maximum time to wait for the first connection ([](#fig-apiary-timer)). This is an **estimate**, not a guarantee — a discharged Hub without access to light may need more time. If the Hub still does not report when the time elapses, the app will suggest trying again.
+
+Figure: Apiary tile — first startup of the Apisense Hub — timer {#fig-apiary-timer}
+
+![figure](pictures/apiary_timer.png){width=200}
+
+- **Scale and VitalSensor — hive tile** — on the hive tile you will be asked ([](#fig-beehive-device-first-contact)) whether the device is mounted correctly and whether it is within Hub range (up to about 35 m). After you confirm, a **timer** starts with the estimated maximum time for the measurement device to establish communication with the Hub ([](#fig-beehive-timer)).
+
+Figure: Hive tile — first startup of the Apisense Scale/VitalSensor — prompt {#fig-beehive-device-first-contact}
+
+![figure](pictures/beehive_device_first_contact.png){width=200}
+
+Figure: Hive tile — first startup of the Apisense Scale/VitalSensor — timer {#fig-beehive-timer}
+
+![figure](pictures/beehive_timer.png){width=200}
+
+**Additional messages on the apiary tile**
+
+After the devices report for the first time and the first data appear, the apiary or hive tile may still not show full information. Some data will only become visible after a few days:
+
+| Message | Meaning |
+| :------ | :------ |
+| **Waiting for weather data from your location** | The Hub is online, but the weather forecast is not yet available. The forecast should appear on the next day after stable Hub communication. |
+| **Collecting health data for X of Y hives** | See [Colony health](#stan-zdrowia). |
+
+<a id="stan-zdrowia"></a>
+
+#### Colony health status
+
+Colony health icons inform about the condition of bee colonies in individual hives and across the apiary. Health assessment is based on **VitalSensor** data and the AI model.
+
+| Icon | Where it appears | Meaning |
+| :----------- | :---------------- | :--------- |
+| ![](pictures/state_healthy_family.png) | apiary tile (Apiaries tab) | **Healthy colony** | At least one hive has reliable data from a VitalSensor device (outside the *Collecting data* period). The bee colony in this apiary is healthy. No threat was detected in any hive in this apiary. |
+| ![](pictures/state_danger.png) | apiary tile (Apiaries tab) | **Threatened** — the bee colony in this apiary is threatened. A disease threat was detected in at least one hive in this apiary that is outside the *Collecting data* period. |
+| ![](pictures/apiary_statuses_collect_data_chip.png) | apiary tile (Apiaries tab), hive tile (Hives tab) | **Collecting data on the apiary tile** — means that all VitalSensor devices in the apiary are in the colony health data collection period (first ~3 days after assignment); the first AI analysis is in progress — the system is collecting data, but the model does not yet have enough history to reliably assess colony health. **Collecting data on the hive tile** — appears on a hive with an assigned VitalSensor that is in the colony health data collection period (analogous to the apiary case). |
+| ![](pictures/apiary_statuses_collect_data.png) | apiary tile (Apiaries tab) | *Collecting health data for X of Y hives…* — means that at least one hive in the apiary has a VitalSensor that is still in the colony health data collection period. Example: there are 5 hives in the apiary; 4 of them have had a VitalSensor for a longer time and each indicates a healthy colony. A VitalSensor was assigned to the 5th hive today. On the apiary tile you will see a smaller *Healthy colony* chip and the message *Collecting health data for 1 of 5 hives.* |
+| No health status chip | apiary tile (Apiaries tab), hive tile (Hives tab) | Apiary without a Hub, or apiary with a Hub but no VitalSensor devices in any hive in this apiary. The system has no basis to assess colony health. |
+| ![](pictures/beehive_statuses_health_family.png) | hive tile — *Colony state* row, *Hive status* tab in *Details* | **Healthy** — VitalSensor outside the data collection period; the model detected no disease. The colony in this hive is considered healthy. |
+| ![](pictures/statuses_disease_low.png) | hive tile (Hives tab) | Disease name on a yellow background — disease detected at low/moderate infestation level. Disease name on a red background — disease detected at high infestation level. *+N next to the disease name* — means that more than one disease was detected in the hive. |
+| ![](pictures/state_no_data.png) | apiary tile (Apiaries tab), hive tile (Hives tab) | **No data** — means that the system cannot assess the health of the bee colony (on the hive tile this concerns data from a specific VitalSensor; on the apiary tile it refers to all VitalSensor devices in this apiary). For example, it may occur when a VitalSensor was in the data collection period but suddenly stopped communicating with the Hub and the data were not collected and analysed by the AI model in time. |
+| ![](pictures/varroa_low.png) | e.g. *Details*, *Map* | Disease icon — Varroa. Disease detected (Varroa) at low infestation level. |
+| ![](pictures/nosema_high.png) | e.g. *Details*, *Map* | Disease icon — Nosema. Disease detected (Nosema) at high infestation level. Check recommendations in the *Problems* tab. |
+
+<a id="ikony-informacyjne"></a>
+
 #### Information icons
 
 Information icons present information about apiaries and hives as well as data collected from measurement devices.
@@ -1209,44 +1381,31 @@ Information icons present information about apiaries and hives as well as data c
 | ![](pictures/beehive_details_humidity.png) | hive interior (Details tab)            | Current humidity inside the hive.                                                                                                                                                                                                                                                                                                             |
 | ![](pictures/beehive_details_pressure.png) | hive interior (Details tab)            | Current atmospheric pressure inside the hive.                                                                                                                                                                                                                                                                                                 |
 
-<!-- TODO: missing asset beehive_details_humidity_risk.png — after adding the file to docs/manual/pictures/ restore the row in the table between the "humidity" and "pressure" rows:
+<!-- TODO: missing asset beehive_details_humidity_risk.png — restore row after adding file to docs/manual/pictures/
 | ![](pictures/beehive_details_humidity_risk.png) | hive interior (Details tab)     | The current humidity value in the hive is outside the expected range - there is a risk of diseases appearing.                                                                                                                                                                                                                                                                                                                     |
 -->
 
-#### Health status
-
-Health status icons inform about the condition of the bee colony in individual hives and the entire apiary.
-
-| Icon                                    | Where it appears                                 | Meaning                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| :-------------------------------------- | :----------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](pictures/state_healthy_family.png)  | apiary tile (Apiaries tab)                       | The bee colony in this apiary is healthy. No threat has been detected in any hive in this apiary.                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| ![](pictures/state_danger.png)          | apiary tile (Apiaries tab)                       | The bee colony in this apiary is at risk. A disease threat has been detected in at least one hive in this apiary.                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| ![](pictures/state_beehive_healthy.png) | hive tile (Hives tab)                            | The bee colony in this hive is healthy. No threat has been detected.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| ![](pictures/state_beehive_danger.png)  | hive tile (Hives tab)                            | The bee colony in this hive is at risk. At least one threat in the form of a disease has been detected.                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| ![](pictures/state_no_data.png)         | apiary and hive tile (Apiaries, Hives tabs)      | No information about the bee colony's health status. <br/>It appears on the hive tile when:<br/> - the hive does not have any VitalSensor device,<br/>- the VitalSensor or Hub device has stopped reporting,<br/>- the device has been running longer than the initial analysis window but there is still no data to assess the health status.<br/>It appears on the apiary tile when:<br/>- no hive is linked to a VitalSensor device,<br/>- all VitalSensor or Hub devices have stopped reporting,<br/>- no hive yet provides data to assess the health status (outside the initial analysis window).<br/>_Note: during the first days after a VitalSensor is linked, the "Analysing…" status is shown instead of "No data" — see the description below the table._ |
-| ![](pictures/varroa_low.png)            | including hive Details, map                      | Icon with the detected disease - Varroa. Severity level - low.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| ![](pictures/nosema_high.png)           | including hive Details, map                      | Icon with the detected disease - Nosema. Severity level - high.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-
-In addition to the icons above, the app uses an **"Analysing…" / "Collecting health data"** status. It appears during the first days after a VitalSensor device is linked to a hive (about 3 days by default) — the system is collecting data, but the model does not yet have enough history to reliably assess the colony's health. During this period, instead of "No data" or "Healthy", the beekeeper sees that analysis is in progress. After this period the status changes to "Healthy" or "Threat" (or "No data" if the device still provides no signal).
-
-At the apiary level this status works as a separate small info tile **"Collecting health data X of N hives"**, independent of the apiary's main health status. This means the apiary can show its main status (e.g. "Healthy", because at least one hive already has reliable data) and at the same time the "Collecting health data" tile while the remaining hives are still in the analysis period.
-
-An analogous status applies to weight — the small **"Collecting honey data X of N hives"** tile indicates that weight-data collection is still ongoing for some hives after the device was linked.
 
 #### Apisense device status
 
-The Apisense device status icons indicate the current operating status: connection quality and battery level of the devices monitoring apiaries and hives.
+Apisense device status icons indicate the current operating status: connection quality and battery level of devices monitoring apiaries and hives.
 
-| Icon                              | Where it appears                                 | Meaning                                                                                                                                                                                 |
+| Icon                             | Where it appears                                     | Meaning                                                                                                                                                                               |
 | :-------------------------------- | :----------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](pictures/LTE_high.png)        | apiary tile (Apiaries tab)                       | Very good LTE signal level of the Apisense Hub device. No action is required.                                                                                                           |
-| ![](pictures/LTE_medium.png)      | apiary tile (Apiaries tab)                       | Medium LTE signal level of the Apisense Hub device. No action is required.                                                                                                              |
-| ![](pictures/LTE_low.png)         | apiary tile (Apiaries tab)                       | Very weak LTE signal level of the Apisense Hub device. The device may stop reporting. If possible, change the position of the device (Hub).                                             |
-| ![](pictures/LTE_offline.png)     | apiary tile (Apiaries tab)                       | The Apisense Hub device is not reporting (offline mode). The reason for the offline state should be verified and appropriate steps taken.                                               |
-| ![](pictures/battery_high.png)    | apiary tile (Apiaries tab)                       | Very high battery level of the Apisense Hub device. No action is required.                                                                                                              |
-| ![](pictures/battery_medium.png)    | apiary tile (Apiaries tab)                       | Medium battery level of the Apisense Hub device.                                                                                                                                        |
-| ![](pictures/battery_low.png)     | apiary and hive tile (Apiaries, Hives tabs)      | Very low device battery level (on the apiary tile this refers to the Hub, on the hive tile - to Scale or VitalSensor). The device should be charged (Hub) or the batteries replaced (Scale, VitalSensor). |
-| ![](pictures/battery_offline.png) | apiary tile (Apiaries tab)                       | Discharged battery of the Apisense Hub device (offline mode). The device should be charged.                                                                                             |
+| ![](pictures/LTE_high.png)        | apiary tile (Apiaries tab)             | Very good LTE signal level of the Apisense Hub device. No action is required.                                                                                                 |
+| ![](pictures/LTE_medium.png)      | apiary tile (Apiaries tab)             | Medium LTE signal level of the Apisense Hub device. No action is required.                                                                                                       |
+| ![](pictures/LTE_low.png)         | apiary tile (Apiaries tab)             | Very weak LTE signal level of the Apisense Hub device. The device may stop reporting. Reposition the device (Hub) if possible.              |
+| ![](pictures/LTE_offline.png)     | apiary tile (Apiaries tab)             | The Apisense Hub device is not reporting (offline mode). Verify the cause of the offline state and take appropriate steps.                                                         |
+| ![](pictures/battery_high.png)    | apiary tile (Apiaries tab)             | Very high battery level of the Apisense Hub device. No action is required.                                                                                                    |
+| ![](pictures/battery_medium.png)    | apiary tile (Apiaries tab)             | Medium battery level of the Apisense Hub device.                                                                                                                                          |
+| ![](pictures/battery_low.png)     | apiary and hive tile (Apiaries, Hives tabs) | Very low battery level of the device (on the apiary tile this concerns the Hub; on the hive tile — Scale or VitalSensor). Charge (Hub) or replace the batteries (Scale, VitalSensor). |
+| ![](pictures/battery_offline.png) | apiary tile (Apiaries tab), hive tile (Hives tab)             | Unknown device battery level. Wait for the next device report. If the state persists for a long time, e.g. several hours (grey crossed-out battery icon, but current data such as temperature are displayed), report a problem in the app.                                                                                              |
+| ![](pictures/battery_grey_high.png) | apiary tile (Apiaries tab), hive tile (Hives tab) | A full/high greyed battery icon means that the Hub or Scale/VitalSensor **is not reporting**, but the last known battery level was **high**. Check power and range; the device may have lost connectivity for reasons other than battery drain. |
+| ![](pictures/battery_grey_medium.png) | apiary tile (Apiaries tab), hive tile (Hives tab) | Greyed battery icon with two bars — the last known battery level was **medium**. Lack of communication most likely results from BLE range issues (hives) or LTE (Hub). |
+| ![](pictures/battery_grey_low.png) | apiary tile (Apiaries tab), hive tile (Hives tab) | Greyed battery icon with one bar — the last known battery level was **low**. Device communication problems most likely result from a critically low battery level. Replace the batteries (Scale, VitalSensor) or charge the Hub. |
+| ![](pictures/statuses_waiting_for_connection.png) | hive tile (Hives tab) | **Awaiting connection** — waiting for the device to contact the Hub. |
+| ![](pictures/statuses_connection_lost_ble.png) | hive tile (Hives tab) | **No connection** — the device stopped communicating with the Hub. |
+| ![](pictures/statuses_connection_lost_battery.png) | hive tile (Hives tab) | **Battery depleted** — last known battery state: dead. Replace the device battery. |
 
 #### Color coding
 
@@ -1280,9 +1439,11 @@ Navigation icons are used to move between views and app functions.
 | :------------------------------ | :---------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------- |
 | ![](pictures/logout.png)        | various views, including Apiaries tab - upper right corner of the screen | Button used to log out of the system.                                                                            |
 | ![](pictures/previous_view.png) | various views - upper left corner of the screen                   | Button used to go to the previous view (Back button), e.g. from the *Hives* tab to *Apiaries*.                   |
-| ![](pictures/next_button.png)   | various views including disease confirmation, Add inspection      | Button used to go to the next view (Next button), e.g. moving on to the next inspection question.                |
+| ![](pictures/next_button.png)   | various views including disease questionnaire, Add inspection      | Button used to go to the next view (Next button), e.g. moving on to the next inspection or disease questionnaire question.                |
 
 ______________________________________________________________________
+
+<a id="monitorowanie-parametrow"></a>
 
 ## Parameter monitoring
 
@@ -1486,6 +1647,8 @@ New notifications appear automatically on the appropriate list depending on thei
 
 To display the details of a notification, click its header; this will expand the full message content.
 
+<a id="twoj-asystent-ai"></a>
+
 ### 2. Your AI Assistant
 
 The AI Assistant is a feature that supports the user in analyzing the situation in the apiary and in interpreting the observed phenomena. Based on the information provided, the system generates answers and tips that can help in making decisions about running the apiary.
@@ -1505,6 +1668,36 @@ After submitting a question, the assistant analyzes the available information an
 You can use the AI Assistant by selecting the *Your assistant* tab from the bottom menu, available in the basic app views (*Apiaries*, *Hives*, *Hive*). Thanks to this, the user has quick access to assistant help at any time when using the system.
 
 ______________________________________________________________________
+
+<a id="zglaszanie-problemow-i-sugestii"></a>
+<a id="reporting-problems-and-suggestions"></a>
+
+## Reporting problems and suggestions
+
+If while using the app you notice a bug, incorrect behavior of a feature, or have an idea for improving the system, you can report it directly from within the app. We also encourage you to submit proposals for new features that could make everyday work with the system easier.
+
+Each report is reviewed by the team responsible for app development. User feedback helps identify problems faster, improve existing solutions, and develop features that best meet beekeepers' needs.
+
+### 1. Reporting problems and suggestions in the app
+
+To report a problem or suggestion in the app, follow these steps:
+
+- Click the *light bulb* icon available from any view in the app, in the upper right corner of the screen (next to the settings and log out buttons). As a result, the *Add suggestion* view will open ([](#fig-add-suggestion)).
+- In the *Add suggestion* view, fill in the following required fields:
+
+    - **Choose category** — select one of the available categories depending on whether you want to report a problem or suggest an app improvement.
+    - **Description** — enter a description of the problem or what you would like to change in the app.
+
+- Optionally, you can also attach photos to your report, which is especially useful when reporting a problem found in the app. Note: you can attach photos only — recordings are not accepted.
+- After filling in the information above, click the yellow *Send suggestion* button in the lower right corner of the view to submit the report.
+
+Figure: Add suggestion view - sample problem reported through the app {#fig-add-suggestion}
+
+![figure](pictures/report_suggestion.png){width=200}
+
+______________________________________________________________________
+
+<a id="edycja-danych-uzytkownika"></a>
 
 ## Account management
 
@@ -1535,6 +1728,16 @@ Figure: Account settings - sample view of the settings and password change (2) {
 
 In the lower part of the *Account settings* view ([](#fig-app-settings)) there is also a *Delete account* button, which enables permanent deletion of the user account.
 
+### 2. Checking the app version
+
+To see which version of the Apisense app is currently installed on your device:
+
+- Go to the *Account settings* view. To do so, click the cog icon in the upper right corner of the *Apiaries* tab.
+- Scroll **to the very bottom** of the screen.
+- At the bottom, in the central part of the screen, you will see an entry in the form **Version X.Y.Z** (e.g. *Version 1.2.3*) — that is the installed app version number.
+
+It is worth comparing this number with the version available in Google Play or the App Store before reporting a technical issue.
+
 ______________________________________________________________________
 
 ## System usage best practices
@@ -1561,6 +1764,8 @@ ______________________________________________________________________
 - Operating system updates of the device also affect the stability of the app's operation.
 
 ______________________________________________________________________
+
+<a id="faq-czesto-zadawane"></a>
 
 ## Troubleshooting
 
@@ -1596,9 +1801,9 @@ Below you will find a summary of the most important activities in the Apisense P
 
 ### 2. Apiary management
 
-- **Adding an apiary:** In the *Apiaries* tab choose *Add apiary* from the bottom menu. In the *Add apiary* view fill in the name, abbreviation, scan the QR code from the Apisense Hub and save.
+- **Adding an apiary:** In the *Apiaries* tab choose *Add apiary* from the bottom menu. In the *Add apiary* view enter the name and choose *With devices* (scan the Hub QR code) or *Without devices*, then save.
 
-> [Video](#video-add-apiary), [Adding an apiary](#11-adding-an-apiary)
+> [Video](#video-add-apiary), [Adding an apiary with devices](#111-adding-an-apiary-with-devices), [Adding an apiary without devices](#112-adding-an-apiary-without-devices)
 
 - **Editing an apiary:** Click the chosen apiary tile. Click the cog icon while in the *Hives* tab. In the *Apiary settings* view click the header of the section whose data you want to edit. Change the field values and click save (yellow button).
 
@@ -1622,7 +1827,7 @@ Below you will find a summary of the most important activities in the Apisense P
 
 - **Adding inspections:** Click the chosen apiary tile. Click the chosen hive tile. Choose *Add...* -> *Inspection* from the bottom menu. Attach a total of 4 required frame photos. Answer the questions. The yellow right-pointing arrow lets you proceed to the next question. Click *Finish inspection* (yellow button on the last inspection screen) to save.
 
-> [Video](#video-add-inspection), [Adding inspections](#3-adding-inspections)
+> [Video](#video-add-inspection), [Adding inspections](#dodawanie-przegladow)
 
 - **Adding notes:** Click the chosen apiary tile. Click the chosen hive tile. Choose *Add...* -> *Note* from the bottom menu. Enter the note content (text or record a voice note; you can also add photos or recordings (*+*)). Save the note (yellow button).
 
@@ -1630,17 +1835,17 @@ Below you will find a summary of the most important activities in the Apisense P
 > [Video — audio note](#video-note-voice) 
 > [Notes](#4-notes)
 
-- **Confirming diseases from the apiary level:** Click the chosen apiary tile. Choose *Notifications* from the bottom menu. In the *Problems* tab click the chosen disease row to expand the details. Click the *Answer a few questions* button. Answer the questions. To proceed to the next, click the yellow right-pointing arrow. At the end click *Save*.
+- **Filling in the disease questionnaire from the apiary level:** Click the chosen apiary tile. Choose *Notifications* from the bottom menu. In the *Problems* tab click the chosen disease row to expand the details. Click the *Answer a few questions* button. Answer the questions (Yes / No / Skip). To proceed to the next, click the yellow right-pointing arrow. At the end click *Save*.
 
-> [Video](#video-confirm-disease), [Confirming diseases](#6-confirming-diseases)
+> [Video](#video-confirm-disease), [Filling in the questionnaire from the apiary level](#formularz-chorobowy-pasieka)
 
-- **Confirming diseases from the hive level:** Click the chosen apiary tile. Click the chosen hive tile. Choose *Notifications* from the bottom menu. In the *Problems* tab click the chosen disease row to expand the details. Click the *Answer a few questions* button. Answer the questions. To proceed to the next, click the yellow right-pointing arrow. At the end click *Save*.
+- **Filling in the disease questionnaire from the hive level:** Click the chosen apiary tile. Click the chosen hive tile. Choose *Notifications* from the bottom menu. In the *Problems* tab click the chosen disease row to expand the details. Click the *Answer a few questions* button. Answer the questions (Yes / No / Skip). To proceed to the next, click the yellow right-pointing arrow. At the end click *Save*.
 
-> [Video](#video-confirm-disease), [Confirming diseases](#6-confirming-diseases)
+> [Video](#video-confirm-disease), [Filling in the questionnaire from the hive level](#formularz-chorobowy-ul)
 
 - **Registering a sample:** Click the chosen apiary tile. Click the chosen hive tile. Choose *Add...* -> *Register sample* from the bottom menu. Choose the sample collection date and the test type. Click the *Generate code* button. Write the *Test code* on the sample and send it to Apisense. (Note: the Register sample option is only available for a hive with an assigned VitalSensor device).
 
-> [Video](#video-register-sample), [Registering a sample](#7-registering-a-sample)
+> [Video](#video-register-sample), [Registering a sample](#rejestrowanie-probki)
 
 - **Adding a test:** Click the chosen apiary tile. Click the chosen hive tile. From the bottom menu choose *Add... -> Test*. Choose the date and test type from the drop-down list, fill in the required photos and fields (e.g. number of varroa mites), then save with the yellow button.
 
@@ -1650,29 +1855,29 @@ Below you will find a summary of the most important activities in the Apisense P
 
 - **Apiary list (Apiaries tab):** The start view after logging in to the Apisense app - apiary tiles with basic information. Click an apiary to go to the hive list.
 
-> [Video](#video-add-apiary), [Apiary list overview (Apiaries tab)](#1-apiary-list-overview-apiaries-tab)
+> [Video](#video-add-apiary), [Apiary list overview (Apiaries tab)](#omowienie-listy-pasiek)
 
 - **Apiary map:** After logging in to the app, choose *Map* from the bottom menu to see the apiary locations. You can filter the view by problems (e.g. Varroa).
 
-> [Apiary map overview (Map tab)](#2-apiary-map-overview-map-tab)
+> [Apiary map overview (Map tab)](#omowienie-mapy-pasiek)
 
 - **Hive list (Hives tab):** Click the chosen apiary tile. As a result, all hives assigned to this apiary will appear. The *Hives* view presents a list of hives; click the chosen hive to go to the details.
 
-> [Video](#video-add-hive), [Hive list overview (Hives tab)](#3-hive-list-overview-hives-tab)
+> [Video](#video-add-hive), [Hive list overview (Hives tab)](#omowienie-listy-uli)
 
 - **Hive contents (Details tab):** Here you check the *Hive status*, saved inspections, notes, and the list of tests and samples. You can also display charts of individual parameters, e.g. Honey gain.
 
-> [Hive contents overview (Details tab)](#4-hive-contents-overview-details-tab)
+> [Hive contents overview (Details tab)](#omowienie-zawartosci-ula)
 
 - **Apiary and hive settings:** The cog icon in the apiary view (Hives tab) or hive view (Details tab) leads to the settings. Here you can edit information about the apiary or hive.
 
-> [Apiary settings overview](#5-apiary-settings-overview), [Hive settings overview](#6-hive-settings-overview)
+> [Apiary settings overview](#omowienie-ustawien-pasieki), [Hive settings overview](#omowienie-ustawien-ula)
 
 ### 4. Monitoring and data analysis
 
 - **Parameters (temperature, humidity, pressure, weight, honey gain):** Click the chosen apiary tile. Click the chosen hive tile. The current values are visible in the hive *Details* tab, *Hive status* sub-tab, in the *Weight* and *Conditions* sections.
 
-> [Parameter monitoring](#parameter-monitoring)
+> [Parameter monitoring](#monitorowanie-parametrow)
 
 - **Charts:** Click the chosen apiary tile. Click the chosen hive tile. In the *Details* -> *Hive status* tab expand the *Weight* or *Conditions* section and click the chosen parameter to see the chart in the chosen time interval (24 h, 7 days, 1–6 months).
 
@@ -1690,14 +1895,24 @@ Below you will find a summary of the most important activities in the Apisense P
 
 - **Your AI Assistant:** From the bottom menu choose *Your assistant* (accessible from the *Apiaries*, *Hives*, *Details* views), then enter a question and send it to the assistant. The assistant will analyze the data and provide an answer.
 
-> [Your AI Assistant](#2-your-ai-assistant)
+> [Your AI Assistant](#twoj-asystent-ai)
 
 ### 6. Account
 
 - **Editing user data:** In the *Apiaries* start view click the cog icon. You can change your name, email, phone, password and language. From this place you can also delete your account.
 
-> [Editing user data](#1-editing-user-data)
+> [Editing user data](#edycja-danych-uzytkownika)
+
+- **Checking the app version:** In the *Account settings* view scroll to the bottom of the screen — you will see the **Version X.Y.Z** entry.
+
+> [Checking the app version](#2-checking-the-app-version)
+
+### 7. Reporting problems and suggestions
+
+- **Reporting in the app:** Click the light bulb icon in the upper right corner of any view. Fill in the category and description, optionally attach photos. Click *Send suggestion*.
+
+> [Reporting problems and suggestions](#zglaszanie-problemow-i-sugestii)
 
 ______________________________________________________________________
 
-If you encounter any problems, search for the issue in the [Frequently asked questions and suggested solutions](#1-frequently-asked-questions-and-suggested-solutions) list or contact Apisense support: **bee@apisense.ai**.
+If you encounter any problems, search for the issue in the [Frequently asked questions and suggested solutions](#faq-czesto-zadawane) list or contact Apisense support: **bee@apisense.ai**.
