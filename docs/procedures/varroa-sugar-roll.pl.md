@@ -51,13 +51,15 @@ Powtórz procedurę z tą samą próbką pszczół:
 ### 5. Liczenie i zapisywanie
 
 1. **Policz roztocza** w naczyniu z wodą.
-2. Zapisz liczbę w aplikacji Apisense.
-3. **Ostrożnie zwróć pszczoły do rodziny.**
-4. Wyczyść słoik/urządzenie z resztek cukru/roztoczy/kurzu/wilgoci suchym ręcznikiem przed następnym użyciem.
+2. **Zrób zdjęcie całego naczynia.**
+3. Zapisz liczbę w aplikacji Apisense i prześlij zdjęcie.
+4. **Ostrożnie zwróć pszczoły do rodziny.**
+5. Wyczyść słoik/urządzenie z resztek cukru/roztoczy/kurzu/wilgoci suchym ręcznikiem przed następnym użyciem.
 
 ## Raportowanie w aplikacji Apisense
 
 - **Łączna liczba roztoczy** (suma z obu cykli)
+- **Zdjęcie naczynia z wodą i roztoczami**
 - Wielkość próbki (domyślnie 300 pszczół)
 - Data badania
 

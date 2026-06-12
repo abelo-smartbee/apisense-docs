@@ -51,13 +51,15 @@ Repeat the procedure with the same bee sample:
 ### 5. Count and record
 
 1. **Count the mites** in the water tray.
-2. Record the number in the Apisense app.
-3. **Carefully return the bees to their colony.**
-4. Clean the jar/device of remaining sugar/mites/dust/moisture with a dry cloth before next use.
+2. **Take a picture of the whole tray.**
+3. Record the number in the Apisense app and upload the photo.
+4. **Carefully return the bees to their colony.**
+5. Clean the jar/device of remaining sugar/mites/dust/moisture with a dry cloth before next use.
 
 ## Reporting in the Apisense app
 
 - **Total mite count** (sum from both cycles)
+- **Photo of the water tray with mites**
 - Sample size (300 bees by default)
 - Date of the test
 
