@@ -4,19 +4,19 @@
 
 ## 1. Wprowadzenie
 
-Apisense to zaawansowany system wczesnego ostrzegania, łączący nowoczesne czujniki Internetu Rzeczy (IoT) z algorytmami sztucznej inteligencji (AI). System umożliwia prewencyjne wykrywanie chorób ze skutecznością do **95% F1-score**, analizując poziom feromonów pszczół miodnych oraz akustyczne wzorce aktywności w ulu.
+Apisense to zaawansowany system wczesnego ostrzegania, łączący nowoczesne urządzenia VitalSensor Internetu Rzeczy (IoT) z algorytmami sztucznej inteligencji (AI). System umożliwia prewencyjne wykrywanie chorób ze skutecznością do **95% F1-score**, analizując poziom feromonów pszczół miodnych oraz akustyczne wzorce aktywności w ulu.
 
 ## 2. Specyfikacja sprzętowa
 
 ### **Apisense Hub**
 
-*Hub, który agreguje dane z czujników i wag w obrębie pasieki oraz przesyła je do chmury.*
+*Hub, który agreguje dane z VitalSensorów i Scale w obrębie pasieki oraz przesyła je do chmury.*
 
 - **Zasilanie:** Wbudowany akumulator Li-Ion + zintegrowany panel fotowoltaiczny (solarny).
 - **Czas pracy:** Do 2 tygodni bez dostępu do światła słonecznego; ciągła praca przy ekspozycji słonecznej. Obsługa ładowania sieciowego (standardowe niskonapięciowe złącze).
 - **Łączność:**
     - **Chmura:** LTE (globalna karta SIM, w komplecie roczny pakiet transferu danych).
-    - **Lokalnie:** Bluetooth Low Energy (BLE) – zasięg do 35 m do czujników i wag. Obsługa do 100 urządzeń.
+    - **Lokalnie:** Bluetooth Low Energy (BLE) – zasięg do 35 m do VitalSensorów i Scale. Obsługa do 100 urządzeń.
 - **Montaż:** Nieinwazyjny (słupek, drzewo), odporność na warunki atmosferyczne (IP65). Optymalny kąt nachylenia panelu: 20° do 50°.
 - **Wymiary:** Kompaktowa obudowa zintegrowana z panelem solarnym (ok. 17,5 × 17,5 × 5 cm).
 
@@ -44,7 +44,7 @@ Apisense to zaawansowany system wczesnego ostrzegania, łączący nowoczesne czu
 
 - **Aplikacja mobilna:** Apisense Pro AI (iOS/Android/Web) – nowoczesny, responsywny interfejs z zaawansowaną analizą trendów i historycznymi danymi.
 - **Sztuczna inteligencja:** Silnik AI analizuje dane, dostarczając praktyczne rekomendacje i alarmy (m.in. identyfikacja chorób: warrozy, nosemy, zgnilca).
-- **Rekomendacje działań:** W oparciu o wszystkie dostępne systemowi dane wejściowe — notatki pszczelarza, przeglądy, zdjęcia, odczyty z czujników i wag, prognozy pogody oraz wiedzę ekspercką — Apisense generuje konkretne rekomendacje działań, które pomagają pszczelarzowi wzmocnić rodzinę pszczelą.
+- **Rekomendacje działań:** W oparciu o wszystkie dostępne systemowi dane wejściowe — notatki pszczelarza, przeglądy, zdjęcia, odczyty z VitalSensorów i Scale, prognozy pogody oraz wiedzę ekspercką — Apisense generuje konkretne rekomendacje działań, które pomagają pszczelarzowi wzmocnić rodzinę pszczelą.
 - **Powiadomienia:** System powiadomień push w czasie rzeczywistym o krytycznych zdarzeniach (np. nagły spadek masy, gwałtowny spadek temperatury, gwałtowny wzrost wilgotności).
 
 ## 4. Kluczowe korzyści

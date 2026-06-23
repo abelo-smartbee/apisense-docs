@@ -330,7 +330,7 @@ If you want to create a hive for record-keeping only (without monitoring):
 
 **After creating a hive without devices:**
 
-- The hive tile will not show live measurements (temperature, weight) or sensor-based colony health assessment ([](#fig-beehives-beehive-without-devices)).
+- The hive tile will not show live measurements (temperature, weight) or VitalSensor-based colony health assessment ([](#fig-beehives-beehive-without-devices)).
 - Features that require VitalSensor (e.g. *Register sample*) will not be available until you assign a device.
 - You can add Scale and VitalSensor later in *Hive settings* → **Equipment**, provided the apiary has a linked Hub.
 
@@ -451,7 +451,7 @@ Figure: Hive details view - Add Inspection button {#fig-add-overview-button}
 
 - In the Add inspection view ([](#fig-add-inspection-photos)), attach 2 photos each for:
 
-  - the frame with the sensor,
+  - the frame with the VitalSensor,
   - the outer frame on the holders we provided.
 
 To add photos, click the *Add photo* button and then choose the *Take photo* or *Add photo from gallery* option.
@@ -460,7 +460,7 @@ Figure: Adding an inspection - adding photos {#fig-add-inspection-photos}
 
 ![figure](pictures/add_inspection_photos.png){width=200}
 
-Figure: Example photo of a frame with the sensor attached to an inspection {#fig-inspection-photo-example}
+Figure: Example photo of a frame with the VitalSensor attached to an inspection {#fig-inspection-photo-example}
 
 ![figure](pictures/inspection_photo_example.png){width=400}
 

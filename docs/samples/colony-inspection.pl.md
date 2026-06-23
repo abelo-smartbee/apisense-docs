@@ -6,11 +6,11 @@ Zalecenia dotyczące dokumentacji fotograficznej i obserwacji prowadzonych podcz
 
 Podczas przeglądu rodziny pszczelej załącz w aplikacji zdjęcia:
 
-- **Ramki z czujnikiem** wraz z pszczołami — przód i tył plastra
+- **Ramki z VitalSensorem** wraz z pszczołami — przód i tył plastra
 - **Najbardziej zewnętrznej ramki** bez pszczół — przód i tył plastra
 - Inne zdjęcia istotne z punktu widzenia pszczelarza
 
-Figure: Przykładowe zdjęcie ramki z czujnikiem {#fig-inspection-photo-example}
+Figure: Przykładowe zdjęcie ramki z VitalSensorem {#fig-inspection-photo-example}
 
 ![figure](pictures/inspection_photo_example.png){width=500}
 

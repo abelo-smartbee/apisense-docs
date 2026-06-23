@@ -14,7 +14,7 @@ Przegląd produktu: sprzęt (Hub, VitalSensor, Scale), ekosystem aplikacyjny, kl
 
 ### Asystent
 
-Inteligentny czat zintegrowany z Twoim systemem Apisense — czyta dane z czujników IoT w Twoich ulach, zna każdą Twoją notatkę i przegląd, sięga po prognozę pogody nad pasieką oraz korzysta z oficjalnych instrukcji Apisense i tutoriali wideo. Pytasz w swoim języku, dostajesz odpowiedź w tym samym języku.
+Inteligentny czat zintegrowany z Twoim systemem Apisense — czyta dane z urządzeń IoT VitalSensor w Twoich ulach, zna każdą Twoją notatkę i przegląd, sięga po prognozę pogody nad pasieką oraz korzysta z oficjalnych instrukcji Apisense i tutoriali wideo. Pytasz w swoim języku, dostajesz odpowiedź w tym samym języku.
 
 [Przejdź do opisu Asystenta →](ai/index.md)
 
@@ -26,13 +26,13 @@ Krok po kroku przez pracę w aplikacji Apisense Pro AI: rejestracja i logowanie,
 
 ### Instrukcja konfiguracji
 
-Pierwsze uruchomienie sprzętu Apisense: zawartość zestawu, podłączenie bramki (Hub), instalacja czujnika (VitalSensor) i wagi (Scale) oraz test poprawności działania urządzeń.
+Pierwsze uruchomienie sprzętu Apisense: zawartość zestawu, podłączenie bramki (Hub), instalacja VitalSensora i Scale oraz test poprawności działania urządzeń.
 
 [Przejdź do instrukcji konfiguracji →](manual/configuration/index.md)
 
 ### Rozwiązywanie problemów
 
-Lista typowych problemów z urządzeniami (Hub, VitalSensor, Scale) i proponowane rozwiązania, w tym checklista diagnostyczna braku zasięgu Hub.
+Lista typowych problemów z urządzeniami (Hub, VitalSensor, Scale) i proponowane rozwiązania, w tym checklista diagnostyczna braku zasięgu Huba.
 
 [Przejdź do rozwiązywania problemów →](manual/configuration/troubleshooting.md)
 

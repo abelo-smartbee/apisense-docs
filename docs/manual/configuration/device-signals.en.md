@@ -54,7 +54,7 @@ If you're looking for a solution to a specific problem (e.g. "device not reporti
 ### No BLE connectivity
 
 !!! todo "TODO (embedded)"
-    Signal when no Sensor/Scale connects to the Hub. Versus partial signal (some devices OK, some not).
+    Signal when no VitalSensor/Scale connects to the Hub. Versus partial signal (some devices OK, some not).
 
 ### Factory reset
 
@@ -102,7 +102,7 @@ If you're looking for a solution to a specific problem (e.g. "device not reporti
 ### No BLE range
 
 !!! todo "TODO (embedded)"
-    Local signal when the Hub is out of range / shielded. Whether the Sensor retries periodically and how that's visible.
+    Local signal when the Hub is out of range / shielded. Whether the VitalSensor retries periodically and how that's visible.
 
 ### Reset
 

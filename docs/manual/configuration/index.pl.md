@@ -49,9 +49,9 @@ W skład zestawu Apisense wchodzą:
     ![Apisense VitalSensor](../pictures/sensor.png){width=200}
 
 - **Elementy montażowe** — do bezpiecznego i stabilnego zamocowania urządzeń (montaż nie wymaga wymiany uli ani ingerencji w ich budowę). W skład elementów montażowych wchodzą:
-  - **Uchwyt aparatowy** — element wykorzystywany do montażu Apisense Hub, umożliwiający stabilne zamocowanie urządzenia.
-  - **Drewniana kantówka** — element stabilizujący, umożliwiający prawidłowe ustawienie i wypoziomowanie wagi (Scale) pod ulem. Zapewnia równomierne rozłożenie ciężaru ula na czujniki pomiarowe oraz utrzymuje stabilność całej konstrukcji.
-  - **Uchwyty montażowe do ramki** — elementy umożliwiające bezpieczne i stabilne zamocowanie Apisense VitalSensor bezpośrednio na ramce ula. Konstrukcja uchwytów pozwala na montaż bez trwałych modyfikacji ula oraz bez zakłócania pracy rodziny pszczelej.
+  - **Uchwyt aparatowy** — element wykorzystywany do montażu Apisense Huba, umożliwiający stabilne zamocowanie urządzenia.
+  - **Drewniana kantówka** — element stabilizujący, umożliwiający prawidłowe ustawienie i wypoziomowanie Scale pod ulem. Zapewnia równomierne rozłożenie ciężaru ula na czujniki pomiarowe oraz utrzymuje stabilność całej konstrukcji.
+  - **Uchwyty montażowe do ramki** — elementy umożliwiające bezpieczne i stabilne zamocowanie Apisense VitalSensora bezpośrednio na ramce ula. Konstrukcja uchwytów pozwala na montaż bez trwałych modyfikacji ula oraz bez zakłócania pracy rodziny pszczelej.
 - <a id="naklejki-qr"></a>**Naklejki z kodem QR** — do szybkiej rejestracji pasieki i uli w systemie oraz identyfikacji urządzeń. Naklejki umieszczone są na poszczególnych urządzeniach: Apisense Hub ([](#fig-qr-hub)), Apisense Scale ([](#fig-qr-scale)) i Apisense VitalSensor ([](#fig-qr-sensor)) oraz na Apisense Tag ([](#fig-apisense-tag)).
 
     Figure: Naklejka z kodem QR na Apisense Hub {#fig-qr-hub}
@@ -93,7 +93,7 @@ Aby uzyskać dostęp do pomiarów wykonanych przez poszczególne urządzenia, na
 !!! note "Uwaga"
     Podczas pierwszej konfiguracji urządzeń wymagane będą naklejki z kodami QR znajdujące się na poszczególnych urządzeniach Apisense (zobacz sekcję: [Naklejki z kodem QR](#naklejki-qr)). Przygotuj urządzenia z naklejkami i postępuj zgodnie z poniższą instrukcją.
 
-### 1. Tworzenie pasieki i powiązanie z Hub
+### 1. Tworzenie pasieki i powiązanie z Hubem
 
 W pierwszym kroku należy utworzyć nową pasiekę w systemie oraz przypisać do niej Apisense Hub, co odbywa się poprzez zeskanowanie kodu QR umieszczonego na tym urządzeniu.
 
@@ -101,7 +101,7 @@ W pierwszym kroku należy utworzyć nową pasiekę w systemie oraz przypisać do
 - Aby dodać pasiekę wypełnij poszczególne pola w widoku Dodaj pasiekę ([](#fig-add-apiary)):
   - Nazwa - wpisz nazwę swojej pasieki - pod taką nazwą pasieka będzie wyświetlana w panelu.
   - Skrót nazwy - jest ustawiany domyślnie, w celu łatwiejszej identyfikacji pasieki. Możesz wprowadzić własny skrót - maksymalnie 3 znaki.
-  - Numer seryjny - to numer identyfikacyjny urządzenia. Kliknij w ikonę kodu QR znajdującą się w prawej części tego pola i zeskanuj kod QR z naklejki umieszczonej na Apisense Hub. Kolejne pole *Kod potwierdzający* zostanie wypełnione automatycznie.
+  - Numer seryjny - to numer identyfikacyjny urządzenia. Kliknij w ikonę kodu QR znajdującą się w prawej części tego pola i zeskanuj kod QR z naklejki umieszczonej na Apisense Hubie. Kolejne pole *Kod potwierdzający* zostanie wypełnione automatycznie.
   - Kod potwierdzający - zostanie wypełniony automatycznie, po poprawnym zeskanowaniu kodu QR.
     Pola *Nazwa* oraz *Skrót nazwy* będą mogły zostać zedytowane przez użytkownika w dowolnym momencie.
     
@@ -118,7 +118,7 @@ W pierwszym kroku należy utworzyć nową pasiekę w systemie oraz przypisać do
 
 Aby dodać pozostałe urządzenia (Scale i VitalSensor) do systemu przejdź do punktu 2. w tym rozdziale.
 
-### 2. Tworzenie ula i powiązanie z Scale oraz VitalSensor
+### 2. Tworzenie ula i powiązanie ze Scale oraz VitalSensorem
 
 Na tym etapie należy utworzyć ul w ramach wybranej pasieki, a następnie przypisać do niego urządzenia Scale oraz VitalSensor poprzez zeskanowanie kodów QR znajdujących się na ich obudowie.
 
@@ -157,7 +157,7 @@ Na tym etapie należy utworzyć ul w ramach wybranej pasieki, a następnie przyp
         Kluczowe jest, aby urządzenia skonfigurowane w ramach ula (Scale i VitalSensor) były w rzeczywistości zainstalowane w tym samym fizycznym ulu.
 
     Aby powiązać urządzenia z ulem wypełnij następujące pola ([](#fig-add-beehive-devices)):
-  - VitalSensor - kliknij w ikonę kodu QR znajdującą się w prawej części tego pola i zeskanuj kod QR z naklejki umieszczonej na Apisense VitalSensor. Kolejne pole *Kod potwierdzający* zostanie wypełnione automatycznie.
+  - VitalSensor - kliknij w ikonę kodu QR znajdującą się w prawej części tego pola i zeskanuj kod QR z naklejki umieszczonej na Apisense VitalSensorze. Kolejne pole *Kod potwierdzający* zostanie wypełnione automatycznie.
   - Kod potwierdzający - zostanie wypełniony automatycznie, po poprawnym zeskanowaniu kodu QR.
   - Scale - kliknij w ikonę kodu QR znajdującą się w prawej części tego pola i zeskanuj kod QR z naklejki umieszczonej na Apisense Scale. Kolejne pole *Kod potwierdzający* zostanie wypełnione automatycznie.
   - Kod potwierdzający - zostanie wypełniony automatycznie, po poprawnym zeskanowaniu kodu QR.
@@ -191,8 +191,8 @@ W tym kroku po raz pierwszy uruchomisz urządzenia Apisense (Hub, Scale, VitalSe
             Urządzenie może uruchomić się również przy silnym oświetleniu sztucznym (np. mocna żarówka). Jeżeli ilość dostarczonego światła jest niewystarczająca rozważ pozostałe sposoby zasilania.
     - USB-C – podłącz przewód USB-C do kompatybilnego źródła zasilania.
     - Dodatkowy panel PV – podłącz panel i wystaw go na światło słoneczne.
-- **Apisense Scale** — umieść dwie baterie typu AA w komorze baterii wagi, zwracając uwagę na prawidłową polaryzację (+ i −) zgodnie z oznaczeniami wewnątrz komory. Przed zamknięciem komory i skręceniem upewnij się, że dioda sygnalizacyjna Scale zaświeciła się, co potwierdza, że baterie zostały umieszczone prawidłowo i urządzenie zostało pomyślnie uruchomione. Następnie szczelnie zamknij pokrywę komory i skręć obudowę.
-- **Apisense VitalSensor** — umieść dwie baterie typu AA w komorze baterii urządzenia, zwracając uwagę na prawidłową polaryzację (+ i −) zgodnie z oznaczeniami wewnątrz komory. Po włożeniu baterii upewnij się, że pokrywa komory jest zamknięta. Jeżeli baterie zostały umieszczone prawidło, dioda sygnalizacyjna VitalSensor powinna się zaświecić.
+- **Apisense Scale** — umieść dwie baterie typu AA w komorze baterii Scale, zwracając uwagę na prawidłową polaryzację (+ i −) zgodnie z oznaczeniami wewnątrz komory. Przed zamknięciem komory i skręceniem upewnij się, że dioda sygnalizacyjna Scale zaświeciła się, co potwierdza, że baterie zostały umieszczone prawidłowo i urządzenie zostało pomyślnie uruchomione. Następnie szczelnie zamknij pokrywę komory i skręć obudowę.
+- **Apisense VitalSensor** — umieść dwie baterie typu AA w komorze baterii urządzenia, zwracając uwagę na prawidłową polaryzację (+ i −) zgodnie z oznaczeniami wewnątrz komory. Po włożeniu baterii upewnij się, że pokrywa komory jest zamknięta. Jeżeli baterie zostały umieszczone prawidło, dioda sygnalizacyjna VitalSensora powinna się zaświecić.
 
 !!! note "Uwaga"
     Pierwsze odczyty z urządzeń pomiarowych w aplikacji powinny pojawić się w ciągu maksymalnie 2 godzin od ich uruchomienia. Przed przystąpieniem do montażu należy zweryfikować w aplikacji, czy odczyty są widoczne — pozwoli to upewnić się, że urządzenia zostały prawidłowo zarejestrowane w systemie i działają poprawnie.
@@ -219,31 +219,31 @@ Przed przystąpieniem do montażu poszczególnych urządzeń wchodzących w skł
   - Apisense Hub powinien być montowany w centrum pasieki, **maksymalnie 35 m** od najdalszego ula wyposażonego w VitalSensor lub Scale — zapewnia to stabilną łączność BLE (Bluetooth Low Energy) ze wszystkimi urządzeniami pomiarowymi.
   - **Nie montuj Apisense Hub do elementów metalowych** — metal zakłóca sygnał radiowy i pogarsza działanie łączności BLE oraz transmisji LTE. Użyj słupka wbitego w ziemię, drzewa, drewnianego słupka ogrodzenia lub innej stabilnej, niemagnetycznej konstrukcji. Apisense Hub nie musi być zamocowany bezpośrednio do ula.
   - Do montażu użyj **uchwytu aparatowego** dołączonego do zestawu. Pamiętaj, że miejsce montażu musi gwarantować **stabilne ustawienie z nachyleniem w stronę słońca** (najlepiej 30–50°).
-    Przykład poprawnie zamontowanego Apisense Hub, został zaprezentowany na rysunku poniżej ([](#fig-hub-installation)):
+    Przykład poprawnie zamontowanego Apisense Huba, został zaprezentowany na rysunku poniżej ([](#fig-hub-installation)):
 
   Figure: Prawidłowe rozstawienie anten i montaż Hub w pasiece {#fig-hub-installation}
 
   ![Prawidłowy montaż Apisense Hub](../pictures/hub_installation.png){width=200}
 
-### 2. Montaż Apisense Scale (waga pasieczna)
+### 2. Montaż Apisense Scale
 
-- **Umiejscowienie i orientacja** — waga pasieczna powinna zostać umieszczona pod ulem (lub w konstrukcji ważącej) na **stabilnym i równym podłożu, położona prostopadle do ramek w ulu**. Odległość od Apisense Hub w zasięgu łączności BLE (do ok. 35 m), bez fizycznych przeszkód tłumiących sygnał. Prawidłowe wypoziomowanie i orientacja jest **kluczowe dla dokładności pomiarów**.
+- **Umiejscowienie i orientacja** — Scale powinna zostać umieszczona pod ulem (lub w konstrukcji ważącej) na **stabilnym i równym podłożu, położona prostopadle do ramek w ulu**. Odległość od Apisense Huba w zasięgu łączności BLE (do ok. 35 m), bez fizycznych przeszkód tłumiących sygnał. Prawidłowe wypoziomowanie i orientacja jest **kluczowe dla dokładności pomiarów**.
 - **Montaż i wypoziomowanie — krok po kroku**
   1. **Umieść Scale w docelowym miejscu** — uruchomioną Scale ustaw tak, aby była położona na stabilnym i równym podłożu oraz zorientowana prostopadle do ramek w ulu.
-  2. **Umieść drewnianą kantówkę** — stanowiącą integralny element konstrukcji — równolegle do Scale i w odpowiedniej odległości tak, aby ciężar ula rozkładał się równomiernie na całej powierzchni zarówno wagi jak i kantówki.
+  2. **Umieść drewnianą kantówkę** — stanowiącą integralny element konstrukcji — równolegle do Scale i w odpowiedniej odległości tak, aby ciężar ula rozkładał się równomiernie na całej powierzchni zarówno Scale, jak i kantówki.
   3. **Zamontuj ul na Scale** (jeśli jeszcze nie stoi) — umieść ul na przygotowanej konstrukcji ([](#fig-scale-installation)) i upewnij się, że obciążenie nadal rozkłada się równomiernie.
 
-  Figure: Prawidłowe ustawienie ula na wadze oraz kantówce {#fig-scale-installation}
+  Figure: Prawidłowe ustawienie ula na Scale oraz kantówce {#fig-scale-installation}
 
-  ![Prawidłowe ustawienie ula na wadze oraz kantówce](../pictures/scale_installation.jpg){width=200}
+  ![Prawidłowe ustawienie ula na Scale oraz kantówce](../pictures/scale_installation.jpg){width=200}
 
 
-  4. **Zweryfikuj w Systemie Apisense Pro AI** — jeśli urządzenie zostało prawidłowo zamontowane i nie utraciło łączności z Hub, w ciągu najbliższych kilku godzin w systemie powinny pojawić się kolejne odczyty. Szczegółowa instrukcja jak dodać Scale do panelu została przedstawiona w rozdziale [Dodanie urządzeń do systemu i pierwsze uruchomienie](#dodanie-urzadzen-do-systemu-i-pierwsze-uruchomienie), natomiast jak sprawdzić pierwsze odczyty - w rozdziale [Test poprawności działania urządzeń](#test-poprawnosci-dziaania-urzadzen).
+  4. **Zweryfikuj w Systemie Apisense Pro AI** — jeśli urządzenie zostało prawidłowo zamontowane i nie utraciło łączności z Hubem, w ciągu najbliższych kilku godzin w systemie powinny pojawić się kolejne odczyty. Szczegółowa instrukcja jak dodać Scale do panelu została przedstawiona w rozdziale [Dodanie urządzeń do systemu i pierwsze uruchomienie](#dodanie-urzadzen-do-systemu-i-pierwsze-uruchomienie), natomiast jak sprawdzić pierwsze odczyty - w rozdziale [Test poprawności działania urządzeń](#test-poprawnosci-dziaania-urzadzen).
     Po dokładnym wykonaniu powyższych czynności można uznać Apisense Scale za bezpiecznie podłączoną do systemu i korzystać z odczytów w panelu.
 
 ### 3. Montaż Apisense VitalSensor
 
-- **Umiejscowienie** — urządzenie niewielkich rozmiarów Apisense VitalSensor montuje się bezinwazyjnie wewnątrz ula, najlepiej w górnym rogu centralnej ramki pszczelej, tak, aby nie zakłócać pracy pszczół i wentylacji; pionowo, aby naklejka z kodem QR była widoczna od góry po włożeniu ramki do ula. Odległość od Apisense Hub w zasięgu łączności BLE (do ok. 35 m).
+- **Umiejscowienie** — urządzenie niewielkich rozmiarów Apisense VitalSensor montuje się bezinwazyjnie wewnątrz ula, najlepiej w górnym rogu centralnej ramki pszczelej, tak, aby nie zakłócać pracy pszczół i wentylacji; pionowo, aby naklejka z kodem QR była widoczna od góry po włożeniu ramki do ula. Odległość od Apisense Huba w zasięgu łączności BLE (do ok. 35 m).
 - **Montaż - krok po kroku**
   1. **Umieść VitalSensor na centralnej ramce** — uruchomiony VitalSensor zamontuj do ramki pszczelej przy użyciu specjalnych uchwytów montażowych dołączonych do zestawu. Apisense VitalSensor powinien zostać stabilnie osadzony na centralnej ramce (w kłębie), tak, aby się nie przemieszczał, a także zamontowany pionowo, aby naklejka z kodem QR była widoczna od góry po włożeniu ramki do ula. Prawidłowo przymocowany VitalSensor do ramki pszczelej został przedstawiony na [](#fig-sensor-on-frame).
 
@@ -258,7 +258,7 @@ Przed przystąpieniem do montażu poszczególnych urządzeń wchodzących w skł
   ![Zalecane umieszczenie ramki pszczelej z VitalSensor w ulu](../pictures/sensor_installation_2.jpg){width=200}
 
 
-  3. **Zweryfikuj w Systemie Apisense Pro AI** — jeśli urządzenie zostało prawidłowo zamontowane i nie utraciło łączności z Hub, w ciągu najbliższych kilku godzin w systemie powinny pojawić się kolejne odczyty. Szczegółowa instrukcja jak dodać VitalSensor do panelu została przedstawiona w rozdziale [Dodanie urządzeń do systemu i pierwsze uruchomienie](#dodanie-urzadzen-do-systemu-i-pierwsze-uruchomienie), natomiast jak sprawdzić pierwsze odczyty - w rozdziale [Test poprawności działania urządzeń](#test-poprawnosci-dziaania-urzadzen).
+  3. **Zweryfikuj w Systemie Apisense Pro AI** — jeśli urządzenie zostało prawidłowo zamontowane i nie utraciło łączności z Hubem, w ciągu najbliższych kilku godzin w systemie powinny pojawić się kolejne odczyty. Szczegółowa instrukcja jak dodać VitalSensor do panelu została przedstawiona w rozdziale [Dodanie urządzeń do systemu i pierwsze uruchomienie](#dodanie-urzadzen-do-systemu-i-pierwsze-uruchomienie), natomiast jak sprawdzić pierwsze odczyty - w rozdziale [Test poprawności działania urządzeń](#test-poprawnosci-dziaania-urzadzen).
     Po dokładnym wykonaniu powyższych czynności można uznać Apisense VitalSensor za bezpiecznie podłączony do systemu i korzystać z odczytów w panelu.
 
 ---
@@ -267,9 +267,9 @@ Przed przystąpieniem do montażu poszczególnych urządzeń wchodzących w skł
 
 ### 1. Czas pierwszej synchronizacji
 
-Po dodaniu urządzenia do systemu i uruchomieniu go rozpoczyna się proces pierwszej synchronizacji — urządzenie (Scale, VitalSensor) nawiązuje komunikację z Apisense Hub, który następnie przesyła dane do serwera.
+Po dodaniu urządzenia do systemu i uruchomieniu go rozpoczyna się proces pierwszej synchronizacji — urządzenie (Scale, VitalSensor) nawiązuje komunikację z Apisense Hubem, który następnie przesyła dane do serwera.
 
-- Pierwsza synchronizacja może potrwać do 2 godzin, w zależności od jakości sygnału sieci, liczby podłączonych urządzeń oraz okna czasowego komunikacji Hub z serwerem.
+- Pierwsza synchronizacja może potrwać do 2 godzin, w zależności od jakości sygnału sieci, liczby podłączonych urządzeń oraz okna czasowego komunikacji Huba z serwerem.
 - W tym czasie nawiązywane jest połączenie z serwerem, przesyłane są dane konfiguracyjne oraz wykonywany jest pierwszy pakiet pomiarów.
 - W aplikacji, na kafelku pasieki oraz ula, do których zostały przypisane urządzenia oczekujące na synchronizację, zostaje wyświetlony status *Brak danych*.
 - Nie należy wyłączać urządzeń ani resetować ich w trakcie pierwszej synchronizacji.
@@ -282,7 +282,7 @@ Po zakończeniu pierwszej synchronizacji w aplikacji powinny pojawić się pierw
 
 Należy zweryfikować informacje wyświetlane na poszczególnych elementach systemu:
 
-- **Pasieka** - w zakładce *Pasieki* (ekran startowy aplikacji) na kafelku wybranej pasieki zaprezentowane są odpowiednio zaktualizowane informacje: temperatura, poziom baterii oraz zasięg LTE dla Hub; prezentowana jest także liczba aktywnych uli (liczba uli, z którymi jest powiązane przynajmniej jedno prawidłowo komunikujące się z Hub urządzenie typu Scale, VitalSensor).
+- **Pasieka** - w zakładce *Pasieki* (ekran startowy aplikacji) na kafelku wybranej pasieki zaprezentowane są odpowiednio zaktualizowane informacje: temperatura, poziom baterii oraz zasięg LTE dla Hub; prezentowana jest także liczba aktywnych uli (liczba uli, z którymi jest powiązane przynajmniej jedno prawidłowo komunikujące się z Hubem urządzenie typu Scale, VitalSensor).
 - **Ul** - w zakładce **Ule** (po wejściu w kafelek pasieki) na kafelku wybranego ula wyświetlane są zaktualizowane: temperatura wewnętrzna, waga oraz przybytek miodu.
 - **Szczegóły ula** - w zakładce Szczegóły (po wejściu w kafelek ula) wyświetlane są szczegółowe dane pomiarowe dotyczące wagi i warunków panujących wewnątrz ula.
 
@@ -299,7 +299,7 @@ Jeżeli po ponad 2 godzinach od uruchomienia i prawidłowego rozmieszczenia urz�
     sprawdzić poprawność montażu baterii 2 × AA (prawidłowa polaryzacja +/-). W razie potrzeby wymienić baterie na nowe.
 - **Sprawdzić poprawność konfiguracji i montażu**:
   - sprawdzić prawidłowy montaż urządzeń w miejscu docelowym
-  - upewnić się, że urządzenia znajdują się w zasięgu komunikacji Hub
+  - upewnić się, że urządzenia znajdują się w zasięgu komunikacji Huba
 - **Wykonać restart urządzenia**:
   - Scale/VitalSensor:
     - Wyjąć baterie

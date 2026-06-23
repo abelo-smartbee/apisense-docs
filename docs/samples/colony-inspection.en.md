@@ -13,11 +13,11 @@ Guidelines for photographic documentation and observations to record during a co
 
 During the colony inspection, attach the following photos in the app:
 
-- **Frame with the sensor** with bees on it — front and back of the comb
+- **Frame with the VitalSensor** with bees on it — front and back of the comb
 - **Outermost frame** without bees — front and back of the comb
 - Any other photos relevant from the beekeeper's perspective
 
-Figure: Example photo of a frame with the sensor {#fig-inspection-photo-example}
+Figure: Example photo of a frame with the VitalSensor {#fig-inspection-photo-example}
 
 ![figure](pictures/inspection_photo_example.png){width=500}
 
