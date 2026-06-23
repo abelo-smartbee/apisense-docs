@@ -9,9 +9,9 @@ Step-by-step guides for sample collection and field tests that complement Apisen
 
 ## When to perform these tests
 
-For every colony equipped with Apisense sensors, run these tests three times per season:
+For every colony equipped with Apisense VitalSensors, run these tests three times per season:
 
-1. **Test 1 — ±7 days after sensor installation.** Baseline reading once monitoring is live.
+1. **Test 1 — ±7 days after VitalSensor installation.** Baseline reading once monitoring is live.
 2. **Test 2 — 2 months after the first test.** Mid-season check during the active period.
 3. **Test 3 — before wintering.**\*
 

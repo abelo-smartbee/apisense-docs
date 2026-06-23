@@ -2,39 +2,51 @@
 
 Zebrane pytania i odpowiedzi z badania **Apisense 2026 Global Field Validation Study**.
 
-## Czujniki i montaż
+## VitalSensor i montaż
 
-### Czy kolor naklejki NFC/QR przyklejonej do czujnika ma znaczenie?
+### Czy kolor naklejki NFC/QR przyklejonej do VitalSensora ma znaczenie?
 
-Nie. Kolor nie ma znaczenia — liczy się powiązanie czujnik–tag.
+Nie. Kolor nie ma znaczenia — liczy się powiązanie VitalSensor–tag.
 
-### Gdzie dokładnie należy umieścić czujnik?
+### Gdzie dokładnie należy umieścić VitalSensor?
 
 Pionowo, na ramce z czerwiem w gnieździe ula — najlepiej na środku lub obok środka.
 
-### Czy mogę przesuwać czujniki w górę/w dół przy dodawaniu kolejnych korpusów?
+### Czy mogę przesuwać VitalSensor w górę/w dół przy dodawaniu kolejnych korpusów?
 
 Tak, w obrębie gniazda. Każdą taką operację odnotuj w aplikacji (najlepiej wraz ze zdjęciem).
 
-### Czy czujniki można montować na nietypowych ramkach?
+### Czy VitalSensor można montować na nietypowych ramkach?
 
-Tak, za pomocą opasek zaciskowych. Po montażu dodaj notatkę (najlepiej ze zdjęciem zamontowanego czujnika).
+Tak, za pomocą opasek zaciskowych. Po montażu dodaj notatkę (najlepiej ze zdjęciem zamontowanego VitalSensora).
 
-### Czy czujników można używać w odkładach (i innych mniejszych ulach), a później przenosić je do większych?
+### Czy VitalSensor można używać w odkładach (i innych mniejszych ulach), a później przenosić je do większych?
 
-Zalecamy wstrzymanie się z montażem czujnika, dopóki ul nie osiągnie docelowego rozmiaru (chyba że chcesz korzystać z mniejszego rozmiaru, np. mini plus, przez cały sezon — w takiej sytuacji najpierw skontaktuj się z nami).
+Zalecamy wstrzymanie się z montażem VitalSensora, dopóki ul nie osiągnie docelowego rozmiaru (chyba że chcesz korzystać z mniejszego rozmiaru, np. mini plus, przez cały sezon — w takiej sytuacji najpierw skontaktuj się z nami).
+
+### Jak wymienić baterie w VitalSensorze?
+
+VitalSensor zasilają dwie baterie **2× AA litowo-jonowe (Li-ion)**.
+
+1. Otwórz pokrywkę.
+2. Wymień baterie na **2× AA Li-ion**.
+3. Zamknij pokrywkę.
 
 ## Hub i łączność
 
-### Czy hub można zamontować w pomieszczeniu lub pod dachem?
+### Czy Hub można zamontować w pomieszczeniu lub pod dachem?
 
 Nie. Musi znajdować się na zewnątrz, aby zapewnić działanie GPS i prawidłową łączność.
 
-### Czy mogę zasilać hub na stałe z sieci?
+### Czy mogę zasilać Hub na stałe z sieci?
 
 Tak, możesz go zasilać przez USB-C — pod warunkiem że pozostaje na zewnątrz i nie jest niczym przykryty.
 
-### Jak daleko hub może znajdować się od uli?
+### Czy Hub wymaga wymiany baterii?
+
+Nie. Hub ładuje się z panelu słonecznego (PV). Przy słabym nasłonecznieniu możesz doładować go przez USB-C.
+
+### Jak daleko Hub może znajdować się od uli?
 
 Do około 30–40 metrów.
 
@@ -48,15 +60,37 @@ Postępuj zgodnie z instrukcją w podręczniku użytkownika; możesz też zapyta
 
 Jeśli problem nadal występuje, skontaktuj się z [bee@apisense.ai](mailto:bee@apisense.ai).
 
-## Waga
+### VitalSensor lub Scale nie łączy się z Hubem — co robić?
 
-### Czy waga wymaga baterii lub ładowania?
+Urządzenia łączą się z serwerem przez Hub (VitalSensor/Scale → Bluetooth → Hub → LTE → serwer), dlatego kolejność ma znaczenie:
 
-Nie — działa automatycznie po zamontowaniu i dodaniu w aplikacji za pomocą kodu QR.
+1. **Najpierw musi połączyć się Hub.** Żaden VitalSensor ani Scale nie połączy się, dopóki Hub nie jest online. Hub jest zasilany solarnie — pierwszy kontakt po uruchomieniu zajmuje od ok. 30 minut (naładowany) do nawet 24 godzin (rozładowany, przy złej pogodzie). W aplikacji wybierz scenariusz uruchomienia, aby zobaczyć szacowany czas.
+2. **Po połączeniu Huba** każdy VitalSensor i Scale ma własne okno pierwszego połączenia. W tym czasie aplikacja pokazuje status *„oczekiwanie na połączenie”* — to normalne, poczekaj.
+3. Jeśli po upływie tego okna urządzenie nadal się nie połączyło, aplikacja pokaże status *„poza zasięgiem”* — oznacza to, że Hub jest online, ale nie widzi urządzenia przez Bluetooth. Najczęstsze przyczyny: urządzenie za daleko od Huba albo problem z samym urządzeniem (np. zasilanie).
 
-### Który ul powinien stać na wadze?
+Jeśli część urządzeń łączy się, a część nie (np. jeden VitalSensor działa, pozostałe nie) — problem dotyczy konkretnych urządzeń, a nie Huba.
 
-Dowolny ul wyposażony w czujnik — bardziej liczą się trendy niż dokładna masa konkretnego ula.
+Jeśli problem nie ustępuje, skontaktuj się z [bee@apisense.ai](mailto:bee@apisense.ai).
+
+## Scale
+
+### Czy Scale wymaga baterii lub ładowania?
+
+Tak. Scale zasilają dwie baterie **2× AA litowo-jonowe (Li-ion)**. Po zamontowaniu i dodaniu w aplikacji (kod QR) Scale działa automatycznie — baterie wymieniasz tylko wtedy, gdy się wyczerpią.
+
+### Jak wymienić baterie w Scale?
+
+Potrzebny będzie klucz imbusowy (do kątowników) oraz klucz Torx (do czarnej obudowy).
+
+1. Rozkręć kątowniki kluczem imbusowym — odkręć dwie śruby.
+2. Odkręć dwie śrubki Torx w czarnej obudowie.
+3. Wymień baterie na **2× AA Li-ion**.
+4. Skręć czarną obudowę z powrotem.
+5. Skręć kątowniki z powrotem.
+
+### Który ul powinien stać na Scale?
+
+Dowolny ul wyposażony w VitalSensor — bardziej liczą się trendy niż dokładna masa konkretnego ula.
 
 ## Wprowadzanie danych i obsługa aplikacji
 
@@ -74,16 +108,16 @@ Jeszcze nie potwierdzone — Apisense skontaktuje się w tej sprawie mailowo.
 
 Tak. Pamiętaj, aby zaznaczyć to w notatce w aplikacji.
 
-### Czy czujniki można przenieść, jeśli rodzina padnie lub zostanie utracona?
+### Czy VitalSensor można przenieść, jeśli rodzina padnie lub zostanie utracona?
 
-Nie przenoś czujników bez wcześniejszego poinformowania zespołu Apisense! Ze względu na ryzyko rozprzestrzeniania chorób oraz integralność danych, w takiej sytuacji za każdym razem skontaktuj się z nami bezpośrednio i poczekaj na dalsze instrukcje.
+Nie przenoś VitalSensor bez wcześniejszego poinformowania zespołu Apisense! Ze względu na ryzyko rozprzestrzeniania chorób oraz integralność danych, w takiej sytuacji za każdym razem skontaktuj się z nami bezpośrednio i poczekaj na dalsze instrukcje.
 
-### Przekładam czujnik do innej rodziny (np. po osypaniu się rodziny) — jak odwzorować to w aplikacji?
+### Przekładam VitalSensor do innej rodziny (np. po osypaniu się rodziny) — jak odwzorować to w aplikacji?
 
 Nowa rodzina = nowy ul w aplikacji. Wykonaj to w trzech krokach:
 
 1. **Utwórz nowy ul** w aplikacji — stary ul zostaje bez zmian.
-2. **Odepnij urządzenia od starego ula** i **przypnij je do nowego** (po odkażeniu czujnika).
+2. **Odepnij urządzenia od starego ula** i **przypnij je do nowego** (po odkażeniu VitalSensora).
 3. Od tej pory nowe pomiary trafiają do nowego ula.
 
 Historii pomiarów **nie przenosimy** między ulami — to była inna rodzina, więc dane ze starego ula nie opisują nowej. Dlatego dane zaczynają się od nowa wraz z utworzeniem nowego ula. Nie musisz nas o tym informować — gdy utworzysz nowy ul i przepniesz tam urządzenia, mamy pełen obraz sytuacji.
@@ -94,4 +128,4 @@ Zawsze dodawaj notatkę o takich czynnościach — pomaga to w prawidłowej inte
 
 ### Co jeśli przewożę swoje ule?
 
-Przewieź wszystkie ule + hub + wagę razem i dodaj notatkę w aplikacji.
+Przewieź wszystkie ule + Hub + Scale razem i dodaj notatkę w aplikacji.

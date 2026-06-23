@@ -10,13 +10,13 @@
 - Place the QR code label attached to the VitalSensor on the outer wall of the hive in which it is installed.
 - Do not submerge the entire VitalSensor in alcohol / caustic soda. You may use these substances to remove wax from the detached mesh insert only.
 - Do not place the frame with the VitalSensor in a honey extractor.
-- Do not expose the sensor to open flame.
-- Before removing a frame for honey harvesting / storage / transport, remove the sensor from the frame first.
-- Regularly check the battery level in the app for both sensors and the gateway.
+- Do not expose the VitalSensor to open flame.
+- Before removing a frame for honey harvesting / storage / transport, remove the VitalSensor from the frame first.
+- Regularly check the battery level in the app for both VitalSensors and the Hub.
 - Report any damage immediately to Apisense support ([bee@apisense.ai](mailto:bee@apisense.ai)).
-- Do not wash the sensor under running water.
-- Do not disinfect the sensor by submerging it (do not soak in alcohol, disinfectants, water, etc.).
-- Do not open, disassemble, unscrew, or modify the sensor in any way.
+- Do not wash the VitalSensor under running water.
+- Do not disinfect the VitalSensor by submerging it (do not soak in alcohol, disinfectants, water, etc.).
+- Do not open, disassemble, unscrew, or modify the VitalSensor in any way.
 
 ## 2. Do's and Don'ts for the Hub
 

@@ -54,7 +54,7 @@ Jeśli szukasz rozwiązania konkretnego problemu (np. „urządzenie nie zgłasz
 ### Brak łączności BLE
 
 !!! todo "TODO (embedded)"
-    Sygnalizacja gdy żaden Sensor/Scale nie łączy się z Hubem. Vs sygnalizacja częściowa (część urządzeń OK, część nie).
+    Sygnalizacja gdy żaden VitalSensor/Scale nie łączy się z Hubem. Vs sygnalizacja częściowa (część urządzeń OK, część nie).
 
 ### Factory reset
 
@@ -102,7 +102,7 @@ Jeśli szukasz rozwiązania konkretnego problemu (np. „urządzenie nie zgłasz
 ### Brak zasięgu BLE
 
 !!! todo "TODO (embedded)"
-    Sygnalizacja lokalna gdy Hub poza zasięgiem / ekranowany. Czy Sensor próbuje cyklicznie i jak to widać.
+    Sygnalizacja lokalna gdy Hub poza zasięgiem / ekranowany. Czy VitalSensor próbuje cyklicznie i jak to widać.
 
 ### Reset
 

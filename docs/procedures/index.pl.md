@@ -9,7 +9,7 @@ Instrukcje krok po kroku dotyczące pobierania próbek i badań terenowych, któ
 
 ## Kiedy wykonywać te badania
 
-Dla wszystkich rodzin wyposażonych w czujniki Apisense wykonujesz te testy trzy razy w sezonie:
+Dla wszystkich rodzin wyposażonych w VitalSensory Apisense wykonujesz te testy trzy razy w sezonie:
 
 1. **Test 1 — ±7 dni od instalacji sprzętu.** Punkt odniesienia (baseline) zaraz po uruchomieniu monitoringu.
 2. **Test 2 — 2 miesiące po pierwszym teście.** Kontrola w trakcie sezonu aktywnego.

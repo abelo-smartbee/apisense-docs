@@ -57,7 +57,7 @@ The Apisense kit includes:
 
 - **Mounting hardware** — for secure, stable device installation (no hive replacement or structural modification required). Includes:
   - **Camera mount bracket** — used to mount the Apisense Hub, ensuring a stable and adjustable position.
-  - **Wooden levelling beam** — stabilising element that enables correct positioning and levelling of the Scale beneath the hive. Distributes the hive load evenly across the scale sensors and maintains structural stability.
+  - **Wooden levelling beam** — stabilising element that enables correct positioning and levelling of the Scale beneath the hive. Distributes the hive load evenly across the Scale sensors and maintains structural stability.
   - **Frame mounting clips** — allow secure, stable attachment of the Apisense VitalSensor directly to the bee frame. Designed for tool-free mounting without permanent hive modifications or disruption to the colony.
 - <a id="qr-stickers"></a>**QR code stickers** — for quick apiary and hive registration and device identification. Stickers are affixed to each device: Apisense Hub ([](#fig-qr-hub)), Apisense Scale ([](#fig-qr-scale)) and Apisense VitalSensor ([](#fig-qr-sensor)), and on the Apisense Tag ([](#fig-apisense-tag)).
 
@@ -206,7 +206,7 @@ In this step you will start up the Apisense devices (Hub, Scale, VitalSensor) fo
     - USB-C — connect a USB-C cable to a compatible power source.
     - Additional PV panel — connect the panel and expose it to sunlight.
 
-- **Apisense Scale** — insert two AA batteries into the scale battery compartment, observing correct polarity (+ and −) as marked inside the compartment. Before closing and screwing the compartment shut, verify that the Scale indicator LED lights up, confirming the batteries are correctly installed and the device has started successfully. Then close the compartment lid securely and tighten the housing.
+- **Apisense Scale** — insert two AA batteries into the Scale battery compartment, observing correct polarity (+ and −) as marked inside the compartment. Before closing and screwing the compartment shut, verify that the Scale indicator LED lights up, confirming the batteries are correctly installed and the device has started successfully. Then close the compartment lid securely and tighten the housing.
 
 - **Apisense VitalSensor** — insert two AA batteries into the device battery compartment, observing correct polarity (+ and −) as marked inside the compartment. After inserting the batteries, make sure the compartment cover is closed. If the batteries are installed correctly, the VitalSensor indicator LED should light up.
 
@@ -244,17 +244,17 @@ Before installing any Apisense device, complete the steps in [Registration / Log
 
 ### 2. Installing the Apisense Scale (Hive Scale)
 
-- **Location and orientation** — the hive scale should be placed under the hive (or within a weighing structure) on **stable, level ground, oriented perpendicular to the frames inside the hive**. Within BLE range of the Apisense Hub (up to approx. 35 m), without physical obstacles that attenuate the signal. Correct levelling and orientation is **critical for measurement accuracy**.
+- **Location and orientation** — the Scale should be placed under the hive (or within a weighing structure) on **stable, level ground, oriented perpendicular to the frames inside the hive**. Within BLE range of the Apisense Hub (up to approx. 35 m), without physical obstacles that attenuate the signal. Correct levelling and orientation is **critical for measurement accuracy**.
 
 - **Installation and levelling — step by step**
 
   1. **Position the Scale** — place the started Scale on stable, level ground, oriented perpendicular to the hive frames.
-  2. **Place the wooden levelling beam** — an integral part of the assembly — parallel to the Scale and at the correct distance so that the hive weight is distributed evenly across both the scale and the beam.
+  2. **Place the wooden levelling beam** — an integral part of the assembly — parallel to the Scale and at the correct distance so that the hive weight is distributed evenly across both the Scale and the beam.
   3. **Place the hive on the Scale** (if not already in position) — set the hive on the prepared assembly ([](#fig-scale-installation)) and verify that the load is still evenly distributed.
 
-  Figure: Correct hive placement on the scale and levelling beam {#fig-scale-installation}
+  Figure: Correct hive placement on the Scale and levelling beam {#fig-scale-installation}
 
-  ![Correct hive placement on the scale and levelling beam](../pictures/scale_installation.jpg){width=200}
+  ![Correct hive placement on the Scale and levelling beam](../pictures/scale_installation.jpg){width=200}
 
 
   4. **Verify in Apisense Pro AI** — if the device has been correctly installed and has not lost connectivity with the Hub, new readings should appear in the system within the next few hours. For instructions on adding the Scale to the dashboard see [Adding Devices to the System and First Start-up](#adding-devices-to-the-system-and-first-start-up); for checking first readings see [Verifying Device Operation](#verifying-device-operation).

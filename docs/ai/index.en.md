@@ -2,7 +2,7 @@
 
 The Assistant in Apisense is not a generic chatbot from the internet. It is a **dedicated assistant integrated with your entire Apisense system** — it knows your apiaries, hives, device status, scheduled inspections, and the weather above your apiary.
 
-In other words: the Assistant **translates raw technical data from the IoT system into simple answers in plain language**. Instead of scanning a table of scale readings from the last 24 hours, you ask "is anything worrying happening in hive number 3?" and get a concrete answer.
+In other words: the Assistant **translates raw technical data from the IoT system into simple answers in plain language**. Instead of scanning a table of Scale readings from the last 24 hours, you ask "is anything worrying happening in hive number 3?" and get a concrete answer.
 
 You do not need to learn any commands or filters. Just ask the question the way you would ask a fellow beekeeper.
 
@@ -12,7 +12,7 @@ ______________________________________________________________________
 
 In day-to-day apiary work, you keep running into questions that are slow to answer:
 
-- *"Is the scale in hive number 3 still connected?"*
+- *"Is the Scale in hive number 3 still connected?"*
 - *"When did I last inspect the Linden apiary?"*
 - *"What is tomorrow's forecast above my apiary?"*
 - *"What should I do if I see bees with deformed wings?"*
@@ -22,20 +22,20 @@ Instead of clicking through several screens, reading documentation, or searching
 
 ______________________________________________________________________
 
-## 2. The Assistant translates technical sensor data
+## 2. The Assistant translates technical VitalSensor data
 
 Your hive sends Apisense dozens of readings every day: mass, temperature, humidity, pressure, connection status, battery level. Raw numbers on their own do not say much — you need context, baselines, and trends. The Assistant takes that data and **turns it into a concise diagnosis in plain language**.
 
 !!! example "Example — raw data → readable answer"
     **Raw data** in the Apisense database (which the beekeeper does not look at every day):
 
-    > hive 4, Linden apiary: mass 38.2 kg (-0.4 kg / 24h), internal temperature 34.8°C, humidity 62%, sensor battery 88%, last reading 12 minutes ago
+    > hive 4, Linden apiary: mass 38.2 kg (-0.4 kg / 24h), internal temperature 34.8°C, humidity 62%, VitalSensor battery 88%, last reading 12 minutes ago
 
     **You:** What is going on in hive 4 in the Linden apiary?
 
-    **Assistant:** Hive 4 (Linden) is doing well — internal temperature 34.8°C is normal for an active brood, humidity 62% is correct. The mass dropped by 0.4 kg in the last day, which is typical with the current weather (no nectar flow, light wind) — it does not point to swarming or a colony problem. The sensor connects regularly, battery 88%.
+    **Assistant:** Hive 4 (Linden) is doing well — internal temperature 34.8°C is normal for an active brood, humidity 62% is correct. The mass dropped by 0.4 kg in the last day, which is typical with the current weather (no nectar flow, light wind) — it does not point to swarming or a colony problem. The VitalSensor connects regularly, battery 88%.
 
-The same applies to gateways (Hub) and scales — the Assistant **does not leave you with the numbers**, it interprets them in the context of your apiary, the weather, and the history of your recent inspections.
+The same applies to gateways (Hub) and Scales — the Assistant **does not leave you with the numbers**, it interprets them in the context of your apiary, the weather, and the history of your recent inspections.
 
 ______________________________________________________________________
 
@@ -53,7 +53,7 @@ Below are six groups of typical questions with concrete examples. **You can ask 
 !!! example "Sample conversation"
     **You:** Show the status of the Linden apiary.
 
-    **Assistant:** Apiary **Linden** contains 5 hives. The gateway is online (LTE signal: good, last contact: 8 minutes ago, battery: 78%). Latest sensor readings are less than 24 hours old.
+    **Assistant:** Apiary **Linden** contains 5 hives. The gateway is online (LTE signal: good, last contact: 8 minutes ago, battery: 78%). Latest VitalSensor readings are less than 24 hours old.
 
 ### 3.2 Devices and gateways
 
@@ -63,9 +63,9 @@ Below are six groups of typical questions with concrete examples. **You can ask 
     **Assistant:** Yes. The gateway in the **Acacia** apiary has a good LTE signal and connected 3 minutes ago. Battery: 64%.
 
 !!! example "Sample conversation"
-    **You:** Which scales have a low battery?
+    **You:** Which Scales have a low battery?
 
-    **Assistant:** Two scales have a battery level below 20%:
+    **Assistant:** Two Scales have a battery level below 20%:
 
     - Apiary **Linden**, hive 2 — 17%
     - Apiary **Heather**, hive 1 — 12%
@@ -117,7 +117,7 @@ The Assistant automatically pulls weather for the location of your apiaries — 
 !!! example "Sample conversation"
     **You:** When should I start winter feeding?
 
-    **Assistant:** Winter feeding usually starts at the turn of August and September — after the last honey harvest, before temperatures drop. Doses depend on the region and the colony's strength. For your apiaries I can check the most recent scale readings and suggest whether any colony urgently needs feeding.
+    **Assistant:** Winter feeding usually starts at the turn of August and September — after the last honey harvest, before temperatures drop. Doses depend on the region and the colony's strength. For your apiaries I can check the most recent Scale readings and suggest whether any colony urgently needs feeding.
 
 ### 3.6 Apisense system manuals and configuration
 
@@ -130,7 +130,7 @@ When you ask "how do I do this in the app" or "how do I configure a device" — 
 
     1. In the *Apiaries* tab, open the apiary you want to add a hive to.
     2. In the *Hives* view, click the **+** icon in the top-right corner.
-    3. Enter the hive name and (optionally) the sensor serial number.
+    3. Enter the hive name and (optionally) the VitalSensor serial number.
     4. Confirm.
 
     Short video tutorial: [official Apisense YouTube channel](https://www.youtube.com/@Apisense.Global) *(the Assistant adds a specific film URL if one exists in your language)*.

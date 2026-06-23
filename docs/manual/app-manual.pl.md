@@ -282,7 +282,7 @@ Figure: Dodawanie ula w systemie - sekcja Informacje o matce pszczelej {#fig-add
 - **Wyposażenie:** Ostatni etap obejmuje powiązanie urządzeń z tym konkretnym ulem. **Uwaga:** Kluczowe jest, aby urządzenia skonfigurowane w ramach ula (Scale i VitalSensor) były w rzeczywistości zainstalowane w tym samym fizycznym ulu.
 
     !!! Uwaga:
-        **Wymóg Huba:** Aby powiązać Scale lub VitalSensor z ulem, do pasieki musi być przypisany **Apisense Hub**. W przeciwnym razie zarówno podczas dodawania jak i edycji ula, sekcja *Wyposażenie* nie będzie dostępna.
+        **Wymóg Hub:** Aby powiązać Scale lub VitalSensor z ulem, do pasieki musi być przypisany **Apisense Hub**. W przeciwnym razie zarówno podczas dodawania jak i edycji ula, sekcja *Wyposażenie* nie będzie dostępna.
 
     Aby powiązać urządzenie Apisense Scale z ulem wypełnij następujące pola ([](#fig-add-beehive-devices-scale)):
 
@@ -303,7 +303,7 @@ Figure: Dodawanie ula w systemie - sekcja Informacje o matce pszczelej {#fig-add
     ![figure](pictures/add_beehive_devices_sensor.png){width=200}
 
 !!! Uwaga:
-    Do ula możesz również przypisać tylko jedno urządzenie. Aby utworzyć ul tylko z VitalSensor pozostaw pole Scale i Kod potwierdzający puste, a następnie przejdź do etapu dodawania urządzenia VitalSensor i zeskanuj odpowiedni kod QR, po czym zapisz. Aby utworzyć ul tylko ze Scale pozostaw pole VitalSensor i Kod potwierdzający puste i kliknij żółty przycisk na dole ekranu w celu zapisania.
+    Do ula możesz również przypisać tylko jedno urządzenie. Aby utworzyć ul tylko z VitalSensorem pozostaw pole Scale i Kod potwierdzający puste, a następnie przejdź do etapu dodawania urządzenia VitalSensor i zeskanuj odpowiedni kod QR, po czym zapisz. Aby utworzyć ul tylko ze Scale pozostaw pole VitalSensor i Kod potwierdzający puste i kliknij żółty przycisk na dole ekranu w celu zapisania.
 
 - Po wypełnieniu wybranych sekcji i niezbędnych pól kliknij żółty przycisk w prawej dolnej części ekranu, aby dodać ul z powiązanymi urządzeniami (Scale i/lub VitalSensor).
 
@@ -317,7 +317,7 @@ Figure: Pomyślnie dodany ul z powiązanymi Apisense Scale oraz VitalSensor w wi
 
 ![figure](pictures/beehive_interior.png){width=200}
 
-#### 2.1.2 Dodawanie ula bez urządzeń (bez Scale i VitalSensor)
+#### 2.1.2 Dodawanie ula bez urządzeń (bez Scale i VitalSensora)
 
 Jeśli chcesz utworzyć ul tylko do ewidencji (bez monitoringu):
 
@@ -327,8 +327,8 @@ Jeśli chcesz utworzyć ul tylko do ewidencji (bez monitoringu):
 
 **Po utworzeniu ula bez urządzeń:**
 
-- Na kafelku ula nie zobaczysz bieżących pomiarów (temperatura, waga) ani oceny stanu zdrowia rodziny opartej na czujnikach ([](#fig-beehives-beehive-without-devices)).
-- Funkcje wymagające VitalSensor (np. *Zarejestruj próbkę*) nie będą dostępne, dopóki nie przypiszesz urządzenia.
+- Na kafelku ula nie zobaczysz bieżących pomiarów (temperatura, waga) ani oceny stanu zdrowia rodziny opartej na danych z VitalSensora ([](#fig-beehives-beehive-without-devices)).
+- Funkcje wymagające VitalSensora (np. *Zarejestruj próbkę*) nie będą dostępne, dopóki nie przypiszesz urządzenia.
 - Scale i VitalSensor możesz dodać później w *Ustawieniach ula* → **Wyposażenie**, pod warunkiem, że pasieka ma przypisany Hub.
 
 Figure: Pomyślnie dodany ul bez urządzeń w widoku Ule {#fig-beehives-beehive-without-devices}
@@ -448,7 +448,7 @@ Figure: Widok Szczegóły ula - Przycisk Dodaj Przegląd {#fig-add-overview-butt
 
 - W widoku Dodaj przegląd ([](#fig-add-inspection-photos)) załącz po 2 zdjęcia dla:
 
-  - ramki z czujnikiem,
+  - ramki z VitalSensorem,
   - skrajnej ramki na uchwytach, które dołączyliśmy.
 
 Aby dodać zdjęcia kliknij przycisk *Dodaj zdjęcie*, a następnie wybierz opcję *Zrób zdjęcie* lub *Dodaj zdjęcie z galerii*.
@@ -457,7 +457,7 @@ Figure: Dodawanie przeglądu - dodawanie zdjęć {#fig-add-inspection-photos}
 
 ![figure](pictures/add_inspection_photos.png){width=200}
 
-Figure: Przykładowe zdjęcie ramki z czujnikiem dołączane do przeglądu {#fig-inspection-photo-example}
+Figure: Przykładowe zdjęcie ramki z VitalSensorem dołączane do przeglądu {#fig-inspection-photo-example}
 
 ![figure](pictures/inspection_photo_example.png){width=400}
 
@@ -1358,7 +1358,7 @@ Ikony stanu zdrowia informują o kondycji rodziny pszczelej w poszczególnych ul
 | Brak kafelka o stanie zdrowia | kafelek pasieki (zakładka Pasieki), kafelek ula (zakładka Ule) | Pasieka bez Huba lub pasieka z Hubem, ale w żadnym ulu w tej pasiece nie ma urządzeń typu VitalSensor. System nie ma podstaw do oceny zdrowia rodziny. |
 | ![](pictures/beehive_statuses_health_family.png) | kafelek ula - wiersz *Stan rodziny*, zakładka *Stan ula* w *Szczegóły* | **Zdrowa** - VitalSensor poza okresem zbierania danych; model nie wykrył choroby. Rodzina w tym ulu uznana za zdrową. |
 | ![](pictures/statuses_disease_low.png) | kafelek ula (zakładka Ule)| Nazwa choroby na żółtym tle - wykryto chorobę w ulu o niskim/umiarkowanym poziomie porażenia. Nazwa choroby na czerwonym tle - wykryto chorobę w ulu o wysokim poziomie porażenia. *+N obok nazwy choroby* - oznacza, że w ulu wykryto więcej niż jedną chorobę. |
-| ![](pictures/state_no_data.png) | kafelek pasieki (zakładka Pasieki), kafelek ula (zakładka Ule) | **Brak danych** - oznacza, że system nie może ocenić stanu zdrowia rodziny pszczelej (na kafelku z ulem dotyczy danych z konkretnego VitalSensor, na kafelku z pasieką odnosi się do wszystkich urządzeń typu VitalSensor w tej pasiece). Przykładowo może wystąpić gdy VitalSensor był w okresie zbierania danych, ale nagle przestał komunikować się z Hub i dane nie zdążyły zostać zebrane oraz przeanalizowane przez model AI. |
+| ![](pictures/state_no_data.png) | kafelek pasieki (zakładka Pasieki), kafelek ula (zakładka Ule) | **Brak danych** - oznacza, że system nie może ocenić stanu zdrowia rodziny pszczelej (na kafelku z ulem dotyczy danych z konkretnego VitalSensora, na kafelku z pasieką odnosi się do wszystkich urządzeń typu VitalSensor w tej pasiece). Przykładowo może wystąpić gdy VitalSensor był w okresie zbierania danych, ale nagle przestał komunikować się z Hubem i dane nie zdążyły zostać zebrane oraz przeanalizowane przez model AI. |
 | ![](pictures/varroa_low.png) | m.in. *Szczegóły*, *Mapa* | Ikona choroby — Warroza.  Wykryto chorobę (Warroza) o niskim poziomie porażenia. |
 | ![](pictures/nosema_high.png) | m.in. *Szczegóły*, *Mapa* | Ikona choroby — Nosemoza. Wykryto chorobę (Nosemoza) o wysokim poziomie porażenia. Sprawdź zalecenia w zakładce *Problemy*. |
 
@@ -1396,13 +1396,13 @@ Ikony stanu urządzeń Apisense wskazują aktualny status pracy: jakość połą
 | ![](pictures/LTE_offline.png)     | kafelek z pasieką (zakładka Pasieki)             | Urządzenie Apisense Hub nie zgłasza się (tryb offline). Należy zweryfikować przyczynę stanu offline i podjąć odpowiednie kroki.                                                         |
 | ![](pictures/battery_high.png)    | kafelek z pasieką (zakładka Pasieki)             | Bardzo wysoki poziom baterii urządzenia Apisense Hub. Żadna akcja nie jest wymagana.                                                                                                    |
 | ![](pictures/battery_medium.png)    | kafelek z pasieką (zakładka Pasieki)             | Średni poziom baterii urządzenia Apisense Hub.                                                                                                                                          |
-| ![](pictures/battery_low.png)     | kafelek z pasieką i ulem (zakładka Pasieki, Ule) | Bardzo słaby poziom baterii urządzenia (na kafelku z pasieką dotyczy Hub, na kafelku z ulem - Scale lub VitalSensor). Należy naładować (Hub) lub wymienić baterie (Scale, VitalSensor). |
+| ![](pictures/battery_low.png)     | kafelek z pasieką i ulem (zakładka Pasieki, Ule) | Bardzo słaby poziom baterii urządzenia (na kafelku z pasieką dotyczy Huba, na kafelku z ulem - Scale lub VitalSensor). Należy naładować (Hub) lub wymienić baterie (Scale, VitalSensor). |
 | ![](pictures/battery_offline.png) | kafelek z pasieką (zakładka Pasieki), kafelek z ulem (zakładka Ule)             | Poziom baterii urządzenia nieznany. Należy poczekać na kolejne zgłoszenie się urządzenia. Jeżeli stan długo się utrzymuje np. kilka godzin (ikona baterii szara i przekreślona, ale aktualne dane są wyświetlane np. temperatura) należy zgłosić problem w aplikacji.                                                                                              |
 |  | kafelek z pasieką (zakładka Pasieki), kafelek z ulem (zakładka Ule) | Pełna/wysoka, wyszarzona ikona baterii oznacza, że Hub lub Scale/VitalSensor **nie zgłasza się**, ale ostatni znany poziom baterii był **wysoki**. Sprawdź zasilanie i zasięg; urządzenie mogło stracić łączność z innych powodów niż rozładowanie baterii. |
 |  | kafelek z pasieką (zakładka Pasieki), kafelek z ulem (zakładka Ule) | Wyszarzona ikona baterii z dwiema kreskami - ostatni znany poziom baterii był na poziomie **średnim**. Brak komunikacji wynika najprawdopodobniej z problemów z zasięgiem BLE (ule) lub LTE (Hub). |
 |  | kafelek z pasieką (zakładka Pasieki), kafelek z ulem (zakładka Ule) | Wyszarzona ikona baterii z jedną kreską - ostatni znany poziom baterii był **niski**. Problemy z komunikacją urządzenia wynikają najprawdopodobnie z krytycznie niskiego stanu baterii. Wymień baterie (Scale, VitalSensor) lub naładuj Hub. |
 | ![](pictures/statuses_waiting_for_connection.png) | kafelek ula (zakładka Ule) | **Czekamy na połączenie** - oznacza, że czekamy na kontakt urządzenia z Hubem. |
-| ![](pictures/statuses_connection_lost_ble.png)| kafelek ula (zakładka Ule) | **Brak połączenia** - urządzenie przestało komunikować się z Hub. |
+| ![](pictures/statuses_connection_lost_ble.png)| kafelek ula (zakładka Ule) | **Brak połączenia** - urządzenie przestało komunikować się z Hubem. |
 |  | kafelek ula (zakładka Ule) | **Bateria wyczerpana** - Ostatni znany stan baterii: rozładowana. Należy wymienić baterię urządzenia. |
 
 #### Oznaczenia kolorystyczne
@@ -1771,7 +1771,7 @@ ______________________________________________________________________
 
 #### 1.1 Brak danych w aplikacji
 
-**Rozwiązanie:** upewnij się, że urządzenia (Hub, Scale, VitalSensor) są włączone, w zasięgu BLE (do ok. 35 m od Hub) i że minęło do ok. 2 godzin od pierwszego uruchomienia. Sprawdź baterie i zasilanie Hub (panel PV lub sieć). Szczegółowa lista problemów i rozwiązań związanych z komunikacją urządzeń znajduje się w **Instrukcji konfiguracji urządzeń** (rozdział Rozwiązywanie problemów).
+**Rozwiązanie:** upewnij się, że urządzenia (Hub, Scale, VitalSensor) są włączone, w zasięgu BLE (do ok. 35 m od Huba) i że minęło do ok. 2 godzin od pierwszego uruchomienia. Sprawdź baterie i zasilanie Huba (panel PV lub sieć). Szczegółowa lista problemów i rozwiązań związanych z komunikacją urządzeń znajduje się w **Instrukcji konfiguracji urządzeń** (rozdział Rozwiązywanie problemów).
 
 #### 1.2 Nie mogę się zalogować
 

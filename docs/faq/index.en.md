@@ -2,43 +2,55 @@
 
 Questions and answers collected during the **Apisense 2026 Global Field Validation Study**.
 
-## Sensors & placement
+## VitalSensor & placement
 
-### Does the colour of the NFC/QR tag attached to the sensor matter?
+### Does the colour of the NFC/QR tag attached to the VitalSensor matter?
 
-No. Colour is irrelevant — the sensor–tag pairing is what matters.
+No. Colour is irrelevant — the VitalSensor–tag pairing is what matters.
 
-### Where exactly should the sensor be placed?
+### Where exactly should the VitalSensor be placed?
 
 Vertically, on a brood frame in the nest part of the hive — ideally in the centre or next to the centre.
 
-### Can I move sensors up/down when adding boxes?
+### Can I move VitalSensors up/down when adding boxes?
 
 Yes, within the nest. Always add a note about such an action in the app (preferably along with a photo).
 
-### Can sensors be installed on non-standard frames?
+### Can VitalSensors be installed on non-standard frames?
 
-Yes, using zip ties. Please add a note (and preferably a photo) of the sensor after installation.
+Yes, using zip ties. Please add a note (and preferably a photo) of the VitalSensor after installation.
 
-### Can sensors be used in nucs (and other smaller hives) and then moved to bigger ones later?
+### Can VitalSensors be used in nucs (and other smaller hives) and then moved to bigger ones later?
 
-It is recommended to wait with sensor installation until the hive is in its final size (unless you want to use a small size, e.g. mini plus, through the whole season — in such case contact us first).
+It is recommended to wait with VitalSensor installation until the hive is in its final size (unless you want to use a small size, e.g. mini plus, through the whole season — in such case contact us first).
+
+### How do I replace the batteries in the VitalSensor?
+
+The VitalSensor is powered by **2× AA lithium-ion (Li-ion)** batteries.
+
+1. Open the cover.
+2. Replace the batteries with **2× AA Li-ion**.
+3. Close the cover.
 
 ## Hub & connectivity
 
-### Can the hub be installed indoors or under a roof?
+### Can the Hub be installed indoors or under a roof?
 
 No. It must be outdoors for GPS and proper connectivity.
 
-### Can I power the hub permanently via electricity?
+### Can I power the Hub permanently via electricity?
 
 Yes, you can power it via USB-C, as long as it remains outdoors and is uncovered.
 
-### How far can the hub be from the hives?
+### Does the Hub need a battery replacement?
+
+No. The Hub charges from a solar panel (PV). If sunlight is insufficient, you can top it up via USB-C.
+
+### How far can the Hub be from the hives?
 
 Up to approx. 30–40 metres.
 
-### The hub is not appearing in the app — what should I do?
+### The Hub is not appearing in the app — what should I do?
 
 Follow the instructions in the user manual; you can also ask the assistant in the app for instructions. The general recommendations are:
 
@@ -48,15 +60,37 @@ Follow the instructions in the user manual; you can also ask the assistant in th
 
 If it still does not work, contact [bee@apisense.ai](mailto:bee@apisense.ai).
 
+### A VitalSensor or Scale won't connect to the Hub — what should I do?
+
+Devices reach the server through the Hub (VitalSensor/Scale → Bluetooth → Hub → LTE → server), so the order matters:
+
+1. **The Hub must connect first.** No VitalSensor or Scale can connect until the Hub is online. The Hub is solar-powered — its first contact after power-on takes from ~30 minutes (charged) up to 24 hours (discharged, in bad weather). In the app, pick the start-up scenario to see the estimated time.
+2. **Once the Hub is connected**, each VitalSensor and Scale has its own first-connection window. During it the app shows *"awaiting connection"* — this is normal, please wait.
+3. If a device still hasn't connected after that window, the app shows *"out of range"* — the Hub is online but cannot see the device over Bluetooth. Most common causes: the device is too far from the Hub, or an issue with the device itself (e.g. power).
+
+If some devices connect and others don't (e.g. one VitalSensor works, the rest don't), the problem is with those specific devices, not the Hub.
+
+If the problem persists, contact [bee@apisense.ai](mailto:bee@apisense.ai).
+
 ## Scale
 
-### Does the scale need batteries or charging?
+### Does the Scale need batteries or charging?
 
-No, it works automatically once installed and added to the app via QR code.
+Yes. The Scale is powered by **2× AA lithium-ion (Li-ion)** batteries. Once installed and added to the app (QR code) it works automatically — you only replace the batteries when they run out.
 
-### Which hive should be on the scale?
+### How do I replace the batteries in the Scale?
 
-Any sensor-equipped hive — trends matter more than the exact weight of a particular hive.
+You will need an Allen (hex) key (for the brackets) and a Torx key (for the black housing).
+
+1. Unscrew the brackets with the Allen key — undo the two screws.
+2. Undo the two Torx screws on the black housing.
+3. Replace the batteries with **2× AA Li-ion**.
+4. Screw the black housing back on.
+5. Screw the brackets back on.
+
+### Which hive should be on the Scale?
+
+Any VitalSensor-equipped hive — trends matter more than the exact weight of a particular hive.
 
 ## Data entry & Apisense app usage
 
@@ -74,16 +108,16 @@ Not confirmed yet — Apisense will follow up by email.
 
 Yes. Please add a note in the app once doing so.
 
-### Can sensors be moved if a colony dies or is lost?
+### Can VitalSensors be moved if a colony dies or is lost?
 
-Do not move sensors without letting the Apisense team know first! To prevent the risk of disease spread and for data integrity reasons, in such a situation always contact us directly and wait for further instructions.
+Do not move VitalSensors without letting the Apisense team know first! To prevent the risk of disease spread and for data integrity reasons, in such a situation always contact us directly and wait for further instructions.
 
-### I'm moving a sensor to another colony (e.g. after a colony died) — how do I reflect this in the app?
+### I'm moving a VitalSensor to another colony (e.g. after a colony died) — how do I reflect this in the app?
 
 A new colony = a new hive in the app. Do it in three steps:
 
 1. **Create a new hive** in the app — the old hive stays unchanged.
-2. **Unbind the devices from the old hive** and **bind them to the new one** (after disinfecting the sensor).
+2. **Unbind the devices from the old hive** and **bind them to the new one** (after disinfecting the VitalSensor).
 3. From now on new measurements go to the new hive.
 
 Measurement history is **not** transferred between hives — it was a different colony, so the old hive's data does not describe the new one. That is why the data starts fresh with the new hive. You don't need to let us know — once you create the new hive and re-assign the devices to it, we have the full picture.
@@ -94,4 +128,4 @@ Always add a note on such activities — it supports correct data interpretation
 
 ### What if I transport my hives?
 
-Transport all hives + hub + scale together and add a note in the app.
+Transport all hives + Hub + Scale together and add a note in the app.

@@ -4,19 +4,19 @@
 
 ## 1. Introduction
 
-Apisense is an advanced early warning system that combines modern Internet of Things (IoT) sensors with Artificial Intelligence (AI) algorithms. The system enables preventative disease detection with up to **95% F1-score** by analyzing honeybee pheromone levels and acoustic hive patterns.
+Apisense is an advanced early warning system that combines modern Internet of Things (IoT) VitalSensors with Artificial Intelligence (AI) algorithms. The system enables preventative disease detection with up to **95% F1-score** by analyzing honeybee pheromone levels and acoustic hive patterns.
 
 ## 2. Hardware Technical Specifications
 
 ### **Apisense Hub**
 
-*Hub that aggregates data from sensors and scales across the apiary and forwards it to the cloud.*
+*Hub that aggregates data from VitalSensors and Scales across the apiary and forwards it to the cloud.*
 
 - **Power Supply:** Built-in rechargeable Li-Ion battery + integrated photovoltaic (solar) panel.
 - **Operating Time:** Up to 2 weeks without sunlight; continuous operation with solar exposure. Support for mains charging (standard low-voltage connector).
 - **Connectivity:**
     - **Cloud:** LTE (Global SIM card, 1-year data package included).
-    - **Local:** Bluetooth Low Energy (BLE) – range up to 35m to sensors and scales. Supports up to 100 devices.
+    - **Local:** Bluetooth Low Energy (BLE) – range up to 35m to VitalSensors and Scales. Supports up to 100 devices.
 - **Installation:** Non-invasive mounting (post, tree), weather-resistant (IP65). Optimized solar tilt: 20° to 50°.
 - **Dimensions:** Compact housing integrated with solar panel (approx. 17.5x17.5x5 cm).
 
@@ -44,7 +44,7 @@ Apisense is an advanced early warning system that combines modern Internet of Th
 
 - **Mobile Application:** Apisense Pro AI (iOS/Android/Web) – Modern, responsive user experience with advanced trend analytics and historical data.
 - **Artificial Intelligence:** AI engine analyzing data, providing actionable recommendations and alarms (e.g., identification of disease (varroa, nosema, foulbrood)).
-- **Actionable recommendations:** Based on all inputs available to the system — beekeeper notes, inspections, photos, sensor and scale readings, weather forecasts, and expert knowledge — Apisense generates concrete action recommendations that help the beekeeper strengthen the colony.
+- **Actionable recommendations:** Based on all inputs available to the system — beekeeper notes, inspections, photos, VitalSensor and Scale readings, weather forecasts, and expert knowledge — Apisense generates concrete action recommendations that help the beekeeper strengthen the colony.
 - **Notifications:** Real-time push notification system for critical events (e.g., sudden weight drop, sudden temperature drops, sudden humidity increase).
 
 ## 4. Key Value Propositions

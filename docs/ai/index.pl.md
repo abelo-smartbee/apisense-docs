@@ -2,7 +2,7 @@
 
 Asystent w Apisense to nie ogólny chatbot z internetu. To **dedykowany asystent zintegrowany z całym Twoim systemem Apisense** — zna Twoje pasieki, ule, status urządzeń, zaplanowane przeglądy oraz pogodę nad pasieką.
 
-Innymi słowy: Asystent **tłumaczy surowe dane techniczne z systemu IoT na proste odpowiedzi po polsku**. Zamiast przeglądać tabelę z odczytami wagi sprzed 24 godzin — pytasz „czy w ulu numer 3 dzieje się coś niepokojącego?” i dostajesz konkretną odpowiedź.
+Innymi słowy: Asystent **tłumaczy surowe dane techniczne z systemu IoT na proste odpowiedzi po polsku**. Zamiast przeglądać tabelę z odczytami Scale sprzed 24 godzin — pytasz „czy w ulu numer 3 dzieje się coś niepokojącego?” i dostajesz konkretną odpowiedź.
 
 Nie musisz uczyć się żadnych komend ani filtrów. Wystarczy, że zadasz pytanie tak, jak zadałbyś je sąsiadowi-pszczelarzowi.
 
@@ -12,30 +12,30 @@ ______________________________________________________________________
 
 W codziennej pracy w pasiece pojawiają się pytania, na które trudno szybko znaleźć odpowiedź:
 
-- *„Czy waga w ulu numer 3 jeszcze się łączy?”*
+- *„Czy Scale w ulu numer 3 jeszcze się łączy?”*
 - *„Kiedy ostatni raz robiłem przegląd w pasiece Lipowa?”*
 - *„Jak wygląda jutrzejsza prognoza pogody nad moją pasieką?”*
 - *„Co zrobić, jeśli widzę pszczoły z deformacją skrzydeł?”*
-- *„Jak ustawić alarm w aplikacji, gdy waga ula nagle spadnie?”*
+- *„Jak ustawić alarm w aplikacji, gdy masa ula nagle spadnie?”*
 
 Zamiast klikać po kilku ekranach, czytać dokumentację albo szukać w internecie — pytasz Asystenta i dostajesz zwięzłą odpowiedź w Twoim języku.
 
 ______________________________________________________________________
 
-## 2. Asystent tłumaczy techniczne dane z czujników
+## 2. Asystent tłumaczy techniczne dane z VitalSensorów
 
 Twój ul przesyła do Apisense dziesiątki odczytów dziennie: masa, temperatura, wilgotność, ciśnienie, status połączenia, poziom baterii. Surowe liczby same w sobie niewiele mówią — trzeba znać kontekst, normy i trendy. Asystent bierze te dane i **przekłada je na zwięzłą diagnozę po polsku**.
 
 !!! example "Przykład — surowe dane → zrozumiała odpowiedź"
     **Surowe dane** w bazie Apisense (czego pszczelarz na co dzień nie ogląda):
 
-    > ul 4, pasieka Lipowa: masa 38,2 kg (-0,4 kg / 24h), temperatura wewn. 34,8°C, wilgotność 62%, czujnik bat. 88%, ostatni odczyt 12 min temu
+    > ul 4, pasieka Lipowa: masa 38,2 kg (-0,4 kg / 24h), temperatura wewn. 34,8°C, wilgotność 62%, VitalSensor bat. 88%, ostatni odczyt 12 min temu
 
     **Ty:** Co się dzieje w ulu 4 w pasiece Lipowa?
 
-    **Asystent:** Ul 4 (Lipowa) ma się dobrze — temperatura wewnątrz 34,8°C jest w normie dla aktywnego czerwiu, wilgotność 62% prawidłowa. Masa spadła w ciągu doby o 0,4 kg, co przy obecnej pogodzie (brak pożytku, lekki wiatr) jest typowe — nie wskazuje na rojenie ani na problem z rodziną. Czujnik łączy się regularnie, bateria 88%.
+    **Asystent:** Ul 4 (Lipowa) ma się dobrze — temperatura wewnątrz 34,8°C jest w normie dla aktywnego czerwiu, wilgotność 62% prawidłowa. Masa spadła w ciągu doby o 0,4 kg, co przy obecnej pogodzie (brak pożytku, lekki wiatr) jest typowe — nie wskazuje na rojenie ani na problem z rodziną. VitalSensor łączy się regularnie, bateria 88%.
 
-To samo dotyczy bramek (Hub) i wag — Asystent **nie zostawia Cię z liczbami**, tylko je interpretuje w kontekście Twojej pasieki, pogody i historii ostatnich przeglądów.
+To samo dotyczy bramek (Hub) i Scale — Asystent **nie zostawia Cię z liczbami**, tylko je interpretuje w kontekście Twojej pasieki, pogody i historii ostatnich przeglądów.
 
 ______________________________________________________________________
 
@@ -53,7 +53,7 @@ Poniżej znajdziesz sześć grup typowych pytań z konkretnymi przykładami. **M
 !!! example "Przykład rozmowy"
     **Ty:** Pokaż status pasieki Lipowa.
 
-    **Asystent:** Pasieka **Lipowa** zawiera 5 uli. Bramka jest online (sygnał LTE: dobry, ostatni kontakt: 8 minut temu, bateria: 78%). Najnowsze pomiary z czujników poniżej 24 godzin temu.
+    **Asystent:** Pasieka **Lipowa** zawiera 5 uli. Bramka jest online (sygnał LTE: dobry, ostatni kontakt: 8 minut temu, bateria: 78%). Najnowsze pomiary z VitalSensorów poniżej 24 godzin temu.
 
 ### 3.2 Urządzenia i bramki
 
@@ -63,9 +63,9 @@ Poniżej znajdziesz sześć grup typowych pytań z konkretnymi przykładami. **M
     **Asystent:** Tak. Bramka w pasiece **Akacjowa** ma dobry sygnał LTE i połączyła się 3 minuty temu. Bateria: 64%.
 
 !!! example "Przykład rozmowy"
-    **Ty:** Które wagi mają niski poziom baterii?
+    **Ty:** Które Scale mają niski poziom baterii?
 
-    **Asystent:** Dwie wagi mają poziom baterii poniżej 20%:
+    **Asystent:** Dwie Scale mają poziom baterii poniżej 20%:
 
     - Pasieka **Lipowa**, ul nr 2 — 17%
     - Pasieka **Wrzosowa**, ul nr 1 — 12%
@@ -117,7 +117,7 @@ Asystent automatycznie sięga po pogodę dla lokalizacji Twoich pasiek — nie m
 !!! example "Przykład rozmowy"
     **Ty:** Kiedy zacząć dokarmianie zimowe?
 
-    **Asystent:** Dokarmianie zimowe rozpoczyna się zwykle na przełomie sierpnia i września — po ostatnim miodobraniu, przed obniżeniem temperatur. Dawki zależą od regionu i siły rodziny. Dla Twoich pasiek mogę sprawdzić ostatnie pomiary wagi i zasugerować, czy któraś rodzina pilnie wymaga karmienia.
+    **Asystent:** Dokarmianie zimowe rozpoczyna się zwykle na przełomie sierpnia i września — po ostatnim miodobraniu, przed obniżeniem temperatur. Dawki zależą od regionu i siły rodziny. Dla Twoich pasiek mogę sprawdzić ostatnie pomiary ze Scale i zasugerować, czy któraś rodzina pilnie wymaga karmienia.
 
 ### 3.6 Instrukcje obsługi i konfiguracji systemu Apisense
 
@@ -130,13 +130,13 @@ Gdy pytasz „jak coś zrobić w aplikacji” albo „jak skonfigurować urządz
 
     1. W zakładce *Pasieki* otwórz pasiekę, do której chcesz dodać ul.
     2. W widoku *Ule* kliknij ikonę **+** w prawym górnym rogu.
-    3. Wpisz nazwę ula i (opcjonalnie) numer seryjny czujnika.
+    3. Wpisz nazwę ula i (opcjonalnie) numer seryjny VitalSensora.
     4. Zatwierdź.
 
     Krótki tutorial wideo: [oficjalny kanał YouTube Apisense](https://www.youtube.com/@Apisense.Global) *(Asystent dorzuci konkretny adres filmu, jeśli istnieje w Twoim języku)*.
 
 !!! example "Przykład rozmowy — konfiguracja urządzenia"
-    **Ty:** Jak ustawić alarm, gdy waga ula nagle spadnie o 5 kg?
+    **Ty:** Jak ustawić alarm, gdy masa ula nagle spadnie o 5 kg?
 
     **Asystent:** Alarm progowy na nagłą zmianę masy ustawiasz w *Ustawieniach ula* → *Alarmy*:
 

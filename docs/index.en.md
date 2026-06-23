@@ -14,7 +14,7 @@ Product overview: hardware (Hub, VitalSensor, Scale), software ecosystem, key va
 
 ### Assistant
 
-An intelligent chat integrated with your Apisense system — it reads sensor data from the IoT devices in your hives, knows every note and inspection you've recorded, fetches the weather forecast over your apiary, and draws on the official Apisense manuals and video tutorials. Ask in your language, get the answer in the same language.
+An intelligent chat integrated with your Apisense system — it reads VitalSensor data from the IoT devices in your hives, knows every note and inspection you've recorded, fetches the weather forecast over your apiary, and draws on the official Apisense manuals and video tutorials. Ask in your language, get the answer in the same language.
 
 [Go to assistant overview →](ai/index.md)
 
