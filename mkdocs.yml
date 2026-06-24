@@ -32,6 +32,9 @@ plugins:
           nav:
             - Start: index.md
             - Opis systemu: overview/index.md
+            - Jak wykrywamy choroby:
+                - Jak działa wykrywanie chorób: methodology/disease-detection.md
+                - Jak powstają nasze modele: methodology/research-process.md
             - Asystent:
                 - Przegląd: ai/index.md
                 - Możliwości i prywatność: ai/limits-privacy.md
@@ -63,6 +66,9 @@ plugins:
           nav:
             - Home: index.md
             - System Overview: overview/index.md
+            - How we detect diseases:
+                - How disease detection works: methodology/disease-detection.md
+                - How our models are built: methodology/research-process.md
             - Assistant:
                 - Overview: ai/index.md
                 - Capabilities & Privacy: ai/limits-privacy.md
@@ -105,6 +111,9 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Opis systemu: overview/index.md
+  - Jak wykrywamy choroby:
+      - Jak działa wykrywanie chorób: methodology/disease-detection.md
+      - Jak powstają nasze modele: methodology/research-process.md
   - Asystent:
       - Przegląd: ai/index.md
       - Możliwości i prywatność: ai/limits-privacy.md
