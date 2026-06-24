@@ -14,7 +14,7 @@ ______________________________________________________________________
 
 ### 1. Pomysł i koncepcja
 
-Wszystko zaczyna się od pytania **„co jeszcze warto monitorować?"**. Pomysły czerpiemy z:
+Wszystko zaczyna się od pytania **„co jeszcze warto monitorować?”**. Pomysły czerpiemy z:
 
 - rozmów z pszczelarzami i ich codziennych problemów,
 - przeglądu literatury naukowej,
@@ -50,7 +50,7 @@ ______________________________________________________________________
 
 ## Zgnilec amerykański — przypadek szczególny { #zgnilec-wyjatek }
 
-Jedna choroba wymyka się powyższemu schematowi: **zgnilec amerykański (AFB)**. Jest to choroba **zwalczana z urzędu**, więc — w przeciwieństwie do warrozy czy nosemozy — **nie możemy jej wywołać ani „wyhodować" w pasiece** na potrzeby badań.
+Jedna choroba wymyka się powyższemu schematowi: **zgnilec amerykański (AFB)**. Jest to choroba **zwalczana z urzędu**, więc — w przeciwieństwie do warrozy czy nosemozy — **nie możemy jej wywołać ani „wyhodować” w pasiece** na potrzeby badań.
 
 Dlatego dane o zgnilcu zbieraliśmy inaczej:
 

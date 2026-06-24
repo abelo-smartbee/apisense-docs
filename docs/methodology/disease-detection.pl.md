@@ -1,6 +1,6 @@
 # Jak działa wykrywanie chorób
 
-Coraz częściej pytacie nas, **jak właściwie działa wykrywanie chorób w Apisense** i skąd aplikacja „wie", że z rodziną dzieje się coś niepokojącego. Na tej stronie tłumaczymy to prostym językiem — bez wzorów i tabel statystycznych.
+Coraz częściej pytacie nas, **jak właściwie działa wykrywanie chorób w Apisense** i skąd aplikacja „wie”, że z rodziną dzieje się coś niepokojącego. Na tej stronie tłumaczymy to prostym językiem — bez wzorów i tabel statystycznych.
 
 Jeśli interesuje Cię, **jak krok po kroku powstają nasze modele** (od pomysłu, przez laboratorium, po wdrożenie w pasiekach), zajrzyj na stronę [Jak powstają nasze modele](research-process.md).
 
@@ -8,24 +8,24 @@ ______________________________________________________________________
 
 ## W skrócie
 
-Czujnik **VitalSensor** umieszczony między ramkami **w sposób ciągły „wącha" powietrze w ulu**. Każda rodzina ma swój naturalny „zapach" — chemiczny odcisk złożony z wielu związków. Gdy w rodzinie rozwija się choroba, ten odcisk **zmienia się w charakterystyczny sposób**, zwykle na długo zanim zobaczysz objawy gołym okiem.
+Czujnik **VitalSensor** umieszczony między ramkami **w sposób ciągły „wącha” powietrze w ulu**. Każda rodzina ma swój naturalny „zapach” — chemiczny odcisk złożony z wielu związków. Gdy w rodzinie rozwija się choroba, ten odcisk **zmienia się w charakterystyczny sposób**, zwykle na długo zanim zobaczysz objawy gołym okiem.
 
 Nasza **sztuczna inteligencja (AI)** nauczyła się rozpoznawać te wzorce i na ich podstawie przypisuje rodzinie **status zdrowia oraz poziom zakażenia** — a wynik widzisz w aplikacji Apisense Pro AI.
 
 !!! info "To uzupełnienie, nie zamiennik"
-    Wykrywanie chorób z powietrza ula **wspiera** Twoje obserwacje i przeglądy — nie zastępuje ich. Traktuj alerty jako wczesny sygnał „przyjrzyj się tej rodzinie", a nie jako ostateczną diagnozę.
+    Wykrywanie chorób z powietrza ula **wspiera** Twoje obserwacje i przeglądy — nie zastępuje ich. Traktuj alerty jako wczesny sygnał „przyjrzyj się tej rodzinie”, a nie jako ostateczną diagnozę.
 
 ______________________________________________________________________
 
-## Co „czuje" czujnik
+## Co „czuje” czujnik
 
 VitalSensor mierzy kilkanaście parametrów wnętrza ula. Najważniejsze z nich to:
 
-- **Skład chemiczny powietrza** — związki lotne (VOC), czyli ten chemiczny „zapach" rodziny,
+- **Skład chemiczny powietrza** — związki lotne (VOC), czyli ten chemiczny „zapach” rodziny,
 - **Temperatura i wilgotność** — mikroklimat gniazda,
 - **Inne parametry środowiskowe** — m.in. poziom dwutlenku węgla i aktywność akustyczna (dźwięki rodziny).
 
-Można to porównać do lekarza, który rozpoznaje chorobę po zapachu czy oddechu pacjenta — tyle że tutaj „nosem" jest czujnik, a „pamięcią doświadczeń" sztuczna inteligencja.
+Można to porównać do lekarza, który rozpoznaje chorobę po zapachu czy oddechu pacjenta — tyle że tutaj „nosem” jest czujnik, a „pamięcią doświadczeń” sztuczna inteligencja.
 
 ______________________________________________________________________
 
@@ -33,7 +33,7 @@ ______________________________________________________________________
 
 Sama liczba z czujnika nic by nam nie powiedziała, gdyby nie **odniesienie do rzeczywistości**. Dlatego nasze modele uczą się na **tysiącach oznaczonych próbek**, w których odczyty czujnika są zestawione z **faktycznym wynikiem badania** danej rodziny — np. liczbą spor *Nosema* pod mikroskopem czy poziomem porażenia *Varroa*.
 
-Dane te zbieramy zarówno w **laboratorium** (rodziny w klateczkach z czujnikami), jak i w **prawdziwych pasiekach**. Każda choroba zostawia w danych swój własny, rozpoznawalny „podpis", a model uczy się go odróżniać od stanu zdrowego.
+Dane te zbieramy zarówno w **laboratorium** (rodziny w klateczkach z czujnikami), jak i w **prawdziwych pasiekach**. Każda choroba zostawia w danych swój własny, rozpoznawalny „podpis”, a model uczy się go odróżniać od stanu zdrowego.
 
 Cały ten proces — od pomysłu po globalne wdrożenie — opisujemy na stronie [Jak powstają nasze modele](research-process.md).
 
@@ -41,7 +41,7 @@ ______________________________________________________________________
 
 ## Poziomy zakażenia — co oznaczają
 
-Dla niektórych chorób aplikacja pokazuje nie tylko „jest / nie ma", ale też **poziom**: niski, umiarkowany lub wysoki. Poniższe wartości to **orientacyjne progi**, których używamy do oznaczania danych — są zgodne ze standardowymi badaniami, które pszczelarze wykonują na co dzień, więc łatwo je odnieść do własnej pasieki.
+Dla niektórych chorób aplikacja pokazuje nie tylko „jest / nie ma”, ale też **poziom**: niski, umiarkowany lub wysoki. Poniższe wartości to **orientacyjne progi**, których używamy do oznaczania danych — są zgodne ze standardowymi badaniami, które pszczelarze wykonują na co dzień, więc łatwo je odnieść do własnej pasieki.
 
 ### Warroza (*Varroa destructor*)
 
@@ -69,7 +69,7 @@ Dla niektórych chorób aplikacja pokazuje nie tylko „jest / nie ma", ale też
 
 Dla tych chorób model wykrywa **obecność**, a nie poziom:
 
-- **Zgnilec amerykański (AFB)** — sygnał „pojawiło się ryzyko zgnilca". To choroba **zwalczana z urzędu**, dlatego dane zbieramy w szczególny sposób — opisujemy to na stronie [Jak powstają nasze modele](research-process.md#zgnilec-wyjatek).
+- **Zgnilec amerykański (AFB)** — sygnał „pojawiło się ryzyko zgnilca”. To choroba **zwalczana z urzędu**, dlatego dane zbieramy w szczególny sposób — opisujemy to na stronie [Jak powstają nasze modele](research-process.md#zgnilec-wyjatek).
 - **Grzybica wapienna (*chalkbrood*)** — rozróżniamy stan zdrowy, samą ekspozycję (kontakt bez widocznych objawów) oraz wyraźne objawy choroby.
 
 ______________________________________________________________________
