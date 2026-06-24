@@ -8,7 +8,7 @@ ______________________________________________________________________
 
 ## W skrócie
 
-Czujnik **VitalSensor** umieszczony między ramkami **w sposób ciągły „wącha” powietrze w ulu**. Każda rodzina ma swój naturalny „zapach” — chemiczny odcisk złożony z wielu związków. Gdy w rodzinie rozwija się choroba, ten odcisk **zmienia się w charakterystyczny sposób**, zwykle na długo zanim zobaczysz objawy gołym okiem.
+Czujnik **VitalSensor** umieszczony między ramkami **w sposób ciągły „wącha” powietrze w ulu**. Każda rodzina ma swój naturalny „zapach” — chemiczny odcisk złożony z wielu związków. Gdy w rodzinie rozwija się choroba, ten odcisk **zmienia się w charakterystyczny sposób**, zwykle na długo, zanim zobaczysz objawy gołym okiem.
 
 Nasza **sztuczna inteligencja (AI)** nauczyła się rozpoznawać te wzorce i na ich podstawie przypisuje rodzinie **status zdrowia oraz poziom zakażenia** — a wynik widzisz w aplikacji Apisense Pro AI.
 
