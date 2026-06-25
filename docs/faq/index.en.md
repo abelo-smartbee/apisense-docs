@@ -102,6 +102,12 @@ No. You can add them later with the correct date.
 
 Not confirmed yet — Apisense will follow up by email.
 
+## Tests & samples
+
+### Do I need to do the Varroa sugar roll in the Global Field Validation Study tests?
+
+Yes — always. The Varroa sugar roll is **mandatory in every scheduled test** (Test 1, 2 and 3), for every monitored colony. You run it every time, regardless of the time of season, sensor readings or the absence of visible Varroa symptoms. Each test covers the full set of **both procedures**: the Varroa sugar roll **and** Nosema/Vairimorpha microscopy. Details: [Lab procedures](../procedures/index.md).
+
 ## Beekeeping practices
 
 ### Can I use oxalic or formic acid treatments?

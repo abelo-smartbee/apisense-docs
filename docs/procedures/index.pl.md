@@ -17,6 +17,6 @@ Dla wszystkich rodzin wyposażonych w VitalSensory Apisense wykonujesz te testy 
 
 \* W krajach bez wyraźnego okresu zimowego termin trzeciego testu ustalany jest indywidualnie.
 
-Za każdym razem wykonujesz **obie procedury** (flotacja Varroa + mikroskopia Nosema/Vairimorpha) dla wszystkich monitorowanych rodzin. Mikroskopię można dodatkowo wykonać poza harmonogramem przy podejrzeniu nosemozy (cieknący kał, osłabienie rodziny bez innej oczywistej przyczyny).
+W **każdym** zaplanowanym badaniu (Test 1, 2 i 3) flotacja na Varroa (sugar roll) jest **obowiązkowa** — wykonujesz ją **zawsze**, dla wszystkich monitorowanych rodzin, niezależnie od pory sezonu, wskazań czujników czy braku widocznych objawów warrozy. Razem z nią za każdym razem wykonujesz również **mikroskopię Nosema/Vairimorpha**, czyli komplet **obu procedur**. Mikroskopię można dodatkowo wykonać poza harmonogramem przy podejrzeniu nosemozy (cieknący kał, osłabienie rodziny bez innej oczywistej przyczyny).
 
 Każda procedura kończy się listą pól do zaraportowania w aplikacji Apisense, aby wyniki były śledzone w czasie i porównywalne między ulami.
