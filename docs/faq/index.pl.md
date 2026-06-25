@@ -102,6 +102,12 @@ Nie. Można je dodać później, wskazując prawidłową datę.
 
 Jeszcze nie potwierdzone — Apisense skontaktuje się w tej sprawie mailowo.
 
+## Badania i próbki
+
+### Czy w badaniach Global Field Validation Study trzeba wykonywać flotację na Varroa (sugar roll)?
+
+Tak — zawsze. Flotacja na Varroa (sugar roll) jest **obowiązkowa w każdym zaplanowanym badaniu** (Test 1, 2 i 3), dla wszystkich monitorowanych rodzin. Wykonujesz ją za każdym razem, niezależnie od pory sezonu, wskazań czujników czy braku widocznych objawów warrozy. W każdym badaniu wykonujesz komplet **obu procedur**: flotację na Varroa **oraz** mikroskopię Nosema/Vairimorpha. Szczegóły: [Procedury badań](../procedures/index.md).
+
 ## Praktyki pszczelarskie
 
 ### Czy mogę stosować zabiegi z użyciem kwasu szczawiowego lub mrówkowego?

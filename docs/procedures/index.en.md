@@ -17,6 +17,6 @@ For every colony equipped with Apisense VitalSensors, run these tests three time
 
 \* In countries without a distinct wintering period, the third test date is set individually.
 
-Each round covers **both procedures** (Varroa sugar roll + Nosema/Vairimorpha microscopy) for every monitored colony. Microscopy can additionally be run outside the schedule when *Nosema* infection is suspected (dripping feces, weakened colony with no other obvious cause).
+In **every** scheduled test (Test 1, 2 and 3) the Varroa sugar roll is **mandatory** — you run it **always**, for every monitored colony, regardless of the time of season, sensor readings or the absence of visible Varroa symptoms. Alongside it you also run **Nosema/Vairimorpha microscopy** every time — i.e. the full set of **both procedures**. Microscopy can additionally be run outside the schedule when *Nosema* infection is suspected (dripping feces, weakened colony with no other obvious cause).
 
 Each procedure ends with a list of fields to report in the Apisense app so results can be tracked over time and across hives.
