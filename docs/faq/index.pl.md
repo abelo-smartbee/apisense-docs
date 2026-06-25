@@ -26,10 +26,10 @@ Zalecamy wstrzymanie się z montażem VitalSensora, dopóki ul nie osiągnie doc
 
 ### Jak wymienić baterie w VitalSensorze?
 
-VitalSensor zasilają dwie baterie **2× AA litowo-jonowe (Li-ion)**.
+VitalSensor zasilają dwie baterie **2× AA alkaliczne**.
 
 1. Otwórz pokrywkę.
-2. Wymień baterie na **2× AA Li-ion**.
+2. Wymień baterie na **2× AA alkaliczne**.
 3. Zamknij pokrywkę.
 
 ## Hub i łączność
@@ -76,7 +76,7 @@ Jeśli problem nie ustępuje, skontaktuj się z [bee@apisense.ai](mailto:bee@api
 
 ### Czy Scale wymaga baterii lub ładowania?
 
-Tak. Scale zasilają dwie baterie **2× AA litowo-jonowe (Li-ion)**. Po zamontowaniu i dodaniu w aplikacji (kod QR) Scale działa automatycznie — baterie wymieniasz tylko wtedy, gdy się wyczerpią.
+Tak. Scale zasilają dwie baterie **2× AA alkaliczne**. Po zamontowaniu i dodaniu w aplikacji (kod QR) Scale działa automatycznie — baterie wymieniasz tylko wtedy, gdy się wyczerpią.
 
 ### Jak wymienić baterie w Scale?
 
@@ -84,7 +84,7 @@ Potrzebny będzie klucz imbusowy (do kątowników) oraz klucz Torx (do czarnej o
 
 1. Rozkręć kątowniki kluczem imbusowym — odkręć dwie śruby.
 2. Odkręć dwie śrubki Torx w czarnej obudowie.
-3. Wymień baterie na **2× AA Li-ion**.
+3. Wymień baterie na **2× AA alkaliczne**.
 4. Skręć czarną obudowę z powrotem.
 5. Skręć kątowniki z powrotem.
 
