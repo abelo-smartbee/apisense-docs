@@ -26,10 +26,10 @@ It is recommended to wait with VitalSensor installation until the hive is in its
 
 ### How do I replace the batteries in the VitalSensor?
 
-The VitalSensor is powered by **2× AA lithium-ion (Li-ion)** batteries.
+The VitalSensor is powered by **2× AA alkaline** batteries.
 
 1. Open the cover.
-2. Replace the batteries with **2× AA Li-ion**.
+2. Replace the batteries with **2× AA alkaline**.
 3. Close the cover.
 
 ## Hub & connectivity
@@ -76,7 +76,7 @@ If the problem persists, contact [bee@apisense.ai](mailto:bee@apisense.ai).
 
 ### Does the Scale need batteries or charging?
 
-Yes. The Scale is powered by **2× AA lithium-ion (Li-ion)** batteries. Once installed and added to the app (QR code) it works automatically — you only replace the batteries when they run out.
+Yes. The Scale is powered by **2× AA alkaline** batteries. Once installed and added to the app (QR code) it works automatically — you only replace the batteries when they run out.
 
 ### How do I replace the batteries in the Scale?
 
@@ -84,7 +84,7 @@ You will need an Allen (hex) key (for the brackets) and a Torx key (for the blac
 
 1. Unscrew the brackets with the Allen key — undo the two screws.
 2. Undo the two Torx screws on the black housing.
-3. Replace the batteries with **2× AA Li-ion**.
+3. Replace the batteries with **2× AA alkaline**.
 4. Screw the black housing back on.
 5. Screw the brackets back on.
 
