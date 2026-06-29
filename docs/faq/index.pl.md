@@ -80,10 +80,10 @@ Tak. Scale zasilają dwie baterie **2× AA alkaliczne**. Po zamontowaniu i dodan
 
 ### Jak wymienić baterie w Scale?
 
-Potrzebny będzie klucz imbusowy (do kątowników) oraz klucz Torx (do czarnej obudowy).
+Potrzebny będzie klucz imbusowy **4 mm** (do kątowników) oraz klucz Torx **T6** (do czarnej obudowy).
 
-1. Rozkręć kątowniki kluczem imbusowym — odkręć dwie śruby.
-2. Odkręć dwie śrubki Torx w czarnej obudowie.
+1. Rozkręć kątowniki kluczem imbusowym 4 mm — odkręć dwie śruby.
+2. Odkręć dwie śrubki Torx T6 w czarnej obudowie.
 3. Wymień baterie na **2× AA alkaliczne**.
 4. Skręć czarną obudowę z powrotem.
 5. Skręć kątowniki z powrotem.
