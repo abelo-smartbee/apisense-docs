@@ -46,6 +46,10 @@ Yes, you can power it via USB-C, as long as it remains outdoors and is uncovered
 
 No. The Hub charges from a solar panel (PV). If sunlight is insufficient, you can top it up via USB-C.
 
+### The Hub isn't charging despite full sun — why?
+
+This is correct behaviour — a battery safety protection has kicked in. The Hub only charges when the temperature inside the device stays below **50°C**. With a south-facing installation during hot weather, the internal temperature can reach about **70°C**, so charging is suspended for safety. Paradoxically, the all-day full sun is the reason charging stops here — the device is working correctly. Once the temperature drops, charging resumes automatically.
+
 ### How far can the Hub be from the hives?
 
 Up to approx. 30–40 metres.

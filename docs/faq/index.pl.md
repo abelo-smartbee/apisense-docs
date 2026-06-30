@@ -46,6 +46,10 @@ Tak, możesz go zasilać przez USB-C — pod warunkiem że pozostaje na zewnątr
 
 Nie. Hub ładuje się z panelu słonecznego (PV). Przy słabym nasłonecznieniu możesz doładować go przez USB-C.
 
+### Hub nie ładuje się mimo pełnego słońca — dlaczego?
+
+To zachowanie prawidłowe — zadziałało zabezpieczenie akumulatorów. Hub ładuje się tylko wtedy, gdy temperatura wewnątrz urządzenia nie przekracza **50°C**. Przy montażu od strony południowej i w czasie upałów temperatura wewnątrz może dochodzić do ok. **70°C**, więc ładowanie zostaje wstrzymane ze względów bezpieczeństwa. Paradoksalnie to całodzienne, pełne słońce jest tu przyczyną wstrzymania ładowania — urządzenie działa poprawnie. Gdy temperatura spadnie, ładowanie wznowi się samoczynnie.
+
 ### Jak daleko Hub może znajdować się od uli?
 
 Do około 30–40 metrów.
