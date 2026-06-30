@@ -481,6 +481,9 @@ Figure: Adding an inspection - saving the inspection {#fig-add-overview-save}
 
 - To save the inspection, click the yellow *Finish inspection* button in the lower right corner of the screen. The saved inspection will be displayed in the inspection list under Hive details > Inspection ([](#fig-beehive-details-overview)).
 
+!!! tip
+    **Inspection drafts:** If you need to interrupt an inspection before finishing it, tap *Save draft* to preserve your progress. The draft appears in the inspection list and can be resumed at any time. To delete a draft, swipe it left in the inspection list.
+
 Figure: Inspection in the hive inspection list {#fig-beehive-details-overview}
 
 ![figure](pictures/beehive_details_overview.png){width=200}
@@ -541,7 +544,7 @@ Figure: Adding a text or voice note (2) {#fig-add-note-add-audio}
 
 ![figure](pictures/add_note_add_audio.png){width=200}
 
-- You can also add a photo or recording to the note. To do so, click the *+* button in the upper right corner of the Add note view ([](#fig-add-note-add-photos)).
+- You can also add a photo, recording or **PDF document** to the note. To do so, click the *+* button in the upper right corner of the Add note view ([](#fig-add-note-add-photos)) and choose the appropriate attachment type.
 
 Figure: Adding a text note with attachments {#fig-add-note-add-photos}
 
@@ -1111,7 +1114,7 @@ Figure: Details tab - sample view of the Hive status tab {#fig-behive-details-2}
 
 **Most important information:**
 
-- **Health section** – presents the current status of the bee colony, indicating whether the colony is healthy or whether a potential threat in the form of a disease has been detected. This section also displays the year the queen bee was raised.
+- **Health section** – presents the current status of the bee colony, indicating whether the colony is healthy or whether a potential threat in the form of a disease has been detected. This section also displays the year the queen bee was raised and the **Colony strength** indicator (Weak / Medium / Strong / Very strong), which reflects the AI-computed vitality of the colony based on inspection data. Tap the colony strength label to open the *Colony strength* screen, where you can view the full change history and manually override the AI's assessment if needed.
 - **Weight section** – contains information about the current hive weight and honey gain, allowing you to assess production rate and bee colony activity.
 - **Conditions section** – presents environmental data from inside the hive and its surroundings, such as outside temperature, inside temperature, humidity and pressure inside the hive.
 - **Detailed data and charts** – after expanding individual elements in a given section, the user can see more detailed information and charts of parameter changes over time, which makes it easier to analyze the hive status and the conditions inside it.
@@ -1498,6 +1501,7 @@ Most important information:
 - **Weight changes over time** allow you to observe the intensity of nectar flows and the activity of forager bees.
 - **Weight drops** can indicate the use of stores, swarming or periods of weaker nectar flow.
 - **Weight chart analysis** enables you to assess the dynamics of bee colony development, seasonal honey production and is key to planning honey harvesting.
+- **Scale tare** — you can zero the scale against the current reading to track net weight changes from that point on. In the *Weight* section of *Hive status* tap the *Tare* button. After a successful tare the display switches to **Current weight (tared)** and a *Tare* marker appears on the weight chart. To return to gross weight, tap *Reset* next to the tare timestamp.
 
 ### 5. Honey gain
 
@@ -1712,7 +1716,7 @@ The user data editing feature enables you to update basic information assigned t
 To edit user data:
 
 - In the *Apiaries* tab (the Apisense app start view), click the cog icon in the upper right part of the screen. As a result, the *Account settings* view will open ([](#fig-app-settings)).
-- The *Account settings* view consists of several sections: **Display name**, **Email**, **Mobile phone**, **Experience**, **Password** and **Language**. Each one shows the user's current data.
+- The *Account settings* view consists of several sections: **Display name**, **Email**, **Mobile phone**, **Experience**, **Password**, **Language** and **Units**. Each one shows the user's current data.
 - To change the contents of the chosen section, click its header; this will open a new view in which the data can be edited. For example, when changing the password, the user will be asked to enter a new password and to repeat it ([](#fig-app-settings)).
 - After making changes, save them by clicking the yellow button in the lower right corner of the screen.
 
@@ -1737,6 +1741,15 @@ To see which version of the Apisense app is currently installed on your device:
 - At the bottom, in the central part of the screen, you will see an entry in the form **Version X.Y.Z** (e.g. *Version 1.2.3*) — that is the installed app version number.
 
 It is worth comparing this number with the version available in Google Play or the App Store before reporting a technical issue.
+
+### 3. Unit preferences
+
+The *Units* section in *Account settings* lets you choose the measurement units displayed throughout the app:
+
+- **Temperature unit** — Celsius (°C) or Fahrenheit (°F).
+- **Weight unit** — Kilograms (kg) or Pounds (lbs).
+
+Changes take effect immediately across all charts and readings in the app.
 
 ______________________________________________________________________
 
