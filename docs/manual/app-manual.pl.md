@@ -478,6 +478,9 @@ Figure: Dodawanie przeglądu - zapisywanie przeglądu {#fig-add-overview-save}
 
 - Aby zapisać przegląd kliknij żółty przycisk *Zakończ przegląd*, znajdujący się w prawym dolnym rogu ekranu. Zapisany przegląd zostanie wyświetlony na liście przeglądów w zakładce Szczegóły ula > Przegląd ([](#fig-beehive-details-overview)).
 
+!!! tip
+    **Szkice przeglądów:** Jeśli musisz przerwać przegląd przed jego zakończeniem, kliknij *Zapisz szkic*, aby zachować dotychczasowy postęp. Szkic pojawi się na liście przeglądów i można go w dowolnym momencie wznowić. Aby usunąć szkic, przesuń go w lewo na liście przeglądów.
+
 Figure: Przegląd na liście przeglądów w ulu {#fig-beehive-details-overview}
 
 ![figure](pictures/beehive_details_overview.png){width=200}
@@ -538,7 +541,7 @@ Figure: Dodawanie notatki tekstowej lub głosowej (2) {#fig-add-note-add-audio}
 
 ![figure](pictures/add_note_add_audio.png){width=200}
 
-- Do notatki możesz również dodać zdjęcie lub nagranie. W tym celu kliknij przycisk *+*, znajdujący się w prawym górnym rogu widoku Dodaj notatkę ([](#fig-add-note-add-photos)).
+- Do notatki możesz również dodać zdjęcie, nagranie lub **dokument PDF**. W tym celu kliknij przycisk *+*, znajdujący się w prawym górnym rogu widoku Dodaj notatkę ([](#fig-add-note-add-photos)) i wybierz odpowiedni typ załącznika.
 
 Figure: Dodawanie notatki tekstowej z załącznikami {#fig-add-note-add-photos}
 
@@ -1107,7 +1110,7 @@ Figure: Zakładka Szczegóły - przykładowy widok zakładki Stan ula {#fig-behi
 
 **Najważniejsze informacje:**
 
-- **Sekcja Zdrowie** – prezentuje aktualny stan rodziny pszczelej, informując czy rodzina jest zdrowa, czy też wykryto potencjalne zagrożenie w postaci choroby. W tej sekcji wyświetlany jest również rok wychowu matki pszczelej.
+- **Sekcja Zdrowie** – prezentuje aktualny stan rodziny pszczelej, informując czy rodzina jest zdrowa, czy też wykryto potencjalne zagrożenie w postaci choroby. W tej sekcji wyświetlany jest również rok wychowu matki pszczelej oraz wskaźnik **Siły rodziny** (Słaba / Średnia / Silna / Bardzo silna), odzwierciedlający witalność rodziny wyznaczoną przez AI na podstawie danych z inspekcji. Kliknij wskaźnik siły rodziny, aby otworzyć ekran *Siła rodziny*, gdzie zobaczysz pełną historię zmian i możesz ręcznie skorygować ocenę AI.
 - **Sekcja Waga** – zawiera informacje dotyczące aktualnej wagi ula oraz przybytku miodu, co pozwala ocenić tempo produkcji oraz aktywność rodziny pszczelej.
 - **Sekcja Warunki** – przedstawia dane środowiskowe z wnętrza ula oraz jego otoczenia, takie jak temperatura zewnętrzna, temperatura wewnętrzna, wilgotność oraz ciśnienie wewnątrz ula.
 - **Szczegółowe dane i wykresy** – po rozwinięciu poszczególnych elementów w danej sekcji użytkownik może zobaczyć bardziej szczegółowe informacje oraz wykresy zmian parametrów w czasie, co ułatwia analizę stanu ula i warunków panujących w jego wnętrzu.
@@ -1496,6 +1499,7 @@ Najważniejsze informacje:
 - **Zmiany wagi w czasie** pozwalają obserwować intensywność pożytków oraz aktywność zbieraczek.
 - **Spadki wagi** mogą wskazywać na zużywanie zapasów, rójkę lub okresy słabszego pożytku.
 - **Analiza wykresów wagi** umożliwia ocenę dynamiki rozwoju rodziny pszczelej, sezonowej produkcji miodu oraz jest kluczowa w planowaniu miodobrania.
+- **Tarowanie wagi** — możesz wyzerować wagę względem aktualnego odczytu, aby od tego momentu śledzić netto przyrost lub ubytek masy. W sekcji *Waga* widoku *Stan ula* kliknij przycisk *Taruj*. Po pomyślnym tarowaniu wyświetlenie zmienia się na **Aktualna waga (od tarowania)**, a na wykresie wagi pojawia się znacznik *Tara*. Aby wrócić do wagi brutto, kliknij *Resetuj* obok znacznika czasu tarowania.
 
 ### 5. Przybytek miodu
 
@@ -1710,7 +1714,7 @@ Funkcja edycji danych użytkownika umożliwia aktualizację podstawowych informa
 Aby edytować dane użytkownika, należy:
 
 - W zakładce *Pasieki* (widok startowy aplikacji Apisense) kliknąć ikonę koła zębatego, znajdującą się w prawej górnej części ekranu. W rezultacie zostanie otwarty widok *Ustawienia konta* ([](#fig-app-settings)).
-- Widok *Ustawienia konta* składa się z kilku sekcji: **Wyświetlana nazwa**, **E-mail**, **Telefon komórkowy**, **Doświadczenie**, **Hasło** oraz **Język**. W każdej z nich prezentowane są aktualne dane użytkownika.
+- Widok *Ustawienia konta* składa się z kilku sekcji: **Wyświetlana nazwa**, **E-mail**, **Telefon komórkowy**, **Doświadczenie**, **Hasło**, **Język** oraz **Jednostki**. W każdej z nich prezentowane są aktualne dane użytkownika.
 - Aby zmienić zawartość wybranej sekcji, należy kliknąć jej nagłówek, co spowoduje otwarcie nowego widoku, w którym możliwa będzie edycja danych. Przykładowo, w przypadku zmiany hasła użytkownik zostanie poproszony o wprowadzenie nowego hasła oraz jego powtórzenie ([](#fig-app-settings)).
 - Po wprowadzeniu zmian należy je zapisać, klikając żółty przycisk znajdujący się w prawym dolnym rogu ekranu.
 
@@ -1736,6 +1740,16 @@ Aby sprawdzić, jaka wersja aplikacji Apisense jest aktualnie zainstalowana na T
 - Na dole ekranu, w centralnej części zobaczysz wpis w formacie **Wersja X.Y.Z** (np. *Wersja 1.2.3*) - to numer zainstalowanej wersji aplikacji.
 
 Warto porównyć ten numer z wersją dostępną w sklepie Google Play lub App Store przed zgłoszeniem problemu technicznego.
+
+### 3. Preferencje jednostek
+
+Sekcja *Jednostki* w *Ustawieniach konta* umożliwia wybór jednostek miar wyświetlanych w całej aplikacji:
+
+- **Jednostka temperatury** — Celsjusz (°C) lub Fahrenheit (°F).
+- **Jednostka wagi** — Kilogramy (kg) lub Funty (lbs).
+
+Zmiany są widoczne od razu na wszystkich wykresach i odczytach w aplikacji.
+
 ______________________________________________________________________
 
 ## Dobre praktyki użytkowania systemu
