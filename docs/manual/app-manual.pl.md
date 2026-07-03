@@ -943,6 +943,14 @@ Figure: Widok Zarejestruj próbkę {#fig-register-sample}
 
 ![figure](pictures/register_sample.png){width=200}
 
+!!! note "Przechowywanie próbek w zamrażarce — tylko badania na Nosemę"
+    **Zamrażanie pszczół jest dopuszczalne wyłącznie** w przypadku badań na *Nosemę*.
+
+    - Każda zamrożona próbka musi być **czytelnie i jednoznacznie opisana**, tak aby można było ustalić, z którego ula pochodzi (np. kod badania z aplikacji zapisany na kopercie).
+    - Temperatura przechowywania: **co najmniej −8 °C**.
+    - Próbki można przechowywać w zamrażarce przez około **3–5 miesięcy** przed wykonaniem badania lub wysłaniem do laboratorium.
+    - Próbek **nie wolno rozmrażać i zamrażać ponownie**.
+
 !!! tip "Jak wykonać badanie samodzielnie?"
     Szczegółowe instrukcje pobierania próbek i wykonywania badań (mikroskopia *Nosema*, flotacja na *Varroa*) znajdziesz w sekcji [Badania](../procedures/index.md).
 

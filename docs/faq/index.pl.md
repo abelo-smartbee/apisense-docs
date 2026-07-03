@@ -112,6 +112,17 @@ Jeszcze nie potwierdzone — Apisense skontaktuje się w tej sprawie mailowo.
 
 Tak — zawsze. Flotacja na Varroa (sugar roll) jest **obowiązkowa w każdym zaplanowanym badaniu** (Test 1, 2 i 3), dla wszystkich monitorowanych rodzin. Wykonujesz ją za każdym razem, niezależnie od pory sezonu, wskazań czujników czy braku widocznych objawów warrozy. W każdym badaniu wykonujesz komplet **obu procedur**: flotację na Varroa **oraz** mikroskopię Nosema/Vairimorpha. Szczegóły: [Procedury badań](../procedures/index.md).
 
+### Czy można zamrażać próbki pszczół do badania na Nosemę?
+
+Tak — **zamrażanie pszczół jest dopuszczalne wyłącznie** w przypadku badań na *Nosemę*.
+
+- Każda zamrożona próbka musi być **czytelnie i jednoznacznie opisana**, tak aby można było ustalić, z którego ula pochodzi.
+- Temperatura przechowywania: **co najmniej −8 °C**.
+- Próbki można przechowywać w zamrażarce przez około **3–5 miesięcy** przed wykonaniem badania lub wysłaniem do laboratorium.
+- Próbek **nie wolno rozmrażać i zamrażać ponownie**.
+
+Szczegóły: [Mikroskopia Nosema/Vairimorpha](../procedures/nosema-microscopy.md#przechowywanie-przed-badaniem), [Rejestrowanie próbki](../manual/app-manual.md#rejestrowanie-probki).
+
 ## Praktyki pszczelarskie
 
 ### Czy mogę stosować zabiegi z użyciem kwasu szczawiowego lub mrówkowego?

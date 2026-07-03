@@ -947,6 +947,14 @@ Figure: Register sample view {#fig-register-sample}
 
 ![figure](pictures/register_sample.png){width=200}
 
+!!! note "Freezer storage — Nosema tests only"
+    **Freezing bees is accepted only** for *Nosema* tests.
+
+    - Each frozen sample must be **clearly and easily identified** with the hive it comes from (e.g. the test code from the app written on the envelope).
+    - Storage temperature: **at least −8 °C**.
+    - Bee samples can be stored in the freezer for approximately **3–5 months** before testing or shipping to the lab.
+    - Samples **must not be thawed and frozen again**.
+
 !!! tip "How to perform the test yourself?"
     Detailed instructions for sample collection and field testing (*Nosema* microscopy, *Varroa* sugar roll, colony health questionnaire) are available in the [Lab procedures](../procedures/index.md) section.
 

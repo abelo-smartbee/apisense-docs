@@ -47,6 +47,15 @@ Use **one** of the following:
 - **Dead bees:** collect 25 dead worker honey bees from the hygienic bottom board of the hive, provided that the bees are dead (no signs of decay or fungal growth).
 - **Live bees:** collect 25 live worker honey bees caught at the hive entrance.
 
+### Storage before testing
+
+If you cannot test or ship the sample immediately, **freezing bees is accepted only for *Nosema* tests**:
+
+- Each frozen sample must be **clearly and easily identified** with the hive it comes from.
+- Storage temperature: **at least −8 °C**.
+- Bee samples can be stored in the freezer for approximately **3–5 months** before testing.
+- Samples **must not be thawed and frozen again**.
+
 ### 2. Homogenize
 
 1. Add **25 mL of deionized water** to the bee sample (1 mL per bee).

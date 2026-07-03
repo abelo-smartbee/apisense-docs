@@ -40,6 +40,15 @@ Użyj **jednej** z poniższych opcji:
 - **Martwe pszczoły:** zbierz 25 martwych pszczół robotnic z wkładki higienicznej dna ula, pod warunkiem że pszczoły są martwe (bez oznak rozkładu czy porastania pleśnią).
 - **Żywe pszczoły:** złap 25 żywych pszczół robotnic przy wylotku ula.
 
+### Przechowywanie przed badaniem
+
+Jeśli nie możesz od razu wykonać badania ani wysłać próbki do laboratorium, **zamrażanie pszczół jest dopuszczalne wyłącznie w przypadku badań na *Nosemę***:
+
+- Każda zamrożona próbka musi być **czytelnie i jednoznacznie opisana**, tak aby można było ustalić, z którego ula pochodzi.
+- Temperatura przechowywania: **co najmniej −8 °C**.
+- Próbki można przechowywać w zamrażarce przez około **3–5 miesięcy** przed badaniem.
+- Próbek **nie wolno rozmrażać i zamrażać ponownie**.
+
 ### 2. Homogenizacja
 
 1. Dodaj **25 mL wody dejonizowanej** do próbki pszczół (1 mL na pszczołę).
