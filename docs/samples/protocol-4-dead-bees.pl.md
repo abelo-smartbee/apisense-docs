@@ -20,8 +20,8 @@ Zebranie próbki martwych pszczół z dennicy ula do badań laboratoryjnych.
 3. Zasada: **1 rodzina = 1 próbka**.
 4. Przesyp próbkę do **papierowej koperty**.
 
-!!! tip "Brak możliwości natychmiastowej wysyłki?"
-    Próbkę można przechowywać **w zamrażarce** do czasu wysyłki.
+!!! note "Brak możliwości natychmiastowej wysyłki? (tylko badania na Nosemę)"
+    **Zamrażanie pszczół jest dopuszczalne wyłącznie** w przypadku badań na *Nosemę*. Każda próbka musi być czytelnie opisana (kod badania, ul), przechowywana w **co najmniej −8 °C**, przez około **3–5 miesięcy** przed wysyłką. Próbek **nie wolno rozmrażać i zamrażać ponownie**. Szczegóły: [Mikroskopia Nosema/Vairimorpha](../procedures/nosema-microscopy.md#przechowywanie-przed-badaniem).
 
 ## Zarejestrowanie próbki w aplikacji
 

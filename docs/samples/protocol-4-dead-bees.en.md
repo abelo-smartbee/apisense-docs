@@ -20,8 +20,8 @@ Collect a sample of dead bees from the hive's bottom board for laboratory testin
 3. Rule: **1 colony = 1 sample**.
 4. Transfer the sample into a **paper envelope**.
 
-!!! tip "Can't ship immediately?"
-    The sample can be stored **in a freezer** until shipping.
+!!! note "Can't ship immediately? (Nosema tests only)"
+    **Freezing bees is accepted only** for *Nosema* tests. Each sample must be clearly labelled (test code, hive), stored at **at least −8 °C**, for approximately **3–5 months** before shipping. Samples **must not be thawed and frozen again**. Details: [Nosema/Vairimorpha microscopy](../procedures/nosema-microscopy.md#storage-before-testing).
 
 ## Register the sample in the app
 
