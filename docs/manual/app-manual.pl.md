@@ -17,6 +17,7 @@
 - **Raporty i wykresy** — wizualizacja danych pomiarowych w postaci dziennych, tygodniowych i długoterminowych wykresów z naniesionym trendem.
 - **Historia danych** — archiwum notatek, przeglądów i powiadomień.
 - **Zarządzanie pasieką** — dodawanie i edycja pasiek, uli, przeglądów, notatek, oraz dodawanie badań i rejestrowanie próbek.
+- **Analiza ramki** — analiza zdjęcia ramki oparta na AI, szacująca udział czerwiu, zapasów pokarmu i pustego plastra.
 
 ______________________________________________________________________
 
@@ -176,7 +177,7 @@ Figure: Zakładka Pasieki z jedną pasieką oraz zakładka Ul z jednym ulem (2) 
 
 ![figure](pictures/beehives.png){width=200}
 
-- W zakładce *Ule* kliknij ikonę koła zębatego, znajdującą się w prawym górnym rogu ekranu. Po kliknięciu zębatki zostanie otwarty widok *Ustawienia pasieki* ([](#fig-apiary-settings)).
+- W zakładce *Ule* kliknij ikonę **⋮**, znajdującą się w prawym górnym rogu ekranu, i wybierz *Ustawienia*. W rezultacie zostanie otwarty widok *Ustawienia pasieki* ([](#fig-apiary-settings)).
 
 Figure: Widok Ustawienia pasieki {#fig-apiary-settings}
 
@@ -205,7 +206,7 @@ Figure: Zakładka Pasieki z jedną pasieką oraz zakładka Ul z jednym ulem (2) 
 
 ![figure](pictures/beehives.png){width=200}
 
-- W zakładce *Ule* kliknij ikonę koła zębatego, znajdującą się w prawym górnym rogu ekranu. Po kliknięciu zębatki zostanie otwarty widok *Ustawienia pasieki* ([](#fig-apiary-settings-2)).
+- W zakładce *Ule* kliknij ikonę **⋮**, znajdującą się w prawym górnym rogu ekranu, i wybierz *Ustawienia*. W rezultacie zostanie otwarty widok *Ustawienia pasieki* ([](#fig-apiary-settings-2)).
 
 Figure: Widok Ustawienia pasieki {#fig-apiary-settings-2}
 
@@ -353,7 +354,7 @@ Figure: Przykładowy widok zakładki Szczegóły ula {#fig-beehive-interior-2}
 
 ![figure](pictures/beehive_interior.png){width=200}
 
-- Następnie kliknij w ikonę koła zębatego, zlokalizowaną w prawym górnym rogu zakładki *Szczegóły*, w wyniku czego zostanie wyświetlony widok *Ustawienia ula* ([](#fig-beehive-settings)).
+- Następnie kliknij w ikonę **⋮**, zlokalizowaną w prawym górnym rogu zakładki *Szczegóły*, i wybierz *Ustawienia*, w wyniku czego zostanie wyświetlony widok *Ustawienia ula* ([](#fig-beehive-settings)).
 
 Figure: Widok Ustawienia ula {#fig-beehive-settings}
 
@@ -399,7 +400,7 @@ Figure: Przykładowy widok zakładki Szczegóły ula {#fig-beehive-interior-3}
 
 ![figure](pictures/beehive_interior.png){width=200}
 
-- Następnie kliknij w ikonę koła zębatego, zlokalizowaną w prawym górnym rogu zakładki *Szczegóły*, w wyniku czego zostanie wyświetlony widok *Ustawienia ula* ([](#fig-beehive-settings-2)).
+- Następnie kliknij w ikonę **⋮**, zlokalizowaną w prawym górnym rogu zakładki *Szczegóły*, i wybierz *Ustawienia*, w wyniku czego zostanie wyświetlony widok *Ustawienia ula* ([](#fig-beehive-settings-2)).
 
 Figure: Widok Ustawienia ula {#fig-beehive-settings-2}
 
@@ -451,7 +452,7 @@ Figure: Widok Szczegóły ula - Przycisk Dodaj Przegląd {#fig-add-overview-butt
   - ramki z VitalSensorem,
   - skrajnej ramki na uchwytach, które dołączyliśmy.
 
-Aby dodać zdjęcia kliknij przycisk *Dodaj zdjęcie*, a następnie wybierz opcję *Zrób zdjęcie* lub *Dodaj zdjęcie z galerii*.
+Aby dodać zdjęcia kliknij przycisk *Dodaj zdjęcie*, a następnie wybierz opcję *Zrób zdjęcie* lub *Dodaj zdjęcie z galerii*. Jeśli nie wiesz, jak powinno wyglądać dane zdjęcie, kliknij odnośnik *Zobacz przykład* przy tym kroku, aby otworzyć przykładowe zdjęcia *Przód*/*Tył* w dolnym panelu.
 
 Figure: Dodawanie przeglądu - dodawanie zdjęć {#fig-add-inspection-photos}
 
@@ -479,11 +480,21 @@ Figure: Dodawanie przeglądu - zapisywanie przeglądu {#fig-add-overview-save}
 - Aby zapisać przegląd kliknij żółty przycisk *Zakończ przegląd*, znajdujący się w prawym dolnym rogu ekranu. Zapisany przegląd zostanie wyświetlony na liście przeglądów w zakładce Szczegóły ula > Przegląd ([](#fig-beehive-details-overview)).
 
 !!! tip
-    **Szkice przeglądów:** Jeśli musisz przerwać przegląd przed jego zakończeniem, kliknij *Zapisz szkic*, aby zachować dotychczasowy postęp. Szkic pojawi się na liście przeglądów i można go w dowolnym momencie wznowić. Aby usunąć szkic, przesuń go w lewo na liście przeglądów.
+    **Szkice przeglądów:** Jeśli opuścisz rozpoczęty przegląd z niezapisanymi zmianami (np. klikając przycisk wstecz), aplikacja zapyta, czy *Zapisać szkic*, czy *Odrzucić*. Zapisany szkic pojawi się na liście przeglądów i można go w dowolnym momencie wznowić, ale **jest przechowywany tylko przez 24 godziny**, po czym zostaje automatycznie usunięty. Aby usunąć szkic wcześniej, przesuń go w lewo na liście przeglądów.
 
 Figure: Przegląd na liście przeglądów w ulu {#fig-beehive-details-overview}
 
 ![figure](pictures/beehive_details_overview.png){width=200}
+
+#### 3.1 Edycja przeglądu
+
+- Na liście przeglądów (*Szczegóły ula > Przegląd*) lub na ekranie szczegółów przeglądu otwórz menu dodatkowe i wybierz *Edytuj*. Kreator otworzy się ponownie, wypełniony zapisanymi zdjęciami i odpowiedziami.
+- Zaktualizuj zdjęcia i odpowiedzi według potrzeb, a następnie kliknij *Zakończ przegląd*, aby zapisać. Wyświetli się potwierdzenie ("Przegląd zaktualizowany pomyślnie").
+
+#### 3.2 Usuwanie przeglądu
+
+- Na liście przeglądów przesuń wybrany wiersz w lewo i kliknij ikonę kosza, albo na ekranie szczegółów przeglądu wybierz *Usuń* z menu dodatkowego.
+- Potwierdź komunikat *Usuń przegląd*. Tej czynności nie można cofnąć.
 
 ### 4. Notatki
 
@@ -552,6 +563,9 @@ Figure: Dodawanie notatki tekstowej z załącznikami {#fig-add-note-add-photos}
 Figure: Notatka na liście notatek w ulu {#fig-beehive-details-note}
 
 ![figure](pictures/beehive_details_note.png){width=200}
+
+!!! tip
+    **Transkrypcja notatki głosowej:** Po nagraniu notatki głosowej aplikacja automatycznie zamienia ją na tekst. W trakcie generowania transkrypcji na ekranie szczegółów notatki widoczny jest napis *Trwa transkrypcja...*; gdy transkrypcja jest gotowa, tekst pojawia się pod nagraniem. Jeśli notatka ma kilka załączonych zdjęć, dotknij jednego z nich, aby otworzyć przesuwaną galerię (strzałki/kropki nawigacyjne pozwalają przechodzić między zdjęciami).
 
 **Uwaga — dodawanie notatki z poziomu pasieki:** Notatka może zostać również utworzona z poziomu pasieki. W tym celu należy przejść następującą ścieżkę: w zakładce *Pasieki* kliknąć wybraną pasiekę, następnie w zakładce *Ule* wybrać z dolnego menu opcję *Dodaj...* i opcję *Notatka*. W rezultacie taka sama notatka zostanie automatycznie zapisana do wszystkich uli w wybranej pasiece i będzie widoczna na liście notatek każdego ula (*Szczegóły > Notatki*). **Edycja** takiej notatki dotyczy wyłącznie kopii w konkretnym ulu — zmiany w jednej notatce nie będą widoczne w pozostałych notatkach dodanych w ten sposób. Również **usuwając** taką notatkę w jednym z uli, notatki w pozostałych ulach zostaną nienaruszone.
 
@@ -954,6 +968,9 @@ Figure: Widok Zarejestruj próbkę {#fig-register-sample}
 !!! tip "Jak wykonać badanie samodzielnie?"
     Szczegółowe instrukcje pobierania próbek i wykonywania badań (mikroskopia *Nosema*, flotacja na *Varroa*) znajdziesz w sekcji [Badania](../procedures/index.md).
 
+!!! note
+    **Usuwanie próbki:** Zarejestrowaną próbkę można usunąć tylko wtedy, gdy ma status *oczekująca* (zanim wróci wynik z laboratorium) — na jej karcie w zakładce *Próbki* pojawi się wtedy ikona kosza. Kliknij ją i potwierdź *Usuń próbkę*. Po otrzymaniu wyniku próbki nie można już usunąć.
+
 
 ### 8. Badania
 
@@ -998,6 +1015,44 @@ Figure: Zapisane badanie na liście badań w ulu {#fig-add-examination-list}
 
 ![figure](pictures/add_examination_list.png){width=200}
 
+#### 8.2 Edycja badania
+
+- Na liście badań (*Szczegóły ula > Więcej > Badania*) lub na ekranie szczegółów badania otwórz menu dodatkowe i wybierz *Edytuj*. Widok *Edytuj badanie* otworzy się wypełniony zapisanymi danymi; rodzaju badania nie można zmienić.
+- Zaktualizuj pola, dodaj lub usuń zdjęcia według potrzeb, a następnie zapisz żółtym przyciskiem.
+
+#### 8.3 Usuwanie badania
+
+- Na liście badań przesuń wybrany wiersz w lewo i kliknij ikonę kosza, albo na ekranie szczegółów badania wybierz *Usuń* z menu dodatkowego.
+- Potwierdź komunikat *Usuń badanie*. Tej czynności nie można cofnąć.
+
+<a id="analiza-ramki"></a>
+
+### 9. Analiza ramki
+
+Analiza ramki wykorzystuje AI do oszacowania zawartości plastra — czerwiu, zapasów pokarmu oraz pustej/zasłoniętej powierzchni — na podstawie jednego zdjęcia.
+
+#### 9.1 Dodawanie analizy ramki
+
+- Kliknij kafelek wybranej pasieki, a następnie kafelek wybranego ula. W rezultacie zostanie wyświetlony widok *Szczegóły ula*.
+- Z dolnego menu wybierz opcję *Dodaj...*, a następnie *Analiza ramki*; zostanie wyświetlony widok *Dodaj analizę ramki*.
+- Zrób lub wgraj **jedno zdjęcie** ramki. Aby uzyskać jak najdokładniejszy wynik AI, przytrzymaj ramkę tak, aby wypełniała całe zdjęcie i była dobrze widoczna na jednolitym tle.
+- Kliknij żółty przycisk *Wyślij do analizy* w prawym dolnym rogu ekranu. Zdjęcie zostanie przesłane i zakolejkowane do przetworzenia przez AI.
+
+!!! note
+    Analiza ramki wymaga połączenia z internetem do przesłania zdjęcia; przetwarzanie trwa zwykle kilka minut.
+
+#### 9.2 Wyniki analizy ramki
+
+Analizy ramek są wyświetlane na liście w zakładce *Analiza* ula (*Szczegóły ula > Więcej > Analiza*), od najnowszej, i odświeżają się automatycznie, dopóki wynik jest oczekiwany.
+
+- **Oczekująca** — podczas przetwarzania zdjęcia przez AI widoczny jest napis "Analizowanie ramki" (ok. 5 minut).
+- **Zakończona** — dotknij pozycji, aby zobaczyć opisane kolorami zdjęcie z rozbiciem procentowym na kategorie: **Czerw** (jaja, larwy, czerw robotnic i trutni), **Zapasy** (nektar, pyłek, zasklepiony miód) oraz **Pusta/zasłonięta** powierzchnia, a także liczbę znalezionych mateczników/misek matecznikowych i ogólne pokrycie plastra.
+- **Nieudana** — analizy nie udało się ukończyć; z tego samego ula możesz rozpocząć nową.
+
+Gdy zakolejkowana analiza zostanie ukończona, wysyłane jest powiadomienie push, które po kliknięciu otwiera bezpośrednio jej wynik.
+
+!!! note
+    Wykrywanie chorób na podstawie zdjęć ramki jest planowane w przyszłej wersji i w szczegółach analizy oznaczone jest jako *Wkrótce dostępne*.
 
 ______________________________________________________________________
 
@@ -1106,6 +1161,7 @@ Widok *Szczegóły* został podzielony na kilka mniejszych zakładek:
 - Więcej:
   - Badania
   - Próbki
+  - Analiza
 
 
 #### 4.1 Stan ula
@@ -1118,7 +1174,7 @@ Figure: Zakładka Szczegóły - przykładowy widok zakładki Stan ula {#fig-behi
 
 **Najważniejsze informacje:**
 
-- **Sekcja Zdrowie** – prezentuje aktualny stan rodziny pszczelej, informując czy rodzina jest zdrowa, czy też wykryto potencjalne zagrożenie w postaci choroby. W tej sekcji wyświetlany jest również rok wychowu matki pszczelej oraz wskaźnik **Siły rodziny** (Słaba / Średnia / Silna / Bardzo silna), odzwierciedlający witalność rodziny wyznaczoną przez AI na podstawie danych z inspekcji. Kliknij wskaźnik siły rodziny, aby otworzyć ekran *Siła rodziny*, gdzie zobaczysz pełną historię zmian i możesz ręcznie skorygować ocenę AI.
+- **Sekcja Zdrowie** – prezentuje aktualny stan rodziny pszczelej, informując czy rodzina jest zdrowa, czy też wykryto potencjalne zagrożenie w postaci choroby. W tej sekcji wyświetlany jest również rok wychowu matki pszczelej oraz wskaźnik **Siły rodziny** (Słaba / Średnia / Silna / Bardzo silna), odzwierciedlający witalność rodziny wyznaczoną przez AI na podstawie danych z inspekcji. Kliknij wskaźnik siły rodziny, aby otworzyć ekran *Siła rodziny*, gdzie zobaczysz pełną historię zmian i możesz ręcznie skorygować ocenę AI. Kliknij ikonę informacji (**i**) obok wskaźnika, aby otworzyć legendę wyjaśniającą znaczenie każdego poziomu oraz zakres liczby zasiedlonych ramek gniazda, jaki mu odpowiada, z wyróżnionym aktualnym poziomem danego ula.
 - **Sekcja Waga** – zawiera informacje dotyczące aktualnej wagi ula oraz przybytku miodu, co pozwala ocenić tempo produkcji oraz aktywność rodziny pszczelej.
 - **Sekcja Warunki** – przedstawia dane środowiskowe z wnętrza ula oraz jego otoczenia, takie jak temperatura zewnętrzna, temperatura wewnętrzna, wilgotność oraz ciśnienie wewnątrz ula.
 - **Szczegółowe dane i wykresy** – po rozwinięciu poszczególnych elementów w danej sekcji użytkownik może zobaczyć bardziej szczegółowe informacje oraz wykresy zmian parametrów w czasie, co ułatwia analizę stanu ula i warunków panujących w jego wnętrzu.
@@ -1183,11 +1239,20 @@ Figure: Zakładka Szczegóły - przykładowy widok zakładki Próbki {#fig-beehi
 - **Lista próbek** – prezentuje wszystkie próbki zapisane dla wybranego ula, posortowane malejąco według daty pobrania próbki.
 - **Szczegóły próbki** – po kliknięciu w pojedynczą próbkę zostaną wyświetlone jej szczegóły, w tym: data pobrania próbki, rodzaj badania oraz wygenerowany przez system kod badania.
 
+#### 4.6 Analiza
+
+Zakładka *Analiza* prezentuje historię analiz ramek AI wykonanych dla wybranego ula, od najnowszej.
+
+**Najważniejsze informacje:**
+
+- **Lista analiz** – pokazuje każdą analizę ramki wraz ze statusem: *Oczekująca*, *Zakończona* lub *Nieudana*.
+- **Szczegóły analizy** – po kliknięciu w zakończoną analizę wyświetlane jest opisane zdjęcie oraz rozbicie na czerw/zapasy/pustą powierzchnię. Zobacz [9. Analiza ramki](#analiza-ramki), aby dowiedzieć się więcej.
+
 <a id="omowienie-ustawien-pasieki"></a>
 
 ### 5. Omówienie ustawień pasieki
 
-Widok *Ustawienia pasieki* pozwala zarządzać podstawowymi danymi pasieki oraz śledzić informacje na temat jej stanu wyposażenia. Do widoku można przejść będąc w zakładce *Ule* (wnętrze pasieki) i klikając ikonkę koła zębatego w prawym górnym rogu ekranu.
+Widok *Ustawienia pasieki* pozwala zarządzać podstawowymi danymi pasieki oraz śledzić informacje na temat jej stanu wyposażenia. Do widoku można przejść będąc w zakładce *Ule* (wnętrze pasieki), klikając ikonkę **⋮** w prawym górnym rogu ekranu i wybierając *Ustawienia*.
 Widok *Ustawienia pasieki* składa się z następujących sekcji:
 
 - Szczegóły pasieki
@@ -1231,7 +1296,7 @@ Figure: Widok Ustawienia pasieki - sekcja Hub {#fig-apiary-settings-hub}
 
 ### 6. Omówienie ustawień ula
 
-Widok *Ustawienia ula* pozwala na zarządzanie podstawowymi informacjami o ulu, danymi dotyczącymi matki pszczelej oraz przypisanymi urządzeniami pomiarowymi. Do widoku można przejść z zakładki *Szczegóły* ula (wnętrze ula) i klikając ikonkę koła zębatego widoczną w prawym górnym rogu ekranu.
+Widok *Ustawienia ula* pozwala na zarządzanie podstawowymi informacjami o ulu, danymi dotyczącymi matki pszczelej oraz przypisanymi urządzeniami pomiarowymi. Do widoku można przejść z zakładki *Szczegóły* ula (wnętrze ula), klikając ikonkę **⋮** widoczną w prawym górnym rogu ekranu i wybierając *Ustawienia*.
 Widok *Ustawienia ula* został podzielony na następujące sekcje:
 
 - Szczegóły ula
@@ -1507,7 +1572,11 @@ Najważniejsze informacje:
 - **Zmiany wagi w czasie** pozwalają obserwować intensywność pożytków oraz aktywność zbieraczek.
 - **Spadki wagi** mogą wskazywać na zużywanie zapasów, rójkę lub okresy słabszego pożytku.
 - **Analiza wykresów wagi** umożliwia ocenę dynamiki rozwoju rodziny pszczelej, sezonowej produkcji miodu oraz jest kluczowa w planowaniu miodobrania.
-- **Tarowanie wagi** — możesz wyzerować wagę względem aktualnego odczytu, aby od tego momentu śledzić netto przyrost lub ubytek masy. W sekcji *Waga* widoku *Stan ula* kliknij przycisk *Taruj*. Po pomyślnym tarowaniu wyświetlenie zmienia się na **Aktualna waga (od tarowania)**, a na wykresie wagi pojawia się znacznik *Tara*. Aby wrócić do wagi brutto, kliknij *Resetuj* obok znacznika czasu tarowania.
+- **Tarowanie wagi** — możesz wyzerować wagę, aby śledzić netto przyrost lub ubytek masy od wybranego momentu. W sekcji *Waga* widoku *Stan ula*, na wykresie wagi kliknij przycisk *Taruj* i wybierz:
+    - **Taruj teraz** — wyzeruj względem najnowszego odczytu.
+    - **Taruj w punkcie** — wyzeruj od wcześniejszego momentu; po wybraniu tej opcji dotknij odpowiedniego punktu bezpośrednio na wykresie wagi.
+
+    Po pomyślnym tarowaniu wyświetlenie zmienia się na **Aktualna waga (od tarowania)**, a na wykresie pojawia się znacznik *Tara*. Aby wrócić do wagi brutto, kliknij *Resetuj* obok przycisku *Taruj*.
 
 ### 5. Przybytek miodu
 
@@ -1554,7 +1623,12 @@ W aplikacji Apisense dostępne są wykresy dla następujących parametrów:
 - wilgotność
 - ciśnienie atmosferyczne
 
-#### 1.3 Ramy czasowe prezentowane na wykresach
+#### 1.3 Powiększanie i tryb pełnoekranowy
+
+- Aby przyjrzeć się wykresowi bliżej, zsuń lub rozsuń palce (pinch to zoom) albo przeciągnij, aby przesunąć widok; możesz też skorzystać z przycisków powiększania/przesuwania obok wykresu. Po przybliżeniu pojawia się przycisk *Resetuj powiększenie*, który przywraca pełny zakres.
+- Dotknij ikony *Pełny ekran* nad wykresem, aby otworzyć go w trybie pełnoekranowym — daje to więcej miejsca na szczegółową analizę i przesuwanie widoku (dostępne zarówno dla wykresu wagi, jak i warunków).
+
+#### 1.4 Ramy czasowe prezentowane na wykresach
 
 Dane na wykresach prezentowane są w kilku przedziałach czasowych. Ostatnie:
 
@@ -1566,7 +1640,7 @@ Dane na wykresach prezentowane są w kilku przedziałach czasowych. Ostatnie:
 
 Aby wyświetlić wykres dla wybranego zakresu, należy kliknąć odpowiedni przedział czasu wyświetlany nad wykresem.
 
-#### 1.4 Interpretacja wykresów
+#### 1.5 Interpretacja wykresów
 
 Wykresy pozwalają obserwować zmiany parametrów w czasie oraz analizować ich wzajemne zależności. Dzięki wizualnej formie prezentacji danych łatwiej zauważyć powtarzające się schematy, okresy stabilności lub nagłe odchylenia od typowych wartości.
 
@@ -1693,7 +1767,7 @@ Każde zgłoszenie jest analizowane przez zespół odpowiedzialny za rozwój apl
 
 Aby zgłosić problem lub sugestię w aplikacji, należy wykonać poniższe kroki:
 
-- Kliknij ikonę *żarówki* dostępną z każdego widoku w aplikacji, znajdującą się w prawym górnym rogu ekranu (obok przycisków ustawienia i wyloguj). W efekcie zostanie otwarty widok *Dodaj sugestię* ([](#fig-add-suggestion)).
+- Kliknij ikonę **⋮** (więcej opcji) dostępną z każdego widoku w aplikacji, znajdującą się w prawym górnym rogu ekranu, i wybierz *Wyślij opinię* z menu (obok pozycji *Ustawienia* i *Wyloguj*). W efekcie zostanie otwarty widok *Dodaj sugestię* ([](#fig-add-suggestion)).
 - W widoku *Dodaj sugestię* uzupełnij następujące, wymagane pola:
 
     - **Wybierz kategorię** - wybierz jedną z dostępnych kategorii w zależności od tego, czy chcesz zgłosić problem czy sugestię ulepszenia aplikacji.
@@ -1721,7 +1795,7 @@ Funkcja edycji danych użytkownika umożliwia aktualizację podstawowych informa
 
 Aby edytować dane użytkownika, należy:
 
-- W zakładce *Pasieki* (widok startowy aplikacji Apisense) kliknąć ikonę koła zębatego, znajdującą się w prawej górnej części ekranu. W rezultacie zostanie otwarty widok *Ustawienia konta* ([](#fig-app-settings)).
+- W zakładce *Pasieki* (widok startowy aplikacji Apisense) kliknij ikonę **⋮**, znajdującą się w prawej górnej części ekranu, i wybierz *Ustawienia*. W rezultacie zostanie otwarty widok *Ustawienia konta* ([](#fig-app-settings)).
 - Widok *Ustawienia konta* składa się z kilku sekcji: **Wyświetlana nazwa**, **E-mail**, **Telefon komórkowy**, **Doświadczenie**, **Hasło**, **Język** oraz **Jednostki**. W każdej z nich prezentowane są aktualne dane użytkownika.
 - Aby zmienić zawartość wybranej sekcji, należy kliknąć jej nagłówek, co spowoduje otwarcie nowego widoku, w którym możliwa będzie edycja danych. Przykładowo, w przypadku zmiany hasła użytkownik zostanie poproszony o wprowadzenie nowego hasła oraz jego powtórzenie ([](#fig-app-settings)).
 - Po wprowadzeniu zmian należy je zapisać, klikając żółty przycisk znajdujący się w prawym dolnym rogu ekranu.
@@ -1743,11 +1817,19 @@ W dolnej części widoku *Ustawienia konta* ([](#fig-app-settings)) dostępny je
 
 Aby sprawdzić, jaka wersja aplikacji Apisense jest aktualnie zainstalowana na Twoim urządzeniu:
 
-- Przejdź do widoku *Ustawienia konta*. W tym celu kliknij ikonę koła zębatego, znajdującą się w prawym górnym rogu zakładki *Pasieki*.
+- Przejdź do widoku *Ustawienia konta*. W tym celu kliknij ikonę **⋮**, znajdującą się w prawym górnym rogu zakładki *Pasieki*, i wybierz *Ustawienia*.
 - Przewiń widok **na sam dół**.
 - Na dole ekranu, w centralnej części zobaczysz wpis w formacie **Wersja X.Y.Z** (np. *Wersja 1.2.3*) - to numer zainstalowanej wersji aplikacji.
 
 Warto porównyć ten numer z wersją dostępną w sklepie Google Play lub App Store przed zgłoszeniem problemu technicznego.
+
+!!! note
+    **Ekrany aktualizacji aplikacji:** Przy uruchomieniu aplikacja mobilna sprawdza, czy dostępna jest nowsza wersja.
+
+    - Jeśli zainstalowana wersja **nie jest już wspierana**, wyświetlany jest pełnoekranowy komunikat *Wymagana aktualizacja*; aby kontynuować korzystanie z aplikacji, musisz kliknąć *Aktualizuj* i zainstalować nową wersję ze sklepu.
+    - Jeśli **istnieje nowsza wersja, ale Twoja nadal działa**, pojawia się możliwe do zamknięcia okno *Dostępna nowa wersja* z opcjami *Aktualizuj* lub *Później*. Wybranie *Później* sprawi, że komunikat nie pojawi się ponownie, dopóki nie ukaże się jeszcze nowsza wersja.
+
+    Po aktualizacji, przy pierwszym uruchomieniu aplikacja wyświetla okno **Co nowego** z krótkim, przesuwanym podsumowaniem zmian w nowej wersji — dotknij *Dalej*/*Pomiń*/*Gotowe*, aby je zamknąć.
 
 ### 3. Preferencje jednostek
 
@@ -1780,7 +1862,7 @@ ______________________________________________________________________
 
 ### 5. Aktualizacje
 
-- Aktualizuj aplikację mobilną do najnowszej wersji (Google Play / App Store), aby mieć dostęp do ulepszeń i nowych funkcji.
+- Aktualizuj aplikację mobilną do najnowszej wersji (Google Play / App Store), aby mieć dostęp do ulepszeń i nowych funkcji. Jeśli Twoja wersja nie jest już wspierana, aplikacja będzie wymagać aktualizacji przed dalszym korzystaniem (zobacz [Sprawdzenie wersji aplikacji](#2-sprawdzenie-wersji-aplikacji)).
 - Aktualizacje systemu operacyjnego urządzenia również wpływają na stabilność działania aplikacji.
 
 ______________________________________________________________________
@@ -1799,7 +1881,11 @@ ______________________________________________________________________
 
 **Rozwiązanie:** sprawdź poprawność wprowadzonej nazwy użytkownika i hasła. Jeśli zapomniałeś hasła skontaktuj się z z pomocą Apisense: **bee@apisense.ai**.
 
-#### 1.3 Inne problemy
+#### 1.3 Aplikacja pokazuje "Wymagana aktualizacja" i nie mogę wejść do aplikacji
+
+**Rozwiązanie:** oznacza to, że zainstalowana wersja nie jest już wspierana. Kliknij *Aktualizuj*, zainstaluj najnowszą wersję z Google Play / App Store, a następnie uruchom aplikację ponownie.
+
+#### 1.4 Inne problemy
 
 **Rozwiązanie:** skontaktuj się z pomocą techniczną Apisense: **bee@apisense.ai**.
 
@@ -1825,11 +1911,11 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 > [Wideo](#wideo-dodaj-pasieke), [Dodawanie pasieki z urządzeniami](#111-dodawanie-pasieki-z-urzadzeniami), [Dodawanie pasieki bez urządzeń](#112-dodawanie-pasieki-bez-urzadzen)
 
-- **Edycja pasieki:** Kliknij kafelek wybranej pasieki. Kliknij ikonę zębatki będąc w zakładce *Ule*. W widoku *Ustawienia pasieki* kliknij nagłówek sekcji, dla której chcesz zedytować dane. Zmień wartości pól i kliknij zapisz (żółty przycisk).
+- **Edycja pasieki:** Kliknij kafelek wybranej pasieki. Kliknij ikonę **⋮** będąc w zakładce *Ule* i wybierz *Ustawienia*. W widoku *Ustawienia pasieki* kliknij nagłówek sekcji, dla której chcesz zedytować dane. Zmień wartości pól i kliknij zapisz (żółty przycisk).
 
 > [Edycja pasieki](#12-edycja-pasieki)
 
-- **Usuwanie pasieki:** Kliknij kafelek wybranej pasieki. Kliknij ikonę zębatki będąc w zakładce *Ule*. W widoku *Ustawienia pasieki* kliknij przycisk *Usuń pasiekę*.
+- **Usuwanie pasieki:** Kliknij kafelek wybranej pasieki. Kliknij ikonę **⋮** będąc w zakładce *Ule* i wybierz *Ustawienia*. W widoku *Ustawienia pasieki* kliknij przycisk *Usuń pasiekę*.
 
 > [Usuwanie pasieki](#13-usuwanie-pasieki)
 
@@ -1837,15 +1923,15 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 > [Wideo](#wideo-dodaj-ul), [Dodawanie ula](#21-dodawanie-ula)
 
-- **Edycja ula:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Kliknij ikonę zębatki będąc w zakładce *Szczegóły*. W widoku *Ustawienia ula* kliknij nagłówek sekcji, dla której chcesz zedytować dane. Zmień wartości pól i kliknij zapisz (żółty przycisk).
+- **Edycja ula:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Kliknij ikonę **⋮** będąc w zakładce *Szczegóły* i wybierz *Ustawienia*. W widoku *Ustawienia ula* kliknij nagłówek sekcji, dla której chcesz zedytować dane. Zmień wartości pól i kliknij zapisz (żółty przycisk).
 
 > [Edycja ula](#22-edycja-ula)
 
-- **Usuwanie ula:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Kliknij ikonę zębatki będąc w zakładce *Szczegóły*. W widoku *Ustawienia ula* kliknij przycisk *Usuń ul*.
+- **Usuwanie ula:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Kliknij ikonę **⋮** będąc w zakładce *Szczegóły* i wybierz *Ustawienia*. W widoku *Ustawienia ula* kliknij przycisk *Usuń ul*.
 
 > [Usuwanie ula](#23-usuwanie-ula)
 
-- **Dodawanie przeglądów:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Wybierz *Dodaj...* -> *Przegląd* z dolnego menu. Załącz łącznie 4 wymagane zdjęcia ramek. Odpowiedz na pytania. Żółta strzałka w prawo umożliwia przejście do następnego pytania. Kliknij *Zakończ przegląd* (żółty przycisk w ostatnim oknie przeglądu) by zapisać.
+- **Dodawanie przeglądów:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Wybierz *Dodaj...* -> *Przegląd* z dolnego menu. Załącz łącznie 4 wymagane zdjęcia ramek (kliknij *Zobacz przykład*, jeśli nie wiesz, jak powinny wyglądać). Odpowiedz na pytania. Żółta strzałka w prawo umożliwia przejście do następnego pytania. Kliknij *Zakończ przegląd* (żółty przycisk w ostatnim oknie przeglądu) by zapisać. Rozpoczęty przegląd można zapisać jako szkic (przechowywany 24 godziny); zakończony przegląd można później edytować lub usunąć z menu dodatkowego.
 
 > [Wideo](#wideo-dodaj-przeglad), [Dodawanie przeglądów](#dodawanie-przegladow)
 
@@ -1867,9 +1953,13 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 > [Wideo](#wideo-zarejestruj-probke), [Rejestrowanie próbki](#rejestrowanie-probki)
 
-- **Dodawanie badania:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Z dolnego menu wybierz *Dodaj... -> Badanie*. Wybierz datę i rodzaj badania z listy rozwijanej, uzupełnij wymagane zdjęcia i pola (np. liczba roztoczy warrozy), następnie zapisz żółtym przyciskiem.
+- **Dodawanie badania:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Z dolnego menu wybierz *Dodaj... -> Badanie*. Wybierz datę i rodzaj badania z listy rozwijanej, uzupełnij wymagane zdjęcia i pola (np. liczba roztoczy warrozy), następnie zapisz żółtym przyciskiem. Zapisane badanie można później edytować lub usunąć z menu dodatkowego.
 
 > [Dodawanie badania](#81-dodawanie-badania)
+
+- **Dodawanie analizy ramki:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Z dolnego menu wybierz *Dodaj... -> Analiza ramki*. Zrób lub wgraj jedno zdjęcie ramki i kliknij *Wyślij do analizy*. Wynik (*Oczekująca* / *Zakończona* / *Nieudana*) śledź w zakładce *Analiza* ula.
+
+> [Analiza ramki](#analiza-ramki)
 
 ### 3. Panel główny i nawigacja
 
@@ -1885,11 +1975,11 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 > [Wideo](#wideo-dodaj-ul), [Omówienie listy uli (zakładka Ule)](#omowienie-listy-uli)
 
-- **Zawartość ula (zakładka Szczegóły):** Tu sprawdzisz *Stan ula*, zapisane przeglądy, notatki oraz listę badań i próbek. Możesz wyświetlić również wykresy poszczególnych parametrów np. Przybytek miodu.
+- **Zawartość ula (zakładka Szczegóły):** Tu sprawdzisz *Stan ula*, zapisane przeglądy, notatki oraz listę badań, próbek i analiz ramek. Możesz wyświetlić również wykresy poszczególnych parametrów np. Przybytek miodu.
 
 > [Omówienie zawartości ula (zakładka Szczegóły)](#omowienie-zawartosci-ula)
 
-- **Ustawienia pasieki i ula:** Ikona zębatki w widoku pasieki (zakładka Ule) lub ula (zakładka Szczegóły) prowadzi do ustawień. Możesz tu edytować informacje o pasiece lub ulu.
+- **Ustawienia pasieki i ula:** Ikona **⋮** w widoku pasieki (zakładka Ule) lub ula (zakładka Szczegóły) prowadzi do ustawień (obok pozycji *Wyślij opinię* i *Wyloguj*). Możesz tu edytować informacje o pasiece lub ulu.
 
 > [Omówienie ustawień pasieki](#omowienie-ustawien-pasieki), [Omówienie ustawień ula](#omowienie-ustawien-ula)
 
@@ -1899,7 +1989,7 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 > [Monitorowanie parametrów](#monitorowanie-parametrow)
 
-- **Wykresy:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. W zakładce *Szczegóły* -> *Stan ula* rozwiń sekcję *Waga* lub *Warunki* i kliknij w wybrany parametr, aby zobaczyć wykres w wybranym przedziale czasowym (24 h, 7 dni, 1–6 miesięcy).
+- **Wykresy:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. W zakładce *Szczegóły* -> *Stan ula* rozwiń sekcję *Waga* lub *Warunki* i kliknij w wybrany parametr, aby zobaczyć wykres w wybranym przedziale czasowym (24 h, 7 dni, 1–6 miesięcy). Zsuń/rozsuń palce lub przeciągnij, albo skorzystaj z przycisków na ekranie, aby przybliżyć i przesunąć widok, lub dotknij *Pełny ekran*, aby powiększyć wykres.
 
 > [Wizualizacja danych na wykresach](#1-wizualizacja-danych-na-wykresach)
 
@@ -1919,17 +2009,17 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 ### 6. Konto
 
-- **Edycja danych użytkownika:** W widoku startowym *Pasieki* kliknij ikonę zębatki. Możesz zmienić nazwę, e-mail, telefon, hasło oraz język. Z tego miejsca możesz też usunąć konto.
+- **Edycja danych użytkownika:** W widoku startowym *Pasieki* kliknij ikonę **⋮** i wybierz *Ustawienia*. Możesz zmienić nazwę, e-mail, telefon, hasło oraz język. Z tego miejsca możesz też usunąć konto.
 
 > [Edycja danych użytkownika](#edycja-danych-uzytkownika)
 
-- **Sprawdzenie wersji aplikacji:** W widoku *Ustawienia konta* przewiń na sam dół ekranu — zobaczysz wpis **Wersja X.Y.Z**.
+- **Sprawdzenie wersji aplikacji:** W widoku *Ustawienia konta* przewiń na sam dół ekranu — zobaczysz wpis **Wersja X.Y.Z**. Jeśli Twoja wersja nie jest już wspierana, aplikacja przy uruchomieniu wyświetli zamiast tego pełnoekranowy komunikat *Wymagana aktualizacja*.
 
 > [Sprawdzenie wersji aplikacji](#2-sprawdzenie-wersji-aplikacji)
 
 ### 7. Zgłaszanie problemów i sugestii
 
-- **Zgłaszanie w aplikacji:** Kliknij ikonę żarówki w prawym górnym rogu dowolnego widoku. Wypełnij kategorię i opis, opcjonalnie dołącz zdjęcia. Kliknij *Wyślij sugestię*.
+- **Zgłaszanie w aplikacji:** Kliknij ikonę **⋮** w prawym górnym rogu dowolnego widoku i wybierz *Wyślij opinię*. Wypełnij kategorię i opis, opcjonalnie dołącz zdjęcia. Kliknij *Wyślij sugestię*.
 
 > [Zgłaszanie problemów i sugestii](#zglaszanie-problemow-i-sugestii)
 

@@ -24,6 +24,7 @@ caption:
 - **Reports and charts** — visualization of measurement data in the form of daily, weekly and long-term charts with overlaid trends.
 - **Data history** — archive of notes, inspections and notifications.
 - **Apiary management** — adding and editing apiaries, hives, inspections, notes, as well as adding tests and registering samples.
+- **Frame analysis** — AI-based analysis of a frame photo, estimating brood, food stores and empty comb coverage.
 
 ______________________________________________________________________
 
@@ -179,7 +180,7 @@ Figure: Apiaries tab with one apiary and Hives tab with one hive (2) {#fig-beehi
 
 ![figure](pictures/beehives.png){width=200}
 
-- In the *Hives* tab click the cog icon in the upper right corner of the screen. After clicking the cog, the *Apiary settings* view will open ([](#fig-apiary-settings)).
+- In the *Hives* tab click the **⋮** icon in the upper right corner of the screen and choose *Settings*. As a result, the *Apiary settings* view will open ([](#fig-apiary-settings)).
 
 Figure: Apiary settings view {#fig-apiary-settings}
 
@@ -208,7 +209,7 @@ Figure: Apiaries tab with one apiary and Hives tab with one hive (2) {#fig-beehi
 
 ![figure](pictures/beehives.png){width=200}
 
-- In the *Hives* tab click the cog icon in the upper right corner of the screen. After clicking the cog, the *Apiary settings* view will open ([](#fig-apiary-settings-2)).
+- In the *Hives* tab click the **⋮** icon in the upper right corner of the screen and choose *Settings*. As a result, the *Apiary settings* view will open ([](#fig-apiary-settings-2)).
 
 Figure: Apiary settings view {#fig-apiary-settings-2}
 
@@ -356,7 +357,7 @@ Figure: Sample view of the hive Details tab {#fig-beehive-interior-2}
 
 ![figure](pictures/beehive_interior.png){width=200}
 
-- Then click the cog icon in the upper right corner of the *Details* tab; the *Hive settings* view will be displayed ([](#fig-beehive-settings)).
+- Then click the **⋮** icon in the upper right corner of the *Details* tab and choose *Settings*; the *Hive settings* view will be displayed ([](#fig-beehive-settings)).
 
 Figure: Hive settings view {#fig-beehive-settings}
 
@@ -402,7 +403,7 @@ Figure: Sample view of the hive Details tab {#fig-beehive-interior-3}
 
 ![figure](pictures/beehive_interior.png){width=200}
 
-- Then click the cog icon in the upper right corner of the *Details* tab; the *Hive settings* view will be displayed ([](#fig-beehive-settings-2)).
+- Then click the **⋮** icon in the upper right corner of the *Details* tab and choose *Settings*; the *Hive settings* view will be displayed ([](#fig-beehive-settings-2)).
 
 Figure: Hive settings view {#fig-beehive-settings-2}
 
@@ -454,7 +455,7 @@ Figure: Hive details view - Add Inspection button {#fig-add-overview-button}
   - the frame with the VitalSensor,
   - the outer frame on the holders we provided.
 
-To add photos, click the *Add photo* button and then choose the *Take photo* or *Add photo from gallery* option.
+To add photos, click the *Add photo* button and then choose the *Take photo* or *Add photo from gallery* option. If you are not sure how a given photo should look, click the *See example* link on that step to open reference *Front*/*Back* photos in a bottom sheet.
 
 Figure: Adding an inspection - adding photos {#fig-add-inspection-photos}
 
@@ -482,11 +483,21 @@ Figure: Adding an inspection - saving the inspection {#fig-add-overview-save}
 - To save the inspection, click the yellow *Finish inspection* button in the lower right corner of the screen. The saved inspection will be displayed in the inspection list under Hive details > Inspection ([](#fig-beehive-details-overview)).
 
 !!! tip
-    **Inspection drafts:** If you need to interrupt an inspection before finishing it, tap *Save draft* to preserve your progress. The draft appears in the inspection list and can be resumed at any time. To delete a draft, swipe it left in the inspection list.
+    **Inspection drafts:** If you leave an in-progress inspection with unsaved changes (e.g. by tapping the back button), the app asks whether to *Save draft* or *Discard*. A saved draft appears in the inspection list and can be resumed at any time, but **it is only kept for 24 hours**, after which it is removed automatically. To delete a draft sooner, swipe it left in the inspection list.
 
 Figure: Inspection in the hive inspection list {#fig-beehive-details-overview}
 
 ![figure](pictures/beehive_details_overview.png){width=200}
+
+#### 3.1 Editing an inspection
+
+- On the inspection list (*Hive details > Inspection*) or on the inspection details screen, open the overflow menu and choose *Edit*. The wizard reopens pre-filled with the saved photos and answers.
+- Update the photos and answers as needed, then click *Finish inspection* to save. A confirmation message ("Inspection updated successfully") is displayed.
+
+#### 3.2 Deleting an inspection
+
+- On the inspection list swipe the chosen row to the left and tap the bin icon, or open the inspection details screen and choose *Delete* from the overflow menu.
+- Confirm the *Delete inspection* prompt. This action cannot be undone.
 
 ### 4. Notes
 
@@ -555,6 +566,9 @@ Figure: Adding a text note with attachments {#fig-add-note-add-photos}
 Figure: Note in the hive note list {#fig-beehive-details-note}
 
 ![figure](pictures/beehive_details_note.png){width=200}
+
+!!! tip
+    **Voice note transcription:** After you record a voice note, the app automatically converts it to text. While the transcription is being generated, the note details screen shows *Transcription in progress...*; once ready, the text appears below the recording. If a note has several photos attached, tap one to open a swipeable gallery preview (arrows/page dots to move between photos).
 
 **Note — adding a note from the apiary level:** A note can also be created from the apiary level. To do so, follow this path: in the *Apiaries* tab click the chosen apiary, then in the *Hives* tab choose the *Add...* option from the bottom menu and the *Note* option. As a result, the same note will be saved automatically to all hives in the chosen apiary and will be visible in the note list of every hive (*Details > Notes*). **Editing** such a note applies only to the copy in a specific hive — changes made to one note will not be visible in the other notes added in this way. Likewise, **deleting** such a note in one of the hives will leave notes in the other hives untouched.
 
@@ -958,6 +972,9 @@ Figure: Register sample view {#fig-register-sample}
 !!! tip "How to perform the test yourself?"
     Detailed instructions for sample collection and field testing (*Nosema* microscopy, *Varroa* sugar roll, colony health questionnaire) are available in the [Lab procedures](../procedures/index.md) section.
 
+!!! note
+    **Deleting a sample:** A registered sample can be deleted only while it is still *pending* (before the lab result comes back) — a bin icon appears on its card in the *Samples* tab. Tap it and confirm *Delete sample*. Once a sample has been resulted, it can no longer be removed.
+
 
 ### 8. Tests
 
@@ -1002,6 +1019,44 @@ Figure: Saved test in the hive test list {#fig-add-examination-list}
 
 ![figure](pictures/add_examination_list.png){width=200}
 
+#### 8.2 Editing a test
+
+- On the test list (*Hive details > More > Tests*) or on the test details screen, open the overflow menu and choose *Edit*. The *Edit test* view opens pre-filled with the saved data; the test type cannot be changed.
+- Update the fields, add or remove photos as needed, then save with the yellow button.
+
+#### 8.3 Deleting a test
+
+- On the test list swipe the chosen row to the left and tap the bin icon, or open the test details screen and choose *Delete* from the overflow menu.
+- Confirm the *Delete test* prompt. This action cannot be undone.
+
+<a id="analiza-ramki"></a>
+
+### 9. Frame analysis
+
+Frame analysis uses AI to estimate what is on a comb frame — brood, food stores and empty/obscured area — from a single photo.
+
+#### 9.1 Adding a frame analysis
+
+- Click the chosen apiary tile, then the chosen hive tile. As a result, the *Hive details* view will be displayed.
+- Choose the *Add...* option from the bottom menu, then *Frame analysis*; the *Add frame analysis* view will be displayed.
+- Take or upload **one photo** of the frame. For the most accurate AI result, hold the frame so that it fully fills the photo and is clearly visible against a uniform background.
+- Click the yellow *Send for analysis* button in the lower right corner of the screen. The photo is uploaded and queued for AI processing.
+
+!!! note
+    Frame analysis requires an internet connection to upload the photo; processing typically takes a few minutes.
+
+#### 9.2 Frame analysis results
+
+Frame analyses are listed in the hive's *Analysis* tab (*Hive details > More > Analysis*), newest first, and refresh automatically while a result is pending.
+
+- **Pending** — "Analysing your frame" is shown while the AI processes the photo (about 5 minutes).
+- **Completed** — tap the entry to see the annotated photo with color-coded regions and a percentage breakdown grouped into **Brood** (eggs, larvae, worker and drone brood), **Stores** (nectar, pollen, capped honey) and **Empty/obscured** area, plus the number of queen cells/cups found and overall comb coverage.
+- **Failed** — the analysis could not be completed; you can start a new one from the same hive.
+
+A push notification is sent when a queued analysis completes, opening its result directly.
+
+!!! note
+    Disease detection from frame photos is planned for a future release and is shown as *Coming soon* in the analysis details.
 
 ______________________________________________________________________
 
@@ -1110,6 +1165,7 @@ The *Details* view is divided into several smaller tabs:
 - More:
   - Tests
   - Samples
+  - Analysis
 
 
 #### 4.1 Hive status
@@ -1122,7 +1178,7 @@ Figure: Details tab - sample view of the Hive status tab {#fig-behive-details-2}
 
 **Most important information:**
 
-- **Health section** – presents the current status of the bee colony, indicating whether the colony is healthy or whether a potential threat in the form of a disease has been detected. This section also displays the year the queen bee was raised and the **Colony strength** indicator (Weak / Medium / Strong / Very strong), which reflects the AI-computed vitality of the colony based on inspection data. Tap the colony strength label to open the *Colony strength* screen, where you can view the full change history and manually override the AI's assessment if needed.
+- **Health section** – presents the current status of the bee colony, indicating whether the colony is healthy or whether a potential threat in the form of a disease has been detected. This section also displays the year the queen bee was raised and the **Colony strength** indicator (Weak / Medium / Strong / Very strong), which reflects the AI-computed vitality of the colony based on inspection data. Tap the colony strength label to open the *Colony strength* screen, where you can view the full change history and manually override the AI's assessment if needed. Tap the info (**i**) icon next to the label to open a legend explaining what each level means and the range of occupied brood-box frames it corresponds to, with the hive's current level highlighted.
 - **Weight section** – contains information about the current hive weight and honey gain, allowing you to assess production rate and bee colony activity.
 - **Conditions section** – presents environmental data from inside the hive and its surroundings, such as outside temperature, inside temperature, humidity and pressure inside the hive.
 - **Detailed data and charts** – after expanding individual elements in a given section, the user can see more detailed information and charts of parameter changes over time, which makes it easier to analyze the hive status and the conditions inside it.
@@ -1187,11 +1243,20 @@ Figure: Details tab - sample view of the Samples tab {#fig-beehive-details-sampl
 - **Sample list** – presents all samples saved for the chosen hive, sorted in descending order by sample collection date.
 - **Sample details** – after clicking a single sample, its details are displayed, including: sample collection date, test type and the test code generated by the system.
 
+#### 4.6 Analysis
+
+The *Analysis* tab presents the history of AI frame analyses performed for the chosen hive, newest first.
+
+**Most important information:**
+
+- **Analysis list** – shows every frame analysis with its status: *Pending*, *Completed* or *Failed*.
+- **Analysis details** – after clicking a completed analysis, its annotated photo and the brood/stores/empty-area breakdown are displayed. See [9. Frame analysis](#analiza-ramki) for details.
+
 <a id="omowienie-ustawien-pasieki"></a>
 
 ### 5. Apiary settings overview
 
-The *Apiary settings* view enables you to manage basic apiary data and to track information about the status of its equipment. You can access the view while in the *Hives* tab (the apiary interior) and clicking the cog icon in the upper right corner of the screen.
+The *Apiary settings* view enables you to manage basic apiary data and to track information about the status of its equipment. You can access the view while in the *Hives* tab (the apiary interior) by clicking the **⋮** icon in the upper right corner of the screen and choosing *Settings*.
 The *Apiary settings* view consists of the following sections:
 
 - Apiary details
@@ -1235,7 +1300,7 @@ Figure: Apiary settings view - Hub section {#fig-apiary-settings-hub}
 
 ### 6. Hive settings overview
 
-The *Hive settings* view allows you to manage basic information about the hive, queen bee data and assigned measurement devices. You can access the view from the hive *Details* tab (the hive interior) by clicking the cog icon visible in the upper right corner of the screen.
+The *Hive settings* view allows you to manage basic information about the hive, queen bee data and assigned measurement devices. You can access the view from the hive *Details* tab (the hive interior) by clicking the **⋮** icon visible in the upper right corner of the screen and choosing *Settings*.
 The *Hive settings* view is divided into the following sections:
 
 - Hive details
@@ -1509,7 +1574,11 @@ Most important information:
 - **Weight changes over time** allow you to observe the intensity of nectar flows and the activity of forager bees.
 - **Weight drops** can indicate the use of stores, swarming or periods of weaker nectar flow.
 - **Weight chart analysis** enables you to assess the dynamics of bee colony development, seasonal honey production and is key to planning honey harvesting.
-- **Scale tare** — you can zero the scale against the current reading to track net weight changes from that point on. In the *Weight* section of *Hive status* tap the *Tare* button. After a successful tare the display switches to **Current weight (tared)** and a *Tare* marker appears on the weight chart. To return to gross weight, tap *Reset* next to the tare timestamp.
+- **Scale tare** — you can zero the scale to track net weight changes from a chosen moment. In the *Weight* section of *Hive status*, on the weight chart tap the *Tare* button and choose:
+    - **Tare now** — zero using the latest reading.
+    - **Tare at point** — zero from an earlier moment; after choosing this option, tap the corresponding point directly on the weight chart.
+
+    After a successful tare the display switches to **Current weight (tared)** and a *Tare* marker appears on the chart. To return to gross weight, tap *Reset* next to the *Tare* button.
 
 ### 5. Honey gain
 
@@ -1556,7 +1625,12 @@ In the Apisense app, charts are available for the following parameters:
 - humidity
 - atmospheric pressure
 
-#### 1.3 Time frames presented on the charts
+#### 1.3 Zooming and fullscreen mode
+
+- To take a closer look at a chart, pinch to zoom or drag to pan; you can also use the on-screen zoom/pan buttons next to the chart. Once zoomed in, a *Reset zoom* button appears to return to the full range.
+- Tap the *Fullscreen* icon above the chart to open it in fullscreen mode, which gives more room for detailed analysis and panning (available for both the weight and conditions charts).
+
+#### 1.4 Time frames presented on the charts
 
 The data on the charts is presented in several time intervals. The last:
 
@@ -1568,7 +1642,7 @@ The data on the charts is presented in several time intervals. The last:
 
 To display a chart for the chosen range, click the corresponding time interval shown above the chart.
 
-#### 1.4 Chart interpretation
+#### 1.5 Chart interpretation
 
 Charts allow you to observe changes in parameters over time and to analyze their interrelationships. Thanks to the visual form of data presentation, it is easier to notice repeating patterns, periods of stability or sudden deviations from typical values.
 
@@ -1694,7 +1768,7 @@ Each report is reviewed by the team responsible for app development. User feedba
 
 To report a problem or suggestion in the app, follow these steps:
 
-- Click the *light bulb* icon available from any view in the app, in the upper right corner of the screen (next to the settings and log out buttons). As a result, the *Add suggestion* view will open ([](#fig-add-suggestion)).
+- Click the **⋮** (more options) icon available from any view in the app, in the upper right corner of the screen, and choose *Send feedback* from the menu (alongside *Settings* and *Sign out*). As a result, the *Add suggestion* view will open ([](#fig-add-suggestion)).
 - In the *Add suggestion* view, fill in the following required fields:
 
     - **Choose category** — select one of the available categories depending on whether you want to report a problem or suggest an app improvement.
@@ -1723,7 +1797,7 @@ The user data editing feature enables you to update basic information assigned t
 
 To edit user data:
 
-- In the *Apiaries* tab (the Apisense app start view), click the cog icon in the upper right part of the screen. As a result, the *Account settings* view will open ([](#fig-app-settings)).
+- In the *Apiaries* tab (the Apisense app start view), click the **⋮** icon in the upper right part of the screen and choose *Settings*. As a result, the *Account settings* view will open ([](#fig-app-settings)).
 - The *Account settings* view consists of several sections: **Display name**, **Email**, **Mobile phone**, **Experience**, **Password**, **Language** and **Units**. Each one shows the user's current data.
 - To change the contents of the chosen section, click its header; this will open a new view in which the data can be edited. For example, when changing the password, the user will be asked to enter a new password and to repeat it ([](#fig-app-settings)).
 - After making changes, save them by clicking the yellow button in the lower right corner of the screen.
@@ -1744,11 +1818,19 @@ In the lower part of the *Account settings* view ([](#fig-app-settings)) there i
 
 To see which version of the Apisense app is currently installed on your device:
 
-- Go to the *Account settings* view. To do so, click the cog icon in the upper right corner of the *Apiaries* tab.
+- Go to the *Account settings* view. To do so, click the **⋮** icon in the upper right corner of the *Apiaries* tab and choose *Settings*.
 - Scroll **to the very bottom** of the screen.
 - At the bottom, in the central part of the screen, you will see an entry in the form **Version X.Y.Z** (e.g. *Version 1.2.3*) — that is the installed app version number.
 
 It is worth comparing this number with the version available in Google Play or the App Store before reporting a technical issue.
+
+!!! note
+    **App update screens:** On startup, the mobile app checks whether a newer version is available.
+
+    - If your installed version is **no longer supported**, a full-screen *Update required* message is shown; you must tap *Update* and install the new version from the store before you can continue using the app.
+    - If a **newer version exists but yours still works**, a dismissible *New version available* dialog offers *Update* or *Later*. Choosing *Later* will not ask again until an even newer version is released.
+
+    After you update, the app shows a **What's new** dialog on first launch, with a short swipeable summary of what changed in the new version(s) — tap *Next*/*Skip*/*Done* to close it.
 
 ### 3. Unit preferences
 
@@ -1781,7 +1863,7 @@ ______________________________________________________________________
 
 ### 5. Updates
 
-- Update the mobile app to the latest version (Google Play / App Store) to have access to improvements and new features.
+- Update the mobile app to the latest version (Google Play / App Store) to have access to improvements and new features. If your version is no longer supported, the app will require an update before you can continue (see [Checking the app version](#2-checking-the-app-version)).
 - Operating system updates of the device also affect the stability of the app's operation.
 
 ______________________________________________________________________
@@ -1800,7 +1882,11 @@ ______________________________________________________________________
 
 **Solution:** check that the user name and password were entered correctly. If you have forgotten your password, contact Apisense support: **bee@apisense.ai**.
 
-#### 1.3 Other problems
+#### 1.3 The app shows "Update required" and won't let me in
+
+**Solution:** this means your installed version is no longer supported. Tap *Update*, install the latest version from Google Play / the App Store, then reopen the app.
+
+#### 1.4 Other problems
 
 **Solution:** contact Apisense technical support: **bee@apisense.ai**.
 
@@ -1826,11 +1912,11 @@ Below you will find a summary of the most important activities in the Apisense P
 
 > [Video](#video-add-apiary), [Adding an apiary with devices](#111-adding-an-apiary-with-devices), [Adding an apiary without devices](#112-adding-an-apiary-without-devices)
 
-- **Editing an apiary:** Click the chosen apiary tile. Click the cog icon while in the *Hives* tab. In the *Apiary settings* view click the header of the section whose data you want to edit. Change the field values and click save (yellow button).
+- **Editing an apiary:** Click the chosen apiary tile. Click the **⋮** icon while in the *Hives* tab and choose *Settings*. In the *Apiary settings* view click the header of the section whose data you want to edit. Change the field values and click save (yellow button).
 
 > [Editing an apiary](#12-editing-an-apiary)
 
-- **Deleting an apiary:** Click the chosen apiary tile. Click the cog icon while in the *Hives* tab. In the *Apiary settings* view click the *Delete apiary* button.
+- **Deleting an apiary:** Click the chosen apiary tile. Click the **⋮** icon while in the *Hives* tab and choose *Settings*. In the *Apiary settings* view click the *Delete apiary* button.
 
 > [Deleting an apiary](#13-deleting-an-apiary)
 
@@ -1838,15 +1924,15 @@ Below you will find a summary of the most important activities in the Apisense P
 
 > [Video](#video-add-hive), [Adding a hive](#21-adding-a-hive)
 
-- **Editing a hive:** Click the chosen apiary tile. Click the chosen hive tile. Click the cog icon while in the *Details* tab. In the *Hive settings* view click the header of the section whose data you want to edit. Change the field values and click save (yellow button).
+- **Editing a hive:** Click the chosen apiary tile. Click the chosen hive tile. Click the **⋮** icon while in the *Details* tab and choose *Settings*. In the *Hive settings* view click the header of the section whose data you want to edit. Change the field values and click save (yellow button).
 
 > [Editing a hive](#22-editing-a-hive)
 
-- **Deleting a hive:** Click the chosen apiary tile. Click the chosen hive tile. Click the cog icon while in the *Details* tab. In the *Hive settings* view click the *Delete hive* button.
+- **Deleting a hive:** Click the chosen apiary tile. Click the chosen hive tile. Click the **⋮** icon while in the *Details* tab and choose *Settings*. In the *Hive settings* view click the *Delete hive* button.
 
 > [Deleting a hive](#23-deleting-a-hive)
 
-- **Adding inspections:** Click the chosen apiary tile. Click the chosen hive tile. Choose *Add...* -> *Inspection* from the bottom menu. Attach a total of 4 required frame photos. Answer the questions. The yellow right-pointing arrow lets you proceed to the next question. Click *Finish inspection* (yellow button on the last inspection screen) to save.
+- **Adding inspections:** Click the chosen apiary tile. Click the chosen hive tile. Choose *Add...* -> *Inspection* from the bottom menu. Attach a total of 4 required frame photos (tap *See example* if unsure how they should look). Answer the questions. The yellow right-pointing arrow lets you proceed to the next question. Click *Finish inspection* (yellow button on the last inspection screen) to save. An in-progress inspection can be saved as a draft (kept 24 hours); a finished inspection can later be edited or deleted from its overflow menu.
 
 > [Video](#video-add-inspection), [Adding inspections](#dodawanie-przegladow)
 
@@ -1868,9 +1954,13 @@ Below you will find a summary of the most important activities in the Apisense P
 
 > [Video](#video-register-sample), [Registering a sample](#rejestrowanie-probki)
 
-- **Adding a test:** Click the chosen apiary tile. Click the chosen hive tile. From the bottom menu choose *Add... -> Test*. Choose the date and test type from the drop-down list, fill in the required photos and fields (e.g. number of varroa mites), then save with the yellow button.
+- **Adding a test:** Click the chosen apiary tile. Click the chosen hive tile. From the bottom menu choose *Add... -> Test*. Choose the date and test type from the drop-down list, fill in the required photos and fields (e.g. number of varroa mites), then save with the yellow button. A saved test can later be edited or deleted from its overflow menu.
 
 > [Adding a test](#81-adding-a-test)
+
+- **Adding a frame analysis:** Click the chosen apiary tile. Click the chosen hive tile. From the bottom menu choose *Add... -> Frame analysis*. Take or upload one photo of the frame and click *Send for analysis*. Track the result (*Pending* / *Completed* / *Failed*) in the hive's *Analysis* tab.
+
+> [Frame analysis](#analiza-ramki)
 
 ### 3. Main panel and navigation
 
@@ -1886,11 +1976,11 @@ Below you will find a summary of the most important activities in the Apisense P
 
 > [Video](#video-add-hive), [Hive list overview (Hives tab)](#omowienie-listy-uli)
 
-- **Hive contents (Details tab):** Here you check the *Hive status*, saved inspections, notes, and the list of tests and samples. You can also display charts of individual parameters, e.g. Honey gain.
+- **Hive contents (Details tab):** Here you check the *Hive status*, saved inspections, notes, and the list of tests, samples and frame analyses. You can also display charts of individual parameters, e.g. Honey gain.
 
 > [Hive contents overview (Details tab)](#omowienie-zawartosci-ula)
 
-- **Apiary and hive settings:** The cog icon in the apiary view (Hives tab) or hive view (Details tab) leads to the settings. Here you can edit information about the apiary or hive.
+- **Apiary and hive settings:** The **⋮** icon in the apiary view (Hives tab) or hive view (Details tab) leads to the settings (alongside *Send feedback* and *Sign out*). Here you can edit information about the apiary or hive.
 
 > [Apiary settings overview](#omowienie-ustawien-pasieki), [Hive settings overview](#omowienie-ustawien-ula)
 
@@ -1900,7 +1990,7 @@ Below you will find a summary of the most important activities in the Apisense P
 
 > [Parameter monitoring](#monitorowanie-parametrow)
 
-- **Charts:** Click the chosen apiary tile. Click the chosen hive tile. In the *Details* -> *Hive status* tab expand the *Weight* or *Conditions* section and click the chosen parameter to see the chart in the chosen time interval (24 h, 7 days, 1–6 months).
+- **Charts:** Click the chosen apiary tile. Click the chosen hive tile. In the *Details* -> *Hive status* tab expand the *Weight* or *Conditions* section and click the chosen parameter to see the chart in the chosen time interval (24 h, 7 days, 1–6 months). Pinch/drag or use the on-screen buttons to zoom and pan, or tap *Fullscreen* for a larger view.
 
 > [Data visualization on charts](#1-data-visualization-on-charts)
 
@@ -1920,17 +2010,17 @@ Below you will find a summary of the most important activities in the Apisense P
 
 ### 6. Account
 
-- **Editing user data:** In the *Apiaries* start view click the cog icon. You can change your name, email, phone, password and language. From this place you can also delete your account.
+- **Editing user data:** In the *Apiaries* start view click the **⋮** icon and choose *Settings*. You can change your name, email, phone, password and language. From this place you can also delete your account.
 
 > [Editing user data](#edycja-danych-uzytkownika)
 
-- **Checking the app version:** In the *Account settings* view scroll to the bottom of the screen — you will see the **Version X.Y.Z** entry.
+- **Checking the app version:** In the *Account settings* view scroll to the bottom of the screen — you will see the **Version X.Y.Z** entry. If your version is no longer supported, the app shows a full-screen *Update required* prompt on launch instead.
 
 > [Checking the app version](#2-checking-the-app-version)
 
 ### 7. Reporting problems and suggestions
 
-- **Reporting in the app:** Click the light bulb icon in the upper right corner of any view. Fill in the category and description, optionally attach photos. Click *Send suggestion*.
+- **Reporting in the app:** Click the **⋮** icon in the upper right corner of any view and choose *Send feedback*. Fill in the category and description, optionally attach photos. Click *Send suggestion*.
 
 > [Reporting problems and suggestions](#zglaszanie-problemow-i-sugestii)
 
