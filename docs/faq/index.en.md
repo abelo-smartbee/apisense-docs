@@ -87,8 +87,17 @@ Yes. The Scale is powered by **2× AA alkaline** batteries. Once installed and a
 You will need a **4 mm** Allen (hex) key (for the brackets) and a **T6** Torx key (for the black housing).
 
 1. Unscrew the brackets with the 4 mm Allen key — undo the two screws.
+
+    ![Unscrewing the brackets with a 4 mm Allen key](pictures/scale-battery-1-brackets.jpg){width=450}
+
 2. Undo the two T6 Torx screws on the black housing.
+
+    ![T6 Torx screw on the black housing](pictures/scale-battery-2-housing.jpg){width=450}
+
 3. Replace the batteries with **2× AA alkaline**.
+
+    ![Replacing the batteries with 2× AA alkaline](pictures/scale-battery-3-replace.jpg){width=450}
+
 4. Screw the black housing back on.
 5. Screw the brackets back on.
 

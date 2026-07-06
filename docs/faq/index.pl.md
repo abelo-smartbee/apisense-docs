@@ -87,8 +87,17 @@ Tak. Scale zasilają dwie baterie **2× AA alkaliczne**. Po zamontowaniu i dodan
 Potrzebny będzie klucz imbusowy **4 mm** (do kątowników) oraz klucz Torx **T6** (do czarnej obudowy).
 
 1. Rozkręć kątowniki kluczem imbusowym 4 mm — odkręć dwie śruby.
+
+    ![Rozkręcanie kątowników kluczem imbusowym 4 mm](pictures/scale-battery-1-brackets.jpg){width=450}
+
 2. Odkręć dwie śrubki Torx T6 w czarnej obudowie.
+
+    ![Śrubka Torx T6 w czarnej obudowie](pictures/scale-battery-2-housing.jpg){width=450}
+
 3. Wymień baterie na **2× AA alkaliczne**.
+
+    ![Wymiana baterii na 2× AA alkaliczne](pictures/scale-battery-3-replace.jpg){width=450}
+
 4. Skręć czarną obudowę z powrotem.
 5. Skręć kątowniki z powrotem.
 
