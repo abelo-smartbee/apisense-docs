@@ -23,8 +23,8 @@ caption:
 - **Alerts and notifications** — in-app notifications about parameter threshold violations and important events in the apiary.
 - **Reports and charts** — visualization of measurement data in the form of daily, weekly and long-term charts with overlaid trends.
 - **Data history** — archive of notes, inspections and notifications.
-- **Apiary management** — adding and editing apiaries, hives, inspections, notes, as well as adding tests and registering samples.
-- **Frame analysis** — AI-based analysis of a frame photo, estimating brood, food stores and empty comb coverage.
+- **Apiary management** — adding and editing apiaries, hives, inspections, notes, as well as adding examinations and registering samples.
+- **Frame analysis** — AI-based analysis of a bee comb frame photo, estimating brood, food stores and empty comb coverage.
 
 ______________________________________________________________________
 
@@ -452,10 +452,10 @@ Figure: Hive details view - Add Inspection button {#fig-add-overview-button}
 
 - In the Add inspection view ([](#fig-add-inspection-photos)), attach 2 photos each for:
 
-  - the frame with the VitalSensor,
-  - the outer frame on the holders we provided.
+  - the frame with the VitalSensor — front and back of the frame fitted with the VitalSensor device, with bees visible,
+  - the outer frame on the attached holders — also front and back.
 
-To add photos, click the *Add photo* button and then choose the *Take photo* or *Add photo from gallery* option. If you are not sure how a given photo should look, click the *See example* link on that step to open reference *Front*/*Back* photos in a bottom sheet.
+To add photos, click the *Add photo* button and then choose the *Take photo* or *Add photo from gallery* option. If you are not sure how a given photo should look, click the *See example* link to see examples of correctly taken bee frame photos (front and back).
 
 Figure: Adding an inspection - adding photos {#fig-add-inspection-photos}
 
@@ -483,7 +483,7 @@ Figure: Adding an inspection - saving the inspection {#fig-add-overview-save}
 - To save the inspection, click the yellow *Finish inspection* button in the lower right corner of the screen. The saved inspection will be displayed in the inspection list under Hive details > Inspection ([](#fig-beehive-details-overview)).
 
 !!! tip
-    **Inspection drafts:** If you leave an in-progress inspection with unsaved changes (e.g. by tapping the back button), the app asks whether to *Save draft* or *Discard*. A saved draft appears in the inspection list and can be resumed at any time, but **it is only kept for 24 hours**, after which it is removed automatically. To delete a draft sooner, swipe it left in the inspection list.
+    **Inspection drafts:** If you leave an in-progress inspection with unsaved changes (e.g. by tapping the back button), the app asks whether to *Save draft* or *Discard*. A saved draft appears at the top of the inspection list and can be resumed at any time, but **it is only kept for 24 hours**, after which it is removed automatically. To delete a draft sooner, tap the red bin icon next to the chosen draft in the inspection list. To save a draft permanently, finish filling in the inspection within 24 hours and click *Finish inspection*. The draft will turn into a regular inspection and appear in the inspection list.
 
 Figure: Inspection in the hive inspection list {#fig-beehive-details-overview}
 
@@ -491,13 +491,19 @@ Figure: Inspection in the hive inspection list {#fig-beehive-details-overview}
 
 #### 3.1 Editing an inspection
 
-- On the inspection list (*Hive details > Inspection*) or on the inspection details screen, open the overflow menu and choose *Edit*. The wizard reopens pre-filled with the saved photos and answers.
-- Update the photos and answers as needed, then click *Finish inspection* to save. A confirmation message ("Inspection updated successfully") is displayed.
+To edit a saved inspection:
+
+- On the inspection list (*Hive details > Inspection*), tap the pencil icon next to the inspection you want to edit, or on the inspection details screen open the overflow menu (three dots in the upper right corner) and choose *Edit*. The inspection wizard opens with the saved photos and answers to the individual questions.
+- In the first editing step, frame photos are displayed. If you do not want to change anything at the photo stage, tap the yellow right-pointing arrow to proceed to the next step and keep the current photos. If any photo needs replacing, tap the *"X"* on the thumbnail of the chosen photo to remove it. Then tap the *Add photo* button shown below all photos, choose *Take photo* or *Add photo from gallery*, and add the new photo.
+- In the following steps you will see the answers given to the inspection questions. If you do not want to change the answer to a given question, tap the yellow right-pointing arrow. If you want to change an answer, choose the appropriate Yes/No/Skip option. After changing an answer, you are automatically moved to the next question.
+- In the final step, update the inspection date as needed or leave it unchanged. To save all changes, tap the yellow *Finish inspection* button. If the changes are saved successfully, the message *Inspection updated successfully* is displayed.
 
 #### 3.2 Deleting an inspection
 
-- On the inspection list swipe the chosen row to the left and tap the bin icon, or open the inspection details screen and choose *Delete* from the overflow menu.
-- Confirm the *Delete inspection* prompt. This action cannot be undone.
+To delete an inspection:
+
+- On the inspection list (*Hive details > Inspection*) tap the red bin icon next to the inspection to be deleted, or on the inspection details screen choose *Delete* from the overflow menu (three dots in the upper right corner).
+- A confirmation prompt asking whether to delete the inspection is displayed. Confirm by tapping *Delete*. **Note:** This action cannot be undone.
 
 ### 4. Notes
 
@@ -547,6 +553,9 @@ Figure: Hive details view - Add Note button {#fig-add-overview-button-2}
     - **Title** - enter the note title (optional field).
     - **Note** - enter the note content (text), or click the microphone icon on the right side of this field to record a voice note.
 
+!!! tip:
+    **Voice note transcription:** After you record a voice note, the app automatically prepares a transcription, so the note is available both as audio and as text. While the transcription is being generated, the note details screen shows *Transcription in progress...*. Once the transcription is ready, the generated text appears below the recording in the details.
+
 Figure: Adding a text or voice note (1) {#fig-add-note-add-text}
 
 ![figure](pictures/add_note_add_text.png){width=200}
@@ -567,8 +576,6 @@ Figure: Note in the hive note list {#fig-beehive-details-note}
 
 ![figure](pictures/beehive_details_note.png){width=200}
 
-!!! tip
-    **Voice note transcription:** After you record a voice note, the app automatically converts it to text. While the transcription is being generated, the note details screen shows *Transcription in progress...*; once ready, the text appears below the recording. If a note has several photos attached, tap one to open a swipeable gallery preview (arrows/page dots to move between photos).
 
 **Note — adding a note from the apiary level:** A note can also be created from the apiary level. To do so, follow this path: in the *Apiaries* tab click the chosen apiary, then in the *Hives* tab choose the *Add...* option from the bottom menu and the *Note* option. As a result, the same note will be saved automatically to all hives in the chosen apiary and will be visible in the note list of every hive (*Details > Notes*). **Editing** such a note applies only to the copy in a specific hive — changes made to one note will not be visible in the other notes added in this way. Likewise, **deleting** such a note in one of the hives will leave notes in the other hives untouched.
 
@@ -919,7 +926,7 @@ Figure: Disease questionnaire - saving the form {#fig-confirm-problem-save-2}
 
 <a id="rejestrowanie-probki"></a>
 
-### 7. Registering a sample
+### 7. Samples
 
 <div class="yt-embed short" id="video-register-sample">
   <iframe src="https://www.youtube.com/embed/jqS9rvhd-X0"
@@ -927,6 +934,8 @@ Figure: Disease questionnaire - saving the form {#fig-confirm-problem-save-2}
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
 </div>
+
+#### 7.1 Registering a sample
 
 - In the Apiaries tab (the start view after logging in to the Apisense app) click the apiary tile. After clicking the tile, the Hives view will be displayed ([](#fig-apiaries-apiary-with-beehive-5)).
 
@@ -953,32 +962,36 @@ Figure: Register sample button {#fig-add-overview-button-3}
 - In the Register sample view, fill in the following fields:
 
   - **Sample collection date** - enter the date when you collected the sample (current by default).
-  - **Test type** - select the appropriate item from the drop-down list, e.g. *Dead bees*.
+  - **Examination type** - select the appropriate item from the drop-down list, e.g. *Dead bees*.
 
-- After filling in the above fields, the yellow *Generate code* button will be displayed. Click that button and a special code will be generated in the *Test code* field, which should be written on the sample ([](#fig-register-sample)). The sample prepared this way with the code should then be sent to the following address: **University of Life Sciences in Lublin, ul. Doświadczalna 54, 20-280 Lublin**.
+- After filling in the above fields, the yellow *Generate code* button will be displayed. Click that button and a special code will be generated in the *Examination code* field, which should be written on the sample ([](#fig-register-sample)). The sample prepared this way with the code should then be sent to the following address: **University of Life Sciences in Lublin, ul. Doświadczalna 54, 20-280 Lublin**.
 
 Figure: Register sample view {#fig-register-sample}
 
 ![figure](pictures/register_sample.png){width=200}
 
-!!! note "Freezer storage — Nosema tests only"
-    **Freezing bees is accepted only** for *Nosema* tests.
+!!! note "Freezer storage — Nosema examinations only"
+    **Freezing bees is accepted only** for *Nosema* examinations.
 
-    - Each frozen sample must be **clearly and easily identified** with the hive it comes from (e.g. the test code from the app written on the envelope).
+    - Each frozen sample must be **clearly and easily identified** with the hive it comes from (e.g. the examination code from the app written on the envelope).
     - Storage temperature: **at least −8 °C**.
-    - Bee samples can be stored in the freezer for approximately **3–5 months** before testing or shipping to the lab.
+    - Bee samples can be stored in the freezer for approximately **3–5 months** before the examination or shipping to the lab.
     - Samples **must not be thawed and frozen again**.
 
-!!! tip "How to perform the test yourself?"
-    Detailed instructions for sample collection and field testing (*Nosema* microscopy, *Varroa* sugar roll, colony health questionnaire) are available in the [Lab procedures](../procedures/index.md) section.
+!!! tip "How to perform the examination yourself?"
+    Detailed instructions for sample collection and performing examinations (*Nosema* microscopy, *Varroa* flotation) are available in the [Lab procedures](../procedures/index.md) section.
 
-!!! note
-    **Deleting a sample:** A registered sample can be deleted only while it is still *pending* (before the lab result comes back) — a bin icon appears on its card in the *Samples* tab. Tap it and confirm *Delete sample*. Once a sample has been resulted, it can no longer be removed.
+#### 7.2 Deleting a sample
 
+To delete a sample from the sample list:
 
-### 8. Tests
+- Go to the sample list (*Hive details > More > Samples*).
+- Tap the red bin icon next to the sample to be removed from the list.
+- Confirm the operation by tapping *Delete*. After you tap this button, the sample is permanently deleted and the operation cannot be undone.
 
-#### 8.1 Adding a test 
+### 8. Examinations
+
+#### 8.1 Adding an examination 
 
 - In the Apiaries tab (the start view after logging in to the Apisense app) click the apiary tile. After clicking the tile, the Hives view will be displayed ([](#fig-apiaries-apiary-with-beehive-6)).
 
@@ -990,70 +1003,79 @@ Figure: Apiary view in the Apiaries tab and Hives view (2) {#fig-beehives-10}
 
 ![figure](pictures/beehives.png){width=200}
 
-- Then click the tile of the hive for which you want to add a test. As a result, the Hive details view will be displayed ([](#fig-beehive-interior-9)).
+- Then click the tile of the hive for which you want to add an examination. As a result, the Hive details view will be displayed ([](#fig-beehive-interior-9)).
 
 Figure: Hive details view {#fig-beehive-interior-9}
 
 ![figure](pictures/beehive_interior.png){width=200}
 
-- To add a test, choose the *Add...* option from the bottom menu, then *Test* ([](#fig-add-examination-button)); the Add test view will be displayed ([](#fig-add-examination)). 
+- To add an examination, choose the *Add...* option from the bottom menu, then *Examination* ([](#fig-add-examination-button)); the Add examination view will be displayed ([](#fig-add-examination)). 
 
-Figure: Add test button {#fig-add-examination-button}
+Figure: Add examination button {#fig-add-examination-button}
 
 ![figure](pictures/add_examination_button.png){width=200}
 
 
-- In the Add test view ([](#fig-add-examination)), fill in the following fields:
+- In the Add examination view ([](#fig-add-examination)), fill in the following fields:
 
-    - **Test date** — choose the date the test was performed.
-    - **Test type** — choose one of the available options from the drop-down list, e.g. Mite drop.
-    - **Photos and supplementary information** — after choosing the test type, take or upload the required number of photos and fill in the numeric fields according to the on-screen prompts.
+    - **Examination date** — choose the date the examination was performed.
+    - **Examination type** — choose one of the available options from the drop-down list, e.g. Mite drop.
+    - **Photos and supplementary information** — after choosing the examination type, take or upload the required number of photos and fill in the numeric fields according to the on-screen prompts.
 
-Figure: Add test view, type: Flotation {#fig-add-examination}
+Figure: Add examination view, type: Flotation {#fig-add-examination}
 
 ![figure](pictures/add_examination.png){width=200}
 
-- Save the test using the yellow save button in the lower right corner of the screen. The saved test will be displayed in the test list under Hive details > More (top menu) > Tests ([](#fig-add-examination-list)).
+- Save the examination using the yellow save button in the lower right corner of the screen. The saved examination will be displayed in the examination list under Hive details > More (top menu) > Examinations ([](#fig-add-examination-list)).
 
-Figure: Saved test in the hive test list {#fig-add-examination-list}
+Figure: Saved examination in the hive examination list {#fig-add-examination-list}
 
 ![figure](pictures/add_examination_list.png){width=200}
 
-#### 8.2 Editing a test
+#### 8.2 Editing an examination
 
-- On the test list (*Hive details > More > Tests*) or on the test details screen, open the overflow menu and choose *Edit*. The *Edit test* view opens pre-filled with the saved data; the test type cannot be changed.
-- Update the fields, add or remove photos as needed, then save with the yellow button.
+To edit an examination:
 
-#### 8.3 Deleting a test
+- On the examination list (*Hive details > More > Examinations*) tap the pencil icon, or on the examination details screen open the overflow menu (three dots in the upper right corner) and choose *Edit*. The *Edit examination* view opens pre-filled with the previously saved data.
+- In the *Edit examination* view you can update all fields except the examination type.
+- To update a photo, first remove it by tapping the *"X"* on the photo thumbnail, then add a new photo using the *Add photo* button.
+- To save your changes, tap the yellow confirmation button in the lower right corner.
 
-- On the test list swipe the chosen row to the left and tap the bin icon, or open the test details screen and choose *Delete* from the overflow menu.
-- Confirm the *Delete test* prompt. This action cannot be undone.
+#### 8.3 Deleting an examination
+
+To delete an examination from the examination list:
+
+- Go to the examination list (*Hive details > More > Examinations*).
+- Tap the red bin icon next to the examination to be removed from the list, or in the details of the chosen examination choose *Delete* from the overflow menu (three dots in the upper right corner).
+- Confirm the operation by tapping *Delete*. After you tap this button, the examination is permanently deleted and the operation cannot be undone.
 
 <a id="analiza-ramki"></a>
 
 ### 9. Frame analysis
 
-Frame analysis uses AI to estimate what is on a comb frame — brood, food stores and empty/obscured area — from a single photo.
+Frame analysis uses artificial intelligence to automatically estimate the comb contents from a single photo, including brood, food stores, and empty or obscured area.
 
 #### 9.1 Adding a frame analysis
 
 - Click the chosen apiary tile, then the chosen hive tile. As a result, the *Hive details* view will be displayed.
-- Choose the *Add...* option from the bottom menu, then *Frame analysis*; the *Add frame analysis* view will be displayed.
-- Take or upload **one photo** of the frame. For the most accurate AI result, hold the frame so that it fully fills the photo and is clearly visible against a uniform background.
-- Click the yellow *Send for analysis* button in the lower right corner of the screen. The photo is uploaded and queued for AI processing.
+- Choose the *Add...* option from the bottom menu, then *Frame analysis*; the *Frame analysis* view will be displayed.
+- Tap the *Add frame photo for analysis* button in the center of the *Frame analysis* view. Choose *Camera* and take a photo of the bee frame, or upload **one photo** of the frame from *Gallery*. For the most accurate AI analysis result, position the frame so that it fully fills the photo and is clearly visible against a uniform background.
+- After choosing the photo, tap the yellow *Send for analysis* button at the bottom of the screen. The photo is uploaded for AI processing.
 
 !!! note
-    Frame analysis requires an internet connection to upload the photo; processing typically takes a few minutes.
+    Bee frame analysis requires an internet connection to upload the photo. Processing a photo sent for analysis typically takes a few minutes.
 
 #### 9.2 Frame analysis results
 
-Frame analyses are listed in the hive's *Analysis* tab (*Hive details > More > Analysis*), newest first, and refresh automatically while a result is pending.
+Results of submitted bee frame analyses are available in the *Analysis* tab (*Hive details > More > Analysis*). To view the result for a chosen frame, tap the corresponding list entry with the status *Analysis completed*.
 
-- **Pending** — "Analysing your frame" is shown while the AI processes the photo (about 5 minutes).
-- **Completed** — tap the entry to see the annotated photo with color-coded regions and a percentage breakdown grouped into **Brood** (eggs, larvae, worker and drone brood), **Stores** (nectar, pollen, capped honey) and **Empty/obscured** area, plus the number of queen cells/cups found and overall comb coverage.
-- **Failed** — the analysis could not be completed; you can start a new one from the same hive.
+Possible statuses:
 
-A push notification is sent when a queued analysis completes, opening its result directly.
+- **Analysing frame** — the photo has been sent for analysis and is being processed by AI (about 5 minutes).
+- **Analysis completed** — the frame analysis finished successfully. You can now see the color-annotated photo with the percentage share of each comb category: **Brood** (eggs, larvae, worker and drone brood), **Stores** (nectar, pollen, capped honey) and **Empty/obscured** area, as well as the number of queen cells/cups found and a bee count. The analysis result consists of several views of the same submitted photo. Each view marks different analyzed elements with corresponding descriptions. Swipe through the photos to see successive analysis results. Tapping a photo opens it in fullscreen mode.
+- **Failed** — the analysis could not be completed. Try adding a bee frame photo again and sending it for analysis.
+
+When a bee frame analysis is completed, a push notification is sent that opens its result directly when tapped.
 
 !!! note
     Disease detection from frame photos is planned for a future release and is shown as *Coming soon* in the analysis details.
@@ -1163,7 +1185,7 @@ The *Details* view is divided into several smaller tabs:
 - Inspection
 - Notes
 - More:
-  - Tests
+  - Examinations
   - Samples
   - Analysis
 
@@ -1217,18 +1239,18 @@ Figure: Details tab - sample view of the Notes tab {#fig-beehive-details-notes-l
 - **Additional materials** – note items may also display photo, video recording or audio recording icons if such materials were attached to them.
 - **Note details** – after clicking - expanding - the chosen note, the full note content is displayed together with the attached materials.
 
-#### 4.4 Tests
+#### 4.4 Examinations
 
-The *Tests* tab presents in a clear way a list of all performed and saved tests ([](#fig-apiary-settings-3)) carried out for the chosen hive. Thanks to this, the user can quickly check the analysis history and return to earlier results.
+The *Examinations* tab presents in a clear way a list of all performed and saved examinations ([](#fig-apiary-settings-3)) carried out for the chosen hive. Thanks to this, the user can quickly check the analysis history and return to earlier results.
 
-Figure: Details tab - sample view of the Tests tab {#fig-beehive-details-examination-list}
+Figure: Details tab - sample view of the Examinations tab {#fig-beehive-details-examination-list}
 
 ![figure](pictures/beehive_details_examination_list.png){width=200}
 
 **Most important information:**
 
-- **Test list** – presents all tests saved for the chosen hive, sorted in descending order by test date.
-- **Test details** – after clicking a single test, its details are displayed, including: test date, test type and saved attachments.
+- **Examination list** – presents all examinations saved for the chosen hive, sorted in descending order by examination date.
+- **Examination details** – after clicking a single examination, its details are displayed, including: examination date, examination type and saved attachments.
 
 #### 4.5 Samples
 
@@ -1241,16 +1263,16 @@ Figure: Details tab - sample view of the Samples tab {#fig-beehive-details-sampl
 **Most important information:**
 
 - **Sample list** – presents all samples saved for the chosen hive, sorted in descending order by sample collection date.
-- **Sample details** – after clicking a single sample, its details are displayed, including: sample collection date, test type and the test code generated by the system.
+- **Sample details** – after clicking a single sample, its details are displayed, including: sample collection date, examination type and the examination code generated by the system.
 
 #### 4.6 Analysis
 
-The *Analysis* tab presents the history of AI frame analyses performed for the chosen hive, newest first.
+The *Analysis* tab presents the history of AI analyses of bee frames performed for the chosen hive, ordered from newest.
 
 **Most important information:**
 
-- **Analysis list** – shows every frame analysis with its status: *Pending*, *Completed* or *Failed*.
-- **Analysis details** – after clicking a completed analysis, its annotated photo and the brood/stores/empty-area breakdown are displayed. See [9. Frame analysis](#analiza-ramki) for details.
+- **Analysis list** – shows every frame analysis with its status: *Analysing frame*, *Analysis completed* or *Failed*.
+- **Analysis details** – after opening a completed analysis, the submitted photo with marked elements and a comb contents summary are displayed, including brood, food stores, empty and obscured area, as well as a bee count and queen cells. See [9. Frame analysis](#analiza-ramki) for details.
 
 <a id="omowienie-ustawien-pasieki"></a>
 
@@ -1574,11 +1596,11 @@ Most important information:
 - **Weight changes over time** allow you to observe the intensity of nectar flows and the activity of forager bees.
 - **Weight drops** can indicate the use of stores, swarming or periods of weaker nectar flow.
 - **Weight chart analysis** enables you to assess the dynamics of bee colony development, seasonal honey production and is key to planning honey harvesting.
-- **Scale tare** — you can zero the scale to track net weight changes from a chosen moment. In the *Weight* section of *Hive status*, on the weight chart tap the *Tare* button and choose:
+- **Scale tare** — you can zero the scale to track net weight gain or loss from a chosen moment. In the *Weight* section of *Hive status*, on the weight chart tap the *Tare* button and choose:
     - **Tare now** — zero using the latest reading.
-    - **Tare at point** — zero from an earlier moment; after choosing this option, tap the corresponding point directly on the weight chart.
+    - **Tare at point** — zero from any moment; after choosing this option, tap the corresponding point directly on the weight chart.
 
-    After a successful tare the display switches to **Current weight (tared)** and a *Tare* marker appears on the chart. To return to gross weight, tap *Reset* next to the *Tare* button.
+    After a successful tare the display switches to **Current weight (tare)** and a *Tare* marker (vertical dashed line) appears on the chart. To return to gross weight, tap *Reset* next to the *Tare* button.
 
 ### 5. Honey gain
 
@@ -1627,8 +1649,8 @@ In the Apisense app, charts are available for the following parameters:
 
 #### 1.3 Zooming and fullscreen mode
 
-- To take a closer look at a chart, pinch to zoom or drag to pan; you can also use the on-screen zoom/pan buttons next to the chart. Once zoomed in, a *Reset zoom* button appears to return to the full range.
-- Tap the *Fullscreen* icon above the chart to open it in fullscreen mode, which gives more room for detailed analysis and panning (available for both the weight and conditions charts).
+- Tap the *Fullscreen* icon above the chart (below the 6 months button) to open it in fullscreen mode — this option allows detailed analysis and panning (available for both the weight and conditions charts).
+- To take a closer look at a chart, pinch to zoom in/out or drag to pan. You can also use the on-screen zoom/pan buttons next to the chart. Once zoomed in, a *Reset zoom* button appears; tapping it restores the default range. Zooming is available only in fullscreen chart mode. After zooming into a chart covering 7 days or more, the data is ungrouped so you can see values from each individual measurement.
 
 #### 1.4 Time frames presented on the charts
 
@@ -1827,10 +1849,10 @@ It is worth comparing this number with the version available in Google Play or t
 !!! note
     **App update screens:** On startup, the mobile app checks whether a newer version is available.
 
-    - If your installed version is **no longer supported**, a full-screen *Update required* message is shown; you must tap *Update* and install the new version from the store before you can continue using the app.
-    - If a **newer version exists but yours still works**, a dismissible *New version available* dialog offers *Update* or *Later*. Choosing *Later* will not ask again until an even newer version is released.
+    - If your installed version is **no longer supported**, a full-screen *Update required* message is shown. You must tap *Update* and install the new version from the store before you can continue using the app.
+    - If a **newer version exists but yours still works and is supported**, a dismissible *New version available* dialog offers *Update* or *Later*. Choosing *Later* will not ask again until an even newer version is released.
 
-    After you update, the app shows a **What's new** dialog on first launch, with a short swipeable summary of what changed in the new version(s) — tap *Next*/*Skip*/*Done* to close it.
+    After you update, the app shows a **What's new** dialog on first launch, with a short swipeable summary of what changed in the new version(s) — click *Next* to review what's new in the app, or *Skip*/*Done* to close the summary.
 
 ### 3. Unit preferences
 
@@ -1884,7 +1906,7 @@ ______________________________________________________________________
 
 #### 1.3 The app shows "Update required" and won't let me in
 
-**Solution:** this means your installed version is no longer supported. Tap *Update*, install the latest version from Google Play / the App Store, then reopen the app.
+**Solution:** this means your installed version is no longer supported. Tap *Update* to install the latest version from Google Play / the App Store, then reopen the app.
 
 #### 1.4 Other problems
 
@@ -1932,7 +1954,7 @@ Below you will find a summary of the most important activities in the Apisense P
 
 > [Deleting a hive](#23-deleting-a-hive)
 
-- **Adding inspections:** Click the chosen apiary tile. Click the chosen hive tile. Choose *Add...* -> *Inspection* from the bottom menu. Attach a total of 4 required frame photos (tap *See example* if unsure how they should look). Answer the questions. The yellow right-pointing arrow lets you proceed to the next question. Click *Finish inspection* (yellow button on the last inspection screen) to save. An in-progress inspection can be saved as a draft (kept 24 hours); a finished inspection can later be edited or deleted from its overflow menu.
+- **Adding inspections:** Click the chosen apiary tile. Click the chosen hive tile. Choose *Add...* -> *Inspection* from the bottom menu. Attach a total of 4 required frame photos (tap *See example* if unsure how they should look). Answer the questions. The yellow right-pointing arrow lets you proceed to the next question. Click *Finish inspection* (yellow button on the last inspection screen) to save. An in-progress inspection can be saved as a draft (kept 24 hours); a finished inspection can later be edited or deleted from its overflow menu or by tapping the pencil/bin icon in the inspection list.
 
 > [Video](#video-add-inspection), [Adding inspections](#dodawanie-przegladow)
 
@@ -1950,15 +1972,15 @@ Below you will find a summary of the most important activities in the Apisense P
 
 > [Video](#video-confirm-disease), [Filling in the questionnaire from the hive level](#formularz-chorobowy-ul)
 
-- **Registering a sample:** Click the chosen apiary tile. Click the chosen hive tile. Choose *Add...* -> *Register sample* from the bottom menu. Choose the sample collection date and the test type. Click the *Generate code* button. Write the *Test code* on the sample and send it to Apisense. (Note: the Register sample option is only available for a hive with an assigned VitalSensor device).
+- **Registering a sample:** Click the chosen apiary tile. Click the chosen hive tile. Choose *Add...* -> *Register sample* from the bottom menu. Choose the sample collection date and the examination type. Click the *Generate code* button. Write the *Examination code* on the sample and send it to Apisense. (Note: the Register sample option is only available for a hive with an assigned VitalSensor device).
 
 > [Video](#video-register-sample), [Registering a sample](#rejestrowanie-probki)
 
-- **Adding a test:** Click the chosen apiary tile. Click the chosen hive tile. From the bottom menu choose *Add... -> Test*. Choose the date and test type from the drop-down list, fill in the required photos and fields (e.g. number of varroa mites), then save with the yellow button. A saved test can later be edited or deleted from its overflow menu.
+- **Adding an examination:** Click the chosen apiary tile. Click the chosen hive tile. From the bottom menu choose *Add... -> Examination*. Choose the date and examination type from the drop-down list, fill in the required photos and fields (e.g. number of varroa mites), then save with the yellow button. A saved examination can later be edited or deleted from its overflow menu or by tapping the pencil/bin icon in the examination list.
 
-> [Adding a test](#81-adding-a-test)
+> [Adding an examination](#81-adding-an-examination)
 
-- **Adding a frame analysis:** Click the chosen apiary tile. Click the chosen hive tile. From the bottom menu choose *Add... -> Frame analysis*. Take or upload one photo of the frame and click *Send for analysis*. Track the result (*Pending* / *Completed* / *Failed*) in the hive's *Analysis* tab.
+- **Adding a frame analysis:** Click the chosen apiary tile. Click the chosen hive tile. From the bottom menu choose *Add... -> Frame analysis*. Take or upload one photo of the frame and click *Send for analysis*. Track the result (*Analysing frame* / *Analysis completed* / *Failed*) in the *Analysis* tab.
 
 > [Frame analysis](#analiza-ramki)
 
@@ -1976,11 +1998,11 @@ Below you will find a summary of the most important activities in the Apisense P
 
 > [Video](#video-add-hive), [Hive list overview (Hives tab)](#omowienie-listy-uli)
 
-- **Hive contents (Details tab):** Here you check the *Hive status*, saved inspections, notes, and the list of tests, samples and frame analyses. You can also display charts of individual parameters, e.g. Honey gain.
+- **Hive contents (Details tab):** Here you check the *Hive status*, saved inspections, notes, and the list of examinations, samples and frame analyses. You can also display charts of individual parameters, e.g. Honey gain.
 
 > [Hive contents overview (Details tab)](#omowienie-zawartosci-ula)
 
-- **Apiary and hive settings:** The **⋮** icon in the apiary view (Hives tab) or hive view (Details tab) leads to the settings (alongside *Send feedback* and *Sign out*). Here you can edit information about the apiary or hive.
+- **Apiary and hive settings:** The **⋮** icon in the apiary view (Hives tab) or hive view (Details tab) leads to the settings (alongside *Add suggestion* and *Sign out*). Here you can edit information about the apiary or hive.
 
 > [Apiary settings overview](#omowienie-ustawien-pasieki), [Hive settings overview](#omowienie-ustawien-ula)
 
@@ -1990,7 +2012,7 @@ Below you will find a summary of the most important activities in the Apisense P
 
 > [Parameter monitoring](#monitorowanie-parametrow)
 
-- **Charts:** Click the chosen apiary tile. Click the chosen hive tile. In the *Details* -> *Hive status* tab expand the *Weight* or *Conditions* section and click the chosen parameter to see the chart in the chosen time interval (24 h, 7 days, 1–6 months). Pinch/drag or use the on-screen buttons to zoom and pan, or tap *Fullscreen* for a larger view.
+- **Charts:** Click the chosen apiary tile. Click the chosen hive tile. In the *Details* -> *Hive status* tab expand the *Weight* or *Conditions* section and click the chosen parameter to see the chart in the chosen time interval (24 h, 7 days, 1–6 months). Tap *Fullscreen* to enlarge the chart, then pinch/drag or use the on-screen buttons to zoom and pan and display precise measurements.
 
 > [Data visualization on charts](#1-data-visualization-on-charts)
 
@@ -2020,7 +2042,7 @@ Below you will find a summary of the most important activities in the Apisense P
 
 ### 7. Reporting problems and suggestions
 
-- **Reporting in the app:** Click the **⋮** icon in the upper right corner of any view and choose *Send feedback*. Fill in the category and description, optionally attach photos. Click *Send suggestion*.
+- **Reporting in the app:** Click the **⋮** icon in the upper right corner of any view and choose *Add suggestion*. Fill in the category and description, optionally attach photos. Click *Send suggestion*.
 
 > [Reporting problems and suggestions](#zglaszanie-problemow-i-sugestii)
 
