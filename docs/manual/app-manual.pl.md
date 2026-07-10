@@ -296,7 +296,7 @@ Figure: Dodawanie ula w systemie - sekcja Informacje o matce pszczelej {#fig-add
 
     Następnie kliknij żółty przycisk, widoczny w lewym dolnym rogu ekranu, aby przejść do etapu przypisywania urządzenia Apisense VitalSensor do ula ([](#fig-add-beehive-devices-sensor)):
 
-    - **VitalSensor** - kliknij w ikonę kodu QR znajdującą się w prawej części tego pola i zeskanuj kod QR z naklejki umieszczonej na urządzeniu Apisense VitalSensor **lub** z Apisense Tag. Kolejne pole *Kod potwierdzający* zostanie wypełnione automatycznie.
+    - **VitalSensor** - kliknij w ikonę kodu QR znajdującą się w prawej części tego pola i zeskanuj kod QR z naklejki umieszczonej na urządzeniu Apisense VitalSensor **lub** z Apisense ColonyLink. Kolejne pole *Kod potwierdzający* zostanie wypełnione automatycznie.
     - **Kod potwierdzający** - zostanie wypełniony automatycznie, po poprawnym zeskanowaniu kodu QR.
 
     Figure: Dodawanie ula w systemie - sekcja Wyposażenie - przypisywanie urządzenia VitalSensor {#fig-add-beehive-devices-sensor}

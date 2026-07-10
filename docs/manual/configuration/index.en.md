@@ -59,7 +59,7 @@ The Apisense kit includes:
   - **Camera mount bracket** — used to mount the Apisense Hub, ensuring a stable and adjustable position.
   - **Wooden levelling beam** — stabilising element that enables correct positioning and levelling of the Scale beneath the hive. Distributes the hive load evenly across the Scale sensors and maintains structural stability.
   - **Frame mounting clips** — allow secure, stable attachment of the Apisense VitalSensor directly to the bee frame. Designed for tool-free mounting without permanent hive modifications or disruption to the colony.
-- <a id="qr-stickers"></a>**QR code stickers** — for quick apiary and hive registration and device identification. Stickers are affixed to each device: Apisense Hub ([](#fig-qr-hub)), Apisense Scale ([](#fig-qr-scale)) and Apisense VitalSensor ([](#fig-qr-sensor)), and on the Apisense Tag ([](#fig-apisense-tag)).
+- <a id="qr-stickers"></a>**QR code stickers** — for quick apiary and hive registration and device identification. Stickers are affixed to each device: Apisense Hub ([](#fig-qr-hub)), Apisense Scale ([](#fig-qr-scale)) and Apisense VitalSensor ([](#fig-qr-sensor)), and on the Apisense ColonyLink ([](#fig-colonylink)).
 
     Figure: QR code sticker on Apisense Hub {#fig-qr-hub}
 
@@ -73,9 +73,9 @@ The Apisense kit includes:
 
     ![QR VitalSensor](../pictures/sensor_qr.jpg){width=200}
 
-    Figure: Apisense Tag with QR code {#fig-apisense-tag}
+    Figure: Apisense ColonyLink with QR code {#fig-colonylink}
 
-    ![Apisense Tag](../pictures/sensor_tag.jpg){width=200}
+    ![Apisense ColonyLink](../pictures/sensor_tag.jpg){width=200}
 
 For a detailed description of each device (Hub, Scale, VitalSensor), technical specifications, and power information see the [System Overview](../../overview/index.md#2-hardware-technical-specifications).
 
@@ -221,7 +221,19 @@ How to check the first readings is described in: [Verifying Device Operation](#v
 
 Before installing any Apisense device, complete the steps in [Registration / Login](#registration-login) and [Adding Devices to the System and First Start-up](#adding-devices-to-the-system-and-first-start-up), and verify that the first readings from the measurement devices are visible in the Apisense app ([Verifying Device Operation](#verifying-device-operation)).
 
+The full installation flow — scanning the QR codes and mounting the Hub, VitalSensor and Scale — is shown in the animation below ([](#fig-system-mounting-animation)):
+
+Figure: Apisense system installation animation {#fig-system-mounting-animation}
+
+![Apisense system installation animation](../pictures/montaz-systemu-animated.svg){width=400}
+
 ### 1. Installing the Apisense Hub
+
+The installation flow at a glance ([](#fig-hub-mounting-animation)):
+
+Figure: Apisense Hub installation animation {#fig-hub-mounting-animation}
+
+![Apisense Hub installation animation](../pictures/montaz-hub-animated.svg){width=400}
 
 - **Location and orientation**
   - Mount the Apisense Hub:
@@ -244,6 +256,12 @@ Before installing any Apisense device, complete the steps in [Registration / Log
 
 ### 2. Installing the Apisense Scale (Hive Scale)
 
+The installation flow at a glance ([](#fig-scale-mounting-animation)):
+
+Figure: Apisense Scale installation animation {#fig-scale-mounting-animation}
+
+![Apisense Scale installation animation](../pictures/montaz-wagi-animated.svg){width=400}
+
 - **Location and orientation** — the Scale should be placed under the hive (or within a weighing structure) on **stable, level ground, oriented perpendicular to the frames inside the hive**. Within BLE range of the Apisense Hub (up to approx. 35 m), without physical obstacles that attenuate the signal. Correct levelling and orientation is **critical for measurement accuracy**.
 
 - **Installation and levelling — step by step**
@@ -262,6 +280,12 @@ Before installing any Apisense device, complete the steps in [Registration / Log
     Once all the above steps are completed correctly, the Apisense Scale is securely connected to the system and its readings are available in the dashboard.
 
 ### 3. Installing the Apisense VitalSensor
+
+The installation flow at a glance ([](#fig-sensor-mounting-animation)):
+
+Figure: Apisense VitalSensor installation animation {#fig-sensor-mounting-animation}
+
+![Apisense VitalSensor installation animation](../pictures/montaz-sensora-animated.svg){width=400}
 
 - **Location** — the compact Apisense VitalSensor is installed non-invasively inside the hive, ideally in the upper corner of the central bee frame, so as not to disrupt bee activity and ventilation; vertically, so the QR code sticker is visible from above when the frame is inserted. Within BLE range of the Apisense Hub (up to approx. 35 m).
 
@@ -283,6 +307,21 @@ Before installing any Apisense device, complete the steps in [Registration / Log
   3. **Verify in Apisense Pro AI** — if the device has been correctly installed and has not lost connectivity with the Hub, new readings should appear in the system within the next few hours. For instructions on adding the VitalSensor to the dashboard see [Adding Devices to the System and First Start-up](#adding-devices-to-the-system-and-first-start-up); for checking first readings see [Verifying Device Operation](#verifying-device-operation).
 
     Once all the above steps are completed correctly, the Apisense VitalSensor is securely connected to the system and its readings are available in the dashboard.
+
+### 4. Installing the Apisense ColonyLink
+
+The Apisense ColonyLink is a weatherproof sticker with a QR code and an NFC tag that acts as the hive's physical identifier. Each hive in the app is linked to exactly one ColonyLink — scanning the QR code or tapping the sticker with a phone (NFC) opens the correct hive's data, even in gloves and direct sunlight. The ColonyLink requires no batteries, configuration or firmware updates.
+
+The installation flow at a glance ([](#fig-colonylink-mounting-animation)):
+
+Figure: Apisense ColonyLink installation animation {#fig-colonylink-mounting-animation}
+
+![Apisense ColonyLink installation animation](../pictures/montaz-colonylink-animated.svg){width=400}
+
+- **Installation — step by step**
+  1. **Scan the QR code** — when creating a hive in the Apisense app, scan the QR code on the ColonyLink ([](#fig-colonylink)) to link it to the hive.
+  2. **Stick the ColonyLink onto the hive front** — choose a flat, clean and dry spot on the front wall of the hive, clearly visible while working in the apiary. Press the sticker down across its whole surface so the mounting tape adheres well.
+  3. **Done** — from now on, tapping the ColonyLink with a phone or scanning its QR code opens this hive's data in the app.
 
 ---
 
