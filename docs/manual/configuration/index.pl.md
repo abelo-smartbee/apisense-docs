@@ -52,7 +52,7 @@ W skład zestawu Apisense wchodzą:
   - **Uchwyt aparatowy** — element wykorzystywany do montażu Apisense Huba, umożliwiający stabilne zamocowanie urządzenia.
   - **Drewniana kantówka** — element stabilizujący, umożliwiający prawidłowe ustawienie i wypoziomowanie Scale pod ulem. Zapewnia równomierne rozłożenie ciężaru ula na czujniki pomiarowe oraz utrzymuje stabilność całej konstrukcji.
   - **Uchwyty montażowe do ramki** — elementy umożliwiające bezpieczne i stabilne zamocowanie Apisense VitalSensora bezpośrednio na ramce ula. Konstrukcja uchwytów pozwala na montaż bez trwałych modyfikacji ula oraz bez zakłócania pracy rodziny pszczelej.
-- <a id="naklejki-qr"></a>**Naklejki z kodem QR** — do szybkiej rejestracji pasieki i uli w systemie oraz identyfikacji urządzeń. Naklejki umieszczone są na poszczególnych urządzeniach: Apisense Hub ([](#fig-qr-hub)), Apisense Scale ([](#fig-qr-scale)) i Apisense VitalSensor ([](#fig-qr-sensor)) oraz na Apisense Tag ([](#fig-apisense-tag)).
+- <a id="naklejki-qr"></a>**Naklejki z kodem QR** — do szybkiej rejestracji pasieki i uli w systemie oraz identyfikacji urządzeń. Naklejki umieszczone są na poszczególnych urządzeniach: Apisense Hub ([](#fig-qr-hub)), Apisense Scale ([](#fig-qr-scale)) i Apisense VitalSensor ([](#fig-qr-sensor)) oraz na Apisense ColonyLink ([](#fig-colonylink)).
 
     Figure: Naklejka z kodem QR na Apisense Hub {#fig-qr-hub}
 
@@ -66,9 +66,9 @@ W skład zestawu Apisense wchodzą:
 
     ![QR VitalSensor](../pictures/sensor_qr.jpg){width=200}
 
-    Figure: Apisense Tag z kodem QR {#fig-apisense-tag}
+    Figure: Apisense ColonyLink z kodem QR {#fig-colonylink}
 
-    ![Apisense Tag](../pictures/sensor_tag.jpg){width=200}
+    ![Apisense ColonyLink](../pictures/sensor_tag.jpg){width=200}
 
 
 Szczegółowy opis każdego z urządzeń (Hub, Scale, VitalSensor), specyfikacja techniczna i informacje o zasilaniu znajdują się w [Przeglądzie systemu](../../overview/index.md#2-specyfikacja-sprzetowa).
@@ -205,7 +205,19 @@ Sposób sprawdzenia pierwszych odczytów opisano w rozdziale: [Test poprawności
 
 Przed przystąpieniem do montażu poszczególnych urządzeń wchodzących w skład zestawu Apisense należy przejść etapy opisane w rozdziałach [Rejestracja / Logowanie w systemie](#rejestracja-logowanie-w-systemie) oraz [Dodanie urządzeń do systemu i pierwsze uruchomienie](#dodanie-urzadzen-do-systemu-i-pierwsze-uruchomienie), a także zweryfikować wyświetlanie pierwszych odczytów z urządzeń pomiarowych w Aplikacji Apisense [Test poprawności działania urządzeń](#test-poprawnosci-dziaania-urzadzen).
 
+Pełny przebieg montażu zestawu w pasiece — skanowanie kodów QR oraz montaż Huba, VitalSensora i Scale — przedstawia poniższa animacja ([](#fig-system-mounting-animation)):
+
+Figure: Animacja montażu systemu Apisense w pasiece {#fig-system-mounting-animation}
+
+![Animacja montażu systemu Apisense w pasiece](../pictures/montaz-systemu-animated.svg){width=400}
+
 ### 1. Montaż Apisense Hub
+
+Przebieg montażu w skrócie przedstawia animacja ([](#fig-hub-mounting-animation)):
+
+Figure: Animacja montażu Apisense Hub {#fig-hub-mounting-animation}
+
+![Animacja montażu Apisense Hub](../pictures/montaz-hub-animated.svg){width=400}
 
 - **Umiejscowienie i orientacja**
   - Apisense Hub montuj:
@@ -227,6 +239,12 @@ Przed przystąpieniem do montażu poszczególnych urządzeń wchodzących w skł
 
 ### 2. Montaż Apisense Scale
 
+Przebieg montażu w skrócie przedstawia animacja ([](#fig-scale-mounting-animation)):
+
+Figure: Animacja montażu Apisense Scale {#fig-scale-mounting-animation}
+
+![Animacja montażu Apisense Scale](../pictures/montaz-wagi-animated.svg){width=400}
+
 - **Umiejscowienie i orientacja** — Scale powinna zostać umieszczona pod ulem (lub w konstrukcji ważącej) na **stabilnym i równym podłożu, położona prostopadle do ramek w ulu**. Odległość od Apisense Huba w zasięgu łączności BLE (do ok. 35 m), bez fizycznych przeszkód tłumiących sygnał. Prawidłowe wypoziomowanie i orientacja jest **kluczowe dla dokładności pomiarów**.
 - **Montaż i wypoziomowanie — krok po kroku**
   1. **Umieść Scale w docelowym miejscu** — uruchomioną Scale ustaw tak, aby była położona na stabilnym i równym podłożu oraz zorientowana prostopadle do ramek w ulu.
@@ -242,6 +260,12 @@ Przed przystąpieniem do montażu poszczególnych urządzeń wchodzących w skł
     Po dokładnym wykonaniu powyższych czynności można uznać Apisense Scale za bezpiecznie podłączoną do systemu i korzystać z odczytów w panelu.
 
 ### 3. Montaż Apisense VitalSensor
+
+Przebieg montażu w skrócie przedstawia animacja ([](#fig-sensor-mounting-animation)):
+
+Figure: Animacja montażu Apisense VitalSensor {#fig-sensor-mounting-animation}
+
+![Animacja montażu Apisense VitalSensor](../pictures/montaz-sensora-animated.svg){width=400}
 
 - **Umiejscowienie** — urządzenie niewielkich rozmiarów Apisense VitalSensor montuje się bezinwazyjnie wewnątrz ula, najlepiej w górnym rogu centralnej ramki pszczelej, tak, aby nie zakłócać pracy pszczół i wentylacji; pionowo, aby naklejka z kodem QR była widoczna od góry po włożeniu ramki do ula. Odległość od Apisense Huba w zasięgu łączności BLE (do ok. 35 m).
 - **Montaż - krok po kroku**
@@ -260,6 +284,21 @@ Przed przystąpieniem do montażu poszczególnych urządzeń wchodzących w skł
 
   3. **Zweryfikuj w Systemie Apisense Pro AI** — jeśli urządzenie zostało prawidłowo zamontowane i nie utraciło łączności z Hubem, w ciągu najbliższych kilku godzin w systemie powinny pojawić się kolejne odczyty. Szczegółowa instrukcja jak dodać VitalSensor do panelu została przedstawiona w rozdziale [Dodanie urządzeń do systemu i pierwsze uruchomienie](#dodanie-urzadzen-do-systemu-i-pierwsze-uruchomienie), natomiast jak sprawdzić pierwsze odczyty - w rozdziale [Test poprawności działania urządzeń](#test-poprawnosci-dziaania-urzadzen).
     Po dokładnym wykonaniu powyższych czynności można uznać Apisense VitalSensor za bezpiecznie podłączony do systemu i korzystać z odczytów w panelu.
+
+### 4. Montaż Apisense ColonyLink
+
+Apisense ColonyLink to wodoodporna naklejka z kodem QR i tagiem NFC, pełniąca rolę fizycznego identyfikatora ula. Każdy ul w aplikacji powiązany jest z jednym ColonyLink — zeskanowanie kodu QR lub przyłożenie telefonu do naklejki (NFC) otwiera dane właściwego ula, również w rękawicach i w pełnym słońcu. ColonyLink nie wymaga baterii, konfiguracji ani aktualizacji oprogramowania.
+
+Przebieg montażu w skrócie przedstawia animacja ([](#fig-colonylink-mounting-animation)):
+
+Figure: Animacja montażu Apisense ColonyLink {#fig-colonylink-mounting-animation}
+
+![Animacja montażu Apisense ColonyLink](../pictures/montaz-colonylink-animated.svg){width=400}
+
+- **Montaż — krok po kroku**
+  1. **Zeskanuj kod QR** — podczas tworzenia ula w Aplikacji Apisense zeskanuj kod QR znajdujący się na ColonyLink ([](#fig-colonylink)), aby powiązać go z ulem.
+  2. **Naklej ColonyLink na front ula** — wybierz płaskie, czyste i suche miejsce na przedniej ściance ula, dobrze widoczne podczas pracy w pasiece. Dociśnij naklejkę na całej powierzchni, aby taśma montażowa dobrze przylegała.
+  3. **Gotowe** — od tej chwili przyłożenie telefonu do ColonyLink lub zeskanowanie kodu QR otwiera dane tego ula w aplikacji.
 
 ---
 

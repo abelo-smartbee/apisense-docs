@@ -298,7 +298,7 @@ Figure: Adding a hive in the system - Queen bee information section {#fig-add-be
 
     Then click the yellow button in the lower left corner of the screen to proceed to linking the Apisense VitalSensor ([](#fig-add-beehive-devices-sensor)):
 
-    - **VitalSensor** — click the QR code icon on the right side of this field and scan the QR code from the sticker on the Apisense VitalSensor **or** from an Apisense Tag. The next *Confirmation code* field will be filled in automatically.
+    - **VitalSensor** — click the QR code icon on the right side of this field and scan the QR code from the sticker on the Apisense VitalSensor **or** from an Apisense ColonyLink. The next *Confirmation code* field will be filled in automatically.
     - **Confirmation code** — filled in automatically after a successful QR scan.
 
     Figure: Adding a hive — Equipment section, linking VitalSensor {#fig-add-beehive-devices-sensor}
