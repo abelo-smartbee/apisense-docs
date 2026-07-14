@@ -354,8 +354,8 @@ If measurement data has still not appeared in the Apisense app more than 2 hours
 
 - **Check the power supply:**
   - Hub: verify the photovoltaic panel is not shaded, or that the power adapter is correctly connected.
-  - Scale: verify the 2×AA batteries are installed correctly (correct +/− polarity). Replace batteries if necessary.
-  - VitalSensor: verify the 2×AA batteries are installed correctly (correct +/− polarity). Replace batteries if necessary.
+  - Scale: verify the 2×AA batteries are installed correctly (correct +/− polarity). Replace batteries if necessary. After a routine battery replacement you do not need to re-pair the device or change app settings — simply place the device within the Hub's range (details: [FAQ — after battery replacement](../../faq/index.md#after-battery-replacement)).
+  - VitalSensor: verify the 2×AA batteries are installed correctly (correct +/− polarity). Replace batteries if necessary. After a routine battery replacement you do not need to re-pair the device or change app settings — simply place the device within the Hub's range (details: [FAQ — after battery replacement](../../faq/index.md#after-battery-replacement)).
 
 - **Check configuration and installation:**
   - Verify correct device installation at the intended location.

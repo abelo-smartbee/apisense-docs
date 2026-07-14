@@ -1613,6 +1613,17 @@ Most important information:
 - **A decrease or lack of gain** may mean the end of the nectar flow, unfavorable weather conditions or reduced colony activity.
 - **Gain trend analysis** allows you to assess colony productivity and the optimal moment for planning honey harvesting.
 
+### 6. Parameter interpretation: hive weight and honey gain
+
+- **Hive weight chart** — shows the actual mass of the entire hive. It includes all mass changes — both sudden ones resulting from beekeeper actions (e.g. adding a honey super, removing honey supers, or honey harvesting) and gradual changes related to natural bee activity and environmental conditions.
+- **Honey gain chart** — shows the estimated change in the amount of accumulated honey. Unlike the weight chart, it eliminates the influence of actions performed by the beekeeper, so it reflects changes resulting from bee colony activity.
+
+In practice, this means both charts may show different values. For example, if a honey super is added to the hive, the total hive mass will increase, but if bee activity decreases at the same time, honey gain may remain at the same level or even show a negative value.
+
+**Note:** On the honey gain chart for ranges covering 7 days or more, larger fluctuations may occur due to data aggregation. Environmental factors such as rainfall or increased wood moisture may also affect the displayed values.
+
+**Coming soon in the app:** the ability to zoom the honey gain chart and display data with greater detail, similar to what is already available for charts of other parameters. This will make it easier to analyze honey gain changes and compare them with weather conditions.
+
 ______________________________________________________________________
 
 ## Data analysis and reports
@@ -1881,7 +1892,7 @@ ______________________________________________________________________
 
 ### 4. Battery level check before the season
 
-- Before the season, check in the app the battery level of all devices monitoring the status of your apiaries. Replace the batteries (2×AA in the Scale and VitalSensor) when the level is low; charge the Hub via the photovoltaic panel or mains. Avoid transmission interruptions at the peak of the season.
+- Before the season, check in the app the battery level of all devices monitoring the status of your apiaries. Replace the batteries (2×AA in the Scale and VitalSensor) when the level is low; charge the Hub via the photovoltaic panel or mains. Avoid transmission interruptions at the peak of the season. After replacing the batteries in a Scale or VitalSensor you do not need to re-pair the device or change app settings — simply place the device within the Hub's range and wait for data synchronisation (details: [FAQ — after battery replacement](../faq/index.md#after-battery-replacement)).
 
 ### 5. Updates
 
@@ -1908,7 +1919,31 @@ ______________________________________________________________________
 
 **Solution:** this means your installed version is no longer supported. Tap *Update* to install the latest version from Google Play / the App Store, then reopen the app.
 
-#### 1.4 Other problems
+#### 1.4 Is it possible for hive weight to show a positive value while honey gain is negative, even though honey gain is calculated based on weight measurements?
+
+**Solution:** yes, this is entirely possible. For example, a beekeeper may add a super, which will cause the total hive mass to increase. At the same time, if the bee colony is weakened, honey production may decrease. In such a situation, the hive weight chart will show a clear increase resulting from adding the super. However, on the honey gain chart, the mass of the added super will not be taken into account, so the chart will reflect only the actual change in the amount of honey. As a result, the honey gain chart will show a decrease related to limited bee activity, rather than an artificial increase resulting from beekeeper intervention.
+
+#### 1.5 After replacing the batteries in a Scale or VitalSensor — what next?
+
+**Solution:** after replacing the batteries:
+
+- place the Scale or VitalSensor back in its target location,
+- make sure it is within range of the Hub (maximum approximately 35 m),
+- wait for the next measurement cycle.
+
+Updated data will appear in the app automatically, which may take up to several hours and provided that the Hub device is communicating properly with the system (it is not offline — discharged battery/no connectivity).
+
+After completing the battery replacement, **no additional steps** are required in the app or on the Hub, Scale or VitalSensor device. Do not re-pair devices, add them to the hive again, or press the RESET button.
+
+#### 1.6 Do I need to re-pair the device, re-add it to the hive, or remove the hive from the app after replacing the batteries?
+
+**Solution:** no. Replacing the batteries in a Scale or VitalSensor does not require re-pairing the device, removing and re-adding it to the hive, or removing the hive from the app. Simply place the device back within the Hub's communication range and wait for the next data synchronisation. The Hub must be communicating properly with the system (it must not be offline — discharged or no connectivity).
+
+#### 1.7 Do I need to press the RESET button on the Hub after the Hub has discharged or after replacing the batteries in a Scale/VitalSensor?
+
+**Solution:** no. Do not reset the Hub after replacing the batteries in Scale or VitalSensor devices. After the Hub has discharged and you reconnect it to charging or expose it to the sun, the Hub will automatically resume operation, connect to the system and the devices — without pressing the RESET button.
+
+#### 1.8 Other problems
 
 **Solution:** contact Apisense technical support: **bee@apisense.ai**.
 

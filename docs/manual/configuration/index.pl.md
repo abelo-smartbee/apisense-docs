@@ -333,9 +333,9 @@ Jeżeli po ponad 2 godzinach od uruchomienia i prawidłowego rozmieszczenia urz�
   - Hub:
     sprawdzić, czy panel fotowoltaiczny nie jest zacieniony lub czy zasilacz jest prawidłowo podłączony
   - Scale:
-    sprawdzić poprawność montażu baterii 2 × AA (prawidłowa polaryzacja +/-). W razie potrzeby wymienić baterie na nowe.
+    sprawdzić poprawność montażu baterii 2 × AA (prawidłowa polaryzacja +/-). W razie potrzeby wymienić baterie na nowe. Po rutynowej wymianie baterii nie trzeba ponownie parować urządzenia ani zmieniać ustawień w aplikacji — wystarczy umieścić urządzenie w zasięgu Huba (szczegóły: [FAQ — po wymianie baterii](../../faq/index.md#po-wymianie-baterii)).
   - VitalSensor:
-    sprawdzić poprawność montażu baterii 2 × AA (prawidłowa polaryzacja +/-). W razie potrzeby wymienić baterie na nowe.
+    sprawdzić poprawność montażu baterii 2 × AA (prawidłowa polaryzacja +/-). W razie potrzeby wymienić baterie na nowe. Po rutynowej wymianie baterii nie trzeba ponownie parować urządzenia ani zmieniać ustawień w aplikacji — wystarczy umieścić urządzenie w zasięgu Huba (szczegóły: [FAQ — po wymianie baterii](../../faq/index.md#po-wymianie-baterii)).
 - **Sprawdzić poprawność konfiguracji i montażu**:
   - sprawdzić prawidłowy montaż urządzeń w miejscu docelowym
   - upewnić się, że urządzenia znajdują się w zasięgu komunikacji Huba
