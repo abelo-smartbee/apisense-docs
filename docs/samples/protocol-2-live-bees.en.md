@@ -37,4 +37,7 @@ Bees must be shipped **alive**. Please pay special attention to the following po
 - Label each cage with the **test code** generated in the Apisense app during sample registration.
 - Ship samples **Monday to Thursday** via **Poczta Polska** (estimated cost **PLN 20–30**) or a courier service.
 
+!!! note "Poczta Polska — apiaries in Poland only"
+    Shipments of live bees via Poczta Polska may only be sent by apiary owners located in Poland.
+
 Add this sample to the package described in [Shipping samples](index.md#shipping-samples). Bees should reach the laboratory **alive** — choose a service that ensures fast delivery on business days.

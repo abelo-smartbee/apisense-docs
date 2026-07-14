@@ -134,7 +134,7 @@ Details: [Nosema/Vairimorpha microscopy](../procedures/nosema-microscopy.md#stor
 
 ### Can I send live bees to Lublin via Poczta Polska?
 
-Yes. Live bee samples should be sent **via Poczta Polska** to the laboratory in Lublin (University of Life Sciences in Lublin, ul. Doświadczalna 54, 20-280 Lublin) — **Monday to Thursday** (estimated cost **PLN 20–30**). Bees must be shipped **alive**, in transport cages that allow air access, with a piece of sugar candy and the test code from the Apisense app written on each cage. Details: [Protocol 2 — live bees](../samples/protocol-2-live-bees.md).
+Yes. Live bee samples should be sent **via Poczta Polska** to the laboratory in Lublin (University of Life Sciences in Lublin, ul. Doświadczalna 54, 20-280 Lublin) — **Monday to Thursday** (estimated cost **PLN 20–30**). Bees must be shipped **alive**, in transport cages that allow air access, with a piece of sugar candy and the test code from the Apisense app written on each cage. Shipments of live bees via Poczta Polska may only be sent by apiary owners located in Poland. Details: [Protocol 2 — live bees](../samples/protocol-2-live-bees.md).
 
 ## Beekeeping practices
 

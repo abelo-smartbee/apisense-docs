@@ -43,7 +43,7 @@ ul. Doświadczalna 54, 20-280 Lublin, Poland
 3. Use **Poczta Polska** (estimated cost PLN 20–30) **or a courier service** so the samples reach the lab as quickly as possible.
 
 !!! tip "Live bees"
-    Live bee samples require special attention when packing and shipping — see [Protocol 2 — live bees](protocol-2-live-bees.md#shipping).
+    Live bee samples require special attention when packing and shipping — see [Protocol 2 — live bees](protocol-2-live-bees.md#shipping). Shipments via Poczta Polska may only be sent by apiary owners located in Poland.
 
 **Shipping address:**
 

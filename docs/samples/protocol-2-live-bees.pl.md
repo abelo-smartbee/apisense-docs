@@ -37,4 +37,7 @@ Pszczoły należy wysłać **żywe**. Bardzo prosimy o zwrócenie szczególnej u
 - Każdą klateczkę opisz **kodem badania** wygenerowanym w aplikacji Apisense podczas rejestracji próbki.
 - Próbki nadawaj **od poniedziałku do czwartku** za pośrednictwem **Poczty Polskiej** (szacowany koszt **20–30 zł**) lub kurierem.
 
+!!! note "Poczta Polska — tylko pasieki w Polsce"
+    Przesyłki z żywymi pszczołami za pośrednictwem Poczty Polskiej mogą być nadawane wyłącznie przez właścicieli pasiek zlokalizowanych w Polsce.
+
 Próbkę dołącz do paczki opisanej w sekcji [Wysyłka do badań](index.md#wysyłka-do-badań). Pszczoły powinny dotrzeć do laboratorium **żywe** — wybierz usługę, która zapewni szybkie doręczenie w dni robocze.

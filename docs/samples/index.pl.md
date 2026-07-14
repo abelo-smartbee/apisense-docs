@@ -43,7 +43,7 @@ ul. Doświadczalna 54, 20-280 Lublin
 3. Wyślij **Pocztą Polską** (szacowany koszt 20–30 zł) **lub kurierem**, aby próbki jak najszybciej dotarły do laboratorium.
 
 !!! tip "Żywe pszczoły"
-    Próbki żywych pszczół wymagają szczególnej uwagi przy pakowaniu i wysyłce — patrz [Protokół 2 — żywe pszczoły](protocol-2-live-bees.md#wysyłka).
+    Próbki żywych pszczół wymagają szczególnej uwagi przy pakowaniu i wysyłce — patrz [Protokół 2 — żywe pszczoły](protocol-2-live-bees.md#wysyłka). Przesyłki za pośrednictwem Poczty Polskiej mogą być nadawane wyłącznie przez właścicieli pasiek zlokalizowanych w Polsce.
 
 **Adres do wysyłki:**
 
