@@ -10,7 +10,7 @@ A seasonal honey bee health monitoring program run by Apisense in collaboration 
 | | Protocol | Status |
 |---|---|---|
 | 1 | [*Varroa destructor* monitoring](protocol-1-varroa.md) — sugar roll + mite drop on sticky board | Mandatory |
-| 2 | Live bee collection — ~40 workers from the brood nest | PL group only |
+| 2 | [Live bee collection](protocol-2-live-bees.md) — ~40 workers from the brood nest | Mandatory |
 | 3 | [Brood comb section](protocol-3-brood-comb.md) — 10×10 cm with affected brood | Conditional (contact first) |
 | 4 | [Dead bees](protocol-4-dead-bees.md) — bottom-board collection | Recommended |
 
@@ -36,11 +36,14 @@ ul. Doświadczalna 54, 20-280 Lublin, Poland
 
 [bee@apisense.ai](mailto:bee@apisense.ai)
 
-## Shipping samples
+## Shipping samples {#shipping-samples}
 
 1. Place all labeled samples (with test codes generated in the Apisense app) together in a **cardboard box**.
 2. Ship on a **business day (Monday–Thursday)** to avoid the package sitting over the weekend.
-3. Use **postal service or 24 h courier** so the samples reach the lab as quickly as possible.
+3. Use **Poczta Polska** (estimated cost PLN 20–30) **or a courier service** so the samples reach the lab as quickly as possible.
+
+!!! tip "Live bees"
+    Live bee samples require special attention when packing and shipping — see [Protocol 2 — live bees](protocol-2-live-bees.md#shipping).
 
 **Shipping address:**
 

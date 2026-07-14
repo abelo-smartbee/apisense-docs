@@ -977,6 +977,9 @@ Figure: Widok Zarejestruj próbkę {#fig-register-sample}
 !!! tip "Jak wykonać badanie samodzielnie?"
     Szczegółowe instrukcje pobierania próbek i wykonywania badań (mikroskopia *Nosema*, flotacja na *Varroa*) znajdziesz w sekcji [Badania](../procedures/index.md).
 
+!!! tip "Wysyłka żywych pszczół"
+    Próbki żywych pszczół wysyłaj **żywe**, w klateczkach transportowych z ciastem cukrowym (ok. 10 pszczół w każdej, 4 klateczki na ul), z kodem badania z aplikacji. Nadawaj **od poniedziałku do czwartku** — Pocztą Polską (ok. 20–30 zł) lub kurierem. Szczegóły: [Protokół 2 — żywe pszczoły](../samples/protocol-2-live-bees.md).
+
 #### 7.2 Usuwanie próbki
 
 Aby usunąć próbkę z listy próbek należy:

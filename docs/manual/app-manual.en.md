@@ -981,6 +981,9 @@ Figure: Register sample view {#fig-register-sample}
 !!! tip "How to perform the examination yourself?"
     Detailed instructions for sample collection and performing examinations (*Nosema* microscopy, *Varroa* flotation) are available in the [Lab procedures](../procedures/index.md) section.
 
+!!! tip "Shipping live bees"
+    Ship live bee samples **alive**, in transport cages with sugar candy (~10 bees per cage, 4 cages per hive), labelled with the test code from the app. Ship **Monday to Thursday** — via Poczta Polska (approx. PLN 20–30) or courier. Details: [Protocol 2 — live bees](../samples/protocol-2-live-bees.md).
+
 #### 7.2 Deleting a sample
 
 To delete a sample from the sample list:
