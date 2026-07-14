@@ -1611,6 +1611,17 @@ Najważniejsze informacje:
 - **Spadek lub brak przybytku** może oznaczać zakończenie pożytku, niesprzyjające warunki pogodowe lub zmniejszoną aktywność rodziny.
 - **Analiza trendów przybytku** pozwala ocenić produktywność rodziny oraz moment optymalny do planowania miodobrania.
 
+### 6. Interpretacja parametrów: waga ula a przybytek miodu
+
+- **Wykres wagi ula** — przedstawia rzeczywistą masę całego ula. Uwzględnia wszystkie zmiany masy — zarówno nagłe, wynikające z działań pszczelarza (np. dołożenie półkorpusu, zdjęcie nadstawek czy miodobranie), jak i stopniowe zmiany związane z naturalną aktywnością pszczół oraz warunkami środowiskowymi.
+- **Wykres przybytku miodu** — przedstawia szacunkową zmianę ilości zgromadzonego miodu. W przeciwieństwie do wykresu wagi eliminuje wpływ działań wykonywanych przez pszczelarza, dzięki czemu odzwierciedla zmiany wynikające z aktywności rodziny pszczelej.
+
+W praktyce oznacza to, że oba wykresy mogą przedstawiać różne wartości. Przykładowo, jeśli do ula zostanie dołożony półkorpus, całkowita masa ula wzrośnie, jednak przy jednoczesnym spadku aktywności pszczół przybytek miodu może pozostać na tym samym poziomie lub nawet przyjąć wartość ujemną.
+
+**Uwaga:** Na wykresie przybytku miodu dla zakresów obejmujących 7 dni i więcej mogą występować większe wahania wynikające z agregacji danych. Na prezentowane wartości mogą również wpływać czynniki środowiskowe, takie jak opady deszczu czy zwiększona wilgotność drewna.
+
+**Wkrótce w aplikacji:** wprowadzenie możliwości przybliżania wykresu przybytku miodu oraz prezentowania danych z większą szczegółowością, analogicznie jak jest już w przypadku wykresów dla pozostałych parametrów. Ułatwi to analizę zmian przybytku miodu oraz ich porównywanie z warunkami pogodowymi.
+
 ______________________________________________________________________
 
 ## Analiza danych i raporty
@@ -1907,7 +1918,11 @@ ______________________________________________________________________
 
 **Rozwiązanie:** oznacza to, że zainstalowana wersja nie jest już wspierana. Kliknij *Aktualizuj*, aby zainstalować najnowszą wersję z Google Play / App Store, a następnie uruchom aplikację ponownie.
 
-#### 1.4 Inne problemy
+#### 1.4 Czy jest możliwe, aby waga ula wskazywała wartość dodatnią, podczas gdy przybytek miodu był ujemny, mimo że jest on wyliczany na podstawie pomiarów wagi?
+
+**Rozwiązanie:** tak, jest to jak najbardziej możliwe. Przykładowo, pszczelarz może dołożyć półkorpus, co spowoduje wzrost całkowitej masy ula. Jednocześnie, jeśli rodzina pszczela jest osłabiona, produkcja miodu może się zmniejszyć. W takiej sytuacji na wykresie wagi ula widoczny będzie wyraźny wzrost wynikający z dołożenia półkorpusu. Natomiast na wykresie przybytku masa dodanego półkorpusu nie zostanie uwzględniona, dzięki czemu wykres będzie odzwierciedlał wyłącznie rzeczywistą zmianę ilości miodu. W efekcie na wykresie przybytku widoczny będzie spadek związany z ograniczoną aktywnością pszczół, a nie sztuczny wzrost wynikający z ingerencji pszczelarza.
+
+#### 1.5 Inne problemy
 
 **Rozwiązanie:** skontaktuj się z pomocą techniczną Apisense: **bee@apisense.ai**.
 

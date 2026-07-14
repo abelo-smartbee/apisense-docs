@@ -1613,6 +1613,17 @@ Most important information:
 - **A decrease or lack of gain** may mean the end of the nectar flow, unfavorable weather conditions or reduced colony activity.
 - **Gain trend analysis** allows you to assess colony productivity and the optimal moment for planning honey harvesting.
 
+### 6. Parameter interpretation: hive weight and honey gain
+
+- **Hive weight chart** — shows the actual mass of the entire hive. It includes all mass changes — both sudden ones resulting from beekeeper actions (e.g. adding a super, removing honey supers, or honey harvesting) and gradual changes related to natural bee activity and environmental conditions.
+- **Honey gain chart** — shows the estimated change in the amount of accumulated honey. Unlike the weight chart, it eliminates the influence of actions performed by the beekeeper, so it reflects changes resulting from bee colony activity.
+
+In practice, this means both charts may show different values. For example, if a super is added to the hive, the total hive mass will increase, but if bee activity decreases at the same time, honey gain may remain at the same level or even show a negative value.
+
+**Note:** On the honey gain chart for ranges covering 7 days or more, larger fluctuations may occur due to data aggregation. Environmental factors such as rainfall or increased wood moisture may also affect the displayed values.
+
+**Coming soon in the app:** the ability to zoom the honey gain chart and display data with greater detail, similar to what is already available for charts of other parameters. This will make it easier to analyze honey gain changes and compare them with weather conditions.
+
 ______________________________________________________________________
 
 ## Data analysis and reports
@@ -1908,7 +1919,11 @@ ______________________________________________________________________
 
 **Solution:** this means your installed version is no longer supported. Tap *Update* to install the latest version from Google Play / the App Store, then reopen the app.
 
-#### 1.4 Other problems
+#### 1.4 Is it possible for hive weight to show a positive value while honey gain is negative, even though honey gain is calculated based on weight measurements?
+
+**Solution:** yes, this is entirely possible. For example, a beekeeper may add a super, which will cause the total hive mass to increase. At the same time, if the bee colony is weakened, honey production may decrease. In such a situation, the hive weight chart will show a clear increase resulting from adding the super. However, on the honey gain chart, the mass of the added super will not be taken into account, so the chart will reflect only the actual change in the amount of honey. As a result, the honey gain chart will show a decrease related to limited bee activity, rather than an artificial increase resulting from beekeeper intervention.
+
+#### 1.5 Other problems
 
 **Solution:** contact Apisense technical support: **bee@apisense.ai**.
 
