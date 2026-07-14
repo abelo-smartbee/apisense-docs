@@ -134,7 +134,7 @@ Szczegóły: [Mikroskopia Nosema/Vairimorpha](../procedures/nosema-microscopy.md
 
 ### Czy mogę wysłać Pocztą Polską żywe pszczoły do Lublina?
 
-Tak. Próbki żywych pszczół można nadawać **Pocztą Polską** na adres laboratorium w Lublinie — od **poniedziałku do czwartku** (szacowany koszt **20–30 zł**). Alternatywnie można skorzystać z usług kurierskich. Pszczoły należy wysłać **żywe**, w klateczkach transportowych zapewniających dostęp powietrza, z kawałkiem ciasta cukrowego i kodem badania z aplikacji Apisense na każdej klateczce. Szczegóły: [Protokół 2 — żywe pszczoły](../samples/protocol-2-live-bees.md).
+Tak. Próbki żywych pszczół można nadawać **Pocztą Polską** na adres laboratorium w Lublinie (Uniwersytet Przyrodniczy w Lublinie, ul. Doświadczalna 54, 20-280 Lublin) — od **poniedziałku do czwartku**, z doręczeniem **następnego dnia roboczego** (np. Pocztex; szacowany koszt **20–30 zł**). Alternatywnie można skorzystać z kuriera z doręczeniem następnego dnia roboczego. Pszczoły należy wysłać **żywe**, w klateczkach transportowych zapewniających dostęp powietrza, z kawałkiem ciasta cukrowego i kodem badania z aplikacji Apisense na każdej klateczce. Szczegóły: [Protokół 2 — żywe pszczoły](../samples/protocol-2-live-bees.md).
 
 ## Praktyki pszczelarskie
 
