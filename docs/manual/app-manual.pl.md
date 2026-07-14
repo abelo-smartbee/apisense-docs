@@ -1919,7 +1919,7 @@ ______________________________________________________________________
 - upewnić się, że znajduje się ono w zasięgu Huba (maksymalnie około 35 m),
 - poczekać na kolejny cykl pomiarowy.
 
-Zaktualizowane dane pojawią się w aplikacji automatycznie — może to potrwać do kilku godzin, pod warunkiem że Hub poprawnie komunikuje się z systemem i nie jest w trybie offline.
+Zaktualizowane dane pojawią się w aplikacji automatycznie - może to potrwać do kilku godzin, pod warunkiem że Hub poprawnie komunikuje się z systemem (nie jest w trybie offline - rozładowana bateria/brak łączności).
 
 Po zakończeniu wymiany baterii **nie są wymagane** żadne dodatkowe czynności w aplikacji ani na urządzeniu Hub, Scale ani VitalSensor. Nie należy ponownie parować urządzeń, dodawać ich do ula ani naciskać przycisku RESET.
 

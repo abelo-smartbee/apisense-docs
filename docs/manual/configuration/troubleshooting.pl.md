@@ -53,7 +53,7 @@ Po wymianie baterii wystarczy:
 - upewnić się, że znajduje się ono w zasięgu Huba (maksymalnie około 35 m),
 - poczekać na kolejny cykl pomiarowy.
 
-Zaktualizowane dane pojawią się w aplikacji automatycznie — może to potrwać do kilku godzin, pod warunkiem że Hub poprawnie komunikuje się z systemem i nie jest w trybie offline.
+Zaktualizowane dane pojawią się w aplikacji automatycznie - może to potrwać do kilku godzin, pod warunkiem że Hub poprawnie komunikuje się z systemem (nie jest w trybie offline - rozładowana bateria/brak łączności).
 
 Szczegółowe instrukcje wymiany baterii oraz odpowiedzi na najczęstsze pytania: [FAQ — po wymianie baterii](../../faq/index.md#po-wymianie-baterii).
 
