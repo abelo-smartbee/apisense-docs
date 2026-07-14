@@ -1620,7 +1620,7 @@ W praktyce oznacza to, że oba wykresy mogą przedstawiać różne wartości. Pr
 
 **Uwaga:** Na wykresie przybytku miodu dla zakresów obejmujących 7 dni i więcej mogą występować większe wahania wynikające z agregacji danych. Na prezentowane wartości mogą również wpływać czynniki środowiskowe, takie jak opady deszczu czy zwiększona wilgotność drewna.
 
-**Wkrótce w aplikacji:** wprowadzenie możliwości przybliżania wykresu przybytku miodu oraz prezentowania danych z większą szczegółowością, analogicznie jak jest już w przypadku wykresów dla pozostałych parametrów. Ułatwi to analizę zmian przybytku miodu oraz ich porównywanie z warunkami pogodowymi.
+**Przybliżanie:** wykres przybytku miodu możesz otworzyć na pełnym ekranie i przybliżać (gestem) lub przesuwać, aby przyjrzeć się surowemu przybytkowi ze szczegółami — tak samo jak wykresy pozostałych parametrów. Ułatwia to analizę zmian przybytku miodu oraz ich porównywanie z warunkami pogodowymi.
 
 ______________________________________________________________________
 

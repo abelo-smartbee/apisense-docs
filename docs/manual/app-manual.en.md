@@ -1622,7 +1622,7 @@ In practice, this means both charts may show different values. For example, if a
 
 **Note:** On the honey gain chart for ranges covering 7 days or more, larger fluctuations may occur due to data aggregation. Environmental factors such as rainfall or increased wood moisture may also affect the displayed values.
 
-**Coming soon in the app:** the ability to zoom the honey gain chart and display data with greater detail, similar to what is already available for charts of other parameters. This will make it easier to analyze honey gain changes and compare them with weather conditions.
+**Zooming in:** you can open the honey gain chart full-screen and zoom in (pinch) or pan across it to inspect the raw gain in greater detail, just like the charts for the other parameters. This makes it easier to analyze honey gain changes and compare them with weather conditions.
 
 ______________________________________________________________________
 
