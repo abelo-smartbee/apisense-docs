@@ -33,7 +33,7 @@ The VitalSensor is powered by **2× AA alkaline** batteries.
 3. Close the cover.
 
 !!! note "Note"
-    After completing the battery replacement, no additional steps are required in the app or on the Hub or VitalSensor device. Do not re-pair devices, add them to the hive again, or press the RESET button. Simply place the VitalSensor back within the Hub's communication range and wait for the next data synchronisation. Updated data will appear in the app automatically, which may take up to several hours, provided that the Hub device is communicating properly with the system (it is not offline — discharged battery/no connectivity).
+    After completing the battery replacement, no additional steps are required in the app or on the Hub or VitalSensor device. Do not re-pair devices, add them to the hive again, or press the RESET button. Simply place the VitalSensor back within the Hub's communication range and wait for the next data synchronisation. Updated data will appear in the app automatically — this may take up to several hours, provided that the Hub is communicating properly with the system and is not offline.
 
 ## Hub & connectivity
 
@@ -113,7 +113,7 @@ You will need a **4 mm** Allen (hex) key (for the brackets) and a **T6** Torx ke
 5. Screw the brackets back on.
 
 !!! note "Note"
-    After completing the battery replacement, no additional steps are required in the app or on the Hub or Scale device. Do not re-pair devices, add them to the hive again, or press the RESET button. Simply place the Scale back within the Hub's communication range and wait for the next data synchronisation. Updated data will appear in the app automatically, which may take up to several hours, provided that the Hub device is communicating properly with the system (it is not offline — discharged battery/no connectivity).
+    After completing the battery replacement, no additional steps are required in the app or on the Hub or Scale device. Do not re-pair devices, add them to the hive again, or press the RESET button. Simply place the Scale back within the Hub's communication range and wait for the next data synchronisation. Updated data will appear in the app automatically — this may take up to several hours, provided that the Hub is communicating properly with the system and is not offline.
 
 ### Which hive should be on the Scale?
 
@@ -131,7 +131,7 @@ After replacing the batteries:
 - make sure it is within range of the Hub (maximum approximately 35 m),
 - wait for the next measurement cycle.
 
-Updated data will appear in the app automatically, which may take up to several hours, provided that the Hub device is communicating properly with the system (it is not offline — discharged battery/no connectivity).
+Updated data will appear in the app automatically — this may take up to several hours, provided that the Hub is communicating properly with the system and is not offline.
 
 ### Do I need to re-pair the Scale or VitalSensor after replacing the batteries?
 

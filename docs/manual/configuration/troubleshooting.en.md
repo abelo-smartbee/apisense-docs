@@ -53,7 +53,7 @@ After replacing the batteries:
 - make sure it is within range of the Hub (maximum approximately 35 m),
 - wait for the next measurement cycle.
 
-Updated data will appear in the app automatically, which may take up to several hours, provided that the Hub device is communicating properly with the system (it is not offline — discharged battery/no connectivity).
+Updated data will appear in the app automatically — this may take up to several hours, provided that the Hub is communicating properly with the system and is not offline.
 
 Detailed battery replacement instructions and answers to common questions: [FAQ — after battery replacement](../../faq/index.md#after-battery-replacement).
 
