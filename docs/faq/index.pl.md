@@ -33,7 +33,7 @@ VitalSensor zasilają dwie baterie **2× AA alkaliczne**.
 3. Zamknij pokrywkę.
 
 !!! note "Uwaga"
-    Po zakończeniu wymiany baterii nie są wymagane żadne dodatkowe czynności w aplikacji ani na urządzeniu Hub czy VitalSensor. Nie należy ponownie parować urządzeń, dodawać ich do ula ani naciskać przycisku RESET. Wystarczy umieścić urządzenie VitalSensor z powrotem w zasięgu łączności Huba i poczekać na kolejną synchronizację danych. Zaktualizowane dane pojawią się w aplikacji automatycznie, co może potrwać do kilku godzin i pod warunkiem, że urządzenie Hub poprawnie komunikuje się z systemem (nie jest w trybie offline — rozładowana bateria/brak łączności).
+    Po zakończeniu wymiany baterii nie są wymagane żadne dodatkowe czynności w aplikacji ani na urządzeniu Hub czy VitalSensor. Nie należy ponownie parować urządzeń, dodawać ich do ula ani naciskać przycisku RESET. Wystarczy umieścić urządzenie VitalSensor z powrotem w zasięgu łączności Huba i poczekać na kolejną synchronizację danych. Zaktualizowane dane pojawią się w aplikacji automatycznie, co może potrwać do kilku godzin i pod warunkiem że urządzenie Hub poprawnie komunikuje się z systemem (nie jest w trybie offline — rozładowana bateria/brak łączności).
 
 ## Hub i łączność
 
@@ -113,7 +113,7 @@ Potrzebny będzie klucz imbusowy **4 mm** (do kątowników) oraz klucz Torx **T6
 5. Skręć kątowniki z powrotem.
 
 !!! note "Uwaga"
-    Po zakończeniu wymiany baterii nie są wymagane żadne dodatkowe czynności w aplikacji ani na urządzeniu Hub czy Scale. Nie należy ponownie parować urządzeń, dodawać ich do ula ani naciskać przycisku RESET. Wystarczy umieścić urządzenie Scale z powrotem w zasięgu łączności Huba i poczekać na kolejną synchronizację danych. Zaktualizowane dane pojawią się w aplikacji automatycznie, co może potrwać do kilku godzin i pod warunkiem, że urządzenie Hub poprawnie komunikuje się z systemem (nie jest w trybie offline — rozładowana bateria/brak łączności).
+    Po zakończeniu wymiany baterii nie są wymagane żadne dodatkowe czynności w aplikacji ani na urządzeniu Hub czy Scale. Nie należy ponownie parować urządzeń, dodawać ich do ula ani naciskać przycisku RESET. Wystarczy umieścić urządzenie Scale z powrotem w zasięgu łączności Huba i poczekać na kolejną synchronizację danych. Zaktualizowane dane pojawią się w aplikacji automatycznie, co może potrwać do kilku godzin i pod warunkiem że urządzenie Hub poprawnie komunikuje się z systemem (nie jest w trybie offline — rozładowana bateria/brak łączności).
 
 ### Który ul powinien stać na Scale?
 
@@ -131,7 +131,7 @@ Po wymianie baterii wystarczy:
 - upewnić się, że znajduje się ono w zasięgu Huba (maksymalnie około 35 m),
 - poczekać na kolejny cykl pomiarowy.
 
-Zaktualizowane dane pojawią się w aplikacji automatycznie, co może potrwać do kilku godzin i pod warunkiem, że urządzenie Hub poprawnie komunikuje się z systemem (nie jest w trybie offline — rozładowana bateria/brak łączności).
+Zaktualizowane dane pojawią się w aplikacji automatycznie, co może potrwać do kilku godzin i pod warunkiem że urządzenie Hub poprawnie komunikuje się z systemem (nie jest w trybie offline — rozładowana bateria/brak łączności).
 
 ### Czy po wymianie baterii muszę ponownie sparować urządzenie Scale lub VitalSensor?
 

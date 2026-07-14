@@ -5,7 +5,7 @@
 | No. | Problem | Device | Suggested Solution |
 | --- | ------- | ------ | ------------------ |
 | 1 | Device inactive (never checked in) | VitalSensor | 1. Check battery installation. Remove and reinsert the battery, observing polarity. 2. Check that the battery is not depleted; replace if so. **Note:** after correct battery installation the LED should light up. 3. If the problem persists or wires are damaged, contact Apisense support. |
-| 2 | Depleted / very low battery | VitalSensor | Replace the battery, observing polarity. **Note:** after correct battery installation the LED should light up. After replacing the battery you do not need to re-pair the device, change app settings, or reset the Hub — simply place the device within the Hub's range and wait for synchronisation (details: [FAQ — after battery replacement](../../faq/index.md#after-battery-replacement)). If the problem persists or wires are damaged, contact Apisense support. |
+| 2 | Depleted / very low battery | VitalSensor | Replace the batteries, observing polarity. **Note:** after correct battery installation the LED should light up. After replacing the batteries you do not need to re-pair the device, change app settings, or reset the Hub — simply place the device within the Hub's range and wait for synchronisation (details: [FAQ — after battery replacement](../../faq/index.md#after-battery-replacement)). If the problem persists or wires are damaged, contact Apisense support. |
 | 3 | No communication with Apisense Hub despite correct power supply (no BLE range) | VitalSensor | Move the VitalSensor closer to the Apisense Hub. Within 12 hours the VitalSensor should appear in the system. If the problem persists, contact Apisense support. |
 | 4 | Weak BLE signal (below −90 dBm) | VitalSensor | Rotate the VitalSensor in the frame or the entire frame by 180° (LED in VitalSensor facing the Apisense Hub). Signal level should rise above −90 dBm. If the problem persists, consider relocating the Hub closer to the VitalSensor, taking care not to degrade range for other devices. Contact Apisense support if needed. |
 | 5 | No communication with Apisense Hub (no BLE range) | Scale | Move the Scale closer to the Apisense Hub. Within 12 hours the device should appear in the dashboard. If the problem persists, contact Apisense support. |
@@ -53,7 +53,7 @@ After replacing the batteries:
 - make sure it is within range of the Hub (maximum approximately 35 m),
 - wait for the next measurement cycle.
 
-Updated data will appear in the app automatically, which may take up to several hours and provided that the Hub device is communicating properly with the system (it is not offline — discharged battery/no connectivity).
+Updated data will appear in the app automatically, which may take up to several hours, provided that the Hub device is communicating properly with the system (it is not offline — discharged battery/no connectivity).
 
 Detailed battery replacement instructions and answers to common questions: [FAQ — after battery replacement](../../faq/index.md#after-battery-replacement).
 
