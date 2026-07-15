@@ -64,7 +64,7 @@ Powtórz procedurę z tą samą próbką pszczół:
 - Data badania
 
 !!! note "Badanie wykonywane w programie sezonowym"
-    To samo badanie jest częścią programu **„Zdrowotność rodzin pszczelich, Wiosna 2026"** — patrz [Protokół 1: Varroa](../samples/protocol-1-varroa.md). Tam znajdziesz dokładną ścieżkę raportowania w aplikacji (*Dodaj... → Badanie → rodzaj badania: Flotacja*) i kontekst wysyłki próbek.
+    To samo badanie jest częścią programu **„Zdrowotność rodzin pszczelich, Wiosna 2026”** — patrz [Protokół 1: Varroa](../samples/protocol-1-varroa.md). Tam znajdziesz dokładną ścieżkę raportowania w aplikacji (*Dodaj... → Badanie → rodzaj badania: Flotacja*) i kontekst wysyłki próbek.
 
 ## Bibliografia
 
