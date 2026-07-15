@@ -115,22 +115,22 @@ No. You can add them later with the correct date.
 
 Not confirmed yet — Apisense will follow up by email.
 
-## Tests & samples
+## Examinations & samples
 
-### Do I need to do the Varroa sugar roll in the Global Field Validation Study tests?
+### Do I need to do the Varroa sugar roll in the Global Field Validation Study examinations?
 
-Yes — always. The Varroa sugar roll is **mandatory in every scheduled test** (Test 1, 2 and 3), for every monitored colony. You run it every time, regardless of the time of season, sensor readings or the absence of visible Varroa symptoms. Each test covers the full set of **both procedures**: the Varroa sugar roll **and** Nosema/Vairimorpha microscopy. Details: [Lab procedures](../procedures/index.md).
+Yes — always. The Varroa sugar roll is **mandatory in every scheduled examination** (Examination 1, 2 and 3), for every monitored colony. You run it every time, regardless of the time of season, sensor readings or the absence of visible Varroa symptoms. Each examination covers the full set of **both procedures**: the Varroa sugar roll **and** Nosema/Vairimorpha microscopy. Details: [Lab procedures](../procedures/index.md).
 
-### Can you freeze bee samples for Nosema testing?
+### Can you freeze bee samples for Nosema examinations?
 
-Yes — **freezing bees is accepted only** for *Nosema* tests.
+Yes — **freezing bees is accepted only** for *Nosema* examinations.
 
 - Each frozen sample must be **clearly and easily identified** with the hive it comes from.
 - Storage temperature: **at least −8 °C**.
-- Bee samples can be stored in the freezer for approximately **3–5 months** before testing or shipping to the lab.
+- Bee samples can be stored in the freezer for approximately **3–5 months** before the examination or shipping to the lab.
 - Samples **must not be thawed and frozen again**.
 
-Details: [Nosema/Vairimorpha microscopy](../procedures/nosema-microscopy.md#storage-before-testing), [Registering a sample](../manual/app-manual.md#rejestrowanie-probki).
+Details: [Nosema/Vairimorpha microscopy](../procedures/nosema-microscopy.md#storage-before-examination), [Registering a sample](../manual/app-manual.md#rejestrowanie-probki).
 
 ## Beekeeping practices
 

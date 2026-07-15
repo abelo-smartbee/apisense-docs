@@ -29,7 +29,7 @@ We test the chosen idea under controlled conditions. We place bees in **laborato
 - **infected groups** — with a controlled, measured level of disease,
 - **control groups** — healthy, for comparison.
 
-We determine the infection level with **laboratory tests** (e.g. spore counting, flotation), and then check **whether the sensor readings actually match the lab results**. If there is a clear relationship, we build the **first models** and assess how well they recognise the disease.
+We determine the infection level with **laboratory examinations** (e.g. spore counting, flotation), and then check **whether the sensor readings actually match the lab results**. If there is a clear relationship, we build the **first models** and assess how well they recognise the disease.
 
 ### 3. Experimental apiaries
 
@@ -41,7 +41,7 @@ The data from these apiaries is far richer and more varied than the laboratory d
 
 When a model maintains its performance in the experimental apiaries too, we usually **deploy it for the next season and make it available globally** to all users.
 
-But we do not stop there. The data that flows into the app — **your notes, inspections and test results** — becomes our new set of labels. Based on it we **continuously re-train the models**, so they become more accurate with every season.
+But we do not stop there. The data that flows into the app — **your notes, inspections and examination results** — becomes our new set of labels. Based on it we **continuously re-train the models**, so they become more accurate with every season.
 
 !!! tip "Why your entries matter"
     Every reported flotation, microscopy or inspection result helps teach the models. The more reliable labels we get from beekeepers, the better the system recognises diseases — including in your own apiary.
@@ -65,4 +65,4 @@ ______________________________________________________________________
 ## See also
 
 - [How disease detection works](disease-detection.md) — what the sensor measures and what the infection levels mean.
-- [Lab procedures](../procedures/index.md) — how to perform and report the tests that feed our models.
+- [Lab procedures](../procedures/index.md) — how to perform and report the examinations that feed our models.

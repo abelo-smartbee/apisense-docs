@@ -1019,10 +1019,10 @@ Figure: Add examination button {#fig-add-examination-button}
 - In the Add examination view ([](#fig-add-examination)), fill in the following fields:
 
     - **Examination date** — choose the date the examination was performed.
-    - **Examination type** — choose one of the available options from the drop-down list, e.g. Mite drop.
-    - **Photos and supplementary information** — after choosing the examination type, take or upload the required number of photos and fill in the numeric fields according to the on-screen prompts.
+    - **Examination type** — choose one of the available options from the drop-down list, e.g. Natural drop.
+    - **Photos and supplementary information** — after choosing the examination type, take or upload the required number of photos and fill in the numeric fields (e.g. Varroa mite count) according to the on-screen prompts.
 
-Figure: Add examination view, type: Flotation {#fig-add-examination}
+Figure: Add examination view, type: Sugar roll {#fig-add-examination}
 
 ![figure](pictures/add_examination.png){width=200}
 
@@ -1976,7 +1976,7 @@ Below you will find a summary of the most important activities in the Apisense P
 
 > [Video](#video-register-sample), [Registering a sample](#rejestrowanie-probki)
 
-- **Adding an examination:** Click the chosen apiary tile. Click the chosen hive tile. From the bottom menu choose *Add... -> Examination*. Choose the date and examination type from the drop-down list, fill in the required photos and fields (e.g. number of varroa mites), then save with the yellow button. A saved examination can later be edited or deleted from its overflow menu or by tapping the pencil/bin icon in the examination list.
+- **Adding an examination:** Click the chosen apiary tile. Click the chosen hive tile. From the bottom menu choose *Add... -> Examination*. Choose the date and examination type from the drop-down list (e.g. Sugar roll), fill in the required photos and fields (e.g. number of varroa mites), then save with the yellow button. A saved examination can later be edited or deleted from its overflow menu or by tapping the pencil/bin icon in the examination list.
 
 > [Adding an examination](#81-adding-an-examination)
 

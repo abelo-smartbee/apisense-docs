@@ -26,7 +26,7 @@ When collecting samples from **two colonies**, prepare:
 ## Register the sample in the app
 
 1. In the Apisense app: ***add → register sample → collection date → sample type = brood comb***.
-2. The app generates a **unique test code**.
+2. The app generates a **unique examination code**.
 3. **Write the code on the envelope** with a permanent marker.
 
 ## Shipping

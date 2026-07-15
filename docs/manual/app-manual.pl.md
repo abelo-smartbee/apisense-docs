@@ -1016,7 +1016,7 @@ Figure: Przycisk Dodaj badanie {#fig-add-examination-button}
 
     - **Data badania** — wybierz datę wykonania badania.
     - **Rodzaj badania** — wybierz z listy rozwijanej jedną z dostępnych opcji np. Osyp.
-    - **Zdjęcia i informacje uzupełniające** — po wyborze rodzaju badania wykonaj lub wgraj wymaganą liczbę zdjęć oraz uzupełnij pola liczbowe zgodnie z komunikatami na ekranie.
+    - **Zdjęcia i informacje uzupełniające** — po wyborze rodzaju badania wykonaj lub wgraj wymaganą liczbę zdjęć oraz uzupełnij pola liczbowe (np. liczba roztoczy warrozy) zgodnie z komunikatami na ekranie.
 
 Figure: Widok Dodaj badanie, rodzaj: Flotacja {#fig-add-examination}
 
@@ -1975,7 +1975,7 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 > [Wideo](#wideo-zarejestruj-probke), [Rejestrowanie próbki](#rejestrowanie-probki)
 
-- **Dodawanie badania:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Z dolnego menu wybierz *Dodaj... -> Badanie*. Wybierz datę i rodzaj badania z listy rozwijanej, uzupełnij wymagane zdjęcia i pola (np. liczba roztoczy warrozy), następnie zapisz żółtym przyciskiem. Zapisane badanie można później edytować lub usunąć z menu dodatkowego lub klikając ikonę ołówka/kosza na liście badań.
+- **Dodawanie badania:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Z dolnego menu wybierz *Dodaj... -> Badanie*. Wybierz datę i rodzaj badania z listy rozwijanej (np. Flotacja), uzupełnij wymagane zdjęcia i pola (np. liczba roztoczy warrozy), następnie zapisz żółtym przyciskiem. Zapisane badanie można później edytować lub usunąć z menu dodatkowego lub klikając ikonę ołówka/kosza na liście badań.
 
 > [Dodawanie badania](#81-dodawanie-badania)
 

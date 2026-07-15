@@ -7,7 +7,7 @@ caption:
 
 # Protocol 1 — *Varroa destructor* monitoring (mandatory)
 
-Two steps: live sugar-roll flotation, and monitoring mite drop on a sticky board.
+Two steps: live sugar-roll flotation, and monitoring natural drop on a sticky board.
 
 ## STEP 1 — sugar-roll flotation
 
@@ -55,11 +55,11 @@ Repeat the procedure **a second time** with the same bee sample:
 ### Counting and reporting
 
 1. **Count the mites** in the water and take a **clear, good-quality photo**.
-2. In the Apisense app: ***add → test → flotation*** — enter the mite count and attach the photo.
+2. In the Apisense app: ***Add... → Examination → examination type: Sugar roll*** — add a photo and enter the Varroa mite count.
 3. **Return the bees to the colony.**
 4. Wash the dish and dry it thoroughly before next use.
 
-## STEP 2 — mite drop on a sticky board
+## STEP 2 — natural drop on a sticky board
 
 Perform this step if the hive has a **screened bottom board with a tray**.
 
@@ -79,7 +79,7 @@ Perform this step if the hive has a **screened bottom board with a tray**.
 3. The insert must **lie flat, without lifting, and be clean**.
 4. Leave the insert in place for **7 days**.
 5. After 7 days, remove the insert, **count the mites**, and take **one clear, good-quality photo covering the entire surface of the insert**.
-6. In the Apisense app: ***add → test → mite drop*** — enter the mite count and attach the photo.
+6. In the Apisense app: ***Add... → Examination → examination type: Natural drop*** — add a photo and enter the Varroa mite count.
 
 !!! tip "Detailed flotation procedure"
     A full description of sugar-roll flotation as a general field procedure (without the seasonal program context) is available in [Varroa sugar roll](../procedures/varroa-sugar-roll.md).

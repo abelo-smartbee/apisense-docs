@@ -20,13 +20,13 @@ Collect a sample of dead bees from the hive's bottom board for laboratory testin
 3. Rule: **1 colony = 1 sample**.
 4. Transfer the sample into a **paper envelope**.
 
-!!! note "Can't ship immediately? (Nosema tests only)"
-    **Freezing bees is accepted only** for *Nosema* tests. Each sample must be clearly labelled (test code, hive), stored at **at least −8 °C**, for approximately **3–5 months** before shipping. Samples **must not be thawed and frozen again**. Details: [Nosema/Vairimorpha microscopy](../procedures/nosema-microscopy.md#storage-before-testing).
+!!! note "Can't ship immediately? (Nosema examinations only)"
+    **Freezing bees is accepted only** for *Nosema* examinations. Each sample must be clearly labelled (examination code, hive), stored at **at least −8 °C**, for approximately **3–5 months** before shipping. Samples **must not be thawed and frozen again**. Details: [Nosema/Vairimorpha microscopy](../procedures/nosema-microscopy.md#storage-before-examination).
 
 ## Register the sample in the app
 
 1. In the Apisense app: ***add → register sample → collection date → sample type = dead bees***.
-2. The app generates a **unique test code**.
+2. The app generates a **unique examination code**.
 3. **Write the code on the envelope** with a permanent marker.
 
 ## Shipping
