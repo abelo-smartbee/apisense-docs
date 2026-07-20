@@ -48,7 +48,7 @@ Powtórz procedurę **drugi raz** z tą samą próbką pszczół:
 ### Liczenie i raport
 
 1. **Policz roztocza** w wodzie i wykonaj **dobrej jakości, wyraźne zdjęcie**.
-2. W aplikacji Apisense: ***dodaj → badanie → flotacja*** — wprowadź liczbę roztoczy i załącz zdjęcie.
+2. W aplikacji Apisense: ***Dodaj... → Badanie → rodzaj badania: Flotacja*** — dodaj zdjęcie i wprowadź liczbę roztoczy warrozy.
 3. **Zwróć pszczoły rodzinie.**
 4. Umyj naczynie i dokładnie osusz przed kolejnym użyciem.
 
@@ -72,7 +72,7 @@ Wykonaj, jeśli ul ma **osiatkowaną dennicę z szufladą**.
 3. Wkładka powinna **przylegać równo, nie odstawać i być czysta**.
 4. Pozostaw wkładkę na **7 dni**.
 5. Po tym czasie wyciągnij wkładkę, **policz roztocza** i wykonaj **jedno dobrej jakości, wyraźne zdjęcie obejmujące całą powierzchnię wkładki**.
-6. W aplikacji Apisense: ***dodaj → badanie → osyp*** — wprowadź liczbę roztoczy i załącz zdjęcie.
+6. W aplikacji Apisense: ***Dodaj... → Badanie → rodzaj badania: Osyp*** — dodaj zdjęcie i wprowadź liczbę roztoczy warrozy.
 
 !!! tip "Szczegółowy opis flotacji"
     Pełny opis flotacji jako ogólnej procedury terenowej (bez kontekstu sezonowego) znajdziesz w [Flotacja na Varroa](../procedures/varroa-sugar-roll.md).

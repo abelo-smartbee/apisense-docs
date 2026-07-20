@@ -31,7 +31,7 @@ ______________________________________________________________________
 
 ## How the AI knows what is sick
 
-A sensor reading on its own would tell us nothing without a **reference to reality**. That is why our models learn from **thousands of labelled samples**, in which sensor readings are paired with the **actual test result** for a given colony — e.g. the number of *Nosema* spores under a microscope or the *Varroa* infestation level.
+A sensor reading on its own would tell us nothing without a **reference to reality**. That is why our models learn from **thousands of labelled samples**, in which sensor readings are paired with the **actual examination result** for a given colony — e.g. the number of *Nosema* spores under a microscope or the *Varroa* infestation level.
 
 We collect this data both in the **laboratory** (colonies in cages with sensors) and in **real apiaries**. Each disease leaves its own recognisable "signature" in the data, and the model learns to tell it apart from a healthy state.
 
@@ -41,11 +41,11 @@ ______________________________________________________________________
 
 ## Infection levels — what they mean
 
-For some diseases the app shows not just "present / absent" but also a **level**: low, moderate or high. The values below are **approximate thresholds** we use to label our data — they are aligned with the standard tests beekeepers perform every day, so they are easy to relate to your own apiary.
+For some diseases the app shows not just "present / absent" but also a **level**: low, moderate or high. The values below are **approximate thresholds** we use to label our data — they are aligned with the standard examinations beekeepers perform every day, so they are easy to relate to your own apiary.
 
 ### Varroosis (*Varroa destructor*)
 
-| Level | Flotation (alcohol wash) | Daily mite drop | What it means |
+| Level | Flotation (alcohol wash) | Daily natural drop | What it means |
 |---|---|---|---|
 | **Low** | up to ~2% infestation | 2–3 mites per day | Acceptable and common — *Varroa* is present but does not yet threaten the colony. |
 | **Moderate** | ~3–4% infestation | 4–10 mites per day | A disease — worth planning a treatment. |

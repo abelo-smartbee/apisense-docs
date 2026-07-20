@@ -1,4 +1,4 @@
-# Varroa sugar roll test
+# Varroa sugar roll
 
 A non-lethal field method for detecting *Varroa destructor* in a honey bee colony. The bees are coated in powdered sugar inside a jar, mites detach, and are washed off into water for counting. Bees are returned to the colony alive.
 
@@ -14,7 +14,7 @@ A non-lethal field method for detecting *Varroa destructor* in a honey bee colon
 - Powdered sugar
 - Dry cloth
 
-## Sample collection and testing procedure
+## Sample collection and examination procedure
 
 ### 1. Collect ~300 bees
 
@@ -52,7 +52,7 @@ Repeat the procedure with the same bee sample:
 
 1. **Count the mites** in the water tray.
 2. **Take a picture of the whole tray.**
-3. Record the number in the Apisense app and upload the photo.
+3. In the Apisense app: ***Add... → Examination → examination type: Sugar roll*** — add a photo and enter the Varroa mite count.
 4. **Carefully return the bees to their colony.**
 5. Clean the jar/device of remaining sugar/mites/dust/moisture with a dry cloth before next use.
 
@@ -61,10 +61,10 @@ Repeat the procedure with the same bee sample:
 - **Total mite count** (sum from both cycles)
 - **Photo of the water tray with mites**
 - Sample size (300 bees by default)
-- Date of the test
+- Date of the examination
 
-!!! note "Same test in the seasonal program"
-    This test is also part of the **"Honey bee colony health, Spring 2026"** program — see [Protocol 1: Varroa monitoring](../samples/protocol-1-varroa.md) for the exact app reporting paths (*add → test → flotation*) and sample shipping context.
+!!! note "Same examination in the seasonal program"
+    This examination is also part of the **"Honey bee colony health, Spring 2026"** program — see [Protocol 1: Varroa monitoring](../samples/protocol-1-varroa.md) for the exact app reporting path (*Add... → Examination → examination type: Sugar roll*) and sample shipping context.
 
 ## References
 
