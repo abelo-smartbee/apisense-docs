@@ -132,6 +132,10 @@ Tak — **zamrażanie pszczół jest dopuszczalne wyłącznie** w przypadku bada
 
 Szczegóły: [Mikroskopia Nosema/Vairimorpha](../procedures/nosema-microscopy.md#przechowywanie-przed-badaniem), [Rejestrowanie próbki](../manual/app-manual.md#rejestrowanie-probki).
 
+### Czy mogę wysłać Pocztą Polską żywe pszczoły do Lublina?
+
+Tak. Próbki żywych pszczół należy nadawać **Pocztą Polską** na adres laboratorium w Lublinie (Uniwersytet Przyrodniczy w Lublinie, ul. Doświadczalna 54, 20-280 Lublin) — od **poniedziałku do czwartku**  (szacowany koszt **20–30 zł**). Pszczoły należy wysłać **żywe**, w klateczkach transportowych zapewniających dostęp powietrza, z kawałkiem ciasta cukrowego i kodem badania z aplikacji Apisense na każdej klateczce. Przesyłki z żywymi pszczołami za pośrednictwem Poczty Polskiej mogą być nadawane wyłącznie przez właścicieli pasiek zlokalizowanych w Polsce. Szczegóły: [Protokół 2 — żywe pszczoły](../samples/protocol-2-live-bees.md).
+
 ## Praktyki pszczelarskie
 
 ### Czy mogę stosować zabiegi z użyciem kwasu szczawiowego lub mrówkowego?
