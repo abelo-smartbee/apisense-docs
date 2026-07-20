@@ -36,11 +36,14 @@ ul. Doświadczalna 54, 20-280 Lublin
 
 [bee@apisense.ai](mailto:bee@apisense.ai)
 
-## Wysyłka do badań
+## Wysyłka do badań {#wysyłka-do-badań}
 
 1. Opisane próbki (z naniesionymi kodami badań z aplikacji) umieść razem w **kartonowym pudełku**.
 2. Nadaj paczkę **w dni robocze (poniedziałek–czwartek)**, aby uniknąć przechowywania przesyłki przez weekend.
-3. Wyślij **pocztą lub kurierem 24 h**, aby próbki jak najszybciej dotarły do laboratorium.
+3. Wyślij **Pocztą Polską** (szacowany koszt 20–30 zł) **lub kurierem**, aby próbki jak najszybciej dotarły do laboratorium.
+
+!!! tip "Żywe pszczoły"
+    Próbki żywych pszczół wymagają szczególnej uwagi przy pakowaniu i wysyłce — patrz [Protokół 2 — żywe pszczoły](protocol-2-live-bees.md#wysyłka). Przesyłki za pośrednictwem Poczty Polskiej mogą być nadawane wyłącznie przez właścicieli pasiek zlokalizowanych w Polsce.
 
 **Adres do wysyłki:**
 
