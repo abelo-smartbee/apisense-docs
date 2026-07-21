@@ -57,6 +57,7 @@ plugins:
                 - "Protokół 4: Martwe pszczoły": samples/protocol-4-dead-bees.md
                 - Przegląd rodziny: samples/colony-inspection.md
             - Do pobrania: downloads/index.md
+            - Zgodność i informacje prawne: compliance/index.md
             - FAQ: faq/index.md
         - locale: en
           name: EN
@@ -91,6 +92,7 @@ plugins:
                 - "Protocol 4: Dead bees": samples/protocol-4-dead-bees.md
                 - Colony inspection: samples/colony-inspection.md
             - Downloads: downloads/index.md
+            - Compliance & legal: compliance/index.md
             - FAQ: faq/index.md
   - caption:
       figure:
@@ -137,6 +139,7 @@ nav:
       - "Protokół 4: Martwe pszczoły": samples/protocol-4-dead-bees.md
       - Przegląd rodziny: samples/colony-inspection.md
   - Do pobrania: downloads/index.md
+  - Zgodność i informacje prawne: compliance/index.md
   - FAQ: faq/index.md
 
 extra_css:
