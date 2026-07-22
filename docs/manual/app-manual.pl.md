@@ -17,7 +17,8 @@
 - **Raporty i wykresy** — wizualizacja danych pomiarowych w postaci dziennych, tygodniowych i długoterminowych wykresów z naniesionym trendem.
 - **Historia danych** — archiwum notatek, przeglądów i powiadomień.
 - **Zarządzanie pasieką** — dodawanie i edycja pasiek, uli, przeglądów, notatek, oraz dodawanie badań i rejestrowanie próbek.
-- **Analiza ramki** — analiza zdjęcia ramki pszczelej oparta na AI, szacująca udział czerwiu, zapasów pokarmu i pustego plastra.
+- **FrameSense** — analiza zdjęcia ramki pszczelej oparta na AI, szacująca udział czerwiu, zapasów pokarmu i pustego plastra.
+- **Obserwacja szerszenia azjatyckiego** — zgłaszanie obserwacji szerszenia azjatyckiego dla pasieki lub ula oraz historia zgłoszeń, z przypomnieniami o ponownym sprawdzeniu po kilku dniach.
 
 ______________________________________________________________________
 
@@ -450,9 +451,12 @@ Figure: Widok Szczegóły ula - Przycisk Dodaj Przegląd {#fig-add-overview-butt
 - W widoku Dodaj przegląd ([](#fig-add-inspection-photos)) załącz po 2 zdjęcia dla:
 
   - ramki z VitalSensorem - przód i tył ramki wyposażonej w urządzenie VitalSensor, z pszczołami,
-  - skrajnej ramki na dołączonych uchwytach - również przód i tył.
+  - jednej skrajnej ramki - pierwszej albo ostatniej przy ściance ula - również przód i tył tej samej ramki.
 
 Aby dodać zdjęcia kliknij przycisk *Dodaj zdjęcie*, a następnie wybierz opcję *Zrób zdjęcie* lub *Dodaj zdjęcie z galerii*. Jeśli nie wiesz, jak powinno wyglądać dane zdjęcie, kliknij odnośnik *Zobacz przykład*, aby zobaczyć przykłady prawidłowo wykonanych zdjęć ramek pszczelich (przód i tył).
+
+!!! note
+    Zdjęcia RAW/DNG nie są obsługiwane dla zdjęć przeglądu - dodaj zdjęcie w formacie JPG lub PNG. Jeśli zdjęcia nie da się od razu przesłać (np. przy słabym połączeniu), aplikacja ponawia próbę w tle - widok przeglądu pokazuje *Wysyłanie zdjęć…*, aż się to uda, lub *Nie wysłano zdjęć*, jeśli ostatecznie się nie powiedzie.
 
 Figure: Dodawanie przeglądu - dodawanie zdjęć {#fig-add-inspection-photos}
 
@@ -919,6 +923,13 @@ Figure: Formularz chorobowy - zapisanie formularza {#fig-confirm-problem-save-2}
 
 ![figure](pictures/confirm_problem_save.png){width=200}
 
+#### 6.5 Edycja lub usuwanie zapisanej odpowiedzi
+
+Zapisaną odpowiedź w formularzu chorobowym można poprawić przez ograniczony czas od zapisania:
+
+- W zakładce *Odpowiedzi* widoku szczegółów choroby otwórz menu kontekstowe (trzy kropki) przy wybranym zgłoszeniu i wybierz *Edytuj*, aby je poprawić, lub *Usuń*, aby je usunąć.
+- Jeśli wybierzesz *Usuń*, potwierdź komunikat *Usunąć odpowiedzi?* — zgłoszenie zostanie usunięte trwale.
+- **Uwaga:** Czas na korektę jest ograniczony. Po jego upływie edycja nie jest już możliwa — aplikacja pokaże komunikat *Czas na korektę tej odpowiedzi minął — dodaj nową odpowiedź.* Nadal można przesłać nowy komplet odpowiedzi, korzystając z przycisku *Odpowiedz na kilka pytań*.
 
 <a id="rejestrowanie-probki"></a>
 
@@ -980,7 +991,17 @@ Figure: Widok Zarejestruj próbkę {#fig-register-sample}
 !!! tip "Wysyłka żywych pszczół"
     Próbki żywych pszczół wysyłaj **żywe**, w wentylowanych klateczkach transportowych zapewniających dostęp powietrza, z ciastem cukrowym (ok. 10 pszczół w każdej, 4 klateczki na ul), z kodem badania z aplikacji. Nadawaj **od poniedziałku do czwartku** — Pocztą Polską lub kurierem. Przesyłki za pośrednictwem Poczty Polskiej mogą być nadawane wyłącznie przez właścicieli pasiek zlokalizowanych w Polsce. Szczegóły: [Protokół 2 — żywe pszczoły](../samples/protocol-2-live-bees.md).
 
-#### 7.2 Usuwanie próbki
+#### 7.2 Status próbki
+
+Każda zarejestrowana próbka ma etykietę statusu opisującą, na jakim etapie badania się znajduje:
+
+- **Oczekuje** — próbka została zarejestrowana w aplikacji, ale nie została jeszcze wysłana ani odebrana przez laboratorium.
+- **Wysłana** — próbka została wysłana do laboratorium.
+- **Odebrana** — laboratorium potwierdziło odbiór próbki.
+- **Przeanalizowana** — badanie zostało zakończone.
+- **Anulowana** — rejestracja próbki została anulowana.
+
+#### 7.3 Usuwanie próbki
 
 Aby usunąć próbkę z listy próbek należy:
 
@@ -1050,19 +1071,19 @@ Aby usunąć badanie z listy badań należy:
 
 <a id="analiza-ramki"></a>
 
-### 9. Analiza ramki
+### 9. FrameSense
 
-Analiza ramki wykorzystuje sztuczną inteligencję, aby na podstawie jednego zdjęcia automatycznie oszacować zawartość plastra, w tym udział czerwiu, zapasów pokarmu oraz pustej lub zasłoniętej powierzchni.
+FrameSense wykorzystuje sztuczną inteligencję, aby na podstawie jednego zdjęcia automatycznie oszacować zawartość plastra, w tym udział czerwiu, zapasów pokarmu oraz pustej lub zasłoniętej powierzchni.
 
 #### 9.1 Dodawanie analizy ramki
 
 - Kliknij kafelek wybranej pasieki, a następnie kafelek wybranego ula. W rezultacie zostanie wyświetlony widok *Szczegóły ula*.
-- Z dolnego menu wybierz opcję *Dodaj...*, a następnie *Analiza ramki*; zostanie wyświetlony widok *Analiza ramki*.
-- Kliknij przycisk *Dodaj zdjęcie ramki do analizy*, znajdujący się w centalnej części widoku *Analiza ramki*. Wybierz opcje *Aparat* i wykonaj zdjęcie ramki pszczelej lub wgraj **jedno zdjęcie** ramki z *Galerii*. Aby uzyskać jak najdokładniejszy wynik analizy AI, umieść ramkę tak, aby wypełniała całe zdjęcie i była dobrze widoczna na jednolitym tle.
+- Z dolnego menu wybierz opcję *Dodaj...*, a następnie *FrameSense*; zostanie wyświetlony widok *FrameSense*.
+- Kliknij przycisk *Dodaj zdjęcie ramki do analizy*, znajdujący się w centalnej części widoku *FrameSense*. Wybierz opcje *Aparat* i wykonaj zdjęcie ramki pszczelej lub wgraj **jedno zdjęcie** ramki z *Galerii*. Widok aparatu pokazuje podgląd pełnej klatki z obrysem-prowadnicą — podpowiedź *Umieść ramkę w obrysie* przypomina, aby zmieścić w nim całą ramkę, dzięki czemu zdjęcie zostanie automatycznie przycięte do obrysu. Aby uzyskać jak najdokładniejszy wynik analizy AI, umieść ramkę tak, aby wypełniała cały obrys i była dobrze widoczna na jednolitym tle.
 - Po wybraniu zdjęcia kliknij żółty przycisk *Wyślij do analizy*, widoczny w dolnej części ekranu. Zdjęcie zostanie przesłane do przetworzenia przez AI.
 
 !!! note
-    Analiza ramki pszczelej wymaga połączenia z internetem do przesłania zdjęcia. Przetwarzanie zdjęcia wysłanego do analizy trwa zwykle kilka minut.
+    Analiza ramki pszczelej wymaga połączenia z internetem do przesłania zdjęcia. Przetwarzanie zdjęcia wysłanego do analizy trwa zwykle kilka minut. Zdjęcia RAW/DNG nie są obsługiwane - dodaj zdjęcie w formacie JPG lub PNG.
 
 #### 9.2 Wyniki analizy ramki
 
@@ -1071,13 +1092,43 @@ Wyniki analizy przesłanych ramek pszczelich są dostępne w zakładce *Analiza*
 Możliwe statusy:
 
 - **Analizowanie ramki** — zdjęcie zostało wysłane do analizy i jest przetwarzane przez AI (ok. 5 minut).
-- **Analiza zakończona** — analiza ramki została pomyślnie zakończona. Teraz możesz zobaczyć opisane kolorami zdjęcie z procentowym udziałem poszczególnych kategorii wchodzących w skład plastra: **Czerw** (jaja, larwy, czerw robotnic i trutni), **Zapasy** (nektar, pyłek, zasklepiony miód) oraz **Pusta/zasłonięta** powierzchnia, a także liczbę znalezionych mateczników/misek matecznikowych i spis pszczół. Wynik analizy składa się z kilku widoków tego samego przesłanego zdjęcia. Każdy z nich zawiera oznaczenia innych przeanalizowanych elementów oraz odpowiadające im opisy. Przesuwaj zdjęcia, aby wyświetlić kolejne wyniki analizy. Kliknięcie zdjęcia otwiera je w trybie pełnoekranowym.
+- **Analiza zakończona** — analiza ramki została pomyślnie zakończona. Teraz możesz zobaczyć opisane kolorami zdjęcie z procentowym udziałem poszczególnych kategorii wchodzących w skład plastra: **Czerw** (jaja, larwy, czerw robotnic i trutni), **Zapasy** (nektar, pyłek, zasklepiony miód) oraz **Pusta/zasłonięta** powierzchnia, a także liczbę znalezionych mateczników/misek matecznikowych i spis pszczół. Wynik analizy składa się z kilku widoków tego samego przesłanego zdjęcia. Każdy z nich zawiera oznaczenia innych przeanalizowanych elementów oraz odpowiadające im opisy. Przesuwaj zdjęcia, aby wyświetlić kolejne wyniki analizy. Kliknięcie zdjęcia otwiera je w trybie pełnoekranowym. Poniżej podziału plastra może pojawić się sekcja **Rekomendacje** z sugerowanymi działaniami na podstawie analizy.
 - **Nieudana** — analizy nie udało się ukończyć. Spróbuj dodać ponownie zdjęcie ramki pszczelej i wysłać je do analizy.
 
 Gdy analiza ramki pszczelej zostanie ukończona, wysyłane jest powiadomienie push, które po kliknięciu otwiera bezpośrednio jej wynik.
 
+<a id="obserwacja-szerszenia"></a>
+
+### 10. Obserwacja szerszenia azjatyckiego
+
+Ikona szerszenia azjatyckiego na kafelku pasieki (obok ikon baterii/LTE Huba) pozwala zgłaszać i śledzić obserwacje szerszenia azjatyckiego, dzięki czemu historia obserwacji pozostaje wiarygodna w czasie. **Uwaga:** zgłoszenie może dodać wyłącznie właściciel pasieki — we współdzielonej pasiece ikona jest dla pozostałych współpracowników tylko do odczytu.
+
+#### 10.1 Zgłaszanie obserwacji
+
+- Kliknij ikonę szerszenia azjatyckiego na kafelku pasieki; otworzy się panel *Szerszeń azjatycki* z pytaniem *Czy widzisz teraz szerszenia azjatyckiego?*.
+- Wybierz *Tak* lub *Nie*. Jeśli *Tak*, wskaż gdzie go widzisz — konkretny ul lub ule, albo *Cała pasieka*. (Jeśli lista uli nie wczyta się, nadal możesz zgłosić dla całej pasieki.)
+- Kliknij *Potwierdź zgłoszenie*, aby zapisać. Wyświetli się komunikat *Zgłoszenie zapisane*.
+
+#### 10.2 Status obserwacji i jej aktualność
+
+Gdy istnieje zgłoszenie, nad ikoną pojawia się krótka etykieta z datą (np. *12 lip*), a kolorowa plakietka pokazuje bieżący stan:
+
+- **Brak obserwacji** — nigdy nie dodano zgłoszenia; ikona jest bez plakietki.
+- **Aktywna obserwacja** — czerwona plakietka „!”; zgłoszono obecność szerszeni, a zgłoszenie jest wciąż aktualne (do 4 dni od zgłoszenia).
+- **Aktywna obserwacja, nieaktualna** — wyszarzona plakietka „!”; zgłoszono obecność, ale minęły 4 dni od zgłoszenia — sprawdź ponownie i zgłoś aktualny stan.
+- **Sprawdzono, czysto** — zielona plakietka z ptaszkiem; aktualne zgłoszenie potwierdzające brak szerszeni.
+- **Sprawdzono, czysto, nieaktualne** — wyszarzona plakietka z ptaszkiem; sprawdzenie „czysto” straciło aktualność po 4 dniach.
+
+#### 10.3 Cofanie zgłoszenia
+
+Jeśli zgłoszenie powstało przez pomyłkę (przypadkowe kliknięcie), otwórz szczegóły zgłoszenia i kliknij *Cofnij zgłoszenie*, a następnie potwierdź *Cofnąć zgłoszenie?*. Spowoduje to całkowite usunięcie zgłoszenia z historii.
+
 !!! note
-    Wykrywanie chorób na podstawie zdjęć ramki jest planowane w przyszłej wersji i w szczegółach analizy oznaczone jest jako *Wkrótce dostępne*.
+    Opcji *Cofnij zgłoszenie* używaj tylko dla omyłkowego zgłoszenia. Jeśli szerszenie po prostu zniknęły, nie cofaj zgłoszenia obserwacji — zamiast tego dodaj nowe zgłoszenie i odpowiedz *Nie*, aby zachować historię obserwacji.
+
+#### 10.4 Przypomnienia o obserwacji
+
+Jeśli od ostatniego zgłoszenia szerszenia azjatyckiego dla jednej lub kilku Twoich pasiek minęły 4 dni, aplikacja wyświetli *Przypomnienie o obserwacji* z prośbą o zapisanie aktualnego stanu, aby dane pozostały wiarygodne. Możesz zareagować od razu lub odłożyć przypomnienie przyciskiem *Później*.
 
 ______________________________________________________________________
 
@@ -1236,6 +1287,7 @@ Figure: Zakładka Szczegóły - przykładowy widok zakładki Notatki {#fig-beehi
 
 - **Lista notatek** – prezentuje wszystkie notatki zapisane dla wybranego ula, zawierając tytuł/datę oraz skrócony fragment treści (jeśli notatka zawiera tekst).
 - **Materiały dodatkowe** – przy notatkach mogą pojawić się ikony zdjęcia, nagrania wideo lub nagrania audio, jeśli takie materiały zostały do nich dołączone.
+- **Etykiety generowane przez AI** – notatka tekstowa może mieć jedną lub kilka małych, złotych etykiet z ikoną iskierki, generowanych automatycznie przez AI i podsumowujących jej temat (np. *Matka*, *Podkarmianie*).
 - **Szczegóły notatki** – po kliknięciu - rozwinięciu - wybranej notatki wyświetlana jest pełna treść notatki wraz z dołączonymi materiałami.
 
 #### 4.4 Badania
@@ -1271,7 +1323,7 @@ Zakładka *Analiza* prezentuje historię analiz AI ramek pszczelich, wykonanych 
 **Najważniejsze informacje:**
 
 - **Lista analiz** – pokazuje każdą analizę ramki wraz ze statusem: *Analizowanie ramki*, *Analiza zakończona* lub *Nieudana*.
-- **Szczegóły analizy** – po otwarciu zakończonej analizy wyświetlane jest przesłane zdjęcie z oznaczeniami poszczególnych elementów oraz podsumowanie zawartości plastra, obejmujące udział czerwiu, zapasów pokarmu oraz pustej i zasłoniętej powierzchni, a także spis pszczół oraz mateczniki. Zobacz [9. Analiza ramki](#analiza-ramki), aby dowiedzieć się więcej.
+- **Szczegóły analizy** – po otwarciu zakończonej analizy wyświetlane jest przesłane zdjęcie z oznaczeniami poszczególnych elementów oraz podsumowanie zawartości plastra, obejmujące udział czerwiu, zapasów pokarmu oraz pustej i zasłoniętej powierzchni, a także spis pszczół oraz mateczniki. Zobacz [9. FrameSense](#analiza-ramki), aby dowiedzieć się więcej.
 
 <a id="omowienie-ustawien-pasieki"></a>
 
@@ -1462,6 +1514,8 @@ Ikony stanu zdrowia informują o kondycji rodziny pszczelej w poszczególnych ul
 | ![](pictures/state_no_data.png) | kafelek pasieki (zakładka Pasieki), kafelek ula (zakładka Ule) | **Brak danych** - oznacza, że system nie może ocenić stanu zdrowia rodziny pszczelej (na kafelku z ulem dotyczy danych z konkretnego VitalSensora, na kafelku z pasieką odnosi się do wszystkich urządzeń typu VitalSensor w tej pasiece). Przykładowo może wystąpić gdy VitalSensor był w okresie zbierania danych, ale nagle przestał komunikować się z Hubem i dane nie zdążyły zostać zebrane oraz przeanalizowane przez model AI. |
 | ![](pictures/varroa_low.png) | m.in. *Szczegóły*, *Mapa* | Ikona choroby — Warroza.  Wykryto chorobę (Warroza) o niskim poziomie porażenia. |
 | ![](pictures/nosema_high.png) | m.in. *Szczegóły*, *Mapa* | Ikona choroby — Nosemoza. Wykryto chorobę (Nosemoza) o wysokim poziomie porażenia. Sprawdź zalecenia w zakładce *Problemy*. |
+
+Ikona szerszenia azjatyckiego widoczna obok tych ikon na kafelku pasieki nie jest związana ze stanem zdrowia rodziny - zobacz [10. Obserwacja szerszenia azjatyckiego](#obserwacja-szerszenia), aby poznać jej stany i znaczenie.
 
 
 <a id="ikony-informacyjne"></a>
@@ -1758,6 +1812,8 @@ Nowe powiadomienia pojawiają się automatycznie na odpowiedniej liście w zale�
 
 Aby wyświetlić szczegóły powiadomienia, należy kliknąć jego nagłówek, co spowoduje rozwinięcie pełnej treści komunikatu.
 
+Aby jednym krokiem oznaczyć wszystkie powiadomienia w zakładce *Techniczne* jako przeczytane, kliknij *Oznacz wszystkie jako przeczytane*.
+
 <a id="twoj-asystent-ai"></a>
 
 ### 2. Twój asystent AI
@@ -1982,9 +2038,13 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 > [Dodawanie badania](#81-dodawanie-badania)
 
-- **Dodawanie analizy ramki:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Z dolnego menu wybierz *Dodaj... -> Analiza ramki*. Zrób lub wgraj jedno zdjęcie ramki i kliknij *Wyślij do analizy*. Wynik (*Analizowanie ramki* / *Analiza zakończona* / *Nieudana*) śledź w zakładce *Analiza*.
+- **Dodawanie analizy ramki:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Z dolnego menu wybierz *Dodaj... -> FrameSense*. Umieść ramkę w obrysie widoku aparatu, zrób lub wgraj jedno zdjęcie ramki i kliknij *Wyślij do analizy*. Wynik (*Analizowanie ramki* / *Analiza zakończona* / *Nieudana*) śledź w zakładce *Analiza*.
 
-> [Analiza ramki](#analiza-ramki)
+> [FrameSense](#analiza-ramki)
+
+- **Zgłaszanie obserwacji szerszenia azjatyckiego:** Kliknij ikonę szerszenia azjatyckiego na kafelku pasieki. Odpowiedz na pytanie *Czy widzisz teraz szerszenia azjatyckiego?* (Tak/Nie), a jeśli tak - wskaż ul(e) lub *Cała pasieka*. Kliknij *Potwierdź zgłoszenie*, aby zapisać. Ikona pokaże wtedy etykietę z datą i kolorową plakietkę (aktywna obserwacja / sprawdzono, czysto / nieaktualne) aż do kolejnego zgłoszenia.
+
+> [Obserwacja szerszenia azjatyckiego](#obserwacja-szerszenia)
 
 ### 3. Panel główny i nawigacja
 
