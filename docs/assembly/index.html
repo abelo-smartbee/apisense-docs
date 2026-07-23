@@ -1,0 +1,1479 @@
+<!doctype html>
+<html lang="pl" data-lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Apisense BOX — Instrukcja montażu</title>
+<meta name="description" content="Interaktywna instrukcja montażu zestawu Apisense BOX: Hub, waga, VitalSensor, Tag i uchwyt na ramkę — krok po kroku.">
+<meta name="theme-color" content="#f6f7e7">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2321290e'/%3E%3Ccircle cx='11' cy='11' r='3.4' fill='%23d5bb51'/%3E%3Ccircle cx='21' cy='21' r='3.4' fill='%23d5bb51'/%3E%3Cpath d='M9 21 23 9' stroke='%23d5bb51' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<script>
+  (function () {
+    var t = localStorage.getItem('apisense-asm-theme');
+    if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', t);
+    var l = localStorage.getItem('apisense-asm-lang');
+    if (l) { document.documentElement.setAttribute('data-lang', l); document.documentElement.lang = l; }
+  })();
+</script>
+<style>
+/* ─────────────────────────────────────────────────────────────
+   Apisense BOX — Assembly. Aesthetic: "Blueprint Field Manual".
+   Warm paper ground, drafting plates, plotted-line reveals.
+   ───────────────────────────────────────────────────────────── */
+
+:root {
+  --paper:      #f6f7e7;   /* loafer */
+  --paper-2:    #f0eeda;   /* aths special */
+  --plate:      #ffffff;
+  --ink:        #21290e;   /* seaweed */
+  --ink-2:      rgba(33, 41, 14, .64);
+  --ink-3:      rgba(33, 41, 14, .38);
+  --rule:       rgba(66, 80, 35, .20);   /* woodland */
+  --rule-2:     rgba(66, 80, 35, .10);
+  --amber:      #d5bb51;   /* tacha */
+  --amber-deep: #8a6d1c;   /* luxor gold, darkened for text contrast */
+  --amber-soft: #e9ead0;   /* white rock */
+  --plate-shadow: 0 1px 2px rgba(33,41,14,.06), 0 24px 50px -30px rgba(33,41,14,.40);
+
+  --grid-unit: 8px;
+  --rail-w: 72px;
+  --head-h: 68px;
+
+  --ease: cubic-bezier(.22, .8, .28, 1);
+  --slow: 900ms;
+}
+
+[data-theme="dark"] {
+  --paper:      #21290e;   /* seaweed */
+  --paper-2:    #2b3413;
+  --plate:      #ffffff;      /* plates stay light: QR codes must remain scannable */
+  --ink:        #f0eeda;
+  --ink-2:      rgba(240, 238, 218, .64);
+  --ink-3:      rgba(240, 238, 218, .38);
+  --rule:       rgba(240, 238, 218, .18);
+  --rule-2:     rgba(240, 238, 218, .09);
+  --amber-deep: #d5bb51;
+  --amber-soft: rgba(213, 187, 81, .13);
+  --plate-shadow: 0 2px 4px rgba(0,0,0,.35), 0 30px 70px -34px rgba(0,0,0,.7);
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Poppins, 'Segoe UI', sans-serif;
+  font-size: clamp(15px, .55vw + 13px, 17px);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+/* Faint drafting grid + paper grain — the ground everything sits on. */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+body::before {
+  background-image: linear-gradient(to right, var(--rule-2) 1px, transparent 1px);
+  background-size: clamp(100px, 8.333vw, 160px) 100%;
+  mask-image: linear-gradient(to bottom, #000 0%, #000 84%, transparent 100%);
+}
+body::after {
+  opacity: .34;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E");
+}
+[data-theme="dark"] body::after { mix-blend-mode: screen; opacity: .18; }
+
+/* ── Language switching ─────────────────────────────────────── */
+[data-lang="pl"] [lang="en"],
+[data-lang="en"] [lang="pl"] { display: none; }
+
+/* ── Header ─────────────────────────────────────────────────── */
+.head {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: var(--head-h);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 clamp(16px, 3vw, 34px);
+  z-index: 40;
+  background: color-mix(in srgb, var(--paper) 82%, transparent);
+  backdrop-filter: blur(14px) saturate(1.2);
+  border-bottom: 1px solid var(--rule);
+}
+.head__mark { display: flex; align-items: center; gap: 12px; min-width: 0; }
+/* Brand wordmark from docs/assets/branding — transparent PNG, black art,
+   so a plain invert carries it onto the dark theme. */
+.head__mark img { height: 21px; width: auto; display: block; }
+[data-theme="dark"] .head__mark img { filter: invert(1); }
+.head__sep { width: 1px; height: 22px; background: var(--rule); flex: none; }
+.head__doc {
+  font-family: Poppins, sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.head__spacer { flex: 1; }
+
+.btn {
+  font: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: .04em;
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 7px 14px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: border-color 200ms var(--ease), background-color 200ms var(--ease), color 200ms var(--ease);
+}
+.btn:hover { border-color: var(--ink); background: var(--amber-soft); }
+.btn:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+
+.lang { display: inline-flex; padding: 3px; gap: 2px; }
+.lang button {
+  font: inherit; font-size: 11px; font-weight: 600; letter-spacing: .1em;
+  border: 0; background: transparent; color: var(--ink-3);
+  padding: 4px 9px; border-radius: 999px; cursor: pointer;
+  transition: color 180ms var(--ease), background-color 180ms var(--ease);
+}
+.lang button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+[data-lang="pl"] .lang button:hover:not([aria-pressed="true"]),
+[data-lang="en"] .lang button:hover:not([aria-pressed="true"]) { color: var(--ink); }
+
+.head .pdf-label { display: none; }
+@media (min-width: 900px) { .head .pdf-label { display: inline; } }
+
+/* Scroll progress hairline */
+.progress {
+  position: fixed;
+  top: var(--head-h); left: 0;
+  height: 2px; width: 0%;
+  background: var(--amber);
+  z-index: 41;
+  transition: width 120ms linear;
+}
+
+/* ── Chapter rail ───────────────────────────────────────────── */
+.rail {
+  position: fixed;
+  left: 0; top: var(--head-h); bottom: 0;
+  width: var(--rail-w);
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border-right: 1px solid var(--rule);
+  background: linear-gradient(to right, color-mix(in srgb, var(--paper) 70%, transparent), transparent);
+}
+.rail a {
+  --dot: 7px;
+  position: relative;
+  width: 26px; height: 16px;
+  display: grid; place-items: center;
+  text-decoration: none;
+}
+.rail a::after {
+  content: "";
+  width: var(--dot); height: var(--dot);
+  border-radius: 50%;
+  border: 1px solid var(--ink-3);
+  background: transparent;
+  transition: all 320ms var(--ease);
+}
+.rail a:hover::after { border-color: var(--ink); transform: scale(1.25); }
+.rail a[aria-current="true"]::after {
+  background: var(--amber);
+  border-color: var(--amber);
+  transform: scale(1.45);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--amber) 22%, transparent);
+}
+.rail a[data-chapter-start]::before {
+  content: attr(data-chapter-start);
+  position: absolute;
+  right: calc(100% + 2px);
+  font-family: Poppins, sans-serif;
+  font-size: 10px;
+  color: var(--ink-3);
+  letter-spacing: .06em;
+}
+.rail .tip {
+  position: absolute;
+  left: calc(100% + 14px);
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--paper);
+  opacity: 0;
+  transform: translateX(-6px);
+  pointer-events: none;
+  transition: all 220ms var(--ease);
+}
+.rail a:hover .tip, .rail a:focus-visible .tip { opacity: 1; transform: none; }
+
+/* ── Deck ───────────────────────────────────────────────────── */
+.deck {
+  position: relative;
+  z-index: 1;
+  height: 100dvh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.deck::-webkit-scrollbar { display: none; }
+
+.slide {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  min-height: 100dvh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: calc(var(--head-h) + clamp(20px, 4vh, 52px)) clamp(20px, 4vw, 68px) clamp(28px, 6vh, 64px) calc(var(--rail-w) + clamp(20px, 4vw, 60px));
+  overflow: hidden;
+}
+
+/* Oversized ghost numeral bleeding off the left edge — the anchor. */
+.ghost {
+  position: absolute;
+  left: -.07em;
+  bottom: -.30em;
+  font-family: Poppins, sans-serif;
+  font-weight: 200;
+  font-size: clamp(15rem, 30vw, 34rem);
+  line-height: .8;
+  letter-spacing: -.05em;
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--rule);
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 1100ms var(--ease), transform 1200ms var(--ease);
+}
+.slide.is-active .ghost { opacity: 1; transform: none; }
+
+.wrap {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1500px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 34ch) minmax(0, 1fr);
+  gap: clamp(28px, 4vw, 76px);
+  align-items: center;
+}
+.wrap--wide { grid-template-columns: minmax(0, 30ch) minmax(0, 1fr); }
+.wrap--narrow-fig { grid-template-columns: minmax(0, 1fr) minmax(0, 30ch); }
+.wrap--stack { grid-template-columns: minmax(0, 1fr); }
+
+/* ── Text column ────────────────────────────────────────────── */
+.col--text > * {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 620ms var(--ease), transform 700ms var(--ease);
+  transition-delay: var(--d, 0ms);
+}
+.slide.is-active .col--text > * { opacity: 1; transform: none; }
+.col--text > *:nth-child(1) { --d: 60ms; }
+.col--text > *:nth-child(2) { --d: 130ms; }
+.col--text > *:nth-child(3) { --d: 210ms; }
+.col--text > *:nth-child(4) { --d: 290ms; }
+.col--text > *:nth-child(5) { --d: 360ms; }
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 18px;
+  font-family: Poppins, sans-serif;
+  font-size: 11px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--amber-deep);
+}
+.tag::before {
+  content: "";
+  width: 26px; height: 1px;
+  background: var(--amber);
+}
+
+h1, h2 {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  letter-spacing: -.01em;
+  line-height: 1.1;
+  margin: 0 0 18px;
+  text-wrap: balance;
+}
+h2 { font-size: clamp(1.8rem, 2.9vw, 2.9rem); }
+h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.02em; }
+
+.lede {
+  margin: 0 0 22px;
+  color: var(--ink-2);
+  font-size: clamp(.95rem, .35vw + .85rem, 1.08rem);
+  max-width: 42ch;
+}
+.lede b, .lede strong { color: var(--ink); font-weight: 600; }
+
+.micro {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--rule);
+}
+.micro li {
+  display: grid;
+  grid-template-columns: 6.2em 1fr;
+  gap: 12px;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--rule);
+  font-size: .93rem;
+  color: var(--ink-2);
+}
+.micro b {
+  font-family: Poppins, sans-serif;
+  font-size: .76rem;
+  font-weight: 500;
+  color: var(--amber-deep);
+  padding-top: .3em;
+  letter-spacing: .04em;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.micro em { font-style: normal; color: var(--ink); font-weight: 600; }
+
+.note {
+  margin: 20px 0 0;
+  padding: 13px 16px;
+  border-left: 2px solid var(--amber);
+  background: var(--amber-soft);
+  border-radius: 0;
+  font-size: .87rem;
+  color: var(--ink);
+  max-width: 44ch;
+}
+.note b { font-weight: 600; }
+
+/* ── Plates (the drawings) ──────────────────────────────────── */
+.plate {
+  position: relative;
+  margin: 0;
+  background: var(--plate);
+  border: 1px solid var(--rule);
+  border-radius: 0;
+  padding: clamp(14px, 2vw, 30px);
+  box-shadow: var(--plate-shadow);
+  opacity: 0;
+  transform: translateY(26px) scale(.985);
+  transition: opacity 700ms var(--ease), transform 900ms var(--ease);
+  transition-delay: 120ms;
+}
+.slide.is-active .plate { opacity: 1; transform: none; }
+
+/* Drafting crop marks — corner ticks on every plate. */
+.plate::before, .plate::after {
+  content: "";
+  position: absolute;
+  width: 13px; height: 13px;
+  border: 1px solid var(--amber);
+  opacity: .75;
+  transition: opacity 600ms var(--ease) 500ms;
+}
+.plate::before { top: -1px; left: -1px; border-width: 1px 0 0 1px; }
+.plate::after  { bottom: -1px; right: -1px; border-width: 0 1px 1px 0; }
+
+.plate img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: min(62vh, 640px);
+  object-fit: contain;
+  /* Plotted-line reveal: the drawing wipes in as if being printed. */
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path var(--slow) var(--ease) 260ms;
+}
+.slide.is-active .plate img { clip-path: inset(0 0 0 0); }
+
+.plate figcaption {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(33,41,14,.12);
+  font-family: Poppins, sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: rgba(33,41,14,.50);
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+/* Item grid (what's in the box) */
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: clamp(10px, 1.2vw, 18px);
+}
+.item {
+  background: var(--plate);
+  border: 1px solid var(--rule);
+  border-radius: 0;
+  padding: 14px 14px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 560ms var(--ease), transform 620ms var(--ease);
+  transition-delay: calc(var(--i) * 85ms + 140ms);
+  box-shadow: var(--plate-shadow);
+}
+.slide.is-active .item { opacity: 1; transform: none; }
+.item img {
+  width: 100%;
+  height: clamp(84px, 13vh, 140px);
+  object-fit: contain;
+}
+.item__label {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  border-top: 1px solid rgba(33,41,14,.12);
+  padding-top: 9px;
+  font-size: .78rem;
+  color: rgba(33,41,14,.66);
+}
+.item__qty {
+  font-family: Poppins, sans-serif;
+  font-size: .72rem;
+  flex: none;
+}
+.item__qty { color: #8a6d1c; }   /* plates are white in both themes */
+
+/* ── Cover ──────────────────────────────────────────────────── */
+.slide--cover .wrap { grid-template-columns: minmax(0, 1fr); }
+.cover-art {
+  position: absolute;
+  right: -6%;
+  top: 50%;
+  translate: 0 -50%;
+  width: min(64vw, 900px);
+  opacity: 0;
+  pointer-events: none;
+  filter: grayscale(1);
+  mix-blend-mode: multiply;
+  transition: opacity 1400ms var(--ease) 300ms;
+}
+.slide--cover.is-active .cover-art { opacity: .11; }
+[data-theme="dark"] .cover-art { filter: grayscale(1) invert(1); mix-blend-mode: screen; }
+
+.cover-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 26px;
+  margin: 30px 0 0;
+  padding: 0;
+  list-style: none;
+  font-family: Poppins, sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+.cover-meta li { display: flex; align-items: center; gap: 8px; }
+.cover-meta li::before { content: ""; width: 5px; height: 5px; background: var(--amber); border-radius: 50%; }
+
+.scrollcue {
+  position: absolute;
+  left: calc(var(--rail-w) + clamp(20px, 4vw, 60px));
+  bottom: clamp(22px, 5vh, 46px);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: Poppins, sans-serif;
+  font-size: 10px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.scrollcue span::after {
+  content: "";
+  display: inline-block;
+  width: 46px; height: 1px;
+  background: linear-gradient(90deg, var(--amber), transparent);
+  margin-left: 12px;
+  vertical-align: middle;
+  animation: cue 2.4s var(--ease) infinite;
+}
+@keyframes cue { 0%,100% { transform: translateX(0); opacity: 1; } 50% { transform: translateX(10px); opacity: .35; } }
+
+/* ── Outro ──────────────────────────────────────────────────── */
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 26px;
+}
+.contact a {
+  font-family: Poppins, sans-serif;
+  font-size: 13px;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--amber);
+  padding-bottom: 2px;
+  transition: color 200ms var(--ease);
+}
+.contact a:hover { color: var(--amber-deep); }
+
+/* ── Nav buttons ────────────────────────────────────────────── */
+.nav {
+  position: fixed;
+  right: clamp(16px, 3vw, 34px);
+  bottom: clamp(18px, 3vh, 30px);
+  z-index: 35;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.nav__count {
+  font-family: Poppins, sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--ink-3);
+  margin-right: 6px;
+  letter-spacing: .14em;
+  font-variant-numeric: tabular-nums;
+}
+.nav button {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--rule);
+  background: color-mix(in srgb, var(--paper) 80%, transparent);
+  backdrop-filter: blur(10px);
+  color: var(--ink);
+  cursor: pointer;
+  display: grid; place-items: center;
+  transition: all 220ms var(--ease);
+}
+.nav button:hover:not(:disabled) { border-color: var(--ink); background: var(--amber); color: #21290e; }
+.nav button:disabled { opacity: .3; cursor: default; }
+.nav button:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+.nav svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.8; }
+
+/* ── Responsive ─────────────────────────────────────────────── */
+@media (max-width: 1080px) {
+  .wrap, .wrap--wide, .wrap--narrow-fig { grid-template-columns: minmax(0, 1fr); gap: 26px; }
+  .wrap--narrow-fig .col--fig { order: -1; }
+  .plate img { max-height: 42vh; }
+  .ghost { font-size: 22rem; opacity: 0; }
+  .slide.is-active .ghost { opacity: .7; }
+}
+@media (max-width: 720px) {
+  .head__doc, .head__sep { display: none; }
+}
+@media (max-width: 860px) {
+  :root { --rail-w: 0px; --head-h: 58px; }
+  body { overflow: auto; }
+  .rail { display: none; }
+  .deck { height: auto; overflow: visible; scroll-snap-type: none; }
+  .slide {
+    min-height: auto;
+    padding: clamp(60px, 11vh, 90px) 20px clamp(40px, 8vh, 70px);
+    border-bottom: 1px solid var(--rule);
+  }
+  .slide:first-child { padding-top: calc(var(--head-h) + 40px); min-height: 88dvh; }
+  .scrollcue { left: 20px; }
+  .nav { display: none; }
+  .plate img { max-height: none; }
+  .ghost { font-size: 13rem; bottom: -.24em; }
+  .cover-art { width: 130vw; right: -34%; }
+  .slide--cover.is-active .cover-art { opacity: .06; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition-duration: 1ms !important; animation: none !important; }
+  .deck { scroll-behavior: auto; }
+  .plate img { clip-path: none; }
+}
+
+/* ── Print ──────────────────────────────────────────────────── */
+@media print {
+  body { overflow: visible; background: #fff; }
+  .head, .rail, .nav, .progress, .scrollcue, body::before, body::after { display: none !important; }
+  .deck { height: auto; overflow: visible; }
+  .slide { min-height: 0; page-break-after: always; padding: 0 0 24px; display: block; }
+  .ghost, .cover-art { display: none; }
+  .plate, .item { box-shadow: none; opacity: 1 !important; transform: none !important; }
+  .plate img { clip-path: none !important; }
+  .col--text > * { opacity: 1 !important; transform: none !important; }
+}
+</style>
+</head>
+
+<body>
+
+<header class="head">
+  <div class="head__mark">
+    <img src="figs/apisense-logo.webp" alt="Apisense" width="742" height="132">
+  </div>
+  <div class="head__sep"></div>
+  <p class="head__doc">
+    <span lang="pl">Apisense BOX · Instrukcja montażu</span>
+    <span lang="en">Apisense BOX · Assembly instruction</span>
+  </p>
+  <div class="head__spacer"></div>
+
+  <div class="lang btn" role="group" aria-label="Language">
+    <button type="button" data-set-lang="pl" aria-pressed="true">PL</button>
+    <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+  </div>
+
+  <button type="button" class="btn" id="theme" aria-label="Motyw / Theme">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+      <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/>
+    </svg>
+  </button>
+
+  <a class="btn" href="../downloads/files/Apisense_Box_Assembly_Instruction.pdf" download>
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+      <path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5M4 19h16"/>
+    </svg>
+    <span class="pdf-label"><span lang="pl">PDF</span><span lang="en">PDF</span></span>
+  </a>
+</header>
+
+<div class="progress" id="progress"></div>
+
+<nav class="rail" id="rail" aria-label="Kroki"></nav>
+
+<div class="nav">
+  <span class="nav__count" id="count">01 / 22</span>
+  <button type="button" id="prev" aria-label="Poprzedni krok">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 15 12 9l-6 6"/></svg>
+  </button>
+  <button type="button" id="next" aria-label="Następny krok">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+  </button>
+</div>
+
+<main class="deck" id="deck">
+
+  <!-- ══ COVER ══════════════════════════════════════════════ -->
+  <section class="slide slide--cover" data-title-pl="Start" data-title-en="Start" data-chapter="00">
+    <img class="cover-art" src="figs/parts-exploded.webp" alt="" width="1700" height="1310" aria-hidden="true">
+    <div class="wrap">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Apisense BOX · Zestaw startowy</span><span lang="en">Apisense BOX · Starter kit</span></p>
+        <h1>
+          <span lang="pl">Instrukcja<br>montażu</span>
+          <span lang="en">Assembly<br>instruction</span>
+        </h1>
+        <p class="lede">
+          <span lang="pl">Od rozpakowania kartonu do pierwszego odczytu z ula. Sześć kroków, wszystkie rysunki techniczne i każdy ekran aplikacji.</span>
+          <span lang="en">From opening the box to your first hive reading. Six steps, every technical drawing and every app screen.</span>
+        </p>
+        <ul class="cover-meta">
+          <li><span lang="pl">6 kroków</span><span lang="en">6 steps</span></li>
+          <li><span lang="pl">ok. 20 minut</span><span lang="en">approx. 20 minutes</span></li>
+          <li><span lang="pl">Apisense Pro AI</span><span lang="en">Apisense Pro AI</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="scrollcue">
+      <span lang="pl">Przewiń</span><span lang="en">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ══ KIT: exploded parts ════════════════════════════════ -->
+  <section class="slide" data-num="00" data-title-pl="Zawartość zestawu" data-title-en="Kit contents" data-chapter="00">
+    <div class="ghost" aria-hidden="true">00</div>
+    <div class="wrap wrap--wide">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Zestaw</span><span lang="en">The kit</span></p>
+        <h2><span lang="pl">Zawartość zestawu</span><span lang="en">What's inside</span></h2>
+        <p class="lede">
+          <span lang="pl">Zanim zaczniesz — rozłóż wszystkie części i sprawdź kompletność zestawu. Rysunek poniżej pokazuje ułożenie elementów w kartonie.</span>
+          <span lang="en">Before you start — lay out all the parts and check the kit is complete. The drawing below shows how the elements are packed.</span>
+        </p>
+        <ul class="micro">
+          <li><b>×2</b><span lang="pl"><em>Beeframe Holder</em> — części 1 i 2</span><span lang="en"><em>Beeframe Holder</em> — parts 1 and 2</span></li>
+          <li><b>×4</b><span lang="pl"><em>Hub</em> — podstawa, dwie anteny i stopa montażowa</span><span lang="en"><em>Hub</em> — base, two antennas and mounting foot</span></li>
+          <li><b>×3</b><span lang="pl"><em>VitalSensor</em> — czujniki 1, 2 i 3</span><span lang="en"><em>VitalSensor</em> — sensors 1, 2 and 3</span></li>
+          <li><b>×2</b><span lang="pl"><em>Scale</em> — belka pomiarowa i listwa dystansowa</span><span lang="en"><em>Scale</em> — measuring beam and spacer bar</span></li>
+        </ul>
+      </div>
+      <div class="col col--fig">
+        <figure class="plate">
+          <img src="figs/parts-exploded.webp" width="1700" height="1310" loading="lazy"
+               alt="Rysunek techniczny zawartości kartonu Apisense BOX: uchwyt na ramkę, części Huba, trzy VitalSensory i dwie części wagi.">
+          <figcaption><span>Apisense BOX</span><span lang="pl">Rozłożenie w kartonie</span><span lang="en">Packing layout</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ KIT: items ═════════════════════════════════════════ -->
+  <section class="slide" data-num="00" data-title-pl="Elementy zestawu" data-title-en="Kit elements" data-chapter="00">
+    <div class="ghost" aria-hidden="true">00</div>
+    <div class="wrap wrap--stack">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Zestaw</span><span lang="en">The kit</span></p>
+        <h2><span lang="pl">Pięć elementów, jeden ul startowy</span><span lang="en">Five elements, one starter hive</span></h2>
+        <p class="lede">
+          <span lang="pl">Jeden Hub obsługuje całą pasiekę. Waga trafia pod pierwszy ul, a każdy kolejny ul potrzebuje własnego VitalSensora i Taga.</span>
+          <span lang="en">A single Hub serves the whole apiary. The Scale goes under the first hive; every additional hive needs its own VitalSensor and Tag.</span>
+        </p>
+        <div class="items">
+          <div class="item" style="--i:0">
+            <img src="figs/item-vitalsensor.webp" width="495" height="346" loading="lazy" alt="Apisense VitalSensor">
+            <p class="item__label"><span class="item__qty">3 ×</span> VitalSensor</p>
+          </div>
+          <div class="item" style="--i:1">
+            <img src="figs/item-tag.webp" width="470" height="366" loading="lazy" alt="Apisense Tag">
+            <p class="item__label"><span class="item__qty">3 ×</span> Tag</p>
+          </div>
+          <div class="item" style="--i:2">
+            <img src="figs/item-hub.webp" width="580" height="1102" loading="lazy" alt="Apisense Hub z dwiema antenami">
+            <p class="item__label"><span class="item__qty">1 ×</span> Hub</p>
+          </div>
+          <div class="item" style="--i:3">
+            <img src="figs/item-scale.webp" width="864" height="507" loading="lazy" alt="Apisense Scale — belka pomiarowa i listwa dystansowa">
+            <p class="item__label"><span class="item__qty">1 ×</span> Scale</p>
+          </div>
+          <div class="item" style="--i:4">
+            <img src="figs/item-holder.webp" width="450" height="469" loading="lazy" alt="Apisense Beeframe Holder — dwie części">
+            <p class="item__label"><span class="item__qty">1 ×</span> Beeframe Holder</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 01 ═════════════════════════════════════════════════ -->
+  <section class="slide" data-num="01" data-title-pl="Pobierz aplikację" data-title-en="Download the app" data-chapter="01">
+    <div class="ghost" aria-hidden="true">01</div>
+    <div class="wrap wrap--narrow-fig">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 01</span><span lang="en">Step 01</span></p>
+        <h2><span lang="pl">Pobierz aplikację</span><span lang="en">Download the app</span></h2>
+        <p class="lede">
+          <span lang="pl">Cały zestaw konfigurujesz z telefonu. Zeskanuj kod QR aparatem albo wyszukaj <b>Apisense Pro AI</b> w App Store lub Google Play.</span>
+          <span lang="en">The whole kit is configured from your phone. Scan the QR code with your camera or search for <b>Apisense Pro AI</b> in the App Store or Google Play.</span>
+        </p>
+        <ul class="micro">
+          <li><b>iOS</b><span lang="pl">Górny kod QR — App Store</span><span lang="en">Top QR code — App Store</span></li>
+          <li><b>Android</b><span lang="pl">Dolny kod QR — Google Play</span><span lang="en">Bottom QR code — Google Play</span></li>
+        </ul>
+      </div>
+      <div class="col col--fig">
+        <figure class="plate">
+          <img src="figs/step01-download.webp" width="763" height="741" loading="lazy"
+               alt="Dwa kody QR: do App Store i do Google Play.">
+          <figcaption><span>01</span><span lang="pl">App Store · Google Play</span><span lang="en">App Store · Google Play</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 02 ═════════════════════════════════════════════════ -->
+  <section class="slide" data-num="02" data-title-pl="Stwórz konto" data-title-en="Create an account" data-chapter="02">
+    <div class="ghost" aria-hidden="true">02</div>
+    <div class="wrap wrap--narrow-fig">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 02</span><span lang="en">Step 02</span></p>
+        <h2><span lang="pl">Stwórz konto</span><span lang="en">Create an account</span></h2>
+        <p class="lede">
+          <span lang="pl">Podaj nazwę użytkownika, adres e-mail i numer telefonu, a następnie naciśnij <b>Next</b>. Możesz też zarejestrować się kontem Google lub Apple.</span>
+          <span lang="en">Enter a username, e-mail address and mobile phone, then tap <b>Next</b>. You can also sign up with your Google or Apple account.</span>
+        </p>
+        <ul class="micro">
+          <li><b>Username</b><span lang="pl">Nazwa widoczna w aplikacji</span><span lang="en">Name shown inside the app</span></li>
+          <li><b>Email</b><span lang="pl">Służy do logowania i powiadomień</span><span lang="en">Used for login and notifications</span></li>
+          <li><b>Phone</b><span lang="pl">Numer kontaktowy do konta</span><span lang="en">Contact number for the account</span></li>
+        </ul>
+      </div>
+      <div class="col col--fig">
+        <figure class="plate">
+          <img src="figs/step02-account.webp" width="576" height="1192" loading="lazy"
+               alt="Ekran aplikacji Apisense: formularz Create an Account z polami Username, Email i Mobile Phone.">
+          <figcaption><span>02</span><span lang="pl">Ekran rejestracji</span><span lang="en">Sign-up screen</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 03 · a ═════════════════════════════════════════════ -->
+  <section class="slide" data-num="03" data-title-pl="Dodaj pasiekę" data-title-en="Add apiary" data-chapter="03">
+    <div class="ghost" aria-hidden="true">03</div>
+    <div class="wrap">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 03 · 03.1 – 03.2</span><span lang="en">Step 03 · 03.1 – 03.2</span></p>
+        <h2><span lang="pl">Dodaj pasiekę</span><span lang="en">Add apiary</span></h2>
+        <p class="lede">
+          <span lang="pl">Pasieka to miejsce, w którym stoją ule i jeden Hub. Zaczynasz od nadania jej nazwy.</span>
+          <span lang="en">An apiary is the place where your hives and one Hub live. Start by giving it a name.</span>
+        </p>
+        <ul class="micro">
+          <li><b>03.1</b><span lang="pl">Na ekranie powitalnym naciśnij <em>Add apiary</em>.</span><span lang="en">On the welcome screen tap <em>Add apiary</em>.</span></li>
+          <li><b>03.2</b><span lang="pl">Wpisz nazwę pasieki i jej skrót (maks. 3 znaki), a potem dotknij ikony skanera przy polu <em>Hub</em>.</span><span lang="en">Enter the apiary name and its abbreviation (max. 3 characters), then tap the scanner icon next to the <em>Hub</em> field.</span></li>
+        </ul>
+      </div>
+      <div class="col col--fig">
+        <figure class="plate">
+          <img src="figs/step03-a.webp" width="1510" height="1257" loading="lazy"
+               alt="Ekrany 03.1 i 03.2: przycisk Add apiary oraz formularz pasieki z polami Name, Name abbreviation, Hub i Verification Code.">
+          <figcaption><span>03.1 — 03.2</span><span lang="pl">Aplikacja</span><span lang="en">In the app</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 03 · QR ════════════════════════════════════════════ -->
+  <section class="slide" data-num="03" data-title-pl="Kod QR Huba" data-title-en="Hub QR code" data-chapter="03">
+    <div class="ghost" aria-hidden="true">03</div>
+    <div class="wrap">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 03 · 03.3</span><span lang="en">Step 03 · 03.3</span></p>
+        <h2><span lang="pl">Zeskanuj kod QR&nbsp;Huba</span><span lang="en">Scan the Hub QR code</span></h2>
+        <p class="lede">
+          <span lang="pl">Kod QR znajduje się na obudowie Huba, obok modułu montażowego. Ustaw go w ramce skanera — aplikacja odczyta go sama.</span>
+          <span lang="en">The QR code sits on the Hub housing, next to the mounting module. Line it up inside the scanner frame — the app reads it automatically.</span>
+        </p>
+        <p class="note">
+          <span lang="pl"><b>Wskazówka:</b> jeśli kod się nie skanuje, przetrzyj go i zapewnij równomierne światło — bez odblasku.</span>
+          <span lang="en"><b>Tip:</b> if the code will not scan, wipe it clean and use even light — avoid glare.</span>
+        </p>
+      </div>
+      <div class="col col--fig">
+        <figure class="plate">
+          <img src="figs/hub-qr.webp" width="1700" height="1091" loading="lazy"
+               alt="Umiejscowienie kodu QR na obudowie Huba oraz ekran skanera 03.3 w aplikacji.">
+          <figcaption><span>03.3</span><span lang="pl">Hub · kod QR</span><span lang="en">Hub · QR code</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 03 · b ═════════════════════════════════════════════ -->
+  <section class="slide" data-num="03" data-title-pl="Pasieka gotowa" data-title-en="Apiary ready" data-chapter="03">
+    <div class="ghost" aria-hidden="true">03</div>
+    <div class="wrap">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 03 · 03.4 – 03.6</span><span lang="en">Step 03 · 03.4 – 03.6</span></p>
+        <h2><span lang="pl">Pasieka jest gotowa</span><span lang="en">Your apiary is ready</span></h2>
+        <p class="lede">
+          <span lang="pl">Po zeskanowaniu kodu aplikacja uzupełnia dane Huba za Ciebie — nic nie przepisujesz ręcznie.</span>
+          <span lang="en">After the scan the app fills in the Hub details for you — nothing has to be typed by hand.</span>
+        </p>
+        <ul class="micro">
+          <li><b>03.4</b><span lang="pl">Skaner odczytuje kod QR z Huba.</span><span lang="en">The scanner reads the QR code from the Hub.</span></li>
+          <li><b>03.5</b><span lang="pl">Pola <em>Hub</em> i <em>Verification Code</em> wypełniają się automatycznie — zatwierdź formularz.</span><span lang="en">The <em>Hub</em> and <em>Verification Code</em> fields fill in automatically — confirm the form.</span></li>
+          <li><b>03.6</b><span lang="pl">Pasieka pojawia się na ekranie głównym razem z pogodą.</span><span lang="en">The apiary appears on the home screen along with the weather.</span></li>
+        </ul>
+      </div>
+      <div class="col col--fig">
+        <figure class="plate">
+          <img src="figs/step03-b.webp" width="1700" height="1020" loading="lazy"
+               alt="Ekrany 03.4–03.6: skanowanie kodu, uzupełnione pola Hub i Verification Code, ekran główny z dodaną pasieką.">
+          <figcaption><span>03.4 — 03.6</span><span lang="pl">Aplikacja</span><span lang="en">In the app</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 03 · mount ═════════════════════════════════════════ -->
+  <section class="slide" data-num="03" data-title-pl="Zamontuj Hub" data-title-en="Mount the Hub" data-chapter="03">
+    <div class="ghost" aria-hidden="true">03</div>
+    <div class="wrap">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 03 · Montaż</span><span lang="en">Step 03 · Mounting</span></p>
+        <h2><span lang="pl">Zamontuj Hub na ulu</span><span lang="en">Mount the Hub on the hive</span></h2>
+        <p class="lede">
+          <span lang="pl">Hub stawiasz na daszku ula, na stopie montażowej. <b>Obie anteny muszą być skierowane pionowo w górę</b> — to warunek dobrego zasięgu BLE i LTE.</span>
+          <span lang="en">The Hub sits on the hive roof on its mounting foot. <b>Both antennas must point vertically upwards</b> — this is what gives you good BLE and LTE range.</span>
+        </p>
+        <ul class="micro">
+          <li><b>01</b><span lang="pl">Przykręć stopę montażową do daszka wybranego ula.</span><span lang="en">Fix the mounting foot to the roof of the chosen hive.</span></li>
+          <li><b>02</b><span lang="pl">Osadź Hub na stopie tak, aby anteny stały pionowo.</span><span lang="en">Seat the Hub on the foot so the antennas stand upright.</span></li>
+          <li><b>03</b><span lang="pl">Naładuj Hub przez gniazdo <em>USB-C</em>.</span><span lang="en">Charge the Hub through the <em>USB-C</em> socket.</span></li>
+        </ul>
+        <p class="note">
+          <span lang="pl"><b>Uwaga:</b> ładowarka nie jest dołączona do zestawu.</span>
+          <span lang="en"><b>Note:</b> the charger is not included in the kit.</span>
+        </p>
+      </div>
+      <div class="col col--fig">
+        <figure class="plate">
+          <img src="figs/hub-mount.webp" width="1700" height="1235" loading="lazy"
+               alt="Montaż Huba na daszku ula, gniazdo USB-C i ładowarka (niedołączona).">
+          <figcaption><span>Hub</span><span lang="pl">Montaż i zasilanie</span><span lang="en">Mounting &amp; power</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 04 · a ═════════════════════════════════════════════ -->
+  <section class="slide" data-num="04" data-title-pl="Dodaj pierwszy ul" data-title-en="Add first hive" data-chapter="04">
+    <div class="ghost" aria-hidden="true">04</div>
+    <div class="wrap">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 04 · 04.1 – 04.3</span><span lang="en">Step 04 · 04.1 – 04.3</span></p>
+        <h2><span lang="pl">Dodaj ul: waga i VitalSensor&nbsp;1</span><span lang="en">Add hive: Scale &amp; VitalSensor&nbsp;1</span></h2>
+        <p class="lede">
+          <span lang="pl">Pierwszy ul dostaje komplet: wagę i VitalSensor. Oba urządzenia dodajesz w jednym formularzu.</span>
+          <span lang="en">The first hive gets the full set: a Scale and a VitalSensor. You add both devices in a single form.</span>
+        </p>
+        <ul class="micro">
+          <li><b>04.1</b><span lang="pl">Na ekranie głównym otwórz swoją pasiekę.</span><span lang="en">Open your apiary from the home screen.</span></li>
+          <li><b>04.2</b><span lang="pl">Naciśnij <em>Add beehive</em>.</span><span lang="en">Tap <em>Add beehive</em>.</span></li>
+          <li><b>04.3</b><span lang="pl">Dotknij ikony skanera przy polu <em>Scale</em>.</span><span lang="en">Tap the scanner icon next to the <em>Scale</em> field.</span></li>
+        </ul>
+      </div>
+      <div class="col col--fig">
+        <figure class="plate">
+          <img src="figs/step04-a.webp" width="1700" height="971" loading="lazy"
+               alt="Ekrany 04.1–04.3: ekran główny, przycisk Add beehive, formularz Equipment z polami Scale i VitalSensor.">
+          <figcaption><span>04.1 — 04.3</span><span lang="pl">Aplikacja</span><span lang="en">In the app</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 04 · scale QR ══════════════════════════════════════ -->
+  <section class="slide" data-num="04" data-title-pl="Kod QR wagi" data-title-en="Scale QR code" data-chapter="04">
+    <div class="ghost" aria-hidden="true">04</div>
+    <div class="wrap">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 04 · 04.4</span><span lang="en">Step 04 · 04.4</span></p>
+        <h2><span lang="pl">Zeskanuj kod QR wagi</span><span lang="en">Scan the Scale QR code</span></h2>
+        <p class="lede">
+          <span lang="pl">Kod QR wagi znajdziesz na czole belki pomiarowej — tej z elektroniką. Listwa dystansowa nie ma kodu.</span>
+          <span lang="en">The Scale QR code is on the end face of the measuring beam — the one with the electronics. The spacer bar has no code.</span>
+        </p>
+        <p class="note">
+          <span lang="pl">Zeskanuj kod <b>zanim</b> wsuniesz belkę pod ul — później dostęp do niego będzie utrudniony.</span>
+          <span lang="en">Scan the code <b>before</b> you slide the beam under the hive — it is harder to reach afterwards.</span>
+        </p>
+      </div>
+      <div class="col col--fig">
+        <figure class="plate">
+          <img src="figs/scale-qr.webp" width="1700" height="1549" loading="lazy"
+               alt="Umiejscowienie kodu QR na czole belki pomiarowej wagi oraz ekran skanera 04.4.">
+          <figcaption><span>04.4</span><span lang="pl">Scale · kod QR</span><span lang="en">Scale · QR code</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 04 · b ═════════════════════════════════════════════ -->
+  <section class="slide" data-num="04" data-title-pl="Waga dodana" data-title-en="Scale added" data-chapter="04">
+    <div class="ghost" aria-hidden="true">04</div>
+    <div class="wrap">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 04 · 04.5 – 04.6</span><span lang="en">Step 04 · 04.5 – 04.6</span></p>
+        <h2><span lang="pl">Waga wpisana do ula</span><span lang="en">Scale linked to the hive</span></h2>
+        <p class="lede">
+          <span lang="pl">Numer wagi i kod weryfikacyjny wpisują się same. Teraz przejdź do drugiej pozycji formularza.</span>
+          <span lang="en">The Scale ID and verification code fill in on their own. Now move on to the second field of the form.</span>
+        </p>
+        <ul class="micro">
+          <li><b>04.5</b><span lang="pl">Skaner odczytuje kod QR wagi.</span><span lang="en">The scanner reads the Scale QR code.</span></li>
+          <li><b>04.6</b><span lang="pl">Pola <em>Scale</em> i <em>Verification Code</em> są uzupełnione — dotknij skanera przy polu <em>VitalSensor</em>.</span><span lang="en">The <em>Scale</em> and <em>Verification Code</em> fields are filled — tap the scanner next to the <em>VitalSensor</em> field.</span></li>
+        </ul>
+      </div>
+      <div class="col col--fig">
+        <figure class="plate">
+          <img src="figs/step04-b.webp" width="1460" height="1239" loading="lazy"
+               alt="Ekrany 04.5 i 04.6: skanowanie kodu wagi i uzupełnione pola Scale oraz Verification Code.">
+          <figcaption><span>04.5 — 04.6</span><span lang="pl">Aplikacja</span><span lang="en">In the app</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 04 · VS QR ═════════════════════════════════════════ -->
+  <section class="slide" data-num="04" data-title-pl="Kod QR VitalSensora" data-title-en="VitalSensor QR code" data-chapter="04">
+    <div class="ghost" aria-hidden="true">04</div>
+    <div class="wrap">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 04 · 04.7</span><span lang="en">Step 04 · 04.7</span></p>
+        <h2><span lang="pl">Zeskanuj kod QR VitalSensora</span><span lang="en">Scan the VitalSensor QR code</span></h2>
+        <p class="lede">
+          <span lang="pl">Kod QR VitalSensora jest na krótszym boku obudowy, od strony zaczepu. Zeskanuj go przed włożeniem czujnika do ula.</span>
+          <span lang="en">The VitalSensor QR code is on the short side of the housing, at the clip end. Scan it before you place the sensor in the hive.</span>
+        </p>
+        <ul class="micro">
+          <li><b>1 / 3</b><span lang="pl">Każdy VitalSensor ma własny, unikalny kod.</span><span lang="en">Every VitalSensor has its own unique code.</span></li>
+          <li><b>04.7</b><span lang="pl">Zeskanuj kod tego czujnika, który trafi do pierwszego ula.</span><span lang="en">Scan the code of the sensor that will go into the first hive.</span></li>
+        </ul>
+      </div>
+      <div class="col col--fig">
+        <figure class="plate">
+          <img src="figs/vitalsensor-qr.webp" width="1700" height="1536" loading="lazy"
+               alt="Umiejscowienie kodu QR na boku obudowy VitalSensora oraz ekran skanera 04.7.">
+          <figcaption><span>04.7</span><span lang="pl">VitalSensor · kod QR</span><span lang="en">VitalSensor · QR code</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 04 · c ═════════════════════════════════════════════ -->
+  <section class="slide" data-num="04" data-title-pl="Ul aktywny" data-title-en="Hive active" data-chapter="04">
+    <div class="ghost" aria-hidden="true">04</div>
+    <div class="wrap">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 04 · 04.8 – 04.10</span><span lang="en">Step 04 · 04.8 – 04.10</span></p>
+        <h2><span lang="pl">Pierwszy ul jest aktywny</span><span lang="en">The first hive is live</span></h2>
+        <p class="lede">
+          <span lang="pl">Po zapisaniu formularza ekran główny pokazuje aktywny ul i status rodziny.</span>
+          <span lang="en">Once you save the form, the home screen shows the active hive and the colony status.</span>
+        </p>
+        <ul class="micro">
+          <li><b>04.8</b><span lang="pl">Skaner odczytuje kod QR VitalSensora.</span><span lang="en">The scanner reads the VitalSensor QR code.</span></li>
+          <li><b>04.9</b><span lang="pl">Formularz jest kompletny — naciśnij <em>Save</em>.</span><span lang="en">The form is complete — tap <em>Save</em>.</span></li>
+          <li><b>04.10</b><span lang="pl">Ekran główny: <em>Active beehives 1/1</em> oraz <em>Healthy family</em>.</span><span lang="en">Home screen: <em>Active beehives 1/1</em> and <em>Healthy family</em>.</span></li>
+        </ul>
+      </div>
+      <div class="col col--fig">
+        <figure class="plate">
+          <img src="figs/step04-c.webp" width="1700" height="1028" loading="lazy"
+               alt="Ekrany 04.8–04.10: skanowanie kodu VitalSensora, zapis formularza i ekran główny z aktywnym ulem.">
+          <figcaption><span>04.8 — 04.10</span><span lang="pl">Aplikacja</span><span lang="en">In the app</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 04 · mount scale ═══════════════════════════════════ -->
+  <section class="slide" data-num="04" data-title-pl="Zamontuj wagę" data-title-en="Mount the Scale" data-chapter="04">
+    <div class="ghost" aria-hidden="true">04</div>
+    <div class="wrap wrap--wide">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 04 · Montaż</span><span lang="en">Step 04 · Mounting</span></p>
+        <h2><span lang="pl">Zamontuj wagę pod ulem</span><span lang="en">Place the Scale under the hive</span></h2>
+        <p class="lede">
+          <span lang="pl">Waga to dwa elementy: belka pomiarowa z elektroniką i listwa dystansowa, która wyrównuje poziom.</span>
+          <span lang="en">The Scale is two parts: the measuring beam with the electronics and a spacer bar that keeps the hive level.</span>
+        </p>
+        <ul class="micro">
+          <li><b>01</b><span lang="pl">Wsuń belkę pomiarową pod przednią krawędź ula, kodem QR na zewnątrz.</span><span lang="en">Slide the measuring beam under the front edge of the hive, QR code facing outwards.</span></li>
+          <li><b>02</b><span lang="pl">Listwę dystansową ułóż pod przeciwległą krawędzią.</span><span lang="en">Put the spacer bar under the opposite edge.</span></li>
+          <li><b>03</b><span lang="pl">Ul musi opierać się równo na obu elementach.</span><span lang="en">The hive must rest evenly on both parts.</span></li>
+        </ul>
+      </div>
+      <div class="col col--fig">
+        <figure class="plate">
+          <img src="figs/mount-scale.webp" width="1700" height="622" loading="lazy"
+               alt="Belka pomiarowa i listwa dystansowa wsuwane pod przeciwległe krawędzie ula.">
+          <figcaption><span>Scale</span><span lang="pl">Ustawienie pod ulem</span><span lang="en">Placement under the hive</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 04 · mount VS ══════════════════════════════════════ -->
+  <section class="slide" data-num="04" data-title-pl="Zamontuj VitalSensor" data-title-en="Mount the VitalSensor" data-chapter="04">
+    <div class="ghost" aria-hidden="true">04</div>
+    <div class="wrap wrap--wide">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 04 · Montaż</span><span lang="en">Step 04 · Mounting</span></p>
+        <h2><span lang="pl">Zamontuj VitalSensor</span><span lang="en">Mount the VitalSensor</span></h2>
+        <p class="lede">
+          <span lang="pl">VitalSensor zawieszasz na beleczce ramki, przy ściance ula. Sposób mocowania zależy od szerokości beleczki&nbsp;<b>x</b>.</span>
+          <span lang="en">The VitalSensor hangs on the frame top bar, next to the hive wall. How you fix it depends on the bar width&nbsp;<b>x</b>.</span>
+        </p>
+        <ul class="micro">
+          <li><b>x &lt; 26 mm</b><span lang="pl">Zaczep wsuwasz bezpośrednio na beleczkę — bez dodatkowych elementów.</span><span lang="en">The clip slides straight onto the bar — no extra parts needed.</span></li>
+          <li><b>x &gt; 26 mm</b><span lang="pl">Użyj opaski zaciskowej i przeprowadź ją przez otwór w zaczepie.</span><span lang="en">Use a cable tie and route it through the opening in the clip.</span></li>
+        </ul>
+      </div>
+      <div class="col col--fig">
+        <figure class="plate">
+          <img src="figs/mount-vitalsensor.webp" width="1700" height="995" loading="lazy"
+               alt="Montaż VitalSensora na beleczce ramki: warianty dla x mniejszego i większego niż 26 mm.">
+          <figcaption><span>VitalSensor</span><span lang="pl">Warianty mocowania</span><span lang="en">Mounting variants</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 04 · tag ═══════════════════════════════════════════ -->
+  <section class="slide" data-num="04" data-title-pl="Opisz Tag" data-title-en="Label the Tag" data-chapter="04">
+    <div class="ghost" aria-hidden="true">04</div>
+    <div class="wrap wrap--wide">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 04 · Montaż</span><span lang="en">Step 04 · Mounting</span></p>
+        <h2><span lang="pl">Opisz i zawieś Tag</span><span lang="en">Label and hang the Tag</span></h2>
+        <p class="lede">
+          <span lang="pl">Tag pozwala rozpoznać ul w terenie — ten sam numer, który widzisz w aplikacji.</span>
+          <span lang="en">The Tag lets you identify the hive in the field — the same number you see in the app.</span>
+        </p>
+        <ul class="micro">
+          <li><b>01</b><span lang="pl">Napisz numer lub nazwę ula na Tagu.</span><span lang="en">Write the number or the name of the hive on the Tag.</span></li>
+          <li><b>02</b><span lang="pl">Zapnij opaskę i zawieś Tag na ścianie ula.</span><span lang="en">Fasten the strap and hang the Tag on the hive wall.</span></li>
+        </ul>
+      </div>
+      <div class="col col--fig">
+        <figure class="plate">
+          <img src="figs/mount-tag.webp" width="1700" height="515" loading="lazy"
+               alt="Opisywanie Taga numerem ula i zawieszanie go na ścianie ula.">
+          <figcaption><span>Tag</span><span lang="pl">Opis i montaż</span><span lang="en">Labelling &amp; mounting</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 05 · a ═════════════════════════════════════════════ -->
+  <section class="slide" data-num="05" data-title-pl="Dodaj kolejny ul" data-title-en="Add another hive" data-chapter="05">
+    <div class="ghost" aria-hidden="true">05</div>
+    <div class="wrap">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 05 · 05.1 – 05.3</span><span lang="en">Step 05 · 05.1 – 05.3</span></p>
+        <h2><span lang="pl">Dodaj kolejny ul</span><span lang="en">Add another hive</span></h2>
+        <p class="lede">
+          <span lang="pl">Kolejne ule dodajesz z samym VitalSensorem — waga zostaje pod pierwszym ulem. Pole <em>Scale</em> zostaw puste.</span>
+          <span lang="en">Further hives are added with a VitalSensor only — the Scale stays under the first hive. Leave the <em>Scale</em> field empty.</span>
+        </p>
+        <ul class="micro">
+          <li><b>05.1</b><span lang="pl">Otwórz pasiekę z ekranu głównego.</span><span lang="en">Open the apiary from the home screen.</span></li>
+          <li><b>05.2</b><span lang="pl">Naciśnij <em>+</em> i wybierz <em>Beehive</em>.</span><span lang="en">Tap <em>+</em> and choose <em>Beehive</em>.</span></li>
+          <li><b>05.3</b><span lang="pl">Dotknij ikony skanera przy polu <em>VitalSensor</em>.</span><span lang="en">Tap the scanner icon next to the <em>VitalSensor</em> field.</span></li>
+        </ul>
+      </div>
+      <div class="col col--fig">
+        <figure class="plate">
+          <img src="figs/step05-a.webp" width="1700" height="1048" loading="lazy"
+               alt="Ekrany 05.1–05.3: ekran główny, menu z opcją Beehive i formularz Add beehive.">
+          <figcaption><span>05.1 — 05.3</span><span lang="pl">Aplikacja</span><span lang="en">In the app</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 05 · QR ════════════════════════════════════════════ -->
+  <section class="slide" data-num="05" data-title-pl="Kod QR VitalSensora 2/3" data-title-en="VitalSensor 2/3 QR" data-chapter="05">
+    <div class="ghost" aria-hidden="true">05</div>
+    <div class="wrap">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 05 · 05.4</span><span lang="en">Step 05 · 05.4</span></p>
+        <h2><span lang="pl">Zeskanuj kod VitalSensora 2 lub 3</span><span lang="en">Scan VitalSensor 2 or 3</span></h2>
+        <p class="lede">
+          <span lang="pl">Weź kolejny czujnik z zestawu i zeskanuj jego kod QR. Miejsce kodu jest identyczne jak w pierwszym czujniku.</span>
+          <span lang="en">Take the next sensor from the kit and scan its QR code. The code sits in exactly the same place as on the first sensor.</span>
+        </p>
+        <p class="note">
+          <span lang="pl">Pilnuj, który fizyczny czujnik przypisujesz do którego ula — najprościej opisać go od razu Tagiem.</span>
+          <span lang="en">Keep track of which physical sensor goes to which hive — the easiest way is to label it with a Tag straight away.</span>
+        </p>
+      </div>
+      <div class="col col--fig">
+        <figure class="plate">
+          <img src="figs/vitalsensor-qr.webp" width="1700" height="1536" loading="lazy"
+               alt="Umiejscowienie kodu QR na boku obudowy VitalSensora oraz ekran skanera 05.4.">
+          <figcaption><span>05.4</span><span lang="pl">VitalSensor · kod QR</span><span lang="en">VitalSensor · QR code</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 05 · b ═════════════════════════════════════════════ -->
+  <section class="slide" data-num="05" data-title-pl="Drugi ul aktywny" data-title-en="Second hive live" data-chapter="05">
+    <div class="ghost" aria-hidden="true">05</div>
+    <div class="wrap">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 05 · 05.5 – 05.7</span><span lang="en">Step 05 · 05.5 – 05.7</span></p>
+        <h2><span lang="pl">Kolejny ul w pasiece</span><span lang="en">Another hive in the apiary</span></h2>
+        <p class="lede">
+          <span lang="pl">Formularz zapisuje się tak samo jak przy pierwszym ulu — bez pola <em>Scale</em>.</span>
+          <span lang="en">The form saves exactly like the first hive — just without the <em>Scale</em> field.</span>
+        </p>
+        <ul class="micro">
+          <li><b>05.5</b><span lang="pl">Skaner odczytuje kod QR czujnika.</span><span lang="en">The scanner reads the sensor QR code.</span></li>
+          <li><b>05.6</b><span lang="pl">Pola <em>VitalSensor</em> i <em>Verification Code</em> są gotowe — naciśnij <em>Save</em>.</span><span lang="en">The <em>VitalSensor</em> and <em>Verification Code</em> fields are ready — tap <em>Save</em>.</span></li>
+          <li><b>05.7</b><span lang="pl">Ekran główny pokazuje kolejny aktywny ul.</span><span lang="en">The home screen shows the next active hive.</span></li>
+        </ul>
+      </div>
+      <div class="col col--fig">
+        <figure class="plate">
+          <img src="figs/step05-b.webp" width="1700" height="999" loading="lazy"
+               alt="Ekrany 05.5–05.7: skanowanie kodu, zapis formularza i ekran główny z kolejnym aktywnym ulem.">
+          <figcaption><span>05.5 — 05.7</span><span lang="pl">Aplikacja</span><span lang="en">In the app</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 05 · mount ═════════════════════════════════════════ -->
+  <section class="slide" data-num="05" data-title-pl="VitalSensor i Tag" data-title-en="VitalSensor &amp; Tag" data-chapter="05">
+    <div class="ghost" aria-hidden="true">05</div>
+    <div class="wrap wrap--wide">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 05 · Montaż</span><span lang="en">Step 05 · Mounting</span></p>
+        <h2><span lang="pl">VitalSensor i Tag w kolejnym ulu</span><span lang="en">VitalSensor and Tag in the next hive</span></h2>
+        <p class="lede">
+          <span lang="pl">Montaż jest identyczny jak w pierwszym ulu: czujnik na beleczce ramki, Tag opisany numerem na ścianie ula.</span>
+          <span lang="en">Mounting is identical to the first hive: the sensor on the frame top bar, the numbered Tag on the hive wall.</span>
+        </p>
+        <p class="note">
+          <span lang="pl"><b>Aby dodać kolejny ul, powtórz krok 05.</b> Jeden Hub obsługuje całą pasiekę.</span>
+          <span lang="en"><b>To add another hive, repeat step 05.</b> One Hub serves the whole apiary.</span>
+        </p>
+      </div>
+      <div class="col col--fig">
+        <figure class="plate">
+          <img src="figs/mount-vs-tag.webp" width="1700" height="946" loading="lazy"
+               alt="Montaż VitalSensora na beleczce ramki oraz opisanego Taga na ścianie ula.">
+          <figcaption><span>VitalSensor + Tag</span><span lang="pl">Kolejny ul</span><span lang="en">Next hive</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 06 ═════════════════════════════════════════════════ -->
+  <section class="slide" data-num="06" data-title-pl="Uchwyt na ramkę" data-title-en="Beeframe Holder" data-chapter="06">
+    <div class="ghost" aria-hidden="true">06</div>
+    <div class="wrap">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 06</span><span lang="en">Step 06</span></p>
+        <h2><span lang="pl">Uchwyt na ramkę</span><span lang="en">Beeframe Holder</span></h2>
+        <p class="lede">
+          <span lang="pl">Uchwyt zaczepiasz o krawędzie korpusu. Trzyma wyjętą ramkę podczas przeglądu — masz wolne ręce, żeby zrobić zdjęcie plastra w aplikacji.</span>
+          <span lang="en">The holder hooks onto the hive body edges. It holds a pulled frame during an inspection — so your hands are free to photograph the comb in the app.</span>
+        </p>
+        <ul class="micro">
+          <li><b>01</b><span lang="pl">Zaczep obie części uchwytu na przeciwległych krawędziach korpusu.</span><span lang="en">Hook both holder parts onto opposite edges of the hive body.</span></li>
+          <li><b>02</b><span lang="pl">Oprzyj ramkę na uchwytach.</span><span lang="en">Rest the frame on the holders.</span></li>
+          <li><b>03</b><span lang="pl">Zrób zdjęcie plastra do analizy w aplikacji.</span><span lang="en">Photograph the comb for analysis in the app.</span></li>
+        </ul>
+      </div>
+      <div class="col col--fig">
+        <figure class="plate">
+          <img src="figs/holder-mount.webp" width="1700" height="992" loading="lazy"
+               alt="Dwie części uchwytu zaczepione na krawędziach korpusu ula, z ramką opartą na uchwytach.">
+          <figcaption><span>06</span><span lang="pl">Beeframe Holder</span><span lang="en">Beeframe Holder</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ END ════════════════════════════════════════════════ -->
+  <section class="slide slide--end" data-title-pl="Gotowe" data-title-en="Done" data-chapter="✱">
+    <div class="ghost" aria-hidden="true">✱</div>
+    <div class="wrap wrap--stack">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Gotowe</span><span lang="en">All set</span></p>
+        <h1><span lang="pl">Ul nadaje.</span><span lang="en">Your hive is on air.</span></h1>
+        <p class="lede">
+          <span lang="pl">Od tej chwili Hub zbiera dane z czujników i wysyła je do aplikacji. Masz pytania do montażu albo coś nie działa?</span>
+          <span lang="en">From now on the Hub collects sensor data and sends it to the app. Questions about the assembly, or something not working?</span>
+        </p>
+        <p class="contact">
+          <a href="mailto:info@apisense.ai">info@apisense.ai</a>
+          <a href="tel:+48606153759">+48 606 153 759</a>
+          <a href="../downloads/files/Apisense_Box_Assembly_Instruction.pdf"><span lang="pl">Instrukcja PDF</span><span lang="en">PDF instruction</span></a>
+          <a href="../"><span lang="pl">Dokumentacja Apisense</span><span lang="en">Apisense documentation</span></a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script>
+(function () {
+  var deck   = document.getElementById('deck');
+  var slides = Array.prototype.slice.call(deck.querySelectorAll('.slide'));
+  var rail   = document.getElementById('rail');
+  var bar    = document.getElementById('progress');
+  var count  = document.getElementById('count');
+  var prev   = document.getElementById('prev');
+  var next   = document.getElementById('next');
+  var active = 0;
+
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+
+  /* ── Rail: one dot per slide, chapter number on the first of each ── */
+  var lastChapter = null;
+  slides.forEach(function (s, i) {
+    s.id = s.id || 'slide-' + i;
+    var a = document.createElement('a');
+    a.href = '#' + s.id;
+    var ch = s.dataset.chapter;
+    if (ch && ch !== lastChapter) { a.dataset.chapterStart = ch; lastChapter = ch; }
+    var tip = document.createElement('span');
+    tip.className = 'tip';
+    tip.append(langSpan('pl', s.dataset.titlePl), langSpan('en', s.dataset.titleEn));
+    a.appendChild(tip);
+    a.addEventListener('click', function (e) { e.preventDefault(); go(i); });
+    rail.appendChild(a);
+  });
+  var dots = Array.prototype.slice.call(rail.children);
+
+  function langSpan(lang, text) {
+    var el = document.createElement('span');
+    el.setAttribute('lang', lang);
+    el.textContent = text || '';
+    return el;
+  }
+
+  /* ── Reveal: fire as soon as any part of a slide enters the viewport,
+        so slides taller than the viewport still animate. Sticky once shown. ── */
+  var reveal = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (en.isIntersecting) { en.target.classList.add('is-active'); reveal.unobserve(en.target); }
+    });
+  }, { threshold: 0.01 });
+  slides.forEach(function (s) { reveal.observe(s); });
+
+  /* ── Current slide = last one whose top has passed the probe line ── */
+  function scroller() { return deck.scrollHeight > deck.clientHeight + 1 ? deck : document.documentElement; }
+  function currentIndex() {
+    var probe = window.innerHeight * 0.4, best = 0;
+    for (var i = 0; i < slides.length; i++) {
+      if (slides[i].getBoundingClientRect().top <= probe) best = i;
+    }
+    return best;
+  }
+
+  function setActive(i) {
+    if (i === active) return;
+    active = i;
+    history.replaceState(null, '', i === 0 ? location.pathname : '#' + slides[i].id);
+    dots.forEach(function (d, n) {
+      if (n === i) { d.setAttribute('aria-current', 'true'); } else { d.removeAttribute('aria-current'); }
+    });
+    count.textContent = pad(i + 1) + ' / ' + pad(slides.length);
+    prev.disabled = i === 0;
+    next.disabled = i === slides.length - 1;
+  }
+  setActive(0);
+  dots[0].setAttribute('aria-current', 'true');
+  slides[0].classList.add('is-active');
+  count.textContent = '01 / ' + pad(slides.length);
+  prev.disabled = true;
+
+  function go(i) {
+    i = Math.max(0, Math.min(slides.length - 1, i));
+    slides[i].scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  prev.addEventListener('click', function () { go(active - 1); });
+  next.addEventListener('click', function () { go(active + 1); });
+
+  /* Deep link: /assembly/#slide-8 opens straight on that step. */
+  if (location.hash) {
+    var target = document.getElementById(location.hash.slice(1));
+    if (target) {
+      var i = slides.indexOf(target);
+      if (i > -1) window.addEventListener('load', function () {
+        target.scrollIntoView({ behavior: 'auto', block: 'start' });
+        target.classList.add('is-active');
+      });
+    }
+  }
+
+  /* ── Progress hairline + active tracking ── */
+  var ticking = false;
+  function onScroll() {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(function () {
+      var el = scroller();
+      var max = el.scrollHeight - el.clientHeight;
+      bar.style.width = (max > 0 ? (el.scrollTop / max) * 100 : 0) + '%';
+      setActive(currentIndex());
+      ticking = false;
+    });
+  }
+  deck.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll, { passive: true });
+  onScroll();
+
+  /* ── Keyboard ── */
+  document.addEventListener('keydown', function (e) {
+    if (e.target.closest('input, textarea, select')) return;
+    switch (e.key) {
+      case 'ArrowDown': case 'PageDown': case ' ':
+        e.preventDefault(); go(active + 1); break;
+      case 'ArrowRight':
+        go(active + 1); break;
+      case 'ArrowUp': case 'PageUp':
+        e.preventDefault(); go(active - 1); break;
+      case 'ArrowLeft':
+        go(active - 1); break;
+      case 'Home': e.preventDefault(); go(0); break;
+      case 'End':  e.preventDefault(); go(slides.length - 1); break;
+    }
+  });
+
+  /* ── Language ── */
+  var root = document.documentElement;
+  document.querySelectorAll('[data-set-lang]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var l = b.dataset.setLang;
+      root.setAttribute('data-lang', l);
+      root.lang = l;
+      localStorage.setItem('apisense-asm-lang', l);
+      syncLang();
+    });
+  });
+  function syncLang() {
+    var cur = root.getAttribute('data-lang');
+    document.querySelectorAll('[data-set-lang]').forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.dataset.setLang === cur));
+    });
+    document.title = cur === 'en'
+      ? 'Apisense BOX — Assembly Instruction'
+      : 'Apisense BOX — Instrukcja montażu';
+  }
+  syncLang();
+
+  /* ── Theme ── */
+  document.getElementById('theme').addEventListener('click', function () {
+    var t = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', t);
+    localStorage.setItem('apisense-asm-theme', t);
+    document.querySelector('meta[name="theme-color"]')
+      .setAttribute('content', t === 'dark' ? '#21290e' : '#f6f7e7');
+  });
+})();
+</script>
+
+</body>
+</html>

@@ -27,4 +27,4 @@ ______________________________________________________________________
 
 Ilustrowana instrukcja krok po kroku — w stylu IKEA.
 
-- **Apisense Box** — <a href="files/Apisense_Box_Assembly_Instruction.pdf">instrukcja montażu (PDF)</a>
+- **Apisense Box** — <a href="/assembly/">instrukcja montażu online</a> · <a href="files/Apisense_Box_Assembly_Instruction.pdf">wersja PDF</a>

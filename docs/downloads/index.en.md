@@ -27,4 +27,4 @@ ______________________________________________________________________
 
 Illustrated step-by-step assembly guide — IKEA-style.
 
-- **Apisense Box** — <a href="files/Apisense_Box_Assembly_Instruction.pdf">assembly instruction (PDF)</a>
+- **Apisense Box** — <a href="/assembly/">online assembly instruction</a> · <a href="files/Apisense_Box_Assembly_Instruction.pdf">PDF version</a>
