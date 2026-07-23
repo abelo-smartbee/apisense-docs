@@ -32,6 +32,9 @@ The VitalSensor is powered by **2× AA alkaline** batteries.
 2. Replace the batteries with **2× AA alkaline**.
 3. Close the cover.
 
+!!! note "Note"
+    After completing the battery replacement, no additional steps are required in the app or on the Hub or VitalSensor device. Do not re-pair devices, add them to the hive again, or press the RESET button. Simply place the VitalSensor back within the Hub's communication range and wait for the next data synchronisation. Updated data will appear in the app automatically - this may take up to several hours, provided that the Hub is communicating properly with the system (it is not offline - discharged battery/no connectivity).
+
 ## Hub & connectivity
 
 ### Can the Hub be installed indoors or under a roof?
@@ -45,6 +48,14 @@ Yes, you can power it via USB-C, as long as it remains outdoors and is uncovered
 ### Does the Hub need a battery replacement?
 
 No. The Hub charges from a solar panel (PV). If sunlight is insufficient, you can top it up via USB-C.
+
+### Do I need to press the RESET button after the Hub has discharged and I reconnect it to charging or expose it to the sun?
+
+No. After sufficient charging, the Hub will automatically resume operation, connect to the system and the devices.
+
+### Do I need to press the RESET button on the Hub after replacing the batteries in a Scale or VitalSensor?
+
+No. Do not reset the Hub after replacing the batteries in Scale or VitalSensor devices. After replacing the batteries, simply place the device back within the Hub's communication range and wait for the next data synchronisation. Remember that the Hub must be communicating properly with the system (it must not be offline — discharged or no connectivity).
 
 ### The Hub isn't charging despite full sun — why?
 
@@ -101,11 +112,46 @@ You will need a **4 mm** Allen (hex) key (for the brackets) and a **T6** Torx ke
 4. Screw the black housing back on.
 5. Screw the brackets back on.
 
+!!! note "Note"
+    After completing the battery replacement, no additional steps are required in the app or on the Hub or Scale device. Do not re-pair devices, add them to the hive again, or press the RESET button. Simply place the Scale back within the Hub's communication range and wait for the next data synchronisation. Updated data will appear in the app automatically - this may take up to several hours, provided that the Hub is communicating properly with the system (it is not offline - discharged battery/no connectivity).
+
 ### Which hive should be on the Scale?
 
 Any VitalSensor-equipped hive — trends matter more than the exact weight of a particular hive.
 
+## After battery replacement
+
+<a id="after-battery-replacement"></a>
+
+### What should I do after replacing the batteries in a Scale/VitalSensor?
+
+After replacing the batteries:
+
+- place the Scale or VitalSensor back in its target location,
+- make sure it is within range of the Hub (maximum approximately 35 m),
+- wait for the next measurement cycle.
+
+Updated data will appear in the app automatically - this may take up to several hours, provided that the Hub is communicating properly with the system (it is not offline - discharged battery/no connectivity).
+
+### Do I need to re-pair the Scale or VitalSensor after replacing the batteries?
+
+No. Battery replacement does not require re-pairing the device. Simply place the device back within the Hub's communication range and wait for the next data synchronisation. Remember that the Hub must be communicating properly with the system (it must not be offline — discharged or no connectivity).
+
+### Do I need to remove and re-add the Scale or VitalSensor to the hive after replacing the batteries?
+
+No. You do not need to change anything in the app after replacing the batteries in a Scale or VitalSensor. Simply place the device back within the Hub's communication range and wait for the next data synchronisation. Remember that the Hub must be communicating properly with the system (it must not be offline — discharged or no connectivity).
+
+### Do I need to remove and re-add the hive in the app after replacing the batteries?
+
+No. There is no need to remove or re-add the hive or the devices assigned to it. After replacing the batteries in a Scale or VitalSensor, simply place the device back within the Hub's communication range and wait for the next data synchronisation. Remember that the Hub must be communicating properly with the system (it must not be offline — discharged or no connectivity).
+
 ## Data entry & Apisense app usage
+
+<a id="honey-gain-weight"></a>
+
+### Is it possible for hive weight to show a positive value while honey gain is negative, even though honey gain is calculated based on weight measurements?
+
+Yes, this is entirely possible. For example, a beekeeper may add a super, which will cause the total hive mass to increase. At the same time, if the bee colony is weakened, honey production may decrease. In such a situation, the hive weight chart will show a clear increase resulting from adding the super. However, on the honey gain chart, the mass of the added super will not be taken into account, so the chart will reflect only the actual change in the amount of honey. As a result, the honey gain chart will show a decrease related to limited bee activity, rather than an artificial increase resulting from beekeeper intervention.
 
 ### Do notes have to be added in the field?
 
