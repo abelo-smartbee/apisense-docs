@@ -162,7 +162,7 @@ Figure: Pomyślnie dodana pasieka bez urządzeń w widoku pasiek w systemie {#fi
 ![figure](pictures/apiaries_list_without_hub.png){width=200}
 
 
-!!! Uwaga:
+!!! note
     **Pasieka bez urządzeń:** Możesz utworzyć pasiekę, podając wyłącznie nazwę i wybierając opcję *Bez urządzeń*, ale do pasieki utworzonej bez Huba nie będzie już możliwości przypisania tego urządzenia nawet na poziomie edycji  pasieki. Ponadto, jeżeli pasieka została utworzona bez Huba, to do żadnego ula w takiej pasiece nie będzie możliwości przypisania urządzeń Scale ani VitalSensor — podczas dodawania uli sekcja *Wyposażenie* nie będzie dostępna. Możesz jednak dodawać ule bez urządzeń oraz prowadzić dokumentację (notatki, przeglądy, zadania).
 
 
@@ -276,14 +276,14 @@ Figure: Dodawanie ula w systemie - sekcja Informacje o matce pszczelej {#fig-add
 
 - Następnie kliknij żółty przycisk ze strzałką w prawo, znajdujący się na dole ekranu, w celu przejścia do sekcji *Wyposażenie*.
 
-!!! Uwaga:
+!!! note
     Sekcja *Wyposażenie* jest dostępna tylko wtedy, gdy do pasieki jest przypisane urządzenie Apisense Hub. Jeżeli pasieka nie posiada Apisense Hub, kliknięcie żółtego przycisku znajdującego się w prawym dolnym rogu ekranu, spowoduje zapisanie i dodanie pustego ula (bez urządzeń pomiarowych) z wprowadzonymi wyżej informacjami.
 
 #### 2.1.1 Dodawanie ula z urządzeniami
 
 - **Wyposażenie:** Ostatni etap obejmuje powiązanie urządzeń z tym konkretnym ulem. **Uwaga:** Kluczowe jest, aby urządzenia skonfigurowane w ramach ula (Scale i VitalSensor) były w rzeczywistości zainstalowane w tym samym fizycznym ulu.
 
-    !!! Uwaga:
+    !!! note
         **Wymóg Hub:** Aby powiązać Scale lub VitalSensor z ulem, do pasieki musi być przypisany **Apisense Hub**. W przeciwnym razie zarówno podczas dodawania jak i edycji ula, sekcja *Wyposażenie* nie będzie dostępna.
 
     Aby powiązać urządzenie Apisense Scale z ulem wypełnij następujące pola ([](#fig-add-beehive-devices-scale)):
@@ -304,7 +304,7 @@ Figure: Dodawanie ula w systemie - sekcja Informacje o matce pszczelej {#fig-add
 
     ![figure](pictures/add_beehive_devices_sensor.png){width=200}
 
-!!! Uwaga:
+!!! note
     Do ula możesz również przypisać tylko jedno urządzenie. Aby utworzyć ul tylko z VitalSensorem pozostaw pole Scale i Kod potwierdzający puste, a następnie przejdź do etapu dodawania urządzenia VitalSensor i zeskanuj odpowiedni kod QR, po czym zapisz. Aby utworzyć ul tylko ze Scale pozostaw pole VitalSensor i Kod potwierdzający puste i kliknij żółty przycisk na dole ekranu w celu zapisania.
 
 - Po wypełnieniu wybranych sekcji i niezbędnych pól kliknij żółty przycisk w prawej dolnej części ekranu, aby dodać ul z powiązanymi urządzeniami (Scale i/lub VitalSensor).
@@ -369,7 +369,7 @@ Figure: Widok Ustawienia ula {#fig-beehive-settings}
 
     - **Wyposażenie** - sekcja zawiera informacje na temat powiązanych urządzeń z ulem (VitalSensor, Scale). Sekcja umożliwia usunięcie przypisania urządzenia do tego ula. Aby to zrobić należy kliknąć przycisk *Odłącz VitalSensor*/*Odłącz Scale* w zależności od tego, które urządzenie ma zostać odpięte, a następnie potwierdzić wybór przy użyciu żółtego przycisku *Odłącz* ([](#fig-beehive-settings-devices-edit)). Podczas odpinania urządzeń historia ich pomiarów zostaje domyślnie zachowana, co oznacza, że przeszłe dane pomiarowe będą dostępne na wykresach, dopóki ten ul nie zostanie usunięty. Aby wyczyścić historię pomiarów w ulu z odpinanego urządzenia użyj przełącznika. Jeżeli w skład wyposażenia ula nie wchodzi któreś z urządzeń (pola nie są wypełnione), z tego miejsca można również powiązać Scale/VitalSensor z ulem. W tym celu należy kliknąć ikonę kodu QR, znajdującą się w prawej części pola VitalSensor/Scale i zeskanować kod QR z odpowiednich urządzeń pomiarowych.
 
-    !!! Uwaga:
+    !!! note
         Sekcja *Wyposażenie* nie jest dostępna, jeśli do pasieki nie jest przypisane urządzenie Apisense Hub.
 
 Figure: Widok Ustawienia ula - sekcja Wyposażenie, potwierdzenie odłączenia Scale z zachowaniem historii pomiarów (1) {#fig-beehive-settings-devices-edit}
@@ -681,7 +681,7 @@ Zakres określa, gdzie zadanie jest widoczne oraz skąd można je edytować i us
 | Wybrane ule       | Tak                       | Tak — tylko w wybranych ulach  | Nie                      |
 | Pojedynczy ul     | Tak                       | Tak — tylko w tym jednym ulu   | Tak                      |
 
-!!! Wskazówka
+!!! tip
     Zadania o zakresie *Cała pasieka* i *Wybrane ule* są edytowalne i usuwane wyłącznie z poziomu pasieki — z poziomu ula są dostępne tylko do podglądu. Zadanie utworzone dla pojedynczego ula można edytować i usunąć z poziomu tego ula, jak i z poziomu pasieki.
 
 #### 5.3 Dodawanie zadania z poziomu pasieki
@@ -744,7 +744,7 @@ Figure: Oznaczanie zadania jako wykonane {#fig-task-mark-done}
 
 ![figure](pictures/task_mark_done.png){width=200}
 
-!!! Uwaga
+!!! note
     Z poziomu pasieki można oznaczyć dowolne zadanie jako wykonane. Z poziomu ula można oznaczyć jako wykonane wyłącznie zadanie, które zostało dodane z poziomu tego konkretnego ula.
 
 #### 5.7 Edycja zadania
@@ -758,7 +758,7 @@ Figure: Edycja zadania {#fig-task-edit}
 
 ![figure](pictures/task_edit.png){width=200}
 
-!!! Uwaga
+!!! note
     Zadania o zakresie *Pasieka* lub *Wybrane ule* można edytować i usuwać **wyłącznie z poziomu pasieki**. Z poziomu ula zobaczysz takie zadanie tylko jako podgląd — z wyszarzona ikoną ołówka.
 
 #### 5.8 Usuwanie zadania
@@ -770,7 +770,7 @@ Figure: Usuwanie zadania {#fig-task-delete}
 
 ![figure](pictures/task_delete.png){width=200}
 
-!!! Uwaga
+!!! note
     Zadania o zakresie *Pasieka* lub *Wybrane ule* można edytować i usuwać **wyłącznie z poziomu pasieki**. Usunięcie takiego zadania z poziomu pasieki spowoduje automatyczne usunięcie powiązanych z nim zadań z widoku wszystkich uli.
 
 #### 5.9 Lista zadań i filtrowanie
@@ -999,7 +999,7 @@ Każda zarejestrowana próbka ma etykietę statusu opisującą, na jakim etapie 
 - **Oczekuje** — próbka została zarejestrowana w aplikacji, ale nie została jeszcze wysłana ani odebrana przez laboratorium.
 - **Wysłana** — próbka została wysłana do laboratorium.
 - **Odebrana** — laboratorium potwierdziło odbiór próbki.
-- **Przeanalizowana** — badanie próbek w labolatorium zostało zakończone.
+- **Przeanalizowana** — badanie próbek w laboratorium zostało zakończone.
 - **Anulowana** — próbka została anulowana.
 
 #### 7.3 Usuwanie próbki
@@ -1113,20 +1113,20 @@ Ikona szerszenia azjatyckiego, znajdująca się na kafelku pasieki obok wskaźni
 
 #### 10.2 Status obserwacji i jej aktualność
 
-Ikona szerszenia azjatyckiego wyśiwetlana na kafelku pasieki zmienia się w zależności od aktualnego statusu zgłoszenia:
+Ikona szerszenia azjatyckiego wyświetlana na kafelku pasieki zmienia się w zależności od aktualnego statusu zgłoszenia:
 
 - **Brak obserwacji** — nigdy nie dodano zgłoszenia. Ikona z wyszarzoną głową szerszenia azjatyckiego, bez daty i dodatkowej plakietki.
 - **Szerszeń azjatycki - Aktywna obserwacja** — potwierdzono obecność szerszeni azjatyckich i zgłoszenie jest wciąż aktualne (do 4 dni od dodania zgłoszenia). Ikona z brązową głową szerszenia azjatyckiego wraz z czerwoną plakietką „!”.
 - **Szerszeń azjatycki - Ostatnio widziano** — potwierdzono obecność szerszeni azjatyckich, ale minęły już 4 dni od dodania zgłoszenia — sprawdź ponownie i zgłoś aktualny stan. Ikona z wyszarzoną głową szerszenia azjatyckiego i plakietką „!” na ciemnym tle. 
 - **Sprawdzono, czysto; aktualna obserwacja** — aktualne zgłoszenie (do 4 dni od dodania zgłoszenia) potwierdzające brak szerszeni azjatyckich w pasiece. Ikona z brązową głową szerszenia azjatyckiego wraz z zieloną plakietką z symbolem zatwierdzenia nieobecności.
-- **Sprawdzono, czysto; wygasła obserwacja** — potwierdzono brak szerszeni azjatyckich w pasiece, ale  ale minęły już 4 dni od dodania zgłoszenia. Ikona z wyszarzoną głową szerszenia azjatyckiego wraz z plakietką z symbolem zatwierdzenia nieobecności na ciemnym tle. 
+- **Sprawdzono, czysto; wygasła obserwacja** — potwierdzono brak szerszeni azjatyckich w pasiece, ale minęły już 4 dni od dodania zgłoszenia. Ikona z wyszarzoną głową szerszenia azjatyckiego wraz z plakietką z symbolem zatwierdzenia nieobecności na ciemnym tle. 
 
 #### 10.3 Cofanie zgłoszenia
 
 Jeśli zgłoszenie powstało przez pomyłkę (przypadkowe kliknięcie), kliknij ponownie w ikonę szerszenia azjatyckiego widoczną na kafelku pasieki, a następnie kliknij *Cofnij zgłoszenie*. Potwierdź wybór czerwonym przyciskiem *Cofnij zgłoszenie* wyświetlanym na komunikacie, który się wtedy pojawi. Spowoduje to całkowite usunięcie zgłoszenia z historii.
 
 !!! note
-    Opcji *Cofnij zgłoszenie* używaj tylko w omyłkowego zgłoszenia. Jeśli szerszenie po prostu zniknęły, nie cofaj zgłoszenia obserwacji — zamiast tego dodaj nowe zgłoszenie i odpowiedz *Nie*, aby zachować historię obserwacji.
+    Opcji *Cofnij zgłoszenie* używaj tylko dla omyłkowego zgłoszenia. Jeśli szerszenie po prostu zniknęły, nie cofaj zgłoszenia obserwacji — zamiast tego dodaj nowe zgłoszenie i odpowiedz *Nie*, aby zachować historię obserwacji.
 
 #### 10.4 Przypomnienia o obserwacji
 

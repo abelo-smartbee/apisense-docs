@@ -25,7 +25,7 @@ caption:
 - **Data history** — archive of notes, inspections and notifications.
 - **Apiary management** — adding and editing apiaries, hives, inspections, notes, as well as adding examinations and registering samples.
 - **FrameSense** — AI-based analysis of a bee comb frame photo, estimating brood, food stores and empty comb coverage.
-- **Asian hornet observation** — report Asian hornet sightings per apiary or hive and keep track of the observation history, with reminders to re-check after a few days.
+- **Asian hornet observation** — report the presence of Asian hornets in the apiary, with a reminder to re-check after a few days.
 
 ______________________________________________________________________
 
@@ -459,7 +459,8 @@ Figure: Hive details view - Add Inspection button {#fig-add-overview-button}
 To add photos, click the *Add photo* button and then choose the *Take photo* or *Add photo from gallery* option. If you are not sure how a given photo should look, click the *See example* link to see examples of correctly taken bee frame photos (front and back).
 
 !!! note
-    RAW/DNG photos aren't supported for inspection photos — add a JPG or PNG photo instead. If a photo can't be uploaded right away (e.g. a weak connection), the app keeps retrying in the background; the inspection view shows *Uploading photos…* until it succeeds, or *Photos not uploaded* if it ultimately fails.
+    RAW/DNG photos aren't supported in the web version for inspections — add a JPG or PNG photo instead. In the mobile version, however, you can add a RAW/DNG photo to an inspection.
+    If the photos can't be uploaded right away (e.g. due to a weak internet connection), the app will automatically retry the upload in the background. Until the process finishes, the message *"Uploading photos…"* is shown. If after further attempts the upload still fails, the message *"Photos not uploaded"* appears.
 
 Figure: Adding an inspection - adding photos {#fig-add-inspection-photos}
 
@@ -557,7 +558,7 @@ Figure: Hive details view - Add Note button {#fig-add-overview-button-2}
     - **Title** - enter the note title (optional field).
     - **Note** - enter the note content (text), or click the microphone icon on the right side of this field to record a voice note.
 
-!!! tip:
+!!! tip
     **Voice note transcription:** After you record a voice note, the app automatically prepares a transcription, so the note is available both as audio and as text. While the transcription is being generated, the note details screen shows *Transcription in progress...*. Once the transcription is ready, the generated text appears below the recording in the details.
 
 Figure: Adding a text or voice note (1) {#fig-add-note-add-text}
@@ -931,9 +932,9 @@ Figure: Disease questionnaire - saving the form {#fig-confirm-problem-save-2}
 
 A submitted disease questionnaire answer can be corrected for a limited time after saving:
 
-- On the *Answers* tab of the disease details view, open the overflow menu (three dots) next to the chosen submission and choose *Edit* to correct it, or *Delete* to remove it.
-- If you choose *Delete*, confirm the *Delete answers?* prompt — the submission is removed permanently.
-- **Note:** The correction window is time-limited. Once it has expired, editing is no longer possible — the app shows the message *The correction window for this answer has expired; submit a new answer instead.* You can still submit a fresh set of answers using *Answer a few questions*.
+- On the *Answers* tab in the disease details view, find the chosen answer. Tap the pencil icon to edit the submitted answers, or the bin icon to delete the completed form. The same options are also available from the form view — open the overflow menu (three dots) and choose *Edit* or *Delete*.
+- After choosing *Delete*, confirm the *Delete answers?* prompt. The form together with its answers is removed permanently.
+- **Note:** Answers can be edited for 30 days after submission. After that time, editing or deleting the form is no longer possible, and the app shows the message: *The correction window for this answer has expired; submit a new answer instead.* If the disease episode is still active, you can submit a new set of answers using *Answer a few questions*.
 
 <a id="rejestrowanie-probki"></a>
 
@@ -1002,8 +1003,8 @@ Each registered sample shows a status label describing where it is in the examin
 - **Pending** — the sample was registered in the app but has not yet been sent or received by the lab.
 - **Sent** — the sample was shipped to the lab.
 - **Received** — the lab confirmed receipt of the sample.
-- **Analysed** — the examination is complete.
-- **Cancelled** — the sample registration was cancelled.
+- **Analysed** — the sample examination in the laboratory has been completed.
+- **Cancelled** — the sample was cancelled.
 
 #### 7.3 Deleting a sample
 
@@ -1083,11 +1084,11 @@ FrameSense uses artificial intelligence to automatically estimate the comb conte
 
 - Click the chosen apiary tile, then the chosen hive tile. As a result, the *Hive details* view will be displayed.
 - Choose the *Add...* option from the bottom menu, then *FrameSense*; the *FrameSense* view will be displayed.
-- Tap the *Add frame photo for analysis* button in the center of the *FrameSense* view. Choose *Camera* and take a photo of the bee frame, or upload **one photo** of the frame from *Gallery*. The camera view shows a full-frame preview with an outline guide — the hint *Position the frame inside the outline* reminds you to fit the whole frame within it, so the photo can be cropped to the guide automatically. For the most accurate AI analysis result, position the frame so that it fully fills the outline and is clearly visible against a uniform background.
+- Tap the *Add frame photo for analysis* button in the center of the *FrameSense* view. Choose *Camera* and take a photo of the bee frame, or upload **one photo** of the frame from *Gallery*. While taking a photo, the camera view shows a guide with the message *Position the frame inside the outline*. Place the entire bee frame within the outlined area. After you take the photo, the app automatically crops it to the area defined by the guide, so only the portion covering the frame is used for analysis. For the most accurate AI analysis result, position the frame so that it fills as much of the outline as possible without going beyond its borders. Also make sure it is clearly visible and against a uniform background.
 - After choosing the photo, tap the yellow *Send for analysis* button at the bottom of the screen. The photo is uploaded for AI processing.
 
 !!! note
-    Bee frame analysis requires an internet connection to upload the photo. Processing a photo sent for analysis typically takes a few minutes. RAW/DNG photos aren't supported — add a JPG or PNG photo instead.
+    Bee frame analysis requires an internet connection to upload the photo. Processing a photo sent for analysis typically takes a few minutes. We recommend attaching photos in JPG or PNG format. RAW/DNG files are supported only in the mobile version.
 
 #### 9.2 FrameSense results
 
@@ -1096,7 +1097,7 @@ Results of submitted bee frame analyses are available in the *Analysis* tab (*Hi
 Possible statuses:
 
 - **Analysing frame** — the photo has been sent for analysis and is being processed by AI (about 5 minutes).
-- **Analysis completed** — the frame analysis finished successfully. You can now see the color-annotated photo with the percentage share of each comb category: **Brood** (eggs, larvae, worker and drone brood), **Stores** (nectar, pollen, capped honey) and **Empty/obscured** area, as well as the number of queen cells/cups found and a bee count. The analysis result consists of several views of the same submitted photo. Each view marks different analyzed elements with corresponding descriptions. Swipe through the photos to see successive analysis results. Tapping a photo opens it in fullscreen mode. Below the comb breakdown, a **Recommendations** section may list suggested actions based on the analysis.
+- **Analysis completed** — the frame analysis finished successfully. You can now see the color-annotated photo with the percentage share of each comb category: **Brood** (eggs, larvae, worker and drone brood), **Stores** (nectar, pollen, capped honey) and **Empty/obscured** area, as well as the number of queen cells/cups found and a bee count. The analysis result consists of several views of the same submitted photo. Each view marks different analyzed elements with corresponding descriptions. Swipe through the photos to see successive analysis results. Tapping a photo opens it in fullscreen mode. Below the analysis results is a *Recommendations* section with practical tips and suggested actions based on the AI analysis. They help identify potential problems and make informed decisions about next steps.
 - **Failed** — the analysis could not be completed. Try adding a bee frame photo again and sending it for analysis.
 
 When a bee frame analysis is completed, a push notification is sent that opens its result directly when tapped.
@@ -1105,27 +1106,28 @@ When a bee frame analysis is completed, a push notification is sent that opens i
 
 ### 10. Asian hornet observation
 
-The Asian hornet icon on the apiary tile (next to the Hub battery/LTE icons) lets you report and track Asian hornet sightings, so the observation history stays reliable over time. **Note:** only the apiary owner can file a report — on a shared apiary the icon is read-only for other collaborators.
+The Asian hornet icon on the apiary tile, next to the colony health status indicator, lets you report and review Asian hornet observations. It helps you monitor their activity in your apiaries and respond more quickly to a potential threat to bee colonies. **Note:** Only the apiary owner can report observations. On a shared apiary (coming soon in the app), other users have view-only access to reports.
 
 #### 10.1 Reporting an observation
 
-- Tap the Asian hornet icon on the apiary tile; the *Asian hornet* sheet opens with the question *Do you see an Asian hornet now?*.
-- Choose *Yes* or *No*. If *Yes*, choose where you see it — a specific hive or hives, or *Whole apiary*. (If the hive list fails to load, you can still report for the whole apiary.)
-- Tap *Confirm report* to save. A confirmation message *Report saved* is shown.
+- Tap the Asian hornet icon on the apiary tile; the *Asian hornet* panel opens.
+- In the *Asian hornet* panel, tap the yellow *Report observation* button, then answer the question *Do you see an Asian hornet now?*.
+- Choose *Yes* if you observed an Asian hornet in your apiary, or *No* if the Asian hornet has not appeared in your apiary.
+- After the answer is saved successfully, the message *Report saved* is shown.
 
 #### 10.2 Observation status and freshness
 
-Once a report exists, a short date label (e.g. *12 Jul*) appears above the icon, and a colored badge shows the current state:
+The Asian hornet icon shown on the apiary tile changes depending on the current report status:
 
-- **No observation** — no report has ever been filed; the icon shows no badge.
-- **Active sighting** — a red "!" badge; hornets were reported present, and the report is still fresh (within 4 days of filing).
-- **Active sighting, expired** — a greyed "!" badge; the sighting was reported but the 4-day freshness window has passed — check again and re-report.
-- **Checked, clear** — a green check badge; a fresh report confirming no hornets were seen.
-- **Checked, clear, expired** — a greyed check badge; the "clear" check has passed its 4-day freshness window.
+- **No observation** — no report has ever been filed. Icon with a greyed Asian hornet head, without a date or additional badge.
+- **Asian hornet - Active sighting** — Asian hornets were confirmed present and the report is still fresh (within 4 days of filing). Icon with a brown Asian hornet head and a red "!" badge.
+- **Asian hornet - Last seen** — Asian hornets were confirmed present, but more than 4 days have passed since the report — check again and re-report the current state. Icon with a greyed Asian hornet head and a "!" badge on a dark background.
+- **Checked, clear; current observation** — a fresh report (within 4 days of filing) confirming no Asian hornets in the apiary. Icon with a brown Asian hornet head and a green badge with an absence confirmation symbol.
+- **Checked, clear; expired observation** — no Asian hornets were confirmed in the apiary, but more than 4 days have passed since the report. Icon with a greyed Asian hornet head and a badge with an absence confirmation symbol on a dark background.
 
 #### 10.3 Undoing a report
 
-If you filed a report by mistake (an accidental tap), open the report details and tap *Undo report*, then confirm *Undo report?*. This removes the report from the history entirely.
+If you filed a report by mistake (an accidental tap), tap the Asian hornet icon on the apiary tile again, then tap *Undo report*. Confirm with the red *Undo report* button shown on the prompt that appears. This removes the report from the history entirely.
 
 !!! note
     Only use *Undo report* for a mistaken report. If the hornets are simply gone, don't undo the sighting — instead file a new report and answer *No*, so the observation history is preserved.
@@ -1291,8 +1293,8 @@ Figure: Details tab - sample view of the Notes tab {#fig-beehive-details-notes-l
 
 - **Note list** – presents all notes saved for the chosen hive, containing the title/date and a shortened content fragment (if the note contains text).
 - **Additional materials** – note items may also display photo, video recording or audio recording icons if such materials were attached to them.
-- **AI-generated labels** – a text note may show one or more small gold labels with a sparkle icon, generated automatically by AI to summarize its topic (e.g. *Queen*, *Feeding*).
-- **Note details** – after clicking - expanding - the chosen note, the full note content is displayed together with the attached materials.
+- **AI-generated labels** – both text and voice notes may show one or more small gold labels with a sparkle icon, generated automatically by AI to summarize their topic (e.g. *Queenless*, *Feeding*). This lets you quickly see what a note is about already from the notes list, without opening it and reading the full content.
+- **Note details** – after clicking - expanding - the chosen note, the full note content is displayed together with the attached materials, as well as the AI labels summarizing the note content.
 
 #### 4.4 Examinations
 
@@ -1320,14 +1322,14 @@ Figure: Details tab - sample view of the Samples tab {#fig-beehive-details-sampl
 - **Sample list** – presents all samples saved for the chosen hive, sorted in descending order by sample collection date.
 - **Sample details** – after clicking a single sample, its details are displayed, including: sample collection date, examination type and the examination code generated by the system.
 
-#### 4.6 Analysis
+#### 4.6 FrameSense
 
-The *Analysis* tab presents the history of AI analyses of bee frames performed for the chosen hive, ordered from newest.
+The *FrameSense* tab presents the history of AI analyses of bee frames performed for the chosen hive, ordered from newest.
 
 **Most important information:**
 
 - **Analysis list** – shows every frame analysis with its status: *Analysing frame*, *Analysis completed* or *Failed*.
-- **Analysis details** – after opening a completed analysis, the submitted photo with marked elements and a comb contents summary are displayed, including brood, food stores, empty and obscured area, as well as a bee count and queen cells. See [9. FrameSense](#analiza-ramki) for details.
+- **Analysis details** – after opening a completed analysis, the submitted photo with marked elements and a comb contents summary are displayed, including brood, food stores, empty and obscured area, as well as a bee count and queen cells. Below there is also a recommendations section that helps you address potential problems detected during the frame analysis and take informed corrective actions. See [9. FrameSense](#analiza-ramki) for details.
 
 <a id="omowienie-ustawien-pasieki"></a>
 
@@ -1518,7 +1520,6 @@ Colony health icons inform about the condition of bee colonies in individual hiv
 | ![](pictures/varroa_low.png) | e.g. *Details*, *Map* | Disease icon — Varroa. Disease detected (Varroa) at low infestation level. |
 | ![](pictures/nosema_high.png) | e.g. *Details*, *Map* | Disease icon — Nosema. Disease detected (Nosema) at high infestation level. Check recommendations in the *Problems* tab. |
 
-The Asian hornet icon shown next to these icons on the apiary tile is unrelated to colony health status — see [10. Asian hornet observation](#obserwacja-szerszenia) for its states and meaning.
 
 <a id="ikony-informacyjne"></a>
 
@@ -1812,7 +1813,10 @@ New notifications appear automatically on the appropriate list depending on thei
 
 To display the details of a notification, click its header; this will expand the full message content.
 
-To mark every notification in the *Technical* tab as read in one step, tap *Mark all as read*.
+!!! tip
+    To mark every notification in the *Technical* tab as read in one click, use the *Mark all as read* button. The scope of the button depends on where it is used:
+    - from a single hive — only technical notifications for that hive are marked as read,
+    - from the apiary level — all technical notifications for that apiary and the hives in it are marked as read.
 
 <a id="twoj-asystent-ai"></a>
 
@@ -2039,11 +2043,11 @@ Below you will find a summary of the most important activities in the Apisense P
 
 > [Adding an examination](#81-adding-an-examination)
 
-- **Adding a frame analysis:** Click the chosen apiary tile. Click the chosen hive tile. From the bottom menu choose *Add... -> FrameSense*. Position the frame inside the camera outline, take or upload one photo of the frame and click *Send for analysis*. Track the result (*Analysing frame* / *Analysis completed* / *Failed*) in the *Analysis* tab.
+- **Adding a frame analysis:** Click the chosen apiary tile. Click the chosen hive tile. From the bottom menu choose *Add... -> FrameSense*. Position the frame inside the camera outline, take or upload one photo of the bee frame and click *Send for analysis*. Track the result (*Analysing frame* / *Analysis completed* / *Failed*) in the *FrameSense* tab. Open the analysis details and review the summary and recommendations.
 
 > [FrameSense](#analiza-ramki)
 
-- **Reporting an Asian hornet observation:** Tap the Asian hornet icon on the apiary tile. Answer *Do you see an Asian hornet now?* (Yes/No) and, if yes, choose the hive(s) or *Whole apiary*. Tap *Confirm report* to save. The icon then shows a date label and a colored badge (active sighting / checked, clear / expired) until the next report.
+- **Reporting an Asian hornet observation:** Tap the Asian hornet icon on the apiary tile, then the *Report observation* button, and answer *Do you see an Asian hornet now?* (Yes/No). The Asian hornet icon is updated accordingly (active sighting / checked, clear / expired), and the date of the last report appears above it.
 
 > [Asian hornet observation](#obserwacja-szerszenia)
 
