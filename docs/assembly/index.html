@@ -1514,6 +1514,11 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
     }
   });
 
+  /* ── PDF: print the current view; the print stylesheet lays out
+        one step per landscape page, in whichever language is active. ── */
+  var printBtn = document.getElementById('print');
+  printBtn.addEventListener('click', function () { window.print(); });
+
   /* ── Language ── */
   var root = document.documentElement;
   document.querySelectorAll('[data-set-lang]').forEach(function (b) {
@@ -1544,11 +1549,6 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
     }[cur] || 'Apisense BOX';
   }
   syncLang();
-
-  /* ── PDF: print the current view; the print stylesheet lays out
-        one step per landscape page, in whichever language is active. ── */
-  var printBtn = document.getElementById('print');
-  printBtn.addEventListener('click', function () { window.print(); });
 
   /* ── Theme ── */
   document.getElementById('theme').addEventListener('click', function () {
