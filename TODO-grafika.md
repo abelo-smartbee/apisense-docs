@@ -26,7 +26,7 @@ Obecny rysunek (strona 4) pokazuje Hub przykręcony do daszka ula. Zgodnie z dok
 - **obie anteny pionowo do góry** — to zostaje bez zmian, obecny rysunek jest tu poprawny
 - Hub **nie musi** być zamocowany do ula
 
-Do zachowania: informacja o USB-C i o tym, że ładowarka nie jest dołączona.
+**Uwaga — usunąć USB-C z tego kroku.** Hub uruchamia się przez **wystawienie na słońce**; zasila go panel fotowoltaiczny. Obecna scena z wtyczką i podpisem „Charger not included / Ładowarka nie jest dołączona” wypada.
 
 ### A3. Apisense Scale — scena montażu
 
@@ -84,9 +84,11 @@ Referencje: `docs/manual/pictures/hub_qr.jpg`, `scale_qr.jpg`, `sensor_qr.jpg`.
 
 ## B. Treść i teksty
 
-### B1. Baterie — brakuje w PDF
+### B1. Uruchomienie urządzeń — brakuje w PDF
 
-Dodać krok: **Scale i VitalSensor zasilają 2 baterie AA**, po włożeniu sprawdzić diodę potwierdzającą uruchomienie.
+Dodać krok, ale **bez wkładania baterii** — Scale i VitalSensor przychodzą z **zamontowanymi bateriami**. Rysunek ma pokazywać wyłącznie **kontrolę diody** potwierdzającej uruchomienie, nie otwieranie komory baterii.
+
+Hub: **wystawienie na słońce**, bez przewodu USB-C.
 
 ### B2. Kolejność kroków
 
