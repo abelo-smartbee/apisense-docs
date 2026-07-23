@@ -9,3 +9,6 @@ docs/manual/app-manual.pl.docx
 .idea
 
 **_pycache__
+# lokalne artefakty: jednoplikowa wersja instrukcji do wysyłki + jej generator
+docs/assembly/*_standalone.html
+tools/
