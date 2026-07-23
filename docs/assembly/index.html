@@ -452,6 +452,17 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
 }
 .plate-row .plate img { max-height: min(46vh, 430px); }
 
+/* Kit slide: device cards beside the packing drawing. */
+.kit {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  gap: clamp(14px, 1.8vw, 28px);
+  align-items: start;
+}
+.kit .items { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.kit .plate img { max-height: min(44vh, 400px); }
+@media (max-width: 1080px) { .kit { grid-template-columns: 1fr; } }
+
 /* Item grid (what's in the box) */
 .items {
   display: grid;
@@ -738,31 +749,34 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
         <p class="tag"><span lang="pl">Zestaw</span><span lang="en">The kit</span></p>
         <h2><span lang="pl">Co znajdziesz w pudełku</span><span lang="en">What's in the box</span></h2>
         <p class="lede">
-          <span lang="pl">Jeden Hub obsługuje całą pasiekę. Scale trafia pod pierwszy ul, a każdy ul dostaje własny VitalSensor i ColonyLink.</span>
-          <span lang="en">A single Hub serves the whole apiary. The Scale goes under the first hive, and every hive gets its own VitalSensor and ColonyLink.</span>
+          <span lang="pl">Jeden Hub obsługuje całą pasiekę. Scale trafia pod pierwszy ul, a każdy z trzech uli dostaje własny VitalSensor i ColonyLink.</span>
+          <span lang="en">A single Hub serves the whole apiary. The Scale goes under the first hive, and each of the three hives gets its own VitalSensor and ColonyLink.</span>
         </p>
-        <div class="items">
-          <div class="item" style="--i:0">
-            <img src="figs/dev-hub.webp" width="620" height="953" loading="lazy" alt="Apisense Hub — panel fotowoltaiczny z dwiema antenami na uchwycie aparatowym.">
-            <p class="item__label"><span class="item__qty">1 ×</span> Hub</p>
+        <div class="kit">
+          <div class="items">
+            <div class="item" style="--i:0">
+              <img src="figs/dev-hub.webp" width="620" height="953" loading="lazy" alt="Apisense Hub — panel fotowoltaiczny z dwiema antenami na uchwycie aparatowym.">
+              <p class="item__label"><span class="item__qty">1 ×</span> Hub</p>
+            </div>
+            <div class="item" style="--i:1">
+              <img src="figs/dev-scale.webp" width="900" height="285" loading="lazy" alt="Apisense Scale — belka pomiarowa.">
+              <p class="item__label"><span class="item__qty">1 ×</span> Scale</p>
+            </div>
+            <div class="item" style="--i:2">
+              <img src="figs/dev-sensor.webp" width="900" height="521" loading="lazy" alt="Apisense VitalSensor — czujnik montowany na ramce.">
+              <p class="item__label"><span class="item__qty">3 ×</span> VitalSensor</p>
+            </div>
+            <div class="item" style="--i:3">
+              <img src="figs/photo-colonylink.webp" width="1400" height="1050" loading="lazy" alt="Apisense ColonyLink — identyfikator ula z kodem QR.">
+              <p class="item__label"><span class="item__qty">3 ×</span> ColonyLink</p>
+            </div>
           </div>
-          <div class="item" style="--i:1">
-            <img src="figs/dev-scale.webp" width="900" height="285" loading="lazy" alt="Apisense Scale — belka pomiarowa.">
-            <p class="item__label"><span class="item__qty">1 ×</span> Scale</p>
-          </div>
-          <div class="item" style="--i:2">
-            <img src="figs/dev-sensor.webp" width="900" height="521" loading="lazy" alt="Apisense VitalSensor — czujnik montowany na ramce.">
-            <p class="item__label"><span class="item__qty">1 ×</span> VitalSensor</p>
-          </div>
-          <div class="item" style="--i:3">
-            <img src="figs/montaz-colonylink-animated.svg" width="205" height="165" loading="lazy" alt="Apisense ColonyLink — identyfikator ula z kodem QR i tagiem NFC na froncie ula.">
-            <p class="item__label"><span class="item__qty">1 ×</span> ColonyLink</p>
-          </div>
+          <figure class="plate">
+            <img src="figs/pdf-parts-exploded.webp" width="1700" height="1310" loading="lazy"
+                 alt="Rysunek rozłożenia elementów Apisense BOX w kartonie.">
+            <figcaption><span>Apisense BOX</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span></figcaption>
+          </figure>
         </div>
-        <p class="note">
-          <span lang="pl"><b>Plus elementy montażowe:</b> uchwyt aparatowy do Huba, drewniana kantówka do Scale i uchwyty montażowe do ramki dla VitalSensora. Montaż nie wymaga wymiany uli ani ingerencji w ich budowę.</span>
-          <span lang="en"><b>Plus the mounting parts:</b> a camera mount for the Hub, a wooden spacer bar for the Scale and frame brackets for the VitalSensor. Mounting requires no hive replacement or modification.</span>
-        </p>
       </div>
     </div>
   </section>
@@ -855,8 +869,8 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
         <p class="tag"><span lang="pl">Krok 03 · 03.3</span><span lang="en">Step 03 · 03.3</span></p>
         <h2><span lang="pl">Zeskanuj kod QR&nbsp;Huba</span><span lang="en">Scan the Hub QR code</span></h2>
         <p class="lede">
-          <span lang="pl">Naklejka z kodem QR znajduje się na obudowie Huba, od strony panelu. Ustaw ją w ramce skanera — aplikacja odczyta kod sama i wypełni pola <em>Hub</em> oraz <em>Verification Code</em>.</span>
-          <span lang="en">The QR sticker sits on the Hub housing, on the panel side. Line it up inside the scanner frame — the app reads it and fills in the <em>Hub</em> and <em>Verification Code</em> fields for you.</span>
+          <span lang="pl">Naklejka z kodem QR znajduje się na obudowie Huba. Ustaw ją w ramce skanera — aplikacja odczyta kod sama i wypełni pola <em>Hub</em> oraz <em>Verification Code</em>.</span>
+          <span lang="en">The QR sticker sits on the Hub housing. Line it up inside the scanner frame — the app reads it and fills in the <em>Hub</em> and <em>Verification Code</em> fields for you.</span>
         </p>
         <p class="note">
           <span lang="pl"><b>Wskazówka:</b> jeśli kod się nie skanuje, przetrzyj go i zapewnij równomierne światło — bez odblasku.</span>
@@ -864,11 +878,18 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
         </p>
       </div>
       <div class="col col--fig">
-        <figure class="plate">
-          <img src="figs/qr-hub.webp" width="1400" height="1050" loading="lazy"
-               alt="Naklejka z kodem QR na obudowie Apisense Hub, trzymanego w dłoni w pasiece.">
-          <figcaption><span>03.3</span><span lang="pl">Hub · naklejka QR</span><span lang="en">Hub · QR sticker</span></figcaption>
-        </figure>
+        <div class="plate-row">
+          <figure class="plate">
+            <img src="figs/pdf-hub-qr.webp" width="1700" height="1091" loading="lazy"
+                 alt="Rysunek: umiejscowienie kodu QR na obudowie Huba i ekran skanera w aplikacji.">
+            <figcaption><span>03.3</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span></figcaption>
+          </figure>
+          <figure class="plate">
+            <img src="figs/qr-hub.webp" width="1400" height="1050" loading="lazy"
+                 alt="Naklejka z kodem QR na obudowie Apisense Hub, trzymanego w dłoni w pasiece.">
+            <figcaption><span lang="pl">Hub</span><span lang="en">Hub</span><span lang="pl">Zdjęcie</span><span lang="en">Photo</span></figcaption>
+          </figure>
+        </div>
       </div>
     </div>
   </section>
@@ -906,33 +927,99 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
     <div class="wrap">
       <div class="col col--text">
         <p class="tag"><span lang="pl">Krok 04 · 04.1 – 04.3</span><span lang="en">Step 04 · 04.1 – 04.3</span></p>
-        <h2><span lang="pl">Dodaj ul: Scale i VitalSensor</span><span lang="en">Add hive: Scale &amp; VitalSensor</span></h2>
+        <h2><span lang="pl">Dodaj ul: ColonyLink, VitalSensor i&nbsp;Scale</span><span lang="en">Add hive: ColonyLink, VitalSensor &amp;&nbsp;Scale</span></h2>
         <p class="lede">
-          <span lang="pl">Pierwszy ul dostaje komplet: Scale i VitalSensor. Oba urządzenia dodajesz w jednym formularzu.</span>
-          <span lang="en">The first hive gets the full set: a Scale and a VitalSensor. You add both devices in a single form.</span>
+          <span lang="pl">Pierwszy ul dostaje komplet. Wszystkie trzy urządzenia przypisujesz w jednym formularzu, skanując kolejno ich kody QR.</span>
+          <span lang="en">The first hive gets the full set. You link all three devices in a single form, scanning their QR codes one after another.</span>
         </p>
         <ul class="micro">
           <li><b>04.1</b><span lang="pl">Na ekranie głównym otwórz swoją pasiekę.</span><span lang="en">Open your apiary from the home screen.</span></li>
           <li><b>04.2</b><span lang="pl">Naciśnij <em>Add beehive</em>.</span><span lang="en">Tap <em>Add beehive</em>.</span></li>
-          <li><b>04.3</b><span lang="pl">Dotknij ikony skanera przy polu <em>Scale</em>.</span><span lang="en">Tap the scanner icon next to the <em>Scale</em> field.</span></li>
+          <li><b>04.3</b><span lang="pl">Zacznij od <em>ColonyLink</em> — dotknij ikony skanera przy tym polu.</span><span lang="en">Start with <em>ColonyLink</em> — tap the scanner icon next to that field.</span></li>
         </ul>
       </div>
       <div class="col col--fig">
         <figure class="plate">
           <img src="figs/step04-a.webp" width="1700" height="971" loading="lazy"
-               alt="Ekrany 04.1–04.3: ekran główny, przycisk Add beehive, formularz Equipment z polami Scale i VitalSensor.">
+               alt="Ekrany 04.1–04.3: ekran główny, przycisk Add beehive i formularz z urządzeniami ula.">
           <figcaption><span>04.1 — 04.3</span><span lang="pl">Aplikacja</span><span lang="en">In the app</span></figcaption>
         </figure>
       </div>
     </div>
   </section>
 
-  <!-- ══ 04 · scale QR ══════════════════════════════════════ -->
+  <!-- ══ 04 · ColonyLink QR ═════════════════════════════════ -->
+  <section class="slide" data-num="04" data-title-pl="Kod QR ColonyLink" data-title-en="ColonyLink QR code" data-chapter="04">
+    <div class="ghost" aria-hidden="true">04</div>
+    <div class="wrap wrap--wide">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 04 · ColonyLink</span><span lang="en">Step 04 · ColonyLink</span></p>
+        <h2><span lang="pl">Zeskanuj kod QR ColonyLink</span><span lang="en">Scan the ColonyLink QR code</span></h2>
+        <p class="lede">
+          <span lang="pl">ColonyLink skanujesz jako pierwszy — to on wiąże ul w aplikacji z konkretnym ulem w pasiece. Kod QR jest na jego froncie, obok numeru seryjnego.</span>
+          <span lang="en">Scan the ColonyLink first — it is what ties the hive in the app to a specific hive in the apiary. The QR code is on its front, next to the serial number.</span>
+        </p>
+        <p class="note">
+          <span lang="pl">Ten sam kod odczytasz później zbliżeniowo przez <b>NFC</b> — wystarczy przyłożyć telefon, także w rękawicach.</span>
+          <span lang="en">You can read the same code later by <b>NFC</b> — just tap your phone against it, gloves and all.</span>
+        </p>
+      </div>
+      <div class="col col--fig">
+        <div class="plate-row">
+          <figure class="plate">
+            <img src="figs/pdf-item-tag.webp" width="470" height="366" loading="lazy"
+                 alt="Rysunek identyfikatora ula z kodem QR i opaską.">
+            <figcaption><span>ColonyLink</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span></figcaption>
+          </figure>
+          <figure class="plate">
+            <img src="figs/photo-colonylink.webp" width="1400" height="1050" loading="lazy"
+                 alt="Apisense ColonyLink z kodem QR i numerem seryjnym, trzymany w dłoni obok VitalSensora.">
+            <figcaption><span lang="pl">ColonyLink</span><span lang="en">ColonyLink</span><span lang="pl">Zdjęcie</span><span lang="en">Photo</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 04 · VitalSensor QR ════════════════════════════════ -->
+  <section class="slide" data-num="04" data-title-pl="Kod QR VitalSensora" data-title-en="VitalSensor QR code" data-chapter="04">
+    <div class="ghost" aria-hidden="true">04</div>
+    <div class="wrap wrap--wide">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 04 · VitalSensor</span><span lang="en">Step 04 · VitalSensor</span></p>
+        <h2><span lang="pl">Zeskanuj kod QR VitalSensora</span><span lang="en">Scan the VitalSensor QR code</span></h2>
+        <p class="lede">
+          <span lang="pl">Naklejka z kodem QR jest na krótszym boku obudowy. Zeskanuj ją przed zamontowaniem czujnika na ramce — po włożeniu ramki do ula kod ma być widoczny od góry.</span>
+          <span lang="en">The QR sticker is on the short side of the housing. Scan it before you mount the sensor on the frame — once the frame is in the hive the code must stay visible from above.</span>
+        </p>
+        <p class="note">
+          <span lang="pl">Każdy z trzech czujników ma własny kod. Pilnuj, który trafia do którego ula.</span>
+          <span lang="en">Each of the three sensors has its own code. Keep track of which one goes into which hive.</span>
+        </p>
+      </div>
+      <div class="col col--fig">
+        <div class="plate-row">
+          <figure class="plate">
+            <img src="figs/pdf-vitalsensor-qr.webp" width="1700" height="1536" loading="lazy"
+                 alt="Rysunek: umiejscowienie kodu QR na obudowie VitalSensora i ekran skanera.">
+            <figcaption><span>VitalSensor</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span></figcaption>
+          </figure>
+          <figure class="plate">
+            <img src="figs/qr-sensor.webp" width="1400" height="1050" loading="lazy"
+                 alt="Naklejka z kodem QR na boku obudowy Apisense VitalSensor.">
+            <figcaption><span lang="pl">VitalSensor</span><span lang="en">VitalSensor</span><span lang="pl">Zdjęcie</span><span lang="en">Photo</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 04 · Scale QR ══════════════════════════════════════ -->
   <section class="slide" data-num="04" data-title-pl="Kod QR Scale" data-title-en="Scale QR code" data-chapter="04">
     <div class="ghost" aria-hidden="true">04</div>
     <div class="wrap wrap--wide">
       <div class="col col--text">
-        <p class="tag"><span lang="pl">Krok 04 · 04.4</span><span lang="en">Step 04 · 04.4</span></p>
+        <p class="tag"><span lang="pl">Krok 04 · Scale</span><span lang="en">Step 04 · Scale</span></p>
         <h2><span lang="pl">Zeskanuj kod QR Scale</span><span lang="en">Scan the Scale QR code</span></h2>
         <p class="lede">
           <span lang="pl">Naklejka z kodem QR jest na czole belki pomiarowej — tej z elektroniką i komorą baterii. Drewniana kantówka nie ma kodu.</span>
@@ -944,68 +1031,23 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
         </p>
       </div>
       <div class="col col--fig">
-        <figure class="plate">
-          <img src="figs/qr-scale.webp" width="1400" height="1050" loading="lazy"
-               alt="Naklejka z kodem QR na czole belki pomiarowej Apisense Scale.">
-          <figcaption><span>04.4</span><span lang="pl">Scale · naklejka QR</span><span lang="en">Scale · QR sticker</span></figcaption>
-        </figure>
+        <div class="plate-row">
+          <figure class="plate">
+            <img src="figs/pdf-scale-qr.webp" width="1700" height="1549" loading="lazy"
+                 alt="Rysunek: umiejscowienie kodu QR na czole belki pomiarowej i ekran skanera.">
+            <figcaption><span>Scale</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span></figcaption>
+          </figure>
+          <figure class="plate">
+            <img src="figs/qr-scale.webp" width="1400" height="1050" loading="lazy"
+                 alt="Naklejka z kodem QR na czole belki pomiarowej Apisense Scale.">
+            <figcaption><span lang="pl">Scale</span><span lang="en">Scale</span><span lang="pl">Zdjęcie</span><span lang="en">Photo</span></figcaption>
+          </figure>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ══ 04 · b ═════════════════════════════════════════════ -->
-  <section class="slide" data-num="04" data-title-pl="Scale dodana" data-title-en="Scale added" data-chapter="04">
-    <div class="ghost" aria-hidden="true">04</div>
-    <div class="wrap">
-      <div class="col col--text">
-        <p class="tag"><span lang="pl">Krok 04 · 04.5 – 04.6</span><span lang="en">Step 04 · 04.5 – 04.6</span></p>
-        <h2><span lang="pl">Scale wpisana do ula</span><span lang="en">Scale linked to the hive</span></h2>
-        <p class="lede">
-          <span lang="pl">Numer urządzenia i kod weryfikacyjny wpisują się same. Teraz przejdź do drugiej pozycji formularza.</span>
-          <span lang="en">The device ID and verification code fill in on their own. Now move on to the second field of the form.</span>
-        </p>
-        <ul class="micro">
-          <li><b>04.5</b><span lang="pl">Skaner odczytuje kod QR ze Scale.</span><span lang="en">The scanner reads the Scale QR code.</span></li>
-          <li><b>04.6</b><span lang="pl">Pola <em>Scale</em> i <em>Verification Code</em> są uzupełnione — dotknij skanera przy polu <em>VitalSensor</em>.</span><span lang="en">The <em>Scale</em> and <em>Verification Code</em> fields are filled — tap the scanner next to the <em>VitalSensor</em> field.</span></li>
-        </ul>
-      </div>
-      <div class="col col--fig">
-        <figure class="plate">
-          <img src="figs/step04-b.webp" width="1460" height="1239" loading="lazy"
-               alt="Ekrany 04.5 i 04.6: skanowanie kodu Scale i uzupełnione pola Scale oraz Verification Code.">
-          <figcaption><span>04.5 — 04.6</span><span lang="pl">Aplikacja</span><span lang="en">In the app</span></figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══ 04 · VS QR ═════════════════════════════════════════ -->
-  <section class="slide" data-num="04" data-title-pl="Kod QR VitalSensora" data-title-en="VitalSensor QR code" data-chapter="04">
-    <div class="ghost" aria-hidden="true">04</div>
-    <div class="wrap wrap--wide">
-      <div class="col col--text">
-        <p class="tag"><span lang="pl">Krok 04 · 04.7</span><span lang="en">Step 04 · 04.7</span></p>
-        <h2><span lang="pl">Zeskanuj kod QR VitalSensora</span><span lang="en">Scan the VitalSensor QR code</span></h2>
-        <p class="lede">
-          <span lang="pl">Naklejka z kodem QR jest na krótszym boku obudowy. Zeskanuj ją przed zamontowaniem czujnika na ramce — po włożeniu ramki do ula kod ma być widoczny od góry.</span>
-          <span lang="en">The QR sticker is on the short side of the housing. Scan it before you mount the sensor on the frame — once the frame is in the hive the code must stay visible from above.</span>
-        </p>
-        <ul class="micro">
-          <li><b>1 / 1</b><span lang="pl">Każdy VitalSensor ma własny, unikalny kod.</span><span lang="en">Every VitalSensor has its own unique code.</span></li>
-          <li><b>04.7</b><span lang="pl">Zeskanuj kod czujnika, który trafi do tego ula.</span><span lang="en">Scan the code of the sensor that will go into this hive.</span></li>
-        </ul>
-      </div>
-      <div class="col col--fig">
-        <figure class="plate">
-          <img src="figs/qr-sensor.webp" width="1400" height="1050" loading="lazy"
-               alt="Naklejka z kodem QR na boku obudowy Apisense VitalSensor.">
-          <figcaption><span>04.7</span><span lang="pl">VitalSensor · naklejka QR</span><span lang="en">VitalSensor · QR sticker</span></figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══ 04 · c ═════════════════════════════════════════════ -->
+  <!-- ══ 04 · saved ═════════════════════════════════════════ -->
   <section class="slide" data-num="04" data-title-pl="Ul zapisany" data-title-en="Hive saved" data-chapter="04">
     <div class="ghost" aria-hidden="true">04</div>
     <div class="wrap">
@@ -1013,11 +1055,11 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
         <p class="tag"><span lang="pl">Krok 04 · 04.8 – 04.10</span><span lang="en">Step 04 · 04.8 – 04.10</span></p>
         <h2><span lang="pl">Pierwszy ul zapisany</span><span lang="en">The first hive is saved</span></h2>
         <p class="lede">
-          <span lang="pl">Po zapisaniu formularza ul pojawia się w pasiece. Zeskanuj też kod QR z <b>ColonyLink</b>, aby powiązać z ulem jego fizyczny identyfikator.</span>
-          <span lang="en">Once you save the form the hive appears in the apiary. Scan the <b>ColonyLink</b> QR code as well, to link the hive with its physical identifier.</span>
+          <span lang="pl">Wszystkie kody weryfikacyjne wypełniają się same. Po zapisaniu formularza ul pojawia się w pasiece.</span>
+          <span lang="en">All verification codes fill in on their own. Once you save the form, the hive appears in the apiary.</span>
         </p>
         <ul class="micro">
-          <li><b>04.8</b><span lang="pl">Skaner odczytuje kod QR VitalSensora.</span><span lang="en">The scanner reads the VitalSensor QR code.</span></li>
+          <li><b>04.8</b><span lang="pl">Skaner odczytuje ostatni z kodów.</span><span lang="en">The scanner reads the last of the codes.</span></li>
           <li><b>04.9</b><span lang="pl">Formularz jest kompletny — naciśnij <em>Save</em>.</span><span lang="en">The form is complete — tap <em>Save</em>.</span></li>
           <li><b>04.10</b><span lang="pl">Ul widnieje na ekranie głównym. Odczyty pojawią się po pierwszej synchronizacji.</span><span lang="en">The hive shows on the home screen. Readings appear after the first sync.</span></li>
         </ul>
@@ -1025,7 +1067,7 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
       <div class="col col--fig">
         <figure class="plate">
           <img src="figs/step04-c.webp" width="1700" height="1028" loading="lazy"
-               alt="Ekrany 04.8–04.10: skanowanie kodu VitalSensora, zapis formularza i ekran główny z dodanym ulem.">
+               alt="Ekrany 04.8–04.10: skanowanie kodu, zapis formularza i ekran główny z dodanym ulem.">
           <figcaption><span>04.8 — 04.10</span><span lang="pl">Aplikacja</span><span lang="en">In the app</span></figcaption>
         </figure>
       </div>
@@ -1040,13 +1082,13 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
         <p class="tag"><span lang="pl">Krok 05 · 05.1 – 05.3</span><span lang="en">Step 05 · 05.1 – 05.3</span></p>
         <h2><span lang="pl">Dodaj kolejny ul</span><span lang="en">Add another hive</span></h2>
         <p class="lede">
-          <span lang="pl">Kolejne ule dodajesz z samym VitalSensorem — Scale zostaje pod pierwszym ulem. Pole <em>Scale</em> zostaw puste.</span>
-          <span lang="en">Further hives are added with a VitalSensor only — the Scale stays under the first hive. Leave the <em>Scale</em> field empty.</span>
+          <span lang="pl">Kolejne ule dodajesz z <b>ColonyLinkiem i VitalSensorem</b> — Scale zostaje pod pierwszym ulem. Pole <em>Scale</em> zostaw puste.</span>
+          <span lang="en">Further hives are added with a <b>ColonyLink and a VitalSensor</b> — the Scale stays under the first hive. Leave the <em>Scale</em> field empty.</span>
         </p>
         <ul class="micro">
           <li><b>05.1</b><span lang="pl">Otwórz pasiekę z ekranu głównego.</span><span lang="en">Open the apiary from the home screen.</span></li>
           <li><b>05.2</b><span lang="pl">Naciśnij <em>+</em> i wybierz <em>Beehive</em>.</span><span lang="en">Tap <em>+</em> and choose <em>Beehive</em>.</span></li>
-          <li><b>05.3</b><span lang="pl">Dotknij ikony skanera przy polu <em>VitalSensor</em>.</span><span lang="en">Tap the scanner icon next to the <em>VitalSensor</em> field.</span></li>
+          <li><b>05.3</b><span lang="pl">Zeskanuj kod QR z <em>ColonyLink</em>, a zaraz po nim z <em>VitalSensora</em>.</span><span lang="en">Scan the <em>ColonyLink</em> QR code, then the <em>VitalSensor</em> one.</span></li>
         </ul>
       </div>
       <div class="col col--fig">
@@ -1067,12 +1109,12 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
         <p class="tag"><span lang="pl">Krok 05 · 05.4 – 05.7</span><span lang="en">Step 05 · 05.4 – 05.7</span></p>
         <h2><span lang="pl">Kolejny ul w pasiece</span><span lang="en">Another hive in the apiary</span></h2>
         <p class="lede">
-          <span lang="pl">Formularz zapisuje się tak samo jak przy pierwszym ulu — bez pola <em>Scale</em>.</span>
-          <span lang="en">The form saves exactly like the first hive — just without the <em>Scale</em> field.</span>
+          <span lang="pl">Formularz zapisuje się tak samo jak przy pierwszym ulu — z ColonyLinkiem i VitalSensorem, bez Scale.</span>
+          <span lang="en">The form saves exactly like the first hive — with a ColonyLink and a VitalSensor, without the Scale.</span>
         </p>
         <ul class="micro">
-          <li><b>05.4 – 05.5</b><span lang="pl">Skaner odczytuje kod QR kolejnego czujnika.</span><span lang="en">The scanner reads the next sensor's QR code.</span></li>
-          <li><b>05.6</b><span lang="pl">Pola <em>VitalSensor</em> i <em>Verification Code</em> są gotowe — naciśnij <em>Save</em>.</span><span lang="en">The <em>VitalSensor</em> and <em>Verification Code</em> fields are ready — tap <em>Save</em>.</span></li>
+          <li><b>05.4 – 05.5</b><span lang="pl">Skaner odczytuje kody ColonyLinka i kolejnego czujnika.</span><span lang="en">The scanner reads the ColonyLink and the next sensor.</span></li>
+          <li><b>05.6</b><span lang="pl">Pola i kody weryfikacyjne są gotowe — naciśnij <em>Save</em>.</span><span lang="en">The fields and verification codes are ready — tap <em>Save</em>.</span></li>
           <li><b>05.7</b><span lang="pl">Kolejny ul widnieje w pasiece. Powtórz krok 05 dla każdego następnego ula.</span><span lang="en">The next hive shows in the apiary. Repeat step 05 for every further hive.</span></li>
         </ul>
       </div>
@@ -1139,14 +1181,14 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
       <div class="col col--fig">
         <div class="plate-row">
           <figure class="plate">
-            <img src="figs/montaz-hub-animated.svg" width="205" height="165" loading="lazy"
-                 alt="Animacja montażu Apisense Hub: skanowanie kodu QR i umieszczenie Huba 1–2 m nad ziemią.">
-            <figcaption><span lang="pl">Przebieg</span><span lang="en">Sequence</span></figcaption>
+            <img src="figs/pdf-hub-mount.webp" width="1700" height="1235" loading="lazy"
+                 alt="Rysunek montażu Apisense Hub i podłączenia zasilania.">
+            <figcaption><span>Hub</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span></figcaption>
           </figure>
           <figure class="plate">
             <img src="figs/photo-hub.webp" width="1400" height="1050" loading="lazy"
                  alt="Prawidłowo zamontowany Apisense Hub: panel nachylony ku słońcu, obie anteny pionowo w górę.">
-            <figcaption><span lang="pl">Prawidłowy montaż</span><span lang="en">Correct mounting</span></figcaption>
+            <figcaption><span lang="pl">Prawidłowy montaż</span><span lang="en">Correct mounting</span><span lang="pl">Zdjęcie</span><span lang="en">Photo</span></figcaption>
           </figure>
         </div>
       </div>
@@ -1174,14 +1216,14 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
       <div class="col col--fig">
         <div class="plate-row">
           <figure class="plate">
-            <img src="figs/montaz-wagi-animated.svg" width="205" height="165" loading="lazy"
-                 alt="Animacja montażu Apisense Scale pod ulem.">
-            <figcaption><span lang="pl">Przebieg</span><span lang="en">Sequence</span></figcaption>
+            <img src="figs/pdf-mount-scale.webp" width="1700" height="622" loading="lazy"
+                 alt="Rysunek ustawienia belki pomiarowej i listwy pod ulem.">
+            <figcaption><span>Scale</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span></figcaption>
           </figure>
           <figure class="plate">
             <img src="figs/photo-scale.webp" width="1400" height="1050" loading="lazy"
                  alt="Ul stojący na Apisense Scale i drewnianej kantówce.">
-            <figcaption><span lang="pl">Scale i kantówka</span><span lang="en">Scale &amp; spacer bar</span></figcaption>
+            <figcaption><span lang="pl">Scale i kantówka</span><span lang="en">Scale &amp; spacer bar</span><span lang="pl">Zdjęcie</span><span lang="en">Photo</span></figcaption>
           </figure>
         </div>
       </div>
@@ -1196,8 +1238,8 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
         <p class="tag"><span lang="pl">Krok 07 · Montaż</span><span lang="en">Step 07 · Mounting</span></p>
         <h2><span lang="pl">Zamontuj VitalSensor w ulu</span><span lang="en">Mount the VitalSensor in the hive</span></h2>
         <p class="lede">
-          <span lang="pl">Czujnik montujesz bezinwazyjnie na ramce, przy użyciu uchwytów z zestawu — bez trwałych zmian w ulu i bez zakłócania pracy rodziny.</span>
-          <span lang="en">The sensor mounts non-invasively on a frame using the brackets from the kit — no permanent changes to the hive and no disturbance to the colony.</span>
+          <span lang="pl">Czujnik montujesz bezinwazyjnie na ramce — bez trwałych zmian w ulu i bez zakłócania pracy rodziny.</span>
+          <span lang="en">The sensor mounts non-invasively on a frame — no permanent changes to the hive and no disturbance to the colony.</span>
         </p>
         <ul class="micro">
           <li><b>01</b><span lang="pl">Osadź uruchomiony VitalSensor na <em>centralnej ramce</em> (w kłębie), stabilnie, tak żeby się nie przemieszczał.</span><span lang="en">Fix the powered VitalSensor to the <em>central frame</em> (in the cluster), firmly enough that it cannot shift.</span></li>
@@ -1209,14 +1251,14 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
       <div class="col col--fig">
         <div class="plate-row">
           <figure class="plate">
-            <img src="figs/montaz-sensora-animated.svg" width="205" height="165" loading="lazy"
-                 alt="Animacja montażu Apisense VitalSensor na ramce pszczelej.">
-            <figcaption><span lang="pl">Przebieg</span><span lang="en">Sequence</span></figcaption>
+            <img src="figs/pdf-mount-vitalsensor.webp" width="1700" height="995" loading="lazy"
+                 alt="Rysunek montażu VitalSensora na ramce pszczelej.">
+            <figcaption><span>VitalSensor</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span></figcaption>
           </figure>
           <figure class="plate">
             <img src="figs/photo-sensor-frame.webp" width="1400" height="1050" loading="lazy"
-                 alt="VitalSensor przymocowany pionowo do ramki pszczelej uchwytami montażowymi.">
-            <figcaption><span lang="pl">Czujnik na ramce</span><span lang="en">Sensor on the frame</span></figcaption>
+                 alt="VitalSensor przymocowany pionowo do ramki pszczelej.">
+            <figcaption><span lang="pl">Czujnik na ramce</span><span lang="en">Sensor on the frame</span><span lang="pl">Zdjęcie</span><span lang="en">Photo</span></figcaption>
           </figure>
         </div>
       </div>
@@ -1231,20 +1273,20 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
         <p class="tag"><span lang="pl">Krok 07 · Montaż</span><span lang="en">Step 07 · Mounting</span></p>
         <h2><span lang="pl">Umieść ColonyLink na ulu</span><span lang="en">Attach the ColonyLink</span></h2>
         <p class="lede">
-          <span lang="pl">ColonyLink to fizyczny identyfikator ula z kodem QR i tagiem NFC. Zeskanowanie kodu albo przyłożenie telefonu otwiera dane właściwego ula — też w rękawicach i w pełnym słońcu.</span>
-          <span lang="en">The ColonyLink is the hive's physical identifier, with a QR code and an NFC tag. Scanning it or tapping your phone against it opens the right hive — even with gloves on and in full sun.</span>
+          <span lang="pl">ColonyLink to fizyczny identyfikator ula. Zeskanowanie kodu albo przyłożenie telefonu otwiera dane właściwego ula — też w rękawicach i w pełnym słońcu.</span>
+          <span lang="en">The ColonyLink is the hive's physical identifier. Scanning it or tapping your phone against it opens the right hive — even with gloves on and in full sun.</span>
         </p>
         <ul class="micro">
-          <li><b>01</b><span lang="pl">Podczas tworzenia ula zeskanuj kod QR z ColonyLink, aby powiązać go z tym ulem.</span><span lang="en">While creating the hive, scan the ColonyLink QR code to link it to that hive.</span></li>
-          <li><b>02</b><span lang="pl">Umieść ColonyLink na froncie ula — płaskie, czyste i suche miejsce, dobrze widoczne podczas pracy.</span><span lang="en">Place the ColonyLink on the hive front — a flat, clean, dry spot that stays easy to see while you work.</span></li>
+          <li><b>01</b><span lang="pl">Umieść ColonyLink na froncie ula — płaskie, czyste i suche miejsce, dobrze widoczne podczas pracy.</span><span lang="en">Place the ColonyLink on the hive front — a flat, clean, dry spot that stays easy to see while you work.</span></li>
+          <li><b>02</b><span lang="pl">Sprawdź, czy kod QR jest dostępny bez otwierania ula.</span><span lang="en">Check that the QR code is reachable without opening the hive.</span></li>
           <li><b>Bez baterii</b><span lang="pl">ColonyLink nie wymaga zasilania, konfiguracji ani aktualizacji.</span><span lang="en">The ColonyLink needs no power, no setup and no updates.</span></li>
         </ul>
       </div>
       <div class="col col--fig">
         <figure class="plate">
-          <img src="figs/montaz-colonylink-animated.svg" width="205" height="165" loading="lazy"
-               alt="Animacja montażu Apisense ColonyLink na froncie ula.">
-          <figcaption><span>ColonyLink</span><span lang="pl">Przebieg</span><span lang="en">Sequence</span></figcaption>
+          <img src="figs/pdf-mount-tag.webp" width="1700" height="578" loading="lazy"
+               alt="Rysunek umieszczenia identyfikatora ula na ścianie ula.">
+          <figcaption><span>ColonyLink</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span></figcaption>
         </figure>
       </div>
     </div>
@@ -1272,6 +1314,7 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
   </section>
 
 </main>
+
 
 
 <script>
