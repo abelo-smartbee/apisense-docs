@@ -112,7 +112,7 @@ The Assistant automatically pulls weather for the location of your apiaries — 
     - bees with deformed wings (DWV virus carried by Varroa);
     - a weakened colony that overwinters poorly.
 
-    Diagnostics is most often done with a sugar-roll test or icing-sugar dusting. Apisense also records treatment recommendations — check the *Notifications* → *Issues* tab.
+    Diagnostics is most often done with a sugar-roll examination or icing-sugar dusting. Apisense also records treatment recommendations — check the *Notifications* → *Issues* tab.
 
 !!! example "Sample conversation"
     **You:** When should I start winter feeding?

@@ -13,7 +13,7 @@ Procedure for detection and quantification of *Nosema*/*Vairimorpha* spores in a
 
 <div class="yt-embed">
   <iframe src="https://www.youtube.com/embed/fMrCL1EB6G4"
-          title="Testing for Nosema — full microscopy procedure"
+          title="Examination for Nosema — full microscopy procedure"
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
 </div>
@@ -47,13 +47,13 @@ Use **one** of the following:
 - **Dead bees:** collect 25 dead worker honey bees from the hygienic bottom board of the hive, provided that the bees are dead (no signs of decay or fungal growth).
 - **Live bees:** collect 25 live worker honey bees caught at the hive entrance.
 
-### Storage before testing
+### Storage before examination
 
-If you cannot test or ship the sample immediately, **freezing bees is accepted only for *Nosema* tests**:
+If you cannot perform the examination or ship the sample immediately, **freezing bees is accepted only for *Nosema* examinations**:
 
 - Each frozen sample must be **clearly and easily identified** with the hive it comes from.
 - Storage temperature: **at least −8 °C**.
-- Bee samples can be stored in the freezer for approximately **3–5 months** before testing.
+- Bee samples can be stored in the freezer for approximately **3–5 months** before the examination.
 - Samples **must not be thawed and frozen again**.
 
 ### 2. Homogenize

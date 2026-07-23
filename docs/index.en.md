@@ -38,7 +38,7 @@ A list of common problems with the devices (Hub, VitalSensor, Scale) and suggest
 
 ### Lab procedures
 
-Field procedures the beekeeper performs independently: *Nosema*/*Vairimorpha* microscopy and the *Varroa destructor* sugar-roll test.
+Field procedures the beekeeper performs independently: *Nosema*/*Vairimorpha* microscopy and the *Varroa destructor* sugar-roll examination.
 
 [Go to lab procedures →](procedures/index.md)
 

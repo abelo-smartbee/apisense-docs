@@ -32,6 +32,9 @@ VitalSensor zasilają dwie baterie **2× AA alkaliczne**.
 2. Wymień baterie na **2× AA alkaliczne**.
 3. Zamknij pokrywkę.
 
+!!! note "Uwaga"
+    Po zakończeniu wymiany baterii nie są wymagane żadne dodatkowe czynności w aplikacji ani na urządzeniu Hub czy VitalSensor. Nie należy ponownie parować urządzeń, dodawać ich do ula ani naciskać przycisku RESET. Wystarczy umieścić urządzenie VitalSensor z powrotem w zasięgu łączności Huba i poczekać na kolejną synchronizację danych. Zaktualizowane dane pojawią się w aplikacji automatycznie - może to potrwać do kilku godzin, pod warunkiem że Hub poprawnie komunikuje się z systemem (nie jest w trybie offline - rozładowana bateria/brak łączności).
+
 ## Hub i łączność
 
 ### Czy Hub można zamontować w pomieszczeniu lub pod dachem?
@@ -45,6 +48,14 @@ Tak, możesz go zasilać przez USB-C — pod warunkiem że pozostaje na zewnątr
 ### Czy Hub wymaga wymiany baterii?
 
 Nie. Hub ładuje się z panelu słonecznego (PV). Przy słabym nasłonecznieniu możesz doładować go przez USB-C.
+
+### Czy po rozładowaniu Huba i ponownym podłączeniu go do ładowania lub wystawieniu na słońce muszę nacisnąć przycisk RESET?
+
+Nie. Po wystarczającym naładowaniu Hub automatycznie wznowi pracę, połączy się z systemem i urządzeniami.
+
+### Czy po wymianie baterii w Scale lub VitalSensor muszę nacisnąć przycisk RESET na Hubie?
+
+Nie. Nie należy wykonywać resetu Huba po wymianie baterii w urządzeniach Scale lub VitalSensor. Po wymianie baterii wystarczy umieścić urządzenie z powrotem w zasięgu łączności Huba i poczekać na kolejną synchronizację danych. Pamiętaj, że przy tym Hub musi poprawnie komunikować się z systemem (nie może być w trybie offline — rozładowany lub brak łączności).
 
 ### Hub nie ładuje się mimo pełnego słońca — dlaczego?
 
@@ -101,11 +112,46 @@ Potrzebny będzie klucz imbusowy **4 mm** (do kątowników) oraz klucz Torx **T6
 4. Skręć czarną obudowę z powrotem.
 5. Skręć kątowniki z powrotem.
 
+!!! note "Uwaga"
+    Po zakończeniu wymiany baterii nie są wymagane żadne dodatkowe czynności w aplikacji ani na urządzeniu Hub czy Scale. Nie należy ponownie parować urządzeń, dodawać ich do ula ani naciskać przycisku RESET. Wystarczy umieścić urządzenie Scale z powrotem w zasięgu łączności Huba i poczekać na kolejną synchronizację danych. Zaktualizowane dane pojawią się w aplikacji automatycznie - może to potrwać do kilku godzin, pod warunkiem że Hub poprawnie komunikuje się z systemem (nie jest w trybie offline - rozładowana bateria/brak łączności).
+
 ### Który ul powinien stać na Scale?
 
 Dowolny ul wyposażony w VitalSensor — bardziej liczą się trendy niż dokładna masa konkretnego ula.
 
+## Po wymianie baterii
+
+<a id="po-wymianie-baterii"></a>
+
+### Co należy zrobić po wymianie baterii w Scale/VitalSensor?
+
+Po wymianie baterii wystarczy:
+
+- ponownie umieścić urządzenie Scale lub VitalSensor w jego docelowym miejscu,
+- upewnić się, że znajduje się ono w zasięgu Huba (maksymalnie około 35 m),
+- poczekać na kolejny cykl pomiarowy.
+
+Zaktualizowane dane pojawią się w aplikacji automatycznie - może to potrwać do kilku godzin, pod warunkiem że Hub poprawnie komunikuje się z systemem (nie jest w trybie offline - rozładowana bateria/brak łączności).
+
+### Czy po wymianie baterii muszę ponownie sparować urządzenie Scale lub VitalSensor?
+
+Nie. Wymiana baterii nie wymaga ponownego parowania urządzenia. Wystarczy umieścić urządzenie z powrotem w zasięgu łączności Huba i poczekać na kolejną synchronizację danych. Pamiętaj, że przy tym Hub musi poprawnie komunikować się z systemem (nie może być w trybie offline — rozładowany lub brak łączności).
+
+### Czy po wymianie baterii muszę usunąć i ponownie dodać Scale lub VitalSensor do ula?
+
+Nie. Nie musisz niczego zmieniać w aplikacji po wymianie baterii w urządzeniu Scale lub VitalSensor. Wystarczy umieścić urządzenie z powrotem w zasięgu łączności Huba i poczekać na kolejną synchronizację danych. Pamiętaj, że przy tym Hub musi poprawnie komunikować się z systemem (nie może być w trybie offline — rozładowany lub brak łączności).
+
+### Czy po wymianie baterii muszę usunąć i ponownie dodać ul w aplikacji?
+
+Nie. Nie ma potrzeby usuwania ani ponownego dodawania ula lub przypisanych do niego urządzeń. Po wymianie baterii w urządzeniu Scale lub VitalSensor wystarczy umieścić urządzenie z powrotem w zasięgu łączności Huba i poczekać na kolejną synchronizację danych. Pamiętaj, że przy tym Hub musi poprawnie komunikować się z systemem (nie może być w trybie offline — rozładowany lub brak łączności).
+
 ## Wprowadzanie danych i obsługa aplikacji
+
+<a id="przybytek-miodu-waga"></a>
+
+### Czy jest możliwe, aby waga ula wskazywała wartość dodatnią, podczas gdy przybytek miodu był ujemny, mimo że jest on wyliczany na podstawie pomiarów wagi?
+
+Tak, jest to jak najbardziej możliwe. Przykładowo, pszczelarz może dołożyć półkorpus, co spowoduje wzrost całkowitej masy ula. Jednocześnie, jeśli rodzina pszczela jest osłabiona, produkcja miodu może się zmniejszyć. W takiej sytuacji na wykresie wagi ula widoczny będzie wyraźny wzrost wynikający z dołożenia półkorpusu. Natomiast na wykresie przybytku masa dodanego półkorpusu nie zostanie uwzględniona, dzięki czemu wykres będzie odzwierciedlał wyłącznie rzeczywistą zmianę ilości miodu. W efekcie na wykresie przybytku widoczny będzie spadek związany z ograniczoną aktywnością pszczół, a nie sztuczny wzrost wynikający z ingerencji pszczelarza.
 
 ### Czy notatki muszą być dodawane od razu na pasieczysku?
 
@@ -131,6 +177,10 @@ Tak — **zamrażanie pszczół jest dopuszczalne wyłącznie** w przypadku bada
 - Próbek **nie wolno rozmrażać i zamrażać ponownie**.
 
 Szczegóły: [Mikroskopia Nosema/Vairimorpha](../procedures/nosema-microscopy.md#przechowywanie-przed-badaniem), [Rejestrowanie próbki](../manual/app-manual.md#rejestrowanie-probki).
+
+### Czy mogę wysłać Pocztą Polską żywe pszczoły do Lublina?
+
+Tak. Próbki żywych pszczół należy nadawać **Pocztą Polską** na adres laboratorium w Lublinie (Uniwersytet Przyrodniczy w Lublinie, ul. Doświadczalna 54, 20-280 Lublin) — od **poniedziałku do czwartku**  (szacowany koszt **20–30 zł**). Pszczoły należy wysłać **żywe**, w klateczkach transportowych zapewniających dostęp powietrza, z kawałkiem ciasta cukrowego i kodem badania z aplikacji Apisense na każdej klateczce. Przesyłki z żywymi pszczołami za pośrednictwem Poczty Polskiej mogą być nadawane wyłącznie przez właścicieli pasiek zlokalizowanych w Polsce. Szczegóły: [Protokół 2 — żywe pszczoły](../samples/protocol-2-live-bees.md).
 
 ## Praktyki pszczelarskie
 

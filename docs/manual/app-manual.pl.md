@@ -977,6 +977,9 @@ Figure: Widok Zarejestruj próbkę {#fig-register-sample}
 !!! tip "Jak wykonać badanie samodzielnie?"
     Szczegółowe instrukcje pobierania próbek i wykonywania badań (mikroskopia *Nosema*, flotacja na *Varroa*) znajdziesz w sekcji [Badania](../procedures/index.md).
 
+!!! tip "Wysyłka żywych pszczół"
+    Próbki żywych pszczół wysyłaj **żywe**, w wentylowanych klateczkach transportowych zapewniających dostęp powietrza, z ciastem cukrowym (ok. 10 pszczół w każdej, 4 klateczki na ul), z kodem badania z aplikacji. Nadawaj **od poniedziałku do czwartku** — Pocztą Polską lub kurierem. Przesyłki za pośrednictwem Poczty Polskiej mogą być nadawane wyłącznie przez właścicieli pasiek zlokalizowanych w Polsce. Szczegóły: [Protokół 2 — żywe pszczoły](../samples/protocol-2-live-bees.md).
+
 #### 7.2 Usuwanie próbki
 
 Aby usunąć próbkę z listy próbek należy:
@@ -1016,7 +1019,7 @@ Figure: Przycisk Dodaj badanie {#fig-add-examination-button}
 
     - **Data badania** — wybierz datę wykonania badania.
     - **Rodzaj badania** — wybierz z listy rozwijanej jedną z dostępnych opcji np. Osyp.
-    - **Zdjęcia i informacje uzupełniające** — po wyborze rodzaju badania wykonaj lub wgraj wymaganą liczbę zdjęć oraz uzupełnij pola liczbowe zgodnie z komunikatami na ekranie.
+    - **Zdjęcia i informacje uzupełniające** — po wyborze rodzaju badania wykonaj lub wgraj wymaganą liczbę zdjęć oraz uzupełnij pola liczbowe (np. liczba roztoczy warrozy) zgodnie z komunikatami na ekranie.
 
 Figure: Widok Dodaj badanie, rodzaj: Flotacja {#fig-add-examination}
 
@@ -1891,7 +1894,7 @@ ______________________________________________________________________
 
 ### 4. Kontrola poziomu baterii przed sezonem
 
-- Przed sezonem sprawdź w aplikacji poziom baterii wszystkich urządzeń monitorujących stan Twoich pasiek. Wymień baterie (2×AA w Scale i VitalSensor) przy niskim poziomie; Hub ładuj przez panel fotowoltaiczny lub sieć. Unikaj przerw w transmisji w szczycie sezonu.
+- Przed sezonem sprawdź w aplikacji poziom baterii wszystkich urządzeń monitorujących stan Twoich pasiek. Wymień baterie (2×AA w Scale i VitalSensor) przy niskim poziomie; Hub ładuj przez panel fotowoltaiczny lub sieć. Unikaj przerw w transmisji w szczycie sezonu. Po wymianie baterii w Scale lub VitalSensor nie trzeba ponownie parować urządzenia ani zmieniać ustawień w aplikacji — wystarczy umieścić urządzenie w zasięgu Huba i poczekać na synchronizację danych (szczegóły: [FAQ — po wymianie baterii](../faq/index.md#po-wymianie-baterii)).
 
 ### 5. Aktualizacje
 
@@ -1922,7 +1925,27 @@ ______________________________________________________________________
 
 **Rozwiązanie:** tak, jest to jak najbardziej możliwe. Przykładowo, pszczelarz może dołożyć półkorpus, co spowoduje wzrost całkowitej masy ula. Jednocześnie, jeśli rodzina pszczela jest osłabiona, produkcja miodu może się zmniejszyć. W takiej sytuacji na wykresie wagi ula widoczny będzie wyraźny wzrost wynikający z dołożenia półkorpusu. Natomiast na wykresie przybytku masa dodanego półkorpusu nie zostanie uwzględniona, dzięki czemu wykres będzie odzwierciedlał wyłącznie rzeczywistą zmianę ilości miodu. W efekcie na wykresie przybytku widoczny będzie spadek związany z ograniczoną aktywnością pszczół, a nie sztuczny wzrost wynikający z ingerencji pszczelarza.
 
-#### 1.5 Inne problemy
+#### 1.5 Co zrobić po wymianie baterii w Scale lub VitalSensor?
+
+**Rozwiązanie:** po wymianie baterii wystarczy:
+
+- ponownie umieścić urządzenie Scale lub VitalSensor w jego docelowym miejscu,
+- upewnić się, że znajduje się ono w zasięgu Huba (maksymalnie około 35 m),
+- poczekać na kolejny cykl pomiarowy.
+
+Zaktualizowane dane pojawią się w aplikacji automatycznie - może to potrwać do kilku godzin, pod warunkiem że Hub poprawnie komunikuje się z systemem (nie jest w trybie offline - rozładowana bateria/brak łączności).
+
+Po zakończeniu wymiany baterii **nie są wymagane** żadne dodatkowe czynności w aplikacji ani na urządzeniu Hub, Scale ani VitalSensor. Nie należy ponownie parować urządzeń, dodawać ich do ula ani naciskać przycisku RESET.
+
+#### 1.6 Czy po wymianie baterii muszę ponownie sparować urządzenie, dodać je do ula lub usunąć ul z aplikacji?
+
+**Rozwiązanie:** nie. Wymiana baterii w Scale lub VitalSensor nie wymaga ponownego parowania urządzenia, usuwania ani ponownego dodawania urządzenia do ula ani usuwania ula z aplikacji. Wystarczy umieścić urządzenie z powrotem w zasięgu łączności Huba i poczekać na kolejną synchronizację danych. Hub musi przy tym poprawnie komunikować się z systemem (nie może być w trybie offline — rozładowany lub brak łączności).
+
+#### 1.7 Czy po rozładowaniu Huba lub wymianie baterii w Scale/VitalSensor muszę nacisnąć przycisk RESET na Hubie?
+
+**Rozwiązanie:** nie. Nie należy wykonywać resetu Huba po wymianie baterii w urządzeniach Scale lub VitalSensor. Po rozładowaniu Huba i ponownym podłączeniu go do ładowania lub wystawieniu na słońce Hub automatycznie wznowi pracę, połączy się z systemem i urządzeniami — bez naciskania przycisku RESET.
+
+#### 1.8 Inne problemy
 
 **Rozwiązanie:** skontaktuj się z pomocą techniczną Apisense: **bee@apisense.ai**.
 
@@ -1990,7 +2013,7 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 > [Wideo](#wideo-zarejestruj-probke), [Rejestrowanie próbki](#rejestrowanie-probki)
 
-- **Dodawanie badania:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Z dolnego menu wybierz *Dodaj... -> Badanie*. Wybierz datę i rodzaj badania z listy rozwijanej, uzupełnij wymagane zdjęcia i pola (np. liczba roztoczy warrozy), następnie zapisz żółtym przyciskiem. Zapisane badanie można później edytować lub usunąć z menu dodatkowego lub klikając ikonę ołówka/kosza na liście badań.
+- **Dodawanie badania:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Z dolnego menu wybierz *Dodaj... -> Badanie*. Wybierz datę i rodzaj badania z listy rozwijanej (np. Flotacja), uzupełnij wymagane zdjęcia i pola (np. liczba roztoczy warrozy), następnie zapisz żółtym przyciskiem. Zapisane badanie można później edytować lub usunąć z menu dodatkowego lub klikając ikonę ołówka/kosza na liście badań.
 
 > [Dodawanie badania](#81-dodawanie-badania)
 

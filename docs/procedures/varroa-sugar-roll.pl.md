@@ -52,7 +52,7 @@ Powtórz procedurę z tą samą próbką pszczół:
 
 1. **Policz roztocza** w naczyniu z wodą.
 2. **Zrób zdjęcie całego naczynia.**
-3. Zapisz liczbę w aplikacji Apisense i prześlij zdjęcie.
+3. W aplikacji Apisense: ***Dodaj... → Badanie → rodzaj badania: Flotacja*** — dodaj zdjęcie i wprowadź liczbę roztoczy warrozy.
 4. **Ostrożnie zwróć pszczoły do rodziny.**
 5. Wyczyść słoik/urządzenie z resztek cukru/roztoczy/kurzu/wilgoci suchym ręcznikiem przed następnym użyciem.
 
@@ -63,8 +63,8 @@ Powtórz procedurę z tą samą próbką pszczół:
 - Wielkość próbki (domyślnie 300 pszczół)
 - Data badania
 
-!!! note "Test wykonywany w programie sezonowym"
-    Ten sam test jest częścią programu **„Zdrowotność rodzin pszczelich, Wiosna 2026"** — patrz [Protokół 1: Varroa](../samples/protocol-1-varroa.md). Tam znajdziesz dokładne ścieżki raportowania w aplikacji (*dodaj → badanie → flotacja*) i kontekst wysyłki próbek.
+!!! note "Badanie wykonywane w programie sezonowym"
+    To samo badanie jest częścią programu **„Zdrowotność rodzin pszczelich, Wiosna 2026”** — patrz [Protokół 1: Varroa](../samples/protocol-1-varroa.md). Tam znajdziesz dokładną ścieżkę raportowania w aplikacji (*Dodaj... → Badanie → rodzaj badania: Flotacja*) i kontekst wysyłki próbek.
 
 ## Bibliografia
 

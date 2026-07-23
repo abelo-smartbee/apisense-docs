@@ -981,6 +981,9 @@ Figure: Register sample view {#fig-register-sample}
 !!! tip "How to perform the examination yourself?"
     Detailed instructions for sample collection and performing examinations (*Nosema* microscopy, *Varroa* flotation) are available in the [Lab procedures](../procedures/index.md) section.
 
+!!! tip "Shipping live bees"
+    Ship live bee samples **alive**, in ventilated transport cages that allow air access, with sugar candy (~10 bees per cage, 4 cages per hive), labelled with the test code from the app. Ship **Monday to Thursday** — via Poczta Polska or courier. Shipments via Poczta Polska may only be sent by apiary owners located in Poland. Details: [Protocol 2 — live bees](../samples/protocol-2-live-bees.md).
+
 #### 7.2 Deleting a sample
 
 To delete a sample from the sample list:
@@ -1019,10 +1022,10 @@ Figure: Add examination button {#fig-add-examination-button}
 - In the Add examination view ([](#fig-add-examination)), fill in the following fields:
 
     - **Examination date** — choose the date the examination was performed.
-    - **Examination type** — choose one of the available options from the drop-down list, e.g. Mite drop.
-    - **Photos and supplementary information** — after choosing the examination type, take or upload the required number of photos and fill in the numeric fields according to the on-screen prompts.
+    - **Examination type** — choose one of the available options from the drop-down list, e.g. Natural drop.
+    - **Photos and supplementary information** — after choosing the examination type, take or upload the required number of photos and fill in the numeric fields (e.g. Varroa mite count) according to the on-screen prompts.
 
-Figure: Add examination view, type: Flotation {#fig-add-examination}
+Figure: Add examination view, type: Sugar roll {#fig-add-examination}
 
 ![figure](pictures/add_examination.png){width=200}
 
@@ -1615,10 +1618,10 @@ Most important information:
 
 ### 6. Parameter interpretation: hive weight and honey gain
 
-- **Hive weight chart** — shows the actual mass of the entire hive. It includes all mass changes — both sudden ones resulting from beekeeper actions (e.g. adding a super, removing honey supers, or honey harvesting) and gradual changes related to natural bee activity and environmental conditions.
+- **Hive weight chart** — shows the actual mass of the entire hive. It includes all mass changes — both sudden ones resulting from beekeeper actions (e.g. adding a honey super, removing honey supers, or honey harvesting) and gradual changes related to natural bee activity and environmental conditions.
 - **Honey gain chart** — shows the estimated change in the amount of accumulated honey. Unlike the weight chart, it eliminates the influence of actions performed by the beekeeper, so it reflects changes resulting from bee colony activity.
 
-In practice, this means both charts may show different values. For example, if a super is added to the hive, the total hive mass will increase, but if bee activity decreases at the same time, honey gain may remain at the same level or even show a negative value.
+In practice, this means both charts may show different values. For example, if a honey super is added to the hive, the total hive mass will increase, but if bee activity decreases at the same time, honey gain may remain at the same level or even show a negative value.
 
 **Note:** On the honey gain chart for ranges covering 7 days or more, larger fluctuations may occur due to data aggregation. Environmental factors such as rainfall or increased wood moisture may also affect the displayed values.
 
@@ -1892,7 +1895,7 @@ ______________________________________________________________________
 
 ### 4. Battery level check before the season
 
-- Before the season, check in the app the battery level of all devices monitoring the status of your apiaries. Replace the batteries (2×AA in the Scale and VitalSensor) when the level is low; charge the Hub via the photovoltaic panel or mains. Avoid transmission interruptions at the peak of the season.
+- Before the season, check in the app the battery level of all devices monitoring the status of your apiaries. Replace the batteries (2×AA in the Scale and VitalSensor) when the level is low; charge the Hub via the photovoltaic panel or mains. Avoid transmission interruptions at the peak of the season. After replacing the batteries in a Scale or VitalSensor you do not need to re-pair the device or change app settings — simply place the device within the Hub's range and wait for data synchronisation (details: [FAQ — after battery replacement](../faq/index.md#after-battery-replacement)).
 
 ### 5. Updates
 
@@ -1921,9 +1924,29 @@ ______________________________________________________________________
 
 #### 1.4 Is it possible for hive weight to show a positive value while honey gain is negative, even though honey gain is calculated based on weight measurements?
 
-**Solution:** yes, this is entirely possible. For example, a beekeeper may add a super, which will cause the total hive mass to increase. At the same time, if the bee colony is weakened, honey production may decrease. In such a situation, the hive weight chart will show a clear increase resulting from adding the super. However, on the honey gain chart, the mass of the added super will not be taken into account, so the chart will reflect only the actual change in the amount of honey. As a result, the honey gain chart will show a decrease related to limited bee activity, rather than an artificial increase resulting from beekeeper intervention.
+**Solution:** yes, this is entirely possible. For example, a beekeeper may add a honey super, which will cause the total hive mass to increase. At the same time, if the bee colony is weakened, honey production may decrease. In such a situation, the hive weight chart will show a clear increase resulting from adding the honey super. However, on the honey gain chart, the mass of the added honey super will not be taken into account, so the chart will reflect only the actual change in the amount of honey. As a result, the honey gain chart will show a decrease related to limited bee activity, rather than an artificial increase resulting from beekeeper intervention.
 
-#### 1.5 Other problems
+#### 1.5 After replacing the batteries in a Scale or VitalSensor — what next?
+
+**Solution:** after replacing the batteries:
+
+- place the Scale or VitalSensor back in its target location,
+- make sure it is within range of the Hub (maximum approximately 35 m),
+- wait for the next measurement cycle.
+
+Updated data will appear in the app automatically - this may take up to several hours, provided that the Hub is communicating properly with the system (it is not offline - discharged battery/no connectivity).
+
+After completing the battery replacement, **no additional steps** are required in the app or on the Hub, Scale or VitalSensor device. Do not re-pair devices, add them to the hive again, or press the RESET button.
+
+#### 1.6 Do I need to re-pair the device, re-add it to the hive, or remove the hive from the app after replacing the batteries?
+
+**Solution:** no. Replacing the batteries in a Scale or VitalSensor does not require re-pairing the device, removing and re-adding it to the hive, or removing the hive from the app. Simply place the device back within the Hub's communication range and wait for the next data synchronisation. The Hub must be communicating properly with the system (it must not be offline — discharged or no connectivity).
+
+#### 1.7 Do I need to press the RESET button on the Hub after the Hub has discharged or after replacing the batteries in a Scale/VitalSensor?
+
+**Solution:** no. Do not reset the Hub after replacing the batteries in Scale or VitalSensor devices. After the Hub has discharged and you reconnect it to charging or expose it to the sun, the Hub will automatically resume operation, connect to the system and the devices — without pressing the RESET button.
+
+#### 1.8 Other problems
 
 **Solution:** contact Apisense technical support: **bee@apisense.ai**.
 
@@ -1991,7 +2014,7 @@ Below you will find a summary of the most important activities in the Apisense P
 
 > [Video](#video-register-sample), [Registering a sample](#rejestrowanie-probki)
 
-- **Adding an examination:** Click the chosen apiary tile. Click the chosen hive tile. From the bottom menu choose *Add... -> Examination*. Choose the date and examination type from the drop-down list, fill in the required photos and fields (e.g. number of varroa mites), then save with the yellow button. A saved examination can later be edited or deleted from its overflow menu or by tapping the pencil/bin icon in the examination list.
+- **Adding an examination:** Click the chosen apiary tile. Click the chosen hive tile. From the bottom menu choose *Add... -> Examination*. Choose the date and examination type from the drop-down list (e.g. Sugar roll), fill in the required photos and fields (e.g. number of varroa mites), then save with the yellow button. A saved examination can later be edited or deleted from its overflow menu or by tapping the pencil/bin icon in the examination list.
 
 > [Adding an examination](#81-adding-an-examination)
 
