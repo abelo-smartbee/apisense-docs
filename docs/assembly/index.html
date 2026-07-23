@@ -123,7 +123,7 @@ body::after {
 .head__mark { display: flex; align-items: center; gap: 12px; min-width: 0; }
 /* Brand wordmark from docs/assets/branding — transparent PNG, black art,
    so a plain invert carries it onto the dark theme. */
-.head__mark img { height: 21px; width: auto; display: block; }
+.head__mark img { height: 21px; width: auto; max-width: 100%; object-fit: contain; display: block; }
 [data-theme="dark"] .head__mark img { filter: invert(1); }
 .head__sep { width: 1px; height: 22px; background: var(--rule); flex: none; }
 .head__doc {
@@ -631,7 +631,20 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
   .slide.is-active .ghost { opacity: .7; }
 }
 @media (max-width: 720px) {
+  /* Four locales plus three buttons will not fit next to the wordmark —
+     tighten everything and drop the guide link (it is also on the last slide). */
+  .head { gap: 10px; padding-inline: 14px; }
   .head__doc, .head__sep { display: none; }
+  .head__mark img { height: 18px; }
+  .lang { padding: 2px; }
+  .lang button { padding: 4px 6px; font-size: 10px; letter-spacing: .06em; }
+  .btn { padding: 6px 10px; font-size: 11px; }
+  .head > a.btn:last-child { display: none; }
+}
+@media (max-width: 480px) {
+  .head__mark img { height: 17px; }
+  .btn-label { display: none; }
+  .lang button { padding: 4px 5px; }
 }
 @media (max-width: 860px) {
   :root { --rail-w: 0px; --head-h: 58px; }
@@ -745,6 +758,13 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
       <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/>
     </svg>
+  </button>
+
+  <button type="button" class="btn" id="print">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+      <path d="M7 8V4h10v4M7 18v3h10v-3M5 8h14v8H5zM17 12h.01"/>
+    </svg>
+    <span class="btn-label">PDF</span>
   </button>
 
   <a class="btn" href="../manual/configuration/">
@@ -1510,6 +1530,12 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
     document.querySelectorAll('[data-set-lang]').forEach(function (b) {
       b.setAttribute('aria-pressed', String(b.dataset.setLang === cur));
     });
+    printBtn.title = {
+      pl: 'Zapisz jako PDF — jeden krok na stronę',
+      en: 'Save as PDF — one step per page',
+      de: 'Als PDF speichern — ein Schritt pro Seite',
+      fr: 'Enregistrer en PDF — une étape par page'
+    }[cur] || 'PDF';
     document.title = {
       pl: 'Apisense BOX — Instrukcja montażu',
       en: 'Apisense BOX — Assembly Instruction',
@@ -1518,6 +1544,11 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
     }[cur] || 'Apisense BOX';
   }
   syncLang();
+
+  /* ── PDF: print the current view; the print stylesheet lays out
+        one step per landscape page, in whichever language is active. ── */
+  var printBtn = document.getElementById('print');
+  printBtn.addEventListener('click', function () { window.print(); });
 
   /* ── Theme ── */
   document.getElementById('theme').addEventListener('click', function () {
