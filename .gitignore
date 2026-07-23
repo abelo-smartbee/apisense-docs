@@ -10,3 +10,12 @@ docs/manual/app-manual.pl.docx
 .idea
 
 **_pycache__
+# lokalne artefakty: jednoplikowa wersja instrukcji do wysyłki + jej generator
+docs/assembly/*_standalone.html
+tools/
+
+# lista dla marketingu — przekazywana bezpośrednio, nie wersjonowana
+TODO-marketing.md
+
+# PDF-y generowane z widoku HTML (tools/build_pdf.py)
+docs/assembly/pdf/

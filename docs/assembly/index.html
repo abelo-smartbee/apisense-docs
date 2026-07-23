@@ -1,0 +1,1534 @@
+<!doctype html>
+<html lang="pl" data-lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Apisense BOX — Instrukcja montażu</title>
+<meta name="description" content="Interaktywna instrukcja montażu zestawu Apisense BOX: Hub, waga, VitalSensor, Tag i uchwyt na ramkę — krok po kroku.">
+<meta name="theme-color" content="#f6f7e7">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2321290e'/%3E%3Ccircle cx='11' cy='11' r='3.4' fill='%23d5bb51'/%3E%3Ccircle cx='21' cy='21' r='3.4' fill='%23d5bb51'/%3E%3Cpath d='M9 21 23 9' stroke='%23d5bb51' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<script>
+  (function () {
+    var t = localStorage.getItem('apisense-asm-theme');
+    if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', t);
+    var l = localStorage.getItem('apisense-asm-lang');
+    if (['pl', 'en', 'de', 'fr'].indexOf(l) > -1) {
+      document.documentElement.setAttribute('data-lang', l);
+      document.documentElement.lang = l;
+    }
+  })();
+</script>
+<style>
+/* ─────────────────────────────────────────────────────────────
+   Apisense BOX — Assembly. Aesthetic: "Blueprint Field Manual".
+   Warm paper ground, drafting plates, plotted-line reveals.
+   ───────────────────────────────────────────────────────────── */
+
+:root {
+  --paper:      #f6f7e7;   /* loafer */
+  --paper-2:    #f0eeda;   /* aths special */
+  --plate:      #ffffff;
+  --ink:        #21290e;   /* seaweed */
+  --ink-2:      rgba(33, 41, 14, .64);
+  --ink-3:      rgba(33, 41, 14, .38);
+  --rule:       rgba(66, 80, 35, .20);   /* woodland */
+  --rule-2:     rgba(66, 80, 35, .10);
+  --amber:      #d5bb51;   /* tacha */
+  --amber-deep: #8a6d1c;   /* luxor gold, darkened for text contrast */
+  --amber-soft: #e9ead0;   /* white rock */
+  --plate-shadow: 0 1px 2px rgba(33,41,14,.06), 0 24px 50px -30px rgba(33,41,14,.40);
+
+  --grid-unit: 8px;
+  --rail-w: 72px;
+  --head-h: 68px;
+
+  --ease: cubic-bezier(.22, .8, .28, 1);
+  --slow: 900ms;
+}
+
+[data-theme="dark"] {
+  --paper:      #21290e;   /* seaweed */
+  --paper-2:    #2b3413;
+  --plate:      #ffffff;      /* plates stay light: QR codes must remain scannable */
+  --ink:        #f0eeda;
+  --ink-2:      rgba(240, 238, 218, .64);
+  --ink-3:      rgba(240, 238, 218, .38);
+  --rule:       rgba(240, 238, 218, .18);
+  --rule-2:     rgba(240, 238, 218, .09);
+  --amber-deep: #d5bb51;
+  --amber-soft: rgba(213, 187, 81, .13);
+  --plate-shadow: 0 2px 4px rgba(0,0,0,.35), 0 30px 70px -34px rgba(0,0,0,.7);
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Poppins, 'Segoe UI', sans-serif;
+  font-size: clamp(15px, .55vw + 13px, 17px);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+/* Faint drafting grid + paper grain — the ground everything sits on. */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+body::before {
+  background-image: linear-gradient(to right, var(--rule-2) 1px, transparent 1px);
+  background-size: clamp(100px, 8.333vw, 160px) 100%;
+  mask-image: linear-gradient(to bottom, #000 0%, #000 84%, transparent 100%);
+}
+body::after {
+  opacity: .34;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E");
+}
+[data-theme="dark"] body::after { mix-blend-mode: screen; opacity: .18; }
+
+/* ── Language switching ─────────────────────────────────────── */
+[data-lang="pl"] [lang]:not([lang="pl"]),
+[data-lang="en"] [lang]:not([lang="en"]),
+[data-lang="de"] [lang]:not([lang="de"]),
+[data-lang="fr"] [lang]:not([lang="fr"]) { display: none; }
+
+/* ── Header ─────────────────────────────────────────────────── */
+.head {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: var(--head-h);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 clamp(16px, 3vw, 34px);
+  z-index: 40;
+  background: color-mix(in srgb, var(--paper) 82%, transparent);
+  backdrop-filter: blur(14px) saturate(1.2);
+  border-bottom: 1px solid var(--rule);
+}
+.head__mark { display: flex; align-items: center; gap: 12px; min-width: 0; }
+/* Brand wordmark from docs/assets/branding — transparent PNG, black art,
+   so a plain invert carries it onto the dark theme. */
+.head__mark img { height: 21px; width: auto; display: block; }
+[data-theme="dark"] .head__mark img { filter: invert(1); }
+.head__sep { width: 1px; height: 22px; background: var(--rule); flex: none; }
+.head__doc {
+  font-family: Poppins, sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.head__spacer { flex: 1; }
+
+.btn {
+  font: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: .04em;
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 7px 14px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: border-color 200ms var(--ease), background-color 200ms var(--ease), color 200ms var(--ease);
+}
+.btn:hover { border-color: var(--ink); background: var(--amber-soft); }
+.btn:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+
+.lang { display: inline-flex; padding: 3px; gap: 2px; }
+.lang button {
+  font: inherit; font-size: 11px; font-weight: 600; letter-spacing: .1em;
+  border: 0; background: transparent; color: var(--ink-3);
+  padding: 4px 9px; border-radius: 999px; cursor: pointer;
+  transition: color 180ms var(--ease), background-color 180ms var(--ease);
+}
+.lang button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+[data-lang="pl"] .lang button:hover:not([aria-pressed="true"]),
+[data-lang="en"] .lang button:hover:not([aria-pressed="true"]) { color: var(--ink); }
+
+.head .pdf-label { display: none; }
+@media (min-width: 900px) { .head .pdf-label { display: inline; } }
+
+/* Scroll progress hairline */
+.progress {
+  position: fixed;
+  top: var(--head-h); left: 0;
+  height: 2px; width: 0%;
+  background: var(--amber);
+  z-index: 41;
+  transition: width 120ms linear;
+}
+
+/* ── Chapter rail ───────────────────────────────────────────── */
+.rail {
+  position: fixed;
+  left: 0; top: var(--head-h); bottom: 0;
+  width: var(--rail-w);
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border-right: 1px solid var(--rule);
+  background: linear-gradient(to right, color-mix(in srgb, var(--paper) 70%, transparent), transparent);
+}
+.rail a {
+  --dot: 7px;
+  position: relative;
+  width: 26px; height: 16px;
+  display: grid; place-items: center;
+  text-decoration: none;
+}
+.rail a::after {
+  content: "";
+  width: var(--dot); height: var(--dot);
+  border-radius: 50%;
+  border: 1px solid var(--ink-3);
+  background: transparent;
+  transition: all 320ms var(--ease);
+}
+.rail a:hover::after { border-color: var(--ink); transform: scale(1.25); }
+.rail a[aria-current="true"]::after {
+  background: var(--amber);
+  border-color: var(--amber);
+  transform: scale(1.45);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--amber) 22%, transparent);
+}
+.rail a[data-chapter-start]::before {
+  content: attr(data-chapter-start);
+  position: absolute;
+  right: calc(100% + 2px);
+  font-family: Poppins, sans-serif;
+  font-size: 10px;
+  color: var(--ink-3);
+  letter-spacing: .06em;
+}
+.rail .tip {
+  position: absolute;
+  left: calc(100% + 14px);
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--paper);
+  opacity: 0;
+  transform: translateX(-6px);
+  pointer-events: none;
+  transition: all 220ms var(--ease);
+}
+.rail a:hover .tip, .rail a:focus-visible .tip { opacity: 1; transform: none; }
+
+/* ── Deck ───────────────────────────────────────────────────── */
+.deck {
+  position: relative;
+  z-index: 1;
+  height: 100dvh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.deck::-webkit-scrollbar { display: none; }
+
+.slide {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  min-height: 100dvh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: calc(var(--head-h) + clamp(20px, 4vh, 52px)) clamp(20px, 4vw, 68px) clamp(28px, 6vh, 64px) calc(var(--rail-w) + clamp(20px, 4vw, 60px));
+  overflow: hidden;
+}
+
+/* Oversized ghost numeral bleeding off the left edge — the anchor. */
+.ghost {
+  position: absolute;
+  left: -.07em;
+  bottom: -.30em;
+  font-family: Poppins, sans-serif;
+  font-weight: 200;
+  font-size: clamp(15rem, 30vw, 34rem);
+  line-height: .8;
+  letter-spacing: -.05em;
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--rule-2);
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 1100ms var(--ease), transform 1200ms var(--ease);
+}
+.slide.is-active .ghost { opacity: 1; transform: none; }
+
+.wrap {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1500px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 34ch) minmax(0, 1fr);
+  gap: clamp(28px, 4vw, 76px);
+  align-items: center;
+}
+.wrap--wide { grid-template-columns: minmax(0, 30ch) minmax(0, 1fr); }
+.wrap--narrow-fig { grid-template-columns: minmax(0, 1fr) minmax(0, 30ch); }
+.wrap--stack { grid-template-columns: minmax(0, 1fr); }
+
+/* ── Text column ────────────────────────────────────────────── */
+.col--text > * {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 620ms var(--ease), transform 700ms var(--ease);
+  transition-delay: var(--d, 0ms);
+}
+.slide.is-active .col--text > * { opacity: 1; transform: none; }
+.col--text > *:nth-child(1) { --d: 60ms; }
+.col--text > *:nth-child(2) { --d: 130ms; }
+.col--text > *:nth-child(3) { --d: 210ms; }
+.col--text > *:nth-child(4) { --d: 290ms; }
+.col--text > *:nth-child(5) { --d: 360ms; }
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 18px;
+  font-family: Poppins, sans-serif;
+  font-size: 11px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--amber-deep);
+}
+.tag::before {
+  content: "";
+  width: 26px; height: 1px;
+  background: var(--amber);
+}
+
+h1, h2 {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  letter-spacing: -.01em;
+  line-height: 1.1;
+  margin: 0 0 18px;
+  text-wrap: balance;
+}
+h2 { font-size: clamp(1.8rem, 2.9vw, 2.9rem); }
+h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.02em; }
+
+.lede {
+  margin: 0 0 22px;
+  color: var(--ink-2);
+  font-size: clamp(.95rem, .35vw + .85rem, 1.08rem);
+  max-width: 42ch;
+}
+.lede b, .lede strong { color: var(--ink); font-weight: 600; }
+
+.micro {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--rule);
+}
+.micro li {
+  display: grid;
+  grid-template-columns: 6.2em 1fr;
+  gap: 12px;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--rule);
+  font-size: .93rem;
+  color: var(--ink-2);
+}
+.micro b {
+  font-family: Poppins, sans-serif;
+  font-size: .76rem;
+  font-weight: 500;
+  color: var(--amber-deep);
+  padding-top: .3em;
+  letter-spacing: .04em;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.micro em { font-style: normal; color: var(--ink); font-weight: 600; }
+
+.note {
+  margin: 20px 0 0;
+  padding: 13px 16px;
+  border-left: 2px solid var(--amber);
+  background: var(--amber-soft);
+  border-radius: 0;
+  font-size: .87rem;
+  color: var(--ink);
+  max-width: 44ch;
+}
+.note b { font-weight: 600; }
+
+/* ── Plates (the drawings) ──────────────────────────────────── */
+.plate {
+  position: relative;
+  margin: 0;
+  background: var(--plate);
+  border: 1px solid var(--rule);
+  border-radius: 0;
+  padding: clamp(14px, 2vw, 30px);
+  box-shadow: var(--plate-shadow);
+  opacity: 0;
+  transform: translateY(26px) scale(.985);
+  transition: opacity 700ms var(--ease), transform 900ms var(--ease);
+  transition-delay: 120ms;
+}
+.slide.is-active .plate { opacity: 1; transform: none; }
+
+/* Drafting crop marks — corner ticks on every plate. */
+.plate::before, .plate::after {
+  content: "";
+  position: absolute;
+  width: 13px; height: 13px;
+  border: 1px solid var(--amber);
+  opacity: .75;
+  transition: opacity 600ms var(--ease) 500ms;
+}
+.plate::before { top: -1px; left: -1px; border-width: 1px 0 0 1px; }
+.plate::after  { bottom: -1px; right: -1px; border-width: 0 1px 1px 0; }
+
+.plate img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: min(62vh, 640px);
+  object-fit: contain;
+  /* Plotted-line reveal: the drawing wipes in as if being printed. */
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path var(--slow) var(--ease) 260ms;
+}
+.slide.is-active .plate img { clip-path: inset(0 0 0 0); }
+
+.plate figcaption {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(33,41,14,.12);
+  font-family: Poppins, sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: rgba(33,41,14,.50);
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+/* Mounting slides pair the animated sequence with a reference photo. */
+.plate-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(10px, 1.2vw, 20px);
+  align-items: start;
+}
+.plate-row .plate img { max-height: min(46vh, 430px); }
+
+/* Kit slide: device cards beside the packing drawing. */
+.kit {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  gap: clamp(14px, 1.8vw, 28px);
+  align-items: start;
+}
+.kit .items { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.kit .plate img { max-height: min(44vh, 400px); }
+@media (max-width: 1080px) { .kit { grid-template-columns: 1fr; } }
+
+/* Item grid (what's in the box) */
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: clamp(10px, 1.2vw, 18px);
+}
+.item {
+  background: var(--plate);
+  border: 1px solid var(--rule);
+  border-radius: 0;
+  padding: 14px 14px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 560ms var(--ease), transform 620ms var(--ease);
+  transition-delay: calc(var(--i) * 85ms + 140ms);
+  box-shadow: var(--plate-shadow);
+}
+.slide.is-active .item { opacity: 1; transform: none; }
+.item img {
+  width: 100%;
+  height: clamp(84px, 13vh, 140px);
+  object-fit: contain;
+}
+.item__label {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  border-top: 1px solid rgba(33,41,14,.12);
+  padding-top: 9px;
+  font-size: .78rem;
+  color: rgba(33,41,14,.66);
+}
+.item__qty {
+  font-family: Poppins, sans-serif;
+  font-size: .72rem;
+  flex: none;
+}
+.item__qty { color: #8a6d1c; }   /* plates are white in both themes */
+
+/* ── Cover ──────────────────────────────────────────────────── */
+.slide--cover .wrap { grid-template-columns: minmax(0, 1fr); }
+.cover-art {
+  position: absolute;
+  right: -6%;
+  top: 50%;
+  translate: 0 -50%;
+  width: min(64vw, 900px);
+  opacity: 0;
+  pointer-events: none;
+  filter: grayscale(1);
+  mix-blend-mode: multiply;
+  transition: opacity 1400ms var(--ease) 300ms;
+}
+.slide--cover.is-active .cover-art { opacity: .11; }
+[data-theme="dark"] .cover-art { filter: grayscale(1) invert(1); mix-blend-mode: screen; }
+
+.cover-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 26px;
+  margin: 30px 0 0;
+  padding: 0;
+  list-style: none;
+  font-family: Poppins, sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+.cover-meta li { display: flex; align-items: center; gap: 8px; }
+.cover-meta li::before { content: ""; width: 5px; height: 5px; background: var(--amber); border-radius: 50%; }
+
+.scrollcue {
+  position: absolute;
+  left: calc(var(--rail-w) + clamp(20px, 4vw, 60px));
+  bottom: clamp(22px, 5vh, 46px);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: Poppins, sans-serif;
+  font-size: 10px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.scrollcue span::after {
+  content: "";
+  display: inline-block;
+  width: 46px; height: 1px;
+  background: linear-gradient(90deg, var(--amber), transparent);
+  margin-left: 12px;
+  vertical-align: middle;
+  animation: cue 2.4s var(--ease) infinite;
+}
+@keyframes cue { 0%,100% { transform: translateX(0); opacity: 1; } 50% { transform: translateX(10px); opacity: .35; } }
+
+/* ── Outro ──────────────────────────────────────────────────── */
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 26px;
+}
+.contact a {
+  font-family: Poppins, sans-serif;
+  font-size: 13px;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--amber);
+  padding-bottom: 2px;
+  transition: color 200ms var(--ease);
+}
+.contact a:hover { color: var(--amber-deep); }
+
+/* ── Nav buttons ────────────────────────────────────────────── */
+.nav {
+  position: fixed;
+  right: clamp(16px, 3vw, 34px);
+  bottom: clamp(18px, 3vh, 30px);
+  z-index: 35;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.nav__count {
+  font-family: Poppins, sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--ink-3);
+  margin-right: 6px;
+  letter-spacing: .14em;
+  font-variant-numeric: tabular-nums;
+}
+.nav button {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--rule);
+  background: color-mix(in srgb, var(--paper) 80%, transparent);
+  backdrop-filter: blur(10px);
+  color: var(--ink);
+  cursor: pointer;
+  display: grid; place-items: center;
+  transition: all 220ms var(--ease);
+}
+.nav button:hover:not(:disabled) { border-color: var(--ink); background: var(--amber); color: #21290e; }
+.nav button:disabled { opacity: .3; cursor: default; }
+.nav button:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+.nav svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.8; }
+
+/* ── Responsive ─────────────────────────────────────────────── */
+@media (max-width: 1080px) {
+  .wrap, .wrap--wide, .wrap--narrow-fig { grid-template-columns: minmax(0, 1fr); gap: 26px; }
+  .wrap--narrow-fig .col--fig { order: -1; }
+  .plate-row { grid-template-columns: 1fr; }
+  .plate img { max-height: 42vh; }
+  .ghost { font-size: 22rem; opacity: 0; }
+  .slide.is-active .ghost { opacity: .7; }
+}
+@media (max-width: 720px) {
+  .head__doc, .head__sep { display: none; }
+}
+@media (max-width: 860px) {
+  :root { --rail-w: 0px; --head-h: 58px; }
+  body { overflow: auto; }
+  .rail { display: none; }
+  .deck { height: auto; overflow: visible; scroll-snap-type: none; }
+  .slide {
+    min-height: auto;
+    padding: clamp(60px, 11vh, 90px) 20px clamp(40px, 8vh, 70px);
+    border-bottom: 1px solid var(--rule);
+  }
+  .slide:first-child { padding-top: calc(var(--head-h) + 40px); min-height: 88dvh; }
+  .scrollcue { left: 20px; }
+  .nav { display: none; }
+  .plate img { max-height: none; }
+  .ghost { font-size: 13rem; bottom: -.24em; }
+  .cover-art { width: 130vw; right: -34%; }
+  .slide--cover.is-active .cover-art { opacity: .06; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition-duration: 1ms !important; animation: none !important; }
+  .deck { scroll-behavior: auto; }
+  .plate img { clip-path: none; }
+}
+
+/* ── Print ──────────────────────────────────────────────────────
+   One step per landscape page — this is what tools/build_pdf.py
+   renders into the downloadable PDF, in every locale.
+   ─────────────────────────────────────────────────────────────── */
+@page { size: A4 landscape; margin: 12mm; }
+
+@media print {
+  /* Screen greys are tuned for a backlit panel; on paper they wash out. */
+  :root {
+    --ink:    #1b230b;
+    --ink-2:  rgba(27, 35, 11, .84);
+    --ink-3:  rgba(27, 35, 11, .62);
+    --rule:   rgba(66, 80, 35, .30);
+  }
+  html, body { overflow: visible; background: #fff; height: auto; color: var(--ink); }
+  body { font-size: 10.5px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  h1, h2 { color: var(--ink); }
+  .plate figcaption, .item__label { color: rgba(27, 35, 11, .72); }
+  .head, .rail, .nav, .progress, .scrollcue, body::before, body::after { display: none !important; }
+  .deck { height: auto; overflow: visible; }
+
+  .slide {
+    min-height: 0;
+    break-after: page;
+    padding: 0;
+    display: block;
+    border: 0;
+  }
+  .slide:last-child { break-after: auto; }
+  .ghost, .cover-art { display: none; }
+
+  /* A4 landscape is ~1030 CSS px wide, which would otherwise trigger the
+     narrow-screen media query and stack every slide onto two pages. */
+  .wrap { gap: 18px; max-width: none; grid-template-columns: minmax(0, 34ch) minmax(0, 1fr); }
+  .wrap--wide { grid-template-columns: minmax(0, 30ch) minmax(0, 1fr); }
+  .wrap--narrow-fig { grid-template-columns: minmax(0, 1fr) minmax(0, 30ch); }
+  .wrap--narrow-fig .col--fig { order: 0; }
+  .wrap--stack { grid-template-columns: minmax(0, 1fr); }
+  .plate-row { grid-template-columns: 1fr 1fr; }
+  .kit { grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); }
+  h1 { font-size: 34px; }
+  h2 { font-size: 22px; }
+  .lede { font-size: 11px; margin-bottom: 12px; }
+  .micro li { padding: 6px 0; font-size: 10px; }
+  .note { margin-top: 12px; padding: 8px 10px; font-size: 9.5px; }
+  .tag { margin-bottom: 10px; font-size: 9px; }
+
+  .plate, .item {
+    box-shadow: none;
+    opacity: 1 !important;
+    transform: none !important;
+    break-inside: avoid;
+    padding: 10px;
+  }
+  .plate img { clip-path: none !important; max-height: 118mm; }
+  .plate-row .plate img, .kit .plate img { max-height: 96mm; }
+  .plate figcaption { margin-top: 8px; padding-top: 6px; font-size: 8px; }
+  .item img { height: 26mm; }
+  .col--text > * { opacity: 1 !important; transform: none !important; }
+}
+</style>
+</head>
+
+<body>
+
+<header class="head">
+  <div class="head__mark">
+    <img src="figs/apisense-logo.webp" alt="Apisense" width="742" height="132">
+  </div>
+  <div class="head__sep"></div>
+  <p class="head__doc">
+    <span lang="pl">Apisense BOX · Instrukcja montażu</span>
+    <span lang="en">Apisense BOX · Assembly instruction</span><span lang="de">Apisense BOX · Montageanleitung</span><span lang="fr">Apisense BOX · Guide de montage</span>
+  </p>
+  <div class="head__spacer"></div>
+
+  <div class="lang btn" role="group" aria-label="Language">
+    <button type="button" data-set-lang="pl" aria-pressed="true">PL</button>
+    <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+    <button type="button" data-set-lang="de" aria-pressed="false">DE</button>
+    <button type="button" data-set-lang="fr" aria-pressed="false">FR</button>
+  </div>
+
+  <button type="button" class="btn" id="theme" aria-label="Motyw / Theme">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+      <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/>
+    </svg>
+  </button>
+
+  <a class="btn" href="../manual/configuration/">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+      <path d="M5 4h11l3 3v13H5zM9 12h7M9 16h7"/>
+    </svg>
+    <span class="pdf-label"><span lang="pl">Pełna instrukcja</span><span lang="en">Full guide</span><span lang="de">Vollständige Anleitung</span><span lang="fr">Guide complet</span></span>
+  </a>
+</header>
+
+<div class="progress" id="progress"></div>
+
+<nav class="rail" id="rail" aria-label="Kroki"></nav>
+
+<div class="nav">
+  <span class="nav__count" id="count">01 / 22</span>
+  <button type="button" id="prev" aria-label="Poprzedni krok">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 15 12 9l-6 6"/></svg>
+  </button>
+  <button type="button" id="next" aria-label="Następny krok">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+  </button>
+</div>
+
+<main class="deck" id="deck">
+
+  <!-- ══ COVER ══════════════════════════════════════════════ -->
+  <section class="slide slide--cover" data-title-pl="Start" data-title-en="Start" data-chapter="00">
+    <img class="cover-art" src="figs/montaz-systemu-animated.svg" alt="" width="205" height="165" aria-hidden="true">
+    <div class="wrap">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Apisense · Zestaw startowy</span><span lang="en">Apisense · Starter kit</span><span lang="de">Apisense · Starter-Set</span><span lang="fr">Apisense · Kit de démarrage</span></p>
+        <h1>
+          <span lang="pl">Instrukcja<br>montażu</span>
+          <span lang="en">Assembly<br>instruction</span><span lang="de">Montage-<br>anleitung</span><span lang="fr">Guide de<br>montage</span>
+        </h1>
+        <p class="lede">
+          <span lang="pl">Od rozpakowania kartonu do pierwszego odczytu z ula. Siedem kroków, wszystkie ekrany aplikacji i montaż każdego urządzenia w pasiece.</span>
+          <span lang="en">From opening the box to your first hive reading. Seven steps, every app screen and the mounting of each device in the apiary.</span><span lang="de">Vom Auspacken bis zum ersten Messwert aus dem Bienenstock. Sieben Schritte, alle App-Bildschirme und die Montage jedes Geräts am Bienenstand.</span><span lang="fr">Du déballage du carton à la première mesure de la ruche. Sept étapes, tous les écrans de l'application et le montage de chaque appareil au rucher.</span>
+        </p>
+        <ul class="cover-meta">
+          <li><span lang="pl">7 kroków</span><span lang="en">7 steps</span><span lang="de">7 Schritte</span><span lang="fr">7 étapes</span></li>
+          <li><span lang="pl">ok. 30 minut</span><span lang="en">approx. 30 minutes</span><span lang="de">ca. 30 Minuten</span><span lang="fr">env. 30 minutes</span></li>
+          <li><span lang="pl">Apisense Pro AI</span><span lang="en">Apisense Pro AI</span><span lang="de">Apisense Pro AI</span><span lang="fr">Apisense Pro AI</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="scrollcue">
+      <span lang="pl">Przewiń</span><span lang="en">Scroll</span><span lang="de">Scrollen</span><span lang="fr">Faire défiler</span>
+    </div>
+  </section>
+
+  <!-- ══ KIT ════════════════════════════════════════════════ -->
+  <section class="slide" data-num="00" data-title-pl="Zawartość zestawu" data-title-en="Kit contents" data-chapter="00">
+    <div class="ghost" aria-hidden="true">00</div>
+    <div class="wrap wrap--stack">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Zestaw</span><span lang="en">The kit</span><span lang="de">Das Set</span><span lang="fr">Le kit</span></p>
+        <h2><span lang="pl">Co znajdziesz w pudełku</span><span lang="en">What's in the box</span><span lang="de">Was im Karton steckt</span><span lang="fr">Ce que contient le carton</span></h2>
+        <p class="lede">
+          <span lang="pl">Jeden Hub obsługuje całą pasiekę. Scale trafia pod pierwszy ul, a każdy z trzech uli dostaje własny VitalSensor i ColonyLink.</span>
+          <span lang="en">A single Hub serves the whole apiary. The Scale goes under the first hive, and each of the three hives gets its own VitalSensor and ColonyLink.</span><span lang="de">Ein Hub versorgt den ganzen Bienenstand. Die Scale kommt unter den ersten Bienenstock, und jeder der drei Stöcke bekommt einen eigenen VitalSensor und ColonyLink.</span><span lang="fr">Un seul Hub couvre tout le rucher. La Scale se place sous la première ruche, et chacune des trois ruches reçoit son propre VitalSensor et son ColonyLink.</span>
+        </p>
+        <div class="kit">
+          <div class="items">
+            <div class="item" style="--i:0">
+              <img src="figs/dev-hub.webp" width="620" height="953" loading="lazy" alt="Apisense Hub — panel fotowoltaiczny z dwiema antenami na uchwycie aparatowym.">
+              <p class="item__label"><span class="item__qty">1 ×</span> Hub</p>
+            </div>
+            <div class="item" style="--i:1">
+              <img src="figs/dev-scale.webp" width="900" height="285" loading="lazy" alt="Apisense Scale — belka pomiarowa.">
+              <p class="item__label"><span class="item__qty">1 ×</span> Scale</p>
+            </div>
+            <div class="item" style="--i:2">
+              <img src="figs/dev-sensor.webp" width="900" height="521" loading="lazy" alt="Apisense VitalSensor — czujnik montowany na ramce.">
+              <p class="item__label"><span class="item__qty">3 ×</span> VitalSensor</p>
+            </div>
+            <div class="item" style="--i:3">
+              <img src="figs/pdf-item-tag.webp" width="470" height="366" loading="lazy" alt="Apisense ColonyLink — naklejka z kodem QR i tagiem NFC (rysunek poglądowy).">
+              <p class="item__label"><span class="item__qty">3 ×</span> ColonyLink</p>
+            </div>
+          </div>
+          <figure class="plate">
+            <img src="figs/pdf-parts-exploded.webp" width="1700" height="1310" loading="lazy"
+                 alt="Rysunek rozłożenia elementów Apisense BOX w kartonie.">
+            <figcaption><span>Apisense BOX</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span><span lang="de">Referenzzeichnung</span><span lang="fr">Schéma de référence</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 01 ═════════════════════════════════════════════════ -->
+  <section class="slide" data-num="01" data-title-pl="Pobierz aplikację" data-title-en="Download the app" data-chapter="01">
+    <div class="ghost" aria-hidden="true">01</div>
+    <div class="wrap wrap--narrow-fig">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 01</span><span lang="en">Step 01</span><span lang="de">Schritt 01</span><span lang="fr">Étape 01</span></p>
+        <h2><span lang="pl">Pobierz aplikację</span><span lang="en">Download the app</span><span lang="de">App herunterladen</span><span lang="fr">Téléchargez l'application</span></h2>
+        <p class="lede">
+          <span lang="pl">Cały zestaw konfigurujesz z telefonu. Zeskanuj kod QR aparatem albo wyszukaj <b>Apisense Pro AI</b> w App Store lub Google Play.</span>
+          <span lang="en">The whole kit is configured from your phone. Scan the QR code with your camera or search for <b>Apisense Pro AI</b> in the App Store or Google Play.</span><span lang="de">Das gesamte Set richtest du über das Handy ein. Scanne den QR-Code mit der Kamera oder suche <b>Apisense Pro AI</b> im App Store oder bei Google Play.</span><span lang="fr">Vous configurez tout le kit depuis votre téléphone. Scannez le QR code avec l'appareil photo ou cherchez <b>Apisense Pro AI</b> dans l'App Store ou sur Google Play.</span>
+        </p>
+        <ul class="micro">
+          <li><b>iOS</b><span lang="pl">Górny kod QR — App Store</span><span lang="en">Top QR code — App Store</span><span lang="de">Oberer QR-Code — App Store</span><span lang="fr">QR code du haut — App Store</span></li>
+          <li><b>Android</b><span lang="pl">Dolny kod QR — Google Play</span><span lang="en">Bottom QR code — Google Play</span><span lang="de">Unterer QR-Code — Google Play</span><span lang="fr">QR code du bas — Google Play</span></li>
+          <li><b>www</b><span lang="pl">Możesz też pracować w przeglądarce: <em>app.apisense.ai</em></span><span lang="en">You can also work in a browser: <em>app.apisense.ai</em></span><span lang="de">Du kannst auch im Browser arbeiten: <em>app.apisense.ai</em></span><span lang="fr">Vous pouvez aussi travailler dans le navigateur : <em>app.apisense.ai</em></span></li>
+        </ul>
+      </div>
+      <div class="col col--fig">
+        <figure class="plate">
+          <img src="figs/step01-download.webp" width="763" height="741" loading="lazy"
+               alt="Dwa kody QR: do App Store i do Google Play.">
+          <figcaption><span>01</span><span lang="pl">App Store · Google Play</span><span lang="en">App Store · Google Play</span><span lang="de">App Store · Google Play</span><span lang="fr">App Store · Google Play</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 02 ═════════════════════════════════════════════════ -->
+  <section class="slide" data-num="02" data-title-pl="Stwórz konto" data-title-en="Create an account" data-chapter="02">
+    <div class="ghost" aria-hidden="true">02</div>
+    <div class="wrap wrap--narrow-fig">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 02</span><span lang="en">Step 02</span><span lang="de">Schritt 02</span><span lang="fr">Étape 02</span></p>
+        <h2><span lang="pl">Stwórz konto</span><span lang="en">Create an account</span><span lang="de">Konto erstellen</span><span lang="fr">Créez un compte</span></h2>
+        <p class="lede">
+          <span lang="pl">Podaj nazwę użytkownika, adres e-mail i numer telefonu, a następnie naciśnij <b>Next</b>. Możesz też zarejestrować się kontem Google lub Apple.</span>
+          <span lang="en">Enter a username, e-mail address and mobile phone, then tap <b>Next</b>. You can also sign up with your Google or Apple account.</span><span lang="de">Gib Benutzernamen, E-Mail-Adresse und Telefonnummer ein und tippe auf <b>Next</b>. Du kannst dich auch mit deinem Google- oder Apple-Konto registrieren.</span><span lang="fr">Saisissez un nom d'utilisateur, une adresse e-mail et un numéro de téléphone, puis appuyez sur <b>Next</b>. Vous pouvez aussi vous inscrire avec un compte Google ou Apple.</span>
+        </p>
+        <ul class="micro">
+          <li><b>Username</b><span lang="pl">Nazwa widoczna w aplikacji</span><span lang="en">Name shown inside the app</span><span lang="de">In der App sichtbarer Name</span><span lang="fr">Nom affiché dans l'application</span></li>
+          <li><b>Email</b><span lang="pl">Służy do logowania i powiadomień</span><span lang="en">Used for login and notifications</span><span lang="de">Für Anmeldung und Benachrichtigungen</span><span lang="fr">Sert à la connexion et aux notifications</span></li>
+          <li><b>Phone</b><span lang="pl">Numer kontaktowy do konta</span><span lang="en">Contact number for the account</span><span lang="de">Kontaktnummer für das Konto</span><span lang="fr">Numéro de contact du compte</span></li>
+        </ul>
+      </div>
+      <div class="col col--fig">
+        <figure class="plate">
+          <img src="figs/step02-account.webp" width="576" height="1192" loading="lazy"
+               alt="Ekran aplikacji Apisense: formularz Create an Account z polami Username, Email i Mobile Phone.">
+          <figcaption><span>02</span><span lang="pl">Ekran rejestracji</span><span lang="en">Sign-up screen</span><span lang="de">Registrierungsbildschirm</span><span lang="fr">Écran d'inscription</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 03 · a ═════════════════════════════════════════════ -->
+  <section class="slide" data-num="03" data-title-pl="Dodaj pasiekę" data-title-en="Add apiary" data-chapter="03">
+    <div class="ghost" aria-hidden="true">03</div>
+    <div class="wrap">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 03 · 03.1 – 03.2</span><span lang="en">Step 03 · 03.1 – 03.2</span><span lang="de">Schritt 03 · 03.1 – 03.2</span><span lang="fr">Étape 03 · 03.1 – 03.2</span></p>
+        <h2><span lang="pl">Dodaj pasiekę</span><span lang="en">Add apiary</span><span lang="de">Bienenstand anlegen</span><span lang="fr">Ajoutez un rucher</span></h2>
+        <p class="lede">
+          <span lang="pl">Pasieka to miejsce, w którym stoją ule i jeden Hub. Zaczynasz od nadania jej nazwy.</span>
+          <span lang="en">An apiary is the place where your hives and one Hub live. Start by giving it a name.</span><span lang="de">Ein Bienenstand ist der Ort, an dem deine Stöcke und ein Hub stehen. Du beginnst damit, ihm einen Namen zu geben.</span><span lang="fr">Un rucher est l'endroit où se trouvent vos ruches et un Hub. Commencez par lui donner un nom.</span>
+        </p>
+        <ul class="micro">
+          <li><b>03.1</b><span lang="pl">Na ekranie powitalnym naciśnij <em>Add apiary</em>.</span><span lang="en">On the welcome screen tap <em>Add apiary</em>.</span><span lang="de">Tippe auf dem Startbildschirm auf <em>Add apiary</em>.</span><span lang="fr">Sur l'écran d'accueil, appuyez sur <em>Add apiary</em>.</span></li>
+          <li><b>03.2</b><span lang="pl">Wpisz nazwę pasieki i jej skrót (maks. 3 znaki), a potem dotknij ikony skanera przy polu <em>Hub</em>.</span><span lang="en">Enter the apiary name and its abbreviation (max. 3 characters), then tap the scanner icon next to the <em>Hub</em> field.</span><span lang="de">Gib den Namen des Bienenstands und sein Kürzel (max. 3 Zeichen) ein und tippe dann auf das Scanner-Symbol neben dem Feld <em>Hub</em>.</span><span lang="fr">Saisissez le nom du rucher et son abréviation (3 caractères max.), puis appuyez sur l'icône du scanner à côté du champ <em>Hub</em>.</span></li>
+        </ul>
+      </div>
+      <div class="col col--fig">
+        <figure class="plate">
+          <img src="figs/step03-a.webp" width="1510" height="1257" loading="lazy"
+               alt="Ekrany 03.1 i 03.2: przycisk Add apiary oraz formularz pasieki z polami Name, Name abbreviation, Hub i Verification Code.">
+          <figcaption><span>03.1 — 03.2</span><span lang="pl">Aplikacja</span><span lang="en">In the app</span><span lang="de">In der App</span><span lang="fr">Dans l'application</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 03 · QR ════════════════════════════════════════════ -->
+  <section class="slide" data-num="03" data-title-pl="Kod QR Huba" data-title-en="Hub QR code" data-chapter="03">
+    <div class="ghost" aria-hidden="true">03</div>
+    <div class="wrap wrap--wide">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 03 · 03.3</span><span lang="en">Step 03 · 03.3</span><span lang="de">Schritt 03 · 03.3</span><span lang="fr">Étape 03 · 03.3</span></p>
+        <h2><span lang="pl">Zeskanuj kod QR&nbsp;Huba</span><span lang="en">Scan the Hub QR code</span><span lang="de">QR-Code des&nbsp;Hubs scannen</span><span lang="fr">Scannez le QR code du&nbsp;Hub</span></h2>
+        <p class="lede">
+          <span lang="pl">Naklejka z kodem QR znajduje się na obudowie Huba. Ustaw ją w ramce skanera — aplikacja odczyta kod sama i wypełni pola <em>Hub</em> oraz <em>Verification Code</em>.</span>
+          <span lang="en">The QR sticker sits on the Hub housing. Line it up inside the scanner frame — the app reads it and fills in the <em>Hub</em> and <em>Verification Code</em> fields for you.</span><span lang="de">Der QR-Aufkleber sitzt auf dem Gehäuse des Hubs. Richte ihn im Scannerrahmen aus — die App liest den Code selbst und füllt die Felder <em>Hub</em> und <em>Verification Code</em> aus.</span><span lang="fr">L'autocollant QR se trouve sur le boîtier du Hub. Placez-le dans le cadre du scanner : l'application lit le code et remplit les champs <em>Hub</em> et <em>Verification Code</em>.</span>
+        </p>
+        <p class="note">
+          <span lang="pl"><b>Wskazówka:</b> jeśli kod się nie skanuje, przetrzyj go i zapewnij równomierne światło — bez odblasku.</span>
+          <span lang="en"><b>Tip:</b> if the code will not scan, wipe it clean and use even light — avoid glare.</span><span lang="de"><b>Tipp:</b> Lässt sich der Code nicht scannen, wische ihn sauber und sorge für gleichmäßiges Licht — ohne Spiegelung.</span><span lang="fr"><b>Astuce :</b> si le code ne se scanne pas, essuyez-le et assurez un éclairage uniforme, sans reflet.</span>
+        </p>
+      </div>
+      <div class="col col--fig">
+        <div class="plate-row">
+          <figure class="plate">
+            <img src="figs/pdf-hub-qr.webp" width="1700" height="1091" loading="lazy"
+                 alt="Rysunek: umiejscowienie kodu QR na obudowie Huba i ekran skanera w aplikacji.">
+            <figcaption><span>03.3</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span><span lang="de">Referenzzeichnung</span><span lang="fr">Schéma de référence</span></figcaption>
+          </figure>
+          <figure class="plate">
+            <img src="figs/qr-hub.webp" width="1400" height="1050" loading="lazy"
+                 alt="Naklejka z kodem QR na obudowie Apisense Hub, trzymanego w dłoni w pasiece.">
+            <figcaption><span lang="pl">Hub</span><span lang="en">Hub</span><span lang="de">Hub</span><span lang="fr">Hub</span><span lang="pl">Zdjęcie</span><span lang="en">Photo</span><span lang="de">Foto</span><span lang="fr">Photo</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 03 · b ═════════════════════════════════════════════ -->
+  <section class="slide" data-num="03" data-title-pl="Pasieka gotowa" data-title-en="Apiary ready" data-chapter="03">
+    <div class="ghost" aria-hidden="true">03</div>
+    <div class="wrap">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 03 · 03.4 – 03.6</span><span lang="en">Step 03 · 03.4 – 03.6</span><span lang="de">Schritt 03 · 03.4 – 03.6</span><span lang="fr">Étape 03 · 03.4 – 03.6</span></p>
+        <h2><span lang="pl">Pasieka jest gotowa</span><span lang="en">Your apiary is ready</span><span lang="de">Der Bienenstand steht</span><span lang="fr">Le rucher est prêt</span></h2>
+        <p class="lede">
+          <span lang="pl">Po zeskanowaniu kodu aplikacja uzupełnia dane Huba za Ciebie — nic nie przepisujesz ręcznie.</span>
+          <span lang="en">After the scan the app fills in the Hub details for you — nothing has to be typed by hand.</span><span lang="de">Nach dem Scan trägt die App die Hub-Daten für dich ein — nichts muss abgetippt werden.</span><span lang="fr">Après le scan, l'application renseigne les données du Hub à votre place : rien à recopier.</span>
+        </p>
+        <ul class="micro">
+          <li><b>03.4</b><span lang="pl">Skaner odczytuje kod QR z Huba.</span><span lang="en">The scanner reads the QR code from the Hub.</span><span lang="de">Der Scanner liest den QR-Code vom Hub.</span><span lang="fr">Le scanner lit le QR code du Hub.</span></li>
+          <li><b>03.5</b><span lang="pl">Pola <em>Hub</em> i <em>Verification Code</em> wypełniają się automatycznie — zatwierdź formularz.</span><span lang="en">The <em>Hub</em> and <em>Verification Code</em> fields fill in automatically — confirm the form.</span><span lang="de">Die Felder <em>Hub</em> und <em>Verification Code</em> füllen sich automatisch — bestätige das Formular.</span><span lang="fr">Les champs <em>Hub</em> et <em>Verification Code</em> se remplissent automatiquement : validez le formulaire.</span></li>
+          <li><b>03.6</b><span lang="pl">Pasieka pojawia się na ekranie głównym razem z pogodą.</span><span lang="en">The apiary appears on the home screen along with the weather.</span><span lang="de">Der Bienenstand erscheint samt Wetter auf dem Startbildschirm.</span><span lang="fr">Le rucher apparaît sur l'écran d'accueil, avec la météo.</span></li>
+        </ul>
+      </div>
+      <div class="col col--fig">
+        <figure class="plate">
+          <img src="figs/step03-b.webp" width="1700" height="1020" loading="lazy"
+               alt="Ekrany 03.4–03.6: skanowanie kodu, uzupełnione pola Hub i Verification Code, ekran główny z dodaną pasieką.">
+          <figcaption><span>03.4 — 03.6</span><span lang="pl">Aplikacja</span><span lang="en">In the app</span><span lang="de">In der App</span><span lang="fr">Dans l'application</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 04 · a ═════════════════════════════════════════════ -->
+  <section class="slide" data-num="04" data-title-pl="Dodaj pierwszy ul" data-title-en="Add first hive" data-chapter="04">
+    <div class="ghost" aria-hidden="true">04</div>
+    <div class="wrap">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 04 · 04.1 – 04.3</span><span lang="en">Step 04 · 04.1 – 04.3</span><span lang="de">Schritt 04 · 04.1 – 04.3</span><span lang="fr">Étape 04 · 04.1 – 04.3</span></p>
+        <h2><span lang="pl">Dodaj ul: ColonyLink, VitalSensor i&nbsp;Scale</span><span lang="en">Add hive: ColonyLink, VitalSensor &amp;&nbsp;Scale</span><span lang="de">Stock anlegen: ColonyLink, VitalSensor und&nbsp;Scale</span><span lang="fr">Ajoutez une ruche : ColonyLink, VitalSensor et&nbsp;Scale</span></h2>
+        <p class="lede">
+          <span lang="pl">Pierwszy ul dostaje komplet. Wszystkie trzy urządzenia przypisujesz w jednym formularzu, skanując kolejno ich kody QR.</span>
+          <span lang="en">The first hive gets the full set. You link all three devices in a single form, scanning their QR codes one after another.</span><span lang="de">Der erste Stock bekommt das komplette Set. Alle drei Geräte weist du in einem Formular zu, indem du ihre QR-Codes nacheinander scannst.</span><span lang="fr">La première ruche reçoit l'ensemble complet. Vous associez les trois appareils dans un seul formulaire, en scannant leurs QR codes l'un après l'autre.</span>
+        </p>
+        <ul class="micro">
+          <li><b>04.1</b><span lang="pl">Na ekranie głównym otwórz swoją pasiekę.</span><span lang="en">Open your apiary from the home screen.</span><span lang="de">Öffne deinen Bienenstand auf dem Startbildschirm.</span><span lang="fr">Ouvrez votre rucher depuis l'écran d'accueil.</span></li>
+          <li><b>04.2</b><span lang="pl">Naciśnij <em>Add beehive</em>.</span><span lang="en">Tap <em>Add beehive</em>.</span><span lang="de">Tippe auf <em>Add beehive</em>.</span><span lang="fr">Appuyez sur <em>Add beehive</em>.</span></li>
+          <li><b>04.3</b><span lang="pl">Zacznij od <em>ColonyLink</em> — dotknij ikony skanera przy tym polu.</span><span lang="en">Start with <em>ColonyLink</em> — tap the scanner icon next to that field.</span><span lang="de">Beginne mit <em>ColonyLink</em> — tippe auf das Scanner-Symbol neben diesem Feld.</span><span lang="fr">Commencez par <em>ColonyLink</em> : appuyez sur l'icône du scanner à côté de ce champ.</span></li>
+        </ul>
+      </div>
+      <div class="col col--fig">
+        <figure class="plate">
+          <img src="figs/step04-a.webp" width="1700" height="971" loading="lazy"
+               alt="Ekrany 04.1–04.3: ekran główny, przycisk Add beehive i formularz z urządzeniami ula.">
+          <figcaption><span>04.1 — 04.3</span><span lang="pl">Aplikacja</span><span lang="en">In the app</span><span lang="de">In der App</span><span lang="fr">Dans l'application</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 04 · ColonyLink QR ═════════════════════════════════ -->
+  <section class="slide" data-num="04" data-title-pl="Kod QR ColonyLink" data-title-en="ColonyLink QR code" data-chapter="04">
+    <div class="ghost" aria-hidden="true">04</div>
+    <div class="wrap wrap--wide">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 04 · ColonyLink</span><span lang="en">Step 04 · ColonyLink</span><span lang="de">Schritt 04 · ColonyLink</span><span lang="fr">Étape 04 · ColonyLink</span></p>
+        <h2><span lang="pl">Zeskanuj kod QR ColonyLink</span><span lang="en">Scan the ColonyLink QR code</span><span lang="de">QR-Code des ColonyLink scannen</span><span lang="fr">Scannez le QR code du ColonyLink</span></h2>
+        <p class="lede">
+          <span lang="pl">ColonyLink to <b>naklejka z wbudowanym tagiem NFC i nadrukowanym kodem QR</b>. Skanujesz ją jako pierwszą — to ona wiąże ul w aplikacji z konkretnym ulem w pasiece.</span>
+          <span lang="en">The ColonyLink is a <b>sticker with a built-in NFC tag and a printed QR code</b>. Scan it first — it is what ties the hive in the app to a specific hive in the apiary.</span><span lang="de">Der ColonyLink ist ein <b>Aufkleber mit integriertem NFC-Tag und aufgedrucktem QR-Code</b>. Ihn scannst du zuerst — er verbindet den Stock in der App mit einem konkreten Stock am Stand.</span><span lang="fr">Le ColonyLink est un <b>autocollant avec puce NFC intégrée et QR code imprimé</b>. Scannez-le en premier : c'est lui qui relie la ruche dans l'application à une ruche précise du rucher.</span>
+        </p>
+        <p class="note">
+          <span lang="pl">Ten sam kod odczytasz później zbliżeniowo przez <b>NFC</b> — wystarczy przyłożyć telefon, także w rękawicach.</span>
+          <span lang="en">You can read the same code later by <b>NFC</b> — just tap your phone against it, gloves and all.</span><span lang="de">Denselben Code liest du später kontaktlos per <b>NFC</b> — Handy anhalten genügt, auch mit Handschuhen.</span><span lang="fr">Vous lirez ce même code plus tard sans contact, par <b>NFC</b> : il suffit d'approcher le téléphone, même avec des gants.</span>
+        </p>
+      </div>
+      <div class="col col--fig">
+        <figure class="plate">
+          <img src="figs/pdf-item-tag.webp" width="470" height="366" loading="lazy"
+               alt="Rysunek identyfikatora ula z kodem QR.">
+          <figcaption><span>ColonyLink</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span><span lang="de">Referenzzeichnung</span><span lang="fr">Schéma de référence</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 04 · VitalSensor QR ════════════════════════════════ -->
+  <section class="slide" data-num="04" data-title-pl="Kod QR VitalSensora" data-title-en="VitalSensor QR code" data-chapter="04">
+    <div class="ghost" aria-hidden="true">04</div>
+    <div class="wrap wrap--wide">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 04 · VitalSensor</span><span lang="en">Step 04 · VitalSensor</span><span lang="de">Schritt 04 · VitalSensor</span><span lang="fr">Étape 04 · VitalSensor</span></p>
+        <h2><span lang="pl">Zeskanuj kod QR VitalSensora</span><span lang="en">Scan the VitalSensor QR code</span><span lang="de">QR-Code des VitalSensors scannen</span><span lang="fr">Scannez le QR code du VitalSensor</span></h2>
+        <p class="lede">
+          <span lang="pl">Naklejka z kodem QR jest na krótszym boku obudowy. Zeskanuj ją przed zamontowaniem czujnika na ramce — po włożeniu ramki do ula kod ma być widoczny od góry.</span>
+          <span lang="en">The QR sticker is on the short side of the housing. Scan it before you mount the sensor on the frame — once the frame is in the hive the code must stay visible from above.</span><span lang="de">Der QR-Aufkleber sitzt an der schmalen Seite des Gehäuses. Scanne ihn, bevor du den Sensor am Rähmchen befestigst — nach dem Einhängen muss der Code von oben sichtbar bleiben.</span><span lang="fr">L'autocollant QR se trouve sur le petit côté du boîtier. Scannez-le avant de fixer le capteur sur le cadre : une fois le cadre en place, le code doit rester visible du dessus.</span>
+        </p>
+        <p class="note">
+          <span lang="pl">Każdy z trzech czujników ma własny kod. Pilnuj, który trafia do którego ula.</span>
+          <span lang="en">Each of the three sensors has its own code. Keep track of which one goes into which hive.</span><span lang="de">Jeder der drei Sensoren hat einen eigenen Code. Behalte im Blick, welcher in welchen Stock kommt.</span><span lang="fr">Chacun des trois capteurs a son propre code. Notez bien lequel va dans quelle ruche.</span>
+        </p>
+      </div>
+      <div class="col col--fig">
+        <div class="plate-row">
+          <figure class="plate">
+            <img src="figs/pdf-vitalsensor-qr.webp" width="1700" height="1536" loading="lazy"
+                 alt="Rysunek: umiejscowienie kodu QR na obudowie VitalSensora i ekran skanera.">
+            <figcaption><span>VitalSensor</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span><span lang="de">Referenzzeichnung</span><span lang="fr">Schéma de référence</span></figcaption>
+          </figure>
+          <figure class="plate">
+            <img src="figs/qr-sensor.webp" width="1400" height="1050" loading="lazy"
+                 alt="Naklejka z kodem QR na boku obudowy Apisense VitalSensor.">
+            <figcaption><span lang="pl">VitalSensor</span><span lang="en">VitalSensor</span><span lang="de">VitalSensor</span><span lang="fr">VitalSensor</span><span lang="pl">Zdjęcie</span><span lang="en">Photo</span><span lang="de">Foto</span><span lang="fr">Photo</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 04 · Scale QR ══════════════════════════════════════ -->
+  <section class="slide" data-num="04" data-title-pl="Kod QR Scale" data-title-en="Scale QR code" data-chapter="04">
+    <div class="ghost" aria-hidden="true">04</div>
+    <div class="wrap wrap--wide">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 04 · Scale</span><span lang="en">Step 04 · Scale</span><span lang="de">Schritt 04 · Scale</span><span lang="fr">Étape 04 · Scale</span></p>
+        <h2><span lang="pl">Zeskanuj kod QR Scale</span><span lang="en">Scan the Scale QR code</span><span lang="de">QR-Code der Scale scannen</span><span lang="fr">Scannez le QR code de la Scale</span></h2>
+        <p class="lede">
+          <span lang="pl">Naklejka z kodem QR jest na czole belki pomiarowej — tej z elektroniką i komorą baterii. Drewniana kantówka nie ma kodu.</span>
+          <span lang="en">The QR sticker is on the end face of the measuring beam — the one with the electronics and the battery compartment. The wooden spacer bar has no code.</span><span lang="de">Der QR-Aufkleber sitzt an der Stirnseite des Messbalkens — dem Teil mit Elektronik und Batteriefach. Das Kantholz hat keinen Code.</span><span lang="fr">L'autocollant QR se trouve en bout de la barre de pesée, celle qui contient l'électronique et le compartiment à piles. Le tasseau en bois n'a pas de code.</span>
+        </p>
+        <p class="note">
+          <span lang="pl">Zeskanuj kod <b>zanim</b> wsuniesz belkę pod ul — później dostęp do niego będzie utrudniony.</span>
+          <span lang="en">Scan the code <b>before</b> you slide the beam under the hive — it is harder to reach afterwards.</span><span lang="de">Scanne den Code, <b>bevor</b> du den Balken unter den Stock schiebst — danach kommst du schlechter heran.</span><span lang="fr">Scannez le code <b>avant</b> de glisser la barre sous la ruche : ensuite, l'accès sera plus difficile.</span>
+        </p>
+      </div>
+      <div class="col col--fig">
+        <div class="plate-row">
+          <figure class="plate">
+            <img src="figs/pdf-scale-qr.webp" width="1700" height="1549" loading="lazy"
+                 alt="Rysunek: umiejscowienie kodu QR na czole belki pomiarowej i ekran skanera.">
+            <figcaption><span>Scale</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span><span lang="de">Referenzzeichnung</span><span lang="fr">Schéma de référence</span></figcaption>
+          </figure>
+          <figure class="plate">
+            <img src="figs/qr-scale.webp" width="1400" height="1050" loading="lazy"
+                 alt="Naklejka z kodem QR na czole belki pomiarowej Apisense Scale.">
+            <figcaption><span lang="pl">Scale</span><span lang="en">Scale</span><span lang="de">Scale</span><span lang="fr">Scale</span><span lang="pl">Zdjęcie</span><span lang="en">Photo</span><span lang="de">Foto</span><span lang="fr">Photo</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 04 · saved ═════════════════════════════════════════ -->
+  <section class="slide" data-num="04" data-title-pl="Ul zapisany" data-title-en="Hive saved" data-chapter="04">
+    <div class="ghost" aria-hidden="true">04</div>
+    <div class="wrap">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 04 · 04.8 – 04.10</span><span lang="en">Step 04 · 04.8 – 04.10</span><span lang="de">Schritt 04 · 04.8 – 04.10</span><span lang="fr">Étape 04 · 04.8 – 04.10</span></p>
+        <h2><span lang="pl">Pierwszy ul zapisany</span><span lang="en">The first hive is saved</span><span lang="de">Erster Stock gespeichert</span><span lang="fr">Première ruche enregistrée</span></h2>
+        <p class="lede">
+          <span lang="pl">Wszystkie kody weryfikacyjne wypełniają się same. Po zapisaniu formularza ul pojawia się w pasiece.</span>
+          <span lang="en">All verification codes fill in on their own. Once you save the form, the hive appears in the apiary.</span><span lang="de">Alle Verifizierungscodes tragen sich von selbst ein. Nach dem Speichern erscheint der Stock am Bienenstand.</span><span lang="fr">Tous les codes de vérification se remplissent seuls. Une fois le formulaire enregistré, la ruche apparaît dans le rucher.</span>
+        </p>
+        <ul class="micro">
+          <li><b>04.8</b><span lang="pl">Skaner odczytuje ostatni z kodów.</span><span lang="en">The scanner reads the last of the codes.</span><span lang="de">Der Scanner liest den letzten Code.</span><span lang="fr">Le scanner lit le dernier code.</span></li>
+          <li><b>04.9</b><span lang="pl">Formularz jest kompletny — naciśnij <em>Save</em>.</span><span lang="en">The form is complete — tap <em>Save</em>.</span><span lang="de">Das Formular ist vollständig — tippe auf <em>Save</em>.</span><span lang="fr">Le formulaire est complet : appuyez sur <em>Save</em>.</span></li>
+          <li><b>04.10</b><span lang="pl">Ul widnieje na ekranie głównym. Odczyty pojawią się po pierwszej synchronizacji.</span><span lang="en">The hive shows on the home screen. Readings appear after the first sync.</span><span lang="de">Der Stock steht auf dem Startbildschirm. Die Messwerte kommen nach der ersten Synchronisierung.</span><span lang="fr">La ruche s'affiche sur l'écran d'accueil. Les mesures arriveront après la première synchronisation.</span></li>
+        </ul>
+      </div>
+      <div class="col col--fig">
+        <figure class="plate">
+          <img src="figs/step04-c.webp" width="1700" height="1028" loading="lazy"
+               alt="Ekrany 04.8–04.10: skanowanie kodu, zapis formularza i ekran główny z dodanym ulem.">
+          <figcaption><span>04.8 — 04.10</span><span lang="pl">Aplikacja</span><span lang="en">In the app</span><span lang="de">In der App</span><span lang="fr">Dans l'application</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 05 · a ═════════════════════════════════════════════ -->
+  <section class="slide" data-num="05" data-title-pl="Dodaj kolejny ul" data-title-en="Add another hive" data-chapter="05">
+    <div class="ghost" aria-hidden="true">05</div>
+    <div class="wrap">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 05 · 05.1 – 05.3</span><span lang="en">Step 05 · 05.1 – 05.3</span><span lang="de">Schritt 05 · 05.1 – 05.3</span><span lang="fr">Étape 05 · 05.1 – 05.3</span></p>
+        <h2><span lang="pl">Dodaj kolejny ul</span><span lang="en">Add another hive</span><span lang="de">Weiteren Stock anlegen</span><span lang="fr">Ajoutez une autre ruche</span></h2>
+        <p class="lede">
+          <span lang="pl">Kolejne ule dodajesz z <b>ColonyLinkiem i VitalSensorem</b> — Scale zostaje pod pierwszym ulem. Pole <em>Scale</em> zostaw puste.</span>
+          <span lang="en">Further hives are added with a <b>ColonyLink and a VitalSensor</b> — the Scale stays under the first hive. Leave the <em>Scale</em> field empty.</span><span lang="de">Weitere Stöcke legst du mit <b>ColonyLink und VitalSensor</b> an — die Scale bleibt unter dem ersten Stock. Das Feld <em>Scale</em> lässt du leer.</span><span lang="fr">Les ruches suivantes s'ajoutent avec un <b>ColonyLink et un VitalSensor</b> : la Scale reste sous la première ruche. Laissez le champ <em>Scale</em> vide.</span>
+        </p>
+        <ul class="micro">
+          <li><b>05.1</b><span lang="pl">Otwórz pasiekę z ekranu głównego.</span><span lang="en">Open the apiary from the home screen.</span><span lang="de">Öffne den Bienenstand vom Startbildschirm aus.</span><span lang="fr">Ouvrez le rucher depuis l'écran d'accueil.</span></li>
+          <li><b>05.2</b><span lang="pl">Naciśnij <em>+</em> i wybierz <em>Beehive</em>.</span><span lang="en">Tap <em>+</em> and choose <em>Beehive</em>.</span><span lang="de">Tippe auf <em>+</em> und wähle <em>Beehive</em>.</span><span lang="fr">Appuyez sur <em>+</em> et choisissez <em>Beehive</em>.</span></li>
+          <li><b>05.3</b><span lang="pl">Zeskanuj kod QR z <em>ColonyLink</em>, a zaraz po nim z <em>VitalSensora</em>.</span><span lang="en">Scan the <em>ColonyLink</em> QR code, then the <em>VitalSensor</em> one.</span><span lang="de">Scanne den QR-Code des <em>ColonyLink</em> und gleich danach den des <em>VitalSensors</em>.</span><span lang="fr">Scannez le QR code du <em>ColonyLink</em>, puis aussitôt celui du <em>VitalSensor</em>.</span></li>
+        </ul>
+      </div>
+      <div class="col col--fig">
+        <figure class="plate">
+          <img src="figs/step05-a.webp" width="1700" height="1048" loading="lazy"
+               alt="Ekrany 05.1–05.3: ekran główny, menu z opcją Beehive i formularz Add beehive.">
+          <figcaption><span>05.1 — 05.3</span><span lang="pl">Aplikacja</span><span lang="en">In the app</span><span lang="de">In der App</span><span lang="fr">Dans l'application</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 05 · b ═════════════════════════════════════════════ -->
+  <section class="slide" data-num="05" data-title-pl="Kolejny ul zapisany" data-title-en="Next hive saved" data-chapter="05">
+    <div class="ghost" aria-hidden="true">05</div>
+    <div class="wrap">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 05 · 05.4 – 05.7</span><span lang="en">Step 05 · 05.4 – 05.7</span><span lang="de">Schritt 05 · 05.4 – 05.7</span><span lang="fr">Étape 05 · 05.4 – 05.7</span></p>
+        <h2><span lang="pl">Kolejny ul w pasiece</span><span lang="en">Another hive in the apiary</span><span lang="de">Ein weiterer Stock am Stand</span><span lang="fr">Une ruche de plus au rucher</span></h2>
+        <p class="lede">
+          <span lang="pl">Formularz zapisuje się tak samo jak przy pierwszym ulu — z ColonyLinkiem i VitalSensorem, bez Scale.</span>
+          <span lang="en">The form saves exactly like the first hive — with a ColonyLink and a VitalSensor, without the Scale.</span><span lang="de">Das Formular speicherst du genauso wie beim ersten Stock — mit ColonyLink und VitalSensor, ohne Scale.</span><span lang="fr">Le formulaire s'enregistre exactement comme pour la première ruche : avec un ColonyLink et un VitalSensor, sans Scale.</span>
+        </p>
+        <ul class="micro">
+          <li><b>05.4 – 05.5</b><span lang="pl">Skaner odczytuje kody ColonyLinka i kolejnego czujnika.</span><span lang="en">The scanner reads the ColonyLink and the next sensor.</span><span lang="de">Der Scanner liest den ColonyLink und den nächsten Sensor.</span><span lang="fr">Le scanner lit le ColonyLink puis le capteur suivant.</span></li>
+          <li><b>05.6</b><span lang="pl">Pola i kody weryfikacyjne są gotowe — naciśnij <em>Save</em>.</span><span lang="en">The fields and verification codes are ready — tap <em>Save</em>.</span><span lang="de">Felder und Verifizierungscodes sind gefüllt — tippe auf <em>Save</em>.</span><span lang="fr">Les champs et les codes de vérification sont prêts : appuyez sur <em>Save</em>.</span></li>
+          <li><b>05.7</b><span lang="pl">Kolejny ul widnieje w pasiece. Powtórz krok 05 dla każdego następnego ula.</span><span lang="en">The next hive shows in the apiary. Repeat step 05 for every further hive.</span><span lang="de">Der nächste Stock steht am Bienenstand. Wiederhole Schritt 05 für jeden weiteren Stock.</span><span lang="fr">La ruche suivante apparaît au rucher. Répétez l'étape 05 pour chaque ruche supplémentaire.</span></li>
+        </ul>
+      </div>
+      <div class="col col--fig">
+        <figure class="plate">
+          <img src="figs/step05-b.webp" width="1700" height="999" loading="lazy"
+               alt="Ekrany 05.5–05.7: skanowanie kodu, zapis formularza i ekran główny z kolejnym ulem.">
+          <figcaption><span>05.5 — 05.7</span><span lang="pl">Aplikacja</span><span lang="en">In the app</span><span lang="de">In der App</span><span lang="fr">Dans l'application</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 06 · power up ══════════════════════════════════════ -->
+  <section class="slide" data-num="06" data-title-pl="Uruchom urządzenia" data-title-en="Power up" data-chapter="06">
+    <div class="ghost" aria-hidden="true">06</div>
+    <div class="wrap wrap--wide">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 06</span><span lang="en">Step 06</span><span lang="de">Schritt 06</span><span lang="fr">Étape 06</span></p>
+        <h2><span lang="pl">Uruchom urządzenia i poczekaj na dane</span><span lang="en">Power up and wait for data</span><span lang="de">Geräte in Betrieb nehmen und auf Daten warten</span><span lang="fr">Mettez les appareils en marche et attendez les données</span></h2>
+        <p class="lede">
+          <span lang="pl">Urządzenia przychodzą z <b>zamontowanymi bateriami</b> — nic nie wkładasz. Sprawdzasz je tylko <b>przed</b> montażem w pasiece, żeby wiedzieć, że działają, zanim wejdziesz między ule.</span>
+          <span lang="en">The devices arrive with <b>batteries already fitted</b> — nothing to insert. You only check them <b>before</b> mounting, so you know everything works before you go out among the hives.</span><span lang="de">Die Geräte kommen mit <b>bereits eingelegten Batterien</b> — du musst nichts einsetzen. Du prüfst sie nur <b>vor</b> der Montage, damit du weißt, dass alles läuft, bevor du zwischen die Stöcke gehst.</span><span lang="fr">Les appareils sont livrés avec les <b>piles déjà en place</b> : rien à insérer. Vous les vérifiez simplement <b>avant</b> le montage, pour savoir que tout fonctionne avant d'aller entre les ruches.</span>
+        </p>
+        <ul class="micro">
+          <li><b>Hub</b><span lang="pl">Wystaw na słońce — zasila go panel fotowoltaiczny.</span><span lang="en">Put it in the sun — it runs on its photovoltaic panel.</span><span lang="de">In die Sonne stellen — er läuft über sein Solarpanel.</span><span lang="fr">Exposez-le au soleil : il fonctionne grâce à son panneau photovoltaïque.</span></li>
+          <li><b>Scale</b><span lang="pl">Sprawdź, czy zaświeciła się dioda potwierdzająca uruchomienie.</span><span lang="en">Check that the LED confirming start-up lights up.</span><span lang="de">Prüfe, ob die LED für den Start leuchtet.</span><span lang="fr">Vérifiez que le voyant de démarrage s'allume.</span></li>
+          <li><b>VitalSensor</b><span lang="pl">Sprawdź diodę uruchomienia.</span><span lang="en">Check the start-up LED.</span><span lang="de">Prüfe die Start-LED.</span><span lang="fr">Vérifiez le voyant de démarrage.</span></li>
+          <li><b>~2 h</b><span lang="pl">Po dwóch godzinach sprawdź pierwsze odczyty w aplikacji — status <em>Brak danych</em> zmieni się na aktualny.</span><span lang="en">After two hours check the first readings in the app — the <em>No data</em> status turns into a live one.</span><span lang="de">Prüfe nach zwei Stunden die ersten Messwerte in der App — der Status <em>Keine Daten</em> wechselt auf einen aktuellen Wert.</span><span lang="fr">Au bout de deux heures, vérifiez les premières mesures dans l'application : le statut <em>Aucune donnée</em> devient une valeur à jour.</span></li>
+        </ul>
+      </div>
+      <div class="col col--fig">
+        <figure class="plate">
+          <img src="figs/montaz-systemu-animated.svg" width="205" height="165" loading="lazy"
+               alt="Animacja: rozmieszczenie Huba, Scale i VitalSensora w pasiece.">
+          <figcaption><span lang="pl">Zestaw w pasiece</span><span lang="en">The kit in the apiary</span><span lang="de">Das Set am Bienenstand</span><span lang="fr">Le kit au rucher</span><span lang="pl">Rozmieszczenie</span><span lang="en">Placement</span><span lang="de">Anordnung</span><span lang="fr">Disposition</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 07 · hub ═══════════════════════════════════════════ -->
+  <section class="slide" data-num="07" data-title-pl="Montaż Huba" data-title-en="Mount the Hub" data-chapter="07">
+    <div class="ghost" aria-hidden="true">07</div>
+    <div class="wrap wrap--wide">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 07 · Montaż</span><span lang="en">Step 07 · Mounting</span><span lang="de">Schritt 07 · Montage</span><span lang="fr">Étape 07 · Montage</span></p>
+        <h2><span lang="pl">Zamontuj Hub</span><span lang="en">Mount the Hub</span><span lang="de">Hub montieren</span><span lang="fr">Montez le Hub</span></h2>
+        <p class="lede">
+          <span lang="pl">Hub zasila panel fotowoltaiczny, więc decyduje o nim <b>słońce</b>, nie bliskość ula. Do montażu użyj uchwytu aparatowego z zestawu.</span>
+          <span lang="en">The Hub runs on a photovoltaic panel, so <b>sunlight</b> decides where it goes — not proximity to a hive. Use the camera mount from the kit.</span><span lang="de">Der Hub läuft über ein Solarpanel — entscheidend ist also die <b>Sonne</b>, nicht die Nähe zum Stock. Nutze für die Montage die Kamerahalterung aus dem Set.</span><span lang="fr">Le Hub fonctionne grâce à un panneau photovoltaïque : c'est donc le <b>soleil</b> qui décide de son emplacement, pas la proximité d'une ruche. Utilisez le support photo fourni dans le kit.</span>
+        </p>
+        <ul class="micro">
+          <li><b>1–2 m</b><span lang="pl">Nad ziemią — niżej panel może nie zebrać dość światła, zwłaszcza zimą.</span><span lang="en">Above the ground — any lower and the panel may not gather enough light, especially in winter.</span><span lang="de">Über dem Boden — tiefer bekommt das Panel womöglich zu wenig Licht, vor allem im Winter.</span><span lang="fr">Au-dessus du sol : plus bas, le panneau risque de manquer de lumière, surtout en hiver.</span></li>
+          <li><b>30–50°</b><span lang="pl">Nachylenie względem poziomu (min. 20°), panelem w stronę słońca, bez zacienienia.</span><span lang="en">Tilt from horizontal (min. 20°), panel facing the sun, never shaded.</span><span lang="de">Neigung zur Waagerechten (mind. 20°), Panel zur Sonne, nie beschattet.</span><span lang="fr">Inclinaison par rapport à l'horizontale (20° min.), panneau face au soleil, jamais à l'ombre.</span></li>
+          <li><b>≤ 35 m</b><span lang="pl">Od najdalszego ula z VitalSensorem lub Scale — to zasięg BLE.</span><span lang="en">From the furthest hive with a VitalSensor or Scale — that is the BLE range.</span><span lang="de">Vom entferntesten Stock mit VitalSensor oder Scale — das ist die BLE-Reichweite.</span><span lang="fr">Depuis la ruche la plus éloignée équipée d'un VitalSensor ou d'une Scale : c'est la portée BLE.</span></li>
+          <li><b><span lang="pl">Anteny</span><span lang="en">Antennas</span><span lang="de">Antennen</span><span lang="fr">Antennes</span></b><span lang="pl">Skierowane <em>pionowo do góry</em> — BLE i LTE mają różne złącza, nie da się ich pomylić.</span><span lang="en">Pointing <em>vertically upwards</em> — BLE and LTE use different connectors and cannot be swapped.</span><span lang="de"><em>Senkrecht nach oben</em> ausgerichtet — BLE und LTE haben unterschiedliche Anschlüsse und lassen sich nicht vertauschen.</span><span lang="fr">Orientées <em>verticalement vers le haut</em> : BLE et LTE ont des connecteurs différents, impossible de les intervertir.</span></li>
+        </ul>
+        <p class="note">
+          <span lang="pl"><b>Nie montuj Huba do metalu</b> — zakłóca BLE i LTE. Słupek, drzewo lub drewniana konstrukcja są w porządku.</span>
+          <span lang="en"><b>Do not mount the Hub on metal</b> — it disturbs BLE and LTE. A post, a tree or a wooden structure is fine.</span><span lang="de"><b>Montiere den Hub nicht auf Metall</b> — es stört BLE und LTE. Ein Pfosten, ein Baum oder eine Holzkonstruktion sind in Ordnung.</span><span lang="fr"><b>Ne montez pas le Hub sur du métal</b> : cela perturbe le BLE et la LTE. Un piquet, un arbre ou une structure en bois conviennent.</span>
+        </p>
+      </div>
+      <div class="col col--fig">
+        <div class="plate-row">
+          <figure class="plate">
+            <img src="figs/pdf-hub-mount.webp" width="1700" height="1235" loading="lazy"
+                 alt="Rysunek montażu Apisense Hub i podłączenia zasilania.">
+            <figcaption><span>Hub</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span><span lang="de">Referenzzeichnung</span><span lang="fr">Schéma de référence</span></figcaption>
+          </figure>
+          <figure class="plate">
+            <img src="figs/photo-hub.webp" width="1400" height="1050" loading="lazy"
+                 alt="Prawidłowo zamontowany Apisense Hub: panel nachylony ku słońcu, obie anteny pionowo w górę.">
+            <figcaption><span lang="pl">Prawidłowy montaż</span><span lang="en">Correct mounting</span><span lang="de">Korrekte Montage</span><span lang="fr">Montage correct</span><span lang="pl">Zdjęcie</span><span lang="en">Photo</span><span lang="de">Foto</span><span lang="fr">Photo</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 07 · scale ═════════════════════════════════════════ -->
+  <section class="slide" data-num="07" data-title-pl="Montaż Scale" data-title-en="Mount the Scale" data-chapter="07">
+    <div class="ghost" aria-hidden="true">07</div>
+    <div class="wrap wrap--wide">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 07 · Montaż</span><span lang="en">Step 07 · Mounting</span><span lang="de">Schritt 07 · Montage</span><span lang="fr">Étape 07 · Montage</span></p>
+        <h2><span lang="pl">Ustaw Scale pod ulem</span><span lang="en">Place the Scale under the hive</span><span lang="de">Scale unter den Stock setzen</span><span lang="fr">Placez la Scale sous la ruche</span></h2>
+        <p class="lede">
+          <span lang="pl">Scale i drewniana kantówka tworzą jedną konstrukcję nośną. Wypoziomowanie i orientacja są <b>kluczowe dla dokładności pomiaru</b>.</span>
+          <span lang="en">The Scale and the wooden spacer bar form one supporting structure. Levelling and orientation are <b>critical for measurement accuracy</b>.</span><span lang="de">Scale und Kantholz bilden zusammen eine tragende Konstruktion. Waagerechte Ausrichtung und Orientierung sind <b>entscheidend für die Messgenauigkeit</b>.</span><span lang="fr">La Scale et le tasseau en bois forment une seule structure porteuse. La mise à niveau et l'orientation sont <b>déterminantes pour la précision de la mesure</b>.</span>
+        </p>
+        <ul class="micro">
+          <li><b>01</b><span lang="pl">Ustaw uruchomioną Scale na stabilnym, równym podłożu, <em>prostopadle do ramek</em> w ulu.</span><span lang="en">Put the powered Scale on firm, level ground, <em>perpendicular to the frames</em> in the hive.</span><span lang="de">Stelle die eingeschaltete Scale auf festen, ebenen Untergrund, <em>quer zu den Rähmchen</em> im Stock.</span><span lang="fr">Posez la Scale allumée sur un sol stable et plat, <em>perpendiculairement aux cadres</em> de la ruche.</span></li>
+          <li><b>02</b><span lang="pl">Ułóż drewnianą kantówkę równolegle do Scale, w takiej odległości, żeby ciężar ula rozłożył się równomiernie.</span><span lang="en">Lay the wooden bar parallel to the Scale, spaced so the hive weight is spread evenly.</span><span lang="de">Lege das Kantholz parallel zur Scale, so weit entfernt, dass sich das Gewicht des Stocks gleichmäßig verteilt.</span><span lang="fr">Disposez le tasseau parallèlement à la Scale, à une distance telle que le poids de la ruche se répartisse uniformément.</span></li>
+          <li><b>03</b><span lang="pl">Postaw ul na konstrukcji i sprawdź, że obciążenie nadal rozkłada się równo.</span><span lang="en">Set the hive on the structure and check the load is still spread evenly.</span><span lang="de">Setze den Stock auf die Konstruktion und prüfe, ob die Last weiterhin gleichmäßig verteilt ist.</span><span lang="fr">Posez la ruche sur la structure et vérifiez que la charge reste bien répartie.</span></li>
+          <li><b>≤ 35 m</b><span lang="pl">Od Huba, bez przeszkód tłumiących sygnał BLE.</span><span lang="en">From the Hub, with nothing blocking the BLE signal.</span><span lang="de">Vom Hub, ohne Hindernisse, die das BLE-Signal dämpfen.</span><span lang="fr">Depuis le Hub, sans obstacle atténuant le signal BLE.</span></li>
+        </ul>
+      </div>
+      <div class="col col--fig">
+        <div class="plate-row">
+          <figure class="plate">
+            <img src="figs/pdf-mount-scale.webp" width="1700" height="622" loading="lazy"
+                 alt="Rysunek ustawienia belki pomiarowej i listwy pod ulem.">
+            <figcaption><span>Scale</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span><span lang="de">Referenzzeichnung</span><span lang="fr">Schéma de référence</span></figcaption>
+          </figure>
+          <figure class="plate">
+            <img src="figs/photo-scale.webp" width="1400" height="1050" loading="lazy"
+                 alt="Ul stojący na Apisense Scale i drewnianej kantówce.">
+            <figcaption><span lang="pl">Scale i kantówka</span><span lang="en">Scale &amp; spacer bar</span><span lang="de">Scale und Kantholz</span><span lang="fr">Scale et tasseau</span><span lang="pl">Zdjęcie</span><span lang="en">Photo</span><span lang="de">Foto</span><span lang="fr">Photo</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 07 · vitalsensor ═══════════════════════════════════ -->
+  <section class="slide" data-num="07" data-title-pl="Montaż VitalSensora" data-title-en="Mount the VitalSensor" data-chapter="07">
+    <div class="ghost" aria-hidden="true">07</div>
+    <div class="wrap wrap--wide">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 07 · Montaż</span><span lang="en">Step 07 · Mounting</span><span lang="de">Schritt 07 · Montage</span><span lang="fr">Étape 07 · Montage</span></p>
+        <h2><span lang="pl">Zamontuj VitalSensor w ulu</span><span lang="en">Mount the VitalSensor in the hive</span><span lang="de">VitalSensor im Stock montieren</span><span lang="fr">Montez le VitalSensor dans la ruche</span></h2>
+        <p class="lede">
+          <span lang="pl">Czujnik montujesz bezinwazyjnie na ramce — bez trwałych zmian w ulu i bez zakłócania pracy rodziny.</span>
+          <span lang="en">The sensor mounts non-invasively on a frame — no permanent changes to the hive and no disturbance to the colony.</span><span lang="de">Den Sensor bringst du schonend am Rähmchen an — ohne dauerhafte Eingriffe am Stock und ohne das Volk zu stören.</span><span lang="fr">Le capteur se fixe sur un cadre sans intervention : aucune modification permanente de la ruche et aucune perturbation de la colonie.</span>
+        </p>
+        <ul class="micro">
+          <li><b>01</b><span lang="pl">Osadź uruchomiony VitalSensor na <em>centralnej ramce</em> (w kłębie), stabilnie, tak żeby się nie przemieszczał.</span><span lang="en">Fix the powered VitalSensor to the <em>central frame</em> (in the cluster), firmly enough that it cannot shift.</span><span lang="de">Befestige den eingeschalteten VitalSensor am <em>mittleren Rähmchen</em> (im Bienensitz), fest genug, dass er nicht verrutscht.</span><span lang="fr">Fixez le VitalSensor allumé sur le <em>cadre central</em> (dans la grappe), assez fermement pour qu'il ne bouge pas.</span></li>
+          <li><b>02</b><span lang="pl">Zamontuj go <em>pionowo</em> — naklejka z kodem QR ma być widoczna od góry po włożeniu ramki.</span><span lang="en">Mount it <em>vertically</em> — the QR sticker must stay visible from above once the frame is in.</span><span lang="de">Montiere ihn <em>senkrecht</em> — der QR-Aufkleber muss nach dem Einhängen von oben sichtbar bleiben.</span><span lang="fr">Montez-le <em>verticalement</em> : l'autocollant QR doit rester visible du dessus une fois le cadre en place.</span></li>
+          <li><b>03</b><span lang="pl">Włóż ramkę w środkową część korpusu gniazdowego, tak żeby nie zakłócać wentylacji.</span><span lang="en">Slide the frame into the middle of the brood body, without obstructing ventilation.</span><span lang="de">Hänge das Rähmchen in die Mitte des Brutraums, ohne die Belüftung zu behindern.</span><span lang="fr">Insérez le cadre au milieu du corps de couvain, sans gêner la ventilation.</span></li>
+          <li><b>≤ 35 m</b><span lang="pl">Od Huba — zasięg BLE.</span><span lang="en">From the Hub — BLE range.</span><span lang="de">Vom Hub — BLE-Reichweite.</span><span lang="fr">Depuis le Hub : portée BLE.</span></li>
+        </ul>
+      </div>
+      <div class="col col--fig">
+        <div class="plate-row">
+          <figure class="plate">
+            <img src="figs/pdf-mount-vitalsensor.webp" width="1700" height="995" loading="lazy"
+                 alt="Rysunek montażu VitalSensora na ramce pszczelej.">
+            <figcaption><span>VitalSensor</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span><span lang="de">Referenzzeichnung</span><span lang="fr">Schéma de référence</span></figcaption>
+          </figure>
+          <figure class="plate">
+            <img src="figs/photo-sensor-frame.webp" width="1400" height="1050" loading="lazy"
+                 alt="VitalSensor przymocowany pionowo do ramki pszczelej.">
+            <figcaption><span lang="pl">Czujnik na ramce</span><span lang="en">Sensor on the frame</span><span lang="de">Sensor am Rähmchen</span><span lang="fr">Capteur sur le cadre</span><span lang="pl">Zdjęcie</span><span lang="en">Photo</span><span lang="de">Foto</span><span lang="fr">Photo</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 07 · colonylink ════════════════════════════════════ -->
+  <section class="slide" data-num="07" data-title-pl="ColonyLink" data-title-en="ColonyLink" data-chapter="07">
+    <div class="ghost" aria-hidden="true">07</div>
+    <div class="wrap wrap--wide">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Krok 07 · Montaż</span><span lang="en">Step 07 · Mounting</span><span lang="de">Schritt 07 · Montage</span><span lang="fr">Étape 07 · Montage</span></p>
+        <h2><span lang="pl">Umieść ColonyLink na ulu</span><span lang="en">Attach the ColonyLink</span><span lang="de">ColonyLink am Stock anbringen</span><span lang="fr">Posez le ColonyLink sur la ruche</span></h2>
+        <p class="lede">
+          <span lang="pl">ColonyLink to <b>wodoodporna naklejka</b> z wbudowanym tagiem NFC i nadrukowanym kodem QR. Zeskanowanie kodu albo przyłożenie telefonu otwiera dane właściwego ula — też w rękawicach i w pełnym słońcu.</span>
+          <span lang="en">The ColonyLink is a <b>waterproof sticker</b> with a built-in NFC tag and a printed QR code. Scanning it or tapping your phone against it opens the right hive — even with gloves on and in full sun.</span><span lang="de">Der ColonyLink ist ein <b>wasserfester Aufkleber</b> mit integriertem NFC-Tag und aufgedrucktem QR-Code. Code scannen oder Handy anhalten öffnet die Daten des richtigen Stocks — auch mit Handschuhen und in praller Sonne.</span><span lang="fr">Le ColonyLink est un <b>autocollant étanche</b> avec puce NFC intégrée et QR code imprimé. Scanner le code ou approcher le téléphone ouvre les données de la bonne ruche, même avec des gants et en plein soleil.</span>
+        </p>
+        <ul class="micro">
+          <li><b>01</b><span lang="pl">Wybierz na froncie ula miejsce <em>płaskie, czyste i suche</em>, dobrze widoczne podczas pracy.</span><span lang="en">Pick a spot on the hive front that is <em>flat, clean and dry</em>, and stays easy to see while you work.</span><span lang="de">Wähle an der Stockvorderseite eine <em>ebene, saubere und trockene</em> Stelle, die bei der Arbeit gut sichtbar bleibt.</span><span lang="fr">Choisissez sur la façade de la ruche un endroit <em>plat, propre et sec</em>, bien visible pendant le travail.</span></li>
+          <li><b>02</b><span lang="pl">Naklej ColonyLink i dociśnij go na całej powierzchni, żeby taśma montażowa dobrze przylegała.</span><span lang="en">Stick the ColonyLink on and press it down over its whole surface so the adhesive bonds properly.</span><span lang="de">Klebe den ColonyLink auf und drücke ihn ganzflächig an, damit das Klebeband gut haftet.</span><span lang="fr">Collez le ColonyLink et pressez-le sur toute sa surface pour que l'adhésif tienne bien.</span></li>
+          <li><b>03</b><span lang="pl">Sprawdź, czy kod QR jest dostępny bez otwierania ula.</span><span lang="en">Check that the QR code is reachable without opening the hive.</span><span lang="de">Prüfe, ob der QR-Code erreichbar ist, ohne den Stock zu öffnen.</span><span lang="fr">Vérifiez que le QR code est accessible sans ouvrir la ruche.</span></li>
+          <li><b><span lang="pl">Bez baterii</span><span lang="en">No battery</span><span lang="de">Ohne Batterie</span><span lang="fr">Sans pile</span></b><span lang="pl">ColonyLink nie wymaga zasilania, konfiguracji ani aktualizacji.</span><span lang="en">The ColonyLink needs no power, no setup and no updates.</span><span lang="de">Der ColonyLink braucht weder Strom noch Einrichtung noch Updates.</span><span lang="fr">Le ColonyLink ne nécessite ni alimentation, ni configuration, ni mise à jour.</span></li>
+        </ul>
+      </div>
+      <div class="col col--fig">
+        <figure class="plate">
+          <img src="figs/pdf-mount-tag.webp" width="1700" height="578" loading="lazy"
+               alt="Rysunek umieszczenia identyfikatora ula na ścianie ula.">
+          <figcaption><span>ColonyLink</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span><span lang="de">Referenzzeichnung</span><span lang="fr">Schéma de référence</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ END ════════════════════════════════════════════════ -->
+  <section class="slide slide--end" data-title-pl="Gotowe" data-title-en="Done" data-chapter="✱">
+    <div class="ghost" aria-hidden="true">✱</div>
+    <div class="wrap wrap--stack">
+      <div class="col col--text">
+        <p class="tag"><span lang="pl">Gotowe</span><span lang="en">All set</span><span lang="de">Fertig</span><span lang="fr">C'est prêt</span></p>
+        <h1><span lang="pl">Ul nadaje.</span><span lang="en">Your hive is on air.</span><span lang="de">Der Stock sendet.</span><span lang="fr">La ruche émet.</span></h1>
+        <p class="lede">
+          <span lang="pl">Hub zbiera dane z czujników i wysyła je do aplikacji. Jeśli po kilku godzinach odczytów nadal brak — sprawdź baterie, zasięg i listę problemów w dokumentacji.</span>
+          <span lang="en">The Hub collects sensor data and sends it to the app. If readings are still missing after a few hours, check the batteries, the range and the troubleshooting list in the documentation.</span><span lang="de">Der Hub sammelt die Sensordaten und schickt sie an die App. Fehlen nach einigen Stunden noch immer Messwerte, prüfe Batterien, Reichweite und die Problemliste in der Dokumentation.</span><span lang="fr">Le Hub collecte les données des capteurs et les envoie à l'application. Si les mesures manquent encore après quelques heures, vérifiez les piles, la portée et la liste des problèmes dans la documentation.</span>
+        </p>
+        <p class="contact">
+          <a href="mailto:bee@apisense.ai">bee@apisense.ai</a>
+          <a href="../manual/configuration/"><span lang="pl">Pełna instrukcja konfiguracji</span><span lang="en">Full configuration guide</span><span lang="de">Vollständige Einrichtungsanleitung</span><span lang="fr">Guide de configuration complet</span></a>
+          <a href="../manual/configuration/troubleshooting/"><span lang="pl">Rozwiązywanie problemów</span><span lang="en">Troubleshooting</span><span lang="de">Fehlerbehebung</span><span lang="fr">Résolution des problèmes</span></a>
+          <a href="../"><span lang="pl">Dokumentacja Apisense</span><span lang="en">Apisense documentation</span><span lang="de">Apisense Dokumentation</span><span lang="fr">Documentation Apisense</span></a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+
+<script>
+(function () {
+  var deck   = document.getElementById('deck');
+  var slides = Array.prototype.slice.call(deck.querySelectorAll('.slide'));
+  var rail   = document.getElementById('rail');
+  var bar    = document.getElementById('progress');
+  var count  = document.getElementById('count');
+  var prev   = document.getElementById('prev');
+  var next   = document.getElementById('next');
+  var active = 0;
+
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+
+  /* ── Rail: one dot per slide, chapter number on the first of each ── */
+  var lastChapter = null;
+  slides.forEach(function (s, i) {
+    s.id = s.id || 'slide-' + i;
+    var a = document.createElement('a');
+    a.href = '#' + s.id;
+    var ch = s.dataset.chapter;
+    if (ch && ch !== lastChapter) { a.dataset.chapterStart = ch; lastChapter = ch; }
+    var tip = document.createElement('span');
+    tip.className = 'tip';
+    tip.append(langSpan('pl', s.dataset.titlePl), langSpan('en', s.dataset.titleEn));
+    a.appendChild(tip);
+    a.addEventListener('click', function (e) { e.preventDefault(); go(i); });
+    rail.appendChild(a);
+  });
+  var dots = Array.prototype.slice.call(rail.children);
+
+  function langSpan(lang, text) {
+    var el = document.createElement('span');
+    el.setAttribute('lang', lang);
+    el.textContent = text || '';
+    return el;
+  }
+
+  /* ── Reveal: fire as soon as any part of a slide enters the viewport,
+        so slides taller than the viewport still animate. Sticky once shown. ── */
+  var reveal = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (en.isIntersecting) { en.target.classList.add('is-active'); reveal.unobserve(en.target); }
+    });
+  }, { threshold: 0.01 });
+  slides.forEach(function (s) { reveal.observe(s); });
+
+  /* ── Current slide = last one whose top has passed the probe line ── */
+  function scroller() { return deck.scrollHeight > deck.clientHeight + 1 ? deck : document.documentElement; }
+  function currentIndex() {
+    var probe = window.innerHeight * 0.4, best = 0;
+    for (var i = 0; i < slides.length; i++) {
+      if (slides[i].getBoundingClientRect().top <= probe) best = i;
+    }
+    return best;
+  }
+
+  function setActive(i) {
+    if (i === active) return;
+    active = i;
+    history.replaceState(null, '', i === 0 ? location.pathname : '#' + slides[i].id);
+    dots.forEach(function (d, n) {
+      if (n === i) { d.setAttribute('aria-current', 'true'); } else { d.removeAttribute('aria-current'); }
+    });
+    count.textContent = pad(i + 1) + ' / ' + pad(slides.length);
+    prev.disabled = i === 0;
+    next.disabled = i === slides.length - 1;
+  }
+  setActive(0);
+  dots[0].setAttribute('aria-current', 'true');
+  slides[0].classList.add('is-active');
+  count.textContent = '01 / ' + pad(slides.length);
+  prev.disabled = true;
+
+  function go(i) {
+    i = Math.max(0, Math.min(slides.length - 1, i));
+    slides[i].scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  prev.addEventListener('click', function () { go(active - 1); });
+  next.addEventListener('click', function () { go(active + 1); });
+
+  /* Deep link: /assembly/#slide-8 opens straight on that step. */
+  if (location.hash) {
+    var target = document.getElementById(location.hash.slice(1));
+    if (target) {
+      var i = slides.indexOf(target);
+      if (i > -1) window.addEventListener('load', function () {
+        target.scrollIntoView({ behavior: 'auto', block: 'start' });
+        target.classList.add('is-active');
+      });
+    }
+  }
+
+  /* ── Progress hairline + active tracking ── */
+  var ticking = false;
+  function onScroll() {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(function () {
+      var el = scroller();
+      var max = el.scrollHeight - el.clientHeight;
+      bar.style.width = (max > 0 ? (el.scrollTop / max) * 100 : 0) + '%';
+      setActive(currentIndex());
+      ticking = false;
+    });
+  }
+  deck.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll, { passive: true });
+  onScroll();
+
+  /* ── Keyboard ── */
+  document.addEventListener('keydown', function (e) {
+    if (e.target.closest('input, textarea, select')) return;
+    switch (e.key) {
+      case 'ArrowDown': case 'PageDown': case ' ':
+        e.preventDefault(); go(active + 1); break;
+      case 'ArrowRight':
+        go(active + 1); break;
+      case 'ArrowUp': case 'PageUp':
+        e.preventDefault(); go(active - 1); break;
+      case 'ArrowLeft':
+        go(active - 1); break;
+      case 'Home': e.preventDefault(); go(0); break;
+      case 'End':  e.preventDefault(); go(slides.length - 1); break;
+    }
+  });
+
+  /* ── Language ── */
+  var root = document.documentElement;
+  document.querySelectorAll('[data-set-lang]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var l = b.dataset.setLang;
+      root.setAttribute('data-lang', l);
+      root.lang = l;
+      localStorage.setItem('apisense-asm-lang', l);
+      syncLang();
+    });
+  });
+  function syncLang() {
+    var cur = root.getAttribute('data-lang');
+    document.querySelectorAll('[data-set-lang]').forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.dataset.setLang === cur));
+    });
+    document.title = {
+      pl: 'Apisense BOX — Instrukcja montażu',
+      en: 'Apisense BOX — Assembly Instruction',
+      de: 'Apisense BOX — Montageanleitung',
+      fr: 'Apisense BOX — Guide de montage'
+    }[cur] || 'Apisense BOX';
+  }
+  syncLang();
+
+  /* ── Theme ── */
+  document.getElementById('theme').addEventListener('click', function () {
+    var t = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', t);
+    localStorage.setItem('apisense-asm-theme', t);
+    document.querySelector('meta[name="theme-color"]')
+      .setAttribute('content', t === 'dark' ? '#21290e' : '#f6f7e7');
+  });
+})();
+</script>
+
+</body>
+</html>
