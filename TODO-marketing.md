@@ -24,13 +24,17 @@ Pozycja czujnika: na **centralnej ramce, w kłębie**, w górnym rogu, **pionowo
 ### 1.2. VitalSensor — close-up kodu QR ⚠️
 Naklejka na **nowej obudowie**. Close-upy Huba i Scale zostają bez zmian.
 
-### 1.3. ColonyLink — trzy rysunki ⚠️ zablokowane, patrz sekcja 3
-Zastępuje całą sekcję „Apisense Tag" (opisz numerem, zawieś na ścianie ula). ColonyLink: kod QR + NFC, na **froncie ula**, bez baterii i konfiguracji.
+### 1.3. ColonyLink — trzy rysunki ⚠️
+Zastępuje całą sekcję „Apisense Tag" (opisz numerem, zawieś na ścianie ula).
+
+**ColonyLink to wodoodporna naklejka** z wbudowanym tagiem NFC i nadrukowanym kodem QR, naklejana na **front ula**. Bez baterii, bez konfiguracji. To nie jest zawieszka na opasce — obecne rysunki i zdjęcia pokazują poprzednią formę.
 
 Potrzebujemy:
-1. **sam identyfikator** — do kafelka „co jest w pudełku"
+1. **sama naklejka** — do kafelka „co jest w pudełku"
 2. **close-up kodu QR** — ColonyLink skanuje się teraz **jako pierwszy** przy dodawaniu ula, a w PDF-ie nie ma takiego rysunku
-3. **scena umieszczenia na ulu**
+3. **scena naklejania na front ula**
+
+Osobno prosimy o **zdjęcie produktowe** naklejki — obecne `docs/manual/pictures/sensor_tag.jpg` w dokumentacji pokazuje czerwoną zawieszkę i jest nieaktualne. Do czasu dostarczenia strona nie pokazuje ColonyLinka na zdjęciu, tylko rysunek poglądowy.
 
 ### 1.4. Zawartość zestawu — strona 1
 Rozłożenie w kartonie po zmianach 1.1–1.3.
@@ -60,15 +64,14 @@ Rysunki są w porządku, potrzebujemy ich w wersji bez wtopionego tekstu:
 
 | Pytanie | Kto odpowiada | Blokuje |
 |---|---|---|
-| **ColonyLink to naklejka czy zawieszka?** Dokumentacja opisuje wodoodporną naklejkę na front ula, zdjęcie `sensor_tag.jpg` pokazuje czerwoną zawieszkę na opasce. | produkt | 1.3 |
 | Czy `Apisense Beeframe Holder` (strona 10) jest jeszcze w zestawie? Nie występuje w dokumentacji ani na liście zawartości pudełka (3 × VitalSensor, 3 × ColonyLink, 1 × Hub, 1 × Scale) — wygląda na to, że wypadł. | produkt | 1.4 |
 
 ---
 
 ## Kolejność
 
-1. Odpowiedź na pytanie o ColonyLink — bez niej nie da się narysować 1.3.
-2. **1.5** — zrzuty ekranu. Dziś pokazują nieaktualną kolejność dodawania urządzeń, więc rozjeżdżają się z opisem obok.
+1. **1.5** — zrzuty ekranu. Dziś pokazują nieaktualną kolejność dodawania urządzeń, więc rozjeżdżają się z opisem obok.
+2. **1.3** — ColonyLink. Nie ma dziś ani jednego poprawnego wizerunku naklejki, ani rysunku, ani zdjęcia.
 3. **1.1 i 1.2** — nowa obudowa i mocowanie na opaskach.
-4. **1.3 i 1.4.**
+4. **1.4** — zawartość zestawu.
 4. Sekcja 2 — wersje bez napisów.
