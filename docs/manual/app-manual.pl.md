@@ -17,7 +17,8 @@
 - **Raporty i wykresy** — wizualizacja danych pomiarowych w postaci dziennych, tygodniowych i długoterminowych wykresów z naniesionym trendem.
 - **Historia danych** — archiwum notatek, przeglądów i powiadomień.
 - **Zarządzanie pasieką** — dodawanie i edycja pasiek, uli, przeglądów, notatek, oraz dodawanie badań i rejestrowanie próbek.
-- **Analiza ramki** — analiza zdjęcia ramki pszczelej oparta na AI, szacująca udział czerwiu, zapasów pokarmu i pustego plastra.
+- **FrameSense** — analiza zdjęcia ramki pszczelej oparta na AI, szacująca udział czerwiu, zapasów pokarmu i pustego plastra.
+- **Obserwacja szerszenia azjatyckiego** — zgłaszanie obecności szerszenia azjatyckiego w pasiece wraz z przypomnieniem o ponownej kontroli po kilku dniach.
 
 ______________________________________________________________________
 
@@ -161,7 +162,7 @@ Figure: Pomyślnie dodana pasieka bez urządzeń w widoku pasiek w systemie {#fi
 ![figure](pictures/apiaries_list_without_hub.png){width=200}
 
 
-!!! Uwaga:
+!!! note
     **Pasieka bez urządzeń:** Możesz utworzyć pasiekę, podając wyłącznie nazwę i wybierając opcję *Bez urządzeń*, ale do pasieki utworzonej bez Huba nie będzie już możliwości przypisania tego urządzenia nawet na poziomie edycji  pasieki. Ponadto, jeżeli pasieka została utworzona bez Huba, to do żadnego ula w takiej pasiece nie będzie możliwości przypisania urządzeń Scale ani VitalSensor — podczas dodawania uli sekcja *Wyposażenie* nie będzie dostępna. Możesz jednak dodawać ule bez urządzeń oraz prowadzić dokumentację (notatki, przeglądy, zadania).
 
 
@@ -275,14 +276,14 @@ Figure: Dodawanie ula w systemie - sekcja Informacje o matce pszczelej {#fig-add
 
 - Następnie kliknij żółty przycisk ze strzałką w prawo, znajdujący się na dole ekranu, w celu przejścia do sekcji *Wyposażenie*.
 
-!!! Uwaga:
+!!! note
     Sekcja *Wyposażenie* jest dostępna tylko wtedy, gdy do pasieki jest przypisane urządzenie Apisense Hub. Jeżeli pasieka nie posiada Apisense Hub, kliknięcie żółtego przycisku znajdującego się w prawym dolnym rogu ekranu, spowoduje zapisanie i dodanie pustego ula (bez urządzeń pomiarowych) z wprowadzonymi wyżej informacjami.
 
 #### 2.1.1 Dodawanie ula z urządzeniami
 
 - **Wyposażenie:** Ostatni etap obejmuje powiązanie urządzeń z tym konkretnym ulem. **Uwaga:** Kluczowe jest, aby urządzenia skonfigurowane w ramach ula (Scale i VitalSensor) były w rzeczywistości zainstalowane w tym samym fizycznym ulu.
 
-    !!! Uwaga:
+    !!! note
         **Wymóg Hub:** Aby powiązać Scale lub VitalSensor z ulem, do pasieki musi być przypisany **Apisense Hub**. W przeciwnym razie zarówno podczas dodawania jak i edycji ula, sekcja *Wyposażenie* nie będzie dostępna.
 
     Aby powiązać urządzenie Apisense Scale z ulem wypełnij następujące pola ([](#fig-add-beehive-devices-scale)):
@@ -303,7 +304,7 @@ Figure: Dodawanie ula w systemie - sekcja Informacje o matce pszczelej {#fig-add
 
     ![figure](pictures/add_beehive_devices_sensor.png){width=200}
 
-!!! Uwaga:
+!!! note
     Do ula możesz również przypisać tylko jedno urządzenie. Aby utworzyć ul tylko z VitalSensorem pozostaw pole Scale i Kod potwierdzający puste, a następnie przejdź do etapu dodawania urządzenia VitalSensor i zeskanuj odpowiedni kod QR, po czym zapisz. Aby utworzyć ul tylko ze Scale pozostaw pole VitalSensor i Kod potwierdzający puste i kliknij żółty przycisk na dole ekranu w celu zapisania.
 
 - Po wypełnieniu wybranych sekcji i niezbędnych pól kliknij żółty przycisk w prawej dolnej części ekranu, aby dodać ul z powiązanymi urządzeniami (Scale i/lub VitalSensor).
@@ -368,7 +369,7 @@ Figure: Widok Ustawienia ula {#fig-beehive-settings}
 
     - **Wyposażenie** - sekcja zawiera informacje na temat powiązanych urządzeń z ulem (VitalSensor, Scale). Sekcja umożliwia usunięcie przypisania urządzenia do tego ula. Aby to zrobić należy kliknąć przycisk *Odłącz VitalSensor*/*Odłącz Scale* w zależności od tego, które urządzenie ma zostać odpięte, a następnie potwierdzić wybór przy użyciu żółtego przycisku *Odłącz* ([](#fig-beehive-settings-devices-edit)). Podczas odpinania urządzeń historia ich pomiarów zostaje domyślnie zachowana, co oznacza, że przeszłe dane pomiarowe będą dostępne na wykresach, dopóki ten ul nie zostanie usunięty. Aby wyczyścić historię pomiarów w ulu z odpinanego urządzenia użyj przełącznika. Jeżeli w skład wyposażenia ula nie wchodzi któreś z urządzeń (pola nie są wypełnione), z tego miejsca można również powiązać Scale/VitalSensor z ulem. W tym celu należy kliknąć ikonę kodu QR, znajdującą się w prawej części pola VitalSensor/Scale i zeskanować kod QR z odpowiednich urządzeń pomiarowych.
 
-    !!! Uwaga:
+    !!! note
         Sekcja *Wyposażenie* nie jest dostępna, jeśli do pasieki nie jest przypisane urządzenie Apisense Hub.
 
 Figure: Widok Ustawienia ula - sekcja Wyposażenie, potwierdzenie odłączenia Scale z zachowaniem historii pomiarów (1) {#fig-beehive-settings-devices-edit}
@@ -450,9 +451,13 @@ Figure: Widok Szczegóły ula - Przycisk Dodaj Przegląd {#fig-add-overview-butt
 - W widoku Dodaj przegląd ([](#fig-add-inspection-photos)) załącz po 2 zdjęcia dla:
 
   - ramki z VitalSensorem - przód i tył ramki wyposażonej w urządzenie VitalSensor, z pszczołami,
-  - skrajnej ramki na dołączonych uchwytach - również przód i tył.
+  - jednej skrajnej ramki - pierwszej albo ostatniej przy ściance ula - również przód i tył tej samej ramki.
 
 Aby dodać zdjęcia kliknij przycisk *Dodaj zdjęcie*, a następnie wybierz opcję *Zrób zdjęcie* lub *Dodaj zdjęcie z galerii*. Jeśli nie wiesz, jak powinno wyglądać dane zdjęcie, kliknij odnośnik *Zobacz przykład*, aby zobaczyć przykłady prawidłowo wykonanych zdjęć ramek pszczelich (przód i tył).
+
+!!! note
+    Zdjęcia RAW/DNG nie są obsługiwane w wersji webowej w przypadku przeglądów - dodaj zdjęcie w formacie JPG lub PNG. W wersji mobilnej istnieje natomiast możliwość dodania zdjęcia do przeglądu w formacie RAW/DNG. 
+    Jeśli zdjęć nie uda się przesłać od razu (np. z powodu słabego połączenia internetowego), aplikacja będzie automatycznie ponawiać próbę wysyłki w tle. Do czasu zakończenia procesu wyświetlany będzie komunikat *„Wysyłanie zdjęć…”*. Jeśli po kolejnych próbach wysyłka nadal się nie powiedzie, pojawi się komunikat *„Nie wysłano zdjęć”*.
 
 Figure: Dodawanie przeglądu - dodawanie zdjęć {#fig-add-inspection-photos}
 
@@ -550,7 +555,7 @@ Figure: Widok Szczegóły ula - Przycisk Dodaj Notatkę {#fig-add-overview-butto
     - **Tytuł** - wpisz tytuł notatki (pole opcjonalne).
     - **Notatka** - Wpisz treść notatki (tekst) lub kliknij ikonę mikrofonu znajdujacą sie po prawej stronie w tym polu, aby nagrać notatkę głosową.
 
-!!! tip:
+!!! tip
     **Transkrypcja notatki głosowej:** Po nagraniu notatki głosowej aplikacja automatycznie przygotowuje jej transkrypcję, dzięki czemu notatka jest dostępna zarówno w formie audio, jak i tekstu. W trakcie generowania transkrypcji na ekranie szczegółów notatki widoczny jest napis *Trwa transkrypcja...*. Gdy transkrypcja jest już gotowa, wygenerowany tekst pojawia się pod nagranym dźwiękiem w szczegółach. 
 
 Figure: Dodawanie notatki tekstowej lub głosowej (1) {#fig-add-note-add-text}
@@ -676,7 +681,7 @@ Zakres określa, gdzie zadanie jest widoczne oraz skąd można je edytować i us
 | Wybrane ule       | Tak                       | Tak — tylko w wybranych ulach  | Nie                      |
 | Pojedynczy ul     | Tak                       | Tak — tylko w tym jednym ulu   | Tak                      |
 
-!!! Wskazówka
+!!! tip
     Zadania o zakresie *Cała pasieka* i *Wybrane ule* są edytowalne i usuwane wyłącznie z poziomu pasieki — z poziomu ula są dostępne tylko do podglądu. Zadanie utworzone dla pojedynczego ula można edytować i usunąć z poziomu tego ula, jak i z poziomu pasieki.
 
 #### 5.3 Dodawanie zadania z poziomu pasieki
@@ -739,7 +744,7 @@ Figure: Oznaczanie zadania jako wykonane {#fig-task-mark-done}
 
 ![figure](pictures/task_mark_done.png){width=200}
 
-!!! Uwaga
+!!! note
     Z poziomu pasieki można oznaczyć dowolne zadanie jako wykonane. Z poziomu ula można oznaczyć jako wykonane wyłącznie zadanie, które zostało dodane z poziomu tego konkretnego ula.
 
 #### 5.7 Edycja zadania
@@ -753,7 +758,7 @@ Figure: Edycja zadania {#fig-task-edit}
 
 ![figure](pictures/task_edit.png){width=200}
 
-!!! Uwaga
+!!! note
     Zadania o zakresie *Pasieka* lub *Wybrane ule* można edytować i usuwać **wyłącznie z poziomu pasieki**. Z poziomu ula zobaczysz takie zadanie tylko jako podgląd — z wyszarzona ikoną ołówka.
 
 #### 5.8 Usuwanie zadania
@@ -765,7 +770,7 @@ Figure: Usuwanie zadania {#fig-task-delete}
 
 ![figure](pictures/task_delete.png){width=200}
 
-!!! Uwaga
+!!! note
     Zadania o zakresie *Pasieka* lub *Wybrane ule* można edytować i usuwać **wyłącznie z poziomu pasieki**. Usunięcie takiego zadania z poziomu pasieki spowoduje automatyczne usunięcie powiązanych z nim zadań z widoku wszystkich uli.
 
 #### 5.9 Lista zadań i filtrowanie
@@ -919,6 +924,13 @@ Figure: Formularz chorobowy - zapisanie formularza {#fig-confirm-problem-save-2}
 
 ![figure](pictures/confirm_problem_save.png){width=200}
 
+#### 6.5 Edycja lub usuwanie zapisanej odpowiedzi
+
+Zapisaną odpowiedź w formularzu chorobowym można poprawić przez ograniczony czas od zapisania:
+
+- W zakładce *Odpowiedzi* w widoku szczegółów choroby znajdź wybraną odpowiedź. Kliknij ikonę ołówka, aby edytować udzielone odpowiedzi, lub ikonę kosza, aby usunąć wypełniony formularz. Te same opcje są dostępne również z poziomu widoku formularza — otwórz menu kontekstowe (trzy kropki) i wybierz *Edytuj* lub *Usuń*.
+- Po wybraniu opcji *Usuń* potwierdź komunikat *Usunąć odpowiedzi?*. Formularz wraz z odpowiedziami zostanie trwale usunięty.
+- **Uwaga:** Odpowiedzi można edytować przez 30 dni od ich przesłania. Po upływie tego czasu edycja lub usunięcie formularza nie będzie już możliwe, a aplikacja wyświetli komunikat: Czas na korektę tej odpowiedzi minął — dodaj nową odpowiedź. Jeśli epizod chorobowy jest nadal aktywny, możesz przesłać nowy zestaw odpowiedzi, korzystając z przycisku *Odpowiedz na kilka pytań*.
 
 <a id="rejestrowanie-probki"></a>
 
@@ -980,7 +992,17 @@ Figure: Widok Zarejestruj próbkę {#fig-register-sample}
 !!! tip "Wysyłka żywych pszczół"
     Próbki żywych pszczół wysyłaj **żywe**, w wentylowanych klateczkach transportowych zapewniających dostęp powietrza, z ciastem cukrowym (ok. 10 pszczół w każdej, 4 klateczki na ul), z kodem badania z aplikacji. Nadawaj **od poniedziałku do czwartku** — Pocztą Polską lub kurierem. Przesyłki za pośrednictwem Poczty Polskiej mogą być nadawane wyłącznie przez właścicieli pasiek zlokalizowanych w Polsce. Szczegóły: [Protokół 2 — żywe pszczoły](../samples/protocol-2-live-bees.md).
 
-#### 7.2 Usuwanie próbki
+#### 7.2 Status próbki
+
+Każda zarejestrowana próbka ma etykietę statusu opisującą, na jakim etapie badania się znajduje:
+
+- **Oczekuje** — próbka została zarejestrowana w aplikacji, ale nie została jeszcze wysłana ani odebrana przez laboratorium.
+- **Wysłana** — próbka została wysłana do laboratorium.
+- **Odebrana** — laboratorium potwierdziło odbiór próbki.
+- **Przeanalizowana** — badanie próbek w laboratorium zostało zakończone.
+- **Anulowana** — próbka została anulowana.
+
+#### 7.3 Usuwanie próbki
 
 Aby usunąć próbkę z listy próbek należy:
 
@@ -1050,34 +1072,65 @@ Aby usunąć badanie z listy badań należy:
 
 <a id="analiza-ramki"></a>
 
-### 9. Analiza ramki
+### 9. FrameSense
 
-Analiza ramki wykorzystuje sztuczną inteligencję, aby na podstawie jednego zdjęcia automatycznie oszacować zawartość plastra, w tym udział czerwiu, zapasów pokarmu oraz pustej lub zasłoniętej powierzchni.
+FrameSense wykorzystuje sztuczną inteligencję, aby na podstawie jednego zdjęcia automatycznie oszacować zawartość plastra, w tym udział czerwiu, zapasów pokarmu oraz pustej lub zasłoniętej powierzchni.
 
 #### 9.1 Dodawanie analizy ramki
 
 - Kliknij kafelek wybranej pasieki, a następnie kafelek wybranego ula. W rezultacie zostanie wyświetlony widok *Szczegóły ula*.
-- Z dolnego menu wybierz opcję *Dodaj...*, a następnie *Analiza ramki*; zostanie wyświetlony widok *Analiza ramki*.
-- Kliknij przycisk *Dodaj zdjęcie ramki do analizy*, znajdujący się w centalnej części widoku *Analiza ramki*. Wybierz opcje *Aparat* i wykonaj zdjęcie ramki pszczelej lub wgraj **jedno zdjęcie** ramki z *Galerii*. Aby uzyskać jak najdokładniejszy wynik analizy AI, umieść ramkę tak, aby wypełniała całe zdjęcie i była dobrze widoczna na jednolitym tle.
+- Z dolnego menu wybierz opcję *Dodaj...*, a następnie *FrameSense*; zostanie wyświetlony widok *FrameSense*.
+- Kliknij przycisk *Dodaj zdjęcie ramki do analizy*, znajdujący się w centralnej części widoku *FrameSense*. Wybierz opcje *Aparat* i wykonaj zdjęcie ramki pszczelej lub wgraj **jedno zdjęcie** ramki z *Galerii*. Podczas wykonywania zdjęcia w widoku aparatu wyświetlana jest prowadnica z komunikatem *Umieść ramkę w obrysie*. Ustaw całą ramkę pszczelą wewnątrz wyznaczonego obrysu. Po wykonaniu zdjęcia aplikacja automatycznie przytnie je do obszaru wyznaczonego przez prowadnicę, dzięki czemu do analizy zostanie wykorzystany wyłącznie fragment obejmujący ramkę. Aby uzyskać jak najdokładniejszy wynik analizy AI, ustaw ramkę tak, aby zajmowała możliwie największą powierzchnię wewnątrz obrysu, nie wychodząc poza jego granice. Zadbaj również o to, aby była dobrze widoczna i znajdowała się na jednolitym tle.
 - Po wybraniu zdjęcia kliknij żółty przycisk *Wyślij do analizy*, widoczny w dolnej części ekranu. Zdjęcie zostanie przesłane do przetworzenia przez AI.
 
 !!! note
-    Analiza ramki pszczelej wymaga połączenia z internetem do przesłania zdjęcia. Przetwarzanie zdjęcia wysłanego do analizy trwa zwykle kilka minut.
+    Analiza ramki pszczelej wymaga połączenia z internetem do przesłania zdjęcia. Przetwarzanie zdjęcia wysłanego do analizy trwa zwykle kilka minut. Zalecamy załączanie zdjęć w formacie JPG lub PNG. Pliki RAW/DNG są obsługiwane tylko w wersji mobilnej.
 
 #### 9.2 Wyniki analizy ramki
 
-Wyniki analizy przesłanych ramek pszczelich są dostępne w zakładce *Analiza* (*Szczegóły ula > Więcej > Analiza*). Aby wyświetlić wynik dla wybranej ramki kliknij odpowiednią pozycję na liście ze statusem *Analiza zakończona*. 
+Wyniki analizy przesłanych ramek pszczelich są dostępne w zakładce *FrameSense* (*Szczegóły ula > Więcej > FrameSense*). Aby wyświetlić wynik dla wybranej ramki kliknij odpowiednią pozycję na liście ze statusem *Analiza zakończona*. 
 
 Możliwe statusy:
 
 - **Analizowanie ramki** — zdjęcie zostało wysłane do analizy i jest przetwarzane przez AI (ok. 5 minut).
-- **Analiza zakończona** — analiza ramki została pomyślnie zakończona. Teraz możesz zobaczyć opisane kolorami zdjęcie z procentowym udziałem poszczególnych kategorii wchodzących w skład plastra: **Czerw** (jaja, larwy, czerw robotnic i trutni), **Zapasy** (nektar, pyłek, zasklepiony miód) oraz **Pusta/zasłonięta** powierzchnia, a także liczbę znalezionych mateczników/misek matecznikowych i spis pszczół. Wynik analizy składa się z kilku widoków tego samego przesłanego zdjęcia. Każdy z nich zawiera oznaczenia innych przeanalizowanych elementów oraz odpowiadające im opisy. Przesuwaj zdjęcia, aby wyświetlić kolejne wyniki analizy. Kliknięcie zdjęcia otwiera je w trybie pełnoekranowym.
+- **Analiza zakończona** — analiza ramki została pomyślnie zakończona. Teraz możesz zobaczyć opisane kolorami zdjęcie z procentowym udziałem poszczególnych kategorii wchodzących w skład plastra: **Czerw** (jaja, larwy, czerw robotnic i trutni), **Zapasy** (nektar, pyłek, zasklepiony miód) oraz **Pusta/zasłonięta** powierzchnia, a także liczbę znalezionych mateczników/misek matecznikowych i spis pszczół. Wynik analizy składa się z kilku widoków tego samego przesłanego zdjęcia. Każdy z nich zawiera oznaczenia innych przeanalizowanych elementów oraz odpowiadające im opisy. Przesuwaj zdjęcia, aby wyświetlić kolejne wyniki analizy. Kliknięcie zdjęcia otwiera je w trybie pełnoekranowym. Poniżej wyników analizy znajduje się sekcja *Rekomendacje*, zawierająca praktyczne wskazówki i sugerowane działania opracowane na podstawie analizy AI. Pomagają one zidentyfikować potencjalne problemy oraz podjąć świadome decyzje dotyczące dalszego postępowania.
 - **Nieudana** — analizy nie udało się ukończyć. Spróbuj dodać ponownie zdjęcie ramki pszczelej i wysłać je do analizy.
 
 Gdy analiza ramki pszczelej zostanie ukończona, wysyłane jest powiadomienie push, które po kliknięciu otwiera bezpośrednio jej wynik.
 
+<a id="obserwacja-szerszenia"></a>
+
+### 10. Obserwacja szerszenia azjatyckiego
+
+Ikona szerszenia azjatyckiego, znajdująca się na kafelku pasieki obok wskaźnika stanu zdrowia rodziny pszczelej, umożliwia zgłaszanie oraz przeglądanie obserwacji szerszenia azjatyckiego. Pozwala na bieżąco monitorować jego aktywność w pasiekach i szybciej reagować na potencjalne zagrożenie dla rodzin pszczelich. **Uwaga:** Obserwacje może zgłaszać wyłącznie właściciel pasieki. W przypadku pasieki współdzielonej (wkrótce dostępne w aplikacji) pozostali użytkownicy mają dostęp wyłącznie do podglądu zgłoszeń.
+
+#### 10.1 Zgłaszanie obserwacji
+
+- Kliknij ikonę szerszenia azjatyckiego na kafelku pasieki w wyniku czego zostanie otwarty panel *Szerszeń azjatycki*.
+- W panelu *Szerszeń azjatycki* kliknij żółty przycisk *Zgłoś obserwację*, a następnie odpowiedz na pytanie *Czy widzisz teraz szerszenia azjatyckiego?*.
+- Wybierz odpowiedź *Tak* jeśli zaobserwowałeś szerszenia azjatyckiego w swojej pasiece, lub *Nie* jeśli szerszeń azjatycki nie pojawił się w Twojej pasiece.
+- Po pomyślnym zapisaniu odpowiedzi zostanie wyświetlony komunikat *Zgłoszenie zapisane*.
+
+#### 10.2 Status obserwacji i jej aktualność
+
+Ikona szerszenia azjatyckiego wyświetlana na kafelku pasieki zmienia się w zależności od aktualnego statusu zgłoszenia:
+
+- **Brak obserwacji** — nigdy nie dodano zgłoszenia. Ikona z wyszarzoną głową szerszenia azjatyckiego, bez daty i dodatkowej plakietki.
+- **Szerszeń azjatycki - Aktywna obserwacja** — potwierdzono obecność szerszeni azjatyckich i zgłoszenie jest wciąż aktualne (do 4 dni od dodania zgłoszenia). Ikona z brązową głową szerszenia azjatyckiego wraz z czerwoną plakietką „!”.
+- **Szerszeń azjatycki - Ostatnio widziano** — potwierdzono obecność szerszeni azjatyckich, ale minęły już 4 dni od dodania zgłoszenia — sprawdź ponownie i zgłoś aktualny stan. Ikona z wyszarzoną głową szerszenia azjatyckiego i plakietką „!” na ciemnym tle. 
+- **Sprawdzono, czysto; aktualna obserwacja** — aktualne zgłoszenie (do 4 dni od dodania zgłoszenia) potwierdzające brak szerszeni azjatyckich w pasiece. Ikona z brązową głową szerszenia azjatyckiego wraz z zieloną plakietką z symbolem zatwierdzenia nieobecności.
+- **Sprawdzono, czysto; wygasła obserwacja** — potwierdzono brak szerszeni azjatyckich w pasiece, ale minęły już 4 dni od dodania zgłoszenia. Ikona z wyszarzoną głową szerszenia azjatyckiego wraz z plakietką z symbolem zatwierdzenia nieobecności na ciemnym tle. 
+
+#### 10.3 Cofanie zgłoszenia
+
+Jeśli zgłoszenie powstało przez pomyłkę (przypadkowe kliknięcie), kliknij ponownie w ikonę szerszenia azjatyckiego widoczną na kafelku pasieki, a następnie kliknij *Cofnij zgłoszenie*. Potwierdź wybór czerwonym przyciskiem *Cofnij zgłoszenie* wyświetlanym na komunikacie, który się wtedy pojawi. Spowoduje to całkowite usunięcie zgłoszenia z historii.
+
 !!! note
-    Wykrywanie chorób na podstawie zdjęć ramki jest planowane w przyszłej wersji i w szczegółach analizy oznaczone jest jako *Wkrótce dostępne*.
+    Opcji *Cofnij zgłoszenie* używaj tylko dla omyłkowego zgłoszenia. Jeśli szerszenie po prostu zniknęły, nie cofaj zgłoszenia obserwacji — zamiast tego dodaj nowe zgłoszenie i odpowiedz *Nie*, aby zachować historię obserwacji.
+
+#### 10.4 Przypomnienia o obserwacji
+
+Jeśli od ostatniego zgłoszenia szerszenia azjatyckiego dla jednej lub kilku Twoich pasiek minęły 4 dni, aplikacja wyświetli *Przypomnienie o obserwacji* z prośbą o zapisanie aktualnego stanu, aby dane pozostały wiarygodne. Możesz zareagować od razu lub odłożyć przypomnienie przyciskiem *Później*.
 
 ______________________________________________________________________
 
@@ -1186,7 +1239,7 @@ Widok *Szczegóły* został podzielony na kilka mniejszych zakładek:
 - Więcej:
   - Badania
   - Próbki
-  - Analiza
+  - FrameSense
 
 
 #### 4.1 Stan ula
@@ -1236,7 +1289,8 @@ Figure: Zakładka Szczegóły - przykładowy widok zakładki Notatki {#fig-beehi
 
 - **Lista notatek** – prezentuje wszystkie notatki zapisane dla wybranego ula, zawierając tytuł/datę oraz skrócony fragment treści (jeśli notatka zawiera tekst).
 - **Materiały dodatkowe** – przy notatkach mogą pojawić się ikony zdjęcia, nagrania wideo lub nagrania audio, jeśli takie materiały zostały do nich dołączone.
-- **Szczegóły notatki** – po kliknięciu - rozwinięciu - wybranej notatki wyświetlana jest pełna treść notatki wraz z dołączonymi materiałami.
+- **Etykiety generowane przez AI** – notatka tekstowa jak i głosowa może posiadać jedną lub kilka małych, złotych etykiet z ikoną iskierki, generowanych automatycznie przez AI i podsumowujących jej temat (np. *Bezmateczność*, *Podkarmianie*). Dzięki temu możesz szybko sprawdzić, czego dotyczy dana notatka już z poziomu listy notatek, bez konieczności otwierania jej i przeglądania pełnej treści.
+- **Szczegóły notatki** – po kliknięciu - rozwinięciu - wybranej notatki wyświetlana jest pełna treść notatki wraz z dołączonymi materiałami, a także etykietami AI, podsumowującymi treść notatki.
 
 #### 4.4 Badania
 
@@ -1264,14 +1318,14 @@ Figure: Zakładka Szczegóły - przykładowy widok zakładki Próbki {#fig-beehi
 - **Lista próbek** – prezentuje wszystkie próbki zapisane dla wybranego ula, posortowane malejąco według daty pobrania próbki.
 - **Szczegóły próbki** – po kliknięciu w pojedynczą próbkę zostaną wyświetlone jej szczegóły, w tym: data pobrania próbki, rodzaj badania oraz wygenerowany przez system kod badania.
 
-#### 4.6 Analiza
+#### 4.6 FrameSense
 
-Zakładka *Analiza* prezentuje historię analiz AI ramek pszczelich, wykonanych dla wybranego ula, uporządkowanych od najnowszej.
+Zakładka *FrameSense* prezentuje historię analiz AI ramek pszczelich, wykonanych dla wybranego ula, uporządkowanych od najnowszej.
 
 **Najważniejsze informacje:**
 
 - **Lista analiz** – pokazuje każdą analizę ramki wraz ze statusem: *Analizowanie ramki*, *Analiza zakończona* lub *Nieudana*.
-- **Szczegóły analizy** – po otwarciu zakończonej analizy wyświetlane jest przesłane zdjęcie z oznaczeniami poszczególnych elementów oraz podsumowanie zawartości plastra, obejmujące udział czerwiu, zapasów pokarmu oraz pustej i zasłoniętej powierzchni, a także spis pszczół oraz mateczniki. Zobacz [9. Analiza ramki](#analiza-ramki), aby dowiedzieć się więcej.
+- **Szczegóły analizy** – po otwarciu zakończonej analizy wyświetlane jest przesłane zdjęcie z oznaczeniami poszczególnych elementów oraz podsumowanie zawartości plastra, obejmujące udział czerwiu, zapasów pokarmu oraz pustej i zasłoniętej powierzchni, a także spis pszczół oraz mateczniki. Poniżej znajduje się również sekcja z rekomendacjami, które pomogą Ci rozwiązać potencjalne problemy wykryte podczas analizy ramki oraz podjąć świadome decyzje i działania naprawcze. Zobacz [9. FrameSense](#analiza-ramki), aby dowiedzieć się więcej.
 
 <a id="omowienie-ustawien-pasieki"></a>
 
@@ -1769,6 +1823,11 @@ Nowe powiadomienia pojawiają się automatycznie na odpowiedniej liście w zale�
 
 Aby wyświetlić szczegóły powiadomienia, należy kliknąć jego nagłówek, co spowoduje rozwinięcie pełnej treści komunikatu.
 
+!!! tip
+    Aby jednym kliknięciem oznaczyć wszystkie powiadomienia w zakładce *Techniczne* jako przeczytane, użyj przycisku *Oznacz wszystkie jako przeczytane*. Zakres działania przycisku zależy od miejsca, z którego zostanie użyty:
+    - z poziomu pojedynczego ula — zostaną oznaczone jako przeczytane wyłącznie powiadomienia techniczne dotyczące tego ula,
+    - z poziomu pasieki — zostaną oznaczone jako przeczytane wszystkie powiadomienia techniczne dotyczące tej pasieki oraz znajdujących się w niej uli.
+
 <a id="twoj-asystent-ai"></a>
 
 ### 2. Twój asystent AI
@@ -2017,9 +2076,13 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 > [Dodawanie badania](#81-dodawanie-badania)
 
-- **Dodawanie analizy ramki:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Z dolnego menu wybierz *Dodaj... -> Analiza ramki*. Zrób lub wgraj jedno zdjęcie ramki i kliknij *Wyślij do analizy*. Wynik (*Analizowanie ramki* / *Analiza zakończona* / *Nieudana*) śledź w zakładce *Analiza*.
+- **Dodawanie analizy ramki:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Z dolnego menu wybierz *Dodaj... -> FrameSense*. Umieść ramkę w obrysie widoku aparatu, zrób lub wgraj jedno zdjęcie ramki pszczelej i kliknij *Wyślij do analizy*. Wynik (*Analizowanie ramki* / *Analiza zakończona* / *Nieudana*) śledź w zakładce *FrameSense*. Wejdź w szczegóły analizy i sprawdź podsumowanie oraz rekomendacje.
 
-> [Analiza ramki](#analiza-ramki)
+> [FrameSense](#analiza-ramki)
+
+- **Zgłaszanie obserwacji szerszenia azjatyckiego:** Kliknij ikonę szerszenia azjatyckiego na kafelku pasieki, następnie przycisk *Zgłoś obserwację* i odpowiedz na pytanie *Czy widzisz teraz szerszenia azjatyckiego?* (Tak/Nie). Ikona szerszenia azjatyckiego zostanie odpowiednio zaktualizowana (aktywna obserwacja / sprawdzono, czysto / nieaktualne), a nad nią pojawi się data ostatniego zgłoszenia.  
+
+> [Obserwacja szerszenia azjatyckiego](#obserwacja-szerszenia)
 
 ### 3. Panel główny i nawigacja
 
