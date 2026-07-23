@@ -157,6 +157,7 @@ body::after {
   transition: border-color 200ms var(--ease), background-color 200ms var(--ease), color 200ms var(--ease);
 }
 .btn:hover { border-color: var(--ink); background: var(--amber-soft); }
+.btn.is-busy { opacity: .55; pointer-events: none; }
 .btn:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
 
 .lang { display: inline-flex; padding: 3px; gap: 2px; }
@@ -1515,9 +1516,36 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
   });
 
   /* ── PDF: print the current view; the print stylesheet lays out
-        one step per landscape page, in whichever language is active. ── */
+        one step per landscape page, in whichever language is active.
+
+        Figures are lazy-loaded, and Chrome starts the print flow before it
+        finishes fetching the ones that never entered the viewport — they
+        come out blank. So force every image in and wait before printing. ── */
   var printBtn = document.getElementById('print');
-  printBtn.addEventListener('click', function () { window.print(); });
+
+  function loadAllImages() {
+    return Promise.all(Array.prototype.map.call(document.images, function (img) {
+      if (img.complete && img.naturalWidth) return null;
+      img.loading = 'eager';
+      if (img.src) img.src = img.src;   // nudge images the viewport never reached
+      return new Promise(function (done) {
+        img.addEventListener('load', done, { once: true });
+        img.addEventListener('error', done, { once: true });
+      });
+    }));
+  }
+
+  printBtn.addEventListener('click', function () {
+    printBtn.classList.add('is-busy');
+    loadAllImages().then(function () {
+      printBtn.classList.remove('is-busy');
+      window.print();
+    });
+  });
+
+  /* Warm the whole deck once the browser is idle, so Ctrl+P works too and
+     the button does not have to wait. */
+  (window.requestIdleCallback || function (fn) { setTimeout(fn, 4000); })(loadAllImages);
 
   /* ── Language ── */
   var root = document.documentElement;
