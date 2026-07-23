@@ -1,6 +1,7 @@
 .DS_Store
 .venv/
 .venv_docx/
+.venv-docx/
 site/
 
 scripts/

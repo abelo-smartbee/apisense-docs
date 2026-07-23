@@ -1614,6 +1614,17 @@ Najważniejsze informacje:
 - **Spadek lub brak przybytku** może oznaczać zakończenie pożytku, niesprzyjające warunki pogodowe lub zmniejszoną aktywność rodziny.
 - **Analiza trendów przybytku** pozwala ocenić produktywność rodziny oraz moment optymalny do planowania miodobrania.
 
+### 6. Interpretacja parametrów: waga ula a przybytek miodu
+
+- **Wykres wagi ula** — przedstawia rzeczywistą masę całego ula. Uwzględnia wszystkie zmiany masy — zarówno nagłe, wynikające z działań pszczelarza (np. dołożenie półkorpusu, zdjęcie nadstawek czy miodobranie), jak i stopniowe zmiany związane z naturalną aktywnością pszczół oraz warunkami środowiskowymi.
+- **Wykres przybytku miodu** — przedstawia szacunkową zmianę ilości zgromadzonego miodu. W przeciwieństwie do wykresu wagi eliminuje wpływ działań wykonywanych przez pszczelarza, dzięki czemu odzwierciedla zmiany wynikające z aktywności rodziny pszczelej.
+
+W praktyce oznacza to, że oba wykresy mogą przedstawiać różne wartości. Przykładowo, jeśli do ula zostanie dołożony półkorpus, całkowita masa ula wzrośnie, jednak przy jednoczesnym spadku aktywności pszczół przybytek miodu może pozostać na tym samym poziomie lub nawet przyjąć wartość ujemną.
+
+**Uwaga:** Na wykresie przybytku miodu dla zakresów obejmujących 7 dni i więcej mogą występować większe wahania wynikające z agregacji danych. Na prezentowane wartości mogą również wpływać czynniki środowiskowe, takie jak opady deszczu czy zwiększona wilgotność drewna.
+
+**Przybliżanie:** wykres przybytku miodu możesz otworzyć na pełnym ekranie i przybliżać (gestem) lub przesuwać, aby przyjrzeć się surowemu przybytkowi ze szczegółami — tak samo jak wykresy pozostałych parametrów. Ułatwia to analizę zmian przybytku miodu oraz ich porównywanie z warunkami pogodowymi.
+
 ______________________________________________________________________
 
 ## Analiza danych i raporty

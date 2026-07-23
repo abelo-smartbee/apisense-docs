@@ -1625,7 +1625,7 @@ In practice, this means both charts may show different values. For example, if a
 
 **Note:** On the honey gain chart for ranges covering 7 days or more, larger fluctuations may occur due to data aggregation. Environmental factors such as rainfall or increased wood moisture may also affect the displayed values.
 
-**Coming soon in the app:** the ability to zoom the honey gain chart and display data with greater detail, similar to what is already available for charts of other parameters. This will make it easier to analyze honey gain changes and compare them with weather conditions.
+**Zooming in:** you can open the honey gain chart full-screen and zoom in (pinch) or pan across it to inspect the raw gain in greater detail, just like the charts for the other parameters. This makes it easier to analyze honey gain changes and compare them with weather conditions.
 
 ______________________________________________________________________
 
@@ -1924,7 +1924,7 @@ ______________________________________________________________________
 
 #### 1.4 Is it possible for hive weight to show a positive value while honey gain is negative, even though honey gain is calculated based on weight measurements?
 
-**Solution:** yes, this is entirely possible. For example, a beekeeper may add a super, which will cause the total hive mass to increase. At the same time, if the bee colony is weakened, honey production may decrease. In such a situation, the hive weight chart will show a clear increase resulting from adding the super. However, on the honey gain chart, the mass of the added super will not be taken into account, so the chart will reflect only the actual change in the amount of honey. As a result, the honey gain chart will show a decrease related to limited bee activity, rather than an artificial increase resulting from beekeeper intervention.
+**Solution:** yes, this is entirely possible. For example, a beekeeper may add a honey super, which will cause the total hive mass to increase. At the same time, if the bee colony is weakened, honey production may decrease. In such a situation, the hive weight chart will show a clear increase resulting from adding the honey super. However, on the honey gain chart, the mass of the added honey super will not be taken into account, so the chart will reflect only the actual change in the amount of honey. As a result, the honey gain chart will show a decrease related to limited bee activity, rather than an artificial increase resulting from beekeeper intervention.
 
 #### 1.5 After replacing the batteries in a Scale or VitalSensor — what next?
 
