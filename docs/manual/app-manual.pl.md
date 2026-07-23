@@ -1080,7 +1080,7 @@ FrameSense wykorzystuje sztuczną inteligencję, aby na podstawie jednego zdjęc
 
 - Kliknij kafelek wybranej pasieki, a następnie kafelek wybranego ula. W rezultacie zostanie wyświetlony widok *Szczegóły ula*.
 - Z dolnego menu wybierz opcję *Dodaj...*, a następnie *FrameSense*; zostanie wyświetlony widok *FrameSense*.
-- Kliknij przycisk *Dodaj zdjęcie ramki do analizy*, znajdujący się w centalnej części widoku *FrameSense*. Wybierz opcje *Aparat* i wykonaj zdjęcie ramki pszczelej lub wgraj **jedno zdjęcie** ramki z *Galerii*. Podczas wykonywania zdjęcia w widoku aparatu wyświetlana jest prowadnica z komunikatem *Umieść ramkę w obrysie*. Ustaw całą ramkę pszczelą wewnątrz wyznaczonego obrysu. Po wykonaniu zdjęcia aplikacja automatycznie przytnie je do obszaru wyznaczonego przez prowadnicę, dzięki czemu do analizy zostanie wykorzystany wyłącznie fragment obejmujący ramkę. Aby uzyskać jak najdokładniejszy wynik analizy AI, ustaw ramkę tak, aby zajmowała możliwie największą powierzchnię wewnątrz obrysu, nie wychodząc poza jego granice. Zadbaj również o to, aby była dobrze widoczna i znajdowała się na jednolitym tle.
+- Kliknij przycisk *Dodaj zdjęcie ramki do analizy*, znajdujący się w centralnej części widoku *FrameSense*. Wybierz opcje *Aparat* i wykonaj zdjęcie ramki pszczelej lub wgraj **jedno zdjęcie** ramki z *Galerii*. Podczas wykonywania zdjęcia w widoku aparatu wyświetlana jest prowadnica z komunikatem *Umieść ramkę w obrysie*. Ustaw całą ramkę pszczelą wewnątrz wyznaczonego obrysu. Po wykonaniu zdjęcia aplikacja automatycznie przytnie je do obszaru wyznaczonego przez prowadnicę, dzięki czemu do analizy zostanie wykorzystany wyłącznie fragment obejmujący ramkę. Aby uzyskać jak najdokładniejszy wynik analizy AI, ustaw ramkę tak, aby zajmowała możliwie największą powierzchnię wewnątrz obrysu, nie wychodząc poza jego granice. Zadbaj również o to, aby była dobrze widoczna i znajdowała się na jednolitym tle.
 - Po wybraniu zdjęcia kliknij żółty przycisk *Wyślij do analizy*, widoczny w dolnej części ekranu. Zdjęcie zostanie przesłane do przetworzenia przez AI.
 
 !!! note
@@ -1088,7 +1088,7 @@ FrameSense wykorzystuje sztuczną inteligencję, aby na podstawie jednego zdjęc
 
 #### 9.2 Wyniki analizy ramki
 
-Wyniki analizy przesłanych ramek pszczelich są dostępne w zakładce *Analiza* (*Szczegóły ula > Więcej > Analiza*). Aby wyświetlić wynik dla wybranej ramki kliknij odpowiednią pozycję na liście ze statusem *Analiza zakończona*. 
+Wyniki analizy przesłanych ramek pszczelich są dostępne w zakładce *FrameSense* (*Szczegóły ula > Więcej > FrameSense*). Aby wyświetlić wynik dla wybranej ramki kliknij odpowiednią pozycję na liście ze statusem *Analiza zakończona*. 
 
 Możliwe statusy:
 
@@ -1239,7 +1239,7 @@ Widok *Szczegóły* został podzielony na kilka mniejszych zakładek:
 - Więcej:
   - Badania
   - Próbki
-  - Analiza
+  - FrameSense
 
 
 #### 4.1 Stan ula

@@ -1092,7 +1092,7 @@ FrameSense uses artificial intelligence to automatically estimate the comb conte
 
 #### 9.2 FrameSense results
 
-Results of submitted bee frame analyses are available in the *Analysis* tab (*Hive details > More > Analysis*). To view the result for a chosen frame, tap the corresponding list entry with the status *Analysis completed*.
+Results of submitted bee frame analyses are available in the *FrameSense* tab (*Hive details > More > FrameSense*). To view the result for a chosen frame, tap the corresponding list entry with the status *Analysis completed*.
 
 Possible statuses:
 
@@ -1243,7 +1243,7 @@ The *Details* view is divided into several smaller tabs:
 - More:
   - Examinations
   - Samples
-  - Analysis
+  - FrameSense
 
 
 #### 4.1 Hive status
