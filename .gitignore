@@ -19,3 +19,6 @@ TODO-marketing.md
 
 # PDF-y generowane z widoku HTML (tools/build_pdf.py)
 docs/assembly/pdf/
+
+# surowa sesja zdjęciowa produktu (źródło dla docs/assembly/figs, nie wersjonowane)
+fotki/
