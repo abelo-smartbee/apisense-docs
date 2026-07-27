@@ -31,3 +31,11 @@ Current page set: `index`, `overview/index` (system overview — what Apisense i
 
 - `docs/assets/stylesheets/extra.css` is the single custom stylesheet (wired via `extra_css` in `mkdocs.yml`). Prior commits have gone back and forth between heavier and simpler styling — keep customizations minimal unless asked.
 - Theme palette: Material `amber`/`orange` (brand colors). Don't change without explicit ask.
+
+## Agent skills
+
+This repo is configured for the Apisense skill pipeline. Config:
+`.claude/apisense-flow.json` (mode: `lib`, tracker: `github`). Durable domain
+docs live in `CONTEXT.md`, `dev-docs/adr/`, and `dev-docs/glossary.md` — these
+sit outside `docs/` on purpose, since `docs/` is the published public site root.
+Work items are tracked as GitHub Issues in `abelo-smartbee/apisense-docs`.

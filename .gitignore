@@ -22,3 +22,9 @@ docs/assembly/pdf/
 
 # surowa sesja zdjęciowa produktu (źródło dla docs/assembly/figs, nie wersjonowane)
 fotki/
+
+# graphify knowledge graph output (local, not versioned)
+graphify-out/
+
+# lokalne uprawnienia Claude Code (apisense-flow.json jest wersjonowany)
+.claude/settings.local.json

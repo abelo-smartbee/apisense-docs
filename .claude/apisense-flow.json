@@ -1,0 +1,23 @@
+{
+  "mode": "lib",
+  "tracker": "github",
+  "gh_repo": "abelo-smartbee/apisense-docs",
+  "labels": {
+    "triage": ["triage:new", "triage:accepted", "triage:blocked", "triage:wontfix"],
+    "type": ["type:bug", "type:feature", "type:chore", "type:experiment"],
+    "priority": ["p0", "p1", "p2"],
+    "special": ["decision"]
+  },
+  "docs": {
+    "context": "CONTEXT.md",
+    "adr": "dev-docs/adr",
+    "glossary": "dev-docs/glossary.md"
+  },
+  "tooling": {
+    "pm": "pip",
+    "test": "mkdocs build --strict",
+    "lint": "mkdocs build --strict",
+    "format": "",
+    "types": ""
+  }
+}
