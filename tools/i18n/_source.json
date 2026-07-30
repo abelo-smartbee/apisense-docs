@@ -1,7 +1,7 @@
 [
   {
     "id": "adf33f096b93",
-    "line": 746,
+    "line": 789,
     "tag": "span",
     "text": {
       "pl": "Apisense BOX · Instrukcja montażu",
@@ -12,7 +12,7 @@
   },
   {
     "id": "079510b30455",
-    "line": 775,
+    "line": 842,
     "tag": "span",
     "text": {
       "pl": "Pełna instrukcja",
@@ -23,7 +23,7 @@
   },
   {
     "id": "6571823bce73",
-    "line": 800,
+    "line": 867,
     "tag": "span",
     "text": {
       "pl": "Apisense · Zestaw startowy",
@@ -34,7 +34,7 @@
   },
   {
     "id": "445ec0578438",
-    "line": 802,
+    "line": 869,
     "tag": "span",
     "text": {
       "pl": "Instrukcja<br>montażu",
@@ -45,7 +45,7 @@
   },
   {
     "id": "8bcd27cb290b",
-    "line": 806,
+    "line": 873,
     "tag": "span",
     "text": {
       "pl": "Od rozpakowania kartonu do pierwszego odczytu z ula. Siedem kroków, wszystkie ekrany aplikacji i montaż każdego urządzenia w pasiece.",
@@ -56,7 +56,7 @@
   },
   {
     "id": "8dbb23f20272",
-    "line": 810,
+    "line": 877,
     "tag": "span",
     "text": {
       "pl": "7 kroków",
@@ -67,7 +67,7 @@
   },
   {
     "id": "af55159ef610",
-    "line": 811,
+    "line": 878,
     "tag": "span",
     "text": {
       "pl": "ok. 30 minut",
@@ -78,7 +78,7 @@
   },
   {
     "id": "ca1173eb3920",
-    "line": 812,
+    "line": 879,
     "tag": "span",
     "text": {
       "pl": "Apisense Pro AI",
@@ -89,7 +89,7 @@
   },
   {
     "id": "805d276e5d4c",
-    "line": 817,
+    "line": 884,
     "tag": "span",
     "text": {
       "pl": "Przewiń",
@@ -100,7 +100,7 @@
   },
   {
     "id": "7b3aacae4b41",
-    "line": 826,
+    "line": 893,
     "tag": "span",
     "text": {
       "pl": "Zestaw",
@@ -111,7 +111,7 @@
   },
   {
     "id": "d5c673a93cc3",
-    "line": 827,
+    "line": 894,
     "tag": "span",
     "text": {
       "pl": "Co znajdziesz w pudełku",
@@ -122,7 +122,7 @@
   },
   {
     "id": "944a87500b02",
-    "line": 829,
+    "line": 896,
     "tag": "span",
     "text": {
       "pl": "Jeden Hub obsługuje całą pasiekę. Scale trafia pod pierwszy ul, a każdy z trzech uli dostaje własny VitalSensor i ColonyLink.",
@@ -133,7 +133,7 @@
   },
   {
     "id": "2387a74ee316",
-    "line": 854,
+    "line": 921,
     "tag": "span",
     "text": {
       "pl": "Opakowanie",
@@ -144,7 +144,7 @@
   },
   {
     "id": "f3467d3bcd49",
-    "line": 866,
+    "line": 933,
     "tag": "span",
     "text": {
       "pl": "Krok 01",
@@ -155,7 +155,7 @@
   },
   {
     "id": "fc0dbbf29099",
-    "line": 867,
+    "line": 934,
     "tag": "span",
     "text": {
       "pl": "Pobierz aplikację",
@@ -166,7 +166,7 @@
   },
   {
     "id": "85bdbcd7b181",
-    "line": 869,
+    "line": 936,
     "tag": "span",
     "text": {
       "pl": "Cały zestaw konfigurujesz z telefonu. Zeskanuj kod QR aparatem albo wyszukaj <b>Apisense Pro AI</b> w App Store lub Google Play.",
@@ -177,7 +177,7 @@
   },
   {
     "id": "286336e7146d",
-    "line": 873,
+    "line": 940,
     "tag": "span",
     "text": {
       "pl": "Górny kod QR — App Store",
@@ -188,7 +188,7 @@
   },
   {
     "id": "450c21157a6d",
-    "line": 874,
+    "line": 941,
     "tag": "span",
     "text": {
       "pl": "Dolny kod QR — Google Play",
@@ -199,7 +199,7 @@
   },
   {
     "id": "aaf3702ff50b",
-    "line": 875,
+    "line": 942,
     "tag": "span",
     "text": {
       "pl": "Możesz też pracować w przeglądarce: <em>app.apisense.ai</em>",
@@ -210,7 +210,7 @@
   },
   {
     "id": "19c60e38791c",
-    "line": 882,
+    "line": 949,
     "tag": "span",
     "text": {
       "pl": "App Store · Google Play",
@@ -221,7 +221,7 @@
   },
   {
     "id": "dd38aa096e90",
-    "line": 893,
+    "line": 960,
     "tag": "span",
     "text": {
       "pl": "Krok 02",
@@ -232,7 +232,7 @@
   },
   {
     "id": "7ede114c62e9",
-    "line": 894,
+    "line": 961,
     "tag": "span",
     "text": {
       "pl": "Stwórz konto",
@@ -243,7 +243,7 @@
   },
   {
     "id": "d25ed934e3f0",
-    "line": 896,
+    "line": 963,
     "tag": "span",
     "text": {
       "pl": "Podaj nazwę użytkownika, adres e-mail i numer telefonu, a następnie naciśnij <b>Next</b>. Możesz też zarejestrować się kontem Google lub Apple.",
@@ -254,7 +254,7 @@
   },
   {
     "id": "538e249239a7",
-    "line": 900,
+    "line": 967,
     "tag": "span",
     "text": {
       "pl": "Nazwa widoczna w aplikacji",
@@ -265,7 +265,7 @@
   },
   {
     "id": "a2f0e70a5b59",
-    "line": 901,
+    "line": 968,
     "tag": "span",
     "text": {
       "pl": "Służy do logowania i powiadomień",
@@ -276,7 +276,7 @@
   },
   {
     "id": "73c5d8b9cfeb",
-    "line": 902,
+    "line": 969,
     "tag": "span",
     "text": {
       "pl": "Numer kontaktowy do konta",
@@ -287,7 +287,7 @@
   },
   {
     "id": "86d14afd0ef2",
-    "line": 909,
+    "line": 976,
     "tag": "span",
     "text": {
       "pl": "Ekran rejestracji",
@@ -298,7 +298,7 @@
   },
   {
     "id": "a9c5c64831f5",
-    "line": 920,
+    "line": 987,
     "tag": "span",
     "text": {
       "pl": "Krok 03 · 03.1 – 03.2",
@@ -309,7 +309,7 @@
   },
   {
     "id": "def4b5dc4389",
-    "line": 921,
+    "line": 988,
     "tag": "span",
     "text": {
       "pl": "Dodaj pasiekę",
@@ -320,7 +320,7 @@
   },
   {
     "id": "f42e6c5f2a5b",
-    "line": 923,
+    "line": 990,
     "tag": "span",
     "text": {
       "pl": "Pasieka to miejsce, w którym stoją ule i jeden Hub. Zaczynasz od nadania jej nazwy.",
@@ -331,7 +331,7 @@
   },
   {
     "id": "5aea790ededc",
-    "line": 927,
+    "line": 994,
     "tag": "span",
     "text": {
       "pl": "Na ekranie powitalnym naciśnij <em>Add apiary</em>.",
@@ -342,7 +342,7 @@
   },
   {
     "id": "cf8b5ec753fb",
-    "line": 928,
+    "line": 995,
     "tag": "span",
     "text": {
       "pl": "Wpisz nazwę pasieki i jej skrót (maks. 3 znaki), a potem dotknij ikony skanera przy polu <em>Hub</em>.",
@@ -353,7 +353,7 @@
   },
   {
     "id": "014cec4c53b2",
-    "line": 935,
+    "line": 1002,
     "tag": "span",
     "text": {
       "pl": "Aplikacja",
@@ -364,7 +364,7 @@
   },
   {
     "id": "4234bb938eb5",
-    "line": 946,
+    "line": 1013,
     "tag": "span",
     "text": {
       "pl": "Krok 03 · 03.3",
@@ -375,7 +375,7 @@
   },
   {
     "id": "cc79d6fa7921",
-    "line": 947,
+    "line": 1014,
     "tag": "span",
     "text": {
       "pl": "Zeskanuj kod QR&nbsp;Huba",
@@ -386,7 +386,7 @@
   },
   {
     "id": "2b4183cc0fc7",
-    "line": 949,
+    "line": 1016,
     "tag": "span",
     "text": {
       "pl": "Naklejka z kodem QR znajduje się na obudowie Huba. Ustaw ją w ramce skanera — aplikacja odczyta kod sama i wypełni pola <em>Hub</em> oraz <em>Verification Code</em>.",
@@ -397,7 +397,7 @@
   },
   {
     "id": "d5b7ab41a2dd",
-    "line": 953,
+    "line": 1020,
     "tag": "span",
     "text": {
       "pl": "<b>Wskazówka:</b> jeśli kod się nie skanuje, przetrzyj go i zapewnij równomierne światło — bez odblasku.",
@@ -408,7 +408,7 @@
   },
   {
     "id": "e162fd67632a",
-    "line": 962,
+    "line": 1029,
     "tag": "span",
     "text": {
       "pl": "Rysunek poglądowy",
@@ -419,7 +419,7 @@
   },
   {
     "id": "45f6684f2b42",
-    "line": 967,
+    "line": 1034,
     "tag": "span",
     "text": {
       "pl": "Hub",
@@ -430,7 +430,7 @@
   },
   {
     "id": "42e8d92263f5",
-    "line": 967,
+    "line": 1034,
     "tag": "span",
     "text": {
       "pl": "Zdjęcie",
@@ -441,7 +441,7 @@
   },
   {
     "id": "147909a6b056",
-    "line": 979,
+    "line": 1046,
     "tag": "span",
     "text": {
       "pl": "Krok 03 · 03.4 – 03.6",
@@ -452,7 +452,7 @@
   },
   {
     "id": "c0df6706fb22",
-    "line": 980,
+    "line": 1047,
     "tag": "span",
     "text": {
       "pl": "Pasieka jest gotowa",
@@ -463,7 +463,7 @@
   },
   {
     "id": "eb878c1a611b",
-    "line": 982,
+    "line": 1049,
     "tag": "span",
     "text": {
       "pl": "Po zeskanowaniu kodu aplikacja uzupełnia dane Huba za Ciebie — nic nie przepisujesz ręcznie.",
@@ -474,7 +474,7 @@
   },
   {
     "id": "7ef90a465ae5",
-    "line": 986,
+    "line": 1053,
     "tag": "span",
     "text": {
       "pl": "Skaner odczytuje kod QR z Huba.",
@@ -485,7 +485,7 @@
   },
   {
     "id": "147278f5c8a9",
-    "line": 987,
+    "line": 1054,
     "tag": "span",
     "text": {
       "pl": "Pola <em>Hub</em> i <em>Verification Code</em> wypełniają się automatycznie — zatwierdź formularz.",
@@ -496,7 +496,7 @@
   },
   {
     "id": "0d2379b20fe1",
-    "line": 988,
+    "line": 1055,
     "tag": "span",
     "text": {
       "pl": "Pasieka pojawia się na ekranie głównym razem z pogodą.",
@@ -507,7 +507,7 @@
   },
   {
     "id": "014cec4c53b2",
-    "line": 995,
+    "line": 1062,
     "tag": "span",
     "text": {
       "pl": "Aplikacja",
@@ -518,7 +518,7 @@
   },
   {
     "id": "4344280273c9",
-    "line": 1006,
+    "line": 1073,
     "tag": "span",
     "text": {
       "pl": "Krok 04 · 04.1 – 04.3",
@@ -529,7 +529,7 @@
   },
   {
     "id": "0d40eedb2f02",
-    "line": 1007,
+    "line": 1074,
     "tag": "span",
     "text": {
       "pl": "Dodaj ul: ColonyLink, VitalSensor i&nbsp;Scale",
@@ -540,7 +540,7 @@
   },
   {
     "id": "335118d08380",
-    "line": 1009,
+    "line": 1076,
     "tag": "span",
     "text": {
       "pl": "Pierwszy ul dostaje komplet. Wszystkie trzy urządzenia przypisujesz w jednym formularzu, skanując kolejno ich kody QR.",
@@ -551,7 +551,7 @@
   },
   {
     "id": "cb83953d16da",
-    "line": 1013,
+    "line": 1080,
     "tag": "span",
     "text": {
       "pl": "Na ekranie głównym otwórz swoją pasiekę.",
@@ -562,7 +562,7 @@
   },
   {
     "id": "381ba8bd581f",
-    "line": 1014,
+    "line": 1081,
     "tag": "span",
     "text": {
       "pl": "Naciśnij <em>Add beehive</em>.",
@@ -573,7 +573,7 @@
   },
   {
     "id": "dcc2cbe1fbf4",
-    "line": 1015,
+    "line": 1082,
     "tag": "span",
     "text": {
       "pl": "Zacznij od <em>ColonyLink</em> — dotknij ikony skanera przy tym polu.",
@@ -584,7 +584,7 @@
   },
   {
     "id": "014cec4c53b2",
-    "line": 1022,
+    "line": 1089,
     "tag": "span",
     "text": {
       "pl": "Aplikacja",
@@ -595,7 +595,7 @@
   },
   {
     "id": "c8405f5eab04",
-    "line": 1033,
+    "line": 1100,
     "tag": "span",
     "text": {
       "pl": "Krok 04 · ColonyLink",
@@ -606,7 +606,7 @@
   },
   {
     "id": "0e0c144fc910",
-    "line": 1034,
+    "line": 1101,
     "tag": "span",
     "text": {
       "pl": "Zeskanuj kod QR ColonyLink",
@@ -617,7 +617,7 @@
   },
   {
     "id": "3bf2a5388166",
-    "line": 1036,
+    "line": 1103,
     "tag": "span",
     "text": {
       "pl": "ColonyLink to <b>naklejka z wbudowanym tagiem NFC i nadrukowanym kodem QR</b>. Skanujesz ją jako pierwszą — to ona wiąże ul w aplikacji z konkretnym ulem w pasiece.",
@@ -628,7 +628,7 @@
   },
   {
     "id": "cacc740cae49",
-    "line": 1040,
+    "line": 1107,
     "tag": "span",
     "text": {
       "pl": "Ten sam kod odczytasz później zbliżeniowo przez <b>NFC</b> — wystarczy przyłożyć telefon, także w rękawicach.",
@@ -639,7 +639,7 @@
   },
   {
     "id": "e162fd67632a",
-    "line": 1048,
+    "line": 1115,
     "tag": "span",
     "text": {
       "pl": "Rysunek poglądowy",
@@ -650,7 +650,7 @@
   },
   {
     "id": "b0e5ad88c791",
-    "line": 1059,
+    "line": 1126,
     "tag": "span",
     "text": {
       "pl": "Krok 04 · VitalSensor",
@@ -661,7 +661,7 @@
   },
   {
     "id": "3a490f6028de",
-    "line": 1060,
+    "line": 1127,
     "tag": "span",
     "text": {
       "pl": "Zeskanuj kod QR VitalSensora",
@@ -672,7 +672,7 @@
   },
   {
     "id": "433cd034e627",
-    "line": 1062,
+    "line": 1129,
     "tag": "span",
     "text": {
       "pl": "Naklejka z kodem QR jest na krótszym boku obudowy. Zeskanuj ją przed zamontowaniem czujnika na ramce — po włożeniu ramki do ula kod ma być widoczny od góry.",
@@ -683,7 +683,7 @@
   },
   {
     "id": "283f1b93b499",
-    "line": 1066,
+    "line": 1133,
     "tag": "span",
     "text": {
       "pl": "Każdy z trzech czujników ma własny kod. Pilnuj, który trafia do którego ula.",
@@ -694,7 +694,7 @@
   },
   {
     "id": "e162fd67632a",
-    "line": 1075,
+    "line": 1142,
     "tag": "span",
     "text": {
       "pl": "Rysunek poglądowy",
@@ -705,7 +705,7 @@
   },
   {
     "id": "633e88e4794f",
-    "line": 1080,
+    "line": 1147,
     "tag": "span",
     "text": {
       "pl": "VitalSensor",
@@ -716,7 +716,7 @@
   },
   {
     "id": "42e8d92263f5",
-    "line": 1080,
+    "line": 1147,
     "tag": "span",
     "text": {
       "pl": "Zdjęcie",
@@ -727,7 +727,7 @@
   },
   {
     "id": "796e41f72ec1",
-    "line": 1092,
+    "line": 1159,
     "tag": "span",
     "text": {
       "pl": "Krok 04 · Scale",
@@ -738,7 +738,7 @@
   },
   {
     "id": "b5306d8e2c5b",
-    "line": 1093,
+    "line": 1160,
     "tag": "span",
     "text": {
       "pl": "Zeskanuj kod QR Scale",
@@ -749,7 +749,7 @@
   },
   {
     "id": "ed7c8a8c0ca4",
-    "line": 1095,
+    "line": 1162,
     "tag": "span",
     "text": {
       "pl": "Naklejka z kodem QR jest na czole belki pomiarowej — tej z elektroniką i komorą baterii. Drewniana kantówka nie ma kodu.",
@@ -760,7 +760,7 @@
   },
   {
     "id": "3aea4bcbacf6",
-    "line": 1099,
+    "line": 1166,
     "tag": "span",
     "text": {
       "pl": "Zeskanuj kod <b>zanim</b> wsuniesz belkę pod ul — później dostęp do niego będzie utrudniony.",
@@ -771,7 +771,7 @@
   },
   {
     "id": "e162fd67632a",
-    "line": 1108,
+    "line": 1175,
     "tag": "span",
     "text": {
       "pl": "Rysunek poglądowy",
@@ -782,7 +782,7 @@
   },
   {
     "id": "21ee8ff62e2c",
-    "line": 1113,
+    "line": 1180,
     "tag": "span",
     "text": {
       "pl": "Scale",
@@ -793,7 +793,7 @@
   },
   {
     "id": "42e8d92263f5",
-    "line": 1113,
+    "line": 1180,
     "tag": "span",
     "text": {
       "pl": "Zdjęcie",
@@ -804,7 +804,7 @@
   },
   {
     "id": "06a23448d0e4",
-    "line": 1125,
+    "line": 1192,
     "tag": "span",
     "text": {
       "pl": "Krok 04 · 04.8 – 04.10",
@@ -815,7 +815,7 @@
   },
   {
     "id": "4060e95a6efd",
-    "line": 1126,
+    "line": 1193,
     "tag": "span",
     "text": {
       "pl": "Pierwszy ul zapisany",
@@ -826,7 +826,7 @@
   },
   {
     "id": "b45c92256e3e",
-    "line": 1128,
+    "line": 1195,
     "tag": "span",
     "text": {
       "pl": "Wszystkie kody weryfikacyjne wypełniają się same. Po zapisaniu formularza ul pojawia się w pasiece.",
@@ -837,7 +837,7 @@
   },
   {
     "id": "bc8c3fd12699",
-    "line": 1132,
+    "line": 1199,
     "tag": "span",
     "text": {
       "pl": "Skaner odczytuje ostatni z kodów.",
@@ -848,7 +848,7 @@
   },
   {
     "id": "fe480eda32c3",
-    "line": 1133,
+    "line": 1200,
     "tag": "span",
     "text": {
       "pl": "Formularz jest kompletny — naciśnij <em>Save</em>.",
@@ -859,7 +859,7 @@
   },
   {
     "id": "0f7988f7b8a5",
-    "line": 1134,
+    "line": 1201,
     "tag": "span",
     "text": {
       "pl": "Ul widnieje na ekranie głównym. Odczyty pojawią się po pierwszej synchronizacji.",
@@ -870,7 +870,7 @@
   },
   {
     "id": "014cec4c53b2",
-    "line": 1141,
+    "line": 1208,
     "tag": "span",
     "text": {
       "pl": "Aplikacja",
@@ -881,7 +881,7 @@
   },
   {
     "id": "ee5a5864e2e1",
-    "line": 1152,
+    "line": 1219,
     "tag": "span",
     "text": {
       "pl": "Krok 05 · 05.1 – 05.3",
@@ -892,7 +892,7 @@
   },
   {
     "id": "d7198443eddf",
-    "line": 1153,
+    "line": 1220,
     "tag": "span",
     "text": {
       "pl": "Dodaj kolejny ul",
@@ -903,7 +903,7 @@
   },
   {
     "id": "31539e08a951",
-    "line": 1155,
+    "line": 1222,
     "tag": "span",
     "text": {
       "pl": "Kolejne ule dodajesz z <b>ColonyLinkiem i VitalSensorem</b> — Scale zostaje pod pierwszym ulem. Pole <em>Scale</em> zostaw puste.",
@@ -914,7 +914,7 @@
   },
   {
     "id": "60fe0cdec396",
-    "line": 1159,
+    "line": 1226,
     "tag": "span",
     "text": {
       "pl": "Otwórz pasiekę z ekranu głównego.",
@@ -925,7 +925,7 @@
   },
   {
     "id": "5f32911f188d",
-    "line": 1160,
+    "line": 1227,
     "tag": "span",
     "text": {
       "pl": "Naciśnij <em>+</em> i wybierz <em>Beehive</em>.",
@@ -936,7 +936,7 @@
   },
   {
     "id": "038da2435898",
-    "line": 1161,
+    "line": 1228,
     "tag": "span",
     "text": {
       "pl": "Zeskanuj kod QR z <em>ColonyLink</em>, a zaraz po nim z <em>VitalSensora</em>.",
@@ -947,7 +947,7 @@
   },
   {
     "id": "014cec4c53b2",
-    "line": 1168,
+    "line": 1235,
     "tag": "span",
     "text": {
       "pl": "Aplikacja",
@@ -958,7 +958,7 @@
   },
   {
     "id": "5026c2ac5cf4",
-    "line": 1179,
+    "line": 1246,
     "tag": "span",
     "text": {
       "pl": "Krok 05 · 05.4 – 05.7",
@@ -969,7 +969,7 @@
   },
   {
     "id": "d24b68de4e7e",
-    "line": 1180,
+    "line": 1247,
     "tag": "span",
     "text": {
       "pl": "Kolejny ul w pasiece",
@@ -980,7 +980,7 @@
   },
   {
     "id": "d6a0ae7eeaf6",
-    "line": 1182,
+    "line": 1249,
     "tag": "span",
     "text": {
       "pl": "Formularz zapisuje się tak samo jak przy pierwszym ulu — z ColonyLinkiem i VitalSensorem, bez Scale.",
@@ -991,7 +991,7 @@
   },
   {
     "id": "722a371e4c8d",
-    "line": 1186,
+    "line": 1253,
     "tag": "span",
     "text": {
       "pl": "Skaner odczytuje kody ColonyLinka i kolejnego czujnika.",
@@ -1002,7 +1002,7 @@
   },
   {
     "id": "a951e72b2c89",
-    "line": 1187,
+    "line": 1254,
     "tag": "span",
     "text": {
       "pl": "Pola i kody weryfikacyjne są gotowe — naciśnij <em>Save</em>.",
@@ -1013,7 +1013,7 @@
   },
   {
     "id": "a51d56895f8c",
-    "line": 1188,
+    "line": 1255,
     "tag": "span",
     "text": {
       "pl": "Kolejny ul widnieje w pasiece. Powtórz krok 05 dla każdego następnego ula.",
@@ -1024,7 +1024,7 @@
   },
   {
     "id": "014cec4c53b2",
-    "line": 1195,
+    "line": 1262,
     "tag": "span",
     "text": {
       "pl": "Aplikacja",
@@ -1035,7 +1035,7 @@
   },
   {
     "id": "1b5daca71a84",
-    "line": 1206,
+    "line": 1273,
     "tag": "span",
     "text": {
       "pl": "Krok 06",
@@ -1046,7 +1046,7 @@
   },
   {
     "id": "a34aa4a5d3da",
-    "line": 1207,
+    "line": 1274,
     "tag": "span",
     "text": {
       "pl": "Uruchom urządzenia i poczekaj na dane",
@@ -1057,7 +1057,7 @@
   },
   {
     "id": "b624fcbf345e",
-    "line": 1209,
+    "line": 1276,
     "tag": "span",
     "text": {
       "pl": "Urządzenia przychodzą z <b>zamontowanymi bateriami</b> — nic nie wkładasz. Sprawdzasz je tylko <b>przed</b> montażem w pasiece, żeby wiedzieć, że działają, zanim wejdziesz między ule.",
@@ -1068,7 +1068,7 @@
   },
   {
     "id": "2acb53422bc4",
-    "line": 1213,
+    "line": 1280,
     "tag": "span",
     "text": {
       "pl": "Wystaw na słońce — zasila go panel fotowoltaiczny.",
@@ -1079,7 +1079,7 @@
   },
   {
     "id": "9575e347811f",
-    "line": 1214,
+    "line": 1281,
     "tag": "span",
     "text": {
       "pl": "Sprawdź, czy zaświeciła się dioda potwierdzająca uruchomienie.",
@@ -1090,7 +1090,7 @@
   },
   {
     "id": "7c4122b53db6",
-    "line": 1215,
+    "line": 1282,
     "tag": "span",
     "text": {
       "pl": "Sprawdź diodę uruchomienia.",
@@ -1101,7 +1101,7 @@
   },
   {
     "id": "e886f1338b33",
-    "line": 1216,
+    "line": 1283,
     "tag": "span",
     "text": {
       "pl": "Po dwóch godzinach sprawdź pierwsze odczyty w aplikacji — status <em>Brak danych</em> zmieni się na aktualny.",
@@ -1112,7 +1112,7 @@
   },
   {
     "id": "1f7f3da44aa9",
-    "line": 1223,
+    "line": 1290,
     "tag": "span",
     "text": {
       "pl": "Zestaw w pasiece",
@@ -1123,7 +1123,7 @@
   },
   {
     "id": "7845fb2f6fd8",
-    "line": 1223,
+    "line": 1290,
     "tag": "span",
     "text": {
       "pl": "Rozmieszczenie",
@@ -1134,7 +1134,7 @@
   },
   {
     "id": "12bcca2b3913",
-    "line": 1234,
+    "line": 1301,
     "tag": "span",
     "text": {
       "pl": "Krok 07 · Montaż",
@@ -1145,7 +1145,7 @@
   },
   {
     "id": "f7790c3aa8f3",
-    "line": 1235,
+    "line": 1302,
     "tag": "span",
     "text": {
       "pl": "Zamontuj Hub",
@@ -1156,7 +1156,7 @@
   },
   {
     "id": "b27e592f9710",
-    "line": 1237,
+    "line": 1304,
     "tag": "span",
     "text": {
       "pl": "Hub zasila panel fotowoltaiczny, więc decyduje o nim <b>słońce</b>, nie bliskość ula. Do montażu użyj uchwytu aparatowego z zestawu.",
@@ -1167,7 +1167,7 @@
   },
   {
     "id": "e3e761adbee3",
-    "line": 1241,
+    "line": 1308,
     "tag": "span",
     "text": {
       "pl": "Nad ziemią — niżej panel może nie zebrać dość światła, zwłaszcza zimą.",
@@ -1178,7 +1178,7 @@
   },
   {
     "id": "18dfe6627204",
-    "line": 1242,
+    "line": 1309,
     "tag": "span",
     "text": {
       "pl": "Nachylenie względem poziomu (min. 20°), panelem w stronę słońca, bez zacienienia.",
@@ -1189,7 +1189,7 @@
   },
   {
     "id": "0f956ae845e1",
-    "line": 1243,
+    "line": 1310,
     "tag": "span",
     "text": {
       "pl": "Od najdalszego ula z VitalSensorem lub Scale — to zasięg BLE.",
@@ -1200,7 +1200,7 @@
   },
   {
     "id": "d39e5bdf2417",
-    "line": 1244,
+    "line": 1311,
     "tag": "span",
     "text": {
       "pl": "Anteny",
@@ -1211,7 +1211,7 @@
   },
   {
     "id": "3b226e88c3a9",
-    "line": 1244,
+    "line": 1311,
     "tag": "span",
     "text": {
       "pl": "Skierowane <em>pionowo do góry</em> — BLE i LTE mają różne złącza, nie da się ich pomylić.",
@@ -1222,7 +1222,7 @@
   },
   {
     "id": "d52ab245bf08",
-    "line": 1247,
+    "line": 1314,
     "tag": "span",
     "text": {
       "pl": "<b>Nie montuj Huba do metalu</b> — zakłóca BLE i LTE. Słupek, drzewo lub drewniana konstrukcja są w porządku.",
@@ -1233,7 +1233,7 @@
   },
   {
     "id": "e162fd67632a",
-    "line": 1256,
+    "line": 1323,
     "tag": "span",
     "text": {
       "pl": "Rysunek poglądowy",
@@ -1244,7 +1244,7 @@
   },
   {
     "id": "22168e1231a0",
-    "line": 1261,
+    "line": 1328,
     "tag": "span",
     "text": {
       "pl": "Prawidłowy montaż",
@@ -1255,7 +1255,7 @@
   },
   {
     "id": "42e8d92263f5",
-    "line": 1261,
+    "line": 1328,
     "tag": "span",
     "text": {
       "pl": "Zdjęcie",
@@ -1266,7 +1266,7 @@
   },
   {
     "id": "12bcca2b3913",
-    "line": 1273,
+    "line": 1340,
     "tag": "span",
     "text": {
       "pl": "Krok 07 · Montaż",
@@ -1277,7 +1277,7 @@
   },
   {
     "id": "c205c1af02b7",
-    "line": 1274,
+    "line": 1341,
     "tag": "span",
     "text": {
       "pl": "Ustaw Scale pod ulem",
@@ -1288,7 +1288,7 @@
   },
   {
     "id": "d79b18eb9da1",
-    "line": 1276,
+    "line": 1343,
     "tag": "span",
     "text": {
       "pl": "Scale i drewniana kantówka tworzą jedną konstrukcję nośną. Wypoziomowanie i orientacja są <b>kluczowe dla dokładności pomiaru</b>.",
@@ -1299,7 +1299,7 @@
   },
   {
     "id": "299d11bec7bf",
-    "line": 1280,
+    "line": 1347,
     "tag": "span",
     "text": {
       "pl": "Ustaw uruchomioną Scale na stabilnym, równym podłożu, <em>prostopadle do ramek</em> w ulu.",
@@ -1310,7 +1310,7 @@
   },
   {
     "id": "7afb4e483439",
-    "line": 1281,
+    "line": 1348,
     "tag": "span",
     "text": {
       "pl": "Ułóż drewnianą kantówkę równolegle do Scale, w takiej odległości, żeby ciężar ula rozłożył się równomiernie.",
@@ -1321,7 +1321,7 @@
   },
   {
     "id": "fed01de0197c",
-    "line": 1282,
+    "line": 1349,
     "tag": "span",
     "text": {
       "pl": "Postaw ul na konstrukcji i sprawdź, że obciążenie nadal rozkłada się równo.",
@@ -1332,7 +1332,7 @@
   },
   {
     "id": "62ab36f97589",
-    "line": 1283,
+    "line": 1350,
     "tag": "span",
     "text": {
       "pl": "Od Huba, bez przeszkód tłumiących sygnał BLE.",
@@ -1343,7 +1343,7 @@
   },
   {
     "id": "e162fd67632a",
-    "line": 1291,
+    "line": 1358,
     "tag": "span",
     "text": {
       "pl": "Rysunek poglądowy",
@@ -1354,7 +1354,7 @@
   },
   {
     "id": "73e96dab53c7",
-    "line": 1296,
+    "line": 1363,
     "tag": "span",
     "text": {
       "pl": "Scale i kantówka",
@@ -1365,7 +1365,7 @@
   },
   {
     "id": "42e8d92263f5",
-    "line": 1296,
+    "line": 1363,
     "tag": "span",
     "text": {
       "pl": "Zdjęcie",
@@ -1376,7 +1376,7 @@
   },
   {
     "id": "12bcca2b3913",
-    "line": 1308,
+    "line": 1375,
     "tag": "span",
     "text": {
       "pl": "Krok 07 · Montaż",
@@ -1387,7 +1387,7 @@
   },
   {
     "id": "d880e9bbf0f7",
-    "line": 1309,
+    "line": 1376,
     "tag": "span",
     "text": {
       "pl": "Zamontuj VitalSensor w ulu",
@@ -1398,7 +1398,7 @@
   },
   {
     "id": "dd029f00f64c",
-    "line": 1311,
+    "line": 1378,
     "tag": "span",
     "text": {
       "pl": "Czujnik montujesz bezinwazyjnie na ramce — bez trwałych zmian w ulu i bez zakłócania pracy rodziny.",
@@ -1409,7 +1409,7 @@
   },
   {
     "id": "2d7de82d6fde",
-    "line": 1315,
+    "line": 1382,
     "tag": "span",
     "text": {
       "pl": "Osadź uruchomiony VitalSensor na <em>centralnej ramce</em> (w kłębie), stabilnie, tak żeby się nie przemieszczał.",
@@ -1420,7 +1420,7 @@
   },
   {
     "id": "0ce18fa02a43",
-    "line": 1316,
+    "line": 1383,
     "tag": "span",
     "text": {
       "pl": "Zamontuj go <em>pionowo</em> — naklejka z kodem QR ma być widoczna od góry po włożeniu ramki.",
@@ -1431,7 +1431,7 @@
   },
   {
     "id": "6248be80e0a4",
-    "line": 1317,
+    "line": 1384,
     "tag": "span",
     "text": {
       "pl": "Włóż ramkę w środkową część korpusu gniazdowego, tak żeby nie zakłócać wentylacji.",
@@ -1442,7 +1442,7 @@
   },
   {
     "id": "9c47cdd1b96c",
-    "line": 1318,
+    "line": 1385,
     "tag": "span",
     "text": {
       "pl": "Od Huba — zasięg BLE.",
@@ -1453,7 +1453,7 @@
   },
   {
     "id": "e162fd67632a",
-    "line": 1326,
+    "line": 1393,
     "tag": "span",
     "text": {
       "pl": "Rysunek poglądowy",
@@ -1464,7 +1464,7 @@
   },
   {
     "id": "d1df6db57cee",
-    "line": 1331,
+    "line": 1398,
     "tag": "span",
     "text": {
       "pl": "Czujnik na ramce",
@@ -1475,7 +1475,7 @@
   },
   {
     "id": "42e8d92263f5",
-    "line": 1331,
+    "line": 1398,
     "tag": "span",
     "text": {
       "pl": "Zdjęcie",
@@ -1486,7 +1486,7 @@
   },
   {
     "id": "12bcca2b3913",
-    "line": 1343,
+    "line": 1410,
     "tag": "span",
     "text": {
       "pl": "Krok 07 · Montaż",
@@ -1497,7 +1497,7 @@
   },
   {
     "id": "b115a19a00ee",
-    "line": 1344,
+    "line": 1411,
     "tag": "span",
     "text": {
       "pl": "Umieść ColonyLink na ulu",
@@ -1508,7 +1508,7 @@
   },
   {
     "id": "5686e8c284a3",
-    "line": 1346,
+    "line": 1413,
     "tag": "span",
     "text": {
       "pl": "ColonyLink to <b>wodoodporna naklejka</b> z wbudowanym tagiem NFC i nadrukowanym kodem QR. Zeskanowanie kodu albo przyłożenie telefonu otwiera dane właściwego ula — też w rękawicach i w pełnym słońcu.",
@@ -1519,7 +1519,7 @@
   },
   {
     "id": "46bde5f8e964",
-    "line": 1350,
+    "line": 1417,
     "tag": "span",
     "text": {
       "pl": "Wybierz na froncie ula miejsce <em>płaskie, czyste i suche</em>, dobrze widoczne podczas pracy.",
@@ -1530,7 +1530,7 @@
   },
   {
     "id": "39e0ffc634f5",
-    "line": 1351,
+    "line": 1418,
     "tag": "span",
     "text": {
       "pl": "Naklej ColonyLink i dociśnij go na całej powierzchni, żeby taśma montażowa dobrze przylegała.",
@@ -1541,7 +1541,7 @@
   },
   {
     "id": "4e53ea1a0908",
-    "line": 1352,
+    "line": 1419,
     "tag": "span",
     "text": {
       "pl": "Sprawdź, czy kod QR jest dostępny bez otwierania ula.",
@@ -1552,7 +1552,7 @@
   },
   {
     "id": "b792be847000",
-    "line": 1353,
+    "line": 1420,
     "tag": "span",
     "text": {
       "pl": "Bez baterii",
@@ -1563,7 +1563,7 @@
   },
   {
     "id": "fbfc41eb51eb",
-    "line": 1353,
+    "line": 1420,
     "tag": "span",
     "text": {
       "pl": "ColonyLink nie wymaga zasilania, konfiguracji ani aktualizacji.",
@@ -1574,7 +1574,7 @@
   },
   {
     "id": "e162fd67632a",
-    "line": 1360,
+    "line": 1427,
     "tag": "span",
     "text": {
       "pl": "Rysunek poglądowy",
@@ -1585,7 +1585,7 @@
   },
   {
     "id": "a0c40dade066",
-    "line": 1371,
+    "line": 1438,
     "tag": "span",
     "text": {
       "pl": "Gotowe",
@@ -1596,7 +1596,7 @@
   },
   {
     "id": "dea824f8ba48",
-    "line": 1372,
+    "line": 1439,
     "tag": "span",
     "text": {
       "pl": "Ul nadaje.",
@@ -1607,7 +1607,7 @@
   },
   {
     "id": "fc53250f0898",
-    "line": 1374,
+    "line": 1441,
     "tag": "span",
     "text": {
       "pl": "Hub zbiera dane z czujników i wysyła je do aplikacji. Jeśli po kilku godzinach odczytów nadal brak — sprawdź baterie, zasięg i listę problemów w dokumentacji.",
@@ -1618,7 +1618,7 @@
   },
   {
     "id": "a8ef2318c52e",
-    "line": 1379,
+    "line": 1446,
     "tag": "span",
     "text": {
       "pl": "Pełna instrukcja konfiguracji",
@@ -1629,7 +1629,7 @@
   },
   {
     "id": "2a1f319432e3",
-    "line": 1380,
+    "line": 1447,
     "tag": "span",
     "text": {
       "pl": "Rozwiązywanie problemów",
@@ -1640,7 +1640,7 @@
   },
   {
     "id": "e050480eb62e",
-    "line": 1381,
+    "line": 1448,
     "tag": "span",
     "text": {
       "pl": "Dokumentacja Apisense",
