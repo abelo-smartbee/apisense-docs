@@ -78,8 +78,15 @@ def main(argv: list[str]) -> None:
     if unknown:
         raise SystemExit(f"nieznane locale: {', '.join(unknown)} (dostępne: {', '.join(LOCALES)})")
 
+    # The bundle is a gitignored local artifact, so a checkout routinely leaves one
+    # older than index.html. Printing that would produce eight PDFs quietly missing
+    # whatever the page gained since — rebuild on stale, not just on absent.
+    source = ROOT / "docs" / "assembly" / "index.html"
     if not STANDALONE.exists():
         print("brak wersji standalone — buduję")
+        subprocess.run([sys.executable, str(BUILD_STANDALONE)], check=True)
+    elif STANDALONE.stat().st_mtime < source.stat().st_mtime:
+        print("wersja standalone starsza niż index.html — przebudowuję")
         subprocess.run([sys.executable, str(BUILD_STANDALONE)], check=True)
 
     chrome = find_chrome()

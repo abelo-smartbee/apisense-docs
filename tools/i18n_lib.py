@@ -42,8 +42,6 @@ class Element:
 
     locale: str
     tag: str
-    attrs_before: str
-    attrs_after: str
     inner: str
     start: int
     end: int
@@ -118,8 +116,6 @@ def parse(html: str) -> list[Group]:
             Element(
                 locale=m.group(3),
                 tag=tag,
-                attrs_before=m.group(2),
-                attrs_after=m.group(4),
                 inner=html[m.end() : inner_end],
                 start=m.start(),
                 end=end,
@@ -134,10 +130,10 @@ def parse(html: str) -> list[Group]:
         if current.elements:
             gap = html[current.elements[-1].end : el.start]
             adjacent = gap.strip() == ""
-            fresh = el.locale in current.by_locale
             # A repeated locale means the previous run ended and a new one began
             # even where no markup separates them.
-            if not adjacent or fresh:
+            locale_repeats = el.locale in current.by_locale
+            if not adjacent or locale_repeats:
                 groups.append(current)
                 current = Group()
         current.elements.append(el)

@@ -35,6 +35,12 @@ FONT_CSS = (
 KEEP_SUBSETS = ("latin", "latin-ext")
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"
 
+# A data URI carries no filename, so the type has to be declared. Most drawings are
+# webp, but the animated mounting illustration is SVG — served as image/webp it just
+# does not render, in the bundle and in every PDF printed from it. Fail on anything
+# unrecognised rather than guess: a silently blank figure is the worse outcome.
+FIG_TYPES = {".webp": "image/webp", ".svg": "image/svg+xml", ".png": "image/png"}
+
 
 def fetch(url: str) -> bytes:
     req = urllib.request.Request(url, headers={"User-Agent": UA})
@@ -50,8 +56,10 @@ def inline_fonts() -> str:
     for subset, block in blocks:
         if subset not in KEEP_SUBSETS:
             continue
-        url = re.search(r"url\((https://[^)]+)\)", block).group(1)
-        data = base64.b64encode(fetch(url)).decode("ascii")
+        match = re.search(r"url\((https://[^)]+)\)", block)
+        if match is None:
+            raise SystemExit(f"@font-face bez url() w subsecie {subset} — zmienił się format Google Fonts?")
+        data = base64.b64encode(fetch(match.group(1))).decode("ascii")
         kept.append(
             re.sub(
                 r"url\(https://[^)]+\)",
@@ -81,11 +89,15 @@ def main() -> None:
     if "fonts.googleapis.com" in html:
         raise SystemExit("font <link> was not replaced")
 
-    # 2. drawings: figs/*.webp -> data URIs
+    # 2. drawings: figs/* -> data URIs
     used = set(re.findall(r'src="figs/([^"]+)"', html))
     for name in sorted(used):
+        suffix = Path(name).suffix.lower()
+        mime = FIG_TYPES.get(suffix)
+        if mime is None:
+            raise SystemExit(f"nieznany typ rysunku: figs/{name}")
         blob = (FIGS / name).read_bytes()
-        uri = "data:image/webp;base64," + base64.b64encode(blob).decode("ascii")
+        uri = f"data:{mime};base64," + base64.b64encode(blob).decode("ascii")
         html = html.replace(f'src="figs/{name}"', f'src="{uri}"')
     print(f"  images: {len(used)} embedded")
 

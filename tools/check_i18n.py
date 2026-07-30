@@ -24,6 +24,7 @@ is checking; a second parser here would only invent a second opinion.
 from __future__ import annotations
 
 import argparse
+import re
 import sys
 from collections import Counter
 from pathlib import Path
@@ -45,6 +46,45 @@ DEFAULT_LOCALES = ("pl", "en", "de", "fr", "es", "it", "no", "tr")
 # that has not been started yet would otherwise print one line per group and
 # bury the summary.
 DEFAULT_LIMIT = 20
+
+
+# The page names its locales in five independent places, and a locale present in
+# some but not others fails as quietly as a missing span: in the CSS but not the
+# buttons is a locale nobody can reach, in the buttons but not the CSS is a button
+# that shows every language at once, in the pills but not HEAD_TEXT is a Polish
+# <title> on a Turkish page. Nothing enforces agreement, so this does.
+SWITCHER_LISTS = {
+    "reguły CSS": re.compile(r'\[data-lang="([a-z]{2})"\] \[lang\]'),
+    "allowlist w <head>": re.compile(r"'([a-z]{2})'(?=[,\]])"),
+    "pigułki": re.compile(r'data-set-lang="([a-z]{2})"'),
+    "<option>": re.compile(r'<option value="([a-z]{2})"'),
+    "HEAD_TEXT": re.compile(r"^\s{4}([a-z]{2}): \{$", re.M),
+}
+
+
+def switcher_locales(html: str) -> dict[str, set[str]]:
+    """What each of the five lists thinks the supported locales are."""
+    found = {}
+    for name, pattern in SWITCHER_LISTS.items():
+        hits = {loc for loc in pattern.findall(html) if loc in LOCALE_ORDER}
+        found[name] = hits
+    return found
+
+
+def check_switcher(html: str, locales: list[str]) -> list[str]:
+    """Complaints about the five lists — empty when they all agree."""
+    found = switcher_locales(html)
+    problems = []
+    for name, hits in found.items():
+        if missing := [loc for loc in locales if loc not in hits]:
+            problems.append(f"{name}: brak {', '.join(missing)}")
+    # Also catch the reverse — a locale wired into the page that nobody translated.
+    reachable = set().union(*found.values())
+    if extra := sorted(reachable - set(locales)):
+        problems.append(
+            f"locale osiągalne w przełączniku, ale nieuznane za gotowe: {', '.join(extra)}"
+        )
+    return problems
 
 
 def resolve(spec: str) -> list[str]:
@@ -89,15 +129,26 @@ def main(argv: list[str]) -> int:
     if not path.is_file():
         raise SystemExit(f"brak pliku: {path}")
 
-    groups = parse(path.read_text(encoding="utf-8"))
+    html = path.read_text(encoding="utf-8")
+    groups = parse(html)
     gaps = [(g, missing) for g in groups if (missing := g.missing(locales))]
+    switcher = check_switcher(html, locales)
 
     print(f"  {path}")
     print(f"  {len(groups)} grup  ·  locale: {', '.join(locales)}")
 
-    if not gaps:
-        print("  OK: komplet we wszystkich grupach")
+    if switcher:
+        print()
+        for problem in switcher:
+            print(f"  przełącznik — {problem}")
+
+    if not gaps and not switcher:
+        print("  OK: komplet we wszystkich grupach, przełącznik spójny")
         return 0
+    if not gaps:
+        print()
+        print(f"  BŁĄD: grupy kompletne, ale przełącznik rozjechany ({len(switcher)})")
+        return 1
 
     shown = gaps if args.limit <= 0 else gaps[: args.limit]
     print()
