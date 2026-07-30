@@ -7,7 +7,8 @@ Chrome needs no network access.
     python3 tools/build_pdf.py            # all locales
     python3 tools/build_pdf.py pl en      # just these
 
-Output: docs/assembly/pdf/Apisense_BOX_Instrukcja_montazu_<locale>.pdf
+Output: docs/assembly/pdf/ — one file per locale, named in the locale's own
+language (see LOCALES), because these travel as e-mail attachments.
 """
 
 from __future__ import annotations
@@ -85,10 +86,20 @@ def main(argv: list[str]) -> None:
     html = STANDALONE.read_text(encoding="utf-8")
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
+    # The locale is preset by rewriting this exact string on <html>. If index.html
+    # ever spells it differently, the replace would quietly do nothing and every
+    # PDF would come out Polish — a wrong-language file looks perfectly fine.
+    ROOT_TAG = '<html lang="pl" data-lang="pl">'
+    if ROOT_TAG not in html:
+        raise SystemExit(
+            f"nie znaleziono {ROOT_TAG} w wersji standalone — bez tego wszystkie"
+            " PDF-y wyszłyby po polsku; sprawdź <html> w docs/assembly/index.html"
+        )
+
     with tempfile.TemporaryDirectory() as tmp:
         for loc in locales:
             page = html.replace(
-                '<html lang="pl" data-lang="pl">',
+                ROOT_TAG,
                 f'<html lang="{loc}" data-lang="{loc}" data-theme="light">',
             ).replace("</head>", FREEZE + "</head>")
             src = Path(tmp) / f"{loc}.html"
