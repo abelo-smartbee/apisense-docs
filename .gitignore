@@ -10,9 +10,9 @@ docs/manual/app-manual.pl.docx
 .idea
 
 **_pycache__
-# lokalne artefakty: jednoplikowa wersja instrukcji do wysyłki + jej generator
+# lokalny artefakt: jednoplikowa wersja instrukcji do wysyłki
+# (generator tools/build_standalone.py jest wersjonowany, jego wynik nie)
 docs/assembly/*_standalone.html
-tools/
 
 # lista dla marketingu — przekazywana bezpośrednio, nie wersjonowana
 TODO-marketing.md
