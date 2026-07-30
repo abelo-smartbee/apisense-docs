@@ -7,7 +7,11 @@
       "pl": "Apisense BOX · Instrukcja montażu",
       "en": "Apisense BOX · Assembly instruction",
       "de": "Apisense BOX · Montageanleitung",
-      "fr": "Apisense BOX · Guide de montage"
+      "fr": "Apisense BOX · Guide de montage",
+      "es": "Apisense BOX · Guía de montaje",
+      "it": "Apisense BOX · Istruzioni di montaggio",
+      "no": "Apisense BOX · Monteringsanvisning",
+      "tr": "Apisense BOX · Montaj kılavuzu"
     }
   },
   {
@@ -18,7 +22,11 @@
       "pl": "Pełna instrukcja",
       "en": "Full guide",
       "de": "Vollständige Anleitung",
-      "fr": "Guide complet"
+      "fr": "Guide complet",
+      "es": "Guía completa",
+      "it": "Guida completa",
+      "no": "Fullstendig veiledning",
+      "tr": "Tam kılavuz"
     }
   },
   {
@@ -29,7 +37,11 @@
       "pl": "Apisense · Zestaw startowy",
       "en": "Apisense · Starter kit",
       "de": "Apisense · Starter-Set",
-      "fr": "Apisense · Kit de démarrage"
+      "fr": "Apisense · Kit de démarrage",
+      "es": "Apisense · Kit de inicio",
+      "it": "Apisense · Kit di avvio",
+      "no": "Apisense · Startpakke",
+      "tr": "Apisense · Başlangıç seti"
     }
   },
   {
@@ -40,7 +52,11 @@
       "pl": "Instrukcja<br>montażu",
       "en": "Assembly<br>instruction",
       "de": "Montage-<br>anleitung",
-      "fr": "Guide de<br>montage"
+      "fr": "Guide de<br>montage",
+      "es": "Guía de<br>montaje",
+      "it": "Istruzioni di<br>montaggio",
+      "no": "Monterings-<br>anvisning",
+      "tr": "Montaj<br>kılavuzu"
     }
   },
   {
@@ -51,7 +67,11 @@
       "pl": "Od rozpakowania kartonu do pierwszego odczytu z ula. Siedem kroków, wszystkie ekrany aplikacji i montaż każdego urządzenia w pasiece.",
       "en": "From opening the box to your first hive reading. Seven steps, every app screen and the mounting of each device in the apiary.",
       "de": "Vom Auspacken bis zum ersten Messwert aus dem Bienenstock. Sieben Schritte, alle App-Bildschirme und die Montage jedes Geräts am Bienenstand.",
-      "fr": "Du déballage du carton à la première mesure de la ruche. Sept étapes, tous les écrans de l'application et le montage de chaque appareil au rucher."
+      "fr": "Du déballage du carton à la première mesure de la ruche. Sept étapes, tous les écrans de l'application et le montage de chaque appareil au rucher.",
+      "es": "Desde abrir la caja hasta la primera medición de la colmena. Siete pasos, todas las pantallas de la aplicación y el montaje de cada dispositivo en el colmenar.",
+      "it": "Dall'apertura della scatola alla prima lettura dall'arnia. Sette passi, tutte le schermate dell'app e il montaggio di ogni dispositivo nell'apiario.",
+      "no": "Fra du åpner esken til den første avlesningen fra bikuben. Sju trinn, alle skjermbildene i appen og montering av hver enhet i bigården.",
+      "tr": "Kutuyu açmaktan kovandan gelen ilk ölçüme kadar. Yedi adım, uygulamanın bütün ekranları ve arılıktaki her cihazın montajı."
     }
   },
   {
@@ -62,7 +82,11 @@
       "pl": "7 kroków",
       "en": "7 steps",
       "de": "7 Schritte",
-      "fr": "7 étapes"
+      "fr": "7 étapes",
+      "es": "7 pasos",
+      "it": "7 passi",
+      "no": "7 trinn",
+      "tr": "7 adım"
     }
   },
   {
@@ -73,7 +97,11 @@
       "pl": "ok. 30 minut",
       "en": "approx. 30 minutes",
       "de": "ca. 30 Minuten",
-      "fr": "env. 30 minutes"
+      "fr": "env. 30 minutes",
+      "es": "aprox. 30 minutos",
+      "it": "circa 30 minuti",
+      "no": "ca. 30 minutter",
+      "tr": "yaklaşık 30 dakika"
     }
   },
   {
@@ -84,7 +112,11 @@
       "pl": "Apisense Pro AI",
       "en": "Apisense Pro AI",
       "de": "Apisense Pro AI",
-      "fr": "Apisense Pro AI"
+      "fr": "Apisense Pro AI",
+      "es": "Apisense Pro AI",
+      "it": "Apisense Pro AI",
+      "no": "Apisense Pro AI",
+      "tr": "Apisense Pro AI"
     }
   },
   {
@@ -95,7 +127,11 @@
       "pl": "Przewiń",
       "en": "Scroll",
       "de": "Scrollen",
-      "fr": "Faire défiler"
+      "fr": "Faire défiler",
+      "es": "Desplázate",
+      "it": "Scorri",
+      "no": "Bla ned",
+      "tr": "Kaydırın"
     }
   },
   {
@@ -106,7 +142,11 @@
       "pl": "Zestaw",
       "en": "The kit",
       "de": "Das Set",
-      "fr": "Le kit"
+      "fr": "Le kit",
+      "es": "El kit",
+      "it": "Il kit",
+      "no": "Settet",
+      "tr": "Set"
     }
   },
   {
@@ -117,7 +157,11 @@
       "pl": "Co znajdziesz w pudełku",
       "en": "What's in the box",
       "de": "Was im Karton steckt",
-      "fr": "Ce que contient le carton"
+      "fr": "Ce que contient le carton",
+      "es": "Qué hay en la caja",
+      "it": "Cosa c'è nella scatola",
+      "no": "Dette ligger i esken",
+      "tr": "Kutuda neler var"
     }
   },
   {
@@ -128,7 +172,11 @@
       "pl": "Jeden Hub obsługuje całą pasiekę. Scale trafia pod pierwszy ul, a każdy z trzech uli dostaje własny VitalSensor i ColonyLink.",
       "en": "A single Hub serves the whole apiary. The Scale goes under the first hive, and each of the three hives gets its own VitalSensor and ColonyLink.",
       "de": "Ein Hub versorgt den ganzen Bienenstand. Die Scale kommt unter den ersten Bienenstock, und jeder der drei Stöcke bekommt einen eigenen VitalSensor und ColonyLink.",
-      "fr": "Un seul Hub couvre tout le rucher. La Scale se place sous la première ruche, et chacune des trois ruches reçoit son propre VitalSensor et son ColonyLink."
+      "fr": "Un seul Hub couvre tout le rucher. La Scale se place sous la première ruche, et chacune des trois ruches reçoit son propre VitalSensor et son ColonyLink.",
+      "es": "Un solo Hub cubre todo el colmenar. El Scale va debajo de la primera colmena y cada una de las tres colmenas recibe su propio VitalSensor y su ColonyLink.",
+      "it": "Un solo Hub copre l'intero apiario. La Scale va sotto la prima arnia e ognuna delle tre arnie riceve il proprio VitalSensor e il proprio ColonyLink.",
+      "no": "Én Hub dekker hele bigården. Scale plasseres under den første bikuben, og hver av de tre bikubene får sin egen VitalSensor og ColonyLink.",
+      "tr": "Tek bir Hub tüm arılığa hizmet eder. Scale ilk kovanın altına girer; üç kovanın her biri kendi VitalSensor ve ColonyLink cihazını alır."
     }
   },
   {
@@ -139,7 +187,11 @@
       "pl": "Opakowanie",
       "en": "The box",
       "de": "Die Verpackung",
-      "fr": "L'emballage"
+      "fr": "L'emballage",
+      "es": "El embalaje",
+      "it": "La confezione",
+      "no": "Esken",
+      "tr": "Ambalaj"
     }
   },
   {
@@ -150,7 +202,11 @@
       "pl": "Krok 01",
       "en": "Step 01",
       "de": "Schritt 01",
-      "fr": "Étape 01"
+      "fr": "Étape 01",
+      "es": "Paso 01",
+      "it": "Passo 01",
+      "no": "Trinn 01",
+      "tr": "Adım 01"
     }
   },
   {
@@ -161,7 +217,11 @@
       "pl": "Pobierz aplikację",
       "en": "Download the app",
       "de": "App herunterladen",
-      "fr": "Téléchargez l'application"
+      "fr": "Téléchargez l'application",
+      "es": "Descarga la aplicación",
+      "it": "Scarica l'app",
+      "no": "Last ned appen",
+      "tr": "Uygulamayı indirin"
     }
   },
   {
@@ -172,7 +232,11 @@
       "pl": "Cały zestaw konfigurujesz z telefonu. Zeskanuj kod QR aparatem albo wyszukaj <b>Apisense Pro AI</b> w App Store lub Google Play.",
       "en": "The whole kit is configured from your phone. Scan the QR code with your camera or search for <b>Apisense Pro AI</b> in the App Store or Google Play.",
       "de": "Das gesamte Set richtest du über das Handy ein. Scanne den QR-Code mit der Kamera oder suche <b>Apisense Pro AI</b> im App Store oder bei Google Play.",
-      "fr": "Vous configurez tout le kit depuis votre téléphone. Scannez le QR code avec l'appareil photo ou cherchez <b>Apisense Pro AI</b> dans l'App Store ou sur Google Play."
+      "fr": "Vous configurez tout le kit depuis votre téléphone. Scannez le QR code avec l'appareil photo ou cherchez <b>Apisense Pro AI</b> dans l'App Store ou sur Google Play.",
+      "es": "Todo el kit se configura desde el teléfono. Escanea el código QR con la cámara o busca <b>Apisense Pro AI</b> en la App Store o en Google Play.",
+      "it": "L'intero kit si configura dal telefono. Scansiona il codice QR con la fotocamera oppure cerca <b>Apisense Pro AI</b> nell'App Store o su Google Play.",
+      "no": "Hele settet konfigurerer du fra telefonen. Skann QR-koden med kameraet, eller søk etter <b>Apisense Pro AI</b> i App Store eller Google Play.",
+      "tr": "Tüm seti telefonunuzdan yapılandırırsınız. QR kodunu kameranızla tarayın ya da App Store veya Google Play'de <b>Apisense Pro AI</b> uygulamasını arayın."
     }
   },
   {
@@ -183,7 +247,11 @@
       "pl": "Górny kod QR — App Store",
       "en": "Top QR code — App Store",
       "de": "Oberer QR-Code — App Store",
-      "fr": "QR code du haut — App Store"
+      "fr": "QR code du haut — App Store",
+      "es": "Código QR superior — App Store",
+      "it": "Codice QR in alto — App Store",
+      "no": "Øverste QR-kode — App Store",
+      "tr": "Üstteki QR kodu — App Store"
     }
   },
   {
@@ -194,7 +262,11 @@
       "pl": "Dolny kod QR — Google Play",
       "en": "Bottom QR code — Google Play",
       "de": "Unterer QR-Code — Google Play",
-      "fr": "QR code du bas — Google Play"
+      "fr": "QR code du bas — Google Play",
+      "es": "Código QR inferior — Google Play",
+      "it": "Codice QR in basso — Google Play",
+      "no": "Nederste QR-kode — Google Play",
+      "tr": "Alttaki QR kodu — Google Play"
     }
   },
   {
@@ -205,7 +277,11 @@
       "pl": "Możesz też pracować w przeglądarce: <em>app.apisense.ai</em>",
       "en": "You can also work in a browser: <em>app.apisense.ai</em>",
       "de": "Du kannst auch im Browser arbeiten: <em>app.apisense.ai</em>",
-      "fr": "Vous pouvez aussi travailler dans le navigateur : <em>app.apisense.ai</em>"
+      "fr": "Vous pouvez aussi travailler dans le navigateur : <em>app.apisense.ai</em>",
+      "es": "También puedes trabajar en el navegador: <em>app.apisense.ai</em>",
+      "it": "Puoi lavorare anche dal browser: <em>app.apisense.ai</em>",
+      "no": "Du kan også jobbe i nettleseren: <em>app.apisense.ai</em>",
+      "tr": "Tarayıcıdan da çalışabilirsiniz: <em>app.apisense.ai</em>"
     }
   },
   {
@@ -216,7 +292,11 @@
       "pl": "App Store · Google Play",
       "en": "App Store · Google Play",
       "de": "App Store · Google Play",
-      "fr": "App Store · Google Play"
+      "fr": "App Store · Google Play",
+      "es": "App Store · Google Play",
+      "it": "App Store · Google Play",
+      "no": "App Store · Google Play",
+      "tr": "App Store · Google Play"
     }
   },
   {
@@ -227,7 +307,11 @@
       "pl": "Krok 02",
       "en": "Step 02",
       "de": "Schritt 02",
-      "fr": "Étape 02"
+      "fr": "Étape 02",
+      "es": "Paso 02",
+      "it": "Passo 02",
+      "no": "Trinn 02",
+      "tr": "Adım 02"
     }
   },
   {
@@ -238,7 +322,11 @@
       "pl": "Stwórz konto",
       "en": "Create an account",
       "de": "Konto erstellen",
-      "fr": "Créez un compte"
+      "fr": "Créez un compte",
+      "es": "Crea una cuenta",
+      "it": "Crea un account",
+      "no": "Opprett konto",
+      "tr": "Hesap oluşturun"
     }
   },
   {
@@ -249,7 +337,11 @@
       "pl": "Podaj nazwę użytkownika, adres e-mail i numer telefonu, a następnie naciśnij <b>Next</b>. Możesz też zarejestrować się kontem Google lub Apple.",
       "en": "Enter a username, e-mail address and mobile phone, then tap <b>Next</b>. You can also sign up with your Google or Apple account.",
       "de": "Gib Benutzernamen, E-Mail-Adresse und Telefonnummer ein und tippe auf <b>Next</b>. Du kannst dich auch mit deinem Google- oder Apple-Konto registrieren.",
-      "fr": "Saisissez un nom d'utilisateur, une adresse e-mail et un numéro de téléphone, puis appuyez sur <b>Next</b>. Vous pouvez aussi vous inscrire avec un compte Google ou Apple."
+      "fr": "Saisissez un nom d'utilisateur, une adresse e-mail et un numéro de téléphone, puis appuyez sur <b>Next</b>. Vous pouvez aussi vous inscrire avec un compte Google ou Apple.",
+      "es": "Introduce un nombre de usuario, una dirección de correo y un número de teléfono, y pulsa <b>Next</b>. También puedes registrarte con tu cuenta de Google o de Apple.",
+      "it": "Inserisci nome utente, indirizzo e-mail e numero di telefono, poi tocca <b>Next</b>. Puoi anche registrarti con un account Google o Apple.",
+      "no": "Skriv inn brukernavn, e-postadresse og mobilnummer, og trykk deretter <b>Next</b>. Du kan også registrere deg med Google- eller Apple-kontoen din.",
+      "tr": "Kullanıcı adı, e-posta adresi ve cep telefonu numarası girin, ardından <b>Next</b> düğmesine dokunun. Google veya Apple hesabınızla da kaydolabilirsiniz."
     }
   },
   {
@@ -260,7 +352,11 @@
       "pl": "Nazwa widoczna w aplikacji",
       "en": "Name shown inside the app",
       "de": "In der App sichtbarer Name",
-      "fr": "Nom affiché dans l'application"
+      "fr": "Nom affiché dans l'application",
+      "es": "Nombre visible en la aplicación",
+      "it": "Nome visibile nell'app",
+      "no": "Navnet som vises i appen",
+      "tr": "Uygulamada görünen ad"
     }
   },
   {
@@ -271,7 +367,11 @@
       "pl": "Służy do logowania i powiadomień",
       "en": "Used for login and notifications",
       "de": "Für Anmeldung und Benachrichtigungen",
-      "fr": "Sert à la connexion et aux notifications"
+      "fr": "Sert à la connexion et aux notifications",
+      "es": "Para el inicio de sesión y las notificaciones",
+      "it": "Serve per l'accesso e le notifiche",
+      "no": "Brukes til innlogging og varsler",
+      "tr": "Giriş ve bildirimler için kullanılır"
     }
   },
   {
@@ -282,7 +382,11 @@
       "pl": "Numer kontaktowy do konta",
       "en": "Contact number for the account",
       "de": "Kontaktnummer für das Konto",
-      "fr": "Numéro de contact du compte"
+      "fr": "Numéro de contact du compte",
+      "es": "Número de contacto de la cuenta",
+      "it": "Numero di contatto dell'account",
+      "no": "Kontaktnummer for kontoen",
+      "tr": "Hesabın iletişim numarası"
     }
   },
   {
@@ -293,7 +397,11 @@
       "pl": "Ekran rejestracji",
       "en": "Sign-up screen",
       "de": "Registrierungsbildschirm",
-      "fr": "Écran d'inscription"
+      "fr": "Écran d'inscription",
+      "es": "Pantalla de registro",
+      "it": "Schermata di registrazione",
+      "no": "Registreringsskjerm",
+      "tr": "Kayıt ekranı"
     }
   },
   {
@@ -304,7 +412,11 @@
       "pl": "Krok 03 · 03.1 – 03.2",
       "en": "Step 03 · 03.1 – 03.2",
       "de": "Schritt 03 · 03.1 – 03.2",
-      "fr": "Étape 03 · 03.1 – 03.2"
+      "fr": "Étape 03 · 03.1 – 03.2",
+      "es": "Paso 03 · 03.1 – 03.2",
+      "it": "Passo 03 · 03.1 – 03.2",
+      "no": "Trinn 03 · 03.1 – 03.2",
+      "tr": "Adım 03 · 03.1 – 03.2"
     }
   },
   {
@@ -315,7 +427,11 @@
       "pl": "Dodaj pasiekę",
       "en": "Add apiary",
       "de": "Bienenstand anlegen",
-      "fr": "Ajoutez un rucher"
+      "fr": "Ajoutez un rucher",
+      "es": "Añade un colmenar",
+      "it": "Aggiungi un apiario",
+      "no": "Legg til bigård",
+      "tr": "Arılık ekleyin"
     }
   },
   {
@@ -326,7 +442,11 @@
       "pl": "Pasieka to miejsce, w którym stoją ule i jeden Hub. Zaczynasz od nadania jej nazwy.",
       "en": "An apiary is the place where your hives and one Hub live. Start by giving it a name.",
       "de": "Ein Bienenstand ist der Ort, an dem deine Stöcke und ein Hub stehen. Du beginnst damit, ihm einen Namen zu geben.",
-      "fr": "Un rucher est l'endroit où se trouvent vos ruches et un Hub. Commencez par lui donner un nom."
+      "fr": "Un rucher est l'endroit où se trouvent vos ruches et un Hub. Commencez par lui donner un nom.",
+      "es": "Un colmenar es el lugar donde están tus colmenas y un Hub. Empieza por darle un nombre.",
+      "it": "L'apiario è il luogo in cui si trovano le tue arnie e un Hub. Inizia assegnandogli un nome.",
+      "no": "En bigård er stedet der bikubene dine og én Hub står. Start med å gi den et navn.",
+      "tr": "Arılık, kovanlarınızın ve bir Hub'ın bulunduğu yerdir. İşe ona bir ad vererek başlayın."
     }
   },
   {
@@ -337,7 +457,11 @@
       "pl": "Na ekranie powitalnym naciśnij <em>Add apiary</em>.",
       "en": "On the welcome screen tap <em>Add apiary</em>.",
       "de": "Tippe auf dem Startbildschirm auf <em>Add apiary</em>.",
-      "fr": "Sur l'écran d'accueil, appuyez sur <em>Add apiary</em>."
+      "fr": "Sur l'écran d'accueil, appuyez sur <em>Add apiary</em>.",
+      "es": "En la pantalla de bienvenida, pulsa <em>Add apiary</em>.",
+      "it": "Nella schermata di benvenuto tocca <em>Add apiary</em>.",
+      "no": "Trykk på <em>Add apiary</em> på velkomstskjermen.",
+      "tr": "Karşılama ekranında <em>Add apiary</em> öğesine dokunun."
     }
   },
   {
@@ -348,7 +472,11 @@
       "pl": "Wpisz nazwę pasieki i jej skrót (maks. 3 znaki), a potem dotknij ikony skanera przy polu <em>Hub</em>.",
       "en": "Enter the apiary name and its abbreviation (max. 3 characters), then tap the scanner icon next to the <em>Hub</em> field.",
       "de": "Gib den Namen des Bienenstands und sein Kürzel (max. 3 Zeichen) ein und tippe dann auf das Scanner-Symbol neben dem Feld <em>Hub</em>.",
-      "fr": "Saisissez le nom du rucher et son abréviation (3 caractères max.), puis appuyez sur l'icône du scanner à côté du champ <em>Hub</em>."
+      "fr": "Saisissez le nom du rucher et son abréviation (3 caractères max.), puis appuyez sur l'icône du scanner à côté du champ <em>Hub</em>.",
+      "es": "Introduce el nombre del colmenar y su abreviatura (máx. 3 caracteres) y pulsa el icono del escáner junto al campo <em>Hub</em>.",
+      "it": "Inserisci il nome dell'apiario e la sua sigla (max. 3 caratteri), poi tocca l'icona dello scanner accanto al campo <em>Hub</em>.",
+      "no": "Skriv inn navnet på bigården og forkortelsen (maks. 3 tegn), og trykk deretter på skannerikonet ved feltet <em>Hub</em>.",
+      "tr": "Arılık adını ve kısaltmasını (en fazla 3 karakter) girin, ardından <em>Hub</em> alanının yanındaki tarayıcı simgesine dokunun."
     }
   },
   {
@@ -359,7 +487,11 @@
       "pl": "Aplikacja",
       "en": "In the app",
       "de": "In der App",
-      "fr": "Dans l'application"
+      "fr": "Dans l'application",
+      "es": "En la aplicación",
+      "it": "Nell'app",
+      "no": "I appen",
+      "tr": "Uygulamada"
     }
   },
   {
@@ -370,7 +502,11 @@
       "pl": "Krok 03 · 03.3",
       "en": "Step 03 · 03.3",
       "de": "Schritt 03 · 03.3",
-      "fr": "Étape 03 · 03.3"
+      "fr": "Étape 03 · 03.3",
+      "es": "Paso 03 · 03.3",
+      "it": "Passo 03 · 03.3",
+      "no": "Trinn 03 · 03.3",
+      "tr": "Adım 03 · 03.3"
     }
   },
   {
@@ -381,7 +517,11 @@
       "pl": "Zeskanuj kod QR&nbsp;Huba",
       "en": "Scan the Hub QR code",
       "de": "QR-Code des&nbsp;Hubs scannen",
-      "fr": "Scannez le QR code du&nbsp;Hub"
+      "fr": "Scannez le QR code du&nbsp;Hub",
+      "es": "Escanea el código QR del&nbsp;Hub",
+      "it": "Scansiona il codice QR&nbsp;dell'Hub",
+      "no": "Skann QR-koden til&nbsp;Hub",
+      "tr": "Hub'ın QR kodunu tarayın"
     }
   },
   {
@@ -392,7 +532,11 @@
       "pl": "Naklejka z kodem QR znajduje się na obudowie Huba. Ustaw ją w ramce skanera — aplikacja odczyta kod sama i wypełni pola <em>Hub</em> oraz <em>Verification Code</em>.",
       "en": "The QR sticker sits on the Hub housing. Line it up inside the scanner frame — the app reads it and fills in the <em>Hub</em> and <em>Verification Code</em> fields for you.",
       "de": "Der QR-Aufkleber sitzt auf dem Gehäuse des Hubs. Richte ihn im Scannerrahmen aus — die App liest den Code selbst und füllt die Felder <em>Hub</em> und <em>Verification Code</em> aus.",
-      "fr": "L'autocollant QR se trouve sur le boîtier du Hub. Placez-le dans le cadre du scanner : l'application lit le code et remplit les champs <em>Hub</em> et <em>Verification Code</em>."
+      "fr": "L'autocollant QR se trouve sur le boîtier du Hub. Placez-le dans le cadre du scanner : l'application lit le code et remplit les champs <em>Hub</em> et <em>Verification Code</em>.",
+      "es": "La pegatina con el código QR está en la carcasa del Hub. Encuádrala en el marco del escáner: la aplicación lee el código y rellena por ti los campos <em>Hub</em> y <em>Verification Code</em>.",
+      "it": "L'adesivo con il codice QR si trova sulla scocca dell'Hub. Inquadralo nel riquadro dello scanner: l'app lo legge da sola e compila i campi <em>Hub</em> e <em>Verification Code</em>.",
+      "no": "Klistremerket med QR-koden sitter på kabinettet til Hub. Legg det midt i skannerrammen — appen leser koden selv og fyller ut feltene <em>Hub</em> og <em>Verification Code</em> for deg.",
+      "tr": "QR etiketi Hub'ın gövdesindedir. Etiketi tarayıcı çerçevesine hizalayın — uygulama kodu kendisi okur ve <em>Hub</em> ile <em>Verification Code</em> alanlarını sizin için doldurur."
     }
   },
   {
@@ -403,7 +547,11 @@
       "pl": "<b>Wskazówka:</b> jeśli kod się nie skanuje, przetrzyj go i zapewnij równomierne światło — bez odblasku.",
       "en": "<b>Tip:</b> if the code will not scan, wipe it clean and use even light — avoid glare.",
       "de": "<b>Tipp:</b> Lässt sich der Code nicht scannen, wische ihn sauber und sorge für gleichmäßiges Licht — ohne Spiegelung.",
-      "fr": "<b>Astuce :</b> si le code ne se scanne pas, essuyez-le et assurez un éclairage uniforme, sans reflet."
+      "fr": "<b>Astuce :</b> si le code ne se scanne pas, essuyez-le et assurez un éclairage uniforme, sans reflet.",
+      "es": "<b>Consejo:</b> si el código no se escanea, límpialo y busca una luz uniforme, sin reflejos.",
+      "it": "<b>Suggerimento:</b> se il codice non viene letto, puliscilo e assicura una luce uniforme, senza riflessi.",
+      "no": "<b>Tips:</b> hvis koden ikke lar seg skanne, tørk den ren og sørg for jevnt lys — unngå gjenskinn.",
+      "tr": "<b>İpucu:</b> kod okunmuyorsa etiketi silin ve eşit bir aydınlatma sağlayın — parlama olmasın."
     }
   },
   {
@@ -414,7 +562,11 @@
       "pl": "Rysunek poglądowy",
       "en": "Reference drawing",
       "de": "Referenzzeichnung",
-      "fr": "Schéma de référence"
+      "fr": "Schéma de référence",
+      "es": "Esquema de referencia",
+      "it": "Disegno di riferimento",
+      "no": "Referansetegning",
+      "tr": "Örnek çizim"
     }
   },
   {
@@ -425,7 +577,11 @@
       "pl": "Hub",
       "en": "Hub",
       "de": "Hub",
-      "fr": "Hub"
+      "fr": "Hub",
+      "es": "Hub",
+      "it": "Hub",
+      "no": "Hub",
+      "tr": "Hub"
     }
   },
   {
@@ -436,7 +592,11 @@
       "pl": "Zdjęcie",
       "en": "Photo",
       "de": "Foto",
-      "fr": "Photo"
+      "fr": "Photo",
+      "es": "Foto",
+      "it": "Foto",
+      "no": "Bilde",
+      "tr": "Fotoğraf"
     }
   },
   {
@@ -447,7 +607,11 @@
       "pl": "Krok 03 · 03.4 – 03.6",
       "en": "Step 03 · 03.4 – 03.6",
       "de": "Schritt 03 · 03.4 – 03.6",
-      "fr": "Étape 03 · 03.4 – 03.6"
+      "fr": "Étape 03 · 03.4 – 03.6",
+      "es": "Paso 03 · 03.4 – 03.6",
+      "it": "Passo 03 · 03.4 – 03.6",
+      "no": "Trinn 03 · 03.4 – 03.6",
+      "tr": "Adım 03 · 03.4 – 03.6"
     }
   },
   {
@@ -458,7 +622,11 @@
       "pl": "Pasieka jest gotowa",
       "en": "Your apiary is ready",
       "de": "Der Bienenstand steht",
-      "fr": "Le rucher est prêt"
+      "fr": "Le rucher est prêt",
+      "es": "El colmenar está listo",
+      "it": "L'apiario è pronto",
+      "no": "Bigården er klar",
+      "tr": "Arılığınız hazır"
     }
   },
   {
@@ -469,7 +637,11 @@
       "pl": "Po zeskanowaniu kodu aplikacja uzupełnia dane Huba za Ciebie — nic nie przepisujesz ręcznie.",
       "en": "After the scan the app fills in the Hub details for you — nothing has to be typed by hand.",
       "de": "Nach dem Scan trägt die App die Hub-Daten für dich ein — nichts muss abgetippt werden.",
-      "fr": "Après le scan, l'application renseigne les données du Hub à votre place : rien à recopier."
+      "fr": "Après le scan, l'application renseigne les données du Hub à votre place : rien à recopier.",
+      "es": "Tras el escaneo, la aplicación rellena por ti los datos del Hub: no hay que escribir nada a mano.",
+      "it": "Dopo la scansione l'app compila da sola i dati dell'Hub: non devi trascrivere nulla a mano.",
+      "no": "Etter skanningen fyller appen ut opplysningene om Hub for deg — ingenting må skrives inn for hånd.",
+      "tr": "Taramadan sonra uygulama Hub bilgilerini sizin için doldurur — elle hiçbir şey yazmanız gerekmez."
     }
   },
   {
@@ -480,7 +652,11 @@
       "pl": "Skaner odczytuje kod QR z Huba.",
       "en": "The scanner reads the QR code from the Hub.",
       "de": "Der Scanner liest den QR-Code vom Hub.",
-      "fr": "Le scanner lit le QR code du Hub."
+      "fr": "Le scanner lit le QR code du Hub.",
+      "es": "El escáner lee el código QR del Hub.",
+      "it": "Lo scanner legge il codice QR dall'Hub.",
+      "no": "Skanneren leser QR-koden fra Hub.",
+      "tr": "Tarayıcı, Hub üzerindeki QR kodunu okur."
     }
   },
   {
@@ -491,7 +667,11 @@
       "pl": "Pola <em>Hub</em> i <em>Verification Code</em> wypełniają się automatycznie — zatwierdź formularz.",
       "en": "The <em>Hub</em> and <em>Verification Code</em> fields fill in automatically — confirm the form.",
       "de": "Die Felder <em>Hub</em> und <em>Verification Code</em> füllen sich automatisch — bestätige das Formular.",
-      "fr": "Les champs <em>Hub</em> et <em>Verification Code</em> se remplissent automatiquement : validez le formulaire."
+      "fr": "Les champs <em>Hub</em> et <em>Verification Code</em> se remplissent automatiquement : validez le formulaire.",
+      "es": "Los campos <em>Hub</em> y <em>Verification Code</em> se rellenan automáticamente: confirma el formulario.",
+      "it": "I campi <em>Hub</em> e <em>Verification Code</em> si compilano automaticamente: conferma il modulo.",
+      "no": "Feltene <em>Hub</em> og <em>Verification Code</em> fylles ut automatisk — bekreft skjemaet.",
+      "tr": "<em>Hub</em> ve <em>Verification Code</em> alanları otomatik olarak dolar — formu onaylayın."
     }
   },
   {
@@ -502,7 +682,11 @@
       "pl": "Pasieka pojawia się na ekranie głównym razem z pogodą.",
       "en": "The apiary appears on the home screen along with the weather.",
       "de": "Der Bienenstand erscheint samt Wetter auf dem Startbildschirm.",
-      "fr": "Le rucher apparaît sur l'écran d'accueil, avec la météo."
+      "fr": "Le rucher apparaît sur l'écran d'accueil, avec la météo.",
+      "es": "El colmenar aparece en la pantalla de inicio junto con el tiempo.",
+      "it": "L'apiario compare nella schermata principale insieme al meteo.",
+      "no": "Bigården dukker opp på startskjermen sammen med været.",
+      "tr": "Arılık, hava durumuyla birlikte ana ekranda görünür."
     }
   },
   {
@@ -513,7 +697,11 @@
       "pl": "Aplikacja",
       "en": "In the app",
       "de": "In der App",
-      "fr": "Dans l'application"
+      "fr": "Dans l'application",
+      "es": "En la aplicación",
+      "it": "Nell'app",
+      "no": "I appen",
+      "tr": "Uygulamada"
     }
   },
   {
@@ -524,7 +712,11 @@
       "pl": "Krok 04 · 04.1 – 04.3",
       "en": "Step 04 · 04.1 – 04.3",
       "de": "Schritt 04 · 04.1 – 04.3",
-      "fr": "Étape 04 · 04.1 – 04.3"
+      "fr": "Étape 04 · 04.1 – 04.3",
+      "es": "Paso 04 · 04.1 – 04.3",
+      "it": "Passo 04 · 04.1 – 04.3",
+      "no": "Trinn 04 · 04.1 – 04.3",
+      "tr": "Adım 04 · 04.1 – 04.3"
     }
   },
   {
@@ -535,7 +727,11 @@
       "pl": "Dodaj ul: ColonyLink, VitalSensor i&nbsp;Scale",
       "en": "Add hive: ColonyLink, VitalSensor &amp;&nbsp;Scale",
       "de": "Stock anlegen: ColonyLink, VitalSensor und&nbsp;Scale",
-      "fr": "Ajoutez une ruche : ColonyLink, VitalSensor et&nbsp;Scale"
+      "fr": "Ajoutez une ruche : ColonyLink, VitalSensor et&nbsp;Scale",
+      "es": "Añade una colmena: ColonyLink, VitalSensor y&nbsp;Scale",
+      "it": "Aggiungi un'arnia: ColonyLink, VitalSensor e&nbsp;Scale",
+      "no": "Legg til bikube: ColonyLink, VitalSensor og&nbsp;Scale",
+      "tr": "Kovan ekleyin: ColonyLink, VitalSensor ve&nbsp;Scale"
     }
   },
   {
@@ -546,7 +742,11 @@
       "pl": "Pierwszy ul dostaje komplet. Wszystkie trzy urządzenia przypisujesz w jednym formularzu, skanując kolejno ich kody QR.",
       "en": "The first hive gets the full set. You link all three devices in a single form, scanning their QR codes one after another.",
       "de": "Der erste Stock bekommt das komplette Set. Alle drei Geräte weist du in einem Formular zu, indem du ihre QR-Codes nacheinander scannst.",
-      "fr": "La première ruche reçoit l'ensemble complet. Vous associez les trois appareils dans un seul formulaire, en scannant leurs QR codes l'un après l'autre."
+      "fr": "La première ruche reçoit l'ensemble complet. Vous associez les trois appareils dans un seul formulaire, en scannant leurs QR codes l'un après l'autre.",
+      "es": "La primera colmena recibe el equipo completo. Asignas los tres dispositivos en un solo formulario, escaneando sus códigos QR uno tras otro.",
+      "it": "La prima arnia riceve il set completo. Colleghi tutti e tre i dispositivi in un unico modulo, scansionando i loro codici QR uno dopo l'altro.",
+      "no": "Den første bikuben får hele settet. Du tilordner alle tre enhetene i ett skjema ved å skanne QR-kodene etter tur.",
+      "tr": "İlk kovan tam seti alır. Üç cihazın hepsini tek bir formda, QR kodlarını sırayla tarayarak eşleştirirsiniz."
     }
   },
   {
@@ -557,7 +757,11 @@
       "pl": "Na ekranie głównym otwórz swoją pasiekę.",
       "en": "Open your apiary from the home screen.",
       "de": "Öffne deinen Bienenstand auf dem Startbildschirm.",
-      "fr": "Ouvrez votre rucher depuis l'écran d'accueil."
+      "fr": "Ouvrez votre rucher depuis l'écran d'accueil.",
+      "es": "Abre tu colmenar desde la pantalla de inicio.",
+      "it": "Nella schermata principale apri il tuo apiario.",
+      "no": "Åpne bigården din fra startskjermen.",
+      "tr": "Ana ekrandan arılığınızı açın."
     }
   },
   {
@@ -568,7 +772,11 @@
       "pl": "Naciśnij <em>Add beehive</em>.",
       "en": "Tap <em>Add beehive</em>.",
       "de": "Tippe auf <em>Add beehive</em>.",
-      "fr": "Appuyez sur <em>Add beehive</em>."
+      "fr": "Appuyez sur <em>Add beehive</em>.",
+      "es": "Pulsa <em>Add beehive</em>.",
+      "it": "Tocca <em>Add beehive</em>.",
+      "no": "Trykk på <em>Add beehive</em>.",
+      "tr": "<em>Add beehive</em> öğesine dokunun."
     }
   },
   {
@@ -579,7 +787,11 @@
       "pl": "Zacznij od <em>ColonyLink</em> — dotknij ikony skanera przy tym polu.",
       "en": "Start with <em>ColonyLink</em> — tap the scanner icon next to that field.",
       "de": "Beginne mit <em>ColonyLink</em> — tippe auf das Scanner-Symbol neben diesem Feld.",
-      "fr": "Commencez par <em>ColonyLink</em> : appuyez sur l'icône du scanner à côté de ce champ."
+      "fr": "Commencez par <em>ColonyLink</em> : appuyez sur l'icône du scanner à côté de ce champ.",
+      "es": "Empieza por <em>ColonyLink</em>: pulsa el icono del escáner junto a ese campo.",
+      "it": "Inizia da <em>ColonyLink</em>: tocca l'icona dello scanner accanto a quel campo.",
+      "no": "Begynn med <em>ColonyLink</em> — trykk på skannerikonet ved dette feltet.",
+      "tr": "<em>ColonyLink</em> ile başlayın — bu alanın yanındaki tarayıcı simgesine dokunun."
     }
   },
   {
@@ -590,7 +802,11 @@
       "pl": "Aplikacja",
       "en": "In the app",
       "de": "In der App",
-      "fr": "Dans l'application"
+      "fr": "Dans l'application",
+      "es": "En la aplicación",
+      "it": "Nell'app",
+      "no": "I appen",
+      "tr": "Uygulamada"
     }
   },
   {
@@ -601,7 +817,11 @@
       "pl": "Krok 04 · ColonyLink",
       "en": "Step 04 · ColonyLink",
       "de": "Schritt 04 · ColonyLink",
-      "fr": "Étape 04 · ColonyLink"
+      "fr": "Étape 04 · ColonyLink",
+      "es": "Paso 04 · ColonyLink",
+      "it": "Passo 04 · ColonyLink",
+      "no": "Trinn 04 · ColonyLink",
+      "tr": "Adım 04 · ColonyLink"
     }
   },
   {
@@ -612,7 +832,11 @@
       "pl": "Zeskanuj kod QR ColonyLink",
       "en": "Scan the ColonyLink QR code",
       "de": "QR-Code des ColonyLink scannen",
-      "fr": "Scannez le QR code du ColonyLink"
+      "fr": "Scannez le QR code du ColonyLink",
+      "es": "Escanea el código QR del ColonyLink",
+      "it": "Scansiona il codice QR del ColonyLink",
+      "no": "Skann QR-koden til ColonyLink",
+      "tr": "ColonyLink'in QR kodunu tarayın"
     }
   },
   {
@@ -623,7 +847,11 @@
       "pl": "ColonyLink to <b>naklejka z wbudowanym tagiem NFC i nadrukowanym kodem QR</b>. Skanujesz ją jako pierwszą — to ona wiąże ul w aplikacji z konkretnym ulem w pasiece.",
       "en": "The ColonyLink is a <b>sticker with a built-in NFC tag and a printed QR code</b>. Scan it first — it is what ties the hive in the app to a specific hive in the apiary.",
       "de": "Der ColonyLink ist ein <b>Aufkleber mit integriertem NFC-Tag und aufgedrucktem QR-Code</b>. Ihn scannst du zuerst — er verbindet den Stock in der App mit einem konkreten Stock am Stand.",
-      "fr": "Le ColonyLink est un <b>autocollant avec puce NFC intégrée et QR code imprimé</b>. Scannez-le en premier : c'est lui qui relie la ruche dans l'application à une ruche précise du rucher."
+      "fr": "Le ColonyLink est un <b>autocollant avec puce NFC intégrée et QR code imprimé</b>. Scannez-le en premier : c'est lui qui relie la ruche dans l'application à une ruche précise du rucher.",
+      "es": "El ColonyLink es una <b>pegatina con etiqueta NFC integrada y código QR impreso</b>. Escanéalo en primer lugar: es lo que vincula la colmena de la aplicación con una colmena concreta del colmenar.",
+      "it": "Il ColonyLink è un <b>adesivo con tag NFC integrato e codice QR stampato</b>. Scansionalo per primo: è lui che collega l'arnia nell'app a un'arnia precisa dell'apiario.",
+      "no": "ColonyLink er et <b>klistremerke med innebygd NFC-brikke og påtrykt QR-kode</b>. Skann det først — det er dette som knytter bikuben i appen til en bestemt bikube i bigården.",
+      "tr": "ColonyLink, <b>gömülü NFC etiketi ve basılı QR kodu olan bir çıkartmadır</b>. Önce onu tarayın — uygulamadaki kovanı arılıktaki belirli bir kovana bağlayan şey odur."
     }
   },
   {
@@ -634,7 +862,11 @@
       "pl": "Ten sam kod odczytasz później zbliżeniowo przez <b>NFC</b> — wystarczy przyłożyć telefon, także w rękawicach.",
       "en": "You can read the same code later by <b>NFC</b> — just tap your phone against it, gloves and all.",
       "de": "Denselben Code liest du später kontaktlos per <b>NFC</b> — Handy anhalten genügt, auch mit Handschuhen.",
-      "fr": "Vous lirez ce même code plus tard sans contact, par <b>NFC</b> : il suffit d'approcher le téléphone, même avec des gants."
+      "fr": "Vous lirez ce même code plus tard sans contact, par <b>NFC</b> : il suffit d'approcher le téléphone, même avec des gants.",
+      "es": "Ese mismo código lo leerás después sin contacto por <b>NFC</b>: basta con acercar el teléfono, incluso con guantes.",
+      "it": "Lo stesso codice lo leggi anche più tardi via <b>NFC</b>: basta avvicinare il telefono, anche con i guanti.",
+      "no": "Den samme koden kan du senere lese av med <b>NFC</b> — det holder å holde telefonen inntil, også med hansker på.",
+      "tr": "Aynı kodu daha sonra <b>NFC</b> ile de okuyabilirsiniz — telefonu yaklaştırmanız yeterli, eldivenle bile."
     }
   },
   {
@@ -645,7 +877,11 @@
       "pl": "Rysunek poglądowy",
       "en": "Reference drawing",
       "de": "Referenzzeichnung",
-      "fr": "Schéma de référence"
+      "fr": "Schéma de référence",
+      "es": "Esquema de referencia",
+      "it": "Disegno di riferimento",
+      "no": "Referansetegning",
+      "tr": "Örnek çizim"
     }
   },
   {
@@ -656,7 +892,11 @@
       "pl": "Krok 04 · VitalSensor",
       "en": "Step 04 · VitalSensor",
       "de": "Schritt 04 · VitalSensor",
-      "fr": "Étape 04 · VitalSensor"
+      "fr": "Étape 04 · VitalSensor",
+      "es": "Paso 04 · VitalSensor",
+      "it": "Passo 04 · VitalSensor",
+      "no": "Trinn 04 · VitalSensor",
+      "tr": "Adım 04 · VitalSensor"
     }
   },
   {
@@ -667,7 +907,11 @@
       "pl": "Zeskanuj kod QR VitalSensora",
       "en": "Scan the VitalSensor QR code",
       "de": "QR-Code des VitalSensors scannen",
-      "fr": "Scannez le QR code du VitalSensor"
+      "fr": "Scannez le QR code du VitalSensor",
+      "es": "Escanea el código QR del VitalSensor",
+      "it": "Scansiona il codice QR del VitalSensor",
+      "no": "Skann QR-koden til VitalSensor",
+      "tr": "VitalSensor'ün QR kodunu tarayın"
     }
   },
   {
@@ -678,7 +922,11 @@
       "pl": "Naklejka z kodem QR jest na krótszym boku obudowy. Zeskanuj ją przed zamontowaniem czujnika na ramce — po włożeniu ramki do ula kod ma być widoczny od góry.",
       "en": "The QR sticker is on the short side of the housing. Scan it before you mount the sensor on the frame — once the frame is in the hive the code must stay visible from above.",
       "de": "Der QR-Aufkleber sitzt an der schmalen Seite des Gehäuses. Scanne ihn, bevor du den Sensor am Rähmchen befestigst — nach dem Einhängen muss der Code von oben sichtbar bleiben.",
-      "fr": "L'autocollant QR se trouve sur le petit côté du boîtier. Scannez-le avant de fixer le capteur sur le cadre : une fois le cadre en place, le code doit rester visible du dessus."
+      "fr": "L'autocollant QR se trouve sur le petit côté du boîtier. Scannez-le avant de fixer le capteur sur le cadre : une fois le cadre en place, le code doit rester visible du dessus.",
+      "es": "La pegatina con el código QR está en el lado corto de la carcasa. Escanéala antes de montar el sensor en el cuadro: una vez colocado el cuadro en la colmena, el código debe quedar visible desde arriba.",
+      "it": "L'adesivo con il codice QR si trova sul lato corto della scocca. Scansionalo prima di fissare il sensore al telaino: una volta inserito il telaino nell'arnia il codice deve restare visibile dall'alto.",
+      "no": "Klistremerket med QR-koden sitter på kortsiden av kabinettet. Skann det før du fester sensoren på rammen — når rammen står i bikuben, skal koden være synlig ovenfra.",
+      "tr": "QR etiketi gövdenin kısa kenarındadır. Sensörü çerçeveye takmadan önce etiketi tarayın — çerçeve kovana yerleştirildikten sonra kod yukarıdan görünür kalmalıdır."
     }
   },
   {
@@ -689,7 +937,11 @@
       "pl": "Każdy z trzech czujników ma własny kod. Pilnuj, który trafia do którego ula.",
       "en": "Each of the three sensors has its own code. Keep track of which one goes into which hive.",
       "de": "Jeder der drei Sensoren hat einen eigenen Code. Behalte im Blick, welcher in welchen Stock kommt.",
-      "fr": "Chacun des trois capteurs a son propre code. Notez bien lequel va dans quelle ruche."
+      "fr": "Chacun des trois capteurs a son propre code. Notez bien lequel va dans quelle ruche.",
+      "es": "Cada uno de los tres sensores tiene su propio código. Controla cuál va a cada colmena.",
+      "it": "Ognuno dei tre sensori ha il proprio codice. Tieni nota di quale va in quale arnia.",
+      "no": "Hver av de tre sensorene har sin egen kode. Hold styr på hvilken som skal i hvilken bikube.",
+      "tr": "Üç sensörün her birinin kendi kodu vardır. Hangisinin hangi kovana gittiğini takip edin."
     }
   },
   {
@@ -700,7 +952,11 @@
       "pl": "Rysunek poglądowy",
       "en": "Reference drawing",
       "de": "Referenzzeichnung",
-      "fr": "Schéma de référence"
+      "fr": "Schéma de référence",
+      "es": "Esquema de referencia",
+      "it": "Disegno di riferimento",
+      "no": "Referansetegning",
+      "tr": "Örnek çizim"
     }
   },
   {
@@ -711,7 +967,11 @@
       "pl": "VitalSensor",
       "en": "VitalSensor",
       "de": "VitalSensor",
-      "fr": "VitalSensor"
+      "fr": "VitalSensor",
+      "es": "VitalSensor",
+      "it": "VitalSensor",
+      "no": "VitalSensor",
+      "tr": "VitalSensor"
     }
   },
   {
@@ -722,7 +982,11 @@
       "pl": "Zdjęcie",
       "en": "Photo",
       "de": "Foto",
-      "fr": "Photo"
+      "fr": "Photo",
+      "es": "Foto",
+      "it": "Foto",
+      "no": "Bilde",
+      "tr": "Fotoğraf"
     }
   },
   {
@@ -733,7 +997,11 @@
       "pl": "Krok 04 · Scale",
       "en": "Step 04 · Scale",
       "de": "Schritt 04 · Scale",
-      "fr": "Étape 04 · Scale"
+      "fr": "Étape 04 · Scale",
+      "es": "Paso 04 · Scale",
+      "it": "Passo 04 · Scale",
+      "no": "Trinn 04 · Scale",
+      "tr": "Adım 04 · Scale"
     }
   },
   {
@@ -744,7 +1012,11 @@
       "pl": "Zeskanuj kod QR Scale",
       "en": "Scan the Scale QR code",
       "de": "QR-Code der Scale scannen",
-      "fr": "Scannez le QR code de la Scale"
+      "fr": "Scannez le QR code de la Scale",
+      "es": "Escanea el código QR del Scale",
+      "it": "Scansiona il codice QR della Scale",
+      "no": "Skann QR-koden til Scale",
+      "tr": "Scale'in QR kodunu tarayın"
     }
   },
   {
@@ -755,7 +1027,11 @@
       "pl": "Naklejka z kodem QR jest na czole belki pomiarowej — tej z elektroniką i komorą baterii. Drewniana kantówka nie ma kodu.",
       "en": "The QR sticker is on the end face of the measuring beam — the one with the electronics and the battery compartment. The wooden spacer bar has no code.",
       "de": "Der QR-Aufkleber sitzt an der Stirnseite des Messbalkens — dem Teil mit Elektronik und Batteriefach. Das Kantholz hat keinen Code.",
-      "fr": "L'autocollant QR se trouve en bout de la barre de pesée, celle qui contient l'électronique et le compartiment à piles. Le tasseau en bois n'a pas de code."
+      "fr": "L'autocollant QR se trouve en bout de la barre de pesée, celle qui contient l'électronique et le compartiment à piles. Le tasseau en bois n'a pas de code.",
+      "es": "La pegatina con el código QR está en el frente de la barra de pesaje, la que lleva la electrónica y el compartimento de las pilas. El listón de madera no tiene código.",
+      "it": "L'adesivo con il codice QR si trova sulla testa della barra di pesatura, quella con l'elettronica e il vano batterie. Il listello di legno non ha alcun codice.",
+      "no": "Klistremerket med QR-koden sitter på enden av målebjelken — den med elektronikken og batterirommet. Trelekten har ingen kode.",
+      "tr": "QR etiketi ölçüm kirişinin uç yüzündedir — elektroniğin ve pil bölmesinin bulunduğu parçanın. Ahşap destek çıtasında kod yoktur."
     }
   },
   {
@@ -766,7 +1042,11 @@
       "pl": "Zeskanuj kod <b>zanim</b> wsuniesz belkę pod ul — później dostęp do niego będzie utrudniony.",
       "en": "Scan the code <b>before</b> you slide the beam under the hive — it is harder to reach afterwards.",
       "de": "Scanne den Code, <b>bevor</b> du den Balken unter den Stock schiebst — danach kommst du schlechter heran.",
-      "fr": "Scannez le code <b>avant</b> de glisser la barre sous la ruche : ensuite, l'accès sera plus difficile."
+      "fr": "Scannez le code <b>avant</b> de glisser la barre sous la ruche : ensuite, l'accès sera plus difficile.",
+      "es": "Escanea el código <b>antes</b> de deslizar la barra debajo de la colmena: después será más difícil llegar hasta él.",
+      "it": "Scansiona il codice <b>prima</b> di far scorrere la barra sotto l'arnia: dopo sarà più difficile raggiungerlo.",
+      "no": "Skann koden <b>før</b> du skyver bjelken inn under bikuben — etterpå er den vanskeligere å komme til.",
+      "tr": "Kirişi kovanın altına sürmeden <b>önce</b> kodu tarayın — sonrasında ona ulaşmak zorlaşır."
     }
   },
   {
@@ -777,7 +1057,11 @@
       "pl": "Rysunek poglądowy",
       "en": "Reference drawing",
       "de": "Referenzzeichnung",
-      "fr": "Schéma de référence"
+      "fr": "Schéma de référence",
+      "es": "Esquema de referencia",
+      "it": "Disegno di riferimento",
+      "no": "Referansetegning",
+      "tr": "Örnek çizim"
     }
   },
   {
@@ -788,7 +1072,11 @@
       "pl": "Scale",
       "en": "Scale",
       "de": "Scale",
-      "fr": "Scale"
+      "fr": "Scale",
+      "es": "Scale",
+      "it": "Scale",
+      "no": "Scale",
+      "tr": "Scale"
     }
   },
   {
@@ -799,7 +1087,11 @@
       "pl": "Zdjęcie",
       "en": "Photo",
       "de": "Foto",
-      "fr": "Photo"
+      "fr": "Photo",
+      "es": "Foto",
+      "it": "Foto",
+      "no": "Bilde",
+      "tr": "Fotoğraf"
     }
   },
   {
@@ -810,7 +1102,11 @@
       "pl": "Krok 04 · 04.8 – 04.10",
       "en": "Step 04 · 04.8 – 04.10",
       "de": "Schritt 04 · 04.8 – 04.10",
-      "fr": "Étape 04 · 04.8 – 04.10"
+      "fr": "Étape 04 · 04.8 – 04.10",
+      "es": "Paso 04 · 04.8 – 04.10",
+      "it": "Passo 04 · 04.8 – 04.10",
+      "no": "Trinn 04 · 04.8 – 04.10",
+      "tr": "Adım 04 · 04.8 – 04.10"
     }
   },
   {
@@ -821,7 +1117,11 @@
       "pl": "Pierwszy ul zapisany",
       "en": "The first hive is saved",
       "de": "Erster Stock gespeichert",
-      "fr": "Première ruche enregistrée"
+      "fr": "Première ruche enregistrée",
+      "es": "Primera colmena guardada",
+      "it": "La prima arnia è salvata",
+      "no": "Den første bikuben er lagret",
+      "tr": "İlk kovan kaydedildi"
     }
   },
   {
@@ -832,7 +1132,11 @@
       "pl": "Wszystkie kody weryfikacyjne wypełniają się same. Po zapisaniu formularza ul pojawia się w pasiece.",
       "en": "All verification codes fill in on their own. Once you save the form, the hive appears in the apiary.",
       "de": "Alle Verifizierungscodes tragen sich von selbst ein. Nach dem Speichern erscheint der Stock am Bienenstand.",
-      "fr": "Tous les codes de vérification se remplissent seuls. Une fois le formulaire enregistré, la ruche apparaît dans le rucher."
+      "fr": "Tous les codes de vérification se remplissent seuls. Une fois le formulaire enregistré, la ruche apparaît dans le rucher.",
+      "es": "Todos los códigos de verificación se rellenan solos. Al guardar el formulario, la colmena aparece en el colmenar.",
+      "it": "Tutti i codici di verifica si compilano da soli. Una volta salvato il modulo, l'arnia compare nell'apiario.",
+      "no": "Alle verifiseringskodene fylles ut av seg selv. Når du lagrer skjemaet, dukker bikuben opp i bigården.",
+      "tr": "Tüm doğrulama kodları kendiliğinden dolar. Formu kaydettiğinizde kovan arılıkta görünür."
     }
   },
   {
@@ -843,7 +1147,11 @@
       "pl": "Skaner odczytuje ostatni z kodów.",
       "en": "The scanner reads the last of the codes.",
       "de": "Der Scanner liest den letzten Code.",
-      "fr": "Le scanner lit le dernier code."
+      "fr": "Le scanner lit le dernier code.",
+      "es": "El escáner lee el último de los códigos.",
+      "it": "Lo scanner legge l'ultimo dei codici.",
+      "no": "Skanneren leser den siste koden.",
+      "tr": "Tarayıcı kodların sonuncusunu okur."
     }
   },
   {
@@ -854,7 +1162,11 @@
       "pl": "Formularz jest kompletny — naciśnij <em>Save</em>.",
       "en": "The form is complete — tap <em>Save</em>.",
       "de": "Das Formular ist vollständig — tippe auf <em>Save</em>.",
-      "fr": "Le formulaire est complet : appuyez sur <em>Save</em>."
+      "fr": "Le formulaire est complet : appuyez sur <em>Save</em>.",
+      "es": "El formulario está completo: pulsa <em>Save</em>.",
+      "it": "Il modulo è completo: tocca <em>Save</em>.",
+      "no": "Skjemaet er komplett — trykk på <em>Save</em>.",
+      "tr": "Form tamamlandı — <em>Save</em> düğmesine dokunun."
     }
   },
   {
@@ -865,7 +1177,11 @@
       "pl": "Ul widnieje na ekranie głównym. Odczyty pojawią się po pierwszej synchronizacji.",
       "en": "The hive shows on the home screen. Readings appear after the first sync.",
       "de": "Der Stock steht auf dem Startbildschirm. Die Messwerte kommen nach der ersten Synchronisierung.",
-      "fr": "La ruche s'affiche sur l'écran d'accueil. Les mesures arriveront après la première synchronisation."
+      "fr": "La ruche s'affiche sur l'écran d'accueil. Les mesures arriveront après la première synchronisation.",
+      "es": "La colmena aparece en la pantalla de inicio. Las mediciones llegarán tras la primera sincronización.",
+      "it": "L'arnia compare nella schermata principale. Le letture arrivano dopo la prima sincronizzazione.",
+      "no": "Bikuben vises på startskjermen. Avlesningene kommer etter den første synkroniseringen.",
+      "tr": "Kovan ana ekranda görünür. Ölçümler ilk eşitlemeden sonra gelir."
     }
   },
   {
@@ -876,7 +1192,11 @@
       "pl": "Aplikacja",
       "en": "In the app",
       "de": "In der App",
-      "fr": "Dans l'application"
+      "fr": "Dans l'application",
+      "es": "En la aplicación",
+      "it": "Nell'app",
+      "no": "I appen",
+      "tr": "Uygulamada"
     }
   },
   {
@@ -887,7 +1207,11 @@
       "pl": "Krok 05 · 05.1 – 05.3",
       "en": "Step 05 · 05.1 – 05.3",
       "de": "Schritt 05 · 05.1 – 05.3",
-      "fr": "Étape 05 · 05.1 – 05.3"
+      "fr": "Étape 05 · 05.1 – 05.3",
+      "es": "Paso 05 · 05.1 – 05.3",
+      "it": "Passo 05 · 05.1 – 05.3",
+      "no": "Trinn 05 · 05.1 – 05.3",
+      "tr": "Adım 05 · 05.1 – 05.3"
     }
   },
   {
@@ -898,7 +1222,11 @@
       "pl": "Dodaj kolejny ul",
       "en": "Add another hive",
       "de": "Weiteren Stock anlegen",
-      "fr": "Ajoutez une autre ruche"
+      "fr": "Ajoutez une autre ruche",
+      "es": "Añade otra colmena",
+      "it": "Aggiungi un'altra arnia",
+      "no": "Legg til en bikube til",
+      "tr": "Başka bir kovan ekleyin"
     }
   },
   {
@@ -909,7 +1237,11 @@
       "pl": "Kolejne ule dodajesz z <b>ColonyLinkiem i VitalSensorem</b> — Scale zostaje pod pierwszym ulem. Pole <em>Scale</em> zostaw puste.",
       "en": "Further hives are added with a <b>ColonyLink and a VitalSensor</b> — the Scale stays under the first hive. Leave the <em>Scale</em> field empty.",
       "de": "Weitere Stöcke legst du mit <b>ColonyLink und VitalSensor</b> an — die Scale bleibt unter dem ersten Stock. Das Feld <em>Scale</em> lässt du leer.",
-      "fr": "Les ruches suivantes s'ajoutent avec un <b>ColonyLink et un VitalSensor</b> : la Scale reste sous la première ruche. Laissez le champ <em>Scale</em> vide."
+      "fr": "Les ruches suivantes s'ajoutent avec un <b>ColonyLink et un VitalSensor</b> : la Scale reste sous la première ruche. Laissez le champ <em>Scale</em> vide.",
+      "es": "Las siguientes colmenas se añaden con <b>ColonyLink y VitalSensor</b>: el Scale se queda debajo de la primera colmena. Deja vacío el campo <em>Scale</em>.",
+      "it": "Le arnie successive si aggiungono con <b>ColonyLink e VitalSensor</b>: la Scale resta sotto la prima arnia. Lascia vuoto il campo <em>Scale</em>.",
+      "no": "De neste bikubene legger du til med <b>ColonyLink og VitalSensor</b> — Scale blir stående under den første bikuben. La feltet <em>Scale</em> stå tomt.",
+      "tr": "Sonraki kovanları <b>ColonyLink ve VitalSensor</b> ile eklersiniz — Scale ilk kovanın altında kalır. <em>Scale</em> alanını boş bırakın."
     }
   },
   {
@@ -920,7 +1252,11 @@
       "pl": "Otwórz pasiekę z ekranu głównego.",
       "en": "Open the apiary from the home screen.",
       "de": "Öffne den Bienenstand vom Startbildschirm aus.",
-      "fr": "Ouvrez le rucher depuis l'écran d'accueil."
+      "fr": "Ouvrez le rucher depuis l'écran d'accueil.",
+      "es": "Abre el colmenar desde la pantalla de inicio.",
+      "it": "Apri l'apiario dalla schermata principale.",
+      "no": "Åpne bigården fra startskjermen.",
+      "tr": "Ana ekrandan arılığı açın."
     }
   },
   {
@@ -931,7 +1267,11 @@
       "pl": "Naciśnij <em>+</em> i wybierz <em>Beehive</em>.",
       "en": "Tap <em>+</em> and choose <em>Beehive</em>.",
       "de": "Tippe auf <em>+</em> und wähle <em>Beehive</em>.",
-      "fr": "Appuyez sur <em>+</em> et choisissez <em>Beehive</em>."
+      "fr": "Appuyez sur <em>+</em> et choisissez <em>Beehive</em>.",
+      "es": "Pulsa <em>+</em> y elige <em>Beehive</em>.",
+      "it": "Tocca <em>+</em> e scegli <em>Beehive</em>.",
+      "no": "Trykk på <em>+</em> og velg <em>Beehive</em>.",
+      "tr": "<em>+</em> düğmesine dokunun ve <em>Beehive</em> öğesini seçin."
     }
   },
   {
@@ -942,7 +1282,11 @@
       "pl": "Zeskanuj kod QR z <em>ColonyLink</em>, a zaraz po nim z <em>VitalSensora</em>.",
       "en": "Scan the <em>ColonyLink</em> QR code, then the <em>VitalSensor</em> one.",
       "de": "Scanne den QR-Code des <em>ColonyLink</em> und gleich danach den des <em>VitalSensors</em>.",
-      "fr": "Scannez le QR code du <em>ColonyLink</em>, puis aussitôt celui du <em>VitalSensor</em>."
+      "fr": "Scannez le QR code du <em>ColonyLink</em>, puis aussitôt celui du <em>VitalSensor</em>.",
+      "es": "Escanea el código QR del <em>ColonyLink</em> y, justo después, el del <em>VitalSensor</em>.",
+      "it": "Scansiona il codice QR del <em>ColonyLink</em> e subito dopo quello del <em>VitalSensor</em>.",
+      "no": "Skann QR-koden til <em>ColonyLink</em>, og deretter den til <em>VitalSensor</em>.",
+      "tr": "Önce <em>ColonyLink</em>, hemen ardından <em>VitalSensor</em> QR kodunu tarayın."
     }
   },
   {
@@ -953,7 +1297,11 @@
       "pl": "Aplikacja",
       "en": "In the app",
       "de": "In der App",
-      "fr": "Dans l'application"
+      "fr": "Dans l'application",
+      "es": "En la aplicación",
+      "it": "Nell'app",
+      "no": "I appen",
+      "tr": "Uygulamada"
     }
   },
   {
@@ -964,7 +1312,11 @@
       "pl": "Krok 05 · 05.4 – 05.7",
       "en": "Step 05 · 05.4 – 05.7",
       "de": "Schritt 05 · 05.4 – 05.7",
-      "fr": "Étape 05 · 05.4 – 05.7"
+      "fr": "Étape 05 · 05.4 – 05.7",
+      "es": "Paso 05 · 05.4 – 05.7",
+      "it": "Passo 05 · 05.4 – 05.7",
+      "no": "Trinn 05 · 05.4 – 05.7",
+      "tr": "Adım 05 · 05.4 – 05.7"
     }
   },
   {
@@ -975,7 +1327,11 @@
       "pl": "Kolejny ul w pasiece",
       "en": "Another hive in the apiary",
       "de": "Ein weiterer Stock am Stand",
-      "fr": "Une ruche de plus au rucher"
+      "fr": "Une ruche de plus au rucher",
+      "es": "Otra colmena en el colmenar",
+      "it": "Un'altra arnia nell'apiario",
+      "no": "Enda en bikube i bigården",
+      "tr": "Arılıkta bir kovan daha"
     }
   },
   {
@@ -986,7 +1342,11 @@
       "pl": "Formularz zapisuje się tak samo jak przy pierwszym ulu — z ColonyLinkiem i VitalSensorem, bez Scale.",
       "en": "The form saves exactly like the first hive — with a ColonyLink and a VitalSensor, without the Scale.",
       "de": "Das Formular speicherst du genauso wie beim ersten Stock — mit ColonyLink und VitalSensor, ohne Scale.",
-      "fr": "Le formulaire s'enregistre exactement comme pour la première ruche : avec un ColonyLink et un VitalSensor, sans Scale."
+      "fr": "Le formulaire s'enregistre exactement comme pour la première ruche : avec un ColonyLink et un VitalSensor, sans Scale.",
+      "es": "El formulario se guarda igual que en la primera colmena: con ColonyLink y VitalSensor, sin Scale.",
+      "it": "Il modulo si salva esattamente come per la prima arnia: con ColonyLink e VitalSensor, senza Scale.",
+      "no": "Skjemaet lagrer du på samme måte som for den første bikuben — med ColonyLink og VitalSensor, uten Scale.",
+      "tr": "Form tıpkı ilk kovandaki gibi kaydedilir — ColonyLink ve VitalSensor ile, Scale olmadan."
     }
   },
   {
@@ -997,7 +1357,11 @@
       "pl": "Skaner odczytuje kody ColonyLinka i kolejnego czujnika.",
       "en": "The scanner reads the ColonyLink and the next sensor.",
       "de": "Der Scanner liest den ColonyLink und den nächsten Sensor.",
-      "fr": "Le scanner lit le ColonyLink puis le capteur suivant."
+      "fr": "Le scanner lit le ColonyLink puis le capteur suivant.",
+      "es": "El escáner lee el ColonyLink y el siguiente sensor.",
+      "it": "Lo scanner legge il ColonyLink e il sensore successivo.",
+      "no": "Skanneren leser ColonyLink og den neste sensoren.",
+      "tr": "Tarayıcı, ColonyLink'i ve sıradaki sensörü okur."
     }
   },
   {
@@ -1008,7 +1372,11 @@
       "pl": "Pola i kody weryfikacyjne są gotowe — naciśnij <em>Save</em>.",
       "en": "The fields and verification codes are ready — tap <em>Save</em>.",
       "de": "Felder und Verifizierungscodes sind gefüllt — tippe auf <em>Save</em>.",
-      "fr": "Les champs et les codes de vérification sont prêts : appuyez sur <em>Save</em>."
+      "fr": "Les champs et les codes de vérification sont prêts : appuyez sur <em>Save</em>.",
+      "es": "Los campos y los códigos de verificación están listos: pulsa <em>Save</em>.",
+      "it": "I campi e i codici di verifica sono pronti: tocca <em>Save</em>.",
+      "no": "Feltene og verifiseringskodene er klare — trykk på <em>Save</em>.",
+      "tr": "Alanlar ve doğrulama kodları hazır — <em>Save</em> düğmesine dokunun."
     }
   },
   {
@@ -1019,7 +1387,11 @@
       "pl": "Kolejny ul widnieje w pasiece. Powtórz krok 05 dla każdego następnego ula.",
       "en": "The next hive shows in the apiary. Repeat step 05 for every further hive.",
       "de": "Der nächste Stock steht am Bienenstand. Wiederhole Schritt 05 für jeden weiteren Stock.",
-      "fr": "La ruche suivante apparaît au rucher. Répétez l'étape 05 pour chaque ruche supplémentaire."
+      "fr": "La ruche suivante apparaît au rucher. Répétez l'étape 05 pour chaque ruche supplémentaire.",
+      "es": "La siguiente colmena aparece en el colmenar. Repite el paso 05 con cada colmena adicional.",
+      "it": "L'arnia successiva compare nell'apiario. Ripeti il passo 05 per ogni arnia in più.",
+      "no": "Den neste bikuben vises i bigården. Gjenta trinn 05 for hver nye bikube.",
+      "tr": "Sıradaki kovan arılıkta görünür. Her yeni kovan için 05. adımı tekrarlayın."
     }
   },
   {
@@ -1030,7 +1402,11 @@
       "pl": "Aplikacja",
       "en": "In the app",
       "de": "In der App",
-      "fr": "Dans l'application"
+      "fr": "Dans l'application",
+      "es": "En la aplicación",
+      "it": "Nell'app",
+      "no": "I appen",
+      "tr": "Uygulamada"
     }
   },
   {
@@ -1041,7 +1417,11 @@
       "pl": "Krok 06",
       "en": "Step 06",
       "de": "Schritt 06",
-      "fr": "Étape 06"
+      "fr": "Étape 06",
+      "es": "Paso 06",
+      "it": "Passo 06",
+      "no": "Trinn 06",
+      "tr": "Adım 06"
     }
   },
   {
@@ -1052,7 +1432,11 @@
       "pl": "Uruchom urządzenia i poczekaj na dane",
       "en": "Power up and wait for data",
       "de": "Geräte in Betrieb nehmen und auf Daten warten",
-      "fr": "Mettez les appareils en marche et attendez les données"
+      "fr": "Mettez les appareils en marche et attendez les données",
+      "es": "Enciende y espera los datos",
+      "it": "Accendi i dispositivi e attendi i dati",
+      "no": "Slå på enhetene og vent på data",
+      "tr": "Cihazları çalıştırın ve veri bekleyin"
     }
   },
   {
@@ -1063,7 +1447,11 @@
       "pl": "Urządzenia przychodzą z <b>zamontowanymi bateriami</b> — nic nie wkładasz. Sprawdzasz je tylko <b>przed</b> montażem w pasiece, żeby wiedzieć, że działają, zanim wejdziesz między ule.",
       "en": "The devices arrive with <b>batteries already fitted</b> — nothing to insert. You only check them <b>before</b> mounting, so you know everything works before you go out among the hives.",
       "de": "Die Geräte kommen mit <b>bereits eingelegten Batterien</b> — du musst nichts einsetzen. Du prüfst sie nur <b>vor</b> der Montage, damit du weißt, dass alles läuft, bevor du zwischen die Stöcke gehst.",
-      "fr": "Les appareils sont livrés avec les <b>piles déjà en place</b> : rien à insérer. Vous les vérifiez simplement <b>avant</b> le montage, pour savoir que tout fonctionne avant d'aller entre les ruches."
+      "fr": "Les appareils sont livrés avec les <b>piles déjà en place</b> : rien à insérer. Vous les vérifiez simplement <b>avant</b> le montage, pour savoir que tout fonctionne avant d'aller entre les ruches.",
+      "es": "Los dispositivos llegan con las <b>pilas ya colocadas</b>: no hay que poner nada. Solo los compruebas <b>antes</b> del montaje, para saber que funcionan antes de meterte entre las colmenas.",
+      "it": "I dispositivi arrivano con le <b>batterie già installate</b>: non devi inserire nulla. Li controlli soltanto <b>prima</b> del montaggio, così sai che tutto funziona prima di andare tra le arnie.",
+      "no": "Enhetene leveres med <b>batteriene ferdig montert</b> — du setter ikke inn noe. Du sjekker dem bare <b>før</b> monteringen, slik at du vet at alt virker før du går inn mellom bikubene.",
+      "tr": "Cihazlar <b>pilleri takılı halde</b> gelir — takmanız gereken bir şey yoktur. Onları yalnızca montajdan <b>önce</b> kontrol edersiniz; böylece kovanların arasına girmeden her şeyin çalıştığını bilirsiniz."
     }
   },
   {
@@ -1074,7 +1462,11 @@
       "pl": "Wystaw na słońce — zasila go panel fotowoltaiczny.",
       "en": "Put it in the sun — it runs on its photovoltaic panel.",
       "de": "In die Sonne stellen — er läuft über sein Solarpanel.",
-      "fr": "Exposez-le au soleil : il fonctionne grâce à son panneau photovoltaïque."
+      "fr": "Exposez-le au soleil : il fonctionne grâce à son panneau photovoltaïque.",
+      "es": "Ponlo al sol: se alimenta de su panel fotovoltaico.",
+      "it": "Mettilo al sole: è alimentato dal suo pannello fotovoltaico.",
+      "no": "Sett den i sola — den drives av solcellepanelet sitt.",
+      "tr": "Güneşe çıkarın — fotovoltaik paneliyle çalışır."
     }
   },
   {
@@ -1085,7 +1477,11 @@
       "pl": "Sprawdź, czy zaświeciła się dioda potwierdzająca uruchomienie.",
       "en": "Check that the LED confirming start-up lights up.",
       "de": "Prüfe, ob die LED für den Start leuchtet.",
-      "fr": "Vérifiez que le voyant de démarrage s'allume."
+      "fr": "Vérifiez que le voyant de démarrage s'allume.",
+      "es": "Comprueba que se enciende el LED que confirma el arranque.",
+      "it": "Controlla che si accenda il LED che conferma l'avvio.",
+      "no": "Sjekk at lysdioden som bekrefter oppstart, lyser.",
+      "tr": "Çalışmaya başladığını gösteren LED'in yandığını kontrol edin."
     }
   },
   {
@@ -1096,7 +1492,11 @@
       "pl": "Sprawdź diodę uruchomienia.",
       "en": "Check the start-up LED.",
       "de": "Prüfe die Start-LED.",
-      "fr": "Vérifiez le voyant de démarrage."
+      "fr": "Vérifiez le voyant de démarrage.",
+      "es": "Comprueba el LED de arranque.",
+      "it": "Controlla il LED di avvio.",
+      "no": "Sjekk lysdioden for oppstart.",
+      "tr": "Çalıştırma LED'ini kontrol edin."
     }
   },
   {
@@ -1107,7 +1507,11 @@
       "pl": "Po dwóch godzinach sprawdź pierwsze odczyty w aplikacji — status <em>Brak danych</em> zmieni się na aktualny.",
       "en": "After two hours check the first readings in the app — the <em>No data</em> status turns into a live one.",
       "de": "Prüfe nach zwei Stunden die ersten Messwerte in der App — der Status <em>Keine Daten</em> wechselt auf einen aktuellen Wert.",
-      "fr": "Au bout de deux heures, vérifiez les premières mesures dans l'application : le statut <em>Aucune donnée</em> devient une valeur à jour."
+      "fr": "Au bout de deux heures, vérifiez les premières mesures dans l'application : le statut <em>Aucune donnée</em> devient une valeur à jour.",
+      "es": "Al cabo de dos horas, comprueba las primeras mediciones en la aplicación: el estado <em>Sin datos</em> pasa a un valor actual.",
+      "it": "Dopo due ore controlla le prime letture nell'app: lo stato <em>Nessun dato</em> lascia il posto a un valore aggiornato.",
+      "no": "Sjekk de første avlesningene i appen etter to timer — statusen <em>Ingen data</em> byttes ut med en oppdatert verdi.",
+      "tr": "İki saat sonra uygulamadaki ilk ölçümleri kontrol edin — <em>Veri yok</em> durumu güncel bir değere döner."
     }
   },
   {
@@ -1118,7 +1522,11 @@
       "pl": "Zestaw w pasiece",
       "en": "The kit in the apiary",
       "de": "Das Set am Bienenstand",
-      "fr": "Le kit au rucher"
+      "fr": "Le kit au rucher",
+      "es": "El kit en el colmenar",
+      "it": "Il kit nell'apiario",
+      "no": "Settet i bigården",
+      "tr": "Arılıktaki set"
     }
   },
   {
@@ -1129,7 +1537,11 @@
       "pl": "Rozmieszczenie",
       "en": "Placement",
       "de": "Anordnung",
-      "fr": "Disposition"
+      "fr": "Disposition",
+      "es": "Colocación",
+      "it": "Disposizione",
+      "no": "Plassering",
+      "tr": "Yerleşim"
     }
   },
   {
@@ -1140,7 +1552,11 @@
       "pl": "Krok 07 · Montaż",
       "en": "Step 07 · Mounting",
       "de": "Schritt 07 · Montage",
-      "fr": "Étape 07 · Montage"
+      "fr": "Étape 07 · Montage",
+      "es": "Paso 07 · Montaje",
+      "it": "Passo 07 · Montaggio",
+      "no": "Trinn 07 · Montering",
+      "tr": "Adım 07 · Montaj"
     }
   },
   {
@@ -1151,7 +1567,11 @@
       "pl": "Zamontuj Hub",
       "en": "Mount the Hub",
       "de": "Hub montieren",
-      "fr": "Montez le Hub"
+      "fr": "Montez le Hub",
+      "es": "Monta el Hub",
+      "it": "Monta l'Hub",
+      "no": "Monter Hub",
+      "tr": "Hub'ı monte edin"
     }
   },
   {
@@ -1162,7 +1582,11 @@
       "pl": "Hub zasila panel fotowoltaiczny, więc decyduje o nim <b>słońce</b>, nie bliskość ula. Do montażu użyj uchwytu aparatowego z zestawu.",
       "en": "The Hub runs on a photovoltaic panel, so <b>sunlight</b> decides where it goes — not proximity to a hive. Use the camera mount from the kit.",
       "de": "Der Hub läuft über ein Solarpanel — entscheidend ist also die <b>Sonne</b>, nicht die Nähe zum Stock. Nutze für die Montage die Kamerahalterung aus dem Set.",
-      "fr": "Le Hub fonctionne grâce à un panneau photovoltaïque : c'est donc le <b>soleil</b> qui décide de son emplacement, pas la proximité d'une ruche. Utilisez le support photo fourni dans le kit."
+      "fr": "Le Hub fonctionne grâce à un panneau photovoltaïque : c'est donc le <b>soleil</b> qui décide de son emplacement, pas la proximité d'une ruche. Utilisez le support photo fourni dans le kit.",
+      "es": "El Hub se alimenta de un panel fotovoltaico, así que su ubicación la decide el <b>sol</b>, no la cercanía a una colmena. Para montarlo, usa el soporte de cámara incluido en el kit.",
+      "it": "L'Hub è alimentato da un pannello fotovoltaico: a decidere la posizione è quindi il <b>sole</b>, non la vicinanza a un'arnia. Per il montaggio usa il supporto per fotocamera incluso nel kit.",
+      "no": "Hub drives av et solcellepanel, så det er <b>sola</b> som avgjør plasseringen — ikke nærheten til en bikube. Bruk kamerafestet fra settet til monteringen.",
+      "tr": "Hub fotovoltaik panelle çalışır; bu yüzden yerini kovana yakınlık değil, <b>güneş ışığı</b> belirler. Montaj için setteki kamera bağlantı aparatını kullanın."
     }
   },
   {
@@ -1173,7 +1597,11 @@
       "pl": "Nad ziemią — niżej panel może nie zebrać dość światła, zwłaszcza zimą.",
       "en": "Above the ground — any lower and the panel may not gather enough light, especially in winter.",
       "de": "Über dem Boden — tiefer bekommt das Panel womöglich zu wenig Licht, vor allem im Winter.",
-      "fr": "Au-dessus du sol : plus bas, le panneau risque de manquer de lumière, surtout en hiver."
+      "fr": "Au-dessus du sol : plus bas, le panneau risque de manquer de lumière, surtout en hiver.",
+      "es": "Sobre el suelo: más abajo, el panel puede no captar luz suficiente, sobre todo en invierno.",
+      "it": "Da terra: più in basso il pannello rischia di non raccogliere luce a sufficienza, soprattutto d'inverno.",
+      "no": "Over bakken — lavere kan panelet få for lite lys, særlig om vinteren.",
+      "tr": "Zeminden yukarıda — daha alçakta panel, özellikle kışın yeterli ışığı toplayamayabilir."
     }
   },
   {
@@ -1184,7 +1612,11 @@
       "pl": "Nachylenie względem poziomu (min. 20°), panelem w stronę słońca, bez zacienienia.",
       "en": "Tilt from horizontal (min. 20°), panel facing the sun, never shaded.",
       "de": "Neigung zur Waagerechten (mind. 20°), Panel zur Sonne, nie beschattet.",
-      "fr": "Inclinaison par rapport à l'horizontale (20° min.), panneau face au soleil, jamais à l'ombre."
+      "fr": "Inclinaison par rapport à l'horizontale (20° min.), panneau face au soleil, jamais à l'ombre.",
+      "es": "Inclinación respecto a la horizontal (mín. 20°), panel orientado al sol, nunca a la sombra.",
+      "it": "Inclinazione rispetto all'orizzontale (min. 20°), pannello verso il sole, mai in ombra.",
+      "no": "Helning fra vannrett (min. 20°), panelet mot sola, aldri i skygge.",
+      "tr": "Yataya göre eğim (en az 20°), panel güneşe dönük, asla gölgede değil."
     }
   },
   {
@@ -1195,7 +1627,11 @@
       "pl": "Od najdalszego ula z VitalSensorem lub Scale — to zasięg BLE.",
       "en": "From the furthest hive with a VitalSensor or Scale — that is the BLE range.",
       "de": "Vom entferntesten Stock mit VitalSensor oder Scale — das ist die BLE-Reichweite.",
-      "fr": "Depuis la ruche la plus éloignée équipée d'un VitalSensor ou d'une Scale : c'est la portée BLE."
+      "fr": "Depuis la ruche la plus éloignée équipée d'un VitalSensor ou d'une Scale : c'est la portée BLE.",
+      "es": "Desde la colmena más lejana con VitalSensor o Scale: es el alcance BLE.",
+      "it": "Dall'arnia più lontana con VitalSensor o Scale: è questa la portata BLE.",
+      "no": "Fra den fjerneste bikuben med VitalSensor eller Scale — det er BLE-rekkevidden.",
+      "tr": "VitalSensor veya Scale bulunan en uzak kovandan — BLE menzili budur."
     }
   },
   {
@@ -1206,7 +1642,11 @@
       "pl": "Anteny",
       "en": "Antennas",
       "de": "Antennen",
-      "fr": "Antennes"
+      "fr": "Antennes",
+      "es": "Antenas",
+      "it": "Antenne",
+      "no": "Antenner",
+      "tr": "Antenler"
     }
   },
   {
@@ -1217,7 +1657,11 @@
       "pl": "Skierowane <em>pionowo do góry</em> — BLE i LTE mają różne złącza, nie da się ich pomylić.",
       "en": "Pointing <em>vertically upwards</em> — BLE and LTE use different connectors and cannot be swapped.",
       "de": "<em>Senkrecht nach oben</em> ausgerichtet — BLE und LTE haben unterschiedliche Anschlüsse und lassen sich nicht vertauschen.",
-      "fr": "Orientées <em>verticalement vers le haut</em> : BLE et LTE ont des connecteurs différents, impossible de les intervertir."
+      "fr": "Orientées <em>verticalement vers le haut</em> : BLE et LTE ont des connecteurs différents, impossible de les intervertir.",
+      "es": "Orientadas <em>verticalmente hacia arriba</em>: BLE y LTE usan conectores distintos, no se pueden confundir.",
+      "it": "Orientate <em>verticalmente verso l'alto</em>: BLE e LTE hanno connettori diversi, non si possono scambiare.",
+      "no": "Rettet <em>loddrett oppover</em> — BLE og LTE har ulike kontakter og kan ikke forveksles.",
+      "tr": "<em>Dikey olarak yukarı</em> bakacak şekilde — BLE ve LTE farklı konektörler kullanır, karıştırılamaz."
     }
   },
   {
@@ -1228,7 +1672,11 @@
       "pl": "<b>Nie montuj Huba do metalu</b> — zakłóca BLE i LTE. Słupek, drzewo lub drewniana konstrukcja są w porządku.",
       "en": "<b>Do not mount the Hub on metal</b> — it disturbs BLE and LTE. A post, a tree or a wooden structure is fine.",
       "de": "<b>Montiere den Hub nicht auf Metall</b> — es stört BLE und LTE. Ein Pfosten, ein Baum oder eine Holzkonstruktion sind in Ordnung.",
-      "fr": "<b>Ne montez pas le Hub sur du métal</b> : cela perturbe le BLE et la LTE. Un piquet, un arbre ou une structure en bois conviennent."
+      "fr": "<b>Ne montez pas le Hub sur du métal</b> : cela perturbe le BLE et la LTE. Un piquet, un arbre ou une structure en bois conviennent.",
+      "es": "<b>No montes el Hub sobre metal</b>: interfiere con BLE y LTE. Un poste, un árbol o una estructura de madera valen.",
+      "it": "<b>Non montare l'Hub sul metallo</b>: disturba BLE e LTE. Un palo, un albero o una struttura in legno vanno bene.",
+      "no": "<b>Ikke monter Hub på metall</b> — det forstyrrer BLE og LTE. En stolpe, et tre eller en trekonstruksjon går fint.",
+      "tr": "<b>Hub'ı metale monte etmeyin</b> — metal, BLE ve LTE sinyalini bozar. Direk, ağaç veya ahşap bir yapı uygundur."
     }
   },
   {
@@ -1239,7 +1687,11 @@
       "pl": "Rysunek poglądowy",
       "en": "Reference drawing",
       "de": "Referenzzeichnung",
-      "fr": "Schéma de référence"
+      "fr": "Schéma de référence",
+      "es": "Esquema de referencia",
+      "it": "Disegno di riferimento",
+      "no": "Referansetegning",
+      "tr": "Örnek çizim"
     }
   },
   {
@@ -1250,7 +1702,11 @@
       "pl": "Prawidłowy montaż",
       "en": "Correct mounting",
       "de": "Korrekte Montage",
-      "fr": "Montage correct"
+      "fr": "Montage correct",
+      "es": "Montaje correcto",
+      "it": "Montaggio corretto",
+      "no": "Riktig montering",
+      "tr": "Doğru montaj"
     }
   },
   {
@@ -1261,7 +1717,11 @@
       "pl": "Zdjęcie",
       "en": "Photo",
       "de": "Foto",
-      "fr": "Photo"
+      "fr": "Photo",
+      "es": "Foto",
+      "it": "Foto",
+      "no": "Bilde",
+      "tr": "Fotoğraf"
     }
   },
   {
@@ -1272,7 +1732,11 @@
       "pl": "Krok 07 · Montaż",
       "en": "Step 07 · Mounting",
       "de": "Schritt 07 · Montage",
-      "fr": "Étape 07 · Montage"
+      "fr": "Étape 07 · Montage",
+      "es": "Paso 07 · Montaje",
+      "it": "Passo 07 · Montaggio",
+      "no": "Trinn 07 · Montering",
+      "tr": "Adım 07 · Montaj"
     }
   },
   {
@@ -1283,7 +1747,11 @@
       "pl": "Ustaw Scale pod ulem",
       "en": "Place the Scale under the hive",
       "de": "Scale unter den Stock setzen",
-      "fr": "Placez la Scale sous la ruche"
+      "fr": "Placez la Scale sous la ruche",
+      "es": "Coloca el Scale bajo la colmena",
+      "it": "Posiziona la Scale sotto l'arnia",
+      "no": "Plasser Scale under bikuben",
+      "tr": "Scale'i kovanın altına yerleştirin"
     }
   },
   {
@@ -1294,7 +1762,11 @@
       "pl": "Scale i drewniana kantówka tworzą jedną konstrukcję nośną. Wypoziomowanie i orientacja są <b>kluczowe dla dokładności pomiaru</b>.",
       "en": "The Scale and the wooden spacer bar form one supporting structure. Levelling and orientation are <b>critical for measurement accuracy</b>.",
       "de": "Scale und Kantholz bilden zusammen eine tragende Konstruktion. Waagerechte Ausrichtung und Orientierung sind <b>entscheidend für die Messgenauigkeit</b>.",
-      "fr": "La Scale et le tasseau en bois forment une seule structure porteuse. La mise à niveau et l'orientation sont <b>déterminantes pour la précision de la mesure</b>."
+      "fr": "La Scale et le tasseau en bois forment une seule structure porteuse. La mise à niveau et l'orientation sont <b>déterminantes pour la précision de la mesure</b>.",
+      "es": "El Scale y el listón de madera forman una única estructura de apoyo. La nivelación y la orientación son <b>decisivas para la precisión de la medición</b>.",
+      "it": "La Scale e il listello di legno formano un'unica struttura portante. La messa in bolla e l'orientamento sono <b>determinanti per la precisione della misura</b>.",
+      "no": "Scale og trelekten utgjør én bærende konstruksjon. Vatring og retning er <b>avgjørende for målenøyaktigheten</b>.",
+      "tr": "Scale ve ahşap destek çıtası birlikte tek bir taşıyıcı yapı oluşturur. Yatay dengeleme ve yönlendirme <b>ölçüm doğruluğu için kritiktir</b>."
     }
   },
   {
@@ -1305,7 +1777,11 @@
       "pl": "Ustaw uruchomioną Scale na stabilnym, równym podłożu, <em>prostopadle do ramek</em> w ulu.",
       "en": "Put the powered Scale on firm, level ground, <em>perpendicular to the frames</em> in the hive.",
       "de": "Stelle die eingeschaltete Scale auf festen, ebenen Untergrund, <em>quer zu den Rähmchen</em> im Stock.",
-      "fr": "Posez la Scale allumée sur un sol stable et plat, <em>perpendiculairement aux cadres</em> de la ruche."
+      "fr": "Posez la Scale allumée sur un sol stable et plat, <em>perpendiculairement aux cadres</em> de la ruche.",
+      "es": "Coloca el Scale encendido sobre un suelo firme y nivelado, <em>perpendicular a los cuadros</em> de la colmena.",
+      "it": "Appoggia la Scale accesa su un terreno stabile e in piano, <em>perpendicolarmente ai telaini</em> dell'arnia.",
+      "no": "Plasser den påslåtte Scale på et fast og jevnt underlag, <em>på tvers av rammene</em> i bikuben.",
+      "tr": "Çalışır durumdaki Scale'i sağlam ve düz bir zemine, kovandaki <em>çerçevelere dik</em> olacak şekilde yerleştirin."
     }
   },
   {
@@ -1316,7 +1792,11 @@
       "pl": "Ułóż drewnianą kantówkę równolegle do Scale, w takiej odległości, żeby ciężar ula rozłożył się równomiernie.",
       "en": "Lay the wooden bar parallel to the Scale, spaced so the hive weight is spread evenly.",
       "de": "Lege das Kantholz parallel zur Scale, so weit entfernt, dass sich das Gewicht des Stocks gleichmäßig verteilt.",
-      "fr": "Disposez le tasseau parallèlement à la Scale, à une distance telle que le poids de la ruche se répartisse uniformément."
+      "fr": "Disposez le tasseau parallèlement à la Scale, à une distance telle que le poids de la ruche se répartisse uniformément.",
+      "es": "Coloca el listón de madera paralelo al Scale, a una distancia tal que el peso de la colmena se reparta de forma uniforme.",
+      "it": "Disponi il listello di legno parallelo alla Scale, a una distanza tale che il peso dell'arnia si distribuisca uniformemente.",
+      "no": "Legg trelekten parallelt med Scale, med så stor avstand at vekten av bikuben fordeles jevnt.",
+      "tr": "Ahşap çıtayı Scale'e paralel olarak, kovanın ağırlığı eşit dağılacak bir mesafede yerleştirin."
     }
   },
   {
@@ -1327,7 +1807,11 @@
       "pl": "Postaw ul na konstrukcji i sprawdź, że obciążenie nadal rozkłada się równo.",
       "en": "Set the hive on the structure and check the load is still spread evenly.",
       "de": "Setze den Stock auf die Konstruktion und prüfe, ob die Last weiterhin gleichmäßig verteilt ist.",
-      "fr": "Posez la ruche sur la structure et vérifiez que la charge reste bien répartie."
+      "fr": "Posez la ruche sur la structure et vérifiez que la charge reste bien répartie.",
+      "es": "Pon la colmena sobre la estructura y comprueba que la carga sigue repartida uniformemente.",
+      "it": "Appoggia l'arnia sulla struttura e verifica che il carico resti distribuito in modo uniforme.",
+      "no": "Sett bikuben på konstruksjonen og kontroller at belastningen fortsatt fordeler seg jevnt.",
+      "tr": "Kovanı bu yapının üzerine koyun ve yükün hâlâ eşit dağıldığını kontrol edin."
     }
   },
   {
@@ -1338,7 +1822,11 @@
       "pl": "Od Huba, bez przeszkód tłumiących sygnał BLE.",
       "en": "From the Hub, with nothing blocking the BLE signal.",
       "de": "Vom Hub, ohne Hindernisse, die das BLE-Signal dämpfen.",
-      "fr": "Depuis le Hub, sans obstacle atténuant le signal BLE."
+      "fr": "Depuis le Hub, sans obstacle atténuant le signal BLE.",
+      "es": "Desde el Hub, sin obstáculos que atenúen la señal BLE.",
+      "it": "Dall'Hub, senza ostacoli che attenuino il segnale BLE.",
+      "no": "Fra Hub, uten hindringer som demper BLE-signalet.",
+      "tr": "Hub'dan, BLE sinyalini engelleyen bir şey olmadan."
     }
   },
   {
@@ -1349,7 +1837,11 @@
       "pl": "Rysunek poglądowy",
       "en": "Reference drawing",
       "de": "Referenzzeichnung",
-      "fr": "Schéma de référence"
+      "fr": "Schéma de référence",
+      "es": "Esquema de referencia",
+      "it": "Disegno di riferimento",
+      "no": "Referansetegning",
+      "tr": "Örnek çizim"
     }
   },
   {
@@ -1360,7 +1852,11 @@
       "pl": "Scale i kantówka",
       "en": "Scale &amp; spacer bar",
       "de": "Scale und Kantholz",
-      "fr": "Scale et tasseau"
+      "fr": "Scale et tasseau",
+      "es": "Scale y listón",
+      "it": "Scale e listello",
+      "no": "Scale og trelekt",
+      "tr": "Scale ve destek çıtası"
     }
   },
   {
@@ -1371,7 +1867,11 @@
       "pl": "Zdjęcie",
       "en": "Photo",
       "de": "Foto",
-      "fr": "Photo"
+      "fr": "Photo",
+      "es": "Foto",
+      "it": "Foto",
+      "no": "Bilde",
+      "tr": "Fotoğraf"
     }
   },
   {
@@ -1382,7 +1882,11 @@
       "pl": "Krok 07 · Montaż",
       "en": "Step 07 · Mounting",
       "de": "Schritt 07 · Montage",
-      "fr": "Étape 07 · Montage"
+      "fr": "Étape 07 · Montage",
+      "es": "Paso 07 · Montaje",
+      "it": "Passo 07 · Montaggio",
+      "no": "Trinn 07 · Montering",
+      "tr": "Adım 07 · Montaj"
     }
   },
   {
@@ -1393,7 +1897,11 @@
       "pl": "Zamontuj VitalSensor w ulu",
       "en": "Mount the VitalSensor in the hive",
       "de": "VitalSensor im Stock montieren",
-      "fr": "Montez le VitalSensor dans la ruche"
+      "fr": "Montez le VitalSensor dans la ruche",
+      "es": "Monta el VitalSensor en la colmena",
+      "it": "Monta il VitalSensor nell'arnia",
+      "no": "Monter VitalSensor i bikuben",
+      "tr": "VitalSensor'ü kovana monte edin"
     }
   },
   {
@@ -1404,7 +1912,11 @@
       "pl": "Czujnik montujesz bezinwazyjnie na ramce — bez trwałych zmian w ulu i bez zakłócania pracy rodziny.",
       "en": "The sensor mounts non-invasively on a frame — no permanent changes to the hive and no disturbance to the colony.",
       "de": "Den Sensor bringst du schonend am Rähmchen an — ohne dauerhafte Eingriffe am Stock und ohne das Volk zu stören.",
-      "fr": "Le capteur se fixe sur un cadre sans intervention : aucune modification permanente de la ruche et aucune perturbation de la colonie."
+      "fr": "Le capteur se fixe sur un cadre sans intervention : aucune modification permanente de la ruche et aucune perturbation de la colonie.",
+      "es": "El sensor se monta en un cuadro sin ser invasivo: sin cambios permanentes en la colmena y sin molestar a la colonia.",
+      "it": "Il sensore si fissa al telaino in modo non invasivo: nessuna modifica permanente all'arnia e nessun disturbo per la colonia.",
+      "no": "Sensoren festes skånsomt på en ramme — uten varige endringer i bikuben og uten å forstyrre kolonien.",
+      "tr": "Sensör çerçeveye müdahalesiz şekilde takılır — kovanda kalıcı bir değişiklik olmaz, koloni de rahatsız edilmez."
     }
   },
   {
@@ -1415,7 +1927,11 @@
       "pl": "Osadź uruchomiony VitalSensor na <em>centralnej ramce</em> (w kłębie), stabilnie, tak żeby się nie przemieszczał.",
       "en": "Fix the powered VitalSensor to the <em>central frame</em> (in the cluster), firmly enough that it cannot shift.",
       "de": "Befestige den eingeschalteten VitalSensor am <em>mittleren Rähmchen</em> (im Bienensitz), fest genug, dass er nicht verrutscht.",
-      "fr": "Fixez le VitalSensor allumé sur le <em>cadre central</em> (dans la grappe), assez fermement pour qu'il ne bouge pas."
+      "fr": "Fixez le VitalSensor allumé sur le <em>cadre central</em> (dans la grappe), assez fermement pour qu'il ne bouge pas.",
+      "es": "Fija el VitalSensor encendido en el <em>cuadro central</em> (en la piña), con firmeza suficiente para que no se mueva.",
+      "it": "Fissa il VitalSensor acceso al <em>telaino centrale</em> (nel glomere), in modo stabile perché non si sposti.",
+      "no": "Fest den påslåtte VitalSensor på <em>midtrammen</em> (i klasen), så stødig at den ikke kan forskyve seg.",
+      "tr": "Çalışır durumdaki VitalSensor'ü <em>merkezi çerçeveye</em> (arı salkımının içine), yerinden oynamayacak kadar sağlam biçimde takın."
     }
   },
   {
@@ -1426,7 +1942,11 @@
       "pl": "Zamontuj go <em>pionowo</em> — naklejka z kodem QR ma być widoczna od góry po włożeniu ramki.",
       "en": "Mount it <em>vertically</em> — the QR sticker must stay visible from above once the frame is in.",
       "de": "Montiere ihn <em>senkrecht</em> — der QR-Aufkleber muss nach dem Einhängen von oben sichtbar bleiben.",
-      "fr": "Montez-le <em>verticalement</em> : l'autocollant QR doit rester visible du dessus une fois le cadre en place."
+      "fr": "Montez-le <em>verticalement</em> : l'autocollant QR doit rester visible du dessus une fois le cadre en place.",
+      "es": "Móntalo <em>verticalmente</em>: la pegatina con el código QR debe quedar visible desde arriba una vez colocado el cuadro.",
+      "it": "Montalo <em>verticalmente</em>: dopo aver inserito il telaino l'adesivo con il codice QR deve restare visibile dall'alto.",
+      "no": "Monter den <em>loddrett</em> — klistremerket med QR-koden skal være synlig ovenfra når rammen er satt inn.",
+      "tr": "Sensörü <em>dikey</em> olarak takın — çerçeve yerleştirildikten sonra QR etiketi yukarıdan görünür kalmalıdır."
     }
   },
   {
@@ -1437,7 +1957,11 @@
       "pl": "Włóż ramkę w środkową część korpusu gniazdowego, tak żeby nie zakłócać wentylacji.",
       "en": "Slide the frame into the middle of the brood body, without obstructing ventilation.",
       "de": "Hänge das Rähmchen in die Mitte des Brutraums, ohne die Belüftung zu behindern.",
-      "fr": "Insérez le cadre au milieu du corps de couvain, sans gêner la ventilation."
+      "fr": "Insérez le cadre au milieu du corps de couvain, sans gêner la ventilation.",
+      "es": "Introduce el cuadro en la parte central de la cámara de cría, sin obstruir la ventilación.",
+      "it": "Inserisci il telaino al centro del nido, senza ostacolare la ventilazione.",
+      "no": "Skyv rammen inn midt i yngelrommet, uten å hindre ventilasjonen.",
+      "tr": "Çerçeveyi, havalandırmayı engellemeden kuluçka katının ortasına yerleştirin."
     }
   },
   {
@@ -1448,7 +1972,11 @@
       "pl": "Od Huba — zasięg BLE.",
       "en": "From the Hub — BLE range.",
       "de": "Vom Hub — BLE-Reichweite.",
-      "fr": "Depuis le Hub : portée BLE."
+      "fr": "Depuis le Hub : portée BLE.",
+      "es": "Desde el Hub: alcance BLE.",
+      "it": "Dall'Hub: portata BLE.",
+      "no": "Fra Hub — BLE-rekkevidde.",
+      "tr": "Hub'dan — BLE menzili."
     }
   },
   {
@@ -1459,7 +1987,11 @@
       "pl": "Rysunek poglądowy",
       "en": "Reference drawing",
       "de": "Referenzzeichnung",
-      "fr": "Schéma de référence"
+      "fr": "Schéma de référence",
+      "es": "Esquema de referencia",
+      "it": "Disegno di riferimento",
+      "no": "Referansetegning",
+      "tr": "Örnek çizim"
     }
   },
   {
@@ -1470,7 +2002,11 @@
       "pl": "Czujnik na ramce",
       "en": "Sensor on the frame",
       "de": "Sensor am Rähmchen",
-      "fr": "Capteur sur le cadre"
+      "fr": "Capteur sur le cadre",
+      "es": "Sensor en el cuadro",
+      "it": "Sensore sul telaino",
+      "no": "Sensor på rammen",
+      "tr": "Çerçevedeki sensör"
     }
   },
   {
@@ -1481,7 +2017,11 @@
       "pl": "Zdjęcie",
       "en": "Photo",
       "de": "Foto",
-      "fr": "Photo"
+      "fr": "Photo",
+      "es": "Foto",
+      "it": "Foto",
+      "no": "Bilde",
+      "tr": "Fotoğraf"
     }
   },
   {
@@ -1492,7 +2032,11 @@
       "pl": "Krok 07 · Montaż",
       "en": "Step 07 · Mounting",
       "de": "Schritt 07 · Montage",
-      "fr": "Étape 07 · Montage"
+      "fr": "Étape 07 · Montage",
+      "es": "Paso 07 · Montaje",
+      "it": "Passo 07 · Montaggio",
+      "no": "Trinn 07 · Montering",
+      "tr": "Adım 07 · Montaj"
     }
   },
   {
@@ -1503,7 +2047,11 @@
       "pl": "Umieść ColonyLink na ulu",
       "en": "Attach the ColonyLink",
       "de": "ColonyLink am Stock anbringen",
-      "fr": "Posez le ColonyLink sur la ruche"
+      "fr": "Posez le ColonyLink sur la ruche",
+      "es": "Coloca el ColonyLink en la colmena",
+      "it": "Applica il ColonyLink sull'arnia",
+      "no": "Fest ColonyLink på bikuben",
+      "tr": "ColonyLink'i kovana yapıştırın"
     }
   },
   {
@@ -1514,7 +2062,11 @@
       "pl": "ColonyLink to <b>wodoodporna naklejka</b> z wbudowanym tagiem NFC i nadrukowanym kodem QR. Zeskanowanie kodu albo przyłożenie telefonu otwiera dane właściwego ula — też w rękawicach i w pełnym słońcu.",
       "en": "The ColonyLink is a <b>waterproof sticker</b> with a built-in NFC tag and a printed QR code. Scanning it or tapping your phone against it opens the right hive — even with gloves on and in full sun.",
       "de": "Der ColonyLink ist ein <b>wasserfester Aufkleber</b> mit integriertem NFC-Tag und aufgedrucktem QR-Code. Code scannen oder Handy anhalten öffnet die Daten des richtigen Stocks — auch mit Handschuhen und in praller Sonne.",
-      "fr": "Le ColonyLink est un <b>autocollant étanche</b> avec puce NFC intégrée et QR code imprimé. Scanner le code ou approcher le téléphone ouvre les données de la bonne ruche, même avec des gants et en plein soleil."
+      "fr": "Le ColonyLink est un <b>autocollant étanche</b> avec puce NFC intégrée et QR code imprimé. Scanner le code ou approcher le téléphone ouvre les données de la bonne ruche, même avec des gants et en plein soleil.",
+      "es": "El ColonyLink es una <b>pegatina impermeable</b> con etiqueta NFC integrada y código QR impreso. Escanear el código o acercar el teléfono abre los datos de la colmena correcta, incluso con guantes y a pleno sol.",
+      "it": "Il ColonyLink è un <b>adesivo impermeabile</b> con tag NFC integrato e codice QR stampato. Scansionare il codice o avvicinare il telefono apre i dati dell'arnia giusta, anche con i guanti e in pieno sole.",
+      "no": "ColonyLink er et <b>vanntett klistremerke</b> med innebygd NFC-brikke og påtrykt QR-kode. Skanner du koden eller holder telefonen inntil, åpnes dataene for riktig bikube — også med hansker på og i sterk sol.",
+      "tr": "ColonyLink, gömülü NFC etiketi ve basılı QR kodu olan <b>suya dayanıklı bir çıkartmadır</b>. Kodu taramak veya telefonu yaklaştırmak doğru kovanın verilerini açar — eldivenle ve tam güneş altında bile."
     }
   },
   {
@@ -1525,7 +2077,11 @@
       "pl": "Wybierz na froncie ula miejsce <em>płaskie, czyste i suche</em>, dobrze widoczne podczas pracy.",
       "en": "Pick a spot on the hive front that is <em>flat, clean and dry</em>, and stays easy to see while you work.",
       "de": "Wähle an der Stockvorderseite eine <em>ebene, saubere und trockene</em> Stelle, die bei der Arbeit gut sichtbar bleibt.",
-      "fr": "Choisissez sur la façade de la ruche un endroit <em>plat, propre et sec</em>, bien visible pendant le travail."
+      "fr": "Choisissez sur la façade de la ruche un endroit <em>plat, propre et sec</em>, bien visible pendant le travail.",
+      "es": "Elige en el frente de la colmena un punto <em>plano, limpio y seco</em>, bien visible mientras trabajas.",
+      "it": "Scegli sulla facciata dell'arnia un punto <em>piano, pulito e asciutto</em>, ben visibile mentre lavori.",
+      "no": "Velg et sted på forsiden av bikuben som er <em>flatt, rent og tørt</em>, og som er godt synlig mens du jobber.",
+      "tr": "Kovanın ön yüzünde <em>düz, temiz ve kuru</em>, çalışırken kolayca görünen bir yer seçin."
     }
   },
   {
@@ -1536,7 +2092,11 @@
       "pl": "Naklej ColonyLink i dociśnij go na całej powierzchni, żeby taśma montażowa dobrze przylegała.",
       "en": "Stick the ColonyLink on and press it down over its whole surface so the adhesive bonds properly.",
       "de": "Klebe den ColonyLink auf und drücke ihn ganzflächig an, damit das Klebeband gut haftet.",
-      "fr": "Collez le ColonyLink et pressez-le sur toute sa surface pour que l'adhésif tienne bien."
+      "fr": "Collez le ColonyLink et pressez-le sur toute sa surface pour que l'adhésif tienne bien.",
+      "es": "Pega el ColonyLink y presiónalo por toda su superficie para que el adhesivo agarre bien.",
+      "it": "Applica il ColonyLink e premilo su tutta la superficie, così l'adesivo aderisce bene.",
+      "no": "Klistre på ColonyLink og trykk det ned over hele flaten, slik at monteringstapen fester godt.",
+      "tr": "ColonyLink'i yapıştırın ve yapışkan bandın iyi tutması için tüm yüzeyine bastırın."
     }
   },
   {
@@ -1547,7 +2107,11 @@
       "pl": "Sprawdź, czy kod QR jest dostępny bez otwierania ula.",
       "en": "Check that the QR code is reachable without opening the hive.",
       "de": "Prüfe, ob der QR-Code erreichbar ist, ohne den Stock zu öffnen.",
-      "fr": "Vérifiez que le QR code est accessible sans ouvrir la ruche."
+      "fr": "Vérifiez que le QR code est accessible sans ouvrir la ruche.",
+      "es": "Comprueba que se puede acceder al código QR sin abrir la colmena.",
+      "it": "Verifica che il codice QR sia raggiungibile senza aprire l'arnia.",
+      "no": "Kontroller at QR-koden er tilgjengelig uten at du må åpne bikuben.",
+      "tr": "QR koduna kovanı açmadan ulaşılabildiğini kontrol edin."
     }
   },
   {
@@ -1558,7 +2122,11 @@
       "pl": "Bez baterii",
       "en": "No battery",
       "de": "Ohne Batterie",
-      "fr": "Sans pile"
+      "fr": "Sans pile",
+      "es": "Sin pilas",
+      "it": "Senza batteria",
+      "no": "Uten batteri",
+      "tr": "Pilsiz"
     }
   },
   {
@@ -1569,7 +2137,11 @@
       "pl": "ColonyLink nie wymaga zasilania, konfiguracji ani aktualizacji.",
       "en": "The ColonyLink needs no power, no setup and no updates.",
       "de": "Der ColonyLink braucht weder Strom noch Einrichtung noch Updates.",
-      "fr": "Le ColonyLink ne nécessite ni alimentation, ni configuration, ni mise à jour."
+      "fr": "Le ColonyLink ne nécessite ni alimentation, ni configuration, ni mise à jour.",
+      "es": "El ColonyLink no necesita alimentación, ni configuración, ni actualizaciones.",
+      "it": "Il ColonyLink non richiede alimentazione, configurazione né aggiornamenti.",
+      "no": "ColonyLink trenger verken strøm, konfigurasjon eller oppdateringer.",
+      "tr": "ColonyLink güç, kurulum veya güncelleme gerektirmez."
     }
   },
   {
@@ -1580,7 +2152,11 @@
       "pl": "Rysunek poglądowy",
       "en": "Reference drawing",
       "de": "Referenzzeichnung",
-      "fr": "Schéma de référence"
+      "fr": "Schéma de référence",
+      "es": "Esquema de referencia",
+      "it": "Disegno di riferimento",
+      "no": "Referansetegning",
+      "tr": "Örnek çizim"
     }
   },
   {
@@ -1591,7 +2167,11 @@
       "pl": "Gotowe",
       "en": "All set",
       "de": "Fertig",
-      "fr": "C'est prêt"
+      "fr": "C'est prêt",
+      "es": "Listo",
+      "it": "Fatto",
+      "no": "Ferdig",
+      "tr": "Hazır"
     }
   },
   {
@@ -1602,7 +2182,11 @@
       "pl": "Ul nadaje.",
       "en": "Your hive is on air.",
       "de": "Der Stock sendet.",
-      "fr": "La ruche émet."
+      "fr": "La ruche émet.",
+      "es": "La colmena ya emite.",
+      "it": "L'arnia trasmette.",
+      "no": "Bikuben sender.",
+      "tr": "Kovanınız yayında."
     }
   },
   {
@@ -1613,7 +2197,11 @@
       "pl": "Hub zbiera dane z czujników i wysyła je do aplikacji. Jeśli po kilku godzinach odczytów nadal brak — sprawdź baterie, zasięg i listę problemów w dokumentacji.",
       "en": "The Hub collects sensor data and sends it to the app. If readings are still missing after a few hours, check the batteries, the range and the troubleshooting list in the documentation.",
       "de": "Der Hub sammelt die Sensordaten und schickt sie an die App. Fehlen nach einigen Stunden noch immer Messwerte, prüfe Batterien, Reichweite und die Problemliste in der Dokumentation.",
-      "fr": "Le Hub collecte les données des capteurs et les envoie à l'application. Si les mesures manquent encore après quelques heures, vérifiez les piles, la portée et la liste des problèmes dans la documentation."
+      "fr": "Le Hub collecte les données des capteurs et les envoie à l'application. Si les mesures manquent encore après quelques heures, vérifiez les piles, la portée et la liste des problèmes dans la documentation.",
+      "es": "El Hub recoge los datos de los sensores y los envía a la aplicación. Si al cabo de unas horas sigue sin haber mediciones, comprueba las pilas, el alcance y la lista de problemas de la documentación.",
+      "it": "L'Hub raccoglie i dati dei sensori e li invia all'app. Se dopo qualche ora le letture mancano ancora, controlla le batterie, la portata e l'elenco dei problemi nella documentazione.",
+      "no": "Hub samler inn data fra sensorene og sender dem til appen. Hvis avlesningene fortsatt mangler etter noen timer, sjekk batteriene, rekkevidden og problemlisten i dokumentasjonen.",
+      "tr": "Hub, sensör verilerini toplar ve uygulamaya gönderir. Birkaç saat sonra hâlâ ölçüm gelmiyorsa pilleri, menzili ve dokümantasyondaki sorun listesini kontrol edin."
     }
   },
   {
@@ -1624,7 +2212,11 @@
       "pl": "Pełna instrukcja konfiguracji",
       "en": "Full configuration guide",
       "de": "Vollständige Einrichtungsanleitung",
-      "fr": "Guide de configuration complet"
+      "fr": "Guide de configuration complet",
+      "es": "Guía completa de configuración",
+      "it": "Guida completa alla configurazione",
+      "no": "Fullstendig konfigurasjonsveiledning",
+      "tr": "Tam yapılandırma kılavuzu"
     }
   },
   {
@@ -1635,7 +2227,11 @@
       "pl": "Rozwiązywanie problemów",
       "en": "Troubleshooting",
       "de": "Fehlerbehebung",
-      "fr": "Résolution des problèmes"
+      "fr": "Résolution des problèmes",
+      "es": "Resolución de problemas",
+      "it": "Risoluzione dei problemi",
+      "no": "Feilsøking",
+      "tr": "Sorun giderme"
     }
   },
   {
@@ -1646,7 +2242,11 @@
       "pl": "Dokumentacja Apisense",
       "en": "Apisense documentation",
       "de": "Apisense Dokumentation",
-      "fr": "Documentation Apisense"
+      "fr": "Documentation Apisense",
+      "es": "Documentación Apisense",
+      "it": "Documentazione Apisense",
+      "no": "Apisense-dokumentasjon",
+      "tr": "Apisense dokümantasyonu"
     }
   }
 ]
