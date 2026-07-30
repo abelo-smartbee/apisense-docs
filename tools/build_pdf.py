@@ -28,6 +28,11 @@ LOCALES = {
     "en": "Apisense_BOX_Assembly_Instruction_en.pdf",
     "de": "Apisense_BOX_Montageanleitung_de.pdf",
     "fr": "Apisense_BOX_Guide_de_montage_fr.pdf",
+    # File names stay ASCII — they travel as e-mail attachments.
+    "es": "Apisense_BOX_Instrucciones_de_montaje_es.pdf",
+    "it": "Apisense_BOX_Istruzioni_di_montaggio_it.pdf",
+    "no": "Apisense_BOX_Monteringsanvisning_no.pdf",
+    "tr": "Apisense_BOX_Montaj_Talimati_tr.pdf",
 }
 
 CHROME_CANDIDATES = ["google-chrome", "google-chrome-stable", "chromium", "chromium-browser"]
