@@ -28,3 +28,6 @@ graphify-out/
 
 # lokalne uprawnienia Claude Code (apisense-flow.json jest wersjonowany)
 .claude/settings.local.json
+
+# jednorazowe worktree agentów — zostają po przerwanym przebiegu
+.claude/worktrees/
