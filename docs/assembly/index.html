@@ -15,8 +15,13 @@
     var t = localStorage.getItem('apisense-asm-theme');
     if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     document.documentElement.setAttribute('data-theme', t);
+    /* Keep this list in step with LOCALE_ORDER in tools/i18n_lib.py.
+       No navigator.language fallback on a first visit: tools/build_pdf.py
+       renders each locale by presetting data-lang on <html> in headless
+       Chrome, whose navigator.language is always en-US — auto-detection here
+       would overwrite it and print every PDF in English. */
     var l = localStorage.getItem('apisense-asm-lang');
-    if (['pl', 'en', 'de', 'fr'].indexOf(l) > -1) {
+    if (['pl', 'en', 'de', 'fr', 'es', 'it', 'no', 'tr'].indexOf(l) > -1) {
       document.documentElement.setAttribute('data-lang', l);
       document.documentElement.lang = l;
     }
@@ -104,7 +109,11 @@ body::after {
 [data-lang="pl"] [lang]:not([lang="pl"]),
 [data-lang="en"] [lang]:not([lang="en"]),
 [data-lang="de"] [lang]:not([lang="de"]),
-[data-lang="fr"] [lang]:not([lang="fr"]) { display: none; }
+[data-lang="fr"] [lang]:not([lang="fr"]),
+[data-lang="es"] [lang]:not([lang="es"]),
+[data-lang="it"] [lang]:not([lang="it"]),
+[data-lang="no"] [lang]:not([lang="no"]),
+[data-lang="tr"] [lang]:not([lang="tr"]) { display: none; }
 
 /* ── Header ─────────────────────────────────────────────────── */
 .head {
@@ -168,8 +177,23 @@ body::after {
   transition: color 180ms var(--ease), background-color 180ms var(--ease);
 }
 .lang button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
-[data-lang="pl"] .lang button:hover:not([aria-pressed="true"]),
-[data-lang="en"] .lang button:hover:not([aria-pressed="true"]) { color: var(--ink); }
+.lang button:hover:not([aria-pressed="true"]) { color: var(--ink); }
+
+/* Eight two-letter pills do not fit beside the wordmark and the three round
+   buttons on a phone, so below the breakpoint the row collapses into this
+   dropdown. Both controls are always in the DOM; syncLang() keeps them equal. */
+.lang-select { display: none; padding: 4px 10px 4px 12px; gap: 7px; }
+.lang-select select {
+  font: inherit; font-size: 11px; font-weight: 600; letter-spacing: .1em;
+  color: var(--ink); background: transparent;
+  border: 0; padding: 0; margin: 0;
+  cursor: pointer; appearance: none; -webkit-appearance: none;
+}
+.lang-select select:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
+/* The native popup paints on the platform's own surface, which ignores our
+   custom properties — fix both ends so dark theme stays legible. */
+.lang-select option { color: #21290e; background: #ffffff; }
+.lang-select svg { width: 11px; height: 11px; fill: none; stroke: currentColor; stroke-width: 2.2; flex: none; }
 
 .head .pdf-label { display: none; }
 @media (min-width: 900px) { .head .pdf-label { display: inline; } }
@@ -632,20 +656,39 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
   .slide.is-active .ghost { opacity: .7; }
 }
 @media (max-width: 720px) {
-  /* Four locales plus three buttons will not fit next to the wordmark —
-     tighten everything and drop the guide link (it is also on the last slide). */
+  /* Eight locales plus three buttons will not fit next to the wordmark —
+     tighten everything and drop the guide link (it is also on the last slide).
+     The doc title has already gone at 900px. */
   .head { gap: 10px; padding-inline: 14px; }
-  .head__doc, .head__sep { display: none; }
   .head__mark img { height: 18px; }
   .lang { padding: 2px; }
   .lang button { padding: 4px 6px; font-size: 10px; letter-spacing: .06em; }
   .btn { padding: 6px 10px; font-size: 11px; }
   .head > a.btn:last-child { display: none; }
 }
+@media (max-width: 900px) {
+  /* The pill row grew by four; the wordmark and the doc title are the only
+     two items that can give the width back, and only the title is built to do
+     it (nowrap + ellipsis). Rather than let both starve, drop the title here —
+     it repeats the cover slide's heading and now also the <title>. */
+  .head__doc, .head__sep { display: none; }
+}
+@media (min-width: 901px) {
+  /* Above the breakpoint the title is back and competes with the wordmark for
+     the same slack. Floor the wordmark so the title ellipsizes instead of both
+     collapsing; 96px still reads at the header's 21px cap. */
+  .head__mark { min-width: 96px; }
+}
+@media (max-width: 640px) {
+  /* Below this the eight pills overflow the header even tightened, so the
+     switcher becomes a dropdown. Verified in headless Chrome down to 320px:
+     no horizontal overflow, switcher never clipped. */
+  .lang { display: none; }
+  .lang-select { display: inline-flex; }
+}
 @media (max-width: 480px) {
   .head__mark img { height: 17px; }
   .btn-label { display: none; }
-  .lang button { padding: 4px 5px; }
 }
 @media (max-width: 860px) {
   :root { --rail-w: 0px; --head-h: 58px; }
@@ -748,11 +791,35 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
   </p>
   <div class="head__spacer"></div>
 
+  <!-- Two views of one control: the pills on a wide header, the dropdown on a
+       phone. Neither carries `lang` — these are chrome and stay visible in
+       every locale, which is why the switch is `data-set-lang`. -->
   <div class="lang btn" role="group" aria-label="Language">
     <button type="button" data-set-lang="pl" aria-pressed="true">PL</button>
     <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
     <button type="button" data-set-lang="de" aria-pressed="false">DE</button>
     <button type="button" data-set-lang="fr" aria-pressed="false">FR</button>
+    <button type="button" data-set-lang="es" aria-pressed="false">ES</button>
+    <button type="button" data-set-lang="it" aria-pressed="false">IT</button>
+    <button type="button" data-set-lang="no" aria-pressed="false">NO</button>
+    <button type="button" data-set-lang="tr" aria-pressed="false">TR</button>
+  </div>
+
+  <div class="lang-select btn">
+    <!-- Endonyms, so the list needs no translation of its own. -->
+    <select id="lang-select" aria-label="Language">
+      <option value="pl">Polski</option>
+      <option value="en">English</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="es">Español</option>
+      <option value="it">Italiano</option>
+      <option value="no">Norsk</option>
+      <option value="tr">Türkçe</option>
+    </select>
+    <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="m6 9 6 6 6-6"/>
+    </svg>
   </div>
 
   <button type="button" class="btn" id="theme" aria-label="Motyw / Theme">
@@ -1547,34 +1614,82 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
      the button does not have to wait. */
   (window.requestIdleCallback || function (fn) { setTimeout(fn, 4000); })(loadAllImages);
 
-  /* ── Language ── */
+  /* ── Language ──
+        Everything outside the deck that is not a translated <span> lives here:
+        the two switcher views, and the head metadata the CSS cannot reach.
+
+        <title> and the meta description are swapped in JS, so a crawler or a
+        link preview always sees the Polish ones in the markup. Accepted: this
+        is a single page and we are not chasing per-locale SEO. ── */
   var root = document.documentElement;
+  var langSelect = document.getElementById('lang-select');
+  var metaDesc = document.querySelector('meta[name="description"]');
+
+  var HEAD_TEXT = {
+    pl: {
+      title: 'Apisense BOX — Instrukcja montażu',
+      description: 'Interaktywna instrukcja montażu zestawu Apisense BOX: Hub, waga, VitalSensor, Tag i uchwyt na ramkę — krok po kroku.',
+      print: 'Zapisz jako PDF — jeden krok na stronę'
+    },
+    en: {
+      title: 'Apisense BOX — Assembly Instruction',
+      description: 'Interactive assembly guide for the Apisense BOX kit: Hub, scale, VitalSensor, Tag and frame holder — step by step.',
+      print: 'Save as PDF — one step per page'
+    },
+    de: {
+      title: 'Apisense BOX — Montageanleitung',
+      description: 'Interaktive Montageanleitung für das Apisense BOX Set: Hub, Waage, VitalSensor, Tag und Rähmchenhalter — Schritt für Schritt.',
+      print: 'Als PDF speichern — ein Schritt pro Seite'
+    },
+    fr: {
+      title: 'Apisense BOX — Guide de montage',
+      description: 'Guide de montage interactif du kit Apisense BOX : Hub, balance, VitalSensor, Tag et support de cadre — étape par étape.',
+      print: 'Enregistrer en PDF — une étape par page'
+    },
+    es: {
+      title: 'Apisense BOX — Instrucciones de montaje',
+      description: 'Guía interactiva de montaje del kit Apisense BOX: Hub, báscula, VitalSensor, Tag y soporte para cuadro — paso a paso.',
+      print: 'Guardar como PDF — un paso por página'
+    },
+    it: {
+      title: 'Apisense BOX — Istruzioni di montaggio',
+      description: 'Guida interattiva al montaggio del kit Apisense BOX: Hub, bilancia, VitalSensor, Tag e supporto per telaino — passo dopo passo.',
+      print: 'Salva come PDF — un passaggio per pagina'
+    },
+    no: {
+      title: 'Apisense BOX — Monteringsanvisning',
+      description: 'Interaktiv monteringsveiledning for Apisense BOX-settet: Hub, vekt, VitalSensor, Tag og rammeholder — steg for steg.',
+      print: 'Lagre som PDF — ett trinn per side'
+    },
+    tr: {
+      title: 'Apisense BOX — Montaj kılavuzu',
+      description: 'Apisense BOX seti için etkileşimli montaj kılavuzu: Hub, tartı, VitalSensor, Tag ve çerçeve tutucu — adım adım.',
+      print: 'PDF olarak kaydet — sayfa başına bir adım'
+    }
+  };
+
+  function setLang(l) {
+    root.setAttribute('data-lang', l);
+    root.lang = l;
+    localStorage.setItem('apisense-asm-lang', l);
+    syncLang();
+  }
+
   document.querySelectorAll('[data-set-lang]').forEach(function (b) {
-    b.addEventListener('click', function () {
-      var l = b.dataset.setLang;
-      root.setAttribute('data-lang', l);
-      root.lang = l;
-      localStorage.setItem('apisense-asm-lang', l);
-      syncLang();
-    });
+    b.addEventListener('click', function () { setLang(b.dataset.setLang); });
   });
+  langSelect.addEventListener('change', function () { setLang(langSelect.value); });
+
   function syncLang() {
     var cur = root.getAttribute('data-lang');
     document.querySelectorAll('[data-set-lang]').forEach(function (b) {
       b.setAttribute('aria-pressed', String(b.dataset.setLang === cur));
     });
-    printBtn.title = {
-      pl: 'Zapisz jako PDF — jeden krok na stronę',
-      en: 'Save as PDF — one step per page',
-      de: 'Als PDF speichern — ein Schritt pro Seite',
-      fr: 'Enregistrer en PDF — une étape par page'
-    }[cur] || 'PDF';
-    document.title = {
-      pl: 'Apisense BOX — Instrukcja montażu',
-      en: 'Apisense BOX — Assembly Instruction',
-      de: 'Apisense BOX — Montageanleitung',
-      fr: 'Apisense BOX — Guide de montage'
-    }[cur] || 'Apisense BOX';
+    langSelect.value = cur;
+    var head = HEAD_TEXT[cur] || HEAD_TEXT.pl;
+    printBtn.title = head.print;
+    document.title = head.title;
+    metaDesc.setAttribute('content', head.description);
   }
   syncLang();
 
