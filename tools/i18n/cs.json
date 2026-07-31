@@ -127,5 +127,6 @@
   "fc53250f0898": "Hub sbírá data ze senzorů a posílá je do aplikace. Pokud po několika hodinách stále nejsou žádné naměřené hodnoty, zkontrolujte baterie, dosah a seznam problémů v dokumentaci.",
   "a8ef2318c52e": "Úplný návod ke konfiguraci",
   "2a1f319432e3": "Řešení problémů",
-  "e050480eb62e": "Dokumentace Apisense"
+  "e050480eb62e": "Dokumentace Apisense",
+  "eb99a787bdcc": "do 35 m"
 }

@@ -127,5 +127,6 @@
   "fc53250f0898": "Hub samler inn data fra sensorene og sender dem til appen. Hvis avlesningene fortsatt mangler etter noen timer, sjekk batteriene, rekkevidden og problemlisten i dokumentasjonen.",
   "a8ef2318c52e": "Fullstendig konfigurasjonsveiledning",
   "2a1f319432e3": "Feilsøking",
-  "e050480eb62e": "Apisense-dokumentasjon"
+  "e050480eb62e": "Apisense-dokumentasjon",
+  "eb99a787bdcc": "inntil 35 m"
 }

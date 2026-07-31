@@ -127,5 +127,6 @@
   "fc53250f0898": "A Hub összegyűjti a szenzorok adatait, és elküldi az alkalmazásba. Ha néhány óra múlva sem érkeznek mérési adatok, ellenőrizd az elemeket, a hatótávolságot és a dokumentáció hibalistáját.",
   "a8ef2318c52e": "Teljes beállítási útmutató",
   "2a1f319432e3": "Hibaelhárítás",
-  "e050480eb62e": "Apisense dokumentáció"
+  "e050480eb62e": "Apisense dokumentáció",
+  "eb99a787bdcc": "legfeljebb 35 m"
 }
