@@ -28,7 +28,13 @@ from dataclasses import dataclass, field
 # Canonical span order inside a group. Kept identical everywhere so that the
 # diff of each new language reads as an append, not a reshuffle.
 # Which of them count as done lives in check_i18n.py — one list, one owner.
-LOCALE_ORDER = ("pl", "en", "de", "fr", "es", "it", "no", "tr")
+# A locale joins this tuple when someone starts translating it, not when the
+# translation lands: `i18n_inject.py` validates its arguments against it, so a
+# language missing from here cannot even be asked for a coverage report.
+LOCALE_ORDER = (
+    "pl", "en", "de", "fr", "es", "it", "no", "tr",
+    "cs", "sk", "hu", "hr", "ro", "fi", "nl", "sv", "da",
+)
 
 # `(?<![-\w])` and not `\b`: the language switcher's buttons carry
 # `data-set-lang="pl"`, which a word boundary happily matches. Those buttons are
