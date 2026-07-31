@@ -24,17 +24,20 @@ STANDALONE = ROOT / "docs" / "assembly" / "Apisense_BOX_Instrukcja_montazu_stand
 BUILD_STANDALONE = ROOT / "tools" / "build_standalone.py"
 OUT_DIR = ROOT / "docs" / "assembly" / "pdf"
 
-# One entry per locale the page can be read in — seventeen, matching
-# DEFAULT_LOCALES in tools/check_i18n.py. (The epic talks about twenty; `el` and
-# `ar` wait on ADR 0003 — Poppins has no Greek and no Arabic glyphs at all — and
-# `pt` on ADR 0004. Neither is scaffolded here: an entry with no translation
-# behind it would print a Polish PDF under a Portuguese name.)
+# One entry per locale the page can be read in — eighteen, matching
+# DEFAULT_LOCALES in tools/check_i18n.py. (The epic talks about twenty; `ar`
+# waits on #52, because the ADR that cleared Greek left Arabic conditional on
+# RTL the page does not have, and `pt` on ADR 0004. Neither is scaffolded here:
+# an entry with no translation behind it would print a Polish PDF under a
+# Portuguese name.)
 #
 # Each name is that locale's document title from HEAD_TEXT in
 # docs/assembly/index.html, transliterated to plain ASCII: á→a, ž→z, ș→s, ő→o,
-# å→a, ø→o, æ→ae. Names stay ASCII because these files travel as e-mail
+# å→a, ø→o, æ→ae, and for Greek by sound: Οδηγίες συναρμολόγησης →
+# Odigies_synarmologisis. Names stay ASCII because these files travel as e-mail
 # attachments, where a diacritic still reaches the recipient as `=?utf-8?...?=`
-# or as mojibake often enough to matter.
+# or as mojibake often enough to matter — and a Greek title would arrive that
+# way every time, not occasionally.
 #
 # `tr` keeps `Montaj_Talimati` from the first eight rather than following the
 # later HEAD_TEXT wording (`Montaj kılavuzu`) — same meaning, and the file has
@@ -57,6 +60,7 @@ LOCALES = {
     "nl": "Apisense_BOX_Montagehandleiding_nl.pdf",
     "sv": "Apisense_BOX_Monteringsanvisning_sv.pdf",
     "da": "Apisense_BOX_Monteringsvejledning_da.pdf",
+    "el": "Apisense_BOX_Odigies_synarmologisis_el.pdf",
 }
 
 CHROME_CANDIDATES = ["google-chrome", "google-chrome-stable", "chromium", "chromium-browser"]
@@ -137,7 +141,7 @@ def main(argv: list[str]) -> None:
         raise SystemExit(f"nieznane locale: {', '.join(unknown)} (dostępne: {', '.join(LOCALES)})")
 
     # The bundle is a gitignored local artifact, so a checkout routinely leaves one
-    # older than index.html. Printing that would produce seventeen PDFs quietly
+    # older than index.html. Printing that would produce eighteen PDFs quietly
     # missing whatever the page gained since — rebuild on stale, not just on absent.
     source = ROOT / "docs" / "assembly" / "index.html"
     if not STANDALONE.exists():
