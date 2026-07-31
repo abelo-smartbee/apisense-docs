@@ -13,6 +13,7 @@ Output: docs/assembly/Apisense_BOX_Instrukcja_montazu_standalone.html
 from __future__ import annotations
 
 import base64
+import hashlib
 import re
 import sys
 import urllib.request
@@ -95,31 +96,75 @@ def inline_family(family: str) -> list[str]:
     subset would otherwise silently ship a bundle with no Greek or no Arabic in
     it, and a missing glyph looks like a plausible one from the reader's
     fallback font.
+
+    Faces of one subset that turn out to be the *same file* are collapsed into a
+    single rule carrying a weight range. Noto Sans and Cairo are variable fonts:
+    `css2?...wght@300;400;500;600` answers with four @font-face blocks that
+    differ only in their `font-weight` line and point at one URL, and embedding
+    that URL four times put 210 688 B of duplicate base64 into a bundle whose
+    entire purpose is to fit in an e-mail. `font-weight: 300 600` is how a
+    variable font is meant to be declared — the browser sets the `wght` axis
+    instead of picking a pre-instanced file.
+
+    Grouped by the bytes, not by the family name: Poppins is a static family
+    whose ten faces are ten different files, and it must come out of here
+    unchanged. A future family that ships either way needs no decision here.
     """
     keep = KEEP_SUBSETS[family]
     css = fetch(FONT_CSS[family]).decode("utf-8")
     blocks = re.findall(r"/\*\s*([\w-]+)\s*\*/\s*(@font-face\s*\{.*?\})", css, re.S)
-    kept = []
+
+    downloaded: dict[str, bytes] = {}   # one fetch per URL, however often it repeats
+    faces: list[tuple[str, int, str, bytes]] = []
     for subset, block in blocks:
         if subset not in keep:
             continue
         match = re.search(r"url\((https://[^)]+)\)", block)
         if match is None:
             raise SystemExit(f"@font-face bez url() w subsecie {subset} — zmienił się format Google Fonts?")
-        data = base64.b64encode(fetch(match.group(1))).decode("ascii")
-        kept.append(
-            re.sub(
-                r"url\(https://[^)]+\)",
-                f"url(data:font/woff2;base64,{data})",
-                block,
+        weight = re.search(r"font-weight:\s*(\d+)\s*;", block)
+        if weight is None:
+            raise SystemExit(
+                f"{family}/{subset}: @font-face bez pojedynczej font-weight —"
+                " Google Fonts zmieniło format i grupowanie po wadze przestało działać"
             )
-        )
-    if not kept:
+        url = match.group(1)
+        if url not in downloaded:
+            downloaded[url] = fetch(url)
+        faces.append((subset, int(weight.group(1)), block, downloaded[url]))
+
+    if not faces:
         raise SystemExit(
             f"{family}: żaden subset z {', '.join(keep)} nie pasował"
             " — zmieniła się odpowiedź Google Fonts?"
         )
-    print(f"  fonts: {family} — {len(kept)} faces ({', '.join(keep)})")
+
+    groups: dict[tuple[str, str], list[tuple[int, str, bytes]]] = {}
+    for subset, weight, block, raw in faces:
+        groups.setdefault((subset, hashlib.sha1(raw).hexdigest()), []).append((weight, block, raw))
+
+    kept = []
+    for (subset, _), members in groups.items():
+        weights = sorted(w for w, _, _ in members)
+        _, block, raw = members[0]
+        block = re.sub(
+            r"url\(https://[^)]+\)",
+            "url(data:font/woff2;base64," + base64.b64encode(raw).decode("ascii") + ")",
+            block,
+        )
+        if len(members) > 1:
+            block = re.sub(
+                r"font-weight:\s*\d+\s*;",
+                f"font-weight: {weights[0]} {weights[-1]};",
+                block,
+            )
+        kept.append(block)
+
+    saved = sum(len(raw) for _, _, _, raw in faces) - sum(
+        len(members[0][2]) for members in groups.values()
+    )
+    note = f", zwinięte z {len(faces)} (−{saved} B woff2)" if saved else ""
+    print(f"  fonts: {family} — {len(kept)} faces ({', '.join(keep)}){note}")
     return kept
 
 

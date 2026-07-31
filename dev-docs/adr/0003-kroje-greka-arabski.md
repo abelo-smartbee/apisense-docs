@@ -299,13 +299,39 @@ wszystkich dwudziestu locale, więc decyzja o cyfrach ich nie dotyczy i nie
 mogłaby dotyczyć. Dotyczy cyfr wewnątrz tłumaczonych stringów — tam `20°`,
 `03.1 – 03.2`, `7`, `30` są zachodnie w `ar.json`, zero cyfr ٠–٩.
 
-**Znalezisko przy okazji, nienaprawione tutaj.** Noto Sans i Cairo są
-z Google Fonts **krojami zmiennymi** (`fvar` z osią `wght` 200–1000), a
+**Znalezisko przy okazji, naprawione w #69.** Noto Sans i Cairo są z Google
+Fonts **krojami zmiennymi** (`fvar` z osią `wght` 200–1000), a
 `css2?...wght@300;400;500;600` zwraca cztery bloki `@font-face` wskazujące ten
-sam plik. `tools/build_standalone.py` osadza go więc cztery razy: cztery
-identyczne payloady po SHA-1, 21 776 B i 30 896 B. Duplikatów w bundlu jest
-**158 016 B woff2, czyli 210 688 B base64 — 5,5% bundla**. Dotyczy to tak samo
-części greckiej, która jechała już wcześniej. Poprawka to jeden blok
-`@font-face` z `font-weight: 300 600` na rodzinę; ponieważ zmienia deklarowanie
-fontów dla wszystkich trzech rodzin, w tym wdrożonej i zweryfikowanej greckiej,
-idzie osobnym ticketem, a nie przy okazji tłumaczenia.
+sam plik. `tools/build_standalone.py` osadzał go więc cztery razy: cztery
+identyczne payloady po SHA-1, 21 776 B i 30 896 B — **158 016 B duplikatów
+woff2, 210 688 B w base64**. Dotyczyło to tak samo części greckiej, która
+jechała już od #63, więc poszło osobnym ticketem, a nie przy okazji
+tłumaczenia.
+
+## Korekta kosztu po #69 (2026-07-31)
+
+Liczby kosztowe w całym tym dokumencie — łącznie z rekomendacją **+284 944 B**
+i całą tabelą „Bundle — zmierzony, plik po pliku" — były policzone przy
+czterokrotnym osadzeniu obu krojów zmiennych. Po deduplikacji **decyzja się nie
+zmienia, ale cena spada o trzy czwarte w części niełacińskiej**:
+
+| | przed #69 | po #69 |
+|---|---|---|
+| Noto Sans `greek`, base64 w bundlu | 116 144 B | **29 036 B** |
+| Cairo `arabic`, base64 w bundlu | 164 784 B | **41 196 B** |
+| Poppins (statyczny, bez zmian) | 89 464 B | 89 464 B |
+| bundle | 3 845 132 B | **3 631 210 B** |
+
+Czyli obie rodziny niełacińskie kosztują dziś **70 232 B**, a nie 280 928 B.
+Rozważana w „Rozważonych alternatywach" rezygnacja z piątej grubości
+(+71 236 B) i subsetowanie pod faktyczny tekst dotyczyły świata, w którym każda
+grubość to osobny plik — przy krojach zmiennych piąta grubość nie kosztuje nic,
+bo to ta sama oś.
+
+Zweryfikowane, że zwinięcie czterech wstępnie zinstancjonowanych krojów w jeden
+zmienny z zakresem `font-weight: 300 600` niczego nie zmienia w renderze:
+pokrycie cmap identyczne (Poppins 349, Noto Sans 121, Cairo 297 punktów
+kodowych), szerokości tekstu przy wagach 300/400/500/600 **bajtowo takie same
+przed i po** i nadal cztery różne, a atrybucja per `LTChar` na nieskompresowanym
+PDF-ie bez zmian: 6 151 znaków greckich z Noto Sans, 933 arabskie plus 2 990
+form prezentacyjnych z Cairo, cała łacinka z Poppins.
