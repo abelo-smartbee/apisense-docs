@@ -249,3 +249,39 @@ argumentu. Pułapki 1–5 obowiązują w całości.
 buduje je nadal tylko z `langSpan('pl', …)` / `langSpan('en', …)`, przy 20
 kropkach szyny. Każdy kolejny locale powiększa tę dziurę o jeden; naprawa wymaga
 nowej treści do przetłumaczenia, nie zmiany w tych plikach.
+
+## Sprostowanie po fan-inie #62 + #63 (2026-07-31)
+
+Tabela wyżej rozjechała się drugi raz i rozjedzie się trzeci — dlatego zamiast
+jej przepisywać, tu są **przesunięcia zmierzone na gałęzi integracyjnej**, żeby
+następny czytelnik wiedział, o ile szukać, a nie tylko, że numery kłamią.
+
+Kolumna „Jest" była już nieaktualna **w chwili scalenia `main`**: zmierzona na
+`main` @129feb2 zgadza się tylko w wierszu reguł CSS, reszta odsyłaczy do
+`index.html` była przesunięta o **+86…+87 linii** (a `HEAD_TEXT[cur]` o +201),
+bo tabelę spisano w trakcie #50, przed wpięciem CSS panelu. Wiersze do plików
+`tools/` były na `main` dokładne.
+
+Wobec kolumny „Jest" ta gałąź przesuwa je tak:
+
+| Odsyłacz | „Jest" w tabeli | Na tej gałęzi | Δ |
+|---|---|---|---|
+| `i18n_lib.py` `LOCALE_ORDER` | `:34` | `:34` | 0 |
+| `i18n_lib.py` `_OPEN` | `:50` | `:51` | +1 |
+| `check_i18n.py` `DEFAULT_LOCALES` | `:61` | `:61` | 0 |
+| `check_i18n.py` listy przełącznika | `:83–86` | `:84–87` | +1 |
+| `check_i18n.py` `if loc in LOCALE_ORDER` | `:94` | `:95` | +1 |
+| `check_i18n.py` walidacja `--locales` | `:126` | `:127` | +1 |
+| `build_pdf.py` `LOCALES` | `:42` | `:44` | +2 |
+| `index.html` reguły CSS | `:110–126` (17) | `:119–137` (19) | +9 / +11 |
+| `index.html` `<option>` | `:819–836` | `:965–983` | +146 / +147 |
+| `index.html` `langSpan` (szyna) | `:1492` | `:1639` | +147 |
+| `index.html` `HEAD_TEXT` | `:1651–1737` | `:1798–1894` | +147 / +157 |
+| `index.html` `HEAD_TEXT[cur]` | `:1754` | `:2026` | +272 |
+
+**Puste dymki szyny to dziś 17 z 19 locale**, nie 15 z 17 — mechanizm bez zmian,
+tylko mianownik urósł o `pt` i `el`. Nadal 20 kropek, nadal tylko `pl`/`en`.
+
+Bez zmian merytorycznych: inwariant „locale = dwa znaki `[a-z]`" utrzymany,
+etykieta „Português (Brasil)" przy kodzie `pt` weszła zgodnie z rekomendacją,
+`SWITCHER_LISTS` ma nadal cztery wpisy.

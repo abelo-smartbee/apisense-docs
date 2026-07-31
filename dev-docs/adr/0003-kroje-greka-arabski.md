@@ -225,3 +225,22 @@ i tak przychodzi z Google Fonts i działa jako druga warstwa. Własny
 `@font-face` z ręcznie wpisanym zakresem nie był potrzebny i byłby kosztem
 utrzymania. Efekt jest ten, który ADR obiecywał: „Apisense BOX", „Hub",
 „VitalSensor", „ColonyLink" w wersji greckiej rysuje Poppins.
+
+## Domknięcie po fan-inie #62 + #63 (2026-07-31)
+
+Sprostowanie wyżej powstało na gałęzi samego #63 i domykało tylko połowę
+nieaktualnego akapitu. Druga połowa domyka się tutaj:
+
+- Zdanie „`pt` (#62) na ADR 0004" **też przestało obowiązywać** — ADR 0004 jest
+  zaakceptowany, `pt` wdrożony w tej samej gałęzi. Strona ma **19** locale, nie
+  17; do dwudziestu brakuje wyłącznie `ar` (#64), zablokowanego przez RTL (#52).
+- **Bundle po obu locale: 3 654 717 B**, czyli +150 964 B (+4,3%) względem bazy
+  3 503 753 B. Liczba 3 641 593 B ze sprostowania jest poprawna, ale sprzed
+  `pt`. Rozbicie: fonty greckie +118 852 B, tekst grecki +18 988 B, tekst
+  portugalski +13 125 B, korekta jednego słowa w komentarzu CSS −1 B.
+- **Przecięcie cmap × `unicode-range` powtórzone na zintegrowanym bundlu**
+  (metoda z `tools/build_standalone.py`): 14 `@font-face`, z tego 10 Poppins
+  (`latin` + `latin-ext`, 349 punktów kodowych, 0 greckich) i 4 Noto Sans
+  (`greek`, 4×21 776 B, 121 punktów kodowych, **0 z A–Za–z**). Żaden subset
+  `latin`/`latin-ext` Noto Sans nie wszedł do bundla — ani osobno, ani przy
+  okazji `pt`.
