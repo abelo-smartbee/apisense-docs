@@ -187,3 +187,41 @@ a nie tej gałęzi.
   Gałąź dowozi **17**: `el` i `ar` (#63, #64) czekają na akceptację tego ADR-a,
   `pt` (#62) na ADR 0004. Status pozostaje **proponowany** — nic z tego nie jest
   wdrożone i nie powinno być, dopóki właściciel identyfikacji się nie wypowie.
+
+## Sprostowanie po wdrożeniu części greckiej (#63, 2026-07-31)
+
+Akapit wyżej jest już nieaktualny w jednym zdaniu: część grecka **została
+wdrożona**, zgodnie ze statusem z nagłówka („zaakceptowany częściowo").
+Decyzja się nie zmienia — poniżej tylko to, co ADR wprost zostawił
+niezmierzone, uzupełnione realnymi liczbami. `ar` nadal nietknięty.
+
+**Pokrycie na faktycznym tekście** (sekcja „Czego nie zmierzono" prosiła
+o powtórzenie przecięcia po dostarczeniu tłumaczeń). Liczone na wydrukowanym
+PDF-ie, per znak, a nie na tekście źródłowym — bo `text-transform: uppercase`
+produkuje znaki, których w `tools/i18n/el.json` nie ma (ό → Ό). W dokumencie
+renderuje się **57** różnych punktów kodowych greckich; wszystkie 57 rysuje
+Noto Sans i wszystkie 57 są w cmapie osadzonego subsetu `greek`. Zero
+łacinki i cyfr rysuje Noto Sans, zero greki rysuje Poppins. Sam tekst
+źródłowy (spany + HEAD_TEXT + endonim) ma 50 różnych znaków greckich, też
+50/50 — to ta mniejsza liczba, którą dałoby sprawdzenie bez renderu.
+
+**Strona i PDF zostały wyrenderowane** — druga rzecz z tej samej sekcji.
+Poza jednym wyjątkiem cały dokument idzie z dwóch zamierzonych rodzin;
+`LiberationSans` (fallback systemu) rysuje dokładnie jeden znak, `≤`, tak
+samo jak w `pl`. `✱` i `≤` pozostają znane i nienaprawione we wszystkich
+locale.
+
+**Rozmiar.** Baza urosła jeszcze raz od poprzedniej aktualizacji: bundle
+przed zmianą to **3 503 753 B**, nie 3 494 225 B. Sama część grecka kosztuje
+**+118 852 B** wobec przewidywanych +117 040 B (różnica +1,5% — to Google
+Fonts, nie błąd rachunku; woff2 waży dokładnie 21 776 B na grubość, jak
+w tabeli). Po dołożeniu tłumaczenia bundle ma **3 641 593 B**.
+
+**Mechanizm łacinki wyszedł prostszy, niż zakładała „Decyzja".** ADR pisał
+o `unicode-range` ograniczającym nowy krój do bloku greckiego. W praktyce
+wystarczył sam porządek stosu — `Poppins, 'Noto Sans', …` — bo dopasowanie
+fontu w CSS działa per znak, a Poppins nie ma greki (0/69). `unicode-range`
+i tak przychodzi z Google Fonts i działa jako druga warstwa. Własny
+`@font-face` z ręcznie wpisanym zakresem nie był potrzebny i byłby kosztem
+utrzymania. Efekt jest ten, który ADR obiecywał: „Apisense BOX", „Hub",
+„VitalSensor", „ColonyLink" w wersji greckiej rysuje Poppins.
