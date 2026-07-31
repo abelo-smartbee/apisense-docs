@@ -63,6 +63,9 @@ LOCALES = {
     "el": "Apisense_BOX_Odigies_synarmologisis_el.pdf",
 }
 
+# Right-to-left locales — mirrors `window.APISENSE_RTL` in docs/assembly/index.html.
+RTL = {"ar"}
+
 CHROME_CANDIDATES = ["google-chrome", "google-chrome-stable", "chromium", "chromium-browser"]
 
 # The deck reveals itself on scroll; print needs every slide already settled.
@@ -158,7 +161,7 @@ def main(argv: list[str]) -> None:
     # The locale is preset by rewriting this exact string on <html>. If index.html
     # ever spells it differently, the replace would quietly do nothing and every
     # PDF would come out Polish — a wrong-language file looks perfectly fine.
-    ROOT_TAG = '<html lang="pl" data-lang="pl">'
+    ROOT_TAG = '<html lang="pl" data-lang="pl" dir="ltr">'
     if ROOT_TAG not in html:
         raise SystemExit(
             f"nie znaleziono {ROOT_TAG} w wersji standalone — bez tego wszystkie"
@@ -167,9 +170,16 @@ def main(argv: list[str]) -> None:
 
     with tempfile.TemporaryDirectory() as tmp:
         for loc in locales:
+            # `dir` is written into the tag rather than left to the page's own
+            # script, for the same reason `data-lang` is: headless Chrome prints
+            # what it finds in the markup. A PDF with the right glyphs and the
+            # wrong direction is the failure this exists to prevent, and unlike
+            # a wrong-language PDF it is not obvious to someone who cannot read
+            # the language.
             page = html.replace(
                 ROOT_TAG,
-                f'<html lang="{loc}" data-lang="{loc}" data-theme="light">',
+                f'<html lang="{loc}" data-lang="{loc}" data-theme="light"'
+                f' dir="{"rtl" if loc in RTL else "ltr"}">',
             ).replace("</head>", FREEZE + "</head>")
             src = Path(tmp) / f"{loc}.html"
             src.write_text(page, encoding="utf-8")

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pl" data-lang="pl">
+<html lang="pl" data-lang="pl" dir="ltr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -28,12 +28,19 @@
        renders each locale by presetting data-lang on <html> in headless
        Chrome, whose navigator.language is always en-US — auto-detection here
        would overwrite it and print every PDF in English. */
+    /* Right-to-left locales — the only list of them in this file. It lives up
+       here rather than in the main script because `dir` has to be settled
+       before first paint: setting it at the bottom of the page would show one
+       frame of a mirrored layout under an unmirrored one. The main script
+       reads this same global when the reader switches locale. */
+    window.APISENSE_RTL = ['ar'];
     var l = localStorage.getItem('apisense-asm-lang');
     if (['pl', 'en', 'de', 'fr', 'es', 'it', 'no', 'tr',
          'cs', 'sk', 'hu', 'hr', 'ro', 'fi', 'nl', 'sv', 'da',
          'pt', 'el'].indexOf(l) > -1) {
       document.documentElement.setAttribute('data-lang', l);
       document.documentElement.lang = l;
+      document.documentElement.dir = APISENSE_RTL.indexOf(l) > -1 ? 'rtl' : 'ltr';
     }
   })();
 </script>
@@ -60,6 +67,12 @@
   --grid-unit: 8px;
   --rail-w: 72px;
   --head-h: 68px;
+
+  /* Inline-axis sign: +1 in LTR, -1 in RTL. Only for the handful of things CSS
+     gives no logical form — a translate along the inline axis. Everything that
+     *can* be expressed logically is, and does not go through here. See the RTL
+     section below. */
+  --dir: 1;
 
   --ease: cubic-bezier(.22, .8, .28, 1);
   --slow: 900ms;
@@ -168,10 +181,50 @@ body::after {
    `'Segoe UI'` stays where `body` had it: if the webfont fails, Windows still
    has Greek. */
 
+/* ── RTL ─────────────────────────────────────────────────────────
+   Arabic is the one right-to-left locale. Direction belongs to the layout, not
+   to a sentence: this page shows one span of a group at a time, so putting
+   `dir` on the span would reorder the words inside a heading and leave the
+   grid, the rail, the ghost numeral and the progress hairline mirrored the
+   wrong way round it. It goes on <html>, beside `data-lang`, set by `setLang()`
+   and by the boot script in the <head> — and written straight into the tag by
+   tools/build_pdf.py for a headless print.
+
+   Almost all of the mirroring is done by the layout engine, because the whole
+   stylesheet moved to logical properties: `inset-inline-start`, `padding-inline`,
+   `border-inline-end`, `margin-inline-end`, `text-align: start`. In LTR those
+   compute to exactly the physical properties they replaced, which is what makes
+   the conversion safe for the other locales — flex and grid already follow
+   `direction` on their own and needed nothing.
+
+   What is left here is the residue: values with a physical direction baked into
+   them rather than into the property name, which no amount of `-inline-`
+   reaches — gradient angles, `clip-path: inset()` (whose four numbers are
+   top/right/bottom/left), and `translateX`, hence `--dir`.
+
+   `body::before` keeps its `to right`: it tiles 1px vertical rules across the
+   whole viewport, and a mirrored tiling of evenly spaced lines is the same
+   tiling. */
+[dir="rtl"] { --dir: -1; }
+
+/* The rail's fade leans off the page edge the rail sits on. */
+[dir="rtl"] .rail {
+  background: linear-gradient(to left, color-mix(in srgb, var(--paper) 70%, transparent), transparent);
+}
+
+/* Plotted-line reveal: the drawing prints from the edge the reader starts at.
+   Only the hidden state is handed: `inset(0 0 0 0)` is already direction-free. */
+[dir="rtl"] .plate img { clip-path: inset(0 0 0 100%); }
+
+/* The scroll cue's hairline fades away from the word, not into it. */
+[dir="rtl"] .scrollcue span::after {
+  background: linear-gradient(270deg, var(--amber), transparent);
+}
+
 /* ── Header ─────────────────────────────────────────────────── */
 .head {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: 0; inset-inline: 0;
   height: var(--head-h);
   display: flex;
   align-items: center;
@@ -249,7 +302,7 @@ body::after {
    for why the label keeps its regional half, and where the reader still gets
    to see it whole. So `text-overflow: ellipsis` is now load-bearing, not
    insurance: a longer endonym is clipped, never a broken header. */
-.lang-select { padding: 5px 11px 5px 10px; gap: 6px; }
+.lang-select { padding-block: 5px; padding-inline: 10px 11px; gap: 6px; }
 .lang-select select {
   font: inherit; font-size: 11px; font-weight: 600; letter-spacing: .1em;
   color: var(--ink); background: transparent;
@@ -285,10 +338,10 @@ body::after {
    dead control as before, not a new one. */
 .lang-select.is-enhanced { position: relative; display: inline-flex; border: 0; padding: 0; background: none; }
 .lang-select.is-enhanced > select { display: none; }
-.lang-trigger { padding: 5px 11px 5px 10px; gap: 6px; }
+.lang-trigger { padding-block: 5px; padding-inline: 10px 11px; gap: 6px; }
 .lang-cur {
   font-size: 11px; font-weight: 600; letter-spacing: .1em;
-  width: 7.4em; text-align: left;
+  width: 7.4em; text-align: start;
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 .lang-trigger svg:last-child { transition: transform 200ms var(--ease); }
@@ -296,7 +349,7 @@ body::after {
 .lang-trigger[aria-expanded="true"] svg:last-child { transform: rotate(180deg); }
 
 .lang-panel {
-  position: absolute; top: calc(100% + 8px); right: 0;
+  position: absolute; top: calc(100% + 8px); inset-inline-end: 0;
   /* Above the header's own 40 and the 41 the rail sits on. */
   z-index: 45;
   width: min(320px, calc(100vw - 32px));
@@ -345,7 +398,7 @@ body::after {
   .lang-panel {
     position: fixed;
     top: calc(var(--head-h) + 8px);
-    left: 12px; right: 12px;
+    inset-inline: 12px;
     width: auto;
   }
 }
@@ -359,7 +412,7 @@ body::after {
 /* Scroll progress hairline */
 .progress {
   position: fixed;
-  top: var(--head-h); left: 0;
+  top: var(--head-h); inset-inline-start: 0;
   height: 2px; width: 0%;
   background: var(--amber);
   z-index: 41;
@@ -369,7 +422,7 @@ body::after {
 /* ── Chapter rail ───────────────────────────────────────────── */
 .rail {
   position: fixed;
-  left: 0; top: var(--head-h); bottom: 0;
+  inset-inline-start: 0; top: var(--head-h); bottom: 0;
   width: var(--rail-w);
   z-index: 30;
   display: flex;
@@ -377,7 +430,7 @@ body::after {
   align-items: center;
   justify-content: center;
   gap: 9px;
-  border-right: 1px solid var(--rule);
+  border-inline-end: 1px solid var(--rule);
   background: linear-gradient(to right, color-mix(in srgb, var(--paper) 70%, transparent), transparent);
 }
 .rail a {
@@ -405,7 +458,7 @@ body::after {
 .rail a[data-chapter-start]::before {
   content: attr(data-chapter-start);
   position: absolute;
-  right: calc(100% + 2px);
+  inset-inline-end: calc(100% + 2px);
   font-family: Poppins, 'Noto Sans', sans-serif;
   font-size: 10px;
   color: var(--ink-3);
@@ -413,7 +466,7 @@ body::after {
 }
 .rail .tip {
   position: absolute;
-  left: calc(100% + 14px);
+  inset-inline-start: calc(100% + 14px);
   white-space: nowrap;
   font-size: 12px;
   font-weight: 500;
@@ -422,7 +475,7 @@ body::after {
   background: var(--ink);
   color: var(--paper);
   opacity: 0;
-  transform: translateX(-6px);
+  transform: translateX(calc(-6px * var(--dir)));
   pointer-events: none;
   transition: all 220ms var(--ease);
 }
@@ -447,14 +500,17 @@ body::after {
   position: relative;
   display: flex;
   align-items: center;
-  padding: calc(var(--head-h) + clamp(20px, 4vh, 52px)) clamp(20px, 4vw, 68px) clamp(28px, 6vh, 64px) calc(var(--rail-w) + clamp(20px, 4vw, 60px));
+  /* The inline-start pad clears the fixed rail; the two are read as one offset
+     by `.scrollcue`, which has to line up with the text column. */
+  padding-block: calc(var(--head-h) + clamp(20px, 4vh, 52px)) clamp(28px, 6vh, 64px);
+  padding-inline: calc(var(--rail-w) + clamp(20px, 4vw, 60px)) clamp(20px, 4vw, 68px);
   overflow: hidden;
 }
 
 /* Oversized ghost numeral bleeding off the left edge — the anchor. */
 .ghost {
   position: absolute;
-  left: -.07em;
+  inset-inline-start: -.07em;
   bottom: -.30em;
   font-family: Poppins, 'Noto Sans', sans-serif;
   font-weight: 200;
@@ -567,7 +623,7 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
 .note {
   margin: 20px 0 0;
   padding: 13px 16px;
-  border-left: 2px solid var(--amber);
+  border-inline-start: 2px solid var(--amber);
   background: var(--amber-soft);
   border-radius: 0;
   font-size: .87rem;
@@ -601,8 +657,17 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
   opacity: .75;
   transition: opacity 600ms var(--ease) 500ms;
 }
-.plate::before { top: -1px; left: -1px; border-width: 1px 0 0 1px; }
-.plate::after  { bottom: -1px; right: -1px; border-width: 0 1px 1px 0; }
+/* Widths are subtracted from the `border: 1px` above rather than set outright,
+   so the pair keeps its two corners under either direction: the tick always
+   hugs the block-start/inline-start corner and its opposite. */
+.plate::before {
+  inset-block-start: -1px; inset-inline-start: -1px;
+  border-block-end-width: 0; border-inline-end-width: 0;
+}
+.plate::after {
+  inset-block-end: -1px; inset-inline-end: -1px;
+  border-block-start-width: 0; border-inline-start-width: 0;
+}
 
 .plate img {
   display: block;
@@ -697,7 +762,7 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
 .slide--cover .wrap { grid-template-columns: minmax(0, 1fr); }
 .cover-art {
   position: absolute;
-  right: -6%;
+  inset-inline-end: -6%;
   top: 50%;
   translate: 0 -50%;
   width: min(64vw, 900px);
@@ -729,7 +794,7 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
 
 .scrollcue {
   position: absolute;
-  left: calc(var(--rail-w) + clamp(20px, 4vw, 60px));
+  inset-inline-start: calc(var(--rail-w) + clamp(20px, 4vw, 60px));
   bottom: clamp(22px, 5vh, 46px);
   display: flex;
   align-items: center;
@@ -745,11 +810,14 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
   display: inline-block;
   width: 46px; height: 1px;
   background: linear-gradient(90deg, var(--amber), transparent);
-  margin-left: 12px;
+  margin-inline-start: 12px;
   vertical-align: middle;
   animation: cue 2.4s var(--ease) infinite;
 }
-@keyframes cue { 0%,100% { transform: translateX(0); opacity: 1; } 50% { transform: translateX(10px); opacity: .35; } }
+@keyframes cue {
+  0%,100% { transform: translateX(0); opacity: 1; }
+  50% { transform: translateX(calc(10px * var(--dir))); opacity: .35; }
+}
 
 /* ── Outro ──────────────────────────────────────────────────── */
 .contact {
@@ -772,7 +840,7 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
 /* ── Nav buttons ────────────────────────────────────────────── */
 .nav {
   position: fixed;
-  right: clamp(16px, 3vw, 34px);
+  inset-inline-end: clamp(16px, 3vw, 34px);
   bottom: clamp(18px, 3vh, 30px);
   z-index: 35;
   display: flex;
@@ -784,7 +852,7 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
   font-size: 11px;
   font-weight: 500;
   color: var(--ink-3);
-  margin-right: 6px;
+  margin-inline-end: 6px;
   letter-spacing: .14em;
   font-variant-numeric: tabular-nums;
 }
@@ -819,9 +887,9 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
      The doc title has already gone at 900px. */
   .head { gap: 10px; padding-inline: 14px; }
   .head__mark img { height: 18px; }
-  .lang-select { padding: 5px 9px 5px 8px; }
+  .lang-select { padding-block: 5px; padding-inline: 8px 9px; }
   .lang-select.is-enhanced { padding: 0; }
-  .lang-trigger { padding: 5px 9px 5px 8px; }
+  .lang-trigger { padding-block: 5px; padding-inline: 8px 9px; }
   .btn { padding: 6px 10px; font-size: 11px; }
   .head > a.btn:last-child { display: none; }
 }
@@ -861,11 +929,11 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
     border-bottom: 1px solid var(--rule);
   }
   .slide:first-child { padding-top: calc(var(--head-h) + 40px); min-height: 88dvh; }
-  .scrollcue { left: 20px; }
+  .scrollcue { inset-inline-start: 20px; }
   .nav { display: none; }
   .plate img { max-height: none; }
   .ghost { font-size: 13rem; bottom: -.24em; }
-  .cover-art { width: 130vw; right: -34%; }
+  .cover-art { width: 130vw; inset-inline-end: -34%; }
   .slide--cover.is-active .cover-art { opacity: .06; }
 }
 
@@ -1730,18 +1798,26 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
   window.addEventListener('resize', onScroll, { passive: true });
   onScroll();
 
-  /* ── Keyboard ── */
+  /* ── Keyboard ──
+        The deck scrolls down whichever way the script runs, so Up/Down are
+        fixed. Left/Right are not: they mean back/forward along the inline axis,
+        and in RTL that is mirrored. Read off `<html dir>` rather than off a
+        locale list, so a document that build_pdf.py force-set to rtl behaves
+        the same as one the reader switched. */
+  function inlineStep(key) {
+    var back = document.documentElement.dir === 'rtl' ? 'ArrowRight' : 'ArrowLeft';
+    return key === back ? -1 : 1;
+  }
+
   document.addEventListener('keydown', function (e) {
     if (e.target.closest('input, textarea, select')) return;
     switch (e.key) {
       case 'ArrowDown': case 'PageDown': case ' ':
         e.preventDefault(); go(active + 1); break;
-      case 'ArrowRight':
-        go(active + 1); break;
       case 'ArrowUp': case 'PageUp':
         e.preventDefault(); go(active - 1); break;
-      case 'ArrowLeft':
-        go(active - 1); break;
+      case 'ArrowRight': case 'ArrowLeft':
+        go(active + inlineStep(e.key)); break;
       case 'Home': e.preventDefault(); go(0); break;
       case 'End':  e.preventDefault(); go(slides.length - 1); break;
     }
@@ -1903,6 +1979,10 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
   function setLang(l) {
     root.setAttribute('data-lang', l);
     root.lang = l;
+    /* Same list the boot script used, so a switch mid-session lands exactly
+       where a reload would. Direction is a layout property here, not a text
+       one: it goes on <html>, never on the individual spans. */
+    root.dir = (window.APISENSE_RTL || []).indexOf(l) > -1 ? 'rtl' : 'ltr';
     localStorage.setItem('apisense-asm-lang', l);
     syncLang();
   }
@@ -2029,8 +2109,9 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
       var i = langOpts.indexOf(document.activeElement);
       if (i < 0) return;
       var next;
-      if (e.key === 'ArrowRight') next = i + 1;
-      else if (e.key === 'ArrowLeft') next = i - 1;
+      /* The grid flows right-to-left in RTL, so the arrow that walks forward
+         through the options flips with it — same helper the deck uses. */
+      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') next = i + inlineStep(e.key);
       else if (e.key === 'ArrowDown') next = vertical(i, 1);
       else if (e.key === 'ArrowUp') next = vertical(i, -1);
       else if (e.key === 'Home') next = 0;
