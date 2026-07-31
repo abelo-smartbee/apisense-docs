@@ -198,7 +198,16 @@ niezmierzone, uzupełnione realnymi liczbami. `ar` nadal nietknięty.
 **Pokrycie na faktycznym tekście** (sekcja „Czego nie zmierzono" prosiła
 o powtórzenie przecięcia po dostarczeniu tłumaczeń). Liczone na wydrukowanym
 PDF-ie, per znak, a nie na tekście źródłowym — bo `text-transform: uppercase`
-produkuje znaki, których w `tools/i18n/el.json` nie ma (ό → Ό). W dokumencie
+produkuje znaki, których w `tools/i18n/el.json` nie ma. Przykład w pierwszej
+wersji tej notatki (ό → Ό) był błędny i warto go sprostować, bo dotyczy reguły,
+o którą epik #47 prosił wprost: przy `lang="el"` przeglądarka **usuwa tonos**
+w wersalikach, zgodnie z regułą greki, więc powstaje ό → Ο, nie Ό. Zmierzone
+w headless Chrome: „Βήμα Ελληνικά ό" po `uppercase` ma 364,41 px, dokładnie
+tyle co dosłowne „ΒΗΜΑ ΕΛΛΗΝΙΚΑ Ο", a wersja z akcentami 378,28 px; ten sam
+napis z `lang="en"` daje 378,28 px, czyli akcenty zostają. Wielkie Ό i Έ
+w `el.json` są (1 i 3 wystąpienia), ale pochodzą z początków zdań, nie
+z transformacji. Nowe punkty kodowe biorą się z nieakcentowanych wersalików.
+W dokumencie
 renderuje się **57** różnych punktów kodowych greckich; wszystkie 57 rysuje
 Noto Sans i wszystkie 57 są w cmapie osadzonego subsetu `greek`. Zero
 łacinki i cyfr rysuje Noto Sans, zero greki rysuje Poppins. Sam tekst
