@@ -129,7 +129,11 @@ body::after {
   backdrop-filter: blur(14px) saturate(1.2);
   border-bottom: 1px solid var(--rule);
 }
-.head__mark { display: flex; align-items: center; gap: 12px; min-width: 0; }
+/* Floored, not shrinkable: the wordmark is the header item that loses every
+   flex negotiation, and once it starts shrinking it goes all the way down to a
+   smear. 96px still reads at the header's 21px cap. Everything to its right is
+   sized so that this floor holds down to a 320px viewport. */
+.head__mark { display: flex; align-items: center; gap: 12px; min-width: 96px; }
 /* Brand wordmark from docs/assets/branding — transparent PNG, black art,
    so a plain invert carries it onto the dark theme. */
 .head__mark img { height: 21px; width: auto; max-width: 100%; object-fit: contain; display: block; }
@@ -169,31 +173,32 @@ body::after {
 .btn.is-busy { opacity: .55; pointer-events: none; }
 .btn:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
 
-.lang { display: inline-flex; padding: 3px; gap: 2px; }
-.lang button {
-  font: inherit; font-size: 11px; font-weight: 600; letter-spacing: .1em;
-  border: 0; background: transparent; color: var(--ink-3);
-  padding: 4px 9px; border-radius: 999px; cursor: pointer;
-  transition: color 180ms var(--ease), background-color 180ms var(--ease);
-}
-.lang button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
-.lang button:hover:not([aria-pressed="true"]) { color: var(--ink); }
+/* The one language switcher, at every width. A row of two-letter pills fitted
+   eight locales above 640px and nothing above that count: twenty pills are
+   ~700px of header that also carries the wordmark, the doc title and two
+   buttons, so there is no screen where they fit and nothing left to hide.
+   The dropdown replaces them outright (#50).
 
-/* Eight two-letter pills do not fit beside the wordmark and the three round
-   buttons on a phone, so below the breakpoint the row collapses into this
-   dropdown. Both controls are always in the DOM; syncLang() keeps them equal. */
-.lang-select { display: none; padding: 4px 10px 4px 12px; gap: 7px; }
+   The field is a fixed width, sized for the longest endonym rather than for
+   the selected one, so neither the number of options nor which is picked can
+   move the header around. The globe carries the meaning the pills used to. */
+.lang-select { padding: 5px 11px 5px 10px; gap: 6px; }
 .lang-select select {
   font: inherit; font-size: 11px; font-weight: 600; letter-spacing: .1em;
   color: var(--ink); background: transparent;
   border: 0; padding: 0; margin: 0;
+  width: 7.4em; text-overflow: ellipsis;
   cursor: pointer; appearance: none; -webkit-appearance: none;
 }
-.lang-select select:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
+/* Focus lands on the <select>, but the ring belongs on the pill around it —
+   otherwise it draws inside the border and reads as a rendering glitch. */
+.lang-select:focus-within { border-color: var(--ink); outline: 2px solid var(--amber); outline-offset: 2px; }
+.lang-select select:focus, .lang-select select:focus-visible { outline: none; }
 /* The native popup paints on the platform's own surface, which ignores our
    custom properties — fix both ends so dark theme stays legible. */
 .lang-select option { color: #21290e; background: #ffffff; }
 .lang-select svg { width: 11px; height: 11px; fill: none; stroke: currentColor; stroke-width: 2.2; flex: none; }
+.lang-select .globe { width: 13px; height: 13px; stroke-width: 1.5; color: var(--ink-2); }
 
 .head .pdf-label { display: none; }
 @media (min-width: 900px) { .head .pdf-label { display: inline; } }
@@ -656,39 +661,36 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
   .slide.is-active .ghost { opacity: .7; }
 }
 @media (max-width: 720px) {
-  /* Eight locales plus three buttons will not fit next to the wordmark —
+  /* The switcher plus three buttons will not fit next to the wordmark —
      tighten everything and drop the guide link (it is also on the last slide).
      The doc title has already gone at 900px. */
   .head { gap: 10px; padding-inline: 14px; }
   .head__mark img { height: 18px; }
-  .lang { padding: 2px; }
-  .lang button { padding: 4px 6px; font-size: 10px; letter-spacing: .06em; }
+  .lang-select { padding: 5px 9px 5px 8px; }
   .btn { padding: 6px 10px; font-size: 11px; }
   .head > a.btn:last-child { display: none; }
 }
 @media (max-width: 900px) {
-  /* The pill row grew by four; the wordmark and the doc title are the only
-     two items that can give the width back, and only the title is built to do
-     it (nowrap + ellipsis). Rather than let both starve, drop the title here —
-     it repeats the cover slide's heading and now also the <title>. */
+  /* The wordmark and the doc title are the only two items that can give width
+     back, and only the title is built to do it (nowrap + ellipsis). Rather
+     than let both starve, drop the title here — it repeats the cover slide's
+     heading and now also the <title>. */
   .head__doc, .head__sep { display: none; }
 }
-@media (min-width: 901px) {
-  /* Above the breakpoint the title is back and competes with the wordmark for
-     the same slack. Floor the wordmark so the title ellipsizes instead of both
-     collapsing; 96px still reads at the header's 21px cap. */
-  .head__mark { min-width: 96px; }
-}
-@media (max-width: 640px) {
-  /* Below this the eight pills overflow the header even tightened, so the
-     switcher becomes a dropdown. Verified in headless Chrome down to 320px:
-     no horizontal overflow, switcher never clipped. */
-  .lang { display: none; }
-  .lang-select { display: inline-flex; }
-}
 @media (max-width: 480px) {
+  /* The phone header is wordmark + switcher + two round buttons and nothing
+     else, and the wordmark's 96px floor is not negotiable — so the switcher
+     gives the width back: no globe, tighter type, a field sized for the
+     longest endonym at 10px. Measured in headless Chrome at a 320px viewport:
+     96 + 100 + 32 + 32 + gaps lands 1px inside a 305px content box, and a
+     phone's overlay scrollbar gives back the 15px this measurement lost. */
+  .head { gap: 8px; padding-inline: 12px; }
   .head__mark img { height: 17px; }
+  .btn { padding: 6px 8px; }
   .btn-label { display: none; }
+  .lang-select { padding: 5px 8px; gap: 5px; }
+  .lang-select .globe { display: none; }
+  .lang-select select { font-size: 10px; letter-spacing: .04em; width: 6.6em; }
 }
 @media (max-width: 860px) {
   :root { --rail-w: 0px; --head-h: 58px; }
@@ -791,30 +793,27 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
   </p>
   <div class="head__spacer"></div>
 
-  <!-- Two views of one control: the pills on a wide header, the dropdown on a
-       phone. Neither carries `lang` — these are chrome and stay visible in
-       every locale, which is why the switch is `data-set-lang`. -->
-  <div class="lang btn" role="group" aria-label="Language">
-    <button type="button" data-set-lang="pl" aria-pressed="true">PL</button>
-    <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
-    <button type="button" data-set-lang="de" aria-pressed="false">DE</button>
-    <button type="button" data-set-lang="fr" aria-pressed="false">FR</button>
-    <button type="button" data-set-lang="es" aria-pressed="false">ES</button>
-    <button type="button" data-set-lang="it" aria-pressed="false">IT</button>
-    <button type="button" data-set-lang="no" aria-pressed="false">NO</button>
-    <button type="button" data-set-lang="tr" aria-pressed="false">TR</button>
-  </div>
+  <!-- The only language switcher, at every width. It carries no `lang` — this
+       is chrome and stays visible in every locale.
 
+       Options are endonyms, so the list needs no translation of its own, and
+       they are ordered alphabetically by endonym. The order is HAND-MADE: the
+       browser sorts nothing here, and a byte sort is not alphabetical for the
+       accented ones (Čeština would land after Suomi, Türkçe after Svenska).
+       Insert a new locale where its endonym belongs in ICU root collation —
+       Č directly after C, ñ/ö/ü with their unaccented letter. -->
   <div class="lang-select btn">
-    <!-- Endonyms, so the list needs no translation of its own. -->
-    <select id="lang-select" aria-label="Language">
-      <option value="pl">Polski</option>
-      <option value="en">English</option>
+    <svg class="globe" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18"/>
+    </svg>
+    <select id="lang-select" aria-label="Język / Language">
       <option value="de">Deutsch</option>
-      <option value="fr">Français</option>
+      <option value="en">English</option>
       <option value="es">Español</option>
+      <option value="fr">Français</option>
       <option value="it">Italiano</option>
       <option value="no">Norsk</option>
+      <option value="pl">Polski</option>
       <option value="tr">Türkçe</option>
     </select>
     <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -1609,7 +1608,7 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
 
   /* ── Language ──
         Everything outside the deck that is not a translated <span> lives here:
-        the two switcher views, and the head metadata the CSS cannot reach.
+        the switcher, and the head metadata the CSS cannot reach.
 
         <title> and the meta description are swapped in JS, so a crawler or a
         link preview always sees the Polish ones in the markup. Accepted: this
@@ -1668,16 +1667,13 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
     syncLang();
   }
 
-  document.querySelectorAll('[data-set-lang]').forEach(function (b) {
-    b.addEventListener('click', function () { setLang(b.dataset.setLang); });
-  });
+  /* `change` fires the moment the value changes — on a click in the popup and
+     on an arrow key with the popup closed — so the keyboard applies the locale
+     immediately, not on blur. */
   langSelect.addEventListener('change', function () { setLang(langSelect.value); });
 
   function syncLang() {
     var cur = root.getAttribute('data-lang');
-    document.querySelectorAll('[data-set-lang]').forEach(function (b) {
-      b.setAttribute('aria-pressed', String(b.dataset.setLang === cur));
-    });
     langSelect.value = cur;
     var head = HEAD_TEXT[cur] || HEAD_TEXT.pl;
     printBtn.title = head.print;
