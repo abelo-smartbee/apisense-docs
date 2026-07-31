@@ -48,22 +48,26 @@ DEFAULT_LOCALES = ("pl", "en", "de", "fr", "es", "it", "no", "tr")
 DEFAULT_LIMIT = 20
 
 
-# The page names its locales in five independent places, and a locale present in
-# some but not others fails as quietly as a missing span: in the CSS but not the
-# buttons is a locale nobody can reach, in the buttons but not the CSS is a button
-# that shows every language at once, in the pills but not HEAD_TEXT is a Polish
-# <title> on a Turkish page. Nothing enforces agreement, so this does.
+# The page names its locales in four independent places, and a locale present in
+# some but not others fails as quietly as a missing span: in the CSS but not in
+# the <option>s is a locale nobody can reach, in the <option>s but not the CSS is
+# an entry that shows every language at once, in the <option>s but not HEAD_TEXT
+# is a Polish <title> on a Turkish page. Nothing enforces agreement, so this does.
+#
+# There were five lists until the pills went away — the switcher is one <select>
+# now, so `data-set-lang` no longer exists anywhere on the page. Dropping the
+# list costs nothing: the pills were never the only reachability signal, and a
+# locale missing from any surviving one is still caught here.
 SWITCHER_LISTS = {
     "reguły CSS": re.compile(r'\[data-lang="([a-z]{2})"\] \[lang\]'),
     "allowlist w <head>": re.compile(r"'([a-z]{2})'(?=[,\]])"),
-    "pigułki": re.compile(r'data-set-lang="([a-z]{2})"'),
     "<option>": re.compile(r'<option value="([a-z]{2})"'),
     "HEAD_TEXT": re.compile(r"^\s{4}([a-z]{2}): \{$", re.M),
 }
 
 
 def switcher_locales(html: str) -> dict[str, set[str]]:
-    """What each of the five lists thinks the supported locales are."""
+    """What each of the lists thinks the supported locales are."""
     found = {}
     for name, pattern in SWITCHER_LISTS.items():
         hits = {loc for loc in pattern.findall(html) if loc in LOCALE_ORDER}
@@ -72,10 +76,16 @@ def switcher_locales(html: str) -> dict[str, set[str]]:
 
 
 def check_switcher(html: str, locales: list[str]) -> list[str]:
-    """Complaints about the five lists — empty when they all agree."""
+    """Complaints about the lists — empty when they all agree."""
     found = switcher_locales(html)
     problems = []
     for name, hits in found.items():
+        # A pattern that matches nothing at all means the markup moved out from
+        # under it, not that the page lost every locale. Say so, otherwise the
+        # check quietly turns into a no-op the day someone rewrites the header.
+        if not hits:
+            problems.append(f"{name}: wzorzec nie znalazł ani jednego locale")
+            continue
         if missing := [loc for loc in locales if loc not in hits]:
             problems.append(f"{name}: brak {', '.join(missing)}")
     # Also catch the reverse — a locale wired into the page that nobody translated.
