@@ -24,16 +24,14 @@ STANDALONE = ROOT / "docs" / "assembly" / "Apisense_BOX_Instrukcja_montazu_stand
 BUILD_STANDALONE = ROOT / "tools" / "build_standalone.py"
 OUT_DIR = ROOT / "docs" / "assembly" / "pdf"
 
-# One entry per locale the page can be read in — nineteen, matching
-# DEFAULT_LOCALES in tools/check_i18n.py. (The epic talks about twenty; the
-# twentieth, `ar`, waits on #52, because the ADR that cleared Greek left Arabic
-# conditional on RTL the page does not have. It is not scaffolded here: an entry
-# with no translation behind it would print a Polish PDF under an Arabic name.)
+# One entry per locale the page can be read in — twenty, matching
+# DEFAULT_LOCALES in tools/check_i18n.py. The set the epic asked for is complete.
 #
 # Each name is that locale's document title from HEAD_TEXT in
 # docs/assembly/index.html, transliterated to plain ASCII: á→a, ž→z, ș→s, ő→o,
-# å→a, ø→o, æ→ae, and for Greek by sound: Οδηγίες συναρμολόγησης →
-# Odigies_synarmologisis. Names stay ASCII because these files travel as e-mail
+# å→a, ø→o, æ→ae, and for Greek and Arabic by sound: Οδηγίες συναρμολόγησης →
+# Odigies_synarmologisis, دليل التركيب → Dalil_al-tarkib. Names stay ASCII
+# because these files travel as e-mail
 # attachments, where a diacritic still reaches the recipient as `=?utf-8?...?=`
 # or as mojibake often enough to matter — and a Greek title would arrive that
 # way every time, not occasionally.
@@ -61,6 +59,7 @@ LOCALES = {
     "da": "Apisense_BOX_Monteringsvejledning_da.pdf",
     "pt": "Apisense_BOX_Instrucoes_de_montagem_pt.pdf",
     "el": "Apisense_BOX_Odigies_synarmologisis_el.pdf",
+    "ar": "Apisense_BOX_Dalil_al-tarkib_ar.pdf",
 }
 
 # Right-to-left locales — mirrors `window.APISENSE_RTL` in docs/assembly/index.html.

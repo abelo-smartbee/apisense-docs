@@ -26,8 +26,9 @@ OUT = SRC.parent / "Apisense_BOX_Instrukcja_montazu_standalone.html"
 SITE = "https://docs.apisense.ai/"
 
 # One stylesheet per family the page links, in the order the <head> links them.
-# Two families, because Poppins covers eighteen locales and cannot cover the
-# nineteenth: it has zero Greek glyphs. See dev-docs/adr/0003-kroje-greka-arabski.md.
+# Three families, because Poppins covers eighteen locales and cannot cover the
+# other two: it has zero Greek and zero Arabic glyphs. See
+# dev-docs/adr/0003-kroje-greka-arabski.md.
 FONT_CSS = {
     "Poppins": (
         "https://fonts.googleapis.com/css2"
@@ -36,6 +37,10 @@ FONT_CSS = {
     "Noto Sans": (
         "https://fonts.googleapis.com/css2"
         "?family=Noto+Sans:wght@300;400;500;600&display=swap"
+    ),
+    "Cairo": (
+        "https://fonts.googleapis.com/css2"
+        "?family=Cairo:wght@300;400;500;600&display=swap"
     ),
 }
 
@@ -47,10 +52,11 @@ FONT_CSS = {
 # letters (İ ğ ş ł ż ě ő ș ț …). Its one further subset, devanagari, no locale
 # needs.
 #
-# Noto Sans is here *only* for Greek, and its `latin`/`latin-ext` would be
-# 192 332 B spent to make `Apisense BOX` look different in `el` than everywhere
-# else — the ADR measures it and rejects it. Poppins stays first in the CSS
-# stack, so the Latin inside Greek sentences never reaches this family anyway.
+# Noto Sans is here *only* for Greek and Cairo *only* for Arabic; their
+# `latin`/`latin-ext` subsets would be bytes spent to make `Apisense BOX` look
+# different in `el` and `ar` than everywhere else — the ADR measures it (192 332 B
+# for Noto Sans alone) and rejects it. Poppins stays first in the CSS stack, so
+# the Latin inside Greek and Arabic sentences never reaches those families anyway.
 #
 # Verified by intersecting the cmap of every embedded woff2 with its declared
 # unicode-range and checking the union against every codepoint the page actually
@@ -63,6 +69,7 @@ FONT_CSS = {
 KEEP_SUBSETS = {
     "Poppins": ("latin", "latin-ext"),
     "Noto Sans": ("greek",),
+    "Cairo": ("arabic",),
 }
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"
 
