@@ -1,11 +1,13 @@
 # ADR 0003: Krój dla greki i arabskiego (Poppins ich nie ma)
 
-Data: 2026-07-31 · Status: **zaakceptowany** 2026-08-01 — przyjęty w całości.
-Część grecka (Noto Sans, subset `greek`, cztery grubości) weszła z #63
-2026-07-31; część arabska (Cairo, subset `arabic`, cztery grubości) z #64
-2026-08-01, po tym jak #52 dowiózł warunek, od którego ten ADR ją uzależniał.
-Obowiązuje pełny koszt **+284 944 B**, nie +117 040 B. Szczegóły w sekcji
-„Domknięcie części arabskiej".
+Data: 2026-07-31 · Status: **zaakceptowany** 2026-07-31 — przyjęty w całości.
+Obie połowy przyjęte decyzją właściciela repo, część grecka w tej samej rozmowie
+co ADR 0004, część arabska poleceniem „52 — robimy od razu, 64 od razu potem";
+ślad w #48. Grecka (Noto Sans, subset `greek`, cztery grubości) weszła z #63,
+arabska (Cairo, subset `arabic`, cztery grubości) z #64, po tym jak #52 dowiózł
+warunek, od którego ten ADR ją uzależniał. Obowiązuje pełny koszt
+**+284 944 B**, nie +117 040 B. Szczegóły w sekcji „Domknięcie części
+arabskiej".
 
 Uwaga do treści poniżej: mechanizm wpięcia obu krojów opisany w „Decyzji" jako
 `:lang(el)` / `:lang(ar)` **nie jest tym, co wdrożono** — oba kroje siedzą
@@ -255,7 +257,7 @@ nieaktualnego akapitu. Druga połowa domyka się tutaj:
   `latin`/`latin-ext` Noto Sans nie wszedł do bundla — ani osobno, ani przy
   okazji `pt`.
 
-## Domknięcie części arabskiej (#52 + #64, 2026-08-01)
+## Domknięcie części arabskiej (#52 + #64, 2026-07-31)
 
 Warunek z „Decyzji" — „wdrożenie `ar` jest warunkowe", bo strona nie miała RTL —
 został spełniony: #52 przeniósł arkusz na własności logiczne i ustawia `dir` na
@@ -289,6 +291,13 @@ Decyzja praktyczna, nie preferencyjna: numery kroków w `.ghost` i licznik
 w `.nav__count` nie są tłumaczone (pierwszy jest `aria-hidden`, drugi generuje
 JS), więc cyfry wschodnioarabskie w treści rozjechałyby się z cyframi, które ta
 sama strona rysuje obok.
+
+Sprostowanie do brzmienia ticketu: dwa przykłady, które wymieniał — `1–2 m`
+i `30–50°` — **nie przechodzą przez pipeline tłumaczeń**. To literały w `<b>`
+poza jakimkolwiek spanem (`index.html`, lista `.micro` w kroku 07), wspólne dla
+wszystkich dwudziestu locale, więc decyzja o cyfrach ich nie dotyczy i nie
+mogłaby dotyczyć. Dotyczy cyfr wewnątrz tłumaczonych stringów — tam `20°`,
+`03.1 – 03.2`, `7`, `30` są zachodnie w `ar.json`, zero cyfr ٠–٩.
 
 **Znalezisko przy okazji, nienaprawione tutaj.** Noto Sans i Cairo są
 z Google Fonts **krojami zmiennymi** (`fvar` z osią `wght` 200–1000), a

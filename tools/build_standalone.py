@@ -44,8 +44,9 @@ FONT_CSS = {
     ),
 }
 
-# Which subsets are worth embedding, *per family* — the two families are here
-# for opposite reasons and a single shared tuple would over-fetch from both.
+# Which subsets are worth embedding, *per family* — the three families are here
+# for different reasons and a single shared tuple would over-fetch from all of
+# them.
 #
 # Poppins carries the Latin script for every locale: `latin` has ı ø å æ é ü,
 # `latin-ext` the rest of the Turkish, Central-European, Baltic and Romanian
@@ -91,8 +92,9 @@ def inline_family(family: str) -> list[str]:
 
     Only the subsets listed for that family in KEEP_SUBSETS. A family that
     matches nothing is an error, not an empty result: Google Fonts renaming a
-    subset would otherwise silently ship a bundle with no Greek in it, and a
-    missing glyph looks like a plausible one from the reader's fallback font.
+    subset would otherwise silently ship a bundle with no Greek or no Arabic in
+    it, and a missing glyph looks like a plausible one from the reader's
+    fallback font.
     """
     keep = KEEP_SUBSETS[family]
     css = fetch(FONT_CSS[family]).decode("utf-8")

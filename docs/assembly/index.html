@@ -197,8 +197,8 @@ body::after {
    which are shown *while another locale is selected* and which `:lang()` by
    definition could never reach.
 
-   `'Segoe UI'` stays where `body` had it: if the webfont fails, Windows still
-   has Greek. */
+   `'Segoe UI'` stays where `body` had it: if the webfonts fail, Windows still
+   has Greek and Arabic. */
 
 /* ── RTL ─────────────────────────────────────────────────────────
    Arabic is the one right-to-left locale. Direction belongs to the layout, not
@@ -224,7 +224,10 @@ body::after {
    `body::before` keeps its `to right`: it tiles 1px vertical rules across the
    whole viewport, and a mirrored tiling of evenly spaced lines is the same
    tiling. */
-[dir="rtl"] { --dir: -1; }
+/* `html[dir="rtl"]` and not `[dir="rtl"]`: the latter is (0,1,0), exactly what
+   `:root` scores, so it would win only by sitting later in the file. Adding the
+   element name makes it (0,1,1) and the override survives being moved. */
+html[dir="rtl"] { --dir: -1; }
 
 /* The rail's fade leans off the page edge the rail sits on. */
 [dir="rtl"] .rail {
@@ -526,7 +529,7 @@ body::after {
   overflow: hidden;
 }
 
-/* Oversized ghost numeral bleeding off the left edge — the anchor. */
+/* Oversized ghost numeral bleeding off the inline-start edge — the anchor. */
 .ghost {
   position: absolute;
   inset-inline-start: -.07em;
@@ -959,7 +962,14 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
 @media (prefers-reduced-motion: reduce) {
   * { transition-duration: 1ms !important; animation: none !important; }
   .deck { scroll-behavior: auto; }
-  .plate img { clip-path: none; }
+  /* Both directions, and the RTL selector has to be spelled out: the rule that
+     hands the wipe to RTL is `[dir="rtl"] .plate img`, (0,2,1), which outranks
+     a bare `.plate img` at (0,1,1) and would keep the drawing clipped to zero
+     width here. Measured before the second selector existed: with reduced
+     motion, LTR computed `none` and RTL computed `inset(0 0 0 100%)` — the
+     escape hatch worked in nineteen locales and not in the twentieth. */
+  .plate img,
+  [dir="rtl"] .plate img { clip-path: none; }
 }
 
 /* ── Print ──────────────────────────────────────────────────────
@@ -2007,8 +2017,13 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
     root.lang = l;
     /* Same list the boot script used, so a switch mid-session lands exactly
        where a reload would. Direction is a layout property here, not a text
-       one: it goes on <html>, never on the individual spans. */
-    root.dir = (window.APISENSE_RTL || []).indexOf(l) > -1 ? 'rtl' : 'ltr';
+       one: it goes on <html>, never on the individual spans.
+
+       No `|| []` guard: if the boot block ever goes missing this must throw,
+       not quietly resolve every locale to LTR. A silently unmirrored Arabic
+       page is the exact failure this whole ticket exists to prevent, and it
+       looks fine to anyone who cannot read it. */
+    root.dir = window.APISENSE_RTL.indexOf(l) > -1 ? 'rtl' : 'ltr';
     localStorage.setItem('apisense-asm-lang', l);
     syncLang();
   }

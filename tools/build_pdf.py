@@ -13,6 +13,7 @@ language (see LOCALES), because these travel as e-mail attachments.
 
 from __future__ import annotations
 
+import re
 import shutil
 import subprocess
 import sys
@@ -62,9 +63,6 @@ LOCALES = {
     "ar": "Apisense_BOX_Dalil_al-tarkib_ar.pdf",
 }
 
-# Right-to-left locales — mirrors `window.APISENSE_RTL` in docs/assembly/index.html.
-RTL = {"ar"}
-
 CHROME_CANDIDATES = ["google-chrome", "google-chrome-stable", "chromium", "chromium-browser"]
 
 # The deck reveals itself on scroll; print needs every slide already settled.
@@ -74,6 +72,26 @@ FREEZE = """
   .plate img { clip-path: none !important; }
 </style>
 """
+
+
+def rtl_locales(html: str) -> set[str]:
+    """The right-to-left locales, read out of the page instead of copied here.
+
+    A second hand-maintained copy is a copy that drifts, and the failure it
+    drifts into is silent: a PDF printed LTR from a mirrored page looks
+    perfectly well-typeset to anyone who cannot read the language. So this
+    parses `window.APISENSE_RTL` from the markup and refuses to print if the
+    declaration is not where it expects — the same bargain `ROOT_TAG` makes a
+    few lines further down.
+    """
+    match = re.search(r"window\.APISENSE_RTL\s*=\s*\[([^\]]*)\]", html)
+    if match is None:
+        raise SystemExit(
+            "nie znaleziono window.APISENSE_RTL w wersji standalone — bez tego"
+            " nie wiadomo, które locale drukować od prawej do lewej;"
+            " sprawdź skrypt startowy w docs/assembly/index.html"
+        )
+    return set(re.findall(r"'([a-z]{2})'", match.group(1)))
 
 
 def check_names() -> list[tuple[str, list[str]]]:
@@ -160,6 +178,9 @@ def main(argv: list[str]) -> None:
     # The locale is preset by rewriting this exact string on <html>. If index.html
     # ever spells it differently, the replace would quietly do nothing and every
     # PDF would come out Polish — a wrong-language file looks perfectly fine.
+    rtl = rtl_locales(html)
+    print(f"  locale od prawej do lewej: {', '.join(sorted(rtl)) or '(brak)'}")
+
     ROOT_TAG = '<html lang="pl" data-lang="pl" dir="ltr">'
     if ROOT_TAG not in html:
         raise SystemExit(
@@ -178,7 +199,7 @@ def main(argv: list[str]) -> None:
             page = html.replace(
                 ROOT_TAG,
                 f'<html lang="{loc}" data-lang="{loc}" data-theme="light"'
-                f' dir="{"rtl" if loc in RTL else "ltr"}">',
+                f' dir="{"rtl" if loc in rtl else "ltr"}">',
             ).replace("</head>", FREEZE + "</head>")
             src = Path(tmp) / f"{loc}.html"
             src.write_text(page, encoding="utf-8")
