@@ -5,9 +5,13 @@ Obie połowy przyjęte decyzją właściciela repo, część grecka w tej samej 
 co ADR 0004, część arabska poleceniem „52 — robimy od razu, 64 od razu potem";
 ślad w #48. Grecka (Noto Sans, subset `greek`, cztery grubości) weszła z #63,
 arabska (Cairo, subset `arabic`, cztery grubości) z #64, po tym jak #52 dowiózł
-warunek, od którego ten ADR ją uzależniał. Obowiązuje pełny koszt
-**+284 944 B**, nie +117 040 B. Szczegóły w sekcji „Domknięcie części
-arabskiej".
+warunek, od którego ten ADR ją uzależniał. Obowiązuje pełny koszt obu połówek,
+nie +117 040 B — ale **nie +284 944 B**, jak pisano tu przed #69: to liczba
+sprzed deduplikacji krojów zmiennych i jest zawyżona blisko czterokrotnie
+w części niełacińskiej. Dziś jest to **+74 248 B**. Szczegóły w sekcjach
+„Domknięcie części arabskiej" i „Korekta kosztu po #69"; **wszystkie liczby
+kosztowe poniżej — łącznie z tabelą wariantów — są sprzed #69** i zostawione
+jako zapis tego, na czym decyzję podejmowano, a nie tego, co płacimy.
 
 Uwaga do treści poniżej: mechanizm wpięcia obu krojów opisany w „Decyzji" jako
 `:lang(el)` / `:lang(ar)` **nie jest tym, co wdrożono** — oba kroje siedzą
@@ -300,7 +304,9 @@ mogłaby dotyczyć. Dotyczy cyfr wewnątrz tłumaczonych stringów — tam `20°
 `03.1 – 03.2`, `7`, `30` są zachodnie w `ar.json`, zero cyfr ٠–٩.
 
 **Znalezisko przy okazji, naprawione w #69.** Noto Sans i Cairo są z Google
-Fonts **krojami zmiennymi** (`fvar` z osią `wght` 200–1000), a
+Fonts **krojami zmiennymi** — `fvar` w osadzonych subsetach ma jedną oś `wght`,
+**100–900** w Noto Sans i **200–1000** w Cairo (odczytane z `fvar` pobranych
+plików woff2, nie z katalogu Google) — a
 `css2?...wght@300;400;500;600` zwraca cztery bloki `@font-face` wskazujące ten
 sam plik. `tools/build_standalone.py` osadzał go więc cztery razy: cztery
 identyczne payloady po SHA-1, 21 776 B i 30 896 B — **158 016 B duplikatów
@@ -322,6 +328,13 @@ zmienia, ale cena spada o trzy czwarte w części niełacińskiej**:
 | Poppins (statyczny, bez zmian) | 89 464 B | 89 464 B |
 | bundle | 3 845 132 B | **3 631 210 B** |
 
+Sekcja „Domknięcie części arabskiej" wyżej podaje bundle sprzed #69 jako
+3 844 108 B, o 1024 B mniej. To nie rozbieżność pomiaru, tylko dwa różne stany
+`index.html`: tamten wynik zdjęto w trakcie #52/#64, przed poprawkami z
+code-review, które weszły do tej samej PR. 3 845 132 B to ten sam skrypt sprzed
+#69 puszczony na `index.html` po scaleniu #70 — czyli jedyna liczba, z którą
+3 631 210 B wolno odejmować.
+
 Czyli obie rodziny niełacińskie kosztują dziś **70 232 B**, a nie 280 928 B.
 Rozważana w „Rozważonych alternatywach" rezygnacja z piątej grubości
 (+71 236 B) i subsetowanie pod faktyczny tekst dotyczyły świata, w którym każda
@@ -329,9 +342,26 @@ grubość to osobny plik — przy krojach zmiennych piąta grubość nie kosztuj
 bo to ta sama oś.
 
 Zweryfikowane, że zwinięcie czterech wstępnie zinstancjonowanych krojów w jeden
-zmienny z zakresem `font-weight: 300 600` niczego nie zmienia w renderze:
-pokrycie cmap identyczne (Poppins 349, Noto Sans 121, Cairo 297 punktów
-kodowych), szerokości tekstu przy wagach 300/400/500/600 **bajtowo takie same
-przed i po** i nadal cztery różne, a atrybucja per `LTChar` na nieskompresowanym
-PDF-ie bez zmian: 6 151 znaków greckich z Noto Sans, 933 arabskie plus 2 990
-form prezentacyjnych z Cairo, cała łacinka z Poppins.
+zmienny z zakresem `font-weight: 300 600` niczego nie zmienia w renderze. Bundle
+sprzed #69 i po #69 zbudowano obok siebie (3 845 132 B i 3 631 210 B, zgodnie
+z tabelą wyżej) i porównano trzema pomiarami:
+
+- **Geometria, metodą z #52.** Ramki wszystkich 4 232 elementów strony, we
+  wszystkich 20 locale, haszowane i porównane między bundle'ami: **84 640
+  pudełek, zero różnic.** Hasze różnią się *między* locale, więc pomiar w ogóle
+  rozróżnia układy — to nie jest zgodność dwóch pustych zbiorów.
+- **Grubości.** Szerokość tekstu przy `font-weight` 300/400/500/600, osobno dla
+  łacinki, greki i arabskiego: **cztery różne, rosnące wartości w każdym z trzech
+  pism, identyczne co do setnej piksela przed i po** (greka 465,44 → 482,95 →
+  491,72 → 501,48 px; arabski 333,52 → 354,11 → 359,23 → 364,47 px). Gdyby
+  zwinięcie przypięło render do jednej grubości, te cztery byłyby równe. To jest
+  test, który widzi oś `wght`.
+- **Pokrycie znaków.** Przecięcie cmap z `unicode-range` identyczne: Poppins 349,
+  Noto Sans 121, Cairo 297 punktów kodowych.
+
+Atrybucja per `LTChar` na nieskompresowanym PDF-ie też jest bez zmian (6 151
+znaków greckich z Noto Sans, 933 arabskie plus 2 990 form prezentacyjnych
+z Cairo, cała łacinka z Poppins), ale **dowodzi tylko rodziny, nie grubości**:
+kroju zmiennego cztery grubości mają jedną nazwę PostScriptową, więc `pdfminer`
+zwraca `Cairo-Regular` niezależnie od tego, czy oś działa. Grubości potwierdza
+pomiar szerokości wyżej, i tylko on.

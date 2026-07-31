@@ -13,11 +13,11 @@ Output: docs/assembly/Apisense_BOX_Instrukcja_montazu_standalone.html
 from __future__ import annotations
 
 import base64
-import hashlib
 import re
 import sys
 import urllib.request
 from pathlib import Path
+from typing import NamedTuple
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "docs" / "assembly" / "index.html"
@@ -56,9 +56,9 @@ FONT_CSS = {
 #
 # Noto Sans is here *only* for Greek and Cairo *only* for Arabic; their
 # `latin`/`latin-ext` subsets would be bytes spent to make `Apisense BOX` look
-# different in `el` and `ar` than everywhere else — the ADR measures it (192 332 B
-# for Noto Sans alone) and rejects it. Poppins stays first in the CSS stack, so
-# the Latin inside Greek and Arabic sentences never reaches those families anyway.
+# different in `el` and `ar` than everywhere else — the ADR measures it and
+# rejects it. Poppins stays first in the CSS stack, so the Latin inside Greek and
+# Arabic sentences never reaches those families anyway.
 #
 # Verified by intersecting the cmap of every embedded woff2 with its declared
 # unicode-range and checking the union against every codepoint the page actually
@@ -82,6 +82,19 @@ UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chr
 FIG_TYPES = {".webp": "image/webp", ".svg": "image/svg+xml", ".png": "image/png"}
 
 
+class Face(NamedTuple):
+    """One `@font-face` rule: the subset it covers, its weight, its text, its payload."""
+
+    subset: str
+    weight: int
+    block: str
+    raw: bytes
+
+
+# The one line two collapsible faces are allowed to disagree on.
+WEIGHT_LINE = re.compile(r"font-weight:\s*\d+\s*;")
+
+
 def fetch(url: str) -> bytes:
     req = urllib.request.Request(url, headers={"User-Agent": UA})
     with urllib.request.urlopen(req, timeout=60) as r:
@@ -97,25 +110,34 @@ def inline_family(family: str) -> list[str]:
     it, and a missing glyph looks like a plausible one from the reader's
     fallback font.
 
-    Faces of one subset that turn out to be the *same file* are collapsed into a
-    single rule carrying a weight range. Noto Sans and Cairo are variable fonts:
-    `css2?...wght@300;400;500;600` answers with four @font-face blocks that
-    differ only in their `font-weight` line and point at one URL, and embedding
-    that URL four times put 210 688 B of duplicate base64 into a bundle whose
-    entire purpose is to fit in an e-mail. `font-weight: 300 600` is how a
+    Faces that turn out to be the *same file* described the *same way* are
+    collapsed into a single rule carrying a weight range. Noto Sans and Cairo are
+    variable fonts: `css2?...wght@300;400;500;600` answers with four @font-face
+    blocks that differ only in their `font-weight` line and point at one URL, and
+    embedding that URL four times put 210 688 B of duplicate base64 into a bundle
+    whose entire purpose is to fit in an e-mail. `font-weight: 300 600` is how a
     variable font is meant to be declared — the browser sets the `wght` axis
     instead of picking a pre-instanced file.
 
     Grouped by the bytes, not by the family name: Poppins is a static family
     whose ten faces are ten different files, and it must come out of here
     unchanged. A future family that ships either way needs no decision here.
+
+    Grouped by the rest of the rule as well, because collapsing means keeping one
+    block and discarding the others: anything the faces do not already agree on —
+    `font-style`, `font-display`, `unicode-range` — would vanish with them, and a
+    dropped `font-style: italic` is invisible in a diff and invisible in a byte
+    count. Cairo carries a `slnt` axis, so a future `ital,wght@0,…;1,…` query
+    really could serve upright and oblique from one file. Keyed this way they
+    land in different groups and both survive, rather than one quietly becoming
+    the other.
     """
     keep = KEEP_SUBSETS[family]
     css = fetch(FONT_CSS[family]).decode("utf-8")
     blocks = re.findall(r"/\*\s*([\w-]+)\s*\*/\s*(@font-face\s*\{.*?\})", css, re.S)
 
     downloaded: dict[str, bytes] = {}   # one fetch per URL, however often it repeats
-    faces: list[tuple[str, int, str, bytes]] = []
+    faces: list[Face] = []
     for subset, block in blocks:
         if subset not in keep:
             continue
@@ -124,14 +146,20 @@ def inline_family(family: str) -> list[str]:
             raise SystemExit(f"@font-face bez url() w subsecie {subset} — zmienił się format Google Fonts?")
         weight = re.search(r"font-weight:\s*(\d+)\s*;", block)
         if weight is None:
+            # Almost certainly not Google changing anything: this is what a
+            # *range* query looks like. `wght@300..600` answers with
+            # `font-weight: 300 600;` — already the shape this function
+            # produces, but not one it can read back.
             raise SystemExit(
-                f"{family}/{subset}: @font-face bez pojedynczej font-weight —"
-                " Google Fonts zmieniło format i grupowanie po wadze przestało działać"
+                f"{family}/{subset}: @font-face bez pojedynczej font-weight."
+                " Jeśli FONT_CSS pyta o zakres (`wght@300..600`), Google Fonts"
+                " odpowiada `font-weight: 300 600;` — wróć do listy grubości"
+                " (`wght@300;400;500;600`) albo naucz to miejsce czytać zakres"
             )
         url = match.group(1)
         if url not in downloaded:
             downloaded[url] = fetch(url)
-        faces.append((subset, int(weight.group(1)), block, downloaded[url]))
+        faces.append(Face(subset, int(weight.group(1)), block, downloaded[url]))
 
     if not faces:
         raise SystemExit(
@@ -139,30 +167,23 @@ def inline_family(family: str) -> list[str]:
             " — zmieniła się odpowiedź Google Fonts?"
         )
 
-    groups: dict[tuple[str, str], list[tuple[int, str, bytes]]] = {}
-    for subset, weight, block, raw in faces:
-        groups.setdefault((subset, hashlib.sha1(raw).hexdigest()), []).append((weight, block, raw))
+    groups: dict[tuple[str, bytes], list[Face]] = {}
+    for face in faces:
+        groups.setdefault((WEIGHT_LINE.sub("", face.block), face.raw), []).append(face)
 
-    kept = []
-    for (subset, _), members in groups.items():
-        weights = sorted(w for w, _, _ in members)
-        _, block, raw = members[0]
+    kept: list[str] = []
+    for members in groups.values():
+        weights = sorted(f.weight for f in members)
         block = re.sub(
             r"url\(https://[^)]+\)",
-            "url(data:font/woff2;base64," + base64.b64encode(raw).decode("ascii") + ")",
-            block,
+            "url(data:font/woff2;base64," + base64.b64encode(members[0].raw).decode("ascii") + ")",
+            members[0].block,
         )
         if len(members) > 1:
-            block = re.sub(
-                r"font-weight:\s*\d+\s*;",
-                f"font-weight: {weights[0]} {weights[-1]};",
-                block,
-            )
+            block = WEIGHT_LINE.sub(f"font-weight: {weights[0]} {weights[-1]};", block, count=1)
         kept.append(block)
 
-    saved = sum(len(raw) for _, _, _, raw in faces) - sum(
-        len(members[0][2]) for members in groups.values()
-    )
+    saved = sum(len(f.raw) for f in faces) - sum(len(m[0].raw) for m in groups.values())
     note = f", zwinięte z {len(faces)} (−{saved} B woff2)" if saved else ""
     print(f"  fonts: {family} — {len(kept)} faces ({', '.join(keep)}){note}")
     return kept
