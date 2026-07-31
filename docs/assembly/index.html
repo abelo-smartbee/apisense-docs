@@ -217,6 +217,80 @@ body::after {
 .lang-select svg { width: 11px; height: 11px; fill: none; stroke: currentColor; stroke-width: 2.2; flex: none; }
 .lang-select .globe { width: 13px; height: 13px; stroke-width: 1.5; color: var(--ink-2); }
 
+/* ── Enhanced switcher ─────────────────────────────────────────────────────
+   The native popup is drawn by the platform and ignores every custom property
+   on this page, so seventeen locales open onto a system-grey list next to a
+   paper-and-amber header. Everything below replaces that popup — and only the
+   popup: the closed control keeps the same pill it had before.
+
+   The panel is built at runtime from the <select>'s own <option> elements, so
+   the endonyms exist once in this file. Duplicating them into hand-written
+   markup would make an eighteenth locale six edits instead of five and would
+   put the copy outside the `<option value=…>` pattern in check_i18n.py, which
+   is the thing that notices a locale missing from one list but not another.
+
+   `.is-enhanced` is set by the script, so with JS off nothing here applies and
+   the plain <select> stays exactly as it was. It does nothing without JS today
+   either — the locale is applied by a `change` handler — so this is the same
+   dead control as before, not a new one. */
+.lang-select.is-enhanced { position: relative; display: inline-flex; border: 0; padding: 0; background: none; }
+.lang-select.is-enhanced > select { display: none; }
+.lang-trigger { padding: 5px 11px 5px 10px; gap: 6px; }
+.lang-cur {
+  font-size: 11px; font-weight: 600; letter-spacing: .1em;
+  width: 7.4em; text-align: left;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.lang-trigger svg:last-child { transition: transform 200ms var(--ease); }
+.lang-trigger[aria-expanded="true"] { border-color: var(--ink); background: var(--amber-soft); }
+.lang-trigger[aria-expanded="true"] svg:last-child { transform: rotate(180deg); }
+
+.lang-panel {
+  position: absolute; top: calc(100% + 8px); right: 0;
+  /* Above the header's own 40 and the 41 the rail sits on. */
+  z-index: 45;
+  width: min(320px, calc(100vw - 32px));
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px;
+  padding: 8px;
+  /* Not --plate: that one stays #ffffff in dark theme on purpose, because the
+     QR plates have to keep working under a phone camera. This is chrome, so it
+     follows the page. --paper is opaque in both themes, which matters over a
+     backdrop-filtered header. */
+  background: var(--paper);
+  border: 1px solid var(--rule); border-radius: 16px;
+  box-shadow: var(--plate-shadow);
+}
+.lang-panel[hidden] { display: none; }
+.lang-opt {
+  font: inherit; font-size: 11px; font-weight: 500; letter-spacing: .04em;
+  color: var(--ink); background: transparent;
+  border: 1px solid transparent; border-radius: 999px;
+  padding: 6px 9px; cursor: pointer;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  transition: border-color 160ms var(--ease), background-color 160ms var(--ease);
+}
+.lang-opt:hover { border-color: var(--rule); background: var(--amber-soft); }
+.lang-opt:focus-visible { outline: 2px solid var(--amber); outline-offset: 1px; }
+.lang-opt[aria-selected="true"] { border-color: var(--ink); background: var(--amber-soft); font-weight: 600; }
+/* Anchoring the panel to the trigger stops working once the trigger is no
+   longer far enough from the left edge to hang 320px off it: on a 360px phone
+   the switcher's right edge sits at 253, so `right: 0` puts the panel's left
+   edge at -67 and a third of the languages are off-screen. Measured, not
+   guessed — it fails from about 430px down. Below the header's own 480px
+   breakpoint the panel therefore anchors to the viewport instead of to the
+   button, which is also what a phone-sized menu should do anyway. */
+@media (max-width: 480px) {
+  .lang-panel {
+    position: fixed;
+    top: calc(var(--head-h) + 8px);
+    left: 12px; right: 12px;
+    width: auto;
+  }
+}
+/* Three columns need 320px; below that the endonyms start ellipsing, and a
+   truncated language name is worse than a taller panel. */
+@media (max-width: 420px) { .lang-panel { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
 .head .pdf-label { display: none; }
 @media (min-width: 900px) { .head .pdf-label { display: inline; } }
 
@@ -684,6 +758,8 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
   .head { gap: 10px; padding-inline: 14px; }
   .head__mark img { height: 18px; }
   .lang-select { padding: 5px 9px 5px 8px; }
+  .lang-select.is-enhanced { padding: 0; }
+  .lang-trigger { padding: 5px 9px 5px 8px; }
   .btn { padding: 6px 10px; font-size: 11px; }
   .head > a.btn:last-child { display: none; }
 }
@@ -706,8 +782,11 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
   .btn { padding: 6px 8px; }
   .btn-label { display: none; }
   .lang-select { padding: 5px 8px; gap: 5px; }
+  .lang-select.is-enhanced { padding: 0; }
+  .lang-trigger { padding: 5px 8px; gap: 5px; }
   .lang-select .globe { display: none; }
   .lang-select select { font-size: 10px; letter-spacing: .04em; width: 6.6em; }
+  .lang-cur { font-size: 10px; letter-spacing: .04em; width: 6.6em; }
 }
 @media (max-width: 860px) {
   :root { --rail-w: 0px; --head-h: 58px; }
@@ -1755,6 +1834,121 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
      immediately, not on blur. */
   langSelect.addEventListener('change', function () { setLang(langSelect.value); });
 
+  /* ── Language panel ───────────────────────────────────────────────────────
+     Replaces the platform's popup with one the page can style. The <select>
+     stays in the DOM and stays the single source of truth: the panel is built
+     from its options, so the seventeen endonyms are written once, in markup,
+     where check_i18n.py's `<option value=…>` pattern can still see them.
+
+     With JS off none of this runs and the plain <select> is left alone. That
+     is not a working fallback — the locale has always been applied by the
+     `change` handler above, so a scriptless page has never had a live switcher
+     — it is just the same inert control as before, not a new one. */
+  var langWrap = langSelect.parentNode;
+  var langTrigger = null, langPanel = null, langOpts = [];
+
+  (function buildLangPanel() {
+    var globe = langWrap.querySelector('.globe');
+    var chevron = langWrap.querySelector('svg:not(.globe)');
+    if (!globe || !chevron) return;
+
+    langTrigger = document.createElement('button');
+    langTrigger.type = 'button';
+    langTrigger.className = 'btn lang-trigger';
+    langTrigger.setAttribute('aria-haspopup', 'listbox');
+    langTrigger.setAttribute('aria-expanded', 'false');
+    langTrigger.setAttribute('aria-label', langSelect.getAttribute('aria-label'));
+
+    var label = document.createElement('span');
+    label.className = 'lang-cur';
+    langTrigger.appendChild(globe);
+    langTrigger.appendChild(label);
+    langTrigger.appendChild(chevron);
+
+    langPanel = document.createElement('div');
+    langPanel.className = 'lang-panel';
+    langPanel.setAttribute('role', 'listbox');
+    langPanel.hidden = true;
+
+    Array.prototype.forEach.call(langSelect.options, function (opt) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'lang-opt';
+      b.setAttribute('role', 'option');
+      b.setAttribute('aria-selected', 'false');
+      b.dataset.lang = opt.value;
+      b.textContent = opt.textContent;
+      /* Deliberately NO `lang` attribute, tempting as it is on a list of
+         endonyms: `[data-lang="xx"] [lang]:not([lang="xx"])` would then hide
+         sixteen of the seventeen the moment the panel opened. Same mechanism
+         that leaves the rail tooltips empty outside pl/en. */
+      b.tabIndex = -1;
+      langOpts.push(b);
+      langPanel.appendChild(b);
+    });
+
+    langWrap.classList.remove('btn');
+    langWrap.classList.add('is-enhanced');
+    langWrap.appendChild(langTrigger);
+    langWrap.appendChild(langPanel);
+
+    function open() {
+      langPanel.hidden = false;
+      langTrigger.setAttribute('aria-expanded', 'true');
+      var cur = root.getAttribute('data-lang');
+      var focused = langOpts[0];
+      langOpts.forEach(function (b) { if (b.dataset.lang === cur) focused = b; });
+      focused.focus();
+    }
+    function close(refocus) {
+      if (langPanel.hidden) return;
+      langPanel.hidden = true;
+      langTrigger.setAttribute('aria-expanded', 'false');
+      if (refocus) langTrigger.focus();
+    }
+
+    /* Enter and Space already reach the click handler through the button's own
+       default action, so only ArrowDown needs wiring. */
+    langTrigger.addEventListener('click', function () {
+      if (langPanel.hidden) open(); else close(true);
+    });
+    langTrigger.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowDown') { e.preventDefault(); open(); }
+    });
+
+    langPanel.addEventListener('click', function (e) {
+      var b = e.target.closest('.lang-opt');
+      if (!b) return;
+      setLang(b.dataset.lang);
+      close(true);
+    });
+
+    langPanel.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') { e.preventDefault(); close(true); return; }
+      if (e.key === 'Tab') { close(false); return; }
+      var i = langOpts.indexOf(document.activeElement);
+      if (i < 0) return;
+      /* Read the column count back from the grid rather than hard-coding it —
+         the panel drops to two columns under 420px and the arrows have to
+         follow what is actually on screen. */
+      var cols = getComputedStyle(langPanel).gridTemplateColumns.split(' ').length;
+      var next;
+      if (e.key === 'ArrowRight') next = i + 1;
+      else if (e.key === 'ArrowLeft') next = i - 1;
+      else if (e.key === 'ArrowDown') next = i + cols;
+      else if (e.key === 'ArrowUp') next = i - cols;
+      else if (e.key === 'Home') next = 0;
+      else if (e.key === 'End') next = langOpts.length - 1;
+      else return;
+      e.preventDefault();
+      if (next >= 0 && next < langOpts.length) langOpts[next].focus();
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!langPanel.hidden && !langWrap.contains(e.target)) close(false);
+    });
+  })();
+
   function syncLang() {
     var cur = root.getAttribute('data-lang');
     langSelect.value = cur;
@@ -1762,6 +1956,13 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
     printBtn.title = head.print;
     document.title = head.title;
     metaDesc.setAttribute('content', head.description);
+    if (langTrigger) {
+      var opt = langSelect.options[langSelect.selectedIndex];
+      langTrigger.querySelector('.lang-cur').textContent = opt ? opt.textContent : cur;
+      langOpts.forEach(function (b) {
+        b.setAttribute('aria-selected', b.dataset.lang === cur ? 'true' : 'false');
+      });
+    }
   }
   syncLang();
 
