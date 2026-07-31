@@ -34,6 +34,7 @@ from dataclasses import dataclass, field
 LOCALE_ORDER = (
     "pl", "en", "de", "fr", "es", "it", "no", "tr",
     "cs", "sk", "hu", "hr", "ro", "fi", "nl", "sv", "da",
+    "pt", "el",
 )
 
 # `(?<![-\w])` and not `\b`: `\b` matches the `lang` inside `data-lang="pl"`,

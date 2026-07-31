@@ -1,6 +1,8 @@
 # ADR 0004: Kod locale dla portugalskiego — `pt` czy `pt-BR`
 
-Data: 2026-07-31 · Status: proponowany (blokuje #62)
+Data: 2026-07-31 · Status: **zaakceptowany** 2026-07-31 — przyjęto rekomendację
+`pt` z etykietą „Português (Brasil)". #49 zamyka się bez zmiany w kodzie, #62
+traci blokadę i wchodzi jako zwykły locale dwuznakowy.
 
 ## Kontekst
 

@@ -1,8 +1,15 @@
 # ADR 0003: Krój dla greki i arabskiego (Poppins ich nie ma)
 
-Data: 2026-07-31 · Status: **proponowany** — czeka na akceptację właściciela
-identyfikacji Apisense. Nic nie jest wdrożone; ten dokument dostarcza liczb do
-podjęcia decyzji.
+Data: 2026-07-31 · Status: **zaakceptowany częściowo** 2026-07-31 — przyjęto
+wariant 1 **w części greckiej**: Noto Sans, subset `greek`, cztery grubości,
+wpięte przez `:lang(el)`. Wdraża to #63.
+
+**Arabski jest odroczony, nie odrzucony.** Ten ADR sam czyni `ar` warunkowym
+(patrz „Decyzja"), a warunek — RTL, #52 — nie jest spełniony. Cairo wchodzi
+razem z układem dwukierunkowym albo wcale; font bez RTL dałby tekst poprawnie
+ukształtowany w układzie odbitym na opak, czyli regres gorszy niż brak
+arabskiego. Do tego czasu z tego dokumentu obowiązuje wyłącznie połowa grecka:
+**+117 040 B**, nie +284 944 B.
 
 ## Kontekst
 
