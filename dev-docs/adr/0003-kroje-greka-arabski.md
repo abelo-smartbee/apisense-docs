@@ -171,11 +171,11 @@ zmieniły, ale dwie liczby bazowe już nie opisują repo, więc podaję je świe
 pomiary greki i arabskiego zostają nietknięte, bo dotyczą plików Google Fonts,
 a nie tej gałęzi.
 
-- Baza bundla to dziś **3 493 780 B (3,332 MiB)**, nie 3 388 103 B. `index.html`
-  to **259 049 B**, nie 154 185 B.
+- Baza bundla to dziś **3 494 225 B (3,332 MiB)**, nie 3 388 103 B. `index.html`
+  to **259 494 B**, nie 154 185 B.
 - Koszt dwóch rodzin (**+284 944 B**) jest niezależny od liczby locale — to
   fonty, nie tekst. Względem nowej bazy daje to **+8,2%** zamiast +8,4%, a bundle
-  po wdrożeniu **3 778 724 B (3,604 MiB)** zamiast 3,503 MiB.
+  po wdrożeniu **3 779 169 B (3,604 MiB)** zamiast 3,503 MiB.
 - Zdanie „Epik #47 rozszerza stronę do 20 locale" opisuje zamówienie, nie stan.
   Gałąź dowozi **17**: `el` i `ar` (#63, #64) czekają na akceptację tego ADR-a,
   `pt` (#62) na ADR 0004. Status pozostaje **proponowany** — nic z tego nie jest

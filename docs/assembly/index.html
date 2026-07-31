@@ -191,7 +191,14 @@ body::after {
 
    The field is a fixed width, sized for the longest endonym rather than for
    the selected one, so neither the number of options nor which is picked can
-   move the header around. The globe carries the meaning the pills used to. */
+   move the header around. The globe carries the meaning the pills used to.
+
+   Re-measured against all seventeen endonyms (the width was first set against
+   eight, before #51 added the two longest): worst case is "Nederlands" —
+   75.8px in a 81.4px field here, 62.9px in a 66px field under the 480px rule.
+   Both fit; the slack is 5.6px and 3.1px. An eighteenth locale whose endonym
+   renders wider than that gets `text-overflow: ellipsis`, not a broken header
+   — but it is the number to re-check, not assume. */
 .lang-select { padding: 5px 11px 5px 10px; gap: 6px; }
 .lang-select select {
   font: inherit; font-size: 11px; font-weight: 600; letter-spacing: .1em;
