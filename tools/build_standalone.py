@@ -28,10 +28,23 @@ FONT_CSS = (
     "https://fonts.googleapis.com/css2"
     "?family=Poppins:wght@200;300;400;500;600&display=swap"
 )
-# Enough for all eight locales: `latin` carries ı ø å æ, `latin-ext` the rest of
-# the Turkish and Central-European letters (İ ğ ş ł ż …). Poppins only offers one
-# more subset — devanagari — which none of the locales need and which would
-# double the bundle.
+# Enough for all seventeen locales, all of them Latin-script: `latin` carries
+# ı ø å æ é ü, `latin-ext` the rest of the Turkish, Central-European, Baltic and
+# Romanian letters (İ ğ ş ł ż ě ő ș ț …). Verified by intersecting the cmap of
+# every embedded woff2 with its declared unicode-range and checking the union
+# against every codepoint the page actually renders — not by reading subset
+# names, which promise more than they carry. Two characters do fall outside and
+# always have, in Polish as much as in Finnish: `≤` (U+2264, in the temperature
+# range) and `✱` (U+2731, the .ghost marker). Both come from the reader's
+# fallback font, in the bundle and in the PDFs, and both are deliberate — there
+# is no Poppins subset that would supply them.
+#
+# Poppins offers exactly one further subset, devanagari, which no locale needs.
+# Greek and Arabic are not a KEEP_SUBSETS question at all: Poppins has zero
+# glyphs for either script, so `el` and `ar` need a second family — see
+# dev-docs/adr/0003-kroje-greka-arabski.md, still unsigned. Adding them means
+# fetching more than one stylesheet here and filtering subsets per family, which
+# this single tuple cannot express.
 KEEP_SUBSETS = ("latin", "latin-ext")
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"
 
