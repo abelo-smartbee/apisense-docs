@@ -13,12 +13,30 @@ the one the reader picked, and there is no fallback rule behind it:
 So a group that never got its `<span lang="es">` does not fall back to English
 — it renders as nothing at all. No error, no warning, just a sentence that
 silently vanishes for that language. Same for a span that exists but is empty.
-Across 150 groups and eight locales that is only findable mechanically, which
-is what this script is.
+Across 148 groups and seventeen locales that is only findable mechanically,
+which is what this script is.
 
 What counts as a group comes from `i18n_lib`, shared with `i18n_extract.py`
 and `i18n_inject.py`. The validator must agree with the tools whose output it
 is checking; a second parser here would only invent a second opinion.
+
+What this deliberately does NOT check is HTML-entity parity against `text.en`.
+Three groups diverge from English on purpose and would be flagged forever by
+such a check, so whoever writes one must whitelist them rather than "fix" the
+translations:
+
+    cc79d6fa7921  "Scan the Hub QR code" — 11 of 17 locales bind the device
+                  name to the preceding word with `&nbsp;`; English and the
+                  five where the name leads the phrase do not need it.
+    0d40eedb2f02  "… ColonyLink, VitalSensor &amp;&nbsp;Scale" — every locale
+                  renders `&amp;` as its own conjunction (i, és, și, en, og …)
+                  and keeps only the `&nbsp;`.
+    73e96dab53c7  "Scale &amp; spacer bar" — same, and here nothing is left to
+                  hold a `&nbsp;`, so the locales carry no entity at all.
+
+The entity is typography and grammar, not markup that must match one-to-one:
+`&nbsp;` belongs where a language would not break the line, `&amp;` is an
+English word that other languages spell out.
 """
 
 from __future__ import annotations
@@ -40,7 +58,10 @@ SRC = ROOT / "docs" / "assembly" / "index.html"
 # being parameterised: while a language is being translated it stays out, and
 # it is added here in the same commit that lands its translation. `i18n_lib`
 # deliberately holds only the canonical order, never the done-ness.
-DEFAULT_LOCALES = ("pl", "en", "de", "fr", "es", "it", "no", "tr")
+DEFAULT_LOCALES = (
+    "pl", "en", "de", "fr", "es", "it", "no", "tr",
+    "cs", "sk", "hu", "hr", "ro", "fi", "nl", "sv", "da",
+)
 
 # How many incomplete groups to name before summarising the rest. A locale
 # that has not been started yet would otherwise print one line per group and
@@ -48,22 +69,26 @@ DEFAULT_LOCALES = ("pl", "en", "de", "fr", "es", "it", "no", "tr")
 DEFAULT_LIMIT = 20
 
 
-# The page names its locales in five independent places, and a locale present in
-# some but not others fails as quietly as a missing span: in the CSS but not the
-# buttons is a locale nobody can reach, in the buttons but not the CSS is a button
-# that shows every language at once, in the pills but not HEAD_TEXT is a Polish
-# <title> on a Turkish page. Nothing enforces agreement, so this does.
+# The page names its locales in four independent places, and a locale present in
+# some but not others fails as quietly as a missing span: in the CSS but not in
+# the <option>s is a locale nobody can reach, in the <option>s but not the CSS is
+# an entry that shows every language at once, in the <option>s but not HEAD_TEXT
+# is a Polish <title> on a Turkish page. Nothing enforces agreement, so this does.
+#
+# There were five lists until the pills went away — the switcher is one <select>
+# now, so `data-set-lang` no longer exists anywhere on the page. Dropping the
+# list costs nothing: the pills were never the only reachability signal, and a
+# locale missing from any surviving one is still caught here.
 SWITCHER_LISTS = {
     "reguły CSS": re.compile(r'\[data-lang="([a-z]{2})"\] \[lang\]'),
     "allowlist w <head>": re.compile(r"'([a-z]{2})'(?=[,\]])"),
-    "pigułki": re.compile(r'data-set-lang="([a-z]{2})"'),
     "<option>": re.compile(r'<option value="([a-z]{2})"'),
     "HEAD_TEXT": re.compile(r"^\s{4}([a-z]{2}): \{$", re.M),
 }
 
 
 def switcher_locales(html: str) -> dict[str, set[str]]:
-    """What each of the five lists thinks the supported locales are."""
+    """What each of the lists thinks the supported locales are."""
     found = {}
     for name, pattern in SWITCHER_LISTS.items():
         hits = {loc for loc in pattern.findall(html) if loc in LOCALE_ORDER}
@@ -72,10 +97,16 @@ def switcher_locales(html: str) -> dict[str, set[str]]:
 
 
 def check_switcher(html: str, locales: list[str]) -> list[str]:
-    """Complaints about the five lists — empty when they all agree."""
+    """Complaints about the lists — empty when they all agree."""
     found = switcher_locales(html)
     problems = []
     for name, hits in found.items():
+        # A pattern that matches nothing at all means the markup moved out from
+        # under it, not that the page lost every locale. Say so, otherwise the
+        # check quietly turns into a no-op the day someone rewrites the header.
+        if not hits:
+            problems.append(f"{name}: wzorzec nie znalazł ani jednego locale")
+            continue
         if missing := [loc for loc in locales if loc not in hits]:
             problems.append(f"{name}: brak {', '.join(missing)}")
     # Also catch the reverse — a locale wired into the page that nobody translated.

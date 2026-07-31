@@ -1,7 +1,7 @@
 [
   {
     "id": "adf33f096b93",
-    "line": 789,
+    "line": 808,
     "tag": "span",
     "text": {
       "pl": "Apisense BOX · Instrukcja montażu",
@@ -11,12 +11,21 @@
       "es": "Apisense BOX · Guía de montaje",
       "it": "Apisense BOX · Istruzioni di montaggio",
       "no": "Apisense BOX · Monteringsanvisning",
-      "tr": "Apisense BOX · Montaj kılavuzu"
+      "tr": "Apisense BOX · Montaj kılavuzu",
+      "cs": "Apisense BOX · Návod k montáži",
+      "sk": "Apisense BOX · Návod na montáž",
+      "hu": "Apisense BOX · Szerelési útmutató",
+      "hr": "Apisense BOX · Upute za montažu",
+      "ro": "Apisense BOX · Instrucțiuni de montaj",
+      "fi": "Apisense BOX · Asennusohje",
+      "nl": "Apisense BOX · Montagehandleiding",
+      "sv": "Apisense BOX · Monteringsanvisning",
+      "da": "Apisense BOX · Monteringsvejledning"
     }
   },
   {
     "id": "079510b30455",
-    "line": 842,
+    "line": 867,
     "tag": "span",
     "text": {
       "pl": "Pełna instrukcja",
@@ -26,12 +35,21 @@
       "es": "Guía completa",
       "it": "Guida completa",
       "no": "Fullstendig veiledning",
-      "tr": "Tam kılavuz"
+      "tr": "Tam kılavuz",
+      "cs": "Celý návod",
+      "sk": "Kompletný návod",
+      "hu": "Teljes útmutató",
+      "hr": "Cjelovite upute",
+      "ro": "Ghid complet",
+      "fi": "Koko ohje",
+      "nl": "Volledige handleiding",
+      "sv": "Fullständig guide",
+      "da": "Komplet vejledning"
     }
   },
   {
     "id": "6571823bce73",
-    "line": 867,
+    "line": 892,
     "tag": "span",
     "text": {
       "pl": "Apisense · Zestaw startowy",
@@ -41,12 +59,21 @@
       "es": "Apisense · Kit de inicio",
       "it": "Apisense · Kit di avvio",
       "no": "Apisense · Startpakke",
-      "tr": "Apisense · Başlangıç seti"
+      "tr": "Apisense · Başlangıç seti",
+      "cs": "Apisense · Startovací sada",
+      "sk": "Apisense · Štartovacia sada",
+      "hu": "Apisense · Kezdőkészlet",
+      "hr": "Apisense · Početni komplet",
+      "ro": "Apisense · Kit de start",
+      "fi": "Apisense · Aloituspaketti",
+      "nl": "Apisense · Starterset",
+      "sv": "Apisense · Startpaket",
+      "da": "Apisense · Startsæt"
     }
   },
   {
     "id": "445ec0578438",
-    "line": 869,
+    "line": 894,
     "tag": "span",
     "text": {
       "pl": "Instrukcja<br>montażu",
@@ -56,12 +83,21 @@
       "es": "Guía de<br>montaje",
       "it": "Istruzioni di<br>montaggio",
       "no": "Monterings-<br>anvisning",
-      "tr": "Montaj<br>kılavuzu"
+      "tr": "Montaj<br>kılavuzu",
+      "cs": "Návod k<br>montáži",
+      "sk": "Návod na<br>montáž",
+      "hu": "Szerelési<br>útmutató",
+      "hr": "Upute za<br>montažu",
+      "ro": "Instrucțiuni<br>de montaj",
+      "fi": "Asennus-<br>ohje",
+      "nl": "Montage-<br>handleiding",
+      "sv": "Monterings-<br>anvisning",
+      "da": "Monterings-<br>vejledning"
     }
   },
   {
     "id": "8bcd27cb290b",
-    "line": 873,
+    "line": 898,
     "tag": "span",
     "text": {
       "pl": "Od rozpakowania kartonu do pierwszego odczytu z ula. Siedem kroków, wszystkie ekrany aplikacji i montaż każdego urządzenia w pasiece.",
@@ -71,12 +107,21 @@
       "es": "Desde abrir la caja hasta la primera medición de la colmena. Siete pasos, todas las pantallas de la aplicación y el montaje de cada dispositivo en el colmenar.",
       "it": "Dall'apertura della scatola alla prima lettura dall'arnia. Sette passi, tutte le schermate dell'app e il montaggio di ogni dispositivo nell'apiario.",
       "no": "Fra du åpner esken til den første avlesningen fra bikuben. Sju trinn, alle skjermbildene i appen og montering av hver enhet i bigården.",
-      "tr": "Kutuyu açmaktan kovandan gelen ilk ölçüme kadar. Yedi adım, uygulamanın bütün ekranları ve arılıktaki her cihazın montajı."
+      "tr": "Kutuyu açmaktan kovandan gelen ilk ölçüme kadar. Yedi adım, uygulamanın bütün ekranları ve arılıktaki her cihazın montajı.",
+      "cs": "Od rozbalení krabice až po první naměřené hodnoty z úlu. Sedm kroků, všechny obrazovky aplikace a montáž každého zařízení na včelnici.",
+      "sk": "Od otvorenia škatule po prvé namerané hodnoty z úľa. Sedem krokov, všetky obrazovky aplikácie a montáž každého zariadenia vo včelnici.",
+      "hu": "A doboz kinyitásától a kaptár első mérési adatáig. Hét lépés, az alkalmazás összes képernyője és minden eszköz felszerelése a méhesben.",
+      "hr": "Od otvaranja kutije do prvog očitanja iz košnice. Sedam koraka, svi zasloni aplikacije i montaža svakog uređaja u pčelinjaku.",
+      "ro": "De la deschiderea cutiei până la prima citire din stup. Șapte pași, toate ecranele aplicației și montarea fiecărui dispozitiv în stupină.",
+      "fi": "Laatikon avaamisesta ensimmäiseen lukemaan mehiläispesästä. Seitsemän vaihetta, kaikki sovelluksen näkymät ja jokaisen laitteen asennus mehiläistarhassa.",
+      "nl": "Van het uitpakken van de doos tot de eerste meting uit je bijenkast. Zeven stappen, alle app-schermen en de montage van elk apparaat op de bijenstand.",
+      "sv": "Från att du öppnar kartongen till den första avläsningen från bikupan. Sju steg, alla skärmbilder i appen och montering av varje enhet i bigården.",
+      "da": "Fra du åbner kassen til den første aflæsning fra bistadet. Syv trin, alle skærmbilleder i appen og montering af hver enhed i bigården."
     }
   },
   {
     "id": "8dbb23f20272",
-    "line": 877,
+    "line": 902,
     "tag": "span",
     "text": {
       "pl": "7 kroków",
@@ -86,12 +131,21 @@
       "es": "7 pasos",
       "it": "7 passi",
       "no": "7 trinn",
-      "tr": "7 adım"
+      "tr": "7 adım",
+      "cs": "7 kroků",
+      "sk": "7 krokov",
+      "hu": "7 lépés",
+      "hr": "7 koraka",
+      "ro": "7 pași",
+      "fi": "7 vaihetta",
+      "nl": "7 stappen",
+      "sv": "7 steg",
+      "da": "7 trin"
     }
   },
   {
     "id": "af55159ef610",
-    "line": 878,
+    "line": 903,
     "tag": "span",
     "text": {
       "pl": "ok. 30 minut",
@@ -101,12 +155,21 @@
       "es": "aprox. 30 minutos",
       "it": "circa 30 minuti",
       "no": "ca. 30 minutter",
-      "tr": "yaklaşık 30 dakika"
+      "tr": "yaklaşık 30 dakika",
+      "cs": "cca 30 minut",
+      "sk": "cca 30 minút",
+      "hu": "kb. 30 perc",
+      "hr": "oko 30 minuta",
+      "ro": "aprox. 30 de minute",
+      "fi": "n. 30 minuuttia",
+      "nl": "ca. 30 minuten",
+      "sv": "ca 30 minuter",
+      "da": "ca. 30 minutter"
     }
   },
   {
     "id": "ca1173eb3920",
-    "line": 879,
+    "line": 904,
     "tag": "span",
     "text": {
       "pl": "Apisense Pro AI",
@@ -116,12 +179,21 @@
       "es": "Apisense Pro AI",
       "it": "Apisense Pro AI",
       "no": "Apisense Pro AI",
-      "tr": "Apisense Pro AI"
+      "tr": "Apisense Pro AI",
+      "cs": "Apisense Pro AI",
+      "sk": "Apisense Pro AI",
+      "hu": "Apisense Pro AI",
+      "hr": "Apisense Pro AI",
+      "ro": "Apisense Pro AI",
+      "fi": "Apisense Pro AI",
+      "nl": "Apisense Pro AI",
+      "sv": "Apisense Pro AI",
+      "da": "Apisense Pro AI"
     }
   },
   {
     "id": "805d276e5d4c",
-    "line": 884,
+    "line": 909,
     "tag": "span",
     "text": {
       "pl": "Przewiń",
@@ -131,12 +203,21 @@
       "es": "Desplázate",
       "it": "Scorri",
       "no": "Bla ned",
-      "tr": "Kaydırın"
+      "tr": "Kaydırın",
+      "cs": "Posuňte dolů",
+      "sk": "Posúvaj",
+      "hu": "Görgess",
+      "hr": "Pomaknite se",
+      "ro": "Derulați",
+      "fi": "Vieritä",
+      "nl": "Scrollen",
+      "sv": "Skrolla",
+      "da": "Rul ned"
     }
   },
   {
     "id": "7b3aacae4b41",
-    "line": 893,
+    "line": 918,
     "tag": "span",
     "text": {
       "pl": "Zestaw",
@@ -146,12 +227,21 @@
       "es": "El kit",
       "it": "Il kit",
       "no": "Settet",
-      "tr": "Set"
+      "tr": "Set",
+      "cs": "Sada",
+      "sk": "Sada",
+      "hu": "A készlet",
+      "hr": "Komplet",
+      "ro": "Kitul",
+      "fi": "Paketti",
+      "nl": "De set",
+      "sv": "Paketet",
+      "da": "Sættet"
     }
   },
   {
     "id": "d5c673a93cc3",
-    "line": 894,
+    "line": 919,
     "tag": "span",
     "text": {
       "pl": "Co znajdziesz w pudełku",
@@ -161,12 +251,21 @@
       "es": "Qué hay en la caja",
       "it": "Cosa c'è nella scatola",
       "no": "Dette ligger i esken",
-      "tr": "Kutuda neler var"
+      "tr": "Kutuda neler var",
+      "cs": "Co najdete v krabici",
+      "sk": "Čo nájdeš v škatuli",
+      "hu": "Mi van a dobozban",
+      "hr": "Što je u kutiji",
+      "ro": "Ce găsiți în cutie",
+      "fi": "Mitä laatikossa on",
+      "nl": "Wat zit er in de doos",
+      "sv": "Det här finns i kartongen",
+      "da": "Det finder du i kassen"
     }
   },
   {
     "id": "944a87500b02",
-    "line": 896,
+    "line": 921,
     "tag": "span",
     "text": {
       "pl": "Jeden Hub obsługuje całą pasiekę. Scale trafia pod pierwszy ul, a każdy z trzech uli dostaje własny VitalSensor i ColonyLink.",
@@ -176,12 +275,21 @@
       "es": "Un solo Hub cubre todo el colmenar. El Scale va debajo de la primera colmena y cada una de las tres colmenas recibe su propio VitalSensor y su ColonyLink.",
       "it": "Un solo Hub copre l'intero apiario. La Scale va sotto la prima arnia e ognuna delle tre arnie riceve il proprio VitalSensor e il proprio ColonyLink.",
       "no": "Én Hub dekker hele bigården. Scale plasseres under den første bikuben, og hver av de tre bikubene får sin egen VitalSensor og ColonyLink.",
-      "tr": "Tek bir Hub tüm arılığa hizmet eder. Scale ilk kovanın altına girer; üç kovanın her biri kendi VitalSensor ve ColonyLink cihazını alır."
+      "tr": "Tek bir Hub tüm arılığa hizmet eder. Scale ilk kovanın altına girer; üç kovanın her biri kendi VitalSensor ve ColonyLink cihazını alır.",
+      "cs": "Jeden Hub obsluhuje celou včelnici. Scale se umísťuje pod první úl a každý ze tří úlů dostane vlastní VitalSensor a ColonyLink.",
+      "sk": "Jeden Hub obslúži celú včelnicu. Scale ide pod prvý úľ a každý z troch úľov dostane vlastný VitalSensor a ColonyLink.",
+      "hu": "Egyetlen Hub kiszolgálja az egész méhest. A Scale az első kaptár alá kerül, a három kaptár mindegyikéhez pedig saját VitalSensor és ColonyLink tartozik.",
+      "hr": "Jedan Hub pokriva cijeli pčelinjak. Scale ide ispod prve košnice, a svaka od tri košnice dobiva vlastiti VitalSensor i ColonyLink.",
+      "ro": "Un singur Hub deservește întreaga stupină. Scale se așază sub primul stup, iar fiecare dintre cei trei stupi primește propriul VitalSensor și propriul ColonyLink.",
+      "fi": "Yksi Hub riittää koko mehiläistarhalle. Scale tulee ensimmäisen pesän alle, ja jokainen kolmesta pesästä saa oman VitalSensorin ja ColonyLinkin.",
+      "nl": "Eén Hub bedient de hele bijenstand. De Scale komt onder de eerste kast, en elk van de drie kasten krijgt een eigen VitalSensor en ColonyLink.",
+      "sv": "En enda Hub täcker hela bigården. Scale placeras under den första bikupan, och var och en av de tre bikuporna får en egen VitalSensor och ColonyLink.",
+      "da": "Én Hub dækker hele bigården. Scale placeres under det første bistade, og hvert af de tre bistader får sin egen VitalSensor og sit eget ColonyLink."
     }
   },
   {
     "id": "2387a74ee316",
-    "line": 921,
+    "line": 946,
     "tag": "span",
     "text": {
       "pl": "Opakowanie",
@@ -191,12 +299,21 @@
       "es": "El embalaje",
       "it": "La confezione",
       "no": "Esken",
-      "tr": "Ambalaj"
+      "tr": "Ambalaj",
+      "cs": "Obal",
+      "sk": "Balenie",
+      "hu": "A doboz",
+      "hr": "Pakiranje",
+      "ro": "Ambalajul",
+      "fi": "Laatikko",
+      "nl": "De verpakking",
+      "sv": "Förpackningen",
+      "da": "Kassen"
     }
   },
   {
     "id": "f3467d3bcd49",
-    "line": 933,
+    "line": 958,
     "tag": "span",
     "text": {
       "pl": "Krok 01",
@@ -206,12 +323,21 @@
       "es": "Paso 01",
       "it": "Passo 01",
       "no": "Trinn 01",
-      "tr": "Adım 01"
+      "tr": "Adım 01",
+      "cs": "Krok 01",
+      "sk": "Krok 01",
+      "hu": "01. lépés",
+      "hr": "Korak 01",
+      "ro": "Pasul 01",
+      "fi": "Vaihe 01",
+      "nl": "Stap 01",
+      "sv": "Steg 01",
+      "da": "Trin 01"
     }
   },
   {
     "id": "fc0dbbf29099",
-    "line": 934,
+    "line": 959,
     "tag": "span",
     "text": {
       "pl": "Pobierz aplikację",
@@ -221,12 +347,21 @@
       "es": "Descarga la aplicación",
       "it": "Scarica l'app",
       "no": "Last ned appen",
-      "tr": "Uygulamayı indirin"
+      "tr": "Uygulamayı indirin",
+      "cs": "Stáhněte si aplikaci",
+      "sk": "Stiahni aplikáciu",
+      "hu": "Töltsd le az alkalmazást",
+      "hr": "Preuzmite aplikaciju",
+      "ro": "Descărcați aplicația",
+      "fi": "Lataa sovellus",
+      "nl": "Download de app",
+      "sv": "Ladda ner appen",
+      "da": "Hent appen"
     }
   },
   {
     "id": "85bdbcd7b181",
-    "line": 936,
+    "line": 961,
     "tag": "span",
     "text": {
       "pl": "Cały zestaw konfigurujesz z telefonu. Zeskanuj kod QR aparatem albo wyszukaj <b>Apisense Pro AI</b> w App Store lub Google Play.",
@@ -236,12 +371,21 @@
       "es": "Todo el kit se configura desde el teléfono. Escanea el código QR con la cámara o busca <b>Apisense Pro AI</b> en la App Store o en Google Play.",
       "it": "L'intero kit si configura dal telefono. Scansiona il codice QR con la fotocamera oppure cerca <b>Apisense Pro AI</b> nell'App Store o su Google Play.",
       "no": "Hele settet konfigurerer du fra telefonen. Skann QR-koden med kameraet, eller søk etter <b>Apisense Pro AI</b> i App Store eller Google Play.",
-      "tr": "Tüm seti telefonunuzdan yapılandırırsınız. QR kodunu kameranızla tarayın ya da App Store veya Google Play'de <b>Apisense Pro AI</b> uygulamasını arayın."
+      "tr": "Tüm seti telefonunuzdan yapılandırırsınız. QR kodunu kameranızla tarayın ya da App Store veya Google Play'de <b>Apisense Pro AI</b> uygulamasını arayın.",
+      "cs": "Celou sadu nastavíte z telefonu. Naskenujte QR kód fotoaparátem nebo vyhledejte <b>Apisense Pro AI</b> v App Store nebo na Google Play.",
+      "sk": "Celú sadu nastavíš z telefónu. Naskenuj QR kód fotoaparátom alebo vyhľadaj <b>Apisense Pro AI</b> v App Store alebo Google Play.",
+      "hu": "Az egész készletet a telefonodról állítod be. Olvasd be a QR-kódot a kamerával, vagy keress rá az <b>Apisense Pro AI</b> alkalmazásra az App Store-ban vagy a Google Play-en.",
+      "hr": "Cijeli komplet konfigurirate s telefona. Skenirajte QR kod kamerom ili potražite <b>Apisense Pro AI</b> u App Storeu ili na Google Playu.",
+      "ro": "Tot kitul se configurează de pe telefon. Scanați codul QR cu camera sau căutați <b>Apisense Pro AI</b> în App Store sau pe Google Play.",
+      "fi": "Määrität koko paketin puhelimella. Skannaa QR-koodi kameralla tai hae <b>Apisense Pro AI</b> App Storesta tai Google Playsta.",
+      "nl": "De hele set stel je in vanaf je telefoon. Scan de QR-code met je camera of zoek op <b>Apisense Pro AI</b> in de App Store of Google Play.",
+      "sv": "Hela paketet ställer du in från telefonen. Skanna QR-koden med kameran eller sök efter <b>Apisense Pro AI</b> i App Store eller Google Play.",
+      "da": "Hele sættet konfigurerer du fra telefonen. Scan QR-koden med kameraet, eller søg efter <b>Apisense Pro AI</b> i App Store eller Google Play."
     }
   },
   {
     "id": "286336e7146d",
-    "line": 940,
+    "line": 965,
     "tag": "span",
     "text": {
       "pl": "Górny kod QR — App Store",
@@ -251,12 +395,21 @@
       "es": "Código QR superior — App Store",
       "it": "Codice QR in alto — App Store",
       "no": "Øverste QR-kode — App Store",
-      "tr": "Üstteki QR kodu — App Store"
+      "tr": "Üstteki QR kodu — App Store",
+      "cs": "Horní QR kód — App Store",
+      "sk": "Horný QR kód — App Store",
+      "hu": "Felső QR-kód — App Store",
+      "hr": "Gornji QR kod — App Store",
+      "ro": "Codul QR de sus — App Store",
+      "fi": "Ylempi QR-koodi — App Store",
+      "nl": "Bovenste QR-code — App Store",
+      "sv": "Översta QR-koden — App Store",
+      "da": "Øverste QR-kode — App Store"
     }
   },
   {
     "id": "450c21157a6d",
-    "line": 941,
+    "line": 966,
     "tag": "span",
     "text": {
       "pl": "Dolny kod QR — Google Play",
@@ -266,12 +419,21 @@
       "es": "Código QR inferior — Google Play",
       "it": "Codice QR in basso — Google Play",
       "no": "Nederste QR-kode — Google Play",
-      "tr": "Alttaki QR kodu — Google Play"
+      "tr": "Alttaki QR kodu — Google Play",
+      "cs": "Dolní QR kód — Google Play",
+      "sk": "Dolný QR kód — Google Play",
+      "hu": "Alsó QR-kód — Google Play",
+      "hr": "Donji QR kod — Google Play",
+      "ro": "Codul QR de jos — Google Play",
+      "fi": "Alempi QR-koodi — Google Play",
+      "nl": "Onderste QR-code — Google Play",
+      "sv": "Nedersta QR-koden — Google Play",
+      "da": "Nederste QR-kode — Google Play"
     }
   },
   {
     "id": "aaf3702ff50b",
-    "line": 942,
+    "line": 967,
     "tag": "span",
     "text": {
       "pl": "Możesz też pracować w przeglądarce: <em>app.apisense.ai</em>",
@@ -281,12 +443,21 @@
       "es": "También puedes trabajar en el navegador: <em>app.apisense.ai</em>",
       "it": "Puoi lavorare anche dal browser: <em>app.apisense.ai</em>",
       "no": "Du kan også jobbe i nettleseren: <em>app.apisense.ai</em>",
-      "tr": "Tarayıcıdan da çalışabilirsiniz: <em>app.apisense.ai</em>"
+      "tr": "Tarayıcıdan da çalışabilirsiniz: <em>app.apisense.ai</em>",
+      "cs": "Pracovat můžete i v prohlížeči: <em>app.apisense.ai</em>",
+      "sk": "Pracovať môžeš aj v prehliadači: <em>app.apisense.ai</em>",
+      "hu": "Böngészőből is dolgozhatsz: <em>app.apisense.ai</em>",
+      "hr": "Možete raditi i u pregledniku: <em>app.apisense.ai</em>",
+      "ro": "Puteți lucra și în browser: <em>app.apisense.ai</em>",
+      "fi": "Voit työskennellä myös selaimessa: <em>app.apisense.ai</em>",
+      "nl": "Je kunt ook in de browser werken: <em>app.apisense.ai</em>",
+      "sv": "Du kan också arbeta i webbläsaren: <em>app.apisense.ai</em>",
+      "da": "Du kan også arbejde i browseren: <em>app.apisense.ai</em>"
     }
   },
   {
     "id": "19c60e38791c",
-    "line": 949,
+    "line": 974,
     "tag": "span",
     "text": {
       "pl": "App Store · Google Play",
@@ -296,12 +467,21 @@
       "es": "App Store · Google Play",
       "it": "App Store · Google Play",
       "no": "App Store · Google Play",
-      "tr": "App Store · Google Play"
+      "tr": "App Store · Google Play",
+      "cs": "App Store · Google Play",
+      "sk": "App Store · Google Play",
+      "hu": "App Store · Google Play",
+      "hr": "App Store · Google Play",
+      "ro": "App Store · Google Play",
+      "fi": "App Store · Google Play",
+      "nl": "App Store · Google Play",
+      "sv": "App Store · Google Play",
+      "da": "App Store · Google Play"
     }
   },
   {
     "id": "dd38aa096e90",
-    "line": 960,
+    "line": 985,
     "tag": "span",
     "text": {
       "pl": "Krok 02",
@@ -311,12 +491,21 @@
       "es": "Paso 02",
       "it": "Passo 02",
       "no": "Trinn 02",
-      "tr": "Adım 02"
+      "tr": "Adım 02",
+      "cs": "Krok 02",
+      "sk": "Krok 02",
+      "hu": "02. lépés",
+      "hr": "Korak 02",
+      "ro": "Pasul 02",
+      "fi": "Vaihe 02",
+      "nl": "Stap 02",
+      "sv": "Steg 02",
+      "da": "Trin 02"
     }
   },
   {
     "id": "7ede114c62e9",
-    "line": 961,
+    "line": 986,
     "tag": "span",
     "text": {
       "pl": "Stwórz konto",
@@ -326,12 +515,21 @@
       "es": "Crea una cuenta",
       "it": "Crea un account",
       "no": "Opprett konto",
-      "tr": "Hesap oluşturun"
+      "tr": "Hesap oluşturun",
+      "cs": "Vytvořte si účet",
+      "sk": "Vytvor si konto",
+      "hu": "Hozz létre fiókot",
+      "hr": "Izradite račun",
+      "ro": "Creați un cont",
+      "fi": "Luo tili",
+      "nl": "Account aanmaken",
+      "sv": "Skapa ett konto",
+      "da": "Opret konto"
     }
   },
   {
     "id": "d25ed934e3f0",
-    "line": 963,
+    "line": 988,
     "tag": "span",
     "text": {
       "pl": "Podaj nazwę użytkownika, adres e-mail i numer telefonu, a następnie naciśnij <b>Next</b>. Możesz też zarejestrować się kontem Google lub Apple.",
@@ -341,12 +539,21 @@
       "es": "Introduce un nombre de usuario, una dirección de correo y un número de teléfono, y pulsa <b>Next</b>. También puedes registrarte con tu cuenta de Google o de Apple.",
       "it": "Inserisci nome utente, indirizzo e-mail e numero di telefono, poi tocca <b>Next</b>. Puoi anche registrarti con un account Google o Apple.",
       "no": "Skriv inn brukernavn, e-postadresse og mobilnummer, og trykk deretter <b>Next</b>. Du kan også registrere deg med Google- eller Apple-kontoen din.",
-      "tr": "Kullanıcı adı, e-posta adresi ve cep telefonu numarası girin, ardından <b>Next</b> düğmesine dokunun. Google veya Apple hesabınızla da kaydolabilirsiniz."
+      "tr": "Kullanıcı adı, e-posta adresi ve cep telefonu numarası girin, ardından <b>Next</b> düğmesine dokunun. Google veya Apple hesabınızla da kaydolabilirsiniz.",
+      "cs": "Zadejte uživatelské jméno, e-mailovou adresu a číslo mobilního telefonu a pak klepněte na <b>Next</b>. Zaregistrovat se můžete také účtem Google nebo Apple.",
+      "sk": "Zadaj používateľské meno, e-mailovú adresu a telefónne číslo a potom stlač <b>Next</b>. Zaregistrovať sa môžeš aj kontom Google alebo Apple.",
+      "hu": "Add meg a felhasználóneved, az e-mail-címed és a mobilszámod, majd koppints a <b>Next</b> gombra. Google- vagy Apple-fiókkal is regisztrálhatsz.",
+      "hr": "Unesite korisničko ime, adresu e-pošte i broj mobitela, a zatim dodirnite <b>Next</b>. Možete se registrirati i putem Google ili Apple računa.",
+      "ro": "Introduceți un nume de utilizator, o adresă de e-mail și un număr de telefon, apoi apăsați <b>Next</b>. Vă puteți înregistra și cu contul Google sau Apple.",
+      "fi": "Anna käyttäjätunnus, sähköpostiosoite ja matkapuhelinnumero ja napauta sitten <b>Next</b>. Voit myös rekisteröityä Google- tai Apple-tilillä.",
+      "nl": "Vul een gebruikersnaam, e-mailadres en mobiel nummer in en tik op <b>Next</b>. Je kunt je ook aanmelden met je Google- of Apple-account.",
+      "sv": "Ange användarnamn, e-postadress och mobilnummer, och tryck sedan på <b>Next</b>. Du kan också registrera dig med ditt Google- eller Apple-konto.",
+      "da": "Indtast brugernavn, e-mailadresse og mobilnummer, og tryk derefter på <b>Next</b>. Du kan også tilmelde dig med din Google- eller Apple-konto."
     }
   },
   {
     "id": "538e249239a7",
-    "line": 967,
+    "line": 992,
     "tag": "span",
     "text": {
       "pl": "Nazwa widoczna w aplikacji",
@@ -356,12 +563,21 @@
       "es": "Nombre visible en la aplicación",
       "it": "Nome visibile nell'app",
       "no": "Navnet som vises i appen",
-      "tr": "Uygulamada görünen ad"
+      "tr": "Uygulamada görünen ad",
+      "cs": "Jméno viditelné v aplikaci",
+      "sk": "Meno viditeľné v aplikácii",
+      "hu": "Az alkalmazásban megjelenő név",
+      "hr": "Ime koje se prikazuje u aplikaciji",
+      "ro": "Numele afișat în aplicație",
+      "fi": "Sovelluksessa näkyvä nimi",
+      "nl": "Naam die je in de app ziet",
+      "sv": "Namnet som visas i appen",
+      "da": "Navnet, der vises i appen"
     }
   },
   {
     "id": "a2f0e70a5b59",
-    "line": 968,
+    "line": 993,
     "tag": "span",
     "text": {
       "pl": "Służy do logowania i powiadomień",
@@ -371,12 +587,21 @@
       "es": "Para el inicio de sesión y las notificaciones",
       "it": "Serve per l'accesso e le notifiche",
       "no": "Brukes til innlogging og varsler",
-      "tr": "Giriş ve bildirimler için kullanılır"
+      "tr": "Giriş ve bildirimler için kullanılır",
+      "cs": "Slouží k přihlášení a oznámením",
+      "sk": "Slúži na prihlásenie a upozornenia",
+      "hu": "Belépéshez és értesítésekhez",
+      "hr": "Služi za prijavu i obavijesti",
+      "ro": "Folosit pentru autentificare și notificări",
+      "fi": "Käytetään kirjautumiseen ja ilmoituksiin",
+      "nl": "Voor inloggen en meldingen",
+      "sv": "Används för inloggning och aviseringar",
+      "da": "Bruges til login og notifikationer"
     }
   },
   {
     "id": "73c5d8b9cfeb",
-    "line": 969,
+    "line": 994,
     "tag": "span",
     "text": {
       "pl": "Numer kontaktowy do konta",
@@ -386,12 +611,21 @@
       "es": "Número de contacto de la cuenta",
       "it": "Numero di contatto dell'account",
       "no": "Kontaktnummer for kontoen",
-      "tr": "Hesabın iletişim numarası"
+      "tr": "Hesabın iletişim numarası",
+      "cs": "Kontaktní číslo k účtu",
+      "sk": "Kontaktné číslo ku kontu",
+      "hu": "A fiók kapcsolattartási száma",
+      "hr": "Kontakt broj računa",
+      "ro": "Numărul de contact al contului",
+      "fi": "Tilin yhteysnumero",
+      "nl": "Contactnummer voor het account",
+      "sv": "Kontaktnummer till kontot",
+      "da": "Kontaktnummer til kontoen"
     }
   },
   {
     "id": "86d14afd0ef2",
-    "line": 976,
+    "line": 1001,
     "tag": "span",
     "text": {
       "pl": "Ekran rejestracji",
@@ -401,12 +635,21 @@
       "es": "Pantalla de registro",
       "it": "Schermata di registrazione",
       "no": "Registreringsskjerm",
-      "tr": "Kayıt ekranı"
+      "tr": "Kayıt ekranı",
+      "cs": "Obrazovka registrace",
+      "sk": "Obrazovka registrácie",
+      "hu": "Regisztrációs képernyő",
+      "hr": "Zaslon registracije",
+      "ro": "Ecranul de înregistrare",
+      "fi": "Rekisteröintinäyttö",
+      "nl": "Registratiescherm",
+      "sv": "Registreringsskärm",
+      "da": "Registreringsskærm"
     }
   },
   {
     "id": "a9c5c64831f5",
-    "line": 987,
+    "line": 1012,
     "tag": "span",
     "text": {
       "pl": "Krok 03 · 03.1 – 03.2",
@@ -416,12 +659,21 @@
       "es": "Paso 03 · 03.1 – 03.2",
       "it": "Passo 03 · 03.1 – 03.2",
       "no": "Trinn 03 · 03.1 – 03.2",
-      "tr": "Adım 03 · 03.1 – 03.2"
+      "tr": "Adım 03 · 03.1 – 03.2",
+      "cs": "Krok 03 · 03.1 – 03.2",
+      "sk": "Krok 03 · 03.1 – 03.2",
+      "hu": "03. lépés · 03.1 – 03.2",
+      "hr": "Korak 03 · 03.1 – 03.2",
+      "ro": "Pasul 03 · 03.1 – 03.2",
+      "fi": "Vaihe 03 · 03.1 – 03.2",
+      "nl": "Stap 03 · 03.1 – 03.2",
+      "sv": "Steg 03 · 03.1 – 03.2",
+      "da": "Trin 03 · 03.1 – 03.2"
     }
   },
   {
     "id": "def4b5dc4389",
-    "line": 988,
+    "line": 1013,
     "tag": "span",
     "text": {
       "pl": "Dodaj pasiekę",
@@ -431,12 +683,21 @@
       "es": "Añade un colmenar",
       "it": "Aggiungi un apiario",
       "no": "Legg til bigård",
-      "tr": "Arılık ekleyin"
+      "tr": "Arılık ekleyin",
+      "cs": "Přidejte včelnici",
+      "sk": "Pridaj včelnicu",
+      "hu": "Adj hozzá méhest",
+      "hr": "Dodajte pčelinjak",
+      "ro": "Adăugați o stupină",
+      "fi": "Lisää mehiläistarha",
+      "nl": "Bijenstand toevoegen",
+      "sv": "Lägg till bigård",
+      "da": "Tilføj bigård"
     }
   },
   {
     "id": "f42e6c5f2a5b",
-    "line": 990,
+    "line": 1015,
     "tag": "span",
     "text": {
       "pl": "Pasieka to miejsce, w którym stoją ule i jeden Hub. Zaczynasz od nadania jej nazwy.",
@@ -446,12 +707,21 @@
       "es": "Un colmenar es el lugar donde están tus colmenas y un Hub. Empieza por darle un nombre.",
       "it": "L'apiario è il luogo in cui si trovano le tue arnie e un Hub. Inizia assegnandogli un nome.",
       "no": "En bigård er stedet der bikubene dine og én Hub står. Start med å gi den et navn.",
-      "tr": "Arılık, kovanlarınızın ve bir Hub'ın bulunduğu yerdir. İşe ona bir ad vererek başlayın."
+      "tr": "Arılık, kovanlarınızın ve bir Hub'ın bulunduğu yerdir. İşe ona bir ad vererek başlayın.",
+      "cs": "Včelnice je místo, kde stojí vaše úly a jeden Hub. Začněte tím, že jí dáte název.",
+      "sk": "Včelnica je miesto, kde stoja tvoje úle a jeden Hub. Začni tým, že jej dáš názov.",
+      "hu": "A méhes az a hely, ahol a kaptáraid és egy Hub állnak. Kezdd azzal, hogy nevet adsz neki.",
+      "hr": "Pčelinjak je mjesto na kojem stoje vaše košnice i jedan Hub. Počnite tako da mu date ime.",
+      "ro": "Stupina este locul în care se află stupii și un Hub. Începeți prin a-i da un nume.",
+      "fi": "Mehiläistarha on paikka, jossa pesäsi ja yksi Hub sijaitsevat. Aloita antamalla sille nimi.",
+      "nl": "Een bijenstand is de plek waar je kasten en één Hub staan. Je begint met het geven van een naam.",
+      "sv": "En bigård är platsen där dina bikupor och en Hub står. Börja med att ge den ett namn.",
+      "da": "En bigård er stedet, hvor dine bistader og én Hub står. Start med at give den et navn."
     }
   },
   {
     "id": "5aea790ededc",
-    "line": 994,
+    "line": 1019,
     "tag": "span",
     "text": {
       "pl": "Na ekranie powitalnym naciśnij <em>Add apiary</em>.",
@@ -461,12 +731,21 @@
       "es": "En la pantalla de bienvenida, pulsa <em>Add apiary</em>.",
       "it": "Nella schermata di benvenuto tocca <em>Add apiary</em>.",
       "no": "Trykk på <em>Add apiary</em> på velkomstskjermen.",
-      "tr": "Karşılama ekranında <em>Add apiary</em> öğesine dokunun."
+      "tr": "Karşılama ekranında <em>Add apiary</em> öğesine dokunun.",
+      "cs": "Na úvodní obrazovce klepněte na <em>Add apiary</em>.",
+      "sk": "Na úvodnej obrazovke stlač <em>Add apiary</em>.",
+      "hu": "Az üdvözlőképernyőn koppints az <em>Add apiary</em> gombra.",
+      "hr": "Na zaslonu dobrodošlice dodirnite <em>Add apiary</em>.",
+      "ro": "Pe ecranul de întâmpinare apăsați <em>Add apiary</em>.",
+      "fi": "Napauta tervetuloanäytössä <em>Add apiary</em>.",
+      "nl": "Tik op <em>Add apiary</em> in het welkomstscherm.",
+      "sv": "Tryck på <em>Add apiary</em> på välkomstskärmen.",
+      "da": "Tryk på <em>Add apiary</em> på velkomstskærmen."
     }
   },
   {
     "id": "cf8b5ec753fb",
-    "line": 995,
+    "line": 1020,
     "tag": "span",
     "text": {
       "pl": "Wpisz nazwę pasieki i jej skrót (maks. 3 znaki), a potem dotknij ikony skanera przy polu <em>Hub</em>.",
@@ -476,12 +755,21 @@
       "es": "Introduce el nombre del colmenar y su abreviatura (máx. 3 caracteres) y pulsa el icono del escáner junto al campo <em>Hub</em>.",
       "it": "Inserisci il nome dell'apiario e la sua sigla (max. 3 caratteri), poi tocca l'icona dello scanner accanto al campo <em>Hub</em>.",
       "no": "Skriv inn navnet på bigården og forkortelsen (maks. 3 tegn), og trykk deretter på skannerikonet ved feltet <em>Hub</em>.",
-      "tr": "Arılık adını ve kısaltmasını (en fazla 3 karakter) girin, ardından <em>Hub</em> alanının yanındaki tarayıcı simgesine dokunun."
+      "tr": "Arılık adını ve kısaltmasını (en fazla 3 karakter) girin, ardından <em>Hub</em> alanının yanındaki tarayıcı simgesine dokunun.",
+      "cs": "Zadejte název včelnice a její zkratku (max. 3 znaky) a pak klepněte na ikonu skeneru u pole <em>Hub</em>.",
+      "sk": "Zadaj názov včelnice a jej skratku (max. 3 znaky) a potom ťukni na ikonu skenera pri poli <em>Hub</em>.",
+      "hu": "Írd be a méhes nevét és a rövidítését (max. 3 karakter), majd koppints a <em>Hub</em> mező melletti szkennerikonra.",
+      "hr": "Unesite naziv pčelinjaka i njegovu kraticu (najviše 3 znaka), a zatim dodirnite ikonu skenera uz polje <em>Hub</em>.",
+      "ro": "Introduceți numele stupinei și abrevierea ei (max. 3 caractere), apoi apăsați pictograma scanerului de lângă câmpul <em>Hub</em>.",
+      "fi": "Kirjoita tarhan nimi ja sen lyhenne (enintään 3 merkkiä) ja napauta sitten <em>Hub</em>-kentän vieressä olevaa skannerikuvaketta.",
+      "nl": "Vul de naam van de bijenstand en de afkorting (max. 3 tekens) in en tik daarna op het scanpictogram naast het veld <em>Hub</em>.",
+      "sv": "Ange bigårdens namn och dess förkortning (max 3 tecken) och tryck sedan på skannerikonen vid fältet <em>Hub</em>.",
+      "da": "Indtast bigårdens navn og forkortelse (maks. 3 tegn), og tryk derefter på scannerikonet ved feltet <em>Hub</em>."
     }
   },
   {
     "id": "014cec4c53b2",
-    "line": 1002,
+    "line": 1027,
     "tag": "span",
     "text": {
       "pl": "Aplikacja",
@@ -491,12 +779,21 @@
       "es": "En la aplicación",
       "it": "Nell'app",
       "no": "I appen",
-      "tr": "Uygulamada"
+      "tr": "Uygulamada",
+      "cs": "V aplikaci",
+      "sk": "V aplikácii",
+      "hu": "Az alkalmazásban",
+      "hr": "U aplikaciji",
+      "ro": "În aplicație",
+      "fi": "Sovelluksessa",
+      "nl": "In de app",
+      "sv": "I appen",
+      "da": "I appen"
     }
   },
   {
     "id": "4234bb938eb5",
-    "line": 1013,
+    "line": 1038,
     "tag": "span",
     "text": {
       "pl": "Krok 03 · 03.3",
@@ -506,12 +803,21 @@
       "es": "Paso 03 · 03.3",
       "it": "Passo 03 · 03.3",
       "no": "Trinn 03 · 03.3",
-      "tr": "Adım 03 · 03.3"
+      "tr": "Adım 03 · 03.3",
+      "cs": "Krok 03 · 03.3",
+      "sk": "Krok 03 · 03.3",
+      "hu": "03. lépés · 03.3",
+      "hr": "Korak 03 · 03.3",
+      "ro": "Pasul 03 · 03.3",
+      "fi": "Vaihe 03 · 03.3",
+      "nl": "Stap 03 · 03.3",
+      "sv": "Steg 03 · 03.3",
+      "da": "Trin 03 · 03.3"
     }
   },
   {
     "id": "cc79d6fa7921",
-    "line": 1014,
+    "line": 1039,
     "tag": "span",
     "text": {
       "pl": "Zeskanuj kod QR&nbsp;Huba",
@@ -521,12 +827,21 @@
       "es": "Escanea el código QR del&nbsp;Hub",
       "it": "Scansiona il codice QR&nbsp;dell'Hub",
       "no": "Skann QR-koden til&nbsp;Hub",
-      "tr": "Hub'ın QR kodunu tarayın"
+      "tr": "Hub'ın QR kodunu tarayın",
+      "cs": "Naskenujte QR kód&nbsp;Hubu",
+      "sk": "Naskenuj QR kód&nbsp;Hubu",
+      "hu": "Olvasd be a Hub QR-kódját",
+      "hr": "Skenirajte QR kod&nbsp;Huba",
+      "ro": "Scanați codul QR de pe Hub",
+      "fi": "Skannaa Hubin QR-koodi",
+      "nl": "Scan de QR-code van de&nbsp;Hub",
+      "sv": "Skanna QR-koden på&nbsp;Hub",
+      "da": "Scan QR-koden på Hub"
     }
   },
   {
     "id": "2b4183cc0fc7",
-    "line": 1016,
+    "line": 1041,
     "tag": "span",
     "text": {
       "pl": "Naklejka z kodem QR znajduje się na obudowie Huba. Ustaw ją w ramce skanera — aplikacja odczyta kod sama i wypełni pola <em>Hub</em> oraz <em>Verification Code</em>.",
@@ -536,12 +851,21 @@
       "es": "La pegatina con el código QR está en la carcasa del Hub. Encuádrala en el marco del escáner: la aplicación lee el código y rellena por ti los campos <em>Hub</em> y <em>Verification Code</em>.",
       "it": "L'adesivo con il codice QR si trova sulla scocca dell'Hub. Inquadralo nel riquadro dello scanner: l'app lo legge da sola e compila i campi <em>Hub</em> e <em>Verification Code</em>.",
       "no": "Klistremerket med QR-koden sitter på kabinettet til Hub. Legg det midt i skannerrammen — appen leser koden selv og fyller ut feltene <em>Hub</em> og <em>Verification Code</em> for deg.",
-      "tr": "QR etiketi Hub'ın gövdesindedir. Etiketi tarayıcı çerçevesine hizalayın — uygulama kodu kendisi okur ve <em>Hub</em> ile <em>Verification Code</em> alanlarını sizin için doldurur."
+      "tr": "QR etiketi Hub'ın gövdesindedir. Etiketi tarayıcı çerçevesine hizalayın — uygulama kodu kendisi okur ve <em>Hub</em> ile <em>Verification Code</em> alanlarını sizin için doldurur.",
+      "cs": "Samolepka s QR kódem je na pouzdru Hubu. Umístěte ji do rámečku skeneru — aplikace ji přečte sama a vyplní za vás pole <em>Hub</em> a <em>Verification Code</em>.",
+      "sk": "Nálepka s QR kódom je na kryte Hubu. Zameraj ju do rámčeka skenera — aplikácia kód prečíta sama a vyplní za teba polia <em>Hub</em> a <em>Verification Code</em>.",
+      "hu": "A QR-kódos matrica a Hub burkolatán található. Igazítsd a szkenner keretébe — az alkalmazás magától beolvassa, és helyetted tölti ki a <em>Hub</em> és a <em>Verification Code</em> mezőt.",
+      "hr": "Naljepnica s QR kodom nalazi se na kućištu Huba. Poravnajte je u okviru skenera — aplikacija je sama očita i umjesto vas ispuni polja <em>Hub</em> i <em>Verification Code</em>.",
+      "ro": "Autocolantul cu codul QR se află pe carcasa Hub-ului. Încadrați-l în chenarul scanerului — aplicația îl citește singură și completează în locul dumneavoastră câmpurile <em>Hub</em> și <em>Verification Code</em>.",
+      "fi": "QR-tarra on Hubin kotelossa. Aseta se skannerin kehyksen sisään — sovellus lukee koodin ja täyttää <em>Hub</em>- ja <em>Verification Code</em> -kentät puolestasi.",
+      "nl": "De QR-sticker zit op de behuizing van de Hub. Houd hem binnen het kader van de scanner — de app leest de code zelf en vult de velden <em>Hub</em> en <em>Verification Code</em> voor je in.",
+      "sv": "QR-dekalen sitter på höljet till Hub. Rikta in den i skannerramen — appen läser koden själv och fyller i fälten <em>Hub</em> och <em>Verification Code</em> åt dig.",
+      "da": "Klistermærket med QR-koden sidder på Hub-kabinettet. Placér det midt i scannerrammen — appen læser koden og udfylder felterne <em>Hub</em> og <em>Verification Code</em> for dig."
     }
   },
   {
     "id": "d5b7ab41a2dd",
-    "line": 1020,
+    "line": 1045,
     "tag": "span",
     "text": {
       "pl": "<b>Wskazówka:</b> jeśli kod się nie skanuje, przetrzyj go i zapewnij równomierne światło — bez odblasku.",
@@ -551,12 +875,21 @@
       "es": "<b>Consejo:</b> si el código no se escanea, límpialo y busca una luz uniforme, sin reflejos.",
       "it": "<b>Suggerimento:</b> se il codice non viene letto, puliscilo e assicura una luce uniforme, senza riflessi.",
       "no": "<b>Tips:</b> hvis koden ikke lar seg skanne, tørk den ren og sørg for jevnt lys — unngå gjenskinn.",
-      "tr": "<b>İpucu:</b> kod okunmuyorsa etiketi silin ve eşit bir aydınlatma sağlayın — parlama olmasın."
+      "tr": "<b>İpucu:</b> kod okunmuyorsa etiketi silin ve eşit bir aydınlatma sağlayın — parlama olmasın.",
+      "cs": "<b>Tip:</b> pokud se kód nedaří naskenovat, otřete ho a zajistěte rovnoměrné světlo — bez odlesků.",
+      "sk": "<b>Tip:</b> ak sa kód nedá naskenovať, utri ho a zabezpeč rovnomerné svetlo — bez odleskov.",
+      "hu": "<b>Tipp:</b> ha a kód nem olvasható be, töröld tisztára, és világítsd meg egyenletesen — csillanás nélkül.",
+      "hr": "<b>Savjet:</b> ako se kod ne skenira, obrišite ga i osigurajte ravnomjerno svjetlo — bez odsjaja.",
+      "ro": "<b>Sfat:</b> dacă nu se scanează codul, ștergeți-l și asigurați o lumină uniformă — fără reflexii.",
+      "fi": "<b>Vinkki:</b> jos koodi ei skannaudu, pyyhi se puhtaaksi ja huolehdi tasaisesta valosta — vältä heijastuksia.",
+      "nl": "<b>Tip:</b> lukt het scannen niet, veeg de code dan schoon en zorg voor gelijkmatig licht — zonder weerspiegeling.",
+      "sv": "<b>Tips:</b> om koden inte går att skanna, torka av den och se till att ljuset är jämnt — utan reflexer.",
+      "da": "<b>Tip:</b> hvis koden ikke kan scannes, så tør den af, og sørg for jævnt lys — undgå genskin."
     }
   },
   {
     "id": "e162fd67632a",
-    "line": 1029,
+    "line": 1054,
     "tag": "span",
     "text": {
       "pl": "Rysunek poglądowy",
@@ -566,12 +899,21 @@
       "es": "Esquema de referencia",
       "it": "Disegno di riferimento",
       "no": "Referansetegning",
-      "tr": "Örnek çizim"
+      "tr": "Örnek çizim",
+      "cs": "Ilustrační nákres",
+      "sk": "Orientačný nákres",
+      "hu": "Elvi rajz",
+      "hr": "Ilustrativni crtež",
+      "ro": "Desen de referință",
+      "fi": "Havainnekuva",
+      "nl": "Referentietekening",
+      "sv": "Referensritning",
+      "da": "Referencetegning"
     }
   },
   {
     "id": "45f6684f2b42",
-    "line": 1034,
+    "line": 1059,
     "tag": "span",
     "text": {
       "pl": "Hub",
@@ -581,12 +923,21 @@
       "es": "Hub",
       "it": "Hub",
       "no": "Hub",
-      "tr": "Hub"
+      "tr": "Hub",
+      "cs": "Hub",
+      "sk": "Hub",
+      "hu": "Hub",
+      "hr": "Hub",
+      "ro": "Hub",
+      "fi": "Hub",
+      "nl": "Hub",
+      "sv": "Hub",
+      "da": "Hub"
     }
   },
   {
     "id": "42e8d92263f5",
-    "line": 1034,
+    "line": 1059,
     "tag": "span",
     "text": {
       "pl": "Zdjęcie",
@@ -596,12 +947,21 @@
       "es": "Foto",
       "it": "Foto",
       "no": "Bilde",
-      "tr": "Fotoğraf"
+      "tr": "Fotoğraf",
+      "cs": "Foto",
+      "sk": "Foto",
+      "hu": "Fotó",
+      "hr": "Fotografija",
+      "ro": "Foto",
+      "fi": "Valokuva",
+      "nl": "Foto",
+      "sv": "Foto",
+      "da": "Foto"
     }
   },
   {
     "id": "147909a6b056",
-    "line": 1046,
+    "line": 1071,
     "tag": "span",
     "text": {
       "pl": "Krok 03 · 03.4 – 03.6",
@@ -611,12 +971,21 @@
       "es": "Paso 03 · 03.4 – 03.6",
       "it": "Passo 03 · 03.4 – 03.6",
       "no": "Trinn 03 · 03.4 – 03.6",
-      "tr": "Adım 03 · 03.4 – 03.6"
+      "tr": "Adım 03 · 03.4 – 03.6",
+      "cs": "Krok 03 · 03.4 – 03.6",
+      "sk": "Krok 03 · 03.4 – 03.6",
+      "hu": "03. lépés · 03.4 – 03.6",
+      "hr": "Korak 03 · 03.4 – 03.6",
+      "ro": "Pasul 03 · 03.4 – 03.6",
+      "fi": "Vaihe 03 · 03.4 – 03.6",
+      "nl": "Stap 03 · 03.4 – 03.6",
+      "sv": "Steg 03 · 03.4 – 03.6",
+      "da": "Trin 03 · 03.4 – 03.6"
     }
   },
   {
     "id": "c0df6706fb22",
-    "line": 1047,
+    "line": 1072,
     "tag": "span",
     "text": {
       "pl": "Pasieka jest gotowa",
@@ -626,12 +995,21 @@
       "es": "El colmenar está listo",
       "it": "L'apiario è pronto",
       "no": "Bigården er klar",
-      "tr": "Arılığınız hazır"
+      "tr": "Arılığınız hazır",
+      "cs": "Včelnice je připravená",
+      "sk": "Včelnica je pripravená",
+      "hu": "A méhesed készen áll",
+      "hr": "Pčelinjak je spreman",
+      "ro": "Stupina este gata",
+      "fi": "Mehiläistarha on valmis",
+      "nl": "De bijenstand is klaar",
+      "sv": "Bigården är klar",
+      "da": "Din bigård er klar"
     }
   },
   {
     "id": "eb878c1a611b",
-    "line": 1049,
+    "line": 1074,
     "tag": "span",
     "text": {
       "pl": "Po zeskanowaniu kodu aplikacja uzupełnia dane Huba za Ciebie — nic nie przepisujesz ręcznie.",
@@ -641,12 +1019,21 @@
       "es": "Tras el escaneo, la aplicación rellena por ti los datos del Hub: no hay que escribir nada a mano.",
       "it": "Dopo la scansione l'app compila da sola i dati dell'Hub: non devi trascrivere nulla a mano.",
       "no": "Etter skanningen fyller appen ut opplysningene om Hub for deg — ingenting må skrives inn for hånd.",
-      "tr": "Taramadan sonra uygulama Hub bilgilerini sizin için doldurur — elle hiçbir şey yazmanız gerekmez."
+      "tr": "Taramadan sonra uygulama Hub bilgilerini sizin için doldurur — elle hiçbir şey yazmanız gerekmez.",
+      "cs": "Po naskenování kódu vyplní aplikace údaje Hubu za vás — nic nemusíte přepisovat ručně.",
+      "sk": "Po naskenovaní kódu aplikácia doplní údaje Hubu za teba — nič neprepisuješ ručne.",
+      "hu": "A beolvasás után az alkalmazás helyetted tölti ki a Hub adatait — semmit nem kell kézzel begépelned.",
+      "hr": "Nakon skeniranja aplikacija umjesto vas ispunjava podatke Huba — ništa ne morate upisivati ručno.",
+      "ro": "După scanare, aplicația completează singură datele Hub-ului — nu trebuie să tastați nimic.",
+      "fi": "Skannauksen jälkeen sovellus täyttää Hubin tiedot puolestasi — mitään ei tarvitse kirjoittaa käsin.",
+      "nl": "Na het scannen vult de app de gegevens van de Hub voor je in — je hoeft niets over te typen.",
+      "sv": "Efter skanningen fyller appen i uppgifterna om Hub åt dig — inget behöver skrivas in för hand.",
+      "da": "Efter scanningen udfylder appen oplysningerne om Hub for dig — intet skal indtastes manuelt."
     }
   },
   {
     "id": "7ef90a465ae5",
-    "line": 1053,
+    "line": 1078,
     "tag": "span",
     "text": {
       "pl": "Skaner odczytuje kod QR z Huba.",
@@ -656,12 +1043,21 @@
       "es": "El escáner lee el código QR del Hub.",
       "it": "Lo scanner legge il codice QR dall'Hub.",
       "no": "Skanneren leser QR-koden fra Hub.",
-      "tr": "Tarayıcı, Hub üzerindeki QR kodunu okur."
+      "tr": "Tarayıcı, Hub üzerindeki QR kodunu okur.",
+      "cs": "Skener načte QR kód z Hubu.",
+      "sk": "Skener načíta QR kód z Hubu.",
+      "hu": "A szkenner beolvassa a Hub QR-kódját.",
+      "hr": "Skener očitava QR kod s Huba.",
+      "ro": "Scanerul citește codul QR de pe Hub.",
+      "fi": "Skanneri lukee Hubin QR-koodin.",
+      "nl": "De scanner leest de QR-code van de Hub.",
+      "sv": "Skannern läser QR-koden på Hub.",
+      "da": "Scanneren læser QR-koden fra Hub."
     }
   },
   {
     "id": "147278f5c8a9",
-    "line": 1054,
+    "line": 1079,
     "tag": "span",
     "text": {
       "pl": "Pola <em>Hub</em> i <em>Verification Code</em> wypełniają się automatycznie — zatwierdź formularz.",
@@ -671,12 +1067,21 @@
       "es": "Los campos <em>Hub</em> y <em>Verification Code</em> se rellenan automáticamente: confirma el formulario.",
       "it": "I campi <em>Hub</em> e <em>Verification Code</em> si compilano automaticamente: conferma il modulo.",
       "no": "Feltene <em>Hub</em> og <em>Verification Code</em> fylles ut automatisk — bekreft skjemaet.",
-      "tr": "<em>Hub</em> ve <em>Verification Code</em> alanları otomatik olarak dolar — formu onaylayın."
+      "tr": "<em>Hub</em> ve <em>Verification Code</em> alanları otomatik olarak dolar — formu onaylayın.",
+      "cs": "Pole <em>Hub</em> a <em>Verification Code</em> se vyplní automaticky — potvrďte formulář.",
+      "sk": "Polia <em>Hub</em> a <em>Verification Code</em> sa vyplnia automaticky — potvrď formulár.",
+      "hu": "A <em>Hub</em> és a <em>Verification Code</em> mező automatikusan kitöltődik — hagyd jóvá az űrlapot.",
+      "hr": "Polja <em>Hub</em> i <em>Verification Code</em> ispunjavaju se automatski — potvrdite obrazac.",
+      "ro": "Câmpurile <em>Hub</em> și <em>Verification Code</em> se completează automat — confirmați formularul.",
+      "fi": "<em>Hub</em>- ja <em>Verification Code</em> -kentät täyttyvät automaattisesti — vahvista lomake.",
+      "nl": "De velden <em>Hub</em> en <em>Verification Code</em> worden automatisch ingevuld — bevestig het formulier.",
+      "sv": "Fälten <em>Hub</em> och <em>Verification Code</em> fylls i automatiskt — bekräfta formuläret.",
+      "da": "Felterne <em>Hub</em> og <em>Verification Code</em> udfyldes automatisk — bekræft formularen."
     }
   },
   {
     "id": "0d2379b20fe1",
-    "line": 1055,
+    "line": 1080,
     "tag": "span",
     "text": {
       "pl": "Pasieka pojawia się na ekranie głównym razem z pogodą.",
@@ -686,12 +1091,21 @@
       "es": "El colmenar aparece en la pantalla de inicio junto con el tiempo.",
       "it": "L'apiario compare nella schermata principale insieme al meteo.",
       "no": "Bigården dukker opp på startskjermen sammen med været.",
-      "tr": "Arılık, hava durumuyla birlikte ana ekranda görünür."
+      "tr": "Arılık, hava durumuyla birlikte ana ekranda görünür.",
+      "cs": "Včelnice se objeví na hlavní obrazovce spolu s počasím.",
+      "sk": "Včelnica sa objaví na domovskej obrazovke spolu s počasím.",
+      "hu": "A méhes megjelenik a kezdőképernyőn, az időjárással együtt.",
+      "hr": "Pčelinjak se pojavljuje na početnom zaslonu zajedno s vremenskom prognozom.",
+      "ro": "Stupina apare pe ecranul principal, împreună cu vremea.",
+      "fi": "Mehiläistarha ilmestyy aloitusnäyttöön yhdessä sään kanssa.",
+      "nl": "De bijenstand verschijnt samen met het weer op het startscherm.",
+      "sv": "Bigården dyker upp på startskärmen tillsammans med vädret.",
+      "da": "Bigården vises på startskærmen sammen med vejret."
     }
   },
   {
     "id": "014cec4c53b2",
-    "line": 1062,
+    "line": 1087,
     "tag": "span",
     "text": {
       "pl": "Aplikacja",
@@ -701,12 +1115,21 @@
       "es": "En la aplicación",
       "it": "Nell'app",
       "no": "I appen",
-      "tr": "Uygulamada"
+      "tr": "Uygulamada",
+      "cs": "V aplikaci",
+      "sk": "V aplikácii",
+      "hu": "Az alkalmazásban",
+      "hr": "U aplikaciji",
+      "ro": "În aplicație",
+      "fi": "Sovelluksessa",
+      "nl": "In de app",
+      "sv": "I appen",
+      "da": "I appen"
     }
   },
   {
     "id": "4344280273c9",
-    "line": 1073,
+    "line": 1098,
     "tag": "span",
     "text": {
       "pl": "Krok 04 · 04.1 – 04.3",
@@ -716,12 +1139,21 @@
       "es": "Paso 04 · 04.1 – 04.3",
       "it": "Passo 04 · 04.1 – 04.3",
       "no": "Trinn 04 · 04.1 – 04.3",
-      "tr": "Adım 04 · 04.1 – 04.3"
+      "tr": "Adım 04 · 04.1 – 04.3",
+      "cs": "Krok 04 · 04.1 – 04.3",
+      "sk": "Krok 04 · 04.1 – 04.3",
+      "hu": "04. lépés · 04.1 – 04.3",
+      "hr": "Korak 04 · 04.1 – 04.3",
+      "ro": "Pasul 04 · 04.1 – 04.3",
+      "fi": "Vaihe 04 · 04.1 – 04.3",
+      "nl": "Stap 04 · 04.1 – 04.3",
+      "sv": "Steg 04 · 04.1 – 04.3",
+      "da": "Trin 04 · 04.1 – 04.3"
     }
   },
   {
     "id": "0d40eedb2f02",
-    "line": 1074,
+    "line": 1099,
     "tag": "span",
     "text": {
       "pl": "Dodaj ul: ColonyLink, VitalSensor i&nbsp;Scale",
@@ -731,12 +1163,21 @@
       "es": "Añade una colmena: ColonyLink, VitalSensor y&nbsp;Scale",
       "it": "Aggiungi un'arnia: ColonyLink, VitalSensor e&nbsp;Scale",
       "no": "Legg til bikube: ColonyLink, VitalSensor og&nbsp;Scale",
-      "tr": "Kovan ekleyin: ColonyLink, VitalSensor ve&nbsp;Scale"
+      "tr": "Kovan ekleyin: ColonyLink, VitalSensor ve&nbsp;Scale",
+      "cs": "Přidejte úl: ColonyLink, VitalSensor a&nbsp;Scale",
+      "sk": "Pridaj úľ: ColonyLink, VitalSensor a&nbsp;Scale",
+      "hu": "Adj hozzá kaptárt: ColonyLink, VitalSensor és&nbsp;Scale",
+      "hr": "Dodajte košnicu: ColonyLink, VitalSensor i&nbsp;Scale",
+      "ro": "Adăugați un stup: ColonyLink, VitalSensor și&nbsp;Scale",
+      "fi": "Lisää pesä: ColonyLink, VitalSensor ja&nbsp;Scale",
+      "nl": "Kast toevoegen: ColonyLink, VitalSensor en&nbsp;Scale",
+      "sv": "Lägg till bikupa: ColonyLink, VitalSensor och&nbsp;Scale",
+      "da": "Tilføj bistade: ColonyLink, VitalSensor og&nbsp;Scale"
     }
   },
   {
     "id": "335118d08380",
-    "line": 1076,
+    "line": 1101,
     "tag": "span",
     "text": {
       "pl": "Pierwszy ul dostaje komplet. Wszystkie trzy urządzenia przypisujesz w jednym formularzu, skanując kolejno ich kody QR.",
@@ -746,12 +1187,21 @@
       "es": "La primera colmena recibe el equipo completo. Asignas los tres dispositivos en un solo formulario, escaneando sus códigos QR uno tras otro.",
       "it": "La prima arnia riceve il set completo. Colleghi tutti e tre i dispositivi in un unico modulo, scansionando i loro codici QR uno dopo l'altro.",
       "no": "Den første bikuben får hele settet. Du tilordner alle tre enhetene i ett skjema ved å skanne QR-kodene etter tur.",
-      "tr": "İlk kovan tam seti alır. Üç cihazın hepsini tek bir formda, QR kodlarını sırayla tarayarak eşleştirirsiniz."
+      "tr": "İlk kovan tam seti alır. Üç cihazın hepsini tek bir formda, QR kodlarını sırayla tarayarak eşleştirirsiniz.",
+      "cs": "První úl dostane kompletní sadu. Všechna tři zařízení propojíte v jediném formuláři, když postupně naskenujete jejich QR kódy.",
+      "sk": "Prvý úľ dostane kompletnú sadu. Všetky tri zariadenia priradíš v jednom formulári tak, že postupne naskenuješ ich QR kódy.",
+      "hu": "Az első kaptár kapja a teljes készletet. Mindhárom eszközt egyetlen űrlapon rendeled hozzá, egymás után beolvasva a QR-kódjukat.",
+      "hr": "Prva košnica dobiva cijeli komplet. Sva tri uređaja povezujete u jednom obrascu, skenirajući njihove QR kodove jedan za drugim.",
+      "ro": "Primul stup primește setul complet. Legați toate cele trei dispozitive într-un singur formular, scanând pe rând codurile lor QR.",
+      "fi": "Ensimmäinen pesä saa koko paketin. Liität kaikki kolme laitetta samalla lomakkeella skannaamalla niiden QR-koodit peräkkäin.",
+      "nl": "De eerste kast krijgt de volledige set. Alle drie de apparaten koppel je in één formulier door hun QR-codes na elkaar te scannen.",
+      "sv": "Den första bikupan får hela paketet. Du kopplar alla tre enheterna i ett och samma formulär genom att skanna deras QR-koder i tur och ordning.",
+      "da": "Det første bistade får hele sættet. Du tilknytter alle tre enheder i én formular ved at scanne deres QR-koder efter tur."
     }
   },
   {
     "id": "cb83953d16da",
-    "line": 1080,
+    "line": 1105,
     "tag": "span",
     "text": {
       "pl": "Na ekranie głównym otwórz swoją pasiekę.",
@@ -761,12 +1211,21 @@
       "es": "Abre tu colmenar desde la pantalla de inicio.",
       "it": "Nella schermata principale apri il tuo apiario.",
       "no": "Åpne bigården din fra startskjermen.",
-      "tr": "Ana ekrandan arılığınızı açın."
+      "tr": "Ana ekrandan arılığınızı açın.",
+      "cs": "Na hlavní obrazovce otevřete svou včelnici.",
+      "sk": "Na domovskej obrazovke otvor svoju včelnicu.",
+      "hu": "Nyisd meg a méhesedet a kezdőképernyőről.",
+      "hr": "Na početnom zaslonu otvorite svoj pčelinjak.",
+      "ro": "Pe ecranul principal deschideți stupina dumneavoastră.",
+      "fi": "Avaa oma mehiläistarhasi aloitusnäytöstä.",
+      "nl": "Open je bijenstand vanaf het startscherm.",
+      "sv": "Öppna din bigård från startskärmen.",
+      "da": "Åbn din bigård fra startskærmen."
     }
   },
   {
     "id": "381ba8bd581f",
-    "line": 1081,
+    "line": 1106,
     "tag": "span",
     "text": {
       "pl": "Naciśnij <em>Add beehive</em>.",
@@ -776,12 +1235,21 @@
       "es": "Pulsa <em>Add beehive</em>.",
       "it": "Tocca <em>Add beehive</em>.",
       "no": "Trykk på <em>Add beehive</em>.",
-      "tr": "<em>Add beehive</em> öğesine dokunun."
+      "tr": "<em>Add beehive</em> öğesine dokunun.",
+      "cs": "Klepněte na <em>Add beehive</em>.",
+      "sk": "Stlač <em>Add beehive</em>.",
+      "hu": "Koppints az <em>Add beehive</em> gombra.",
+      "hr": "Dodirnite <em>Add beehive</em>.",
+      "ro": "Apăsați <em>Add beehive</em>.",
+      "fi": "Napauta <em>Add beehive</em>.",
+      "nl": "Tik op <em>Add beehive</em>.",
+      "sv": "Tryck på <em>Add beehive</em>.",
+      "da": "Tryk på <em>Add beehive</em>."
     }
   },
   {
     "id": "dcc2cbe1fbf4",
-    "line": 1082,
+    "line": 1107,
     "tag": "span",
     "text": {
       "pl": "Zacznij od <em>ColonyLink</em> — dotknij ikony skanera przy tym polu.",
@@ -791,12 +1259,21 @@
       "es": "Empieza por <em>ColonyLink</em>: pulsa el icono del escáner junto a ese campo.",
       "it": "Inizia da <em>ColonyLink</em>: tocca l'icona dello scanner accanto a quel campo.",
       "no": "Begynn med <em>ColonyLink</em> — trykk på skannerikonet ved dette feltet.",
-      "tr": "<em>ColonyLink</em> ile başlayın — bu alanın yanındaki tarayıcı simgesine dokunun."
+      "tr": "<em>ColonyLink</em> ile başlayın — bu alanın yanındaki tarayıcı simgesine dokunun.",
+      "cs": "Začněte položkou <em>ColonyLink</em> — klepněte na ikonu skeneru u tohoto pole.",
+      "sk": "Začni od <em>ColonyLink</em> — ťukni na ikonu skenera pri tomto poli.",
+      "hu": "Kezdd a <em>ColonyLink</em> mezővel — koppints a mellette lévő szkennerikonra.",
+      "hr": "Počnite s <em>ColonyLink</em> — dodirnite ikonu skenera uz to polje.",
+      "ro": "Începeți cu <em>ColonyLink</em> — apăsați pictograma scanerului de lângă acest câmp.",
+      "fi": "Aloita <em>ColonyLink</em>-kentästä — napauta sen vieressä olevaa skannerikuvaketta.",
+      "nl": "Begin met <em>ColonyLink</em> — tik op het scanpictogram naast dat veld.",
+      "sv": "Börja med <em>ColonyLink</em> — tryck på skannerikonen vid det fältet.",
+      "da": "Begynd med <em>ColonyLink</em> — tryk på scannerikonet ved dette felt."
     }
   },
   {
     "id": "014cec4c53b2",
-    "line": 1089,
+    "line": 1114,
     "tag": "span",
     "text": {
       "pl": "Aplikacja",
@@ -806,12 +1283,21 @@
       "es": "En la aplicación",
       "it": "Nell'app",
       "no": "I appen",
-      "tr": "Uygulamada"
+      "tr": "Uygulamada",
+      "cs": "V aplikaci",
+      "sk": "V aplikácii",
+      "hu": "Az alkalmazásban",
+      "hr": "U aplikaciji",
+      "ro": "În aplicație",
+      "fi": "Sovelluksessa",
+      "nl": "In de app",
+      "sv": "I appen",
+      "da": "I appen"
     }
   },
   {
     "id": "c8405f5eab04",
-    "line": 1100,
+    "line": 1125,
     "tag": "span",
     "text": {
       "pl": "Krok 04 · ColonyLink",
@@ -821,12 +1307,21 @@
       "es": "Paso 04 · ColonyLink",
       "it": "Passo 04 · ColonyLink",
       "no": "Trinn 04 · ColonyLink",
-      "tr": "Adım 04 · ColonyLink"
+      "tr": "Adım 04 · ColonyLink",
+      "cs": "Krok 04 · ColonyLink",
+      "sk": "Krok 04 · ColonyLink",
+      "hu": "04. lépés · ColonyLink",
+      "hr": "Korak 04 · ColonyLink",
+      "ro": "Pasul 04 · ColonyLink",
+      "fi": "Vaihe 04 · ColonyLink",
+      "nl": "Stap 04 · ColonyLink",
+      "sv": "Steg 04 · ColonyLink",
+      "da": "Trin 04 · ColonyLink"
     }
   },
   {
     "id": "0e0c144fc910",
-    "line": 1101,
+    "line": 1126,
     "tag": "span",
     "text": {
       "pl": "Zeskanuj kod QR ColonyLink",
@@ -836,12 +1331,21 @@
       "es": "Escanea el código QR del ColonyLink",
       "it": "Scansiona il codice QR del ColonyLink",
       "no": "Skann QR-koden til ColonyLink",
-      "tr": "ColonyLink'in QR kodunu tarayın"
+      "tr": "ColonyLink'in QR kodunu tarayın",
+      "cs": "Naskenujte QR kód ColonyLinku",
+      "sk": "Naskenuj QR kód ColonyLinku",
+      "hu": "Olvasd be a ColonyLink QR-kódját",
+      "hr": "Skenirajte QR kod ColonyLinka",
+      "ro": "Scanați codul QR de pe ColonyLink",
+      "fi": "Skannaa ColonyLinkin QR-koodi",
+      "nl": "Scan de QR-code van de ColonyLink",
+      "sv": "Skanna QR-koden på ColonyLink",
+      "da": "Scan QR-koden på ColonyLink"
     }
   },
   {
     "id": "3bf2a5388166",
-    "line": 1103,
+    "line": 1128,
     "tag": "span",
     "text": {
       "pl": "ColonyLink to <b>naklejka z wbudowanym tagiem NFC i nadrukowanym kodem QR</b>. Skanujesz ją jako pierwszą — to ona wiąże ul w aplikacji z konkretnym ulem w pasiece.",
@@ -851,12 +1355,21 @@
       "es": "El ColonyLink es una <b>pegatina con etiqueta NFC integrada y código QR impreso</b>. Escanéalo en primer lugar: es lo que vincula la colmena de la aplicación con una colmena concreta del colmenar.",
       "it": "Il ColonyLink è un <b>adesivo con tag NFC integrato e codice QR stampato</b>. Scansionalo per primo: è lui che collega l'arnia nell'app a un'arnia precisa dell'apiario.",
       "no": "ColonyLink er et <b>klistremerke med innebygd NFC-brikke og påtrykt QR-kode</b>. Skann det først — det er dette som knytter bikuben i appen til en bestemt bikube i bigården.",
-      "tr": "ColonyLink, <b>gömülü NFC etiketi ve basılı QR kodu olan bir çıkartmadır</b>. Önce onu tarayın — uygulamadaki kovanı arılıktaki belirli bir kovana bağlayan şey odur."
+      "tr": "ColonyLink, <b>gömülü NFC etiketi ve basılı QR kodu olan bir çıkartmadır</b>. Önce onu tarayın — uygulamadaki kovanı arılıktaki belirli bir kovana bağlayan şey odur.",
+      "cs": "ColonyLink je <b>samolepka s vestavěným NFC tagem a vytištěným QR kódem</b>. Skenujete ji jako první — právě ona spojuje úl v aplikaci s konkrétním úlem na včelnici.",
+      "sk": "ColonyLink je <b>nálepka so zabudovaným NFC tagom a vytlačeným QR kódom</b>. Skenuješ ju ako prvú — práve ona spája úľ v aplikácii s konkrétnym úľom vo včelnici.",
+      "hu": "A ColonyLink egy <b>matrica beépített NFC-címkével és rányomtatott QR-kóddal</b>. Ezt olvasd be elsőként — ez köti össze az alkalmazásban lévő kaptárt a méhes egy konkrét kaptárával.",
+      "hr": "ColonyLink je <b>naljepnica s ugrađenim NFC čipom i otisnutim QR kodom</b>. Nju skenirate prvu — ona povezuje košnicu u aplikaciji s određenom košnicom u pčelinjaku.",
+      "ro": "ColonyLink este un <b>autocolant cu etichetă NFC încorporată și cod QR imprimat</b>. Scanați-l primul — el este cel care leagă stupul din aplicație de un anumit stup din stupină.",
+      "fi": "ColonyLink on <b>tarra, jossa on sisäänrakennettu NFC-tunniste ja painettu QR-koodi</b>. Skannaa se ensimmäisenä — se yhdistää sovelluksessa olevan pesän tiettyyn pesään tarhassa.",
+      "nl": "De ColonyLink is een <b>sticker met een ingebouwde NFC-tag en een opgedrukte QR-code</b>. Die scan je als eerste — hij verbindt de kast in de app met een specifieke kast op de bijenstand.",
+      "sv": "ColonyLink är en <b>dekal med inbyggd NFC-tagg och påtryckt QR-kod</b>. Skanna den först — det är den som knyter bikupan i appen till en bestämd bikupa i bigården.",
+      "da": "ColonyLink er et <b>klistermærke med indbygget NFC-tag og påtrykt QR-kode</b>. Scan det først — det er det, som knytter bistadet i appen sammen med et bestemt bistade i bigården."
     }
   },
   {
     "id": "cacc740cae49",
-    "line": 1107,
+    "line": 1132,
     "tag": "span",
     "text": {
       "pl": "Ten sam kod odczytasz później zbliżeniowo przez <b>NFC</b> — wystarczy przyłożyć telefon, także w rękawicach.",
@@ -866,12 +1379,21 @@
       "es": "Ese mismo código lo leerás después sin contacto por <b>NFC</b>: basta con acercar el teléfono, incluso con guantes.",
       "it": "Lo stesso codice lo leggi anche più tardi via <b>NFC</b>: basta avvicinare il telefono, anche con i guanti.",
       "no": "Den samme koden kan du senere lese av med <b>NFC</b> — det holder å holde telefonen inntil, også med hansker på.",
-      "tr": "Aynı kodu daha sonra <b>NFC</b> ile de okuyabilirsiniz — telefonu yaklaştırmanız yeterli, eldivenle bile."
+      "tr": "Aynı kodu daha sonra <b>NFC</b> ile de okuyabilirsiniz — telefonu yaklaştırmanız yeterli, eldivenle bile.",
+      "cs": "Stejný kód přečtete později i bezkontaktně přes <b>NFC</b> — stačí přiložit telefon, i v rukavicích.",
+      "sk": "Ten istý kód načítaš neskôr bezkontaktne cez <b>NFC</b> — stačí priložiť telefón, aj v rukaviciach.",
+      "hu": "Ugyanezt a kódot később <b>NFC</b>-vel is beolvashatod — elég hozzáérinteni a telefont, akár kesztyűben is.",
+      "hr": "Isti kod poslije možete očitati i putem <b>NFC</b> — dovoljno je prisloniti telefon, čak i s rukavicama.",
+      "ro": "Același cod îl puteți citi mai târziu și prin <b>NFC</b> — este de ajuns să apropiați telefonul, chiar și cu mănuși.",
+      "fi": "Saman koodin voit lukea myöhemmin <b>NFC</b>-yhteydellä — riittää, että viet puhelimen sen lähelle, vaikka käsineet kädessä.",
+      "nl": "Dezelfde code lees je later contactloos via <b>NFC</b> — je hoeft je telefoon er alleen tegenaan te houden, ook met handschoenen aan.",
+      "sv": "Samma kod kan du senare läsa av med <b>NFC</b> — det räcker att hålla telefonen mot den, även med handskar på.",
+      "da": "Den samme kode kan du senere aflæse med <b>NFC</b> — hold blot telefonen op mod den, også med handsker på."
     }
   },
   {
     "id": "e162fd67632a",
-    "line": 1115,
+    "line": 1140,
     "tag": "span",
     "text": {
       "pl": "Rysunek poglądowy",
@@ -881,12 +1403,21 @@
       "es": "Esquema de referencia",
       "it": "Disegno di riferimento",
       "no": "Referansetegning",
-      "tr": "Örnek çizim"
+      "tr": "Örnek çizim",
+      "cs": "Ilustrační nákres",
+      "sk": "Orientačný nákres",
+      "hu": "Elvi rajz",
+      "hr": "Ilustrativni crtež",
+      "ro": "Desen de referință",
+      "fi": "Havainnekuva",
+      "nl": "Referentietekening",
+      "sv": "Referensritning",
+      "da": "Referencetegning"
     }
   },
   {
     "id": "b0e5ad88c791",
-    "line": 1126,
+    "line": 1151,
     "tag": "span",
     "text": {
       "pl": "Krok 04 · VitalSensor",
@@ -896,12 +1427,21 @@
       "es": "Paso 04 · VitalSensor",
       "it": "Passo 04 · VitalSensor",
       "no": "Trinn 04 · VitalSensor",
-      "tr": "Adım 04 · VitalSensor"
+      "tr": "Adım 04 · VitalSensor",
+      "cs": "Krok 04 · VitalSensor",
+      "sk": "Krok 04 · VitalSensor",
+      "hu": "04. lépés · VitalSensor",
+      "hr": "Korak 04 · VitalSensor",
+      "ro": "Pasul 04 · VitalSensor",
+      "fi": "Vaihe 04 · VitalSensor",
+      "nl": "Stap 04 · VitalSensor",
+      "sv": "Steg 04 · VitalSensor",
+      "da": "Trin 04 · VitalSensor"
     }
   },
   {
     "id": "3a490f6028de",
-    "line": 1127,
+    "line": 1152,
     "tag": "span",
     "text": {
       "pl": "Zeskanuj kod QR VitalSensora",
@@ -911,12 +1451,21 @@
       "es": "Escanea el código QR del VitalSensor",
       "it": "Scansiona il codice QR del VitalSensor",
       "no": "Skann QR-koden til VitalSensor",
-      "tr": "VitalSensor'ün QR kodunu tarayın"
+      "tr": "VitalSensor'ün QR kodunu tarayın",
+      "cs": "Naskenujte QR kód VitalSensoru",
+      "sk": "Naskenuj QR kód VitalSensora",
+      "hu": "Olvasd be a VitalSensor QR-kódját",
+      "hr": "Skenirajte QR kod VitalSensora",
+      "ro": "Scanați codul QR de pe VitalSensor",
+      "fi": "Skannaa VitalSensorin QR-koodi",
+      "nl": "Scan de QR-code van de VitalSensor",
+      "sv": "Skanna QR-koden på VitalSensor",
+      "da": "Scan QR-koden på VitalSensor"
     }
   },
   {
     "id": "433cd034e627",
-    "line": 1129,
+    "line": 1154,
     "tag": "span",
     "text": {
       "pl": "Naklejka z kodem QR jest na krótszym boku obudowy. Zeskanuj ją przed zamontowaniem czujnika na ramce — po włożeniu ramki do ula kod ma być widoczny od góry.",
@@ -926,12 +1475,21 @@
       "es": "La pegatina con el código QR está en el lado corto de la carcasa. Escanéala antes de montar el sensor en el cuadro: una vez colocado el cuadro en la colmena, el código debe quedar visible desde arriba.",
       "it": "L'adesivo con il codice QR si trova sul lato corto della scocca. Scansionalo prima di fissare il sensore al telaino: una volta inserito il telaino nell'arnia il codice deve restare visibile dall'alto.",
       "no": "Klistremerket med QR-koden sitter på kortsiden av kabinettet. Skann det før du fester sensoren på rammen — når rammen står i bikuben, skal koden være synlig ovenfra.",
-      "tr": "QR etiketi gövdenin kısa kenarındadır. Sensörü çerçeveye takmadan önce etiketi tarayın — çerçeve kovana yerleştirildikten sonra kod yukarıdan görünür kalmalıdır."
+      "tr": "QR etiketi gövdenin kısa kenarındadır. Sensörü çerçeveye takmadan önce etiketi tarayın — çerçeve kovana yerleştirildikten sonra kod yukarıdan görünür kalmalıdır.",
+      "cs": "Samolepka s QR kódem je na kratší straně pouzdra. Naskenujte ji dříve, než senzor upevníte na rámek — po vložení rámku do úlu musí kód zůstat viditelný shora.",
+      "sk": "Nálepka s QR kódom je na kratšej strane krytu. Naskenuj ju skôr, ako senzor pripevníš na rámik — po vložení rámika do úľa musí kód zostať viditeľný zhora.",
+      "hu": "A QR-kódos matrica a burkolat rövidebb oldalán van. Olvasd be, mielőtt a keretre szereled a szenzort — miután a keret a kaptárba kerül, a kódnak felülről láthatónak kell maradnia.",
+      "hr": "Naljepnica s QR kodom nalazi se na kraćoj stranici kućišta. Skenirajte je prije nego što senzor pričvrstite na okvir — kad okvir uđe u košnicu, kod mora ostati vidljiv odozgo.",
+      "ro": "Autocolantul cu codul QR se află pe latura scurtă a carcasei. Scanați-l înainte de a monta senzorul pe ramă — după ce rama intră în stup, codul trebuie să rămână vizibil de sus.",
+      "fi": "QR-tarra on kotelon lyhyellä sivulla. Skannaa se ennen kuin kiinnität anturin kehään — kun kehä on pesässä, koodin täytyy näkyä ylhäältä.",
+      "nl": "De QR-sticker zit op de smalle zijkant van de behuizing. Scan hem voordat je de sensor op het raam bevestigt — zodra het raam in de kast hangt, moet de code van bovenaf zichtbaar blijven.",
+      "sv": "QR-dekalen sitter på höljets kortsida. Skanna den innan du monterar sensorn på ramen — när ramen sitter i bikupan ska koden vara synlig uppifrån.",
+      "da": "Klistermærket med QR-koden sidder på kabinettets korte side. Scan det, før du monterer sensoren på rammen — når rammen sidder i bistadet, skal koden være synlig oppefra."
     }
   },
   {
     "id": "283f1b93b499",
-    "line": 1133,
+    "line": 1158,
     "tag": "span",
     "text": {
       "pl": "Każdy z trzech czujników ma własny kod. Pilnuj, który trafia do którego ula.",
@@ -941,12 +1499,21 @@
       "es": "Cada uno de los tres sensores tiene su propio código. Controla cuál va a cada colmena.",
       "it": "Ognuno dei tre sensori ha il proprio codice. Tieni nota di quale va in quale arnia.",
       "no": "Hver av de tre sensorene har sin egen kode. Hold styr på hvilken som skal i hvilken bikube.",
-      "tr": "Üç sensörün her birinin kendi kodu vardır. Hangisinin hangi kovana gittiğini takip edin."
+      "tr": "Üç sensörün her birinin kendi kodu vardır. Hangisinin hangi kovana gittiğini takip edin.",
+      "cs": "Každý ze tří senzorů má vlastní kód. Hlídejte si, který patří do kterého úlu.",
+      "sk": "Každý z troch senzorov má vlastný kód. Sleduj, ktorý ide do ktorého úľa.",
+      "hu": "Mindhárom szenzornak saját kódja van. Jegyezd meg, melyik melyik kaptárba kerül.",
+      "hr": "Svaki od tri senzora ima vlastiti kod. Pazite koji ide u koju košnicu.",
+      "ro": "Fiecare dintre cei trei senzori are propriul cod. Rețineți care ajunge în care stup.",
+      "fi": "Jokaisella kolmella anturilla on oma koodinsa. Pidä kirjaa siitä, mikä niistä tulee mihinkin pesään.",
+      "nl": "Elk van de drie sensoren heeft een eigen code. Houd bij welke in welke kast komt.",
+      "sv": "Var och en av de tre sensorerna har sin egen kod. Håll reda på vilken som ska i vilken bikupa.",
+      "da": "Hver af de tre sensorer har sin egen kode. Hold styr på, hvilken der skal i hvilket bistade."
     }
   },
   {
     "id": "e162fd67632a",
-    "line": 1142,
+    "line": 1167,
     "tag": "span",
     "text": {
       "pl": "Rysunek poglądowy",
@@ -956,12 +1523,21 @@
       "es": "Esquema de referencia",
       "it": "Disegno di riferimento",
       "no": "Referansetegning",
-      "tr": "Örnek çizim"
+      "tr": "Örnek çizim",
+      "cs": "Ilustrační nákres",
+      "sk": "Orientačný nákres",
+      "hu": "Elvi rajz",
+      "hr": "Ilustrativni crtež",
+      "ro": "Desen de referință",
+      "fi": "Havainnekuva",
+      "nl": "Referentietekening",
+      "sv": "Referensritning",
+      "da": "Referencetegning"
     }
   },
   {
     "id": "633e88e4794f",
-    "line": 1147,
+    "line": 1172,
     "tag": "span",
     "text": {
       "pl": "VitalSensor",
@@ -971,12 +1547,21 @@
       "es": "VitalSensor",
       "it": "VitalSensor",
       "no": "VitalSensor",
-      "tr": "VitalSensor"
+      "tr": "VitalSensor",
+      "cs": "VitalSensor",
+      "sk": "VitalSensor",
+      "hu": "VitalSensor",
+      "hr": "VitalSensor",
+      "ro": "VitalSensor",
+      "fi": "VitalSensor",
+      "nl": "VitalSensor",
+      "sv": "VitalSensor",
+      "da": "VitalSensor"
     }
   },
   {
     "id": "42e8d92263f5",
-    "line": 1147,
+    "line": 1172,
     "tag": "span",
     "text": {
       "pl": "Zdjęcie",
@@ -986,12 +1571,21 @@
       "es": "Foto",
       "it": "Foto",
       "no": "Bilde",
-      "tr": "Fotoğraf"
+      "tr": "Fotoğraf",
+      "cs": "Foto",
+      "sk": "Foto",
+      "hu": "Fotó",
+      "hr": "Fotografija",
+      "ro": "Foto",
+      "fi": "Valokuva",
+      "nl": "Foto",
+      "sv": "Foto",
+      "da": "Foto"
     }
   },
   {
     "id": "796e41f72ec1",
-    "line": 1159,
+    "line": 1184,
     "tag": "span",
     "text": {
       "pl": "Krok 04 · Scale",
@@ -1001,12 +1595,21 @@
       "es": "Paso 04 · Scale",
       "it": "Passo 04 · Scale",
       "no": "Trinn 04 · Scale",
-      "tr": "Adım 04 · Scale"
+      "tr": "Adım 04 · Scale",
+      "cs": "Krok 04 · Scale",
+      "sk": "Krok 04 · Scale",
+      "hu": "04. lépés · Scale",
+      "hr": "Korak 04 · Scale",
+      "ro": "Pasul 04 · Scale",
+      "fi": "Vaihe 04 · Scale",
+      "nl": "Stap 04 · Scale",
+      "sv": "Steg 04 · Scale",
+      "da": "Trin 04 · Scale"
     }
   },
   {
     "id": "b5306d8e2c5b",
-    "line": 1160,
+    "line": 1185,
     "tag": "span",
     "text": {
       "pl": "Zeskanuj kod QR Scale",
@@ -1016,12 +1619,21 @@
       "es": "Escanea el código QR del Scale",
       "it": "Scansiona il codice QR della Scale",
       "no": "Skann QR-koden til Scale",
-      "tr": "Scale'in QR kodunu tarayın"
+      "tr": "Scale'in QR kodunu tarayın",
+      "cs": "Naskenujte QR kód Scale",
+      "sk": "Naskenuj QR kód zariadenia Scale",
+      "hu": "Olvasd be a Scale QR-kódját",
+      "hr": "Skenirajte QR kod Scale",
+      "ro": "Scanați codul QR de pe Scale",
+      "fi": "Skannaa Scalen QR-koodi",
+      "nl": "Scan de QR-code van de Scale",
+      "sv": "Skanna QR-koden på Scale",
+      "da": "Scan QR-koden på Scale"
     }
   },
   {
     "id": "ed7c8a8c0ca4",
-    "line": 1162,
+    "line": 1187,
     "tag": "span",
     "text": {
       "pl": "Naklejka z kodem QR jest na czole belki pomiarowej — tej z elektroniką i komorą baterii. Drewniana kantówka nie ma kodu.",
@@ -1031,12 +1643,21 @@
       "es": "La pegatina con el código QR está en el frente de la barra de pesaje, la que lleva la electrónica y el compartimento de las pilas. El listón de madera no tiene código.",
       "it": "L'adesivo con il codice QR si trova sulla testa della barra di pesatura, quella con l'elettronica e il vano batterie. Il listello di legno non ha alcun codice.",
       "no": "Klistremerket med QR-koden sitter på enden av målebjelken — den med elektronikken og batterirommet. Trelekten har ingen kode.",
-      "tr": "QR etiketi ölçüm kirişinin uç yüzündedir — elektroniğin ve pil bölmesinin bulunduğu parçanın. Ahşap destek çıtasında kod yoktur."
+      "tr": "QR etiketi ölçüm kirişinin uç yüzündedir — elektroniğin ve pil bölmesinin bulunduğu parçanın. Ahşap destek çıtasında kod yoktur.",
+      "cs": "Samolepka s QR kódem je na čele měřicí lišty — té s elektronikou a prostorem pro baterie. Dřevěný hranol žádný kód nemá.",
+      "sk": "Nálepka s QR kódom je na čele meracej lišty — tej s elektronikou a priehradkou na batérie. Drevený hranol kód nemá.",
+      "hu": "A QR-kódos matrica a mérőgerenda homlokfelületén van — azon, amelyikben az elektronika és az elemtartó található. A falécen nincs kód.",
+      "hr": "Naljepnica s QR kodom nalazi se na čelu mjerne grede — one s elektronikom i pretincem za baterije. Drvena letva nema koda.",
+      "ro": "Autocolantul cu codul QR se află pe capătul barei de cântărire — cea cu electronica și compartimentul bateriilor. Bara de lemn nu are cod.",
+      "fi": "QR-tarra on mittapalkin päädyssä — siinä, jossa ovat elektroniikka ja paristotila. Puuparrussa ei ole koodia.",
+      "nl": "De QR-sticker zit op de kopse kant van de meetbalk — die met de elektronica en het batterijvak. De houten balk heeft geen code.",
+      "sv": "QR-dekalen sitter på mätbalkens ände — den med elektroniken och batterifacket. Träregeln har ingen kod.",
+      "da": "Klistermærket med QR-koden sidder på enden af målebjælken — den med elektronikken og batterirummet. Trælægten har ingen kode."
     }
   },
   {
     "id": "3aea4bcbacf6",
-    "line": 1166,
+    "line": 1191,
     "tag": "span",
     "text": {
       "pl": "Zeskanuj kod <b>zanim</b> wsuniesz belkę pod ul — później dostęp do niego będzie utrudniony.",
@@ -1046,12 +1667,21 @@
       "es": "Escanea el código <b>antes</b> de deslizar la barra debajo de la colmena: después será más difícil llegar hasta él.",
       "it": "Scansiona il codice <b>prima</b> di far scorrere la barra sotto l'arnia: dopo sarà più difficile raggiungerlo.",
       "no": "Skann koden <b>før</b> du skyver bjelken inn under bikuben — etterpå er den vanskeligere å komme til.",
-      "tr": "Kirişi kovanın altına sürmeden <b>önce</b> kodu tarayın — sonrasında ona ulaşmak zorlaşır."
+      "tr": "Kirişi kovanın altına sürmeden <b>önce</b> kodu tarayın — sonrasında ona ulaşmak zorlaşır.",
+      "cs": "Naskenujte kód <b>dříve</b>, než lištu zasunete pod úl — potom už k němu bude horší přístup.",
+      "sk": "Kód naskenuj <b>skôr</b>, ako lištu zasunieš pod úľ — neskôr sa k nemu dostaneš ťažšie.",
+      "hu": "Olvasd be a kódot, <b>mielőtt</b> a gerendát a kaptár alá tolod — utána már nehezebb hozzáférni.",
+      "hr": "Skenirajte kod <b>prije</b> nego što gredu gurnete pod košnicu — poslije joj je teže prići.",
+      "ro": "Scanați codul <b>înainte</b> de a împinge bara sub stup — după aceea se ajunge mai greu la el.",
+      "fi": "Skannaa koodi <b>ennen kuin</b> työnnät palkin pesän alle — myöhemmin siihen on hankalampi päästä käsiksi.",
+      "nl": "Scan de code <b>voordat</b> je de balk onder de kast schuift — daarna kom je er lastiger bij.",
+      "sv": "Skanna koden <b>innan</b> du skjuter in balken under bikupan — efteråt är den svårare att komma åt.",
+      "da": "Scan koden, <b>før</b> du skubber bjælken ind under bistadet — bagefter er den svær at komme til."
     }
   },
   {
     "id": "e162fd67632a",
-    "line": 1175,
+    "line": 1200,
     "tag": "span",
     "text": {
       "pl": "Rysunek poglądowy",
@@ -1061,12 +1691,21 @@
       "es": "Esquema de referencia",
       "it": "Disegno di riferimento",
       "no": "Referansetegning",
-      "tr": "Örnek çizim"
+      "tr": "Örnek çizim",
+      "cs": "Ilustrační nákres",
+      "sk": "Orientačný nákres",
+      "hu": "Elvi rajz",
+      "hr": "Ilustrativni crtež",
+      "ro": "Desen de referință",
+      "fi": "Havainnekuva",
+      "nl": "Referentietekening",
+      "sv": "Referensritning",
+      "da": "Referencetegning"
     }
   },
   {
     "id": "21ee8ff62e2c",
-    "line": 1180,
+    "line": 1205,
     "tag": "span",
     "text": {
       "pl": "Scale",
@@ -1076,12 +1715,21 @@
       "es": "Scale",
       "it": "Scale",
       "no": "Scale",
-      "tr": "Scale"
+      "tr": "Scale",
+      "cs": "Scale",
+      "sk": "Scale",
+      "hu": "Scale",
+      "hr": "Scale",
+      "ro": "Scale",
+      "fi": "Scale",
+      "nl": "Scale",
+      "sv": "Scale",
+      "da": "Scale"
     }
   },
   {
     "id": "42e8d92263f5",
-    "line": 1180,
+    "line": 1205,
     "tag": "span",
     "text": {
       "pl": "Zdjęcie",
@@ -1091,12 +1739,21 @@
       "es": "Foto",
       "it": "Foto",
       "no": "Bilde",
-      "tr": "Fotoğraf"
+      "tr": "Fotoğraf",
+      "cs": "Foto",
+      "sk": "Foto",
+      "hu": "Fotó",
+      "hr": "Fotografija",
+      "ro": "Foto",
+      "fi": "Valokuva",
+      "nl": "Foto",
+      "sv": "Foto",
+      "da": "Foto"
     }
   },
   {
     "id": "06a23448d0e4",
-    "line": 1192,
+    "line": 1217,
     "tag": "span",
     "text": {
       "pl": "Krok 04 · 04.8 – 04.10",
@@ -1106,12 +1763,21 @@
       "es": "Paso 04 · 04.8 – 04.10",
       "it": "Passo 04 · 04.8 – 04.10",
       "no": "Trinn 04 · 04.8 – 04.10",
-      "tr": "Adım 04 · 04.8 – 04.10"
+      "tr": "Adım 04 · 04.8 – 04.10",
+      "cs": "Krok 04 · 04.8 – 04.10",
+      "sk": "Krok 04 · 04.8 – 04.10",
+      "hu": "04. lépés · 04.8 – 04.10",
+      "hr": "Korak 04 · 04.8 – 04.10",
+      "ro": "Pasul 04 · 04.8 – 04.10",
+      "fi": "Vaihe 04 · 04.8 – 04.10",
+      "nl": "Stap 04 · 04.8 – 04.10",
+      "sv": "Steg 04 · 04.8 – 04.10",
+      "da": "Trin 04 · 04.8 – 04.10"
     }
   },
   {
     "id": "4060e95a6efd",
-    "line": 1193,
+    "line": 1218,
     "tag": "span",
     "text": {
       "pl": "Pierwszy ul zapisany",
@@ -1121,12 +1787,21 @@
       "es": "Primera colmena guardada",
       "it": "La prima arnia è salvata",
       "no": "Den første bikuben er lagret",
-      "tr": "İlk kovan kaydedildi"
+      "tr": "İlk kovan kaydedildi",
+      "cs": "První úl je uložený",
+      "sk": "Prvý úľ je uložený",
+      "hu": "Az első kaptár mentve",
+      "hr": "Prva košnica je spremljena",
+      "ro": "Primul stup este salvat",
+      "fi": "Ensimmäinen pesä on tallennettu",
+      "nl": "De eerste kast is opgeslagen",
+      "sv": "Första bikupan är sparad",
+      "da": "Det første bistade er gemt"
     }
   },
   {
     "id": "b45c92256e3e",
-    "line": 1195,
+    "line": 1220,
     "tag": "span",
     "text": {
       "pl": "Wszystkie kody weryfikacyjne wypełniają się same. Po zapisaniu formularza ul pojawia się w pasiece.",
@@ -1136,12 +1811,21 @@
       "es": "Todos los códigos de verificación se rellenan solos. Al guardar el formulario, la colmena aparece en el colmenar.",
       "it": "Tutti i codici di verifica si compilano da soli. Una volta salvato il modulo, l'arnia compare nell'apiario.",
       "no": "Alle verifiseringskodene fylles ut av seg selv. Når du lagrer skjemaet, dukker bikuben opp i bigården.",
-      "tr": "Tüm doğrulama kodları kendiliğinden dolar. Formu kaydettiğinizde kovan arılıkta görünür."
+      "tr": "Tüm doğrulama kodları kendiliğinden dolar. Formu kaydettiğinizde kovan arılıkta görünür.",
+      "cs": "Všechny ověřovací kódy se vyplní samy. Jakmile formulář uložíte, úl se objeví na včelnici.",
+      "sk": "Všetky overovacie kódy sa vyplnia samy. Po uložení formulára sa úľ objaví vo včelnici.",
+      "hu": "Az ellenőrző kódok maguktól kitöltődnek. Az űrlap mentése után a kaptár megjelenik a méhesben.",
+      "hr": "Svi se verifikacijski kodovi ispunjavaju sami. Kad spremite obrazac, košnica se pojavljuje u pčelinjaku.",
+      "ro": "Toate codurile de verificare se completează singure. După ce salvați formularul, stupul apare în stupină.",
+      "fi": "Kaikki vahvistuskoodit täyttyvät itsestään. Kun tallennat lomakkeen, pesä ilmestyy tarhaan.",
+      "nl": "Alle verificatiecodes worden vanzelf ingevuld. Zodra je het formulier opslaat, verschijnt de kast op de bijenstand.",
+      "sv": "Alla verifieringskoder fylls i av sig själva. När du sparar formuläret dyker bikupan upp i bigården.",
+      "da": "Alle verifikationskoder udfyldes af sig selv. Når du gemmer formularen, dukker bistadet op i bigården."
     }
   },
   {
     "id": "bc8c3fd12699",
-    "line": 1199,
+    "line": 1224,
     "tag": "span",
     "text": {
       "pl": "Skaner odczytuje ostatni z kodów.",
@@ -1151,12 +1835,21 @@
       "es": "El escáner lee el último de los códigos.",
       "it": "Lo scanner legge l'ultimo dei codici.",
       "no": "Skanneren leser den siste koden.",
-      "tr": "Tarayıcı kodların sonuncusunu okur."
+      "tr": "Tarayıcı kodların sonuncusunu okur.",
+      "cs": "Skener načte poslední z kódů.",
+      "sk": "Skener načíta posledný z kódov.",
+      "hu": "A szkenner beolvassa az utolsó kódot.",
+      "hr": "Skener očitava posljednji od kodova.",
+      "ro": "Scanerul citește ultimul dintre coduri.",
+      "fi": "Skanneri lukee viimeisen koodeista.",
+      "nl": "De scanner leest de laatste code.",
+      "sv": "Skannern läser den sista koden.",
+      "da": "Scanneren læser den sidste kode."
     }
   },
   {
     "id": "fe480eda32c3",
-    "line": 1200,
+    "line": 1225,
     "tag": "span",
     "text": {
       "pl": "Formularz jest kompletny — naciśnij <em>Save</em>.",
@@ -1166,12 +1859,21 @@
       "es": "El formulario está completo: pulsa <em>Save</em>.",
       "it": "Il modulo è completo: tocca <em>Save</em>.",
       "no": "Skjemaet er komplett — trykk på <em>Save</em>.",
-      "tr": "Form tamamlandı — <em>Save</em> düğmesine dokunun."
+      "tr": "Form tamamlandı — <em>Save</em> düğmesine dokunun.",
+      "cs": "Formulář je kompletní — klepněte na <em>Save</em>.",
+      "sk": "Formulár je kompletný — stlač <em>Save</em>.",
+      "hu": "Az űrlap kész — koppints a <em>Save</em> gombra.",
+      "hr": "Obrazac je potpun — dodirnite <em>Save</em>.",
+      "ro": "Formularul este complet — apăsați <em>Save</em>.",
+      "fi": "Lomake on valmis — napauta <em>Save</em>.",
+      "nl": "Het formulier is compleet — tik op <em>Save</em>.",
+      "sv": "Formuläret är komplett — tryck på <em>Save</em>.",
+      "da": "Formularen er komplet — tryk på <em>Save</em>."
     }
   },
   {
     "id": "0f7988f7b8a5",
-    "line": 1201,
+    "line": 1226,
     "tag": "span",
     "text": {
       "pl": "Ul widnieje na ekranie głównym. Odczyty pojawią się po pierwszej synchronizacji.",
@@ -1181,12 +1883,21 @@
       "es": "La colmena aparece en la pantalla de inicio. Las mediciones llegarán tras la primera sincronización.",
       "it": "L'arnia compare nella schermata principale. Le letture arrivano dopo la prima sincronizzazione.",
       "no": "Bikuben vises på startskjermen. Avlesningene kommer etter den første synkroniseringen.",
-      "tr": "Kovan ana ekranda görünür. Ölçümler ilk eşitlemeden sonra gelir."
+      "tr": "Kovan ana ekranda görünür. Ölçümler ilk eşitlemeden sonra gelir.",
+      "cs": "Úl se zobrazí na hlavní obrazovce. Naměřené hodnoty se objeví po první synchronizaci.",
+      "sk": "Úľ vidno na domovskej obrazovke. Namerané hodnoty sa objavia po prvej synchronizácii.",
+      "hu": "A kaptár megjelenik a kezdőképernyőn. A mérési adatok az első szinkronizálás után jelennek meg.",
+      "hr": "Košnica je vidljiva na početnom zaslonu. Očitanja stižu nakon prve sinkronizacije.",
+      "ro": "Stupul apare pe ecranul principal. Citirile vin după prima sincronizare.",
+      "fi": "Pesä näkyy aloitusnäytössä. Lukemat ilmestyvät ensimmäisen synkronoinnin jälkeen.",
+      "nl": "De kast staat op het startscherm. De metingen verschijnen na de eerste synchronisatie.",
+      "sv": "Bikupan syns på startskärmen. Avläsningarna kommer efter den första synkroniseringen.",
+      "da": "Bistadet vises på startskærmen. Aflæsningerne kommer efter den første synkronisering."
     }
   },
   {
     "id": "014cec4c53b2",
-    "line": 1208,
+    "line": 1233,
     "tag": "span",
     "text": {
       "pl": "Aplikacja",
@@ -1196,12 +1907,21 @@
       "es": "En la aplicación",
       "it": "Nell'app",
       "no": "I appen",
-      "tr": "Uygulamada"
+      "tr": "Uygulamada",
+      "cs": "V aplikaci",
+      "sk": "V aplikácii",
+      "hu": "Az alkalmazásban",
+      "hr": "U aplikaciji",
+      "ro": "În aplicație",
+      "fi": "Sovelluksessa",
+      "nl": "In de app",
+      "sv": "I appen",
+      "da": "I appen"
     }
   },
   {
     "id": "ee5a5864e2e1",
-    "line": 1219,
+    "line": 1244,
     "tag": "span",
     "text": {
       "pl": "Krok 05 · 05.1 – 05.3",
@@ -1211,12 +1931,21 @@
       "es": "Paso 05 · 05.1 – 05.3",
       "it": "Passo 05 · 05.1 – 05.3",
       "no": "Trinn 05 · 05.1 – 05.3",
-      "tr": "Adım 05 · 05.1 – 05.3"
+      "tr": "Adım 05 · 05.1 – 05.3",
+      "cs": "Krok 05 · 05.1 – 05.3",
+      "sk": "Krok 05 · 05.1 – 05.3",
+      "hu": "05. lépés · 05.1 – 05.3",
+      "hr": "Korak 05 · 05.1 – 05.3",
+      "ro": "Pasul 05 · 05.1 – 05.3",
+      "fi": "Vaihe 05 · 05.1 – 05.3",
+      "nl": "Stap 05 · 05.1 – 05.3",
+      "sv": "Steg 05 · 05.1 – 05.3",
+      "da": "Trin 05 · 05.1 – 05.3"
     }
   },
   {
     "id": "d7198443eddf",
-    "line": 1220,
+    "line": 1245,
     "tag": "span",
     "text": {
       "pl": "Dodaj kolejny ul",
@@ -1226,12 +1955,21 @@
       "es": "Añade otra colmena",
       "it": "Aggiungi un'altra arnia",
       "no": "Legg til en bikube til",
-      "tr": "Başka bir kovan ekleyin"
+      "tr": "Başka bir kovan ekleyin",
+      "cs": "Přidejte další úl",
+      "sk": "Pridaj ďalší úľ",
+      "hu": "Adj hozzá újabb kaptárt",
+      "hr": "Dodajte još jednu košnicu",
+      "ro": "Adăugați încă un stup",
+      "fi": "Lisää seuraava pesä",
+      "nl": "Nog een kast toevoegen",
+      "sv": "Lägg till ännu en bikupa",
+      "da": "Tilføj endnu et bistade"
     }
   },
   {
     "id": "31539e08a951",
-    "line": 1222,
+    "line": 1247,
     "tag": "span",
     "text": {
       "pl": "Kolejne ule dodajesz z <b>ColonyLinkiem i VitalSensorem</b> — Scale zostaje pod pierwszym ulem. Pole <em>Scale</em> zostaw puste.",
@@ -1241,12 +1979,21 @@
       "es": "Las siguientes colmenas se añaden con <b>ColonyLink y VitalSensor</b>: el Scale se queda debajo de la primera colmena. Deja vacío el campo <em>Scale</em>.",
       "it": "Le arnie successive si aggiungono con <b>ColonyLink e VitalSensor</b>: la Scale resta sotto la prima arnia. Lascia vuoto il campo <em>Scale</em>.",
       "no": "De neste bikubene legger du til med <b>ColonyLink og VitalSensor</b> — Scale blir stående under den første bikuben. La feltet <em>Scale</em> stå tomt.",
-      "tr": "Sonraki kovanları <b>ColonyLink ve VitalSensor</b> ile eklersiniz — Scale ilk kovanın altında kalır. <em>Scale</em> alanını boş bırakın."
+      "tr": "Sonraki kovanları <b>ColonyLink ve VitalSensor</b> ile eklersiniz — Scale ilk kovanın altında kalır. <em>Scale</em> alanını boş bırakın.",
+      "cs": "Další úly přidáváte s <b>ColonyLinkem a VitalSensorem</b> — Scale zůstává pod prvním úlem. Pole <em>Scale</em> nechte prázdné.",
+      "sk": "Ďalšie úle pridávaš s <b>ColonyLinkom a VitalSensorom</b> — Scale zostáva pod prvým úľom. Pole <em>Scale</em> nechaj prázdne.",
+      "hu": "A további kaptárakhoz <b>ColonyLink és VitalSensor</b> jár — a Scale az első kaptár alatt marad. A <em>Scale</em> mezőt hagyd üresen.",
+      "hr": "Sljedeće košnice dodajete s <b>ColonyLinkom i VitalSensorom</b> — Scale ostaje ispod prve košnice. Polje <em>Scale</em> ostavite prazno.",
+      "ro": "Stupii următori se adaugă cu <b>ColonyLink și VitalSensor</b> — Scale rămâne sub primul stup. Lăsați gol câmpul <em>Scale</em>.",
+      "fi": "Seuraaviin pesiin lisäät <b>ColonyLinkin ja VitalSensorin</b> — Scale jää ensimmäisen pesän alle. Jätä <em>Scale</em>-kenttä tyhjäksi.",
+      "nl": "Volgende kasten voeg je toe met een <b>ColonyLink en een VitalSensor</b> — de Scale blijft onder de eerste kast staan. Laat het veld <em>Scale</em> leeg.",
+      "sv": "Fler bikupor lägger du till med <b>ColonyLink och VitalSensor</b> — Scale står kvar under den första bikupan. Lämna fältet <em>Scale</em> tomt.",
+      "da": "De næste bistader tilføjer du med <b>ColonyLink og VitalSensor</b> — Scale bliver stående under det første bistade. Lad feltet <em>Scale</em> stå tomt."
     }
   },
   {
     "id": "60fe0cdec396",
-    "line": 1226,
+    "line": 1251,
     "tag": "span",
     "text": {
       "pl": "Otwórz pasiekę z ekranu głównego.",
@@ -1256,12 +2003,21 @@
       "es": "Abre el colmenar desde la pantalla de inicio.",
       "it": "Apri l'apiario dalla schermata principale.",
       "no": "Åpne bigården fra startskjermen.",
-      "tr": "Ana ekrandan arılığı açın."
+      "tr": "Ana ekrandan arılığı açın.",
+      "cs": "Otevřete včelnici z hlavní obrazovky.",
+      "sk": "Otvor včelnicu z domovskej obrazovky.",
+      "hu": "Nyisd meg a méhest a kezdőképernyőről.",
+      "hr": "Otvorite pčelinjak s početnog zaslona.",
+      "ro": "Deschideți stupina de pe ecranul principal.",
+      "fi": "Avaa mehiläistarha aloitusnäytöstä.",
+      "nl": "Open de bijenstand vanaf het startscherm.",
+      "sv": "Öppna bigården från startskärmen.",
+      "da": "Åbn bigården fra startskærmen."
     }
   },
   {
     "id": "5f32911f188d",
-    "line": 1227,
+    "line": 1252,
     "tag": "span",
     "text": {
       "pl": "Naciśnij <em>+</em> i wybierz <em>Beehive</em>.",
@@ -1271,12 +2027,21 @@
       "es": "Pulsa <em>+</em> y elige <em>Beehive</em>.",
       "it": "Tocca <em>+</em> e scegli <em>Beehive</em>.",
       "no": "Trykk på <em>+</em> og velg <em>Beehive</em>.",
-      "tr": "<em>+</em> düğmesine dokunun ve <em>Beehive</em> öğesini seçin."
+      "tr": "<em>+</em> düğmesine dokunun ve <em>Beehive</em> öğesini seçin.",
+      "cs": "Klepněte na <em>+</em> a zvolte <em>Beehive</em>.",
+      "sk": "Stlač <em>+</em> a vyber <em>Beehive</em>.",
+      "hu": "Koppints a <em>+</em> gombra, és válaszd a <em>Beehive</em> lehetőséget.",
+      "hr": "Dodirnite <em>+</em> i odaberite <em>Beehive</em>.",
+      "ro": "Apăsați <em>+</em> și alegeți <em>Beehive</em>.",
+      "fi": "Napauta <em>+</em> ja valitse <em>Beehive</em>.",
+      "nl": "Tik op <em>+</em> en kies <em>Beehive</em>.",
+      "sv": "Tryck på <em>+</em> och välj <em>Beehive</em>.",
+      "da": "Tryk på <em>+</em>, og vælg <em>Beehive</em>."
     }
   },
   {
     "id": "038da2435898",
-    "line": 1228,
+    "line": 1253,
     "tag": "span",
     "text": {
       "pl": "Zeskanuj kod QR z <em>ColonyLink</em>, a zaraz po nim z <em>VitalSensora</em>.",
@@ -1286,12 +2051,21 @@
       "es": "Escanea el código QR del <em>ColonyLink</em> y, justo después, el del <em>VitalSensor</em>.",
       "it": "Scansiona il codice QR del <em>ColonyLink</em> e subito dopo quello del <em>VitalSensor</em>.",
       "no": "Skann QR-koden til <em>ColonyLink</em>, og deretter den til <em>VitalSensor</em>.",
-      "tr": "Önce <em>ColonyLink</em>, hemen ardından <em>VitalSensor</em> QR kodunu tarayın."
+      "tr": "Önce <em>ColonyLink</em>, hemen ardından <em>VitalSensor</em> QR kodunu tarayın.",
+      "cs": "Naskenujte QR kód <em>ColonyLink</em> a hned po něm <em>VitalSensor</em>.",
+      "sk": "Naskenuj QR kód z <em>ColonyLink</em> a hneď po ňom z <em>VitalSensor</em>.",
+      "hu": "Olvasd be a <em>ColonyLink</em> QR-kódját, majd a <em>VitalSensor</em> kódját.",
+      "hr": "Skenirajte QR kod za <em>ColonyLink</em>, a odmah zatim i onaj za <em>VitalSensor</em>.",
+      "ro": "Scanați codul QR de pe <em>ColonyLink</em>, iar imediat după el pe cel de pe <em>VitalSensor</em>.",
+      "fi": "Skannaa <em>ColonyLink</em>-koodi ja heti perään <em>VitalSensor</em>-koodi.",
+      "nl": "Scan de QR-code van de <em>ColonyLink</em> en daarna die van de <em>VitalSensor</em>.",
+      "sv": "Skanna QR-koden på <em>ColonyLink</em> och därefter den på <em>VitalSensor</em>.",
+      "da": "Scan QR-koden på <em>ColonyLink</em> og derefter den på <em>VitalSensor</em>."
     }
   },
   {
     "id": "014cec4c53b2",
-    "line": 1235,
+    "line": 1260,
     "tag": "span",
     "text": {
       "pl": "Aplikacja",
@@ -1301,12 +2075,21 @@
       "es": "En la aplicación",
       "it": "Nell'app",
       "no": "I appen",
-      "tr": "Uygulamada"
+      "tr": "Uygulamada",
+      "cs": "V aplikaci",
+      "sk": "V aplikácii",
+      "hu": "Az alkalmazásban",
+      "hr": "U aplikaciji",
+      "ro": "În aplicație",
+      "fi": "Sovelluksessa",
+      "nl": "In de app",
+      "sv": "I appen",
+      "da": "I appen"
     }
   },
   {
     "id": "5026c2ac5cf4",
-    "line": 1246,
+    "line": 1271,
     "tag": "span",
     "text": {
       "pl": "Krok 05 · 05.4 – 05.7",
@@ -1316,12 +2099,21 @@
       "es": "Paso 05 · 05.4 – 05.7",
       "it": "Passo 05 · 05.4 – 05.7",
       "no": "Trinn 05 · 05.4 – 05.7",
-      "tr": "Adım 05 · 05.4 – 05.7"
+      "tr": "Adım 05 · 05.4 – 05.7",
+      "cs": "Krok 05 · 05.4 – 05.7",
+      "sk": "Krok 05 · 05.4 – 05.7",
+      "hu": "05. lépés · 05.4 – 05.7",
+      "hr": "Korak 05 · 05.4 – 05.7",
+      "ro": "Pasul 05 · 05.4 – 05.7",
+      "fi": "Vaihe 05 · 05.4 – 05.7",
+      "nl": "Stap 05 · 05.4 – 05.7",
+      "sv": "Steg 05 · 05.4 – 05.7",
+      "da": "Trin 05 · 05.4 – 05.7"
     }
   },
   {
     "id": "d24b68de4e7e",
-    "line": 1247,
+    "line": 1272,
     "tag": "span",
     "text": {
       "pl": "Kolejny ul w pasiece",
@@ -1331,12 +2123,21 @@
       "es": "Otra colmena en el colmenar",
       "it": "Un'altra arnia nell'apiario",
       "no": "Enda en bikube i bigården",
-      "tr": "Arılıkta bir kovan daha"
+      "tr": "Arılıkta bir kovan daha",
+      "cs": "Další úl na včelnici",
+      "sk": "Ďalší úľ vo včelnici",
+      "hu": "Még egy kaptár a méhesben",
+      "hr": "Još jedna košnica u pčelinjaku",
+      "ro": "Încă un stup în stupină",
+      "fi": "Seuraava pesä tarhassa",
+      "nl": "Nog een kast op de bijenstand",
+      "sv": "Ännu en bikupa i bigården",
+      "da": "Endnu et bistade i bigården"
     }
   },
   {
     "id": "d6a0ae7eeaf6",
-    "line": 1249,
+    "line": 1274,
     "tag": "span",
     "text": {
       "pl": "Formularz zapisuje się tak samo jak przy pierwszym ulu — z ColonyLinkiem i VitalSensorem, bez Scale.",
@@ -1346,12 +2147,21 @@
       "es": "El formulario se guarda igual que en la primera colmena: con ColonyLink y VitalSensor, sin Scale.",
       "it": "Il modulo si salva esattamente come per la prima arnia: con ColonyLink e VitalSensor, senza Scale.",
       "no": "Skjemaet lagrer du på samme måte som for den første bikuben — med ColonyLink og VitalSensor, uten Scale.",
-      "tr": "Form tıpkı ilk kovandaki gibi kaydedilir — ColonyLink ve VitalSensor ile, Scale olmadan."
+      "tr": "Form tıpkı ilk kovandaki gibi kaydedilir — ColonyLink ve VitalSensor ile, Scale olmadan.",
+      "cs": "Formulář se ukládá stejně jako u prvního úlu — s ColonyLinkem a VitalSensorem, bez Scale.",
+      "sk": "Formulár sa ukladá rovnako ako pri prvom úli — s ColonyLinkom a VitalSensorom, bez Scale.",
+      "hu": "Az űrlapot ugyanúgy mented, mint az első kaptárnál — ColonyLink és VitalSensor tartozik hozzá, Scale nem.",
+      "hr": "Obrazac se sprema jednako kao kod prve košnice — s ColonyLinkom i VitalSensorom, bez Scale.",
+      "ro": "Formularul se salvează exact ca la primul stup — cu ColonyLink și VitalSensor, fără Scale.",
+      "fi": "Lomakkeen tallennat samalla tavalla kuin ensimmäisen pesän kohdalla — ColonyLinkin ja VitalSensorin kanssa, ilman Scalea.",
+      "nl": "Het formulier sla je net zo op als bij de eerste kast — met een ColonyLink en een VitalSensor, zonder de Scale.",
+      "sv": "Formuläret sparar du precis som för den första bikupan — med ColonyLink och VitalSensor, utan Scale.",
+      "da": "Formularen gemmer du på samme måde som ved det første bistade — med ColonyLink og VitalSensor, uden Scale."
     }
   },
   {
     "id": "722a371e4c8d",
-    "line": 1253,
+    "line": 1278,
     "tag": "span",
     "text": {
       "pl": "Skaner odczytuje kody ColonyLinka i kolejnego czujnika.",
@@ -1361,12 +2171,21 @@
       "es": "El escáner lee el ColonyLink y el siguiente sensor.",
       "it": "Lo scanner legge il ColonyLink e il sensore successivo.",
       "no": "Skanneren leser ColonyLink og den neste sensoren.",
-      "tr": "Tarayıcı, ColonyLink'i ve sıradaki sensörü okur."
+      "tr": "Tarayıcı, ColonyLink'i ve sıradaki sensörü okur.",
+      "cs": "Skener načte ColonyLink a další senzor.",
+      "sk": "Skener načíta kódy ColonyLinku a ďalšieho senzora.",
+      "hu": "A szkenner beolvassa a ColonyLink és a következő szenzor kódját.",
+      "hr": "Skener očitava ColonyLink i sljedeći senzor.",
+      "ro": "Scanerul citește codul ColonyLink și pe cel al senzorului următor.",
+      "fi": "Skanneri lukee ColonyLinkin ja seuraavan anturin.",
+      "nl": "De scanner leest de ColonyLink en de volgende sensor.",
+      "sv": "Skannern läser ColonyLink och nästa sensor.",
+      "da": "Scanneren læser ColonyLink og den næste sensor."
     }
   },
   {
     "id": "a951e72b2c89",
-    "line": 1254,
+    "line": 1279,
     "tag": "span",
     "text": {
       "pl": "Pola i kody weryfikacyjne są gotowe — naciśnij <em>Save</em>.",
@@ -1376,12 +2195,21 @@
       "es": "Los campos y los códigos de verificación están listos: pulsa <em>Save</em>.",
       "it": "I campi e i codici di verifica sono pronti: tocca <em>Save</em>.",
       "no": "Feltene og verifiseringskodene er klare — trykk på <em>Save</em>.",
-      "tr": "Alanlar ve doğrulama kodları hazır — <em>Save</em> düğmesine dokunun."
+      "tr": "Alanlar ve doğrulama kodları hazır — <em>Save</em> düğmesine dokunun.",
+      "cs": "Pole i ověřovací kódy jsou připravené — klepněte na <em>Save</em>.",
+      "sk": "Polia a overovacie kódy sú pripravené — stlač <em>Save</em>.",
+      "hu": "A mezők és az ellenőrző kódok készen vannak — koppints a <em>Save</em> gombra.",
+      "hr": "Polja i verifikacijski kodovi spremni su — dodirnite <em>Save</em>.",
+      "ro": "Câmpurile și codurile de verificare sunt gata — apăsați <em>Save</em>.",
+      "fi": "Kentät ja vahvistuskoodit ovat valmiina — napauta <em>Save</em>.",
+      "nl": "De velden en verificatiecodes zijn ingevuld — tik op <em>Save</em>.",
+      "sv": "Fälten och verifieringskoderna är klara — tryck på <em>Save</em>.",
+      "da": "Felterne og verifikationskoderne er klar — tryk på <em>Save</em>."
     }
   },
   {
     "id": "a51d56895f8c",
-    "line": 1255,
+    "line": 1280,
     "tag": "span",
     "text": {
       "pl": "Kolejny ul widnieje w pasiece. Powtórz krok 05 dla każdego następnego ula.",
@@ -1391,12 +2219,21 @@
       "es": "La siguiente colmena aparece en el colmenar. Repite el paso 05 con cada colmena adicional.",
       "it": "L'arnia successiva compare nell'apiario. Ripeti il passo 05 per ogni arnia in più.",
       "no": "Den neste bikuben vises i bigården. Gjenta trinn 05 for hver nye bikube.",
-      "tr": "Sıradaki kovan arılıkta görünür. Her yeni kovan için 05. adımı tekrarlayın."
+      "tr": "Sıradaki kovan arılıkta görünür. Her yeni kovan için 05. adımı tekrarlayın.",
+      "cs": "Další úl se zobrazí na včelnici. Krok 05 zopakujte pro každý další úl.",
+      "sk": "Ďalší úľ vidno vo včelnici. Krok 05 zopakuj pri každom ďalšom úli.",
+      "hu": "A következő kaptár megjelenik a méhesben. Ismételd meg az 05. lépést minden további kaptárnál.",
+      "hr": "Sljedeća košnica vidljiva je u pčelinjaku. Ponovite korak 05 za svaku sljedeću košnicu.",
+      "ro": "Stupul următor apare în stupină. Repetați pasul 05 pentru fiecare stup în plus.",
+      "fi": "Seuraava pesä näkyy tarhassa. Toista vaihe 05 jokaisen seuraavan pesän kohdalla.",
+      "nl": "De volgende kast staat op de bijenstand. Herhaal stap 05 voor elke volgende kast.",
+      "sv": "Nästa bikupa syns i bigården. Upprepa steg 05 för varje ny bikupa.",
+      "da": "Det næste bistade vises i bigården. Gentag trin 05 for hvert nyt bistade."
     }
   },
   {
     "id": "014cec4c53b2",
-    "line": 1262,
+    "line": 1287,
     "tag": "span",
     "text": {
       "pl": "Aplikacja",
@@ -1406,12 +2243,21 @@
       "es": "En la aplicación",
       "it": "Nell'app",
       "no": "I appen",
-      "tr": "Uygulamada"
+      "tr": "Uygulamada",
+      "cs": "V aplikaci",
+      "sk": "V aplikácii",
+      "hu": "Az alkalmazásban",
+      "hr": "U aplikaciji",
+      "ro": "În aplicație",
+      "fi": "Sovelluksessa",
+      "nl": "In de app",
+      "sv": "I appen",
+      "da": "I appen"
     }
   },
   {
     "id": "1b5daca71a84",
-    "line": 1273,
+    "line": 1298,
     "tag": "span",
     "text": {
       "pl": "Krok 06",
@@ -1421,12 +2267,21 @@
       "es": "Paso 06",
       "it": "Passo 06",
       "no": "Trinn 06",
-      "tr": "Adım 06"
+      "tr": "Adım 06",
+      "cs": "Krok 06",
+      "sk": "Krok 06",
+      "hu": "06. lépés",
+      "hr": "Korak 06",
+      "ro": "Pasul 06",
+      "fi": "Vaihe 06",
+      "nl": "Stap 06",
+      "sv": "Steg 06",
+      "da": "Trin 06"
     }
   },
   {
     "id": "a34aa4a5d3da",
-    "line": 1274,
+    "line": 1299,
     "tag": "span",
     "text": {
       "pl": "Uruchom urządzenia i poczekaj na dane",
@@ -1436,12 +2291,21 @@
       "es": "Enciende y espera los datos",
       "it": "Accendi i dispositivi e attendi i dati",
       "no": "Slå på enhetene og vent på data",
-      "tr": "Cihazları çalıştırın ve veri bekleyin"
+      "tr": "Cihazları çalıştırın ve veri bekleyin",
+      "cs": "Zapněte zařízení a počkejte na data",
+      "sk": "Zapni zariadenia a počkaj na dáta",
+      "hu": "Kapcsold be az eszközöket, és várj az adatokra",
+      "hr": "Uključite uređaje i pričekajte podatke",
+      "ro": "Porniți dispozitivele și așteptați datele",
+      "fi": "Käynnistä laitteet ja odota tietoja",
+      "nl": "Zet de apparaten aan en wacht op data",
+      "sv": "Starta enheterna och vänta på data",
+      "da": "Tænd enhederne, og vent på data"
     }
   },
   {
     "id": "b624fcbf345e",
-    "line": 1276,
+    "line": 1301,
     "tag": "span",
     "text": {
       "pl": "Urządzenia przychodzą z <b>zamontowanymi bateriami</b> — nic nie wkładasz. Sprawdzasz je tylko <b>przed</b> montażem w pasiece, żeby wiedzieć, że działają, zanim wejdziesz między ule.",
@@ -1451,12 +2315,21 @@
       "es": "Los dispositivos llegan con las <b>pilas ya colocadas</b>: no hay que poner nada. Solo los compruebas <b>antes</b> del montaje, para saber que funcionan antes de meterte entre las colmenas.",
       "it": "I dispositivi arrivano con le <b>batterie già installate</b>: non devi inserire nulla. Li controlli soltanto <b>prima</b> del montaggio, così sai che tutto funziona prima di andare tra le arnie.",
       "no": "Enhetene leveres med <b>batteriene ferdig montert</b> — du setter ikke inn noe. Du sjekker dem bare <b>før</b> monteringen, slik at du vet at alt virker før du går inn mellom bikubene.",
-      "tr": "Cihazlar <b>pilleri takılı halde</b> gelir — takmanız gereken bir şey yoktur. Onları yalnızca montajdan <b>önce</b> kontrol edersiniz; böylece kovanların arasına girmeden her şeyin çalıştığını bilirsiniz."
+      "tr": "Cihazlar <b>pilleri takılı halde</b> gelir — takmanız gereken bir şey yoktur. Onları yalnızca montajdan <b>önce</b> kontrol edersiniz; böylece kovanların arasına girmeden her şeyin çalıştığını bilirsiniz.",
+      "cs": "Zařízení přicházejí s <b>již vloženými bateriemi</b> — nic nevkládáte. Zkontrolujete je jen <b>před</b> montáží, abyste věděli, že všechno funguje, ještě než vyrazíte mezi úly.",
+      "sk": "Zariadenia prichádzajú s <b>vloženými batériami</b> — nič nevkladáš. Kontroluješ ich len <b>pred</b> montážou vo včelnici, aby bolo isté, že fungujú, skôr než vojdeš medzi úle.",
+      "hu": "Az eszközök <b>beszerelt elemekkel</b> érkeznek — nem kell semmit behelyezned. Csak a felszerelés <b>előtt</b> ellenőrzöd őket, hogy tudd: minden működik, mielőtt kimész a kaptárak közé.",
+      "hr": "Uređaji stižu s <b>već ugrađenim baterijama</b> — ništa ne umećete. Provjeravate ih samo <b>prije</b> montaže, da znate da sve radi prije nego što odete među košnice.",
+      "ro": "Dispozitivele vin cu <b>bateriile deja montate</b> — nu trebuie să introduceți nimic. Le verificați doar <b>înainte</b> de montaj, ca să știți că totul funcționează înainte să intrați printre stupi.",
+      "fi": "Laitteissa on <b>paristot valmiiksi asennettuina</b> — mitään ei tarvitse laittaa sisään. Tarkistat ne vain <b>ennen</b> asennusta, jotta tiedät kaiken toimivan ennen kuin menet pesien luo.",
+      "nl": "De apparaten worden geleverd met <b>al geplaatste batterijen</b> — je hoeft er niets in te doen. Je controleert ze alleen <b>vóór</b> de montage, zodat je weet dat alles werkt voordat je tussen de kasten staat.",
+      "sv": "Enheterna levereras med <b>batterierna redan monterade</b> — du behöver inte sätta i något. Du kontrollerar dem bara <b>före</b> monteringen, så att du vet att allt fungerar innan du går ut bland bikuporna.",
+      "da": "Enhederne leveres med <b>batterierne monteret</b> — du skal ikke sætte noget i. Du tjekker dem kun <b>før</b> monteringen, så du ved, at alt virker, inden du går ud mellem bistaderne."
     }
   },
   {
     "id": "2acb53422bc4",
-    "line": 1280,
+    "line": 1305,
     "tag": "span",
     "text": {
       "pl": "Wystaw na słońce — zasila go panel fotowoltaiczny.",
@@ -1466,12 +2339,21 @@
       "es": "Ponlo al sol: se alimenta de su panel fotovoltaico.",
       "it": "Mettilo al sole: è alimentato dal suo pannello fotovoltaico.",
       "no": "Sett den i sola — den drives av solcellepanelet sitt.",
-      "tr": "Güneşe çıkarın — fotovoltaik paneliyle çalışır."
+      "tr": "Güneşe çıkarın — fotovoltaik paneliyle çalışır.",
+      "cs": "Vystavte ho na slunce — napájí ho fotovoltaický panel.",
+      "sk": "Vystav ho na slnko — napája ho fotovoltický panel.",
+      "hu": "Tedd ki a napra — a saját napeleme táplálja.",
+      "hr": "Izložite ga suncu — napaja ga vlastiti fotonaponski panel.",
+      "ro": "Scoateți-l la soare — este alimentat de propriul panou fotovoltaic.",
+      "fi": "Vie se aurinkoon — se saa virtansa aurinkopaneelista.",
+      "nl": "Zet hem in de zon — hij werkt op zijn zonnepaneel.",
+      "sv": "Ställ den i solen — den drivs av sin solcellspanel.",
+      "da": "Stil den i solen — den får strøm fra sit solcellepanel."
     }
   },
   {
     "id": "9575e347811f",
-    "line": 1281,
+    "line": 1306,
     "tag": "span",
     "text": {
       "pl": "Sprawdź, czy zaświeciła się dioda potwierdzająca uruchomienie.",
@@ -1481,12 +2363,21 @@
       "es": "Comprueba que se enciende el LED que confirma el arranque.",
       "it": "Controlla che si accenda il LED che conferma l'avvio.",
       "no": "Sjekk at lysdioden som bekrefter oppstart, lyser.",
-      "tr": "Çalışmaya başladığını gösteren LED'in yandığını kontrol edin."
+      "tr": "Çalışmaya başladığını gösteren LED'in yandığını kontrol edin.",
+      "cs": "Zkontrolujte, zda se rozsvítila kontrolka potvrzující spuštění.",
+      "sk": "Skontroluj, či sa rozsvietila LED dióda potvrdzujúca spustenie.",
+      "hu": "Ellenőrizd, hogy felgyullad-e az indulást jelző LED.",
+      "hr": "Provjerite je li se upalila LED lampica koja potvrđuje pokretanje.",
+      "ro": "Verificați dacă se aprinde LED-ul care confirmă pornirea.",
+      "fi": "Tarkista, että käynnistyksen vahvistava merkkivalo syttyy.",
+      "nl": "Controleer of de led voor het opstarten gaat branden.",
+      "sv": "Kontrollera att lysdioden som bekräftar start tänds.",
+      "da": "Kontrollér, at lysdioden, der bekræfter opstart, lyser."
     }
   },
   {
     "id": "7c4122b53db6",
-    "line": 1282,
+    "line": 1307,
     "tag": "span",
     "text": {
       "pl": "Sprawdź diodę uruchomienia.",
@@ -1496,12 +2387,21 @@
       "es": "Comprueba el LED de arranque.",
       "it": "Controlla il LED di avvio.",
       "no": "Sjekk lysdioden for oppstart.",
-      "tr": "Çalıştırma LED'ini kontrol edin."
+      "tr": "Çalıştırma LED'ini kontrol edin.",
+      "cs": "Zkontrolujte kontrolku spuštění.",
+      "sk": "Skontroluj LED diódu spustenia.",
+      "hu": "Ellenőrizd az indulást jelző LED-et.",
+      "hr": "Provjerite LED lampicu pokretanja.",
+      "ro": "Verificați LED-ul de pornire.",
+      "fi": "Tarkista käynnistyksen merkkivalo.",
+      "nl": "Controleer de opstart-led.",
+      "sv": "Kontrollera startlysdioden.",
+      "da": "Tjek lysdioden for opstart."
     }
   },
   {
     "id": "e886f1338b33",
-    "line": 1283,
+    "line": 1308,
     "tag": "span",
     "text": {
       "pl": "Po dwóch godzinach sprawdź pierwsze odczyty w aplikacji — status <em>Brak danych</em> zmieni się na aktualny.",
@@ -1511,12 +2411,21 @@
       "es": "Al cabo de dos horas, comprueba las primeras mediciones en la aplicación: el estado <em>Sin datos</em> pasa a un valor actual.",
       "it": "Dopo due ore controlla le prime letture nell'app: lo stato <em>Nessun dato</em> lascia il posto a un valore aggiornato.",
       "no": "Sjekk de første avlesningene i appen etter to timer — statusen <em>Ingen data</em> byttes ut med en oppdatert verdi.",
-      "tr": "İki saat sonra uygulamadaki ilk ölçümleri kontrol edin — <em>Veri yok</em> durumu güncel bir değere döner."
+      "tr": "İki saat sonra uygulamadaki ilk ölçümleri kontrol edin — <em>Veri yok</em> durumu güncel bir değere döner.",
+      "cs": "Po dvou hodinách zkontrolujte v aplikaci první naměřené hodnoty — stav <em>Žádná data</em> se změní na aktuální.",
+      "sk": "Po dvoch hodinách skontroluj prvé namerané hodnoty v aplikácii — stav <em>Žiadne údaje</em> sa zmení na aktuálny.",
+      "hu": "Két óra múlva nézd meg az első mérési adatokat az alkalmazásban — a <em>Nincs adat</em> státusz aktuális értékre vált.",
+      "hr": "Nakon dva sata provjerite prva očitanja u aplikaciji — status <em>Nema podataka</em> zamijenit će aktualna vrijednost.",
+      "ro": "După două ore verificați primele citiri în aplicație — starea <em>Fără date</em> se schimbă într-una actuală.",
+      "fi": "Tarkista ensimmäiset lukemat sovelluksesta kahden tunnin kuluttua — tila <em>Ei tietoja</em> vaihtuu ajantasaiseksi.",
+      "nl": "Controleer na twee uur de eerste metingen in de app — de status <em>Geen gegevens</em> verandert in een actuele waarde.",
+      "sv": "Kontrollera de första avläsningarna i appen efter två timmar — statusen <em>Inga data</em> ersätts av ett aktuellt värde.",
+      "da": "Tjek de første aflæsninger i appen efter to timer — statussen <em>Ingen data</em> erstattes af en aktuel værdi."
     }
   },
   {
     "id": "1f7f3da44aa9",
-    "line": 1290,
+    "line": 1315,
     "tag": "span",
     "text": {
       "pl": "Zestaw w pasiece",
@@ -1526,12 +2435,21 @@
       "es": "El kit en el colmenar",
       "it": "Il kit nell'apiario",
       "no": "Settet i bigården",
-      "tr": "Arılıktaki set"
+      "tr": "Arılıktaki set",
+      "cs": "Sada na včelnici",
+      "sk": "Sada vo včelnici",
+      "hu": "A készlet a méhesben",
+      "hr": "Komplet u pčelinjaku",
+      "ro": "Kitul în stupină",
+      "fi": "Paketti tarhassa",
+      "nl": "De set op de bijenstand",
+      "sv": "Paketet i bigården",
+      "da": "Sættet i bigården"
     }
   },
   {
     "id": "7845fb2f6fd8",
-    "line": 1290,
+    "line": 1315,
     "tag": "span",
     "text": {
       "pl": "Rozmieszczenie",
@@ -1541,12 +2459,21 @@
       "es": "Colocación",
       "it": "Disposizione",
       "no": "Plassering",
-      "tr": "Yerleşim"
+      "tr": "Yerleşim",
+      "cs": "Rozmístění",
+      "sk": "Rozmiestnenie",
+      "hu": "Elhelyezés",
+      "hr": "Raspored",
+      "ro": "Amplasare",
+      "fi": "Sijoittelu",
+      "nl": "Plaatsing",
+      "sv": "Placering",
+      "da": "Placering"
     }
   },
   {
     "id": "12bcca2b3913",
-    "line": 1301,
+    "line": 1326,
     "tag": "span",
     "text": {
       "pl": "Krok 07 · Montaż",
@@ -1556,12 +2483,21 @@
       "es": "Paso 07 · Montaje",
       "it": "Passo 07 · Montaggio",
       "no": "Trinn 07 · Montering",
-      "tr": "Adım 07 · Montaj"
+      "tr": "Adım 07 · Montaj",
+      "cs": "Krok 07 · Montáž",
+      "sk": "Krok 07 · Montáž",
+      "hu": "07. lépés · Szerelés",
+      "hr": "Korak 07 · Montaža",
+      "ro": "Pasul 07 · Montaj",
+      "fi": "Vaihe 07 · Asennus",
+      "nl": "Stap 07 · Montage",
+      "sv": "Steg 07 · Montering",
+      "da": "Trin 07 · Montering"
     }
   },
   {
     "id": "f7790c3aa8f3",
-    "line": 1302,
+    "line": 1327,
     "tag": "span",
     "text": {
       "pl": "Zamontuj Hub",
@@ -1571,12 +2507,21 @@
       "es": "Monta el Hub",
       "it": "Monta l'Hub",
       "no": "Monter Hub",
-      "tr": "Hub'ı monte edin"
+      "tr": "Hub'ı monte edin",
+      "cs": "Namontujte Hub",
+      "sk": "Namontuj Hub",
+      "hu": "Szereld fel a Hub-ot",
+      "hr": "Montirajte Hub",
+      "ro": "Montați Hub-ul",
+      "fi": "Asenna Hub",
+      "nl": "Monteer de Hub",
+      "sv": "Montera Hub",
+      "da": "Montér Hub"
     }
   },
   {
     "id": "b27e592f9710",
-    "line": 1304,
+    "line": 1329,
     "tag": "span",
     "text": {
       "pl": "Hub zasila panel fotowoltaiczny, więc decyduje o nim <b>słońce</b>, nie bliskość ula. Do montażu użyj uchwytu aparatowego z zestawu.",
@@ -1586,12 +2531,21 @@
       "es": "El Hub se alimenta de un panel fotovoltaico, así que su ubicación la decide el <b>sol</b>, no la cercanía a una colmena. Para montarlo, usa el soporte de cámara incluido en el kit.",
       "it": "L'Hub è alimentato da un pannello fotovoltaico: a decidere la posizione è quindi il <b>sole</b>, non la vicinanza a un'arnia. Per il montaggio usa il supporto per fotocamera incluso nel kit.",
       "no": "Hub drives av et solcellepanel, så det er <b>sola</b> som avgjør plasseringen — ikke nærheten til en bikube. Bruk kamerafestet fra settet til monteringen.",
-      "tr": "Hub fotovoltaik panelle çalışır; bu yüzden yerini kovana yakınlık değil, <b>güneş ışığı</b> belirler. Montaj için setteki kamera bağlantı aparatını kullanın."
+      "tr": "Hub fotovoltaik panelle çalışır; bu yüzden yerini kovana yakınlık değil, <b>güneş ışığı</b> belirler. Montaj için setteki kamera bağlantı aparatını kullanın.",
+      "cs": "Hub napájí fotovoltaický panel, takže o jeho umístění rozhoduje <b>slunce</b>, ne blízkost úlu. K montáži použijte držák pro fotoaparát ze sady.",
+      "sk": "Hub napája fotovoltický panel, takže o jeho umiestnení rozhoduje <b>slnko</b>, nie blízkosť úľa. Na montáž použi držiak na fotoaparát zo sady.",
+      "hu": "A Hub-ot napelem táplálja, ezért a helyét a <b>napsütés</b> dönti el, nem a kaptár közelsége. A szereléshez használd a készletben lévő kameratartót.",
+      "hr": "Hub napaja fotonaponski panel, pa o njegovu mjestu odlučuje <b>sunce</b>, a ne blizina košnice. Za montažu upotrijebite držač za fotoaparat iz kompleta.",
+      "ro": "Hub-ul este alimentat de un panou fotovoltaic, așa că locul lui îl decide <b>soarele</b>, nu apropierea de un stup. Pentru montaj folosiți suportul de aparat foto din kit.",
+      "fi": "Hub saa virtansa aurinkopaneelista, joten paikan ratkaisee <b>aurinko</b> — ei pesän läheisyys. Käytä asennukseen paketin kamerakiinnikettä.",
+      "nl": "De Hub werkt op een zonnepaneel, dus bepaalt de <b>zon</b> waar hij komt — niet de afstand tot een kast. Gebruik voor de montage de camerahouder uit de set.",
+      "sv": "Hub drivs av en solcellspanel, så det är <b>solen</b> som avgör placeringen — inte närheten till en bikupa. Använd kamerafästet ur paketet vid monteringen.",
+      "da": "Hub får strøm fra et solcellepanel, så det er <b>solen</b>, der afgør placeringen — ikke nærheden til et bistade. Brug kamerabeslaget fra sættet til monteringen."
     }
   },
   {
     "id": "e3e761adbee3",
-    "line": 1308,
+    "line": 1333,
     "tag": "span",
     "text": {
       "pl": "Nad ziemią — niżej panel może nie zebrać dość światła, zwłaszcza zimą.",
@@ -1601,12 +2555,21 @@
       "es": "Sobre el suelo: más abajo, el panel puede no captar luz suficiente, sobre todo en invierno.",
       "it": "Da terra: più in basso il pannello rischia di non raccogliere luce a sufficienza, soprattutto d'inverno.",
       "no": "Over bakken — lavere kan panelet få for lite lys, særlig om vinteren.",
-      "tr": "Zeminden yukarıda — daha alçakta panel, özellikle kışın yeterli ışığı toplayamayabilir."
+      "tr": "Zeminden yukarıda — daha alçakta panel, özellikle kışın yeterli ışığı toplayamayabilir.",
+      "cs": "Nad zemí — níž nemusí panel nasbírat dost světla, hlavně v zimě.",
+      "sk": "Nad zemou — nižšie nemusí panel zachytiť dosť svetla, najmä v zime.",
+      "hu": "A talaj felett — lejjebb a napelem nem biztos, hogy elég fényt gyűjt, különösen télen.",
+      "hr": "Iznad tla — niže panel možda neće skupiti dovoljno svjetla, osobito zimi.",
+      "ro": "Deasupra solului — mai jos, panoul poate să nu adune destulă lumină, mai ales iarna.",
+      "fi": "Maanpinnasta — matalammalla paneeli ei ehkä kerää riittävästi valoa, etenkään talvella.",
+      "nl": "Boven de grond — lager vangt het paneel mogelijk te weinig licht op, vooral in de winter.",
+      "sv": "Över marken — lägre kan panelen få för lite ljus, särskilt på vintern.",
+      "da": "Over jorden — lavere kan panelet få for lidt lys, især om vinteren."
     }
   },
   {
     "id": "18dfe6627204",
-    "line": 1309,
+    "line": 1334,
     "tag": "span",
     "text": {
       "pl": "Nachylenie względem poziomu (min. 20°), panelem w stronę słońca, bez zacienienia.",
@@ -1616,12 +2579,21 @@
       "es": "Inclinación respecto a la horizontal (mín. 20°), panel orientado al sol, nunca a la sombra.",
       "it": "Inclinazione rispetto all'orizzontale (min. 20°), pannello verso il sole, mai in ombra.",
       "no": "Helning fra vannrett (min. 20°), panelet mot sola, aldri i skygge.",
-      "tr": "Yataya göre eğim (en az 20°), panel güneşe dönük, asla gölgede değil."
+      "tr": "Yataya göre eğim (en az 20°), panel güneşe dönük, asla gölgede değil.",
+      "cs": "Sklon vůči vodorovné rovině (min. 20°), panelem ke slunci, nikdy ve stínu.",
+      "sk": "Sklon voči vodorovnej rovine (min. 20°), panelom k slnku, bez tienenia.",
+      "hu": "Dőlésszög a vízszinteshez képest (min. 20°), a napelem a nap felé fordítva, soha nem árnyékban.",
+      "hr": "Nagib u odnosu na vodoravnu ravninu (min. 20°), panel prema suncu, nikad u sjeni.",
+      "ro": "Înclinare față de orizontală (min. 20°), panoul spre soare, niciodată la umbră.",
+      "fi": "Kallistus vaakatasosta (väh. 20°), paneeli aurinkoa kohti, ei koskaan varjossa.",
+      "nl": "Helling ten opzichte van horizontaal (min. 20°), paneel naar de zon, nooit in de schaduw.",
+      "sv": "Lutning från vågrätt (minst 20°), panelen mot solen, aldrig i skugga.",
+      "da": "Hældning i forhold til vandret (min. 20°), panelet mod solen, aldrig i skygge."
     }
   },
   {
     "id": "0f956ae845e1",
-    "line": 1310,
+    "line": 1335,
     "tag": "span",
     "text": {
       "pl": "Od najdalszego ula z VitalSensorem lub Scale — to zasięg BLE.",
@@ -1631,12 +2603,21 @@
       "es": "Desde la colmena más lejana con VitalSensor o Scale: es el alcance BLE.",
       "it": "Dall'arnia più lontana con VitalSensor o Scale: è questa la portata BLE.",
       "no": "Fra den fjerneste bikuben med VitalSensor eller Scale — det er BLE-rekkevidden.",
-      "tr": "VitalSensor veya Scale bulunan en uzak kovandan — BLE menzili budur."
+      "tr": "VitalSensor veya Scale bulunan en uzak kovandan — BLE menzili budur.",
+      "cs": "Od nejvzdálenějšího úlu s VitalSensorem nebo Scale — to je dosah BLE.",
+      "sk": "Od najvzdialenejšieho úľa s VitalSensorom alebo Scale — to je dosah BLE.",
+      "hu": "A legtávolabbi kaptártól, amelyben VitalSensor vagy Scale van — ez a BLE hatótávolsága.",
+      "hr": "Od najudaljenije košnice s VitalSensorom ili Scale — to je domet BLE-a.",
+      "ro": "De la cel mai îndepărtat stup cu VitalSensor sau Scale — aceasta este raza de acțiune BLE.",
+      "fi": "Kauimmaisesta pesästä, jossa on VitalSensor tai Scale — se on BLE-kantama.",
+      "nl": "Vanaf de verste kast met een VitalSensor of Scale — dat is het BLE-bereik.",
+      "sv": "Från den bikupa med VitalSensor eller Scale som ligger längst bort — det är BLE-räckvidden.",
+      "da": "Fra det fjerneste bistade med VitalSensor eller Scale — det er BLE-rækkevidden."
     }
   },
   {
     "id": "d39e5bdf2417",
-    "line": 1311,
+    "line": 1336,
     "tag": "span",
     "text": {
       "pl": "Anteny",
@@ -1646,12 +2627,21 @@
       "es": "Antenas",
       "it": "Antenne",
       "no": "Antenner",
-      "tr": "Antenler"
+      "tr": "Antenler",
+      "cs": "Antény",
+      "sk": "Antény",
+      "hu": "Antennák",
+      "hr": "Antene",
+      "ro": "Antene",
+      "fi": "Antennit",
+      "nl": "Antennes",
+      "sv": "Antenner",
+      "da": "Antenner"
     }
   },
   {
     "id": "3b226e88c3a9",
-    "line": 1311,
+    "line": 1336,
     "tag": "span",
     "text": {
       "pl": "Skierowane <em>pionowo do góry</em> — BLE i LTE mają różne złącza, nie da się ich pomylić.",
@@ -1661,12 +2651,21 @@
       "es": "Orientadas <em>verticalmente hacia arriba</em>: BLE y LTE usan conectores distintos, no se pueden confundir.",
       "it": "Orientate <em>verticalmente verso l'alto</em>: BLE e LTE hanno connettori diversi, non si possono scambiare.",
       "no": "Rettet <em>loddrett oppover</em> — BLE og LTE har ulike kontakter og kan ikke forveksles.",
-      "tr": "<em>Dikey olarak yukarı</em> bakacak şekilde — BLE ve LTE farklı konektörler kullanır, karıştırılamaz."
+      "tr": "<em>Dikey olarak yukarı</em> bakacak şekilde — BLE ve LTE farklı konektörler kullanır, karıştırılamaz.",
+      "cs": "Směřují <em>svisle vzhůru</em> — BLE a LTE mají různé konektory, nelze je zaměnit.",
+      "sk": "Smerujú <em>zvisle nahor</em> — BLE a LTE majú rôzne konektory, nedajú sa zameniť.",
+      "hu": "<em>Függőlegesen felfelé</em> állnak — a BLE és az LTE csatlakozója eltérő, nem lehet felcserélni őket.",
+      "hr": "Usmjerene <em>okomito prema gore</em> — BLE i LTE imaju različite priključke i ne mogu se zamijeniti.",
+      "ro": "Orientate <em>vertical, în sus</em> — BLE și LTE au conectori diferiți, nu pot fi confundate.",
+      "fi": "Suunnattu <em>pystysuoraan ylöspäin</em> — BLE- ja LTE-liittimet ovat erilaiset, joten niitä ei voi sekoittaa.",
+      "nl": "Gericht <em>verticaal omhoog</em> — BLE en LTE hebben verschillende connectoren en kunnen niet worden verwisseld.",
+      "sv": "Riktade <em>lodrätt uppåt</em> — BLE och LTE har olika kontakter och kan inte förväxlas.",
+      "da": "Vendt <em>lodret opad</em> — BLE og LTE har forskellige stik og kan ikke forveksles."
     }
   },
   {
     "id": "d52ab245bf08",
-    "line": 1314,
+    "line": 1339,
     "tag": "span",
     "text": {
       "pl": "<b>Nie montuj Huba do metalu</b> — zakłóca BLE i LTE. Słupek, drzewo lub drewniana konstrukcja są w porządku.",
@@ -1676,12 +2675,21 @@
       "es": "<b>No montes el Hub sobre metal</b>: interfiere con BLE y LTE. Un poste, un árbol o una estructura de madera valen.",
       "it": "<b>Non montare l'Hub sul metallo</b>: disturba BLE e LTE. Un palo, un albero o una struttura in legno vanno bene.",
       "no": "<b>Ikke monter Hub på metall</b> — det forstyrrer BLE og LTE. En stolpe, et tre eller en trekonstruksjon går fint.",
-      "tr": "<b>Hub'ı metale monte etmeyin</b> — metal, BLE ve LTE sinyalini bozar. Direk, ağaç veya ahşap bir yapı uygundur."
+      "tr": "<b>Hub'ı metale monte etmeyin</b> — metal, BLE ve LTE sinyalini bozar. Direk, ağaç veya ahşap bir yapı uygundur.",
+      "cs": "<b>Nemontujte Hub na kov</b> — ruší BLE a LTE. Sloupek, strom nebo dřevěná konstrukce jsou v pořádku.",
+      "sk": "<b>Hub nemontuj na kov</b> — ruší BLE a LTE. Stĺpik, strom alebo drevená konštrukcia sú v poriadku.",
+      "hu": "<b>Ne szereld a Hub-ot fémre</b> — zavarja a BLE-t és az LTE-t. Oszlop, fa vagy faszerkezet megfelel.",
+      "hr": "<b>Ne montirajte Hub na metal</b> — ometa BLE i LTE. Stup, stablo ili drvena konstrukcija posve su u redu.",
+      "ro": "<b>Nu montați Hub-ul pe metal</b> — perturbă BLE și LTE. Un stâlp, un copac sau o structură din lemn sunt potrivite.",
+      "fi": "<b>Älä asenna Hubia metalliin</b> — se häiritsee BLE- ja LTE-yhteyttä. Tolppa, puu tai puurakenne käy hyvin.",
+      "nl": "<b>Monteer de Hub niet op metaal</b> — dat verstoort BLE en LTE. Een paal, een boom of een houten constructie is prima.",
+      "sv": "<b>Montera inte Hub på metall</b> — det stör BLE och LTE. En stolpe, ett träd eller en träkonstruktion går bra.",
+      "da": "<b>Montér ikke Hub på metal</b> — det forstyrrer BLE og LTE. En stolpe, et træ eller en trækonstruktion er helt i orden."
     }
   },
   {
     "id": "e162fd67632a",
-    "line": 1322,
+    "line": 1347,
     "tag": "span",
     "text": {
       "pl": "Rysunek poglądowy",
@@ -1691,12 +2699,21 @@
       "es": "Esquema de referencia",
       "it": "Disegno di riferimento",
       "no": "Referansetegning",
-      "tr": "Örnek çizim"
+      "tr": "Örnek çizim",
+      "cs": "Ilustrační nákres",
+      "sk": "Orientačný nákres",
+      "hu": "Elvi rajz",
+      "hr": "Ilustrativni crtež",
+      "ro": "Desen de referință",
+      "fi": "Havainnekuva",
+      "nl": "Referentietekening",
+      "sv": "Referensritning",
+      "da": "Referencetegning"
     }
   },
   {
     "id": "12bcca2b3913",
-    "line": 1333,
+    "line": 1358,
     "tag": "span",
     "text": {
       "pl": "Krok 07 · Montaż",
@@ -1706,12 +2723,21 @@
       "es": "Paso 07 · Montaje",
       "it": "Passo 07 · Montaggio",
       "no": "Trinn 07 · Montering",
-      "tr": "Adım 07 · Montaj"
+      "tr": "Adım 07 · Montaj",
+      "cs": "Krok 07 · Montáž",
+      "sk": "Krok 07 · Montáž",
+      "hu": "07. lépés · Szerelés",
+      "hr": "Korak 07 · Montaža",
+      "ro": "Pasul 07 · Montaj",
+      "fi": "Vaihe 07 · Asennus",
+      "nl": "Stap 07 · Montage",
+      "sv": "Steg 07 · Montering",
+      "da": "Trin 07 · Montering"
     }
   },
   {
     "id": "c205c1af02b7",
-    "line": 1334,
+    "line": 1359,
     "tag": "span",
     "text": {
       "pl": "Ustaw Scale pod ulem",
@@ -1721,12 +2747,21 @@
       "es": "Coloca el Scale bajo la colmena",
       "it": "Posiziona la Scale sotto l'arnia",
       "no": "Plasser Scale under bikuben",
-      "tr": "Scale'i kovanın altına yerleştirin"
+      "tr": "Scale'i kovanın altına yerleştirin",
+      "cs": "Umístěte Scale pod úl",
+      "sk": "Umiestni Scale pod úľ",
+      "hu": "Tedd a Scale-t a kaptár alá",
+      "hr": "Postavite Scale ispod košnice",
+      "ro": "Așezați Scale sub stup",
+      "fi": "Aseta Scale pesän alle",
+      "nl": "Plaats de Scale onder de kast",
+      "sv": "Placera Scale under bikupan",
+      "da": "Placér Scale under bistadet"
     }
   },
   {
     "id": "d79b18eb9da1",
-    "line": 1336,
+    "line": 1361,
     "tag": "span",
     "text": {
       "pl": "Scale i drewniana kantówka tworzą jedną konstrukcję nośną. Wypoziomowanie i orientacja są <b>kluczowe dla dokładności pomiaru</b>.",
@@ -1736,12 +2771,21 @@
       "es": "El Scale y el listón de madera forman una única estructura de apoyo. La nivelación y la orientación son <b>decisivas para la precisión de la medición</b>.",
       "it": "La Scale e il listello di legno formano un'unica struttura portante. La messa in bolla e l'orientamento sono <b>determinanti per la precisione della misura</b>.",
       "no": "Scale og trelekten utgjør én bærende konstruksjon. Vatring og retning er <b>avgjørende for målenøyaktigheten</b>.",
-      "tr": "Scale ve ahşap destek çıtası birlikte tek bir taşıyıcı yapı oluşturur. Yatay dengeleme ve yönlendirme <b>ölçüm doğruluğu için kritiktir</b>."
+      "tr": "Scale ve ahşap destek çıtası birlikte tek bir taşıyıcı yapı oluşturur. Yatay dengeleme ve yönlendirme <b>ölçüm doğruluğu için kritiktir</b>.",
+      "cs": "Scale a dřevěný hranol tvoří jednu nosnou konstrukci. Vyrovnání do roviny a orientace jsou <b>klíčové pro přesnost měření</b>.",
+      "sk": "Scale a drevený hranol tvoria jednu nosnú konštrukciu. Vyrovnanie do roviny a orientácia sú <b>kľúčové pre presnosť merania</b>.",
+      "hu": "A Scale és a faléc együtt alkot egy teherhordó szerkezetet. A vízszintezés és a tájolás <b>döntő a mérés pontossága szempontjából</b>.",
+      "hr": "Scale i drvena letva čine jednu nosivu konstrukciju. Niveliranje i orijentacija <b>presudni su za točnost mjerenja</b>.",
+      "ro": "Scale și bara de lemn formează o singură structură de sprijin. Punerea la nivel și orientarea sunt <b>decisive pentru precizia măsurării</b>.",
+      "fi": "Scale ja puuparru muodostavat yhden kantavan rakenteen. Vaakasuoruus ja suuntaus ovat <b>ratkaisevia mittaustarkkuuden kannalta</b>.",
+      "nl": "De Scale en de houten balk vormen samen één draagconstructie. Waterpas stellen en oriëntatie zijn <b>cruciaal voor de meetnauwkeurigheid</b>.",
+      "sv": "Scale och träregeln bildar en enda bärande konstruktion. Att den står i våg och är rätt riktad är <b>avgörande för mätnoggrannheten</b>.",
+      "da": "Scale og trælægten udgør én bærende konstruktion. Vandret opstilling og retning er <b>afgørende for målenøjagtigheden</b>."
     }
   },
   {
     "id": "299d11bec7bf",
-    "line": 1340,
+    "line": 1365,
     "tag": "span",
     "text": {
       "pl": "Ustaw uruchomioną Scale na stabilnym, równym podłożu, <em>prostopadle do ramek</em> w ulu.",
@@ -1751,12 +2795,21 @@
       "es": "Coloca el Scale encendido sobre un suelo firme y nivelado, <em>perpendicular a los cuadros</em> de la colmena.",
       "it": "Appoggia la Scale accesa su un terreno stabile e in piano, <em>perpendicolarmente ai telaini</em> dell'arnia.",
       "no": "Plasser den påslåtte Scale på et fast og jevnt underlag, <em>på tvers av rammene</em> i bikuben.",
-      "tr": "Çalışır durumdaki Scale'i sağlam ve düz bir zemine, kovandaki <em>çerçevelere dik</em> olacak şekilde yerleştirin."
+      "tr": "Çalışır durumdaki Scale'i sağlam ve düz bir zemine, kovandaki <em>çerçevelere dik</em> olacak şekilde yerleştirin.",
+      "cs": "Postavte zapnutou Scale na pevný a rovný podklad, <em>kolmo k rámkům</em> v úlu.",
+      "sk": "Zapnuté zariadenie Scale polož na pevný, rovný podklad, <em>kolmo na rámiky</em> v úli.",
+      "hu": "Állítsd a bekapcsolt Scale-t szilárd, vízszintes talajra, <em>a kaptár kereteire merőlegesen</em>.",
+      "hr": "Uključenu Scale postavite na čvrstu i ravnu podlogu, <em>okomito na okvire</em> u košnici.",
+      "ro": "Așezați Scale-ul pornit pe un teren ferm și plan, <em>perpendicular pe ramele</em> din stup.",
+      "fi": "Aseta käynnistetty Scale tukevalle ja tasaiselle alustalle <em>kohtisuoraan pesän kehiä vasten</em>.",
+      "nl": "Zet de ingeschakelde Scale op een stevige, vlakke ondergrond, <em>haaks op de ramen</em> in de kast.",
+      "sv": "Ställ den påslagna Scale på ett stadigt och plant underlag, <em>vinkelrätt mot ramarna</em> i bikupan.",
+      "da": "Stil den tændte Scale på et fast, plant underlag, <em>vinkelret på rammerne</em> i bistadet."
     }
   },
   {
     "id": "7afb4e483439",
-    "line": 1341,
+    "line": 1366,
     "tag": "span",
     "text": {
       "pl": "Ułóż drewnianą kantówkę równolegle do Scale, w takiej odległości, żeby ciężar ula rozłożył się równomiernie.",
@@ -1766,12 +2819,21 @@
       "es": "Coloca el listón de madera paralelo al Scale, a una distancia tal que el peso de la colmena se reparta de forma uniforme.",
       "it": "Disponi il listello di legno parallelo alla Scale, a una distanza tale che il peso dell'arnia si distribuisca uniformemente.",
       "no": "Legg trelekten parallelt med Scale, med så stor avstand at vekten av bikuben fordeles jevnt.",
-      "tr": "Ahşap çıtayı Scale'e paralel olarak, kovanın ağırlığı eşit dağılacak bir mesafede yerleştirin."
+      "tr": "Ahşap çıtayı Scale'e paralel olarak, kovanın ağırlığı eşit dağılacak bir mesafede yerleştirin.",
+      "cs": "Dřevěný hranol položte rovnoběžně se Scale tak daleko, aby se hmotnost úlu rozložila rovnoměrně.",
+      "sk": "Drevený hranol ulož rovnobežne so Scale, v takej vzdialenosti, aby sa hmotnosť úľa rozložila rovnomerne.",
+      "hu": "Fektesd a falécet a Scale-lel párhuzamosan, olyan távolságra, hogy a kaptár súlya egyenletesen oszoljon el.",
+      "hr": "Drvenu letvu položite usporedno sa Scale, na takvoj udaljenosti da se težina košnice rasporedi ravnomjerno.",
+      "ro": "Așezați bara de lemn paralel cu Scale, la o distanță la care greutatea stupului se distribuie uniform.",
+      "fi": "Aseta puuparru Scalen suuntaisesti niin etäälle, että pesän paino jakautuu tasaisesti.",
+      "nl": "Leg de houten balk parallel aan de Scale, op zo'n afstand dat het gewicht van de kast gelijkmatig wordt verdeeld.",
+      "sv": "Lägg träregeln parallellt med Scale, på ett sådant avstånd att bikupans vikt fördelas jämnt.",
+      "da": "Læg trælægten parallelt med Scale, med en afstand, der fordeler bistadets vægt jævnt."
     }
   },
   {
     "id": "fed01de0197c",
-    "line": 1342,
+    "line": 1367,
     "tag": "span",
     "text": {
       "pl": "Postaw ul na konstrukcji i sprawdź, że obciążenie nadal rozkłada się równo.",
@@ -1781,12 +2843,21 @@
       "es": "Pon la colmena sobre la estructura y comprueba que la carga sigue repartida uniformemente.",
       "it": "Appoggia l'arnia sulla struttura e verifica che il carico resti distribuito in modo uniforme.",
       "no": "Sett bikuben på konstruksjonen og kontroller at belastningen fortsatt fordeler seg jevnt.",
-      "tr": "Kovanı bu yapının üzerine koyun ve yükün hâlâ eşit dağıldığını kontrol edin."
+      "tr": "Kovanı bu yapının üzerine koyun ve yükün hâlâ eşit dağıldığını kontrol edin.",
+      "cs": "Postavte úl na konstrukci a zkontrolujte, že se zatížení stále rozkládá rovnoměrně.",
+      "sk": "Postav úľ na konštrukciu a skontroluj, či sa zaťaženie stále rozkladá rovnomerne.",
+      "hu": "Helyezd a kaptárt a szerkezetre, és ellenőrizd, hogy a terhelés továbbra is egyenletesen oszlik el.",
+      "hr": "Postavite košnicu na konstrukciju i provjerite raspoređuje li se opterećenje i dalje ravnomjerno.",
+      "ro": "Puneți stupul pe structură și verificați dacă sarcina rămâne distribuită uniform.",
+      "fi": "Nosta pesä rakenteen päälle ja tarkista, että kuorma jakautuu edelleen tasaisesti.",
+      "nl": "Zet de kast op de constructie en controleer of de belasting nog steeds gelijkmatig verdeeld is.",
+      "sv": "Ställ bikupan på konstruktionen och kontrollera att lasten fortfarande fördelas jämnt.",
+      "da": "Sæt bistadet på konstruktionen, og kontrollér, at belastningen stadig fordeler sig jævnt."
     }
   },
   {
     "id": "62ab36f97589",
-    "line": 1343,
+    "line": 1368,
     "tag": "span",
     "text": {
       "pl": "Od Huba, bez przeszkód tłumiących sygnał BLE.",
@@ -1796,12 +2867,21 @@
       "es": "Desde el Hub, sin obstáculos que atenúen la señal BLE.",
       "it": "Dall'Hub, senza ostacoli che attenuino il segnale BLE.",
       "no": "Fra Hub, uten hindringer som demper BLE-signalet.",
-      "tr": "Hub'dan, BLE sinyalini engelleyen bir şey olmadan."
+      "tr": "Hub'dan, BLE sinyalini engelleyen bir şey olmadan.",
+      "cs": "Od Hubu, bez překážek tlumících signál BLE.",
+      "sk": "Od Hubu, bez prekážok tlmiacich signál BLE.",
+      "hu": "A Hub-tól, a BLE-jelet gyengítő akadályok nélkül.",
+      "hr": "Od Huba, bez prepreka koje prigušuju BLE signal.",
+      "ro": "De la Hub, fără obstacole care să atenueze semnalul BLE.",
+      "fi": "Hubista, ilman BLE-signaalia vaimentavia esteitä.",
+      "nl": "Vanaf de Hub, zonder obstakels die het BLE-signaal dempen.",
+      "sv": "Från Hub, utan hinder som dämpar BLE-signalen.",
+      "da": "Fra Hub, uden forhindringer, der dæmper BLE-signalet."
     }
   },
   {
     "id": "e162fd67632a",
-    "line": 1351,
+    "line": 1376,
     "tag": "span",
     "text": {
       "pl": "Rysunek poglądowy",
@@ -1811,12 +2891,21 @@
       "es": "Esquema de referencia",
       "it": "Disegno di riferimento",
       "no": "Referansetegning",
-      "tr": "Örnek çizim"
+      "tr": "Örnek çizim",
+      "cs": "Ilustrační nákres",
+      "sk": "Orientačný nákres",
+      "hu": "Elvi rajz",
+      "hr": "Ilustrativni crtež",
+      "ro": "Desen de referință",
+      "fi": "Havainnekuva",
+      "nl": "Referentietekening",
+      "sv": "Referensritning",
+      "da": "Referencetegning"
     }
   },
   {
     "id": "73e96dab53c7",
-    "line": 1356,
+    "line": 1381,
     "tag": "span",
     "text": {
       "pl": "Scale i kantówka",
@@ -1826,12 +2915,21 @@
       "es": "Scale y listón",
       "it": "Scale e listello",
       "no": "Scale og trelekt",
-      "tr": "Scale ve destek çıtası"
+      "tr": "Scale ve destek çıtası",
+      "cs": "Scale a hranol",
+      "sk": "Scale a hranol",
+      "hu": "Scale és faléc",
+      "hr": "Scale i letva",
+      "ro": "Scale și bara de lemn",
+      "fi": "Scale ja puuparru",
+      "nl": "Scale en houten balk",
+      "sv": "Scale och träregel",
+      "da": "Scale og trælægte"
     }
   },
   {
     "id": "42e8d92263f5",
-    "line": 1356,
+    "line": 1381,
     "tag": "span",
     "text": {
       "pl": "Zdjęcie",
@@ -1841,12 +2939,21 @@
       "es": "Foto",
       "it": "Foto",
       "no": "Bilde",
-      "tr": "Fotoğraf"
+      "tr": "Fotoğraf",
+      "cs": "Foto",
+      "sk": "Foto",
+      "hu": "Fotó",
+      "hr": "Fotografija",
+      "ro": "Foto",
+      "fi": "Valokuva",
+      "nl": "Foto",
+      "sv": "Foto",
+      "da": "Foto"
     }
   },
   {
     "id": "12bcca2b3913",
-    "line": 1368,
+    "line": 1393,
     "tag": "span",
     "text": {
       "pl": "Krok 07 · Montaż",
@@ -1856,12 +2963,21 @@
       "es": "Paso 07 · Montaje",
       "it": "Passo 07 · Montaggio",
       "no": "Trinn 07 · Montering",
-      "tr": "Adım 07 · Montaj"
+      "tr": "Adım 07 · Montaj",
+      "cs": "Krok 07 · Montáž",
+      "sk": "Krok 07 · Montáž",
+      "hu": "07. lépés · Szerelés",
+      "hr": "Korak 07 · Montaža",
+      "ro": "Pasul 07 · Montaj",
+      "fi": "Vaihe 07 · Asennus",
+      "nl": "Stap 07 · Montage",
+      "sv": "Steg 07 · Montering",
+      "da": "Trin 07 · Montering"
     }
   },
   {
     "id": "d880e9bbf0f7",
-    "line": 1369,
+    "line": 1394,
     "tag": "span",
     "text": {
       "pl": "Zamontuj VitalSensor w ulu",
@@ -1871,12 +2987,21 @@
       "es": "Monta el VitalSensor en la colmena",
       "it": "Monta il VitalSensor nell'arnia",
       "no": "Monter VitalSensor i bikuben",
-      "tr": "VitalSensor'ü kovana monte edin"
+      "tr": "VitalSensor'ü kovana monte edin",
+      "cs": "Namontujte VitalSensor do úlu",
+      "sk": "Namontuj VitalSensor do úľa",
+      "hu": "Szereld be a VitalSensor-t a kaptárba",
+      "hr": "Montirajte VitalSensor u košnicu",
+      "ro": "Montați VitalSensor în stup",
+      "fi": "Asenna VitalSensor pesään",
+      "nl": "Monteer de VitalSensor in de kast",
+      "sv": "Montera VitalSensor i bikupan",
+      "da": "Montér VitalSensor i bistadet"
     }
   },
   {
     "id": "dd029f00f64c",
-    "line": 1371,
+    "line": 1396,
     "tag": "span",
     "text": {
       "pl": "Czujnik montujesz bezinwazyjnie na ramce — bez trwałych zmian w ulu i bez zakłócania pracy rodziny.",
@@ -1886,12 +3011,21 @@
       "es": "El sensor se monta en un cuadro sin ser invasivo: sin cambios permanentes en la colmena y sin molestar a la colonia.",
       "it": "Il sensore si fissa al telaino in modo non invasivo: nessuna modifica permanente all'arnia e nessun disturbo per la colonia.",
       "no": "Sensoren festes skånsomt på en ramme — uten varige endringer i bikuben og uten å forstyrre kolonien.",
-      "tr": "Sensör çerçeveye müdahalesiz şekilde takılır — kovanda kalıcı bir değişiklik olmaz, koloni de rahatsız edilmez."
+      "tr": "Sensör çerçeveye müdahalesiz şekilde takılır — kovanda kalıcı bir değişiklik olmaz, koloni de rahatsız edilmez.",
+      "cs": "Senzor upevníte na rámek neinvazivně — bez trvalých zásahů do úlu a bez rušení včelstva.",
+      "sk": "Senzor pripevníš na rámik neinvazívne — bez trvalých zásahov do úľa a bez rušenia včelstva.",
+      "hu": "A szenzort beavatkozás nélkül rögzíted a keretre — nincs maradandó változás a kaptárban, és a méhcsaládot sem zavarja.",
+      "hr": "Senzor se na okvir montira neinvazivno — bez trajnih izmjena na košnici i bez uznemiravanja zajednice.",
+      "ro": "Senzorul se montează neinvaziv pe o ramă — fără modificări permanente ale stupului și fără să deranjeze colonia.",
+      "fi": "Asennat anturin kehään hellävaraisesti — ilman pysyviä muutoksia pesään ja häiritsemättä mehiläisiä.",
+      "nl": "De sensor bevestig je niet-invasief op een raam — zonder blijvende ingrepen aan de kast en zonder het bijenvolk te verstoren.",
+      "sv": "Sensorn fästs skonsamt på en ram — utan bestående ändringar i bikupan och utan att störa bisamhället.",
+      "da": "Sensoren monteres skånsomt på en ramme — uden varige ændringer i bistadet og uden at forstyrre bifamilien."
     }
   },
   {
     "id": "2d7de82d6fde",
-    "line": 1375,
+    "line": 1400,
     "tag": "span",
     "text": {
       "pl": "Osadź uruchomiony VitalSensor na <em>centralnej ramce</em> (w kłębie), stabilnie, tak żeby się nie przemieszczał.",
@@ -1901,12 +3035,21 @@
       "es": "Fija el VitalSensor encendido en el <em>cuadro central</em> (en la piña), con firmeza suficiente para que no se mueva.",
       "it": "Fissa il VitalSensor acceso al <em>telaino centrale</em> (nel glomere), in modo stabile perché non si sposti.",
       "no": "Fest den påslåtte VitalSensor på <em>midtrammen</em> (i klasen), så stødig at den ikke kan forskyve seg.",
-      "tr": "Çalışır durumdaki VitalSensor'ü <em>merkezi çerçeveye</em> (arı salkımının içine), yerinden oynamayacak kadar sağlam biçimde takın."
+      "tr": "Çalışır durumdaki VitalSensor'ü <em>merkezi çerçeveye</em> (arı salkımının içine), yerinden oynamayacak kadar sağlam biçimde takın.",
+      "cs": "Zapnutý VitalSensor upevněte na <em>středový rámek</em> (v chomáči) tak pevně, aby se nemohl posunout.",
+      "sk": "Zapnutý VitalSensor upevni na <em>stredný rámik</em> (v chumáči) tak pevne, aby sa nepohyboval.",
+      "hu": "Rögzítsd a bekapcsolt VitalSensor-t a <em>központi keretre</em> (a méhfürtben), olyan stabilan, hogy ne mozdulhasson el.",
+      "hr": "Uključeni VitalSensor pričvrstite na <em>središnji okvir</em> (u klupku), dovoljno čvrsto da se ne može pomaknuti.",
+      "ro": "Fixați VitalSensorul pornit pe <em>rama centrală</em> (în ghem), suficient de ferm cât să nu se deplaseze.",
+      "fi": "Kiinnitä käynnistetty VitalSensor <em>keskimmäiseen kehään</em> (mehiläispallon kohdalle) niin tukevasti, ettei se pääse liikkumaan.",
+      "nl": "Bevestig de ingeschakelde VitalSensor aan het <em>middelste raam</em> (in de bijentros), stevig genoeg dat hij niet kan verschuiven.",
+      "sv": "Fäst den påslagna VitalSensor på <em>mittramen</em> (i biklotet), så stadigt att den inte kan förskjutas.",
+      "da": "Sæt den tændte VitalSensor fast på <em>midterrammen</em> (i klyngen), så stabilt, at den ikke kan flytte sig."
     }
   },
   {
     "id": "0ce18fa02a43",
-    "line": 1376,
+    "line": 1401,
     "tag": "span",
     "text": {
       "pl": "Zamontuj go <em>pionowo</em> — naklejka z kodem QR ma być widoczna od góry po włożeniu ramki.",
@@ -1916,12 +3059,21 @@
       "es": "Móntalo <em>verticalmente</em>: la pegatina con el código QR debe quedar visible desde arriba una vez colocado el cuadro.",
       "it": "Montalo <em>verticalmente</em>: dopo aver inserito il telaino l'adesivo con il codice QR deve restare visibile dall'alto.",
       "no": "Monter den <em>loddrett</em> — klistremerket med QR-koden skal være synlig ovenfra når rammen er satt inn.",
-      "tr": "Sensörü <em>dikey</em> olarak takın — çerçeve yerleştirildikten sonra QR etiketi yukarıdan görünür kalmalıdır."
+      "tr": "Sensörü <em>dikey</em> olarak takın — çerçeve yerleştirildikten sonra QR etiketi yukarıdan görünür kalmalıdır.",
+      "cs": "Namontujte ho <em>svisle</em> — samolepka s QR kódem musí po vložení rámku zůstat viditelná shora.",
+      "sk": "Namontuj ho <em>zvisle</em> — po vložení rámika musí nálepka s QR kódom zostať viditeľná zhora.",
+      "hu": "<em>Függőlegesen</em> szereld fel — a QR-kódos matricának felülről láthatónak kell maradnia, miután a keret a helyére kerül.",
+      "hr": "Montirajte ga <em>okomito</em> — kad okvir uđe unutra, naljepnica s QR kodom mora ostati vidljiva odozgo.",
+      "ro": "Montați-l <em>vertical</em> — autocolantul cu codul QR trebuie să rămână vizibil de sus după ce introduceți rama.",
+      "fi": "Asenna se <em>pystysuoraan</em> — QR-tarran täytyy näkyä ylhäältä, kun kehä on paikallaan.",
+      "nl": "Monteer hem <em>verticaal</em> — de QR-sticker moet van bovenaf zichtbaar blijven als het raam erin hangt.",
+      "sv": "Montera den <em>lodrätt</em> — QR-dekalen ska vara synlig uppifrån när ramen är på plats.",
+      "da": "Montér den <em>lodret</em> — klistermærket med QR-koden skal være synligt oppefra, når rammen er sat i."
     }
   },
   {
     "id": "6248be80e0a4",
-    "line": 1377,
+    "line": 1402,
     "tag": "span",
     "text": {
       "pl": "Włóż ramkę w środkową część korpusu gniazdowego, tak żeby nie zakłócać wentylacji.",
@@ -1931,12 +3083,21 @@
       "es": "Introduce el cuadro en la parte central de la cámara de cría, sin obstruir la ventilación.",
       "it": "Inserisci il telaino al centro del nido, senza ostacolare la ventilazione.",
       "no": "Skyv rammen inn midt i yngelrommet, uten å hindre ventilasjonen.",
-      "tr": "Çerçeveyi, havalandırmayı engellemeden kuluçka katının ortasına yerleştirin."
+      "tr": "Çerçeveyi, havalandırmayı engellemeden kuluçka katının ortasına yerleştirin.",
+      "cs": "Zasuňte rámek doprostřed plodiště tak, abyste nebránili ventilaci.",
+      "sk": "Rámik zasuň do strednej časti plodiska tak, aby neobmedzoval vetranie.",
+      "hu": "Told be a keretet a fészek közepébe úgy, hogy ne akadályozd a szellőzést.",
+      "hr": "Okvir umetnite u sredinu plodišta, bez ometanja ventilacije.",
+      "ro": "Introduceți rama în mijlocul corpului de cuib, fără să blocați ventilația.",
+      "fi": "Työnnä kehä sikiöpesän keskelle niin, ettei ilmanvaihto esty.",
+      "nl": "Hang het raam in het midden van de broedkamer, zonder de ventilatie te belemmeren.",
+      "sv": "Skjut in ramen mitt i yngelrummet, utan att hindra ventilationen.",
+      "da": "Skub rammen ind i midten af yngelrummet, uden at ventilationen hindres."
     }
   },
   {
     "id": "9c47cdd1b96c",
-    "line": 1378,
+    "line": 1403,
     "tag": "span",
     "text": {
       "pl": "Od Huba — zasięg BLE.",
@@ -1946,12 +3107,21 @@
       "es": "Desde el Hub: alcance BLE.",
       "it": "Dall'Hub: portata BLE.",
       "no": "Fra Hub — BLE-rekkevidde.",
-      "tr": "Hub'dan — BLE menzili."
+      "tr": "Hub'dan — BLE menzili.",
+      "cs": "Od Hubu — dosah BLE.",
+      "sk": "Od Hubu — dosah BLE.",
+      "hu": "A Hub-tól — BLE-hatótávolság.",
+      "hr": "Od Huba — domet BLE-a.",
+      "ro": "De la Hub — raza de acțiune BLE.",
+      "fi": "Hubista — BLE-kantama.",
+      "nl": "Vanaf de Hub — BLE-bereik.",
+      "sv": "Från Hub — BLE-räckvidd.",
+      "da": "Fra Hub — BLE-rækkevidde."
     }
   },
   {
     "id": "e162fd67632a",
-    "line": 1386,
+    "line": 1411,
     "tag": "span",
     "text": {
       "pl": "Rysunek poglądowy",
@@ -1961,12 +3131,21 @@
       "es": "Esquema de referencia",
       "it": "Disegno di riferimento",
       "no": "Referansetegning",
-      "tr": "Örnek çizim"
+      "tr": "Örnek çizim",
+      "cs": "Ilustrační nákres",
+      "sk": "Orientačný nákres",
+      "hu": "Elvi rajz",
+      "hr": "Ilustrativni crtež",
+      "ro": "Desen de referință",
+      "fi": "Havainnekuva",
+      "nl": "Referentietekening",
+      "sv": "Referensritning",
+      "da": "Referencetegning"
     }
   },
   {
     "id": "d1df6db57cee",
-    "line": 1391,
+    "line": 1416,
     "tag": "span",
     "text": {
       "pl": "Czujnik na ramce",
@@ -1976,12 +3155,21 @@
       "es": "Sensor en el cuadro",
       "it": "Sensore sul telaino",
       "no": "Sensor på rammen",
-      "tr": "Çerçevedeki sensör"
+      "tr": "Çerçevedeki sensör",
+      "cs": "Senzor na rámku",
+      "sk": "Senzor na rámiku",
+      "hu": "Szenzor a kereten",
+      "hr": "Senzor na okviru",
+      "ro": "Senzorul pe ramă",
+      "fi": "Anturi kehässä",
+      "nl": "Sensor op het raam",
+      "sv": "Sensor på ramen",
+      "da": "Sensor på rammen"
     }
   },
   {
     "id": "42e8d92263f5",
-    "line": 1391,
+    "line": 1416,
     "tag": "span",
     "text": {
       "pl": "Zdjęcie",
@@ -1991,12 +3179,21 @@
       "es": "Foto",
       "it": "Foto",
       "no": "Bilde",
-      "tr": "Fotoğraf"
+      "tr": "Fotoğraf",
+      "cs": "Foto",
+      "sk": "Foto",
+      "hu": "Fotó",
+      "hr": "Fotografija",
+      "ro": "Foto",
+      "fi": "Valokuva",
+      "nl": "Foto",
+      "sv": "Foto",
+      "da": "Foto"
     }
   },
   {
     "id": "12bcca2b3913",
-    "line": 1403,
+    "line": 1428,
     "tag": "span",
     "text": {
       "pl": "Krok 07 · Montaż",
@@ -2006,12 +3203,21 @@
       "es": "Paso 07 · Montaje",
       "it": "Passo 07 · Montaggio",
       "no": "Trinn 07 · Montering",
-      "tr": "Adım 07 · Montaj"
+      "tr": "Adım 07 · Montaj",
+      "cs": "Krok 07 · Montáž",
+      "sk": "Krok 07 · Montáž",
+      "hu": "07. lépés · Szerelés",
+      "hr": "Korak 07 · Montaža",
+      "ro": "Pasul 07 · Montaj",
+      "fi": "Vaihe 07 · Asennus",
+      "nl": "Stap 07 · Montage",
+      "sv": "Steg 07 · Montering",
+      "da": "Trin 07 · Montering"
     }
   },
   {
     "id": "b115a19a00ee",
-    "line": 1404,
+    "line": 1429,
     "tag": "span",
     "text": {
       "pl": "Umieść ColonyLink na ulu",
@@ -2021,12 +3227,21 @@
       "es": "Coloca el ColonyLink en la colmena",
       "it": "Applica il ColonyLink sull'arnia",
       "no": "Fest ColonyLink på bikuben",
-      "tr": "ColonyLink'i kovana yapıştırın"
+      "tr": "ColonyLink'i kovana yapıştırın",
+      "cs": "Nalepte ColonyLink na úl",
+      "sk": "Umiestni ColonyLink na úľ",
+      "hu": "Ragaszd fel a ColonyLink-et",
+      "hr": "Zalijepite ColonyLink",
+      "ro": "Aplicați ColonyLink pe stup",
+      "fi": "Kiinnitä ColonyLink pesään",
+      "nl": "Plak de ColonyLink op de kast",
+      "sv": "Fäst ColonyLink på bikupan",
+      "da": "Sæt ColonyLink på bistadet"
     }
   },
   {
     "id": "5686e8c284a3",
-    "line": 1406,
+    "line": 1431,
     "tag": "span",
     "text": {
       "pl": "ColonyLink to <b>wodoodporna naklejka</b> z wbudowanym tagiem NFC i nadrukowanym kodem QR. Zeskanowanie kodu albo przyłożenie telefonu otwiera dane właściwego ula — też w rękawicach i w pełnym słońcu.",
@@ -2036,12 +3251,21 @@
       "es": "El ColonyLink es una <b>pegatina impermeable</b> con etiqueta NFC integrada y código QR impreso. Escanear el código o acercar el teléfono abre los datos de la colmena correcta, incluso con guantes y a pleno sol.",
       "it": "Il ColonyLink è un <b>adesivo impermeabile</b> con tag NFC integrato e codice QR stampato. Scansionare il codice o avvicinare il telefono apre i dati dell'arnia giusta, anche con i guanti e in pieno sole.",
       "no": "ColonyLink er et <b>vanntett klistremerke</b> med innebygd NFC-brikke og påtrykt QR-kode. Skanner du koden eller holder telefonen inntil, åpnes dataene for riktig bikube — også med hansker på og i sterk sol.",
-      "tr": "ColonyLink, gömülü NFC etiketi ve basılı QR kodu olan <b>suya dayanıklı bir çıkartmadır</b>. Kodu taramak veya telefonu yaklaştırmak doğru kovanın verilerini açar — eldivenle ve tam güneş altında bile."
+      "tr": "ColonyLink, gömülü NFC etiketi ve basılı QR kodu olan <b>suya dayanıklı bir çıkartmadır</b>. Kodu taramak veya telefonu yaklaştırmak doğru kovanın verilerini açar — eldivenle ve tam güneş altında bile.",
+      "cs": "ColonyLink je <b>vodotěsná samolepka</b> s vestavěným NFC tagem a vytištěným QR kódem. Naskenování kódu nebo přiložení telefonu otevře data správného úlu — i v rukavicích a na plném slunci.",
+      "sk": "ColonyLink je <b>vodotesná nálepka</b> so zabudovaným NFC tagom a vytlačeným QR kódom. Naskenovanie kódu alebo priloženie telefónu otvorí údaje správneho úľa — aj v rukaviciach a na plnom slnku.",
+      "hu": "A ColonyLink <b>vízálló matrica</b> beépített NFC-címkével és rányomtatott QR-kóddal. A kód beolvasása vagy a telefon hozzáérintése a megfelelő kaptár adatait nyitja meg — kesztyűben és tűző napon is.",
+      "hr": "ColonyLink je <b>vodootporna naljepnica</b> s ugrađenim NFC čipom i otisnutim QR kodom. Skeniranje koda ili prislanjanje telefona otvara podatke prave košnice — i s rukavicama i na punom suncu.",
+      "ro": "ColonyLink este un <b>autocolant impermeabil</b> cu etichetă NFC încorporată și cod QR imprimat. Scanarea codului sau apropierea telefonului deschide datele stupului potrivit — chiar și cu mănuși și în soare puternic.",
+      "fi": "ColonyLink on <b>vedenkestävä tarra</b>, jossa on sisäänrakennettu NFC-tunniste ja painettu QR-koodi. Koodin skannaaminen tai puhelimen vieminen sen lähelle avaa oikean pesän tiedot — myös käsineet kädessä ja kirkkaassa auringossa.",
+      "nl": "De ColonyLink is een <b>waterdichte sticker</b> met een ingebouwde NFC-tag en een opgedrukte QR-code. Scan de code of houd je telefoon ertegenaan en je opent meteen de gegevens van de juiste kast — ook met handschoenen aan en in de volle zon.",
+      "sv": "ColonyLink är en <b>vattentät dekal</b> med inbyggd NFC-tagg och påtryckt QR-kod. Om du skannar koden eller håller telefonen mot den öppnas rätt bikupa — även med handskar på och i starkt solljus.",
+      "da": "ColonyLink er et <b>vandtæt klistermærke</b> med indbygget NFC-tag og påtrykt QR-kode. Scanner du koden eller holder telefonen op mod det, åbnes data for det rigtige bistade — også med handsker på og i skarpt sollys."
     }
   },
   {
     "id": "46bde5f8e964",
-    "line": 1410,
+    "line": 1435,
     "tag": "span",
     "text": {
       "pl": "Wybierz na froncie ula miejsce <em>płaskie, czyste i suche</em>, dobrze widoczne podczas pracy.",
@@ -2051,12 +3275,21 @@
       "es": "Elige en el frente de la colmena un punto <em>plano, limpio y seco</em>, bien visible mientras trabajas.",
       "it": "Scegli sulla facciata dell'arnia un punto <em>piano, pulito e asciutto</em>, ben visibile mentre lavori.",
       "no": "Velg et sted på forsiden av bikuben som er <em>flatt, rent og tørt</em>, og som er godt synlig mens du jobber.",
-      "tr": "Kovanın ön yüzünde <em>düz, temiz ve kuru</em>, çalışırken kolayca görünen bir yer seçin."
+      "tr": "Kovanın ön yüzünde <em>düz, temiz ve kuru</em>, çalışırken kolayca görünen bir yer seçin.",
+      "cs": "Vyberte na čelní stěně úlu místo, které je <em>rovné, čisté a suché</em> a zůstane při práci dobře vidět.",
+      "sk": "Na prednej stene úľa vyber miesto, ktoré je <em>rovné, čisté a suché</em> a dobre viditeľné pri práci.",
+      "hu": "Válassz a kaptár homlokfalán <em>sima, tiszta és száraz</em> helyet, amely munka közben is jól látható.",
+      "hr": "Na prednjoj strani košnice odaberite <em>ravno, čisto i suho</em> mjesto koje je dobro vidljivo dok radite.",
+      "ro": "Alegeți pe fața stupului un loc <em>plan, curat și uscat</em>, ușor de văzut în timp ce lucrați.",
+      "fi": "Valitse pesän etuseinästä <em>tasainen, puhdas ja kuiva</em> kohta, joka näkyy hyvin työskennellessäsi.",
+      "nl": "Kies op de voorkant van de kast een plek die <em>vlak, schoon en droog</em> is en tijdens het werk goed zichtbaar blijft.",
+      "sv": "Välj ett ställe på bikupans framsida som är <em>plant, rent och torrt</em> och som syns väl medan du arbetar.",
+      "da": "Vælg et sted på bistadets forside, der er <em>fladt, rent og tørt</em>, og som er let at se, mens du arbejder."
     }
   },
   {
     "id": "39e0ffc634f5",
-    "line": 1411,
+    "line": 1436,
     "tag": "span",
     "text": {
       "pl": "Naklej ColonyLink i dociśnij go na całej powierzchni, żeby taśma montażowa dobrze przylegała.",
@@ -2066,12 +3299,21 @@
       "es": "Pega el ColonyLink y presiónalo por toda su superficie para que el adhesivo agarre bien.",
       "it": "Applica il ColonyLink e premilo su tutta la superficie, così l'adesivo aderisce bene.",
       "no": "Klistre på ColonyLink og trykk det ned over hele flaten, slik at monteringstapen fester godt.",
-      "tr": "ColonyLink'i yapıştırın ve yapışkan bandın iyi tutması için tüm yüzeyine bastırın."
+      "tr": "ColonyLink'i yapıştırın ve yapışkan bandın iyi tutması için tüm yüzeyine bastırın.",
+      "cs": "Nalepte ColonyLink a přitlačte ho po celé ploše, aby lepidlo dobře drželo.",
+      "sk": "Nalep ColonyLink a pritlač ho po celej ploche, aby montážna páska dobre priľnula.",
+      "hu": "Ragaszd fel a ColonyLink-et, és nyomd rá a teljes felületén, hogy a ragasztó jól tapadjon.",
+      "hr": "Zalijepite ColonyLink i pritisnite ga cijelom površinom da ljepljiva traka dobro prione.",
+      "ro": "Lipiți ColonyLink și apăsați-l pe toată suprafața, ca adezivul să prindă bine.",
+      "fi": "Liimaa ColonyLink paikalleen ja paina sitä koko pinnaltaan, jotta asennusteippi tarttuu kunnolla.",
+      "nl": "Plak de ColonyLink op en druk hem over het hele oppervlak aan, zodat de tape goed hecht.",
+      "sv": "Sätt fast ColonyLink och tryck till över hela ytan, så att monteringstejpen fäster ordentligt.",
+      "da": "Sæt ColonyLink på, og tryk det fast over hele fladen, så monteringstapen hæfter ordentligt."
     }
   },
   {
     "id": "4e53ea1a0908",
-    "line": 1412,
+    "line": 1437,
     "tag": "span",
     "text": {
       "pl": "Sprawdź, czy kod QR jest dostępny bez otwierania ula.",
@@ -2081,12 +3323,21 @@
       "es": "Comprueba que se puede acceder al código QR sin abrir la colmena.",
       "it": "Verifica che il codice QR sia raggiungibile senza aprire l'arnia.",
       "no": "Kontroller at QR-koden er tilgjengelig uten at du må åpne bikuben.",
-      "tr": "QR koduna kovanı açmadan ulaşılabildiğini kontrol edin."
+      "tr": "QR koduna kovanı açmadan ulaşılabildiğini kontrol edin.",
+      "cs": "Zkontrolujte, že je QR kód dostupný bez otevírání úlu.",
+      "sk": "Skontroluj, či je QR kód dostupný bez otvárania úľa.",
+      "hu": "Ellenőrizd, hogy a QR-kód a kaptár kinyitása nélkül is elérhető.",
+      "hr": "Provjerite je li QR kod dostupan bez otvaranja košnice.",
+      "ro": "Verificați dacă puteți ajunge la codul QR fără să deschideți stupul.",
+      "fi": "Tarkista, että QR-koodi on luettavissa pesää avaamatta.",
+      "nl": "Controleer of de QR-code bereikbaar is zonder de kast te openen.",
+      "sv": "Kontrollera att QR-koden går att nå utan att du öppnar bikupan.",
+      "da": "Kontrollér, at QR-koden kan nås, uden at du åbner bistadet."
     }
   },
   {
     "id": "b792be847000",
-    "line": 1413,
+    "line": 1438,
     "tag": "span",
     "text": {
       "pl": "Bez baterii",
@@ -2096,12 +3347,21 @@
       "es": "Sin pilas",
       "it": "Senza batteria",
       "no": "Uten batteri",
-      "tr": "Pilsiz"
+      "tr": "Pilsiz",
+      "cs": "Bez baterie",
+      "sk": "Bez batérie",
+      "hu": "Elem nélkül",
+      "hr": "Bez baterije",
+      "ro": "Fără baterie",
+      "fi": "Ei paristoa",
+      "nl": "Geen batterij",
+      "sv": "Utan batteri",
+      "da": "Uden batteri"
     }
   },
   {
     "id": "fbfc41eb51eb",
-    "line": 1413,
+    "line": 1438,
     "tag": "span",
     "text": {
       "pl": "ColonyLink nie wymaga zasilania, konfiguracji ani aktualizacji.",
@@ -2111,12 +3371,21 @@
       "es": "El ColonyLink no necesita alimentación, ni configuración, ni actualizaciones.",
       "it": "Il ColonyLink non richiede alimentazione, configurazione né aggiornamenti.",
       "no": "ColonyLink trenger verken strøm, konfigurasjon eller oppdateringer.",
-      "tr": "ColonyLink güç, kurulum veya güncelleme gerektirmez."
+      "tr": "ColonyLink güç, kurulum veya güncelleme gerektirmez.",
+      "cs": "ColonyLink nepotřebuje napájení, konfiguraci ani aktualizace.",
+      "sk": "ColonyLink nepotrebuje napájanie, nastavovanie ani aktualizácie.",
+      "hu": "A ColonyLink nem igényel áramot, beállítást és frissítést.",
+      "hr": "ColonyLink ne treba napajanje, konfiguraciju ni ažuriranja.",
+      "ro": "ColonyLink nu are nevoie de alimentare, de configurare și nici de actualizări.",
+      "fi": "ColonyLink ei tarvitse virtaa, määrityksiä eikä päivityksiä.",
+      "nl": "De ColonyLink heeft geen voeding, configuratie of updates nodig.",
+      "sv": "ColonyLink behöver varken ström, konfiguration eller uppdateringar.",
+      "da": "ColonyLink kræver hverken strøm, opsætning eller opdateringer."
     }
   },
   {
     "id": "e162fd67632a",
-    "line": 1420,
+    "line": 1445,
     "tag": "span",
     "text": {
       "pl": "Rysunek poglądowy",
@@ -2126,12 +3395,21 @@
       "es": "Esquema de referencia",
       "it": "Disegno di riferimento",
       "no": "Referansetegning",
-      "tr": "Örnek çizim"
+      "tr": "Örnek çizim",
+      "cs": "Ilustrační nákres",
+      "sk": "Orientačný nákres",
+      "hu": "Elvi rajz",
+      "hr": "Ilustrativni crtež",
+      "ro": "Desen de referință",
+      "fi": "Havainnekuva",
+      "nl": "Referentietekening",
+      "sv": "Referensritning",
+      "da": "Referencetegning"
     }
   },
   {
     "id": "a0c40dade066",
-    "line": 1431,
+    "line": 1456,
     "tag": "span",
     "text": {
       "pl": "Gotowe",
@@ -2141,12 +3419,21 @@
       "es": "Listo",
       "it": "Fatto",
       "no": "Ferdig",
-      "tr": "Hazır"
+      "tr": "Hazır",
+      "cs": "Hotovo",
+      "sk": "Hotovo",
+      "hu": "Kész",
+      "hr": "Gotovo",
+      "ro": "Gata",
+      "fi": "Valmista",
+      "nl": "Klaar",
+      "sv": "Klart",
+      "da": "Færdig"
     }
   },
   {
     "id": "dea824f8ba48",
-    "line": 1432,
+    "line": 1457,
     "tag": "span",
     "text": {
       "pl": "Ul nadaje.",
@@ -2156,12 +3443,21 @@
       "es": "La colmena ya emite.",
       "it": "L'arnia trasmette.",
       "no": "Bikuben sender.",
-      "tr": "Kovanınız yayında."
+      "tr": "Kovanınız yayında.",
+      "cs": "Úl vysílá.",
+      "sk": "Úľ vysiela.",
+      "hu": "A kaptárad adásban van.",
+      "hr": "Košnica emitira.",
+      "ro": "Stupul transmite.",
+      "fi": "Pesä lähettää.",
+      "nl": "Je bijenkast zendt uit.",
+      "sv": "Bikupan sänder.",
+      "da": "Dit bistade sender."
     }
   },
   {
     "id": "fc53250f0898",
-    "line": 1434,
+    "line": 1459,
     "tag": "span",
     "text": {
       "pl": "Hub zbiera dane z czujników i wysyła je do aplikacji. Jeśli po kilku godzinach odczytów nadal brak — sprawdź baterie, zasięg i listę problemów w dokumentacji.",
@@ -2171,12 +3467,21 @@
       "es": "El Hub recoge los datos de los sensores y los envía a la aplicación. Si al cabo de unas horas sigue sin haber mediciones, comprueba las pilas, el alcance y la lista de problemas de la documentación.",
       "it": "L'Hub raccoglie i dati dei sensori e li invia all'app. Se dopo qualche ora le letture mancano ancora, controlla le batterie, la portata e l'elenco dei problemi nella documentazione.",
       "no": "Hub samler inn data fra sensorene og sender dem til appen. Hvis avlesningene fortsatt mangler etter noen timer, sjekk batteriene, rekkevidden og problemlisten i dokumentasjonen.",
-      "tr": "Hub, sensör verilerini toplar ve uygulamaya gönderir. Birkaç saat sonra hâlâ ölçüm gelmiyorsa pilleri, menzili ve dokümantasyondaki sorun listesini kontrol edin."
+      "tr": "Hub, sensör verilerini toplar ve uygulamaya gönderir. Birkaç saat sonra hâlâ ölçüm gelmiyorsa pilleri, menzili ve dokümantasyondaki sorun listesini kontrol edin.",
+      "cs": "Hub sbírá data ze senzorů a posílá je do aplikace. Pokud po několika hodinách stále nejsou žádné naměřené hodnoty, zkontrolujte baterie, dosah a seznam problémů v dokumentaci.",
+      "sk": "Hub zbiera dáta zo senzorov a posiela ich do aplikácie. Ak po niekoľkých hodinách stále nie sú namerané hodnoty — skontroluj batérie, dosah a zoznam problémov v dokumentácii.",
+      "hu": "A Hub összegyűjti a szenzorok adatait, és elküldi az alkalmazásba. Ha néhány óra múlva sem érkeznek mérési adatok, ellenőrizd az elemeket, a hatótávolságot és a dokumentáció hibalistáját.",
+      "hr": "Hub prikuplja podatke sa senzora i šalje ih aplikaciji. Ako očitanja i nakon nekoliko sati nedostaju, provjerite baterije, domet i popis problema u dokumentaciji.",
+      "ro": "Hub-ul strânge datele de la senzori și le trimite în aplicație. Dacă după câteva ore citirile lipsesc în continuare, verificați bateriile, raza de acțiune și lista de probleme din documentație.",
+      "fi": "Hub kerää anturien tiedot ja lähettää ne sovellukseen. Jos lukemia ei näy vielä muutaman tunnin kuluttua, tarkista paristot, kantama ja dokumentaation vianmäärityslista.",
+      "nl": "De Hub verzamelt de sensordata en stuurt die naar de app. Ontbreken de metingen na een paar uur nog steeds, controleer dan de batterijen, het bereik en de lijst met problemen in de documentatie.",
+      "sv": "Hub samlar in data från sensorerna och skickar dem till appen. Om avläsningarna fortfarande saknas efter några timmar, kontrollera batterierna, räckvidden och problemlistan i dokumentationen.",
+      "da": "Hub samler data fra sensorerne og sender dem til appen. Mangler aflæsningerne stadig efter nogle timer, så tjek batterierne, rækkevidden og listen over problemer i dokumentationen."
     }
   },
   {
     "id": "a8ef2318c52e",
-    "line": 1439,
+    "line": 1464,
     "tag": "span",
     "text": {
       "pl": "Pełna instrukcja konfiguracji",
@@ -2186,12 +3491,21 @@
       "es": "Guía completa de configuración",
       "it": "Guida completa alla configurazione",
       "no": "Fullstendig konfigurasjonsveiledning",
-      "tr": "Tam yapılandırma kılavuzu"
+      "tr": "Tam yapılandırma kılavuzu",
+      "cs": "Úplný návod ke konfiguraci",
+      "sk": "Kompletný návod na konfiguráciu",
+      "hu": "Teljes beállítási útmutató",
+      "hr": "Cjelovite upute za konfiguraciju",
+      "ro": "Ghid complet de configurare",
+      "fi": "Täydellinen käyttöönotto-ohje",
+      "nl": "Volledige configuratiehandleiding",
+      "sv": "Fullständig konfigurationsguide",
+      "da": "Komplet konfigurationsvejledning"
     }
   },
   {
     "id": "2a1f319432e3",
-    "line": 1440,
+    "line": 1465,
     "tag": "span",
     "text": {
       "pl": "Rozwiązywanie problemów",
@@ -2201,12 +3515,21 @@
       "es": "Resolución de problemas",
       "it": "Risoluzione dei problemi",
       "no": "Feilsøking",
-      "tr": "Sorun giderme"
+      "tr": "Sorun giderme",
+      "cs": "Řešení problémů",
+      "sk": "Riešenie problémov",
+      "hu": "Hibaelhárítás",
+      "hr": "Rješavanje problema",
+      "ro": "Depanare",
+      "fi": "Vianmääritys",
+      "nl": "Problemen oplossen",
+      "sv": "Felsökning",
+      "da": "Fejlfinding"
     }
   },
   {
     "id": "e050480eb62e",
-    "line": 1441,
+    "line": 1466,
     "tag": "span",
     "text": {
       "pl": "Dokumentacja Apisense",
@@ -2216,7 +3539,16 @@
       "es": "Documentación Apisense",
       "it": "Documentazione Apisense",
       "no": "Apisense-dokumentasjon",
-      "tr": "Apisense dokümantasyonu"
+      "tr": "Apisense dokümantasyonu",
+      "cs": "Dokumentace Apisense",
+      "sk": "Dokumentácia Apisense",
+      "hu": "Apisense dokumentáció",
+      "hr": "Dokumentacija Apisense",
+      "ro": "Documentația Apisense",
+      "fi": "Apisense-dokumentaatio",
+      "nl": "Apisense-documentatie",
+      "sv": "Apisense-dokumentation",
+      "da": "Apisense-dokumentation"
     }
   }
 ]

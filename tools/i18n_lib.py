@@ -28,11 +28,25 @@ from dataclasses import dataclass, field
 # Canonical span order inside a group. Kept identical everywhere so that the
 # diff of each new language reads as an append, not a reshuffle.
 # Which of them count as done lives in check_i18n.py — one list, one owner.
-LOCALE_ORDER = ("pl", "en", "de", "fr", "es", "it", "no", "tr")
+# A locale joins this tuple when someone starts translating it, not when the
+# translation lands: `i18n_inject.py` validates its arguments against it, so a
+# language missing from here cannot even be asked for a coverage report.
+LOCALE_ORDER = (
+    "pl", "en", "de", "fr", "es", "it", "no", "tr",
+    "cs", "sk", "hu", "hr", "ro", "fi", "nl", "sv", "da",
+)
 
-# `(?<![-\w])` and not `\b`: the language switcher's buttons carry
-# `data-set-lang="pl"`, which a word boundary happily matches. Those buttons are
-# chrome, not content — they must stay visible in every locale.
+# `(?<![-\w])` and not `\b`: `\b` matches the `lang` inside `data-lang="pl"`,
+# and this page names its current locale with exactly that attribute — the root
+# is `<html lang="pl" data-lang="pl">`, the hide rule is `[data-lang="xx"]`, and
+# the switcher's JS writes it. Nothing on the page trips this today (the guard
+# only bites on a `span`/`button` carrying such an attribute, and none does since
+# #50 removed the `data-set-lang` pills it was originally written for), so it is
+# now insurance rather than a live fix. It stays: the attribute name it protects
+# against is the one the whole locale mechanism is built on, so the day a span
+# carries it, silently parsing it as content is the worst possible failure.
+# `button` likewise stays in the alternation though no button carries `lang`
+# today — nothing depends on it, and narrowing it would only buy a future edit.
 _OPEN = re.compile(r'<(span|button)\b([^>]*?)(?<![-\w])lang="([a-z]{2})"([^>]*)>', re.I)
 
 
