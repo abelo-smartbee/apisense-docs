@@ -204,3 +204,46 @@ rynku portugalskim, a nie samo pojawienie się `pt-BR` w cudzej tabelce.
   zera. Do tego czasu warto niezależnie: dopisać brakujący test negatywny
   (`check_i18n.py` nie ma dziś **żadnego** testu — repo nie ma katalogu testów) i
   zdecydować, co zrobić z pustymi dymkami szyny w locale innych niż PL/EN.
+
+## Aktualizacja po scaleniu gałęzi integracyjnej (2026-07-31)
+
+Rekomendacja stoi bez zmian — `pt`, tekst brazylijski, etykieta „Português
+(Brasil)". Zmieniło się natomiast to, co ten ADR opisuje jako stan kodu: #50
+usunął pigułki, a #51 dołożył dziewięć locale, więc numery linii i jedna pozycja
+tabeli są nieaktualne. Poniżej sprostowanie, żeby dzień wdrożenia nie zaczynał
+się od szukania nieistniejących miejsc.
+
+**„Prawdziwy zasięg" to dziś dwanaście miejsc, nie trzynaście.** Wiersz
+`check_i18n.py:59` — „pigułki: `data-set-lang="([a-z]{2})"`" — **przestał
+istnieć**: #50 zastąpił pigułki jednym `<select>`, `SWITCHER_LISTS` ma cztery
+wpisy zamiast pięciu, a `data-set-lang` nie występuje już nigdzie na stronie.
+Konsekwentnie w sekcji „Koszt odwrotu" jest **cztery listy przełącznika**, nie
+pięć, a w „Decyzji" zostaje sam `<option value="pt">Português (Brasil)</option>`
+— **pigułki `PT` nie ma czym podpisać**.
+
+Pozostałe odsyłacze po przenumerowaniu:
+
+| Było | Jest |
+|---|---|
+| `i18n_lib.py:31` (`LOCALE_ORDER`) | `:34` |
+| `i18n_lib.py:36` (`_OPEN`) | `:50` |
+| `check_i18n.py:43` (`DEFAULT_LOCALES`) | `:61` |
+| `check_i18n.py:57–61` (listy przełącznika) | `:83–86` (cztery) |
+| `check_i18n.py:69` (`if loc in LOCALE_ORDER`) | `:94` |
+| `check_i18n.py:95` (walidacja `--locales`) | `:126` |
+| `build_pdf.py:27` (`LOCALES`) | `:42` |
+| `index.html:1474` (`langSpan`) | `:1492` |
+| `index.html:109–116` (osiem reguł CSS) | `:110–126` (siedemnaście) |
+| `index.html:798–805` (pigułki) | usunięte |
+| `index.html:811–818` (`<option>`) | `:819–836` |
+| `index.html:1622–1661` (`HEAD_TEXT`) | `:1651–1737` |
+| `index.html:1682` (`HEAD_TEXT[cur] \|\| HEAD_TEXT.pl`) | `:1754` |
+
+Bez zmian: `i18n_lib.py` `_OPEN` nadal ma flagę `re.I`, `HEAD_TEXT` nadal ma
+klucze bez cudzysłowów, a `i18n_inject.py:33` nadal skleja nazwę pliku z
+argumentu. Pułapki 1–5 obowiązują w całości.
+
+**Puste dymki szyny to dziś 15 z 17 locale, nie 6 z 8.** `index.html:1492`
+buduje je nadal tylko z `langSpan('pl', …)` / `langSpan('en', …)`, przy 20
+kropkach szyny. Każdy kolejny locale powiększa tę dziurę o jeden; naprawa wymaga
+nowej treści do przetłumaczenia, nie zmiany w tych plikach.

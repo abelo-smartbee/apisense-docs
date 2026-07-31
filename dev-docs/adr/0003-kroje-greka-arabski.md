@@ -163,3 +163,20 @@ w Poppins — 30×. Do tego `arabic` Noto Sans Arabic 165 960 B na grubość.
   warunkowe.
 - Poppins zostaje krojem Apisense. Ta decyzja niczego w identyfikacji nie zmienia
   — i o to chodzi.
+
+## Aktualizacja po scaleniu gałęzi integracyjnej (2026-07-31)
+
+Ten ADR zmierzono, zanim wylądowało dziewięć łacińskich locale. Wnioski się nie
+zmieniły, ale dwie liczby bazowe już nie opisują repo, więc podaję je świeże —
+pomiary greki i arabskiego zostają nietknięte, bo dotyczą plików Google Fonts,
+a nie tej gałęzi.
+
+- Baza bundla to dziś **3 493 780 B (3,332 MiB)**, nie 3 388 103 B. `index.html`
+  to **259 049 B**, nie 154 185 B.
+- Koszt dwóch rodzin (**+284 944 B**) jest niezależny od liczby locale — to
+  fonty, nie tekst. Względem nowej bazy daje to **+8,2%** zamiast +8,4%, a bundle
+  po wdrożeniu **3 778 724 B (3,604 MiB)** zamiast 3,503 MiB.
+- Zdanie „Epik #47 rozszerza stronę do 20 locale" opisuje zamówienie, nie stan.
+  Gałąź dowozi **17**: `el` i `ar` (#63, #64) czekają na akceptację tego ADR-a,
+  `pt` (#62) na ADR 0004. Status pozostaje **proponowany** — nic z tego nie jest
+  wdrożone i nie powinno być, dopóki właściciel identyfikacji się nie wypowie.

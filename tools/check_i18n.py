@@ -13,12 +13,30 @@ the one the reader picked, and there is no fallback rule behind it:
 So a group that never got its `<span lang="es">` does not fall back to English
 — it renders as nothing at all. No error, no warning, just a sentence that
 silently vanishes for that language. Same for a span that exists but is empty.
-Across 150 groups and eight locales that is only findable mechanically, which
-is what this script is.
+Across 148 groups and seventeen locales that is only findable mechanically,
+which is what this script is.
 
 What counts as a group comes from `i18n_lib`, shared with `i18n_extract.py`
 and `i18n_inject.py`. The validator must agree with the tools whose output it
 is checking; a second parser here would only invent a second opinion.
+
+What this deliberately does NOT check is HTML-entity parity against `text.en`.
+Three groups diverge from English on purpose and would be flagged forever by
+such a check, so whoever writes one must whitelist them rather than "fix" the
+translations:
+
+    cc79d6fa7921  "Scan the Hub QR code" — 11 of 17 locales bind the device
+                  name to the preceding word with `&nbsp;`; English and the
+                  five where the name leads the phrase do not need it.
+    0d40eedb2f02  "… ColonyLink, VitalSensor &amp;&nbsp;Scale" — every locale
+                  renders `&amp;` as its own conjunction (i, és, și, en, og …)
+                  and keeps only the `&nbsp;`.
+    73e96dab53c7  "Scale &amp; spacer bar" — same, and here nothing is left to
+                  hold a `&nbsp;`, so the locales carry no entity at all.
+
+The entity is typography and grammar, not markup that must match one-to-one:
+`&nbsp;` belongs where a language would not break the line, `&amp;` is an
+English word that other languages spell out.
 """
 
 from __future__ import annotations
