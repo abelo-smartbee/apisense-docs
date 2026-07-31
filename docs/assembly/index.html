@@ -15,8 +15,13 @@
     var t = localStorage.getItem('apisense-asm-theme');
     if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     document.documentElement.setAttribute('data-theme', t);
+    /* Keep this list in step with LOCALE_ORDER in tools/i18n_lib.py.
+       No navigator.language fallback on a first visit: tools/build_pdf.py
+       renders each locale by presetting data-lang on <html> in headless
+       Chrome, whose navigator.language is always en-US — auto-detection here
+       would overwrite it and print every PDF in English. */
     var l = localStorage.getItem('apisense-asm-lang');
-    if (['pl', 'en', 'de', 'fr'].indexOf(l) > -1) {
+    if (['pl', 'en', 'de', 'fr', 'es', 'it', 'no', 'tr'].indexOf(l) > -1) {
       document.documentElement.setAttribute('data-lang', l);
       document.documentElement.lang = l;
     }
@@ -104,7 +109,11 @@ body::after {
 [data-lang="pl"] [lang]:not([lang="pl"]),
 [data-lang="en"] [lang]:not([lang="en"]),
 [data-lang="de"] [lang]:not([lang="de"]),
-[data-lang="fr"] [lang]:not([lang="fr"]) { display: none; }
+[data-lang="fr"] [lang]:not([lang="fr"]),
+[data-lang="es"] [lang]:not([lang="es"]),
+[data-lang="it"] [lang]:not([lang="it"]),
+[data-lang="no"] [lang]:not([lang="no"]),
+[data-lang="tr"] [lang]:not([lang="tr"]) { display: none; }
 
 /* ── Header ─────────────────────────────────────────────────── */
 .head {
@@ -168,8 +177,23 @@ body::after {
   transition: color 180ms var(--ease), background-color 180ms var(--ease);
 }
 .lang button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
-[data-lang="pl"] .lang button:hover:not([aria-pressed="true"]),
-[data-lang="en"] .lang button:hover:not([aria-pressed="true"]) { color: var(--ink); }
+.lang button:hover:not([aria-pressed="true"]) { color: var(--ink); }
+
+/* Eight two-letter pills do not fit beside the wordmark and the three round
+   buttons on a phone, so below the breakpoint the row collapses into this
+   dropdown. Both controls are always in the DOM; syncLang() keeps them equal. */
+.lang-select { display: none; padding: 4px 10px 4px 12px; gap: 7px; }
+.lang-select select {
+  font: inherit; font-size: 11px; font-weight: 600; letter-spacing: .1em;
+  color: var(--ink); background: transparent;
+  border: 0; padding: 0; margin: 0;
+  cursor: pointer; appearance: none; -webkit-appearance: none;
+}
+.lang-select select:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
+/* The native popup paints on the platform's own surface, which ignores our
+   custom properties — fix both ends so dark theme stays legible. */
+.lang-select option { color: #21290e; background: #ffffff; }
+.lang-select svg { width: 11px; height: 11px; fill: none; stroke: currentColor; stroke-width: 2.2; flex: none; }
 
 .head .pdf-label { display: none; }
 @media (min-width: 900px) { .head .pdf-label { display: inline; } }
@@ -632,20 +656,39 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
   .slide.is-active .ghost { opacity: .7; }
 }
 @media (max-width: 720px) {
-  /* Four locales plus three buttons will not fit next to the wordmark —
-     tighten everything and drop the guide link (it is also on the last slide). */
+  /* Eight locales plus three buttons will not fit next to the wordmark —
+     tighten everything and drop the guide link (it is also on the last slide).
+     The doc title has already gone at 900px. */
   .head { gap: 10px; padding-inline: 14px; }
-  .head__doc, .head__sep { display: none; }
   .head__mark img { height: 18px; }
   .lang { padding: 2px; }
   .lang button { padding: 4px 6px; font-size: 10px; letter-spacing: .06em; }
   .btn { padding: 6px 10px; font-size: 11px; }
   .head > a.btn:last-child { display: none; }
 }
+@media (max-width: 900px) {
+  /* The pill row grew by four; the wordmark and the doc title are the only
+     two items that can give the width back, and only the title is built to do
+     it (nowrap + ellipsis). Rather than let both starve, drop the title here —
+     it repeats the cover slide's heading and now also the <title>. */
+  .head__doc, .head__sep { display: none; }
+}
+@media (min-width: 901px) {
+  /* Above the breakpoint the title is back and competes with the wordmark for
+     the same slack. Floor the wordmark so the title ellipsizes instead of both
+     collapsing; 96px still reads at the header's 21px cap. */
+  .head__mark { min-width: 96px; }
+}
+@media (max-width: 640px) {
+  /* Below this the eight pills overflow the header even tightened, so the
+     switcher becomes a dropdown. Verified in headless Chrome down to 320px:
+     no horizontal overflow, switcher never clipped. */
+  .lang { display: none; }
+  .lang-select { display: inline-flex; }
+}
 @media (max-width: 480px) {
   .head__mark img { height: 17px; }
   .btn-label { display: none; }
-  .lang button { padding: 4px 5px; }
 }
 @media (max-width: 860px) {
   :root { --rail-w: 0px; --head-h: 58px; }
@@ -744,15 +787,39 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
   <div class="head__sep"></div>
   <p class="head__doc">
     <span lang="pl">Apisense BOX · Instrukcja montażu</span>
-    <span lang="en">Apisense BOX · Assembly instruction</span><span lang="de">Apisense BOX · Montageanleitung</span><span lang="fr">Apisense BOX · Guide de montage</span>
+    <span lang="en">Apisense BOX · Assembly instruction</span><span lang="de">Apisense BOX · Montageanleitung</span><span lang="fr">Apisense BOX · Guide de montage</span><span lang="es">Apisense BOX · Guía de montaje</span><span lang="it">Apisense BOX · Istruzioni di montaggio</span><span lang="no">Apisense BOX · Monteringsanvisning</span><span lang="tr">Apisense BOX · Montaj kılavuzu</span>
   </p>
   <div class="head__spacer"></div>
 
+  <!-- Two views of one control: the pills on a wide header, the dropdown on a
+       phone. Neither carries `lang` — these are chrome and stay visible in
+       every locale, which is why the switch is `data-set-lang`. -->
   <div class="lang btn" role="group" aria-label="Language">
     <button type="button" data-set-lang="pl" aria-pressed="true">PL</button>
     <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
     <button type="button" data-set-lang="de" aria-pressed="false">DE</button>
     <button type="button" data-set-lang="fr" aria-pressed="false">FR</button>
+    <button type="button" data-set-lang="es" aria-pressed="false">ES</button>
+    <button type="button" data-set-lang="it" aria-pressed="false">IT</button>
+    <button type="button" data-set-lang="no" aria-pressed="false">NO</button>
+    <button type="button" data-set-lang="tr" aria-pressed="false">TR</button>
+  </div>
+
+  <div class="lang-select btn">
+    <!-- Endonyms, so the list needs no translation of its own. -->
+    <select id="lang-select" aria-label="Language">
+      <option value="pl">Polski</option>
+      <option value="en">English</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="es">Español</option>
+      <option value="it">Italiano</option>
+      <option value="no">Norsk</option>
+      <option value="tr">Türkçe</option>
+    </select>
+    <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="m6 9 6 6 6-6"/>
+    </svg>
   </div>
 
   <button type="button" class="btn" id="theme" aria-label="Motyw / Theme">
@@ -772,7 +839,7 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
       <path d="M5 4h11l3 3v13H5zM9 12h7M9 16h7"/>
     </svg>
-    <span class="pdf-label"><span lang="pl">Pełna instrukcja</span><span lang="en">Full guide</span><span lang="de">Vollständige Anleitung</span><span lang="fr">Guide complet</span></span>
+    <span class="pdf-label"><span lang="pl">Pełna instrukcja</span><span lang="en">Full guide</span><span lang="de">Vollständige Anleitung</span><span lang="fr">Guide complet</span><span lang="es">Guía completa</span><span lang="it">Guida completa</span><span lang="no">Fullstendig veiledning</span><span lang="tr">Tam kılavuz</span></span>
   </a>
 </header>
 
@@ -797,24 +864,24 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
     <img class="cover-art" src="figs/kt-hero-nfc.webp" alt="" width="1700" height="1147" aria-hidden="true">
     <div class="wrap">
       <div class="col col--text">
-        <p class="tag"><span lang="pl">Apisense · Zestaw startowy</span><span lang="en">Apisense · Starter kit</span><span lang="de">Apisense · Starter-Set</span><span lang="fr">Apisense · Kit de démarrage</span></p>
+        <p class="tag"><span lang="pl">Apisense · Zestaw startowy</span><span lang="en">Apisense · Starter kit</span><span lang="de">Apisense · Starter-Set</span><span lang="fr">Apisense · Kit de démarrage</span><span lang="es">Apisense · Kit de inicio</span><span lang="it">Apisense · Kit di avvio</span><span lang="no">Apisense · Startpakke</span><span lang="tr">Apisense · Başlangıç seti</span></p>
         <h1>
           <span lang="pl">Instrukcja<br>montażu</span>
-          <span lang="en">Assembly<br>instruction</span><span lang="de">Montage-<br>anleitung</span><span lang="fr">Guide de<br>montage</span>
+          <span lang="en">Assembly<br>instruction</span><span lang="de">Montage-<br>anleitung</span><span lang="fr">Guide de<br>montage</span><span lang="es">Guía de<br>montaje</span><span lang="it">Istruzioni di<br>montaggio</span><span lang="no">Monterings-<br>anvisning</span><span lang="tr">Montaj<br>kılavuzu</span>
         </h1>
         <p class="lede">
           <span lang="pl">Od rozpakowania kartonu do pierwszego odczytu z ula. Siedem kroków, wszystkie ekrany aplikacji i montaż każdego urządzenia w pasiece.</span>
-          <span lang="en">From opening the box to your first hive reading. Seven steps, every app screen and the mounting of each device in the apiary.</span><span lang="de">Vom Auspacken bis zum ersten Messwert aus dem Bienenstock. Sieben Schritte, alle App-Bildschirme und die Montage jedes Geräts am Bienenstand.</span><span lang="fr">Du déballage du carton à la première mesure de la ruche. Sept étapes, tous les écrans de l'application et le montage de chaque appareil au rucher.</span>
+          <span lang="en">From opening the box to your first hive reading. Seven steps, every app screen and the mounting of each device in the apiary.</span><span lang="de">Vom Auspacken bis zum ersten Messwert aus dem Bienenstock. Sieben Schritte, alle App-Bildschirme und die Montage jedes Geräts am Bienenstand.</span><span lang="fr">Du déballage du carton à la première mesure de la ruche. Sept étapes, tous les écrans de l'application et le montage de chaque appareil au rucher.</span><span lang="es">Desde abrir la caja hasta la primera medición de la colmena. Siete pasos, todas las pantallas de la aplicación y el montaje de cada dispositivo en el colmenar.</span><span lang="it">Dall'apertura della scatola alla prima lettura dall'arnia. Sette passi, tutte le schermate dell'app e il montaggio di ogni dispositivo nell'apiario.</span><span lang="no">Fra du åpner esken til den første avlesningen fra bikuben. Sju trinn, alle skjermbildene i appen og montering av hver enhet i bigården.</span><span lang="tr">Kutuyu açmaktan kovandan gelen ilk ölçüme kadar. Yedi adım, uygulamanın bütün ekranları ve arılıktaki her cihazın montajı.</span>
         </p>
         <ul class="cover-meta">
-          <li><span lang="pl">7 kroków</span><span lang="en">7 steps</span><span lang="de">7 Schritte</span><span lang="fr">7 étapes</span></li>
-          <li><span lang="pl">ok. 30 minut</span><span lang="en">approx. 30 minutes</span><span lang="de">ca. 30 Minuten</span><span lang="fr">env. 30 minutes</span></li>
-          <li><span lang="pl">Apisense Pro AI</span><span lang="en">Apisense Pro AI</span><span lang="de">Apisense Pro AI</span><span lang="fr">Apisense Pro AI</span></li>
+          <li><span lang="pl">7 kroków</span><span lang="en">7 steps</span><span lang="de">7 Schritte</span><span lang="fr">7 étapes</span><span lang="es">7 pasos</span><span lang="it">7 passi</span><span lang="no">7 trinn</span><span lang="tr">7 adım</span></li>
+          <li><span lang="pl">ok. 30 minut</span><span lang="en">approx. 30 minutes</span><span lang="de">ca. 30 Minuten</span><span lang="fr">env. 30 minutes</span><span lang="es">aprox. 30 minutos</span><span lang="it">circa 30 minuti</span><span lang="no">ca. 30 minutter</span><span lang="tr">yaklaşık 30 dakika</span></li>
+          <li><span lang="pl">Apisense Pro AI</span><span lang="en">Apisense Pro AI</span><span lang="de">Apisense Pro AI</span><span lang="fr">Apisense Pro AI</span><span lang="es">Apisense Pro AI</span><span lang="it">Apisense Pro AI</span><span lang="no">Apisense Pro AI</span><span lang="tr">Apisense Pro AI</span></li>
         </ul>
       </div>
     </div>
     <div class="scrollcue">
-      <span lang="pl">Przewiń</span><span lang="en">Scroll</span><span lang="de">Scrollen</span><span lang="fr">Faire défiler</span>
+      <span lang="pl">Przewiń</span><span lang="en">Scroll</span><span lang="de">Scrollen</span><span lang="fr">Faire défiler</span><span lang="es">Desplázate</span><span lang="it">Scorri</span><span lang="no">Bla ned</span><span lang="tr">Kaydırın</span>
     </div>
   </section>
 
@@ -823,11 +890,11 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
     <div class="ghost" aria-hidden="true">00</div>
     <div class="wrap wrap--stack">
       <div class="col col--text">
-        <p class="tag"><span lang="pl">Zestaw</span><span lang="en">The kit</span><span lang="de">Das Set</span><span lang="fr">Le kit</span></p>
-        <h2><span lang="pl">Co znajdziesz w pudełku</span><span lang="en">What's in the box</span><span lang="de">Was im Karton steckt</span><span lang="fr">Ce que contient le carton</span></h2>
+        <p class="tag"><span lang="pl">Zestaw</span><span lang="en">The kit</span><span lang="de">Das Set</span><span lang="fr">Le kit</span><span lang="es">El kit</span><span lang="it">Il kit</span><span lang="no">Settet</span><span lang="tr">Set</span></p>
+        <h2><span lang="pl">Co znajdziesz w pudełku</span><span lang="en">What's in the box</span><span lang="de">Was im Karton steckt</span><span lang="fr">Ce que contient le carton</span><span lang="es">Qué hay en la caja</span><span lang="it">Cosa c'è nella scatola</span><span lang="no">Dette ligger i esken</span><span lang="tr">Kutuda neler var</span></h2>
         <p class="lede">
           <span lang="pl">Jeden Hub obsługuje całą pasiekę. Scale trafia pod pierwszy ul, a każdy z trzech uli dostaje własny VitalSensor i ColonyLink.</span>
-          <span lang="en">A single Hub serves the whole apiary. The Scale goes under the first hive, and each of the three hives gets its own VitalSensor and ColonyLink.</span><span lang="de">Ein Hub versorgt den ganzen Bienenstand. Die Scale kommt unter den ersten Bienenstock, und jeder der drei Stöcke bekommt einen eigenen VitalSensor und ColonyLink.</span><span lang="fr">Un seul Hub couvre tout le rucher. La Scale se place sous la première ruche, et chacune des trois ruches reçoit son propre VitalSensor et son ColonyLink.</span>
+          <span lang="en">A single Hub serves the whole apiary. The Scale goes under the first hive, and each of the three hives gets its own VitalSensor and ColonyLink.</span><span lang="de">Ein Hub versorgt den ganzen Bienenstand. Die Scale kommt unter den ersten Bienenstock, und jeder der drei Stöcke bekommt einen eigenen VitalSensor und ColonyLink.</span><span lang="fr">Un seul Hub couvre tout le rucher. La Scale se place sous la première ruche, et chacune des trois ruches reçoit son propre VitalSensor et son ColonyLink.</span><span lang="es">Un solo Hub cubre todo el colmenar. El Scale va debajo de la primera colmena y cada una de las tres colmenas recibe su propio VitalSensor y su ColonyLink.</span><span lang="it">Un solo Hub copre l'intero apiario. La Scale va sotto la prima arnia e ognuna delle tre arnie riceve il proprio VitalSensor e il proprio ColonyLink.</span><span lang="no">Én Hub dekker hele bigården. Scale plasseres under den første bikuben, og hver av de tre bikubene får sin egen VitalSensor og ColonyLink.</span><span lang="tr">Tek bir Hub tüm arılığa hizmet eder. Scale ilk kovanın altına girer; üç kovanın her biri kendi VitalSensor ve ColonyLink cihazını alır.</span>
         </p>
         <div class="kit">
           <div class="items">
@@ -851,7 +918,7 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
           <figure class="plate">
             <img src="figs/kt-box.webp" width="1100" height="981" loading="lazy"
                  alt="Karton Apisense BOX z nadrukiem „Intelligent bee protection".">
-            <figcaption><span>Apisense BOX</span><span lang="pl">Opakowanie</span><span lang="en">The box</span><span lang="de">Die Verpackung</span><span lang="fr">L'emballage</span></figcaption>
+            <figcaption><span>Apisense BOX</span><span lang="pl">Opakowanie</span><span lang="en">The box</span><span lang="de">Die Verpackung</span><span lang="fr">L'emballage</span><span lang="es">El embalaje</span><span lang="it">La confezione</span><span lang="no">Esken</span><span lang="tr">Ambalaj</span></figcaption>
           </figure>
         </div>
       </div>
@@ -863,23 +930,23 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
     <div class="ghost" aria-hidden="true">01</div>
     <div class="wrap wrap--narrow-fig">
       <div class="col col--text">
-        <p class="tag"><span lang="pl">Krok 01</span><span lang="en">Step 01</span><span lang="de">Schritt 01</span><span lang="fr">Étape 01</span></p>
-        <h2><span lang="pl">Pobierz aplikację</span><span lang="en">Download the app</span><span lang="de">App herunterladen</span><span lang="fr">Téléchargez l'application</span></h2>
+        <p class="tag"><span lang="pl">Krok 01</span><span lang="en">Step 01</span><span lang="de">Schritt 01</span><span lang="fr">Étape 01</span><span lang="es">Paso 01</span><span lang="it">Passo 01</span><span lang="no">Trinn 01</span><span lang="tr">Adım 01</span></p>
+        <h2><span lang="pl">Pobierz aplikację</span><span lang="en">Download the app</span><span lang="de">App herunterladen</span><span lang="fr">Téléchargez l'application</span><span lang="es">Descarga la aplicación</span><span lang="it">Scarica l'app</span><span lang="no">Last ned appen</span><span lang="tr">Uygulamayı indirin</span></h2>
         <p class="lede">
           <span lang="pl">Cały zestaw konfigurujesz z telefonu. Zeskanuj kod QR aparatem albo wyszukaj <b>Apisense Pro AI</b> w App Store lub Google Play.</span>
-          <span lang="en">The whole kit is configured from your phone. Scan the QR code with your camera or search for <b>Apisense Pro AI</b> in the App Store or Google Play.</span><span lang="de">Das gesamte Set richtest du über das Handy ein. Scanne den QR-Code mit der Kamera oder suche <b>Apisense Pro AI</b> im App Store oder bei Google Play.</span><span lang="fr">Vous configurez tout le kit depuis votre téléphone. Scannez le QR code avec l'appareil photo ou cherchez <b>Apisense Pro AI</b> dans l'App Store ou sur Google Play.</span>
+          <span lang="en">The whole kit is configured from your phone. Scan the QR code with your camera or search for <b>Apisense Pro AI</b> in the App Store or Google Play.</span><span lang="de">Das gesamte Set richtest du über das Handy ein. Scanne den QR-Code mit der Kamera oder suche <b>Apisense Pro AI</b> im App Store oder bei Google Play.</span><span lang="fr">Vous configurez tout le kit depuis votre téléphone. Scannez le QR code avec l'appareil photo ou cherchez <b>Apisense Pro AI</b> dans l'App Store ou sur Google Play.</span><span lang="es">Todo el kit se configura desde el teléfono. Escanea el código QR con la cámara o busca <b>Apisense Pro AI</b> en la App Store o en Google Play.</span><span lang="it">L'intero kit si configura dal telefono. Scansiona il codice QR con la fotocamera oppure cerca <b>Apisense Pro AI</b> nell'App Store o su Google Play.</span><span lang="no">Hele settet konfigurerer du fra telefonen. Skann QR-koden med kameraet, eller søk etter <b>Apisense Pro AI</b> i App Store eller Google Play.</span><span lang="tr">Tüm seti telefonunuzdan yapılandırırsınız. QR kodunu kameranızla tarayın ya da App Store veya Google Play'de <b>Apisense Pro AI</b> uygulamasını arayın.</span>
         </p>
         <ul class="micro">
-          <li><b>iOS</b><span lang="pl">Górny kod QR — App Store</span><span lang="en">Top QR code — App Store</span><span lang="de">Oberer QR-Code — App Store</span><span lang="fr">QR code du haut — App Store</span></li>
-          <li><b>Android</b><span lang="pl">Dolny kod QR — Google Play</span><span lang="en">Bottom QR code — Google Play</span><span lang="de">Unterer QR-Code — Google Play</span><span lang="fr">QR code du bas — Google Play</span></li>
-          <li><b>www</b><span lang="pl">Możesz też pracować w przeglądarce: <em>app.apisense.ai</em></span><span lang="en">You can also work in a browser: <em>app.apisense.ai</em></span><span lang="de">Du kannst auch im Browser arbeiten: <em>app.apisense.ai</em></span><span lang="fr">Vous pouvez aussi travailler dans le navigateur : <em>app.apisense.ai</em></span></li>
+          <li><b>iOS</b><span lang="pl">Górny kod QR — App Store</span><span lang="en">Top QR code — App Store</span><span lang="de">Oberer QR-Code — App Store</span><span lang="fr">QR code du haut — App Store</span><span lang="es">Código QR superior — App Store</span><span lang="it">Codice QR in alto — App Store</span><span lang="no">Øverste QR-kode — App Store</span><span lang="tr">Üstteki QR kodu — App Store</span></li>
+          <li><b>Android</b><span lang="pl">Dolny kod QR — Google Play</span><span lang="en">Bottom QR code — Google Play</span><span lang="de">Unterer QR-Code — Google Play</span><span lang="fr">QR code du bas — Google Play</span><span lang="es">Código QR inferior — Google Play</span><span lang="it">Codice QR in basso — Google Play</span><span lang="no">Nederste QR-kode — Google Play</span><span lang="tr">Alttaki QR kodu — Google Play</span></li>
+          <li><b>www</b><span lang="pl">Możesz też pracować w przeglądarce: <em>app.apisense.ai</em></span><span lang="en">You can also work in a browser: <em>app.apisense.ai</em></span><span lang="de">Du kannst auch im Browser arbeiten: <em>app.apisense.ai</em></span><span lang="fr">Vous pouvez aussi travailler dans le navigateur : <em>app.apisense.ai</em></span><span lang="es">También puedes trabajar en el navegador: <em>app.apisense.ai</em></span><span lang="it">Puoi lavorare anche dal browser: <em>app.apisense.ai</em></span><span lang="no">Du kan også jobbe i nettleseren: <em>app.apisense.ai</em></span><span lang="tr">Tarayıcıdan da çalışabilirsiniz: <em>app.apisense.ai</em></span></li>
         </ul>
       </div>
       <div class="col col--fig">
         <figure class="plate">
           <img src="figs/step01-download.webp" width="763" height="741" loading="lazy"
                alt="Dwa kody QR: do App Store i do Google Play.">
-          <figcaption><span>01</span><span lang="pl">App Store · Google Play</span><span lang="en">App Store · Google Play</span><span lang="de">App Store · Google Play</span><span lang="fr">App Store · Google Play</span></figcaption>
+          <figcaption><span>01</span><span lang="pl">App Store · Google Play</span><span lang="en">App Store · Google Play</span><span lang="de">App Store · Google Play</span><span lang="fr">App Store · Google Play</span><span lang="es">App Store · Google Play</span><span lang="it">App Store · Google Play</span><span lang="no">App Store · Google Play</span><span lang="tr">App Store · Google Play</span></figcaption>
         </figure>
       </div>
     </div>
@@ -890,23 +957,23 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
     <div class="ghost" aria-hidden="true">02</div>
     <div class="wrap wrap--narrow-fig">
       <div class="col col--text">
-        <p class="tag"><span lang="pl">Krok 02</span><span lang="en">Step 02</span><span lang="de">Schritt 02</span><span lang="fr">Étape 02</span></p>
-        <h2><span lang="pl">Stwórz konto</span><span lang="en">Create an account</span><span lang="de">Konto erstellen</span><span lang="fr">Créez un compte</span></h2>
+        <p class="tag"><span lang="pl">Krok 02</span><span lang="en">Step 02</span><span lang="de">Schritt 02</span><span lang="fr">Étape 02</span><span lang="es">Paso 02</span><span lang="it">Passo 02</span><span lang="no">Trinn 02</span><span lang="tr">Adım 02</span></p>
+        <h2><span lang="pl">Stwórz konto</span><span lang="en">Create an account</span><span lang="de">Konto erstellen</span><span lang="fr">Créez un compte</span><span lang="es">Crea una cuenta</span><span lang="it">Crea un account</span><span lang="no">Opprett konto</span><span lang="tr">Hesap oluşturun</span></h2>
         <p class="lede">
           <span lang="pl">Podaj nazwę użytkownika, adres e-mail i numer telefonu, a następnie naciśnij <b>Next</b>. Możesz też zarejestrować się kontem Google lub Apple.</span>
-          <span lang="en">Enter a username, e-mail address and mobile phone, then tap <b>Next</b>. You can also sign up with your Google or Apple account.</span><span lang="de">Gib Benutzernamen, E-Mail-Adresse und Telefonnummer ein und tippe auf <b>Next</b>. Du kannst dich auch mit deinem Google- oder Apple-Konto registrieren.</span><span lang="fr">Saisissez un nom d'utilisateur, une adresse e-mail et un numéro de téléphone, puis appuyez sur <b>Next</b>. Vous pouvez aussi vous inscrire avec un compte Google ou Apple.</span>
+          <span lang="en">Enter a username, e-mail address and mobile phone, then tap <b>Next</b>. You can also sign up with your Google or Apple account.</span><span lang="de">Gib Benutzernamen, E-Mail-Adresse und Telefonnummer ein und tippe auf <b>Next</b>. Du kannst dich auch mit deinem Google- oder Apple-Konto registrieren.</span><span lang="fr">Saisissez un nom d'utilisateur, une adresse e-mail et un numéro de téléphone, puis appuyez sur <b>Next</b>. Vous pouvez aussi vous inscrire avec un compte Google ou Apple.</span><span lang="es">Introduce un nombre de usuario, una dirección de correo y un número de teléfono, y pulsa <b>Next</b>. También puedes registrarte con tu cuenta de Google o de Apple.</span><span lang="it">Inserisci nome utente, indirizzo e-mail e numero di telefono, poi tocca <b>Next</b>. Puoi anche registrarti con un account Google o Apple.</span><span lang="no">Skriv inn brukernavn, e-postadresse og mobilnummer, og trykk deretter <b>Next</b>. Du kan også registrere deg med Google- eller Apple-kontoen din.</span><span lang="tr">Kullanıcı adı, e-posta adresi ve cep telefonu numarası girin, ardından <b>Next</b> düğmesine dokunun. Google veya Apple hesabınızla da kaydolabilirsiniz.</span>
         </p>
         <ul class="micro">
-          <li><b>Username</b><span lang="pl">Nazwa widoczna w aplikacji</span><span lang="en">Name shown inside the app</span><span lang="de">In der App sichtbarer Name</span><span lang="fr">Nom affiché dans l'application</span></li>
-          <li><b>Email</b><span lang="pl">Służy do logowania i powiadomień</span><span lang="en">Used for login and notifications</span><span lang="de">Für Anmeldung und Benachrichtigungen</span><span lang="fr">Sert à la connexion et aux notifications</span></li>
-          <li><b>Phone</b><span lang="pl">Numer kontaktowy do konta</span><span lang="en">Contact number for the account</span><span lang="de">Kontaktnummer für das Konto</span><span lang="fr">Numéro de contact du compte</span></li>
+          <li><b>Username</b><span lang="pl">Nazwa widoczna w aplikacji</span><span lang="en">Name shown inside the app</span><span lang="de">In der App sichtbarer Name</span><span lang="fr">Nom affiché dans l'application</span><span lang="es">Nombre visible en la aplicación</span><span lang="it">Nome visibile nell'app</span><span lang="no">Navnet som vises i appen</span><span lang="tr">Uygulamada görünen ad</span></li>
+          <li><b>Email</b><span lang="pl">Służy do logowania i powiadomień</span><span lang="en">Used for login and notifications</span><span lang="de">Für Anmeldung und Benachrichtigungen</span><span lang="fr">Sert à la connexion et aux notifications</span><span lang="es">Para el inicio de sesión y las notificaciones</span><span lang="it">Serve per l'accesso e le notifiche</span><span lang="no">Brukes til innlogging og varsler</span><span lang="tr">Giriş ve bildirimler için kullanılır</span></li>
+          <li><b>Phone</b><span lang="pl">Numer kontaktowy do konta</span><span lang="en">Contact number for the account</span><span lang="de">Kontaktnummer für das Konto</span><span lang="fr">Numéro de contact du compte</span><span lang="es">Número de contacto de la cuenta</span><span lang="it">Numero di contatto dell'account</span><span lang="no">Kontaktnummer for kontoen</span><span lang="tr">Hesabın iletişim numarası</span></li>
         </ul>
       </div>
       <div class="col col--fig">
         <figure class="plate">
           <img src="figs/step02-account.webp" width="576" height="1192" loading="lazy"
                alt="Ekran aplikacji Apisense: formularz Create an Account z polami Username, Email i Mobile Phone.">
-          <figcaption><span>02</span><span lang="pl">Ekran rejestracji</span><span lang="en">Sign-up screen</span><span lang="de">Registrierungsbildschirm</span><span lang="fr">Écran d'inscription</span></figcaption>
+          <figcaption><span>02</span><span lang="pl">Ekran rejestracji</span><span lang="en">Sign-up screen</span><span lang="de">Registrierungsbildschirm</span><span lang="fr">Écran d'inscription</span><span lang="es">Pantalla de registro</span><span lang="it">Schermata di registrazione</span><span lang="no">Registreringsskjerm</span><span lang="tr">Kayıt ekranı</span></figcaption>
         </figure>
       </div>
     </div>
@@ -917,22 +984,22 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
     <div class="ghost" aria-hidden="true">03</div>
     <div class="wrap">
       <div class="col col--text">
-        <p class="tag"><span lang="pl">Krok 03 · 03.1 – 03.2</span><span lang="en">Step 03 · 03.1 – 03.2</span><span lang="de">Schritt 03 · 03.1 – 03.2</span><span lang="fr">Étape 03 · 03.1 – 03.2</span></p>
-        <h2><span lang="pl">Dodaj pasiekę</span><span lang="en">Add apiary</span><span lang="de">Bienenstand anlegen</span><span lang="fr">Ajoutez un rucher</span></h2>
+        <p class="tag"><span lang="pl">Krok 03 · 03.1 – 03.2</span><span lang="en">Step 03 · 03.1 – 03.2</span><span lang="de">Schritt 03 · 03.1 – 03.2</span><span lang="fr">Étape 03 · 03.1 – 03.2</span><span lang="es">Paso 03 · 03.1 – 03.2</span><span lang="it">Passo 03 · 03.1 – 03.2</span><span lang="no">Trinn 03 · 03.1 – 03.2</span><span lang="tr">Adım 03 · 03.1 – 03.2</span></p>
+        <h2><span lang="pl">Dodaj pasiekę</span><span lang="en">Add apiary</span><span lang="de">Bienenstand anlegen</span><span lang="fr">Ajoutez un rucher</span><span lang="es">Añade un colmenar</span><span lang="it">Aggiungi un apiario</span><span lang="no">Legg til bigård</span><span lang="tr">Arılık ekleyin</span></h2>
         <p class="lede">
           <span lang="pl">Pasieka to miejsce, w którym stoją ule i jeden Hub. Zaczynasz od nadania jej nazwy.</span>
-          <span lang="en">An apiary is the place where your hives and one Hub live. Start by giving it a name.</span><span lang="de">Ein Bienenstand ist der Ort, an dem deine Stöcke und ein Hub stehen. Du beginnst damit, ihm einen Namen zu geben.</span><span lang="fr">Un rucher est l'endroit où se trouvent vos ruches et un Hub. Commencez par lui donner un nom.</span>
+          <span lang="en">An apiary is the place where your hives and one Hub live. Start by giving it a name.</span><span lang="de">Ein Bienenstand ist der Ort, an dem deine Stöcke und ein Hub stehen. Du beginnst damit, ihm einen Namen zu geben.</span><span lang="fr">Un rucher est l'endroit où se trouvent vos ruches et un Hub. Commencez par lui donner un nom.</span><span lang="es">Un colmenar es el lugar donde están tus colmenas y un Hub. Empieza por darle un nombre.</span><span lang="it">L'apiario è il luogo in cui si trovano le tue arnie e un Hub. Inizia assegnandogli un nome.</span><span lang="no">En bigård er stedet der bikubene dine og én Hub står. Start med å gi den et navn.</span><span lang="tr">Arılık, kovanlarınızın ve bir Hub'ın bulunduğu yerdir. İşe ona bir ad vererek başlayın.</span>
         </p>
         <ul class="micro">
-          <li><b>03.1</b><span lang="pl">Na ekranie powitalnym naciśnij <em>Add apiary</em>.</span><span lang="en">On the welcome screen tap <em>Add apiary</em>.</span><span lang="de">Tippe auf dem Startbildschirm auf <em>Add apiary</em>.</span><span lang="fr">Sur l'écran d'accueil, appuyez sur <em>Add apiary</em>.</span></li>
-          <li><b>03.2</b><span lang="pl">Wpisz nazwę pasieki i jej skrót (maks. 3 znaki), a potem dotknij ikony skanera przy polu <em>Hub</em>.</span><span lang="en">Enter the apiary name and its abbreviation (max. 3 characters), then tap the scanner icon next to the <em>Hub</em> field.</span><span lang="de">Gib den Namen des Bienenstands und sein Kürzel (max. 3 Zeichen) ein und tippe dann auf das Scanner-Symbol neben dem Feld <em>Hub</em>.</span><span lang="fr">Saisissez le nom du rucher et son abréviation (3 caractères max.), puis appuyez sur l'icône du scanner à côté du champ <em>Hub</em>.</span></li>
+          <li><b>03.1</b><span lang="pl">Na ekranie powitalnym naciśnij <em>Add apiary</em>.</span><span lang="en">On the welcome screen tap <em>Add apiary</em>.</span><span lang="de">Tippe auf dem Startbildschirm auf <em>Add apiary</em>.</span><span lang="fr">Sur l'écran d'accueil, appuyez sur <em>Add apiary</em>.</span><span lang="es">En la pantalla de bienvenida, pulsa <em>Add apiary</em>.</span><span lang="it">Nella schermata di benvenuto tocca <em>Add apiary</em>.</span><span lang="no">Trykk på <em>Add apiary</em> på velkomstskjermen.</span><span lang="tr">Karşılama ekranında <em>Add apiary</em> öğesine dokunun.</span></li>
+          <li><b>03.2</b><span lang="pl">Wpisz nazwę pasieki i jej skrót (maks. 3 znaki), a potem dotknij ikony skanera przy polu <em>Hub</em>.</span><span lang="en">Enter the apiary name and its abbreviation (max. 3 characters), then tap the scanner icon next to the <em>Hub</em> field.</span><span lang="de">Gib den Namen des Bienenstands und sein Kürzel (max. 3 Zeichen) ein und tippe dann auf das Scanner-Symbol neben dem Feld <em>Hub</em>.</span><span lang="fr">Saisissez le nom du rucher et son abréviation (3 caractères max.), puis appuyez sur l'icône du scanner à côté du champ <em>Hub</em>.</span><span lang="es">Introduce el nombre del colmenar y su abreviatura (máx. 3 caracteres) y pulsa el icono del escáner junto al campo <em>Hub</em>.</span><span lang="it">Inserisci il nome dell'apiario e la sua sigla (max. 3 caratteri), poi tocca l'icona dello scanner accanto al campo <em>Hub</em>.</span><span lang="no">Skriv inn navnet på bigården og forkortelsen (maks. 3 tegn), og trykk deretter på skannerikonet ved feltet <em>Hub</em>.</span><span lang="tr">Arılık adını ve kısaltmasını (en fazla 3 karakter) girin, ardından <em>Hub</em> alanının yanındaki tarayıcı simgesine dokunun.</span></li>
         </ul>
       </div>
       <div class="col col--fig">
         <figure class="plate">
           <img src="figs/step03-a.webp" width="1510" height="1257" loading="lazy"
                alt="Ekrany 03.1 i 03.2: przycisk Add apiary oraz formularz pasieki z polami Name, Name abbreviation, Hub i Verification Code.">
-          <figcaption><span>03.1 — 03.2</span><span lang="pl">Aplikacja</span><span lang="en">In the app</span><span lang="de">In der App</span><span lang="fr">Dans l'application</span></figcaption>
+          <figcaption><span>03.1 — 03.2</span><span lang="pl">Aplikacja</span><span lang="en">In the app</span><span lang="de">In der App</span><span lang="fr">Dans l'application</span><span lang="es">En la aplicación</span><span lang="it">Nell'app</span><span lang="no">I appen</span><span lang="tr">Uygulamada</span></figcaption>
         </figure>
       </div>
     </div>
@@ -943,15 +1010,15 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
     <div class="ghost" aria-hidden="true">03</div>
     <div class="wrap wrap--wide">
       <div class="col col--text">
-        <p class="tag"><span lang="pl">Krok 03 · 03.3</span><span lang="en">Step 03 · 03.3</span><span lang="de">Schritt 03 · 03.3</span><span lang="fr">Étape 03 · 03.3</span></p>
-        <h2><span lang="pl">Zeskanuj kod QR&nbsp;Huba</span><span lang="en">Scan the Hub QR code</span><span lang="de">QR-Code des&nbsp;Hubs scannen</span><span lang="fr">Scannez le QR code du&nbsp;Hub</span></h2>
+        <p class="tag"><span lang="pl">Krok 03 · 03.3</span><span lang="en">Step 03 · 03.3</span><span lang="de">Schritt 03 · 03.3</span><span lang="fr">Étape 03 · 03.3</span><span lang="es">Paso 03 · 03.3</span><span lang="it">Passo 03 · 03.3</span><span lang="no">Trinn 03 · 03.3</span><span lang="tr">Adım 03 · 03.3</span></p>
+        <h2><span lang="pl">Zeskanuj kod QR&nbsp;Huba</span><span lang="en">Scan the Hub QR code</span><span lang="de">QR-Code des&nbsp;Hubs scannen</span><span lang="fr">Scannez le QR code du&nbsp;Hub</span><span lang="es">Escanea el código QR del&nbsp;Hub</span><span lang="it">Scansiona il codice QR&nbsp;dell'Hub</span><span lang="no">Skann QR-koden til&nbsp;Hub</span><span lang="tr">Hub'ın QR kodunu tarayın</span></h2>
         <p class="lede">
           <span lang="pl">Naklejka z kodem QR znajduje się na obudowie Huba. Ustaw ją w ramce skanera — aplikacja odczyta kod sama i wypełni pola <em>Hub</em> oraz <em>Verification Code</em>.</span>
-          <span lang="en">The QR sticker sits on the Hub housing. Line it up inside the scanner frame — the app reads it and fills in the <em>Hub</em> and <em>Verification Code</em> fields for you.</span><span lang="de">Der QR-Aufkleber sitzt auf dem Gehäuse des Hubs. Richte ihn im Scannerrahmen aus — die App liest den Code selbst und füllt die Felder <em>Hub</em> und <em>Verification Code</em> aus.</span><span lang="fr">L'autocollant QR se trouve sur le boîtier du Hub. Placez-le dans le cadre du scanner : l'application lit le code et remplit les champs <em>Hub</em> et <em>Verification Code</em>.</span>
+          <span lang="en">The QR sticker sits on the Hub housing. Line it up inside the scanner frame — the app reads it and fills in the <em>Hub</em> and <em>Verification Code</em> fields for you.</span><span lang="de">Der QR-Aufkleber sitzt auf dem Gehäuse des Hubs. Richte ihn im Scannerrahmen aus — die App liest den Code selbst und füllt die Felder <em>Hub</em> und <em>Verification Code</em> aus.</span><span lang="fr">L'autocollant QR se trouve sur le boîtier du Hub. Placez-le dans le cadre du scanner : l'application lit le code et remplit les champs <em>Hub</em> et <em>Verification Code</em>.</span><span lang="es">La pegatina con el código QR está en la carcasa del Hub. Encuádrala en el marco del escáner: la aplicación lee el código y rellena por ti los campos <em>Hub</em> y <em>Verification Code</em>.</span><span lang="it">L'adesivo con il codice QR si trova sulla scocca dell'Hub. Inquadralo nel riquadro dello scanner: l'app lo legge da sola e compila i campi <em>Hub</em> e <em>Verification Code</em>.</span><span lang="no">Klistremerket med QR-koden sitter på kabinettet til Hub. Legg det midt i skannerrammen — appen leser koden selv og fyller ut feltene <em>Hub</em> og <em>Verification Code</em> for deg.</span><span lang="tr">QR etiketi Hub'ın gövdesindedir. Etiketi tarayıcı çerçevesine hizalayın — uygulama kodu kendisi okur ve <em>Hub</em> ile <em>Verification Code</em> alanlarını sizin için doldurur.</span>
         </p>
         <p class="note">
           <span lang="pl"><b>Wskazówka:</b> jeśli kod się nie skanuje, przetrzyj go i zapewnij równomierne światło — bez odblasku.</span>
-          <span lang="en"><b>Tip:</b> if the code will not scan, wipe it clean and use even light — avoid glare.</span><span lang="de"><b>Tipp:</b> Lässt sich der Code nicht scannen, wische ihn sauber und sorge für gleichmäßiges Licht — ohne Spiegelung.</span><span lang="fr"><b>Astuce :</b> si le code ne se scanne pas, essuyez-le et assurez un éclairage uniforme, sans reflet.</span>
+          <span lang="en"><b>Tip:</b> if the code will not scan, wipe it clean and use even light — avoid glare.</span><span lang="de"><b>Tipp:</b> Lässt sich der Code nicht scannen, wische ihn sauber und sorge für gleichmäßiges Licht — ohne Spiegelung.</span><span lang="fr"><b>Astuce :</b> si le code ne se scanne pas, essuyez-le et assurez un éclairage uniforme, sans reflet.</span><span lang="es"><b>Consejo:</b> si el código no se escanea, límpialo y busca una luz uniforme, sin reflejos.</span><span lang="it"><b>Suggerimento:</b> se il codice non viene letto, puliscilo e assicura una luce uniforme, senza riflessi.</span><span lang="no"><b>Tips:</b> hvis koden ikke lar seg skanne, tørk den ren og sørg for jevnt lys — unngå gjenskinn.</span><span lang="tr"><b>İpucu:</b> kod okunmuyorsa etiketi silin ve eşit bir aydınlatma sağlayın — parlama olmasın.</span>
         </p>
       </div>
       <div class="col col--fig">
@@ -959,12 +1026,12 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
           <figure class="plate">
             <img src="figs/pdf-hub-qr.webp" width="1700" height="1091" loading="lazy"
                  alt="Rysunek: umiejscowienie kodu QR na obudowie Huba i ekran skanera w aplikacji.">
-            <figcaption><span>03.3</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span><span lang="de">Referenzzeichnung</span><span lang="fr">Schéma de référence</span></figcaption>
+            <figcaption><span>03.3</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span><span lang="de">Referenzzeichnung</span><span lang="fr">Schéma de référence</span><span lang="es">Esquema de referencia</span><span lang="it">Disegno di riferimento</span><span lang="no">Referansetegning</span><span lang="tr">Örnek çizim</span></figcaption>
           </figure>
           <figure class="plate">
             <img src="figs/qr-hub.webp" width="1400" height="1050" loading="lazy"
                  alt="Naklejka z kodem QR na obudowie Apisense Hub, trzymanego w dłoni w pasiece.">
-            <figcaption><span lang="pl">Hub</span><span lang="en">Hub</span><span lang="de">Hub</span><span lang="fr">Hub</span><span lang="pl">Zdjęcie</span><span lang="en">Photo</span><span lang="de">Foto</span><span lang="fr">Photo</span></figcaption>
+            <figcaption><span lang="pl">Hub</span><span lang="en">Hub</span><span lang="de">Hub</span><span lang="fr">Hub</span><span lang="es">Hub</span><span lang="it">Hub</span><span lang="no">Hub</span><span lang="tr">Hub</span><span lang="pl">Zdjęcie</span><span lang="en">Photo</span><span lang="de">Foto</span><span lang="fr">Photo</span><span lang="es">Foto</span><span lang="it">Foto</span><span lang="no">Bilde</span><span lang="tr">Fotoğraf</span></figcaption>
           </figure>
         </div>
       </div>
@@ -976,23 +1043,23 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
     <div class="ghost" aria-hidden="true">03</div>
     <div class="wrap">
       <div class="col col--text">
-        <p class="tag"><span lang="pl">Krok 03 · 03.4 – 03.6</span><span lang="en">Step 03 · 03.4 – 03.6</span><span lang="de">Schritt 03 · 03.4 – 03.6</span><span lang="fr">Étape 03 · 03.4 – 03.6</span></p>
-        <h2><span lang="pl">Pasieka jest gotowa</span><span lang="en">Your apiary is ready</span><span lang="de">Der Bienenstand steht</span><span lang="fr">Le rucher est prêt</span></h2>
+        <p class="tag"><span lang="pl">Krok 03 · 03.4 – 03.6</span><span lang="en">Step 03 · 03.4 – 03.6</span><span lang="de">Schritt 03 · 03.4 – 03.6</span><span lang="fr">Étape 03 · 03.4 – 03.6</span><span lang="es">Paso 03 · 03.4 – 03.6</span><span lang="it">Passo 03 · 03.4 – 03.6</span><span lang="no">Trinn 03 · 03.4 – 03.6</span><span lang="tr">Adım 03 · 03.4 – 03.6</span></p>
+        <h2><span lang="pl">Pasieka jest gotowa</span><span lang="en">Your apiary is ready</span><span lang="de">Der Bienenstand steht</span><span lang="fr">Le rucher est prêt</span><span lang="es">El colmenar está listo</span><span lang="it">L'apiario è pronto</span><span lang="no">Bigården er klar</span><span lang="tr">Arılığınız hazır</span></h2>
         <p class="lede">
           <span lang="pl">Po zeskanowaniu kodu aplikacja uzupełnia dane Huba za Ciebie — nic nie przepisujesz ręcznie.</span>
-          <span lang="en">After the scan the app fills in the Hub details for you — nothing has to be typed by hand.</span><span lang="de">Nach dem Scan trägt die App die Hub-Daten für dich ein — nichts muss abgetippt werden.</span><span lang="fr">Après le scan, l'application renseigne les données du Hub à votre place : rien à recopier.</span>
+          <span lang="en">After the scan the app fills in the Hub details for you — nothing has to be typed by hand.</span><span lang="de">Nach dem Scan trägt die App die Hub-Daten für dich ein — nichts muss abgetippt werden.</span><span lang="fr">Après le scan, l'application renseigne les données du Hub à votre place : rien à recopier.</span><span lang="es">Tras el escaneo, la aplicación rellena por ti los datos del Hub: no hay que escribir nada a mano.</span><span lang="it">Dopo la scansione l'app compila da sola i dati dell'Hub: non devi trascrivere nulla a mano.</span><span lang="no">Etter skanningen fyller appen ut opplysningene om Hub for deg — ingenting må skrives inn for hånd.</span><span lang="tr">Taramadan sonra uygulama Hub bilgilerini sizin için doldurur — elle hiçbir şey yazmanız gerekmez.</span>
         </p>
         <ul class="micro">
-          <li><b>03.4</b><span lang="pl">Skaner odczytuje kod QR z Huba.</span><span lang="en">The scanner reads the QR code from the Hub.</span><span lang="de">Der Scanner liest den QR-Code vom Hub.</span><span lang="fr">Le scanner lit le QR code du Hub.</span></li>
-          <li><b>03.5</b><span lang="pl">Pola <em>Hub</em> i <em>Verification Code</em> wypełniają się automatycznie — zatwierdź formularz.</span><span lang="en">The <em>Hub</em> and <em>Verification Code</em> fields fill in automatically — confirm the form.</span><span lang="de">Die Felder <em>Hub</em> und <em>Verification Code</em> füllen sich automatisch — bestätige das Formular.</span><span lang="fr">Les champs <em>Hub</em> et <em>Verification Code</em> se remplissent automatiquement : validez le formulaire.</span></li>
-          <li><b>03.6</b><span lang="pl">Pasieka pojawia się na ekranie głównym razem z pogodą.</span><span lang="en">The apiary appears on the home screen along with the weather.</span><span lang="de">Der Bienenstand erscheint samt Wetter auf dem Startbildschirm.</span><span lang="fr">Le rucher apparaît sur l'écran d'accueil, avec la météo.</span></li>
+          <li><b>03.4</b><span lang="pl">Skaner odczytuje kod QR z Huba.</span><span lang="en">The scanner reads the QR code from the Hub.</span><span lang="de">Der Scanner liest den QR-Code vom Hub.</span><span lang="fr">Le scanner lit le QR code du Hub.</span><span lang="es">El escáner lee el código QR del Hub.</span><span lang="it">Lo scanner legge il codice QR dall'Hub.</span><span lang="no">Skanneren leser QR-koden fra Hub.</span><span lang="tr">Tarayıcı, Hub üzerindeki QR kodunu okur.</span></li>
+          <li><b>03.5</b><span lang="pl">Pola <em>Hub</em> i <em>Verification Code</em> wypełniają się automatycznie — zatwierdź formularz.</span><span lang="en">The <em>Hub</em> and <em>Verification Code</em> fields fill in automatically — confirm the form.</span><span lang="de">Die Felder <em>Hub</em> und <em>Verification Code</em> füllen sich automatisch — bestätige das Formular.</span><span lang="fr">Les champs <em>Hub</em> et <em>Verification Code</em> se remplissent automatiquement : validez le formulaire.</span><span lang="es">Los campos <em>Hub</em> y <em>Verification Code</em> se rellenan automáticamente: confirma el formulario.</span><span lang="it">I campi <em>Hub</em> e <em>Verification Code</em> si compilano automaticamente: conferma il modulo.</span><span lang="no">Feltene <em>Hub</em> og <em>Verification Code</em> fylles ut automatisk — bekreft skjemaet.</span><span lang="tr"><em>Hub</em> ve <em>Verification Code</em> alanları otomatik olarak dolar — formu onaylayın.</span></li>
+          <li><b>03.6</b><span lang="pl">Pasieka pojawia się na ekranie głównym razem z pogodą.</span><span lang="en">The apiary appears on the home screen along with the weather.</span><span lang="de">Der Bienenstand erscheint samt Wetter auf dem Startbildschirm.</span><span lang="fr">Le rucher apparaît sur l'écran d'accueil, avec la météo.</span><span lang="es">El colmenar aparece en la pantalla de inicio junto con el tiempo.</span><span lang="it">L'apiario compare nella schermata principale insieme al meteo.</span><span lang="no">Bigården dukker opp på startskjermen sammen med været.</span><span lang="tr">Arılık, hava durumuyla birlikte ana ekranda görünür.</span></li>
         </ul>
       </div>
       <div class="col col--fig">
         <figure class="plate">
           <img src="figs/step03-b.webp" width="1700" height="1020" loading="lazy"
                alt="Ekrany 03.4–03.6: skanowanie kodu, uzupełnione pola Hub i Verification Code, ekran główny z dodaną pasieką.">
-          <figcaption><span>03.4 — 03.6</span><span lang="pl">Aplikacja</span><span lang="en">In the app</span><span lang="de">In der App</span><span lang="fr">Dans l'application</span></figcaption>
+          <figcaption><span>03.4 — 03.6</span><span lang="pl">Aplikacja</span><span lang="en">In the app</span><span lang="de">In der App</span><span lang="fr">Dans l'application</span><span lang="es">En la aplicación</span><span lang="it">Nell'app</span><span lang="no">I appen</span><span lang="tr">Uygulamada</span></figcaption>
         </figure>
       </div>
     </div>
@@ -1003,23 +1070,23 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
     <div class="ghost" aria-hidden="true">04</div>
     <div class="wrap">
       <div class="col col--text">
-        <p class="tag"><span lang="pl">Krok 04 · 04.1 – 04.3</span><span lang="en">Step 04 · 04.1 – 04.3</span><span lang="de">Schritt 04 · 04.1 – 04.3</span><span lang="fr">Étape 04 · 04.1 – 04.3</span></p>
-        <h2><span lang="pl">Dodaj ul: ColonyLink, VitalSensor i&nbsp;Scale</span><span lang="en">Add hive: ColonyLink, VitalSensor &amp;&nbsp;Scale</span><span lang="de">Stock anlegen: ColonyLink, VitalSensor und&nbsp;Scale</span><span lang="fr">Ajoutez une ruche : ColonyLink, VitalSensor et&nbsp;Scale</span></h2>
+        <p class="tag"><span lang="pl">Krok 04 · 04.1 – 04.3</span><span lang="en">Step 04 · 04.1 – 04.3</span><span lang="de">Schritt 04 · 04.1 – 04.3</span><span lang="fr">Étape 04 · 04.1 – 04.3</span><span lang="es">Paso 04 · 04.1 – 04.3</span><span lang="it">Passo 04 · 04.1 – 04.3</span><span lang="no">Trinn 04 · 04.1 – 04.3</span><span lang="tr">Adım 04 · 04.1 – 04.3</span></p>
+        <h2><span lang="pl">Dodaj ul: ColonyLink, VitalSensor i&nbsp;Scale</span><span lang="en">Add hive: ColonyLink, VitalSensor &amp;&nbsp;Scale</span><span lang="de">Stock anlegen: ColonyLink, VitalSensor und&nbsp;Scale</span><span lang="fr">Ajoutez une ruche : ColonyLink, VitalSensor et&nbsp;Scale</span><span lang="es">Añade una colmena: ColonyLink, VitalSensor y&nbsp;Scale</span><span lang="it">Aggiungi un'arnia: ColonyLink, VitalSensor e&nbsp;Scale</span><span lang="no">Legg til bikube: ColonyLink, VitalSensor og&nbsp;Scale</span><span lang="tr">Kovan ekleyin: ColonyLink, VitalSensor ve&nbsp;Scale</span></h2>
         <p class="lede">
           <span lang="pl">Pierwszy ul dostaje komplet. Wszystkie trzy urządzenia przypisujesz w jednym formularzu, skanując kolejno ich kody QR.</span>
-          <span lang="en">The first hive gets the full set. You link all three devices in a single form, scanning their QR codes one after another.</span><span lang="de">Der erste Stock bekommt das komplette Set. Alle drei Geräte weist du in einem Formular zu, indem du ihre QR-Codes nacheinander scannst.</span><span lang="fr">La première ruche reçoit l'ensemble complet. Vous associez les trois appareils dans un seul formulaire, en scannant leurs QR codes l'un après l'autre.</span>
+          <span lang="en">The first hive gets the full set. You link all three devices in a single form, scanning their QR codes one after another.</span><span lang="de">Der erste Stock bekommt das komplette Set. Alle drei Geräte weist du in einem Formular zu, indem du ihre QR-Codes nacheinander scannst.</span><span lang="fr">La première ruche reçoit l'ensemble complet. Vous associez les trois appareils dans un seul formulaire, en scannant leurs QR codes l'un après l'autre.</span><span lang="es">La primera colmena recibe el equipo completo. Asignas los tres dispositivos en un solo formulario, escaneando sus códigos QR uno tras otro.</span><span lang="it">La prima arnia riceve il set completo. Colleghi tutti e tre i dispositivi in un unico modulo, scansionando i loro codici QR uno dopo l'altro.</span><span lang="no">Den første bikuben får hele settet. Du tilordner alle tre enhetene i ett skjema ved å skanne QR-kodene etter tur.</span><span lang="tr">İlk kovan tam seti alır. Üç cihazın hepsini tek bir formda, QR kodlarını sırayla tarayarak eşleştirirsiniz.</span>
         </p>
         <ul class="micro">
-          <li><b>04.1</b><span lang="pl">Na ekranie głównym otwórz swoją pasiekę.</span><span lang="en">Open your apiary from the home screen.</span><span lang="de">Öffne deinen Bienenstand auf dem Startbildschirm.</span><span lang="fr">Ouvrez votre rucher depuis l'écran d'accueil.</span></li>
-          <li><b>04.2</b><span lang="pl">Naciśnij <em>Add beehive</em>.</span><span lang="en">Tap <em>Add beehive</em>.</span><span lang="de">Tippe auf <em>Add beehive</em>.</span><span lang="fr">Appuyez sur <em>Add beehive</em>.</span></li>
-          <li><b>04.3</b><span lang="pl">Zacznij od <em>ColonyLink</em> — dotknij ikony skanera przy tym polu.</span><span lang="en">Start with <em>ColonyLink</em> — tap the scanner icon next to that field.</span><span lang="de">Beginne mit <em>ColonyLink</em> — tippe auf das Scanner-Symbol neben diesem Feld.</span><span lang="fr">Commencez par <em>ColonyLink</em> : appuyez sur l'icône du scanner à côté de ce champ.</span></li>
+          <li><b>04.1</b><span lang="pl">Na ekranie głównym otwórz swoją pasiekę.</span><span lang="en">Open your apiary from the home screen.</span><span lang="de">Öffne deinen Bienenstand auf dem Startbildschirm.</span><span lang="fr">Ouvrez votre rucher depuis l'écran d'accueil.</span><span lang="es">Abre tu colmenar desde la pantalla de inicio.</span><span lang="it">Nella schermata principale apri il tuo apiario.</span><span lang="no">Åpne bigården din fra startskjermen.</span><span lang="tr">Ana ekrandan arılığınızı açın.</span></li>
+          <li><b>04.2</b><span lang="pl">Naciśnij <em>Add beehive</em>.</span><span lang="en">Tap <em>Add beehive</em>.</span><span lang="de">Tippe auf <em>Add beehive</em>.</span><span lang="fr">Appuyez sur <em>Add beehive</em>.</span><span lang="es">Pulsa <em>Add beehive</em>.</span><span lang="it">Tocca <em>Add beehive</em>.</span><span lang="no">Trykk på <em>Add beehive</em>.</span><span lang="tr"><em>Add beehive</em> öğesine dokunun.</span></li>
+          <li><b>04.3</b><span lang="pl">Zacznij od <em>ColonyLink</em> — dotknij ikony skanera przy tym polu.</span><span lang="en">Start with <em>ColonyLink</em> — tap the scanner icon next to that field.</span><span lang="de">Beginne mit <em>ColonyLink</em> — tippe auf das Scanner-Symbol neben diesem Feld.</span><span lang="fr">Commencez par <em>ColonyLink</em> : appuyez sur l'icône du scanner à côté de ce champ.</span><span lang="es">Empieza por <em>ColonyLink</em>: pulsa el icono del escáner junto a ese campo.</span><span lang="it">Inizia da <em>ColonyLink</em>: tocca l'icona dello scanner accanto a quel campo.</span><span lang="no">Begynn med <em>ColonyLink</em> — trykk på skannerikonet ved dette feltet.</span><span lang="tr"><em>ColonyLink</em> ile başlayın — bu alanın yanındaki tarayıcı simgesine dokunun.</span></li>
         </ul>
       </div>
       <div class="col col--fig">
         <figure class="plate">
           <img src="figs/step04-a.webp" width="1700" height="971" loading="lazy"
                alt="Ekrany 04.1–04.3: ekran główny, przycisk Add beehive i formularz z urządzeniami ula.">
-          <figcaption><span>04.1 — 04.3</span><span lang="pl">Aplikacja</span><span lang="en">In the app</span><span lang="de">In der App</span><span lang="fr">Dans l'application</span></figcaption>
+          <figcaption><span>04.1 — 04.3</span><span lang="pl">Aplikacja</span><span lang="en">In the app</span><span lang="de">In der App</span><span lang="fr">Dans l'application</span><span lang="es">En la aplicación</span><span lang="it">Nell'app</span><span lang="no">I appen</span><span lang="tr">Uygulamada</span></figcaption>
         </figure>
       </div>
     </div>
@@ -1030,22 +1097,22 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
     <div class="ghost" aria-hidden="true">04</div>
     <div class="wrap wrap--wide">
       <div class="col col--text">
-        <p class="tag"><span lang="pl">Krok 04 · ColonyLink</span><span lang="en">Step 04 · ColonyLink</span><span lang="de">Schritt 04 · ColonyLink</span><span lang="fr">Étape 04 · ColonyLink</span></p>
-        <h2><span lang="pl">Zeskanuj kod QR ColonyLink</span><span lang="en">Scan the ColonyLink QR code</span><span lang="de">QR-Code des ColonyLink scannen</span><span lang="fr">Scannez le QR code du ColonyLink</span></h2>
+        <p class="tag"><span lang="pl">Krok 04 · ColonyLink</span><span lang="en">Step 04 · ColonyLink</span><span lang="de">Schritt 04 · ColonyLink</span><span lang="fr">Étape 04 · ColonyLink</span><span lang="es">Paso 04 · ColonyLink</span><span lang="it">Passo 04 · ColonyLink</span><span lang="no">Trinn 04 · ColonyLink</span><span lang="tr">Adım 04 · ColonyLink</span></p>
+        <h2><span lang="pl">Zeskanuj kod QR ColonyLink</span><span lang="en">Scan the ColonyLink QR code</span><span lang="de">QR-Code des ColonyLink scannen</span><span lang="fr">Scannez le QR code du ColonyLink</span><span lang="es">Escanea el código QR del ColonyLink</span><span lang="it">Scansiona il codice QR del ColonyLink</span><span lang="no">Skann QR-koden til ColonyLink</span><span lang="tr">ColonyLink'in QR kodunu tarayın</span></h2>
         <p class="lede">
           <span lang="pl">ColonyLink to <b>naklejka z wbudowanym tagiem NFC i nadrukowanym kodem QR</b>. Skanujesz ją jako pierwszą — to ona wiąże ul w aplikacji z konkretnym ulem w pasiece.</span>
-          <span lang="en">The ColonyLink is a <b>sticker with a built-in NFC tag and a printed QR code</b>. Scan it first — it is what ties the hive in the app to a specific hive in the apiary.</span><span lang="de">Der ColonyLink ist ein <b>Aufkleber mit integriertem NFC-Tag und aufgedrucktem QR-Code</b>. Ihn scannst du zuerst — er verbindet den Stock in der App mit einem konkreten Stock am Stand.</span><span lang="fr">Le ColonyLink est un <b>autocollant avec puce NFC intégrée et QR code imprimé</b>. Scannez-le en premier : c'est lui qui relie la ruche dans l'application à une ruche précise du rucher.</span>
+          <span lang="en">The ColonyLink is a <b>sticker with a built-in NFC tag and a printed QR code</b>. Scan it first — it is what ties the hive in the app to a specific hive in the apiary.</span><span lang="de">Der ColonyLink ist ein <b>Aufkleber mit integriertem NFC-Tag und aufgedrucktem QR-Code</b>. Ihn scannst du zuerst — er verbindet den Stock in der App mit einem konkreten Stock am Stand.</span><span lang="fr">Le ColonyLink est un <b>autocollant avec puce NFC intégrée et QR code imprimé</b>. Scannez-le en premier : c'est lui qui relie la ruche dans l'application à une ruche précise du rucher.</span><span lang="es">El ColonyLink es una <b>pegatina con etiqueta NFC integrada y código QR impreso</b>. Escanéalo en primer lugar: es lo que vincula la colmena de la aplicación con una colmena concreta del colmenar.</span><span lang="it">Il ColonyLink è un <b>adesivo con tag NFC integrato e codice QR stampato</b>. Scansionalo per primo: è lui che collega l'arnia nell'app a un'arnia precisa dell'apiario.</span><span lang="no">ColonyLink er et <b>klistremerke med innebygd NFC-brikke og påtrykt QR-kode</b>. Skann det først — det er dette som knytter bikuben i appen til en bestemt bikube i bigården.</span><span lang="tr">ColonyLink, <b>gömülü NFC etiketi ve basılı QR kodu olan bir çıkartmadır</b>. Önce onu tarayın — uygulamadaki kovanı arılıktaki belirli bir kovana bağlayan şey odur.</span>
         </p>
         <p class="note">
           <span lang="pl">Ten sam kod odczytasz później zbliżeniowo przez <b>NFC</b> — wystarczy przyłożyć telefon, także w rękawicach.</span>
-          <span lang="en">You can read the same code later by <b>NFC</b> — just tap your phone against it, gloves and all.</span><span lang="de">Denselben Code liest du später kontaktlos per <b>NFC</b> — Handy anhalten genügt, auch mit Handschuhen.</span><span lang="fr">Vous lirez ce même code plus tard sans contact, par <b>NFC</b> : il suffit d'approcher le téléphone, même avec des gants.</span>
+          <span lang="en">You can read the same code later by <b>NFC</b> — just tap your phone against it, gloves and all.</span><span lang="de">Denselben Code liest du später kontaktlos per <b>NFC</b> — Handy anhalten genügt, auch mit Handschuhen.</span><span lang="fr">Vous lirez ce même code plus tard sans contact, par <b>NFC</b> : il suffit d'approcher le téléphone, même avec des gants.</span><span lang="es">Ese mismo código lo leerás después sin contacto por <b>NFC</b>: basta con acercar el teléfono, incluso con guantes.</span><span lang="it">Lo stesso codice lo leggi anche più tardi via <b>NFC</b>: basta avvicinare il telefono, anche con i guanti.</span><span lang="no">Den samme koden kan du senere lese av med <b>NFC</b> — det holder å holde telefonen inntil, også med hansker på.</span><span lang="tr">Aynı kodu daha sonra <b>NFC</b> ile de okuyabilirsiniz — telefonu yaklaştırmanız yeterli, eldivenle bile.</span>
         </p>
       </div>
       <div class="col col--fig">
         <figure class="plate">
           <img src="figs/pdf-item-tag.webp" width="470" height="366" loading="lazy"
                alt="Rysunek identyfikatora ula z kodem QR.">
-          <figcaption><span>ColonyLink</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span><span lang="de">Referenzzeichnung</span><span lang="fr">Schéma de référence</span></figcaption>
+          <figcaption><span>ColonyLink</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span><span lang="de">Referenzzeichnung</span><span lang="fr">Schéma de référence</span><span lang="es">Esquema de referencia</span><span lang="it">Disegno di riferimento</span><span lang="no">Referansetegning</span><span lang="tr">Örnek çizim</span></figcaption>
         </figure>
       </div>
     </div>
@@ -1056,15 +1123,15 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
     <div class="ghost" aria-hidden="true">04</div>
     <div class="wrap wrap--wide">
       <div class="col col--text">
-        <p class="tag"><span lang="pl">Krok 04 · VitalSensor</span><span lang="en">Step 04 · VitalSensor</span><span lang="de">Schritt 04 · VitalSensor</span><span lang="fr">Étape 04 · VitalSensor</span></p>
-        <h2><span lang="pl">Zeskanuj kod QR VitalSensora</span><span lang="en">Scan the VitalSensor QR code</span><span lang="de">QR-Code des VitalSensors scannen</span><span lang="fr">Scannez le QR code du VitalSensor</span></h2>
+        <p class="tag"><span lang="pl">Krok 04 · VitalSensor</span><span lang="en">Step 04 · VitalSensor</span><span lang="de">Schritt 04 · VitalSensor</span><span lang="fr">Étape 04 · VitalSensor</span><span lang="es">Paso 04 · VitalSensor</span><span lang="it">Passo 04 · VitalSensor</span><span lang="no">Trinn 04 · VitalSensor</span><span lang="tr">Adım 04 · VitalSensor</span></p>
+        <h2><span lang="pl">Zeskanuj kod QR VitalSensora</span><span lang="en">Scan the VitalSensor QR code</span><span lang="de">QR-Code des VitalSensors scannen</span><span lang="fr">Scannez le QR code du VitalSensor</span><span lang="es">Escanea el código QR del VitalSensor</span><span lang="it">Scansiona il codice QR del VitalSensor</span><span lang="no">Skann QR-koden til VitalSensor</span><span lang="tr">VitalSensor'ün QR kodunu tarayın</span></h2>
         <p class="lede">
           <span lang="pl">Naklejka z kodem QR jest na krótszym boku obudowy. Zeskanuj ją przed zamontowaniem czujnika na ramce — po włożeniu ramki do ula kod ma być widoczny od góry.</span>
-          <span lang="en">The QR sticker is on the short side of the housing. Scan it before you mount the sensor on the frame — once the frame is in the hive the code must stay visible from above.</span><span lang="de">Der QR-Aufkleber sitzt an der schmalen Seite des Gehäuses. Scanne ihn, bevor du den Sensor am Rähmchen befestigst — nach dem Einhängen muss der Code von oben sichtbar bleiben.</span><span lang="fr">L'autocollant QR se trouve sur le petit côté du boîtier. Scannez-le avant de fixer le capteur sur le cadre : une fois le cadre en place, le code doit rester visible du dessus.</span>
+          <span lang="en">The QR sticker is on the short side of the housing. Scan it before you mount the sensor on the frame — once the frame is in the hive the code must stay visible from above.</span><span lang="de">Der QR-Aufkleber sitzt an der schmalen Seite des Gehäuses. Scanne ihn, bevor du den Sensor am Rähmchen befestigst — nach dem Einhängen muss der Code von oben sichtbar bleiben.</span><span lang="fr">L'autocollant QR se trouve sur le petit côté du boîtier. Scannez-le avant de fixer le capteur sur le cadre : une fois le cadre en place, le code doit rester visible du dessus.</span><span lang="es">La pegatina con el código QR está en el lado corto de la carcasa. Escanéala antes de montar el sensor en el cuadro: una vez colocado el cuadro en la colmena, el código debe quedar visible desde arriba.</span><span lang="it">L'adesivo con il codice QR si trova sul lato corto della scocca. Scansionalo prima di fissare il sensore al telaino: una volta inserito il telaino nell'arnia il codice deve restare visibile dall'alto.</span><span lang="no">Klistremerket med QR-koden sitter på kortsiden av kabinettet. Skann det før du fester sensoren på rammen — når rammen står i bikuben, skal koden være synlig ovenfra.</span><span lang="tr">QR etiketi gövdenin kısa kenarındadır. Sensörü çerçeveye takmadan önce etiketi tarayın — çerçeve kovana yerleştirildikten sonra kod yukarıdan görünür kalmalıdır.</span>
         </p>
         <p class="note">
           <span lang="pl">Każdy z trzech czujników ma własny kod. Pilnuj, który trafia do którego ula.</span>
-          <span lang="en">Each of the three sensors has its own code. Keep track of which one goes into which hive.</span><span lang="de">Jeder der drei Sensoren hat einen eigenen Code. Behalte im Blick, welcher in welchen Stock kommt.</span><span lang="fr">Chacun des trois capteurs a son propre code. Notez bien lequel va dans quelle ruche.</span>
+          <span lang="en">Each of the three sensors has its own code. Keep track of which one goes into which hive.</span><span lang="de">Jeder der drei Sensoren hat einen eigenen Code. Behalte im Blick, welcher in welchen Stock kommt.</span><span lang="fr">Chacun des trois capteurs a son propre code. Notez bien lequel va dans quelle ruche.</span><span lang="es">Cada uno de los tres sensores tiene su propio código. Controla cuál va a cada colmena.</span><span lang="it">Ognuno dei tre sensori ha il proprio codice. Tieni nota di quale va in quale arnia.</span><span lang="no">Hver av de tre sensorene har sin egen kode. Hold styr på hvilken som skal i hvilken bikube.</span><span lang="tr">Üç sensörün her birinin kendi kodu vardır. Hangisinin hangi kovana gittiğini takip edin.</span>
         </p>
       </div>
       <div class="col col--fig">
@@ -1072,12 +1139,12 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
           <figure class="plate">
             <img src="figs/pdf-vitalsensor-qr.webp" width="1700" height="1536" loading="lazy"
                  alt="Rysunek: umiejscowienie kodu QR na obudowie VitalSensora i ekran skanera.">
-            <figcaption><span>VitalSensor</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span><span lang="de">Referenzzeichnung</span><span lang="fr">Schéma de référence</span></figcaption>
+            <figcaption><span>VitalSensor</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span><span lang="de">Referenzzeichnung</span><span lang="fr">Schéma de référence</span><span lang="es">Esquema de referencia</span><span lang="it">Disegno di riferimento</span><span lang="no">Referansetegning</span><span lang="tr">Örnek çizim</span></figcaption>
           </figure>
           <figure class="plate">
             <img src="figs/qr-sensor.webp" width="1400" height="1050" loading="lazy"
                  alt="Naklejka z kodem QR na boku obudowy Apisense VitalSensor.">
-            <figcaption><span lang="pl">VitalSensor</span><span lang="en">VitalSensor</span><span lang="de">VitalSensor</span><span lang="fr">VitalSensor</span><span lang="pl">Zdjęcie</span><span lang="en">Photo</span><span lang="de">Foto</span><span lang="fr">Photo</span></figcaption>
+            <figcaption><span lang="pl">VitalSensor</span><span lang="en">VitalSensor</span><span lang="de">VitalSensor</span><span lang="fr">VitalSensor</span><span lang="es">VitalSensor</span><span lang="it">VitalSensor</span><span lang="no">VitalSensor</span><span lang="tr">VitalSensor</span><span lang="pl">Zdjęcie</span><span lang="en">Photo</span><span lang="de">Foto</span><span lang="fr">Photo</span><span lang="es">Foto</span><span lang="it">Foto</span><span lang="no">Bilde</span><span lang="tr">Fotoğraf</span></figcaption>
           </figure>
         </div>
       </div>
@@ -1089,15 +1156,15 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
     <div class="ghost" aria-hidden="true">04</div>
     <div class="wrap wrap--wide">
       <div class="col col--text">
-        <p class="tag"><span lang="pl">Krok 04 · Scale</span><span lang="en">Step 04 · Scale</span><span lang="de">Schritt 04 · Scale</span><span lang="fr">Étape 04 · Scale</span></p>
-        <h2><span lang="pl">Zeskanuj kod QR Scale</span><span lang="en">Scan the Scale QR code</span><span lang="de">QR-Code der Scale scannen</span><span lang="fr">Scannez le QR code de la Scale</span></h2>
+        <p class="tag"><span lang="pl">Krok 04 · Scale</span><span lang="en">Step 04 · Scale</span><span lang="de">Schritt 04 · Scale</span><span lang="fr">Étape 04 · Scale</span><span lang="es">Paso 04 · Scale</span><span lang="it">Passo 04 · Scale</span><span lang="no">Trinn 04 · Scale</span><span lang="tr">Adım 04 · Scale</span></p>
+        <h2><span lang="pl">Zeskanuj kod QR Scale</span><span lang="en">Scan the Scale QR code</span><span lang="de">QR-Code der Scale scannen</span><span lang="fr">Scannez le QR code de la Scale</span><span lang="es">Escanea el código QR del Scale</span><span lang="it">Scansiona il codice QR della Scale</span><span lang="no">Skann QR-koden til Scale</span><span lang="tr">Scale'in QR kodunu tarayın</span></h2>
         <p class="lede">
           <span lang="pl">Naklejka z kodem QR jest na czole belki pomiarowej — tej z elektroniką i komorą baterii. Drewniana kantówka nie ma kodu.</span>
-          <span lang="en">The QR sticker is on the end face of the measuring beam — the one with the electronics and the battery compartment. The wooden spacer bar has no code.</span><span lang="de">Der QR-Aufkleber sitzt an der Stirnseite des Messbalkens — dem Teil mit Elektronik und Batteriefach. Das Kantholz hat keinen Code.</span><span lang="fr">L'autocollant QR se trouve en bout de la barre de pesée, celle qui contient l'électronique et le compartiment à piles. Le tasseau en bois n'a pas de code.</span>
+          <span lang="en">The QR sticker is on the end face of the measuring beam — the one with the electronics and the battery compartment. The wooden spacer bar has no code.</span><span lang="de">Der QR-Aufkleber sitzt an der Stirnseite des Messbalkens — dem Teil mit Elektronik und Batteriefach. Das Kantholz hat keinen Code.</span><span lang="fr">L'autocollant QR se trouve en bout de la barre de pesée, celle qui contient l'électronique et le compartiment à piles. Le tasseau en bois n'a pas de code.</span><span lang="es">La pegatina con el código QR está en el frente de la barra de pesaje, la que lleva la electrónica y el compartimento de las pilas. El listón de madera no tiene código.</span><span lang="it">L'adesivo con il codice QR si trova sulla testa della barra di pesatura, quella con l'elettronica e il vano batterie. Il listello di legno non ha alcun codice.</span><span lang="no">Klistremerket med QR-koden sitter på enden av målebjelken — den med elektronikken og batterirommet. Trelekten har ingen kode.</span><span lang="tr">QR etiketi ölçüm kirişinin uç yüzündedir — elektroniğin ve pil bölmesinin bulunduğu parçanın. Ahşap destek çıtasında kod yoktur.</span>
         </p>
         <p class="note">
           <span lang="pl">Zeskanuj kod <b>zanim</b> wsuniesz belkę pod ul — później dostęp do niego będzie utrudniony.</span>
-          <span lang="en">Scan the code <b>before</b> you slide the beam under the hive — it is harder to reach afterwards.</span><span lang="de">Scanne den Code, <b>bevor</b> du den Balken unter den Stock schiebst — danach kommst du schlechter heran.</span><span lang="fr">Scannez le code <b>avant</b> de glisser la barre sous la ruche : ensuite, l'accès sera plus difficile.</span>
+          <span lang="en">Scan the code <b>before</b> you slide the beam under the hive — it is harder to reach afterwards.</span><span lang="de">Scanne den Code, <b>bevor</b> du den Balken unter den Stock schiebst — danach kommst du schlechter heran.</span><span lang="fr">Scannez le code <b>avant</b> de glisser la barre sous la ruche : ensuite, l'accès sera plus difficile.</span><span lang="es">Escanea el código <b>antes</b> de deslizar la barra debajo de la colmena: después será más difícil llegar hasta él.</span><span lang="it">Scansiona il codice <b>prima</b> di far scorrere la barra sotto l'arnia: dopo sarà più difficile raggiungerlo.</span><span lang="no">Skann koden <b>før</b> du skyver bjelken inn under bikuben — etterpå er den vanskeligere å komme til.</span><span lang="tr">Kirişi kovanın altına sürmeden <b>önce</b> kodu tarayın — sonrasında ona ulaşmak zorlaşır.</span>
         </p>
       </div>
       <div class="col col--fig">
@@ -1105,12 +1172,12 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
           <figure class="plate">
             <img src="figs/pdf-scale-qr.webp" width="1700" height="1549" loading="lazy"
                  alt="Rysunek: umiejscowienie kodu QR na czole belki pomiarowej i ekran skanera.">
-            <figcaption><span>Scale</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span><span lang="de">Referenzzeichnung</span><span lang="fr">Schéma de référence</span></figcaption>
+            <figcaption><span>Scale</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span><span lang="de">Referenzzeichnung</span><span lang="fr">Schéma de référence</span><span lang="es">Esquema de referencia</span><span lang="it">Disegno di riferimento</span><span lang="no">Referansetegning</span><span lang="tr">Örnek çizim</span></figcaption>
           </figure>
           <figure class="plate">
             <img src="figs/qr-scale.webp" width="1400" height="1050" loading="lazy"
                  alt="Naklejka z kodem QR na czole belki pomiarowej Apisense Scale.">
-            <figcaption><span lang="pl">Scale</span><span lang="en">Scale</span><span lang="de">Scale</span><span lang="fr">Scale</span><span lang="pl">Zdjęcie</span><span lang="en">Photo</span><span lang="de">Foto</span><span lang="fr">Photo</span></figcaption>
+            <figcaption><span lang="pl">Scale</span><span lang="en">Scale</span><span lang="de">Scale</span><span lang="fr">Scale</span><span lang="es">Scale</span><span lang="it">Scale</span><span lang="no">Scale</span><span lang="tr">Scale</span><span lang="pl">Zdjęcie</span><span lang="en">Photo</span><span lang="de">Foto</span><span lang="fr">Photo</span><span lang="es">Foto</span><span lang="it">Foto</span><span lang="no">Bilde</span><span lang="tr">Fotoğraf</span></figcaption>
           </figure>
         </div>
       </div>
@@ -1122,23 +1189,23 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
     <div class="ghost" aria-hidden="true">04</div>
     <div class="wrap">
       <div class="col col--text">
-        <p class="tag"><span lang="pl">Krok 04 · 04.8 – 04.10</span><span lang="en">Step 04 · 04.8 – 04.10</span><span lang="de">Schritt 04 · 04.8 – 04.10</span><span lang="fr">Étape 04 · 04.8 – 04.10</span></p>
-        <h2><span lang="pl">Pierwszy ul zapisany</span><span lang="en">The first hive is saved</span><span lang="de">Erster Stock gespeichert</span><span lang="fr">Première ruche enregistrée</span></h2>
+        <p class="tag"><span lang="pl">Krok 04 · 04.8 – 04.10</span><span lang="en">Step 04 · 04.8 – 04.10</span><span lang="de">Schritt 04 · 04.8 – 04.10</span><span lang="fr">Étape 04 · 04.8 – 04.10</span><span lang="es">Paso 04 · 04.8 – 04.10</span><span lang="it">Passo 04 · 04.8 – 04.10</span><span lang="no">Trinn 04 · 04.8 – 04.10</span><span lang="tr">Adım 04 · 04.8 – 04.10</span></p>
+        <h2><span lang="pl">Pierwszy ul zapisany</span><span lang="en">The first hive is saved</span><span lang="de">Erster Stock gespeichert</span><span lang="fr">Première ruche enregistrée</span><span lang="es">Primera colmena guardada</span><span lang="it">La prima arnia è salvata</span><span lang="no">Den første bikuben er lagret</span><span lang="tr">İlk kovan kaydedildi</span></h2>
         <p class="lede">
           <span lang="pl">Wszystkie kody weryfikacyjne wypełniają się same. Po zapisaniu formularza ul pojawia się w pasiece.</span>
-          <span lang="en">All verification codes fill in on their own. Once you save the form, the hive appears in the apiary.</span><span lang="de">Alle Verifizierungscodes tragen sich von selbst ein. Nach dem Speichern erscheint der Stock am Bienenstand.</span><span lang="fr">Tous les codes de vérification se remplissent seuls. Une fois le formulaire enregistré, la ruche apparaît dans le rucher.</span>
+          <span lang="en">All verification codes fill in on their own. Once you save the form, the hive appears in the apiary.</span><span lang="de">Alle Verifizierungscodes tragen sich von selbst ein. Nach dem Speichern erscheint der Stock am Bienenstand.</span><span lang="fr">Tous les codes de vérification se remplissent seuls. Une fois le formulaire enregistré, la ruche apparaît dans le rucher.</span><span lang="es">Todos los códigos de verificación se rellenan solos. Al guardar el formulario, la colmena aparece en el colmenar.</span><span lang="it">Tutti i codici di verifica si compilano da soli. Una volta salvato il modulo, l'arnia compare nell'apiario.</span><span lang="no">Alle verifiseringskodene fylles ut av seg selv. Når du lagrer skjemaet, dukker bikuben opp i bigården.</span><span lang="tr">Tüm doğrulama kodları kendiliğinden dolar. Formu kaydettiğinizde kovan arılıkta görünür.</span>
         </p>
         <ul class="micro">
-          <li><b>04.8</b><span lang="pl">Skaner odczytuje ostatni z kodów.</span><span lang="en">The scanner reads the last of the codes.</span><span lang="de">Der Scanner liest den letzten Code.</span><span lang="fr">Le scanner lit le dernier code.</span></li>
-          <li><b>04.9</b><span lang="pl">Formularz jest kompletny — naciśnij <em>Save</em>.</span><span lang="en">The form is complete — tap <em>Save</em>.</span><span lang="de">Das Formular ist vollständig — tippe auf <em>Save</em>.</span><span lang="fr">Le formulaire est complet : appuyez sur <em>Save</em>.</span></li>
-          <li><b>04.10</b><span lang="pl">Ul widnieje na ekranie głównym. Odczyty pojawią się po pierwszej synchronizacji.</span><span lang="en">The hive shows on the home screen. Readings appear after the first sync.</span><span lang="de">Der Stock steht auf dem Startbildschirm. Die Messwerte kommen nach der ersten Synchronisierung.</span><span lang="fr">La ruche s'affiche sur l'écran d'accueil. Les mesures arriveront après la première synchronisation.</span></li>
+          <li><b>04.8</b><span lang="pl">Skaner odczytuje ostatni z kodów.</span><span lang="en">The scanner reads the last of the codes.</span><span lang="de">Der Scanner liest den letzten Code.</span><span lang="fr">Le scanner lit le dernier code.</span><span lang="es">El escáner lee el último de los códigos.</span><span lang="it">Lo scanner legge l'ultimo dei codici.</span><span lang="no">Skanneren leser den siste koden.</span><span lang="tr">Tarayıcı kodların sonuncusunu okur.</span></li>
+          <li><b>04.9</b><span lang="pl">Formularz jest kompletny — naciśnij <em>Save</em>.</span><span lang="en">The form is complete — tap <em>Save</em>.</span><span lang="de">Das Formular ist vollständig — tippe auf <em>Save</em>.</span><span lang="fr">Le formulaire est complet : appuyez sur <em>Save</em>.</span><span lang="es">El formulario está completo: pulsa <em>Save</em>.</span><span lang="it">Il modulo è completo: tocca <em>Save</em>.</span><span lang="no">Skjemaet er komplett — trykk på <em>Save</em>.</span><span lang="tr">Form tamamlandı — <em>Save</em> düğmesine dokunun.</span></li>
+          <li><b>04.10</b><span lang="pl">Ul widnieje na ekranie głównym. Odczyty pojawią się po pierwszej synchronizacji.</span><span lang="en">The hive shows on the home screen. Readings appear after the first sync.</span><span lang="de">Der Stock steht auf dem Startbildschirm. Die Messwerte kommen nach der ersten Synchronisierung.</span><span lang="fr">La ruche s'affiche sur l'écran d'accueil. Les mesures arriveront après la première synchronisation.</span><span lang="es">La colmena aparece en la pantalla de inicio. Las mediciones llegarán tras la primera sincronización.</span><span lang="it">L'arnia compare nella schermata principale. Le letture arrivano dopo la prima sincronizzazione.</span><span lang="no">Bikuben vises på startskjermen. Avlesningene kommer etter den første synkroniseringen.</span><span lang="tr">Kovan ana ekranda görünür. Ölçümler ilk eşitlemeden sonra gelir.</span></li>
         </ul>
       </div>
       <div class="col col--fig">
         <figure class="plate">
           <img src="figs/step04-c.webp" width="1700" height="1028" loading="lazy"
                alt="Ekrany 04.8–04.10: skanowanie kodu, zapis formularza i ekran główny z dodanym ulem.">
-          <figcaption><span>04.8 — 04.10</span><span lang="pl">Aplikacja</span><span lang="en">In the app</span><span lang="de">In der App</span><span lang="fr">Dans l'application</span></figcaption>
+          <figcaption><span>04.8 — 04.10</span><span lang="pl">Aplikacja</span><span lang="en">In the app</span><span lang="de">In der App</span><span lang="fr">Dans l'application</span><span lang="es">En la aplicación</span><span lang="it">Nell'app</span><span lang="no">I appen</span><span lang="tr">Uygulamada</span></figcaption>
         </figure>
       </div>
     </div>
@@ -1149,23 +1216,23 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
     <div class="ghost" aria-hidden="true">05</div>
     <div class="wrap">
       <div class="col col--text">
-        <p class="tag"><span lang="pl">Krok 05 · 05.1 – 05.3</span><span lang="en">Step 05 · 05.1 – 05.3</span><span lang="de">Schritt 05 · 05.1 – 05.3</span><span lang="fr">Étape 05 · 05.1 – 05.3</span></p>
-        <h2><span lang="pl">Dodaj kolejny ul</span><span lang="en">Add another hive</span><span lang="de">Weiteren Stock anlegen</span><span lang="fr">Ajoutez une autre ruche</span></h2>
+        <p class="tag"><span lang="pl">Krok 05 · 05.1 – 05.3</span><span lang="en">Step 05 · 05.1 – 05.3</span><span lang="de">Schritt 05 · 05.1 – 05.3</span><span lang="fr">Étape 05 · 05.1 – 05.3</span><span lang="es">Paso 05 · 05.1 – 05.3</span><span lang="it">Passo 05 · 05.1 – 05.3</span><span lang="no">Trinn 05 · 05.1 – 05.3</span><span lang="tr">Adım 05 · 05.1 – 05.3</span></p>
+        <h2><span lang="pl">Dodaj kolejny ul</span><span lang="en">Add another hive</span><span lang="de">Weiteren Stock anlegen</span><span lang="fr">Ajoutez une autre ruche</span><span lang="es">Añade otra colmena</span><span lang="it">Aggiungi un'altra arnia</span><span lang="no">Legg til en bikube til</span><span lang="tr">Başka bir kovan ekleyin</span></h2>
         <p class="lede">
           <span lang="pl">Kolejne ule dodajesz z <b>ColonyLinkiem i VitalSensorem</b> — Scale zostaje pod pierwszym ulem. Pole <em>Scale</em> zostaw puste.</span>
-          <span lang="en">Further hives are added with a <b>ColonyLink and a VitalSensor</b> — the Scale stays under the first hive. Leave the <em>Scale</em> field empty.</span><span lang="de">Weitere Stöcke legst du mit <b>ColonyLink und VitalSensor</b> an — die Scale bleibt unter dem ersten Stock. Das Feld <em>Scale</em> lässt du leer.</span><span lang="fr">Les ruches suivantes s'ajoutent avec un <b>ColonyLink et un VitalSensor</b> : la Scale reste sous la première ruche. Laissez le champ <em>Scale</em> vide.</span>
+          <span lang="en">Further hives are added with a <b>ColonyLink and a VitalSensor</b> — the Scale stays under the first hive. Leave the <em>Scale</em> field empty.</span><span lang="de">Weitere Stöcke legst du mit <b>ColonyLink und VitalSensor</b> an — die Scale bleibt unter dem ersten Stock. Das Feld <em>Scale</em> lässt du leer.</span><span lang="fr">Les ruches suivantes s'ajoutent avec un <b>ColonyLink et un VitalSensor</b> : la Scale reste sous la première ruche. Laissez le champ <em>Scale</em> vide.</span><span lang="es">Las siguientes colmenas se añaden con <b>ColonyLink y VitalSensor</b>: el Scale se queda debajo de la primera colmena. Deja vacío el campo <em>Scale</em>.</span><span lang="it">Le arnie successive si aggiungono con <b>ColonyLink e VitalSensor</b>: la Scale resta sotto la prima arnia. Lascia vuoto il campo <em>Scale</em>.</span><span lang="no">De neste bikubene legger du til med <b>ColonyLink og VitalSensor</b> — Scale blir stående under den første bikuben. La feltet <em>Scale</em> stå tomt.</span><span lang="tr">Sonraki kovanları <b>ColonyLink ve VitalSensor</b> ile eklersiniz — Scale ilk kovanın altında kalır. <em>Scale</em> alanını boş bırakın.</span>
         </p>
         <ul class="micro">
-          <li><b>05.1</b><span lang="pl">Otwórz pasiekę z ekranu głównego.</span><span lang="en">Open the apiary from the home screen.</span><span lang="de">Öffne den Bienenstand vom Startbildschirm aus.</span><span lang="fr">Ouvrez le rucher depuis l'écran d'accueil.</span></li>
-          <li><b>05.2</b><span lang="pl">Naciśnij <em>+</em> i wybierz <em>Beehive</em>.</span><span lang="en">Tap <em>+</em> and choose <em>Beehive</em>.</span><span lang="de">Tippe auf <em>+</em> und wähle <em>Beehive</em>.</span><span lang="fr">Appuyez sur <em>+</em> et choisissez <em>Beehive</em>.</span></li>
-          <li><b>05.3</b><span lang="pl">Zeskanuj kod QR z <em>ColonyLink</em>, a zaraz po nim z <em>VitalSensora</em>.</span><span lang="en">Scan the <em>ColonyLink</em> QR code, then the <em>VitalSensor</em> one.</span><span lang="de">Scanne den QR-Code des <em>ColonyLink</em> und gleich danach den des <em>VitalSensors</em>.</span><span lang="fr">Scannez le QR code du <em>ColonyLink</em>, puis aussitôt celui du <em>VitalSensor</em>.</span></li>
+          <li><b>05.1</b><span lang="pl">Otwórz pasiekę z ekranu głównego.</span><span lang="en">Open the apiary from the home screen.</span><span lang="de">Öffne den Bienenstand vom Startbildschirm aus.</span><span lang="fr">Ouvrez le rucher depuis l'écran d'accueil.</span><span lang="es">Abre el colmenar desde la pantalla de inicio.</span><span lang="it">Apri l'apiario dalla schermata principale.</span><span lang="no">Åpne bigården fra startskjermen.</span><span lang="tr">Ana ekrandan arılığı açın.</span></li>
+          <li><b>05.2</b><span lang="pl">Naciśnij <em>+</em> i wybierz <em>Beehive</em>.</span><span lang="en">Tap <em>+</em> and choose <em>Beehive</em>.</span><span lang="de">Tippe auf <em>+</em> und wähle <em>Beehive</em>.</span><span lang="fr">Appuyez sur <em>+</em> et choisissez <em>Beehive</em>.</span><span lang="es">Pulsa <em>+</em> y elige <em>Beehive</em>.</span><span lang="it">Tocca <em>+</em> e scegli <em>Beehive</em>.</span><span lang="no">Trykk på <em>+</em> og velg <em>Beehive</em>.</span><span lang="tr"><em>+</em> düğmesine dokunun ve <em>Beehive</em> öğesini seçin.</span></li>
+          <li><b>05.3</b><span lang="pl">Zeskanuj kod QR z <em>ColonyLink</em>, a zaraz po nim z <em>VitalSensora</em>.</span><span lang="en">Scan the <em>ColonyLink</em> QR code, then the <em>VitalSensor</em> one.</span><span lang="de">Scanne den QR-Code des <em>ColonyLink</em> und gleich danach den des <em>VitalSensors</em>.</span><span lang="fr">Scannez le QR code du <em>ColonyLink</em>, puis aussitôt celui du <em>VitalSensor</em>.</span><span lang="es">Escanea el código QR del <em>ColonyLink</em> y, justo después, el del <em>VitalSensor</em>.</span><span lang="it">Scansiona il codice QR del <em>ColonyLink</em> e subito dopo quello del <em>VitalSensor</em>.</span><span lang="no">Skann QR-koden til <em>ColonyLink</em>, og deretter den til <em>VitalSensor</em>.</span><span lang="tr">Önce <em>ColonyLink</em>, hemen ardından <em>VitalSensor</em> QR kodunu tarayın.</span></li>
         </ul>
       </div>
       <div class="col col--fig">
         <figure class="plate">
           <img src="figs/step05-a.webp" width="1700" height="1048" loading="lazy"
                alt="Ekrany 05.1–05.3: ekran główny, menu z opcją Beehive i formularz Add beehive.">
-          <figcaption><span>05.1 — 05.3</span><span lang="pl">Aplikacja</span><span lang="en">In the app</span><span lang="de">In der App</span><span lang="fr">Dans l'application</span></figcaption>
+          <figcaption><span>05.1 — 05.3</span><span lang="pl">Aplikacja</span><span lang="en">In the app</span><span lang="de">In der App</span><span lang="fr">Dans l'application</span><span lang="es">En la aplicación</span><span lang="it">Nell'app</span><span lang="no">I appen</span><span lang="tr">Uygulamada</span></figcaption>
         </figure>
       </div>
     </div>
@@ -1176,23 +1243,23 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
     <div class="ghost" aria-hidden="true">05</div>
     <div class="wrap">
       <div class="col col--text">
-        <p class="tag"><span lang="pl">Krok 05 · 05.4 – 05.7</span><span lang="en">Step 05 · 05.4 – 05.7</span><span lang="de">Schritt 05 · 05.4 – 05.7</span><span lang="fr">Étape 05 · 05.4 – 05.7</span></p>
-        <h2><span lang="pl">Kolejny ul w pasiece</span><span lang="en">Another hive in the apiary</span><span lang="de">Ein weiterer Stock am Stand</span><span lang="fr">Une ruche de plus au rucher</span></h2>
+        <p class="tag"><span lang="pl">Krok 05 · 05.4 – 05.7</span><span lang="en">Step 05 · 05.4 – 05.7</span><span lang="de">Schritt 05 · 05.4 – 05.7</span><span lang="fr">Étape 05 · 05.4 – 05.7</span><span lang="es">Paso 05 · 05.4 – 05.7</span><span lang="it">Passo 05 · 05.4 – 05.7</span><span lang="no">Trinn 05 · 05.4 – 05.7</span><span lang="tr">Adım 05 · 05.4 – 05.7</span></p>
+        <h2><span lang="pl">Kolejny ul w pasiece</span><span lang="en">Another hive in the apiary</span><span lang="de">Ein weiterer Stock am Stand</span><span lang="fr">Une ruche de plus au rucher</span><span lang="es">Otra colmena en el colmenar</span><span lang="it">Un'altra arnia nell'apiario</span><span lang="no">Enda en bikube i bigården</span><span lang="tr">Arılıkta bir kovan daha</span></h2>
         <p class="lede">
           <span lang="pl">Formularz zapisuje się tak samo jak przy pierwszym ulu — z ColonyLinkiem i VitalSensorem, bez Scale.</span>
-          <span lang="en">The form saves exactly like the first hive — with a ColonyLink and a VitalSensor, without the Scale.</span><span lang="de">Das Formular speicherst du genauso wie beim ersten Stock — mit ColonyLink und VitalSensor, ohne Scale.</span><span lang="fr">Le formulaire s'enregistre exactement comme pour la première ruche : avec un ColonyLink et un VitalSensor, sans Scale.</span>
+          <span lang="en">The form saves exactly like the first hive — with a ColonyLink and a VitalSensor, without the Scale.</span><span lang="de">Das Formular speicherst du genauso wie beim ersten Stock — mit ColonyLink und VitalSensor, ohne Scale.</span><span lang="fr">Le formulaire s'enregistre exactement comme pour la première ruche : avec un ColonyLink et un VitalSensor, sans Scale.</span><span lang="es">El formulario se guarda igual que en la primera colmena: con ColonyLink y VitalSensor, sin Scale.</span><span lang="it">Il modulo si salva esattamente come per la prima arnia: con ColonyLink e VitalSensor, senza Scale.</span><span lang="no">Skjemaet lagrer du på samme måte som for den første bikuben — med ColonyLink og VitalSensor, uten Scale.</span><span lang="tr">Form tıpkı ilk kovandaki gibi kaydedilir — ColonyLink ve VitalSensor ile, Scale olmadan.</span>
         </p>
         <ul class="micro">
-          <li><b>05.4 – 05.5</b><span lang="pl">Skaner odczytuje kody ColonyLinka i kolejnego czujnika.</span><span lang="en">The scanner reads the ColonyLink and the next sensor.</span><span lang="de">Der Scanner liest den ColonyLink und den nächsten Sensor.</span><span lang="fr">Le scanner lit le ColonyLink puis le capteur suivant.</span></li>
-          <li><b>05.6</b><span lang="pl">Pola i kody weryfikacyjne są gotowe — naciśnij <em>Save</em>.</span><span lang="en">The fields and verification codes are ready — tap <em>Save</em>.</span><span lang="de">Felder und Verifizierungscodes sind gefüllt — tippe auf <em>Save</em>.</span><span lang="fr">Les champs et les codes de vérification sont prêts : appuyez sur <em>Save</em>.</span></li>
-          <li><b>05.7</b><span lang="pl">Kolejny ul widnieje w pasiece. Powtórz krok 05 dla każdego następnego ula.</span><span lang="en">The next hive shows in the apiary. Repeat step 05 for every further hive.</span><span lang="de">Der nächste Stock steht am Bienenstand. Wiederhole Schritt 05 für jeden weiteren Stock.</span><span lang="fr">La ruche suivante apparaît au rucher. Répétez l'étape 05 pour chaque ruche supplémentaire.</span></li>
+          <li><b>05.4 – 05.5</b><span lang="pl">Skaner odczytuje kody ColonyLinka i kolejnego czujnika.</span><span lang="en">The scanner reads the ColonyLink and the next sensor.</span><span lang="de">Der Scanner liest den ColonyLink und den nächsten Sensor.</span><span lang="fr">Le scanner lit le ColonyLink puis le capteur suivant.</span><span lang="es">El escáner lee el ColonyLink y el siguiente sensor.</span><span lang="it">Lo scanner legge il ColonyLink e il sensore successivo.</span><span lang="no">Skanneren leser ColonyLink og den neste sensoren.</span><span lang="tr">Tarayıcı, ColonyLink'i ve sıradaki sensörü okur.</span></li>
+          <li><b>05.6</b><span lang="pl">Pola i kody weryfikacyjne są gotowe — naciśnij <em>Save</em>.</span><span lang="en">The fields and verification codes are ready — tap <em>Save</em>.</span><span lang="de">Felder und Verifizierungscodes sind gefüllt — tippe auf <em>Save</em>.</span><span lang="fr">Les champs et les codes de vérification sont prêts : appuyez sur <em>Save</em>.</span><span lang="es">Los campos y los códigos de verificación están listos: pulsa <em>Save</em>.</span><span lang="it">I campi e i codici di verifica sono pronti: tocca <em>Save</em>.</span><span lang="no">Feltene og verifiseringskodene er klare — trykk på <em>Save</em>.</span><span lang="tr">Alanlar ve doğrulama kodları hazır — <em>Save</em> düğmesine dokunun.</span></li>
+          <li><b>05.7</b><span lang="pl">Kolejny ul widnieje w pasiece. Powtórz krok 05 dla każdego następnego ula.</span><span lang="en">The next hive shows in the apiary. Repeat step 05 for every further hive.</span><span lang="de">Der nächste Stock steht am Bienenstand. Wiederhole Schritt 05 für jeden weiteren Stock.</span><span lang="fr">La ruche suivante apparaît au rucher. Répétez l'étape 05 pour chaque ruche supplémentaire.</span><span lang="es">La siguiente colmena aparece en el colmenar. Repite el paso 05 con cada colmena adicional.</span><span lang="it">L'arnia successiva compare nell'apiario. Ripeti il passo 05 per ogni arnia in più.</span><span lang="no">Den neste bikuben vises i bigården. Gjenta trinn 05 for hver nye bikube.</span><span lang="tr">Sıradaki kovan arılıkta görünür. Her yeni kovan için 05. adımı tekrarlayın.</span></li>
         </ul>
       </div>
       <div class="col col--fig">
         <figure class="plate">
           <img src="figs/step05-b.webp" width="1700" height="999" loading="lazy"
                alt="Ekrany 05.5–05.7: skanowanie kodu, zapis formularza i ekran główny z kolejnym ulem.">
-          <figcaption><span>05.5 — 05.7</span><span lang="pl">Aplikacja</span><span lang="en">In the app</span><span lang="de">In der App</span><span lang="fr">Dans l'application</span></figcaption>
+          <figcaption><span>05.5 — 05.7</span><span lang="pl">Aplikacja</span><span lang="en">In the app</span><span lang="de">In der App</span><span lang="fr">Dans l'application</span><span lang="es">En la aplicación</span><span lang="it">Nell'app</span><span lang="no">I appen</span><span lang="tr">Uygulamada</span></figcaption>
         </figure>
       </div>
     </div>
@@ -1203,24 +1270,24 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
     <div class="ghost" aria-hidden="true">06</div>
     <div class="wrap wrap--wide">
       <div class="col col--text">
-        <p class="tag"><span lang="pl">Krok 06</span><span lang="en">Step 06</span><span lang="de">Schritt 06</span><span lang="fr">Étape 06</span></p>
-        <h2><span lang="pl">Uruchom urządzenia i poczekaj na dane</span><span lang="en">Power up and wait for data</span><span lang="de">Geräte in Betrieb nehmen und auf Daten warten</span><span lang="fr">Mettez les appareils en marche et attendez les données</span></h2>
+        <p class="tag"><span lang="pl">Krok 06</span><span lang="en">Step 06</span><span lang="de">Schritt 06</span><span lang="fr">Étape 06</span><span lang="es">Paso 06</span><span lang="it">Passo 06</span><span lang="no">Trinn 06</span><span lang="tr">Adım 06</span></p>
+        <h2><span lang="pl">Uruchom urządzenia i poczekaj na dane</span><span lang="en">Power up and wait for data</span><span lang="de">Geräte in Betrieb nehmen und auf Daten warten</span><span lang="fr">Mettez les appareils en marche et attendez les données</span><span lang="es">Enciende y espera los datos</span><span lang="it">Accendi i dispositivi e attendi i dati</span><span lang="no">Slå på enhetene og vent på data</span><span lang="tr">Cihazları çalıştırın ve veri bekleyin</span></h2>
         <p class="lede">
           <span lang="pl">Urządzenia przychodzą z <b>zamontowanymi bateriami</b> — nic nie wkładasz. Sprawdzasz je tylko <b>przed</b> montażem w pasiece, żeby wiedzieć, że działają, zanim wejdziesz między ule.</span>
-          <span lang="en">The devices arrive with <b>batteries already fitted</b> — nothing to insert. You only check them <b>before</b> mounting, so you know everything works before you go out among the hives.</span><span lang="de">Die Geräte kommen mit <b>bereits eingelegten Batterien</b> — du musst nichts einsetzen. Du prüfst sie nur <b>vor</b> der Montage, damit du weißt, dass alles läuft, bevor du zwischen die Stöcke gehst.</span><span lang="fr">Les appareils sont livrés avec les <b>piles déjà en place</b> : rien à insérer. Vous les vérifiez simplement <b>avant</b> le montage, pour savoir que tout fonctionne avant d'aller entre les ruches.</span>
+          <span lang="en">The devices arrive with <b>batteries already fitted</b> — nothing to insert. You only check them <b>before</b> mounting, so you know everything works before you go out among the hives.</span><span lang="de">Die Geräte kommen mit <b>bereits eingelegten Batterien</b> — du musst nichts einsetzen. Du prüfst sie nur <b>vor</b> der Montage, damit du weißt, dass alles läuft, bevor du zwischen die Stöcke gehst.</span><span lang="fr">Les appareils sont livrés avec les <b>piles déjà en place</b> : rien à insérer. Vous les vérifiez simplement <b>avant</b> le montage, pour savoir que tout fonctionne avant d'aller entre les ruches.</span><span lang="es">Los dispositivos llegan con las <b>pilas ya colocadas</b>: no hay que poner nada. Solo los compruebas <b>antes</b> del montaje, para saber que funcionan antes de meterte entre las colmenas.</span><span lang="it">I dispositivi arrivano con le <b>batterie già installate</b>: non devi inserire nulla. Li controlli soltanto <b>prima</b> del montaggio, così sai che tutto funziona prima di andare tra le arnie.</span><span lang="no">Enhetene leveres med <b>batteriene ferdig montert</b> — du setter ikke inn noe. Du sjekker dem bare <b>før</b> monteringen, slik at du vet at alt virker før du går inn mellom bikubene.</span><span lang="tr">Cihazlar <b>pilleri takılı halde</b> gelir — takmanız gereken bir şey yoktur. Onları yalnızca montajdan <b>önce</b> kontrol edersiniz; böylece kovanların arasına girmeden her şeyin çalıştığını bilirsiniz.</span>
         </p>
         <ul class="micro">
-          <li><b>Hub</b><span lang="pl">Wystaw na słońce — zasila go panel fotowoltaiczny.</span><span lang="en">Put it in the sun — it runs on its photovoltaic panel.</span><span lang="de">In die Sonne stellen — er läuft über sein Solarpanel.</span><span lang="fr">Exposez-le au soleil : il fonctionne grâce à son panneau photovoltaïque.</span></li>
-          <li><b>Scale</b><span lang="pl">Sprawdź, czy zaświeciła się dioda potwierdzająca uruchomienie.</span><span lang="en">Check that the LED confirming start-up lights up.</span><span lang="de">Prüfe, ob die LED für den Start leuchtet.</span><span lang="fr">Vérifiez que le voyant de démarrage s'allume.</span></li>
-          <li><b>VitalSensor</b><span lang="pl">Sprawdź diodę uruchomienia.</span><span lang="en">Check the start-up LED.</span><span lang="de">Prüfe die Start-LED.</span><span lang="fr">Vérifiez le voyant de démarrage.</span></li>
-          <li><b>~2 h</b><span lang="pl">Po dwóch godzinach sprawdź pierwsze odczyty w aplikacji — status <em>Brak danych</em> zmieni się na aktualny.</span><span lang="en">After two hours check the first readings in the app — the <em>No data</em> status turns into a live one.</span><span lang="de">Prüfe nach zwei Stunden die ersten Messwerte in der App — der Status <em>Keine Daten</em> wechselt auf einen aktuellen Wert.</span><span lang="fr">Au bout de deux heures, vérifiez les premières mesures dans l'application : le statut <em>Aucune donnée</em> devient une valeur à jour.</span></li>
+          <li><b>Hub</b><span lang="pl">Wystaw na słońce — zasila go panel fotowoltaiczny.</span><span lang="en">Put it in the sun — it runs on its photovoltaic panel.</span><span lang="de">In die Sonne stellen — er läuft über sein Solarpanel.</span><span lang="fr">Exposez-le au soleil : il fonctionne grâce à son panneau photovoltaïque.</span><span lang="es">Ponlo al sol: se alimenta de su panel fotovoltaico.</span><span lang="it">Mettilo al sole: è alimentato dal suo pannello fotovoltaico.</span><span lang="no">Sett den i sola — den drives av solcellepanelet sitt.</span><span lang="tr">Güneşe çıkarın — fotovoltaik paneliyle çalışır.</span></li>
+          <li><b>Scale</b><span lang="pl">Sprawdź, czy zaświeciła się dioda potwierdzająca uruchomienie.</span><span lang="en">Check that the LED confirming start-up lights up.</span><span lang="de">Prüfe, ob die LED für den Start leuchtet.</span><span lang="fr">Vérifiez que le voyant de démarrage s'allume.</span><span lang="es">Comprueba que se enciende el LED que confirma el arranque.</span><span lang="it">Controlla che si accenda il LED che conferma l'avvio.</span><span lang="no">Sjekk at lysdioden som bekrefter oppstart, lyser.</span><span lang="tr">Çalışmaya başladığını gösteren LED'in yandığını kontrol edin.</span></li>
+          <li><b>VitalSensor</b><span lang="pl">Sprawdź diodę uruchomienia.</span><span lang="en">Check the start-up LED.</span><span lang="de">Prüfe die Start-LED.</span><span lang="fr">Vérifiez le voyant de démarrage.</span><span lang="es">Comprueba el LED de arranque.</span><span lang="it">Controlla il LED di avvio.</span><span lang="no">Sjekk lysdioden for oppstart.</span><span lang="tr">Çalıştırma LED'ini kontrol edin.</span></li>
+          <li><b>~2 h</b><span lang="pl">Po dwóch godzinach sprawdź pierwsze odczyty w aplikacji — status <em>Brak danych</em> zmieni się na aktualny.</span><span lang="en">After two hours check the first readings in the app — the <em>No data</em> status turns into a live one.</span><span lang="de">Prüfe nach zwei Stunden die ersten Messwerte in der App — der Status <em>Keine Daten</em> wechselt auf einen aktuellen Wert.</span><span lang="fr">Au bout de deux heures, vérifiez les premières mesures dans l'application : le statut <em>Aucune donnée</em> devient une valeur à jour.</span><span lang="es">Al cabo de dos horas, comprueba las primeras mediciones en la aplicación: el estado <em>Sin datos</em> pasa a un valor actual.</span><span lang="it">Dopo due ore controlla le prime letture nell'app: lo stato <em>Nessun dato</em> lascia il posto a un valore aggiornato.</span><span lang="no">Sjekk de første avlesningene i appen etter to timer — statusen <em>Ingen data</em> byttes ut med en oppdatert verdi.</span><span lang="tr">İki saat sonra uygulamadaki ilk ölçümleri kontrol edin — <em>Veri yok</em> durumu güncel bir değere döner.</span></li>
         </ul>
       </div>
       <div class="col col--fig">
         <figure class="plate">
           <img src="figs/montaz-systemu-animated.svg" width="205" height="165" loading="lazy"
                alt="Animacja: rozmieszczenie Huba, Scale i VitalSensora w pasiece.">
-          <figcaption><span lang="pl">Zestaw w pasiece</span><span lang="en">The kit in the apiary</span><span lang="de">Das Set am Bienenstand</span><span lang="fr">Le kit au rucher</span><span lang="pl">Rozmieszczenie</span><span lang="en">Placement</span><span lang="de">Anordnung</span><span lang="fr">Disposition</span></figcaption>
+          <figcaption><span lang="pl">Zestaw w pasiece</span><span lang="en">The kit in the apiary</span><span lang="de">Das Set am Bienenstand</span><span lang="fr">Le kit au rucher</span><span lang="es">El kit en el colmenar</span><span lang="it">Il kit nell'apiario</span><span lang="no">Settet i bigården</span><span lang="tr">Arılıktaki set</span><span lang="pl">Rozmieszczenie</span><span lang="en">Placement</span><span lang="de">Anordnung</span><span lang="fr">Disposition</span><span lang="es">Colocación</span><span lang="it">Disposizione</span><span lang="no">Plassering</span><span lang="tr">Yerleşim</span></figcaption>
         </figure>
       </div>
     </div>
@@ -1231,21 +1298,21 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
     <div class="ghost" aria-hidden="true">07</div>
     <div class="wrap wrap--wide">
       <div class="col col--text">
-        <p class="tag"><span lang="pl">Krok 07 · Montaż</span><span lang="en">Step 07 · Mounting</span><span lang="de">Schritt 07 · Montage</span><span lang="fr">Étape 07 · Montage</span></p>
-        <h2><span lang="pl">Zamontuj Hub</span><span lang="en">Mount the Hub</span><span lang="de">Hub montieren</span><span lang="fr">Montez le Hub</span></h2>
+        <p class="tag"><span lang="pl">Krok 07 · Montaż</span><span lang="en">Step 07 · Mounting</span><span lang="de">Schritt 07 · Montage</span><span lang="fr">Étape 07 · Montage</span><span lang="es">Paso 07 · Montaje</span><span lang="it">Passo 07 · Montaggio</span><span lang="no">Trinn 07 · Montering</span><span lang="tr">Adım 07 · Montaj</span></p>
+        <h2><span lang="pl">Zamontuj Hub</span><span lang="en">Mount the Hub</span><span lang="de">Hub montieren</span><span lang="fr">Montez le Hub</span><span lang="es">Monta el Hub</span><span lang="it">Monta l'Hub</span><span lang="no">Monter Hub</span><span lang="tr">Hub'ı monte edin</span></h2>
         <p class="lede">
           <span lang="pl">Hub zasila panel fotowoltaiczny, więc decyduje o nim <b>słońce</b>, nie bliskość ula. Do montażu użyj uchwytu aparatowego z zestawu.</span>
-          <span lang="en">The Hub runs on a photovoltaic panel, so <b>sunlight</b> decides where it goes — not proximity to a hive. Use the camera mount from the kit.</span><span lang="de">Der Hub läuft über ein Solarpanel — entscheidend ist also die <b>Sonne</b>, nicht die Nähe zum Stock. Nutze für die Montage die Kamerahalterung aus dem Set.</span><span lang="fr">Le Hub fonctionne grâce à un panneau photovoltaïque : c'est donc le <b>soleil</b> qui décide de son emplacement, pas la proximité d'une ruche. Utilisez le support photo fourni dans le kit.</span>
+          <span lang="en">The Hub runs on a photovoltaic panel, so <b>sunlight</b> decides where it goes — not proximity to a hive. Use the camera mount from the kit.</span><span lang="de">Der Hub läuft über ein Solarpanel — entscheidend ist also die <b>Sonne</b>, nicht die Nähe zum Stock. Nutze für die Montage die Kamerahalterung aus dem Set.</span><span lang="fr">Le Hub fonctionne grâce à un panneau photovoltaïque : c'est donc le <b>soleil</b> qui décide de son emplacement, pas la proximité d'une ruche. Utilisez le support photo fourni dans le kit.</span><span lang="es">El Hub se alimenta de un panel fotovoltaico, así que su ubicación la decide el <b>sol</b>, no la cercanía a una colmena. Para montarlo, usa el soporte de cámara incluido en el kit.</span><span lang="it">L'Hub è alimentato da un pannello fotovoltaico: a decidere la posizione è quindi il <b>sole</b>, non la vicinanza a un'arnia. Per il montaggio usa il supporto per fotocamera incluso nel kit.</span><span lang="no">Hub drives av et solcellepanel, så det er <b>sola</b> som avgjør plasseringen — ikke nærheten til en bikube. Bruk kamerafestet fra settet til monteringen.</span><span lang="tr">Hub fotovoltaik panelle çalışır; bu yüzden yerini kovana yakınlık değil, <b>güneş ışığı</b> belirler. Montaj için setteki kamera bağlantı aparatını kullanın.</span>
         </p>
         <ul class="micro">
-          <li><b>1–2 m</b><span lang="pl">Nad ziemią — niżej panel może nie zebrać dość światła, zwłaszcza zimą.</span><span lang="en">Above the ground — any lower and the panel may not gather enough light, especially in winter.</span><span lang="de">Über dem Boden — tiefer bekommt das Panel womöglich zu wenig Licht, vor allem im Winter.</span><span lang="fr">Au-dessus du sol : plus bas, le panneau risque de manquer de lumière, surtout en hiver.</span></li>
-          <li><b>30–50°</b><span lang="pl">Nachylenie względem poziomu (min. 20°), panelem w stronę słońca, bez zacienienia.</span><span lang="en">Tilt from horizontal (min. 20°), panel facing the sun, never shaded.</span><span lang="de">Neigung zur Waagerechten (mind. 20°), Panel zur Sonne, nie beschattet.</span><span lang="fr">Inclinaison par rapport à l'horizontale (20° min.), panneau face au soleil, jamais à l'ombre.</span></li>
-          <li><b>≤ 35 m</b><span lang="pl">Od najdalszego ula z VitalSensorem lub Scale — to zasięg BLE.</span><span lang="en">From the furthest hive with a VitalSensor or Scale — that is the BLE range.</span><span lang="de">Vom entferntesten Stock mit VitalSensor oder Scale — das ist die BLE-Reichweite.</span><span lang="fr">Depuis la ruche la plus éloignée équipée d'un VitalSensor ou d'une Scale : c'est la portée BLE.</span></li>
-          <li><b><span lang="pl">Anteny</span><span lang="en">Antennas</span><span lang="de">Antennen</span><span lang="fr">Antennes</span></b><span lang="pl">Skierowane <em>pionowo do góry</em> — BLE i LTE mają różne złącza, nie da się ich pomylić.</span><span lang="en">Pointing <em>vertically upwards</em> — BLE and LTE use different connectors and cannot be swapped.</span><span lang="de"><em>Senkrecht nach oben</em> ausgerichtet — BLE und LTE haben unterschiedliche Anschlüsse und lassen sich nicht vertauschen.</span><span lang="fr">Orientées <em>verticalement vers le haut</em> : BLE et LTE ont des connecteurs différents, impossible de les intervertir.</span></li>
+          <li><b>1–2 m</b><span lang="pl">Nad ziemią — niżej panel może nie zebrać dość światła, zwłaszcza zimą.</span><span lang="en">Above the ground — any lower and the panel may not gather enough light, especially in winter.</span><span lang="de">Über dem Boden — tiefer bekommt das Panel womöglich zu wenig Licht, vor allem im Winter.</span><span lang="fr">Au-dessus du sol : plus bas, le panneau risque de manquer de lumière, surtout en hiver.</span><span lang="es">Sobre el suelo: más abajo, el panel puede no captar luz suficiente, sobre todo en invierno.</span><span lang="it">Da terra: più in basso il pannello rischia di non raccogliere luce a sufficienza, soprattutto d'inverno.</span><span lang="no">Over bakken — lavere kan panelet få for lite lys, særlig om vinteren.</span><span lang="tr">Zeminden yukarıda — daha alçakta panel, özellikle kışın yeterli ışığı toplayamayabilir.</span></li>
+          <li><b>30–50°</b><span lang="pl">Nachylenie względem poziomu (min. 20°), panelem w stronę słońca, bez zacienienia.</span><span lang="en">Tilt from horizontal (min. 20°), panel facing the sun, never shaded.</span><span lang="de">Neigung zur Waagerechten (mind. 20°), Panel zur Sonne, nie beschattet.</span><span lang="fr">Inclinaison par rapport à l'horizontale (20° min.), panneau face au soleil, jamais à l'ombre.</span><span lang="es">Inclinación respecto a la horizontal (mín. 20°), panel orientado al sol, nunca a la sombra.</span><span lang="it">Inclinazione rispetto all'orizzontale (min. 20°), pannello verso il sole, mai in ombra.</span><span lang="no">Helning fra vannrett (min. 20°), panelet mot sola, aldri i skygge.</span><span lang="tr">Yataya göre eğim (en az 20°), panel güneşe dönük, asla gölgede değil.</span></li>
+          <li><b>≤ 35 m</b><span lang="pl">Od najdalszego ula z VitalSensorem lub Scale — to zasięg BLE.</span><span lang="en">From the furthest hive with a VitalSensor or Scale — that is the BLE range.</span><span lang="de">Vom entferntesten Stock mit VitalSensor oder Scale — das ist die BLE-Reichweite.</span><span lang="fr">Depuis la ruche la plus éloignée équipée d'un VitalSensor ou d'une Scale : c'est la portée BLE.</span><span lang="es">Desde la colmena más lejana con VitalSensor o Scale: es el alcance BLE.</span><span lang="it">Dall'arnia più lontana con VitalSensor o Scale: è questa la portata BLE.</span><span lang="no">Fra den fjerneste bikuben med VitalSensor eller Scale — det er BLE-rekkevidden.</span><span lang="tr">VitalSensor veya Scale bulunan en uzak kovandan — BLE menzili budur.</span></li>
+          <li><b><span lang="pl">Anteny</span><span lang="en">Antennas</span><span lang="de">Antennen</span><span lang="fr">Antennes</span><span lang="es">Antenas</span><span lang="it">Antenne</span><span lang="no">Antenner</span><span lang="tr">Antenler</span></b><span lang="pl">Skierowane <em>pionowo do góry</em> — BLE i LTE mają różne złącza, nie da się ich pomylić.</span><span lang="en">Pointing <em>vertically upwards</em> — BLE and LTE use different connectors and cannot be swapped.</span><span lang="de"><em>Senkrecht nach oben</em> ausgerichtet — BLE und LTE haben unterschiedliche Anschlüsse und lassen sich nicht vertauschen.</span><span lang="fr">Orientées <em>verticalement vers le haut</em> : BLE et LTE ont des connecteurs différents, impossible de les intervertir.</span><span lang="es">Orientadas <em>verticalmente hacia arriba</em>: BLE y LTE usan conectores distintos, no se pueden confundir.</span><span lang="it">Orientate <em>verticalmente verso l'alto</em>: BLE e LTE hanno connettori diversi, non si possono scambiare.</span><span lang="no">Rettet <em>loddrett oppover</em> — BLE og LTE har ulike kontakter og kan ikke forveksles.</span><span lang="tr"><em>Dikey olarak yukarı</em> bakacak şekilde — BLE ve LTE farklı konektörler kullanır, karıştırılamaz.</span></li>
         </ul>
         <p class="note">
           <span lang="pl"><b>Nie montuj Huba do metalu</b> — zakłóca BLE i LTE. Słupek, drzewo lub drewniana konstrukcja są w porządku.</span>
-          <span lang="en"><b>Do not mount the Hub on metal</b> — it disturbs BLE and LTE. A post, a tree or a wooden structure is fine.</span><span lang="de"><b>Montiere den Hub nicht auf Metall</b> — es stört BLE und LTE. Ein Pfosten, ein Baum oder eine Holzkonstruktion sind in Ordnung.</span><span lang="fr"><b>Ne montez pas le Hub sur du métal</b> : cela perturbe le BLE et la LTE. Un piquet, un arbre ou une structure en bois conviennent.</span>
+          <span lang="en"><b>Do not mount the Hub on metal</b> — it disturbs BLE and LTE. A post, a tree or a wooden structure is fine.</span><span lang="de"><b>Montiere den Hub nicht auf Metall</b> — es stört BLE und LTE. Ein Pfosten, ein Baum oder eine Holzkonstruktion sind in Ordnung.</span><span lang="fr"><b>Ne montez pas le Hub sur du métal</b> : cela perturbe le BLE et la LTE. Un piquet, un arbre ou une structure en bois conviennent.</span><span lang="es"><b>No montes el Hub sobre metal</b>: interfiere con BLE y LTE. Un poste, un árbol o una estructura de madera valen.</span><span lang="it"><b>Non montare l'Hub sul metallo</b>: disturba BLE e LTE. Un palo, un albero o una struttura in legno vanno bene.</span><span lang="no"><b>Ikke monter Hub på metall</b> — det forstyrrer BLE og LTE. En stolpe, et tre eller en trekonstruksjon går fint.</span><span lang="tr"><b>Hub'ı metale monte etmeyin</b> — metal, BLE ve LTE sinyalini bozar. Direk, ağaç veya ahşap bir yapı uygundur.</span>
         </p>
       </div>
       <div class="col col--fig">
@@ -1253,12 +1320,12 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
           <figure class="plate">
             <img src="figs/pdf-hub-mount.webp" width="1700" height="1235" loading="lazy"
                  alt="Rysunek montażu Apisense Hub i podłączenia zasilania.">
-            <figcaption><span>Hub</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span><span lang="de">Referenzzeichnung</span><span lang="fr">Schéma de référence</span></figcaption>
+            <figcaption><span>Hub</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span><span lang="de">Referenzzeichnung</span><span lang="fr">Schéma de référence</span><span lang="es">Esquema de referencia</span><span lang="it">Disegno di riferimento</span><span lang="no">Referansetegning</span><span lang="tr">Örnek çizim</span></figcaption>
           </figure>
           <figure class="plate">
             <img src="figs/photo-hub.webp" width="1400" height="1050" loading="lazy"
                  alt="Prawidłowo zamontowany Apisense Hub: panel nachylony ku słońcu, obie anteny pionowo w górę.">
-            <figcaption><span lang="pl">Prawidłowy montaż</span><span lang="en">Correct mounting</span><span lang="de">Korrekte Montage</span><span lang="fr">Montage correct</span><span lang="pl">Zdjęcie</span><span lang="en">Photo</span><span lang="de">Foto</span><span lang="fr">Photo</span></figcaption>
+            <figcaption><span lang="pl">Prawidłowy montaż</span><span lang="en">Correct mounting</span><span lang="de">Korrekte Montage</span><span lang="fr">Montage correct</span><span lang="es">Montaje correcto</span><span lang="it">Montaggio corretto</span><span lang="no">Riktig montering</span><span lang="tr">Doğru montaj</span><span lang="pl">Zdjęcie</span><span lang="en">Photo</span><span lang="de">Foto</span><span lang="fr">Photo</span><span lang="es">Foto</span><span lang="it">Foto</span><span lang="no">Bilde</span><span lang="tr">Fotoğraf</span></figcaption>
           </figure>
         </div>
       </div>
@@ -1270,17 +1337,17 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
     <div class="ghost" aria-hidden="true">07</div>
     <div class="wrap wrap--wide">
       <div class="col col--text">
-        <p class="tag"><span lang="pl">Krok 07 · Montaż</span><span lang="en">Step 07 · Mounting</span><span lang="de">Schritt 07 · Montage</span><span lang="fr">Étape 07 · Montage</span></p>
-        <h2><span lang="pl">Ustaw Scale pod ulem</span><span lang="en">Place the Scale under the hive</span><span lang="de">Scale unter den Stock setzen</span><span lang="fr">Placez la Scale sous la ruche</span></h2>
+        <p class="tag"><span lang="pl">Krok 07 · Montaż</span><span lang="en">Step 07 · Mounting</span><span lang="de">Schritt 07 · Montage</span><span lang="fr">Étape 07 · Montage</span><span lang="es">Paso 07 · Montaje</span><span lang="it">Passo 07 · Montaggio</span><span lang="no">Trinn 07 · Montering</span><span lang="tr">Adım 07 · Montaj</span></p>
+        <h2><span lang="pl">Ustaw Scale pod ulem</span><span lang="en">Place the Scale under the hive</span><span lang="de">Scale unter den Stock setzen</span><span lang="fr">Placez la Scale sous la ruche</span><span lang="es">Coloca el Scale bajo la colmena</span><span lang="it">Posiziona la Scale sotto l'arnia</span><span lang="no">Plasser Scale under bikuben</span><span lang="tr">Scale'i kovanın altına yerleştirin</span></h2>
         <p class="lede">
           <span lang="pl">Scale i drewniana kantówka tworzą jedną konstrukcję nośną. Wypoziomowanie i orientacja są <b>kluczowe dla dokładności pomiaru</b>.</span>
-          <span lang="en">The Scale and the wooden spacer bar form one supporting structure. Levelling and orientation are <b>critical for measurement accuracy</b>.</span><span lang="de">Scale und Kantholz bilden zusammen eine tragende Konstruktion. Waagerechte Ausrichtung und Orientierung sind <b>entscheidend für die Messgenauigkeit</b>.</span><span lang="fr">La Scale et le tasseau en bois forment une seule structure porteuse. La mise à niveau et l'orientation sont <b>déterminantes pour la précision de la mesure</b>.</span>
+          <span lang="en">The Scale and the wooden spacer bar form one supporting structure. Levelling and orientation are <b>critical for measurement accuracy</b>.</span><span lang="de">Scale und Kantholz bilden zusammen eine tragende Konstruktion. Waagerechte Ausrichtung und Orientierung sind <b>entscheidend für die Messgenauigkeit</b>.</span><span lang="fr">La Scale et le tasseau en bois forment une seule structure porteuse. La mise à niveau et l'orientation sont <b>déterminantes pour la précision de la mesure</b>.</span><span lang="es">El Scale y el listón de madera forman una única estructura de apoyo. La nivelación y la orientación son <b>decisivas para la precisión de la medición</b>.</span><span lang="it">La Scale e il listello di legno formano un'unica struttura portante. La messa in bolla e l'orientamento sono <b>determinanti per la precisione della misura</b>.</span><span lang="no">Scale og trelekten utgjør én bærende konstruksjon. Vatring og retning er <b>avgjørende for målenøyaktigheten</b>.</span><span lang="tr">Scale ve ahşap destek çıtası birlikte tek bir taşıyıcı yapı oluşturur. Yatay dengeleme ve yönlendirme <b>ölçüm doğruluğu için kritiktir</b>.</span>
         </p>
         <ul class="micro">
-          <li><b>01</b><span lang="pl">Ustaw uruchomioną Scale na stabilnym, równym podłożu, <em>prostopadle do ramek</em> w ulu.</span><span lang="en">Put the powered Scale on firm, level ground, <em>perpendicular to the frames</em> in the hive.</span><span lang="de">Stelle die eingeschaltete Scale auf festen, ebenen Untergrund, <em>quer zu den Rähmchen</em> im Stock.</span><span lang="fr">Posez la Scale allumée sur un sol stable et plat, <em>perpendiculairement aux cadres</em> de la ruche.</span></li>
-          <li><b>02</b><span lang="pl">Ułóż drewnianą kantówkę równolegle do Scale, w takiej odległości, żeby ciężar ula rozłożył się równomiernie.</span><span lang="en">Lay the wooden bar parallel to the Scale, spaced so the hive weight is spread evenly.</span><span lang="de">Lege das Kantholz parallel zur Scale, so weit entfernt, dass sich das Gewicht des Stocks gleichmäßig verteilt.</span><span lang="fr">Disposez le tasseau parallèlement à la Scale, à une distance telle que le poids de la ruche se répartisse uniformément.</span></li>
-          <li><b>03</b><span lang="pl">Postaw ul na konstrukcji i sprawdź, że obciążenie nadal rozkłada się równo.</span><span lang="en">Set the hive on the structure and check the load is still spread evenly.</span><span lang="de">Setze den Stock auf die Konstruktion und prüfe, ob die Last weiterhin gleichmäßig verteilt ist.</span><span lang="fr">Posez la ruche sur la structure et vérifiez que la charge reste bien répartie.</span></li>
-          <li><b>≤ 35 m</b><span lang="pl">Od Huba, bez przeszkód tłumiących sygnał BLE.</span><span lang="en">From the Hub, with nothing blocking the BLE signal.</span><span lang="de">Vom Hub, ohne Hindernisse, die das BLE-Signal dämpfen.</span><span lang="fr">Depuis le Hub, sans obstacle atténuant le signal BLE.</span></li>
+          <li><b>01</b><span lang="pl">Ustaw uruchomioną Scale na stabilnym, równym podłożu, <em>prostopadle do ramek</em> w ulu.</span><span lang="en">Put the powered Scale on firm, level ground, <em>perpendicular to the frames</em> in the hive.</span><span lang="de">Stelle die eingeschaltete Scale auf festen, ebenen Untergrund, <em>quer zu den Rähmchen</em> im Stock.</span><span lang="fr">Posez la Scale allumée sur un sol stable et plat, <em>perpendiculairement aux cadres</em> de la ruche.</span><span lang="es">Coloca el Scale encendido sobre un suelo firme y nivelado, <em>perpendicular a los cuadros</em> de la colmena.</span><span lang="it">Appoggia la Scale accesa su un terreno stabile e in piano, <em>perpendicolarmente ai telaini</em> dell'arnia.</span><span lang="no">Plasser den påslåtte Scale på et fast og jevnt underlag, <em>på tvers av rammene</em> i bikuben.</span><span lang="tr">Çalışır durumdaki Scale'i sağlam ve düz bir zemine, kovandaki <em>çerçevelere dik</em> olacak şekilde yerleştirin.</span></li>
+          <li><b>02</b><span lang="pl">Ułóż drewnianą kantówkę równolegle do Scale, w takiej odległości, żeby ciężar ula rozłożył się równomiernie.</span><span lang="en">Lay the wooden bar parallel to the Scale, spaced so the hive weight is spread evenly.</span><span lang="de">Lege das Kantholz parallel zur Scale, so weit entfernt, dass sich das Gewicht des Stocks gleichmäßig verteilt.</span><span lang="fr">Disposez le tasseau parallèlement à la Scale, à une distance telle que le poids de la ruche se répartisse uniformément.</span><span lang="es">Coloca el listón de madera paralelo al Scale, a una distancia tal que el peso de la colmena se reparta de forma uniforme.</span><span lang="it">Disponi il listello di legno parallelo alla Scale, a una distanza tale che il peso dell'arnia si distribuisca uniformemente.</span><span lang="no">Legg trelekten parallelt med Scale, med så stor avstand at vekten av bikuben fordeles jevnt.</span><span lang="tr">Ahşap çıtayı Scale'e paralel olarak, kovanın ağırlığı eşit dağılacak bir mesafede yerleştirin.</span></li>
+          <li><b>03</b><span lang="pl">Postaw ul na konstrukcji i sprawdź, że obciążenie nadal rozkłada się równo.</span><span lang="en">Set the hive on the structure and check the load is still spread evenly.</span><span lang="de">Setze den Stock auf die Konstruktion und prüfe, ob die Last weiterhin gleichmäßig verteilt ist.</span><span lang="fr">Posez la ruche sur la structure et vérifiez que la charge reste bien répartie.</span><span lang="es">Pon la colmena sobre la estructura y comprueba que la carga sigue repartida uniformemente.</span><span lang="it">Appoggia l'arnia sulla struttura e verifica che il carico resti distribuito in modo uniforme.</span><span lang="no">Sett bikuben på konstruksjonen og kontroller at belastningen fortsatt fordeler seg jevnt.</span><span lang="tr">Kovanı bu yapının üzerine koyun ve yükün hâlâ eşit dağıldığını kontrol edin.</span></li>
+          <li><b>≤ 35 m</b><span lang="pl">Od Huba, bez przeszkód tłumiących sygnał BLE.</span><span lang="en">From the Hub, with nothing blocking the BLE signal.</span><span lang="de">Vom Hub, ohne Hindernisse, die das BLE-Signal dämpfen.</span><span lang="fr">Depuis le Hub, sans obstacle atténuant le signal BLE.</span><span lang="es">Desde el Hub, sin obstáculos que atenúen la señal BLE.</span><span lang="it">Dall'Hub, senza ostacoli che attenuino il segnale BLE.</span><span lang="no">Fra Hub, uten hindringer som demper BLE-signalet.</span><span lang="tr">Hub'dan, BLE sinyalini engelleyen bir şey olmadan.</span></li>
         </ul>
       </div>
       <div class="col col--fig">
@@ -1288,12 +1355,12 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
           <figure class="plate">
             <img src="figs/pdf-mount-scale.webp" width="1700" height="622" loading="lazy"
                  alt="Rysunek ustawienia belki pomiarowej i listwy pod ulem.">
-            <figcaption><span>Scale</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span><span lang="de">Referenzzeichnung</span><span lang="fr">Schéma de référence</span></figcaption>
+            <figcaption><span>Scale</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span><span lang="de">Referenzzeichnung</span><span lang="fr">Schéma de référence</span><span lang="es">Esquema de referencia</span><span lang="it">Disegno di riferimento</span><span lang="no">Referansetegning</span><span lang="tr">Örnek çizim</span></figcaption>
           </figure>
           <figure class="plate">
             <img src="figs/photo-scale.webp" width="1400" height="1050" loading="lazy"
                  alt="Ul stojący na Apisense Scale i drewnianej kantówce.">
-            <figcaption><span lang="pl">Scale i kantówka</span><span lang="en">Scale &amp; spacer bar</span><span lang="de">Scale und Kantholz</span><span lang="fr">Scale et tasseau</span><span lang="pl">Zdjęcie</span><span lang="en">Photo</span><span lang="de">Foto</span><span lang="fr">Photo</span></figcaption>
+            <figcaption><span lang="pl">Scale i kantówka</span><span lang="en">Scale &amp; spacer bar</span><span lang="de">Scale und Kantholz</span><span lang="fr">Scale et tasseau</span><span lang="es">Scale y listón</span><span lang="it">Scale e listello</span><span lang="no">Scale og trelekt</span><span lang="tr">Scale ve destek çıtası</span><span lang="pl">Zdjęcie</span><span lang="en">Photo</span><span lang="de">Foto</span><span lang="fr">Photo</span><span lang="es">Foto</span><span lang="it">Foto</span><span lang="no">Bilde</span><span lang="tr">Fotoğraf</span></figcaption>
           </figure>
         </div>
       </div>
@@ -1305,17 +1372,17 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
     <div class="ghost" aria-hidden="true">07</div>
     <div class="wrap wrap--wide">
       <div class="col col--text">
-        <p class="tag"><span lang="pl">Krok 07 · Montaż</span><span lang="en">Step 07 · Mounting</span><span lang="de">Schritt 07 · Montage</span><span lang="fr">Étape 07 · Montage</span></p>
-        <h2><span lang="pl">Zamontuj VitalSensor w ulu</span><span lang="en">Mount the VitalSensor in the hive</span><span lang="de">VitalSensor im Stock montieren</span><span lang="fr">Montez le VitalSensor dans la ruche</span></h2>
+        <p class="tag"><span lang="pl">Krok 07 · Montaż</span><span lang="en">Step 07 · Mounting</span><span lang="de">Schritt 07 · Montage</span><span lang="fr">Étape 07 · Montage</span><span lang="es">Paso 07 · Montaje</span><span lang="it">Passo 07 · Montaggio</span><span lang="no">Trinn 07 · Montering</span><span lang="tr">Adım 07 · Montaj</span></p>
+        <h2><span lang="pl">Zamontuj VitalSensor w ulu</span><span lang="en">Mount the VitalSensor in the hive</span><span lang="de">VitalSensor im Stock montieren</span><span lang="fr">Montez le VitalSensor dans la ruche</span><span lang="es">Monta el VitalSensor en la colmena</span><span lang="it">Monta il VitalSensor nell'arnia</span><span lang="no">Monter VitalSensor i bikuben</span><span lang="tr">VitalSensor'ü kovana monte edin</span></h2>
         <p class="lede">
           <span lang="pl">Czujnik montujesz bezinwazyjnie na ramce — bez trwałych zmian w ulu i bez zakłócania pracy rodziny.</span>
-          <span lang="en">The sensor mounts non-invasively on a frame — no permanent changes to the hive and no disturbance to the colony.</span><span lang="de">Den Sensor bringst du schonend am Rähmchen an — ohne dauerhafte Eingriffe am Stock und ohne das Volk zu stören.</span><span lang="fr">Le capteur se fixe sur un cadre sans intervention : aucune modification permanente de la ruche et aucune perturbation de la colonie.</span>
+          <span lang="en">The sensor mounts non-invasively on a frame — no permanent changes to the hive and no disturbance to the colony.</span><span lang="de">Den Sensor bringst du schonend am Rähmchen an — ohne dauerhafte Eingriffe am Stock und ohne das Volk zu stören.</span><span lang="fr">Le capteur se fixe sur un cadre sans intervention : aucune modification permanente de la ruche et aucune perturbation de la colonie.</span><span lang="es">El sensor se monta en un cuadro sin ser invasivo: sin cambios permanentes en la colmena y sin molestar a la colonia.</span><span lang="it">Il sensore si fissa al telaino in modo non invasivo: nessuna modifica permanente all'arnia e nessun disturbo per la colonia.</span><span lang="no">Sensoren festes skånsomt på en ramme — uten varige endringer i bikuben og uten å forstyrre kolonien.</span><span lang="tr">Sensör çerçeveye müdahalesiz şekilde takılır — kovanda kalıcı bir değişiklik olmaz, koloni de rahatsız edilmez.</span>
         </p>
         <ul class="micro">
-          <li><b>01</b><span lang="pl">Osadź uruchomiony VitalSensor na <em>centralnej ramce</em> (w kłębie), stabilnie, tak żeby się nie przemieszczał.</span><span lang="en">Fix the powered VitalSensor to the <em>central frame</em> (in the cluster), firmly enough that it cannot shift.</span><span lang="de">Befestige den eingeschalteten VitalSensor am <em>mittleren Rähmchen</em> (im Bienensitz), fest genug, dass er nicht verrutscht.</span><span lang="fr">Fixez le VitalSensor allumé sur le <em>cadre central</em> (dans la grappe), assez fermement pour qu'il ne bouge pas.</span></li>
-          <li><b>02</b><span lang="pl">Zamontuj go <em>pionowo</em> — naklejka z kodem QR ma być widoczna od góry po włożeniu ramki.</span><span lang="en">Mount it <em>vertically</em> — the QR sticker must stay visible from above once the frame is in.</span><span lang="de">Montiere ihn <em>senkrecht</em> — der QR-Aufkleber muss nach dem Einhängen von oben sichtbar bleiben.</span><span lang="fr">Montez-le <em>verticalement</em> : l'autocollant QR doit rester visible du dessus une fois le cadre en place.</span></li>
-          <li><b>03</b><span lang="pl">Włóż ramkę w środkową część korpusu gniazdowego, tak żeby nie zakłócać wentylacji.</span><span lang="en">Slide the frame into the middle of the brood body, without obstructing ventilation.</span><span lang="de">Hänge das Rähmchen in die Mitte des Brutraums, ohne die Belüftung zu behindern.</span><span lang="fr">Insérez le cadre au milieu du corps de couvain, sans gêner la ventilation.</span></li>
-          <li><b>≤ 35 m</b><span lang="pl">Od Huba — zasięg BLE.</span><span lang="en">From the Hub — BLE range.</span><span lang="de">Vom Hub — BLE-Reichweite.</span><span lang="fr">Depuis le Hub : portée BLE.</span></li>
+          <li><b>01</b><span lang="pl">Osadź uruchomiony VitalSensor na <em>centralnej ramce</em> (w kłębie), stabilnie, tak żeby się nie przemieszczał.</span><span lang="en">Fix the powered VitalSensor to the <em>central frame</em> (in the cluster), firmly enough that it cannot shift.</span><span lang="de">Befestige den eingeschalteten VitalSensor am <em>mittleren Rähmchen</em> (im Bienensitz), fest genug, dass er nicht verrutscht.</span><span lang="fr">Fixez le VitalSensor allumé sur le <em>cadre central</em> (dans la grappe), assez fermement pour qu'il ne bouge pas.</span><span lang="es">Fija el VitalSensor encendido en el <em>cuadro central</em> (en la piña), con firmeza suficiente para que no se mueva.</span><span lang="it">Fissa il VitalSensor acceso al <em>telaino centrale</em> (nel glomere), in modo stabile perché non si sposti.</span><span lang="no">Fest den påslåtte VitalSensor på <em>midtrammen</em> (i klasen), så stødig at den ikke kan forskyve seg.</span><span lang="tr">Çalışır durumdaki VitalSensor'ü <em>merkezi çerçeveye</em> (arı salkımının içine), yerinden oynamayacak kadar sağlam biçimde takın.</span></li>
+          <li><b>02</b><span lang="pl">Zamontuj go <em>pionowo</em> — naklejka z kodem QR ma być widoczna od góry po włożeniu ramki.</span><span lang="en">Mount it <em>vertically</em> — the QR sticker must stay visible from above once the frame is in.</span><span lang="de">Montiere ihn <em>senkrecht</em> — der QR-Aufkleber muss nach dem Einhängen von oben sichtbar bleiben.</span><span lang="fr">Montez-le <em>verticalement</em> : l'autocollant QR doit rester visible du dessus une fois le cadre en place.</span><span lang="es">Móntalo <em>verticalmente</em>: la pegatina con el código QR debe quedar visible desde arriba una vez colocado el cuadro.</span><span lang="it">Montalo <em>verticalmente</em>: dopo aver inserito il telaino l'adesivo con il codice QR deve restare visibile dall'alto.</span><span lang="no">Monter den <em>loddrett</em> — klistremerket med QR-koden skal være synlig ovenfra når rammen er satt inn.</span><span lang="tr">Sensörü <em>dikey</em> olarak takın — çerçeve yerleştirildikten sonra QR etiketi yukarıdan görünür kalmalıdır.</span></li>
+          <li><b>03</b><span lang="pl">Włóż ramkę w środkową część korpusu gniazdowego, tak żeby nie zakłócać wentylacji.</span><span lang="en">Slide the frame into the middle of the brood body, without obstructing ventilation.</span><span lang="de">Hänge das Rähmchen in die Mitte des Brutraums, ohne die Belüftung zu behindern.</span><span lang="fr">Insérez le cadre au milieu du corps de couvain, sans gêner la ventilation.</span><span lang="es">Introduce el cuadro en la parte central de la cámara de cría, sin obstruir la ventilación.</span><span lang="it">Inserisci il telaino al centro del nido, senza ostacolare la ventilazione.</span><span lang="no">Skyv rammen inn midt i yngelrommet, uten å hindre ventilasjonen.</span><span lang="tr">Çerçeveyi, havalandırmayı engellemeden kuluçka katının ortasına yerleştirin.</span></li>
+          <li><b>≤ 35 m</b><span lang="pl">Od Huba — zasięg BLE.</span><span lang="en">From the Hub — BLE range.</span><span lang="de">Vom Hub — BLE-Reichweite.</span><span lang="fr">Depuis le Hub : portée BLE.</span><span lang="es">Desde el Hub: alcance BLE.</span><span lang="it">Dall'Hub: portata BLE.</span><span lang="no">Fra Hub — BLE-rekkevidde.</span><span lang="tr">Hub'dan — BLE menzili.</span></li>
         </ul>
       </div>
       <div class="col col--fig">
@@ -1323,12 +1390,12 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
           <figure class="plate">
             <img src="figs/pdf-mount-vitalsensor.webp" width="1700" height="995" loading="lazy"
                  alt="Rysunek montażu VitalSensora na ramce pszczelej.">
-            <figcaption><span>VitalSensor</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span><span lang="de">Referenzzeichnung</span><span lang="fr">Schéma de référence</span></figcaption>
+            <figcaption><span>VitalSensor</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span><span lang="de">Referenzzeichnung</span><span lang="fr">Schéma de référence</span><span lang="es">Esquema de referencia</span><span lang="it">Disegno di riferimento</span><span lang="no">Referansetegning</span><span lang="tr">Örnek çizim</span></figcaption>
           </figure>
           <figure class="plate">
             <img src="figs/kt-frame-sensor.webp" width="1400" height="952" loading="lazy"
                  alt="VitalSensor zawieszony pionowo na górnej beleczce ramki pszczelej.">
-            <figcaption><span lang="pl">Czujnik na ramce</span><span lang="en">Sensor on the frame</span><span lang="de">Sensor am Rähmchen</span><span lang="fr">Capteur sur le cadre</span><span lang="pl">Zdjęcie</span><span lang="en">Photo</span><span lang="de">Foto</span><span lang="fr">Photo</span></figcaption>
+            <figcaption><span lang="pl">Czujnik na ramce</span><span lang="en">Sensor on the frame</span><span lang="de">Sensor am Rähmchen</span><span lang="fr">Capteur sur le cadre</span><span lang="es">Sensor en el cuadro</span><span lang="it">Sensore sul telaino</span><span lang="no">Sensor på rammen</span><span lang="tr">Çerçevedeki sensör</span><span lang="pl">Zdjęcie</span><span lang="en">Photo</span><span lang="de">Foto</span><span lang="fr">Photo</span><span lang="es">Foto</span><span lang="it">Foto</span><span lang="no">Bilde</span><span lang="tr">Fotoğraf</span></figcaption>
           </figure>
         </div>
       </div>
@@ -1340,24 +1407,24 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
     <div class="ghost" aria-hidden="true">07</div>
     <div class="wrap wrap--wide">
       <div class="col col--text">
-        <p class="tag"><span lang="pl">Krok 07 · Montaż</span><span lang="en">Step 07 · Mounting</span><span lang="de">Schritt 07 · Montage</span><span lang="fr">Étape 07 · Montage</span></p>
-        <h2><span lang="pl">Umieść ColonyLink na ulu</span><span lang="en">Attach the ColonyLink</span><span lang="de">ColonyLink am Stock anbringen</span><span lang="fr">Posez le ColonyLink sur la ruche</span></h2>
+        <p class="tag"><span lang="pl">Krok 07 · Montaż</span><span lang="en">Step 07 · Mounting</span><span lang="de">Schritt 07 · Montage</span><span lang="fr">Étape 07 · Montage</span><span lang="es">Paso 07 · Montaje</span><span lang="it">Passo 07 · Montaggio</span><span lang="no">Trinn 07 · Montering</span><span lang="tr">Adım 07 · Montaj</span></p>
+        <h2><span lang="pl">Umieść ColonyLink na ulu</span><span lang="en">Attach the ColonyLink</span><span lang="de">ColonyLink am Stock anbringen</span><span lang="fr">Posez le ColonyLink sur la ruche</span><span lang="es">Coloca el ColonyLink en la colmena</span><span lang="it">Applica il ColonyLink sull'arnia</span><span lang="no">Fest ColonyLink på bikuben</span><span lang="tr">ColonyLink'i kovana yapıştırın</span></h2>
         <p class="lede">
           <span lang="pl">ColonyLink to <b>wodoodporna naklejka</b> z wbudowanym tagiem NFC i nadrukowanym kodem QR. Zeskanowanie kodu albo przyłożenie telefonu otwiera dane właściwego ula — też w rękawicach i w pełnym słońcu.</span>
-          <span lang="en">The ColonyLink is a <b>waterproof sticker</b> with a built-in NFC tag and a printed QR code. Scanning it or tapping your phone against it opens the right hive — even with gloves on and in full sun.</span><span lang="de">Der ColonyLink ist ein <b>wasserfester Aufkleber</b> mit integriertem NFC-Tag und aufgedrucktem QR-Code. Code scannen oder Handy anhalten öffnet die Daten des richtigen Stocks — auch mit Handschuhen und in praller Sonne.</span><span lang="fr">Le ColonyLink est un <b>autocollant étanche</b> avec puce NFC intégrée et QR code imprimé. Scanner le code ou approcher le téléphone ouvre les données de la bonne ruche, même avec des gants et en plein soleil.</span>
+          <span lang="en">The ColonyLink is a <b>waterproof sticker</b> with a built-in NFC tag and a printed QR code. Scanning it or tapping your phone against it opens the right hive — even with gloves on and in full sun.</span><span lang="de">Der ColonyLink ist ein <b>wasserfester Aufkleber</b> mit integriertem NFC-Tag und aufgedrucktem QR-Code. Code scannen oder Handy anhalten öffnet die Daten des richtigen Stocks — auch mit Handschuhen und in praller Sonne.</span><span lang="fr">Le ColonyLink est un <b>autocollant étanche</b> avec puce NFC intégrée et QR code imprimé. Scanner le code ou approcher le téléphone ouvre les données de la bonne ruche, même avec des gants et en plein soleil.</span><span lang="es">El ColonyLink es una <b>pegatina impermeable</b> con etiqueta NFC integrada y código QR impreso. Escanear el código o acercar el teléfono abre los datos de la colmena correcta, incluso con guantes y a pleno sol.</span><span lang="it">Il ColonyLink è un <b>adesivo impermeabile</b> con tag NFC integrato e codice QR stampato. Scansionare il codice o avvicinare il telefono apre i dati dell'arnia giusta, anche con i guanti e in pieno sole.</span><span lang="no">ColonyLink er et <b>vanntett klistremerke</b> med innebygd NFC-brikke og påtrykt QR-kode. Skanner du koden eller holder telefonen inntil, åpnes dataene for riktig bikube — også med hansker på og i sterk sol.</span><span lang="tr">ColonyLink, gömülü NFC etiketi ve basılı QR kodu olan <b>suya dayanıklı bir çıkartmadır</b>. Kodu taramak veya telefonu yaklaştırmak doğru kovanın verilerini açar — eldivenle ve tam güneş altında bile.</span>
         </p>
         <ul class="micro">
-          <li><b>01</b><span lang="pl">Wybierz na froncie ula miejsce <em>płaskie, czyste i suche</em>, dobrze widoczne podczas pracy.</span><span lang="en">Pick a spot on the hive front that is <em>flat, clean and dry</em>, and stays easy to see while you work.</span><span lang="de">Wähle an der Stockvorderseite eine <em>ebene, saubere und trockene</em> Stelle, die bei der Arbeit gut sichtbar bleibt.</span><span lang="fr">Choisissez sur la façade de la ruche un endroit <em>plat, propre et sec</em>, bien visible pendant le travail.</span></li>
-          <li><b>02</b><span lang="pl">Naklej ColonyLink i dociśnij go na całej powierzchni, żeby taśma montażowa dobrze przylegała.</span><span lang="en">Stick the ColonyLink on and press it down over its whole surface so the adhesive bonds properly.</span><span lang="de">Klebe den ColonyLink auf und drücke ihn ganzflächig an, damit das Klebeband gut haftet.</span><span lang="fr">Collez le ColonyLink et pressez-le sur toute sa surface pour que l'adhésif tienne bien.</span></li>
-          <li><b>03</b><span lang="pl">Sprawdź, czy kod QR jest dostępny bez otwierania ula.</span><span lang="en">Check that the QR code is reachable without opening the hive.</span><span lang="de">Prüfe, ob der QR-Code erreichbar ist, ohne den Stock zu öffnen.</span><span lang="fr">Vérifiez que le QR code est accessible sans ouvrir la ruche.</span></li>
-          <li><b><span lang="pl">Bez baterii</span><span lang="en">No battery</span><span lang="de">Ohne Batterie</span><span lang="fr">Sans pile</span></b><span lang="pl">ColonyLink nie wymaga zasilania, konfiguracji ani aktualizacji.</span><span lang="en">The ColonyLink needs no power, no setup and no updates.</span><span lang="de">Der ColonyLink braucht weder Strom noch Einrichtung noch Updates.</span><span lang="fr">Le ColonyLink ne nécessite ni alimentation, ni configuration, ni mise à jour.</span></li>
+          <li><b>01</b><span lang="pl">Wybierz na froncie ula miejsce <em>płaskie, czyste i suche</em>, dobrze widoczne podczas pracy.</span><span lang="en">Pick a spot on the hive front that is <em>flat, clean and dry</em>, and stays easy to see while you work.</span><span lang="de">Wähle an der Stockvorderseite eine <em>ebene, saubere und trockene</em> Stelle, die bei der Arbeit gut sichtbar bleibt.</span><span lang="fr">Choisissez sur la façade de la ruche un endroit <em>plat, propre et sec</em>, bien visible pendant le travail.</span><span lang="es">Elige en el frente de la colmena un punto <em>plano, limpio y seco</em>, bien visible mientras trabajas.</span><span lang="it">Scegli sulla facciata dell'arnia un punto <em>piano, pulito e asciutto</em>, ben visibile mentre lavori.</span><span lang="no">Velg et sted på forsiden av bikuben som er <em>flatt, rent og tørt</em>, og som er godt synlig mens du jobber.</span><span lang="tr">Kovanın ön yüzünde <em>düz, temiz ve kuru</em>, çalışırken kolayca görünen bir yer seçin.</span></li>
+          <li><b>02</b><span lang="pl">Naklej ColonyLink i dociśnij go na całej powierzchni, żeby taśma montażowa dobrze przylegała.</span><span lang="en">Stick the ColonyLink on and press it down over its whole surface so the adhesive bonds properly.</span><span lang="de">Klebe den ColonyLink auf und drücke ihn ganzflächig an, damit das Klebeband gut haftet.</span><span lang="fr">Collez le ColonyLink et pressez-le sur toute sa surface pour que l'adhésif tienne bien.</span><span lang="es">Pega el ColonyLink y presiónalo por toda su superficie para que el adhesivo agarre bien.</span><span lang="it">Applica il ColonyLink e premilo su tutta la superficie, così l'adesivo aderisce bene.</span><span lang="no">Klistre på ColonyLink og trykk det ned over hele flaten, slik at monteringstapen fester godt.</span><span lang="tr">ColonyLink'i yapıştırın ve yapışkan bandın iyi tutması için tüm yüzeyine bastırın.</span></li>
+          <li><b>03</b><span lang="pl">Sprawdź, czy kod QR jest dostępny bez otwierania ula.</span><span lang="en">Check that the QR code is reachable without opening the hive.</span><span lang="de">Prüfe, ob der QR-Code erreichbar ist, ohne den Stock zu öffnen.</span><span lang="fr">Vérifiez que le QR code est accessible sans ouvrir la ruche.</span><span lang="es">Comprueba que se puede acceder al código QR sin abrir la colmena.</span><span lang="it">Verifica che il codice QR sia raggiungibile senza aprire l'arnia.</span><span lang="no">Kontroller at QR-koden er tilgjengelig uten at du må åpne bikuben.</span><span lang="tr">QR koduna kovanı açmadan ulaşılabildiğini kontrol edin.</span></li>
+          <li><b><span lang="pl">Bez baterii</span><span lang="en">No battery</span><span lang="de">Ohne Batterie</span><span lang="fr">Sans pile</span><span lang="es">Sin pilas</span><span lang="it">Senza batteria</span><span lang="no">Uten batteri</span><span lang="tr">Pilsiz</span></b><span lang="pl">ColonyLink nie wymaga zasilania, konfiguracji ani aktualizacji.</span><span lang="en">The ColonyLink needs no power, no setup and no updates.</span><span lang="de">Der ColonyLink braucht weder Strom noch Einrichtung noch Updates.</span><span lang="fr">Le ColonyLink ne nécessite ni alimentation, ni configuration, ni mise à jour.</span><span lang="es">El ColonyLink no necesita alimentación, ni configuración, ni actualizaciones.</span><span lang="it">Il ColonyLink non richiede alimentazione, configurazione né aggiornamenti.</span><span lang="no">ColonyLink trenger verken strøm, konfigurasjon eller oppdateringer.</span><span lang="tr">ColonyLink güç, kurulum veya güncelleme gerektirmez.</span></li>
         </ul>
       </div>
       <div class="col col--fig">
         <figure class="plate">
           <img src="figs/pdf-mount-tag.webp" width="1700" height="578" loading="lazy"
                alt="Rysunek umieszczenia identyfikatora ula na ścianie ula.">
-          <figcaption><span>ColonyLink</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span><span lang="de">Referenzzeichnung</span><span lang="fr">Schéma de référence</span></figcaption>
+          <figcaption><span>ColonyLink</span><span lang="pl">Rysunek poglądowy</span><span lang="en">Reference drawing</span><span lang="de">Referenzzeichnung</span><span lang="fr">Schéma de référence</span><span lang="es">Esquema de referencia</span><span lang="it">Disegno di riferimento</span><span lang="no">Referansetegning</span><span lang="tr">Örnek çizim</span></figcaption>
         </figure>
       </div>
     </div>
@@ -1368,17 +1435,17 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
     <div class="ghost" aria-hidden="true">✱</div>
     <div class="wrap wrap--stack">
       <div class="col col--text">
-        <p class="tag"><span lang="pl">Gotowe</span><span lang="en">All set</span><span lang="de">Fertig</span><span lang="fr">C'est prêt</span></p>
-        <h1><span lang="pl">Ul nadaje.</span><span lang="en">Your hive is on air.</span><span lang="de">Der Stock sendet.</span><span lang="fr">La ruche émet.</span></h1>
+        <p class="tag"><span lang="pl">Gotowe</span><span lang="en">All set</span><span lang="de">Fertig</span><span lang="fr">C'est prêt</span><span lang="es">Listo</span><span lang="it">Fatto</span><span lang="no">Ferdig</span><span lang="tr">Hazır</span></p>
+        <h1><span lang="pl">Ul nadaje.</span><span lang="en">Your hive is on air.</span><span lang="de">Der Stock sendet.</span><span lang="fr">La ruche émet.</span><span lang="es">La colmena ya emite.</span><span lang="it">L'arnia trasmette.</span><span lang="no">Bikuben sender.</span><span lang="tr">Kovanınız yayında.</span></h1>
         <p class="lede">
           <span lang="pl">Hub zbiera dane z czujników i wysyła je do aplikacji. Jeśli po kilku godzinach odczytów nadal brak — sprawdź baterie, zasięg i listę problemów w dokumentacji.</span>
-          <span lang="en">The Hub collects sensor data and sends it to the app. If readings are still missing after a few hours, check the batteries, the range and the troubleshooting list in the documentation.</span><span lang="de">Der Hub sammelt die Sensordaten und schickt sie an die App. Fehlen nach einigen Stunden noch immer Messwerte, prüfe Batterien, Reichweite und die Problemliste in der Dokumentation.</span><span lang="fr">Le Hub collecte les données des capteurs et les envoie à l'application. Si les mesures manquent encore après quelques heures, vérifiez les piles, la portée et la liste des problèmes dans la documentation.</span>
+          <span lang="en">The Hub collects sensor data and sends it to the app. If readings are still missing after a few hours, check the batteries, the range and the troubleshooting list in the documentation.</span><span lang="de">Der Hub sammelt die Sensordaten und schickt sie an die App. Fehlen nach einigen Stunden noch immer Messwerte, prüfe Batterien, Reichweite und die Problemliste in der Dokumentation.</span><span lang="fr">Le Hub collecte les données des capteurs et les envoie à l'application. Si les mesures manquent encore après quelques heures, vérifiez les piles, la portée et la liste des problèmes dans la documentation.</span><span lang="es">El Hub recoge los datos de los sensores y los envía a la aplicación. Si al cabo de unas horas sigue sin haber mediciones, comprueba las pilas, el alcance y la lista de problemas de la documentación.</span><span lang="it">L'Hub raccoglie i dati dei sensori e li invia all'app. Se dopo qualche ora le letture mancano ancora, controlla le batterie, la portata e l'elenco dei problemi nella documentazione.</span><span lang="no">Hub samler inn data fra sensorene og sender dem til appen. Hvis avlesningene fortsatt mangler etter noen timer, sjekk batteriene, rekkevidden og problemlisten i dokumentasjonen.</span><span lang="tr">Hub, sensör verilerini toplar ve uygulamaya gönderir. Birkaç saat sonra hâlâ ölçüm gelmiyorsa pilleri, menzili ve dokümantasyondaki sorun listesini kontrol edin.</span>
         </p>
         <p class="contact">
           <a href="mailto:bee@apisense.ai">bee@apisense.ai</a>
-          <a href="../manual/configuration/"><span lang="pl">Pełna instrukcja konfiguracji</span><span lang="en">Full configuration guide</span><span lang="de">Vollständige Einrichtungsanleitung</span><span lang="fr">Guide de configuration complet</span></a>
-          <a href="../manual/configuration/troubleshooting/"><span lang="pl">Rozwiązywanie problemów</span><span lang="en">Troubleshooting</span><span lang="de">Fehlerbehebung</span><span lang="fr">Résolution des problèmes</span></a>
-          <a href="../"><span lang="pl">Dokumentacja Apisense</span><span lang="en">Apisense documentation</span><span lang="de">Apisense Dokumentation</span><span lang="fr">Documentation Apisense</span></a>
+          <a href="../manual/configuration/"><span lang="pl">Pełna instrukcja konfiguracji</span><span lang="en">Full configuration guide</span><span lang="de">Vollständige Einrichtungsanleitung</span><span lang="fr">Guide de configuration complet</span><span lang="es">Guía completa de configuración</span><span lang="it">Guida completa alla configurazione</span><span lang="no">Fullstendig konfigurasjonsveiledning</span><span lang="tr">Tam yapılandırma kılavuzu</span></a>
+          <a href="../manual/configuration/troubleshooting/"><span lang="pl">Rozwiązywanie problemów</span><span lang="en">Troubleshooting</span><span lang="de">Fehlerbehebung</span><span lang="fr">Résolution des problèmes</span><span lang="es">Resolución de problemas</span><span lang="it">Risoluzione dei problemi</span><span lang="no">Feilsøking</span><span lang="tr">Sorun giderme</span></a>
+          <a href="../"><span lang="pl">Dokumentacja Apisense</span><span lang="en">Apisense documentation</span><span lang="de">Apisense Dokumentation</span><span lang="fr">Documentation Apisense</span><span lang="es">Documentación Apisense</span><span lang="it">Documentazione Apisense</span><span lang="no">Apisense-dokumentasjon</span><span lang="tr">Apisense dokümantasyonu</span></a>
         </p>
       </div>
     </div>
@@ -1547,34 +1614,82 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
      the button does not have to wait. */
   (window.requestIdleCallback || function (fn) { setTimeout(fn, 4000); })(loadAllImages);
 
-  /* ── Language ── */
+  /* ── Language ──
+        Everything outside the deck that is not a translated <span> lives here:
+        the two switcher views, and the head metadata the CSS cannot reach.
+
+        <title> and the meta description are swapped in JS, so a crawler or a
+        link preview always sees the Polish ones in the markup. Accepted: this
+        is a single page and we are not chasing per-locale SEO. ── */
   var root = document.documentElement;
+  var langSelect = document.getElementById('lang-select');
+  var metaDesc = document.querySelector('meta[name="description"]');
+
+  var HEAD_TEXT = {
+    pl: {
+      title: 'Apisense BOX — Instrukcja montażu',
+      description: 'Interaktywna instrukcja montażu zestawu Apisense BOX: Hub, waga, VitalSensor, Tag i uchwyt na ramkę — krok po kroku.',
+      print: 'Zapisz jako PDF — jeden krok na stronę'
+    },
+    en: {
+      title: 'Apisense BOX — Assembly Instruction',
+      description: 'Interactive assembly guide for the Apisense BOX kit: Hub, scale, VitalSensor, Tag and frame holder — step by step.',
+      print: 'Save as PDF — one step per page'
+    },
+    de: {
+      title: 'Apisense BOX — Montageanleitung',
+      description: 'Interaktive Montageanleitung für das Apisense BOX Set: Hub, Waage, VitalSensor, Tag und Rähmchenhalter — Schritt für Schritt.',
+      print: 'Als PDF speichern — ein Schritt pro Seite'
+    },
+    fr: {
+      title: 'Apisense BOX — Guide de montage',
+      description: 'Guide de montage interactif du kit Apisense BOX : Hub, balance, VitalSensor, Tag et support de cadre — étape par étape.',
+      print: 'Enregistrer en PDF — une étape par page'
+    },
+    es: {
+      title: 'Apisense BOX — Instrucciones de montaje',
+      description: 'Guía interactiva de montaje del kit Apisense BOX: Hub, báscula, VitalSensor, Tag y soporte para cuadro — paso a paso.',
+      print: 'Guardar como PDF — un paso por página'
+    },
+    it: {
+      title: 'Apisense BOX — Istruzioni di montaggio',
+      description: 'Guida interattiva al montaggio del kit Apisense BOX: Hub, bilancia, VitalSensor, Tag e supporto per telaino — passo dopo passo.',
+      print: 'Salva come PDF — un passaggio per pagina'
+    },
+    no: {
+      title: 'Apisense BOX — Monteringsanvisning',
+      description: 'Interaktiv monteringsveiledning for Apisense BOX-settet: Hub, vekt, VitalSensor, Tag og rammeholder — steg for steg.',
+      print: 'Lagre som PDF — ett trinn per side'
+    },
+    tr: {
+      title: 'Apisense BOX — Montaj kılavuzu',
+      description: 'Apisense BOX seti için etkileşimli montaj kılavuzu: Hub, tartı, VitalSensor, Tag ve çerçeve tutucu — adım adım.',
+      print: 'PDF olarak kaydet — sayfa başına bir adım'
+    }
+  };
+
+  function setLang(l) {
+    root.setAttribute('data-lang', l);
+    root.lang = l;
+    localStorage.setItem('apisense-asm-lang', l);
+    syncLang();
+  }
+
   document.querySelectorAll('[data-set-lang]').forEach(function (b) {
-    b.addEventListener('click', function () {
-      var l = b.dataset.setLang;
-      root.setAttribute('data-lang', l);
-      root.lang = l;
-      localStorage.setItem('apisense-asm-lang', l);
-      syncLang();
-    });
+    b.addEventListener('click', function () { setLang(b.dataset.setLang); });
   });
+  langSelect.addEventListener('change', function () { setLang(langSelect.value); });
+
   function syncLang() {
     var cur = root.getAttribute('data-lang');
     document.querySelectorAll('[data-set-lang]').forEach(function (b) {
       b.setAttribute('aria-pressed', String(b.dataset.setLang === cur));
     });
-    printBtn.title = {
-      pl: 'Zapisz jako PDF — jeden krok na stronę',
-      en: 'Save as PDF — one step per page',
-      de: 'Als PDF speichern — ein Schritt pro Seite',
-      fr: 'Enregistrer en PDF — une étape par page'
-    }[cur] || 'PDF';
-    document.title = {
-      pl: 'Apisense BOX — Instrukcja montażu',
-      en: 'Apisense BOX — Assembly Instruction',
-      de: 'Apisense BOX — Montageanleitung',
-      fr: 'Apisense BOX — Guide de montage'
-    }[cur] || 'Apisense BOX';
+    langSelect.value = cur;
+    var head = HEAD_TEXT[cur] || HEAD_TEXT.pl;
+    printBtn.title = head.print;
+    document.title = head.title;
+    metaDesc.setAttribute('content', head.description);
   }
   syncLang();
 
