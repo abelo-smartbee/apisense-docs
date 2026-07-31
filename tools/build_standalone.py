@@ -128,13 +128,21 @@ def main() -> None:
     # 1. fonts: swap the stylesheet <link>s for embedded @font-face rules.
     # One <link> per family, so the pattern has to swallow all of them — and the
     # HTML comment that documents why the second one exists, which sits between
-    # them. Counted first: a <head> with fewer links than families would mean a
-    # family loaded here but never referenced by the page, or the reverse.
+    # them. Compared by family name, not by count: two links and two families
+    # match on a count even when the page has swapped Poppins for something else,
+    # and the bundle would then embed a family nothing on the page asks for while
+    # the one it does ask for arrives from the reader's fallback. Names make that
+    # a build error instead of a silently wrong artefact.
     links = re.findall(r'<link href="https://fonts\.googleapis\.com[^>]*>', html)
-    if len(links) != len(FONT_CSS):
+    linked = {
+        fam.replace("+", " ")
+        for link in links
+        for fam in re.findall(r"family=([^:&\"]+)", link)
+    }
+    if linked != set(FONT_CSS):
         raise SystemExit(
-            f"<head> linkuje {len(links)} arkuszy Google Fonts, a FONT_CSS ma"
-            f" {len(FONT_CSS)} rodzin ({', '.join(FONT_CSS)}) — rozjechały się"
+            f"<head> linkuje {sorted(linked)}, a FONT_CSS ma {sorted(FONT_CSS)}"
+            " — rozjechały się"
         )
     faces = inline_fonts()
     html = re.sub(

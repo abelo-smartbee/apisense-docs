@@ -87,7 +87,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: Poppins, 'Segoe UI', sans-serif;
+  font-family: Poppins, 'Noto Sans', 'Segoe UI', sans-serif;
   font-size: clamp(15px, .55vw + 13px, 17px);
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
@@ -137,9 +137,10 @@ body::after {
 [data-lang="el"] [lang]:not([lang="el"]) { display: none; }
 
 /* ── Greek ──────────────────────────────────────────────────────
-   Poppins is the typeface of this page and has no Greek glyphs at all, so
-   `el` needs a second family. Noto Sans is loaded in the <head> with only its
-   `greek` subset and joins the stack *behind* Poppins.
+   Poppins is the typeface of this page and has no Greek glyphs at all, so `el`
+   needs a second family. Noto Sans is loaded in the <head> with only its
+   `greek` subset and sits *behind* Poppins in every stack on this page — there
+   is no `:lang(el)` rule and there must not be one; see below.
 
    Poppins first is the whole mechanism, not an aesthetic preference. CSS font
    matching runs per character, not per element: for every glyph the UA walks
@@ -151,15 +152,21 @@ body::after {
    eighteen locales. Reversing the order would hand the Latin to Noto Sans and
    make the brand names look different in Greek alone.
 
-   Selector, not inheritance: thirteen rules on this page re-declare
-   `font-family: Poppins, …` on their own elements, so a bare `:lang(el)` on
-   the root would never reach `.lede`, `.micro` or `h2`. `html:lang(el) *`
-   is (0,1,1) and outranks every one of them regardless of source order.
+   In the stacks and not in a `:lang(el)` selector, because a selector cannot
+   win reliably and it did not: `html:lang(el) *` is (0,1,1), and this page has
+   four rules that tie or beat it while declared later — `.plate figcaption`,
+   `.micro b`, `.contact a` and `.rail a[data-chapter-start]::before`. Measured
+   on the rendered page, 27 of 431 Greek-bearing nodes (22 figure captions, 2
+   bolds, 3 links) came out of that rule stripped of Noto Sans and fell to the
+   reader's system font. Since `unicode-range` already confines Noto Sans to
+   Greek, a locale-scoped rule buys nothing: in the other eighteen locales the
+   family is present in the stack and never asked for a single glyph. The one
+   exception it also fixes is `Ελληνικά` in the switcher, which is Greek text
+   shown *while another locale is selected* and which `:lang(el)` by definition
+   could never reach.
 
-   `'Segoe UI'` stays at the back for the same reason `body` carries it: if the
-   webfont fails, Windows still has Greek. */
-html:lang(el),
-html:lang(el) * { font-family: Poppins, 'Noto Sans', 'Segoe UI', sans-serif; }
+   `'Segoe UI'` stays where `body` had it: if the webfont fails, Windows still
+   has Greek. */
 
 /* ── Header ─────────────────────────────────────────────────── */
 .head {
@@ -186,7 +193,7 @@ html:lang(el) * { font-family: Poppins, 'Noto Sans', 'Segoe UI', sans-serif; }
 [data-theme="dark"] .head__mark img { filter: invert(1); }
 .head__sep { width: 1px; height: 22px; background: var(--rule); flex: none; }
 .head__doc {
-  font-family: Poppins, sans-serif;
+  font-family: Poppins, 'Noto Sans', sans-serif;
   font-size: 11px;
   font-weight: 500;
   letter-spacing: .18em;
@@ -399,7 +406,7 @@ html:lang(el) * { font-family: Poppins, 'Noto Sans', 'Segoe UI', sans-serif; }
   content: attr(data-chapter-start);
   position: absolute;
   right: calc(100% + 2px);
-  font-family: Poppins, sans-serif;
+  font-family: Poppins, 'Noto Sans', sans-serif;
   font-size: 10px;
   color: var(--ink-3);
   letter-spacing: .06em;
@@ -449,7 +456,7 @@ html:lang(el) * { font-family: Poppins, 'Noto Sans', 'Segoe UI', sans-serif; }
   position: absolute;
   left: -.07em;
   bottom: -.30em;
-  font-family: Poppins, sans-serif;
+  font-family: Poppins, 'Noto Sans', sans-serif;
   font-weight: 200;
   font-size: clamp(15rem, 30vw, 34rem);
   line-height: .8;
@@ -499,7 +506,7 @@ html:lang(el) * { font-family: Poppins, 'Noto Sans', 'Segoe UI', sans-serif; }
   align-items: center;
   gap: 10px;
   margin: 0 0 18px;
-  font-family: Poppins, sans-serif;
+  font-family: Poppins, 'Noto Sans', sans-serif;
   font-size: 11px;
   letter-spacing: .16em;
   text-transform: uppercase;
@@ -512,7 +519,7 @@ html:lang(el) * { font-family: Poppins, 'Noto Sans', 'Segoe UI', sans-serif; }
 }
 
 h1, h2 {
-  font-family: Poppins, sans-serif;
+  font-family: Poppins, 'Noto Sans', sans-serif;
   font-weight: 400;
   letter-spacing: -.01em;
   line-height: 1.1;
@@ -546,7 +553,7 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
   color: var(--ink-2);
 }
 .micro b {
-  font-family: Poppins, sans-serif;
+  font-family: Poppins, 'Noto Sans', sans-serif;
   font-size: .76rem;
   font-weight: 500;
   color: var(--amber-deep);
@@ -613,7 +620,7 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
   margin-top: 12px;
   padding-top: 10px;
   border-top: 1px solid rgba(33,41,14,.12);
-  font-family: Poppins, sans-serif;
+  font-family: Poppins, 'Noto Sans', sans-serif;
   font-size: 10px;
   font-weight: 500;
   letter-spacing: .16em;
@@ -680,7 +687,7 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
   color: rgba(33,41,14,.66);
 }
 .item__qty {
-  font-family: Poppins, sans-serif;
+  font-family: Poppins, 'Noto Sans', sans-serif;
   font-size: .72rem;
   flex: none;
 }
@@ -710,7 +717,7 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
   margin: 30px 0 0;
   padding: 0;
   list-style: none;
-  font-family: Poppins, sans-serif;
+  font-family: Poppins, 'Noto Sans', sans-serif;
   font-size: 11px;
   font-weight: 500;
   letter-spacing: .16em;
@@ -727,7 +734,7 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
   display: flex;
   align-items: center;
   gap: 12px;
-  font-family: Poppins, sans-serif;
+  font-family: Poppins, 'Noto Sans', sans-serif;
   font-size: 10px;
   letter-spacing: .18em;
   text-transform: uppercase;
@@ -752,7 +759,7 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
   margin-top: 26px;
 }
 .contact a {
-  font-family: Poppins, sans-serif;
+  font-family: Poppins, 'Noto Sans', sans-serif;
   font-size: 13px;
   color: var(--ink);
   text-decoration: none;
@@ -773,7 +780,7 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
   align-items: center;
 }
 .nav__count {
-  font-family: Poppins, sans-serif;
+  font-family: Poppins, 'Noto Sans', sans-serif;
   font-size: 11px;
   font-weight: 500;
   color: var(--ink-3);
@@ -1994,20 +2001,38 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
       close(true);
     });
 
+    /* Vertical movement is read off the geometry, not off the index. Counting
+       columns and jumping `i ± cols` assumes every cell takes exactly one
+       column, and `Português (Brasil)` takes two — from there every option
+       after it sits one column away from where the arithmetic says it is.
+       Asking the elements where they actually are also survives the drop to
+       two columns under 420px, and the next endonym that needs a wide cell. */
+    function vertical(i, dir) {
+      var cur = langOpts[i].getBoundingClientRect();
+      var cx = cur.left + cur.width / 2;
+      var best = -1, bestScore = Infinity;
+      for (var j = 0; j < langOpts.length; j++) {
+        if (j === i) continue;
+        var r = langOpts[j].getBoundingClientRect();
+        if (dir > 0 ? r.top <= cur.top : r.top >= cur.top) continue;
+        /* nearest row first, then nearest horizontally inside that row */
+        var score = Math.abs(r.top - cur.top) * 1000 +
+                    Math.abs(r.left + r.width / 2 - cx);
+        if (score < bestScore) { bestScore = score; best = j; }
+      }
+      return best;
+    }
+
     langPanel.addEventListener('keydown', function (e) {
       if (e.key === 'Escape') { e.preventDefault(); close(true); return; }
       if (e.key === 'Tab') { close(false); return; }
       var i = langOpts.indexOf(document.activeElement);
       if (i < 0) return;
-      /* Read the column count back from the grid rather than hard-coding it —
-         the panel drops to two columns under 420px and the arrows have to
-         follow what is actually on screen. */
-      var cols = getComputedStyle(langPanel).gridTemplateColumns.split(' ').length;
       var next;
       if (e.key === 'ArrowRight') next = i + 1;
       else if (e.key === 'ArrowLeft') next = i - 1;
-      else if (e.key === 'ArrowDown') next = i + cols;
-      else if (e.key === 'ArrowUp') next = i - cols;
+      else if (e.key === 'ArrowDown') next = vertical(i, 1);
+      else if (e.key === 'ArrowUp') next = vertical(i, -1);
       else if (e.key === 'Home') next = 0;
       else if (e.key === 'End') next = langOpts.length - 1;
       else return;
