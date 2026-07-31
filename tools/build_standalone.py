@@ -26,8 +26,8 @@ OUT = SRC.parent / "Apisense_BOX_Instrukcja_montazu_standalone.html"
 SITE = "https://docs.apisense.ai/"
 
 # One stylesheet per family the page links, in the order the <head> links them.
-# Two families, because Poppins covers seventeen locales and cannot cover the
-# eighteenth: it has zero Greek glyphs. See dev-docs/adr/0003-kroje-greka-arabski.md.
+# Two families, because Poppins covers eighteen locales and cannot cover the
+# nineteenth: it has zero Greek glyphs. See dev-docs/adr/0003-kroje-greka-arabski.md.
 FONT_CSS = {
     "Poppins": (
         "https://fonts.googleapis.com/css2"

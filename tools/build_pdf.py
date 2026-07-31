@@ -24,12 +24,11 @@ STANDALONE = ROOT / "docs" / "assembly" / "Apisense_BOX_Instrukcja_montazu_stand
 BUILD_STANDALONE = ROOT / "tools" / "build_standalone.py"
 OUT_DIR = ROOT / "docs" / "assembly" / "pdf"
 
-# One entry per locale the page can be read in — eighteen, matching
-# DEFAULT_LOCALES in tools/check_i18n.py. (The epic talks about twenty; `ar`
-# waits on #52, because the ADR that cleared Greek left Arabic conditional on
-# RTL the page does not have, and `pt` on ADR 0004. Neither is scaffolded here:
-# an entry with no translation behind it would print a Polish PDF under a
-# Portuguese name.)
+# One entry per locale the page can be read in — nineteen, matching
+# DEFAULT_LOCALES in tools/check_i18n.py. (The epic talks about twenty; the
+# twentieth, `ar`, waits on #52, because the ADR that cleared Greek left Arabic
+# conditional on RTL the page does not have. It is not scaffolded here: an entry
+# with no translation behind it would print a Polish PDF under an Arabic name.)
 #
 # Each name is that locale's document title from HEAD_TEXT in
 # docs/assembly/index.html, transliterated to plain ASCII: á→a, ž→z, ș→s, ő→o,
@@ -60,6 +59,7 @@ LOCALES = {
     "nl": "Apisense_BOX_Montagehandleiding_nl.pdf",
     "sv": "Apisense_BOX_Monteringsanvisning_sv.pdf",
     "da": "Apisense_BOX_Monteringsvejledning_da.pdf",
+    "pt": "Apisense_BOX_Instrucoes_de_montagem_pt.pdf",
     "el": "Apisense_BOX_Odigies_synarmologisis_el.pdf",
 }
 
@@ -141,7 +141,7 @@ def main(argv: list[str]) -> None:
         raise SystemExit(f"nieznane locale: {', '.join(unknown)} (dostępne: {', '.join(LOCALES)})")
 
     # The bundle is a gitignored local artifact, so a checkout routinely leaves one
-    # older than index.html. Printing that would produce eighteen PDFs quietly
+    # older than index.html. Printing that would produce nineteen PDFs quietly
     # missing whatever the page gained since — rebuild on stale, not just on absent.
     source = ROOT / "docs" / "assembly" / "index.html"
     if not STANDALONE.exists():

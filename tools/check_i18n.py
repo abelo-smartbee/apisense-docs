@@ -13,7 +13,7 @@ the one the reader picked, and there is no fallback rule behind it:
 So a group that never got its `<span lang="es">` does not fall back to English
 — it renders as nothing at all. No error, no warning, just a sentence that
 silently vanishes for that language. Same for a span that exists but is empty.
-Across 148 groups and eighteen locales that is only findable mechanically,
+Across 148 groups and nineteen locales that is only findable mechanically,
 which is what this script is.
 
 What counts as a group comes from `i18n_lib`, shared with `i18n_extract.py`
@@ -25,7 +25,7 @@ Three groups diverge from English on purpose and would be flagged forever by
 such a check, so whoever writes one must whitelist them rather than "fix" the
 translations:
 
-    cc79d6fa7921  "Scan the Hub QR code" — 12 of 18 locales bind the device
+    cc79d6fa7921  "Scan the Hub QR code" — 13 of 19 locales bind the device
                   name to the preceding word with `&nbsp;`; English and the
                   five where the name leads the phrase do not need it.
     0d40eedb2f02  "… ColonyLink, VitalSensor &amp;&nbsp;Scale" — every locale
@@ -61,7 +61,7 @@ SRC = ROOT / "docs" / "assembly" / "index.html"
 DEFAULT_LOCALES = (
     "pl", "en", "de", "fr", "es", "it", "no", "tr",
     "cs", "sk", "hu", "hr", "ro", "fi", "nl", "sv", "da",
-    "el",
+    "pt", "el",
 )
 
 # How many incomplete groups to name before summarising the rest. A locale

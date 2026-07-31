@@ -1,7 +1,7 @@
 [
   {
     "id": "adf33f096b93",
-    "line": 924,
+    "line": 942,
     "tag": "span",
     "text": {
       "pl": "Apisense BOX · Instrukcja montażu",
@@ -21,12 +21,13 @@
       "nl": "Apisense BOX · Montagehandleiding",
       "sv": "Apisense BOX · Monteringsanvisning",
       "da": "Apisense BOX · Monteringsvejledning",
+      "pt": "Apisense BOX · Guia de montagem",
       "el": "Apisense BOX · Οδηγίες συναρμολόγησης"
     }
   },
   {
     "id": "079510b30455",
-    "line": 988,
+    "line": 1007,
     "tag": "span",
     "text": {
       "pl": "Pełna instrukcja",
@@ -46,12 +47,13 @@
       "nl": "Volledige handleiding",
       "sv": "Fullständig guide",
       "da": "Komplet vejledning",
+      "pt": "Guia completo",
       "el": "Πλήρεις οδηγίες"
     }
   },
   {
     "id": "6571823bce73",
-    "line": 1013,
+    "line": 1032,
     "tag": "span",
     "text": {
       "pl": "Apisense · Zestaw startowy",
@@ -71,12 +73,13 @@
       "nl": "Apisense · Starterset",
       "sv": "Apisense · Startpaket",
       "da": "Apisense · Startsæt",
+      "pt": "Apisense · Kit inicial",
       "el": "Apisense · Κιτ εκκίνησης"
     }
   },
   {
     "id": "445ec0578438",
-    "line": 1015,
+    "line": 1034,
     "tag": "span",
     "text": {
       "pl": "Instrukcja<br>montażu",
@@ -96,12 +99,13 @@
       "nl": "Montage-<br>handleiding",
       "sv": "Monterings-<br>anvisning",
       "da": "Monterings-<br>vejledning",
+      "pt": "Guia de<br>montagem",
       "el": "Οδηγίες<br>συναρμολόγησης"
     }
   },
   {
     "id": "8bcd27cb290b",
-    "line": 1019,
+    "line": 1038,
     "tag": "span",
     "text": {
       "pl": "Od rozpakowania kartonu do pierwszego odczytu z ula. Siedem kroków, wszystkie ekrany aplikacji i montaż każdego urządzenia w pasiece.",
@@ -121,12 +125,13 @@
       "nl": "Van het uitpakken van de doos tot de eerste meting uit je bijenkast. Zeven stappen, alle app-schermen en de montage van elk apparaat op de bijenstand.",
       "sv": "Från att du öppnar kartongen till den första avläsningen från bikupan. Sju steg, alla skärmbilder i appen och montering av varje enhet i bigården.",
       "da": "Fra du åbner kassen til den første aflæsning fra bistadet. Syv trin, alle skærmbilleder i appen og montering af hver enhed i bigården.",
+      "pt": "Da abertura da caixa à primeira leitura da colmeia. Sete passos, todas as telas do aplicativo e a montagem de cada dispositivo no apiário.",
       "el": "Από το άνοιγμα του κουτιού μέχρι την πρώτη μέτρηση από την κυψέλη. Επτά βήματα, όλες οι οθόνες της εφαρμογής και η τοποθέτηση κάθε συσκευής στο μελισσοκομείο."
     }
   },
   {
     "id": "8dbb23f20272",
-    "line": 1023,
+    "line": 1042,
     "tag": "span",
     "text": {
       "pl": "7 kroków",
@@ -146,12 +151,13 @@
       "nl": "7 stappen",
       "sv": "7 steg",
       "da": "7 trin",
+      "pt": "7 passos",
       "el": "7 βήματα"
     }
   },
   {
     "id": "af55159ef610",
-    "line": 1024,
+    "line": 1043,
     "tag": "span",
     "text": {
       "pl": "ok. 30 minut",
@@ -171,12 +177,13 @@
       "nl": "ca. 30 minuten",
       "sv": "ca 30 minuter",
       "da": "ca. 30 minutter",
+      "pt": "aprox. 30 minutos",
       "el": "περίπου 30 λεπτά"
     }
   },
   {
     "id": "ca1173eb3920",
-    "line": 1025,
+    "line": 1044,
     "tag": "span",
     "text": {
       "pl": "Apisense Pro AI",
@@ -196,12 +203,13 @@
       "nl": "Apisense Pro AI",
       "sv": "Apisense Pro AI",
       "da": "Apisense Pro AI",
+      "pt": "Apisense Pro AI",
       "el": "Apisense Pro AI"
     }
   },
   {
     "id": "805d276e5d4c",
-    "line": 1030,
+    "line": 1049,
     "tag": "span",
     "text": {
       "pl": "Przewiń",
@@ -221,12 +229,13 @@
       "nl": "Scrollen",
       "sv": "Skrolla",
       "da": "Rul ned",
+      "pt": "Role a página",
       "el": "Κύλιση"
     }
   },
   {
     "id": "7b3aacae4b41",
-    "line": 1039,
+    "line": 1058,
     "tag": "span",
     "text": {
       "pl": "Zestaw",
@@ -246,12 +255,13 @@
       "nl": "De set",
       "sv": "Paketet",
       "da": "Sættet",
+      "pt": "O kit",
       "el": "Το κιτ"
     }
   },
   {
     "id": "d5c673a93cc3",
-    "line": 1040,
+    "line": 1059,
     "tag": "span",
     "text": {
       "pl": "Co znajdziesz w pudełku",
@@ -271,12 +281,13 @@
       "nl": "Wat zit er in de doos",
       "sv": "Det här finns i kartongen",
       "da": "Det finder du i kassen",
+      "pt": "O que vem na caixa",
       "el": "Τι υπάρχει στο κουτί"
     }
   },
   {
     "id": "944a87500b02",
-    "line": 1042,
+    "line": 1061,
     "tag": "span",
     "text": {
       "pl": "Jeden Hub obsługuje całą pasiekę. Scale trafia pod pierwszy ul, a każdy z trzech uli dostaje własny VitalSensor i ColonyLink.",
@@ -296,12 +307,13 @@
       "nl": "Eén Hub bedient de hele bijenstand. De Scale komt onder de eerste kast, en elk van de drie kasten krijgt een eigen VitalSensor en ColonyLink.",
       "sv": "En enda Hub täcker hela bigården. Scale placeras under den första bikupan, och var och en av de tre bikuporna får en egen VitalSensor och ColonyLink.",
       "da": "Én Hub dækker hele bigården. Scale placeres under det første bistade, og hvert af de tre bistader får sin egen VitalSensor og sit eget ColonyLink.",
+      "pt": "Um único Hub atende todo o apiário. O Scale fica sob a primeira colmeia e cada uma das três colmeias recebe seu próprio VitalSensor e seu ColonyLink.",
       "el": "Ένα μόνο Hub εξυπηρετεί ολόκληρο το μελισσοκομείο. Το Scale μπαίνει κάτω από την πρώτη κυψέλη και καθεμία από τις τρεις κυψέλες αποκτά το δικό της VitalSensor και ColonyLink."
     }
   },
   {
     "id": "2387a74ee316",
-    "line": 1067,
+    "line": 1086,
     "tag": "span",
     "text": {
       "pl": "Opakowanie",
@@ -321,12 +333,13 @@
       "nl": "De verpakking",
       "sv": "Förpackningen",
       "da": "Kassen",
+      "pt": "A embalagem",
       "el": "Η συσκευασία"
     }
   },
   {
     "id": "f3467d3bcd49",
-    "line": 1079,
+    "line": 1098,
     "tag": "span",
     "text": {
       "pl": "Krok 01",
@@ -346,12 +359,13 @@
       "nl": "Stap 01",
       "sv": "Steg 01",
       "da": "Trin 01",
+      "pt": "Passo 01",
       "el": "Βήμα 01"
     }
   },
   {
     "id": "fc0dbbf29099",
-    "line": 1080,
+    "line": 1099,
     "tag": "span",
     "text": {
       "pl": "Pobierz aplikację",
@@ -371,12 +385,13 @@
       "nl": "Download de app",
       "sv": "Ladda ner appen",
       "da": "Hent appen",
+      "pt": "Baixe o aplicativo",
       "el": "Κατεβάστε την εφαρμογή"
     }
   },
   {
     "id": "85bdbcd7b181",
-    "line": 1082,
+    "line": 1101,
     "tag": "span",
     "text": {
       "pl": "Cały zestaw konfigurujesz z telefonu. Zeskanuj kod QR aparatem albo wyszukaj <b>Apisense Pro AI</b> w App Store lub Google Play.",
@@ -396,12 +411,13 @@
       "nl": "De hele set stel je in vanaf je telefoon. Scan de QR-code met je camera of zoek op <b>Apisense Pro AI</b> in de App Store of Google Play.",
       "sv": "Hela paketet ställer du in från telefonen. Skanna QR-koden med kameran eller sök efter <b>Apisense Pro AI</b> i App Store eller Google Play.",
       "da": "Hele sættet konfigurerer du fra telefonen. Scan QR-koden med kameraet, eller søg efter <b>Apisense Pro AI</b> i App Store eller Google Play.",
+      "pt": "Todo o kit é configurado pelo celular. Escaneie o código QR com a câmera ou procure <b>Apisense Pro AI</b> na App Store ou no Google Play.",
       "el": "Ολόκληρο το κιτ ρυθμίζεται από το κινητό σας. Σαρώστε τον κωδικό QR με την κάμερα ή αναζητήστε <b>Apisense Pro AI</b> στο App Store ή στο Google Play."
     }
   },
   {
     "id": "286336e7146d",
-    "line": 1086,
+    "line": 1105,
     "tag": "span",
     "text": {
       "pl": "Górny kod QR — App Store",
@@ -421,12 +437,13 @@
       "nl": "Bovenste QR-code — App Store",
       "sv": "Översta QR-koden — App Store",
       "da": "Øverste QR-kode — App Store",
+      "pt": "Código QR superior — App Store",
       "el": "Επάνω κωδικός QR — App Store"
     }
   },
   {
     "id": "450c21157a6d",
-    "line": 1087,
+    "line": 1106,
     "tag": "span",
     "text": {
       "pl": "Dolny kod QR — Google Play",
@@ -446,12 +463,13 @@
       "nl": "Onderste QR-code — Google Play",
       "sv": "Nedersta QR-koden — Google Play",
       "da": "Nederste QR-kode — Google Play",
+      "pt": "Código QR inferior — Google Play",
       "el": "Κάτω κωδικός QR — Google Play"
     }
   },
   {
     "id": "aaf3702ff50b",
-    "line": 1088,
+    "line": 1107,
     "tag": "span",
     "text": {
       "pl": "Możesz też pracować w przeglądarce: <em>app.apisense.ai</em>",
@@ -471,12 +489,13 @@
       "nl": "Je kunt ook in de browser werken: <em>app.apisense.ai</em>",
       "sv": "Du kan också arbeta i webbläsaren: <em>app.apisense.ai</em>",
       "da": "Du kan også arbejde i browseren: <em>app.apisense.ai</em>",
+      "pt": "Você também pode usar o navegador: <em>app.apisense.ai</em>",
       "el": "Μπορείτε επίσης να εργαστείτε από περιηγητή: <em>app.apisense.ai</em>"
     }
   },
   {
     "id": "19c60e38791c",
-    "line": 1095,
+    "line": 1114,
     "tag": "span",
     "text": {
       "pl": "App Store · Google Play",
@@ -496,12 +515,13 @@
       "nl": "App Store · Google Play",
       "sv": "App Store · Google Play",
       "da": "App Store · Google Play",
+      "pt": "App Store · Google Play",
       "el": "App Store · Google Play"
     }
   },
   {
     "id": "dd38aa096e90",
-    "line": 1106,
+    "line": 1125,
     "tag": "span",
     "text": {
       "pl": "Krok 02",
@@ -521,12 +541,13 @@
       "nl": "Stap 02",
       "sv": "Steg 02",
       "da": "Trin 02",
+      "pt": "Passo 02",
       "el": "Βήμα 02"
     }
   },
   {
     "id": "7ede114c62e9",
-    "line": 1107,
+    "line": 1126,
     "tag": "span",
     "text": {
       "pl": "Stwórz konto",
@@ -546,12 +567,13 @@
       "nl": "Account aanmaken",
       "sv": "Skapa ett konto",
       "da": "Opret konto",
+      "pt": "Crie uma conta",
       "el": "Δημιουργήστε λογαριασμό"
     }
   },
   {
     "id": "d25ed934e3f0",
-    "line": 1109,
+    "line": 1128,
     "tag": "span",
     "text": {
       "pl": "Podaj nazwę użytkownika, adres e-mail i numer telefonu, a następnie naciśnij <b>Next</b>. Możesz też zarejestrować się kontem Google lub Apple.",
@@ -571,12 +593,13 @@
       "nl": "Vul een gebruikersnaam, e-mailadres en mobiel nummer in en tik op <b>Next</b>. Je kunt je ook aanmelden met je Google- of Apple-account.",
       "sv": "Ange användarnamn, e-postadress och mobilnummer, och tryck sedan på <b>Next</b>. Du kan också registrera dig med ditt Google- eller Apple-konto.",
       "da": "Indtast brugernavn, e-mailadresse og mobilnummer, og tryk derefter på <b>Next</b>. Du kan også tilmelde dig med din Google- eller Apple-konto.",
+      "pt": "Informe um nome de usuário, um endereço de e-mail e um número de celular; depois toque em <b>Next</b>. Você também pode se cadastrar com sua conta Google ou Apple.",
       "el": "Δώστε όνομα χρήστη, διεύθυνση e-mail και αριθμό κινητού και μετά πατήστε <b>Next</b>. Μπορείτε επίσης να εγγραφείτε με τον λογαριασμό σας Google ή Apple."
     }
   },
   {
     "id": "538e249239a7",
-    "line": 1113,
+    "line": 1132,
     "tag": "span",
     "text": {
       "pl": "Nazwa widoczna w aplikacji",
@@ -596,12 +619,13 @@
       "nl": "Naam die je in de app ziet",
       "sv": "Namnet som visas i appen",
       "da": "Navnet, der vises i appen",
+      "pt": "Nome exibido no aplicativo",
       "el": "Το όνομα που εμφανίζεται στην εφαρμογή"
     }
   },
   {
     "id": "a2f0e70a5b59",
-    "line": 1114,
+    "line": 1133,
     "tag": "span",
     "text": {
       "pl": "Służy do logowania i powiadomień",
@@ -621,12 +645,13 @@
       "nl": "Voor inloggen en meldingen",
       "sv": "Används för inloggning och aviseringar",
       "da": "Bruges til login og notifikationer",
+      "pt": "Usado para login e notificações",
       "el": "Χρησιμεύει για τη σύνδεση και τις ειδοποιήσεις"
     }
   },
   {
     "id": "73c5d8b9cfeb",
-    "line": 1115,
+    "line": 1134,
     "tag": "span",
     "text": {
       "pl": "Numer kontaktowy do konta",
@@ -646,12 +671,13 @@
       "nl": "Contactnummer voor het account",
       "sv": "Kontaktnummer till kontot",
       "da": "Kontaktnummer til kontoen",
+      "pt": "Número de contato da conta",
       "el": "Αριθμός επικοινωνίας για τον λογαριασμό"
     }
   },
   {
     "id": "86d14afd0ef2",
-    "line": 1122,
+    "line": 1141,
     "tag": "span",
     "text": {
       "pl": "Ekran rejestracji",
@@ -671,12 +697,13 @@
       "nl": "Registratiescherm",
       "sv": "Registreringsskärm",
       "da": "Registreringsskærm",
+      "pt": "Tela de cadastro",
       "el": "Οθόνη εγγραφής"
     }
   },
   {
     "id": "a9c5c64831f5",
-    "line": 1133,
+    "line": 1152,
     "tag": "span",
     "text": {
       "pl": "Krok 03 · 03.1 – 03.2",
@@ -696,12 +723,13 @@
       "nl": "Stap 03 · 03.1 – 03.2",
       "sv": "Steg 03 · 03.1 – 03.2",
       "da": "Trin 03 · 03.1 – 03.2",
+      "pt": "Passo 03 · 03.1 – 03.2",
       "el": "Βήμα 03 · 03.1 – 03.2"
     }
   },
   {
     "id": "def4b5dc4389",
-    "line": 1134,
+    "line": 1153,
     "tag": "span",
     "text": {
       "pl": "Dodaj pasiekę",
@@ -721,12 +749,13 @@
       "nl": "Bijenstand toevoegen",
       "sv": "Lägg till bigård",
       "da": "Tilføj bigård",
+      "pt": "Adicione um apiário",
       "el": "Προσθέστε μελισσοκομείο"
     }
   },
   {
     "id": "f42e6c5f2a5b",
-    "line": 1136,
+    "line": 1155,
     "tag": "span",
     "text": {
       "pl": "Pasieka to miejsce, w którym stoją ule i jeden Hub. Zaczynasz od nadania jej nazwy.",
@@ -746,12 +775,13 @@
       "nl": "Een bijenstand is de plek waar je kasten en één Hub staan. Je begint met het geven van een naam.",
       "sv": "En bigård är platsen där dina bikupor och en Hub står. Börja med att ge den ett namn.",
       "da": "En bigård er stedet, hvor dine bistader og én Hub står. Start med at give den et navn.",
+      "pt": "O apiário é o local onde ficam suas colmeias e um Hub. Comece dando um nome a ele.",
       "el": "Το μελισσοκομείο είναι ο χώρος όπου βρίσκονται οι κυψέλες σας και ένα Hub. Ξεκινήστε δίνοντάς του ένα όνομα."
     }
   },
   {
     "id": "5aea790ededc",
-    "line": 1140,
+    "line": 1159,
     "tag": "span",
     "text": {
       "pl": "Na ekranie powitalnym naciśnij <em>Add apiary</em>.",
@@ -771,12 +801,13 @@
       "nl": "Tik op <em>Add apiary</em> in het welkomstscherm.",
       "sv": "Tryck på <em>Add apiary</em> på välkomstskärmen.",
       "da": "Tryk på <em>Add apiary</em> på velkomstskærmen.",
+      "pt": "Na tela de boas-vindas, toque em <em>Add apiary</em>.",
       "el": "Στην οθόνη καλωσορίσματος πατήστε <em>Add apiary</em>."
     }
   },
   {
     "id": "cf8b5ec753fb",
-    "line": 1141,
+    "line": 1160,
     "tag": "span",
     "text": {
       "pl": "Wpisz nazwę pasieki i jej skrót (maks. 3 znaki), a potem dotknij ikony skanera przy polu <em>Hub</em>.",
@@ -796,12 +827,13 @@
       "nl": "Vul de naam van de bijenstand en de afkorting (max. 3 tekens) in en tik daarna op het scanpictogram naast het veld <em>Hub</em>.",
       "sv": "Ange bigårdens namn och dess förkortning (max 3 tecken) och tryck sedan på skannerikonen vid fältet <em>Hub</em>.",
       "da": "Indtast bigårdens navn og forkortelse (maks. 3 tegn), og tryk derefter på scannerikonet ved feltet <em>Hub</em>.",
+      "pt": "Digite o nome do apiário e sua abreviação (máx. 3 caracteres); depois toque no ícone do scanner ao lado do campo <em>Hub</em>.",
       "el": "Πληκτρολογήστε το όνομα του μελισσοκομείου και τη συντομογραφία του (έως 3 χαρακτήρες) και μετά πατήστε το εικονίδιο του σαρωτή δίπλα στο πεδίο <em>Hub</em>."
     }
   },
   {
     "id": "014cec4c53b2",
-    "line": 1148,
+    "line": 1167,
     "tag": "span",
     "text": {
       "pl": "Aplikacja",
@@ -821,12 +853,13 @@
       "nl": "In de app",
       "sv": "I appen",
       "da": "I appen",
+      "pt": "No aplicativo",
       "el": "Στην εφαρμογή"
     }
   },
   {
     "id": "4234bb938eb5",
-    "line": 1159,
+    "line": 1178,
     "tag": "span",
     "text": {
       "pl": "Krok 03 · 03.3",
@@ -846,12 +879,13 @@
       "nl": "Stap 03 · 03.3",
       "sv": "Steg 03 · 03.3",
       "da": "Trin 03 · 03.3",
+      "pt": "Passo 03 · 03.3",
       "el": "Βήμα 03 · 03.3"
     }
   },
   {
     "id": "cc79d6fa7921",
-    "line": 1160,
+    "line": 1179,
     "tag": "span",
     "text": {
       "pl": "Zeskanuj kod QR&nbsp;Huba",
@@ -871,12 +905,13 @@
       "nl": "Scan de QR-code van de&nbsp;Hub",
       "sv": "Skanna QR-koden på&nbsp;Hub",
       "da": "Scan QR-koden på Hub",
+      "pt": "Escaneie o código QR do&nbsp;Hub",
       "el": "Σαρώστε τον κωδικό QR του&nbsp;Hub"
     }
   },
   {
     "id": "2b4183cc0fc7",
-    "line": 1162,
+    "line": 1181,
     "tag": "span",
     "text": {
       "pl": "Naklejka z kodem QR znajduje się na obudowie Huba. Ustaw ją w ramce skanera — aplikacja odczyta kod sama i wypełni pola <em>Hub</em> oraz <em>Verification Code</em>.",
@@ -896,12 +931,13 @@
       "nl": "De QR-sticker zit op de behuizing van de Hub. Houd hem binnen het kader van de scanner — de app leest de code zelf en vult de velden <em>Hub</em> en <em>Verification Code</em> voor je in.",
       "sv": "QR-dekalen sitter på höljet till Hub. Rikta in den i skannerramen — appen läser koden själv och fyller i fälten <em>Hub</em> och <em>Verification Code</em> åt dig.",
       "da": "Klistermærket med QR-koden sidder på Hub-kabinettet. Placér det midt i scannerrammen — appen læser koden og udfylder felterne <em>Hub</em> og <em>Verification Code</em> for dig.",
+      "pt": "O adesivo com o código QR fica na carcaça do Hub. Enquadre-o na moldura do scanner: o aplicativo lê o código sozinho e preenche para você os campos <em>Hub</em> e <em>Verification Code</em>.",
       "el": "Το αυτοκόλλητο με τον κωδικό QR βρίσκεται στο περίβλημα του Hub. Ευθυγραμμίστε το μέσα στο πλαίσιο του σαρωτή — η εφαρμογή διαβάζει τον κωδικό μόνη της και συμπληρώνει τα πεδία <em>Hub</em> και <em>Verification Code</em>."
     }
   },
   {
     "id": "d5b7ab41a2dd",
-    "line": 1166,
+    "line": 1185,
     "tag": "span",
     "text": {
       "pl": "<b>Wskazówka:</b> jeśli kod się nie skanuje, przetrzyj go i zapewnij równomierne światło — bez odblasku.",
@@ -921,12 +957,13 @@
       "nl": "<b>Tip:</b> lukt het scannen niet, veeg de code dan schoon en zorg voor gelijkmatig licht — zonder weerspiegeling.",
       "sv": "<b>Tips:</b> om koden inte går att skanna, torka av den och se till att ljuset är jämnt — utan reflexer.",
       "da": "<b>Tip:</b> hvis koden ikke kan scannes, så tør den af, og sørg for jævnt lys — undgå genskin.",
+      "pt": "<b>Dica:</b> se o código não for lido, limpe-o e garanta uma luz uniforme, sem reflexos.",
       "el": "<b>Συμβουλή:</b> αν ο κωδικός δεν σαρώνεται, σκουπίστε τον και φροντίστε για ομοιόμορφο φωτισμό — χωρίς αντανακλάσεις."
     }
   },
   {
     "id": "e162fd67632a",
-    "line": 1175,
+    "line": 1194,
     "tag": "span",
     "text": {
       "pl": "Rysunek poglądowy",
@@ -946,12 +983,13 @@
       "nl": "Referentietekening",
       "sv": "Referensritning",
       "da": "Referencetegning",
+      "pt": "Desenho de referência",
       "el": "Ενδεικτικό σχέδιο"
     }
   },
   {
     "id": "45f6684f2b42",
-    "line": 1180,
+    "line": 1199,
     "tag": "span",
     "text": {
       "pl": "Hub",
@@ -971,12 +1009,13 @@
       "nl": "Hub",
       "sv": "Hub",
       "da": "Hub",
+      "pt": "Hub",
       "el": "Hub"
     }
   },
   {
     "id": "42e8d92263f5",
-    "line": 1180,
+    "line": 1199,
     "tag": "span",
     "text": {
       "pl": "Zdjęcie",
@@ -996,12 +1035,13 @@
       "nl": "Foto",
       "sv": "Foto",
       "da": "Foto",
+      "pt": "Foto",
       "el": "Φωτογραφία"
     }
   },
   {
     "id": "147909a6b056",
-    "line": 1192,
+    "line": 1211,
     "tag": "span",
     "text": {
       "pl": "Krok 03 · 03.4 – 03.6",
@@ -1021,12 +1061,13 @@
       "nl": "Stap 03 · 03.4 – 03.6",
       "sv": "Steg 03 · 03.4 – 03.6",
       "da": "Trin 03 · 03.4 – 03.6",
+      "pt": "Passo 03 · 03.4 – 03.6",
       "el": "Βήμα 03 · 03.4 – 03.6"
     }
   },
   {
     "id": "c0df6706fb22",
-    "line": 1193,
+    "line": 1212,
     "tag": "span",
     "text": {
       "pl": "Pasieka jest gotowa",
@@ -1046,12 +1087,13 @@
       "nl": "De bijenstand is klaar",
       "sv": "Bigården är klar",
       "da": "Din bigård er klar",
+      "pt": "O apiário está pronto",
       "el": "Το μελισσοκομείο είναι έτοιμο"
     }
   },
   {
     "id": "eb878c1a611b",
-    "line": 1195,
+    "line": 1214,
     "tag": "span",
     "text": {
       "pl": "Po zeskanowaniu kodu aplikacja uzupełnia dane Huba za Ciebie — nic nie przepisujesz ręcznie.",
@@ -1071,12 +1113,13 @@
       "nl": "Na het scannen vult de app de gegevens van de Hub voor je in — je hoeft niets over te typen.",
       "sv": "Efter skanningen fyller appen i uppgifterna om Hub åt dig — inget behöver skrivas in för hand.",
       "da": "Efter scanningen udfylder appen oplysningerne om Hub for dig — intet skal indtastes manuelt.",
+      "pt": "Depois do escaneamento, o aplicativo preenche os dados do Hub para você: nada precisa ser digitado à mão.",
       "el": "Μετά τη σάρωση η εφαρμογή συμπληρώνει τα στοιχεία του Hub για εσάς — δεν χρειάζεται να πληκτρολογήσετε τίποτα."
     }
   },
   {
     "id": "7ef90a465ae5",
-    "line": 1199,
+    "line": 1218,
     "tag": "span",
     "text": {
       "pl": "Skaner odczytuje kod QR z Huba.",
@@ -1096,12 +1139,13 @@
       "nl": "De scanner leest de QR-code van de Hub.",
       "sv": "Skannern läser QR-koden på Hub.",
       "da": "Scanneren læser QR-koden fra Hub.",
+      "pt": "O scanner lê o código QR do Hub.",
       "el": "Ο σαρωτής διαβάζει τον κωδικό QR από το Hub."
     }
   },
   {
     "id": "147278f5c8a9",
-    "line": 1200,
+    "line": 1219,
     "tag": "span",
     "text": {
       "pl": "Pola <em>Hub</em> i <em>Verification Code</em> wypełniają się automatycznie — zatwierdź formularz.",
@@ -1121,12 +1165,13 @@
       "nl": "De velden <em>Hub</em> en <em>Verification Code</em> worden automatisch ingevuld — bevestig het formulier.",
       "sv": "Fälten <em>Hub</em> och <em>Verification Code</em> fylls i automatiskt — bekräfta formuläret.",
       "da": "Felterne <em>Hub</em> og <em>Verification Code</em> udfyldes automatisk — bekræft formularen.",
+      "pt": "Os campos <em>Hub</em> e <em>Verification Code</em> são preenchidos automaticamente: confirme o formulário.",
       "el": "Τα πεδία <em>Hub</em> και <em>Verification Code</em> συμπληρώνονται αυτόματα — επιβεβαιώστε τη φόρμα."
     }
   },
   {
     "id": "0d2379b20fe1",
-    "line": 1201,
+    "line": 1220,
     "tag": "span",
     "text": {
       "pl": "Pasieka pojawia się na ekranie głównym razem z pogodą.",
@@ -1146,12 +1191,13 @@
       "nl": "De bijenstand verschijnt samen met het weer op het startscherm.",
       "sv": "Bigården dyker upp på startskärmen tillsammans med vädret.",
       "da": "Bigården vises på startskærmen sammen med vejret.",
+      "pt": "O apiário aparece na tela inicial junto com a previsão do tempo.",
       "el": "Το μελισσοκομείο εμφανίζεται στην αρχική οθόνη μαζί με τον καιρό."
     }
   },
   {
     "id": "014cec4c53b2",
-    "line": 1208,
+    "line": 1227,
     "tag": "span",
     "text": {
       "pl": "Aplikacja",
@@ -1171,12 +1217,13 @@
       "nl": "In de app",
       "sv": "I appen",
       "da": "I appen",
+      "pt": "No aplicativo",
       "el": "Στην εφαρμογή"
     }
   },
   {
     "id": "4344280273c9",
-    "line": 1219,
+    "line": 1238,
     "tag": "span",
     "text": {
       "pl": "Krok 04 · 04.1 – 04.3",
@@ -1196,12 +1243,13 @@
       "nl": "Stap 04 · 04.1 – 04.3",
       "sv": "Steg 04 · 04.1 – 04.3",
       "da": "Trin 04 · 04.1 – 04.3",
+      "pt": "Passo 04 · 04.1 – 04.3",
       "el": "Βήμα 04 · 04.1 – 04.3"
     }
   },
   {
     "id": "0d40eedb2f02",
-    "line": 1220,
+    "line": 1239,
     "tag": "span",
     "text": {
       "pl": "Dodaj ul: ColonyLink, VitalSensor i&nbsp;Scale",
@@ -1221,12 +1269,13 @@
       "nl": "Kast toevoegen: ColonyLink, VitalSensor en&nbsp;Scale",
       "sv": "Lägg till bikupa: ColonyLink, VitalSensor och&nbsp;Scale",
       "da": "Tilføj bistade: ColonyLink, VitalSensor og&nbsp;Scale",
+      "pt": "Adicione a colmeia: ColonyLink, VitalSensor e&nbsp;Scale",
       "el": "Προσθέστε κυψέλη: ColonyLink, VitalSensor και&nbsp;Scale"
     }
   },
   {
     "id": "335118d08380",
-    "line": 1222,
+    "line": 1241,
     "tag": "span",
     "text": {
       "pl": "Pierwszy ul dostaje komplet. Wszystkie trzy urządzenia przypisujesz w jednym formularzu, skanując kolejno ich kody QR.",
@@ -1246,12 +1295,13 @@
       "nl": "De eerste kast krijgt de volledige set. Alle drie de apparaten koppel je in één formulier door hun QR-codes na elkaar te scannen.",
       "sv": "Den första bikupan får hela paketet. Du kopplar alla tre enheterna i ett och samma formulär genom att skanna deras QR-koder i tur och ordning.",
       "da": "Det første bistade får hele sættet. Du tilknytter alle tre enheder i én formular ved at scanne deres QR-koder efter tur.",
+      "pt": "A primeira colmeia recebe o conjunto completo. Você vincula os três dispositivos em um único formulário, escaneando os códigos QR um após o outro.",
       "el": "Η πρώτη κυψέλη παίρνει το πλήρες σετ. Και τις τρεις συσκευές τις αντιστοιχίζετε σε μία φόρμα, σαρώνοντας διαδοχικά τους κωδικούς QR τους."
     }
   },
   {
     "id": "cb83953d16da",
-    "line": 1226,
+    "line": 1245,
     "tag": "span",
     "text": {
       "pl": "Na ekranie głównym otwórz swoją pasiekę.",
@@ -1271,12 +1321,13 @@
       "nl": "Open je bijenstand vanaf het startscherm.",
       "sv": "Öppna din bigård från startskärmen.",
       "da": "Åbn din bigård fra startskærmen.",
+      "pt": "Abra seu apiário na tela inicial.",
       "el": "Στην αρχική οθόνη ανοίξτε το μελισσοκομείο σας."
     }
   },
   {
     "id": "381ba8bd581f",
-    "line": 1227,
+    "line": 1246,
     "tag": "span",
     "text": {
       "pl": "Naciśnij <em>Add beehive</em>.",
@@ -1296,12 +1347,13 @@
       "nl": "Tik op <em>Add beehive</em>.",
       "sv": "Tryck på <em>Add beehive</em>.",
       "da": "Tryk på <em>Add beehive</em>.",
+      "pt": "Toque em <em>Add beehive</em>.",
       "el": "Πατήστε <em>Add beehive</em>."
     }
   },
   {
     "id": "dcc2cbe1fbf4",
-    "line": 1228,
+    "line": 1247,
     "tag": "span",
     "text": {
       "pl": "Zacznij od <em>ColonyLink</em> — dotknij ikony skanera przy tym polu.",
@@ -1321,12 +1373,13 @@
       "nl": "Begin met <em>ColonyLink</em> — tik op het scanpictogram naast dat veld.",
       "sv": "Börja med <em>ColonyLink</em> — tryck på skannerikonen vid det fältet.",
       "da": "Begynd med <em>ColonyLink</em> — tryk på scannerikonet ved dette felt.",
+      "pt": "Comece pelo <em>ColonyLink</em>: toque no ícone do scanner ao lado desse campo.",
       "el": "Ξεκινήστε από το <em>ColonyLink</em> — πατήστε το εικονίδιο του σαρωτή δίπλα σε αυτό το πεδίο."
     }
   },
   {
     "id": "014cec4c53b2",
-    "line": 1235,
+    "line": 1254,
     "tag": "span",
     "text": {
       "pl": "Aplikacja",
@@ -1346,12 +1399,13 @@
       "nl": "In de app",
       "sv": "I appen",
       "da": "I appen",
+      "pt": "No aplicativo",
       "el": "Στην εφαρμογή"
     }
   },
   {
     "id": "c8405f5eab04",
-    "line": 1246,
+    "line": 1265,
     "tag": "span",
     "text": {
       "pl": "Krok 04 · ColonyLink",
@@ -1371,12 +1425,13 @@
       "nl": "Stap 04 · ColonyLink",
       "sv": "Steg 04 · ColonyLink",
       "da": "Trin 04 · ColonyLink",
+      "pt": "Passo 04 · ColonyLink",
       "el": "Βήμα 04 · ColonyLink"
     }
   },
   {
     "id": "0e0c144fc910",
-    "line": 1247,
+    "line": 1266,
     "tag": "span",
     "text": {
       "pl": "Zeskanuj kod QR ColonyLink",
@@ -1396,12 +1451,13 @@
       "nl": "Scan de QR-code van de ColonyLink",
       "sv": "Skanna QR-koden på ColonyLink",
       "da": "Scan QR-koden på ColonyLink",
+      "pt": "Escaneie o código QR do ColonyLink",
       "el": "Σαρώστε τον κωδικό QR του ColonyLink"
     }
   },
   {
     "id": "3bf2a5388166",
-    "line": 1249,
+    "line": 1268,
     "tag": "span",
     "text": {
       "pl": "ColonyLink to <b>naklejka z wbudowanym tagiem NFC i nadrukowanym kodem QR</b>. Skanujesz ją jako pierwszą — to ona wiąże ul w aplikacji z konkretnym ulem w pasiece.",
@@ -1421,12 +1477,13 @@
       "nl": "De ColonyLink is een <b>sticker met een ingebouwde NFC-tag en een opgedrukte QR-code</b>. Die scan je als eerste — hij verbindt de kast in de app met een specifieke kast op de bijenstand.",
       "sv": "ColonyLink är en <b>dekal med inbyggd NFC-tagg och påtryckt QR-kod</b>. Skanna den först — det är den som knyter bikupan i appen till en bestämd bikupa i bigården.",
       "da": "ColonyLink er et <b>klistermærke med indbygget NFC-tag og påtrykt QR-kode</b>. Scan det først — det er det, som knytter bistadet i appen sammen med et bestemt bistade i bigården.",
+      "pt": "O ColonyLink é um <b>adesivo com tag NFC integrada e código QR impresso</b>. Escaneie-o primeiro: é ele que liga a colmeia do aplicativo a uma colmeia específica do apiário.",
       "el": "Το ColonyLink είναι <b>αυτοκόλλητο με ενσωματωμένη ετικέτα NFC και τυπωμένο κωδικό QR</b>. Το σαρώνετε πρώτο — αυτό συνδέει την κυψέλη στην εφαρμογή με μια συγκεκριμένη κυψέλη στο μελισσοκομείο."
     }
   },
   {
     "id": "cacc740cae49",
-    "line": 1253,
+    "line": 1272,
     "tag": "span",
     "text": {
       "pl": "Ten sam kod odczytasz później zbliżeniowo przez <b>NFC</b> — wystarczy przyłożyć telefon, także w rękawicach.",
@@ -1446,12 +1503,13 @@
       "nl": "Dezelfde code lees je later contactloos via <b>NFC</b> — je hoeft je telefoon er alleen tegenaan te houden, ook met handschoenen aan.",
       "sv": "Samma kod kan du senare läsa av med <b>NFC</b> — det räcker att hålla telefonen mot den, även med handskar på.",
       "da": "Den samme kode kan du senere aflæse med <b>NFC</b> — hold blot telefonen op mod den, også med handsker på.",
+      "pt": "Esse mesmo código você lê depois por <b>NFC</b>: basta aproximar o celular, mesmo com luvas.",
       "el": "Τον ίδιο κωδικό μπορείτε να τον διαβάσετε αργότερα ανέπαφα μέσω <b>NFC</b> — αρκεί να ακουμπήσετε το κινητό, ακόμη και με γάντια."
     }
   },
   {
     "id": "e162fd67632a",
-    "line": 1261,
+    "line": 1280,
     "tag": "span",
     "text": {
       "pl": "Rysunek poglądowy",
@@ -1471,12 +1529,13 @@
       "nl": "Referentietekening",
       "sv": "Referensritning",
       "da": "Referencetegning",
+      "pt": "Desenho de referência",
       "el": "Ενδεικτικό σχέδιο"
     }
   },
   {
     "id": "b0e5ad88c791",
-    "line": 1272,
+    "line": 1291,
     "tag": "span",
     "text": {
       "pl": "Krok 04 · VitalSensor",
@@ -1496,12 +1555,13 @@
       "nl": "Stap 04 · VitalSensor",
       "sv": "Steg 04 · VitalSensor",
       "da": "Trin 04 · VitalSensor",
+      "pt": "Passo 04 · VitalSensor",
       "el": "Βήμα 04 · VitalSensor"
     }
   },
   {
     "id": "3a490f6028de",
-    "line": 1273,
+    "line": 1292,
     "tag": "span",
     "text": {
       "pl": "Zeskanuj kod QR VitalSensora",
@@ -1521,12 +1581,13 @@
       "nl": "Scan de QR-code van de VitalSensor",
       "sv": "Skanna QR-koden på VitalSensor",
       "da": "Scan QR-koden på VitalSensor",
+      "pt": "Escaneie o código QR do VitalSensor",
       "el": "Σαρώστε τον κωδικό QR του VitalSensor"
     }
   },
   {
     "id": "433cd034e627",
-    "line": 1275,
+    "line": 1294,
     "tag": "span",
     "text": {
       "pl": "Naklejka z kodem QR jest na krótszym boku obudowy. Zeskanuj ją przed zamontowaniem czujnika na ramce — po włożeniu ramki do ula kod ma być widoczny od góry.",
@@ -1546,12 +1607,13 @@
       "nl": "De QR-sticker zit op de smalle zijkant van de behuizing. Scan hem voordat je de sensor op het raam bevestigt — zodra het raam in de kast hangt, moet de code van bovenaf zichtbaar blijven.",
       "sv": "QR-dekalen sitter på höljets kortsida. Skanna den innan du monterar sensorn på ramen — när ramen sitter i bikupan ska koden vara synlig uppifrån.",
       "da": "Klistermærket med QR-koden sidder på kabinettets korte side. Scan det, før du monterer sensoren på rammen — når rammen sidder i bistadet, skal koden være synlig oppefra.",
+      "pt": "O adesivo com o código QR fica no lado menor da carcaça. Escaneie-o antes de montar o sensor no quadro: depois que o quadro estiver na colmeia, o código precisa continuar visível por cima.",
       "el": "Το αυτοκόλλητο με τον κωδικό QR βρίσκεται στη στενή πλευρά του περιβλήματος. Σαρώστε το πριν στερεώσετε τον αισθητήρα στο πλαίσιο — μόλις το πλαίσιο μπει στην κυψέλη, ο κωδικός πρέπει να παραμένει ορατός από πάνω."
     }
   },
   {
     "id": "283f1b93b499",
-    "line": 1279,
+    "line": 1298,
     "tag": "span",
     "text": {
       "pl": "Każdy z trzech czujników ma własny kod. Pilnuj, który trafia do którego ula.",
@@ -1571,12 +1633,13 @@
       "nl": "Elk van de drie sensoren heeft een eigen code. Houd bij welke in welke kast komt.",
       "sv": "Var och en av de tre sensorerna har sin egen kod. Håll reda på vilken som ska i vilken bikupa.",
       "da": "Hver af de tre sensorer har sin egen kode. Hold styr på, hvilken der skal i hvilket bistade.",
+      "pt": "Cada um dos três sensores tem seu próprio código. Anote qual deles vai em cada colmeia.",
       "el": "Καθένας από τους τρεις αισθητήρες έχει τον δικό του κωδικό. Σημειώνετε ποιος πηγαίνει σε ποια κυψέλη."
     }
   },
   {
     "id": "e162fd67632a",
-    "line": 1288,
+    "line": 1307,
     "tag": "span",
     "text": {
       "pl": "Rysunek poglądowy",
@@ -1596,12 +1659,13 @@
       "nl": "Referentietekening",
       "sv": "Referensritning",
       "da": "Referencetegning",
+      "pt": "Desenho de referência",
       "el": "Ενδεικτικό σχέδιο"
     }
   },
   {
     "id": "633e88e4794f",
-    "line": 1293,
+    "line": 1312,
     "tag": "span",
     "text": {
       "pl": "VitalSensor",
@@ -1621,12 +1685,13 @@
       "nl": "VitalSensor",
       "sv": "VitalSensor",
       "da": "VitalSensor",
+      "pt": "VitalSensor",
       "el": "VitalSensor"
     }
   },
   {
     "id": "42e8d92263f5",
-    "line": 1293,
+    "line": 1312,
     "tag": "span",
     "text": {
       "pl": "Zdjęcie",
@@ -1646,12 +1711,13 @@
       "nl": "Foto",
       "sv": "Foto",
       "da": "Foto",
+      "pt": "Foto",
       "el": "Φωτογραφία"
     }
   },
   {
     "id": "796e41f72ec1",
-    "line": 1305,
+    "line": 1324,
     "tag": "span",
     "text": {
       "pl": "Krok 04 · Scale",
@@ -1671,12 +1737,13 @@
       "nl": "Stap 04 · Scale",
       "sv": "Steg 04 · Scale",
       "da": "Trin 04 · Scale",
+      "pt": "Passo 04 · Scale",
       "el": "Βήμα 04 · Scale"
     }
   },
   {
     "id": "b5306d8e2c5b",
-    "line": 1306,
+    "line": 1325,
     "tag": "span",
     "text": {
       "pl": "Zeskanuj kod QR Scale",
@@ -1696,12 +1763,13 @@
       "nl": "Scan de QR-code van de Scale",
       "sv": "Skanna QR-koden på Scale",
       "da": "Scan QR-koden på Scale",
+      "pt": "Escaneie o código QR do Scale",
       "el": "Σαρώστε τον κωδικό QR του Scale"
     }
   },
   {
     "id": "ed7c8a8c0ca4",
-    "line": 1308,
+    "line": 1327,
     "tag": "span",
     "text": {
       "pl": "Naklejka z kodem QR jest na czole belki pomiarowej — tej z elektroniką i komorą baterii. Drewniana kantówka nie ma kodu.",
@@ -1721,12 +1789,13 @@
       "nl": "De QR-sticker zit op de kopse kant van de meetbalk — die met de elektronica en het batterijvak. De houten balk heeft geen code.",
       "sv": "QR-dekalen sitter på mätbalkens ände — den med elektroniken och batterifacket. Träregeln har ingen kod.",
       "da": "Klistermærket med QR-koden sidder på enden af målebjælken — den med elektronikken og batterirummet. Trælægten har ingen kode.",
+      "pt": "O adesivo com o código QR fica na face frontal da barra de pesagem, a que tem a eletrônica e o compartimento das pilhas. O sarrafo de madeira não tem código.",
       "el": "Το αυτοκόλλητο με τον κωδικό QR βρίσκεται στο μέτωπο της δοκού μέτρησης — εκείνης με τα ηλεκτρονικά και τη θήκη της μπαταρίας. Η ξύλινη δοκός δεν έχει κωδικό."
     }
   },
   {
     "id": "3aea4bcbacf6",
-    "line": 1312,
+    "line": 1331,
     "tag": "span",
     "text": {
       "pl": "Zeskanuj kod <b>zanim</b> wsuniesz belkę pod ul — później dostęp do niego będzie utrudniony.",
@@ -1746,12 +1815,13 @@
       "nl": "Scan de code <b>voordat</b> je de balk onder de kast schuift — daarna kom je er lastiger bij.",
       "sv": "Skanna koden <b>innan</b> du skjuter in balken under bikupan — efteråt är den svårare att komma åt.",
       "da": "Scan koden, <b>før</b> du skubber bjælken ind under bistadet — bagefter er den svær at komme til.",
+      "pt": "Escaneie o código <b>antes</b> de deslizar a barra sob a colmeia: depois o acesso fica mais difícil.",
       "el": "Σαρώστε τον κωδικό <b>πριν</b> σπρώξετε τη δοκό κάτω από την κυψέλη — μετά η πρόσβαση σε αυτόν είναι δυσκολότερη."
     }
   },
   {
     "id": "e162fd67632a",
-    "line": 1321,
+    "line": 1340,
     "tag": "span",
     "text": {
       "pl": "Rysunek poglądowy",
@@ -1771,12 +1841,13 @@
       "nl": "Referentietekening",
       "sv": "Referensritning",
       "da": "Referencetegning",
+      "pt": "Desenho de referência",
       "el": "Ενδεικτικό σχέδιο"
     }
   },
   {
     "id": "21ee8ff62e2c",
-    "line": 1326,
+    "line": 1345,
     "tag": "span",
     "text": {
       "pl": "Scale",
@@ -1796,12 +1867,13 @@
       "nl": "Scale",
       "sv": "Scale",
       "da": "Scale",
+      "pt": "Scale",
       "el": "Scale"
     }
   },
   {
     "id": "42e8d92263f5",
-    "line": 1326,
+    "line": 1345,
     "tag": "span",
     "text": {
       "pl": "Zdjęcie",
@@ -1821,12 +1893,13 @@
       "nl": "Foto",
       "sv": "Foto",
       "da": "Foto",
+      "pt": "Foto",
       "el": "Φωτογραφία"
     }
   },
   {
     "id": "06a23448d0e4",
-    "line": 1338,
+    "line": 1357,
     "tag": "span",
     "text": {
       "pl": "Krok 04 · 04.8 – 04.10",
@@ -1846,12 +1919,13 @@
       "nl": "Stap 04 · 04.8 – 04.10",
       "sv": "Steg 04 · 04.8 – 04.10",
       "da": "Trin 04 · 04.8 – 04.10",
+      "pt": "Passo 04 · 04.8 – 04.10",
       "el": "Βήμα 04 · 04.8 – 04.10"
     }
   },
   {
     "id": "4060e95a6efd",
-    "line": 1339,
+    "line": 1358,
     "tag": "span",
     "text": {
       "pl": "Pierwszy ul zapisany",
@@ -1871,12 +1945,13 @@
       "nl": "De eerste kast is opgeslagen",
       "sv": "Första bikupan är sparad",
       "da": "Det første bistade er gemt",
+      "pt": "Primeira colmeia salva",
       "el": "Η πρώτη κυψέλη αποθηκεύτηκε"
     }
   },
   {
     "id": "b45c92256e3e",
-    "line": 1341,
+    "line": 1360,
     "tag": "span",
     "text": {
       "pl": "Wszystkie kody weryfikacyjne wypełniają się same. Po zapisaniu formularza ul pojawia się w pasiece.",
@@ -1896,12 +1971,13 @@
       "nl": "Alle verificatiecodes worden vanzelf ingevuld. Zodra je het formulier opslaat, verschijnt de kast op de bijenstand.",
       "sv": "Alla verifieringskoder fylls i av sig själva. När du sparar formuläret dyker bikupan upp i bigården.",
       "da": "Alle verifikationskoder udfyldes af sig selv. Når du gemmer formularen, dukker bistadet op i bigården.",
+      "pt": "Todos os códigos de verificação são preenchidos sozinhos. Ao salvar o formulário, a colmeia aparece no apiário.",
       "el": "Όλοι οι κωδικοί επαλήθευσης συμπληρώνονται μόνοι τους. Μόλις αποθηκεύσετε τη φόρμα, η κυψέλη εμφανίζεται στο μελισσοκομείο."
     }
   },
   {
     "id": "bc8c3fd12699",
-    "line": 1345,
+    "line": 1364,
     "tag": "span",
     "text": {
       "pl": "Skaner odczytuje ostatni z kodów.",
@@ -1921,12 +1997,13 @@
       "nl": "De scanner leest de laatste code.",
       "sv": "Skannern läser den sista koden.",
       "da": "Scanneren læser den sidste kode.",
+      "pt": "O scanner lê o último dos códigos.",
       "el": "Ο σαρωτής διαβάζει τον τελευταίο κωδικό."
     }
   },
   {
     "id": "fe480eda32c3",
-    "line": 1346,
+    "line": 1365,
     "tag": "span",
     "text": {
       "pl": "Formularz jest kompletny — naciśnij <em>Save</em>.",
@@ -1946,12 +2023,13 @@
       "nl": "Het formulier is compleet — tik op <em>Save</em>.",
       "sv": "Formuläret är komplett — tryck på <em>Save</em>.",
       "da": "Formularen er komplet — tryk på <em>Save</em>.",
+      "pt": "O formulário está completo: toque em <em>Save</em>.",
       "el": "Η φόρμα είναι πλήρης — πατήστε <em>Save</em>."
     }
   },
   {
     "id": "0f7988f7b8a5",
-    "line": 1347,
+    "line": 1366,
     "tag": "span",
     "text": {
       "pl": "Ul widnieje na ekranie głównym. Odczyty pojawią się po pierwszej synchronizacji.",
@@ -1971,12 +2049,13 @@
       "nl": "De kast staat op het startscherm. De metingen verschijnen na de eerste synchronisatie.",
       "sv": "Bikupan syns på startskärmen. Avläsningarna kommer efter den första synkroniseringen.",
       "da": "Bistadet vises på startskærmen. Aflæsningerne kommer efter den første synkronisering.",
+      "pt": "A colmeia aparece na tela inicial. As leituras chegam após a primeira sincronização.",
       "el": "Η κυψέλη εμφανίζεται στην αρχική οθόνη. Οι μετρήσεις έρχονται μετά τον πρώτο συγχρονισμό."
     }
   },
   {
     "id": "014cec4c53b2",
-    "line": 1354,
+    "line": 1373,
     "tag": "span",
     "text": {
       "pl": "Aplikacja",
@@ -1996,12 +2075,13 @@
       "nl": "In de app",
       "sv": "I appen",
       "da": "I appen",
+      "pt": "No aplicativo",
       "el": "Στην εφαρμογή"
     }
   },
   {
     "id": "ee5a5864e2e1",
-    "line": 1365,
+    "line": 1384,
     "tag": "span",
     "text": {
       "pl": "Krok 05 · 05.1 – 05.3",
@@ -2021,12 +2101,13 @@
       "nl": "Stap 05 · 05.1 – 05.3",
       "sv": "Steg 05 · 05.1 – 05.3",
       "da": "Trin 05 · 05.1 – 05.3",
+      "pt": "Passo 05 · 05.1 – 05.3",
       "el": "Βήμα 05 · 05.1 – 05.3"
     }
   },
   {
     "id": "d7198443eddf",
-    "line": 1366,
+    "line": 1385,
     "tag": "span",
     "text": {
       "pl": "Dodaj kolejny ul",
@@ -2046,12 +2127,13 @@
       "nl": "Nog een kast toevoegen",
       "sv": "Lägg till ännu en bikupa",
       "da": "Tilføj endnu et bistade",
+      "pt": "Adicione outra colmeia",
       "el": "Προσθέστε κι άλλη κυψέλη"
     }
   },
   {
     "id": "31539e08a951",
-    "line": 1368,
+    "line": 1387,
     "tag": "span",
     "text": {
       "pl": "Kolejne ule dodajesz z <b>ColonyLinkiem i VitalSensorem</b> — Scale zostaje pod pierwszym ulem. Pole <em>Scale</em> zostaw puste.",
@@ -2071,12 +2153,13 @@
       "nl": "Volgende kasten voeg je toe met een <b>ColonyLink en een VitalSensor</b> — de Scale blijft onder de eerste kast staan. Laat het veld <em>Scale</em> leeg.",
       "sv": "Fler bikupor lägger du till med <b>ColonyLink och VitalSensor</b> — Scale står kvar under den första bikupan. Lämna fältet <em>Scale</em> tomt.",
       "da": "De næste bistader tilføjer du med <b>ColonyLink og VitalSensor</b> — Scale bliver stående under det første bistade. Lad feltet <em>Scale</em> stå tomt.",
+      "pt": "As demais colmeias são adicionadas com <b>ColonyLink e VitalSensor</b>: o Scale fica sob a primeira colmeia. Deixe o campo <em>Scale</em> vazio.",
       "el": "Τις επόμενες κυψέλες τις προσθέτετε με <b>ColonyLink και VitalSensor</b> — το Scale παραμένει κάτω από την πρώτη κυψέλη. Το πεδίο <em>Scale</em> αφήστε το κενό."
     }
   },
   {
     "id": "60fe0cdec396",
-    "line": 1372,
+    "line": 1391,
     "tag": "span",
     "text": {
       "pl": "Otwórz pasiekę z ekranu głównego.",
@@ -2096,12 +2179,13 @@
       "nl": "Open de bijenstand vanaf het startscherm.",
       "sv": "Öppna bigården från startskärmen.",
       "da": "Åbn bigården fra startskærmen.",
+      "pt": "Abra o apiário na tela inicial.",
       "el": "Ανοίξτε το μελισσοκομείο από την αρχική οθόνη."
     }
   },
   {
     "id": "5f32911f188d",
-    "line": 1373,
+    "line": 1392,
     "tag": "span",
     "text": {
       "pl": "Naciśnij <em>+</em> i wybierz <em>Beehive</em>.",
@@ -2121,12 +2205,13 @@
       "nl": "Tik op <em>+</em> en kies <em>Beehive</em>.",
       "sv": "Tryck på <em>+</em> och välj <em>Beehive</em>.",
       "da": "Tryk på <em>+</em>, og vælg <em>Beehive</em>.",
+      "pt": "Toque em <em>+</em> e escolha <em>Beehive</em>.",
       "el": "Πατήστε <em>+</em> και επιλέξτε <em>Beehive</em>."
     }
   },
   {
     "id": "038da2435898",
-    "line": 1374,
+    "line": 1393,
     "tag": "span",
     "text": {
       "pl": "Zeskanuj kod QR z <em>ColonyLink</em>, a zaraz po nim z <em>VitalSensora</em>.",
@@ -2146,12 +2231,13 @@
       "nl": "Scan de QR-code van de <em>ColonyLink</em> en daarna die van de <em>VitalSensor</em>.",
       "sv": "Skanna QR-koden på <em>ColonyLink</em> och därefter den på <em>VitalSensor</em>.",
       "da": "Scan QR-koden på <em>ColonyLink</em> og derefter den på <em>VitalSensor</em>.",
+      "pt": "Escaneie o código QR do <em>ColonyLink</em> e, logo depois, o do <em>VitalSensor</em>.",
       "el": "Σαρώστε τον κωδικό QR του <em>ColonyLink</em> και αμέσως μετά του <em>VitalSensor</em>."
     }
   },
   {
     "id": "014cec4c53b2",
-    "line": 1381,
+    "line": 1400,
     "tag": "span",
     "text": {
       "pl": "Aplikacja",
@@ -2171,12 +2257,13 @@
       "nl": "In de app",
       "sv": "I appen",
       "da": "I appen",
+      "pt": "No aplicativo",
       "el": "Στην εφαρμογή"
     }
   },
   {
     "id": "5026c2ac5cf4",
-    "line": 1392,
+    "line": 1411,
     "tag": "span",
     "text": {
       "pl": "Krok 05 · 05.4 – 05.7",
@@ -2196,12 +2283,13 @@
       "nl": "Stap 05 · 05.4 – 05.7",
       "sv": "Steg 05 · 05.4 – 05.7",
       "da": "Trin 05 · 05.4 – 05.7",
+      "pt": "Passo 05 · 05.4 – 05.7",
       "el": "Βήμα 05 · 05.4 – 05.7"
     }
   },
   {
     "id": "d24b68de4e7e",
-    "line": 1393,
+    "line": 1412,
     "tag": "span",
     "text": {
       "pl": "Kolejny ul w pasiece",
@@ -2221,12 +2309,13 @@
       "nl": "Nog een kast op de bijenstand",
       "sv": "Ännu en bikupa i bigården",
       "da": "Endnu et bistade i bigården",
+      "pt": "Outra colmeia no apiário",
       "el": "Κι άλλη κυψέλη στο μελισσοκομείο"
     }
   },
   {
     "id": "d6a0ae7eeaf6",
-    "line": 1395,
+    "line": 1414,
     "tag": "span",
     "text": {
       "pl": "Formularz zapisuje się tak samo jak przy pierwszym ulu — z ColonyLinkiem i VitalSensorem, bez Scale.",
@@ -2246,12 +2335,13 @@
       "nl": "Het formulier sla je net zo op als bij de eerste kast — met een ColonyLink en een VitalSensor, zonder de Scale.",
       "sv": "Formuläret sparar du precis som för den första bikupan — med ColonyLink och VitalSensor, utan Scale.",
       "da": "Formularen gemmer du på samme måde som ved det første bistade — med ColonyLink og VitalSensor, uden Scale.",
+      "pt": "O formulário é salvo igual ao da primeira colmeia: com ColonyLink e VitalSensor, sem o Scale.",
       "el": "Η φόρμα αποθηκεύεται ακριβώς όπως στην πρώτη κυψέλη — με ColonyLink και VitalSensor, χωρίς το Scale."
     }
   },
   {
     "id": "722a371e4c8d",
-    "line": 1399,
+    "line": 1418,
     "tag": "span",
     "text": {
       "pl": "Skaner odczytuje kody ColonyLinka i kolejnego czujnika.",
@@ -2271,12 +2361,13 @@
       "nl": "De scanner leest de ColonyLink en de volgende sensor.",
       "sv": "Skannern läser ColonyLink och nästa sensor.",
       "da": "Scanneren læser ColonyLink og den næste sensor.",
+      "pt": "O scanner lê o ColonyLink e o sensor seguinte.",
       "el": "Ο σαρωτής διαβάζει το ColonyLink και τον επόμενο αισθητήρα."
     }
   },
   {
     "id": "a951e72b2c89",
-    "line": 1400,
+    "line": 1419,
     "tag": "span",
     "text": {
       "pl": "Pola i kody weryfikacyjne są gotowe — naciśnij <em>Save</em>.",
@@ -2296,12 +2387,13 @@
       "nl": "De velden en verificatiecodes zijn ingevuld — tik op <em>Save</em>.",
       "sv": "Fälten och verifieringskoderna är klara — tryck på <em>Save</em>.",
       "da": "Felterne og verifikationskoderne er klar — tryk på <em>Save</em>.",
+      "pt": "Os campos e os códigos de verificação estão prontos: toque em <em>Save</em>.",
       "el": "Τα πεδία και οι κωδικοί επαλήθευσης είναι έτοιμα — πατήστε <em>Save</em>."
     }
   },
   {
     "id": "a51d56895f8c",
-    "line": 1401,
+    "line": 1420,
     "tag": "span",
     "text": {
       "pl": "Kolejny ul widnieje w pasiece. Powtórz krok 05 dla każdego następnego ula.",
@@ -2321,12 +2413,13 @@
       "nl": "De volgende kast staat op de bijenstand. Herhaal stap 05 voor elke volgende kast.",
       "sv": "Nästa bikupa syns i bigården. Upprepa steg 05 för varje ny bikupa.",
       "da": "Det næste bistade vises i bigården. Gentag trin 05 for hvert nyt bistade.",
+      "pt": "A colmeia seguinte aparece no apiário. Repita o passo 05 para cada colmeia adicional.",
       "el": "Η επόμενη κυψέλη εμφανίζεται στο μελισσοκομείο. Επαναλάβετε το βήμα 05 για κάθε επόμενη κυψέλη."
     }
   },
   {
     "id": "014cec4c53b2",
-    "line": 1408,
+    "line": 1427,
     "tag": "span",
     "text": {
       "pl": "Aplikacja",
@@ -2346,12 +2439,13 @@
       "nl": "In de app",
       "sv": "I appen",
       "da": "I appen",
+      "pt": "No aplicativo",
       "el": "Στην εφαρμογή"
     }
   },
   {
     "id": "1b5daca71a84",
-    "line": 1419,
+    "line": 1438,
     "tag": "span",
     "text": {
       "pl": "Krok 06",
@@ -2371,12 +2465,13 @@
       "nl": "Stap 06",
       "sv": "Steg 06",
       "da": "Trin 06",
+      "pt": "Passo 06",
       "el": "Βήμα 06"
     }
   },
   {
     "id": "a34aa4a5d3da",
-    "line": 1420,
+    "line": 1439,
     "tag": "span",
     "text": {
       "pl": "Uruchom urządzenia i poczekaj na dane",
@@ -2396,12 +2491,13 @@
       "nl": "Zet de apparaten aan en wacht op data",
       "sv": "Starta enheterna och vänta på data",
       "da": "Tænd enhederne, og vent på data",
+      "pt": "Ligue os dispositivos e aguarde os dados",
       "el": "Ενεργοποιήστε τις συσκευές και περιμένετε δεδομένα"
     }
   },
   {
     "id": "b624fcbf345e",
-    "line": 1422,
+    "line": 1441,
     "tag": "span",
     "text": {
       "pl": "Urządzenia przychodzą z <b>zamontowanymi bateriami</b> — nic nie wkładasz. Sprawdzasz je tylko <b>przed</b> montażem w pasiece, żeby wiedzieć, że działają, zanim wejdziesz między ule.",
@@ -2421,12 +2517,13 @@
       "nl": "De apparaten worden geleverd met <b>al geplaatste batterijen</b> — je hoeft er niets in te doen. Je controleert ze alleen <b>vóór</b> de montage, zodat je weet dat alles werkt voordat je tussen de kasten staat.",
       "sv": "Enheterna levereras med <b>batterierna redan monterade</b> — du behöver inte sätta i något. Du kontrollerar dem bara <b>före</b> monteringen, så att du vet att allt fungerar innan du går ut bland bikuporna.",
       "da": "Enhederne leveres med <b>batterierne monteret</b> — du skal ikke sætte noget i. Du tjekker dem kun <b>før</b> monteringen, så du ved, at alt virker, inden du går ud mellem bistaderne.",
+      "pt": "Os dispositivos chegam com as <b>pilhas já instaladas</b>: você não precisa colocar nada. Basta verificá-los <b>antes</b> da montagem, para saber que tudo funciona antes de entrar no meio das colmeias.",
       "el": "Οι συσκευές έρχονται με <b>τοποθετημένες μπαταρίες</b> — δεν βάζετε τίποτα. Τις ελέγχετε μόνο <b>πριν</b> από την τοποθέτηση, ώστε να ξέρετε ότι λειτουργούν προτού βγείτε ανάμεσα στις κυψέλες."
     }
   },
   {
     "id": "2acb53422bc4",
-    "line": 1426,
+    "line": 1445,
     "tag": "span",
     "text": {
       "pl": "Wystaw na słońce — zasila go panel fotowoltaiczny.",
@@ -2446,12 +2543,13 @@
       "nl": "Zet hem in de zon — hij werkt op zijn zonnepaneel.",
       "sv": "Ställ den i solen — den drivs av sin solcellspanel.",
       "da": "Stil den i solen — den får strøm fra sit solcellepanel.",
+      "pt": "Deixe-o no sol: ele é alimentado pelo painel fotovoltaico.",
       "el": "Βγάλτε το στον ήλιο — τροφοδοτείται από το φωτοβολταϊκό του πάνελ."
     }
   },
   {
     "id": "9575e347811f",
-    "line": 1427,
+    "line": 1446,
     "tag": "span",
     "text": {
       "pl": "Sprawdź, czy zaświeciła się dioda potwierdzająca uruchomienie.",
@@ -2471,12 +2569,13 @@
       "nl": "Controleer of de led voor het opstarten gaat branden.",
       "sv": "Kontrollera att lysdioden som bekräftar start tänds.",
       "da": "Kontrollér, at lysdioden, der bekræfter opstart, lyser.",
+      "pt": "Verifique se o LED que confirma a inicialização acende.",
       "el": "Ελέγξτε αν άναψε η λυχνία LED που επιβεβαιώνει την εκκίνηση."
     }
   },
   {
     "id": "7c4122b53db6",
-    "line": 1428,
+    "line": 1447,
     "tag": "span",
     "text": {
       "pl": "Sprawdź diodę uruchomienia.",
@@ -2496,12 +2595,13 @@
       "nl": "Controleer de opstart-led.",
       "sv": "Kontrollera startlysdioden.",
       "da": "Tjek lysdioden for opstart.",
+      "pt": "Verifique o LED de inicialização.",
       "el": "Ελέγξτε τη λυχνία LED εκκίνησης."
     }
   },
   {
     "id": "e886f1338b33",
-    "line": 1429,
+    "line": 1448,
     "tag": "span",
     "text": {
       "pl": "Po dwóch godzinach sprawdź pierwsze odczyty w aplikacji — status <em>Brak danych</em> zmieni się na aktualny.",
@@ -2521,12 +2621,13 @@
       "nl": "Controleer na twee uur de eerste metingen in de app — de status <em>Geen gegevens</em> verandert in een actuele waarde.",
       "sv": "Kontrollera de första avläsningarna i appen efter två timmar — statusen <em>Inga data</em> ersätts av ett aktuellt värde.",
       "da": "Tjek de første aflæsninger i appen efter to timer — statussen <em>Ingen data</em> erstattes af en aktuel værdi.",
+      "pt": "Depois de duas horas, verifique as primeiras leituras no aplicativo: o status <em>Sem dados</em> dá lugar a um valor atual.",
       "el": "Μετά από δύο ώρες ελέγξτε τις πρώτες μετρήσεις στην εφαρμογή — η κατάσταση <em>Χωρίς δεδομένα</em> αλλάζει σε τρέχουσα ένδειξη."
     }
   },
   {
     "id": "1f7f3da44aa9",
-    "line": 1436,
+    "line": 1455,
     "tag": "span",
     "text": {
       "pl": "Zestaw w pasiece",
@@ -2546,12 +2647,13 @@
       "nl": "De set op de bijenstand",
       "sv": "Paketet i bigården",
       "da": "Sættet i bigården",
+      "pt": "O kit no apiário",
       "el": "Το κιτ στο μελισσοκομείο"
     }
   },
   {
     "id": "7845fb2f6fd8",
-    "line": 1436,
+    "line": 1455,
     "tag": "span",
     "text": {
       "pl": "Rozmieszczenie",
@@ -2571,12 +2673,13 @@
       "nl": "Plaatsing",
       "sv": "Placering",
       "da": "Placering",
+      "pt": "Disposição",
       "el": "Διάταξη"
     }
   },
   {
     "id": "12bcca2b3913",
-    "line": 1447,
+    "line": 1466,
     "tag": "span",
     "text": {
       "pl": "Krok 07 · Montaż",
@@ -2596,12 +2699,13 @@
       "nl": "Stap 07 · Montage",
       "sv": "Steg 07 · Montering",
       "da": "Trin 07 · Montering",
+      "pt": "Passo 07 · Montagem",
       "el": "Βήμα 07 · Τοποθέτηση"
     }
   },
   {
     "id": "f7790c3aa8f3",
-    "line": 1448,
+    "line": 1467,
     "tag": "span",
     "text": {
       "pl": "Zamontuj Hub",
@@ -2621,12 +2725,13 @@
       "nl": "Monteer de Hub",
       "sv": "Montera Hub",
       "da": "Montér Hub",
+      "pt": "Monte o Hub",
       "el": "Τοποθετήστε το Hub"
     }
   },
   {
     "id": "b27e592f9710",
-    "line": 1450,
+    "line": 1469,
     "tag": "span",
     "text": {
       "pl": "Hub zasila panel fotowoltaiczny, więc decyduje o nim <b>słońce</b>, nie bliskość ula. Do montażu użyj uchwytu aparatowego z zestawu.",
@@ -2646,12 +2751,13 @@
       "nl": "De Hub werkt op een zonnepaneel, dus bepaalt de <b>zon</b> waar hij komt — niet de afstand tot een kast. Gebruik voor de montage de camerahouder uit de set.",
       "sv": "Hub drivs av en solcellspanel, så det är <b>solen</b> som avgör placeringen — inte närheten till en bikupa. Använd kamerafästet ur paketet vid monteringen.",
       "da": "Hub får strøm fra et solcellepanel, så det er <b>solen</b>, der afgør placeringen — ikke nærheden til et bistade. Brug kamerabeslaget fra sættet til monteringen.",
+      "pt": "O Hub é alimentado por um painel fotovoltaico, então quem decide a posição é o <b>sol</b>, não a proximidade de uma colmeia. Para montá-lo, use o suporte de câmera que vem no kit.",
       "el": "Το Hub τροφοδοτείται από φωτοβολταϊκό πάνελ, οπότε τη θέση του την καθορίζει ο <b>ήλιος</b> και όχι η εγγύτητα σε κυψέλη. Για την τοποθέτηση χρησιμοποιήστε τη βάση κάμερας από το κιτ."
     }
   },
   {
     "id": "e3e761adbee3",
-    "line": 1454,
+    "line": 1473,
     "tag": "span",
     "text": {
       "pl": "Nad ziemią — niżej panel może nie zebrać dość światła, zwłaszcza zimą.",
@@ -2671,12 +2777,13 @@
       "nl": "Boven de grond — lager vangt het paneel mogelijk te weinig licht op, vooral in de winter.",
       "sv": "Över marken — lägre kan panelen få för lite ljus, särskilt på vintern.",
       "da": "Over jorden — lavere kan panelet få for lidt lys, især om vinteren.",
+      "pt": "Acima do solo: mais baixo, o painel pode não captar luz suficiente, principalmente no inverno.",
       "el": "Πάνω από το έδαφος — χαμηλότερα το πάνελ μπορεί να μη συγκεντρώνει αρκετό φως, ιδίως τον χειμώνα."
     }
   },
   {
     "id": "18dfe6627204",
-    "line": 1455,
+    "line": 1474,
     "tag": "span",
     "text": {
       "pl": "Nachylenie względem poziomu (min. 20°), panelem w stronę słońca, bez zacienienia.",
@@ -2696,12 +2803,13 @@
       "nl": "Helling ten opzichte van horizontaal (min. 20°), paneel naar de zon, nooit in de schaduw.",
       "sv": "Lutning från vågrätt (minst 20°), panelen mot solen, aldrig i skugga.",
       "da": "Hældning i forhold til vandret (min. 20°), panelet mod solen, aldrig i skygge.",
+      "pt": "Inclinação em relação à horizontal (mín. 20°), painel voltado para o sol, nunca na sombra.",
       "el": "Κλίση ως προς το οριζόντιο επίπεδο (τουλάχιστον 20°), με το πάνελ προς τον ήλιο, χωρίς σκίαση."
     }
   },
   {
     "id": "0f956ae845e1",
-    "line": 1456,
+    "line": 1475,
     "tag": "span",
     "text": {
       "pl": "Od najdalszego ula z VitalSensorem lub Scale — to zasięg BLE.",
@@ -2721,12 +2829,13 @@
       "nl": "Vanaf de verste kast met een VitalSensor of Scale — dat is het BLE-bereik.",
       "sv": "Från den bikupa med VitalSensor eller Scale som ligger längst bort — det är BLE-räckvidden.",
       "da": "Fra det fjerneste bistade med VitalSensor eller Scale — det er BLE-rækkevidden.",
+      "pt": "Da colmeia mais distante com VitalSensor ou Scale: é esse o alcance do BLE.",
       "el": "Από την πιο απομακρυσμένη κυψέλη με VitalSensor ή Scale — τόση είναι η εμβέλεια BLE."
     }
   },
   {
     "id": "d39e5bdf2417",
-    "line": 1457,
+    "line": 1476,
     "tag": "span",
     "text": {
       "pl": "Anteny",
@@ -2746,12 +2855,13 @@
       "nl": "Antennes",
       "sv": "Antenner",
       "da": "Antenner",
+      "pt": "Antenas",
       "el": "Κεραίες"
     }
   },
   {
     "id": "3b226e88c3a9",
-    "line": 1457,
+    "line": 1476,
     "tag": "span",
     "text": {
       "pl": "Skierowane <em>pionowo do góry</em> — BLE i LTE mają różne złącza, nie da się ich pomylić.",
@@ -2771,12 +2881,13 @@
       "nl": "Gericht <em>verticaal omhoog</em> — BLE en LTE hebben verschillende connectoren en kunnen niet worden verwisseld.",
       "sv": "Riktade <em>lodrätt uppåt</em> — BLE och LTE har olika kontakter och kan inte förväxlas.",
       "da": "Vendt <em>lodret opad</em> — BLE og LTE har forskellige stik og kan ikke forveksles.",
+      "pt": "Voltadas <em>verticalmente para cima</em>: BLE e LTE usam conectores diferentes, não há como trocá-los.",
       "el": "Στραμμένες <em>κατακόρυφα προς τα πάνω</em> — το BLE και το LTE έχουν διαφορετικούς συνδέσμους και δεν μπερδεύονται."
     }
   },
   {
     "id": "d52ab245bf08",
-    "line": 1460,
+    "line": 1479,
     "tag": "span",
     "text": {
       "pl": "<b>Nie montuj Huba do metalu</b> — zakłóca BLE i LTE. Słupek, drzewo lub drewniana konstrukcja są w porządku.",
@@ -2796,12 +2907,13 @@
       "nl": "<b>Monteer de Hub niet op metaal</b> — dat verstoort BLE en LTE. Een paal, een boom of een houten constructie is prima.",
       "sv": "<b>Montera inte Hub på metall</b> — det stör BLE och LTE. En stolpe, ett träd eller en träkonstruktion går bra.",
       "da": "<b>Montér ikke Hub på metal</b> — det forstyrrer BLE og LTE. En stolpe, et træ eller en trækonstruktion er helt i orden.",
+      "pt": "<b>Não monte o Hub em metal</b>: ele interfere no BLE e no LTE. Um poste, uma árvore ou uma estrutura de madeira servem.",
       "el": "<b>Μην τοποθετείτε το Hub σε μέταλλο</b> — παρεμβάλλεται στο BLE και στο LTE. Ένας πάσσαλος, ένα δέντρο ή μια ξύλινη κατασκευή είναι εντάξει."
     }
   },
   {
     "id": "e162fd67632a",
-    "line": 1468,
+    "line": 1487,
     "tag": "span",
     "text": {
       "pl": "Rysunek poglądowy",
@@ -2821,12 +2933,13 @@
       "nl": "Referentietekening",
       "sv": "Referensritning",
       "da": "Referencetegning",
+      "pt": "Desenho de referência",
       "el": "Ενδεικτικό σχέδιο"
     }
   },
   {
     "id": "12bcca2b3913",
-    "line": 1479,
+    "line": 1498,
     "tag": "span",
     "text": {
       "pl": "Krok 07 · Montaż",
@@ -2846,12 +2959,13 @@
       "nl": "Stap 07 · Montage",
       "sv": "Steg 07 · Montering",
       "da": "Trin 07 · Montering",
+      "pt": "Passo 07 · Montagem",
       "el": "Βήμα 07 · Τοποθέτηση"
     }
   },
   {
     "id": "c205c1af02b7",
-    "line": 1480,
+    "line": 1499,
     "tag": "span",
     "text": {
       "pl": "Ustaw Scale pod ulem",
@@ -2871,12 +2985,13 @@
       "nl": "Plaats de Scale onder de kast",
       "sv": "Placera Scale under bikupan",
       "da": "Placér Scale under bistadet",
+      "pt": "Posicione o Scale sob a colmeia",
       "el": "Τοποθετήστε το Scale κάτω από την κυψέλη"
     }
   },
   {
     "id": "d79b18eb9da1",
-    "line": 1482,
+    "line": 1501,
     "tag": "span",
     "text": {
       "pl": "Scale i drewniana kantówka tworzą jedną konstrukcję nośną. Wypoziomowanie i orientacja są <b>kluczowe dla dokładności pomiaru</b>.",
@@ -2896,12 +3011,13 @@
       "nl": "De Scale en de houten balk vormen samen één draagconstructie. Waterpas stellen en oriëntatie zijn <b>cruciaal voor de meetnauwkeurigheid</b>.",
       "sv": "Scale och träregeln bildar en enda bärande konstruktion. Att den står i våg och är rätt riktad är <b>avgörande för mätnoggrannheten</b>.",
       "da": "Scale og trælægten udgør én bærende konstruktion. Vandret opstilling og retning er <b>afgørende for målenøjagtigheden</b>.",
+      "pt": "O Scale e o sarrafo de madeira formam uma única estrutura de apoio. O nivelamento e a orientação são <b>decisivos para a precisão da medição</b>.",
       "el": "Το Scale και η ξύλινη δοκός σχηματίζουν μία φέρουσα κατασκευή. Η οριζοντίωση και ο προσανατολισμός είναι <b>καθοριστικά για την ακρίβεια της μέτρησης</b>."
     }
   },
   {
     "id": "299d11bec7bf",
-    "line": 1486,
+    "line": 1505,
     "tag": "span",
     "text": {
       "pl": "Ustaw uruchomioną Scale na stabilnym, równym podłożu, <em>prostopadle do ramek</em> w ulu.",
@@ -2921,12 +3037,13 @@
       "nl": "Zet de ingeschakelde Scale op een stevige, vlakke ondergrond, <em>haaks op de ramen</em> in de kast.",
       "sv": "Ställ den påslagna Scale på ett stadigt och plant underlag, <em>vinkelrätt mot ramarna</em> i bikupan.",
       "da": "Stil den tændte Scale på et fast, plant underlag, <em>vinkelret på rammerne</em> i bistadet.",
+      "pt": "Apoie o Scale ligado em solo firme e nivelado, <em>perpendicular aos quadros</em> da colmeia.",
       "el": "Τοποθετήστε το ενεργοποιημένο Scale σε σταθερό, επίπεδο έδαφος, <em>κάθετα προς τα πλαίσια</em> της κυψέλης."
     }
   },
   {
     "id": "7afb4e483439",
-    "line": 1487,
+    "line": 1506,
     "tag": "span",
     "text": {
       "pl": "Ułóż drewnianą kantówkę równolegle do Scale, w takiej odległości, żeby ciężar ula rozłożył się równomiernie.",
@@ -2946,12 +3063,13 @@
       "nl": "Leg de houten balk parallel aan de Scale, op zo'n afstand dat het gewicht van de kast gelijkmatig wordt verdeeld.",
       "sv": "Lägg träregeln parallellt med Scale, på ett sådant avstånd att bikupans vikt fördelas jämnt.",
       "da": "Læg trælægten parallelt med Scale, med en afstand, der fordeler bistadets vægt jævnt.",
+      "pt": "Coloque o sarrafo de madeira paralelo ao Scale, a uma distância que distribua o peso da colmeia de forma uniforme.",
       "el": "Βάλτε την ξύλινη δοκό παράλληλα προς το Scale, σε τέτοια απόσταση ώστε το βάρος της κυψέλης να κατανέμεται ομοιόμορφα."
     }
   },
   {
     "id": "fed01de0197c",
-    "line": 1488,
+    "line": 1507,
     "tag": "span",
     "text": {
       "pl": "Postaw ul na konstrukcji i sprawdź, że obciążenie nadal rozkłada się równo.",
@@ -2971,12 +3089,13 @@
       "nl": "Zet de kast op de constructie en controleer of de belasting nog steeds gelijkmatig verdeeld is.",
       "sv": "Ställ bikupan på konstruktionen och kontrollera att lasten fortfarande fördelas jämnt.",
       "da": "Sæt bistadet på konstruktionen, og kontrollér, at belastningen stadig fordeler sig jævnt.",
+      "pt": "Coloque a colmeia sobre a estrutura e verifique se a carga continua distribuída de forma uniforme.",
       "el": "Ακουμπήστε την κυψέλη στην κατασκευή και ελέγξτε ότι το φορτίο εξακολουθεί να κατανέμεται ομοιόμορφα."
     }
   },
   {
     "id": "62ab36f97589",
-    "line": 1489,
+    "line": 1508,
     "tag": "span",
     "text": {
       "pl": "Od Huba, bez przeszkód tłumiących sygnał BLE.",
@@ -2996,12 +3115,13 @@
       "nl": "Vanaf de Hub, zonder obstakels die het BLE-signaal dempen.",
       "sv": "Från Hub, utan hinder som dämpar BLE-signalen.",
       "da": "Fra Hub, uden forhindringer, der dæmper BLE-signalet.",
+      "pt": "Do Hub, sem obstáculos que atenuem o sinal BLE.",
       "el": "Από το Hub, χωρίς εμπόδια που εξασθενούν το σήμα BLE."
     }
   },
   {
     "id": "e162fd67632a",
-    "line": 1497,
+    "line": 1516,
     "tag": "span",
     "text": {
       "pl": "Rysunek poglądowy",
@@ -3021,12 +3141,13 @@
       "nl": "Referentietekening",
       "sv": "Referensritning",
       "da": "Referencetegning",
+      "pt": "Desenho de referência",
       "el": "Ενδεικτικό σχέδιο"
     }
   },
   {
     "id": "73e96dab53c7",
-    "line": 1502,
+    "line": 1521,
     "tag": "span",
     "text": {
       "pl": "Scale i kantówka",
@@ -3046,12 +3167,13 @@
       "nl": "Scale en houten balk",
       "sv": "Scale och träregel",
       "da": "Scale og trælægte",
+      "pt": "Scale e sarrafo",
       "el": "Scale και ξύλινη δοκός"
     }
   },
   {
     "id": "42e8d92263f5",
-    "line": 1502,
+    "line": 1521,
     "tag": "span",
     "text": {
       "pl": "Zdjęcie",
@@ -3071,12 +3193,13 @@
       "nl": "Foto",
       "sv": "Foto",
       "da": "Foto",
+      "pt": "Foto",
       "el": "Φωτογραφία"
     }
   },
   {
     "id": "12bcca2b3913",
-    "line": 1514,
+    "line": 1533,
     "tag": "span",
     "text": {
       "pl": "Krok 07 · Montaż",
@@ -3096,12 +3219,13 @@
       "nl": "Stap 07 · Montage",
       "sv": "Steg 07 · Montering",
       "da": "Trin 07 · Montering",
+      "pt": "Passo 07 · Montagem",
       "el": "Βήμα 07 · Τοποθέτηση"
     }
   },
   {
     "id": "d880e9bbf0f7",
-    "line": 1515,
+    "line": 1534,
     "tag": "span",
     "text": {
       "pl": "Zamontuj VitalSensor w ulu",
@@ -3121,12 +3245,13 @@
       "nl": "Monteer de VitalSensor in de kast",
       "sv": "Montera VitalSensor i bikupan",
       "da": "Montér VitalSensor i bistadet",
+      "pt": "Monte o VitalSensor na colmeia",
       "el": "Τοποθετήστε το VitalSensor στην κυψέλη"
     }
   },
   {
     "id": "dd029f00f64c",
-    "line": 1517,
+    "line": 1536,
     "tag": "span",
     "text": {
       "pl": "Czujnik montujesz bezinwazyjnie na ramce — bez trwałych zmian w ulu i bez zakłócania pracy rodziny.",
@@ -3146,12 +3271,13 @@
       "nl": "De sensor bevestig je niet-invasief op een raam — zonder blijvende ingrepen aan de kast en zonder het bijenvolk te verstoren.",
       "sv": "Sensorn fästs skonsamt på en ram — utan bestående ändringar i bikupan och utan att störa bisamhället.",
       "da": "Sensoren monteres skånsomt på en ramme — uden varige ændringer i bistadet og uden at forstyrre bifamilien.",
+      "pt": "O sensor é fixado no quadro de forma não invasiva: sem alterações permanentes na colmeia e sem perturbar a colônia.",
       "el": "Ο αισθητήρας τοποθετείται μη επεμβατικά σε ένα πλαίσιο — χωρίς μόνιμες αλλαγές στην κυψέλη και χωρίς να ενοχλείται το μελίσσι."
     }
   },
   {
     "id": "2d7de82d6fde",
-    "line": 1521,
+    "line": 1540,
     "tag": "span",
     "text": {
       "pl": "Osadź uruchomiony VitalSensor na <em>centralnej ramce</em> (w kłębie), stabilnie, tak żeby się nie przemieszczał.",
@@ -3171,12 +3297,13 @@
       "nl": "Bevestig de ingeschakelde VitalSensor aan het <em>middelste raam</em> (in de bijentros), stevig genoeg dat hij niet kan verschuiven.",
       "sv": "Fäst den påslagna VitalSensor på <em>mittramen</em> (i biklotet), så stadigt att den inte kan förskjutas.",
       "da": "Sæt den tændte VitalSensor fast på <em>midterrammen</em> (i klyngen), så stabilt, at den ikke kan flytte sig.",
+      "pt": "Fixe o VitalSensor ligado no <em>quadro central</em> (no cacho), com firmeza suficiente para que ele não se desloque.",
       "el": "Στερεώστε το ενεργοποιημένο VitalSensor στο <em>κεντρικό πλαίσιο</em> (μέσα στο μελίσσι), σταθερά ώστε να μη μετακινείται."
     }
   },
   {
     "id": "0ce18fa02a43",
-    "line": 1522,
+    "line": 1541,
     "tag": "span",
     "text": {
       "pl": "Zamontuj go <em>pionowo</em> — naklejka z kodem QR ma być widoczna od góry po włożeniu ramki.",
@@ -3196,12 +3323,13 @@
       "nl": "Monteer hem <em>verticaal</em> — de QR-sticker moet van bovenaf zichtbaar blijven als het raam erin hangt.",
       "sv": "Montera den <em>lodrätt</em> — QR-dekalen ska vara synlig uppifrån när ramen är på plats.",
       "da": "Montér den <em>lodret</em> — klistermærket med QR-koden skal være synligt oppefra, når rammen er sat i.",
+      "pt": "Monte-o <em>na vertical</em>: depois de inserir o quadro, o adesivo com o código QR precisa continuar visível por cima.",
       "el": "Τοποθετήστε το <em>κατακόρυφα</em> — το αυτοκόλλητο με τον κωδικό QR πρέπει να παραμένει ορατό από πάνω μετά την τοποθέτηση του πλαισίου."
     }
   },
   {
     "id": "6248be80e0a4",
-    "line": 1523,
+    "line": 1542,
     "tag": "span",
     "text": {
       "pl": "Włóż ramkę w środkową część korpusu gniazdowego, tak żeby nie zakłócać wentylacji.",
@@ -3221,12 +3349,13 @@
       "nl": "Hang het raam in het midden van de broedkamer, zonder de ventilatie te belemmeren.",
       "sv": "Skjut in ramen mitt i yngelrummet, utan att hindra ventilationen.",
       "da": "Skub rammen ind i midten af yngelrummet, uden at ventilationen hindres.",
+      "pt": "Insira o quadro no centro do ninho, sem obstruir a ventilação.",
       "el": "Περάστε το πλαίσιο στο μέσο του θαλάμου γονοφωλιάς, χωρίς να εμποδίζετε τον αερισμό."
     }
   },
   {
     "id": "9c47cdd1b96c",
-    "line": 1524,
+    "line": 1543,
     "tag": "span",
     "text": {
       "pl": "Od Huba — zasięg BLE.",
@@ -3246,12 +3375,13 @@
       "nl": "Vanaf de Hub — BLE-bereik.",
       "sv": "Från Hub — BLE-räckvidd.",
       "da": "Fra Hub — BLE-rækkevidde.",
+      "pt": "Do Hub: alcance do BLE.",
       "el": "Από το Hub — εμβέλεια BLE."
     }
   },
   {
     "id": "e162fd67632a",
-    "line": 1532,
+    "line": 1551,
     "tag": "span",
     "text": {
       "pl": "Rysunek poglądowy",
@@ -3271,12 +3401,13 @@
       "nl": "Referentietekening",
       "sv": "Referensritning",
       "da": "Referencetegning",
+      "pt": "Desenho de referência",
       "el": "Ενδεικτικό σχέδιο"
     }
   },
   {
     "id": "d1df6db57cee",
-    "line": 1537,
+    "line": 1556,
     "tag": "span",
     "text": {
       "pl": "Czujnik na ramce",
@@ -3296,12 +3427,13 @@
       "nl": "Sensor op het raam",
       "sv": "Sensor på ramen",
       "da": "Sensor på rammen",
+      "pt": "Sensor no quadro",
       "el": "Αισθητήρας στο πλαίσιο"
     }
   },
   {
     "id": "42e8d92263f5",
-    "line": 1537,
+    "line": 1556,
     "tag": "span",
     "text": {
       "pl": "Zdjęcie",
@@ -3321,12 +3453,13 @@
       "nl": "Foto",
       "sv": "Foto",
       "da": "Foto",
+      "pt": "Foto",
       "el": "Φωτογραφία"
     }
   },
   {
     "id": "12bcca2b3913",
-    "line": 1549,
+    "line": 1568,
     "tag": "span",
     "text": {
       "pl": "Krok 07 · Montaż",
@@ -3346,12 +3479,13 @@
       "nl": "Stap 07 · Montage",
       "sv": "Steg 07 · Montering",
       "da": "Trin 07 · Montering",
+      "pt": "Passo 07 · Montagem",
       "el": "Βήμα 07 · Τοποθέτηση"
     }
   },
   {
     "id": "b115a19a00ee",
-    "line": 1550,
+    "line": 1569,
     "tag": "span",
     "text": {
       "pl": "Umieść ColonyLink na ulu",
@@ -3371,12 +3505,13 @@
       "nl": "Plak de ColonyLink op de kast",
       "sv": "Fäst ColonyLink på bikupan",
       "da": "Sæt ColonyLink på bistadet",
+      "pt": "Cole o ColonyLink na colmeia",
       "el": "Κολλήστε το ColonyLink στην κυψέλη"
     }
   },
   {
     "id": "5686e8c284a3",
-    "line": 1552,
+    "line": 1571,
     "tag": "span",
     "text": {
       "pl": "ColonyLink to <b>wodoodporna naklejka</b> z wbudowanym tagiem NFC i nadrukowanym kodem QR. Zeskanowanie kodu albo przyłożenie telefonu otwiera dane właściwego ula — też w rękawicach i w pełnym słońcu.",
@@ -3396,12 +3531,13 @@
       "nl": "De ColonyLink is een <b>waterdichte sticker</b> met een ingebouwde NFC-tag en een opgedrukte QR-code. Scan de code of houd je telefoon ertegenaan en je opent meteen de gegevens van de juiste kast — ook met handschoenen aan en in de volle zon.",
       "sv": "ColonyLink är en <b>vattentät dekal</b> med inbyggd NFC-tagg och påtryckt QR-kod. Om du skannar koden eller håller telefonen mot den öppnas rätt bikupa — även med handskar på och i starkt solljus.",
       "da": "ColonyLink er et <b>vandtæt klistermærke</b> med indbygget NFC-tag og påtrykt QR-kode. Scanner du koden eller holder telefonen op mod det, åbnes data for det rigtige bistade — også med handsker på og i skarpt sollys.",
+      "pt": "O ColonyLink é um <b>adesivo à prova d'água</b> com tag NFC integrada e código QR impresso. Escanear o código ou aproximar o celular abre os dados da colmeia certa, mesmo com luvas e sob sol forte.",
       "el": "Το ColonyLink είναι ένα <b>αδιάβροχο αυτοκόλλητο</b> με ενσωματωμένη ετικέτα NFC και τυπωμένο κωδικό QR. Η σάρωση του κωδικού ή το ακούμπισμα του κινητού ανοίγει τα δεδομένα της σωστής κυψέλης — ακόμη και με γάντια και σε δυνατό ήλιο."
     }
   },
   {
     "id": "46bde5f8e964",
-    "line": 1556,
+    "line": 1575,
     "tag": "span",
     "text": {
       "pl": "Wybierz na froncie ula miejsce <em>płaskie, czyste i suche</em>, dobrze widoczne podczas pracy.",
@@ -3421,12 +3557,13 @@
       "nl": "Kies op de voorkant van de kast een plek die <em>vlak, schoon en droog</em> is en tijdens het werk goed zichtbaar blijft.",
       "sv": "Välj ett ställe på bikupans framsida som är <em>plant, rent och torrt</em> och som syns väl medan du arbetar.",
       "da": "Vælg et sted på bistadets forside, der er <em>fladt, rent og tørt</em>, og som er let at se, mens du arbejder.",
+      "pt": "Escolha na frente da colmeia um ponto <em>plano, limpo e seco</em>, bem visível enquanto você trabalha.",
       "el": "Διαλέξτε στην πρόσοψη της κυψέλης ένα σημείο <em>επίπεδο, καθαρό και στεγνό</em>, που παραμένει ευδιάκριτο κατά την εργασία."
     }
   },
   {
     "id": "39e0ffc634f5",
-    "line": 1557,
+    "line": 1576,
     "tag": "span",
     "text": {
       "pl": "Naklej ColonyLink i dociśnij go na całej powierzchni, żeby taśma montażowa dobrze przylegała.",
@@ -3446,12 +3583,13 @@
       "nl": "Plak de ColonyLink op en druk hem over het hele oppervlak aan, zodat de tape goed hecht.",
       "sv": "Sätt fast ColonyLink och tryck till över hela ytan, så att monteringstejpen fäster ordentligt.",
       "da": "Sæt ColonyLink på, og tryk det fast over hele fladen, så monteringstapen hæfter ordentligt.",
+      "pt": "Cole o ColonyLink e pressione toda a superfície para que o adesivo fixe bem.",
       "el": "Κολλήστε το ColonyLink και πιέστε το σε όλη την επιφάνειά του, ώστε η ταινία να προσφύεται καλά."
     }
   },
   {
     "id": "4e53ea1a0908",
-    "line": 1558,
+    "line": 1577,
     "tag": "span",
     "text": {
       "pl": "Sprawdź, czy kod QR jest dostępny bez otwierania ula.",
@@ -3471,12 +3609,13 @@
       "nl": "Controleer of de QR-code bereikbaar is zonder de kast te openen.",
       "sv": "Kontrollera att QR-koden går att nå utan att du öppnar bikupan.",
       "da": "Kontrollér, at QR-koden kan nås, uden at du åbner bistadet.",
+      "pt": "Verifique se o código QR fica acessível sem abrir a colmeia.",
       "el": "Ελέγξτε ότι ο κωδικός QR είναι προσβάσιμος χωρίς να ανοίξετε την κυψέλη."
     }
   },
   {
     "id": "b792be847000",
-    "line": 1559,
+    "line": 1578,
     "tag": "span",
     "text": {
       "pl": "Bez baterii",
@@ -3496,12 +3635,13 @@
       "nl": "Geen batterij",
       "sv": "Utan batteri",
       "da": "Uden batteri",
+      "pt": "Sem bateria",
       "el": "Χωρίς μπαταρία"
     }
   },
   {
     "id": "fbfc41eb51eb",
-    "line": 1559,
+    "line": 1578,
     "tag": "span",
     "text": {
       "pl": "ColonyLink nie wymaga zasilania, konfiguracji ani aktualizacji.",
@@ -3521,12 +3661,13 @@
       "nl": "De ColonyLink heeft geen voeding, configuratie of updates nodig.",
       "sv": "ColonyLink behöver varken ström, konfiguration eller uppdateringar.",
       "da": "ColonyLink kræver hverken strøm, opsætning eller opdateringer.",
+      "pt": "O ColonyLink não precisa de alimentação, configuração nem atualizações.",
       "el": "Το ColonyLink δεν χρειάζεται τροφοδοσία, ρύθμιση ούτε ενημερώσεις."
     }
   },
   {
     "id": "e162fd67632a",
-    "line": 1566,
+    "line": 1585,
     "tag": "span",
     "text": {
       "pl": "Rysunek poglądowy",
@@ -3546,12 +3687,13 @@
       "nl": "Referentietekening",
       "sv": "Referensritning",
       "da": "Referencetegning",
+      "pt": "Desenho de referência",
       "el": "Ενδεικτικό σχέδιο"
     }
   },
   {
     "id": "a0c40dade066",
-    "line": 1577,
+    "line": 1596,
     "tag": "span",
     "text": {
       "pl": "Gotowe",
@@ -3571,12 +3713,13 @@
       "nl": "Klaar",
       "sv": "Klart",
       "da": "Færdig",
+      "pt": "Pronto",
       "el": "Έτοιμο"
     }
   },
   {
     "id": "dea824f8ba48",
-    "line": 1578,
+    "line": 1597,
     "tag": "span",
     "text": {
       "pl": "Ul nadaje.",
@@ -3596,12 +3739,13 @@
       "nl": "Je bijenkast zendt uit.",
       "sv": "Bikupan sänder.",
       "da": "Dit bistade sender.",
+      "pt": "A colmeia está no ar.",
       "el": "Η κυψέλη εκπέμπει."
     }
   },
   {
     "id": "fc53250f0898",
-    "line": 1580,
+    "line": 1599,
     "tag": "span",
     "text": {
       "pl": "Hub zbiera dane z czujników i wysyła je do aplikacji. Jeśli po kilku godzinach odczytów nadal brak — sprawdź baterie, zasięg i listę problemów w dokumentacji.",
@@ -3621,12 +3765,13 @@
       "nl": "De Hub verzamelt de sensordata en stuurt die naar de app. Ontbreken de metingen na een paar uur nog steeds, controleer dan de batterijen, het bereik en de lijst met problemen in de documentatie.",
       "sv": "Hub samlar in data från sensorerna och skickar dem till appen. Om avläsningarna fortfarande saknas efter några timmar, kontrollera batterierna, räckvidden och problemlistan i dokumentationen.",
       "da": "Hub samler data fra sensorerne og sender dem til appen. Mangler aflæsningerne stadig efter nogle timer, så tjek batterierne, rækkevidden og listen over problemer i dokumentationen.",
+      "pt": "O Hub coleta os dados dos sensores e os envia para o aplicativo. Se depois de algumas horas ainda não houver leituras, verifique as pilhas, o alcance e a lista de problemas na documentação.",
       "el": "Το Hub συλλέγει τα δεδομένα των αισθητήρων και τα στέλνει στην εφαρμογή. Αν μετά από μερικές ώρες εξακολουθούν να λείπουν μετρήσεις, ελέγξτε τις μπαταρίες, την εμβέλεια και τη λίστα προβλημάτων στην τεκμηρίωση."
     }
   },
   {
     "id": "a8ef2318c52e",
-    "line": 1585,
+    "line": 1604,
     "tag": "span",
     "text": {
       "pl": "Pełna instrukcja konfiguracji",
@@ -3646,12 +3791,13 @@
       "nl": "Volledige configuratiehandleiding",
       "sv": "Fullständig konfigurationsguide",
       "da": "Komplet konfigurationsvejledning",
+      "pt": "Guia completo de configuração",
       "el": "Πλήρεις οδηγίες διαμόρφωσης"
     }
   },
   {
     "id": "2a1f319432e3",
-    "line": 1586,
+    "line": 1605,
     "tag": "span",
     "text": {
       "pl": "Rozwiązywanie problemów",
@@ -3671,12 +3817,13 @@
       "nl": "Problemen oplossen",
       "sv": "Felsökning",
       "da": "Fejlfinding",
+      "pt": "Solução de problemas",
       "el": "Αντιμετώπιση προβλημάτων"
     }
   },
   {
     "id": "e050480eb62e",
-    "line": 1587,
+    "line": 1606,
     "tag": "span",
     "text": {
       "pl": "Dokumentacja Apisense",
@@ -3696,6 +3843,7 @@
       "nl": "Apisense-documentatie",
       "sv": "Apisense-dokumentation",
       "da": "Apisense-dokumentation",
+      "pt": "Documentação Apisense",
       "el": "Τεκμηρίωση Apisense"
     }
   }
