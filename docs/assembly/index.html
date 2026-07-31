@@ -30,7 +30,8 @@
        would overwrite it and print every PDF in English. */
     var l = localStorage.getItem('apisense-asm-lang');
     if (['pl', 'en', 'de', 'fr', 'es', 'it', 'no', 'tr',
-         'cs', 'sk', 'hu', 'hr', 'ro', 'fi', 'nl', 'sv', 'da'].indexOf(l) > -1) {
+         'cs', 'sk', 'hu', 'hr', 'ro', 'fi', 'nl', 'sv', 'da',
+         'el'].indexOf(l) > -1) {
       document.documentElement.setAttribute('data-lang', l);
       document.documentElement.lang = l;
     }
@@ -227,12 +228,14 @@ html:lang(el) * { font-family: Poppins, 'Noto Sans', 'Segoe UI', sans-serif; }
    the selected one, so neither the number of options nor which is picked can
    move the header around. The globe carries the meaning the pills used to.
 
-   Re-measured against all seventeen endonyms (the width was first set against
+   Re-measured against all eighteen endonyms (the width was first set against
    eight, before #51 added the two longest): worst case is "Nederlands" —
    75.8px in a 81.4px field here, 62.9px in a 66px field under the 480px rule.
-   Both fit; the slack is 5.6px and 3.1px. An eighteenth locale whose endonym
-   renders wider than that gets `text-overflow: ellipsis`, not a broken header
-   — but it is the number to re-check, not assume. */
+   Both fit; the slack is 5.6px and 3.1px. "Ελληνικά" (#63) does not move that
+   worst case: 57.7px at the same 11px/600/.1em spec, 76% of Nederlands, even
+   though its glyphs come from Noto Sans rather than Poppins. A future locale
+   whose endonym renders wider than Nederlands gets `text-overflow: ellipsis`,
+   not a broken header — but it is the number to re-check, not assume. */
 .lang-select { padding: 5px 11px 5px 10px; gap: 6px; }
 .lang-select select {
   font: inherit; font-size: 11px; font-weight: 600; letter-spacing: .1em;
@@ -253,7 +256,7 @@ html:lang(el) * { font-family: Poppins, 'Noto Sans', 'Segoe UI', sans-serif; }
 
 /* ── Enhanced switcher ─────────────────────────────────────────────────────
    The native popup is drawn by the platform and ignores every custom property
-   on this page, so seventeen locales open onto a system-grey list next to a
+   on this page, so eighteen locales open onto a system-grey list next to a
    paper-and-amber header. Everything below replaces that popup — and only the
    popup: the closed control keeps the same pill it had before.
 
@@ -931,7 +934,11 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
        browser sorts nothing here, and a byte sort is not alphabetical for the
        accented ones (Čeština would land after Suomi, Türkçe after Svenska).
        Insert a new locale where its endonym belongs in ICU root collation —
-       Č directly after C, ñ/ö/ü with their unaccented letter. -->
+       Č directly after C, ñ/ö/ü with their unaccented letter.
+
+       Ελληνικά sits last, after Türkçe, and that is not a mistake: ICU root
+       collation orders whole scripts before it orders letters, and Greek comes
+       after Latin. Checked with PyICU against the full list, not eyeballed. -->
   <div class="lang-select btn">
     <svg class="globe" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
       <circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18"/>
@@ -954,6 +961,7 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
       <option value="fi">Suomi</option>
       <option value="sv">Svenska</option>
       <option value="tr">Türkçe</option>
+      <option value="el">Ελληνικά</option>
     </select>
     <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
       <path d="m6 9 6 6 6-6"/>
@@ -1853,6 +1861,11 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
       title: 'Apisense BOX — Monteringsvejledning',
       description: 'Interaktiv monteringsvejledning til Apisense BOX-sættet: Hub, Scale, VitalSensor, Tag og rammeholder — trin for trin.',
       print: 'Gem som PDF — ét trin pr. side'
+    },
+    el: {
+      title: 'Apisense BOX — Οδηγίες συναρμολόγησης',
+      description: 'Διαδραστικός οδηγός συναρμολόγησης για το κιτ Apisense BOX: Hub, Scale, VitalSensor, Tag και βάση πλαισίου — βήμα βήμα.',
+      print: 'Αποθήκευση ως PDF — ένα βήμα ανά σελίδα'
     }
   };
 
@@ -1871,7 +1884,7 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
   /* ── Language panel ───────────────────────────────────────────────────────
      Replaces the platform's popup with one the page can style. The <select>
      stays in the DOM and stays the single source of truth: the panel is built
-     from its options, so the seventeen endonyms are written once, in markup,
+     from its options, so the eighteen endonyms are written once, in markup,
      where check_i18n.py's `<option value=…>` pattern can still see them.
 
      With JS off none of this runs and the plain <select> is left alone. That
@@ -1914,7 +1927,7 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
       b.textContent = opt.textContent;
       /* Deliberately NO `lang` attribute, tempting as it is on a list of
          endonyms: `[data-lang="xx"] [lang]:not([lang="xx"])` would then hide
-         sixteen of the seventeen the moment the panel opened. Same mechanism
+         seventeen of the eighteen the moment the panel opened. Same mechanism
          that leaves the rail tooltips empty outside pl/en. */
       b.tabIndex = -1;
       langOpts.push(b);
