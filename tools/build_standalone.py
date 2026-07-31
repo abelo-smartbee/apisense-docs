@@ -26,8 +26,9 @@ OUT = SRC.parent / "Apisense_BOX_Instrukcja_montazu_standalone.html"
 SITE = "https://docs.apisense.ai/"
 
 # One stylesheet per family the page links, in the order the <head> links them.
-# Two families, because Poppins covers eighteen locales and cannot cover the
-# nineteenth: it has zero Greek glyphs. See dev-docs/adr/0003-kroje-greka-arabski.md.
+# Three families, because Poppins covers eighteen locales and cannot cover the
+# other two: it has zero Greek and zero Arabic glyphs. See
+# dev-docs/adr/0003-kroje-greka-arabski.md.
 FONT_CSS = {
     "Poppins": (
         "https://fonts.googleapis.com/css2"
@@ -37,20 +38,26 @@ FONT_CSS = {
         "https://fonts.googleapis.com/css2"
         "?family=Noto+Sans:wght@300;400;500;600&display=swap"
     ),
+    "Cairo": (
+        "https://fonts.googleapis.com/css2"
+        "?family=Cairo:wght@300;400;500;600&display=swap"
+    ),
 }
 
-# Which subsets are worth embedding, *per family* — the two families are here
-# for opposite reasons and a single shared tuple would over-fetch from both.
+# Which subsets are worth embedding, *per family* — the three families are here
+# for different reasons and a single shared tuple would over-fetch from all of
+# them.
 #
 # Poppins carries the Latin script for every locale: `latin` has ı ø å æ é ü,
 # `latin-ext` the rest of the Turkish, Central-European, Baltic and Romanian
 # letters (İ ğ ş ł ż ě ő ș ț …). Its one further subset, devanagari, no locale
 # needs.
 #
-# Noto Sans is here *only* for Greek, and its `latin`/`latin-ext` would be
-# 192 332 B spent to make `Apisense BOX` look different in `el` than everywhere
-# else — the ADR measures it and rejects it. Poppins stays first in the CSS
-# stack, so the Latin inside Greek sentences never reaches this family anyway.
+# Noto Sans is here *only* for Greek and Cairo *only* for Arabic; their
+# `latin`/`latin-ext` subsets would be bytes spent to make `Apisense BOX` look
+# different in `el` and `ar` than everywhere else — the ADR measures it (192 332 B
+# for Noto Sans alone) and rejects it. Poppins stays first in the CSS stack, so
+# the Latin inside Greek and Arabic sentences never reaches those families anyway.
 #
 # Verified by intersecting the cmap of every embedded woff2 with its declared
 # unicode-range and checking the union against every codepoint the page actually
@@ -63,6 +70,7 @@ FONT_CSS = {
 KEEP_SUBSETS = {
     "Poppins": ("latin", "latin-ext"),
     "Noto Sans": ("greek",),
+    "Cairo": ("arabic",),
 }
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"
 
@@ -84,8 +92,9 @@ def inline_family(family: str) -> list[str]:
 
     Only the subsets listed for that family in KEEP_SUBSETS. A family that
     matches nothing is an error, not an empty result: Google Fonts renaming a
-    subset would otherwise silently ship a bundle with no Greek in it, and a
-    missing glyph looks like a plausible one from the reader's fallback font.
+    subset would otherwise silently ship a bundle with no Greek or no Arabic in
+    it, and a missing glyph looks like a plausible one from the reader's
+    fallback font.
     """
     keep = KEEP_SUBSETS[family]
     css = fetch(FONT_CSS[family]).decode("utf-8")

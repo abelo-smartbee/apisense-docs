@@ -1,15 +1,18 @@
 # ADR 0003: Krój dla greki i arabskiego (Poppins ich nie ma)
 
-Data: 2026-07-31 · Status: **zaakceptowany częściowo** 2026-07-31 — przyjęto
-wariant 1 **w części greckiej**: Noto Sans, subset `greek`, cztery grubości,
-wpięte przez `:lang(el)`. Wdraża to #63.
+Data: 2026-07-31 · Status: **zaakceptowany** 2026-07-31 — przyjęty w całości.
+Obie połowy przyjęte decyzją właściciela repo, część grecka w tej samej rozmowie
+co ADR 0004, część arabska poleceniem „52 — robimy od razu, 64 od razu potem";
+ślad w #48. Grecka (Noto Sans, subset `greek`, cztery grubości) weszła z #63,
+arabska (Cairo, subset `arabic`, cztery grubości) z #64, po tym jak #52 dowiózł
+warunek, od którego ten ADR ją uzależniał. Obowiązuje pełny koszt
+**+284 944 B**, nie +117 040 B. Szczegóły w sekcji „Domknięcie części
+arabskiej".
 
-**Arabski jest odroczony, nie odrzucony.** Ten ADR sam czyni `ar` warunkowym
-(patrz „Decyzja"), a warunek — RTL, #52 — nie jest spełniony. Cairo wchodzi
-razem z układem dwukierunkowym albo wcale; font bez RTL dałby tekst poprawnie
-ukształtowany w układzie odbitym na opak, czyli regres gorszy niż brak
-arabskiego. Do tego czasu z tego dokumentu obowiązuje wyłącznie połowa grecka:
-**+117 040 B**, nie +284 944 B.
+Uwaga do treści poniżej: mechanizm wpięcia obu krojów opisany w „Decyzji" jako
+`:lang(el)` / `:lang(ar)` **nie jest tym, co wdrożono** — oba kroje siedzą
+w stosach `font-family`, bez ani jednego selektora `:lang()`. Powód w sekcji
+„Sprostowanie po wdrożeniu części greckiej".
 
 ## Kontekst
 
@@ -253,3 +256,56 @@ nieaktualnego akapitu. Druga połowa domyka się tutaj:
   (`greek`, 4×21 776 B, 121 punktów kodowych, **0 z A–Za–z**). Żaden subset
   `latin`/`latin-ext` Noto Sans nie wszedł do bundla — ani osobno, ani przy
   okazji `pt`.
+
+## Domknięcie części arabskiej (#52 + #64, 2026-07-31)
+
+Warunek z „Decyzji" — „wdrożenie `ar` jest warunkowe", bo strona nie miała RTL —
+został spełniony: #52 przeniósł arkusz na własności logiczne i ustawia `dir` na
+`<html>`. Cairo weszło razem z tłumaczeniem. Poniżej to, co ADR przewidywał,
+zderzone z tym, co wyszło.
+
+**Koszt fontu trafiony co do bajta.** Tabela obiecywała `Cairo / arabic`
+30 896 B na grubość, 123 584 B za cztery, 164 784 B w base64. Zmierzone
+w bundlu: **dokładnie 164 784 B**. Bundle urósł z 3 654 717 B do
+**3 844 108 B (+189 391 B)**; różnica ponad font to arabski tekst i obudowa —
+`index.html` z 309 720 B do 325 362 B.
+
+**Pokrycie, przecięcie cmap × `unicode-range` na realnym bundlu.** 18
+`@font-face`: 10 Poppins (349 kp, 0 arabskich), 4 Noto Sans (121 kp, wszystkie
+greckie), 4 Cairo (297 kp, z tego 102 w bloku U+0600–06FF, **0 łacińskich, 0
+greckich**). Tekst arabski instrukcji używa **41** różnych punktów kodowych
+z bloku arabskiego; brakujących w osadzonym Cairo: **0**. Żaden subset
+`latin`/`latin-ext` Cairo do bundla nie wszedł — `A–Za–z` w Cairo: 0.
+
+**Kształtowanie potwierdzone z pikseli, nie tylko z tabel `GSUB`** — to była
+druga pozycja z „Czego nie zmierzono". Atrybucja per `LTChar` na
+**nieskompresowanym** PDF-ie (skompresowany traci nazwy krojów, bo Ghostscript
+przepisuje subsety): 933 znaki z bloku arabskiego rysuje Cairo, 2990 znaków
+z form prezentacyjnych U+FB50–FEFF — czyli wynik kształtowania kontekstowego —
+też Cairo, a 1180 znaków łacińskich w całości Poppins. Zero znaków arabskich
+poza Cairo, zero łacińskich w Cairo. `LiberationSans` rysuje trzy znaki, te
+same co w `pl`: `≤`.
+
+**Cyfry zostają zachodnie.** Ticket #64 zostawiał to do rozstrzygnięcia.
+Decyzja praktyczna, nie preferencyjna: numery kroków w `.ghost` i licznik
+w `.nav__count` nie są tłumaczone (pierwszy jest `aria-hidden`, drugi generuje
+JS), więc cyfry wschodnioarabskie w treści rozjechałyby się z cyframi, które ta
+sama strona rysuje obok.
+
+Sprostowanie do brzmienia ticketu: dwa przykłady, które wymieniał — `1–2 m`
+i `30–50°` — **nie przechodzą przez pipeline tłumaczeń**. To literały w `<b>`
+poza jakimkolwiek spanem (`index.html`, lista `.micro` w kroku 07), wspólne dla
+wszystkich dwudziestu locale, więc decyzja o cyfrach ich nie dotyczy i nie
+mogłaby dotyczyć. Dotyczy cyfr wewnątrz tłumaczonych stringów — tam `20°`,
+`03.1 – 03.2`, `7`, `30` są zachodnie w `ar.json`, zero cyfr ٠–٩.
+
+**Znalezisko przy okazji, nienaprawione tutaj.** Noto Sans i Cairo są
+z Google Fonts **krojami zmiennymi** (`fvar` z osią `wght` 200–1000), a
+`css2?...wght@300;400;500;600` zwraca cztery bloki `@font-face` wskazujące ten
+sam plik. `tools/build_standalone.py` osadza go więc cztery razy: cztery
+identyczne payloady po SHA-1, 21 776 B i 30 896 B. Duplikatów w bundlu jest
+**158 016 B woff2, czyli 210 688 B base64 — 5,5% bundla**. Dotyczy to tak samo
+części greckiej, która jechała już wcześniej. Poprawka to jeden blok
+`@font-face` z `font-weight: 300 600` na rodzinę; ponieważ zmienia deklarowanie
+fontów dla wszystkich trzech rodzin, w tym wdrożonej i zweryfikowanej greckiej,
+idzie osobnym ticketem, a nie przy okazji tłumaczenia.

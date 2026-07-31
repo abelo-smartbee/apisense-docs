@@ -13,6 +13,7 @@ language (see LOCALES), because these travel as e-mail attachments.
 
 from __future__ import annotations
 
+import re
 import shutil
 import subprocess
 import sys
@@ -24,16 +25,14 @@ STANDALONE = ROOT / "docs" / "assembly" / "Apisense_BOX_Instrukcja_montazu_stand
 BUILD_STANDALONE = ROOT / "tools" / "build_standalone.py"
 OUT_DIR = ROOT / "docs" / "assembly" / "pdf"
 
-# One entry per locale the page can be read in — nineteen, matching
-# DEFAULT_LOCALES in tools/check_i18n.py. (The epic talks about twenty; the
-# twentieth, `ar`, waits on #52, because the ADR that cleared Greek left Arabic
-# conditional on RTL the page does not have. It is not scaffolded here: an entry
-# with no translation behind it would print a Polish PDF under an Arabic name.)
+# One entry per locale the page can be read in — twenty, matching
+# DEFAULT_LOCALES in tools/check_i18n.py. The set the epic asked for is complete.
 #
 # Each name is that locale's document title from HEAD_TEXT in
 # docs/assembly/index.html, transliterated to plain ASCII: á→a, ž→z, ș→s, ő→o,
-# å→a, ø→o, æ→ae, and for Greek by sound: Οδηγίες συναρμολόγησης →
-# Odigies_synarmologisis. Names stay ASCII because these files travel as e-mail
+# å→a, ø→o, æ→ae, and for Greek and Arabic by sound: Οδηγίες συναρμολόγησης →
+# Odigies_synarmologisis, دليل التركيب → Dalil_al-tarkib. Names stay ASCII
+# because these files travel as e-mail
 # attachments, where a diacritic still reaches the recipient as `=?utf-8?...?=`
 # or as mojibake often enough to matter — and a Greek title would arrive that
 # way every time, not occasionally.
@@ -61,6 +60,7 @@ LOCALES = {
     "da": "Apisense_BOX_Monteringsvejledning_da.pdf",
     "pt": "Apisense_BOX_Instrucoes_de_montagem_pt.pdf",
     "el": "Apisense_BOX_Odigies_synarmologisis_el.pdf",
+    "ar": "Apisense_BOX_Dalil_al-tarkib_ar.pdf",
 }
 
 CHROME_CANDIDATES = ["google-chrome", "google-chrome-stable", "chromium", "chromium-browser"]
@@ -72,6 +72,26 @@ FREEZE = """
   .plate img { clip-path: none !important; }
 </style>
 """
+
+
+def rtl_locales(html: str) -> set[str]:
+    """The right-to-left locales, read out of the page instead of copied here.
+
+    A second hand-maintained copy is a copy that drifts, and the failure it
+    drifts into is silent: a PDF printed LTR from a mirrored page looks
+    perfectly well-typeset to anyone who cannot read the language. So this
+    parses `window.APISENSE_RTL` from the markup and refuses to print if the
+    declaration is not where it expects — the same bargain `ROOT_TAG` makes a
+    few lines further down.
+    """
+    match = re.search(r"window\.APISENSE_RTL\s*=\s*\[([^\]]*)\]", html)
+    if match is None:
+        raise SystemExit(
+            "nie znaleziono window.APISENSE_RTL w wersji standalone — bez tego"
+            " nie wiadomo, które locale drukować od prawej do lewej;"
+            " sprawdź skrypt startowy w docs/assembly/index.html"
+        )
+    return set(re.findall(r"'([a-z]{2})'", match.group(1)))
 
 
 def check_names() -> list[tuple[str, list[str]]]:
@@ -158,7 +178,10 @@ def main(argv: list[str]) -> None:
     # The locale is preset by rewriting this exact string on <html>. If index.html
     # ever spells it differently, the replace would quietly do nothing and every
     # PDF would come out Polish — a wrong-language file looks perfectly fine.
-    ROOT_TAG = '<html lang="pl" data-lang="pl">'
+    rtl = rtl_locales(html)
+    print(f"  locale od prawej do lewej: {', '.join(sorted(rtl)) or '(brak)'}")
+
+    ROOT_TAG = '<html lang="pl" data-lang="pl" dir="ltr">'
     if ROOT_TAG not in html:
         raise SystemExit(
             f"nie znaleziono {ROOT_TAG} w wersji standalone — bez tego wszystkie"
@@ -167,9 +190,16 @@ def main(argv: list[str]) -> None:
 
     with tempfile.TemporaryDirectory() as tmp:
         for loc in locales:
+            # `dir` is written into the tag rather than left to the page's own
+            # script, for the same reason `data-lang` is: headless Chrome prints
+            # what it finds in the markup. A PDF with the right glyphs and the
+            # wrong direction is the failure this exists to prevent, and unlike
+            # a wrong-language PDF it is not obvious to someone who cannot read
+            # the language.
             page = html.replace(
                 ROOT_TAG,
-                f'<html lang="{loc}" data-lang="{loc}" data-theme="light">',
+                f'<html lang="{loc}" data-lang="{loc}" data-theme="light"'
+                f' dir="{"rtl" if loc in rtl else "ltr"}">',
             ).replace("</head>", FREEZE + "</head>")
             src = Path(tmp) / f"{loc}.html"
             src.write_text(page, encoding="utf-8")
