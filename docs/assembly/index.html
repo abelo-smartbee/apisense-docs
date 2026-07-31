@@ -10,6 +10,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<!-- Greek only. Poppins has zero Greek glyphs (0/69, measured on the cmap of
+     every woff2 it ships), so `el` would otherwise render entirely from the
+     reader's fallback font — see dev-docs/adr/0003-kroje-greka-arabski.md.
+     Four weights, not five: 200 is used by exactly one rule on this page
+     (`.ghost`), whose content is western digits and `✱` and never translated
+     text. tools/build_standalone.py keeps only the `greek` subset of this
+     family; its Latin would cost 192 332 B to duplicate what Poppins does. -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <script>
   (function () {
     var t = localStorage.getItem('apisense-asm-theme');
@@ -123,7 +131,33 @@ body::after {
 [data-lang="fi"] [lang]:not([lang="fi"]),
 [data-lang="nl"] [lang]:not([lang="nl"]),
 [data-lang="sv"] [lang]:not([lang="sv"]),
-[data-lang="da"] [lang]:not([lang="da"]) { display: none; }
+[data-lang="da"] [lang]:not([lang="da"]),
+[data-lang="el"] [lang]:not([lang="el"]) { display: none; }
+
+/* ── Greek ──────────────────────────────────────────────────────
+   Poppins is the typeface of this page and has no Greek glyphs at all, so
+   `el` needs a second family. Noto Sans is loaded in the <head> with only its
+   `greek` subset and joins the stack *behind* Poppins.
+
+   Poppins first is the whole mechanism, not an aesthetic preference. CSS font
+   matching runs per character, not per element: for every glyph the UA walks
+   the family list and takes the first family that actually has it. Poppins has
+   0/69 Greek characters and Google Fonts additionally gives its faces a
+   `unicode-range` that excludes U+0370–03FF, so every Greek letter falls
+   through to Noto Sans — while `Apisense BOX`, `Hub`, `VitalSensor`,
+   `ColonyLink` and the digits stay in Poppins, byte-identical to the other
+   seventeen locales. Reversing the order would hand the Latin to Noto Sans and
+   make the brand names look different in Greek alone.
+
+   Selector, not inheritance: thirteen rules on this page re-declare
+   `font-family: Poppins, …` on their own elements, so a bare `:lang(el)` on
+   the root would never reach `.lede`, `.micro` or `h2`. `html:lang(el) *`
+   is (0,1,1) and outranks every one of them regardless of source order.
+
+   `'Segoe UI'` stays at the back for the same reason `body` carries it: if the
+   webfont fails, Windows still has Greek. */
+html:lang(el),
+html:lang(el) * { font-family: Poppins, 'Noto Sans', 'Segoe UI', sans-serif; }
 
 /* ── Header ─────────────────────────────────────────────────── */
 .head {

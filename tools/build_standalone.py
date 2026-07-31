@@ -24,28 +24,46 @@ FIGS = ROOT / "docs" / "assembly" / "figs"
 OUT = SRC.parent / "Apisense_BOX_Instrukcja_montazu_standalone.html"
 
 SITE = "https://docs.apisense.ai/"
-FONT_CSS = (
-    "https://fonts.googleapis.com/css2"
-    "?family=Poppins:wght@200;300;400;500;600&display=swap"
-)
-# Enough for all seventeen locales, all of them Latin-script: `latin` carries
-# ı ø å æ é ü, `latin-ext` the rest of the Turkish, Central-European, Baltic and
-# Romanian letters (İ ğ ş ł ż ě ő ș ț …). Verified by intersecting the cmap of
-# every embedded woff2 with its declared unicode-range and checking the union
-# against every codepoint the page actually renders — not by reading subset
-# names, which promise more than they carry. Two characters do fall outside and
-# always have, in Polish as much as in Finnish: `≤` (U+2264, in the temperature
-# range) and `✱` (U+2731, the .ghost marker). Both come from the reader's
-# fallback font, in the bundle and in the PDFs, and both are deliberate — there
-# is no Poppins subset that would supply them.
+
+# One stylesheet per family the page links, in the order the <head> links them.
+# Two families, because Poppins covers seventeen locales and cannot cover the
+# eighteenth: it has zero Greek glyphs. See dev-docs/adr/0003-kroje-greka-arabski.md.
+FONT_CSS = {
+    "Poppins": (
+        "https://fonts.googleapis.com/css2"
+        "?family=Poppins:wght@200;300;400;500;600&display=swap"
+    ),
+    "Noto Sans": (
+        "https://fonts.googleapis.com/css2"
+        "?family=Noto+Sans:wght@300;400;500;600&display=swap"
+    ),
+}
+
+# Which subsets are worth embedding, *per family* — the two families are here
+# for opposite reasons and a single shared tuple would over-fetch from both.
 #
-# Poppins offers exactly one further subset, devanagari, which no locale needs.
-# Greek and Arabic are not a KEEP_SUBSETS question at all: Poppins has zero
-# glyphs for either script, so `el` and `ar` need a second family — see
-# dev-docs/adr/0003-kroje-greka-arabski.md, still unsigned. Adding them means
-# fetching more than one stylesheet here and filtering subsets per family, which
-# this single tuple cannot express.
-KEEP_SUBSETS = ("latin", "latin-ext")
+# Poppins carries the Latin script for every locale: `latin` has ı ø å æ é ü,
+# `latin-ext` the rest of the Turkish, Central-European, Baltic and Romanian
+# letters (İ ğ ş ł ż ě ő ș ț …). Its one further subset, devanagari, no locale
+# needs.
+#
+# Noto Sans is here *only* for Greek, and its `latin`/`latin-ext` would be
+# 192 332 B spent to make `Apisense BOX` look different in `el` than everywhere
+# else — the ADR measures it and rejects it. Poppins stays first in the CSS
+# stack, so the Latin inside Greek sentences never reaches this family anyway.
+#
+# Verified by intersecting the cmap of every embedded woff2 with its declared
+# unicode-range and checking the union against every codepoint the page actually
+# renders — not by reading subset names, which promise more than they carry.
+# Two characters do fall outside and always have, in Polish as much as in
+# Finnish and Greek: `≤` (U+2264, in the temperature range) and `✱` (U+2731,
+# the .ghost marker). Both come from the reader's fallback font, in the bundle
+# and in the PDFs, and both are deliberate — no subset of either family supplies
+# them.
+KEEP_SUBSETS = {
+    "Poppins": ("latin", "latin-ext"),
+    "Noto Sans": ("greek",),
+}
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"
 
 # A data URI carries no filename, so the type has to be declared. Most drawings are
@@ -61,13 +79,20 @@ def fetch(url: str) -> bytes:
         return r.read()
 
 
-def inline_fonts() -> str:
-    """Download the Poppins @font-face rules and embed each woff2 as a data URI."""
-    css = fetch(FONT_CSS).decode("utf-8")
+def inline_family(family: str) -> list[str]:
+    """@font-face rules of one family, each woff2 embedded as a data URI.
+
+    Only the subsets listed for that family in KEEP_SUBSETS. A family that
+    matches nothing is an error, not an empty result: Google Fonts renaming a
+    subset would otherwise silently ship a bundle with no Greek in it, and a
+    missing glyph looks like a plausible one from the reader's fallback font.
+    """
+    keep = KEEP_SUBSETS[family]
+    css = fetch(FONT_CSS[family]).decode("utf-8")
     blocks = re.findall(r"/\*\s*([\w-]+)\s*\*/\s*(@font-face\s*\{.*?\})", css, re.S)
     kept = []
     for subset, block in blocks:
-        if subset not in KEEP_SUBSETS:
+        if subset not in keep:
             continue
         match = re.search(r"url\((https://[^)]+)\)", block)
         if match is None:
@@ -81,23 +106,45 @@ def inline_fonts() -> str:
             )
         )
     if not kept:
-        raise SystemExit("no @font-face blocks matched — Google Fonts response changed?")
-    print(f"  fonts: {len(kept)} faces embedded")
-    return "\n".join(kept)
+        raise SystemExit(
+            f"{family}: żaden subset z {', '.join(keep)} nie pasował"
+            " — zmieniła się odpowiedź Google Fonts?"
+        )
+    print(f"  fonts: {family} — {len(kept)} faces ({', '.join(keep)})")
+    return kept
+
+
+def inline_fonts() -> str:
+    """Every family's @font-face rules, in the order the <head> links them."""
+    faces: list[str] = []
+    for family in FONT_CSS:
+        faces.extend(inline_family(family))
+    return "\n".join(faces)
 
 
 def main() -> None:
     html = SRC.read_text(encoding="utf-8")
 
-    # 1. fonts: swap the stylesheet <link> for embedded @font-face rules
+    # 1. fonts: swap the stylesheet <link>s for embedded @font-face rules.
+    # One <link> per family, so the pattern has to swallow all of them — and the
+    # HTML comment that documents why the second one exists, which sits between
+    # them. Counted first: a <head> with fewer links than families would mean a
+    # family loaded here but never referenced by the page, or the reverse.
+    links = re.findall(r'<link href="https://fonts\.googleapis\.com[^>]*>', html)
+    if len(links) != len(FONT_CSS):
+        raise SystemExit(
+            f"<head> linkuje {len(links)} arkuszy Google Fonts, a FONT_CSS ma"
+            f" {len(FONT_CSS)} rodzin ({', '.join(FONT_CSS)}) — rozjechały się"
+        )
     faces = inline_fonts()
     html = re.sub(
         r'<link rel="preconnect"[^>]*>\s*'
         r'<link rel="preconnect"[^>]*crossorigin>\s*'
-        r'<link href="https://fonts\.googleapis\.com[^>]*>',
-        "<style>\n" + faces + "\n</style>",
+        r'(?:(?:<!--.*?-->|<link href="https://fonts\.googleapis\.com[^>]*>)\s*)+',
+        "<style>\n" + faces + "\n</style>\n",
         html,
         count=1,
+        flags=re.S,
     )
     if "fonts.googleapis.com" in html:
         raise SystemExit("font <link> was not replaced")
