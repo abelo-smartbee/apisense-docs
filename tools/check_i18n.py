@@ -40,7 +40,10 @@ SRC = ROOT / "docs" / "assembly" / "index.html"
 # being parameterised: while a language is being translated it stays out, and
 # it is added here in the same commit that lands its translation. `i18n_lib`
 # deliberately holds only the canonical order, never the done-ness.
-DEFAULT_LOCALES = ("pl", "en", "de", "fr", "es", "it", "no", "tr")
+DEFAULT_LOCALES = (
+    "pl", "en", "de", "fr", "es", "it", "no", "tr",
+    "cs", "sk", "hu", "hr", "ro", "fi", "nl", "sv", "da",
+)
 
 # How many incomplete groups to name before summarising the rest. A locale
 # that has not been started yet would otherwise print one line per group and
