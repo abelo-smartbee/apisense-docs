@@ -1950,7 +1950,7 @@ Każde zgłoszenie jest analizowane przez zespół odpowiedzialny za rozwój apl
 
 Aby zgłosić problem lub sugestię w aplikacji, należy wykonać poniższe kroki:
 
-- Kliknij ikonę **⋮** (więcej opcji) dostępną z każdego widoku w aplikacji, znajdującą się w prawym górnym rogu ekranu, i wybierz *Wyślij opinię* z menu (obok pozycji *Ustawienia*). W efekcie zostanie otwarty widok *Dodaj sugestię* ([](#fig-add-suggestion)).
+- Kliknij ikonę **⋮** (więcej opcji) dostępną z każdego widoku w aplikacji, znajdującą się w prawym górnym rogu ekranu, i wybierz *Dodaj sugestię* z menu (obok pozycji *Ustawienia* i *Wyloguj*). W efekcie zostanie otwarty widok *Dodaj sugestię* ([](#fig-add-suggestion)).
 - W widoku *Dodaj sugestię* uzupełnij następujące, wymagane pola:
 
     - **Wybierz kategorię** - wybierz jedną z dostępnych kategorii w zależności od tego, czy chcesz zgłosić problem czy sugestię ulepszenia aplikacji.
@@ -2132,7 +2132,7 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 > [Omówienie zawartości ula (zakładka Szczegóły)](#omowienie-zawartosci-ula)
 
-- **Ustawienia pasieki i ula:** Ikona **⋮** w widoku pasieki (zakładka *Ule*) lub ula (zakładka *Szczegóły*) prowadzi do ustawień (obok pozycji *Wyślij opinię*). Możesz tu edytować informacje o pasiece lub ulu.
+- **Ustawienia pasieki i ula:** Ikona **⋮** w widoku pasieki (zakładka *Ule*) lub ula (zakładka *Szczegóły*) prowadzi do ustawień (obok pozycji *Dodaj sugestię* i *Wyloguj*). Możesz tu edytować informacje o pasiece lub ulu.
 
 > [Omówienie ustawień pasieki](#omowienie-ustawien-pasieki), [Omówienie ustawień ula](#omowienie-ustawien-ula)
 
@@ -2174,7 +2174,7 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 ### 9. Zgłaszanie problemów i sugestii
 
-- **Zgłaszanie w aplikacji:** Kliknij ikonę **⋮** w prawym górnym rogu dowolnego widoku i wybierz *Wyślij opinię*. W widoku *Dodaj sugestię* wypełnij kategorię i opis, opcjonalnie dołącz zdjęcia. Kliknij *Wyślij sugestię*.
+- **Zgłaszanie w aplikacji:** Kliknij ikonę **⋮** w prawym górnym rogu dowolnego widoku i wybierz *Dodaj sugestię*. Wypełnij kategorię i opis, opcjonalnie dołącz zdjęcia. Kliknij *Wyślij sugestię*.
 
 > [Zgłaszanie problemów i sugestii](#zglaszanie-problemow-i-sugestii)
 

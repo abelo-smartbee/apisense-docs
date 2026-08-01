@@ -1951,16 +1951,16 @@ Each report is reviewed by the team responsible for app development. User feedba
 
 To report a problem or suggestion in the app, follow these steps:
 
-- Click the **⋮** (more options) icon available from any view in the app, in the upper right corner of the screen, and choose *Send feedback* from the menu (alongside *Settings*). As a result, the *Add suggestion* view will open ([](#fig-add-suggestion)).
-- In the *Add suggestion* view, fill in the following required fields:
+- Click the **⋮** (more options) icon available from any view in the app, in the upper right corner of the screen, and choose *Send feedback* from the menu (alongside *Settings* and *Sign Out*). As a result, the *Send feedback* view will open ([](#fig-add-suggestion)).
+- In the *Send feedback* view, fill in the following required fields:
 
     - **Choose category** — select one of the available categories depending on whether you want to report a problem or suggest an app improvement.
     - **Description** — enter a description of the problem or what you would like to change in the app.
 
 - Optionally, you can also attach photos to your report, which is especially useful when reporting a problem found in the app. Note: you can attach photos only — recordings are not accepted.
-- After filling in the information above, click the yellow *Send suggestion* button in the lower right corner of the view to submit the report.
+- After filling in the information above, click the yellow *Send feedback* button in the lower right corner of the view to submit the report.
 
-Figure: Add suggestion view - sample problem reported through the app {#fig-add-suggestion}
+Figure: Send feedback view - sample problem reported through the app {#fig-add-suggestion}
 
 ![figure](pictures/report_suggestion.png){width=200}
 
@@ -2133,7 +2133,7 @@ Below you will find a summary of the most important activities in the Apisense P
 
 > [Hive contents overview (Details tab)](#omowienie-zawartosci-ula)
 
-- **Apiary and hive settings:** The **⋮** icon in the apiary view (*Hives* tab) or hive view (*Details* tab) leads to the settings (alongside *Send feedback*). Here you can edit information about the apiary or hive.
+- **Apiary and hive settings:** The **⋮** icon in the apiary view (*Hives* tab) or hive view (*Details* tab) leads to the settings (alongside *Send feedback* and *Sign Out*). Here you can edit information about the apiary or hive.
 
 > [Apiary settings overview](#omowienie-ustawien-pasieki), [Hive settings overview](#omowienie-ustawien-ula)
 
@@ -2175,7 +2175,7 @@ Below you will find a summary of the most important activities in the Apisense P
 
 ### 9. Reporting problems and suggestions
 
-- **Reporting in the app:** Click the **⋮** icon in the upper right corner of any view and choose *Send feedback*. In the *Add suggestion* view fill in the category and description, optionally attach photos. Click *Send suggestion*.
+- **Reporting in the app:** Click the **⋮** icon in the upper right corner of any view and choose *Send feedback*. Fill in the category and description, optionally attach photos. Click *Send feedback*.
 
 > [Reporting problems and suggestions](#reporting-problems-and-suggestions)
 
