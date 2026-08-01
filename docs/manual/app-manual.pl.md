@@ -121,6 +121,9 @@ Figure: Dodawanie pasieki - widok startowy Pasieki {#fig-apiaries}
 
 - W rezultacie zostanie wyświetlony widok *Dodaj pasiekę* ([](#fig-add-apiary)). 
 
+!!! note "Limity planu"
+    Liczba pasiek i uli, które możesz dodać, zależy od Twojego planu. Po osiągnięciu limitu nad formularzem pojawia się baner — np. *Osiągnięto limit uli w Twoim planie (N). Przejdź na wyższy plan, aby dodać więcej.* lub, w okresie próbnym, *Osiągnięto limit pasiek w okresie próbnym.* Dodanie kolejnej pozycji jest wtedy zablokowane do czasu zmiany planu.
+
 Figure: Widok Dodaj pasiekę {#fig-add-apiary}
 
 ![figure](pictures/add_apiary.png){width=200}
@@ -1689,6 +1692,11 @@ System umożliwia ciągłe monitorowanie najważniejszych parametrów środowisk
 
 Dane prezentowane w systemie mogą być wyświetlane w formie **aktualnych wartości, wykresów zmian w czasie oraz zestawień**, co umożliwia łatwe śledzenie trendów i analizę zachowania rodziny pszczelej w dłuższym okresie.
 
+!!! note "Dostępność zależna od planu"
+    Sekcje *Waga* i *Warunki* w zakładce *Stan ula* wyświetlają się tylko wtedy, gdy Twój plan obejmuje dane z urządzeń. Bez tego uprawnienia w *Stanie ula* zostaje sama sekcja *Zdrowie*, a cały ten rozdział oraz [Analiza danych i raporty](#analiza-danych-i-raporty) nie dotyczą takiego konta.
+
+    Jeśli plan **Pro AI wygasł**, historia pomiarów zostaje zamrożona na dacie jego wygaśnięcia: przy bieżących odczytach zamiast wartości zobaczysz **Zablokowane**, końcówka wykresu jest wyszarzona, znika legenda Min/Max, a nad nią pojawia się komunikat *Odblokuj dostęp do bieżących danych w Pro AI*. To nie jest awaria urządzenia — dane są zbierane dalej i pojawią się po odnowieniu planu.
+
 Figure: Widok Szczegóły ula - przykładowe wartości parametrów i wykres wagi {#fig-beehive-details-with-chart}
 
 ![figure](pictures/beehive_details_with_chart.png){width=200}
@@ -1740,7 +1748,7 @@ Najważniejsze informacje:
     - **Taruj teraz** — wyzeruj względem najnowszego odczytu.
     - **Taruj w punkcie** — wyzeruj od dowolnego momentu; po wybraniu tej opcji dotknij odpowiedniego punktu bezpośrednio na wykresie wagi.
 
-    Po pomyślnym tarowaniu wyświetlenie zmienia się na **Aktualna waga (tara)**, a na wykresie pojawia się znacznik *Tara* (pionowa, przerywana linia). Aby wrócić do wagi brutto, kliknij *Resetuj* obok przycisku *Taruj*.
+    Po pomyślnym tarowaniu wyświetlenie zmienia się na **Waga aktualna (tara)**, a na wykresie pojawia się znacznik *Tarowanie* (pionowa, przerywana linia). Aby wrócić do wagi brutto, kliknij *Resetuj* obok przycisku *Taruj*.
 
 ### 5. Przybytek miodu
 
@@ -1785,7 +1793,7 @@ Figure: Widok Szczegóły ula - przykładowe wartości parametrów i wykres wagi
 - Z zakładki *Pasieki* (widok startowy widoczny zaraz po zalogowaniu się do aplikacji Apisense) przejdź do zakładki *Ule*. W tym celu kliknij kafelek z wybraną pasieką.
 - Z zakładki *Ule* przejdź do zakładki *Szczegóły*. Aby to zrobić kliknij w kafelek z wybranym ulem.
 - Upewnij się, że znajdujesz się w zakładce *Szczegóły* (podświetlone na dolnym menu), podzakładce *Stan ula* (podkreślone na górnym menu). Wykresy znajdują się w sekcjach *Waga* oraz *Warunki*.
-- Wykres zostanie wyświetlony ([](#fig-beehive-details-with-chart-2)) po kliknięciu w dowolny nagłówek wybrany z wymienionych wyżej sekcji (np. Waga aktualna z sekcji *Waga*).
+- Wykres zostanie wyświetlony ([](#fig-beehive-details-with-chart-2)) po kliknięciu **wiersza parametru** w jednej z tych sekcji (np. *Waga aktualna* w sekcji *Waga*). Same sekcje nie są zwijane — ich nagłówki są zawsze widoczne, a strzałka rozwijająca znajduje się przy wierszu parametru.
 
 #### 1.2 Dostępne wykresy
 
@@ -1813,7 +1821,7 @@ Dane na wykresach prezentowane są w kilku przedziałach czasowych. Ostatnie:
 - 3 miesiące
 - 6 miesięcy
 
-Aby wyświetlić wykres dla wybranego zakresu, należy kliknąć odpowiedni przedział czasu wyświetlany nad wykresem.
+Aby wyświetlić wykres dla wybranego zakresu, należy kliknąć odpowiedni przedział czasu wyświetlany nad wykresem. Przedziały, dla których nie ma jeszcze danych, są **nieaktywne** — nie da się ich wybrać.
 
 #### 1.5 Interpretacja wykresów
 
@@ -1874,7 +1882,10 @@ ______________________________________________________________________
 
 System powiadomień w aplikacji informuje użytkownika o istotnych zdarzeniach w pasiece, stanie urządzeń monitorujących oraz o zalecanych działaniach związanych z prowadzeniem uli. Informacje przekazywane są w formie powiadomień oraz rekomendacji generowanych na podstawie danych z czujników, obserwacji i analizy systemowej. Dzięki temu użytkownik może szybciej reagować na pojawiające się problemy, a także podejmować decyzje dotyczące dalszego prowadzenia pasieki.
 
-Powiadomienia generowane przez system są dostępne **w aplikacji** — w sekcji powiadomień można przeglądać komunikaty i zapoznać się z ich szczegółami. 
+Powiadomienia generowane przez system są dostępne **w aplikacji** — w sekcji powiadomień można przeglądać komunikaty i zapoznać się z ich szczegółami. Niezależnie od tego aplikacja może wysyłać **powiadomienia push** na telefon, także wtedy, gdy z niej nie korzystasz. Którymi kategoriami ma się to dziać, ustawisz w *Ustawienia konta > Powiadomienia* — patrz [1.1 Edycja danych](#11-edycja-danych).
+
+!!! note
+    Zakładka *Problemy* jest dostępna tylko w planach obejmujących alerty chorobowe. Jeśli Twój plan ich nie obejmuje (np. wersja próbna AI), znika cały górny pasek zakładek, a widok *Powiadomienia* pokazuje wyłącznie powiadomienia techniczne.
 
 <a id="powiadoienia-gdzie"></a>
 
@@ -1932,7 +1943,10 @@ Figure: Zakładka Twój asystent - przykładowe pytanie zadane asystentowi AI (2
 
 Po przesłaniu pytania asystent analizuje dostępne informacje i generuje odpowiedź zawierającą możliwe wyjaśnienia sytuacji lub sugestie dalszego postępowania.
 
-Z asystenta AI można skorzystać poprzez wybór zakładki *Twój asystent* z dolnego menu, dostępnej w podstawowych widokach aplikacji (*Pasieki*, *Ule*, *Ul*). Dzięki temu użytkownik ma szybki dostęp do pomocy asystenta w dowolnym momencie korzystania z systemu.
+Z asystenta AI można skorzystać poprzez wybór zakładki *Twój asystent* z dolnego menu, dostępnej w podstawowych widokach aplikacji (*Pasieki*, *Ule*, *Szczegóły*). Dzięki temu użytkownik ma szybki dostęp do pomocy asystenta w dowolnym momencie korzystania z systemu.
+
+!!! note
+    Pozycja *Twój asystent* pojawia się w dolnym menu tylko wtedy, gdy Twój plan obejmuje asystenta. Bez tego uprawnienia dolne menu nie zawiera tej zakładki.
 
 ______________________________________________________________________
 
@@ -1951,9 +1965,27 @@ Funkcja edycji danych użytkownika umożliwia aktualizację podstawowych informa
 Aby edytować dane użytkownika, należy:
 
 - W zakładce *Pasieki* (widok startowy aplikacji Apisense) kliknij ikonę **⋮**, znajdującą się w prawej górnej części ekranu, i wybierz *Ustawienia*. W rezultacie zostanie otwarty widok *Ustawienia konta* ([](#fig-app-settings)).
-- Widok *Ustawienia konta* składa się z kilku sekcji: **Wyświetlana nazwa**, **E-mail**, **Telefon komórkowy**, **Doświadczenie**, **Hasło**, **Język** oraz **Jednostki**. W każdej z nich prezentowane są aktualne dane użytkownika.
-- Aby zmienić zawartość wybranej sekcji, należy kliknąć jej nagłówek, co spowoduje otwarcie nowego widoku, w którym możliwa będzie edycja danych. Przykładowo, w przypadku zmiany hasła użytkownik zostanie poproszony o wprowadzenie nowego hasła oraz jego powtórzenie ([](#fig-app-settings)).
-- Po wprowadzeniu zmian należy je zapisać, klikając żółty przycisk znajdujący się w prawym dolnym rogu ekranu.
+- Widok *Ustawienia konta* to lista wierszy, każdy z aktualną wartością, w kolejności:
+
+    - **Wyświetlana nazwa**
+    - **Email**
+    - **Telefon komórkowy**
+    - **Doświadczenie**
+    - **Hasło**
+    - **Powiadomienia**
+    - **Język**
+    - **Jednostka temperatury**
+    - **Jednostka wagi**
+
+    Poniżej listy znajdują się przycisk *Usuń konto*, informacja o dofinansowaniu ze środków UE oraz numer wersji aplikacji.
+
+- Aby zmienić wartość, kliknij wiersz — otworzy się osobny ekran edycji. Przykładowo przy zmianie hasła zostaniesz poproszony o wprowadzenie nowego hasła oraz jego powtórzenie ([](#fig-app-settings)).
+- **Zapis zmian** wygląda różnie w zależności od ekranu. *Język*, *Jednostka temperatury* i *Jednostka wagi* zapisują się **natychmiast po wyborze** — nie ma tam przycisku zapisu. Na pozostałych ekranach przyciski pojawiają się dopiero po zmianie wartości i są to przyciski **z ikonami**: **✓** zapisuje, **⊗** zamyka ekran bez zapisu.
+- Wiersz **Powiadomienia** otwiera osobny ekran z trzema przełącznikami powiadomień push:
+
+    - *Alerty* — „Powiadamiaj o chorobach, gdy nie korzystam z aplikacji",
+    - *Stan urządzeń* — „Powiadamiaj, gdy występują problemy z wagą lub czujnikiem",
+    - *Przypomnienia* — „Wysyłaj przypomnienia o zaplanowanym zadaniu na dzień przed zadaniem".
 
 Figure: Ustawienia konta - przykładowy widok ustawień oraz zmiana hasła (1) {#fig-app-settings}
 
@@ -1988,12 +2020,12 @@ Warto porównyć ten numer z wersją dostępną w sklepie Google Play lub App St
 
 ### 3. Preferencje jednostek
 
-Sekcja *Jednostki* w *Ustawieniach konta* umożliwia wybór jednostek miar wyświetlanych w całej aplikacji:
+W *Ustawieniach konta* jednostki miar ustawia się w **dwóch niezależnych wierszach** — nie ma wspólnej sekcji *Jednostki*. Każdy wiersz otwiera własny ekran wyboru:
 
-- **Jednostka temperatury** — Celsjusz (°C) lub Fahrenheit (°F).
-- **Jednostka wagi** — Kilogramy (kg) lub Funty (lbs).
+- **Jednostka temperatury** — *Celsjusz (°C)* lub *Fahrenheit (°F)*.
+- **Jednostka wagi** — *Kilogramy (kg)* lub *Funty (lbs)*.
 
-Zmiany są widoczne od razu na wszystkich wykresach i odczytach w aplikacji.
+Wybór zapisuje się natychmiast po kliknięciu, bez osobnego przycisku zapisu, a zmiany są widoczne od razu na wszystkich wykresach i odczytach w aplikacji.
 
 ______________________________________________________________________
 
@@ -2012,10 +2044,10 @@ Aby zgłosić problem lub sugestię w aplikacji, należy wykonać poniższe krok
 - Kliknij ikonę **⋮** (więcej opcji) dostępną z każdego widoku w aplikacji, znajdującą się w prawym górnym rogu ekranu, i wybierz *Dodaj sugestię* z menu (obok pozycji *Ustawienia* i *Wyloguj*). W efekcie zostanie otwarty widok *Dodaj sugestię* ([](#fig-add-suggestion)).
 - W widoku *Dodaj sugestię* uzupełnij następujące, wymagane pola:
 
-    - **Wybierz kategorię** - wybierz jedną z dostępnych kategorii w zależności od tego, czy chcesz zgłosić problem czy sugestię ulepszenia aplikacji.
-    - **Opis** - wprowadź opis problemu lub tego, co chciałbyś zmienić w aplikacji
+    - **Kategoria** - wybierz jedną z trzech pozycji listy: *Problem w aplikacji*, *Ulepszenie aplikacji* lub *Inne*. Dopóki nic nie wybierzesz, w polu widnieje podpowiedź *Wybierz kategorię*.
+    - **Opis** - wprowadź opis problemu lub tego, co chciałbyś zmienić w aplikacji. Pole mieści do **2000 znaków**.
 
-- Opcjonalnie możesz załączyć również zdjęcia do swojego zgłoszenia, co jest szczególnie przydatne jeśli zgłaszasz problem znaleziony w aplikacji. Uwaga: do zgłoszenia możesz dołączyć jedynie zdjęcia - nagrania nie są akceptowane. 
+- Opcjonalnie możesz załączyć również zdjęcia do swojego zgłoszenia (maksymalnie **10**), co jest szczególnie przydatne jeśli zgłaszasz problem znaleziony w aplikacji. Uwaga: do zgłoszenia możesz dołączyć jedynie zdjęcia - nagrania nie są akceptowane. 
 - Po uzupełnieniu powyższych informacji kliknij żółty przycisk *Wyślij sugestię*, wyświetlany w prawym dolnym rogu widoku, co spowoduje przesłanie zgłoszenia.
 
 Figure: Widok Dodaj sugestię - przykładowy problem zgłoszony poprzez aplikację {#fig-add-suggestion}
@@ -2033,6 +2065,9 @@ ______________________________________________________________________
 ### 2. Uzupełnianie notatek i przeglądów
 
 - Po każdej wizycie w pasiece dodawaj notatki i przeglądy w aplikacji (najlepiej z załącznikami w postaci zdjęć). Dzięki temu możliwe będzie analizowanie historii działań oraz dokładniejsza ocena sytuacji przez system.
+
+!!! note
+    Dopisywanie danych wymaga aktywnego planu i prawa do zapisu. Po wygaśnięciu planu aplikacja przechodzi w **tryb tylko do podglądu** — próba zapisu kończy się komunikatem *Plan wygasł. Odnów subskrypcję, aby dodawać i edytować.* W pasiece udostępnionej z poziomem *Ograniczony* zakładki *Przegląd*, *Notatki*, *Zadania*, *Badania* i *Próbki* w ogóle się nie renderują.
 
 ### 3. Regularne sprawdzanie alarmów
 
@@ -2061,7 +2096,9 @@ ______________________________________________________________________
 
 #### 1.2 Nie mogę się zalogować
 
-**Rozwiązanie:** sprawdź poprawność wprowadzonej nazwy użytkownika i hasła. Jeśli zapomniałeś hasła skontaktuj się z z pomocą Apisense: **bee@apisense.ai**.
+**Rozwiązanie:** sprawdź poprawność wprowadzonych danych — w pierwsze pole możesz wpisać zarówno nazwę użytkownika, jak i adres e-mail podany przy rejestracji.
+
+Jeśli nie pamiętasz hasła, zresetuj je samodzielnie: na ekranie logowania kliknij *Nie pamiętasz hasła?*, podaj adres e-mail i kliknij *Zresetuj hasło*. Aplikacja potwierdzi wysyłkę komunikatem *Sprawdź teraz swoją skrzynkę pocztową. Znajdziesz tam link do ustawienia nowego hasła.* Jeśli mimo to nie uda Ci się zalogować, skontaktuj się z pomocą Apisense: **bee@apisense.ai**.
 
 #### 1.3 Aplikacja pokazuje "Wymagana aktualizacja" i nie mogę wejść do aplikacji
 
@@ -2103,11 +2140,11 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 ### 1. Rejestracja i logowanie
 
-- **Rejestracja:** Pobierz aplikację mobilną Apisense lub wejdź na stronę internetową systemu. Wybierz *Załóż konto*, wypełnij dane (nazwa użytkownika, e-mail, telefon), utwórz hasło spełniające wymagania i kliknij *Zarejestruj się*.
+- **Rejestracja:** Pobierz aplikację mobilną Apisense lub wejdź na stronę internetową systemu. Wybierz *Załóż konto*, wypełnij dane (nazwa użytkownika, e-mail, telefon), utwórz hasło spełniające wymagania i kliknij *Zarejestruj*.
 
 > [Wideo](#wideo-rejestracja), [Rejestracja](#1-rejestracja)
 
-- **Logowanie:** Uruchom aplikację lub stronę internetową, w widoku *Zaloguj się* wpisz nazwę użytkownika i hasło, następnie kliknij *Zaloguj się*.
+- **Logowanie:** Uruchom aplikację lub stronę internetową, w widoku *Zaloguj się* wpisz nazwę użytkownika lub e-mail oraz hasło, następnie kliknij *Zaloguj się*. Hasła nie pamiętasz? Kliknij *Nie pamiętasz hasła?* i zresetuj je samodzielnie.
 
 > [Logowanie](#2-logowanie)
 
@@ -2125,7 +2162,7 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 > [Usuwanie pasieki](#13-usuwanie-pasieki)
 
-- **Dodawanie ula:** Kliknij kafelek wybranej pasieki. Wybierz *Dodaj…* → *Dodaj ul* z dolnego menu. Wypełnij dane w sekcji *Szczegóły ula*, *Informacje o matce pszczelej* oraz zeskanuj kody QR z urządzeń Scale i VitalSensor. Kliknij żółty przycisk Zapisz.
+- **Dodawanie ula:** Kliknij kafelek wybranej pasieki. Wybierz *Dodaj…* → *Ul* z dolnego menu. Wypełnij dane w sekcjach *Szczegóły ula* i *Informacje o matce pszczelej*, a następnie przejdź przez ekrany wyposażenia w kolejności **ColonyLink → VitalSensor → Scale**. ColonyLink jest obowiązkowy; w pasiece bez Huba jest zarazem ostatnim krokiem. VitalSensor i Scale możesz pominąć, zostawiając ich pola puste. Zapisz przyciskiem na ostatnim ekranie.
 
 > [Wideo](#wideo-dodaj-ul), [Dodawanie ula](#21-dodawanie-ula)
 
@@ -2141,13 +2178,13 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 > [Wideo](#wideo-dodaj-przeglad), [Dodawanie przeglądów](#dodawanie-przegladow)
 
-- **Dodawanie notatek:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Wybierz *Dodaj...* -> *Notatkę* z dolnego menu. Wprowadź zawartość notatki (tekst lub nagraj notatkę głosową, możesz dodać też zdjęcia lub nagrania (*+*)). Zapisz notatkę (żółty przycisk).
+- **Dodawanie notatek:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Wybierz *Dodaj...* -> *Notatka* z dolnego menu. Wprowadź zawartość notatki (tekst lub nagraj notatkę głosową; przyciskiem *Dodaj załącznik* pod polem notatki dodasz zdjęcia, nagrania lub PDF). Zapisz notatkę (żółty przycisk).
 
 > [Wideo — notatka tekstowa](#wideo-notatka-tekst)
 > [Wideo — notatka audio](#wideo-notatka-audio) 
 > [Notatki](#4-notatki)
 
-- **Zgłaszanie obserwacji szerszenia azjatyckiego:** Kliknij ikonę szerszenia azjatyckiego na kafelku pasieki, następnie przycisk *Zgłoś obserwację* i odpowiedz na pytanie *Czy widzisz teraz szerszenia azjatyckiego?* (Tak/Nie). Ikona szerszenia azjatyckiego zostanie odpowiednio zaktualizowana (aktywna obserwacja / sprawdzono, czysto / nieaktualne), a nad nią pojawi się data ostatniego zgłoszenia.  
+- **Zgłaszanie obserwacji szerszenia azjatyckiego:** Kliknij ikonę szerszenia azjatyckiego na kafelku pasieki, następnie przycisk *Zgłoś obserwację* i odpowiedz na pytanie *Czy widzisz teraz szerszenia azjatyckiego?* Odpowiedź *Nie* zapisuje zgłoszenie od razu; po *Tak* wypełnij jeszcze formularz z datą obserwacji i **wymaganą** liczbą osobników, a następnie kliknij *Wyślij zgłoszenie*. Ikona szerszenia azjatyckiego zostanie odpowiednio zaktualizowana (aktywna obserwacja / sprawdzono, czysto / nieaktualne), a nad nią pojawi się data ostatniego zgłoszenia.  
 
 > [Obserwacja szerszenia azjatyckiego](#obserwacja-szerszenia)
 
@@ -2201,11 +2238,11 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 > [Monitorowanie parametrów](#monitorowanie-parametrow)
 
-- **Wykresy:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. W zakładce *Szczegóły* -> *Stan ula* rozwiń sekcję *Waga* lub *Warunki* i kliknij w wybrany parametr, aby zobaczyć wykres w wybranym przedziale czasowym (24 h, 7 dni, 1–6 miesięcy). Kliknij przycisk *Pełny ekran*, aby powiększyć wykres, następnie zsuń/rozsuń palce lub przeciągnij, albo skorzystaj z przycisków na ekranie, aby przybliżyć i przesunąć widok i wyświetlić dokładne pomiary.
+- **Wykresy:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. W zakładce *Szczegóły* -> *Stan ula* kliknij wiersz parametru w sekcji *Waga* lub *Warunki*, aby zobaczyć wykres w wybranym przedziale czasowym (24 h, 7 dni, 1–6 miesięcy; przedziały bez danych są nieaktywne). Kliknij przycisk *Pełny ekran*, aby powiększyć wykres, następnie zsuń/rozsuń palce lub przeciągnij, albo skorzystaj z przycisków na ekranie, aby przybliżyć i przesunąć widok i wyświetlić dokładne pomiary.
 
 > [Wizualizacja danych na wykresach](#1-wizualizacja-danych-na-wykresach)
 
-- **Trendy:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. W zakładce *Szczegóły* -> *Stan ula* rozwiń sekcję *Waga* lub *Warunki* i kliknij w wybrany parametr, aby wyświetlić wykres. Na ekranie wykresu włącz przełącznik *Pokaż trend*.
+- **Trendy:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. W zakładce *Szczegóły* -> *Stan ula* kliknij wiersz parametru w sekcji *Waga* lub *Warunki*, aby wyświetlić wykres. Na ekranie wykresu włącz przełącznik *Pokaż trend*.
 
 > [Trendy](#2-trendy)
 
@@ -2223,7 +2260,7 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 ### 8. Konto
 
-- **Edycja danych użytkownika:** W widoku startowym *Pasieki* kliknij ikonę **⋮** i wybierz *Ustawienia*. Możesz zmienić nazwę, e-mail, telefon, hasło oraz język. Z tego miejsca możesz też usunąć konto.
+- **Edycja danych użytkownika:** W widoku startowym *Pasieki* kliknij ikonę **⋮** i wybierz *Ustawienia*. Możesz zmienić wyświetlaną nazwę, e-mail, telefon, doświadczenie, hasło, powiadomienia push, język oraz jednostki temperatury i wagi. Z tego miejsca możesz też usunąć konto.
 
 > [Edycja danych użytkownika](#edycja-danych-uzytkownika)
 
