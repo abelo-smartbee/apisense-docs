@@ -55,10 +55,11 @@ Figure: Rejestracja do Systemu Apisense Pro AI - przykład poprawnie wypełniony
 
 - Zostanie wyświetlony kolejny widok - Utwórz hasło. W tym widoku zostaniesz poproszony o utworzenie silnego hasła ([](#fig-utworz-haslo)), które będziesz potem wykorzystywał, by zalogować się do systemu. Hasło musi zawierać:
 
-    - Co najmniej 1 znak specjalny (np. #, $, %, \_)
-    - Co najmniej 1 cyfrę
-    - Co najmniej 1 wielką literę
     - Co najmniej 8 znaków
+    - Co najmniej 1 wielką literę
+    - Co najmniej 1 znak specjalny (np. #, $, %, \_)
+
+    Pod polem hasła aplikacja wyświetla te wymagania w skrócie: *Min. 8 znaków, wielka litera i znak specjalny*.
 
     Następnie wpisz ponownie to samo hasło w pole *Powtórz hasło* i przejdź do kolejnego kroku klikając przycisk *Dalej*.
 
@@ -86,10 +87,12 @@ Jeżeli posiadasz już konto w Systemie Apisense Pro AI postępuj zgodnie z poni
 
 - W widoku *Zaloguj się* ([](#fig-logowanie)), w wyznaczone pola wprowadź odpowiednie dane, podane podczas rejestracji do systemu:
 
-    - nazwa użytkownika
-    - hasło
+    - *Email lub nazwa użytkownika* — w to pole możesz wpisać zarówno nazwę użytkownika, jak i adres e-mail podany przy rejestracji
+    - *Hasło*
 
     Następnie kliknij przycisk *Zaloguj się*, po czym powinieneś zobaczyć widok startowy aplikacji Apisense - zakładkę Pasieki.
+
+    Jeśli nie pamiętasz hasła, kliknij *Nie pamiętasz hasła?* pod polami logowania i zresetuj je samodzielnie — patrz [Nie mogę się zalogować](#12-nie-moge-sie-zalogowac).
 
 Figure: Logowanie do Systemu Apisense Pro AI - widok Zaloguj się {#fig-logowanie}
 
@@ -186,10 +189,10 @@ Figure: Widok Ustawienia pasieki {#fig-apiary-settings}
 
 - Widok *Ustawienia pasieki* jest podzielony na 2 sekcje. Aby zaktualizować informacje należące do danej sekcji, należy kliknąć w jej nagłówek. Dostępne sekcje:
 
-    - **Szczegóły pasieki** - sekcja umożliwia edycję takich parametrów jak nazwa pasieki oraz jej skrót. W tym celu należy kliknąć w wybrane pole i wprowadzić zmiany.
+    - **Szczegóły pasieki** - sekcja zawiera jedno pole: **Nazwa**. Kliknij w nie i wprowadź zmiany. Litera na kafelku pasieki wylicza się automatycznie z pierwszej litery nazwy — nie ma osobnego pola na skrót.
     - **Hub** - sekcja dotyczy parametrów związanych z urządzeniem Apisense Hub. Informacji zawartych w tej sekcji nie można edytować.
 
-- Aby zapisać wprowadzone zmiany należy kliknąć żółty przycisk, znajdujący się w prawym dolnym rogu ekranu ([](#fig-apiary-settings-details)).
+- Aby zapisać wprowadzone zmiany kliknij przycisk z ikoną **✓** w prawym dolnym rogu ekranu ([](#fig-apiary-settings-details)). Przycisk staje się aktywny dopiero po zmianie wartości; sąsiedni przycisk **⊗** zamyka ekran bez zapisu.
 
 Figure: Ustawienia pasieki - edycja danych w sekcji Szczegóły pasieki {#fig-apiary-settings-details}
 
@@ -242,7 +245,7 @@ Figure: Widok zawartości pojedynczej pasieki (Ule) {#fig-apiary-interior}
 
 ![figure](pictures/apiary_interior.png){width=200}
 
-- Aby dodać ul do tej pasieki kliknij zakładkę *Dodaj...* na dolnym pasku menu i wybierz opcję *Dodaj ul* ([](#fig-apiary-add-beehive-button)), w wyniku czego zostanie wyświetlony widok Dodaj ul ([](#fig-apiary-add-beehive-button)).
+- Aby dodać ul do tej pasieki kliknij zakładkę *Dodaj...* na dolnym pasku menu i wybierz opcję *Ul* ([](#fig-apiary-add-beehive-button)), w wyniku czego zostanie wyświetlony widok Dodaj ul ([](#fig-apiary-add-beehive-button)). Menu zawiera trzy pozycje: *Ul*, *Zadanie* i *Notatka*; *Notatka* jest wyszarzona, dopóki w pasiece nie ma żadnego ula.
 
 Figure: Widok Ule - Przycisk Dodaj ul {#fig-apiary-add-beehive-button}
 
@@ -274,40 +277,60 @@ Figure: Dodawanie ula w systemie - sekcja Informacje o matce pszczelej {#fig-add
 
 ![figure](pictures/add_beehive_queen.png){width=200}
 
-- Następnie kliknij żółty przycisk ze strzałką w prawo, znajdujący się na dole ekranu, w celu przejścia do sekcji *Wyposażenie*.
+- Następnie kliknij żółty przycisk ze strzałką w prawo, znajdujący się na dole ekranu, w celu przejścia do etapu **Wyposażenie**.
+
+Etap wyposażenia to od jednego do trzech osobnych ekranów, zawsze w tej samej kolejności: **ColonyLink → VitalSensor → Scale**. Pierwszy ekran pojawia się przy każdym dodawaniu ula, dwa kolejne tylko wtedy, gdy pasieka ma przypisane urządzenie Apisense Hub.
 
 !!! note
-    Sekcja *Wyposażenie* jest dostępna tylko wtedy, gdy do pasieki jest przypisane urządzenie Apisense Hub. Jeżeli pasieka nie posiada Apisense Hub, kliknięcie żółtego przycisku znajdującego się w prawym dolnym rogu ekranu, spowoduje zapisanie i dodanie pustego ula (bez urządzeń pomiarowych) z wprowadzonymi wyżej informacjami.
+    **Wymóg Hub:** VitalSensor i Scale można powiązać z ulem wyłącznie w pasiece z przypisanym **Apisense Hub**. ColonyLink Huba nie wymaga — jego ekran pojawia się również w pasiece bez Huba.
 
-#### 2.1.1 Dodawanie ula z urządzeniami
+#### 2.1.1 Krok ColonyLink
 
-- **Wyposażenie:** Ostatni etap obejmuje powiązanie urządzeń z tym konkretnym ulem. **Uwaga:** Kluczowe jest, aby urządzenia skonfigurowane w ramach ula (Scale i VitalSensor) były w rzeczywistości zainstalowane w tym samym fizycznym ulu.
+- Po informacjach o matce zostanie wyświetlony ekran *Wyposażenie - zeskanuj kod QR z Apisense ColonyLink*. Wypełnij pola:
 
-    !!! note
-        **Wymóg Hub:** Aby powiązać Scale lub VitalSensor z ulem, do pasieki musi być przypisany **Apisense Hub**. W przeciwnym razie zarówno podczas dodawania jak i edycji ula, sekcja *Wyposażenie* nie będzie dostępna.
-
-    Aby powiązać urządzenie Apisense Scale z ulem wypełnij następujące pola ([](#fig-add-beehive-devices-scale)):
-
-    - **Scale** - kliknij w ikonę kodu QR znajdującą się w prawej części tego pola i zeskanuj kod QR z naklejki umieszczonej na Apisense Scale. Kolejne pole *Kod potwierdzający* zostanie wypełnione automatycznie.
+    - **ColonyLink** - kliknij w ikonę kodu QR znajdującą się w prawej części tego pola i zeskanuj kod QR z Apisense ColonyLink. Kolejne pole *Kod potwierdzający* zostanie wypełnione automatycznie.
     - **Kod potwierdzający** - zostanie wypełniony automatycznie, po poprawnym zeskanowaniu kodu QR.
 
-    Figure: Dodawanie ula w systemie - sekcja Wyposażenie - przypisywanie urządzenia Scale {#fig-add-beehive-devices-scale}
+- Przycisk przejścia dalej pozostaje **nieaktywny (wyszarzony)**, dopóki oba pola nie zostaną wypełnione — ColonyLink jest domyślnie wymagany dla każdego ula.
 
-    ![figure](pictures/add_beehive_devices_scale.png){width=200}
+!!! note
+    W niektórych planach ColonyLink jest opcjonalny. Poznasz to po komunikacie *„ColonyLink jest opcjonalny w Twoim planie — możesz pominąć ten krok"*, wyświetlanym pod nagłówkiem ekranu. Wtedy możesz zostawić oba pola puste i przejść dalej. Nie da się natomiast wypełnić tylko jednego z nich — albo oba, albo żadne.
 
-    Następnie kliknij żółty przycisk, widoczny w lewym dolnym rogu ekranu, aby przejść do etapu przypisywania urządzenia Apisense VitalSensor do ula ([](#fig-add-beehive-devices-sensor)):
+- To, co dzieje się po tym kroku, zależy od pasieki:
 
-    - **VitalSensor** - kliknij w ikonę kodu QR znajdującą się w prawej części tego pola i zeskanuj kod QR z naklejki umieszczonej na urządzeniu Apisense VitalSensor **lub** z Apisense ColonyLink. Kolejne pole *Kod potwierdzający* zostanie wypełnione automatycznie.
+    - **Pasieka z Apisense Hub** - przycisk ze strzałką w prawo prowadzi do kolejnych ekranów wyposażenia (VitalSensor, następnie Scale).
+    - **Pasieka bez Apisense Hub** - ColonyLink jest krokiem ostatnim. Przycisk na dole ekranu ma wtedy ikonę zapisu, a jego kliknięcie tworzy ul z samym ColonyLinkiem.
+
+#### 2.1.2 Dodawanie ula z VitalSensorem i Scale
+
+Te dwa ekrany pojawiają się tylko w pasiece z Hubem, po kroku ColonyLink. **Uwaga:** Kluczowe jest, aby urządzenia skonfigurowane w ramach ula były w rzeczywistości zainstalowane w tym samym fizycznym ulu.
+
+- **VitalSensor:** ekran *Wyposażenie - zeskanuj kod QR z urządzenia Apisense VitalSensor lub z Apisense Tag* ([](#fig-add-beehive-devices-sensor)):
+
+    - **VitalSensor / Tag** - kliknij w ikonę kodu QR znajdującą się w prawej części tego pola i zeskanuj kod QR z naklejki umieszczonej na urządzeniu Apisense VitalSensor lub z Apisense Tag. Kolejne pole *Kod potwierdzający* zostanie wypełnione automatycznie.
     - **Kod potwierdzający** - zostanie wypełniony automatycznie, po poprawnym zeskanowaniu kodu QR.
+
+    Link *Zobacz, jak zamontować VitalSensor* nad polami otwiera instrukcję montażu urządzenia.
 
     Figure: Dodawanie ula w systemie - sekcja Wyposażenie - przypisywanie urządzenia VitalSensor {#fig-add-beehive-devices-sensor}
 
     ![figure](pictures/add_beehive_devices_sensor.png){width=200}
 
-!!! note
-    Do ula możesz również przypisać tylko jedno urządzenie. Aby utworzyć ul tylko z VitalSensorem pozostaw pole Scale i Kod potwierdzający puste, a następnie przejdź do etapu dodawania urządzenia VitalSensor i zeskanuj odpowiedni kod QR, po czym zapisz. Aby utworzyć ul tylko ze Scale pozostaw pole VitalSensor i Kod potwierdzający puste i kliknij żółty przycisk na dole ekranu w celu zapisania.
+- **Scale:** ostatni ekran kreatora, *Wyposażenie - zeskanuj kod QR z urządzenia Apisense Scale* ([](#fig-add-beehive-devices-scale)):
 
-- Po wypełnieniu wybranych sekcji i niezbędnych pól kliknij żółty przycisk w prawej dolnej części ekranu, aby dodać ul z powiązanymi urządzeniami (Scale i/lub VitalSensor).
+    - **Scale** - kliknij w ikonę kodu QR znajdującą się w prawej części tego pola i zeskanuj kod QR z naklejki umieszczonej na Apisense Scale. Kolejne pole *Kod potwierdzający* zostanie wypełnione automatycznie.
+    - **Kod potwierdzający** - zostanie wypełniony automatycznie, po poprawnym zeskanowaniu kodu QR.
+
+    Link *Zobacz, jak zamontować Scale* nad polami otwiera instrukcję montażu urządzenia.
+
+    Figure: Dodawanie ula w systemie - sekcja Wyposażenie - przypisywanie urządzenia Scale {#fig-add-beehive-devices-scale}
+
+    ![figure](pictures/add_beehive_devices_scale.png){width=200}
+
+!!! note
+    Oba te ekrany są opcjonalne. Aby pominąć urządzenie, zostaw jego pola puste i przejdź dalej — tak utworzysz ul np. tylko z VitalSensorem albo tylko ze Scale. Nie da się natomiast wypełnić samego numeru seryjnego lub samego kodu potwierdzającego; aplikacja pokaże wtedy błąd przy brakującym polu.
+
+- Kliknięcie przycisku zapisu na ekranie Scale kończy dodawanie ula. To ten krok tworzy ul wraz ze wszystkimi zeskanowanymi wcześniej urządzeniami — jeśli któryś z numerów seryjnych zostanie odrzucony, aplikacja wróci na ekran tego urządzenia i pokaże błąd przy odpowiednim polu.
 
 - Jeśli utworzenie ula się powiodło, zostaniesz przekierowany do widoku *Ule*, a na Twojej liście uli pojawi się ul, który właśnie utworzyłeś ([](#fig-beehives-beehive-with-problem), [](#fig-beehive-interior)).
 
@@ -319,15 +342,15 @@ Figure: Pomyślnie dodany ul z powiązanymi Apisense Scale oraz VitalSensor w wi
 
 ![figure](pictures/beehive_interior.png){width=200}
 
-#### 2.1.2 Dodawanie ula bez urządzeń (bez Scale i VitalSensora)
+#### 2.1.3 Dodawanie ula bez Scale i VitalSensora
 
 Jeśli chcesz utworzyć ul tylko do ewidencji (bez monitoringu):
 
-- Przejdź przez kroki **Szczegóły ula** oraz **Informacje o matce pszczelej** jak przy standardowym dodawaniu ula.
-- W sekcji **Wyposażenie** **nie wypełniaj** pól Scale, VitalSensor ani Kod potwierdzający — pozostaw je puste (nie skanuj kodów QR).
-- Na koniec kliknij żółty przycisk, znajdujący się w prawym dolnym rogu ekranu, aby zapisać ul bez urządzeń.
+- Przejdź przez kroki **Szczegóły ula**, **Informacje o matce pszczelej** oraz **ColonyLink** jak przy standardowym dodawaniu ula. Kroku ColonyLink nie da się pominąć, chyba że Twój plan wyraźnie oznacza go jako opcjonalny.
+- Jeśli pasieka **nie ma Huba**, ColonyLink jest ostatnim krokiem — kliknij przycisk zapisu i ul zostanie utworzony.
+- Jeśli pasieka **ma Huba**, przejdź przez ekrany VitalSensor i Scale, zostawiając ich pola puste (nie skanuj kodów QR), a na ekranie Scale kliknij przycisk zapisu.
 
-**Po utworzeniu ula bez urządzeń:**
+**Po utworzeniu ula bez urządzeń pomiarowych:**
 
 - Na kafelku ula nie zobaczysz bieżących pomiarów (temperatura, waga) ani oceny stanu zdrowia rodziny opartej na danych z VitalSensora ([](#fig-beehives-beehive-without-devices)).
 - Funkcje wymagające VitalSensora (np. *Zarejestruj próbkę*) nie będą dostępne, dopóki nie przypiszesz urządzenia.
@@ -365,9 +388,16 @@ Figure: Widok Ustawienia ula {#fig-beehive-settings}
 
     - **Szczegóły ula** - sekcja umożliwia edycję takich parametrów jak nazwa ula, maksymalna liczba ramek w korpusie gniazdowym oraz dennica higieniczna. W tym celu należy kliknąć w wybrane pole i wprowadzić zmiany lub zaznaczyć/odznaczyć kwadrat przy danym elemencie.
 
-    - **Informacje o matce** - sekcja dotyczy danych związanych z matką pszczelą (rok wychowu, pochodzenie, sposób unasiennienia). Aby zaktualizować dane w tej sekcji należy wybrać odpowiednią pozycję z określonej listy rowijanej (np. Pochodzenie matki -> pozycja: Hodowla własna).
+    - **Informacje o matce** - sekcja dotyczy danych związanych z matką pszczelą: *Rok wychowu matki*, *Pochodzenie matki* (*Własna hodowla*, *Zakup krajowy*, *Zakup zagraniczny*, *Nieznane*) oraz *Sposób unasiennienia matki* (*Naturalny*, *Sztuczny*, *Nieznany*). Aby zaktualizować dane w tej sekcji należy wybrać odpowiednią pozycję z listy rozwijanej.
 
-    - **Wyposażenie** - sekcja zawiera informacje na temat powiązanych urządzeń z ulem (VitalSensor, Scale). Sekcja umożliwia usunięcie przypisania urządzenia do tego ula. Aby to zrobić należy kliknąć przycisk *Odłącz VitalSensor*/*Odłącz Scale* w zależności od tego, które urządzenie ma zostać odpięte, a następnie potwierdzić wybór przy użyciu żółtego przycisku *Odłącz* ([](#fig-beehive-settings-devices-edit)). Podczas odpinania urządzeń historia ich pomiarów zostaje domyślnie zachowana, co oznacza, że przeszłe dane pomiarowe będą dostępne na wykresach, dopóki ten ul nie zostanie usunięty. Aby wyczyścić historię pomiarów w ulu z odpinanego urządzenia użyj przełącznika. Jeżeli w skład wyposażenia ula nie wchodzi któreś z urządzeń (pola nie są wypełnione), z tego miejsca można również powiązać Scale/VitalSensor z ulem. W tym celu należy kliknąć ikonę kodu QR, znajdującą się w prawej części pola VitalSensor/Scale i zeskanować kod QR z odpowiednich urządzeń pomiarowych.
+    - **Wyposażenie** - sekcja zawiera trzy bloki urządzeń, w kolejności **ColonyLink**, **VitalSensor**, **Scale**. Każdy blok ma pola *Numer seryjny* i *Kod potwierdzający*, a kliknięcie nazwy urządzenia otwiera jego szczegóły. Jeżeli któregoś urządzenia w ulu nie ma (pola są puste), możesz je stąd powiązać: kliknij ikonę kodu QR w prawej części pola i zeskanuj kod z urządzenia.
+
+        - **ColonyLink** nie ma przycisku odłączania — można go wyłącznie podmienić, skanując kod innego ColonyLinka.
+        - **VitalSensor** i **Scale** mają przyciski *Wymieniłem baterię* oraz *Odłącz VitalSensor* / *Odłącz Scale*.
+
+        Po kliknięciu *Odłącz VitalSensor* / *Odłącz Scale* otwiera się ekran potwierdzenia (*Odłączyć VitalSensor?* / *Odłączyć Scale?*) z przyciskami *Odłącz* i *Nie odłączaj* przy VitalSensorze oraz *Odłącz Scale* i *Nie odłączaj Scale* przy Scale ([](#fig-beehive-settings-devices-edit)). Historia pomiarów odłączanego urządzenia zostaje domyślnie zachowana — przeszłe dane będą dostępne na wykresach, dopóki ul nie zostanie usunięty. Aby ją wyczyścić, wyłącz przełącznik *Zachowaj historię…* przed potwierdzeniem.
+
+        Przycisk *Wymieniłem baterię* zgłasza wymianę baterii w danym urządzeniu — aplikacja odświeża konfigurację i potwierdza komunikatem *Wymiana baterii potwierdzona*.
 
     !!! note
         Sekcja *Wyposażenie* nie jest dostępna, jeśli do pasieki nie jest przypisane urządzenie Apisense Hub.
@@ -469,7 +499,11 @@ Figure: Przykładowe zdjęcie ramki z VitalSensorem dołączane do przeglądu {#
 
 - Po poprawnym dodaniu zdjęć kliknij żółtą strzałkę, umieszczoną w prawym dolnym rogu, co spowoduje przejście do kolejnego kroku.
 
-- Następnie odpowedz na kilka pytań ([](#fig-add-overview-question)). Zaznacz odpowiedź Tak, Nie lub Pomiń.
+- Następnie odpowiedz na kilka pytań ([](#fig-add-overview-question)). Pytania są trzech rodzajów:
+
+    - **wyboru** - zaznacz odpowiedź *Tak*, *Nie* lub *Pomiń*. Przy pytaniu wymaganym zaznaczenie odpowiedzi automatycznie przenosi do następnego pytania;
+    - **tekstowe** - wpisz odpowiedź w pole tekstowe;
+    - **liczbowe** - wpisz liczbę; aplikacja pilnuje dopuszczalnego zakresu wartości.
 
 Figure: Dodawanie przeglądu - przykładowe pytanie {#fig-add-overview-question}
 
@@ -497,7 +531,7 @@ Aby wykonać edycję zapisanego przeglądu należy:
 
 - Na liście przeglądów (*Szczegóły ula > Przegląd*), przy przeglądzie wymagającym edycji, kliknąć w ikonę ołówka lub w widoku szczegółów przeglądu otworzyć dodatkowe menu (trzy kropki w prawym górnym rogu) i wybrać opcję *Edytuj*. W efekcie zostanie otwarty kreator przeglądu z zapisanymi zdjęciami i wypełnionymi odpowiedziami na poszczególne pytania.
 - W pierwszym kroku edycji zostaną wyświetlone zdjęcia ramek. Jeżeli nie chcesz nic zmieniać na etapie zdjęć, kliknij żółtą strzałkę w prawo, aby przejść do kolejnego etapu i zachować aktualny stan zdjęć. Jeśli któreś z nich wymaga podmiany - kliknij *"X"* widoczny na miniaturze wybranego zdjęcia aby je usunąć. Następnie kliknij przycisk *Dodaj zdjęcie*, który zostanie wyświetlony pod wszystkimi zdjęciami, wybierz opcję *Zrób zdjęcie* lub *Dodaj zdjęcie z galerii* i zamieść nowe zdjęcie.
-- W kolejnych krokach zobaczysz udzielone odpowiedzi na pytania przeglądu. Jeśli nie chcesz zmieniać odpowiedzi na dane pytanie kliknij żółtą strzałkę w prawo. Jeśli chcesz zmienić odpowiedź, wybierz odpowiednią opcję Tak/Nie/Pomiń. Po zmianie odpowiedzi zostaniesz automatycznie przeniesiony do kolejnego pytania.
+- W kolejnych krokach zobaczysz udzielone odpowiedzi na pytania przeglądu. Jeśli nie chcesz zmieniać odpowiedzi na dane pytanie kliknij żółtą strzałkę w prawo. Jeśli chcesz zmienić odpowiedź, wybierz nową opcję (*Tak*/*Nie*/*Pomiń*) albo popraw wpisany tekst lub liczbę. Przy wymaganych pytaniach wyboru zmiana odpowiedzi automatycznie przenosi do kolejnego pytania; przy pytaniach tekstowych i liczbowych przejdź dalej żółtą strzałką.
 - W ostatnim etapie zaktualizuj odpowiednio datę przeglądu lub pozostaw ją bez zmian. Aby zapisać wszystkie wprowadzone zmiany kliknij żółty przycisk *Zakończ przegląd*. Jeśli zmiany zostały poprawnie zapisane zostanie wyświetlony komunikat: Przegląd został pomyślnie zaktualizowany.
 
 #### 3.2 Usuwanie przeglądu
@@ -556,7 +590,7 @@ Figure: Widok Szczegóły ula - Przycisk Dodaj Notatkę {#fig-add-overview-butto
     - **Notatka** - Wpisz treść notatki (tekst) lub kliknij ikonę mikrofonu znajdujacą sie po prawej stronie w tym polu, aby nagrać notatkę głosową.
 
 !!! tip
-    **Transkrypcja notatki głosowej:** Po nagraniu notatki głosowej aplikacja automatycznie przygotowuje jej transkrypcję, dzięki czemu notatka jest dostępna zarówno w formie audio, jak i tekstu. W trakcie generowania transkrypcji na ekranie szczegółów notatki widoczny jest napis *Trwa transkrypcja...*. Gdy transkrypcja jest już gotowa, wygenerowany tekst pojawia się pod nagranym dźwiękiem w szczegółach. 
+    **Transkrypcja notatki głosowej:** Po nagraniu notatki głosowej aplikacja automatycznie przygotowuje jej transkrypcję, dzięki czemu notatka jest dostępna zarówno w formie audio, jak i tekstu. W trakcie generowania transkrypcji na ekranie szczegółów notatki widoczny jest napis *Transkrypcja w toku...*. Gdy transkrypcja jest już gotowa, wygenerowany tekst pojawia się pod nagranym dźwiękiem, pod nagłówkiem *Transkrypcja*. Jeśli transkrypcja się nie powiedzie, w tym samym miejscu pojawi się komunikat *Nie udało się utworzyć transkrypcji.*
 
 Figure: Dodawanie notatki tekstowej lub głosowej (1) {#fig-add-note-add-text}
 
@@ -566,20 +600,20 @@ Figure: Dodawanie notatki tekstowej lub głosowej (2) {#fig-add-note-add-audio}
 
 ![figure](pictures/add_note_add_audio.png){width=200}
 
-- Do notatki możesz również dodać zdjęcie, nagranie lub **dokument PDF**. W tym celu kliknij przycisk *+*, znajdujący się w prawym górnym rogu widoku Dodaj notatkę ([](#fig-add-note-add-photos)) i wybierz odpowiedni typ załącznika.
+- Do notatki możesz również dodać zdjęcie, nagranie lub **dokument PDF**. W tym celu kliknij przycisk *Dodaj załącznik* (z ikoną plusa), znajdujący się w treści formularza pod polem notatki ([](#fig-add-note-add-photos)), i wybierz typ załącznika z listy: *Aparat*, *Galeria*, *Nagraj wideo*, *Wideo z galerii*, *Dokument PDF*. Dodane załączniki pojawiają się pod przyciskiem.
 
 Figure: Dodawanie notatki tekstowej z załącznikami {#fig-add-note-add-photos}
 
 ![figure](pictures/add_note_add_photos.png){width=200}
 
-- Aby zapisać notatkę kliknij żółty przycisk, znajdujący się w prawym dolnym rogu ekranu. Zapisana notatka zostanie wyświetlona na liście notatek w zakładce Szczegóły ula > Notatki ([](#fig-beehive-details-note)).
+- Aby zapisać notatkę kliknij żółty przycisk, znajdujący się w prawym dolnym rogu ekranu. Zapisana notatka zostanie wyświetlona na liście notatek w zakładce Szczegóły ula > Więcej > Notatki ([](#fig-beehive-details-note)).
 
 Figure: Notatka na liście notatek w ulu {#fig-beehive-details-note}
 
 ![figure](pictures/beehive_details_note.png){width=200}
 
 
-**Uwaga — dodawanie notatki z poziomu pasieki:** Notatka może zostać również utworzona z poziomu pasieki. W tym celu należy przejść następującą ścieżkę: w zakładce *Pasieki* kliknąć wybraną pasiekę, następnie w zakładce *Ule* wybrać z dolnego menu opcję *Dodaj...* i opcję *Notatka*. W rezultacie taka sama notatka zostanie automatycznie zapisana do wszystkich uli w wybranej pasiece i będzie widoczna na liście notatek każdego ula (*Szczegóły > Notatki*). **Edycja** takiej notatki dotyczy wyłącznie kopii w konkretnym ulu — zmiany w jednej notatce nie będą widoczne w pozostałych notatkach dodanych w ten sposób. Również **usuwając** taką notatkę w jednym z uli, notatki w pozostałych ulach zostaną nienaruszone.
+**Uwaga — dodawanie notatki z poziomu pasieki:** Notatka może zostać również utworzona z poziomu pasieki. W tym celu należy przejść następującą ścieżkę: w zakładce *Pasieki* kliknąć wybraną pasiekę, następnie w zakładce *Ule* wybrać z dolnego menu opcję *Dodaj...* i opcję *Notatka*. W rezultacie taka sama notatka zostanie automatycznie zapisana do wszystkich uli w wybranej pasiece i będzie widoczna na liście notatek każdego ula (*Szczegóły > Więcej > Notatki*). **Edycja** takiej notatki dotyczy wyłącznie kopii w konkretnym ulu — zmiany w jednej notatce nie będą widoczne w pozostałych notatkach dodanych w ten sposób. Również **usuwając** taką notatkę w jednym z uli, notatki w pozostałych ulach zostaną nienaruszone.
 
 #### 4.2 Edycja notatki
 
@@ -606,7 +640,7 @@ Figure: Widok Szczegóły ula {#fig-beehive-interior-6}
 
 ![figure](pictures/beehive_interior.png){width=200}
 
-- Przejdź do zakładki *Notatki* (górne menu), w wyniku czego zostanie otwarty widok z listą notatek przypisanych do wybranego ula ([](#fig-beehive-details-note-2))
+- W górnym menu kliknij *Więcej*, a następnie zakładkę *Notatki*, w wyniku czego zostanie otwarty widok z listą notatek przypisanych do wybranego ula ([](#fig-beehive-details-note-2))
 
 Figure: Notatka na liście notatek w ulu {#fig-beehive-details-note-2}
 
@@ -645,7 +679,7 @@ Figure: Widok Szczegóły ula {#fig-beehive-interior-7}
 
 ![figure](pictures/beehive_interior.png){width=200}
 
-- Przejdź do zakładki *Notatki* (górne menu), w wyniku czego zostanie otwarty widok z listą notatek przypisanych do wybranego ula ([](#fig-beehive-details-note-3))
+- W górnym menu kliknij *Więcej*, a następnie zakładkę *Notatki*, w wyniku czego zostanie otwarty widok z listą notatek przypisanych do wybranego ula ([](#fig-beehive-details-note-3))
 
 Figure: Notatka na liście notatek w ulu {#fig-beehive-details-note-3}
 
@@ -669,7 +703,7 @@ Każde zadanie zawiera następujące informacje:
 - **Data zadania** — kiedy zadanie ma być wykonane.
 - **Status** — *Do zrobienia* (planowane) lub *Wykonane*. Uwaga: Status zadania można zmienić dopiero po dodaniu zadania do kalendarza.
 - **Zakres** — czy zadanie dotyczy całej pasieki, wybranych uli, czy jednego ula (patrz [5.2 Zakres zadania](#52-zakres-zadania-gdzie-jest-widoczne-i-edytowalne)).
-- **Powtarzanie** — opcjonalne; co 7 dni, 14 dni, 1 miesiąc lub 3 miesiące, z datą końca serii (patrz [5.5 Powtarzanie zadań](#55-powtarzanie-zadan)).
+- **Powtarzanie** — opcjonalne; *Co tydzień*, *Co 2 tygodnie*, *Co miesiąc* lub *Co kwartał*, z datą końca serii (patrz [5.5 Powtarzanie zadań](#55-powtarzanie-zadan)).
 
 #### 5.2 Zakres zadania (gdzie jest widoczne i edytowalne)
 
@@ -726,7 +760,7 @@ Figure: Widok Dodaj zadanie z poziomu ula {#fig-beehive-add-task}
 
 Zadanie można skonfigurować jako powtarzające się ([](#fig-task-series-apply-to)). W sekcji *Powtarzaj zadanie* w widoku *Dodaj zadanie* wybierz:
 
-- **Częstotliwość** — co 1 tydzień, 2 tygodnie, 1 miesiąc lub 3 miesiące.
+- **Częstotliwość** — *Co tydzień*, *Co 2 tygodnie*, *Co miesiąc* lub *Co kwartał*.
 - **Data zakończenia zadania** — maksymalnie 1 rok od daty pierwszego zadania.
 
 Aplikacja utworzy osobne wystąpienia zadania zgodnie z wybraną częstotliwością (np. co tydzień) w podanym zakresie dat. Każde wystąpienie jest niezależnym zadaniem i może być edytowane lub usunięte osobno.
@@ -789,20 +823,27 @@ Figure: Lista zadań w widoku ula {#fig-beehive-tasks-list}
 
 ![figure](pictures/beehive_details_tasks_list.png){width=200}
 
-Listę zadań możesz filtrować po statusie (*Wszystkie*, *Do zrobienia*, *Wykonane*).
+Listę zadań możesz filtrować po statusie. Dostępne są dwa filtry: *Do zrobienia* i *Wykonane*. Kliknięcie aktywnego filtru wyłącza go i przywraca pełną listę.
 
 <a id="obserwacja-szerszenia"></a>
 
 ### 6. Obserwacja szerszenia azjatyckiego
 
-Ikona szerszenia azjatyckiego, znajdująca się na kafelku pasieki obok wskaźnika stanu zdrowia rodziny pszczelej, umożliwia zgłaszanie oraz przeglądanie obserwacji szerszenia azjatyckiego. Pozwala na bieżąco monitorować jego aktywność w pasiekach i szybciej reagować na potencjalne zagrożenie dla rodzin pszczelich. **Uwaga:** Obserwacje może zgłaszać wyłącznie właściciel pasieki. W przypadku pasieki współdzielonej (wkrótce dostępne w aplikacji) pozostali użytkownicy mają dostęp wyłącznie do podglądu zgłoszeń.
+Ikona szerszenia azjatyckiego, znajdująca się na kafelku pasieki obok wskaźnika stanu zdrowia rodziny pszczelej, umożliwia zgłaszanie oraz przeglądanie obserwacji szerszenia azjatyckiego. Pozwala na bieżąco monitorować jego aktywność w pasiekach i szybciej reagować na potencjalne zagrożenie dla rodzin pszczelich. **Uwaga:** Obserwacje może zgłaszać wyłącznie właściciel pasieki. W pasiece udostępnionej pozostali użytkownicy mają dostęp wyłącznie do podglądu zgłoszeń.
 
 #### 6.1 Zgłaszanie obserwacji
 
 - Kliknij ikonę szerszenia azjatyckiego na kafelku pasieki w wyniku czego zostanie otwarty panel *Szerszeń azjatycki*.
 - W panelu *Szerszeń azjatycki* kliknij żółty przycisk *Zgłoś obserwację*, a następnie odpowiedz na pytanie *Czy widzisz teraz szerszenia azjatyckiego?*.
-- Wybierz odpowiedź *Tak* jeśli zaobserwowałeś szerszenia azjatyckiego w swojej pasiece, lub *Nie* jeśli szerszeń azjatycki nie pojawił się w Twojej pasiece.
-- Po pomyślnym zapisaniu odpowiedzi zostanie wyświetlony komunikat *Zgłoszenie zapisane*.
+- Odpowiedź **Nie** zapisuje zgłoszenie od razu — zobaczysz komunikat *Zgłoszenie zapisane*.
+- Odpowiedź **Tak** otwiera dodatkowy formularz zgłoszenia:
+
+    - **karta gatunku** - u góry formularza, z nazwą *Szerszeń azjatycki* i nazwą łacińską *Vespa velutina*;
+    - **Data obserwacji** - domyślnie dzisiejsza; kliknij pole i wybierz inną datę z kalendarza;
+    - **Liczba osobników** - **pole wymagane**, minimum 1. Bez niego nie da się wysłać zgłoszenia — aplikacja pokaże błąd *Podaj liczbę osobników (min. 1)*;
+    - **Zdjęcia (opcjonalnie)** - możesz dołączyć do 10 zdjęć. Formularz ostrzega: *Uwaga: szerszeń azjatycki może użądlić — zachowaj ostrożność podczas robienia zdjęć.*
+
+- Zgłoszenie wysyłasz przyciskiem *Wyślij zgłoszenie*. Po zapisaniu zobaczysz komunikat *Zgłoszenie zapisane*, a jeśli dołączyłeś zdjęcia — *Zgłoszenie zapisane, zdjęcia wysyłamy w tle*.
 
 #### 6.2 Status obserwacji i jej aktualność
 
@@ -855,7 +896,7 @@ Jeśli po wizycie w pasiece uznasz, że **choroba faktycznie nie występuje** w 
 3. Na pytania dotyczące obecności objawów odpowiedz **Nie** (do każdego pytania możesz też dołączyć zdjęcia z przeglądu).
 4. Prześlij formularz klikając przycisk *Zapisz*.
 
-Twoje odpowiedzi pomagają systemowi lepiej dopasować przyszłe komunikaty do warunków w Twojej pasiece. Możesz ponownie wypełnić kwestionariusz dla tego samego epizodu choroby po upływie kilku dni, jeśli model nadal będzie wykrywał chorobę.
+Twoje odpowiedzi pomagają systemowi lepiej dopasować przyszłe komunikaty do warunków w Twojej pasiece. Kwestionariusz dla tego samego epizodu choroby możesz wypełnić ponownie po **48 godzinach** — do tego czasu aplikacja wyświetla komunikat *Możesz ponownie wypełnić kwestionariusz dla tego epizodu za 48 godzin*.
 
 Opcja **Pomiń** pozwala przejść dalej bez odpowiedzi na dane pytanie — formularz i tak warto uzupełnić choćby częściowo, w szczególności gdy masz wątpliwości co do alertu.
 
@@ -863,7 +904,7 @@ Opcja **Pomiń** pozwala przejść dalej bez odpowiedzi na dane pytanie — form
 
 #### 1.3 Wypełnianie formularza chorobowego z poziomu pasieki
 
-- W zakładce Pasieki (widok startowy po zalogowaniu do aplikacji Apisense) kliknij kafelek z pasieką, w której wykryto zagrożenie (czerwona ikonka z pszczołą i napisem Zagrożenie na kafelku z pasieką). Po kliknięciu w kafelek zostanie wyświetlony widok Ule ([](#fig-apiaries-apiary-with-problem)).
+- W zakładce Pasieki (widok startowy po zalogowaniu do aplikacji Apisense) kliknij kafelek z pasieką, w której wykryto zagrożenie (czerwona ikonka z pszczołą i napisem *Zagrożony* na kafelku z pasieką). Po kliknięciu w kafelek zostanie wyświetlony widok Ule ([](#fig-apiaries-apiary-with-problem)).
 
 Figure: Widok pasieki z zagrożeniem w zakładce Pasieki i widok Ule (1) {#fig-apiaries-apiary-with-problem}
 
@@ -891,7 +932,7 @@ Figure: Formularz chorobowy - przykładowe pytanie {#fig-confirm-problem-questio
 
 ![figure](pictures/confirm_problem_questions.png){width=200}
 
-- Do odpowiedzi na poszczególne pytania możesz również załączyć zdjęcia lub nagrania. W tym celu kliknij przycisk *+*, znajdujący się w prawym górym rogu widoku Odpowiedz na kilka pytań ([](#fig-confirm-problem-add-photos)).
+- Do odpowiedzi na poszczególne pytania możesz również załączyć zdjęcia lub nagrania. W tym celu kliknij przycisk *Dodaj zdjęcie/nagranie* (z ikoną plusa), znajdujący się pod opcjami *Tak / Nie / Pomiń* ([](#fig-confirm-problem-add-photos)). Pod przyciskiem widnieje adnotacja *Dodanie zdjęcia lub nagrania jest opcjonalne*.
 
 Figure: Formularz chorobowy - załączanie zdjęć i nagrań {#fig-confirm-problem-add-photos}
 
@@ -916,7 +957,7 @@ Figure: Formularz chorobowy - zapisanie formularza {#fig-confirm-problem-save}
           allowfullscreen></iframe>
 </div>
 
-- W zakładce Pasieki (widok startowy po zalogowaniu do aplikacji Apisense) kliknij kafelek z pasieką, w której wykryto zagrożenie (czerwona ikonka z pszczołą i napisem Zagrożenie na kafelku z pasieką). Po kliknięciu w kafelek zostanie wyświetlony widok Ule ([](#fig-apiaries-apiary-with-problem-2)).
+- W zakładce Pasieki (widok startowy po zalogowaniu do aplikacji Apisense) kliknij kafelek z pasieką, w której wykryto zagrożenie (czerwona ikonka z pszczołą i napisem *Zagrożony* na kafelku z pasieką). Po kliknięciu w kafelek zostanie wyświetlony widok Ule ([](#fig-apiaries-apiary-with-problem-2)).
 
 Figure: Widok pasieki z zagrożeniem w zakładce Pasieki i widok Ule (1) {#fig-apiaries-apiary-with-problem-2}
 
@@ -950,7 +991,7 @@ Figure: Formularz chorobowy - przykładowe pytanie {#fig-confirm-problem-questio
 
 ![figure](pictures/confirm_problem_questions.png){width=200}
 
-- Do odpowiedzi na poszczególne pytania możesz również załączyć zdjęcia lub nagrania. W tym celu kliknij przycisk *+*, znajdujący się w prawym górym rogu widoku Odpowiedz na kilka pytań ([](#fig-confirm-problem-add-photos-2)).
+- Do odpowiedzi na poszczególne pytania możesz również załączyć zdjęcia lub nagrania. W tym celu kliknij przycisk *Dodaj zdjęcie/nagranie* (z ikoną plusa), znajdujący się pod opcjami *Tak / Nie / Pomiń* ([](#fig-confirm-problem-add-photos-2)).
 
 Figure: Formularz chorobowy - załączanie zdjęć i nagrań {#fig-confirm-problem-add-photos-2}
 
@@ -1033,7 +1074,7 @@ Figure: Przycisk Zarejestruj próbkę {#fig-add-overview-button-3}
   - **Data pobrania próbki** - wprowadź datę, kiedy pobrałeś próbkę (domyślnie aktualna).
   - **Rodzaj badania** - wybierz odpowiednią pozycję z listy rozwijanej np. *Martwe pszczoły*.
 
-- Po uzupełnieniu powyższych pól zostanie wyświetlony żółty przycisk *Wygeneruj kod*. Kliknij wspomniany przycisk a w polu *Kod badania* zostanie wygernerowany specjalny kod, który należy zapisać na próbce ([](#fig-register-sample)). Tak przygotowaną próbkę z kodem należy następnie wysłać na następujący adres: **Uniwersytet Przyrodniczy w Lublinie, ul. Doświadczalna 54, 20-280 Lublin**.
+- Po uzupełnieniu powyższych pól zostanie wyświetlony żółty przycisk *Wygeneruj kod*. Kliknij wspomniany przycisk a w polu *Kod badania* zostanie wygernerowany specjalny kod, który należy zapisać na próbce ([](#fig-register-sample)). Tak przygotowaną próbkę z kodem należy następnie wysłać na adres podany w aplikacji pod kodem: **Maciej Bryś, Uniwersytet Przyrodniczy w Lublinie, ul. Doświadczalna 54, 20-280 Lublin**.
 
 Figure: Widok Zarejestruj próbkę {#fig-register-sample}
 
@@ -1065,10 +1106,12 @@ Każda zarejestrowana próbka ma etykietę statusu opisującą, na jakim etapie 
 
 #### 3.3 Usuwanie próbki
 
-Aby usunąć próbkę z listy próbek należy:
+Usunąć można **wyłącznie próbkę w statusie *Oczekuje***, czyli taką, która nie została jeszcze wysłana. Przy próbkach ze statusem *Wysłana*, *Odebrana*, *Przeanalizowana* i *Anulowana* opcja usuwania w ogóle się nie pojawia — ani ikona kosza na liście, ani pozycja *Usuń* w szczegółach próbki.
+
+Aby usunąć próbkę oczekującą:
 
 - Przejść do listy próbek (*Szczegóły ula > Więcej > Próbki*).
-- Kliknąć ikonę czerwonego kosza przy próbce, która ma zostać usunięta z listy.
+- Kliknąć ikonę czerwonego kosza przy próbce albo przesunąć jej wiersz w lewo i kliknąć wyświetlony kosz. To samo zrobisz z poziomu szczegółów próbki — menu ⋮ w prawym górnym rogu, opcja *Usuń*.
 - Potwierdzić operację przyciskiem *Usuń*. Po kliknięciu wspomnianego przycisku próbka zostanie trwale usunięta i nie będzie można już cofnąć tej operacji.
     
 ### 4. Badania
@@ -1149,7 +1192,7 @@ FrameSense wykorzystuje sztuczną inteligencję, aby na podstawie jednego zdjęc
 
 #### 5.2 Wyniki analizy ramki
 
-Wyniki analizy przesłanych ramek pszczelich są dostępne w zakładce *FrameSense* (*Szczegóły ula > Więcej > FrameSense*). Aby wyświetlić wynik dla wybranej ramki kliknij odpowiednią pozycję na liście ze statusem *Analiza zakończona*. 
+Wyniki analizy przesłanych ramek pszczelich są dostępne w zakładce *FrameSense* (*Szczegóły ula > FrameSense*). Aby wyświetlić wynik dla wybranej ramki kliknij odpowiednią pozycję na liście ze statusem *Analiza zakończona*. 
 
 Możliwe statusy:
 

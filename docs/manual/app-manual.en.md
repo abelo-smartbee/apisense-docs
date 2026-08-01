@@ -62,10 +62,11 @@ Figure: Registering with the Apisense Pro AI System - example of correctly fille
 
 - The next view will appear - Create password. In this view you will be asked to create a strong password ([](#fig-utworz-haslo)), which you will then use to log in to the system. The password must contain:
 
-    - At least 1 special character (e.g. #, $, %, \_)
-    - At least 1 digit
-    - At least 1 uppercase letter
     - At least 8 characters
+    - At least 1 uppercase letter
+    - At least 1 special character (e.g. #, $, %, \_)
+
+    The app shows these requirements in short under the password field: *Min. 8 characters, uppercase letter and special character*.
 
     Then enter the same password again in the *Repeat password* field and proceed to the next step by clicking *Next*.
 
@@ -93,10 +94,12 @@ If you already have an account in the Apisense Pro AI System, follow these steps
 
 - In the *Sign in* view ([](#fig-logowanie)), enter the appropriate data into the designated fields, the same data you provided during registration:
 
-    - user name
-    - password
+    - *Email or username* — you can enter either the username or the email address you provided during registration
+    - *Password*
 
     Then click *Sign in*; you should see the Apisense app start view - the Apiaries tab.
+
+    If you have forgotten your password, tap *Forgot Password?* below the sign-in fields and reset it yourself — see [I cannot log in](#12-i-cannot-log-in).
 
 Figure: Logging in to the Apisense Pro AI System - Sign in view {#fig-logowanie}
 
@@ -189,10 +192,10 @@ Figure: Apiary settings view {#fig-apiary-settings}
 
 - The *Apiary settings* view is divided into 2 sections. To update the information in a given section, click its header. Available sections:
 
-    - **Apiary details** - this section allows you to edit parameters such as the apiary name and its abbreviation. To do so, click the chosen field and enter the changes.
+    - **Apiary details** - this section contains a single field: **Name**. Click it and enter the changes. The letter on the apiary card is derived automatically from the first letter of the name — there is no separate short-name field.
     - **Hub** - this section concerns parameters related to the Apisense Hub device. The information in this section cannot be edited.
 
-- To save your changes, click the yellow button in the lower right corner of the screen ([](#fig-apiary-settings-details)).
+- To save your changes, click the **✓** button in the lower right corner of the screen ([](#fig-apiary-settings-details)). The button only becomes active once you change a value; the neighbouring **⊗** button closes the screen without saving.
 
 Figure: Apiary settings - editing data in the Apiary details section {#fig-apiary-settings-details}
 
@@ -245,7 +248,7 @@ Figure: Single apiary contents view (Hives) {#fig-apiary-interior}
 
 ![figure](pictures/apiary_interior.png){width=200}
 
-- To add a hive to this apiary click the *Add...* tab on the bottom menu bar and select the *Add hive* option ([](#fig-apiary-add-beehive-button)); the Add hive view will be displayed ([](#fig-apiary-add-beehive-button)).
+- To add a hive to this apiary click the *Add...* tab on the bottom menu bar and select the *Hive* option ([](#fig-apiary-add-beehive-button)); the Add hive view will be displayed ([](#fig-apiary-add-beehive-button)). The menu has three items: *Hive*, *Task* and *Note*; *Note* stays greyed out until the apiary has at least one hive.
 
 Figure: Hives view - Add hive button {#fig-apiary-add-beehive-button}
 
@@ -277,40 +280,60 @@ Figure: Adding a hive in the system - Queen bee information section {#fig-add-be
 
 ![figure](pictures/add_beehive_queen.png){width=200}
 
-- Then click the yellow button with the right-pointing arrow at the bottom of the screen to proceed to the **Equipment** section.
+- Then click the yellow button with the right-pointing arrow at the bottom of the screen to proceed to the **Equipment** stage.
+
+The equipment stage consists of one to three separate screens, always in the same order: **ColonyLink → VitalSensor → Scale**. The first screen appears every time you add a hive; the other two only when the apiary has an Apisense Hub assigned.
 
 !!! Note
-    The *Equipment* section is available only when the apiary has an **Apisense Hub** assigned. If the apiary has no Hub, clicking the yellow button in the lower right corner of the screen will save and add an empty hive (without measurement devices) with the information entered above.
+    **Hub requirement:** VitalSensor and Scale can only be linked to a hive in an apiary with an assigned **Apisense Hub**. ColonyLink does not require a Hub — its screen also appears in an apiary without one.
 
-#### 2.1.1 Adding a hive with devices
+#### 2.1.1 The ColonyLink step
 
-- **Equipment:** The last stage involves linking devices to this specific hive. **Note:** It is essential that the devices configured for the hive (Scale and VitalSensor) are actually installed in the same physical hive.
+- After the queen information, the *Equipment - scan the QR code from Apisense ColonyLink* screen is displayed. Fill in the fields:
 
-    !!! Note
-        **Hub requirement:** To link Scale or VitalSensor to a hive, the apiary must have an **Apisense Hub** assigned. Otherwise the *Equipment* section will not be available when adding or editing a hive.
-
-    To link an Apisense Scale to the hive, fill in the following fields ([](#fig-add-beehive-devices-scale)):
-
-    - **Scale** — click the QR code icon on the right side of this field and scan the QR code from the sticker on the Apisense Scale. The next *Confirmation code* field will be filled in automatically.
+    - **ColonyLink** — click the QR code icon on the right side of this field and scan the QR code from the Apisense ColonyLink. The next *Confirmation code* field will be filled in automatically.
     - **Confirmation code** — filled in automatically after a successful QR scan.
 
-    Figure: Adding a hive — Equipment section, linking Scale {#fig-add-beehive-devices-scale}
+- The forward button stays **disabled (greyed out)** until both fields are filled in — ColonyLink is required for every hive by default.
 
-    ![figure](pictures/add_beehive_devices_scale.png){width=200}
+!!! Note
+    On some plans ColonyLink is optional. You will recognise this by the message *"ColonyLink is optional on your plan — you can skip this step"* shown under the screen heading. In that case you may leave both fields empty and continue. You cannot, however, fill in just one of them — either both or neither.
 
-    Then click the yellow button in the lower left corner of the screen to proceed to linking the Apisense VitalSensor ([](#fig-add-beehive-devices-sensor)):
+- What happens after this step depends on the apiary:
 
-    - **VitalSensor** — click the QR code icon on the right side of this field and scan the QR code from the sticker on the Apisense VitalSensor **or** from an Apisense ColonyLink. The next *Confirmation code* field will be filled in automatically.
+    - **Apiary with an Apisense Hub** — the right-pointing arrow takes you to the remaining equipment screens (VitalSensor, then Scale).
+    - **Apiary without an Apisense Hub** — ColonyLink is the final step. The button at the bottom of the screen then carries a save icon, and clicking it creates the hive with just the ColonyLink attached.
+
+#### 2.1.2 Adding a hive with VitalSensor and Scale
+
+These two screens appear only in an apiary with a Hub, after the ColonyLink step. **Note:** It is essential that the devices configured for the hive are actually installed in the same physical hive.
+
+- **VitalSensor:** the *Equipment - scan the QR code from the Apisense VitalSensor or Apisense Tag* screen ([](#fig-add-beehive-devices-sensor)):
+
+    - **VitalSensor / Tag** — click the QR code icon on the right side of this field and scan the QR code from the sticker on the Apisense VitalSensor or from an Apisense Tag. The next *Confirmation code* field will be filled in automatically.
     - **Confirmation code** — filled in automatically after a successful QR scan.
+
+    The *See how to mount the VitalSensor* link above the fields opens the mounting instructions.
 
     Figure: Adding a hive — Equipment section, linking VitalSensor {#fig-add-beehive-devices-sensor}
 
     ![figure](pictures/add_beehive_devices_sensor.png){width=200}
 
-!!! Note
-    You can also assign only one device to a hive. To create a hive with VitalSensor only, leave the Scale and confirmation code fields empty, proceed to VitalSensor and scan the QR code, then save. To create a hive with Scale only, leave the VitalSensor and confirmation code fields empty and click the yellow save button.
+- **Scale:** the final screen of the wizard, *Equipment - scan the QR code from the Apisense Scale device* ([](#fig-add-beehive-devices-scale)):
 
-- After filling in the chosen sections and required fields, click the yellow button in the lower right corner of the screen to add the hive with the linked devices (Scale and/or VitalSensor).
+    - **Scale** — click the QR code icon on the right side of this field and scan the QR code from the sticker on the Apisense Scale. The next *Confirmation code* field will be filled in automatically.
+    - **Confirmation code** — filled in automatically after a successful QR scan.
+
+    The *See how to mount the Scale* link above the fields opens the mounting instructions.
+
+    Figure: Adding a hive — Equipment section, linking Scale {#fig-add-beehive-devices-scale}
+
+    ![figure](pictures/add_beehive_devices_scale.png){width=200}
+
+!!! Note
+    Both of these screens are optional. To skip a device, leave its fields empty and continue — this is how you create a hive with, for example, only a VitalSensor or only a Scale. You cannot, however, fill in just the serial number or just the confirmation code; the app will show an error on the missing field.
+
+- Clicking the save button on the Scale screen completes adding the hive. This is the step that creates the hive together with every device scanned earlier — if one of the serial numbers is rejected, the app returns to that device's screen and shows the error on the relevant field.
 
 - If the hive was created successfully, you will be redirected to the *Hives* view, and the hive you just created will appear in your hive list ([](#fig-beehives-beehive-with-problem), [](#fig-beehive-interior)).
 
@@ -322,15 +345,15 @@ Figure: Successfully added hive with linked devices in Hive details {#fig-beehiv
 
 ![figure](pictures/beehive_interior.png){width=200}
 
-#### 2.1.2 Adding a hive without devices (without Scale and VitalSensor)
+#### 2.1.3 Adding a hive without Scale and VitalSensor
 
 If you want to create a hive for record-keeping only (without monitoring):
 
-- Go through the **Hive details** and **Queen bee information** steps as when adding a hive normally.
-- In the **Equipment** section, **do not fill in** the Scale, VitalSensor or confirmation code fields — leave them empty (do not scan QR codes).
-- Click the yellow button in the lower right corner of the screen to save the hive without devices.
+- Go through the **Hive details**, **Queen bee information** and **ColonyLink** steps as when adding a hive normally. The ColonyLink step cannot be skipped unless your plan explicitly marks it as optional.
+- If the apiary has **no Hub**, ColonyLink is the last step — click the save button and the hive is created.
+- If the apiary **has a Hub**, go through the VitalSensor and Scale screens leaving their fields empty (do not scan QR codes), and click the save button on the Scale screen.
 
-**After creating a hive without devices:**
+**After creating a hive without measurement devices:**
 
 - The hive tile will not show live measurements (temperature, weight) or VitalSensor-based colony health assessment ([](#fig-beehives-beehive-without-devices)).
 - Features that require VitalSensor (e.g. *Register sample*) will not be available until you assign a device.
@@ -368,9 +391,16 @@ Figure: Hive settings view {#fig-beehive-settings}
 
     - **Hive details** - this section allows you to edit parameters such as the hive name, the maximum number of frames in the brood box, and the hygienic bottom board. To do so, click the chosen field and enter the changes, or check/uncheck the box next to a given item.
 
-    - **Queen information** - this section concerns data related to the queen bee (year raised, origin, insemination method). To update the data in this section, select the appropriate item from the relevant drop-down list (e.g. Queen origin -> item: Own breeding).
+    - **Queen information** - this section concerns data related to the queen bee: *Queen breeding year*, *Queen origin* (*Own breeding*, *Purchase domestic*, *Purchase foreign*, *Unknown*) and *Queen insemination method* (*Natural*, *Artificial*, *Unknown*). To update the data in this section, select the appropriate item from the relevant drop-down list.
 
-    - **Equipment** - this section contains information about devices linked to the hive (VitalSensor, Scale). The section allows you to remove the device assignment from this hive. To do so, click the *Disconnect VitalSensor* / *Disconnect Scale* button depending on which device is to be unlinked, and then confirm your choice using the yellow *Disconnect* button ([](#fig-beehive-settings-devices-edit)). When unlinking devices, their measurement history is preserved by default, which means past measurement data will be available on charts until this hive is deleted. To clear the measurement history in the hive from the device being unlinked, use the toggle. If the hive equipment does not include one of the devices (the fields are empty), you can also link a Scale/VitalSensor to the hive from this place. To do so, click the QR code icon on the right side of the VitalSensor/Scale field and scan the QR code from the appropriate measurement devices.
+    - **Equipment** - this section contains three device blocks, in the order **ColonyLink**, **VitalSensor**, **Scale**. Each block has a *Serial number* and a *Confirmation code* field, and tapping the device name opens its details. If one of the devices is missing from the hive (its fields are empty), you can link it from here: click the QR code icon on the right side of the field and scan the code from the device.
+
+        - **ColonyLink** has no disconnect button — it can only be swapped, by scanning the code of a different ColonyLink.
+        - **VitalSensor** and **Scale** have an *I replaced the battery* button and a *Disconnect VitalSensor* / *Disconnect Scale* button.
+
+        Clicking *Disconnect VitalSensor* / *Disconnect Scale* opens a confirmation screen (*Disconnect VitalSensor?* / *Disconnect Scale?*) with *Disconnect* and *Don't disconnect* buttons for the VitalSensor, and *Disconnect Scale* and *Don't disconnect Scale* for the Scale ([](#fig-beehive-settings-devices-edit)). The measurement history of the disconnected device is preserved by default — past data stays available on charts until the hive is deleted. To clear it, switch off the *Keep … history* toggle before confirming.
+
+        The *I replaced the battery* button reports a battery swap for that device — the app refreshes the configuration and confirms with the *Battery replacement confirmed* message.
 
     !!! Note
         The *Equipment* section is not available if the apiary does not have an **Apisense Hub** assigned.
@@ -472,7 +502,11 @@ Figure: Example photo of a frame with the VitalSensor attached to an inspection 
 
 - Once you have added the photos correctly, click the yellow arrow in the lower right corner to proceed to the next step.
 
-- Then answer a few questions ([](#fig-add-overview-question)). Choose Yes, No or Skip.
+- Then answer a few questions ([](#fig-add-overview-question)). There are three kinds of question:
+
+    - **choice** — select *Yes*, *No* or *Skip*. On a required question, selecting an answer automatically moves you to the next one;
+    - **text** — type the answer into the text field;
+    - **number** — enter a number; the app enforces the allowed value range.
 
 Figure: Adding an inspection - sample question {#fig-add-overview-question}
 
@@ -500,7 +534,7 @@ To edit a saved inspection:
 
 - On the inspection list (*Hive details > Inspection*), tap the pencil icon next to the inspection you want to edit, or on the inspection details screen open the overflow menu (three dots in the upper right corner) and choose *Edit*. The inspection wizard opens with the saved photos and answers to the individual questions.
 - In the first editing step, frame photos are displayed. If you do not want to change anything at the photo stage, tap the yellow right-pointing arrow to proceed to the next step and keep the current photos. If any photo needs replacing, tap the *"X"* on the thumbnail of the chosen photo to remove it. Then tap the *Add photo* button shown below all photos, choose *Take photo* or *Add photo from gallery*, and add the new photo.
-- In the following steps you will see the answers given to the inspection questions. If you do not want to change the answer to a given question, tap the yellow right-pointing arrow. If you want to change an answer, choose the appropriate Yes/No/Skip option. After changing an answer, you are automatically moved to the next question.
+- In the following steps you will see the answers given to the inspection questions. If you do not want to change the answer to a given question, tap the yellow right-pointing arrow. If you want to change an answer, choose a new option (*Yes*/*No*/*Skip*) or correct the text or number you entered. On required choice questions, changing the answer automatically moves you to the next question; on text and number questions, continue with the yellow arrow.
 - In the final step, update the inspection date as needed or leave it unchanged. To save all changes, tap the yellow *Finish inspection* button. If the changes are saved successfully, the message *Inspection updated successfully* is displayed.
 
 #### 3.2 Deleting an inspection
@@ -559,7 +593,7 @@ Figure: Hive details view - Add Note button {#fig-add-overview-button-2}
     - **Note** - enter the note content (text), or click the microphone icon on the right side of this field to record a voice note.
 
 !!! tip
-    **Voice note transcription:** After you record a voice note, the app automatically prepares a transcription, so the note is available both as audio and as text. While the transcription is being generated, the note details screen shows *Transcription in progress...*. Once the transcription is ready, the generated text appears below the recording in the details.
+    **Voice note transcription:** After you record a voice note, the app automatically prepares a transcription, so the note is available both as audio and as text. While the transcription is being generated, the note details screen shows *Transcription in progress...*. Once the transcription is ready, the generated text appears below the recording, under the *Transcription* heading. If the transcription fails, the same place shows *Couldn't generate the transcription.*
 
 Figure: Adding a text or voice note (1) {#fig-add-note-add-text}
 
@@ -569,20 +603,20 @@ Figure: Adding a text or voice note (2) {#fig-add-note-add-audio}
 
 ![figure](pictures/add_note_add_audio.png){width=200}
 
-- You can also add a photo, recording or **PDF document** to the note. To do so, click the *+* button in the upper right corner of the Add note view ([](#fig-add-note-add-photos)) and choose the appropriate attachment type.
+- You can also add a photo, recording or **PDF document** to the note. To do so, click the *Add attachment* button (with a plus icon) in the body of the form, below the note field ([](#fig-add-note-add-photos)), and choose the attachment type from the list: *Camera*, *Gallery*, *Record video*, *Video from gallery*, *PDF document*. The attachments you add appear below the button.
 
 Figure: Adding a text note with attachments {#fig-add-note-add-photos}
 
 ![figure](pictures/add_note_add_photos.png){width=200}
 
-- To save the note, click the yellow button in the lower right corner of the screen. The saved note will be displayed in the note list under Hive details > Notes ([](#fig-beehive-details-note)).
+- To save the note, click the yellow button in the lower right corner of the screen. The saved note will be displayed in the note list under Hive details > More > Notes ([](#fig-beehive-details-note)).
 
 Figure: Note in the hive note list {#fig-beehive-details-note}
 
 ![figure](pictures/beehive_details_note.png){width=200}
 
 
-**Note — adding a note from the apiary level:** A note can also be created from the apiary level. To do so, follow this path: in the *Apiaries* tab click the chosen apiary, then in the *Hives* tab choose the *Add...* option from the bottom menu and the *Note* option. As a result, the same note will be saved automatically to all hives in the chosen apiary and will be visible in the note list of every hive (*Details > Notes*). **Editing** such a note applies only to the copy in a specific hive — changes made to one note will not be visible in the other notes added in this way. Likewise, **deleting** such a note in one of the hives will leave notes in the other hives untouched.
+**Note — adding a note from the apiary level:** A note can also be created from the apiary level. To do so, follow this path: in the *Apiaries* tab click the chosen apiary, then in the *Hives* tab choose the *Add...* option from the bottom menu and the *Note* option. As a result, the same note will be saved automatically to all hives in the chosen apiary and will be visible in the note list of every hive (*Details > More > Notes*). **Editing** such a note applies only to the copy in a specific hive — changes made to one note will not be visible in the other notes added in this way. Likewise, **deleting** such a note in one of the hives will leave notes in the other hives untouched.
 
 #### 4.2 Editing a note
 
@@ -609,7 +643,7 @@ Figure: Hive details view {#fig-beehive-interior-6}
 
 ![figure](pictures/beehive_interior.png){width=200}
 
-- Go to the *Notes* tab (top menu); the view with the list of notes assigned to the chosen hive will open ([](#fig-beehive-details-note-2)).
+- In the top menu tap *More*, then the *Notes* tab; the view with the list of notes assigned to the chosen hive will open ([](#fig-beehive-details-note-2)).
 
 Figure: Note in the hive note list {#fig-beehive-details-note-2}
 
@@ -648,7 +682,7 @@ Figure: Hive details view {#fig-beehive-interior-7}
 
 ![figure](pictures/beehive_interior.png){width=200}
 
-- Go to the *Notes* tab (top menu); the view with the list of notes assigned to the chosen hive will open ([](#fig-beehive-details-note-3)).
+- In the top menu tap *More*, then the *Notes* tab; the view with the list of notes assigned to the chosen hive will open ([](#fig-beehive-details-note-3)).
 
 Figure: Note in the hive note list {#fig-beehive-details-note-3}
 
@@ -672,7 +706,7 @@ Each task contains the following information:
 - **Task date** — when the task is to be done.
 - **Status** — *To do* (planned) or *Done*. Note: Task status can only be changed after the task has been added to the calendar.
 - **Scope** — whether the task applies to the whole apiary, selected hives, or a single hive (see [5.2 Task scope](#52-task-scope-where-it-is-visible-and-editable)).
-- **Recurrence** — optional; every 1 week, 2 weeks, 1 month or 3 months, with a series end date (see [5.5 Repeating tasks](#55-repeating-tasks)).
+- **Recurrence** — optional; *Weekly*, *Every 2 weeks*, *Monthly* or *Quarterly*, with a series end date (see [5.5 Repeating tasks](#55-repeating-tasks)).
 
 #### 5.2 Task scope (where it is visible and editable)
 
@@ -729,7 +763,7 @@ Figure: Add task view from the hive level {#fig-beehive-add-task}
 
 A task can be configured to repeat ([](#fig-task-series-apply-to)). In the *Repeat task* section of the *Add task* view choose:
 
-- **Frequency** — every 1 week, 2 weeks, 1 month or 3 months.
+- **Frequency** — *Weekly*, *Every 2 weeks*, *Monthly* or *Quarterly*.
 - **Task end date** — at most 1 year from the date of the first task.
 
 The app will create separate task occurrences according to the chosen frequency (e.g. every week) within the given date range. Each occurrence is an independent task and can be edited or deleted separately.
@@ -792,20 +826,27 @@ Figure: Task list in the hive view {#fig-beehive-tasks-list}
 
 ![figure](pictures/beehive_details_tasks_list.png){width=200}
 
-You can filter the task list by status (*All*, *To do*, *Done*).
+You can filter the task list by status. There are two filters: *To do* and *Completed*. Tapping the active filter clears it and brings back the full list.
 
 <a id="obserwacja-szerszenia"></a>
 
 ### 6. Asian hornet observation
 
-The Asian hornet icon on the apiary tile, next to the colony health status indicator, lets you report and review Asian hornet observations. It helps you monitor their activity in your apiaries and respond more quickly to a potential threat to bee colonies. **Note:** Only the apiary owner can report observations. On a shared apiary (coming soon in the app), other users have view-only access to reports.
+The Asian hornet icon on the apiary tile, next to the colony health status indicator, lets you report and review Asian hornet observations. It helps you monitor their activity in your apiaries and respond more quickly to a potential threat to bee colonies. **Note:** Only the apiary owner can report observations. On a shared apiary, other users have view-only access to reports.
 
 #### 6.1 Reporting an observation
 
 - Tap the Asian hornet icon on the apiary tile; the *Asian hornet* panel opens.
 - In the *Asian hornet* panel, tap the yellow *Report observation* button, then answer the question *Do you see an Asian hornet now?*.
-- Choose *Yes* if you observed an Asian hornet in your apiary, or *No* if the Asian hornet has not appeared in your apiary.
-- After the answer is saved successfully, the message *Report saved* is shown.
+- Answering **No** files the report immediately — you will see the *Report saved* message.
+- Answering **Yes** opens an additional report form:
+
+    - **species card** — at the top of the form, with the name *Asian hornet* and the scientific name *Vespa velutina*;
+    - **Date observed** — today's date by default; tap the field to pick another date from the calendar;
+    - **Number of individuals** — a **required field**, minimum 1. Without it the report cannot be sent — the app shows the error *Enter the number of individuals (min. 1)*;
+    - **Photos (optional)** — you can attach up to 10 photos. The form warns: *Warning: the Asian hornet can sting — take care when photographing it.*
+
+- Send the report with the *Send report* button. Once saved, you will see the *Report saved* message, or *Report saved, uploading photos in the background* if you attached photos.
 
 #### 6.2 Observation status and freshness
 
@@ -857,7 +898,7 @@ If after visiting the apiary you conclude that the **disease is not actually pre
 3. For questions about symptoms, answer **No** (you can attach photos from the inspection to each question).
 4. Submit the form by clicking *Save*.
 
-Your answers help the system better tailor future messages to conditions in your apiary. You can fill in the questionnaire again for the same disease episode after a few days if the model still detects the disease.
+Your answers help the system better tailor future messages to conditions in your apiary. You can fill in the questionnaire again for the same disease episode after **48 hours** — until then the app shows the message *You can submit the questionnaire for this episode again in 48 hours*.
 
 The **Skip** option lets you move on without answering a given question — it is still worth completing at least part of the form, especially when you are unsure about the alert.
 
@@ -866,7 +907,7 @@ The **Skip** option lets you move on without answering a given question — it i
 
 #### 1.3 Filling in the disease questionnaire from the apiary level
 
-- In the Apiaries tab (the start view after logging in to the Apisense app) click the tile of the apiary in which a threat was detected (red bee icon and "Threat" label on the apiary tile). After clicking the tile, the Hives view will be displayed ([](#fig-apiaries-apiary-with-problem)).
+- In the Apiaries tab (the start view after logging in to the Apisense app) click the tile of the apiary in which a threat was detected (red bee icon and *Threatened* label on the apiary tile). After clicking the tile, the Hives view will be displayed ([](#fig-apiaries-apiary-with-problem)).
 
 Figure: Apiary view with a threat in the Apiaries tab and Hives view (1) {#fig-apiaries-apiary-with-problem}
 
@@ -894,7 +935,7 @@ Figure: Disease questionnaire - sample question {#fig-confirm-problem-questions}
 
 ![figure](pictures/confirm_problem_questions.png){width=200}
 
-- You can also attach photos or recordings to your answers to individual questions. To do so, click the *+* button in the upper right corner of the Answer a few questions view ([](#fig-confirm-problem-add-photos)).
+- You can also attach photos or recordings to your answers to individual questions. To do so, click the *Add photo/recording* button (with a plus icon) below the *Yes / No / Skip* options ([](#fig-confirm-problem-add-photos)). A note below the button reads *Adding a photo or recording is optional*.
 
 Figure: Disease questionnaire - attaching photos and recordings {#fig-confirm-problem-add-photos}
 
@@ -920,7 +961,7 @@ Figure: Disease questionnaire - saving the form {#fig-confirm-problem-save}
           allowfullscreen></iframe>
 </div>
 
-- In the Apiaries tab (the start view after logging in to the Apisense app) click the tile of the apiary in which a threat was detected (red bee icon and "Threat" label on the apiary tile). After clicking the tile, the Hives view will be displayed ([](#fig-apiaries-apiary-with-problem-2)).
+- In the Apiaries tab (the start view after logging in to the Apisense app) click the tile of the apiary in which a threat was detected (red bee icon and *Threatened* label on the apiary tile). After clicking the tile, the Hives view will be displayed ([](#fig-apiaries-apiary-with-problem-2)).
 
 Figure: Apiary view with a threat in the Apiaries tab and Hives view (1) {#fig-apiaries-apiary-with-problem-2}
 
@@ -954,7 +995,7 @@ Figure: Disease questionnaire - sample question {#fig-confirm-problem-questions-
 
 ![figure](pictures/confirm_problem_questions.png){width=200}
 
-- You can also attach photos or recordings to your answers to individual questions. To do so, click the *+* button in the upper right corner of the Answer a few questions view ([](#fig-confirm-problem-add-photos-2)).
+- You can also attach photos or recordings to your answers to individual questions. To do so, click the *Add photo/recording* button (with a plus icon) below the *Yes / No / Skip* options ([](#fig-confirm-problem-add-photos-2)).
 
 Figure: Disease questionnaire - attaching photos and recordings {#fig-confirm-problem-add-photos-2}
 
@@ -1037,7 +1078,7 @@ Figure: Register sample button {#fig-add-overview-button-3}
   - **Sample collection date** - enter the date when you collected the sample (current by default).
   - **Examination type** - select the appropriate item from the drop-down list, e.g. *Dead bees*.
 
-- After filling in the above fields, the yellow *Generate code* button will be displayed. Click that button and a special code will be generated in the *Examination code* field, which should be written on the sample ([](#fig-register-sample)). The sample prepared this way with the code should then be sent to the following address: **University of Life Sciences in Lublin, ul. Doświadczalna 54, 20-280 Lublin**.
+- After filling in the above fields, the yellow *Generate code* button will be displayed. Click that button and a special code will be generated in the *Examination code* field, which should be written on the sample ([](#fig-register-sample)). The sample prepared this way with the code should then be sent to the address shown in the app below the code: **Maciej Bryś, University of Life Sciences in Lublin, ul. Doświadczalna 54, 20-280 Lublin**.
 
 Figure: Register sample view {#fig-register-sample}
 
@@ -1069,10 +1110,12 @@ Each registered sample shows a status label describing where it is in the examin
 
 #### 3.3 Deleting a sample
 
-To delete a sample from the sample list:
+Only a sample with the ***Pending*** status can be deleted — one that has not been sent yet. For samples with the *Sent*, *Received*, *Analysed* and *Cancelled* statuses the delete option does not appear at all: neither the bin icon in the list nor the *Delete* item in the sample details.
+
+To delete a pending sample:
 
 - Go to the sample list (*Hive details > More > Samples*).
-- Tap the red bin icon next to the sample to be removed from the list.
+- Tap the red bin icon next to the sample, or swipe its row to the left and tap the bin that appears. You can do the same from the sample details — the ⋮ menu in the upper right corner, the *Delete* option.
 - Confirm the operation by tapping *Delete*. After you tap this button, the sample is permanently deleted and the operation cannot be undone.
 
 ### 4. Examinations
@@ -1153,7 +1196,7 @@ FrameSense uses artificial intelligence to automatically estimate the comb conte
 
 #### 5.2 FrameSense results
 
-Results of submitted bee frame analyses are available in the *FrameSense* tab (*Hive details > More > FrameSense*). To view the result for a chosen frame, tap the corresponding list entry with the status *Analysis completed*.
+Results of submitted bee frame analyses are available in the *FrameSense* tab (*Hive details > FrameSense*). To view the result for a chosen frame, tap the corresponding list entry with the status *Analysis completed*.
 
 Possible statuses:
 
