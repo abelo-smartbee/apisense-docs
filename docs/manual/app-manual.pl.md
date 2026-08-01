@@ -791,13 +791,53 @@ Figure: Lista zadań w widoku ula {#fig-beehive-tasks-list}
 
 Listę zadań możesz filtrować po statusie (*Wszystkie*, *Do zrobienia*, *Wykonane*).
 
-### 6. Potwierdzanie chorób
+<a id="obserwacja-szerszenia"></a>
+
+### 6. Obserwacja szerszenia azjatyckiego
+
+Ikona szerszenia azjatyckiego, znajdująca się na kafelku pasieki obok wskaźnika stanu zdrowia rodziny pszczelej, umożliwia zgłaszanie oraz przeglądanie obserwacji szerszenia azjatyckiego. Pozwala na bieżąco monitorować jego aktywność w pasiekach i szybciej reagować na potencjalne zagrożenie dla rodzin pszczelich. **Uwaga:** Obserwacje może zgłaszać wyłącznie właściciel pasieki. W przypadku pasieki współdzielonej (wkrótce dostępne w aplikacji) pozostali użytkownicy mają dostęp wyłącznie do podglądu zgłoszeń.
+
+#### 6.1 Zgłaszanie obserwacji
+
+- Kliknij ikonę szerszenia azjatyckiego na kafelku pasieki w wyniku czego zostanie otwarty panel *Szerszeń azjatycki*.
+- W panelu *Szerszeń azjatycki* kliknij żółty przycisk *Zgłoś obserwację*, a następnie odpowiedz na pytanie *Czy widzisz teraz szerszenia azjatyckiego?*.
+- Wybierz odpowiedź *Tak* jeśli zaobserwowałeś szerszenia azjatyckiego w swojej pasiece, lub *Nie* jeśli szerszeń azjatycki nie pojawił się w Twojej pasiece.
+- Po pomyślnym zapisaniu odpowiedzi zostanie wyświetlony komunikat *Zgłoszenie zapisane*.
+
+#### 6.2 Status obserwacji i jej aktualność
+
+Ikona szerszenia azjatyckiego wyświetlana na kafelku pasieki zmienia się w zależności od aktualnego statusu zgłoszenia:
+
+- **Brak obserwacji** — nigdy nie dodano zgłoszenia. Ikona z wyszarzoną głową szerszenia azjatyckiego, bez daty i dodatkowej plakietki.
+- **Szerszeń azjatycki - Aktywna obserwacja** — potwierdzono obecność szerszeni azjatyckich i zgłoszenie jest wciąż aktualne (do 4 dni od dodania zgłoszenia). Ikona z brązową głową szerszenia azjatyckiego wraz z czerwoną plakietką „!”.
+- **Szerszeń azjatycki - Ostatnio widziano** — potwierdzono obecność szerszeni azjatyckich, ale minęły już 4 dni od dodania zgłoszenia — sprawdź ponownie i zgłoś aktualny stan. Ikona z wyszarzoną głową szerszenia azjatyckiego i plakietką „!” na ciemnym tle. 
+- **Sprawdzono, czysto; aktualna obserwacja** — aktualne zgłoszenie (do 4 dni od dodania zgłoszenia) potwierdzające brak szerszeni azjatyckich w pasiece. Ikona z brązową głową szerszenia azjatyckiego wraz z zieloną plakietką z symbolem zatwierdzenia nieobecności.
+- **Sprawdzono, czysto; wygasła obserwacja** — potwierdzono brak szerszeni azjatyckich w pasiece, ale minęły już 4 dni od dodania zgłoszenia. Ikona z wyszarzoną głową szerszenia azjatyckiego wraz z plakietką z symbolem zatwierdzenia nieobecności na ciemnym tle. 
+
+#### 6.3 Cofanie zgłoszenia
+
+Jeśli zgłoszenie powstało przez pomyłkę (przypadkowe kliknięcie), kliknij ponownie w ikonę szerszenia azjatyckiego widoczną na kafelku pasieki, a następnie kliknij *Cofnij zgłoszenie*. Potwierdź wybór czerwonym przyciskiem *Cofnij zgłoszenie* wyświetlanym na komunikacie, który się wtedy pojawi. Spowoduje to całkowite usunięcie zgłoszenia z historii.
+
+!!! note
+    Opcji *Cofnij zgłoszenie* używaj tylko dla omyłkowego zgłoszenia. Jeśli szerszenie po prostu zniknęły, nie cofaj zgłoszenia obserwacji — zamiast tego dodaj nowe zgłoszenie i odpowiedz *Nie*, aby zachować historię obserwacji.
+
+#### 6.4 Przypomnienia o obserwacji
+
+Jeśli od ostatniego zgłoszenia szerszenia azjatyckiego dla jednej lub kilku Twoich pasiek minęły 4 dni, aplikacja wyświetli *Przypomnienie o obserwacji* z prośbą o zapisanie aktualnego stanu, aby dane pozostały wiarygodne. Możesz zareagować od razu lub odłożyć przypomnienie przyciskiem *Później*.
+
+______________________________________________________________________
+
+## Zdrowie rodziny
+
+Ten rozdział zbiera wszystko, co dotyczy kondycji rodziny pszczelej: automatyczne alerty chorobowe wraz z formularzem zwrotnym, rekomendacje przygotowane przez system, a także badania i próbki, które wykonujesz samodzielnie, oraz analizę zdjęć ramek w FrameSense.
+
+### 1. Alerty chorobowe
 
 Gdy system Apisense Pro AI zgłosi zagrożenie (np. Nosemoza), w aplikacji pojawią się **alarmy** w zakładce *Powiadomienia* z opisem i zaleceniami. Wypełniając **formularz chorobowy** (*Odpowiedz na kilka pytań*), przekazujesz systemowi informację zwrotną i pomagasz dopasować komunikaty do rzeczywistych warunków w Twojej pasiece.
 
-#### 6.1 Co oznaczają alerty o chorobach?
+#### 1.1 Co oznaczają alerty o chorobach?
 
-Alerty w zakładce *Powiadomienia* > *Problemy*, jak i w *Szczegółach* ula (*Szczegóły > Sekcja Zdrowie > Alert w rodzinie*) dotyczą **chorób wykrytych automatycznie przez model sztucznej inteligencji** Apisense Pro AI na podstawie danych z czujników i analizy systemowej. To nie jest diagnoza weterynaryjna — system sygnalizuje **prawdopodobne** zagrożenie (np. Warroza, Nosemoza, Zgnilec), wraz z poziomem porażenia i zalecanymi działaniami, które zobaczysz po rozwinięciu szczegółów choroby (zakładka *Problemy*).
+Alerty w zakładce *Powiadomienia* > *Problemy*, jak i w widoku ula (*Szczegóły* > zakładka *Stan ula* > sekcja *Zdrowie* > wiersz *Rodzina*) dotyczą **chorób wykrytych automatycznie przez model sztucznej inteligencji** Apisense Pro AI na podstawie danych z czujników i analizy systemowej. To nie jest diagnoza weterynaryjna — system sygnalizuje **prawdopodobne** zagrożenie (np. Warroza, Nosemoza, Zgnilec), wraz z poziomem porażenia i zalecanymi działaniami, które zobaczysz po kliknięciu wiersza z chorobą w zakładce *Problemy* — otworzy się wtedy osobny widok ze szczegółami epizodu.
 
 Na kafelkach pasieki/ula alerty chorobowe objawiają się m.in. jako status **Zagrożony**/**nazwa wykrytej choroby** (czasem z oznaczeniem „+N”, gdy w ulu wykryto więcej niż jedno zagrożenie).
 
@@ -806,7 +846,7 @@ Model posiada **bardzo wysoką dokładność**, jednak — jak każda analiza pr
 Warto również pamiętać, że model potrafi wykrywać oznaki choroby na bardzo wczesnym etapie rozwoju, kiedy symptomy mogą być jeszcze niewidoczne lub trudne do zauważenia podczas standardowej obserwacji. Dlatego nawet jeśli na pierwszy rzut oka nie widać wyraźnych objawów, warto sprawdzić wskazany w alercie ul i przekazać informację zwrotną poprzez formularz.
 
 
-#### 6.2 Co zrobić gdy choroba nie występuje w ulu
+#### 1.2 Co zrobić gdy choroba nie występuje w ulu
 
 Jeśli po wizycie w pasiece uznasz, że **choroba faktycznie nie występuje** w danym ulu:
 
@@ -821,7 +861,7 @@ Opcja **Pomiń** pozwala przejść dalej bez odpowiedzi na dane pytanie — form
 
 <a id="formularz-chorobowy-pasieka"></a>
 
-#### 6.3 Wypełnianie formularza chorobowego z poziomu pasieki
+#### 1.3 Wypełnianie formularza chorobowego z poziomu pasieki
 
 - W zakładce Pasieki (widok startowy po zalogowaniu do aplikacji Apisense) kliknij kafelek z pasieką, w której wykryto zagrożenie (czerwona ikonka z pszczołą i napisem Zagrożenie na kafelku z pasieką). Po kliknięciu w kafelek zostanie wyświetlony widok Ule ([](#fig-apiaries-apiary-with-problem)).
 
@@ -833,13 +873,13 @@ Figure: Widok pasieki z zagrożeniem w zakładce Pasieki i widok Ule (2) {#fig-b
 
 ![figure](pictures/beehives_beehive_with_problem.png){width=200}
 
-- Następnie wybierz zakładkę *Powiadomienia* z dolnego menu. W efekcie zostanie wyświetlona zakładka *Problemy*, a w niej lista z aktualnymi oraz historycznymi problemami wykrytymi w tej pasiece (lista chorób z wszystkich uli w pasiece, [](#fig-problems-tab)).
+- Następnie wybierz zakładkę *Powiadomienia* z dolnego menu. W efekcie zostanie wyświetlona zakładka *Problemy*, a w niej lista problemów wykrytych w tej pasiece (choroby ze wszystkich uli, [](#fig-problems-tab)). Listę przełączasz filtrem *Aktywne* / *Zakończone* nad nią.
 
 Figure: Zakładka Problemy {#fig-problems-tab}
 
 ![figure](pictures/beehive_details_problems_tab.png){width=200}
 
-- Przejdź do szczegółów wykrytej choroby, klikając na wiersz z chorobą np. Zgnilec amerykański ([](#fig-problems-tab-disease-details)). Po przejściu do szczegółów zobaczysz czas trwania choroby, poziom jej porażenia, zalecane działania zabezpieczające oraz przycisk *Odpowiedz na kilka pytań* (zakładka *Zalecenia*), a także wcześniej udzielone odpowiedzi (zakładka *Odpowiedzi*).
+- Przejdź do szczegółów wykrytej choroby, klikając na wiersz z chorobą np. Zgnilec amerykański ([](#fig-problems-tab-disease-details)). Szczegóły otwierają się jako osobny widok, domyślnie na liście rekomendacji: zobaczysz numer ula, poziom porażenia, czas trwania epizodu, sekcję *Rekomendacje* z listą zalecanych działań oraz przycisk *Odpowiedz na kilka pytań*. Wcześniej wypełnione formularze znajdziesz w zakładce *Odpowiedzi*.
 
 Figure: Formularz chorobowy - szczegóły choroby {#fig-problems-tab-disease-details}
 
@@ -867,7 +907,7 @@ Figure: Formularz chorobowy - zapisanie formularza {#fig-confirm-problem-save}
 
 <a id="formularz-chorobowy-ul"></a>
 
-#### 6.4 Wypełnianie formularza chorobowego z poziomu ula
+#### 1.4 Wypełnianie formularza chorobowego z poziomu ula
 
 <div class="yt-embed short" id="wideo-potwierdz-chorobe">
   <iframe src="https://www.youtube.com/embed/iGNXm9qu8X8"
@@ -892,13 +932,13 @@ Figure: Zakładka Szczegóły ula - ul z wykrytym zagrożeniem {#fig-beehive-det
 
 ![figure](pictures/beehive_details_with_problems.png){width=200}
 
-- Następnie wybierz zakładkę *Powiadomienia* z dolnego menu. W efekcie zostanie wyświetlona zakładka *Problemy*, a w niej lista z aktualnymi oraz historycznymi problemami wykrytymi tylko w tym ulu ([](#fig-beehive-details-problems-tab)).
+- Następnie wybierz zakładkę *Powiadomienia* z dolnego menu. W efekcie zostanie wyświetlona zakładka *Problemy*, a w niej lista problemów wykrytych tylko w tym ulu ([](#fig-beehive-details-problems-tab)). Listę przełączasz filtrem *Aktywne* / *Zakończone* nad nią.
 
 Figure: Zakładka Problemy na poziomie pojedynczego ula {#fig-beehive-details-problems-tab}
 
 ![figure](pictures/beehive_details_problems_tab.png){width=200}
 
-- Przejdź do szczegółów wykrytej choroby, klikając na wiersz z chorobą np. Zgnilec amerykański ([](#fig-problems-tab-disease-details-2)). Po przejściu do szczegółów zobaczysz czas trwania choroby, poziom jej porażenia, zalecane działania zabezpieczające oraz przycisk *Odpowiedz na kilka pytań* (zakładka *Zalecenia*), a także wcześniej udzielone odpowiedzi (zakładka *Odpowiedzi*).
+- Przejdź do szczegółów wykrytej choroby, klikając na wiersz z chorobą np. Zgnilec amerykański ([](#fig-problems-tab-disease-details-2)). Szczegóły otwierają się jako osobny widok, domyślnie na liście rekomendacji: zobaczysz numer ula, poziom porażenia, czas trwania epizodu, sekcję *Rekomendacje* z listą zalecanych działań oraz przycisk *Odpowiedz na kilka pytań*. Wcześniej wypełnione formularze znajdziesz w zakładce *Odpowiedzi*.
 
 Figure: Formularz chorobowy - szczegóły choroby {#fig-problems-tab-disease-details-2}
 
@@ -924,7 +964,7 @@ Figure: Formularz chorobowy - zapisanie formularza {#fig-confirm-problem-save-2}
 
 ![figure](pictures/confirm_problem_save.png){width=200}
 
-#### 6.5 Edycja lub usuwanie zapisanej odpowiedzi
+#### 1.5 Edycja lub usuwanie zapisanej odpowiedzi
 
 Zapisaną odpowiedź w formularzu chorobowym można poprawić przez ograniczony czas od zapisania:
 
@@ -932,9 +972,30 @@ Zapisaną odpowiedź w formularzu chorobowym można poprawić przez ograniczony 
 - Po wybraniu opcji *Usuń* potwierdź komunikat *Usunąć odpowiedzi?*. Formularz wraz z odpowiedziami zostanie trwale usunięty.
 - **Uwaga:** Odpowiedzi można edytować przez 30 dni od ich przesłania. Po upływie tego czasu edycja lub usunięcie formularza nie będzie już możliwe, a aplikacja wyświetli komunikat: Czas na korektę tej odpowiedzi minął — dodaj nową odpowiedź. Jeśli epizod chorobowy jest nadal aktywny, możesz przesłać nowy zestaw odpowiedzi, korzystając z przycisku *Odpowiedz na kilka pytań*.
 
+### 2. Rekomendacje
+
+Rekomendacje to konkretne działania, które system podpowiada na podstawie danych z czujników, Twoich obserwacji i analizy AI. Nie są osobną zakładką w menu — pojawiają się tam, gdzie system wykrył coś, co wymaga reakcji.
+
+#### 2.1 Rekomendacje przy wykrytej chorobie
+
+- Otwórz szczegóły choroby: zakładka *Powiadomienia* (dolne menu) > *Problemy* > wiersz z chorobą. Szczegóły otwierają się jako osobny widok.
+- Widok otwiera się domyślnie na liście rekomendacji. U góry zobaczysz numer ula, nazwę choroby, poziom porażenia i czas trwania epizodu, a pod nimi sekcję *Rekomendacje* z ponumerowaną listą zalecanych działań.
+- Pod listą znajduje się przycisk *Odpowiedz na kilka pytań* — to wejście do formularza chorobowego (patrz [1. Alerty chorobowe](#1-alerty-chorobowe)).
+- Druga zakładka, *Odpowiedzi*, zawiera formularze, które już wypełniłeś dla tego epizodu.
+
+!!! note
+    W pasiece udostępnionej Ci w trybie tylko do odczytu zakładki nie są widoczne — zobaczysz same rekomendacje, bez możliwości wypełnienia formularza.
+
+#### 2.2 Rekomendacje po analizie ramki (FrameSense)
+
+Po zakończonej analizie zdjęcia ramki, pod wynikami znajduje się sekcja *Rekomendacje* z praktycznymi wskazówkami opracowanymi na podstawie tego, co model rozpoznał na plastrze. Szczegóły w [5. FrameSense](#5-framesense).
+
+!!! warning
+    Rekomendacje są podpowiedzią, nie zaleceniem lekarsko-weterynaryjnym. Decyzję o leczeniu podejmij po sprawdzeniu ula, a wynik obserwacji przekaż systemowi przez formularz chorobowy — to poprawia trafność kolejnych alertów.
+
 <a id="rejestrowanie-probki"></a>
 
-### 7. Próbki
+### 3. Próbki
 
 <div class="yt-embed short" id="wideo-zarejestruj-probke">
   <iframe src="https://www.youtube.com/embed/jqS9rvhd-X0"
@@ -943,7 +1004,7 @@ Zapisaną odpowiedź w formularzu chorobowym można poprawić przez ograniczony 
           allowfullscreen></iframe>
 </div>
 
-#### 7.1 Rejestrowanie próbki
+#### 3.1 Rejestrowanie próbki
 
 - W zakładce Pasieki (widok startowy po zalogowaniu do aplikacji Apisense) kliknij kafelek z pasieką. Po kliknięciu w kafelek zostanie wyświetlony widok Ule ([](#fig-apiaries-apiary-with-beehive-5)).
 
@@ -992,7 +1053,7 @@ Figure: Widok Zarejestruj próbkę {#fig-register-sample}
 !!! tip "Wysyłka żywych pszczół"
     Próbki żywych pszczół wysyłaj **żywe**, w wentylowanych klateczkach transportowych zapewniających dostęp powietrza, z ciastem cukrowym (ok. 10 pszczół w każdej, 4 klateczki na ul), z kodem badania z aplikacji. Nadawaj **od poniedziałku do czwartku** — Pocztą Polską lub kurierem. Przesyłki za pośrednictwem Poczty Polskiej mogą być nadawane wyłącznie przez właścicieli pasiek zlokalizowanych w Polsce. Szczegóły: [Protokół 2 — żywe pszczoły](../samples/protocol-2-live-bees.md).
 
-#### 7.2 Status próbki
+#### 3.2 Status próbki
 
 Każda zarejestrowana próbka ma etykietę statusu opisującą, na jakim etapie badania się znajduje:
 
@@ -1002,7 +1063,7 @@ Każda zarejestrowana próbka ma etykietę statusu opisującą, na jakim etapie 
 - **Przeanalizowana** — badanie próbek w laboratorium zostało zakończone.
 - **Anulowana** — próbka została anulowana.
 
-#### 7.3 Usuwanie próbki
+#### 3.3 Usuwanie próbki
 
 Aby usunąć próbkę z listy próbek należy:
 
@@ -1010,9 +1071,9 @@ Aby usunąć próbkę z listy próbek należy:
 - Kliknąć ikonę czerwonego kosza przy próbce, która ma zostać usunięta z listy.
 - Potwierdzić operację przyciskiem *Usuń*. Po kliknięciu wspomnianego przycisku próbka zostanie trwale usunięta i nie będzie można już cofnąć tej operacji.
     
-### 8. Badania
+### 4. Badania
 
-#### 8.1 Dodawanie badania 
+#### 4.1 Dodawanie badania
 
 - W zakładce Pasieki (widok startowy po zalogowaniu do aplikacji Apisense) kliknij kafelek z pasieką. Po kliknięciu w kafelek zostanie wyświetlony widok Ule ([](#fig-apiaries-apiary-with-beehive-6)).
 
@@ -1053,7 +1114,7 @@ Figure: Zapisane badanie na liście badań w ulu {#fig-add-examination-list}
 
 ![figure](pictures/add_examination_list.png){width=200}
 
-#### 8.2 Edycja badania
+#### 4.2 Edycja badania
 
 Aby dokonać edycji badania:
 
@@ -1062,7 +1123,7 @@ Aby dokonać edycji badania:
 - Aby zaktualizować zdjęcie należy najpierw usunąć zdjęcie klikając przycisk *"X"* umieszczony na miniaturze zdjęcia, a następnie dodać nowe zdjęcie przy użyciu przycisku *Dodaj zdjęcie*.
 - Aby zapisać wprowadzone zmiany należy kliknąć żółty przycisk potwierdzenia, znajdujący się w prawym dolnym rogu.
 
-#### 8.3 Usuwanie badania
+#### 4.3 Usuwanie badania
 
 Aby usunąć badanie z listy badań należy:
 
@@ -1072,11 +1133,11 @@ Aby usunąć badanie z listy badań należy:
 
 <a id="analiza-ramki"></a>
 
-### 9. FrameSense
+### 5. FrameSense
 
 FrameSense wykorzystuje sztuczną inteligencję, aby na podstawie jednego zdjęcia automatycznie oszacować zawartość plastra, w tym udział czerwiu, zapasów pokarmu oraz pustej lub zasłoniętej powierzchni.
 
-#### 9.1 Dodawanie analizy ramki
+#### 5.1 Dodawanie analizy ramki
 
 - Kliknij kafelek wybranej pasieki, a następnie kafelek wybranego ula. W rezultacie zostanie wyświetlony widok *Szczegóły ula*.
 - Z dolnego menu wybierz opcję *Dodaj...*, a następnie *FrameSense*; zostanie wyświetlony widok *FrameSense*.
@@ -1086,7 +1147,7 @@ FrameSense wykorzystuje sztuczną inteligencję, aby na podstawie jednego zdjęc
 !!! note
     Analiza ramki pszczelej wymaga połączenia z internetem do przesłania zdjęcia. Przetwarzanie zdjęcia wysłanego do analizy trwa zwykle kilka minut. Zalecamy załączanie zdjęć w formacie JPG lub PNG. Pliki RAW/DNG są obsługiwane tylko w wersji mobilnej.
 
-#### 9.2 Wyniki analizy ramki
+#### 5.2 Wyniki analizy ramki
 
 Wyniki analizy przesłanych ramek pszczelich są dostępne w zakładce *FrameSense* (*Szczegóły ula > Więcej > FrameSense*). Aby wyświetlić wynik dla wybranej ramki kliknij odpowiednią pozycję na liście ze statusem *Analiza zakończona*. 
 
@@ -1098,42 +1159,7 @@ Możliwe statusy:
 
 Gdy analiza ramki pszczelej zostanie ukończona, wysyłane jest powiadomienie push, które po kliknięciu otwiera bezpośrednio jej wynik.
 
-<a id="obserwacja-szerszenia"></a>
-
-### 10. Obserwacja szerszenia azjatyckiego
-
-Ikona szerszenia azjatyckiego, znajdująca się na kafelku pasieki obok wskaźnika stanu zdrowia rodziny pszczelej, umożliwia zgłaszanie oraz przeglądanie obserwacji szerszenia azjatyckiego. Pozwala na bieżąco monitorować jego aktywność w pasiekach i szybciej reagować na potencjalne zagrożenie dla rodzin pszczelich. **Uwaga:** Obserwacje może zgłaszać wyłącznie właściciel pasieki. W przypadku pasieki współdzielonej (wkrótce dostępne w aplikacji) pozostali użytkownicy mają dostęp wyłącznie do podglądu zgłoszeń.
-
-#### 10.1 Zgłaszanie obserwacji
-
-- Kliknij ikonę szerszenia azjatyckiego na kafelku pasieki w wyniku czego zostanie otwarty panel *Szerszeń azjatycki*.
-- W panelu *Szerszeń azjatycki* kliknij żółty przycisk *Zgłoś obserwację*, a następnie odpowiedz na pytanie *Czy widzisz teraz szerszenia azjatyckiego?*.
-- Wybierz odpowiedź *Tak* jeśli zaobserwowałeś szerszenia azjatyckiego w swojej pasiece, lub *Nie* jeśli szerszeń azjatycki nie pojawił się w Twojej pasiece.
-- Po pomyślnym zapisaniu odpowiedzi zostanie wyświetlony komunikat *Zgłoszenie zapisane*.
-
-#### 10.2 Status obserwacji i jej aktualność
-
-Ikona szerszenia azjatyckiego wyświetlana na kafelku pasieki zmienia się w zależności od aktualnego statusu zgłoszenia:
-
-- **Brak obserwacji** — nigdy nie dodano zgłoszenia. Ikona z wyszarzoną głową szerszenia azjatyckiego, bez daty i dodatkowej plakietki.
-- **Szerszeń azjatycki - Aktywna obserwacja** — potwierdzono obecność szerszeni azjatyckich i zgłoszenie jest wciąż aktualne (do 4 dni od dodania zgłoszenia). Ikona z brązową głową szerszenia azjatyckiego wraz z czerwoną plakietką „!”.
-- **Szerszeń azjatycki - Ostatnio widziano** — potwierdzono obecność szerszeni azjatyckich, ale minęły już 4 dni od dodania zgłoszenia — sprawdź ponownie i zgłoś aktualny stan. Ikona z wyszarzoną głową szerszenia azjatyckiego i plakietką „!” na ciemnym tle. 
-- **Sprawdzono, czysto; aktualna obserwacja** — aktualne zgłoszenie (do 4 dni od dodania zgłoszenia) potwierdzające brak szerszeni azjatyckich w pasiece. Ikona z brązową głową szerszenia azjatyckiego wraz z zieloną plakietką z symbolem zatwierdzenia nieobecności.
-- **Sprawdzono, czysto; wygasła obserwacja** — potwierdzono brak szerszeni azjatyckich w pasiece, ale minęły już 4 dni od dodania zgłoszenia. Ikona z wyszarzoną głową szerszenia azjatyckiego wraz z plakietką z symbolem zatwierdzenia nieobecności na ciemnym tle. 
-
-#### 10.3 Cofanie zgłoszenia
-
-Jeśli zgłoszenie powstało przez pomyłkę (przypadkowe kliknięcie), kliknij ponownie w ikonę szerszenia azjatyckiego widoczną na kafelku pasieki, a następnie kliknij *Cofnij zgłoszenie*. Potwierdź wybór czerwonym przyciskiem *Cofnij zgłoszenie* wyświetlanym na komunikacie, który się wtedy pojawi. Spowoduje to całkowite usunięcie zgłoszenia z historii.
-
-!!! note
-    Opcji *Cofnij zgłoszenie* używaj tylko dla omyłkowego zgłoszenia. Jeśli szerszenie po prostu zniknęły, nie cofaj zgłoszenia obserwacji — zamiast tego dodaj nowe zgłoszenie i odpowiedz *Nie*, aby zachować historię obserwacji.
-
-#### 10.4 Przypomnienia o obserwacji
-
-Jeśli od ostatniego zgłoszenia szerszenia azjatyckiego dla jednej lub kilku Twoich pasiek minęły 4 dni, aplikacja wyświetli *Przypomnienie o obserwacji* z prośbą o zapisanie aktualnego stanu, aby dane pozostały wiarygodne. Możesz zareagować od razu lub odłożyć przypomnienie przyciskiem *Później*.
-
 ______________________________________________________________________
-
 
 ## Panel główny systemu
 
@@ -1456,7 +1482,7 @@ W niniejszym rozdziale przedstawiono znaczenie poszczególnych ikon, symboli ora
 <a id="statusy-na-kafelkach"></a>
 <a id="pierwsze-uruchomienie"></a>
 
-#### Pierwsze uruchomienie urządzeń
+#### 7.1 Pierwsze uruchomienie urządzeń
 
 Po utworzeniu pasieki z Hubem oraz przypisaniu Scale/VitalSensor do ula, zanim urządzenia nawiążą łączność z systemem na kafelkach będą prezentowane następujące informacje: 
 
@@ -1500,7 +1526,7 @@ Po pierwszym zgłoszeniu się urządzeń i wyświetleniu pierwszych danych, na k
 
 <a id="stan-zdrowia"></a>
 
-#### Stan zdrowia rodziny
+#### 7.2 Stan zdrowia rodziny
 
 Ikony stanu zdrowia informują o kondycji rodziny pszczelej w poszczególnych ulach i całej pasiece. Ocena zdrowia opiera się na danych z **VitalSensor** i modelu AI. 
 
@@ -1520,7 +1546,7 @@ Ikony stanu zdrowia informują o kondycji rodziny pszczelej w poszczególnych ul
 
 <a id="ikony-informacyjne"></a>
 
-#### Ikony informacyjne
+#### 7.3 Ikony informacyjne
 
 Ikony informacyjne przedstawiają informacje dotyczące pasiek i uli oraz dane zebrane z urządzeń pomiarowych.
 
@@ -1539,7 +1565,7 @@ Ikony informacyjne przedstawiają informacje dotyczące pasiek i uli oraz dane z
 -->
 
 
-#### Stan urządzeń Apisense
+#### 7.4 Stan urządzeń Apisense
 
 Ikony stanu urządzeń Apisense wskazują aktualny status pracy: jakość połączenia oraz poziom naładowania baterii urządzeń monitorujących pasieki i ule. 
 
@@ -1560,7 +1586,7 @@ Ikony stanu urządzeń Apisense wskazują aktualny status pracy: jakość połą
 | ![](pictures/statuses_connection_lost_ble.png)| kafelek ula (zakładka Ule) | **Brak połączenia** - urządzenie przestało komunikować się z Hubem. |
 |  | kafelek ula (zakładka Ule) | **Bateria wyczerpana** - Ostatni znany stan baterii: rozładowana. Należy wymienić baterię urządzenia. |
 
-#### Oznaczenia kolorystyczne
+#### 7.5 Oznaczenia kolorystyczne
 
 Oznaczenia kolorystyczne ułatwiają szybkie rozpoznanie statusów, kategorii oraz ważnych informacji w systemie.
 
@@ -1571,7 +1597,7 @@ Oznaczenia kolorystyczne ułatwiają szybkie rozpoznanie statusów, kategorii or
 | ![](pictures/red_color.png)             | różne widoki m.in. Stan ula           | Kolor czerwony w aplikacji świadczy o wystąpieniu negatywnego zjawiska, przekroczeniu wartości oczekiwanych parametrów, powiadomieniach i ostrzeżeniach (nie dotyczy tła ula w zakładce Szczegóły). |
 | ![](pictures/state_beehive_healthy.png) | różne widoki m.in. kafelek z ulem     | Kolor zielony w aplikacji informuje, że wszystko jest w porządku, oznacza neutralność lub pozytywny efekt.                                                                                          |
 
-#### Akcje
+#### 7.6 Akcje
 
 Ikony akcji umożliwiają wykonanie dostępnych operacji, takich jak dodawanie, edycja lub usuwanie danych.
 
@@ -1584,7 +1610,7 @@ Ikony akcji umożliwiają wykonanie dostępnych operacji, takich jak dodawanie, 
 | ![](pictures/edit_item.png)      | m.in. edycja notatek         | Przycisk umożliwiający wprowadzanie zmian dla wybranego elementu. |
 | ![](pictures/remove_item.png)    | m.in. usuwanie notatek         | Przycisk umożliwiający usunięcie wybranego elementu.              |
 
-#### Nawigacja
+#### 7.7 Nawigacja
 
 Ikony nawigacyjne służą do poruszania się pomiędzy widokami i funkcjami aplikacji.
 
@@ -1785,17 +1811,15 @@ Wykorzystanie trendów w analizie danych umożliwia:
 
 ______________________________________________________________________
 
-## Alarmy, powiadomienia i asystent AI
+## Powiadomienia
 
 System powiadomień w aplikacji informuje użytkownika o istotnych zdarzeniach w pasiece, stanie urządzeń monitorujących oraz o zalecanych działaniach związanych z prowadzeniem uli. Informacje przekazywane są w formie powiadomień oraz rekomendacji generowanych na podstawie danych z czujników, obserwacji i analizy systemowej. Dzięki temu użytkownik może szybciej reagować na pojawiające się problemy, a także podejmować decyzje dotyczące dalszego prowadzenia pasieki.
-
-### 1. Powiadomienia
 
 Powiadomienia generowane przez system są dostępne **w aplikacji** — w sekcji powiadomień można przeglądać komunikaty i zapoznać się z ich szczegółami. 
 
 <a id="powiadoienia-gdzie"></a>
 
-#### 1.1 Gdzie znaleźć powiadomienia w aplikacji
+### 1. Gdzie znaleźć powiadomienia w aplikacji
 
 Powiadomienia w aplikacji możesz znaleźć realizując poniższe kroki:
 
@@ -1804,7 +1828,7 @@ Powiadomienia w aplikacji możesz znaleźć realizując poniższe kroki:
 - W rezultacie zostanie otwarty widok *Powiadomień*, z domyślnie wybraną zakładką *Problemy* ([](#fig-notifications-problems-details)).
 - Oprócz zakładki *Problemy* możesz przejść również do zakładki *Techniczne*, wybierając odpowiednią opcję z górnego menu.
 
-#### 1.2 Kategorie powiadomień
+### 2. Kategorie powiadomień
 
 Powiadomienia w aplikacji są dostępne w zakładce *Powiadomienia*. Powiadomienia dzielą się na następujące kategorie, które odpowiadają poszczególnym zakładkom ([](#fig-notifications-problems-details)):
 
@@ -1819,18 +1843,21 @@ Figure: Zakładka Powiadomienia - przykładowe powiadomienia chorobowe i technic
 
 ![figure](pictures/notifications_technical.png){width=200}
 
-Nowe powiadomienia pojawiają się automatycznie na odpowiedniej liście w zależności od ich rodzaju. Nieodczytane komunikaty są wyświetlane pogrubioną czcionką, natomiast po ich otwarciu stają się lekko wyszarzone, co oznacza, że zostały już przeczytane.
+Nowe powiadomienia pojawiają się automatycznie na odpowiedniej liście w zależności od ich rodzaju. Nieodczytane komunikaty są wyświetlane pogrubioną czcionką, a po otwarciu wracają do zwykłej grubości — po tym poznasz, że zostały już przeczytane.
 
-Aby wyświetlić szczegóły powiadomienia, należy kliknąć jego nagłówek, co spowoduje rozwinięcie pełnej treści komunikatu.
+Szczegóły otwierasz kliknięciem wiersza, ale obie zakładki zachowują się inaczej. W zakładce *Problemy* otworzy się osobny widok epizodu choroby. W zakładce *Techniczne* wiersz rozwinie się w miejscu i pełna treść komunikatu pojawi się pod jego tytułem.
 
 !!! tip
     Aby jednym kliknięciem oznaczyć wszystkie powiadomienia w zakładce *Techniczne* jako przeczytane, użyj przycisku *Oznacz wszystkie jako przeczytane*. Zakres działania przycisku zależy od miejsca, z którego zostanie użyty:
     - z poziomu pojedynczego ula — zostaną oznaczone jako przeczytane wyłącznie powiadomienia techniczne dotyczące tego ula,
     - z poziomu pasieki — zostaną oznaczone jako przeczytane wszystkie powiadomienia techniczne dotyczące tej pasieki oraz znajdujących się w niej uli.
 
+______________________________________________________________________
+
+## Asystent AI
+
 <a id="twoj-asystent-ai"></a>
 
-### 2. Twój asystent AI
 
 Asystent AI to funkcja wspierająca użytkownika w analizie sytuacji w pasiece oraz w interpretacji obserwowanych zjawisk. Na podstawie przekazanych informacji system generuje odpowiedzi i wskazówki, które mogą pomóc w podejmowaniu decyzji dotyczących prowadzenia pasieki.
 
@@ -1848,32 +1875,6 @@ Po przesłaniu pytania asystent analizuje dostępne informacje i generuje odpowi
 
 Z asystenta AI można skorzystać poprzez wybór zakładki *Twój asystent* z dolnego menu, dostępnej w podstawowych widokach aplikacji (*Pasieki*, *Ule*, *Ul*). Dzięki temu użytkownik ma szybki dostęp do pomocy asystenta w dowolnym momencie korzystania z systemu.
 
-______________________________________________________________________
-
-<a id="zglaszanie-problemow-i-sugestii"></a>
-
-## Zgłaszanie problemów i sugestii
-
-Jeśli podczas korzystania z aplikacji zauważysz błąd, nieprawidłowe działanie funkcji lub masz pomysł na usprawnienie systemu, możesz zgłosić to bezpośrednio z poziomu aplikacji. Zachęcamy również do przesyłania propozycji nowych funkcji, które mogłyby ułatwić codzienną pracę z systemem.
-
-Każde zgłoszenie jest analizowane przez zespół odpowiedzialny za rozwój aplikacji. Informacje zwrotne od użytkowników pomagają szybciej identyfikować problemy, poprawiać istniejące rozwiązania oraz rozwijać funkcje najlepiej odpowiadające potrzebom pszczelarzy.
-
-### 1. Zgłaszanie problemów i sugestii w aplikacji
-
-Aby zgłosić problem lub sugestię w aplikacji, należy wykonać poniższe kroki:
-
-- Kliknij ikonę **⋮** (więcej opcji) dostępną z każdego widoku w aplikacji, znajdującą się w prawym górnym rogu ekranu, i wybierz *Wyślij opinię* z menu (obok pozycji *Ustawienia* i *Wyloguj*). W efekcie zostanie otwarty widok *Dodaj sugestię* ([](#fig-add-suggestion)).
-- W widoku *Dodaj sugestię* uzupełnij następujące, wymagane pola:
-
-    - **Wybierz kategorię** - wybierz jedną z dostępnych kategorii w zależności od tego, czy chcesz zgłosić problem czy sugestię ulepszenia aplikacji.
-    - **Opis** - wprowadź opis problemu lub tego, co chciałbyś zmienić w aplikacji
-
-- Opcjonalnie możesz załączyć również zdjęcia do swojego zgłoszenia, co jest szczególnie przydatne jeśli zgłaszasz problem znaleziony w aplikacji. Uwaga: do zgłoszenia możesz dołączyć jedynie zdjęcia - nagrania nie są akceptowane. 
-- Po uzupełnieniu powyższych informacji kliknij żółty przycisk *Wyślij sugestię*, wyświetlany w prawym dolnym rogu widoku, co spowoduje przesłanie zgłoszenia.
-
-Figure: Widok Dodaj sugestię - przykładowy problem zgłoszony poprzez aplikację {#fig-add-suggestion}
-
-![figure](pictures/report_suggestion.png){width=200}
 ______________________________________________________________________
 
 ## Zarządzanie kontem
@@ -1934,6 +1935,33 @@ Sekcja *Jednostki* w *Ustawieniach konta* umożliwia wybór jednostek miar wyśw
 - **Jednostka wagi** — Kilogramy (kg) lub Funty (lbs).
 
 Zmiany są widoczne od razu na wszystkich wykresach i odczytach w aplikacji.
+
+______________________________________________________________________
+
+<a id="zglaszanie-problemow-i-sugestii"></a>
+
+## Zgłaszanie problemów i sugestii
+
+Jeśli podczas korzystania z aplikacji zauważysz błąd, nieprawidłowe działanie funkcji lub masz pomysł na usprawnienie systemu, możesz zgłosić to bezpośrednio z poziomu aplikacji. Zachęcamy również do przesyłania propozycji nowych funkcji, które mogłyby ułatwić codzienną pracę z systemem.
+
+Każde zgłoszenie jest analizowane przez zespół odpowiedzialny za rozwój aplikacji. Informacje zwrotne od użytkowników pomagają szybciej identyfikować problemy, poprawiać istniejące rozwiązania oraz rozwijać funkcje najlepiej odpowiadające potrzebom pszczelarzy.
+
+### 1. Zgłaszanie problemów i sugestii w aplikacji
+
+Aby zgłosić problem lub sugestię w aplikacji, należy wykonać poniższe kroki:
+
+- Kliknij ikonę **⋮** (więcej opcji) dostępną z każdego widoku w aplikacji, znajdującą się w prawym górnym rogu ekranu, i wybierz *Dodaj sugestię* z menu (obok pozycji *Ustawienia* i *Wyloguj*). W efekcie zostanie otwarty widok *Dodaj sugestię* ([](#fig-add-suggestion)).
+- W widoku *Dodaj sugestię* uzupełnij następujące, wymagane pola:
+
+    - **Wybierz kategorię** - wybierz jedną z dostępnych kategorii w zależności od tego, czy chcesz zgłosić problem czy sugestię ulepszenia aplikacji.
+    - **Opis** - wprowadź opis problemu lub tego, co chciałbyś zmienić w aplikacji
+
+- Opcjonalnie możesz załączyć również zdjęcia do swojego zgłoszenia, co jest szczególnie przydatne jeśli zgłaszasz problem znaleziony w aplikacji. Uwaga: do zgłoszenia możesz dołączyć jedynie zdjęcia - nagrania nie są akceptowane. 
+- Po uzupełnieniu powyższych informacji kliknij żółty przycisk *Wyślij sugestię*, wyświetlany w prawym dolnym rogu widoku, co spowoduje przesłanie zgłoszenia.
+
+Figure: Widok Dodaj sugestię - przykładowy problem zgłoszony poprzez aplikację {#fig-add-suggestion}
+
+![figure](pictures/report_suggestion.png){width=200}
 
 ______________________________________________________________________
 
@@ -2060,11 +2088,17 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 > [Wideo — notatka audio](#wideo-notatka-audio) 
 > [Notatki](#4-notatki)
 
-- **Wypełnianie formularza chorobowego z poziomu pasieki:** Kliknij kafelek wybranej pasieki. Wybierz *Powiadomienia* z dolnego menu. W zakładce *Problemy* kliknij w wybrany wiersz z chorobą, aby rozwinąć szczegóły. Kliknij przycisk *Odpowiedz na kilka pytań*. Udziel odpowiedzi na pytania (Tak / Nie / Pomiń). Aby przejść do kolejnego, kliknij żółtą strzałkę w prawo. Na koniec kliknij *Zapisz*.
+- **Zgłaszanie obserwacji szerszenia azjatyckiego:** Kliknij ikonę szerszenia azjatyckiego na kafelku pasieki, następnie przycisk *Zgłoś obserwację* i odpowiedz na pytanie *Czy widzisz teraz szerszenia azjatyckiego?* (Tak/Nie). Ikona szerszenia azjatyckiego zostanie odpowiednio zaktualizowana (aktywna obserwacja / sprawdzono, czysto / nieaktualne), a nad nią pojawi się data ostatniego zgłoszenia.  
+
+> [Obserwacja szerszenia azjatyckiego](#obserwacja-szerszenia)
+
+### 3. Zdrowie rodziny
+
+- **Wypełnianie formularza chorobowego z poziomu pasieki:** Kliknij kafelek wybranej pasieki. Wybierz *Powiadomienia* z dolnego menu. W zakładce *Problemy* kliknij wiersz z chorobą — otworzy się osobny widok ze szczegółami. Kliknij przycisk *Odpowiedz na kilka pytań*. Udziel odpowiedzi na pytania (Tak / Nie / Pomiń). Aby przejść do kolejnego, kliknij żółtą strzałkę w prawo. Na koniec kliknij *Zapisz*.
 
 > [Wideo](#wideo-potwierdz-chorobe), [Wypełnianie formularza z poziomu pasieki](#formularz-chorobowy-pasieka)
 
-- **Wypełnianie formularza chorobowego z poziomu ula:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Wybierz *Powiadomienia* z dolnego menu. W zakładce *Problemy* kliknij w wybrany wiersz z chorobą, aby rozwinąć szczegóły. Kliknij przycisk *Odpowiedz na kilka pytań*. Udziel odpowiedzi na pytania (Tak / Nie / Pomiń). Aby przejść do kolejnego, kliknij żółtą strzałkę w prawo. Na koniec kliknij *Zapisz*.
+- **Wypełnianie formularza chorobowego z poziomu ula:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Wybierz *Powiadomienia* z dolnego menu. W zakładce *Problemy* kliknij wiersz z chorobą — otworzy się osobny widok ze szczegółami. Kliknij przycisk *Odpowiedz na kilka pytań*. Udziel odpowiedzi na pytania (Tak / Nie / Pomiń). Aby przejść do kolejnego, kliknij żółtą strzałkę w prawo. Na koniec kliknij *Zapisz*.
 
 > [Wideo](#wideo-potwierdz-chorobe), [Wypełnianie formularza z poziomu ula](#formularz-chorobowy-ul)
 
@@ -2074,17 +2108,13 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 - **Dodawanie badania:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Z dolnego menu wybierz *Dodaj... -> Badanie*. Wybierz datę i rodzaj badania z listy rozwijanej (np. Flotacja), uzupełnij wymagane zdjęcia i pola (np. liczba roztoczy warrozy), następnie zapisz żółtym przyciskiem. Zapisane badanie można później edytować lub usunąć z menu dodatkowego lub klikając ikonę ołówka/kosza na liście badań.
 
-> [Dodawanie badania](#81-dodawanie-badania)
+> [Dodawanie badania](#41-dodawanie-badania)
 
 - **Dodawanie analizy ramki:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Z dolnego menu wybierz *Dodaj... -> FrameSense*. Umieść ramkę w obrysie widoku aparatu, zrób lub wgraj jedno zdjęcie ramki pszczelej i kliknij *Wyślij do analizy*. Wynik (*Analizowanie ramki* / *Analiza zakończona* / *Nieudana*) śledź w zakładce *FrameSense*. Wejdź w szczegóły analizy i sprawdź podsumowanie oraz rekomendacje.
 
 > [FrameSense](#analiza-ramki)
 
-- **Zgłaszanie obserwacji szerszenia azjatyckiego:** Kliknij ikonę szerszenia azjatyckiego na kafelku pasieki, następnie przycisk *Zgłoś obserwację* i odpowiedz na pytanie *Czy widzisz teraz szerszenia azjatyckiego?* (Tak/Nie). Ikona szerszenia azjatyckiego zostanie odpowiednio zaktualizowana (aktywna obserwacja / sprawdzono, czysto / nieaktualne), a nad nią pojawi się data ostatniego zgłoszenia.  
-
-> [Obserwacja szerszenia azjatyckiego](#obserwacja-szerszenia)
-
-### 3. Panel główny i nawigacja
+### 4. Panel główny i nawigacja
 
 - **Lista pasiek (zakładka Pasieki):** Widok startowy po zalogowaniu się do aplikacji Apisense - kafelki pasiek z podstawowymi informacjami. Kliknij pasiekę, aby przejść do listy uli.
 
@@ -2098,15 +2128,15 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 > [Wideo](#wideo-dodaj-ul), [Omówienie listy uli (zakładka Ule)](#omowienie-listy-uli)
 
-- **Zawartość ula (zakładka Szczegóły):** Tu sprawdzisz *Stan ula*, zapisane przeglądy, notatki oraz listę badań, próbek i analiz ramek. Możesz wyświetlić również wykresy poszczególnych parametrów np. Przybytek miodu.
+- **Zawartość ula (zakładka Szczegóły):** Górne zakładki to *Stan ula*, *Przegląd* i *FrameSense*; *Notatki*, *Zadania*, *Badania* i *Próbki* znajdziesz pod *Więcej*. Możesz wyświetlić również wykresy poszczególnych parametrów np. Przybytek miodu.
 
 > [Omówienie zawartości ula (zakładka Szczegóły)](#omowienie-zawartosci-ula)
 
-- **Ustawienia pasieki i ula:** Ikona **⋮** w widoku pasieki (zakładka Ule) lub ula (zakładka Szczegóły) prowadzi do ustawień (obok pozycji *Dodaj sugestię* i *Wyloguj*). Możesz tu edytować informacje o pasiece lub ulu.
+- **Ustawienia pasieki i ula:** Ikona **⋮** w widoku pasieki (zakładka *Ule*) lub ula (zakładka *Szczegóły*) prowadzi do ustawień (obok pozycji *Dodaj sugestię* i *Wyloguj*). Możesz tu edytować informacje o pasiece lub ulu.
 
 > [Omówienie ustawień pasieki](#omowienie-ustawien-pasieki), [Omówienie ustawień ula](#omowienie-ustawien-ula)
 
-### 4. Monitorowanie i analiza danych
+### 5. Monitorowanie i analiza danych
 
 - **Parametry (temperatura, wilgotność, ciśnienie, waga, przybytek miodu):** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Bieżące wartości są widoczne w zakładce *Szczegóły* ula, podzakładka *Stan ula*, w sekcjach *Waga*, *Warunki*.
 
@@ -2120,17 +2150,19 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 > [Trendy](#2-trendy)
 
-### 5. Alarmy, powiadomienia i asystent AI
+### 6. Powiadomienia
 
 - **Powiadomienia:** Kliknij kafelek wybranej pasieki. Wybierz zakładkę *Powiadomienia* z dolnego menu. Dostępne są kategorie: *Problemy* (m.in. choroby) oraz *Techniczne* (urządzenia, łączność).
 
-> [Powiadomienia](#1-powiadomienia)
+> [Powiadomienia](#powiadomienia)
+
+### 7. Asystent AI
 
 - **Twój asystent AI:** Z dolnego menu wybierz *Twój asystent* (dostęp z widoków *Pasieki*, *Ule*, *Szczegóły*), następnie wpisz pytanie i wyślij do asystenta. Asystent przeanalizuje dane i udzieli odpowiedzi.
 
 > [Twój asystent AI](#twoj-asystent-ai)
 
-### 6. Konto
+### 8. Konto
 
 - **Edycja danych użytkownika:** W widoku startowym *Pasieki* kliknij ikonę **⋮** i wybierz *Ustawienia*. Możesz zmienić nazwę, e-mail, telefon, hasło oraz język. Z tego miejsca możesz też usunąć konto.
 
@@ -2140,7 +2172,7 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 > [Sprawdzenie wersji aplikacji](#2-sprawdzenie-wersji-aplikacji)
 
-### 7. Zgłaszanie problemów i sugestii
+### 9. Zgłaszanie problemów i sugestii
 
 - **Zgłaszanie w aplikacji:** Kliknij ikonę **⋮** w prawym górnym rogu dowolnego widoku i wybierz *Dodaj sugestię*. Wypełnij kategorię i opis, opcjonalnie dołącz zdjęcia. Kliknij *Wyślij sugestię*.
 
@@ -2149,3 +2181,5 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 ______________________________________________________________________
 
 W razie problemów wyszukaj problem na liście [Często zadawane pytania i proponowane rozwiązania](#faq-czesto-zadawane) lub skontaktuj się z pomocą Apisense: **bee@apisense.ai**.
+
+______________________________________________________________________

@@ -794,13 +794,53 @@ Figure: Task list in the hive view {#fig-beehive-tasks-list}
 
 You can filter the task list by status (*All*, *To do*, *Done*).
 
-### 6. Disease alerts and the health questionnaire
+<a id="obserwacja-szerszenia"></a>
+
+### 6. Asian hornet observation
+
+The Asian hornet icon on the apiary tile, next to the colony health status indicator, lets you report and review Asian hornet observations. It helps you monitor their activity in your apiaries and respond more quickly to a potential threat to bee colonies. **Note:** Only the apiary owner can report observations. On a shared apiary (coming soon in the app), other users have view-only access to reports.
+
+#### 6.1 Reporting an observation
+
+- Tap the Asian hornet icon on the apiary tile; the *Asian hornet* panel opens.
+- In the *Asian hornet* panel, tap the yellow *Report observation* button, then answer the question *Do you see an Asian hornet now?*.
+- Choose *Yes* if you observed an Asian hornet in your apiary, or *No* if the Asian hornet has not appeared in your apiary.
+- After the answer is saved successfully, the message *Report saved* is shown.
+
+#### 6.2 Observation status and freshness
+
+The Asian hornet icon shown on the apiary tile changes depending on the current report status:
+
+- **No observation** — no report has ever been filed. Icon with a greyed Asian hornet head, without a date or additional badge.
+- **Asian hornet - Active sighting** — Asian hornets were confirmed present and the report is still fresh (within 4 days of filing). Icon with a brown Asian hornet head and a red "!" badge.
+- **Asian hornet - Last seen** — Asian hornets were confirmed present, but more than 4 days have passed since the report — check again and re-report the current state. Icon with a greyed Asian hornet head and a "!" badge on a dark background.
+- **Checked, clear; current observation** — a fresh report (within 4 days of filing) confirming no Asian hornets in the apiary. Icon with a brown Asian hornet head and a green badge with an absence confirmation symbol.
+- **Checked, clear; expired observation** — no Asian hornets were confirmed in the apiary, but more than 4 days have passed since the report. Icon with a greyed Asian hornet head and a badge with an absence confirmation symbol on a dark background.
+
+#### 6.3 Undoing a report
+
+If you filed a report by mistake (an accidental tap), tap the Asian hornet icon on the apiary tile again, then tap *Undo report*. Confirm with the red *Undo report* button shown on the prompt that appears. This removes the report from the history entirely.
+
+!!! note
+    Only use *Undo report* for a mistaken report. If the hornets are simply gone, don't undo the sighting — instead file a new report and answer *No*, so the observation history is preserved.
+
+#### 6.4 Observation reminders
+
+If it has been 4 days since the last Asian hornet report for one or more of your apiaries, the app shows an *Observation reminder* prompt asking you to record the current state to keep the data reliable. You can act on it right away or dismiss it with *Later*.
+
+______________________________________________________________________
+
+## Colony health
+
+This chapter gathers everything about the condition of the bee colony: automatic disease alerts together with the feedback questionnaire, recommendations prepared by the system, the examinations and samples you carry out yourself, and frame photo analysis in FrameSense.
+
+### 1. Disease alerts
 
 When the Apisense Pro AI system reports a threat (e.g. Nosema), **alerts** will appear in the *Notifications* tab in the app, along with a description and recommendations. By filling in the **disease questionnaire** (*Answer a few questions*), you provide feedback to the system and help tailor messages to the actual conditions in your apiary.
 
-#### 6.1 What do disease alerts mean?
+#### 1.1 What do disease alerts mean?
 
-Alerts in *Notifications* → *Problems*, as well as in hive *Details* (*Details* → *Health* section → *Alert in colony*), refer to **diseases detected automatically by the Apisense Pro AI machine learning model** based on sensor data and system analysis. This is not a veterinary diagnosis — the system signals a **probable** threat (e.g. varroa, nosema, foulbrood), together with severity level and recommended actions, which you will see after expanding the disease details (*Problems* tab).
+Alerts in *Notifications* → *Problems*, as well as in the hive view (*Details* → *Hive state* tab → *Health* section → *Colony* row), refer to **diseases detected automatically by the Apisense Pro AI machine learning model** based on sensor data and system analysis. This is not a veterinary diagnosis — the system signals a **probable** threat (e.g. varroa, nosema, foulbrood), together with severity level and recommended actions, which you will see after clicking the row with the disease in the *Problems* tab — a separate view with the episode details then opens.
 
 On apiary and hive tiles, disease alerts appear as **Threatened** status or the name of the detected disease (sometimes with a “+N” badge when more than one threat was found in the hive).
 
@@ -808,7 +848,7 @@ The model is **highly accurate**, but — like any predictive analysis — it **
 
 It is also worth remembering that the model can detect signs of disease at a very early stage, when symptoms may not yet be visible or may be hard to notice during a standard inspection. Therefore, even if you do not see clear symptoms at first glance, it is worth checking the hive indicated in the alert and providing feedback through the form.
 
-#### 6.2 What to do when the disease is not present in the hive
+#### 1.2 What to do when the disease is not present in the hive
 
 If after visiting the apiary you conclude that the **disease is not actually present** in that hive:
 
@@ -824,7 +864,7 @@ The **Skip** option lets you move on without answering a given question — it i
 <a id="formularz-chorobowy-pasieka"></a>
 <a id="disease-questionnaire-apiary"></a>
 
-#### 6.3 Filling in the disease questionnaire from the apiary level
+#### 1.3 Filling in the disease questionnaire from the apiary level
 
 - In the Apiaries tab (the start view after logging in to the Apisense app) click the tile of the apiary in which a threat was detected (red bee icon and "Threat" label on the apiary tile). After clicking the tile, the Hives view will be displayed ([](#fig-apiaries-apiary-with-problem)).
 
@@ -836,13 +876,13 @@ Figure: Apiary view with a threat in the Apiaries tab and Hives view (2) {#fig-b
 
 ![figure](pictures/beehives_beehive_with_problem.png){width=200}
 
-- Then choose the *Notifications* tab from the bottom menu. As a result, the *Problems* tab will be displayed, and in it a list of current and historical problems detected in this apiary (a list of diseases from all hives in the apiary, [](#fig-problems-tab)).
+- Then choose the *Notifications* tab from the bottom menu. As a result, the *Problems* tab will be displayed, and in it a list of problems detected in this apiary (diseases from all hives, [](#fig-problems-tab)). Switch the list with the *Active* / *Completed* filter above it.
 
 Figure: Problems tab {#fig-problems-tab}
 
 ![figure](pictures/beehive_details_problems_tab.png){width=200}
 
-- Go to the details of the detected disease by clicking the row with the disease, e.g. American foulbrood ([](#fig-problems-tab-disease-details)). After going to the details, you will see the duration of the disease, its severity level, recommended protective actions and the *Answer a few questions* button (the *Recommendations* tab), as well as previously given answers (the *Answers* tab).
+- Go to the details of the detected disease by clicking the row with the disease, e.g. American foulbrood ([](#fig-problems-tab-disease-details)). The details open as a separate view, on the recommendations list by default: you see the hive number, severity level, episode duration, a *Recommendations* section listing the suggested actions, and the *Answer a few questions* button. Questionnaires you have already submitted are in the *Answers* tab.
 
 Figure: Disease questionnaire - disease details {#fig-problems-tab-disease-details}
 
@@ -871,7 +911,7 @@ Figure: Disease questionnaire - saving the form {#fig-confirm-problem-save}
 <a id="formularz-chorobowy-ul"></a>
 <a id="disease-questionnaire-hive"></a>
 
-#### 6.4 Filling in the disease questionnaire from the hive level
+#### 1.4 Filling in the disease questionnaire from the hive level
 
 <div class="yt-embed short" id="video-confirm-disease">
   <iframe src="https://www.youtube.com/embed/iGNXm9qu8X8"
@@ -896,13 +936,13 @@ Figure: Hive Details tab - hive with detected threat {#fig-beehive-details-with-
 
 ![figure](pictures/beehive_details_with_problems.png){width=200}
 
-- Then choose the *Notifications* tab from the bottom menu. As a result, the *Problems* tab will be displayed, and in it a list of current and historical problems detected in this hive only ([](#fig-beehive-details-problems-tab)).
+- Then choose the *Notifications* tab from the bottom menu. As a result, the *Problems* tab will be displayed, and in it a list of problems detected in this hive only ([](#fig-beehive-details-problems-tab)). Switch the list with the *Active* / *Completed* filter above it.
 
 Figure: Problems tab at the level of a single hive {#fig-beehive-details-problems-tab}
 
 ![figure](pictures/beehive_details_problems_tab.png){width=200}
 
-- Go to the details of the detected disease by clicking the row with the disease, e.g. American foulbrood ([](#fig-problems-tab-disease-details-2)). After going to the details, you will see the duration of the disease, its severity level, recommended protective actions and the *Answer a few questions* button (the *Recommendations* tab), as well as previously given answers (the *Answers* tab).
+- Go to the details of the detected disease by clicking the row with the disease, e.g. American foulbrood ([](#fig-problems-tab-disease-details-2)). The details open as a separate view, on the recommendations list by default: you see the hive number, severity level, episode duration, a *Recommendations* section listing the suggested actions, and the *Answer a few questions* button. Questionnaires you have already submitted are in the *Answers* tab.
 
 Figure: Disease questionnaire - disease details {#fig-problems-tab-disease-details-2}
 
@@ -928,7 +968,7 @@ Figure: Disease questionnaire - saving the form {#fig-confirm-problem-save-2}
 
 ![figure](pictures/confirm_problem_save.png){width=200}
 
-#### 6.5 Editing or deleting a submitted answer
+#### 1.5 Editing or deleting a submitted answer
 
 A submitted disease questionnaire answer can be corrected for a limited time after saving:
 
@@ -936,9 +976,30 @@ A submitted disease questionnaire answer can be corrected for a limited time aft
 - After choosing *Delete*, confirm the *Delete answers?* prompt. The form together with its answers is removed permanently.
 - **Note:** Answers can be edited for 30 days after submission. After that time, editing or deleting the form is no longer possible, and the app shows the message: *The correction window for this answer has expired; submit a new answer instead.* If the disease episode is still active, you can submit a new set of answers using *Answer a few questions*.
 
+### 2. Recommendations
+
+Recommendations are concrete actions the system suggests based on sensor data, your own observations and AI analysis. They are not a separate tab in the menu — they appear wherever the system has detected something that needs a response.
+
+#### 2.1 Recommendations for a detected disease
+
+- Open the disease details: *Notifications* tab (bottom menu) > *Problems* > the row with the disease. The details open as a separate view.
+- The view opens on the recommendations list by default. At the top you see the hive number, disease name, infection level and episode duration, and below them a *Recommendations* section with a numbered list of suggested actions.
+- Below the list there is an *Answer a few questions* button — the entry point to the health questionnaire (see [1. Disease alerts](#1-disease-alerts)).
+- The second tab, *Answers*, holds the questionnaires you have already submitted for this episode.
+
+!!! note
+    In an apiary shared with you in read-only mode the tabs are not shown — you see the recommendations only, without the option to fill in the questionnaire.
+
+#### 2.2 Recommendations after frame analysis (FrameSense)
+
+Once a frame photo analysis is complete, a *Recommendations* section below the results holds practical guidance based on what the model recognised on the comb. Details in [5. FrameSense](#5-framesense).
+
+!!! warning
+    Recommendations are a suggestion, not veterinary advice. Decide on treatment after inspecting the hive, and report what you saw through the health questionnaire — that improves the accuracy of later alerts.
+
 <a id="rejestrowanie-probki"></a>
 
-### 7. Samples
+### 3. Samples
 
 <div class="yt-embed short" id="video-register-sample">
   <iframe src="https://www.youtube.com/embed/jqS9rvhd-X0"
@@ -947,7 +1008,7 @@ A submitted disease questionnaire answer can be corrected for a limited time aft
           allowfullscreen></iframe>
 </div>
 
-#### 7.1 Registering a sample
+#### 3.1 Registering a sample
 
 - In the Apiaries tab (the start view after logging in to the Apisense app) click the apiary tile. After clicking the tile, the Hives view will be displayed ([](#fig-apiaries-apiary-with-beehive-5)).
 
@@ -996,7 +1057,7 @@ Figure: Register sample view {#fig-register-sample}
 !!! tip "Shipping live bees"
     Ship live bee samples **alive**, in ventilated transport cages that allow air access, with sugar candy (~10 bees per cage, 4 cages per hive), labelled with the test code from the app. Ship **Monday to Thursday** — via Poczta Polska or courier. Shipments via Poczta Polska may only be sent by apiary owners located in Poland. Details: [Protocol 2 — live bees](../samples/protocol-2-live-bees.md).
 
-#### 7.2 Sample status
+#### 3.2 Sample status
 
 Each registered sample shows a status label describing where it is in the examination process:
 
@@ -1006,7 +1067,7 @@ Each registered sample shows a status label describing where it is in the examin
 - **Analysed** — the sample examination in the laboratory has been completed.
 - **Cancelled** — the sample was cancelled.
 
-#### 7.3 Deleting a sample
+#### 3.3 Deleting a sample
 
 To delete a sample from the sample list:
 
@@ -1014,9 +1075,9 @@ To delete a sample from the sample list:
 - Tap the red bin icon next to the sample to be removed from the list.
 - Confirm the operation by tapping *Delete*. After you tap this button, the sample is permanently deleted and the operation cannot be undone.
 
-### 8. Examinations
+### 4. Examinations
 
-#### 8.1 Adding an examination 
+#### 4.1 Adding an examination
 
 - In the Apiaries tab (the start view after logging in to the Apisense app) click the apiary tile. After clicking the tile, the Hives view will be displayed ([](#fig-apiaries-apiary-with-beehive-6)).
 
@@ -1057,7 +1118,7 @@ Figure: Saved examination in the hive examination list {#fig-add-examination-lis
 
 ![figure](pictures/add_examination_list.png){width=200}
 
-#### 8.2 Editing an examination
+#### 4.2 Editing an examination
 
 To edit an examination:
 
@@ -1066,7 +1127,7 @@ To edit an examination:
 - To update a photo, first remove it by tapping the *"X"* on the photo thumbnail, then add a new photo using the *Add photo* button.
 - To save your changes, tap the yellow confirmation button in the lower right corner.
 
-#### 8.3 Deleting an examination
+#### 4.3 Deleting an examination
 
 To delete an examination from the examination list:
 
@@ -1076,11 +1137,11 @@ To delete an examination from the examination list:
 
 <a id="analiza-ramki"></a>
 
-### 9. FrameSense
+### 5. FrameSense
 
 FrameSense uses artificial intelligence to automatically estimate the comb contents from a single photo, including brood, food stores, and empty or obscured area.
 
-#### 9.1 Adding a frame analysis
+#### 5.1 Adding a frame analysis
 
 - Click the chosen apiary tile, then the chosen hive tile. As a result, the *Hive details* view will be displayed.
 - Choose the *Add...* option from the bottom menu, then *FrameSense*; the *FrameSense* view will be displayed.
@@ -1090,7 +1151,7 @@ FrameSense uses artificial intelligence to automatically estimate the comb conte
 !!! note
     Bee frame analysis requires an internet connection to upload the photo. Processing a photo sent for analysis typically takes a few minutes. We recommend attaching photos in JPG or PNG format. RAW/DNG files are supported only in the mobile version.
 
-#### 9.2 FrameSense results
+#### 5.2 FrameSense results
 
 Results of submitted bee frame analyses are available in the *FrameSense* tab (*Hive details > More > FrameSense*). To view the result for a chosen frame, tap the corresponding list entry with the status *Analysis completed*.
 
@@ -1102,42 +1163,7 @@ Possible statuses:
 
 When a bee frame analysis is completed, a push notification is sent that opens its result directly when tapped.
 
-<a id="obserwacja-szerszenia"></a>
-
-### 10. Asian hornet observation
-
-The Asian hornet icon on the apiary tile, next to the colony health status indicator, lets you report and review Asian hornet observations. It helps you monitor their activity in your apiaries and respond more quickly to a potential threat to bee colonies. **Note:** Only the apiary owner can report observations. On a shared apiary (coming soon in the app), other users have view-only access to reports.
-
-#### 10.1 Reporting an observation
-
-- Tap the Asian hornet icon on the apiary tile; the *Asian hornet* panel opens.
-- In the *Asian hornet* panel, tap the yellow *Report observation* button, then answer the question *Do you see an Asian hornet now?*.
-- Choose *Yes* if you observed an Asian hornet in your apiary, or *No* if the Asian hornet has not appeared in your apiary.
-- After the answer is saved successfully, the message *Report saved* is shown.
-
-#### 10.2 Observation status and freshness
-
-The Asian hornet icon shown on the apiary tile changes depending on the current report status:
-
-- **No observation** — no report has ever been filed. Icon with a greyed Asian hornet head, without a date or additional badge.
-- **Asian hornet - Active sighting** — Asian hornets were confirmed present and the report is still fresh (within 4 days of filing). Icon with a brown Asian hornet head and a red "!" badge.
-- **Asian hornet - Last seen** — Asian hornets were confirmed present, but more than 4 days have passed since the report — check again and re-report the current state. Icon with a greyed Asian hornet head and a "!" badge on a dark background.
-- **Checked, clear; current observation** — a fresh report (within 4 days of filing) confirming no Asian hornets in the apiary. Icon with a brown Asian hornet head and a green badge with an absence confirmation symbol.
-- **Checked, clear; expired observation** — no Asian hornets were confirmed in the apiary, but more than 4 days have passed since the report. Icon with a greyed Asian hornet head and a badge with an absence confirmation symbol on a dark background.
-
-#### 10.3 Undoing a report
-
-If you filed a report by mistake (an accidental tap), tap the Asian hornet icon on the apiary tile again, then tap *Undo report*. Confirm with the red *Undo report* button shown on the prompt that appears. This removes the report from the history entirely.
-
-!!! note
-    Only use *Undo report* for a mistaken report. If the hornets are simply gone, don't undo the sighting — instead file a new report and answer *No*, so the observation history is preserved.
-
-#### 10.4 Observation reminders
-
-If it has been 4 days since the last Asian hornet report for one or more of your apiaries, the app shows an *Observation reminder* prompt asking you to record the current state to keep the data reliable. You can act on it right away or dismiss it with *Later*.
-
 ______________________________________________________________________
-
 
 ## Main system panel
 
@@ -1460,7 +1486,7 @@ This chapter presents the meaning of the individual icons, symbols and color cod
 <a id="statusy-na-kafelkach"></a>
 <a id="pierwsze-uruchomienie"></a>
 
-#### First device startup
+#### 7.1 First device startup
 
 After creating an apiary with a Hub and assigning Scale/VitalSensor to a hive, before the devices connect to the system the tiles will show the following information:
 
@@ -1503,7 +1529,7 @@ After the devices report for the first time and the first data appear, the apiar
 
 <a id="stan-zdrowia"></a>
 
-#### Colony health status
+#### 7.2 Colony health status
 
 Colony health icons inform about the condition of bee colonies in individual hives and across the apiary. Health assessment is based on **VitalSensor** data and the AI model.
 
@@ -1523,7 +1549,7 @@ Colony health icons inform about the condition of bee colonies in individual hiv
 
 <a id="ikony-informacyjne"></a>
 
-#### Information icons
+#### 7.3 Information icons
 
 Information icons present information about apiaries and hives as well as data collected from measurement devices.
 
@@ -1542,7 +1568,7 @@ Information icons present information about apiaries and hives as well as data c
 -->
 
 
-#### Apisense device status
+#### 7.4 Apisense device status
 
 Apisense device status icons indicate the current operating status: connection quality and battery level of devices monitoring apiaries and hives.
 
@@ -1563,7 +1589,7 @@ Apisense device status icons indicate the current operating status: connection q
 | ![](pictures/statuses_connection_lost_ble.png) | hive tile (Hives tab) | **No connection** — the device stopped communicating with the Hub. |
 |  | hive tile (Hives tab) | **Battery depleted** — last known battery state: dead. Replace the device battery. |
 
-#### Color coding
+#### 7.5 Color coding
 
 Color coding makes it easier to quickly recognize statuses, categories and important information in the system.
 
@@ -1574,7 +1600,7 @@ Color coding makes it easier to quickly recognize statuses, categories and impor
 | ![](pictures/red_color.png)             | various views including Hive status    | The red color in the app indicates the occurrence of a negative phenomenon, exceeding the expected parameter values, notifications and warnings (does not apply to the hive background in the Details tab). |
 | ![](pictures/state_beehive_healthy.png) | various views including the hive tile  | The green color in the app informs that everything is fine, indicates neutrality or a positive effect.                                                                                              |
 
-#### Actions
+#### 7.6 Actions
 
 Action icons enable you to perform available operations such as adding, editing or deleting data.
 
@@ -1587,7 +1613,7 @@ Action icons enable you to perform available operations such as adding, editing 
 | ![](pictures/edit_item.png)      | including editing notes                          | Button enabling changes to be made for the chosen item.           |
 | ![](pictures/remove_item.png)    | including deleting notes                         | Button enabling deletion of the chosen item.                      |
 
-#### Navigation
+#### 7.7 Navigation
 
 Navigation icons are used to move between views and app functions.
 
@@ -1786,17 +1812,15 @@ Using trends in data analysis enables:
 
 ______________________________________________________________________
 
-## Alerts, notifications and AI Assistant
+## Notifications
 
 The notification system in the app informs the user about important events in the apiary, the status of monitoring devices and recommended activities related to running the hives. The information is provided in the form of notifications and recommendations generated based on data from sensors, observations and system analysis. Thanks to this, the user can react more quickly to emerging problems and also make decisions about the further running of the apiary.
-
-### 1. Notifications
 
 Notifications generated by the system are available **in the app** — in the notifications section you can review messages and read their details. 
 
 <a id="powiadoienia-gdzie"></a>
 
-#### 1.1 Where to find notifications in the app
+### 1. Where to find notifications in the app
 
 You can find notifications in the app by following these steps:
 
@@ -1805,7 +1829,7 @@ You can find notifications in the app by following these steps:
 - As a result, the *Notifications* view will open, with the *Problems* tab selected by default ([](#fig-notifications-problems-details)).
 - In addition to the *Problems* tab, you can also go to the *Technical* tab by choosing the appropriate option from the top menu.
 
-#### 1.2 Notification categories
+### 2. Notification categories
 
 Notifications in the app are available in the *Notifications* tab. Notifications are divided into the following categories that correspond to individual tabs ([](#fig-notifications-problems-details)):
 
@@ -1820,18 +1844,21 @@ Figure: Notifications tab - sample disease and technical notifications (Problems
 
 ![figure](pictures/notifications_technical.png){width=200}
 
-New notifications appear automatically on the appropriate list depending on their type. Unread messages are displayed in bold, while after they are opened they become slightly grayed out, indicating that they have already been read.
+New notifications appear automatically on the appropriate list depending on their type. Unread messages are displayed in bold and return to regular weight once opened — that is how you tell they have been read.
 
-To display the details of a notification, click its header; this will expand the full message content.
+You open the details by clicking the row, but the two tabs behave differently. In the *Problems* tab a separate disease episode view opens. In the *Technical* tab the row expands in place and the full message appears below its title.
 
 !!! tip
     To mark every notification in the *Technical* tab as read in one click, use the *Mark all as read* button. The scope of the button depends on where it is used:
     - from a single hive — only technical notifications for that hive are marked as read,
     - from the apiary level — all technical notifications for that apiary and the hives in it are marked as read.
 
+______________________________________________________________________
+
+## AI Assistant
+
 <a id="twoj-asystent-ai"></a>
 
-### 2. Your AI Assistant
 
 The AI Assistant is a feature that supports the user in analyzing the situation in the apiary and in interpreting the observed phenomena. Based on the information provided, the system generates answers and tips that can help in making decisions about running the apiary.
 
@@ -1848,34 +1875,6 @@ Figure: Your assistant tab - sample question asked of the AI Assistant (2) {#fig
 After submitting a question, the assistant analyzes the available information and generates an answer containing possible explanations of the situation or suggestions for further action.
 
 You can use the AI Assistant by selecting the *Your assistant* tab from the bottom menu, available in the basic app views (*Apiaries*, *Hives*, *Hive*). Thanks to this, the user has quick access to assistant help at any time when using the system.
-
-______________________________________________________________________
-
-<a id="zglaszanie-problemow-i-sugestii"></a>
-<a id="reporting-problems-and-suggestions"></a>
-
-## Reporting problems and suggestions
-
-If while using the app you notice a bug, incorrect behavior of a feature, or have an idea for improving the system, you can report it directly from within the app. We also encourage you to submit proposals for new features that could make everyday work with the system easier.
-
-Each report is reviewed by the team responsible for app development. User feedback helps identify problems faster, improve existing solutions, and develop features that best meet beekeepers' needs.
-
-### 1. Reporting problems and suggestions in the app
-
-To report a problem or suggestion in the app, follow these steps:
-
-- Click the **⋮** (more options) icon available from any view in the app, in the upper right corner of the screen, and choose *Send feedback* from the menu (alongside *Settings* and *Sign out*). As a result, the *Add suggestion* view will open ([](#fig-add-suggestion)).
-- In the *Add suggestion* view, fill in the following required fields:
-
-    - **Choose category** — select one of the available categories depending on whether you want to report a problem or suggest an app improvement.
-    - **Description** — enter a description of the problem or what you would like to change in the app.
-
-- Optionally, you can also attach photos to your report, which is especially useful when reporting a problem found in the app. Note: you can attach photos only — recordings are not accepted.
-- After filling in the information above, click the yellow *Send suggestion* button in the lower right corner of the view to submit the report.
-
-Figure: Add suggestion view - sample problem reported through the app {#fig-add-suggestion}
-
-![figure](pictures/report_suggestion.png){width=200}
 
 ______________________________________________________________________
 
@@ -1936,6 +1935,34 @@ The *Units* section in *Account settings* lets you choose the measurement units 
 - **Weight unit** — Kilograms (kg) or Pounds (lbs).
 
 Changes take effect immediately across all charts and readings in the app.
+
+______________________________________________________________________
+
+<a id="zglaszanie-problemow-i-sugestii"></a>
+<a id="reporting-problems-and-suggestions"></a>
+
+## Reporting problems and suggestions
+
+If while using the app you notice a bug, incorrect behavior of a feature, or have an idea for improving the system, you can report it directly from within the app. We also encourage you to submit proposals for new features that could make everyday work with the system easier.
+
+Each report is reviewed by the team responsible for app development. User feedback helps identify problems faster, improve existing solutions, and develop features that best meet beekeepers' needs.
+
+### 1. Reporting problems and suggestions in the app
+
+To report a problem or suggestion in the app, follow these steps:
+
+- Click the **⋮** (more options) icon available from any view in the app, in the upper right corner of the screen, and choose *Send feedback* from the menu (alongside *Settings* and *Sign Out*). As a result, the *Send feedback* view will open ([](#fig-add-suggestion)).
+- In the *Send feedback* view, fill in the following required fields:
+
+    - **Choose category** — select one of the available categories depending on whether you want to report a problem or suggest an app improvement.
+    - **Description** — enter a description of the problem or what you would like to change in the app.
+
+- Optionally, you can also attach photos to your report, which is especially useful when reporting a problem found in the app. Note: you can attach photos only — recordings are not accepted.
+- After filling in the information above, click the yellow *Send feedback* button in the lower right corner of the view to submit the report.
+
+Figure: Send feedback view - sample problem reported through the app {#fig-add-suggestion}
+
+![figure](pictures/report_suggestion.png){width=200}
 
 ______________________________________________________________________
 
@@ -2062,11 +2089,17 @@ Below you will find a summary of the most important activities in the Apisense P
 > [Video — audio note](#video-note-voice) 
 > [Notes](#4-notes)
 
-- **Filling in the disease questionnaire from the apiary level:** Click the chosen apiary tile. Choose *Notifications* from the bottom menu. In the *Problems* tab click the chosen disease row to expand the details. Click the *Answer a few questions* button. Answer the questions (Yes / No / Skip). To proceed to the next, click the yellow right-pointing arrow. At the end click *Save*.
+- **Reporting an Asian hornet observation:** Tap the Asian hornet icon on the apiary tile, then the *Report observation* button, and answer *Do you see an Asian hornet now?* (Yes/No). The Asian hornet icon is updated accordingly (active sighting / checked, clear / expired), and the date of the last report appears above it.
+
+> [Asian hornet observation](#obserwacja-szerszenia)
+
+### 3. Colony health
+
+- **Filling in the disease questionnaire from the apiary level:** Click the chosen apiary tile. Choose *Notifications* from the bottom menu. In the *Problems* tab click the disease row — a separate details view opens. Click the *Answer a few questions* button. Answer the questions (Yes / No / Skip). To proceed to the next, click the yellow right-pointing arrow. At the end click *Save*.
 
 > [Video](#video-confirm-disease), [Filling in the questionnaire from the apiary level](#formularz-chorobowy-pasieka)
 
-- **Filling in the disease questionnaire from the hive level:** Click the chosen apiary tile. Click the chosen hive tile. Choose *Notifications* from the bottom menu. In the *Problems* tab click the chosen disease row to expand the details. Click the *Answer a few questions* button. Answer the questions (Yes / No / Skip). To proceed to the next, click the yellow right-pointing arrow. At the end click *Save*.
+- **Filling in the disease questionnaire from the hive level:** Click the chosen apiary tile. Click the chosen hive tile. Choose *Notifications* from the bottom menu. In the *Problems* tab click the disease row — a separate details view opens. Click the *Answer a few questions* button. Answer the questions (Yes / No / Skip). To proceed to the next, click the yellow right-pointing arrow. At the end click *Save*.
 
 > [Video](#video-confirm-disease), [Filling in the questionnaire from the hive level](#formularz-chorobowy-ul)
 
@@ -2076,17 +2109,13 @@ Below you will find a summary of the most important activities in the Apisense P
 
 - **Adding an examination:** Click the chosen apiary tile. Click the chosen hive tile. From the bottom menu choose *Add... -> Examination*. Choose the date and examination type from the drop-down list (e.g. Sugar roll), fill in the required photos and fields (e.g. number of varroa mites), then save with the yellow button. A saved examination can later be edited or deleted from its overflow menu or by tapping the pencil/bin icon in the examination list.
 
-> [Adding an examination](#81-adding-an-examination)
+> [Adding an examination](#41-adding-an-examination)
 
 - **Adding a frame analysis:** Click the chosen apiary tile. Click the chosen hive tile. From the bottom menu choose *Add... -> FrameSense*. Position the frame inside the camera outline, take or upload one photo of the bee frame and click *Send for analysis*. Track the result (*Analysing frame* / *Analysis completed* / *Failed*) in the *FrameSense* tab. Open the analysis details and review the summary and recommendations.
 
 > [FrameSense](#analiza-ramki)
 
-- **Reporting an Asian hornet observation:** Tap the Asian hornet icon on the apiary tile, then the *Report observation* button, and answer *Do you see an Asian hornet now?* (Yes/No). The Asian hornet icon is updated accordingly (active sighting / checked, clear / expired), and the date of the last report appears above it.
-
-> [Asian hornet observation](#obserwacja-szerszenia)
-
-### 3. Main panel and navigation
+### 4. Main panel and navigation
 
 - **Apiary list (Apiaries tab):** The start view after logging in to the Apisense app - apiary tiles with basic information. Click an apiary to go to the hive list.
 
@@ -2100,15 +2129,15 @@ Below you will find a summary of the most important activities in the Apisense P
 
 > [Video](#video-add-hive), [Hive list overview (Hives tab)](#omowienie-listy-uli)
 
-- **Hive contents (Details tab):** Here you check the *Hive status*, saved inspections, notes, and the list of examinations, samples and frame analyses. You can also display charts of individual parameters, e.g. Honey gain.
+- **Hive contents (Details tab):** The top tabs are *Hive state*, *Inspection* and *FrameSense*; *Notes*, *Tasks*, *Examinations* and *Samples* live under *More*. You can also display charts of individual parameters, e.g. Honey gain.
 
 > [Hive contents overview (Details tab)](#omowienie-zawartosci-ula)
 
-- **Apiary and hive settings:** The **⋮** icon in the apiary view (Hives tab) or hive view (Details tab) leads to the settings (alongside *Add suggestion* and *Sign out*). Here you can edit information about the apiary or hive.
+- **Apiary and hive settings:** The **⋮** icon in the apiary view (*Hives* tab) or hive view (*Details* tab) leads to the settings (alongside *Send feedback* and *Sign Out*). Here you can edit information about the apiary or hive.
 
 > [Apiary settings overview](#omowienie-ustawien-pasieki), [Hive settings overview](#omowienie-ustawien-ula)
 
-### 4. Monitoring and data analysis
+### 5. Monitoring and data analysis
 
 - **Parameters (temperature, humidity, pressure, weight, honey gain):** Click the chosen apiary tile. Click the chosen hive tile. The current values are visible in the hive *Details* tab, *Hive status* sub-tab, in the *Weight* and *Conditions* sections.
 
@@ -2122,17 +2151,19 @@ Below you will find a summary of the most important activities in the Apisense P
 
 > [Trends](#2-trends)
 
-### 5. Alerts, notifications and AI Assistant
+### 6. Notifications
 
 - **Notifications:** Click the chosen apiary tile. Choose the *Notifications* tab from the bottom menu. The available categories are: *Problems* (including diseases) and *Technical* (devices, connectivity).
 
-> [Notifications](#1-notifications)
+> [Notifications](#notifications)
+
+### 7. AI Assistant
 
 - **Your AI Assistant:** From the bottom menu choose *Your assistant* (accessible from the *Apiaries*, *Hives*, *Details* views), then enter a question and send it to the assistant. The assistant will analyze the data and provide an answer.
 
 > [Your AI Assistant](#twoj-asystent-ai)
 
-### 6. Account
+### 8. Account
 
 - **Editing user data:** In the *Apiaries* start view click the **⋮** icon and choose *Settings*. You can change your name, email, phone, password and language. From this place you can also delete your account.
 
@@ -2142,12 +2173,14 @@ Below you will find a summary of the most important activities in the Apisense P
 
 > [Checking the app version](#2-checking-the-app-version)
 
-### 7. Reporting problems and suggestions
+### 9. Reporting problems and suggestions
 
-- **Reporting in the app:** Click the **⋮** icon in the upper right corner of any view and choose *Add suggestion*. Fill in the category and description, optionally attach photos. Click *Send suggestion*.
+- **Reporting in the app:** Click the **⋮** icon in the upper right corner of any view and choose *Send feedback*. Fill in the category and description, optionally attach photos. Click *Send feedback*.
 
-> [Reporting problems and suggestions](#zglaszanie-problemow-i-sugestii)
+> [Reporting problems and suggestions](#reporting-problems-and-suggestions)
 
 ______________________________________________________________________
 
 If you encounter any problems, search for the issue in the [Frequently asked questions and suggested solutions](#faq-czesto-zadawane) list or contact Apisense support: **bee@apisense.ai**.
+
+______________________________________________________________________
