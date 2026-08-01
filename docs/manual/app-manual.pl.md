@@ -1843,9 +1843,9 @@ Figure: Zakładka Powiadomienia - przykładowe powiadomienia chorobowe i technic
 
 ![figure](pictures/notifications_technical.png){width=200}
 
-Nowe powiadomienia pojawiają się automatycznie na odpowiedniej liście w zależności od ich rodzaju. Nieodczytane komunikaty są wyświetlane pogrubioną czcionką, natomiast po ich otwarciu stają się lekko wyszarzone, co oznacza, że zostały już przeczytane.
+Nowe powiadomienia pojawiają się automatycznie na odpowiedniej liście w zależności od ich rodzaju. Nieodczytane komunikaty są wyświetlane pogrubioną czcionką, a po otwarciu wracają do zwykłej grubości — po tym poznasz, że zostały już przeczytane.
 
-Aby wyświetlić szczegóły powiadomienia, kliknij jego wiersz — pełna treść komunikatu otworzy się w osobnym widoku.
+Szczegóły otwierasz kliknięciem wiersza, ale obie zakładki zachowują się inaczej. W zakładce *Problemy* otworzy się osobny widok epizodu choroby. W zakładce *Techniczne* wiersz rozwinie się w miejscu i pełna treść komunikatu pojawi się pod jego tytułem.
 
 !!! tip
     Aby jednym kliknięciem oznaczyć wszystkie powiadomienia w zakładce *Techniczne* jako przeczytane, użyj przycisku *Oznacz wszystkie jako przeczytane*. Zakres działania przycisku zależy od miejsca, z którego zostanie użyty:

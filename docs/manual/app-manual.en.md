@@ -1844,9 +1844,9 @@ Figure: Notifications tab - sample disease and technical notifications (Problems
 
 ![figure](pictures/notifications_technical.png){width=200}
 
-New notifications appear automatically on the appropriate list depending on their type. Unread messages are displayed in bold, while after they are opened they become slightly grayed out, indicating that they have already been read.
+New notifications appear automatically on the appropriate list depending on their type. Unread messages are displayed in bold and return to regular weight once opened — that is how you tell they have been read.
 
-To display the details of a notification, click its row — the full message content opens in a separate view.
+You open the details by clicking the row, but the two tabs behave differently. In the *Problems* tab a separate disease episode view opens. In the *Technical* tab the row expands in place and the full message appears below its title.
 
 !!! tip
     To mark every notification in the *Technical* tab as read in one click, use the *Mark all as read* button. The scope of the button depends on where it is used:
