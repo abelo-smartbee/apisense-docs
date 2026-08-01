@@ -1196,9 +1196,9 @@ Wyniki analizy przesłanych ramek pszczelich są dostępne w zakładce *FrameSen
 
 Możliwe statusy:
 
-- **Analizowanie ramki** — zdjęcie zostało wysłane do analizy i jest przetwarzane przez AI (ok. 5 minut).
+- **Analizujemy** — zdjęcie zostało wysłane do analizy i jest przetwarzane przez AI (ok. 5 minut).
 - **Analiza zakończona** — analiza ramki została pomyślnie zakończona. Teraz możesz zobaczyć opisane kolorami zdjęcie z procentowym udziałem poszczególnych kategorii wchodzących w skład plastra: **Czerw** (jaja, larwy, czerw robotnic i trutni), **Zapasy** (nektar, pyłek, zasklepiony miód) oraz **Pusta/zasłonięta** powierzchnia, a także liczbę znalezionych mateczników/misek matecznikowych i spis pszczół. Wynik analizy składa się z kilku widoków tego samego przesłanego zdjęcia. Każdy z nich zawiera oznaczenia innych przeanalizowanych elementów oraz odpowiadające im opisy. Przesuwaj zdjęcia, aby wyświetlić kolejne wyniki analizy. Kliknięcie zdjęcia otwiera je w trybie pełnoekranowym. Poniżej wyników analizy znajduje się sekcja *Rekomendacje*, zawierająca praktyczne wskazówki i sugerowane działania opracowane na podstawie analizy AI. Pomagają one zidentyfikować potencjalne problemy oraz podjąć świadome decyzje dotyczące dalszego postępowania.
-- **Nieudana** — analizy nie udało się ukończyć. Spróbuj dodać ponownie zdjęcie ramki pszczelej i wysłać je do analizy.
+- **Analiza nie powiodła się** — analizy nie udało się ukończyć. Spróbuj dodać ponownie zdjęcie ramki pszczelej i wysłać je do analizy.
 
 Gdy analiza ramki pszczelej zostanie ukończona, wysyłane jest powiadomienie push, które po kliknięciu otwiera bezpośrednio jej wynik.
 
@@ -1226,7 +1226,9 @@ Figure: Zakładka Pasieki - przykładowy widok pasiek {#fig-apiaries-2}
 
 - Na każdym kafelku pasieki są wyświetlane następujące informacje:
 
-    - nazwa pasieki wraz ze skrótem nazwy,
+    - nazwa pasieki wraz z literą wyliczoną z pierwszej litery nazwy,
+
+    - lokalizacja pasieki (miejscowość) pod nazwą,
 
     - poziom baterii Apisense Hub,
 
@@ -1236,7 +1238,11 @@ Figure: Zakładka Pasieki - przykładowy widok pasiek {#fig-apiaries-2}
 
     - liczba aktywnych uli - liczba uli, które posiadają co najmniej jedno urządzenie (Scale, VitalSensor) poprawnie komunikujące się z Apisense Hub,
 
-    - stan rodziny pszczelej - informujący o tym, czy rodzina w pasiece jest w zupełności zdorwa lub czy w jakimś ulu zostało wykryte zagrożenie,
+    - stan rodziny pszczelej - informujący o tym, czy rodzina w pasiece jest w pełni zdrowa, czy w którymś ulu zostało wykryte zagrożenie,
+
+    - ikona szerszenia azjatyckiego ze statusem ostatniej obserwacji (patrz [6. Obserwacja szerszenia azjatyckiego](#obserwacja-szerszenia)),
+
+    - plakietka *Brak połączenia*, jeśli Hub tej pasieki jest offline,
 
     Więcej informacji na temat interpretacji poszczególnych statusów znajdziesz w rozdziale [7. Interpretacja statusów, pomiarów, ikonek, kolorów na poszczególnych etapach](#interpretacja-statusow)
 
@@ -1279,13 +1285,17 @@ Figure: Zakładka Ule - przykładowy widok listy uli {#fig-beehives-beehive-with
 
 - Każdy kafelek z ulem składa się z poniższych elementów:
 
-    - nazwa ula wraz z ikonką w kolorze odpowiednim dla roku wychowu matki,
+    - nazwa ula i jego kod, wraz z ikonką w kolorze odpowiednim dla roku wychowu matki,
 
-    - stan rodziny pszczelej - informujący o tym, czy rodzina w danym ulu jest zdrowa lub, czy wykryto zagrożenie,
+    - *Stan rodziny* - informujący o tym, czy rodzina w danym ulu jest zdrowa, czy wykryto zagrożenie,
 
-    - aktualna temperatura panująca wewnątrz ula
+    - *Temperatura w ulu* - aktualna temperatura panująca wewnątrz ula,
 
-    - aktualna waga ula wraz z przybytkiem miodu
+    - *Waga + przybytek* - aktualna waga ula wraz z przybytkiem miodu,
+
+    - *Siła rodziny* - wiersz wyświetlany zawsze; dopóki nie ma danych, w miejscu wartości widnieje „-",
+
+    - wskaźnik zadania zaplanowanego w ciągu najbliższych 10 dni,
 
     - dodatkowe ikony związane ze szczególnymi zdarzeniami w ulu np. czerwona ikona baterii świadcząca o jej niskim poziomie.
 
@@ -1302,13 +1312,17 @@ Widok *Szczegóły* ula umożliwia monitorowanie danych pomiarowych pochodzącyc
 
 Widok *Szczegóły* został podzielony na kilka mniejszych zakładek:
 
-- Stan ula
-- Przegląd
-- Notatki
-- Więcej:
-  - Badania
-  - Próbki
-  - FrameSense
+- *Stan ula*
+- *Przegląd*
+- *FrameSense*
+- *Więcej*:
+    - *Notatki*
+    - *Zadania*
+    - *Badania*
+    - *Próbki*
+
+!!! note
+    Podział na dwie grupy pojawia się dopiero wtedy, gdy zakładek treściowych jest więcej niż pięć. Jeśli jest ich pięć lub mniej (np. gdy ul nie ma VitalSensora albo Twój plan nie obejmuje badań czy FrameSense), wszystkie mieszczą się w jednym pasku i zakładka *Więcej* w ogóle się nie pojawia. Kliknięcie *Więcej* przełącza pasek między obiema grupami.
 
 
 #### 4.1 Stan ula
@@ -1363,7 +1377,7 @@ Figure: Zakładka Szczegóły - przykładowy widok zakładki Notatki {#fig-beehi
 
 #### 4.4 Badania
 
-Zakładka *Badania* prezentuje w przejrzysty sposób listę wszystkich wykonanych oraz zapisanych badań ([](#fig-apiary-settings-3)), przeprowadzonych w ramach wybranego ula. Dzięki temu użytkownik może szybko sprawdzić historię analiz oraz wrócić do wcześniejszych wyników.
+Zakładka *Badania* prezentuje w przejrzysty sposób listę wszystkich wykonanych oraz zapisanych badań ([](#fig-beehive-details-examination-list)), przeprowadzonych w ramach wybranego ula. Dzięki temu użytkownik może szybko sprawdzić historię analiz oraz wrócić do wcześniejszych wyników.
 
 Figure: Zakładka Szczegóły - przykładowy widok zakładki Badania {#fig-beehive-details-examination-list}
 
@@ -1376,7 +1390,7 @@ Figure: Zakładka Szczegóły - przykładowy widok zakładki Badania {#fig-beehi
 
 #### 4.5 Próbki
 
-W zakładce *Próbki* znajdziesz listę wszystkich zarejestrowanych próbek dla konkretnego ula ([](#fig-apiary-settings-3)).
+W zakładce *Próbki* znajdziesz listę wszystkich zarejestrowanych próbek dla konkretnego ula ([](#fig-beehive-details-sample-list)).
 
 Figure: Zakładka Szczegóły - przykładowy widok zakładki Próbki {#fig-beehive-details-sample-list}
 
@@ -1393,7 +1407,7 @@ Zakładka *FrameSense* prezentuje historię analiz AI ramek pszczelich, wykonany
 
 **Najważniejsze informacje:**
 
-- **Lista analiz** – pokazuje każdą analizę ramki wraz ze statusem: *Analizowanie ramki*, *Analiza zakończona* lub *Nieudana*.
+- **Lista analiz** – pokazuje każdą analizę ramki wraz ze statusem: *Analizujemy*, *Analiza zakończona* lub *Analiza nie powiodła się*.
 - **Szczegóły analizy** – po otwarciu zakończonej analizy wyświetlane jest przesłane zdjęcie z oznaczeniami poszczególnych elementów oraz podsumowanie zawartości plastra, obejmujące udział czerwiu, zapasów pokarmu oraz pustej i zasłoniętej powierzchni, a także spis pszczół oraz mateczniki. Poniżej znajduje się również sekcja z rekomendacjami, które pomogą Ci rozwiązać potencjalne problemy wykryte podczas analizy ramki oraz podjąć świadome decyzje i działania naprawcze. Zobacz [9. FrameSense](#analiza-ramki), aby dowiedzieć się więcej.
 
 <a id="omowienie-ustawien-pasieki"></a>
@@ -1422,8 +1436,7 @@ Figure: Widok Ustawienia pasieki - sekcja Szczegóły pasieki {#fig-apiary-setti
 
 **Najważniejsze informacje:**
 
-- **Nazwa pasieki** – wyświetlana jest pełna nazwa pasieki, identyfikująca ją w systemie.
-- **Skrót nazwy pasieki** – prezentowany jest skrócony zapis nazwy, używany w różnych widokach i raportach.
+- **Nazwa** – jedyne pole tej sekcji; wyświetlana jest pełna nazwa pasieki, identyfikująca ją w systemie. Litera widoczna na kafelku pasieki wylicza się automatycznie z pierwszej litery nazwy.
 
 #### 5.2 Hub
 
@@ -1481,9 +1494,9 @@ Figure: Widok Ustawienia ula - sekcja Informacje o matce {#fig-beehive-settings-
 
 **Najważniejsze informacje:**
 
-- **Rok wychowu matki** – prezentuje rok wylęgu matki pszczelej.
-- **Pochodzenie matki** – informacja o pochodzeniu matki, np. hodowla własna.
-- **Sposób unasiennienia** – wskazuje metodę unasiennienia matki, np. naturalna.
+- **Rok wychowu matki** – prezentuje rok wychowu matki pszczelej.
+- **Pochodzenie matki** – jedna z wartości: *Własna hodowla*, *Zakup krajowy*, *Zakup zagraniczny*, *Nieznane*.
+- **Sposób unasiennienia matki** – jedna z wartości: *Naturalny*, *Sztuczny*, *Nieznany*.
 
 #### 6.3 Wyposażenie
 
@@ -1495,9 +1508,11 @@ Figure: Widok Ustawienia ula - sekcja Wyposażenie {#fig-beehive-settings-device
 
 **Najważniejsze informacje:**
 
-- **Numer seryjny i kod potwierdzający** – unikalne numery seryjne oraz kody weryfikacyjne urządzeń pomiarowych Scale i VitalSensor.
+- **Trzy bloki urządzeń** – sekcja obejmuje **ColonyLink**, **VitalSensor** i **Scale**, w tej kolejności. Każdy blok ma pola *Numer seryjny* i *Kod potwierdzający*.
 
-- **Rozwinięcie szczegółów** – kliknięcie w wybrane urządzenie (VitalSensor/Scale) otwiera pełny widok z informacjami o stanie sprzętu w ulu ([](#fig-beehive-settings-scale)).
+- **Przyciski akcji** – przy VitalSensorze i Scale znajdziesz przyciski *Wymieniłem baterię* oraz *Odłącz VitalSensor* / *Odłącz Scale*. ColonyLink nie ma przycisku odłączania — można go wyłącznie podmienić, skanując kod innego urządzenia.
+
+- **Rozwinięcie szczegółów** – kliknięcie nazwy urządzenia otwiera pełny widok z informacjami o stanie sprzętu w ulu ([](#fig-beehive-settings-scale)).
 
 - **Szczegóły urządzenia** – po kliknięciu w dane urządzenie wyświetlane są:
 
@@ -1576,13 +1591,13 @@ Ikony stanu zdrowia informują o kondycji rodziny pszczelej w poszczególnych ul
 | Ikona | Występowanie | Znaczenie |
 | :----------- | :---------------- | :--------- |
 | ![](pictures/state_healthy_family.png) | kafelek z pasieką (zakładka Pasieki) | **Rodzina zdrowa** | Co najmniej jeden ul ma wiarygodne dane z urządzenia VitalSensor (poza okresem *Zbieramy dane*). Rodzina pszczela w tej pasiece jest zdrowa. W żadnym ulu w tej pasiece nie wykryto zagrożenia.| 
-| ![](pictures/state_danger.png) | kafelek z pasieką (zakładka Pasieki) | **Zagrożenie** - rodzina pszczela w tej pasiece jest zagrożona. W co najmniej jednym ulu w tej pasiece będącym poza okresem *Zbieramy dane* wykryto zagrożenie w postaci choroby. |
+| ![](pictures/state_danger.png) | kafelek z pasieką (zakładka Pasieki) | **Zagrożony** - rodzina pszczela w tej pasiece jest zagrożona. W co najmniej jednym ulu w tej pasiece będącym poza okresem *Zbieramy dane* wykryto zagrożenie w postaci choroby. |
 | ![](pictures/apiary_statuses_collect_data_chip.png)  | kafelek z pasieką (zakładka Pasieki), kafelek z ulem (zakładka Ule) | **Zbieramy dane na kafelku z pasieką** -  oznacza, że wszystkie urządzenia typu VitalSensor w pasiece są w okresie zbierania  danych o zdrowiu rodziny (pierwsze ok. 3 dni od przypisania), trwa pierwsza analiza AI - system zbiera dane, ale model nie ma jeszcze wystarczającej historii, aby wiarygodnie ocenić stan zdrowia rodziny. **Zbieramy dane na kafelku z ulem** - występuje na ulu, do którego przypisany jest VitalSensor znajdujący się w okresie zbierania danych o zdrowiu rodziny (analogicznie jak w przypadku pasieki)|
 | ![](pictures/apiary_statuses_collect_data.png) | kafelek pasieki (zakładka Pasieki) | *Zbieramy dane o zdrowiu X z Y uli…* - oznacza, że w co najmniej jednym ulu w pasiece istnieje VitalSensor, który wciąż jest w okresie zbierania danych o zdrowiu rodziny. Przykład: w pasiece jest 5 uli, w 4 z nich od dłuższego czasu jest VitalSensor i każdy z nich wskazuje, że rodzina jest zdrowa. Do 1 ula VitalSensor został przypisany dzisiaj. Na kafelku z pasieką zobaczysz mniejszy kafelek *Rodzina zdrowa* i informację *Zbieramy dane o zdrowiu 1 z 5 uli.* |
 | Brak kafelka o stanie zdrowia | kafelek pasieki (zakładka Pasieki), kafelek ula (zakładka Ule) | Pasieka bez Huba lub pasieka z Hubem, ale w żadnym ulu w tej pasiece nie ma urządzeń typu VitalSensor. System nie ma podstaw do oceny zdrowia rodziny. |
 | ![](pictures/beehive_statuses_health_family.png) | kafelek ula - wiersz *Stan rodziny*, zakładka *Stan ula* w *Szczegóły* | **Zdrowa** - VitalSensor poza okresem zbierania danych; model nie wykrył choroby. Rodzina w tym ulu uznana za zdrową. |
 | ![](pictures/statuses_disease_low.png) | kafelek ula (zakładka Ule)| Nazwa choroby na żółtym tle - wykryto chorobę w ulu o niskim/umiarkowanym poziomie porażenia. Nazwa choroby na czerwonym tle - wykryto chorobę w ulu o wysokim poziomie porażenia. *+N obok nazwy choroby* - oznacza, że w ulu wykryto więcej niż jedną chorobę. |
-| ![](pictures/state_no_data.png) | kafelek pasieki (zakładka Pasieki), kafelek ula (zakładka Ule) | **Brak danych** - oznacza, że system nie może ocenić stanu zdrowia rodziny pszczelej (na kafelku z ulem dotyczy danych z konkretnego VitalSensora, na kafelku z pasieką odnosi się do wszystkich urządzeń typu VitalSensor w tej pasiece). Przykładowo może wystąpić gdy VitalSensor był w okresie zbierania danych, ale nagle przestał komunikować się z Hubem i dane nie zdążyły zostać zebrane oraz przeanalizowane przez model AI. |
+| ![](pictures/state_no_data.png) | wiersz *Rodzina* w zakładce *Stan ula* | **Brak danych** - oznacza, że system nie może ocenić stanu zdrowia rodziny pszczelej. Przykładowo może wystąpić, gdy VitalSensor był w okresie zbierania danych, ale nagle przestał komunikować się z Hubem i dane nie zdążyły zostać zebrane oraz przeanalizowane przez model AI. Na kafelkach pasieki i ula w takiej sytuacji **nie pojawia się żaden kafelek stanu zdrowia** — patrz wiersz „Brak kafelka o stanie zdrowia" wyżej. |
 | ![](pictures/varroa_low.png) | m.in. *Szczegóły*, *Mapa* | Ikona choroby — Warroza.  Wykryto chorobę (Warroza) o niskim poziomie porażenia. |
 | ![](pictures/nosema_high.png) | m.in. *Szczegóły*, *Mapa* | Ikona choroby — Nosemoza. Wykryto chorobę (Nosemoza) o wysokim poziomie porażenia. Sprawdź zalecenia w zakładce *Problemy*. |
 
@@ -1628,6 +1643,7 @@ Ikony stanu urządzeń Apisense wskazują aktualny status pracy: jakość połą
 | ![](pictures/statuses_waiting_for_connection.png) | kafelek ula (zakładka Ule) | **Czekamy na połączenie** - oznacza, że czekamy na kontakt urządzenia z Hubem. |
 | ![](pictures/statuses_connection_lost_ble.png)| kafelek ula (zakładka Ule) | **Brak połączenia** - urządzenie przestało komunikować się z Hubem. |
 |  | kafelek ula (zakładka Ule) | **Bateria wyczerpana** - Ostatni znany stan baterii: rozładowana. Należy wymienić baterię urządzenia. |
+|  | kafelek ula (zakładka Ule) | **Urządzenie połączone — czekamy na pierwszy pomiar** - urządzenie zgłosiło się do Huba, ale nie przysłało jeszcze żadnego pomiaru. Ten stan zobaczysz zaraz po podpięciu Scale lub VitalSensora do ula. |
 
 #### 7.5 Oznaczenia kolorystyczne
 
@@ -1659,7 +1675,7 @@ Ikony nawigacyjne służą do poruszania się pomiędzy widokami i funkcjami apl
 
 | Ikona                           | Występowanie                                               | Znaczenie                                                                                                          |
 | :------------------------------ | :--------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
-| ![](pictures/logout.png)        | różne widoki, m.in. zakładka Pasieki - prawy górny róg ekranu | Przycisk służący do wylogowania się z systemu.                                                                     |
+| ![](pictures/logout.png)        | menu **⋮** w prawym górnym rogu ekranu | Pozycja *Wyloguj* w menu **⋮**, służąca do wylogowania się z systemu. Nie jest to osobna ikona na pasku — menu zawiera także *Dodaj sugestię* i *Ustawienia*. |
 | ![](pictures/previous_view.png) | różne widoki - lewy górny róg ekranu                       | Przycisk służący do przejścia do poprzedniego widoku (przycisk Wstecz), np. z zakładki *Ule* do *Pasieki*.         |
 | ![](pictures/next_button.png)   | różne widoki m.in. formularz chorobowy, Dodaj przegląd    | Przycisk służący do przejścia do następnego widoku (przycisk Dalej), np. przejście do kolejnego pytania przeglądu lub formularza chorobowego. |
 
@@ -2153,7 +2169,7 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 > [Dodawanie badania](#41-dodawanie-badania)
 
-- **Dodawanie analizy ramki:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Z dolnego menu wybierz *Dodaj... -> FrameSense*. Umieść ramkę w obrysie widoku aparatu, zrób lub wgraj jedno zdjęcie ramki pszczelej i kliknij *Wyślij do analizy*. Wynik (*Analizowanie ramki* / *Analiza zakończona* / *Nieudana*) śledź w zakładce *FrameSense*. Wejdź w szczegóły analizy i sprawdź podsumowanie oraz rekomendacje.
+- **Dodawanie analizy ramki:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Z dolnego menu wybierz *Dodaj... -> FrameSense*. Umieść ramkę w obrysie widoku aparatu, zrób lub wgraj jedno zdjęcie ramki pszczelej i kliknij *Wyślij do analizy*. Wynik (*Analizujemy* / *Analiza zakończona* / *Analiza nie powiodła się*) śledź w zakładce *FrameSense*. Wejdź w szczegóły analizy i sprawdź podsumowanie oraz rekomendacje.
 
 > [FrameSense](#analiza-ramki)
 

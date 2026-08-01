@@ -1200,9 +1200,9 @@ Results of submitted bee frame analyses are available in the *FrameSense* tab (*
 
 Possible statuses:
 
-- **Analysing frame** — the photo has been sent for analysis and is being processed by AI (about 5 minutes).
+- **Analysing** — the photo has been sent for analysis and is being processed by AI (about 5 minutes).
 - **Analysis completed** — the frame analysis finished successfully. You can now see the color-annotated photo with the percentage share of each comb category: **Brood** (eggs, larvae, worker and drone brood), **Stores** (nectar, pollen, capped honey) and **Empty/obscured** area, as well as the number of queen cells/cups found and a bee count. The analysis result consists of several views of the same submitted photo. Each view marks different analyzed elements with corresponding descriptions. Swipe through the photos to see successive analysis results. Tapping a photo opens it in fullscreen mode. Below the analysis results is a *Recommendations* section with practical tips and suggested actions based on the AI analysis. They help identify potential problems and make informed decisions about next steps.
-- **Failed** — the analysis could not be completed. Try adding a bee frame photo again and sending it for analysis.
+- **Analysis failed** — the analysis could not be completed. Try adding a bee frame photo again and sending it for analysis.
 
 When a bee frame analysis is completed, a push notification is sent that opens its result directly when tapped.
 
@@ -1230,7 +1230,9 @@ Figure: Apiaries tab - sample apiary view {#fig-apiaries-2}
 
 - The following information is displayed on each apiary tile:
 
-    - apiary name with its abbreviation,
+    - apiary name with the letter derived from the first letter of the name,
+
+    - apiary location (town) below the name,
 
     - Apisense Hub battery level,
 
@@ -1241,6 +1243,10 @@ Figure: Apiaries tab - sample apiary view {#fig-apiaries-2}
     - number of active hives - the number of hives that have at least one device (Scale, VitalSensor) communicating correctly with the Apisense Hub,
 
     - bee colony status - indicating whether the colony in the apiary is fully healthy or whether a threat has been detected in any hive,
+
+    - the Asian hornet icon with the status of the last observation (see [6. Asian hornet observation](#obserwacja-szerszenia)),
+
+    - a *No connection* badge if this apiary's Hub is offline,
 
     More information on interpreting the individual statuses can be found in chapter [7. Interpretation of statuses, measurements, icons, colors at individual stages](#interpretacja-statusow)
 
@@ -1283,13 +1289,17 @@ Figure: Hives tab - sample view of the hive list {#fig-beehives-beehive-with-pro
 
 - Each hive tile consists of the following elements:
 
-    - hive name with an icon in the color corresponding to the year the queen was raised,
+    - hive name and its code, with an icon in the color corresponding to the year the queen was raised,
 
-    - bee colony status - indicating whether the colony in the given hive is healthy or whether a threat has been detected,
+    - *Colony state* - indicating whether the colony in the given hive is healthy or whether a threat has been detected,
 
-    - current temperature inside the hive,
+    - *Temperature in hive* - the current temperature inside the hive,
 
-    - current hive weight together with honey gain,
+    - *Weight + gain* - the current hive weight together with honey gain,
+
+    - *Colony strength* - this row is always shown; until there is data, the value reads "-",
+
+    - an indicator for a task scheduled within the next 10 days,
 
     - additional icons related to specific events in the hive, e.g. a red battery icon indicating low battery level.
 
@@ -1306,20 +1316,24 @@ The hive *Details* view enables you to monitor measurement data coming from the 
 
 The *Details* view is divided into several smaller tabs:
 
-- Hive status
-- Inspection
-- Notes
-- More:
-  - Examinations
-  - Samples
-  - FrameSense
+- *Hive state*
+- *Inspection*
+- *FrameSense*
+- *More*:
+    - *Notes*
+    - *Tasks*
+    - *Examinations*
+    - *Samples*
+
+!!! Note
+    The split into two groups appears only when there are more than five content tabs. With five or fewer (for example when the hive has no VitalSensor, or your plan does not cover examinations or FrameSense), they all fit into a single bar and the *More* tab does not appear at all. Tapping *More* switches the bar between the two groups.
 
 
-#### 4.1 Hive status
+#### 4.1 Hive state
 
-The *Hive status* tab presents the most important, current information about the condition of the bee colony and conditions inside the hive ([](#fig-behive-details-2)), determined on the basis of measurement data from the monitoring devices.
+The *Hive state* tab presents the most important, current information about the condition of the bee colony and conditions inside the hive ([](#fig-behive-details-2)), determined on the basis of measurement data from the monitoring devices.
 
-Figure: Details tab - sample view of the Hive status tab {#fig-behive-details-2}
+Figure: Details tab - sample view of the Hive state tab {#fig-behive-details-2}
 
 ![figure](pictures/behive_details_2.png){width=200}
 
@@ -1367,7 +1381,7 @@ Figure: Details tab - sample view of the Notes tab {#fig-beehive-details-notes-l
 
 #### 4.4 Examinations
 
-The *Examinations* tab presents in a clear way a list of all performed and saved examinations ([](#fig-apiary-settings-3)) carried out for the chosen hive. Thanks to this, the user can quickly check the analysis history and return to earlier results.
+The *Examinations* tab presents in a clear way a list of all performed and saved examinations ([](#fig-beehive-details-examination-list)) carried out for the chosen hive. Thanks to this, the user can quickly check the analysis history and return to earlier results.
 
 Figure: Details tab - sample view of the Examinations tab {#fig-beehive-details-examination-list}
 
@@ -1380,7 +1394,7 @@ Figure: Details tab - sample view of the Examinations tab {#fig-beehive-details-
 
 #### 4.5 Samples
 
-In the *Samples* tab you will find a list of all registered samples for a specific hive ([](#fig-apiary-settings-3)).
+In the *Samples* tab you will find a list of all registered samples for a specific hive ([](#fig-beehive-details-sample-list)).
 
 Figure: Details tab - sample view of the Samples tab {#fig-beehive-details-sample-list}
 
@@ -1397,7 +1411,7 @@ The *FrameSense* tab presents the history of AI analyses of bee frames performed
 
 **Most important information:**
 
-- **Analysis list** – shows every frame analysis with its status: *Analysing frame*, *Analysis completed* or *Failed*.
+- **Analysis list** – shows every frame analysis with its status: *Analysing*, *Analysis completed* or *Analysis failed*.
 - **Analysis details** – after opening a completed analysis, the submitted photo with marked elements and a comb contents summary are displayed, including brood, food stores, empty and obscured area, as well as a bee count and queen cells. Below there is also a recommendations section that helps you address potential problems detected during the frame analysis and take informed corrective actions. See [9. FrameSense](#analiza-ramki) for details.
 
 <a id="omowienie-ustawien-pasieki"></a>
@@ -1426,8 +1440,7 @@ Figure: Apiary settings view - Apiary details section {#fig-apiary-settings-deta
 
 **Most important information:**
 
-- **Apiary name** – the full apiary name, identifying it in the system, is displayed.
-- **Apiary name abbreviation** – a shortened form of the name is presented, used in various views and reports.
+- **Name** – the only field in this section; the full apiary name, identifying it in the system, is displayed. The letter shown on the apiary tile is derived automatically from the first letter of the name.
 
 #### 5.2 Hub
 
@@ -1485,9 +1498,9 @@ Figure: Hive settings view - Queen information section {#fig-beehive-settings-qu
 
 **Most important information:**
 
-- **Year the queen was raised** – presents the year the queen bee hatched.
-- **Queen origin** – information about the queen's origin, e.g. own breeding.
-- **Insemination method** – indicates the method of queen insemination, e.g. natural.
+- **Queen breeding year** – presents the year the queen bee was raised.
+- **Queen origin** – one of: *Own breeding*, *Purchase domestic*, *Purchase foreign*, *Unknown*.
+- **Queen insemination method** – one of: *Natural*, *Artificial*, *Unknown*.
 
 #### 6.3 Equipment
 
@@ -1499,9 +1512,11 @@ Figure: Hive settings view - Equipment section {#fig-beehive-settings-devices}
 
 **Most important information:**
 
-- **Serial number and confirmation code** – the unique serial numbers and verification codes of the Scale and VitalSensor measurement devices.
+- **Three device blocks** – the section covers **ColonyLink**, **VitalSensor** and **Scale**, in that order. Each block has a *Serial number* and a *Confirmation code* field.
 
-- **Expand details** – clicking the chosen device (VitalSensor/Scale) opens the full view with information about the equipment status in the hive ([](#fig-beehive-settings-scale)).
+- **Action buttons** – the VitalSensor and Scale blocks have an *I replaced the battery* button and a *Disconnect VitalSensor* / *Disconnect Scale* button. ColonyLink has no disconnect button — it can only be swapped, by scanning the code of another device.
+
+- **Expand details** – clicking the device name opens the full view with information about the equipment status in the hive ([](#fig-beehive-settings-scale)).
 
 - **Device details** – after clicking a given device, the following are displayed:
 
@@ -1583,9 +1598,9 @@ Colony health icons inform about the condition of bee colonies in individual hiv
 | ![](pictures/apiary_statuses_collect_data_chip.png) | apiary tile (Apiaries tab), hive tile (Hives tab) | **Collecting data on the apiary tile** — means that all VitalSensor devices in the apiary are in the colony health data collection period (first ~3 days after assignment); the first AI analysis is in progress — the system is collecting data, but the model does not yet have enough history to reliably assess colony health. **Collecting data on the hive tile** — appears on a hive with an assigned VitalSensor that is in the colony health data collection period (analogous to the apiary case). |
 | ![](pictures/apiary_statuses_collect_data.png) | apiary tile (Apiaries tab) | *Collecting health data for X of Y hives…* — means that at least one hive in the apiary has a VitalSensor that is still in the colony health data collection period. Example: there are 5 hives in the apiary; 4 of them have had a VitalSensor for a longer time and each indicates a healthy colony. A VitalSensor was assigned to the 5th hive today. On the apiary tile you will see a smaller *Healthy colony* chip and the message *Collecting health data for 1 of 5 hives.* |
 | No health status chip | apiary tile (Apiaries tab), hive tile (Hives tab) | Apiary without a Hub, or apiary with a Hub but no VitalSensor devices in any hive in this apiary. The system has no basis to assess colony health. |
-| ![](pictures/beehive_statuses_health_family.png) | hive tile — *Colony state* row, *Hive status* tab in *Details* | **Healthy** — VitalSensor outside the data collection period; the model detected no disease. The colony in this hive is considered healthy. |
+| ![](pictures/beehive_statuses_health_family.png) | hive tile — *Colony state* row, *Hive state* tab in *Details* | **Healthy** — VitalSensor outside the data collection period; the model detected no disease. The colony in this hive is considered healthy. |
 | ![](pictures/statuses_disease_low.png) | hive tile (Hives tab) | Disease name on a yellow background — disease detected at low/moderate infestation level. Disease name on a red background — disease detected at high infestation level. *+N next to the disease name* — means that more than one disease was detected in the hive. |
-| ![](pictures/state_no_data.png) | apiary tile (Apiaries tab), hive tile (Hives tab) | **No data** — means that the system cannot assess the health of the bee colony (on the hive tile this concerns data from a specific VitalSensor; on the apiary tile it refers to all VitalSensor devices in this apiary). For example, it may occur when a VitalSensor was in the data collection period but suddenly stopped communicating with the Hub and the data were not collected and analysed by the AI model in time. |
+| ![](pictures/state_no_data.png) | the *Colony* row in the *Hive state* tab | **No data** — means that the system cannot assess the health of the bee colony. For example, it may occur when a VitalSensor was in the data collection period but suddenly stopped communicating with the Hub and the data were not collected and analysed by the AI model in time. On the apiary and hive tiles, **no health chip is shown at all** in this situation — see the "No health status chip" row above. |
 | ![](pictures/varroa_low.png) | e.g. *Details*, *Map* | Disease icon — Varroa. Disease detected (Varroa) at low infestation level. |
 | ![](pictures/nosema_high.png) | e.g. *Details*, *Map* | Disease icon — Nosema. Disease detected (Nosema) at high infestation level. Check recommendations in the *Problems* tab. |
 
@@ -1631,6 +1646,7 @@ Apisense device status icons indicate the current operating status: connection q
 | ![](pictures/statuses_waiting_for_connection.png) | hive tile (Hives tab) | **Awaiting connection** — waiting for the device to contact the Hub. |
 | ![](pictures/statuses_connection_lost_ble.png) | hive tile (Hives tab) | **No connection** — the device stopped communicating with the Hub. |
 |  | hive tile (Hives tab) | **Battery depleted** — last known battery state: dead. Replace the device battery. |
+|  | hive tile (Hives tab) | **Device connected — waiting for the first measurement** — the device has reported to the Hub but has not sent any measurement yet. You will see this state right after linking a Scale or VitalSensor to a hive. |
 
 #### 7.5 Color coding
 
@@ -1640,7 +1656,7 @@ Color coding makes it easier to quickly recognize statuses, categories and impor
 | :-------------------------------------- | :------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![](pictures/beehive_color.png)         | hive interior (Details tab)            | The hive background color together with the icon (a colored circle) corresponds to the color assigned to the year the queen was raised.                                                              |
 | ![](pictures/add_task_button.png)       | various views including Notes, Inspections | The yellow color in the app means choice confirmation, the option to perform an action - often visible on buttons.                                                                                  |
-| ![](pictures/red_color.png)             | various views including Hive status    | The red color in the app indicates the occurrence of a negative phenomenon, exceeding the expected parameter values, notifications and warnings (does not apply to the hive background in the Details tab). |
+| ![](pictures/red_color.png)             | various views including Hive state    | The red color in the app indicates the occurrence of a negative phenomenon, exceeding the expected parameter values, notifications and warnings (does not apply to the hive background in the Details tab). |
 | ![](pictures/state_beehive_healthy.png) | various views including the hive tile  | The green color in the app informs that everything is fine, indicates neutrality or a positive effect.                                                                                              |
 
 #### 7.6 Actions
@@ -1662,7 +1678,7 @@ Navigation icons are used to move between views and app functions.
 
 | Icon                            | Where it appears                                                  | Meaning                                                                                                          |
 | :------------------------------ | :---------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------- |
-| ![](pictures/logout.png)        | various views, including Apiaries tab - upper right corner of the screen | Button used to log out of the system.                                                                            |
+| ![](pictures/logout.png)        | the **⋮** menu in the upper right corner of the screen | The *Sign Out* item in the **⋮** menu, used to log out of the system. It is not a separate icon in the bar — the menu also holds *Send feedback* and *Settings*. |
 | ![](pictures/previous_view.png) | various views - upper left corner of the screen                   | Button used to go to the previous view (Back button), e.g. from the *Hives* tab to *Apiaries*.                   |
 | ![](pictures/next_button.png)   | various views including disease questionnaire, Add inspection      | Button used to go to the next view (Next button), e.g. moving on to the next inspection or disease questionnaire question.                |
 
@@ -1723,7 +1739,7 @@ Most important information:
 - **Weight changes over time** allow you to observe the intensity of nectar flows and the activity of forager bees.
 - **Weight drops** can indicate the use of stores, swarming or periods of weaker nectar flow.
 - **Weight chart analysis** enables you to assess the dynamics of bee colony development, seasonal honey production and is key to planning honey harvesting.
-- **Scale tare** — you can zero the scale to track net weight gain or loss from a chosen moment. In the *Weight* section of *Hive status*, on the weight chart tap the *Tare* button and choose:
+- **Scale tare** — you can zero the scale to track net weight gain or loss from a chosen moment. In the *Weight* section of *Hive state*, on the weight chart tap the *Tare* button and choose:
     - **Tare now** — zero using the latest reading.
     - **Tare at point** — zero from any moment; after choosing this option, tap the corresponding point directly on the weight chart.
 
@@ -1771,7 +1787,7 @@ Figure: Hive Details view - sample parameter values and weight chart {#fig-beehi
 
 - From the *Apiaries* tab (the start view shown right after logging in to the Apisense app) go to the *Hives* tab. To do so, click the tile of the chosen apiary.
 - From the *Hives* tab go to the *Details* tab. To do so, click the tile of the chosen hive.
-- Make sure you are in the *Details* tab (highlighted in the bottom menu), *Hive status* sub-tab (underlined in the top menu). The charts are located in the *Weight* and *Conditions* sections.
+- Make sure you are in the *Details* tab (highlighted in the bottom menu), *Hive state* sub-tab (underlined in the top menu). The charts are located in the *Weight* and *Conditions* sections.
 - The chart will be displayed ([](#fig-beehive-details-with-chart-2)) after clicking any header chosen from the sections listed above (e.g. Current weight from the *Weight* section).
 
 #### 1.2 Available charts
@@ -1829,7 +1845,7 @@ Figure: Hive Details view - weight chart with overlaid trend {#fig-beehive-detai
 
 - From the *Apiaries* tab (the start view shown right after logging in to the Apisense app) go to the *Hives* tab. To do so, click the tile of the chosen apiary.
 - From the *Hives* tab go to the *Details* tab. To do so, click the tile of the chosen hive.
-- Make sure you are in the *Details* tab (highlighted in the bottom menu), *Hive status* sub-tab (underlined in the top menu). Trends are located in the *Weight* and *Conditions* sections.
+- Make sure you are in the *Details* tab (highlighted in the bottom menu), *Hive state* sub-tab (underlined in the top menu). Trends are located in the *Weight* and *Conditions* sections.
 - Click the header with any parameter chosen from the sections listed above (e.g. Current weight from the *Weight* section).
 - Below the chart there is a *Show trend* toggle, which is disabled by default. To display the trend on the chosen chart, click this toggle. After it is activated, an additional line will appear on the chart, showing the general direction of changes of the analyzed parameter.
 
@@ -2154,7 +2170,7 @@ Below you will find a summary of the most important activities in the Apisense P
 
 > [Adding an examination](#41-adding-an-examination)
 
-- **Adding a frame analysis:** Click the chosen apiary tile. Click the chosen hive tile. From the bottom menu choose *Add... -> FrameSense*. Position the frame inside the camera outline, take or upload one photo of the bee frame and click *Send for analysis*. Track the result (*Analysing frame* / *Analysis completed* / *Failed*) in the *FrameSense* tab. Open the analysis details and review the summary and recommendations.
+- **Adding a frame analysis:** Click the chosen apiary tile. Click the chosen hive tile. From the bottom menu choose *Add... -> FrameSense*. Position the frame inside the camera outline, take or upload one photo of the bee frame and click *Send for analysis*. Track the result (*Analysing* / *Analysis completed* / *Analysis failed*) in the *FrameSense* tab. Open the analysis details and review the summary and recommendations.
 
 > [FrameSense](#analiza-ramki)
 
@@ -2182,15 +2198,15 @@ Below you will find a summary of the most important activities in the Apisense P
 
 ### 5. Monitoring and data analysis
 
-- **Parameters (temperature, humidity, pressure, weight, honey gain):** Click the chosen apiary tile. Click the chosen hive tile. The current values are visible in the hive *Details* tab, *Hive status* sub-tab, in the *Weight* and *Conditions* sections.
+- **Parameters (temperature, humidity, pressure, weight, honey gain):** Click the chosen apiary tile. Click the chosen hive tile. The current values are visible in the hive *Details* tab, *Hive state* sub-tab, in the *Weight* and *Conditions* sections.
 
 > [Parameter monitoring](#monitorowanie-parametrow)
 
-- **Charts:** Click the chosen apiary tile. Click the chosen hive tile. In the *Details* -> *Hive status* tab expand the *Weight* or *Conditions* section and click the chosen parameter to see the chart in the chosen time interval (24 h, 7 days, 1–6 months). Tap *Fullscreen* to enlarge the chart, then pinch/drag or use the on-screen buttons to zoom and pan and display precise measurements.
+- **Charts:** Click the chosen apiary tile. Click the chosen hive tile. In the *Details* -> *Hive state* tab expand the *Weight* or *Conditions* section and click the chosen parameter to see the chart in the chosen time interval (24 h, 7 days, 1–6 months). Tap *Fullscreen* to enlarge the chart, then pinch/drag or use the on-screen buttons to zoom and pan and display precise measurements.
 
 > [Data visualization on charts](#1-data-visualization-on-charts)
 
-- **Trends:** Click the chosen apiary tile. Click the chosen hive tile. In the *Details* -> *Hive status* tab expand the *Weight* or *Conditions* section and click the chosen parameter to display the chart. On the chart screen turn on the *Show trend* toggle.
+- **Trends:** Click the chosen apiary tile. Click the chosen hive tile. In the *Details* -> *Hive state* tab expand the *Weight* or *Conditions* section and click the chosen parameter to display the chart. On the chart screen turn on the *Show trend* toggle.
 
 > [Trends](#2-trends)
 
