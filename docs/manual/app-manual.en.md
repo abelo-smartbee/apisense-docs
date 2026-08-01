@@ -1696,7 +1696,7 @@ The system enables continuous monitoring of the most important environmental and
 The data presented in the system can be displayed in the form of **current values, charts of changes over time and summaries**, which makes it easy to track trends and analyze bee colony behavior over a longer period.
 
 !!! Note "Availability depends on your plan"
-    The *Weight* and *Conditions* sections in the *Hive state* tab are shown only when your plan covers device data. Without that entitlement, *Hive state* keeps only the *Health* section, and this whole chapter — along with [Data analysis and reports](#analiza-danych-i-raporty) — does not apply to such an account.
+    The *Weight* and *Conditions* sections in the *Hive state* tab are shown only when your plan covers device data. Without that entitlement, *Hive state* keeps only the *Health* section, and this whole chapter — along with [Data analysis and reports](#data-analysis-and-reports) — does not apply to such an account.
 
     If a **Pro AI plan has expired**, the measurement history freezes at the expiry date: current readings show **Locked** instead of a value, the end of the chart is greyed out, the Min/Max legend disappears and the message *Unlock current data with Pro AI* appears above it. This is not a device fault — data keeps being collected and shows up once the plan is renewed.
 
