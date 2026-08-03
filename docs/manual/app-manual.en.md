@@ -64,9 +64,8 @@ Figure: Registering with the Apisense Pro AI System - example of correctly fille
 
     - At least 8 characters
     - At least 1 uppercase letter
+    - At least 1 digit
     - At least 1 special character (e.g. #, $, %, \_)
-
-    The app shows these requirements in short under the password field: *Min. 8 characters, uppercase letter and special character*.
 
     Then enter the same password again in the *Repeat password* field and proceed to the next step by clicking *Next*.
 
@@ -195,8 +194,8 @@ Figure: Apiary settings view {#fig-apiary-settings}
 
 - The *Apiary settings* view is divided into 2 sections. To update the information in a given section, click its header. Available sections:
 
-    - **Apiary details** - this section contains a single field: **Name**. Click it and enter the changes. The letter on the apiary card is derived automatically from the first letter of the name — there is no separate short-name field.
-    - **Hub** - this section concerns parameters related to the Apisense Hub device. The information in this section cannot be edited.
+    - **Apiary details** - this section contains a single field: **Name**. Click it and enter the changes. There is no separate short-name field — the apiary card is marked with a fixed apiary icon, the same for every apiary.
+    - **Hub** - this section concerns the Apisense Hub assigned to the apiary. The Hub can be **swapped** here: tap the QR code icon next to the serial number, scan the code from the new device and save. The remaining information (confirmation code, LTE, battery, last report, hardware and software versions) is read-only.
 
 - To save your changes, click the **✓** button in the lower right corner of the screen ([](#fig-apiary-settings-details)). The button only becomes active once you change a value; the neighbouring **⊗** button closes the screen without saving.
 
@@ -401,9 +400,12 @@ Figure: Hive settings view {#fig-beehive-settings}
         - **ColonyLink** has no disconnect button — it can only be swapped, by scanning the code of a different ColonyLink.
         - **VitalSensor** and **Scale** have an *I replaced the battery* button and a *Disconnect VitalSensor* / *Disconnect Scale* button.
 
-        Clicking *Disconnect VitalSensor* / *Disconnect Scale* opens a confirmation screen (*Disconnect VitalSensor?* / *Disconnect Scale?*) with *Disconnect* and *Don't disconnect* buttons for the VitalSensor, and *Disconnect Scale* and *Don't disconnect Scale* for the Scale ([](#fig-beehive-settings-devices-edit)). The measurement history of the disconnected device is preserved by default — past data stays available on charts until the hive is deleted. To clear it, switch off the *Keep … history* toggle before confirming.
+        Clicking *Disconnect VitalSensor* / *Disconnect Scale* opens a confirmation screen (*Disconnect VitalSensor?* / *Disconnect Scale?*) with *Disconnect* and *Don't disconnect* buttons for the VitalSensor, and *Disconnect Scale* and *Don't disconnect Scale* for the Scale ([](#fig-beehive-settings-devices-edit)). The *Keep … history* toggle decides whether the measurement data of the disconnected device stays in the system. It is kept by default; switching the toggle off before confirming deletes it permanently.
 
-        The *I replaced the battery* button reports a battery swap for that device — the app refreshes the configuration and confirms with the *Battery replacement confirmed* message.
+        !!! Note
+            The preserved history is **currently not visible on the charts**. After a device is disconnected, the *Weight* and *Conditions* rows show *No Scale* / *No VitalSensor* and the charts cannot be expanded. The data returns to the charts only once the device is linked to the hive again.
+
+        Tap *I replaced the battery* right after you put the new batteries in. The app then refreshes the Hub configuration and confirms with the *Battery replacement confirmed* message and the note *Configuration refreshed — the device will reconnect on the next sync*. Thanks to this the device is back among the correctly reporting ones at the next measurement — you do not have to wait for it to find its own way back.
 
     !!! Note
         The *Equipment* section is not available if the apiary does not have an **Apisense Hub** assigned.
@@ -1233,7 +1235,7 @@ Figure: Apiaries tab - sample apiary view {#fig-apiaries-2}
 
 - The following information is displayed on each apiary tile:
 
-    - apiary name with the letter derived from the first letter of the name,
+    - apiary name with a fixed apiary icon (the same for every apiary),
 
     - apiary location (town) below the name,
 
@@ -1292,7 +1294,7 @@ Figure: Hives tab - sample view of the hive list {#fig-beehives-beehive-with-pro
 
 - Each hive tile consists of the following elements:
 
-    - hive name and its code, with an icon in the color corresponding to the year the queen was raised,
+    - hive name with a fixed hive icon (the same for every hive),
 
     - *Colony state* - indicating whether the colony in the given hive is healthy or whether a threat has been detected,
 
@@ -1443,7 +1445,7 @@ Figure: Apiary settings view - Apiary details section {#fig-apiary-settings-deta
 
 **Most important information:**
 
-- **Name** – the only field in this section; the full apiary name, identifying it in the system, is displayed. The letter shown on the apiary tile is derived automatically from the first letter of the name.
+- **Name** – the only field in this section; the full apiary name, identifying it in the system, is displayed. There is no separate short-name field, and the apiary tile is marked with a fixed icon.
 
 #### 5.2 Hub
 

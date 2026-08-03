@@ -57,9 +57,8 @@ Figure: Rejestracja do Systemu Apisense Pro AI - przykład poprawnie wypełniony
 
     - Co najmniej 8 znaków
     - Co najmniej 1 wielką literę
+    - Co najmniej 1 cyfrę
     - Co najmniej 1 znak specjalny (np. #, $, %, \_)
-
-    Pod polem hasła aplikacja wyświetla te wymagania w skrócie: *Min. 8 znaków, wielka litera i znak specjalny*.
 
     Następnie wpisz ponownie to samo hasło w pole *Powtórz hasło* i przejdź do kolejnego kroku klikając przycisk *Dalej*.
 
@@ -192,8 +191,8 @@ Figure: Widok Ustawienia pasieki {#fig-apiary-settings}
 
 - Widok *Ustawienia pasieki* jest podzielony na 2 sekcje. Aby zaktualizować informacje należące do danej sekcji, należy kliknąć w jej nagłówek. Dostępne sekcje:
 
-    - **Szczegóły pasieki** - sekcja zawiera jedno pole: **Nazwa**. Kliknij w nie i wprowadź zmiany. Litera na kafelku pasieki wylicza się automatycznie z pierwszej litery nazwy — nie ma osobnego pola na skrót.
-    - **Hub** - sekcja dotyczy parametrów związanych z urządzeniem Apisense Hub. Informacji zawartych w tej sekcji nie można edytować.
+    - **Szczegóły pasieki** - sekcja zawiera jedno pole: **Nazwa**. Kliknij w nie i wprowadź zmiany. Nie ma osobnego pola na skrót nazwy — kafelek pasieki oznaczany jest stałą ikoną pasieki, taką samą dla wszystkich pasiek.
+    - **Hub** - sekcja dotyczy urządzenia Apisense Hub przypisanego do pasieki. Hub można tu **podmienić**: kliknij ikonę kodu QR przy numerze seryjnym, zeskanuj kod z nowego urządzenia i zapisz zmianę. Pozostałe informacje (kod potwierdzający, LTE, bateria, ostatnie zgłoszenie, wersje sprzętowa i oprogramowania) są tylko do odczytu.
 
 - Aby zapisać wprowadzone zmiany kliknij przycisk z ikoną **✓** w prawym dolnym rogu ekranu ([](#fig-apiary-settings-details)). Przycisk staje się aktywny dopiero po zmianie wartości; sąsiedni przycisk **⊗** zamyka ekran bez zapisu.
 
@@ -398,9 +397,12 @@ Figure: Widok Ustawienia ula {#fig-beehive-settings}
         - **ColonyLink** nie ma przycisku odłączania — można go wyłącznie podmienić, skanując kod innego ColonyLinka.
         - **VitalSensor** i **Scale** mają przyciski *Wymieniłem baterię* oraz *Odłącz VitalSensor* / *Odłącz Scale*.
 
-        Po kliknięciu *Odłącz VitalSensor* / *Odłącz Scale* otwiera się ekran potwierdzenia (*Odłączyć VitalSensor?* / *Odłączyć Scale?*) z przyciskami *Odłącz* i *Nie odłączaj* przy VitalSensorze oraz *Odłącz Scale* i *Nie odłączaj Scale* przy Scale ([](#fig-beehive-settings-devices-edit)). Historia pomiarów odłączanego urządzenia zostaje domyślnie zachowana — przeszłe dane będą dostępne na wykresach, dopóki ul nie zostanie usunięty. Aby ją wyczyścić, wyłącz przełącznik *Zachowaj historię…* przed potwierdzeniem.
+        Po kliknięciu *Odłącz VitalSensor* / *Odłącz Scale* otwiera się ekran potwierdzenia (*Odłączyć VitalSensor?* / *Odłączyć Scale?*) z przyciskami *Odłącz* i *Nie odłączaj* przy VitalSensorze oraz *Odłącz Scale* i *Nie odłączaj Scale* przy Scale ([](#fig-beehive-settings-devices-edit)). Przełącznik *Zachowaj historię…* decyduje o tym, czy dane pomiarowe odłączanego urządzenia pozostaną w systemie. Domyślnie są zachowywane; wyłączenie przełącznika przed potwierdzeniem trwale je usuwa.
 
-        Przycisk *Wymieniłem baterię* zgłasza wymianę baterii w danym urządzeniu — aplikacja odświeża konfigurację i potwierdza komunikatem *Wymiana baterii potwierdzona*.
+        !!! note
+            Zachowana historia **nie jest obecnie widoczna na wykresach**. Po odłączeniu urządzenia wiersze *Waga* i *Warunki* pokazują *Brak Scale* / *Brak VitalSensor*, a wykresów nie da się rozwinąć. Dane wrócą na wykresy dopiero po ponownym powiązaniu urządzenia z ulem.
+
+        Przycisk *Wymieniłem baterię* zgłoś od razu po włożeniu nowych baterii. Aplikacja odświeża wtedy konfigurację Huba i potwierdza to komunikatem *Wymiana baterii potwierdzona* wraz z opisem *Konfiguracja odświeżona — urządzenie połączy się ponownie przy najbliższej synchronizacji*. Dzięki temu urządzenie wraca na listę poprawnie komunikujących się już przy kolejnym pomiarze — nie musisz czekać, aż samo się odnajdzie.
 
     !!! note
         Sekcja *Wyposażenie* nie jest dostępna, jeśli do pasieki nie jest przypisane urządzenie Apisense Hub.
@@ -1229,7 +1231,7 @@ Figure: Zakładka Pasieki - przykładowy widok pasiek {#fig-apiaries-2}
 
 - Na każdym kafelku pasieki są wyświetlane następujące informacje:
 
-    - nazwa pasieki wraz z literą wyliczoną z pierwszej litery nazwy,
+    - nazwa pasieki wraz ze stałą ikoną pasieki (taką samą dla wszystkich pasiek),
 
     - lokalizacja pasieki (miejscowość) pod nazwą,
 
@@ -1288,7 +1290,7 @@ Figure: Zakładka Ule - przykładowy widok listy uli {#fig-beehives-beehive-with
 
 - Każdy kafelek z ulem składa się z poniższych elementów:
 
-    - nazwa ula i jego kod, wraz z ikonką w kolorze odpowiednim dla roku wychowu matki,
+    - nazwa ula wraz ze stałą ikoną ula (taką samą dla wszystkich uli),
 
     - *Stan rodziny* - informujący o tym, czy rodzina w danym ulu jest zdrowa, czy wykryto zagrożenie,
 
@@ -1439,7 +1441,7 @@ Figure: Widok Ustawienia pasieki - sekcja Szczegóły pasieki {#fig-apiary-setti
 
 **Najważniejsze informacje:**
 
-- **Nazwa** – jedyne pole tej sekcji; wyświetlana jest pełna nazwa pasieki, identyfikująca ją w systemie. Litera widoczna na kafelku pasieki wylicza się automatycznie z pierwszej litery nazwy.
+- **Nazwa** – jedyne pole tej sekcji; wyświetlana jest pełna nazwa pasieki, identyfikująca ją w systemie. Nie ma osobnego pola na skrót nazwy, a kafelek pasieki oznaczany jest stałą ikoną.
 
 #### 5.2 Hub
 
