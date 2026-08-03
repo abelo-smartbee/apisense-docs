@@ -12,7 +12,17 @@ pip install -r requirements.txt
 
 mkdocs serve              # local dev server (http://127.0.0.1:8000)
 mkdocs build --strict     # same build CI runs; fails on broken links/refs
+
+python3 tools/check_anchors.py --against main      # in-page anchors
+python3 tools/check_image_refs.py --against main   # image-filename contract
 ```
+
+Run both checkers before opening a PR that moves headings or images. They cover
+two gaps the build leaves open: `mkdocs build --strict` reports a dangling
+in-page anchor at INFO level and builds anyway, and nothing here notices when an
+image is renamed — `apisense-mobile` keys its screenshot suite by image
+**filename**, so a rename breaks the next screenshot sync in that repo, days
+later, rather than this build.
 
 Deployment is automatic on push to `main` via `.github/workflows/deploy.yml` — no manual publish step.
 
@@ -36,6 +46,13 @@ Current page set: `index`, `overview/index` (system overview — what Apisense i
 
 This repo is configured for the Apisense skill pipeline. Config:
 `.claude/apisense-flow.json` (mode: `lib`, tracker: `github`). Durable domain
-docs live in `CONTEXT.md`, `dev-docs/adr/`, and `dev-docs/glossary.md` — these
-sit outside `docs/` on purpose, since `docs/` is the published public site root.
+docs live in `CONTEXT.md`, `dev-docs/adr/`, `dev-docs/glossary.md`, and
+`dev-docs/audyt-instrukcji.md` — these sit outside `docs/` on purpose, since
+`docs/` is the published public site root.
+
+Before updating `manual/app-manual.*` against the app, read
+`dev-docs/audyt-instrukcji.md`. It carries the verification protocol (an ARB
+value is not evidence that a label is rendered), the prod-vs-QA rule, and why
+the per-release `auto_docs` workflow in `apisense-mobile` does not remove the
+need for a periodic audit.
 Work items are tracked as GitHub Issues in `abelo-smartbee/apisense-docs`.
