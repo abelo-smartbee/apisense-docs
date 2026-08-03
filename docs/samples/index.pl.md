@@ -25,7 +25,7 @@ Dodatkowo: [Przegląd rodziny pszczelej](colony-inspection.md) — wymagane zdj�
 | **Daniel Bajorek** | +48 455 506 328 · [daniel.bajorek@apisense.ai](mailto:daniel.bajorek@apisense.ai) |
 | **Olga Janczak** | +48 455 505 069 · [olga.janczak@apisense.ai](mailto:olga.janczak@apisense.ai) |
 
-### Przesyłanie próbek / opieka naukowa
+### Przesyłanie próbek / opieka naukowa {#przesyłanie-próbek-opieka-naukowa}
 
 **dr Maciej Bryś**
 Uniwersytet Przyrodniczy w Lublinie

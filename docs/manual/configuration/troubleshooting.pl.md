@@ -17,7 +17,7 @@
 | 10  | Słaby sygnał z urządzeniami (BLE poniżej -90 dBm)                            | Hub         | Obróć Apisense Hub o 90° w osi pionowej. Po 12 godzinach sprawdź poziom sygnału w panelu; w razie potrzeby powtórz. Jeśli problem nadal występuje rozważ zmianę lokalizacji Apisense Huba; sprawdź przeszkody (metal, linie energetyczne). Przy braku poprawy — zgłoś do Apisense. Przy braku poprawy skontaktuj się z pomocą Apisense.                                                                                                |
 | 11  | Inne problemy                                                                | —           | Skontaktuj się z Apisense: **[bee@apisense.ai](mailto:bee@apisense.ai)**.                                                                                                                                                                                                                                                                                                                                                             |
 
-## 2. Diagnostyka Hub — brak zasięgu
+## 2. Diagnostyka Hub — brak zasięgu {#2-diagnostyka-hub-brak-zasięgu}
 
 Jeśli Hub nie raportuje danych lub pojawia się status „Pasieka nieaktywna”, przejdź po kolei poniższą listę kontrolną.
 
@@ -30,7 +30,7 @@ Jeśli Hub nie raportuje danych lub pojawia się status „Pasieka nieaktywna”
 
 Jeśli po sprawdzeniu listy problem nadal występuje, napisz do nas na **[bee@apisense.ai](mailto:bee@apisense.ai)** i **dołącz zdjęcie miejsca zamontowania Huba** (widoczne otoczenie, panel solarny, anteny) — przyspieszy to diagnozę.
 
-## 3. Diagnostyka zasilania zewnętrznego (zasilacz DC)
+## 3. Diagnostyka zasilania zewnętrznego (zasilacz DC) {#3-diagnostyka-zasilania-zewnętrznego-zasilacz-dc}
 
 Jeśli Hub jest zasilany zewnętrznym zasilaczem DC, a mimo to ładuje się wolno, szybko się rozładowuje lub poziom baterii utrzymuje się na niskim poziomie, najczęstszą przyczyną jest **spadek napięcia na złączu DC**, a nie sam zasilacz. Przejdź po kolei poniższą listę kontrolną.
 
