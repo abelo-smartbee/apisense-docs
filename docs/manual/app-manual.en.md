@@ -158,9 +158,29 @@ Figure: Apisense Hub QR code scanning step {#fig-add-apiary-hub}
 
 **After filling in the required data and scanning the QR code, click the yellow button at the bottom of the screen to confirm creation of the apiary with the linked Apisense Hub device.**
 
-If the apiary was created successfully, you will be redirected to its interior (the *Hives* view), and when you go to the *Apiaries* tab the apiary you just created will appear on your apiary list ([](#fig-apiaries-list)). The apiary tile will show the relevant statuses or tips on how to start the Apisense Hub (see [First device startup](#pierwsze-uruchomienie)). To learn more about statuses, go to [chapter 7. Interpretation of statuses and icons used in the system](#interpretacja-statusow).
+If the apiary was created successfully, you will be redirected to its interior (the *Hives* view), and when you go to the *Apiaries* tab the apiary you just created will appear on your apiary list.
 
-Figure: Successfully added apiary with a linked Apisense Hub in the apiary view of the system {#fig-apiaries-list}
+Until the Hub reports to the system for the first time, the apiary tile shows startup instructions and three buttons ([](#fig-apiary-instruction-add)) — choose the one that matches your situation:
+
+| Option | Maximum wait time | When to choose |
+| :----- | :---------------- | :------------- |
+| **Charger** | about 30 min | The Hub is connected to external power |
+| **Weak sun** | about 24 h | Discharged Hub with weak sunlight |
+| **Full sun** | about 3 h | Hub placed in the sun with favourable sunlight |
+
+Figure: Apiary tile right after adding - Apisense Hub startup instructions {#fig-apiary-instruction-add}
+
+![figure](pictures/apiary_hub_first_contact.png){width=200}
+
+After you select an option, a **countdown** starts on the tile with the estimated maximum time to wait for the first connection ([](#fig-apiary-timer-add)). This is an estimate, not a guarantee — a discharged Hub without access to light may need more time. If the Hub still does not report when the time elapses, the app will suggest trying again. Details are described in [First device startup](#pierwsze-uruchomienie).
+
+Figure: Apiary tile right after adding - countdown to the first connection {#fig-apiary-timer-add}
+
+![figure](pictures/apiary_timer.png){width=200}
+
+Once the Hub reports for the first time, the apiary tile starts showing the full set of information: the Hub's LTE and battery icons, the time of the last reading and weather data ([](#fig-apiaries-list)). To learn more about statuses, go to [chapter 7. Interpretation of statuses and icons used in the system](#interpretacja-statusow).
+
+Figure: Apiary with a linked Apisense Hub after the device's first report {#fig-apiaries-list}
 
 ![figure](pictures/apiaries_list.png){width=200}
 
@@ -1570,8 +1590,8 @@ After creating an apiary with a Hub and assigning Scale/VitalSensor to a hive, b
 | Option | Maximum wait time | When to choose |
 | :----- | :---------------- | :------------- |
 | **Charger** | about 30 min | The Hub is connected to external power |
-| **Full sun** | about 3 h | Hub placed in the sun with favourable sunlight |
 | **Weak sun** | about 24 h | Discharged Hub with weak sunlight |
+| **Full sun** | about 3 h | Hub placed in the sun with favourable sunlight |
 
 Figure: Apiary tile — first startup of the Apisense Hub — startup instructions {#fig-apiary-instruction}
 
