@@ -346,13 +346,25 @@ Te dwa ekrany pojawiają się tylko w pasiece z Hubem, po kroku ColonyLink. **Uw
 
 - Kliknięcie przycisku zapisu na ekranie Scale kończy dodawanie ula. To ten krok tworzy ul wraz ze wszystkimi zeskanowanymi wcześniej urządzeniami — jeśli któryś z numerów seryjnych zostanie odrzucony, aplikacja wróci na ekran tego urządzenia i pokaże błąd przy odpowiednim polu.
 
-- Jeśli utworzenie ula się powiodło, zostaniesz przekierowany do widoku *Ule*, a na Twojej liście uli pojawi się ul, który właśnie utworzyłeś ([](#fig-beehives-beehive-with-problem), [](#fig-beehive-interior)).
+- Jeśli utworzenie ula się powiodło, zostaniesz przekierowany do widoku *Ule*, a na Twojej liście uli pojawi się ul, który właśnie utworzyłeś.
 
-Figure: Pomyślnie dodany ul z powiązanymi Apisense Scale oraz VitalSensor w widoku Ule {#fig-beehives-beehive-with-problem}
+**Stan kafelka zaraz po utworzeniu ula.** Nowo dodany ul **nie pokazuje jeszcze pomiarów** — urządzenia dopiero nawiązują łączność z Hubem. Przy każdym powiązanym urządzeniu widnieje *Czekamy na połączenie*, a pod nimi pytanie, czy urządzenie jest odpowiednio zamontowane i znajduje się w zasięgu Huba (do ok. 35 m) ([](#fig-beehive-device-first-contact-2)). Po wybraniu *Tak* uruchamia się **zegar** z szacowanym maksymalnym czasem nawiązania komunikacji urządzenia pomiarowego z Hubem ([](#fig-beehive-timer-2)). Szczegóły tego etapu opisuje rozdział [Pierwsze uruchomienie urządzeń](#pierwsze-uruchomienie).
+
+Figure: Kafelek nowo utworzonego ula - pytanie o montaż urządzenia i zasięg Huba {#fig-beehive-device-first-contact-2}
+
+![figure](pictures/beehive_device_first_contact.png){width=200}
+
+Figure: Kafelek nowo utworzonego ula - zegar oczekiwania na pierwsze połączenie urządzeń {#fig-beehive-timer-2}
+
+![figure](pictures/beehive_timer.png){width=200}
+
+- Dopiero po zgłoszeniu się urządzeń na kafelku ula oraz w widoku *Szczegóły* pojawiają się bieżące pomiary i ocena stanu rodziny ([](#fig-beehives-beehive-with-problem), [](#fig-beehive-interior)).
+
+Figure: Ul z powiązanymi Apisense Scale oraz VitalSensor po nawiązaniu łączności - widok Ule {#fig-beehives-beehive-with-problem}
 
 ![figure](pictures/beehives_beehive_with_problem.png){width=200}
 
-Figure: Pomyślnie dodany ul z powiązanymi Apisense Scale oraz VitalSensor w widoku Szczegóły ula {#fig-beehive-interior}
+Figure: Ul z powiązanymi Apisense Scale oraz VitalSensor po nawiązaniu łączności - widok Szczegóły ula {#fig-beehive-interior}
 
 ![figure](pictures/beehive_interior.png){width=200}
 

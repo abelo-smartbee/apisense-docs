@@ -349,13 +349,25 @@ These two screens appear only in an apiary with a Hub, after the ColonyLink step
 
 - Clicking the save button on the Scale screen completes adding the hive. This is the step that creates the hive together with every device scanned earlier — if one of the serial numbers is rejected, the app returns to that device's screen and shows the error on the relevant field.
 
-- If the hive was created successfully, you will be redirected to the *Hives* view, and the hive you just created will appear in your hive list ([](#fig-beehives-beehive-with-problem), [](#fig-beehive-interior)).
+- If the hive was created successfully, you will be redirected to the *Hives* view, and the hive you just created will appear in your hive list.
 
-Figure: Successfully added hive with linked Apisense Scale and VitalSensor in the Hives view {#fig-beehives-beehive-with-problem}
+**What the tile shows right after the hive is created.** A newly added hive **does not show measurements yet** — the devices are still establishing communication with the Hub. Each linked device is marked *Awaiting connection*, and below them the app asks whether the device is properly mounted and within Hub range (up to about 35 m) ([](#fig-beehive-device-first-contact-2)). After you answer *Yes*, a **timer** starts with the estimated maximum time for the measurement device to establish communication with the Hub ([](#fig-beehive-timer-2)). This stage is described in detail in [First device startup](#pierwsze-uruchomienie).
+
+Figure: Newly created hive tile — prompt about device mounting and Hub range {#fig-beehive-device-first-contact-2}
+
+![figure](pictures/beehive_device_first_contact.png){width=200}
+
+Figure: Newly created hive tile — timer while waiting for the devices' first connection {#fig-beehive-timer-2}
+
+![figure](pictures/beehive_timer.png){width=200}
+
+- Only after the devices report in do current measurements and the colony assessment appear on the hive tile and in the *Details* view ([](#fig-beehives-beehive-with-problem), [](#fig-beehive-interior)).
+
+Figure: Hive with linked Apisense Scale and VitalSensor after the connection is established - Hives view {#fig-beehives-beehive-with-problem}
 
 ![figure](pictures/beehives_beehive_with_problem.png){width=200}
 
-Figure: Successfully added hive with linked devices in Hive details {#fig-beehive-interior}
+Figure: Hive with linked Apisense Scale and VitalSensor after the connection is established - Hive details {#fig-beehive-interior}
 
 ![figure](pictures/beehive_interior.png){width=200}
 
