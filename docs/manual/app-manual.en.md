@@ -48,28 +48,30 @@ Figure: Registering with the Apisense Pro AI System - Create account start view 
 
 ![figure](pictures/rejestracja.png){width=200}
 
-- Enter the following details in the designated fields:
+- All registration details — the password included — are entered in a **single** *Create account* form. There is no separate *Create password* view. Fill in the designated fields ([](#fig-zaloz-konto)):
 
-    - User name
+    - User name — 3 to 50 characters, no spaces
     - Email address
     - Mobile phone number
-
-    Confirm that you have read the terms and conditions and the privacy policy by checking the appropriate box, and then click *Next* ([](#fig-zaloz-konto)).
+    - Password — the one you will then use to log in to the system
+    - Repeat password — the same password once more
 
 Figure: Registering with the Apisense Pro AI System - example of correctly filled-in registration data in the Create account view {#fig-zaloz-konto}
 
 ![figure](pictures/zaloz_konto.png){width=200}
 
-- The next view will appear - Create password. In this view you will be asked to create a strong password ([](#fig-utworz-haslo)), which you will then use to log in to the system. The password must contain:
+- The password must contain:
 
     - At least 8 characters
     - At least 1 uppercase letter
     - At least 1 digit
     - At least 1 special character (e.g. #, $, %, \_)
 
-    Then enter the same password again in the *Repeat password* field and proceed to the next step by clicking *Next*.
+    The app repeats the same requirements in the hint below the *Password* field.
 
-Figure: Registering with the Apisense Pro AI System - example of correctly filled-in fields in the Create password view {#fig-utworz-haslo}
+- The form is longer than the screen — scroll down to reach the password fields, the terms checkbox and the *Next* button ([](#fig-utworz-haslo)). Confirm that you have read the terms and conditions and the privacy policy by checking the appropriate box, and then click *Next*.
+
+Figure: Registering with the Apisense Pro AI System - the same Create account view scrolled down: password fields, terms acceptance and the Next button {#fig-utworz-haslo}
 
 ![figure](pictures/utworz_haslo.png){width=200}
 
@@ -291,7 +293,7 @@ The equipment stage consists of one to three separate screens, always in the sam
 
 #### 2.1.1 The ColonyLink step
 
-- After the queen information, the *Equipment - scan the QR code from Apisense ColonyLink* screen is displayed. Fill in the fields:
+- After the queen information, the *Equipment - scan the QR code from Apisense ColonyLink* screen is displayed ([](#fig-add-beehive-devices-colonylink)). Fill in the fields:
 
     - **ColonyLink** — click the QR code icon on the right side of this field and scan the QR code from the Apisense ColonyLink. The next *Confirmation code* field will be filled in automatically.
     - **Confirmation code** — filled in automatically after a successful QR scan.
@@ -300,6 +302,10 @@ The equipment stage consists of one to three separate screens, always in the sam
 
 !!! Note
     On some plans ColonyLink is optional. You will recognise this by the message *"ColonyLink is optional on your plan — you can skip this step"* shown under the screen heading. In that case you may leave both fields empty and continue. You cannot, however, fill in just one of them — either both or neither.
+
+Figure: Adding a hive — Equipment section, linking ColonyLink (on a plan where the step is optional) {#fig-add-beehive-devices-colonylink}
+
+![figure](pictures/add_beehive_devices_colonylink.png){width=200}
 
 - What happens after this step depends on the apiary:
 
