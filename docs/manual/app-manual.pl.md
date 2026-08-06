@@ -41,28 +41,30 @@ Figure: Rejestracja do Systemu Apisense Pro AI - widok startowy Załóż konto {
 
 ![figure](pictures/rejestracja.png){width=200}
 
-- W wyznaczonych polach wprowadź następujące dane:
+- Wszystkie dane rejestracyjne — łącznie z hasłem — podajesz w **jednym formularzu** *Załóż konto*. Nie ma osobnego widoku *Utwórz hasło*. W wyznaczonych polach wprowadź ([](#fig-zaloz-konto)):
 
-    - Nazwa użytkownika
+    - Nazwa użytkownika — od 3 do 50 znaków, bez spacji
     - Adres email
     - Numer telefonu komórkowego
-
-    Potwierdź zapoznanie się z regulaminem oraz polityką prywatności zaznaczając odpowiednie pole, a następnie kliknij przycisk *Dalej* ([](#fig-zaloz-konto)).
+    - Hasło — którego będziesz potem używać, by zalogować się do systemu
+    - Powtórz hasło — to samo hasło jeszcze raz
 
 Figure: Rejestracja do Systemu Apisense Pro AI - przykład poprawnie wypełnionych danych do rejestracji w widoku Załóż konto {#fig-zaloz-konto}
 
 ![figure](pictures/zaloz_konto.png){width=200}
 
-- Zostanie wyświetlony kolejny widok - Utwórz hasło. W tym widoku zostaniesz poproszony o utworzenie silnego hasła ([](#fig-utworz-haslo)), które będziesz potem wykorzystywał, by zalogować się do systemu. Hasło musi zawierać:
+- Hasło musi zawierać:
 
     - Co najmniej 8 znaków
     - Co najmniej 1 wielką literę
     - Co najmniej 1 cyfrę
     - Co najmniej 1 znak specjalny (np. #, $, %, \_)
 
-    Następnie wpisz ponownie to samo hasło w pole *Powtórz hasło* i przejdź do kolejnego kroku klikając przycisk *Dalej*.
+    Te same wymagania aplikacja przypomina podpowiedzią pod polem *Hasło*.
 
-Figure: Rejestracja do Systemu Apisense Pro AI - przykład poprawnie wypełnionych pól w widoku Utwórz hasło {#fig-utworz-haslo}
+- Formularz jest dłuższy niż ekran — przewiń go w dół, aby dojść do pól hasła, pola potwierdzenia regulaminu i przycisku *Dalej* ([](#fig-utworz-haslo)). Potwierdź zapoznanie się z regulaminem oraz polityką prywatności zaznaczając odpowiednie pole, a następnie kliknij przycisk *Dalej*.
+
+Figure: Rejestracja do Systemu Apisense Pro AI - ten sam widok Załóż konto po przewinięciu w dół: pola hasła, akceptacja regulaminu i przycisk Dalej {#fig-utworz-haslo}
 
 ![figure](pictures/utworz_haslo.png){width=200}
 
