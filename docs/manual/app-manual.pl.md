@@ -143,6 +143,12 @@ Po uzupełnieniu powyższych informacji kliknij żółty przycisk ze strzałką,
 - **Hub** - kliknij w ikonę kodu QR znajdującą się w prawej części tego pola i zeskanuj kod QR z naklejki umieszczonej na urządzeniu Apisense Hub. Kolejne pole *Kod potwierdzający* zostanie wypełnione automatycznie.
 - **Kod potwierdzający** - zostanie wypełniony automatycznie, po poprawnym zeskanowaniu kodu QR.
 
+Widok tego kroku ([](#fig-add-apiary-hub)) zawiera także zdjęcie referencyjne pokazujące, gdzie na urządzeniu znajduje się naklejka z kodem QR, oraz przycisk otwierający animację montażu Apisense Hub. Oba pola (*Hub* i *Kod potwierdzający*) są tylko do odczytu — wypełnia je wyłącznie skan kodu QR.
+
+Figure: Krok skanowania kodu QR urządzenia Apisense Hub {#fig-add-apiary-hub}
+
+![figure](pictures/add_apiary_hub.png){width=200}
+
 **Po uzupełnieniu niezbędnych danych i zeskanowaniu kodu QR kliknij żółty przycisk na dole ekranu, potwierdzający utworzenie pasieki z powiązanym urządzeniem Apisense Hub.**
 
 Jeśli utworzenie pasieki się powiodło, zostaniesz przekierowany do jej wnętrza (widok *Ule*), natomiast po przejściu do zakładki *Pasieki* na Twojej liście pasiek pojawi się pasieka, którą właśnie utworzyłeś ([](#fig-apiaries-list)). Na kafelku z pasieką zostaną wyświetlone odpowiednie statusy lub wskazówki jak uruchomić Apisense Hub (patrz [Pierwsze uruchomienie urządzeń](#pierwsze-uruchomienie)). Aby dowiedzieć się więcej o statusach, przejdź do rozdziału [7. Interpretacja statusów i ikon wykorzystywanych w systemie](#interpretacja-statusow).

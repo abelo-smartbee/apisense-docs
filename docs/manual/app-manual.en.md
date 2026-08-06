@@ -150,6 +150,12 @@ After filling in the information above, click the yellow button with the arrow i
 - **Hub** — click the QR code icon on the right side of this field and scan the QR code from the sticker on the Apisense Hub device. The next field, *Confirmation code*, will be filled in automatically.
 - **Confirmation code** — filled in automatically after the QR code is scanned correctly.
 
+This step ([](#fig-add-apiary-hub)) also shows a reference photo of where the QR code sticker sits on the device, and a button that opens the Apisense Hub mounting animation. Both fields (*Hub* and *Confirmation code*) are read-only — only a QR scan fills them in.
+
+Figure: Apisense Hub QR code scanning step {#fig-add-apiary-hub}
+
+![figure](pictures/add_apiary_hub.png){width=200}
+
 **After filling in the required data and scanning the QR code, click the yellow button at the bottom of the screen to confirm creation of the apiary with the linked Apisense Hub device.**
 
 If the apiary was created successfully, you will be redirected to its interior (the *Hives* view), and when you go to the *Apiaries* tab the apiary you just created will appear on your apiary list ([](#fig-apiaries-list)). The apiary tile will show the relevant statuses or tips on how to start the Apisense Hub (see [First device startup](#pierwsze-uruchomienie)). To learn more about statuses, go to [chapter 7. Interpretation of statuses and icons used in the system](#interpretacja-statusow).
