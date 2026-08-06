@@ -151,10 +151,30 @@ Figure: Krok skanowania kodu QR urządzenia Apisense Hub {#fig-add-apiary-hub}
 
 **Po uzupełnieniu niezbędnych danych i zeskanowaniu kodu QR kliknij żółty przycisk na dole ekranu, potwierdzający utworzenie pasieki z powiązanym urządzeniem Apisense Hub.**
 
-Jeśli utworzenie pasieki się powiodło, zostaniesz przekierowany do jej wnętrza (widok *Ule*), natomiast po przejściu do zakładki *Pasieki* na Twojej liście pasiek pojawi się pasieka, którą właśnie utworzyłeś ([](#fig-apiaries-list)). Na kafelku z pasieką zostaną wyświetlone odpowiednie statusy lub wskazówki jak uruchomić Apisense Hub (patrz [Pierwsze uruchomienie urządzeń](#pierwsze-uruchomienie)). Aby dowiedzieć się więcej o statusach, przejdź do rozdziału [7. Interpretacja statusów i ikon wykorzystywanych w systemie](#interpretacja-statusow).
+Jeśli utworzenie pasieki się powiodło, zostaniesz przekierowany do jej wnętrza (widok *Ule*), natomiast po przejściu do zakładki *Pasieki* na Twojej liście pasiek pojawi się pasieka, którą właśnie utworzyłeś.
+
+Zanim Hub po raz pierwszy zgłosi się do systemu, na kafelku pasieki wyświetlana jest instrukcja jego uruchomienia oraz trzy przyciski ([](#fig-apiary-instruction-add)) — wybierz ten, który odpowiada Twojej sytuacji:
+
+| Opcja | Maksymalny czas oczekiwania | Kiedy wybrać |
+| :---- | :---------------------- | :------------ |
+| **Ładowarka** | ok. 30 min | Hub jest podłączony do zewnętrznego zasilania |
+| **Słabe słońce** | ok. 24 h | Rozładowany Hub przy słabym nasłonecznieniu |
+| **Pełne słońce** | ok. 3 h | Hub wystawiony na słońce przy sprzyjającym nasłonecznieniu |
+
+Figure: Kafelek pasieki tuż po dodaniu - instrukcja uruchomienia Apisense Hub {#fig-apiary-instruction-add}
+
+![figure](pictures/apiary_hub_first_contact.png){width=200}
+
+Po wybraniu opcji na kafelku uruchamia się **odliczanie** z szacowanym maksymalnym czasem oczekiwania na pierwsze połączenie ([](#fig-apiary-timer-add)). To szacunek, nie gwarancja - rozładowany Hub bez dostępu do światła może potrzebować więcej czasu. Jeśli po upływie czasu Hub nadal się nie zgłasza, aplikacja zaproponuje ponowienie próby. Szczegóły opisano w rozdziale [Pierwsze uruchomienie urządzeń](#pierwsze-uruchomienie).
+
+Figure: Kafelek pasieki tuż po dodaniu - zegar oczekiwania na pierwsze połączenie {#fig-apiary-timer-add}
+
+![figure](pictures/apiary_timer.png){width=200}
+
+Gdy Hub zgłosi się po raz pierwszy, kafelek pasieki zaczyna prezentować komplet informacji: ikony LTE i baterii Huba, czas ostatniego odczytu oraz dane pogodowe ([](#fig-apiaries-list)). Aby dowiedzieć się więcej o statusach, przejdź do rozdziału [7. Interpretacja statusów i ikon wykorzystywanych w systemie](#interpretacja-statusow).
 
 
-Figure: Pomyślnie dodana pasieka z powiązanym Apisense Hub w widoku pasiek w systemie {#fig-apiaries-list}
+Figure: Pasieka z powiązanym Apisense Hub po pierwszym zgłoszeniu urządzenia {#fig-apiaries-list}
 
 ![figure](pictures/apiaries_list.png){width=200}
 
@@ -1566,8 +1586,8 @@ Po utworzeniu pasieki z Hubem oraz przypisaniu Scale/VitalSensor do ula, zanim u
 | Opcja | Maksymalny czas oczekiwania | Kiedy wybrać |
 | :---- | :---------------------- | :------------ |
 | **Ładowarka** | ok. 30 min | Hub jest podłączony do zewnętrznego zasilania |
-| **Pełne słońce** | ok. 3 h | Hub wystawiony na słońce przy sprzyjającym nasłonecznieniu |
 | **Słabe słońce** | ok. 24 h | Rozładowany Hub przy słabym nasłonecznieniu |
+| **Pełne słońce** | ok. 3 h | Hub wystawiony na słońce przy sprzyjającym nasłonecznieniu |
 
 Figure: Kafelek z pasieką - pierwsze uruchomienie urządzenia Apisense Hub - instrukcja uruchomienia {#fig-apiary-instruction}
 
