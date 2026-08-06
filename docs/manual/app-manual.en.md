@@ -291,7 +291,7 @@ The equipment stage consists of one to three separate screens, always in the sam
 
 #### 2.1.1 The ColonyLink step
 
-- After the queen information, the *Equipment - scan the QR code from Apisense ColonyLink* screen is displayed. Fill in the fields:
+- After the queen information, the *Equipment - scan the QR code from Apisense ColonyLink* screen is displayed ([](#fig-add-beehive-devices-colonylink)). Fill in the fields:
 
     - **ColonyLink** — click the QR code icon on the right side of this field and scan the QR code from the Apisense ColonyLink. The next *Confirmation code* field will be filled in automatically.
     - **Confirmation code** — filled in automatically after a successful QR scan.
@@ -300,6 +300,10 @@ The equipment stage consists of one to three separate screens, always in the sam
 
 !!! Note
     On some plans ColonyLink is optional. You will recognise this by the message *"ColonyLink is optional on your plan — you can skip this step"* shown under the screen heading. In that case you may leave both fields empty and continue. You cannot, however, fill in just one of them — either both or neither.
+
+Figure: Adding a hive — Equipment section, linking ColonyLink (on a plan where the step is optional) {#fig-add-beehive-devices-colonylink}
+
+![figure](pictures/add_beehive_devices_colonylink.png){width=200}
 
 - What happens after this step depends on the apiary:
 

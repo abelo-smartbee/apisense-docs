@@ -288,7 +288,7 @@ Etap wyposażenia to od jednego do trzech osobnych ekranów, zawsze w tej samej 
 
 #### 2.1.1 Krok ColonyLink
 
-- Po informacjach o matce zostanie wyświetlony ekran *Wyposażenie - zeskanuj kod QR z Apisense ColonyLink*. Wypełnij pola:
+- Po informacjach o matce zostanie wyświetlony ekran *Wyposażenie - zeskanuj kod QR z Apisense ColonyLink* ([](#fig-add-beehive-devices-colonylink)). Wypełnij pola:
 
     - **ColonyLink** - kliknij w ikonę kodu QR znajdującą się w prawej części tego pola i zeskanuj kod QR z Apisense ColonyLink. Kolejne pole *Kod potwierdzający* zostanie wypełnione automatycznie.
     - **Kod potwierdzający** - zostanie wypełniony automatycznie, po poprawnym zeskanowaniu kodu QR.
@@ -297,6 +297,10 @@ Etap wyposażenia to od jednego do trzech osobnych ekranów, zawsze w tej samej 
 
 !!! note
     W niektórych planach ColonyLink jest opcjonalny. Poznasz to po komunikacie *„ColonyLink jest opcjonalny w Twoim planie — możesz pominąć ten krok"*, wyświetlanym pod nagłówkiem ekranu. Wtedy możesz zostawić oba pola puste i przejść dalej. Nie da się natomiast wypełnić tylko jednego z nich — albo oba, albo żadne.
+
+Figure: Dodawanie ula w systemie - sekcja Wyposażenie - przypisywanie urządzenia ColonyLink (w planie, w którym krok jest opcjonalny) {#fig-add-beehive-devices-colonylink}
+
+![figure](pictures/add_beehive_devices_colonylink.png){width=200}
 
 - To, co dzieje się po tym kroku, zależy od pasieki:
 
