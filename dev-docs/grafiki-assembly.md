@@ -296,6 +296,15 @@ gołe ekrany. Wklejenie nieznormalizowanego zrzutu w naszą obudowę rysuje ramk
 wyglądał pierwszy podchód do rozdziału 05. Mierz obwódkę na czterech krawędziach
 i przycinaj tylko wtedy, gdy jest jednakowa — `unframed()` w generatorze.
 
+Sam crop nie wystarcza: rogi ekranu w obudowanym zrzucie są łukami o promieniu
+większym niż grubość obwódki, więc po prostokątnym przycięciu w każdym rogu
+zostaje ćwiartka łuku wypełnienia ramki plus przezroczysty klin za nią. Zrzut
+jest letterboxowany, więc te kliny lądują głęboko wewnątrz modułu — clip bezela
+ich nie zakryje — i figura wygląda jak „telefon w telefonie" (tak wyglądał
+pierwszy `step03-a.pl`). `square_corners()` w generatorze zamalowuje kliny
+kolorem prostej krawędzi ekranu obok; odpala się automatycznie po każdym
+udanym cropie ramki.
+
 **Dłoń nie sięga dolnej piątej części ekranu.** Ma 46% szerokości ekranu, czubek
 palca w lewym górnym rogu, korpus ciągnie w prawo-dół. Położona na cel przy dolnej
 krawędzi — dolna nawigacja, pasek akcji — zwisa 200 jednostek pod telefonem i

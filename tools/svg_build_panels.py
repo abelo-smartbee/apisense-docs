@@ -265,7 +265,41 @@ def unframed(img: Image.Image) -> Image.Image:
     k = min(edges)
     if k < 3 or max(edges) - k > 2:
         return img
-    return img.crop((k, k, w - k, h - k))
+    return square_corners(img.crop((k, k, w - k, h - k)))
+
+
+def square_corners(img: Image.Image) -> Image.Image:
+    """Repaint the rounded-corner leftovers a frame crop cannot reach.
+
+    A framed shot's screen corners are arcs with a radius larger than the
+    border thickness, so after the rectangular crop each corner still holds a
+    quarter-arc wedge of frame fill plus the transparent patch outside it.
+    Those wedges sit well inside the module (the shot is letterboxed), where
+    the bezel clip never covers them -- the phone-in-a-phone look. Paint each
+    wedge with the colour of the straight screen edge next to it.
+    """
+    rgba = img.convert("RGBA")
+    w, h = rgba.size
+    px = rgba.load()
+
+    def frameish(p) -> bool:
+        return p[3] < 250 or max(abs(a - b) for a, b in zip(p[:3], FRAME_RGB)) <= 24
+
+    for cx, cy in ((0, 0), (w - 1, 0), (0, h - 1), (w - 1, h - 1)):
+        sx, sy = (1 if cx == 0 else -1), (1 if cy == 0 else -1)
+        i = 0
+        while i < 60 and frameish(px[cx + sx * i, cy + sy * i]):
+            i += 1
+        if i == 0:
+            continue
+        # the arc meets the diagonal i = r * (1 - 1/sqrt(2)) from the corner
+        r = min(80, round(i / 0.2929) + 4)
+        fill = px[cx + sx * 2, cy + sy * (r + 6)]
+        for dx in range(r):
+            for dy in range(r):
+                if (r - dx) ** 2 + (r - dy) ** 2 >= (r - 4) ** 2:
+                    px[cx + sx * dx, cy + sy * dy] = fill
+    return rgba
 
 
 def pad_colour(img: Image.Image) -> tuple[int, int, int]:
