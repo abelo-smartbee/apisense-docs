@@ -46,13 +46,19 @@ Current page set: `index`, `overview/index` (system overview — what Apisense i
 
 This repo is configured for the Apisense skill pipeline. Config:
 `.claude/apisense-flow.json` (mode: `lib`, tracker: `github`). Durable domain
-docs live in `CONTEXT.md`, `dev-docs/adr/`, `dev-docs/glossary.md`, and
-`dev-docs/audyt-instrukcji.md` — these sit outside `docs/` on purpose, since
-`docs/` is the published public site root.
+docs live in `CONTEXT.md`, `dev-docs/adr/`, `dev-docs/glossary.md`,
+`dev-docs/audyt-instrukcji.md`, and `dev-docs/grafiki-assembly.md` — these sit
+outside `docs/` on purpose, since `docs/` is the published public site root.
 
 Before updating `manual/app-manual.*` against the app, read
 `dev-docs/audyt-instrukcji.md`. It carries the verification protocol (an ARB
 value is not evidence that a label is rendered), the prod-vs-QA rule, and why
 the per-release `auto_docs` workflow in `apisense-mobile` does not remove the
 need for a periodic audit.
+
+Before touching any graphic in `docs/assembly/figs/`, read
+`dev-docs/grafiki-assembly.md`. Those SVGs have no `<text>` — every label is an
+outlined path, so the only handle on an element is its bounding box. The runbook
+carries the editing harness, the six traps that each cost a failed pass, the
+screenshot-fitting maths, and the 8-vs-20 locale rule for UI labels.
 Work items are tracked as GitHub Issues in `abelo-smartbee/apisense-docs`.

@@ -1,3 +1,8 @@
 mkdocs-material>=9.5,<10
 mkdocs-static-i18n>=1.2,<2
 mkdocs-caption>=1.2,<2
+
+# tools/svg_build_panels.py — składanie paneli instrukcji montażu
+# (normalizacja zrzutów: przycięcie wklejonej obudowy, kolor wypełnienia).
+# Sam build MkDocs tego nie potrzebuje.
+Pillow>=9,<12

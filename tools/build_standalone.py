@@ -244,6 +244,26 @@ def main() -> None:
         html = html.replace(f'src="figs/{name}"', f'src="{uri}"')
     print(f"  images: {len(used)} embedded")
 
+    # 2b. locale figure variants: syncFigures() swaps app figures per locale,
+    #     and in a single offline file relative figs/ paths resolve to nothing
+    #     — the pl PDF shipped a broken-image icon where chapter 03 should be.
+    #     Inline each variant as a data-src-<locale> attribute on its <img>;
+    #     syncFigures prefers that attribute over the path.
+    fig_locales = re.search(r"var FIG_LOCALES = \{(.*?)\};", html, re.S)
+    if fig_locales is None:
+        raise SystemExit("nie znaleziono FIG_LOCALES w index.html")
+    variants = 0
+    for stem, arr in re.findall(r"'([\w-]+)':\s*\[([^\]]*)\]", fig_locales.group(1)):
+        for loc in re.findall(r"'(\w+)'", arr):
+            blob = (FIGS / f"{stem}.{loc}.svg").read_bytes()
+            uri = "data:image/svg+xml;base64," + base64.b64encode(blob).decode("ascii")
+            marker = f'<img data-fig="{stem}" '
+            if marker not in html:
+                raise SystemExit(f"brak <img data-fig=\"{stem}\"> w index.html")
+            html = html.replace(marker, f'<img data-fig="{stem}" data-src-{loc}="{uri}" ')
+            variants += 1
+    print(f"  images: {variants} locale variant(s) embedded")
+
     # 3. relative site links only resolve on docs.apisense.ai — make them absolute
     html = html.replace('href="../downloads/', f'href="{SITE}downloads/')
     html = html.replace('href="../"', f'href="{SITE}"')
