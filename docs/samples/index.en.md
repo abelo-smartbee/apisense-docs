@@ -13,6 +13,7 @@ A seasonal honey bee health monitoring program run by Apisense in collaboration 
 | 2 | [Live bee collection](protocol-2-live-bees.md) — ~40 workers from the brood nest | Mandatory |
 | 3 | [Brood comb section](protocol-3-brood-comb.md) — 10×10 cm with affected brood | Conditional (contact first) |
 | 4 | [Dead bees](protocol-4-dead-bees.md) — bottom-board collection | Recommended |
+| 5 | [Honey sample](protocol-5-honey.md) — one tube of super honey per sensor | Mandatory |
 
 Additionally: [Colony inspection](colony-inspection.md) — required frame photos and observation list to record in the Apisense app.
 

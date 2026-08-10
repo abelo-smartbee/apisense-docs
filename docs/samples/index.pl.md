@@ -13,6 +13,7 @@ Sezonowy program monitoringu zdrowia pszczół prowadzony przez Apisense we wsp�
 | 2 | [Pobranie żywych pszczół](protocol-2-live-bees.md) — ~40 robotnic ze środka gniazda | Obligatoryjny |
 | 3 | [Wycinek plastra](protocol-3-brood-comb.md) — 10×10 cm ze zmienionym czerwiem | Warunkowy (po kontakcie) |
 | 4 | [Martwe pszczoły](protocol-4-dead-bees.md) — osyp z dennicy | Zalecany |
+| 5 | [Próbka miodu](protocol-5-honey.md) — probówka miodu z nadstawki, 1 na sensor | Obligatoryjny |
 
 Dodatkowo: [Przegląd rodziny pszczelej](colony-inspection.md) — wymagane zdjęcia ramek i lista obserwacji do odnotowania w aplikacji Apisense.
 
