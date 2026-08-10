@@ -56,6 +56,7 @@ plugins:
                 - "Protokół 2: Żywe pszczoły": samples/protocol-2-live-bees.md
                 - "Protokół 3: Wycinek plastra": samples/protocol-3-brood-comb.md
                 - "Protokół 4: Martwe pszczoły": samples/protocol-4-dead-bees.md
+                - "Protokół 5: Miód": samples/protocol-5-honey.md
                 - Przegląd rodziny: samples/colony-inspection.md
             - Do pobrania: downloads/index.md
             - FAQ: faq/index.md
@@ -91,6 +92,7 @@ plugins:
                 - "Protocol 2: Live bees": samples/protocol-2-live-bees.md
                 - "Protocol 3: Brood comb section": samples/protocol-3-brood-comb.md
                 - "Protocol 4: Dead bees": samples/protocol-4-dead-bees.md
+                - "Protocol 5: Honey": samples/protocol-5-honey.md
                 - Colony inspection: samples/colony-inspection.md
             - Downloads: downloads/index.md
             - FAQ: faq/index.md
@@ -137,6 +139,7 @@ nav:
       - "Protokół 2: Żywe pszczoły": samples/protocol-2-live-bees.md
       - "Protokół 3: Wycinek plastra": samples/protocol-3-brood-comb.md
       - "Protokół 4: Martwe pszczoły": samples/protocol-4-dead-bees.md
+      - "Protokół 5: Miód": samples/protocol-5-honey.md
       - Przegląd rodziny: samples/colony-inspection.md
   - Do pobrania: downloads/index.md
   - FAQ: faq/index.md
