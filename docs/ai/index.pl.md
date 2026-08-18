@@ -163,7 +163,7 @@ Możesz dopytywać tak, jak w normalnej rozmowie — Asystent pamięta, co przed
 
     **Asystent:** Pasieka Akacjowa: 4 ule, bramka online, ostatni kontakt 8 minut temu...
 
-Każda rozmowa jest zapisana w Twoim koncie — możesz wrócić do niej później albo usunąć ją w ustawieniach. Możesz też zacząć **nową rozmowę** od zera, jeśli chcesz przejść na inny temat bez historii.
+Każda rozmowa jest zapisana w Twoim koncie. Otwórz **Historię sesji** z ikony menu na górnym pasku Asystenta, aby wyszukać i przejrzeć wcześniejsze rozmowy, pogrupowane na *Dzisiaj*, *Wczoraj*, *Ostatnie 7 dni* i *Starsze*. Otwarcie starszej rozmowy pokazuje ją jako podgląd tylko do odczytu — aby dopytać o coś więcej, zacznij **nową rozmowę** od zera.
 
 ______________________________________________________________________
 

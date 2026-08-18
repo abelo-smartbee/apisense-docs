@@ -61,7 +61,7 @@ ______________________________________________________________________
 ## 5. Why you can trust your privacy
 
 - **Knowledge sources stay on the server side.** When the Assistant uses the Apisense knowledge base, fragments of that base are not exposed to other users or to third-party companies.
-- **Your conversations are saved** so you can come back to them. You can **delete a conversation** or wipe its history at any time from the settings.
+- **Your conversations are saved** so you can come back to them from **Session history**, in a read-only preview.
 - **Apisense data is not used to train third-party models.** Your notes, measurements, and conversations do not feed public language models from other companies.
 - **Communication is encrypted** — between the app and the server, and between Apisense servers and the cloud services powering the Assistant.
 - **The full privacy policy** is available from the operator of the Apisense Pro AI app.

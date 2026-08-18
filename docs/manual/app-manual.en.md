@@ -881,7 +881,7 @@ You can filter the task list by status. There are two filters: *To do* and *Comp
 
 ### 6. Asian hornet observation
 
-The Asian hornet icon on the apiary tile, next to the colony health status indicator, lets you report and review Asian hornet observations. It helps you monitor their activity in your apiaries and respond more quickly to a potential threat to bee colonies. **Note:** Only the apiary owner can report observations. On a shared apiary, other users have view-only access to reports.
+The Asian hornet icon on the apiary tile, next to the colony health status indicator, lets you report and review Asian hornet observations. It helps you monitor their activity in your apiaries and respond more quickly to a potential threat to bee colonies. **Note:** The icon is tappable for the apiary owner and for collaborators with **Full** access to a shared apiary; everyone else sees it read-only, and only once a report already exists.
 
 #### 6.1 Reporting an observation
 
@@ -890,9 +890,9 @@ The Asian hornet icon on the apiary tile, next to the colony health status indic
 - Answering **No** files the report immediately — you will see the *Report saved* message.
 - Answering **Yes** opens an additional report form:
 
-    - **species card** — at the top of the form, with the name *Asian hornet* and the scientific name *Vespa velutina*;
-    - **Date observed** — today's date by default; tap the field to pick another date from the calendar;
-    - **Number of individuals** — a **required field**, minimum 1. Without it the report cannot be sent — the app shows the error *Enter the number of individuals (min. 1)*;
+    - **species card** — at the top of the form, with the name *Asian hornet* and the scientific name *Vespa velutina*, and an ⓘ button that opens *How to recognise the Asian hornet?* — a short primer comparing it against the native, harmless European hornet (size, colouring, the Asian hornet's yellow leg tips) so you don't report the wrong species by mistake;
+    - **Date observed** — today's date by default; tap the field to pick another date from the calendar (up to a year in the past, never in the future);
+    - **Comment (optional)** — free text, e.g. the number of individuals, where exactly you saw them, or their behaviour;
     - **Photos (optional)** — you can attach up to 10 photos. The form warns: *Warning: the Asian hornet can sting — take care when photographing it.*
 
 - Send the report with the *Send report* button. Once saved, you will see the *Report saved* message, or *Report saved, uploading photos in the background* if you attached photos.
@@ -902,10 +902,13 @@ The Asian hornet icon on the apiary tile, next to the colony health status indic
 The Asian hornet icon shown on the apiary tile changes depending on the current report status:
 
 - **No observation** — no report has ever been filed. Icon with a greyed Asian hornet head, without a date or additional badge.
-- **Asian hornet - Active sighting** — Asian hornets were confirmed present and the report is still fresh (within 4 days of filing). Icon with a brown Asian hornet head and a red "!" badge.
-- **Asian hornet - Last seen** — Asian hornets were confirmed present, but more than 4 days have passed since the report — check again and re-report the current state. Icon with a greyed Asian hornet head and a "!" badge on a dark background.
-- **Checked, clear; current observation** — a fresh report (within 4 days of filing) confirming no Asian hornets in the apiary. Icon with a brown Asian hornet head and a green badge with an absence confirmation symbol.
-- **Checked, clear; expired observation** — no Asian hornets were confirmed in the apiary, but more than 4 days have passed since the report. Icon with a greyed Asian hornet head and a badge with an absence confirmation symbol on a dark background.
+- **Asian hornet - Active sighting** — Asian hornets were confirmed present and the report is still considered fresh. Icon with a brown Asian hornet head and a red "!" badge.
+- **Asian hornet - Last seen** — Asian hornets were confirmed present, but the report is no longer fresh — check again and re-report the current state. Icon with a greyed Asian hornet head and a "!" badge on a dark background.
+- **Checked, clear; current observation** — a fresh report confirming no Asian hornets in the apiary. Icon with a brown Asian hornet head and a green badge with an absence confirmation symbol.
+- **Checked, clear; expired observation** — no Asian hornets were confirmed in the apiary, and the report is no longer fresh. Icon with a greyed Asian hornet head and a badge with an absence confirmation symbol on a dark background.
+
+!!! note
+    "Fresh" is decided by the server for each apiary, not by a fixed number of days on the device — it can change as the app's observation policy evolves.
 
 #### 6.3 Undoing a report
 
@@ -916,7 +919,7 @@ If you filed a report by mistake (an accidental tap), tap the Asian hornet icon 
 
 #### 6.4 Observation reminders
 
-If it has been 4 days since the last Asian hornet report for one or more of your apiaries, the app shows an *Observation reminder* prompt asking you to record the current state to keep the data reliable. You can act on it right away or dismiss it with *Later*.
+The server flags apiaries that are due for a fresh Asian hornet check. When one or more of your apiaries are due, the app shows an *Observation reminder* prompt (at most once a day) asking you to record the current state to keep the data reliable, grouped into apiaries that had a report before but it's gone stale, and apiaries that have never been checked. You can act on it right away or close the prompt with the *X* or *Close* button — it doesn't ask again until the throttle window passes.
 
 ______________________________________________________________________
 
@@ -1276,6 +1279,8 @@ Figure: Apiaries tab - sample apiary view {#fig-apiaries-2}
 - Each apiary is presented in the form of a single, clear tile containing key, appropriately aggregated information.
 
 - Apiary tiles are presented in a clear form.
+
+- Next to the greeting at the top of the screen, a chip shows your current Apisense plan and how much time is left on it; tap it to see plan details (see [8. Your plan](#twoj-plan)).
 
 - The following information is displayed on each apiary tile:
 
@@ -1731,6 +1736,25 @@ Navigation icons are used to move between views and app functions.
 | ![](pictures/previous_view.png) | various views - upper left corner of the screen                   | Button used to go to the previous view (Back button), e.g. from the *Hives* tab to *Apiaries*.                   |
 | ![](pictures/next_button.png)   | various views including disease questionnaire, Add inspection      | Button used to go to the next view (Next button), e.g. moving on to the next inspection or disease questionnaire question.                |
 
+<a id="twoj-plan"></a>
+
+### 8. Your plan
+
+Next to your greeting at the top of the *Apiaries* tab, a small chip shows the status of your Apisense plan: a countdown while your AI trial is running, *Plan expired* in red once it has lapsed, or your plan's name together with the time left (or the renewal date, once it's more than a year away).
+
+Tap the chip to open the *Plans* sheet:
+
+- Your current plan is shown first, highlighted, with its included features listed.
+- Below it, under *Also available in other plans:*, you'll find the other tier with its own feature list, so you can compare what upgrading would add.
+- **Apisense AI** — "Manage your apiary and use AI — no devices required": the apiary journal (inspections, notes, calendar), FrameSense frame-photo analysis with recommendations, colony strength and inspection history, the AI assistant, apiary sharing, weather and reminders.
+- **Apisense PRO AI** — "Monitor your hives 24/7 with scales and sensors": everything in the AI plan, plus disease detection and recommendations, continuous weight/temperature/humidity monitoring from your Scale and VitalSensor, charts and trends, and weight/temperature/connection alerts.
+- A footer note reminds you that the plan is linked to your Apisense account.
+
+!!! Note
+    The *Plans* sheet is informational — it shows what each plan includes but does not currently offer in-app purchase, upgrade or renewal; manage your subscription through the channel you originally purchased it from.
+
+When a plan expires, the app switches to view-only mode (see the note in [2. Filling in notes and inspections](#filling-in-notes-and-inspections) and throughout this manual). If you have Scale or VitalSensor devices, you'll also see a warning that they will keep sending data for 7 more days after expiry, after which they stop — your existing data and hive history stay available, but data missed during that gap cannot be recovered later, so it's worth renewing before the 7 days run out.
+
 ______________________________________________________________________
 
 <a id="monitorowanie-parametrow"></a>
@@ -1782,6 +1806,7 @@ Most important information:
 - **Pressure inside the hive**, also measured by the VitalSensor, can change under the influence of weather conditions and bee colony activity.
 - **Pressure drops or rises** can be a signal of upcoming weather changes, which often affect bees' flying activity.
 - **Pressure trend analysis** combined with other parameters can help in interpreting bee colony behavior.
+- **Absolute, not sea-level pressure** — the value is measured directly where the hive stands and is not adjusted to sea level, so it reads lower than the pressure in a weather forecast; the difference grows the higher the apiary is located. Tap the ⓘ icon next to the pressure reading for this explanation in the app.
 
 ### 4. Weight
 
@@ -1995,6 +2020,15 @@ You can use the AI Assistant by selecting the *Your assistant* tab from the bott
 !!! Note
     The *Your assistant* item appears in the bottom menu only when your plan includes the assistant. Without that entitlement the bottom menu does not carry this tab.
 
+### Session history
+
+Tap the menu icon in the assistant's top bar to open *Session history* — a side panel listing your past conversations, with a search field and the list grouped into *Today*, *Yesterday*, *Last 7 days* and *Older*. Scroll down to load older sessions. Tap *New conversation* at any time to start a fresh chat.
+
+Opening a past session from the list shows it as a **conversation preview** — a read-only view of the earlier exchange, with a banner offering to start a new conversation. To ask a follow-up question, start a new conversation; you cannot continue typing inside an old one.
+
+!!! Note
+    If your plan has expired, you can still open *Session history* and browse past conversations — only sending new messages is locked, and the chat shows a notice asking you to renew your plan.
+
 ______________________________________________________________________
 
 <a id="edycja-danych-uzytkownika"></a>
@@ -2108,6 +2142,8 @@ ______________________________________________________________________
 ### 1. Daily panel use
 
 - Regularly review the most important app views, in particular the apiary and hive list, to keep track of statuses and measurements on an ongoing basis. React to in-app alerts and notifications in a timely manner.
+
+<a id="filling-in-notes-and-inspections"></a>
 
 ### 2. Filling in notes and inspections
 
@@ -2231,7 +2267,7 @@ Below you will find a summary of the most important activities in the Apisense P
 > [Video — audio note](#video-note-voice) 
 > [Notes](#4-notes)
 
-- **Reporting an Asian hornet observation:** Tap the Asian hornet icon on the apiary tile, then the *Report observation* button, and answer *Do you see an Asian hornet now?* Answering *No* files the report immediately; after *Yes* you still fill in a form with the observation date and the **required** number of individuals, then tap *Send report*. The Asian hornet icon is updated accordingly (active sighting / checked, clear / expired), and the date of the last report appears above it.
+- **Reporting an Asian hornet observation:** Tap the Asian hornet icon on the apiary tile, then the *Report observation* button, and answer *Do you see an Asian hornet now?* Answering *No* files the report immediately; after *Yes* you still fill in the observation date and an optional comment (and optional photos), then tap *Send report*. The Asian hornet icon is updated accordingly (active sighting / checked, clear / expired), and the date of the last report appears above it.
 
 > [Asian hornet observation](#obserwacja-szerszenia)
 
@@ -2314,6 +2350,10 @@ Below you will find a summary of the most important activities in the Apisense P
 - **Checking the app version:** In the *Account settings* view scroll to the bottom of the screen — you will see the **Version X.Y.Z** entry. If your version is no longer supported, the app shows a full-screen *Update required* prompt on launch instead.
 
 > [Checking the app version](#2-checking-the-app-version)
+
+- **Checking your plan:** Tap the plan chip next to your greeting on the *Apiaries* tab to see your current plan, its included features and the other available tier.
+
+> [Your plan](#twoj-plan)
 
 ### 9. Reporting problems and suggestions
 
