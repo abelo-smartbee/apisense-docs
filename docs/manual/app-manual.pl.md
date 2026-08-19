@@ -898,14 +898,14 @@ Ikona szerszenia azjatyckiego, znajdująca się na kafelku pasieki obok wskaźni
 
 Ikona szerszenia azjatyckiego wyświetlana na kafelku pasieki zmienia się w zależności od aktualnego statusu zgłoszenia:
 
-- **Brak obserwacji** — nigdy nie dodano zgłoszenia. Ikona z wyszarzoną głową szerszenia azjatyckiego, bez daty i dodatkowej plakietki.
-- **Szerszeń azjatycki - Aktywna obserwacja** — potwierdzono obecność szerszeni azjatyckich i zgłoszenie jest wciąż uznawane za aktualne. Ikona z brązową głową szerszenia azjatyckiego wraz z czerwoną plakietką „!”.
-- **Szerszeń azjatycki - Ostatnio widziano** — potwierdzono obecność szerszeni azjatyckich, ale zgłoszenie nie jest już aktualne — sprawdź ponownie i zgłoś aktualny stan. Ikona z wyszarzoną głową szerszenia azjatyckiego i plakietką „!” na ciemnym tle. 
-- **Sprawdzono, czysto; aktualna obserwacja** — aktualne zgłoszenie potwierdzające brak szerszeni azjatyckich w pasiece. Ikona z brązową głową szerszenia azjatyckiego wraz z zieloną plakietką z symbolem zatwierdzenia nieobecności.
-- **Sprawdzono, czysto; wygasła obserwacja** — potwierdzono brak szerszeni azjatyckich w pasiece, ale zgłoszenie nie jest już aktualne. Ikona z wyszarzoną głową szerszenia azjatyckiego wraz z plakietką z symbolem zatwierdzenia nieobecności na ciemnym tle. 
+- **Brak obserwacji** — nigdy nie dodano zgłoszenia. Przygaszona ikona szerszenia azjatyckiego na przezroczystym tle, bez daty i dodatkowej plakietki.
+- **Szerszeń azjatycki - Aktywna obserwacja** — potwierdzono obecność szerszeni azjatyckich i zgłoszenie jest wciąż uznawane za aktualne. Ikona szerszenia azjatyckiego na czerwonym tle wraz z czerwoną plakietką „!”.
+- **Szerszeń azjatycki - Ostatnio widziano** — potwierdzono obecność szerszeni azjatyckich, ale zgłoszenie nie jest już aktualne — sprawdź ponownie i zgłoś aktualny stan. Ikona szerszenia azjatyckiego z plakietką „!” na ciemnym tle.
+- **Sprawdzono, czysto; aktualna obserwacja** — aktualne zgłoszenie potwierdzające brak szerszeni azjatyckich w pasiece. Ikona szerszenia azjatyckiego na zielonym tle wraz z zieloną plakietką z symbolem zatwierdzenia nieobecności.
+- **Sprawdzono, czysto; wygasła obserwacja** — potwierdzono brak szerszeni azjatyckich w pasiece, ale zgłoszenie nie jest już aktualne. Ikona szerszenia azjatyckiego z plakietką z symbolem zatwierdzenia nieobecności na ciemnym tle.
 
 !!! note
-    O tym, czy zgłoszenie jest „aktualne", decyduje serwer dla każdej pasieki osobno, a nie stała liczba dni w aplikacji — może się to zmieniać wraz z rozwojem zasad obserwacji.
+    O tym, czy zgłoszenie jest „aktualne”, decydują indywidualne zasady obserwacji ustalane dla każdej pasieki. Nie ma jednej, stałej liczby dni obowiązującej w całej aplikacji, a same zasady mogą się zmieniać wraz z rozwojem programu obserwacji.
 
 #### 6.3 Cofanie zgłoszenia
 
@@ -916,7 +916,7 @@ Jeśli zgłoszenie powstało przez pomyłkę (przypadkowe kliknięcie), kliknij 
 
 #### 6.4 Przypomnienia o obserwacji
 
-Serwer oznacza pasieki, dla których czas na sprawdzenie obecności szerszenia azjatyckiego. Gdy dotyczy to jednej lub kilku Twoich pasiek, aplikacja wyświetli *Przypomnienie o obserwacji* (najwyżej raz dziennie) z prośbą o zapisanie aktualnego stanu, aby dane pozostały wiarygodne — pasieki są pogrupowane na te, których zgłoszenie już się zestarzało, i te, które nigdy nie były sprawdzane. Możesz zareagować od razu albo zamknąć okno przyciskiem *X* lub *Zamknij* — przypomnienie nie pojawi się ponownie, dopóki nie minie okres wyciszenia.
+Aplikacja przypomina o konieczności ponownego sprawdzenia obecności szerszenia azjatyckiego w tych pasiekach, w których nadszedł na to czas — czyli ich zgłoszenie przestało być „aktualne”. Gdy dotyczy to jednej lub kilku Twoich pasiek, zobaczysz *Przypomnienie o obserwacji* (najwyżej raz dziennie) z prośbą o zapisanie aktualnego stanu, aby dane pozostały wiarygodne — pasieki są pogrupowane na te, których zgłoszenie już się zestarzało, i te, które nigdy nie były sprawdzane. Możesz zareagować od razu albo zamknąć okno przyciskiem *X* lub *Zamknij* — przypomnienie nie pojawi się ponownie, dopóki nie minie okres wyciszenia.
 
 ______________________________________________________________________
 
@@ -1744,13 +1744,13 @@ Kliknij plakietkę, aby otworzyć panel *Plany*:
 - Na górze widoczny jest Twój aktualny plan, wyróżniony, wraz z listą funkcji, które obejmuje.
 - Poniżej, pod napisem *Dostępne też w innych planach:*, znajdziesz drugi poziom wraz z jego listą funkcji, dzięki czemu możesz porównać, co dałoby przejście na wyższy plan.
 - **Apisense AI** — "Zarządzaj pasieką i korzystaj z AI — bez żadnych urządzeń": dziennik pasieki (przeglądy, notatki, kalendarz), analiza zdjęć ramek FrameSense wraz z rekomendacjami, śledzenie siły rodziny i historii przeglądów, asystent AI, udostępnianie pasieki, pogoda i przypomnienia.
-- **Apisense PRO AI** — "Monitoruj ule 24/7 dzięki wagom i czujnikom": wszystko z planu AI, a dodatkowo wykrywanie chorób wraz z rekomendacjami, ciągły monitoring wagi, temperatury i wilgotności z Wagi i VitalSensora, wykresy i trendy oraz alerty wagi, temperatury i połączenia.
+- **Apisense PRO AI** — "Monitoruj ule 24/7 dzięki wagom i czujnikom": wszystko z planu AI, a dodatkowo wykrywanie chorób wraz z rekomendacjami, ciągły monitoring wagi, temperatury i wilgotności ze Scale i VitalSensora, wykresy i trendy oraz alerty wagi, temperatury i połączenia.
 - Na dole panelu znajduje się przypomnienie, że plan jest powiązany z Twoim kontem Apisense.
 
 !!! note
     Panel *Plany* ma charakter informacyjny — pokazuje, co obejmuje każdy plan, ale obecnie nie umożliwia zakupu, zmiany ani odnowienia planu w aplikacji; subskrypcją zarządzasz w tym samym miejscu, w którym ją pierwotnie wykupiłeś.
 
-Gdy plan wygasa, aplikacja przechodzi w tryb tylko do odczytu (patrz notatka w [2. Uzupełnianie notatek i przeglądów](#uzupelnianie-notatek-i-przegladow) oraz w innych miejscach tej instrukcji). Jeśli masz urządzenia Waga lub VitalSensor, zobaczysz też ostrzeżenie, że będą one wysyłać dane jeszcze przez 7 dni po wygaśnięciu planu, a potem przestaną — dotychczasowe dane i historia uli pozostaną dostępne, ale danych, które nie zostały zebrane w tym czasie, nie da się później odzyskać, dlatego warto odnowić plan przed upływem tych 7 dni.
+Gdy plan wygasa, aplikacja przechodzi w tryb tylko do odczytu (patrz notatka w [2. Uzupełnianie notatek i przeglądów](#uzupelnianie-notatek-i-przegladow) oraz w innych miejscach tej instrukcji). Jeśli masz urządzenia Scale lub VitalSensor, zobaczysz też ostrzeżenie, że będą one wysyłać dane jeszcze przez 7 dni po wygaśnięciu planu, a potem przestaną — dotychczasowe dane i historia uli pozostaną dostępne, ale danych, które nie zostały zebrane w tym czasie, nie da się później odzyskać, dlatego warto odnowić plan przed upływem tych 7 dni.
 
 ______________________________________________________________________
 

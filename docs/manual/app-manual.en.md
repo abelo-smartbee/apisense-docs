@@ -901,14 +901,14 @@ The Asian hornet icon on the apiary tile, next to the colony health status indic
 
 The Asian hornet icon shown on the apiary tile changes depending on the current report status:
 
-- **No observation** — no report has ever been filed. Icon with a greyed Asian hornet head, without a date or additional badge.
-- **Asian hornet - Active sighting** — Asian hornets were confirmed present and the report is still considered fresh. Icon with a brown Asian hornet head and a red "!" badge.
-- **Asian hornet - Last seen** — Asian hornets were confirmed present, but the report is no longer fresh — check again and re-report the current state. Icon with a greyed Asian hornet head and a "!" badge on a dark background.
-- **Checked, clear; current observation** — a fresh report confirming no Asian hornets in the apiary. Icon with a brown Asian hornet head and a green badge with an absence confirmation symbol.
-- **Checked, clear; expired observation** — no Asian hornets were confirmed in the apiary, and the report is no longer fresh. Icon with a greyed Asian hornet head and a badge with an absence confirmation symbol on a dark background.
+- **No observation** — no report has ever been filed. A dimmed Asian hornet icon on a transparent background, without a date or additional badge.
+- **Asian hornet - Active sighting** — Asian hornets were confirmed present and the report is still considered fresh. Asian hornet icon on a red background with a red "!" badge.
+- **Asian hornet - Last seen** — Asian hornets were confirmed present, but the report is no longer fresh — check again and re-report the current state. Asian hornet icon with a "!" badge on a dark background.
+- **Checked, clear; current observation** — a fresh report confirming no Asian hornets in the apiary. Asian hornet icon on a green background with a green badge carrying an absence confirmation symbol.
+- **Checked, clear; expired observation** — no Asian hornets were confirmed in the apiary, and the report is no longer fresh. Asian hornet icon with an absence confirmation badge on a dark background.
 
 !!! note
-    "Fresh" is decided by the server for each apiary, not by a fixed number of days on the device — it can change as the app's observation policy evolves.
+    Whether a report still counts as "fresh" is decided by the observation rules set individually for each apiary. There is no single fixed number of days that applies across the app, and the rules themselves can change as the observation programme evolves.
 
 #### 6.3 Undoing a report
 
@@ -919,7 +919,7 @@ If you filed a report by mistake (an accidental tap), tap the Asian hornet icon 
 
 #### 6.4 Observation reminders
 
-The server flags apiaries that are due for a fresh Asian hornet check. When one or more of your apiaries are due, the app shows an *Observation reminder* prompt (at most once a day) asking you to record the current state to keep the data reliable, grouped into apiaries that had a report before but it's gone stale, and apiaries that have never been checked. You can act on it right away or close the prompt with the *X* or *Close* button — it doesn't ask again until the throttle window passes.
+The app reminds you to re-check for Asian hornets in the apiaries where it is time to do so — the ones whose report has stopped being "fresh". When one or more of your apiaries are due, you'll see an *Observation reminder* prompt (at most once a day) asking you to record the current state to keep the data reliable, grouped into apiaries that had a report before but it's gone stale, and apiaries that have never been checked. You can act on it right away or close the prompt with the *X* or *Close* button — it doesn't ask again until the throttle window passes.
 
 ______________________________________________________________________
 
