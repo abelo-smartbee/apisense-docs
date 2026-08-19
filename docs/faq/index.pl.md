@@ -219,7 +219,7 @@ Przewieź wszystkie ule + Hub + Scale razem i dodaj notatkę w aplikacji.
 Ta sekcja opisuje, co zrobić w aplikacji, gdy VitalSensor (albo Scale) zmienia ul — bo ramka z czujnikiem trafiła do innego ula, rodzina przeniosła się na inne pasieczysko albo Huby zamieniły się miejscami.
 
 !!! warning "Najpierw skontaktuj się z nami"
-    Jeśli bierzesz udział w badaniu Global Field Validation Study, nie przenoś VitalSensora między rodzinami bez uzgodnienia z zespołem Apisense — patrz [Czy VitalSensor można przenieść…](#przenoszenie-vitalsensora). Poniższe kroki opisują wyłącznie stronę aplikacyjną i nie zwalniają z tego obowiązku.
+    Jeśli rodzina padła lub została utracona, **za każdym razem** skontaktuj się z zespołem Apisense przed przeniesieniem VitalSensora i poczekaj na instrukcje — patrz [Czy VitalSensor można przenieść…](#przenoszenie-vitalsensora). W badaniu Global Field Validation Study uzgodnij z nami **każde** przeniesienie czujnika między rodzinami, niezależnie od przyczyny. Poniższe kroki opisują wyłącznie stronę aplikacyjną i nie zwalniają z tego obowiązku — samego odwzorowania zmiany w aplikacji nie musisz nam już zgłaszać.
 
 <a id="zasada-urzadzenie-nalezy-do-ula"></a>
 

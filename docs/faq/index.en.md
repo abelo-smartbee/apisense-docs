@@ -219,7 +219,7 @@ Transport all hives + Hub + Scale together and add a note in the app.
 This section covers what to do in the app when a VitalSensor (or a Scale) changes hive — because you moved the frame with the sensor into another hive, relocated a colony to a different apiary, or the Hubs ended up swapped.
 
 !!! warning "Talk to us first"
-    If you take part in the Global Field Validation Study, do not move a VitalSensor between colonies without agreeing it with the Apisense team first — see [Can VitalSensors be moved…](#moving-a-vitalsensor). The steps below only describe the app side; they do not replace that.
+    If a colony died or was lost, contact the Apisense team **every time** before moving the VitalSensor and wait for instructions — see [Can VitalSensors be moved…](#moving-a-vitalsensor). In the Global Field Validation Study, agree **every** move of a sensor between colonies with us, whatever the reason. The steps below only describe the app side; they do not replace that — the app bookkeeping itself is not something you need to report to us.
 
 <a id="a-device-belongs-to-a-hive"></a>
 
