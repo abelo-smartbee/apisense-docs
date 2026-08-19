@@ -163,7 +163,7 @@ You can follow up the way you would in normal conversation — the Assistant rem
 
     **Assistant:** Acacia apiary: 4 hives, gateway online, last contact 8 minutes ago...
 
-Every conversation is saved in your account — you can come back to it later or delete it from the settings. You can also start a **new conversation** from scratch if you want to switch topics without history.
+Every conversation is saved in your account. Open **Session history** from the menu icon in the Assistant's top bar to search and browse past conversations. The list is grouped by date — *Today*, *Yesterday*, *Last 7 days* and *Older* — and only the groups that actually contain something are shown. Any conversation you open from that list is shown as a read-only preview — to ask a follow-up, start a **new conversation** from scratch.
 
 ______________________________________________________________________
 

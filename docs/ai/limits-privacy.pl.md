@@ -61,7 +61,7 @@ ______________________________________________________________________
 ## 5. Skąd pewność prywatności
 
 - **Źródła wiedzy zostają po stronie serwera.** Gdy Asystent korzysta z bazy wiedzy Apisense, fragmenty tej bazy nie są ujawniane do innych użytkowników ani do firm trzecich.
-- **Twoje rozmowy są zapisywane**, żebyś mógł do nich wrócić. W każdej chwili możesz **usunąć rozmowę** lub wyczyścić jej historię w ustawieniach.
+- **Twoje rozmowy są zapisywane**, dzięki czemu możesz wrócić do nich w dowolnym momencie z poziomu **Historii sesji** i wyświetlić je w trybie podglądu, tylko do odczytu.
 - **Dane Apisense nie są używane do trenowania modeli zewnętrznych firm.** Twoje notatki, pomiary i rozmowy nie zasilają publicznych modeli językowych innych firm.
 - **Komunikacja jest szyfrowana** — między aplikacją a serwerem oraz między serwerami Apisense a usługami chmurowymi obsługującymi Asystenta.
 - **Pełna polityka prywatności** dostępna jest u operatora aplikacji Apisense Pro AI.

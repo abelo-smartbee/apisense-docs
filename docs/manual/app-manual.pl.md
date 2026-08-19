@@ -878,7 +878,7 @@ Listę zadań możesz filtrować po statusie. Dostępne są dwa filtry: *Do zrob
 
 ### 6. Obserwacja szerszenia azjatyckiego
 
-Ikona szerszenia azjatyckiego, znajdująca się na kafelku pasieki obok wskaźnika stanu zdrowia rodziny pszczelej, umożliwia zgłaszanie oraz przeglądanie obserwacji szerszenia azjatyckiego. Pozwala na bieżąco monitorować jego aktywność w pasiekach i szybciej reagować na potencjalne zagrożenie dla rodzin pszczelich. **Uwaga:** Obserwacje może zgłaszać wyłącznie właściciel pasieki. W pasiece udostępnionej pozostali użytkownicy mają dostęp wyłącznie do podglądu zgłoszeń.
+Ikona szerszenia azjatyckiego, znajdująca się na kafelku pasieki obok wskaźnika stanu zdrowia rodziny pszczelej, umożliwia zgłaszanie oraz przeglądanie obserwacji szerszenia azjatyckiego. Pozwala na bieżąco monitorować jego aktywność w pasiekach i szybciej reagować na potencjalne zagrożenie dla rodzin pszczelich. **Uwaga:** Ikona jest klikalna dla właściciela pasieki oraz dla współpracowników z dostępem **Pełnym** do pasieki udostępnionej. Pozostali użytkownicy widzą ją wyłącznie do podglądu, i tylko wtedy, gdy zgłoszenie już istnieje.
 
 #### 6.1 Zgłaszanie obserwacji
 
@@ -887,9 +887,9 @@ Ikona szerszenia azjatyckiego, znajdująca się na kafelku pasieki obok wskaźni
 - Odpowiedź **Nie** zapisuje zgłoszenie od razu — zobaczysz komunikat *Zgłoszenie zapisane*.
 - Odpowiedź **Tak** otwiera dodatkowy formularz zgłoszenia:
 
-    - **karta gatunku** - u góry formularza, z nazwą *Szerszeń azjatycki* i nazwą łacińską *Vespa velutina*;
-    - **Data obserwacji** - domyślnie dzisiejsza; kliknij pole i wybierz inną datę z kalendarza;
-    - **Liczba osobników** - **pole wymagane**, minimum 1. Bez niego nie da się wysłać zgłoszenia — aplikacja pokaże błąd *Podaj liczbę osobników (min. 1)*;
+    - **karta gatunku** - u góry formularza, z nazwą *Szerszeń azjatycki*, nazwą łacińską *Vespa velutina* oraz przyciskiem ⓘ, który otwiera *Jak rozpoznać szerszenia azjatyckiego?* — krótki poradnik porównujący go z rodzimym, nieszkodliwym szerszeniem europejskim (wielkość, ubarwienie, charakterystyczne żółte końce odnóży szerszenia azjatyckiego), żeby nie zgłosić przez pomyłkę innego gatunku;
+    - **Data obserwacji** - domyślnie dzisiejsza; kliknij pole i wybierz inną datę z kalendarza (maksymalnie rok wstecz, nigdy w przyszłości);
+    - **Komentarz (opcjonalnie)** - dowolny tekst, np. liczba osobników, miejsce, zachowanie;
     - **Zdjęcia (opcjonalnie)** - możesz dołączyć do 10 zdjęć. Formularz ostrzega: *Uwaga: szerszeń azjatycki może użądlić — zachowaj ostrożność podczas robienia zdjęć.*
 
 - Zgłoszenie wysyłasz przyciskiem *Wyślij zgłoszenie*. Po zapisaniu zobaczysz komunikat *Zgłoszenie zapisane*, a jeśli dołączyłeś zdjęcia — *Zgłoszenie zapisane, zdjęcia wysyłamy w tle*.
@@ -898,11 +898,14 @@ Ikona szerszenia azjatyckiego, znajdująca się na kafelku pasieki obok wskaźni
 
 Ikona szerszenia azjatyckiego wyświetlana na kafelku pasieki zmienia się w zależności od aktualnego statusu zgłoszenia:
 
-- **Brak obserwacji** — nigdy nie dodano zgłoszenia. Ikona z wyszarzoną głową szerszenia azjatyckiego, bez daty i dodatkowej plakietki.
-- **Szerszeń azjatycki - Aktywna obserwacja** — potwierdzono obecność szerszeni azjatyckich i zgłoszenie jest wciąż aktualne (do 4 dni od dodania zgłoszenia). Ikona z brązową głową szerszenia azjatyckiego wraz z czerwoną plakietką „!”.
-- **Szerszeń azjatycki - Ostatnio widziano** — potwierdzono obecność szerszeni azjatyckich, ale minęły już 4 dni od dodania zgłoszenia — sprawdź ponownie i zgłoś aktualny stan. Ikona z wyszarzoną głową szerszenia azjatyckiego i plakietką „!” na ciemnym tle. 
-- **Sprawdzono, czysto; aktualna obserwacja** — aktualne zgłoszenie (do 4 dni od dodania zgłoszenia) potwierdzające brak szerszeni azjatyckich w pasiece. Ikona z brązową głową szerszenia azjatyckiego wraz z zieloną plakietką z symbolem zatwierdzenia nieobecności.
-- **Sprawdzono, czysto; wygasła obserwacja** — potwierdzono brak szerszeni azjatyckich w pasiece, ale minęły już 4 dni od dodania zgłoszenia. Ikona z wyszarzoną głową szerszenia azjatyckiego wraz z plakietką z symbolem zatwierdzenia nieobecności na ciemnym tle. 
+- **Brak obserwacji** — nigdy nie dodano zgłoszenia. Przygaszona ikona szerszenia azjatyckiego na przezroczystym tle, bez daty i dodatkowej plakietki.
+- **Szerszeń azjatycki - Aktywna obserwacja** — potwierdzono obecność szerszeni azjatyckich i zgłoszenie jest wciąż uznawane za aktualne. Ikona szerszenia azjatyckiego na czerwonym tle wraz z czerwoną plakietką „!”.
+- **Szerszeń azjatycki - Ostatnio widziano** — potwierdzono obecność szerszeni azjatyckich, ale zgłoszenie nie jest już aktualne — sprawdź ponownie i zgłoś aktualny stan. Ikona szerszenia azjatyckiego z plakietką „!” na ciemnym tle.
+- **Sprawdzono, czysto; aktualna obserwacja** — aktualne zgłoszenie potwierdzające brak szerszeni azjatyckich w pasiece. Ikona szerszenia azjatyckiego na zielonym tle wraz z zieloną plakietką z symbolem zatwierdzenia nieobecności.
+- **Sprawdzono, czysto; wygasła obserwacja** — potwierdzono brak szerszeni azjatyckich w pasiece, ale zgłoszenie nie jest już aktualne. Ikona szerszenia azjatyckiego z plakietką z symbolem zatwierdzenia nieobecności na ciemnym tle.
+
+!!! note
+    O tym, czy zgłoszenie jest „aktualne”, decydują indywidualne zasady obserwacji ustalane dla każdej pasieki. Nie ma jednej, stałej liczby dni obowiązującej w całej aplikacji, a same zasady mogą się zmieniać wraz z rozwojem programu obserwacji.
 
 #### 6.3 Cofanie zgłoszenia
 
@@ -913,7 +916,7 @@ Jeśli zgłoszenie powstało przez pomyłkę (przypadkowe kliknięcie), kliknij 
 
 #### 6.4 Przypomnienia o obserwacji
 
-Jeśli od ostatniego zgłoszenia szerszenia azjatyckiego dla jednej lub kilku Twoich pasiek minęły 4 dni, aplikacja wyświetli *Przypomnienie o obserwacji* z prośbą o zapisanie aktualnego stanu, aby dane pozostały wiarygodne. Możesz zareagować od razu lub odłożyć przypomnienie przyciskiem *Później*.
+Aplikacja przypomina o konieczności ponownego sprawdzenia obecności szerszenia azjatyckiego w tych pasiekach, w których nadszedł na to czas — czyli ich zgłoszenie przestało być „aktualne”. Gdy dotyczy to jednej lub kilku Twoich pasiek, zobaczysz *Przypomnienie o obserwacji* (najwyżej raz dziennie) z prośbą o zapisanie aktualnego stanu, aby dane pozostały wiarygodne — pasieki są pogrupowane na te, których zgłoszenie już się zestarzało, i te, które nigdy nie były sprawdzane. Możesz zareagować od razu albo zamknąć okno przyciskiem *X* lub *Zamknij* — przypomnienie nie pojawi się ponownie, dopóki nie minie okres wyciszenia.
 
 ______________________________________________________________________
 
@@ -1272,6 +1275,8 @@ Figure: Zakładka Pasieki - przykładowy widok pasiek {#fig-apiaries-2}
 - Każda pasieka prezentowana jest w formie pojedynczego, przejrzystego kafelka, zawierającego kluczowe, odpowiednio zagregowane informacje.
 
 - Kafelki pasiek są prezentowane w przejrzystej formie.
+
+- Obok powitania na górze ekranu znajduje się plakietka pokazująca Twój aktualny plan Apisense i ile czasu na nim zostało; kliknij ją, aby zobaczyć szczegóły planu (patrz [8. Twój plan](#twoj-plan)).
 
 - Na każdym kafelku pasieki są wyświetlane następujące informacje:
 
@@ -1728,6 +1733,25 @@ Ikony nawigacyjne służą do poruszania się pomiędzy widokami i funkcjami apl
 | ![](pictures/previous_view.png) | różne widoki - lewy górny róg ekranu                       | Przycisk służący do przejścia do poprzedniego widoku (przycisk Wstecz), np. z zakładki *Ule* do *Pasieki*.         |
 | ![](pictures/next_button.png)   | różne widoki m.in. formularz chorobowy, Dodaj przegląd    | Przycisk służący do przejścia do następnego widoku (przycisk Dalej), np. przejście do kolejnego pytania przeglądu lub formularza chorobowego. |
 
+<a id="twoj-plan"></a>
+
+### 8. Twój plan
+
+Obok powitania na górze zakładki *Pasieki* znajduje się mała plakietka pokazująca status Twojego planu Apisense: odliczanie czasu podczas trwania okresu próbnego AI, czerwony napis *Plan wygasł*, gdy okres próbny lub plan już się skończył, albo nazwa planu wraz z pozostałym czasem (lub datą odnowienia, jeśli do niej zostało więcej niż rok).
+
+Kliknij plakietkę, aby otworzyć panel *Plany*:
+
+- Na górze widoczny jest Twój aktualny plan, wyróżniony, wraz z listą funkcji, które obejmuje.
+- Poniżej, pod napisem *Dostępne też w innych planach:*, znajdziesz drugi poziom wraz z jego listą funkcji, dzięki czemu możesz porównać, co dałoby przejście na wyższy plan.
+- **Apisense AI** — "Zarządzaj pasieką i korzystaj z AI — bez żadnych urządzeń": dziennik pasieki (przeglądy, notatki, kalendarz), analiza zdjęć ramek FrameSense wraz z rekomendacjami, śledzenie siły rodziny i historii przeglądów, asystent AI, udostępnianie pasieki, pogoda i przypomnienia.
+- **Apisense PRO AI** — "Monitoruj ule 24/7 dzięki wagom i czujnikom": wszystko z planu AI, a dodatkowo wykrywanie chorób wraz z rekomendacjami, ciągły monitoring wagi, temperatury i wilgotności ze Scale i VitalSensora, wykresy i trendy oraz alerty wagi, temperatury i połączenia.
+- Na dole panelu znajduje się przypomnienie, że plan jest powiązany z Twoim kontem Apisense.
+
+!!! note
+    Panel *Plany* ma charakter informacyjny — pokazuje, co obejmuje każdy plan, ale obecnie nie umożliwia zakupu, zmiany ani odnowienia planu w aplikacji; subskrypcją zarządzasz w tym samym miejscu, w którym ją pierwotnie wykupiłeś.
+
+Gdy plan wygasa, aplikacja przechodzi w tryb tylko do odczytu (patrz notatka w [2. Uzupełnianie notatek i przeglądów](#uzupelnianie-notatek-i-przegladow) oraz w innych miejscach tej instrukcji). Jeśli masz urządzenia Scale lub VitalSensor, zobaczysz też ostrzeżenie, że będą one wysyłać dane jeszcze przez 7 dni po wygaśnięciu planu, a potem przestaną — dotychczasowe dane i historia uli pozostaną dostępne, ale danych, które nie zostały zebrane w tym czasie, nie da się później odzyskać, dlatego warto odnowić plan przed upływem tych 7 dni.
+
 ______________________________________________________________________
 
 <a id="monitorowanie-parametrow"></a>
@@ -1779,6 +1803,7 @@ Najważniejsze informacje:
 - **Ciśnienie wewnątrz ula**, również mierzone przez VitalSensor, może zmieniać się pod wpływem warunków atmosferycznych oraz aktywności rodziny pszczelej.
 - **Spadki lub wzrosty ciśnienia** mogą być sygnałem nadchodzących zmian pogody, które często wpływają na aktywność lotną pszczół.
 - **Analiza trendów ciśnienia** w połączeniu z innymi parametrami może pomóc w interpretacji zachowania rodziny pszczelej.
+- **Ciśnienie absolutne, nie zredukowane do poziomu morza** — wartość jest mierzona bezpośrednio w miejscu, w którym stoi ul, i nie jest przeliczana na poziom morza, dlatego jest niższa niż w prognozie pogody — tym bardziej, im wyżej położona jest pasieka. To wyjaśnienie znajdziesz w aplikacji pod ikoną ⓘ przy odczycie ciśnienia.
 
 ### 4. Waga
 
@@ -1994,6 +2019,15 @@ Z asystenta AI można skorzystać poprzez wybór zakładki *Twój asystent* z do
 !!! note
     Pozycja *Twój asystent* pojawia się w dolnym menu tylko wtedy, gdy Twój plan obejmuje asystenta. Bez tego uprawnienia dolne menu nie zawiera tej zakładki.
 
+### Historia sesji
+
+Kliknij ikonę menu na górnym pasku asystenta, aby otworzyć *Historię sesji* — panel boczny z listą wcześniejszych rozmów, polem wyszukiwania oraz listą pogrupowaną na *Dzisiaj*, *Wczoraj*, *Ostatnie 7 dni* i *Starsze*. Przewiń w dół, aby wczytać starsze sesje. W dowolnym momencie możesz kliknąć *Nowa rozmowa*, aby zacząć od nowa.
+
+Otwarcie wcześniejszej sesji z listy pokazuje ją jako **podgląd rozmowy** — widok tylko do odczytu wcześniejszej wymiany wiadomości, z banerem proponującym rozpoczęcie nowej rozmowy. Aby zadać kolejne pytanie, rozpocznij nową rozmowę — nie da się dopisywać wiadomości w starej.
+
+!!! note
+    Jeśli Twój plan wygasł, nadal możesz otworzyć *Historię sesji* i przeglądać wcześniejsze rozmowy — zablokowane jest tylko wysyłanie nowych wiadomości, a czat pokazuje wtedy komunikat z prośbą o odnowienie planu.
+
 ______________________________________________________________________
 
 ## Zarządzanie kontem
@@ -2107,6 +2141,8 @@ ______________________________________________________________________
 ### 1. Codzienne korzystanie z panelu
 
 - Regularnie przeglądaj najważniejsze widoki apliakacji, w szczególności listę pasiek i uli, aby na bieżąco śledzić statusy i pomiary. Reaguj na alarmy i powiadomienia w aplikacji w terminie.
+
+<a id="uzupelnianie-notatek-i-przegladow"></a>
 
 ### 2. Uzupełnianie notatek i przeglądów
 
@@ -2230,7 +2266,7 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 > [Wideo — notatka audio](#wideo-notatka-audio) 
 > [Notatki](#4-notatki)
 
-- **Zgłaszanie obserwacji szerszenia azjatyckiego:** Kliknij ikonę szerszenia azjatyckiego na kafelku pasieki, następnie przycisk *Zgłoś obserwację* i odpowiedz na pytanie *Czy widzisz teraz szerszenia azjatyckiego?* Odpowiedź *Nie* zapisuje zgłoszenie od razu; po *Tak* wypełnij jeszcze formularz z datą obserwacji i **wymaganą** liczbą osobników, a następnie kliknij *Wyślij zgłoszenie*. Ikona szerszenia azjatyckiego zostanie odpowiednio zaktualizowana (aktywna obserwacja / sprawdzono, czysto / nieaktualne), a nad nią pojawi się data ostatniego zgłoszenia.  
+- **Zgłaszanie obserwacji szerszenia azjatyckiego:** Kliknij ikonę szerszenia azjatyckiego na kafelku pasieki, następnie przycisk *Zgłoś obserwację* i odpowiedz na pytanie *Czy widzisz teraz szerszenia azjatyckiego?* Odpowiedź *Nie* zapisuje zgłoszenie od razu; po *Tak* wypełnij jeszcze datę obserwacji i opcjonalny komentarz (oraz opcjonalne zdjęcia), a następnie kliknij *Wyślij zgłoszenie*. Ikona szerszenia azjatyckiego zostanie odpowiednio zaktualizowana (aktywna obserwacja / sprawdzono, czysto / nieaktualne), a nad nią pojawi się data ostatniego zgłoszenia.  
 
 > [Obserwacja szerszenia azjatyckiego](#obserwacja-szerszenia)
 
@@ -2313,6 +2349,10 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 - **Sprawdzenie wersji aplikacji:** W widoku *Ustawienia konta* przewiń na sam dół ekranu — zobaczysz wpis **Wersja X.Y.Z**. Jeśli Twoja wersja nie jest już wspierana, aplikacja przy uruchomieniu wyświetli zamiast tego pełnoekranowy komunikat *Wymagana aktualizacja*.
 
 > [Sprawdzenie wersji aplikacji](#2-sprawdzenie-wersji-aplikacji)
+
+- **Sprawdzenie planu:** Kliknij plakietkę planu obok powitania w zakładce *Pasieki*, aby zobaczyć swój aktualny plan, jego funkcje i dostępny drugi poziom.
+
+> [Twój plan](#twoj-plan)
 
 ### 9. Zgłaszanie problemów i sugestii
 
