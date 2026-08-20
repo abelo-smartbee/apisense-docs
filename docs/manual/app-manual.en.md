@@ -1094,6 +1094,9 @@ Once a frame photo analysis is complete, a *Recommendations* section below the r
 
 ### 3. Samples
 
+!!! note "Pilot feature"
+    The *Samples* and *Examinations* tabs are available only to users included in the pilot programme. If your account is not part of it, the *Register sample* and *Examination* options do not appear in the *Add...* menu, and the related lists stay hidden.
+
 <div class="yt-embed short" id="video-register-sample">
   <iframe src="https://www.youtube.com/embed/jqS9rvhd-X0"
           title="Apisense Manual PL — 07 · Register sample"
@@ -1172,6 +1175,9 @@ To delete a pending sample:
 
 ### 4. Examinations
 
+!!! note "Pilot feature"
+    As with *Samples*, the *Examinations* tab is available only to users included in the pilot programme.
+
 #### 4.1 Adding an examination
 
 - In the Apiaries tab (the start view after logging in to the Apisense app) click the apiary tile. After clicking the tile, the Hives view will be displayed ([](#fig-apiaries-apiary-with-beehive-6)).
@@ -1200,8 +1206,21 @@ Figure: Add examination button {#fig-add-examination-button}
 - In the Add examination view ([](#fig-add-examination)), fill in the following fields:
 
     - **Examination date** — choose the date the examination was performed.
-    - **Examination type** — choose one of the available options from the drop-down list, e.g. Natural drop.
+    - **Examination type** — choose one of the available options from the drop-down list, e.g. *Natural drop*. The available types are listed in the table below.
     - **Photos and supplementary information** — after choosing the examination type, take or upload the required number of photos and fill in the numeric fields (e.g. Varroa mite count) according to the on-screen prompts.
+
+Examination types available in the drop-down list:
+
+| Examination type | What it covers | What you enter and attach |
+| :--------------- | :------------- | :------------------------ |
+| **Sugar roll** | Varroa — infestation assessment with the "powdered sugar roll" method on a sample of 300 live bees | Varroa mite count, 1 photo |
+| **Natural drop** | Varroa — number of females found during inspection on the bottom board insert | Varroa mite count, 1 photo |
+| **Microscopy** | Nosemosis — microscopic examination of a bee sample | *Nosema* spore count, up to 5 photos |
+
+!!! note "The list depends on the apiary location"
+    The app gets the list of examination types from the server for each apiary separately, so it can differ between apiaries. **Natural drop** is available only for apiaries located in Poland (the position of the Hub decides the location). For all other apiaries the list shows *Sugar roll* and *Microscopy*.
+
+    Instructions on how to perform the examinations are available in the [Lab procedures](../procedures/index.md) section.
 
 Figure: Add examination view, type: Sugar roll {#fig-add-examination}
 
