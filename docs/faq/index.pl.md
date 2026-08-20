@@ -259,7 +259,6 @@ Szczegółowy opis widoku: [Omówienie ustawień ula](../manual/app-manual.md#om
 
 1. **Odłącz czujnik od starego ula.** *Ustawienia ula* → *Wyposażenie* → *Odłącz VitalSensor* → **zostaw włączony** przełącznik *Zachowaj historię danych VitalSensor dla tego ula* → *Odłącz*. Włączony przełącznik oznacza, że pomiary tego czujnika zostają zapisane w systemie, a wyłączony — że znikają bezpowrotnie. Niezależnie od jego ustawienia **stary ul przestanie pokazywać wykresy parametrów**; szczegóły: [Co stanie się z danymi w starym ulu?](#dane-w-starym-ulu).
 2. **Przypnij czujnik do nowego ula** — kroki jak w [skanowaniu kodu QR z poziomu ula](#skanowanie-qr-z-poziomu-ula). Jeśli ul docelowy jeszcze nie istnieje w aplikacji, utwórz go i powiąż czujnik od razu na etapie dodawania ula — patrz [Dodawanie ula z VitalSensorem i Scale](../manual/app-manual.md#212-dodawanie-ula-z-vitalsensorem-i-scale).
-3. **Dodaj notatkę z datą** w obu ulach — to jedyny trwały ślad tego, kiedy czujnik zmienił ul.
 
 Huba nie dotykasz — jego konfiguracja odświeża się automatycznie po obu operacjach.
 
@@ -327,7 +326,6 @@ Jeśli później przypniesz do starego ula inne urządzenie, jego wykresy zaczn�
 - **Nie twórz nowego ula**, jeśli to ta sama rodzina, która przeprowadziła się razem ze swoim ulem — napisz do nas, przeniesiemy ul bez utraty historii.
 - **Przerwa w danych podczas przepinania jest normalna.** Wykres w nowym ulu zaczyna się od dnia powiązania, a stary ul przestaje pokazywać wykresy z dniem odłączenia.
 - **Sprawdź zasięg.** Czujnik musi stać w promieniu ok. 35 m od Huba swojej nowej pasieki, inaczej po okresie pierwszego połączenia zobaczysz na kafelku ula status *Brak połączenia*.
-- **Dodaj notatkę z datą w obu ulach.** Notatka zostaje w ulu na stałe i jest jedynym śladem tego, co i kiedy stało się ze sprzętem — wykresu w starym ulu już nie zobaczysz.
 - **Nie licz na uśrednienie danych.** Krótka historia w nowym ulu oznacza, że alerty chorobowe i trendy staną się wiarygodne dopiero po kilku dniach.
 
 <a id="zamiana-hubow"></a>

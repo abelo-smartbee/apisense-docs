@@ -259,7 +259,6 @@ The view is described in detail in [Hive settings](../manual/app-manual.md#omowi
 
 1. **Unbind the sensor from the old hive.** *Hive settings* → *Equipment* → *Disconnect VitalSensor* → **leave the** *Keep the VitalSensor data history for this hive* **toggle on** → *Disconnect*. With the toggle on, that sensor's measurements stay stored in the system; with it off they are gone for good. Either way **the old hive stops showing its parameter charts** — details: [What happens to the data in the old hive?](#data-in-the-old-hive).
 2. **Bind the sensor to the new hive** — the steps in [scanning a QR code from a specific hive](#scanning-a-qr-from-a-specific-hive). If the target hive does not exist in the app yet, create it and bind the sensor right away during hive creation — see [Adding a hive with VitalSensor and Scale](../manual/app-manual.md#212-adding-a-hive-with-vitalsensor-and-scale).
-3. **Add a dated note** in both hives — it is the only lasting trace of when the sensor changed hive.
 
 You do not touch the Hub — its configuration is refreshed automatically after both operations.
 
@@ -327,7 +326,6 @@ If you later bind another device to the old hive, its charts start **from the mo
 - **Do not create a new hive** if it is the same colony that relocated together with its hive — write to us instead and we will move the hive without losing its history.
 - **A gap in the data while re-binding is normal.** The new hive's chart starts on the binding day, and the old hive stops showing charts as of the unbinding day.
 - **Check the range.** The sensor has to sit within roughly 35 m of its new apiary's Hub, otherwise the hive tile will show *No connection* once the first-connection window elapses.
-- **Add a dated note in both hives.** The note stays with the hive for good and is the only trace of what happened to the equipment and when — the old hive's chart is no longer there to tell you.
 - **Do not expect the data to average out.** A short history in the new hive means disease alerts and trends only become reliable after a few days.
 
 <a id="swapped-hubs"></a>
