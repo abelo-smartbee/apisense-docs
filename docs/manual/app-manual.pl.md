@@ -1090,6 +1090,9 @@ Po zakończonej analizie zdjęcia ramki, pod wynikami znajduje się sekcja *Reko
 
 ### 3. Próbki
 
+!!! note "Funkcja pilotażowa"
+    Zakładki *Próbki* i *Badania* są dostępne wyłącznie dla użytkowników objętych pilotażem. Jeżeli Twoje konto nie bierze w nim udziału, opcje *Zarejestruj próbkę* i *Badanie* nie pojawią się w menu *Dodaj...*, a odpowiadające im listy będą ukryte.
+
 <div class="yt-embed short" id="wideo-zarejestruj-probke">
   <iframe src="https://www.youtube.com/embed/jqS9rvhd-X0"
           title="Apisense Manual PL — 07 · Zarejestruj próbkę"
@@ -1168,6 +1171,9 @@ Aby usunąć próbkę oczekującą:
     
 ### 4. Badania
 
+!!! note "Funkcja pilotażowa"
+    Podobnie jak *Próbki*, zakładka *Badania* jest dostępna wyłącznie dla użytkowników objętych pilotażem.
+
 #### 4.1 Dodawanie badania
 
 - W zakładce Pasieki (widok startowy po zalogowaniu do aplikacji Apisense) kliknij kafelek z pasieką. Po kliknięciu w kafelek zostanie wyświetlony widok Ule ([](#fig-apiaries-apiary-with-beehive-6)).
@@ -1196,8 +1202,21 @@ Figure: Przycisk Dodaj badanie {#fig-add-examination-button}
 - W widoku Dodaj badanie ([](#fig-add-examination)) uzupełnij następujące pola:
 
     - **Data badania** — wybierz datę wykonania badania.
-    - **Rodzaj badania** — wybierz z listy rozwijanej jedną z dostępnych opcji np. Osyp.
+    - **Rodzaj badania** — wybierz z listy rozwijanej jedną z dostępnych opcji, np. *Osyp*. Dostępne rodzaje opisuje tabela poniżej.
     - **Zdjęcia i informacje uzupełniające** — po wyborze rodzaju badania wykonaj lub wgraj wymaganą liczbę zdjęć oraz uzupełnij pola liczbowe (np. liczba roztoczy warrozy) zgodnie z komunikatami na ekranie.
+
+Rodzaje badań dostępne na liście rozwijanej:
+
+| Rodzaj badania | Czego dotyczy | Co wpisujesz i załączasz |
+| :------------- | :------------ | :----------------------- |
+| **Flotacja** | Warroza — ocena porażenia metodą „cukru pudru” na próbie 300 żywych pszczół | Liczba roztoczy warrozy, 1 zdjęcie |
+| **Osyp** | Warroza — liczba samic znalezionych podczas inspekcji na wkładce dennicowej | Liczba roztoczy warrozy, 1 zdjęcie |
+| **Mikroskop** | Nosemoza — badanie mikroskopowe próbki pszczół | Liczba spor *Nosema*, do 5 zdjęć |
+
+!!! note "Lista zależy od lokalizacji pasieki"
+    Aplikacja pobiera listę rodzajów badań z serwera osobno dla każdej pasieki, więc może się ona różnić między pasiekami. **Osyp** jest dostępny wyłącznie dla pasiek zlokalizowanych w Polsce (o lokalizacji decyduje położenie Huba). Dla pozostałych pasiek na liście zobaczysz *Flotację* i *Mikroskop*.
+
+    Instrukcje wykonania badań znajdziesz w sekcji [Badania](../procedures/index.md).
 
 Figure: Widok Dodaj badanie, rodzaj: Flotacja {#fig-add-examination}
 
