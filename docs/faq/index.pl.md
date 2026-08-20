@@ -188,6 +188,8 @@ Tak. Próbki żywych pszczół należy nadawać **Pocztą Polską** na adres lab
 
 Tak. Pamiętaj, aby zaznaczyć to w notatce w aplikacji.
 
+<a id="przenoszenie-vitalsensora"></a>
+
 ### Czy VitalSensor można przenieść, jeśli rodzina padnie lub zostanie utracona?
 
 Nie przenoś VitalSensor bez wcześniejszego poinformowania zespołu Apisense! Ze względu na ryzyko rozprzestrzeniania chorób oraz integralność danych, w takiej sytuacji za każdym razem skontaktuj się z nami bezpośrednio i poczekaj na dalsze instrukcje.
@@ -209,3 +211,133 @@ Zawsze dodawaj notatkę o takich czynnościach — pomaga to w prawidłowej inte
 ### Co jeśli przewożę swoje ule?
 
 Przewieź wszystkie ule + Hub + Scale razem i dodaj notatkę w aplikacji.
+
+<a id="przepinanie-urzadzen"></a>
+
+## Przepinanie urządzeń między ulami i pasiekami
+
+Ta sekcja opisuje, co zrobić w aplikacji, gdy VitalSensor (albo Scale) zmienia ul — bo ramka z czujnikiem trafiła do innego ula, rodzina przeniosła się na inne pasieczysko albo Huby zamieniły się miejscami.
+
+!!! warning "Najpierw skontaktuj się z nami"
+    Jeśli rodzina padła lub została utracona, **za każdym razem** skontaktuj się z zespołem Apisense przed przeniesieniem VitalSensora i poczekaj na instrukcje — patrz [Czy VitalSensor można przenieść…](#przenoszenie-vitalsensora). W badaniu Global Field Validation Study uzgodnij z nami **każde** przeniesienie czujnika między rodzinami, niezależnie od przyczyny. Poniższe kroki opisują wyłącznie stronę aplikacyjną i nie zwalniają z tego obowiązku — samego odwzorowania zmiany w aplikacji nie musisz nam już zgłaszać.
+
+<a id="zasada-urzadzenie-nalezy-do-ula"></a>
+
+### Zasada ogólna: urządzenie należy do ula, a Hub do pasieki
+
+- VitalSensor i Scale są **przypisane do ula**, a nie do Huba. Hub jest wyłącznie pośrednikiem — przekazuje dane z urządzeń stojących w jego pasiece do systemu.
+- Urządzenie zawsze raportuje przez **Hub tej pasieki, w której stoi jego ul**. Gdy przypniesz czujnik do ula w innej pasiece, system sam przestawi go na Hub tamtej pasieki i odświeży konfigurację obu Hubów. **Nie skanujesz w tym celu kodu QR Huba.**
+- Dlatego czujnik **nie musi zostać przy pierwotnym Hubie** i nie musisz przewozić rodziny z powrotem tylko po to, żeby „wrócić do starego Huba".
+- Historia pomiarów jest zapisywana pod **numerem seryjnym urządzenia** i pokazywana w ulu **od momentu powiązania** urządzenia z tym ulem.
+- **Zasięg jest warunkiem koniecznym.** Przypisanie w aplikacji to jedno, a łączność to drugie: VitalSensor i Scale wysyłają dane przez Bluetooth do Huba swojej pasieki, więc muszą stać **fizycznie blisko niego** — do ok. 35 m. Czujnik przepięty do ula w innej pasiece będzie w aplikacji przypisany poprawnie, ale nie prześle ani jednego pomiaru, dopóki nie znajdzie się w zasięgu Huba tamtej pasieki.
+- ColonyLink zostaje przy ulu (jest naklejony na ul) — przepinając czujnik, nie ruszasz ColonyLinka.
+
+<a id="skanowanie-qr-z-poziomu-ula"></a>
+
+### Jak zeskanować kod QR czujnika z poziomu konkretnego ula?
+
+Kod QR urządzenia skanujesz zawsze „z wnętrza" tego ula, do którego urządzenie ma trafić:
+
+1. Zakładka **Pasieki** → kafelek pasieki → zakładka *Ule* → kafelek wybranego ula.
+2. W zakładce *Szczegóły* kliknij ikonę **⋮** (prawy górny róg) i wybierz *Ustawienia*.
+3. Rozwiń sekcję **Wyposażenie** i znajdź blok **VitalSensor** (albo **Scale**).
+4. Kliknij **ikonę kodu QR** po prawej stronie pola i zeskanuj kod z urządzenia — *Numer seryjny* i *Kod potwierdzający* uzupełnią się same.
+5. Zapisz zmiany żółtym przyciskiem w prawym dolnym rogu.
+
+Na co zwrócić uwagę:
+
+- Ikona kodu QR jest widoczna **zawsze**, także wtedy, gdy w ulu jest już VitalSensor (lub Scale). Zeskanowanie kodu innego urządzenia **podmienia** urządzenie przypisane do tego ula.
+- Podmienić można wyłącznie na urządzenie, które **nie jest powiązane z żadnym innym ulem**. Jeśli zeskanujesz kod czujnika stojącego w innym ulu, zobaczysz komunikat *„VitalSensor jest już przypisany do ula X…"* i podmiana się nie uda — najpierw odłącz czujnik od tamtego ula.
+- Jeśli pasieka nie ma Huba, sekcja *Wyposażenie* pokazuje **wyłącznie ColonyLink** — pól VitalSensor i Scale w ogóle w niej nie ma.
+- W pasiece udostępnionej Ci przez inną osobę sekcja *Wyposażenie* może być tylko do odczytu — zarządzanie urządzeniami należy do właściciela pasieki.
+
+Szczegółowy opis widoku: [Omówienie ustawień ula](../manual/app-manual.md#omowienie-ustawien-ula).
+
+<a id="przepiecie-w-tej-samej-pasiece"></a>
+
+### Przełożyłem czujnik do innego ula w tej samej pasiece (ten sam Hub) — co zrobić?
+
+1. **Odłącz czujnik od starego ula.** *Ustawienia ula* → *Wyposażenie* → *Odłącz VitalSensor* → **zostaw włączony** przełącznik *Zachowaj historię danych VitalSensor dla tego ula* → *Odłącz*. Włączony przełącznik oznacza, że pomiary tego czujnika zostają zapisane w systemie, a wyłączony — że znikają bezpowrotnie. Niezależnie od jego ustawienia **stary ul przestanie pokazywać wykresy parametrów**; szczegóły: [Co stanie się z danymi w starym ulu?](#dane-w-starym-ulu).
+2. **Przypnij czujnik do nowego ula** — kroki jak w [skanowaniu kodu QR z poziomu ula](#skanowanie-qr-z-poziomu-ula). Jeśli ul docelowy jeszcze nie istnieje w aplikacji, utwórz go i powiąż czujnik od razu na etapie dodawania ula — patrz [Dodawanie ula z VitalSensorem i Scale](../manual/app-manual.md#212-dodawanie-ula-z-vitalsensorem-i-scale).
+
+Huba nie dotykasz — jego konfiguracja odświeża się automatycznie po obu operacjach.
+
+**Kolejność ma znaczenie.** Dopóki nie odłączysz czujnika od starego ula, próba zeskanowania jego kodu w nowym ulu zakończy się komunikatem: *„VitalSensor jest już przypisany do ula X. Odłącz urządzenie z ula X lub zeskanuj kod QR z innego VitalSensor."*
+
+<a id="przepiecie-do-innej-pasieki"></a>
+
+### Przełożyłem czujnik do ula w innej pasiece (inny Hub) — czy mogę zarejestrować go przy tamtym Hubie?
+
+**Tak.** Czujnik nie jest „przywiązany" do Huba, przy którym był rejestrowany po raz pierwszy. Kroki są dokładnie takie same jak przy przepięciu w obrębie jednej pasieki: najpierw *Odłącz VitalSensor* w starym ulu, potem zeskanuj jego kod QR w ulu docelowym. System sam przypisze czujnik do Huba pasieki docelowej.
+
+Warunki, które muszą być spełnione:
+
+- pasieka docelowa musi mieć **własny Hub**. Bez Huba aplikacja w ogóle nie pokaże pól VitalSensor i Scale: przy tworzeniu ula nie pojawią się etapy dodawania tych urządzeń, a w *Ustawieniach ula* → *Wyposażenie* zobaczysz sam ColonyLink;
+- czujnik musi stać **fizycznie w zasięgu tego Huba** — do ok. 35 m. Bez tego przypisanie w aplikacji będzie poprawne, ale dane nie popłyną.
+
+!!! note "Wyjątek: cała rodzina przeprowadziła się razem ze swoim ulem"
+    Jeśli nie chodzi o przełożenie ramki, tylko o przewiezienie **tego samego ula z tą samą rodziną** na inne pasieczysko, i chcesz zachować pełną historię tego ula (pomiary, notatki, przeglądy, badania, próbki, dane o matce), **nie twórz nowego ula i nie przepinaj urządzeń**. Aplikacja nie pozwala jeszcze samodzielnie przenieść ula między pasiekami — napisz na [bee@apisense.ai](mailto:bee@apisense.ai), a przeniesiemy ul po naszej stronie razem z całą historią i przypisanymi urządzeniami (wykresy pozostaną ciągłe). Jeśli w tej sytuacji założysz nowy ul i powiążesz z nim VitalSensor/Scale, historia jednej rodziny zostanie rozdzielona na dwa rekordy.
+
+<a id="przepiecie-czujnika-bez-ula"></a>
+
+### Czujnik nie był wcześniej przypisany do żadnego ula — co zrobić?
+
+Nie musisz niczego odłączać — wystarczy zeskanować kod QR czujnika. Masz dwie drogi:
+
+- **Nowy ul** — utwórz ul i powiąż z nim VitalSensor od razu na etapie dodawania ula; patrz [Dodawanie ula z VitalSensorem i Scale](../manual/app-manual.md#212-dodawanie-ula-z-vitalsensorem-i-scale).
+- **Istniejący ul** — wejdź w *Ustawienia ula* → *Wyposażenie* i zeskanuj kod QR w bloku VitalSensor ([kroki wyżej](#skanowanie-qr-z-poziomu-ula)).
+
+Numer seryjny i kod potwierdzający uzupełnia sam skan kodu QR — w aplikacji nie wpisuje się ich ręcznie.
+
+Jeśli w ulu docelowym stał już inny czujnik, zeskanowanie nowego kodu **podmienia** urządzenie: poprzedni czujnik zostaje odpięty od ula, a jego pomiary zostają zapisane w systemie. Wykresy parametrów w tym ulu **zaczynają się wtedy od nowa**, od momentu powiązania nowego czujnika — historia sprzed podmiany nie wraca na wykres.
+
+<a id="dane-w-starym-ulu"></a>
+
+### Co stanie się z danymi w starym ulu?
+
+Odłączenie urządzenia dotyczy wyłącznie urządzenia. W starym ulu **zostają bez zmian**: notatki, przeglądy, zadania, badania, próbki, dane o matce oraz odpowiedzi na formularze chorobowe.
+
+Z danymi pomiarowymi jest inaczej. **Niezależnie od ustawienia przełącznika *Zachowaj historię…* stary ul po odłączeniu urządzenia nie pokazuje już wykresów parametrów** — w widoku *Stan ula* wiersze *Waga* i *Warunki* pokazują *Brak Scale* / *Brak VitalSensor*, a wykresów nie da się rozwinąć. Przełącznik decyduje o czym innym:
+
+- **włączony** (ustawienie domyślne) — pomiary zostają zapisane w systemie;
+- **wyłączony** — pomiary tego urządzenia dla tego ula są **trwale usuwane**, a w przypadku VitalSensora usuwane są także próbki zarejestrowane w tym ulu tym czujnikiem. Tej operacji **nie da się cofnąć**.
+
+Jeśli później przypniesz do starego ula inne urządzenie, jego wykresy zaczną się **od momentu tego nowego powiązania**. Wcześniejsze pomiary nie wracają na wykres.
+
+!!! warning "Nie usuwaj starego ula tylko dla porządku"
+    Usunięcie ula kasuje całą jego zawartość (notatki, przeglądy, badania) oraz historię pomiarów odpiętych od niego urządzeń. Ul bez urządzeń nic nie kosztuje i nie przeszkadza — zostaw go jako zapis historii tej rodziny.
+
+<a id="dane-w-nowym-ulu"></a>
+
+### Co stanie się z danymi w nowym ulu?
+
+- **Wykresy zaczynają się od momentu powiązania.** Pomiary z poprzedniego ula nie są przenoszone — opisywały inną rodzinę i inne warunki.
+- **Urządzenie przechodzi pierwsze uruchomienie od nowa.** Na kafelku ula zobaczysz kolejno *Czekamy na połączenie*, a po nawiązaniu łączności *Urządzenie połączone — czekamy na pierwszy pomiar*. Pierwszy kontakt może zająć do kilku godzin i wymaga, aby Hub był online. Szczegóły: [Pierwsze uruchomienie urządzeń](../manual/app-manual.md#pierwsze-uruchomienie).
+- **Ocena zdrowia rodziny startuje od zera.** Przez pierwsze ok. 3 dni od przypisania na kafelku ula widnieje *Zbieramy dane*, a na kafelku pasieki *Zbieramy dane o zdrowiu X z Y uli*. Szczegóły: [Stan zdrowia rodziny](../manual/app-manual.md#stan-zdrowia).
+- **Scale: powiązanie z ulem zeruje tarowanie.** Po zamontowaniu wagi pod nowym ulem wykonaj tarowanie ponownie — patrz [Waga](../manual/app-manual.md#4-waga).
+
+<a id="przepinanie-ryzyka"></a>
+
+### O czym pamiętać — ryzyka
+
+- **Ryzyko przeniesienia choroby.** Czujnik wędruje między rodzinami razem z ramką. Odkażaj VitalSensor przed montażem w kolejnej rodzinie, a w badaniu Global Field Validation Study najpierw uzgodnij przeniesienie z zespołem Apisense.
+- **Zachowaj kolejność:** najpierw *Odłącz* w starym ulu, dopiero potem skanowanie w nowym. Odwrotna kolejność kończy się komunikatem o konflikcie.
+- **Wyłączenie przełącznika *Zachowaj historię…* jest nieodwracalne** — kasuje pomiary, a przy VitalSensorze także próbki tego ula. Wykresów w starym ulu i tak nie zobaczysz po odłączeniu, więc wyłączaj przełącznik tylko wtedy, gdy naprawdę chcesz skasować dane.
+- **Nie twórz nowego ula**, jeśli to ta sama rodzina, która przeprowadziła się razem ze swoim ulem — napisz do nas, przeniesiemy ul bez utraty historii.
+- **Przerwa w danych podczas przepinania jest normalna.** Wykres w nowym ulu zaczyna się od dnia powiązania, a stary ul przestaje pokazywać wykresy z dniem odłączenia.
+- **Sprawdź zasięg.** Czujnik musi stać w promieniu ok. 35 m od Huba swojej nowej pasieki, inaczej po okresie pierwszego połączenia zobaczysz na kafelku ula status *Brak połączenia*.
+- **Nie licz na uśrednienie danych.** Krótka historia w nowym ulu oznacza, że alerty chorobowe i trendy staną się wiarygodne dopiero po kilku dniach.
+
+<a id="zamiana-hubow"></a>
+
+### Zamieniłem Huby między pasiekami — co zrobić w aplikacji?
+
+**Co się dzieje z danymi:** nic nie ginie. Hub jest wyłącznie pośrednikiem, a historia pomiarów zapisuje się pod numerem seryjnym urządzenia. Zamiana ani wymiana Huba nie ucina wykresów, nie kasuje tarowania i nie gubi przybytku miodu.
+
+**Co się dzieje z łącznością:** każdy Hub ma konfigurację z listą urządzeń swojej pasieki. Po fizycznej zamianie Hub stoi przy ulach, których nie ma na swojej liście — te ule przestają raportować i po pewnym czasie pokażą *Brak połączenia*, mimo że baterie są sprawne.
+
+**Co zrobić — najprościej:** zamień Huby z powrotem, każdy na swoje pasieczysko. Urządzenia wrócą do raportowania przy najbliższej synchronizacji i nie musisz nic zmieniać w aplikacji.
+
+**Jeśli Huby mają zostać po zamianie:** Hub pasieki zmienia się w *Ustawienia pasieki* → sekcja **Hub** → ikona kodu QR → zeskanuj kod Huba, który stoi teraz w tej pasiece → zapisz. Jest jednak haczyk: **zamiana „na krzyż" między dwiema Twoimi pasiekami nie uda się w aplikacji**, bo przy próbie przypisania Huba wciąż należącego do drugiej pasieki zobaczysz komunikat *„Hub jest już przypisany do pasieki X. Odłącz urządzenie z pasieki X lub zeskanuj kod QR z innego Hub."* W takiej sytuacji napisz na [bee@apisense.ai](mailto:bee@apisense.ai) — przestawimy Huby po naszej stronie.
+
+Po podmianie Huba w pasiece urządzenia zostają w swoich ulach razem z historią i tarowaniem, ale nawiązują połączenie od nowa — przez chwilę na kafelkach uli zobaczysz *Czekamy na połączenie*.
