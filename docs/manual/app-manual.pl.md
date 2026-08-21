@@ -878,7 +878,7 @@ Listę zadań możesz filtrować po statusie. Dostępne są dwa filtry: *Do zrob
 
 ### 6. Obserwacja szerszenia azjatyckiego
 
-Ikona szerszenia azjatyckiego, znajdująca się na kafelku pasieki obok wskaźnika stanu zdrowia rodziny pszczelej, umożliwia zgłaszanie oraz przeglądanie obserwacji szerszenia azjatyckiego. Pozwala na bieżąco monitorować jego aktywność w pasiekach i szybciej reagować na potencjalne zagrożenie dla rodzin pszczelich. **Uwaga:** Ikona jest klikalna dla właściciela pasieki oraz dla współpracowników z dostępem **Pełnym** do pasieki udostępnionej. Pozostali użytkownicy widzą ją wyłącznie do podglądu, i tylko wtedy, gdy zgłoszenie już istnieje.
+Ikona szerszenia azjatyckiego, znajdująca się na kafelku pasieki obok wskaźnika stanu zdrowia rodziny pszczelej, umożliwia zgłaszanie oraz przeglądanie obserwacji szerszenia azjatyckiego. Pozwala na bieżąco monitorować jego aktywność w pasiekach i szybciej reagować na potencjalne zagrożenie dla rodzin pszczelich. **Uwaga:** Ikona jest klikalna dla właściciela pasieki oraz dla współpracowników z dostępem **Pełnym** do pasieki udostępnionej. Pozostali użytkownicy widzą ją wyłącznie do podglądu, i tylko wtedy, gdy zgłoszenie już istnieje (patrz [7.2 Poziomy dostępu](#poziomy-dostepu)).
 
 #### 6.1 Zgłaszanie obserwacji
 
@@ -917,6 +917,118 @@ Jeśli zgłoszenie powstało przez pomyłkę (przypadkowe kliknięcie), kliknij 
 #### 6.4 Przypomnienia o obserwacji
 
 Aplikacja przypomina o konieczności ponownego sprawdzenia obecności szerszenia azjatyckiego w tych pasiekach, w których nadszedł na to czas — czyli ich zgłoszenie przestało być „aktualne”. Gdy dotyczy to jednej lub kilku Twoich pasiek, zobaczysz *Przypomnienie o obserwacji* (najwyżej raz dziennie) z prośbą o zapisanie aktualnego stanu, aby dane pozostały wiarygodne — pasieki są pogrupowane na te, których zgłoszenie już się zestarzało, i te, które nigdy nie były sprawdzane. Możesz zareagować od razu albo zamknąć okno przyciskiem *X* lub *Zamknij* — przypomnienie nie pojawi się ponownie, dopóki nie minie okres wyciszenia.
+
+<a id="udostepnianie-pasieki"></a>
+
+### 7. Udostępnianie pasieki
+
+Pasiekę możesz udostępnić innej osobie — wspólnikowi, pracownikowi albo badaczowi — nadając jej wybrany poziom dostępu do danych. Właścicielem pasieki pozostajesz Ty: poziom dostępu możesz w każdej chwili zmienić, a samo udostępnienie wycofać.
+
+**Kogo można zaprosić.** Wyłącznie osobę, która ma już konto Apisense — zaproszenie kierujesz na adres e-mail, na który to konto założono. Jeśli konta nie ma, zobaczysz komunikat *Ta osoba nie ma konta Apisense.* — poproś ją najpierw o rejestrację.
+
+<a id="gdzie-znajdziesz-udostepnianie"></a>
+
+#### 7.1 Gdzie znajdziesz udostępnianie
+
+Widok *Udostępnij pasiekę* otworzysz na trzy sposoby:
+
+- **z panelu głównego** — kliknij ikonę udostępniania w górnym pasku zakładki *Pasieki*. Czerwona kropka przy ikonie oznacza, że czeka na Ciebie zaproszenie;
+- **z wnętrza pasieki** — w zakładce *Ule* kliknij ikonę udostępniania w górnym pasku. Ikona jest widoczna wyłącznie dla właściciela pasieki i otwiera od razu formularz zaproszenia dla tej pasieki;
+- **z nagłówka *Udostępnione pasieki*** — nagłówek pojawia się na liście pasiek, gdy ktoś udostępnił Ci swoją pasiekę, i oddziela pasieki cudze od Twoich własnych.
+
+Widok *Udostępnij pasiekę* ma dwie zakładki:
+
+- **Udostępnione** — osoby, którym to Ty udostępniłeś swoje pasieki;
+- **Udostępnione dla mnie** — pasieki udostępnione Tobie przez innych pszczelarzy.
+
+Widok otwarty z panelu głównego startuje na zakładce *Udostępnione dla mnie*, a jego zakładka *Udostępnione* zbiera udostępnienia ze wszystkich Twoich pasiek ([](#fig-sharing-hub)). Ikona w widoku pasieki działa inaczej — prowadzi prosto do formularza zaproszenia dla tej pasieki, z pominięciem widoku z zakładkami.
+
+Figure: Widok Udostępnij pasiekę - zakładka Udostępnione {#fig-sharing-hub}
+
+![figure](pictures/sharing_hub.png){width=200}
+
+<a id="poziomy-dostepu"></a>
+
+#### 7.2 Poziomy dostępu
+
+Przy każdym zaproszeniu wybierasz jeden z trzech poziomów w sekcji *Rodzaj dostępu*. Granica przebiega między tym, co system **zmierzył sam**, a tym, co pszczelarz **wpisał ręcznie**.
+
+| Poziom | Co widzi zaproszona osoba | Co może zmieniać |
+| :---- | :---- | :---- |
+| **Ograniczony** — *Tylko ogólne informacje na temat pasieki* | Dane mierzone i wyliczane przez system: wykresy, pogodę, stan zdrowia i choroby, stan urządzeń, powiadomienia, a także strukturę pasieki — nazwy uli i dane matki | Nic — dostęp wyłącznie do odczytu |
+| **Standardowy** — *Wszystkie informacje o pasiece i ulach* | Wszystko powyżej oraz treści wpisywane ręcznie: przeglądy, notatki, zadania, badania, próbki, zdjęcia ramek i kalendarz | Nic — dostęp wyłącznie do odczytu |
+| **Pełny** — *Możliwość zarządzania pasieką* | To samo, co poziom *Standardowy* | Dopisywanie i edycję: przeglądy, notatki, zadania, badania i próbki, dane uli, dodawanie i usuwanie uli, edycję pasieki, zgłoszenia szerszenia azjatyckiego oraz tarowanie wagi |
+
+Trzy rzeczy pozostają **wyłącznie w rękach właściciela**, niezależnie od nadanego poziomu: zarządzanie Hubem i urządzeniami (osoba z udostępnieniem widzi je, ale bez możliwości podmiany i zapisu), samo udostępnianie pasieki oraz usunięcie pasieki.
+
+!!! note
+    Na pasiece udostępnionej zakres danych premium wynika z planu **właściciela** pasieki, a nie z Twojego. Widzisz pasiekę tak, jak widzi ją właściciel — Twój własny plan nie odblokuje danych, za które właściciel nie zapłacił, ani ich nie ograniczy, jeśli właściciel je ma.
+
+#### 7.3 Jak udostępnić pasiekę
+
+- Otwórz widok *Udostępnij pasiekę* (patrz [7.1](#gdzie-znajdziesz-udostepnianie)).
+- Kliknij przycisk *Udostępnij pasiekę* na dole zakładki *Udostępnione*. Jeśli wszedłeś z panelu głównego, zobaczysz najpierw ekran *Wybierz pasiekę* — wskaż pasiekę, którą chcesz udostępnić ([](#fig-share-apiary-picker)). Wejście z konkretnej pasieki pomija ten krok.
+
+Figure: Widok Wybierz pasiekę {#fig-share-apiary-picker}
+
+![figure](pictures/share_apiary_picker.png){width=200}
+
+- Wypełnij formularz:
+
+    - **E-mail** — adres konta Apisense osoby, którą zapraszasz. Aplikacja wyśle na niego zaproszenie z dostępem do pasieki;
+    - **Imię** — nazwa, pod którą ta osoba będzie widoczna na Twojej liście udostępnień;
+    - **Rodzaj dostępu** — jeden z poziomów opisanych w [7.2](#poziomy-dostepu). Zaznaczony poziom oznaczony jest znacznikiem po prawej stronie.
+
+- Kliknij *Udostępnij*. Zaproszenie trafia na listę ze statusem *Oczekuje na akceptację* i czeka na decyzję zaproszonej osoby ([](#fig-share-apiary-form)).
+
+Figure: Formularz Udostępnij pasiekę {#fig-share-apiary-form}
+
+![figure](pictures/share_apiary_form.png){width=200}
+
+Aplikacja nie przyjmie zaproszenia w trzech przypadkach: gdy adres nie ma konta Apisense, gdy ta pasieka jest już tej osobie udostępniona (*Ta pasieka jest już udostępniona tej osobie.*) oraz gdy podasz własny adres (*Nie możesz udostępnić pasieki samemu sobie.*).
+
+#### 7.4 Statusy zaproszeń
+
+Na zakładce *Udostępnione* każdy wiersz pokazuje osobę, nadany poziom w polu *Dostęp:*, status w polu *Zaproszenie:* oraz datę wysłania zaproszenia. Możliwe statusy:
+
+- **Oczekuje na akceptację** — zaproszenie wysłane, osoba jeszcze nie zdecydowała. Dostępu jeszcze nie ma.
+- **Zaakceptowane** — zaproszenie przyjęte, pasieka jest widoczna dla tej osoby.
+- **Odrzucone** — zaproszenie odrzucone przez zapraszaną osobę.
+- **Wycofane** — dostęp cofnięty przez Ciebie.
+
+Wiersze o statusie *Odrzucone* i *Wycofane* pozostają na liście jako historia. Aby ponowić próbę, wyślij po prostu nowe zaproszenie — powstanie wtedy nowy wpis, a stary zostanie zachowany.
+
+#### 7.5 Zmiana poziomu dostępu i wycofanie udostępnienia
+
+Kliknij wiersz na zakładce *Udostępnione*, aby otworzyć *Szczegóły udostępnienia* ([](#fig-share-details)):
+
+Figure: Widok Szczegóły udostępnienia {#fig-share-details}
+
+![figure](pictures/share_details.png){width=200}
+
+
+- **Imię** i **Rodzaj dostępu** możesz zmienić. Po zmianie na dole ekranu pojawiają się przyciski *Anuluj* i *Zapisz*.
+- **E-mail** jest niezmienny — pole jest wyszarzone. Jeśli adres jest błędny, wycofaj zaproszenie i wyślij nowe na właściwy adres.
+- **Wycofaj zaproszenie** — przycisk widoczny, dopóki niczego nie zmieniasz w formularzu. Aplikacja poprosi o potwierdzenie komunikatem *Wycofać zaproszenie?* z ostrzeżeniem, że *Ta osoba natychmiast straci dostęp do pasieki.*
+
+#### 7.6 Gdy pasieka jest udostępniona Tobie
+
+- **Zaproszenie**. Gdy ktoś udostępni Ci pasiekę, na liście pasiek pojawia się karta *ZAPROSZENIE DO PASIEKI* z nazwą pasieki i imieniem właściciela oraz przyciskami *Zaakceptuj* i *Odrzuć*. Kartę możesz zamknąć krzyżykiem — zaproszenie nie znika, czeka na zakładce *Udostępnione dla mnie*.
+- **Decyzja**. Zaproszenie przyjmiesz lub odrzucisz albo z karty na liście pasiek, albo z zakładki *Udostępnione dla mnie*, albo po kliknięciu wiersza — na ekranie *Zaproszenie*, który pokazuje właściciela, pasiekę i nadany poziom dostępu wraz z jego opisem.
+- **Po akceptacji** pasieka pojawia się na Twojej liście pasiek pod nagłówkiem *Udostępnione pasieki*. Zakres tego, co zobaczysz i co możesz zmienić, wynika z poziomu nadanego przez właściciela ([7.2](#poziomy-dostepu)).
+- **Opuszczenie pasieki**. Na ekranie *Zaproszenie* przyjętego udostępnienia dostępny jest przycisk *Opuść pasiekę*, potwierdzany komunikatem *Opuścić pasiekę?*. Pasieka znika wtedy z Twojej listy.
+
+Gdy poziom dostępu nie wystarcza do wykonania akcji, aplikacja nie ukrywa jej po cichu:
+
+- przy próbie edycji zobaczysz komunikat *Dostęp tylko do odczytu* z podpowiedzią *Aby edytować tę sekcję, poproś właściciela o pełny dostęp.*;
+- sekcja niedostępna na poziomie *Ograniczony* pokazuje ekran *Funkcja niedostępna* z informacją *Ta część pasieki wymaga wyższego poziomu dostępu. Poproś właściciela o rozszerzenie udostępnienia.*
+
+!!! note
+    Właściciel może w każdej chwili cofnąć dostęp — przypomina o tym adnotacja na ekranie zaproszenia: *Po akceptacji będziesz mieć wgląd do danych pasieki. Właściciel może w każdej chwili cofnąć dostęp.*
+
+#### 7.7 Powiadomienia o udostępnianiu
+
+Zaproszenie, jego akceptacja i wycofanie dostępu trafiają do zakładki *Techniczne* w widoku *Powiadomienia* (oznaczone ikoną udostępniania) i przychodzą również jako powiadomienie push. Kliknięcie takiego powiadomienia otwiera widok *Udostępnij pasiekę*.
 
 ______________________________________________________________________
 
@@ -1993,7 +2105,7 @@ Powiadomienia w aplikacji możesz znaleźć realizując poniższe kroki:
 Powiadomienia w aplikacji są dostępne w zakładce *Powiadomienia*. Powiadomienia dzielą się na następujące kategorie, które odpowiadają poszczególnym zakładkom ([](#fig-notifications-problems-details)):
 
 - **Problemy** – powiadomienia związane ze stanem zdrowia rodzin pszczelich, dotyczące wykrytych chorób takich jak Warroza wraz z zalecanym postępowaniem w celu zwalczenia konkretnej choroby.
-- **Techniczne** – powiadomienia dotyczące działania urządzeń monitorujących, np. niski poziom baterii lub brak zasięgu.
+- **Techniczne** – powiadomienia dotyczące działania urządzeń monitorujących, np. niski poziom baterii lub brak zasięgu. W tej zakładce pojawiają się również powiadomienia o udostępnianiu pasieki — zaproszenie, jego akceptacja oraz wycofanie dostępu (patrz [7. Udostępnianie pasieki](#udostepnianie-pasieki)).
 
 Figure: Zakładka Powiadomienia - przykładowe powiadomienia chorobowe i techniczne (zakładki Problemy i Techniczne) (1) {#fig-notifications-problems-details}
 
@@ -2168,7 +2280,7 @@ ______________________________________________________________________
 - Po każdej wizycie w pasiece dodawaj notatki i przeglądy w aplikacji (najlepiej z załącznikami w postaci zdjęć). Dzięki temu możliwe będzie analizowanie historii działań oraz dokładniejsza ocena sytuacji przez system.
 
 !!! note
-    Dopisywanie danych wymaga aktywnego planu i prawa do zapisu. Po wygaśnięciu planu aplikacja przechodzi w **tryb tylko do podglądu** — próba zapisu kończy się komunikatem *Plan wygasł. Odnów subskrypcję, aby dodawać i edytować.* W pasiece udostępnionej z poziomem *Ograniczony* zakładki *Przegląd*, *Notatki*, *Zadania*, *Badania* i *Próbki* w ogóle się nie renderują.
+    Dopisywanie danych wymaga aktywnego planu i prawa do zapisu. Po wygaśnięciu planu aplikacja przechodzi w **tryb tylko do podglądu** — próba zapisu kończy się komunikatem *Plan wygasł. Odnów subskrypcję, aby dodawać i edytować.* W pasiece udostępnionej z poziomem *Ograniczony* zakładki *Przegląd*, *Notatki*, *Zadania*, *Badania* i *Próbki* w ogóle się nie renderują (patrz [7.2 Poziomy dostępu](#poziomy-dostepu)).
 
 ### 3. Regularne sprawdzanie alarmów
 
@@ -2284,6 +2396,8 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 > [Wideo — notatka tekstowa](#wideo-notatka-tekst)
 > [Wideo — notatka audio](#wideo-notatka-audio) 
 > [Notatki](#4-notatki)
+
+- **Udostępnianie pasieki:** Kliknij ikonę udostępniania w górnym pasku zakładki *Pasieki* (albo w zakładce *Ule* wewnątrz pasieki). Na zakładce *Udostępnione* kliknij *Udostępnij pasiekę*, wskaż pasiekę (jeśli aplikacja o to poprosi), wpisz adres e-mail konta Apisense osoby, którą zapraszasz, jej imię oraz wybierz *Rodzaj dostępu* (*Ograniczony*, *Standardowy* lub *Pełny*), a następnie kliknij *Udostępnij*. Poziom dostępu zmienisz, a udostępnienie wycofasz, klikając wiersz na liście.
 
 - **Zgłaszanie obserwacji szerszenia azjatyckiego:** Kliknij ikonę szerszenia azjatyckiego na kafelku pasieki, następnie przycisk *Zgłoś obserwację* i odpowiedz na pytanie *Czy widzisz teraz szerszenia azjatyckiego?* Odpowiedź *Nie* zapisuje zgłoszenie od razu; po *Tak* wypełnij jeszcze datę obserwacji i opcjonalny komentarz (oraz opcjonalne zdjęcia), a następnie kliknij *Wyślij zgłoszenie*. Ikona szerszenia azjatyckiego zostanie odpowiednio zaktualizowana (aktywna obserwacja / sprawdzono, czysto / nieaktualne), a nad nią pojawi się data ostatniego zgłoszenia.  
 

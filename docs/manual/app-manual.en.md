@@ -881,7 +881,7 @@ You can filter the task list by status. There are two filters: *To do* and *Comp
 
 ### 6. Asian hornet observation
 
-The Asian hornet icon on the apiary tile, next to the colony health status indicator, lets you report and review Asian hornet observations. It helps you monitor their activity in your apiaries and respond more quickly to a potential threat to bee colonies. **Note:** The icon is tappable for the apiary owner and for collaborators with **Full** access to a shared apiary; everyone else sees it read-only, and only once a report already exists.
+The Asian hornet icon on the apiary tile, next to the colony health status indicator, lets you report and review Asian hornet observations. It helps you monitor their activity in your apiaries and respond more quickly to a potential threat to bee colonies. **Note:** The icon is tappable for the apiary owner and for collaborators with **Full** access to a shared apiary; everyone else sees it read-only, and only once a report already exists (see [7.2 Access levels](#access-levels)).
 
 #### 6.1 Reporting an observation
 
@@ -920,6 +920,118 @@ If you filed a report by mistake (an accidental tap), tap the Asian hornet icon 
 #### 6.4 Observation reminders
 
 The app reminds you to re-check for Asian hornets in the apiaries where it is time to do so — the ones whose report has stopped being "fresh". When one or more of your apiaries are due, you'll see an *Observation reminder* prompt (at most once a day) asking you to record the current state to keep the data reliable, grouped into apiaries that had a report before but it's gone stale, and apiaries that have never been checked. You can act on it right away or close the prompt with the *X* or *Close* button — it doesn't ask again until the throttle window passes.
+
+<a id="apiary-sharing"></a>
+
+### 7. Apiary sharing
+
+You can share an apiary with another person — a partner, an employee or a researcher — and give them a chosen level of access to its data. You stay the owner: you can change the access level at any time, and withdraw the share entirely.
+
+**Who you can invite.** Only someone who already has an Apisense account — the invitation goes to the e-mail address that account was created with. If there is no account, you'll see *This person doesn't have an Apisense account.* — ask them to register first.
+
+<a id="where-to-find-sharing"></a>
+
+#### 7.1 Where to find sharing
+
+There are three ways to open the *Share apiary* view:
+
+- **from the main panel** — tap the sharing icon in the top bar of the *Apiaries* tab. A red dot on the icon means an invitation is waiting for you;
+- **from inside an apiary** — in the *Hives* tab, tap the sharing icon in the top bar. The icon is visible to the apiary owner only, and it opens the invitation form for that apiary straight away;
+- **from the *Shared apiaries* heading** — the heading appears in the apiary list once somebody shares an apiary with you, and separates other people's apiaries from your own.
+
+The *Share apiary* view has two tabs:
+
+- **Shared** — the people you shared your apiaries with;
+- **Shared with me** — the apiaries other beekeepers shared with you.
+
+Opened from the main panel, the view starts on the *Shared with me* tab, and its *Shared* tab aggregates the shares of all your apiaries ([](#fig-sharing-hub-en)). The icon inside an apiary behaves differently — it goes straight to the invitation form for that apiary, skipping the tabbed view.
+
+Figure: Share apiary view - Shared tab {#fig-sharing-hub-en}
+
+![figure](pictures/sharing_hub.png){width=200}
+
+<a id="access-levels"></a>
+
+#### 7.2 Access levels
+
+Every invitation carries one of three levels, picked in the *Access type* section. The line runs between what the system **measured itself** and what the beekeeper **entered by hand**.
+
+| Level | What the invited person sees | What they can change |
+| :---- | :---- | :---- |
+| **Restricted** — *Only general apiary information* | Data measured and derived by the system: charts, weather, colony health and diseases, device status, notifications, plus the structure of the apiary — hive names and queen details | Nothing — read-only access |
+| **Standard** — *All apiary and hive information* | Everything above, plus hand-entered content: inspections, notes, tasks, examinations, samples, frame photos and the calendar | Nothing — read-only access |
+| **Full** — *Ability to manage the apiary* | The same as *Standard* | Adding and editing: inspections, notes, tasks, examinations and samples, hive details, adding and deleting hives, apiary edits, Asian hornet reports and scale taring |
+
+Three things stay **with the owner only**, whatever the level: Hub and device management (a shared member sees them, but cannot swap or save anything), sharing the apiary itself, and deleting the apiary.
+
+!!! note
+    On a shared apiary the scope of premium data follows the **owner's** plan, not yours. You see the apiary the way its owner sees it — your own plan neither unlocks data the owner never paid for, nor limits data the owner does have.
+
+#### 7.3 How to share an apiary
+
+- Open the *Share apiary* view (see [7.1](#where-to-find-sharing)).
+- Tap the *Share apiary* button at the bottom of the *Shared* tab. If you came from the main panel, a *Choose an apiary* screen comes first — pick the apiary you want to share ([](#fig-share-apiary-picker-en)). Coming from a specific apiary skips this step.
+
+Figure: Choose an apiary view {#fig-share-apiary-picker-en}
+
+![figure](pictures/share_apiary_picker.png){width=200}
+
+- Fill in the form:
+
+    - **E-mail** — the Apisense account address of the person you're inviting. The app sends the invitation with access to the apiary there;
+    - **Name** — the label this person appears under in your sharing list;
+    - **Access type** — one of the levels described in [7.2](#access-levels). The selected level is marked with a check on the right.
+
+- Tap *Share*. The invitation lands on the list with the *Pending acceptance* status and waits for the invited person's decision ([](#fig-share-apiary-form-en)).
+
+Figure: Share apiary form {#fig-share-apiary-form-en}
+
+![figure](pictures/share_apiary_form.png){width=200}
+
+The app refuses an invitation in three cases: the address has no Apisense account, the apiary is already shared with that person (*This apiary is already shared with this person.*), and you entered your own address (*You can't share an apiary with yourself.*).
+
+#### 7.4 Invitation statuses
+
+On the *Shared* tab each row shows the person, the granted level under *Access:*, the status under *Invitation:* and the date the invitation was sent. The possible statuses are:
+
+- **Pending acceptance** — the invitation was sent, the person hasn't decided yet. There is no access yet.
+- **Accepted** — the invitation was taken up and the apiary is visible to that person.
+- **Rejected** — the invited person declined.
+- **Withdrawn** — you withdrew the access.
+
+*Rejected* and *Withdrawn* rows stay on the list as history. To try again, simply send a new invitation — a new entry is created and the old one is kept.
+
+#### 7.5 Changing the access level and withdrawing a share
+
+Tap a row on the *Shared* tab to open *Sharing details* ([](#fig-share-details-en)):
+
+Figure: Sharing details view {#fig-share-details-en}
+
+![figure](pictures/share_details.png){width=200}
+
+
+- **Name** and **Access type** can be changed. Once you change something, the *Cancel* and *Save* buttons appear at the bottom of the screen.
+- **E-mail** is immutable — the field is greyed out. If the address is wrong, withdraw the invitation and send a new one to the correct address.
+- **Withdraw invitation** — the button shows as long as you haven't changed anything in the form. The app asks for confirmation with *Withdraw invitation?* and the warning that *This person will immediately lose access to the apiary.*
+
+#### 7.6 When an apiary is shared with you
+
+- **The invitation.** When somebody shares an apiary with you, an *APIARY INVITATION* card appears in the apiary list with the apiary name, the owner's name and the *Accept* and *Reject* buttons. You can close the card with the cross — the invitation isn't lost, it waits on the *Shared with me* tab.
+- **The decision.** You can accept or reject either from the card in the apiary list, or from the *Shared with me* tab, or after tapping the row — on the *Invitation* screen, which shows the owner, the apiary and the granted access level with its description.
+- **After accepting**, the apiary appears in your apiary list under the *Shared apiaries* heading. What you see and what you may change follows the level the owner granted ([7.2](#access-levels)).
+- **Leaving the apiary.** On the *Invitation* screen of an accepted share there is a *Leave apiary* button, confirmed with *Leave apiary?*. The apiary then disappears from your list.
+
+When your access level isn't enough for an action, the app doesn't hide it silently:
+
+- an attempt to edit shows *Read-only access* with the hint *To edit this section, ask the owner for full access.*;
+- a section unavailable at the *Restricted* level shows a *Feature unavailable* screen with *This part of the apiary requires a higher access level. Ask the owner to extend your share.*
+
+!!! note
+    The owner can withdraw access at any time — the note on the invitation screen says so: *After accepting you'll have access to the apiary's data. The owner can withdraw access at any time.*
+
+#### 7.7 Sharing notifications
+
+An invitation, its acceptance and a withdrawal of access all land in the *Technical* tab of the *Notifications* view (marked with the sharing icon) and also arrive as a push notification. Tapping such a notification opens the *Share apiary* view.
 
 ______________________________________________________________________
 
@@ -1994,7 +2106,7 @@ You can find notifications in the app by following these steps:
 Notifications in the app are available in the *Notifications* tab. Notifications are divided into the following categories that correspond to individual tabs ([](#fig-notifications-problems-details)):
 
 - **Problems** – notifications related to the health status of bee colonies, regarding detected diseases such as Varroa, along with recommended steps to combat the specific disease.
-- **Technical** – notifications regarding the operation of monitoring devices, e.g. low battery level or no signal coverage.
+- **Technical** – notifications regarding the operation of monitoring devices, e.g. low battery level or no signal coverage. This tab also carries apiary sharing notifications — an invitation, its acceptance and a withdrawal of access (see [7. Apiary sharing](#apiary-sharing)).
 
 Figure: Notifications tab - sample disease and technical notifications (Problems and Technical tabs) (1) {#fig-notifications-problems-details}
 
@@ -2169,7 +2281,7 @@ ______________________________________________________________________
 - After every visit to the apiary, add notes and inspections in the app (preferably with photo attachments). Thanks to this, it will be possible to analyze the history of activities and the system will be able to assess the situation more accurately.
 
 !!! Note
-    Adding data requires an active plan and write access. Once a plan expires the app switches to **view-only mode** — an attempt to save ends with the message *Your plan has expired. Renew your subscription to add and edit.* In an apiary shared at the *Restricted* level, the *Inspection*, *Notes*, *Tasks*, *Examinations* and *Samples* tabs are not rendered at all.
+    Adding data requires an active plan and write access. Once a plan expires the app switches to **view-only mode** — an attempt to save ends with the message *Your plan has expired. Renew your subscription to add and edit.* In an apiary shared at the *Restricted* level, the *Inspection*, *Notes*, *Tasks*, *Examinations* and *Samples* tabs are not rendered at all (see [7.2 Access levels](#access-levels)).
 
 ### 3. Regularly checking alerts
 
@@ -2285,6 +2397,8 @@ Below you will find a summary of the most important activities in the Apisense P
 > [Video — text note](#video-note-text)
 > [Video — audio note](#video-note-voice) 
 > [Notes](#4-notes)
+
+- **Sharing an apiary:** Tap the sharing icon in the top bar of the *Apiaries* tab (or in the *Hives* tab inside an apiary). On the *Shared* tab tap *Share apiary*, pick the apiary (if the app asks), enter the Apisense account e-mail of the person you're inviting, their name and pick the *Access type* (*Restricted*, *Standard* or *Full*), then tap *Share*. To change the level or withdraw the share, tap the row on the list.
 
 - **Reporting an Asian hornet observation:** Tap the Asian hornet icon on the apiary tile, then the *Report observation* button, and answer *Do you see an Asian hornet now?* Answering *No* files the report immediately; after *Yes* you still fill in the observation date and an optional comment (and optional photos), then tap *Send report*. The Asian hornet icon is updated accordingly (active sighting / checked, clear / expired), and the date of the last report appears above it.
 
