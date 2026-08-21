@@ -82,7 +82,9 @@ Jeśli nie możesz od razu wykonać badania ani wysłać próbki do laboratorium
 
 5. Policz spory w każdym polu widzenia i zapisz wartości.
 6. **Zrób zdjęcie każdego z pięciu pól widzenia**, aby przesłać je do aplikacji Apisense.
-7. Oblicz **średnią** liczbę spor z pięciu pól widzenia.
+7. Oblicz **średnią** liczbę spor z pięciu pól widzenia — przyda się do oceny wyniku. Do aplikacji wpisujesz liczby z poszczególnych pól, nie średnią (patrz [Raportowanie w aplikacji Apisense](#raportowanie-w-aplikacji-apisense)).
+
+<a id="przyklad-tabela-1"></a>
 
 ### Przykład — Tabela 1
 
@@ -95,13 +97,27 @@ Liczba spor *Nosema* zaobserwowanych w pięciu polach widzenia dla każdej prób
 
 ## Raportowanie w aplikacji Apisense
 
-Wprowadź:
+Wynik zapisujesz w tym ulu, z którego pochodzi próbka.
 
-- **Średnią liczbę spor** z pięciu pól widzenia
-- **Zdjęcia** wszystkich pięciu pól widzenia
-- **Typ próbki pszczół:** martwe / żywe
-- **Użytą wodę:** dejonizowana / kranowa
-- **Typ preparatu:** hemocytometr / standardowe szkiełko mikroskopowe
+1. Otwórz **Szczegóły ula**: zakładka *Pasieki* → kafelek pasieki → kafelek ula.
+2. W dolnym menu wybierz *Dodaj...*, a następnie **Badanie**.
+3. W widoku *Dodaj badanie* uzupełnij:
+
+    - **Data badania** — dzień wykonania badania mikroskopowego.
+    - **Rodzaj badania** — wybierz z listy rozwijanej **Mikroskop**.
+    - **Zdjęcia i liczby spor** — dodaj **5 zdjęć**, po jednym z każdego pola widzenia. Pod każdym zdjęciem znajduje się osobne pole **Liczba spor Nosema (1)**, **(2)**, … **(5)** — wpisz w nim liczbę spor policzoną **w tym właśnie polu widzenia**.
+
+4. Zapisz badanie przyciskiem potwierdzenia (ikona ✓) na dole ekranu.
+
+!!! warning "Wpisujesz wyniki z poszczególnych pól, a nie średnią"
+    Aplikacja przyjmuje **pięć osobnych liczb** — po jednej do każdego zdjęcia. Nie wpisuj do niej średniej z [Tabeli 1](#przyklad-tabela-1); średnia służy Twojej własnej ocenie wyniku, a do aplikacji trafiają liczby cząstkowe.
+
+Komplet jest wymagany: bez pięciu zdjęć i pięciu liczb aplikacja nie zapisze badania — pokaże komunikat *Brakuje N z 5 zdjęć* albo oznaczy niewypełnione pole liczbowe.
+
+Zapisane badanie znajdziesz w zakładce **Badania** w szczegółach ula. Możesz je stamtąd otworzyć, edytować lub usunąć.
+
+!!! note "Funkcja pilotażowa"
+    Zakładka *Badania* oraz opcja *Badanie* w menu *Dodaj...* są dostępne wyłącznie dla kont objętych pilotażem. Pełny opis widoku: [Dodawanie badania](../manual/app-manual.md#41-dodawanie-badania).
 
 ## Bibliografia
 
