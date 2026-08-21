@@ -2399,7 +2399,7 @@ Below you will find a summary of the most important activities in the Apisense P
 > [Video — audio note](#video-note-voice) 
 > [Notes](#4-notes)
 
-- **Sharing an apiary:** Tap the sharing icon in the top bar of the *Apiaries* tab (or in the *Hives* tab inside an apiary). On the *Shared* tab tap *Share apiary*, pick the apiary (if the app asks), enter the Apisense account e-mail of the person you're inviting, their name and pick the *Access type* (*Restricted*, *Standard* or *Full*), then tap *Share*. To change the level or withdraw the share, tap the row on the list.
+- **Sharing an apiary:** The sharing icon in the top bar of the *Apiaries* tab opens the tabbed view — go to the *Shared* tab, tap *Share apiary* and pick the apiary. The icon in the *Hives* tab inside an apiary goes straight to the form for that apiary, skipping both of those steps. From there it is the same: enter the Apisense account e-mail of the person you're inviting, their name and pick the *Access type* (*Restricted*, *Standard* or *Full*), then tap *Share*. To change the level or withdraw the share, tap the row on the list.
 
 > [Apiary sharing](#apiary-sharing)
 

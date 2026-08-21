@@ -2398,7 +2398,7 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 > [Wideo — notatka audio](#wideo-notatka-audio) 
 > [Notatki](#4-notatki)
 
-- **Udostępnianie pasieki:** Kliknij ikonę udostępniania w górnym pasku zakładki *Pasieki* (albo w zakładce *Ule* wewnątrz pasieki). Na zakładce *Udostępnione* kliknij *Udostępnij pasiekę*, wskaż pasiekę (jeśli aplikacja o to poprosi), wpisz adres e-mail konta Apisense osoby, którą zapraszasz, jej imię oraz wybierz *Rodzaj dostępu* (*Ograniczony*, *Standardowy* lub *Pełny*), a następnie kliknij *Udostępnij*. Poziom dostępu zmienisz, a udostępnienie wycofasz, klikając wiersz na liście.
+- **Udostępnianie pasieki:** Ikona udostępniania w górnym pasku zakładki *Pasieki* otwiera widok z zakładkami — przejdź na zakładkę *Udostępnione*, kliknij *Udostępnij pasiekę* i wskaż pasiekę. Ikona w zakładce *Ule* wewnątrz pasieki prowadzi od razu do formularza dla tej właśnie pasieki, z pominięciem obu tych kroków. Dalej postępujesz tak samo: wpisz adres e-mail konta Apisense osoby, którą zapraszasz, jej imię oraz wybierz *Rodzaj dostępu* (*Ograniczony*, *Standardowy* lub *Pełny*), a następnie kliknij *Udostępnij*. Poziom dostępu zmienisz, a udostępnienie wycofasz, klikając wiersz na liście.
 
 > [Udostępnianie pasieki](#udostepnianie-pasieki)
 
