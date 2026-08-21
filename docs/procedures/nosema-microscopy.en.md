@@ -89,7 +89,7 @@ If you cannot perform the examination or ship the sample immediately, **freezing
 
 5. Count the number of spores in each field of view and record the values.
 6. **Take a photo of each of the five fields of view** to upload them to the Apisense app.
-7. Calculate the **mean** number of spores from the five fields of view.
+7. Calculate the **mean** number of spores from the five fields of view — it helps you read the result. What goes into the app is the individual field counts, not the mean (see [Reporting in the Apisense app](#reporting-in-the-apisense-app)).
 
 ### Example — Table 1
 
@@ -102,13 +102,29 @@ Number of *Nosema* spores observed in five microscopic fields of view for each s
 
 ## Reporting in the Apisense app
 
-Report the following:
+File the result on the hive the sample came from.
 
-- **Mean spore count** from the five fields of view
-- **Photos** of all five fields of view
-- **Bee sample type:** dead bees / live bees
-- **Water used:** deionized / tap
-- **Slide type:** hemocytometer / standard microscope slide
+1. Open **Hive details**: the *Apiaries* tab → the apiary tile → the hive tile.
+2. In the bottom menu choose *Add...*, then **Examination**.
+3. On the *Add examination* screen fill in:
+
+    - **Examination date** — the day you ran the microscopy.
+    - **Examination type** — pick **Microscopy** from the drop-down.
+    - **Photos and spore counts** — add **5 photos**, one per field of view. Each photo is followed by its own **Nosema spore count (1)**, **(2)**, … **(5)** field — enter the number of spores counted **in that particular field of view**.
+
+4. Save the examination with the confirm button (the ✓ icon) at the bottom of the screen.
+
+!!! warning "You enter the individual field counts, not the mean"
+    The app takes **five separate numbers** — one per photo. Do not put the mean from [Table 1](#example-table-1) into it; the mean is there to help you read your own result, while the app receives the individual counts.
+
+The full set is required: without five photos and five counts the app will not save the examination — it shows *N of 5 photos missing* or flags the empty count field.
+
+The app does not ask for the bee sample type, the water used or the slide type — those choices are described in the procedure above and are not entered into the form.
+
+The saved examination appears on the **Examinations** tab of the hive details, where you can open, edit or delete it.
+
+!!! note "Pilot feature"
+    The *Examinations* tab and the *Examination* option in the *Add...* menu are available to pilot accounts only. The view is described in full in [Adding an examination](../manual/app-manual.md#41-adding-an-examination).
 
 ## References
 
