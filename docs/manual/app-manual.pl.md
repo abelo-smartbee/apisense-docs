@@ -995,8 +995,9 @@ Na zakładce *Udostępnione* każdy wiersz pokazuje osobę, nadany poziom w polu
 - **Zaakceptowane** — zaproszenie przyjęte, pasieka jest widoczna dla tej osoby.
 - **Odrzucone** — zaproszenie odrzucone przez zapraszaną osobę.
 - **Wycofane** — dostęp cofnięty przez Ciebie.
+- **Opuścił** — osoba, która wcześniej przyjęła zaproszenie, sama zrezygnowała z dostępu.
 
-Wiersze o statusie *Odrzucone* i *Wycofane* pozostają na liście jako historia. Aby ponowić próbę, wyślij po prostu nowe zaproszenie — powstanie wtedy nowy wpis, a stary zostanie zachowany.
+Wiersze o statusie *Odrzucone*, *Wycofane* i *Opuścił* pozostają na liście jako historia. Aby ponowić próbę, wyślij po prostu nowe zaproszenie — powstanie wtedy nowy wpis, a stary zostanie zachowany.
 
 #### 7.5 Zmiana poziomu dostępu i wycofanie udostępnienia
 
@@ -1013,10 +1014,10 @@ Figure: Widok Szczegóły udostępnienia {#fig-share-details}
 
 #### 7.6 Gdy pasieka jest udostępniona Tobie
 
-- **Zaproszenie**. Gdy ktoś udostępni Ci pasiekę, na liście pasiek pojawia się karta *ZAPROSZENIE DO PASIEKI* z nazwą pasieki i imieniem właściciela oraz przyciskami *Zaakceptuj* i *Odrzuć*. Kartę możesz zamknąć krzyżykiem — zaproszenie nie znika, czeka na zakładce *Udostępnione dla mnie*.
-- **Decyzja**. Zaproszenie przyjmiesz lub odrzucisz albo z karty na liście pasiek, albo z zakładki *Udostępnione dla mnie*, albo po kliknięciu wiersza — na ekranie *Zaproszenie*, który pokazuje właściciela, pasiekę i nadany poziom dostępu wraz z jego opisem.
-- **Po akceptacji** pasieka pojawia się na Twojej liście pasiek pod nagłówkiem *Udostępnione pasieki*. Zakres tego, co zobaczysz i co możesz zmienić, wynika z poziomu nadanego przez właściciela ([7.2](#poziomy-dostepu)).
-- **Opuszczenie pasieki**. Na ekranie *Zaproszenie* przyjętego udostępnienia dostępny jest przycisk *Opuść pasiekę*, potwierdzany komunikatem *Opuścić pasiekę?*. Pasieka znika wtedy z Twojej listy.
+- **Zaproszenie**. Gdy ktoś udostępni Ci pasiekę, w zakładce *Pasieki* pojawia się karta *ZAPROSZENIE DO PASIEKI* z nazwą pasieki i imieniem właściciela oraz przyciskami *Zaakceptuj* i *Odrzuć*. Kartę możesz zamknąć krzyżykiem — zaproszenie nie znika, czeka na zakładce *Udostępnione dla mnie*.
+- **Decyzja**. Zaproszenie przyjmiesz lub odrzucisz albo z karty w zakładce *Pasieki*, albo z zakładki *Udostępnione dla mnie*, albo po kliknięciu wiersza — na ekranie *Zaproszenie*, który pokazuje właściciela, pasiekę i nadany poziom dostępu wraz z jego opisem.
+- **Po akceptacji** pasieka pojawia się w zakładce *Pasieki*, na liście pasiek pod nagłówkiem *Udostępnione pasieki*. Zakres tego, co zobaczysz i co możesz zmienić, wynika z poziomu nadanego przez właściciela ([7.2](#poziomy-dostepu)).
+- **Opuszczenie pasieki**. Na ekranie *Zaproszenie* przyjętego udostępnienia dostępny jest przycisk *Opuść pasiekę*, potwierdzany komunikatem *Opuścić pasiekę?*. Po potwierdzeniu opuszczenia pasieka zniknie z listy udostępnionych pasiek, a Ty stracisz do niej dostęp.
 
 Gdy poziom dostępu nie wystarcza do wykonania akcji, aplikacja nie ukrywa jej po cichu:
 
@@ -1028,7 +1029,9 @@ Gdy poziom dostępu nie wystarcza do wykonania akcji, aplikacja nie ukrywa jej p
 
 #### 7.7 Powiadomienia o udostępnianiu
 
-Zaproszenie, jego akceptacja i wycofanie dostępu trafiają do zakładki *Techniczne* w widoku *Powiadomienia* (oznaczone ikoną udostępniania) i przychodzą również jako powiadomienie push. Kliknięcie takiego powiadomienia otwiera widok *Udostępnij pasiekę*.
+O zdarzeniach związanych z udostępnianiem informują **powiadomienia push**: zaproszenie do pasieki, jego akceptacja, wycofanie dostępu oraz opuszczenie pasieki przez zaproszoną osobę. Każde z nich trafia do drugiej strony — zaproszenie i wycofanie dostępu do zaproszonej osoby, akceptacja i opuszczenie pasieki do właściciela. Kliknięcie takiego powiadomienia otwiera odpowiedni widok udostępniania.
+
+Powiadomienia o udostępnianiu **nie pojawiają się** w zakładce *Techniczne* w widoku *Powiadomienia* — ta zakładka dotyczy wyłącznie urządzeń.
 
 ______________________________________________________________________
 
@@ -2105,7 +2108,7 @@ Powiadomienia w aplikacji możesz znaleźć realizując poniższe kroki:
 Powiadomienia w aplikacji są dostępne w zakładce *Powiadomienia*. Powiadomienia dzielą się na następujące kategorie, które odpowiadają poszczególnym zakładkom ([](#fig-notifications-problems-details)):
 
 - **Problemy** – powiadomienia związane ze stanem zdrowia rodzin pszczelich, dotyczące wykrytych chorób takich jak Warroza wraz z zalecanym postępowaniem w celu zwalczenia konkretnej choroby.
-- **Techniczne** – powiadomienia dotyczące działania urządzeń monitorujących, np. niski poziom baterii lub brak zasięgu. W tej zakładce pojawiają się również powiadomienia o udostępnianiu pasieki — zaproszenie, jego akceptacja oraz wycofanie dostępu (patrz [7. Udostępnianie pasieki](#udostepnianie-pasieki)).
+- **Techniczne** – powiadomienia dotyczące działania urządzeń monitorujących, np. niski poziom baterii lub brak zasięgu. Nie trafiają tu powiadomienia o udostępnianiu pasieki — te przychodzą wyłącznie jako powiadomienia push (patrz [7. Udostępnianie pasieki](#udostepnianie-pasieki)).
 
 Figure: Zakładka Powiadomienia - przykładowe powiadomienia chorobowe i techniczne (zakładki Problemy i Techniczne) (1) {#fig-notifications-problems-details}
 

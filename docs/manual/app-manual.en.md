@@ -998,8 +998,9 @@ On the *Shared* tab each row shows the person, the granted level under *Access:*
 - **Accepted** — the invitation was taken up and the apiary is visible to that person.
 - **Rejected** — the invited person declined.
 - **Withdrawn** — you withdrew the access.
+- **Left** — a person who had accepted the invitation gave up the access themselves.
 
-*Rejected* and *Withdrawn* rows stay on the list as history. To try again, simply send a new invitation — a new entry is created and the old one is kept.
+*Rejected*, *Withdrawn* and *Left* rows stay on the list as history. To try again, simply send a new invitation — a new entry is created and the old one is kept.
 
 #### 7.5 Changing the access level and withdrawing a share
 
@@ -1016,10 +1017,10 @@ Figure: Sharing details view {#fig-share-details-en}
 
 #### 7.6 When an apiary is shared with you
 
-- **The invitation.** When somebody shares an apiary with you, an *APIARY INVITATION* card appears in the apiary list with the apiary name, the owner's name and the *Accept* and *Reject* buttons. You can close the card with the cross — the invitation isn't lost, it waits on the *Shared with me* tab.
-- **The decision.** You can accept or reject either from the card in the apiary list, or from the *Shared with me* tab, or after tapping the row — on the *Invitation* screen, which shows the owner, the apiary and the granted access level with its description.
-- **After accepting**, the apiary appears in your apiary list under the *Shared apiaries* heading. What you see and what you may change follows the level the owner granted ([7.2](#access-levels)).
-- **Leaving the apiary.** On the *Invitation* screen of an accepted share there is a *Leave apiary* button, confirmed with *Leave apiary?*. The apiary then disappears from your list.
+- **The invitation.** When somebody shares an apiary with you, an *APIARY INVITATION* card appears in the *Apiaries* tab with the apiary name, the owner's name and the *Accept* and *Reject* buttons. You can close the card with the cross — the invitation isn't lost, it waits on the *Shared with me* tab.
+- **The decision.** You can accept or reject either from the card in the *Apiaries* tab, or from the *Shared with me* tab, or after tapping the row — on the *Invitation* screen, which shows the owner, the apiary and the granted access level with its description.
+- **After accepting**, the apiary appears in the *Apiaries* tab, on your apiary list under the *Shared apiaries* heading. What you see and what you may change follows the level the owner granted ([7.2](#access-levels)).
+- **Leaving the apiary.** On the *Invitation* screen of an accepted share there is a *Leave apiary* button, confirmed with *Leave apiary?*. Once you confirm, the apiary disappears from your list of shared apiaries and you lose access to it.
 
 When your access level isn't enough for an action, the app doesn't hide it silently:
 
@@ -1031,7 +1032,9 @@ When your access level isn't enough for an action, the app doesn't hide it silen
 
 #### 7.7 Sharing notifications
 
-An invitation, its acceptance and a withdrawal of access all land in the *Technical* tab of the *Notifications* view (marked with the sharing icon) and also arrive as a push notification. Tapping such a notification opens the *Share apiary* view.
+Sharing events are announced by **push notifications**: an invitation to an apiary, its acceptance, a withdrawal of access and an invited person leaving the apiary. Each one goes to the other side — the invitation and the withdrawal to the invited person, the acceptance and the leaving to the owner. Tapping such a notification opens the matching sharing view.
+
+Sharing notifications **do not appear** in the *Technical* tab of the *Notifications* view — that tab is about devices only.
 
 ______________________________________________________________________
 
@@ -2106,7 +2109,7 @@ You can find notifications in the app by following these steps:
 Notifications in the app are available in the *Notifications* tab. Notifications are divided into the following categories that correspond to individual tabs ([](#fig-notifications-problems-details)):
 
 - **Problems** – notifications related to the health status of bee colonies, regarding detected diseases such as Varroa, along with recommended steps to combat the specific disease.
-- **Technical** – notifications regarding the operation of monitoring devices, e.g. low battery level or no signal coverage. This tab also carries apiary sharing notifications — an invitation, its acceptance and a withdrawal of access (see [7. Apiary sharing](#apiary-sharing)).
+- **Technical** – notifications regarding the operation of monitoring devices, e.g. low battery level or no signal coverage. Apiary sharing notifications do not land here — those arrive as push notifications only (see [7. Apiary sharing](#apiary-sharing)).
 
 Figure: Notifications tab - sample disease and technical notifications (Problems and Technical tabs) (1) {#fig-notifications-problems-details}
 
