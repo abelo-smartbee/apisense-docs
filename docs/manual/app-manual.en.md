@@ -1034,8 +1034,6 @@ When your access level isn't enough for an action, the app doesn't hide it silen
 
 Sharing events are announced by **push notifications**: an invitation to an apiary, its acceptance, a withdrawal of access and an invited person leaving the apiary. Each one goes to the other side — the invitation and the withdrawal to the invited person, the acceptance and the leaving to the owner. Tapping such a notification opens the matching sharing view.
 
-Sharing notifications **do not appear** in the *Technical* tab of the *Notifications* view — that tab is about devices only.
-
 ______________________________________________________________________
 
 ## Colony health
@@ -2109,7 +2107,7 @@ You can find notifications in the app by following these steps:
 Notifications in the app are available in the *Notifications* tab. Notifications are divided into the following categories that correspond to individual tabs ([](#fig-notifications-problems-details)):
 
 - **Problems** – notifications related to the health status of bee colonies, regarding detected diseases such as Varroa, along with recommended steps to combat the specific disease.
-- **Technical** – notifications regarding the operation of monitoring devices, e.g. low battery level or no signal coverage. Apiary sharing notifications do not land here — those arrive as push notifications only (see [7. Apiary sharing](#apiary-sharing)).
+- **Technical** – notifications regarding the operation of monitoring devices, e.g. low battery level or no signal coverage.
 
 Figure: Notifications tab - sample disease and technical notifications (Problems and Technical tabs) (1) {#fig-notifications-problems-details}
 

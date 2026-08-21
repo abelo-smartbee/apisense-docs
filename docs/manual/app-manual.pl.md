@@ -1031,8 +1031,6 @@ Gdy poziom dostępu nie wystarcza do wykonania akcji, aplikacja nie ukrywa jej p
 
 O zdarzeniach związanych z udostępnianiem informują **powiadomienia push**: zaproszenie do pasieki, jego akceptacja, wycofanie dostępu oraz opuszczenie pasieki przez zaproszoną osobę. Każde z nich trafia do drugiej strony — zaproszenie i wycofanie dostępu do zaproszonej osoby, akceptacja i opuszczenie pasieki do właściciela. Kliknięcie takiego powiadomienia otwiera odpowiedni widok udostępniania.
 
-Powiadomienia o udostępnianiu **nie pojawiają się** w zakładce *Techniczne* w widoku *Powiadomienia* — ta zakładka dotyczy wyłącznie urządzeń.
-
 ______________________________________________________________________
 
 ## Zdrowie rodziny
@@ -2108,7 +2106,7 @@ Powiadomienia w aplikacji możesz znaleźć realizując poniższe kroki:
 Powiadomienia w aplikacji są dostępne w zakładce *Powiadomienia*. Powiadomienia dzielą się na następujące kategorie, które odpowiadają poszczególnym zakładkom ([](#fig-notifications-problems-details)):
 
 - **Problemy** – powiadomienia związane ze stanem zdrowia rodzin pszczelich, dotyczące wykrytych chorób takich jak Warroza wraz z zalecanym postępowaniem w celu zwalczenia konkretnej choroby.
-- **Techniczne** – powiadomienia dotyczące działania urządzeń monitorujących, np. niski poziom baterii lub brak zasięgu. Nie trafiają tu powiadomienia o udostępnianiu pasieki — te przychodzą wyłącznie jako powiadomienia push (patrz [7. Udostępnianie pasieki](#udostepnianie-pasieki)).
+- **Techniczne** – powiadomienia dotyczące działania urządzeń monitorujących, np. niski poziom baterii lub brak zasięgu.
 
 Figure: Zakładka Powiadomienia - przykładowe powiadomienia chorobowe i techniczne (zakładki Problemy i Techniczne) (1) {#fig-notifications-problems-details}
 
