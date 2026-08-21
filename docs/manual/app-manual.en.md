@@ -2401,6 +2401,8 @@ Below you will find a summary of the most important activities in the Apisense P
 
 - **Sharing an apiary:** Tap the sharing icon in the top bar of the *Apiaries* tab (or in the *Hives* tab inside an apiary). On the *Shared* tab tap *Share apiary*, pick the apiary (if the app asks), enter the Apisense account e-mail of the person you're inviting, their name and pick the *Access type* (*Restricted*, *Standard* or *Full*), then tap *Share*. To change the level or withdraw the share, tap the row on the list.
 
+> [Apiary sharing](#apiary-sharing)
+
 - **Reporting an Asian hornet observation:** Tap the Asian hornet icon on the apiary tile, then the *Report observation* button, and answer *Do you see an Asian hornet now?* Answering *No* files the report immediately; after *Yes* you still fill in the observation date and an optional comment (and optional photos), then tap *Send report*. The Asian hornet icon is updated accordingly (active sighting / checked, clear / expired), and the date of the last report appears above it.
 
 > [Asian hornet observation](#obserwacja-szerszenia)

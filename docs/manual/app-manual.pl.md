@@ -2400,6 +2400,8 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 - **Udostępnianie pasieki:** Kliknij ikonę udostępniania w górnym pasku zakładki *Pasieki* (albo w zakładce *Ule* wewnątrz pasieki). Na zakładce *Udostępnione* kliknij *Udostępnij pasiekę*, wskaż pasiekę (jeśli aplikacja o to poprosi), wpisz adres e-mail konta Apisense osoby, którą zapraszasz, jej imię oraz wybierz *Rodzaj dostępu* (*Ograniczony*, *Standardowy* lub *Pełny*), a następnie kliknij *Udostępnij*. Poziom dostępu zmienisz, a udostępnienie wycofasz, klikając wiersz na liście.
 
+> [Udostępnianie pasieki](#udostepnianie-pasieki)
+
 - **Zgłaszanie obserwacji szerszenia azjatyckiego:** Kliknij ikonę szerszenia azjatyckiego na kafelku pasieki, następnie przycisk *Zgłoś obserwację* i odpowiedz na pytanie *Czy widzisz teraz szerszenia azjatyckiego?* Odpowiedź *Nie* zapisuje zgłoszenie od razu; po *Tak* wypełnij jeszcze datę obserwacji i opcjonalny komentarz (oraz opcjonalne zdjęcia), a następnie kliknij *Wyślij zgłoszenie*. Ikona szerszenia azjatyckiego zostanie odpowiednio zaktualizowana (aktywna obserwacja / sprawdzono, czysto / nieaktualne), a nad nią pojawi się data ostatniego zgłoszenia.  
 
 > [Obserwacja szerszenia azjatyckiego](#obserwacja-szerszenia)
