@@ -878,7 +878,7 @@ Listę zadań możesz filtrować po statusie. Dostępne są dwa filtry: *Do zrob
 
 ### 6. Obserwacja szerszenia azjatyckiego
 
-Ikona szerszenia azjatyckiego, znajdująca się na kafelku pasieki obok wskaźnika stanu zdrowia rodziny pszczelej, umożliwia zgłaszanie oraz przeglądanie obserwacji szerszenia azjatyckiego. Pozwala na bieżąco monitorować jego aktywność w pasiekach i szybciej reagować na potencjalne zagrożenie dla rodzin pszczelich. **Uwaga:** Ikona jest klikalna dla właściciela pasieki oraz dla współpracowników z dostępem **Pełnym** do pasieki udostępnionej. Pozostali użytkownicy widzą ją wyłącznie do podglądu, i tylko wtedy, gdy zgłoszenie już istnieje (patrz [7.2 Poziomy dostępu](#poziomy-dostepu)).
+Ikona szerszenia azjatyckiego, znajdująca się na kafelku pasieki obok wskaźnika stanu zdrowia rodziny pszczelej, umożliwia zgłaszanie oraz przeglądanie obserwacji szerszenia azjatyckiego. Pozwala na bieżąco monitorować jego aktywność w pasiekach i szybciej reagować na potencjalne zagrożenie dla rodzin pszczelich. **Uwaga:** Ikona jest klikalna dla właściciela pasieki oraz dla współpracowników z dostępem **Pełnym** do pasieki udostępnionej. Pozostali użytkownicy widzą ją wyłącznie do podglądu i tylko wtedy, gdy zgłoszenie już istnieje (patrz [7.2 Poziomy dostępu](#poziomy-dostepu)).
 
 #### 6.1 Zgłaszanie obserwacji
 
