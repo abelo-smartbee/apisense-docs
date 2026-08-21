@@ -114,8 +114,6 @@ Wynik zapisujesz w tym ulu, z którego pochodzi próbka.
 
 Komplet jest wymagany: bez pięciu zdjęć i pięciu liczb aplikacja nie zapisze badania — pokaże komunikat *Brakuje N z 5 zdjęć* albo oznaczy niewypełnione pole liczbowe.
 
-Aplikacja nie pyta o typ próbki pszczół, rodzaj użytej wody ani typ preparatu — te wybory opisuje sama procedura powyżej i nie wprowadza się ich do formularza.
-
 Zapisane badanie znajdziesz w zakładce **Badania** w szczegółach ula. Możesz je stamtąd otworzyć, edytować lub usunąć.
 
 !!! note "Funkcja pilotażowa"

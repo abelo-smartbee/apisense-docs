@@ -119,8 +119,6 @@ File the result on the hive the sample came from.
 
 The full set is required: without five photos and five counts the app will not save the examination — it shows *N of 5 photos missing* or flags the empty count field.
 
-The app does not ask for the bee sample type, the water used or the slide type — those choices are described in the procedure above and are not entered into the form.
-
 The saved examination appears on the **Examinations** tab of the hive details, where you can open, edit or delete it.
 
 !!! note "Pilot feature"
