@@ -24,7 +24,8 @@ caption:
 - **Reports and charts** — visualization of measurement data in the form of daily, weekly and long-term charts with overlaid trends.
 - **Data history** — archive of notes, inspections and notifications.
 - **Apiary management** — adding and editing apiaries, hives, inspections, notes, as well as adding examinations and registering samples.
-- **FrameSense** — AI-based analysis of a bee comb frame photo, estimating brood, food stores and empty comb coverage.
+- **FrameSense** — AI-based analysis of up to three bee comb frame photos, estimating brood, food stores and empty comb coverage.
+- **Syrup calculator** — works out the sugar and water needed for a chosen syrup strength and amount, with preparation tips.
 - **Asian hornet observation** — report the presence of Asian hornets in the apiary, with a reminder to re-check after a few days.
 
 ______________________________________________________________________
@@ -69,19 +70,17 @@ Figure: Registering with the Apisense Pro AI System - example of correctly fille
 
     The app repeats the same requirements in the hint below the *Password* field.
 
-- The form is longer than the screen — scroll down to reach the password fields, the terms checkbox and the *Next* button ([](#fig-utworz-haslo)). Confirm that you have read the terms and conditions and the privacy policy by checking the appropriate box, and then click *Next*.
+- The form is longer than the screen — scroll down to reach the password fields, the terms checkbox and the *Next* button ([](#fig-utworz-haslo)). Confirm that you have read the terms and conditions and the privacy policy by checking the appropriate box, and then click *Next* to create the account.
 
 Figure: Registering with the Apisense Pro AI System - the same Create account view scrolled down: password fields, terms acceptance and the Next button {#fig-utworz-haslo}
 
 ![figure](pictures/utworz_haslo.png){width=200}
 
-- This is the last stage of registration. In this step, answer the question about how many years you have been beekeeping by selecting one of the two available answers, then click *Next* ([](#fig-pytanie-o-doswiadczenie)).
+- Instead of filling in the form you can create the account with *Sign up with Google* or *Sign up with Apple* — both shown below the *Next* button (*Sign up with Apple* is hidden on Android). Accepting the terms checkbox is still required first; the account is then created straight from the chosen identity provider, with no password to set.
 
-Figure: Registering with the Apisense Pro AI System - example answer to the experience question {#fig-pytanie-o-doswiadczenie}
+- The app now shows a *Confirm your e-mail* screen instead of taking you straight into the app. Open the verification link sent to the address you registered with (it is valid for 12 hours) — the app detects the confirmation and logs you in automatically, no need to come back and sign in. If you opened your mailbox on another device, tap *I already confirmed* instead of waiting for the link to be caught. Didn't get the e-mail, or want a new link? Tap *Resend link* (available again after 60 seconds).
 
-![figure](pictures/pytanie_o_doswiadczenie.png){width=200}
-
-- If everything went smoothly you should see the following start screen - Welcome to Apisense! ([](#fig-empty-state-apiary)):
+- Once the account is confirmed you should see the following start screen - Welcome to Apisense! ([](#fig-empty-state-apiary)):
 
 Figure: Start screen after successful registration with the Apisense Pro AI System - Welcome to Apisense! {#fig-empty-state-apiary}
 
@@ -105,6 +104,10 @@ If you already have an account in the Apisense Pro AI System, follow these steps
 Figure: Logging in to the Apisense Pro AI System - Sign in view {#fig-logowanie}
 
 ![figure](pictures/logowanie.png){width=200}
+
+- You can also sign in with *Sign in with Google* or *Sign in with Apple*, shown below the sign-in fields (*Sign in with Apple* is hidden on Android). A short note under those buttons links to the terms of service and the privacy policy — by tapping either button you accept them.
+
+- If the account's e-mail has not been confirmed yet, *Sign in* does not sign you in — it opens the same *Confirm your e-mail* screen shown after registration (see [Registration](#1-registration)) instead, since login accepts either the username or the e-mail, which may not be the address a generic message can name.
 
 ______________________________________________________________________
 
@@ -447,7 +450,7 @@ Figure: Hive settings view {#fig-beehive-settings}
         Clicking *Disconnect VitalSensor* / *Disconnect Scale* opens a confirmation screen (*Disconnect VitalSensor?* / *Disconnect Scale?*) with *Disconnect* and *Don't disconnect* buttons for the VitalSensor, and *Disconnect Scale* and *Don't disconnect Scale* for the Scale ([](#fig-beehive-settings-devices-edit)). The *Keep … history* toggle decides whether the measurement data of the disconnected device stays in the system. It is kept by default; switching the toggle off before confirming deletes it permanently.
 
         !!! Note
-            The preserved history is **currently not visible on the charts**. After a device is disconnected, the *Weight* and *Conditions* rows show *No Scale* / *No VitalSensor* and the charts cannot be expanded. The data returns to the charts only once the device is linked to the hive again.
+            The preserved history is **currently not visible on the charts**. After a device is disconnected, the *Weight* and *Conditions* rows show *No Scale* / *No VitalSensor* and the charts cannot be expanded. The data returns to the charts only once the device is linked to the hive again. The *Samples* tab is an exception: with history kept, previously registered samples for the hive stay visible and manageable (status changes, deletion of a still-*Pending* one) there even after the VitalSensor is disconnected — only registering a *new* sample requires a VitalSensor to be linked again.
 
         Tap *I replaced the battery* right after you put the new batteries in. The app then refreshes the Hub configuration and confirms with the *Battery replacement confirmed* message and the note *Configuration refreshed — the device will reconnect on the next sync*. Thanks to this the device is back among the correctly reporting ones at the next measurement — you do not have to wait for it to find its own way back.
 
@@ -496,6 +499,16 @@ Figure: Hive settings - Delete hive view {#fig-beehive-settings-remove-beehive}
 ![figure](pictures/beehive_settings_remove_beehive.png){width=200}
 
 - Together with the deleted hive, all of its contents (notes, inspections, etc.) are also deleted. Individual devices (Scale, VitalSensor) are also unlinked and their measurement history is cleared. Therefore, for example, the same Apisense VitalSensor can be linked to another hive (one that does not have this type of device).
+
+#### 2.4 Moving a hive to another apiary
+
+- Open the hive's *Details* tab, tap the **⋮** icon and choose *Settings*; in the *Hive settings* view tap *Move hive*, listed above the *Delete hive* button. **This option is only available to the apiary owner** — it is hidden whenever the current apiary is shared with you.
+- The *Move hive* view lists your other owned apiaries. Only apiaries with an **Apisense Hub** assigned can be picked; an owned apiary without a hub is shown greyed out with the hint *This apiary has no hub*. If you have no other owned apiary with a hub, an empty state offers an *Add apiary* shortcut instead.
+- Pick the target apiary, then confirm on the *Move the hive?* prompt. The confirmation warns that the hive's devices must be within BLE range of the new apiary's hub or data stops coming in, and reassures that history and inspections stay with the hive — you can move it back at any time.
+- After confirming, you land on the dashboard with a *Hive moved to the apiary "…"* banner. The hive — together with its devices, notes, inspections, examinations, samples, queen history and full telemetry — now belongs to the target apiary.
+
+!!! note
+    Moving a hive is single-hive only; to move several hives, repeat the steps for each one.
 
 <a id="dodawanie-przegladow"></a>
 
@@ -1366,17 +1379,18 @@ To delete an examination from the examination list:
 
 ### 5. FrameSense
 
-FrameSense uses artificial intelligence to automatically estimate the comb contents from a single photo, including brood, food stores, and empty or obscured area.
+FrameSense uses artificial intelligence to automatically estimate the comb contents from up to three positioned frame photos, including brood, food stores, and empty or obscured area.
 
 #### 5.1 Adding a frame analysis
 
 - Click the chosen apiary tile, then the chosen hive tile. As a result, the *Hive details* view will be displayed.
 - Choose the *Add...* option from the bottom menu, then *FrameSense*; the *FrameSense* view will be displayed.
-- Tap the *Add frame photo for analysis* button in the center of the *FrameSense* view. Choose *Camera* and take a photo of the bee frame, or upload **one photo** of the frame from *Gallery*. While taking a photo, the camera view shows a guide with the message *Position the frame inside the outline*. Place the entire bee frame within the outlined area. After you take the photo, the app automatically crops it to the area defined by the guide, so only the portion covering the frame is used for analysis. For the most accurate AI analysis result, position the frame so that it fills as much of the outline as possible without going beyond its borders. Also make sure it is clearly visible and against a uniform background.
-- After choosing the photo, tap the yellow *Send for analysis* button at the bottom of the screen. The photo is uploaded for AI processing.
+- The *FrameSense* view shows three photo slots, in this order: **Middle (central) frame** — required — then **First frame in the hive** and **Last frame in the hive**, both optional. Tap a slot, choose *Camera* or *Gallery*, and take or pick a photo for that slot. While taking a photo, the camera view shows a guide with the message *Position the frame inside the outline*. Place the entire bee frame within the outlined area. After you take the photo, the app automatically crops it to the area defined by the guide, so only the portion covering the frame is used for analysis. For the most accurate AI analysis result, position the frame so that it fills as much of the outline as possible without going beyond its borders. Also make sure it is clearly visible and against a uniform background.
+- The **middle frame photo is required**; submitting without it shows the message *A photo of the middle frame is required.* The first and last frame photos are optional extras that improve the analysis — you can send with only the middle slot filled in.
+- Once the slots you want are filled in, tap the yellow *Send for analysis* button at the bottom of the screen. The photos are uploaded for AI processing as a single analysis.
 
 !!! note
-    Bee frame analysis requires an internet connection to upload the photo. Processing a photo sent for analysis typically takes a few minutes. We recommend attaching photos in JPG or PNG format. RAW/DNG files are supported only in the mobile version.
+    Bee frame analysis requires an internet connection to upload the photos. Processing typically takes a few minutes. We recommend attaching photos in JPG or PNG format. RAW/DNG files are supported only in the mobile version.
 
 #### 5.2 FrameSense results
 
@@ -1384,9 +1398,9 @@ Results of submitted bee frame analyses are available in the *FrameSense* tab (*
 
 Possible statuses:
 
-- **Analysing** — the photo has been sent for analysis and is being processed by AI (about 5 minutes).
-- **Analysis completed** — the frame analysis finished successfully. You can now see the color-annotated photo with the percentage share of each comb category: **Brood** (eggs, larvae, worker and drone brood), **Stores** (nectar, pollen, capped honey) and **Empty/obscured** area, as well as the number of queen cells/cups found and a bee count. The analysis result consists of several views of the same submitted photo. Each view marks different analyzed elements with corresponding descriptions. Swipe through the photos to see successive analysis results. Tapping a photo opens it in fullscreen mode. Below the analysis results is a *Recommendations* section with practical tips and suggested actions based on the AI analysis. They help identify potential problems and make informed decisions about next steps.
-- **Analysis failed** — the analysis could not be completed. Try adding a bee frame photo again and sending it for analysis.
+- **Analysing** — the photos have been sent for analysis and are being processed by AI (about 5 minutes).
+- **Analysis completed** — the frame analysis finished successfully. You can now see the color-annotated photos with the percentage share of each comb category: **Brood** (eggs, larvae, worker and drone brood), **Stores** (nectar, pollen, capped honey) and **Empty/obscured** area, as well as the number of queen cells/cups found and a bee count. The analysis result consists of several views of each submitted photo; when more than one frame photo was submitted, each one is labelled with its position (*First*, *Middle*, *Last*). Each view marks different analyzed elements with corresponding descriptions. Swipe through the photos to see successive analysis results. Tapping a photo opens it in fullscreen mode. Below the analysis results is a *Recommendations* section — combined for the whole analysis — with practical tips and suggested actions based on the AI analysis. They help identify potential problems and make informed decisions about next steps.
+- **Analysis failed** — the analysis could not be completed. Try adding frame photos again and sending them for analysis.
 
 When a bee frame analysis is completed, a push notification is sent that opens its result directly when tapped.
 
@@ -1500,19 +1514,19 @@ Figure: Hives tab - sample view of the hive list {#fig-beehives-beehive-with-pro
 
 The hive *Details* view enables you to monitor measurement data coming from the measurement devices (Scale, VitalSensor) and to manage records relating to work on a specific hive (including inspections and notes). You can go to the details tab directly from the *Hives* tab by clicking the tile of the chosen hive. 
 
-The *Details* view is divided into several smaller tabs:
+The *Details* view is divided into several smaller tabs, all shown directly in a single bar — *Hive state*, *Syrup*, *FrameSense*, *Notes*, *Inspection*, *Tasks*, *Examinations*, *Samples*:
 
 - *Hive state*
-- *Inspection*
+- *Syrup*
 - *FrameSense*
-- *More*:
-    - *Notes*
-    - *Tasks*
-    - *Examinations*
-    - *Samples*
+- *Notes*
+- *Inspection*
+- *Tasks*
+- *Examinations*
+- *Samples*
 
 !!! Note
-    The split into two groups appears only when there are more than five content tabs. With five or fewer (for example when the hive has no VitalSensor, or your plan does not cover examinations or FrameSense), they all fit into a single bar and the *More* tab does not appear at all. Tapping *More* switches the bar between the two groups.
+    Which tabs you see can vary: *FrameSense*, *Examinations* and *Samples* depend on your plan (and, for *Samples*, on whether a VitalSensor is or was linked to the hive), and a restricted share only ever sees *Hive state* and *Syrup*. When there are more tabs than fit on screen, the bar scrolls sideways — there is no separate *More* tab any more.
 
 
 #### 4.1 Hive state
@@ -1598,7 +1612,19 @@ The *FrameSense* tab presents the history of AI analyses of bee frames performed
 **Most important information:**
 
 - **Analysis list** – shows every frame analysis with its status: *Analysing*, *Analysis completed* or *Analysis failed*.
-- **Analysis details** – after opening a completed analysis, the submitted photo with marked elements and a comb contents summary are displayed, including brood, food stores, empty and obscured area, as well as a bee count and queen cells. Below there is also a recommendations section that helps you address potential problems detected during the frame analysis and take informed corrective actions. See [9. FrameSense](#analiza-ramki) for details.
+- **Analysis details** – after opening a completed analysis, the submitted photo(s) with marked elements and a comb contents summary are displayed, including brood, food stores, empty and obscured area, as well as a bee count and queen cells. When more than one frame photo was submitted, each is labelled with its position (*First*, *Middle*, *Last*). Below there is also a recommendations section that helps you address potential problems detected during the frame analysis and take informed corrective actions. See [5. FrameSense](#analiza-ramki) for details.
+
+#### 4.7 Syrup calculator
+
+The *Syrup* tab is a sugar-syrup calculator — it works out how much sugar and water to combine for the amount of syrup you want, at the strength you need. It needs no measurement device and is visible on every hive, including on a restricted share.
+
+**Most important information:**
+
+- **Ratio** – pick one of three sugar-to-water mass ratios: **1:1** (thin — spring, to stimulate the colony), **3:2** (medium — all-purpose, summer and autumn), or **2:1** (thick — autumn, for winter stores). The calculator opens on 3:2.
+- **Amount** – enter how many litres of syrup you want to make (0.1–2000 l).
+- **Result** – once you type an amount, a card shows how much **water** and **sugar** (in kilograms, or pounds depending on your unit setting) the recipe needs, together with the resulting **syrup mass**, the sugar percentage by mass and the grams of sugar per litre.
+- **Warnings** – depending on the chosen ratio you may see a reminder not to boil the syrup (boiling produces HMF, which is harmful to bees) or a note that 2:1 syrup is a saturated solution that crystallises in a cold feeder unless dissolved in hot water and served warm.
+- **How to prepare** – below the result, a step-by-step guide covers using pure white sugar, weighing it rather than measuring by volume, taking the water off the heat before adding the sugar, stirring until fully dissolved, serving it lukewarm, making only as much as the colony takes within a few days, avoiding spills that trigger robbing, and checking the feeder after 2–4 days. It also reminds you not to feed during a nectar flow you intend to harvest honey from, since the sugar would end up in the honey.
 
 <a id="omowienie-ustawien-pasieki"></a>
 
@@ -2355,11 +2381,11 @@ Below you will find a summary of the most important activities in the Apisense P
 
 ### 1. Registration and login
 
-- **Registration:** Download the Apisense mobile app or go to the system's website. Choose *Create account*, fill in the data (user name, email, phone), create a password meeting the requirements, and click *Sign up*.
+- **Registration:** Download the Apisense mobile app or go to the system's website. Choose *Create account*, fill in the data (user name, email, phone), create a password meeting the requirements, and click *Next* — or use *Sign up with Google* / *Sign up with Apple* instead of the form. Confirm the account on the *Confirm your e-mail* screen: open the link sent to your inbox, or tap *I already confirmed* once you have.
 
 > [Video](#video-registration), [Registration](#1-registration)
 
-- **Login:** Launch the app or website, in the *Sign in* view enter your username or email and your password, then click *Sign in*. Forgotten your password? Tap *Forgot Password?* and reset it yourself.
+- **Login:** Launch the app or website, in the *Sign in* view enter your username or email and your password, then click *Sign in* — or use *Sign in with Google* / *Sign in with Apple*. Forgotten your password? Tap *Forgot Password?* and reset it yourself.
 
 > [Login](#2-login)
 
@@ -2388,6 +2414,10 @@ Below you will find a summary of the most important activities in the Apisense P
 - **Deleting a hive:** Click the chosen apiary tile. Click the chosen hive tile. Click the **⋮** icon while in the *Details* tab and choose *Settings*. In the *Hive settings* view click the *Delete hive* button.
 
 > [Deleting a hive](#23-deleting-a-hive)
+
+- **Moving a hive to another apiary:** Click the chosen apiary tile. Click the chosen hive tile. Click the **⋮** icon while in the *Details* tab and choose *Settings*. In the *Hive settings* view click *Move hive* (owner only), pick a target apiary that has a hub, and confirm.
+
+> [Moving a hive to another apiary](#24-moving-a-hive-to-another-apiary)
 
 - **Adding inspections:** Click the chosen apiary tile. Click the chosen hive tile. Choose *Add...* -> *Inspection* from the bottom menu. Attach a total of 4 required frame photos (tap *See example* if unsure how they should look). Answer the questions. The yellow right-pointing arrow lets you proceed to the next question. Click *Finish inspection* (yellow button on the last inspection screen) to save. An in-progress inspection can be saved as a draft (kept 24 hours); a finished inspection can later be edited or deleted from its overflow menu or by tapping the pencil/bin icon in the inspection list.
 
@@ -2425,7 +2455,7 @@ Below you will find a summary of the most important activities in the Apisense P
 
 > [Adding an examination](#41-adding-an-examination)
 
-- **Adding a frame analysis:** Click the chosen apiary tile. Click the chosen hive tile. From the bottom menu choose *Add... -> FrameSense*. Position the frame inside the camera outline, take or upload one photo of the bee frame and click *Send for analysis*. Track the result (*Analysing* / *Analysis completed* / *Analysis failed*) in the *FrameSense* tab. Open the analysis details and review the summary and recommendations.
+- **Adding a frame analysis:** Click the chosen apiary tile. Click the chosen hive tile. From the bottom menu choose *Add... -> FrameSense*. Fill in the required *Middle* photo slot (position the frame inside the camera outline) and, optionally, the *First* / *Last* slots, then click *Send for analysis*. Track the result (*Analysing* / *Analysis completed* / *Analysis failed*) in the *FrameSense* tab. Open the analysis details and review the summary and recommendations.
 
 > [FrameSense](#analiza-ramki)
 
@@ -2443,7 +2473,7 @@ Below you will find a summary of the most important activities in the Apisense P
 
 > [Video](#video-add-hive), [Hive list overview (Hives tab)](#omowienie-listy-uli)
 
-- **Hive contents (Details tab):** The top tabs are *Hive state*, *Inspection* and *FrameSense*; *Notes*, *Tasks*, *Examinations* and *Samples* live under *More*. You can also display charts of individual parameters, e.g. Honey gain.
+- **Hive contents (Details tab):** The top tabs are *Hive state*, *Syrup*, *FrameSense*, *Notes*, *Inspection*, *Tasks*, *Examinations* and *Samples* — when they don't fit on screen, the bar scrolls sideways. You can also display charts of individual parameters, e.g. Honey gain.
 
 > [Hive contents overview (Details tab)](#omowienie-zawartosci-ula)
 
