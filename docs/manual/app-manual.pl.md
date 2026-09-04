@@ -17,7 +17,8 @@
 - **Raporty i wykresy** — wizualizacja danych pomiarowych w postaci dziennych, tygodniowych i długoterminowych wykresów z naniesionym trendem.
 - **Historia danych** — archiwum notatek, przeglądów i powiadomień.
 - **Zarządzanie pasieką** — dodawanie i edycja pasiek, uli, przeglądów, notatek, oraz dodawanie badań i rejestrowanie próbek.
-- **FrameSense** — analiza zdjęcia ramki pszczelej oparta na AI, szacująca udział czerwiu, zapasów pokarmu i pustego plastra.
+- **FrameSense** — analiza do trzech zdjęć ramki pszczelej oparta na AI, szacująca udział czerwiu, zapasów pokarmu i pustego plastra.
+- **Kalkulator syropu** — wylicza ilość cukru i wody potrzebną do uzyskania wybranej ilości i stężenia syropu, wraz ze wskazówkami przygotowania.
 - **Obserwacja szerszenia azjatyckiego** — zgłaszanie obecności szerszenia azjatyckiego w pasiece wraz z przypomnieniem o ponownej kontroli po kilku dniach.
 
 ______________________________________________________________________
@@ -62,19 +63,17 @@ Figure: Rejestracja do Systemu Apisense Pro AI - przykład poprawnie wypełniony
 
     Te same wymagania aplikacja przypomina podpowiedzią pod polem *Hasło*.
 
-- Formularz jest dłuższy niż ekran — przewiń go w dół, aby dojść do pól hasła, pola potwierdzenia regulaminu i przycisku *Dalej* ([](#fig-utworz-haslo)). Potwierdź zapoznanie się z regulaminem oraz polityką prywatności zaznaczając odpowiednie pole, a następnie kliknij przycisk *Dalej*.
+- Formularz jest dłuższy niż ekran — przewiń go w dół, aby dojść do pól hasła, pola potwierdzenia regulaminu i przycisku *Dalej* ([](#fig-utworz-haslo)). Potwierdź zapoznanie się z regulaminem oraz polityką prywatności zaznaczając odpowiednie pole, a następnie kliknij przycisk *Dalej*, aby założyć konto.
 
 Figure: Rejestracja do Systemu Apisense Pro AI - ten sam widok Załóż konto po przewinięciu w dół: pola hasła, akceptacja regulaminu i przycisk Dalej {#fig-utworz-haslo}
 
 ![figure](pictures/utworz_haslo.png){width=200}
 
-- To już ostatni etap rejestracji. W tym kroku odpowiedz na pytanie od ilu lat zajmujesz się pszczelarstwem zaznaczając jedną z dwóch możliwych odpowiedzi, po czym kliknij przycisk *Dalej* ([](#fig-pytanie-o-doswiadczenie)).
+- Zamiast wypełniać formularz, konto możesz założyć przyciskiem *Załóż konto z Google* lub *Zarejestruj się, używając konta Apple* — oba znajdziesz pod przyciskiem *Dalej* (przycisk Apple jest ukryty na Androidzie). Zaznaczenie zgody na regulamin jest nadal wymagane wcześniej; konto zakłada się wtedy bezpośrednio na podstawie danych z wybranego dostawcy tożsamości, bez ustawiania hasła.
 
-Figure: Rejestracja do Systemu Apisense Pro AI - przykład odpowiedzi na pytanie o doświadczenie {#fig-pytanie-o-doswiadczenie}
+- Zamiast od razu przejść do aplikacji, zobaczysz teraz ekran *Potwierdź adres e-mail*. Otwórz link weryfikacyjny wysłany na adres podany przy rejestracji (jest ważny 12 godzin) — aplikacja sama wykryje potwierdzenie i zaloguje Cię, bez powrotu do ekranu logowania. Jeśli skrzynkę otworzysz na innym urządzeniu, zamiast czekać na wykrycie linku kliknij *Już potwierdziłem*. Nie dostałeś e-maila albo potrzebujesz nowego linku? Kliknij *Wyślij link ponownie* (dostępne ponownie po 60 sekundach).
 
-![figure](pictures/pytanie_o_doswiadczenie.png){width=200}
-
-- Jeśli wszystko przebiegło pomyślnie powinieneś zobaczyć poniższy ekran startowy - Witamy w Apisense! ([](#fig-empty-state-apiary)):
+- Gdy konto zostanie potwierdzone, powinieneś zobaczyć poniższy ekran startowy - Witamy w Apisense! ([](#fig-empty-state-apiary)):
 
 Figure: Ekran startowy po pomyślnej rejestracji do Systemu Apisense Pro AI - Witamy w Apisense! {#fig-empty-state-apiary}
 
@@ -98,6 +97,10 @@ Jeżeli posiadasz już konto w Systemie Apisense Pro AI postępuj zgodnie z poni
 Figure: Logowanie do Systemu Apisense Pro AI - widok Zaloguj się {#fig-logowanie}
 
 ![figure](pictures/logowanie.png){width=200}
+
+- Możesz też zalogować się przyciskiem *Zaloguj się z Google* lub *Zaloguj się, używając konta Apple*, dostępnym pod polami logowania (przycisk Apple jest ukryty na Androidzie). Krótka notatka pod tymi przyciskami linkuje do regulaminu i polityki prywatności — klikając którykolwiek z przycisków, akceptujesz je.
+
+- Jeśli adres e-mail konta nie został jeszcze potwierdzony, *Zaloguj się* nie zaloguje Cię — zamiast tego otworzy ten sam ekran *Potwierdź adres e-mail*, co po rejestracji (patrz [Rejestracja](#1-rejestracja)), ponieważ logowanie przyjmuje zarówno nazwę użytkownika, jak i e-mail, a ten drugi nie zawsze da się nazwać w ogólnym komunikacie.
 
 ______________________________________________________________________
 
@@ -444,7 +447,7 @@ Figure: Widok Ustawienia ula {#fig-beehive-settings}
         Po kliknięciu *Odłącz VitalSensor* / *Odłącz Scale* otwiera się ekran potwierdzenia (*Odłączyć VitalSensor?* / *Odłączyć Scale?*) z przyciskami *Odłącz* i *Nie odłączaj* przy VitalSensorze oraz *Odłącz Scale* i *Nie odłączaj Scale* przy Scale ([](#fig-beehive-settings-devices-edit)). Przełącznik *Zachowaj historię…* decyduje o tym, czy dane pomiarowe odłączanego urządzenia pozostaną w systemie. Domyślnie są zachowywane; wyłączenie przełącznika przed potwierdzeniem trwale je usuwa.
 
         !!! note
-            Zachowana historia **nie jest obecnie widoczna na wykresach**. Po odłączeniu urządzenia wiersze *Waga* i *Warunki* pokazują *Brak Scale* / *Brak VitalSensor*, a wykresów nie da się rozwinąć. Dane wrócą na wykresy dopiero po ponownym powiązaniu urządzenia z ulem.
+            Zachowana historia **nie jest obecnie widoczna na wykresach**. Po odłączeniu urządzenia wiersze *Waga* i *Warunki* pokazują *Brak Scale* / *Brak VitalSensor*, a wykresów nie da się rozwinąć. Dane wrócą na wykresy dopiero po ponownym powiązaniu urządzenia z ulem. Wyjątkiem jest zakładka *Próbki*: przy zachowanej historii wcześniej zarejestrowane próbki ula pozostają tam widoczne i zarządzalne (zmiana statusu, usunięcie wciąż *Oczekującej*) nawet po odłączeniu VitalSensora — jedynie zarejestrowanie *nowej* próbki wymaga ponownego powiązania VitalSensora.
 
         Przycisk *Wymieniłem baterię* zgłoś od razu po włożeniu nowych baterii. Aplikacja odświeża wtedy konfigurację Huba i potwierdza to komunikatem *Wymiana baterii potwierdzona* wraz z opisem *Konfiguracja odświeżona — urządzenie połączy się ponownie przy najbliższej synchronizacji*. Dzięki temu urządzenie wraca na listę poprawnie komunikujących się już przy kolejnym pomiarze — nie musisz czekać, aż samo się odnajdzie.
 
@@ -493,6 +496,16 @@ Figure: Ustawienia ula - widok Usuń ul {#fig-beehive-settings-remove-beehive}
 ![figure](pictures/beehive_settings_remove_beehive.png){width=200}
 
 - Wraz z usuniętym ulem usunięta zostaje również cała jego zawartość (notatki, przeglądy itp.). Odpinane są także poszczególne urządzenia (Scale, VitalSensor) i zostaje wyczyszczona historia ich pomiarów. W związku z tym, przykładowo ten sam Apisense VitalSensor będzie mógł zostać powiązany z innym ulem (który nie posiada tego typu urządzenia).
+
+#### 2.4 Przenoszenie ula do innej pasieki
+
+- Otwórz zakładkę *Szczegóły* ula, kliknij ikonę **⋮** i wybierz *Ustawienia*; w widoku *Ustawienia ula* kliknij *Przenieś ul*, znajdujący się nad przyciskiem *Usuń ul*. **Ta opcja jest dostępna wyłącznie dla właściciela pasieki** — jest ukryta, gdy bieżąca pasieka jest udostępniona Tobie.
+- Widok *Przenieś ul* pokazuje listę Twoich pozostałych własnych pasiek. Wybrać można tylko te z przypisanym **Apisense Hub**; własna pasieka bez huba jest wyszarzona z podpowiedzią *Ta pasieka nie ma huba*. Jeśli nie masz innej własnej pasieki z hubem, zamiast listy pojawia się ekran pusty ze skrótem *Dodaj pasiekę*.
+- Wybierz docelową pasiekę, a następnie potwierdź na ekranie *Przenieść ul?*. Potwierdzenie ostrzega, że urządzenia ula muszą znaleźć się w zasięgu BLE huba nowej pasieki, inaczej dane przestaną spływać, i zapewnia, że historia i przeglądy zostają przy ulu — możesz przenieść go z powrotem w dowolnym momencie.
+- Po potwierdzeniu trafiasz na panel główny z komunikatem *Ul przeniesiony do pasieki „…”*. Ul — razem z urządzeniami, notatkami, przeglądami, badaniami, próbkami, historią matki i pełną telemetrią — należy teraz do docelowej pasieki.
+
+!!! note
+    Przenoszenie ula zawsze dotyczy jednego ula; aby przenieść kilka, powtórz kroki dla każdego z nich.
 
 <a id="dodawanie-przegladow"></a>
 
@@ -1362,17 +1375,18 @@ Aby usunąć badanie z listy badań należy:
 
 ### 5. FrameSense
 
-FrameSense wykorzystuje sztuczną inteligencję, aby na podstawie jednego zdjęcia automatycznie oszacować zawartość plastra, w tym udział czerwiu, zapasów pokarmu oraz pustej lub zasłoniętej powierzchni.
+FrameSense wykorzystuje sztuczną inteligencję, aby na podstawie maksymalnie trzech pozycjonowanych zdjęć automatycznie oszacować zawartość plastra, w tym udział czerwiu, zapasów pokarmu oraz pustej lub zasłoniętej powierzchni.
 
 #### 5.1 Dodawanie analizy ramki
 
 - Kliknij kafelek wybranej pasieki, a następnie kafelek wybranego ula. W rezultacie zostanie wyświetlony widok *Szczegóły ula*.
 - Z dolnego menu wybierz opcję *Dodaj...*, a następnie *FrameSense*; zostanie wyświetlony widok *FrameSense*.
-- Kliknij przycisk *Dodaj zdjęcie ramki do analizy*, znajdujący się w centralnej części widoku *FrameSense*. Wybierz opcje *Aparat* i wykonaj zdjęcie ramki pszczelej lub wgraj **jedno zdjęcie** ramki z *Galerii*. Podczas wykonywania zdjęcia w widoku aparatu wyświetlana jest prowadnica z komunikatem *Umieść ramkę w obrysie*. Ustaw całą ramkę pszczelą wewnątrz wyznaczonego obrysu. Po wykonaniu zdjęcia aplikacja automatycznie przytnie je do obszaru wyznaczonego przez prowadnicę, dzięki czemu do analizy zostanie wykorzystany wyłącznie fragment obejmujący ramkę. Aby uzyskać jak najdokładniejszy wynik analizy AI, ustaw ramkę tak, aby zajmowała możliwie największą powierzchnię wewnątrz obrysu, nie wychodząc poza jego granice. Zadbaj również o to, aby była dobrze widoczna i znajdowała się na jednolitym tle.
-- Po wybraniu zdjęcia kliknij żółty przycisk *Wyślij do analizy*, widoczny w dolnej części ekranu. Zdjęcie zostanie przesłane do przetworzenia przez AI.
+- Kliknij przycisk *Dodaj zdjęcia do analizy*, znajdujący się w centralnej części widoku *FrameSense*. Widok pokazuje trzy pola na zdjęcia, w tej kolejności: **Ramka środkowa (centralna)** — wymagana — a następnie **Pierwsza ramka w ulu** i **Ostatnia ramka w ulu**, obie opcjonalne. Kliknij pole, wybierz *Aparat* lub *Galeria* i zrób bądź wybierz zdjęcie dla tego pola. Podczas wykonywania zdjęcia w widoku aparatu wyświetlana jest prowadnica z komunikatem *Umieść ramkę w obrysie*. Ustaw całą ramkę pszczelą wewnątrz wyznaczonego obrysu. Po wykonaniu zdjęcia aplikacja automatycznie przytnie je do obszaru wyznaczonego przez prowadnicę, dzięki czemu do analizy zostanie wykorzystany wyłącznie fragment obejmujący ramkę. Aby uzyskać jak najdokładniejszy wynik analizy AI, ustaw ramkę tak, aby zajmowała możliwie największą powierzchnię wewnątrz obrysu, nie wychodząc poza jego granice. Zadbaj również o to, aby była dobrze widoczna i znajdowała się na jednolitym tle.
+- **Zdjęcie ramki środkowej jest wymagane** — próba wysłania bez niego wyświetli komunikat *Zdjęcie środkowej ramki jest wymagane.* Zdjęcia pierwszej i ostatniej ramki to opcjonalny dodatek poprawiający jakość analizy — możesz wysłać zestaw z uzupełnionym tylko polem środkowym.
+- Po uzupełnieniu wybranych pól kliknij żółty przycisk *Wyślij do analizy*, widoczny w dolnej części ekranu. Zdjęcia zostaną przesłane do przetworzenia przez AI jako jedna analiza.
 
 !!! note
-    Analiza ramki pszczelej wymaga połączenia z internetem do przesłania zdjęcia. Przetwarzanie zdjęcia wysłanego do analizy trwa zwykle kilka minut. Zalecamy załączanie zdjęć w formacie JPG lub PNG. Pliki RAW/DNG są obsługiwane tylko w wersji mobilnej.
+    Analiza ramki pszczelej wymaga połączenia z internetem do przesłania zdjęć. Przetwarzanie trwa zwykle kilka minut. Zalecamy załączanie zdjęć w formacie JPG lub PNG. Pliki RAW/DNG są obsługiwane tylko w wersji mobilnej.
 
 #### 5.2 Wyniki analizy ramki
 
@@ -1380,9 +1394,9 @@ Wyniki analizy przesłanych ramek pszczelich są dostępne w zakładce *FrameSen
 
 Możliwe statusy:
 
-- **Analizujemy** — zdjęcie zostało wysłane do analizy i jest przetwarzane przez AI (ok. 5 minut).
-- **Analiza zakończona** — analiza ramki została pomyślnie zakończona. Teraz możesz zobaczyć opisane kolorami zdjęcie z procentowym udziałem poszczególnych kategorii wchodzących w skład plastra: **Czerw** (jaja, larwy, czerw robotnic i trutni), **Zapasy** (nektar, pyłek, zasklepiony miód) oraz **Pusta/zasłonięta** powierzchnia, a także liczbę znalezionych mateczników/misek matecznikowych i spis pszczół. Wynik analizy składa się z kilku widoków tego samego przesłanego zdjęcia. Każdy z nich zawiera oznaczenia innych przeanalizowanych elementów oraz odpowiadające im opisy. Przesuwaj zdjęcia, aby wyświetlić kolejne wyniki analizy. Kliknięcie zdjęcia otwiera je w trybie pełnoekranowym. Poniżej wyników analizy znajduje się sekcja *Rekomendacje*, zawierająca praktyczne wskazówki i sugerowane działania opracowane na podstawie analizy AI. Pomagają one zidentyfikować potencjalne problemy oraz podjąć świadome decyzje dotyczące dalszego postępowania.
-- **Analiza nie powiodła się** — analizy nie udało się ukończyć. Spróbuj dodać ponownie zdjęcie ramki pszczelej i wysłać je do analizy.
+- **Analizujemy** — zdjęcia zostały wysłane do analizy i są przetwarzane przez AI (ok. 5 minut).
+- **Analiza zakończona** — analiza ramki została pomyślnie zakończona. Teraz możesz zobaczyć opisane kolorami zdjęcia z procentowym udziałem poszczególnych kategorii wchodzących w skład plastra: **Czerw** (jaja, larwy, czerw robotnic i trutni), **Zapasy** (nektar, pyłek, zasklepiony miód) oraz **Pusta/zasłonięta** powierzchnia, a także liczbę znalezionych mateczników/misek matecznikowych i spis pszczół. Wynik analizy składa się z kilku widoków każdego przesłanego zdjęcia; gdy przesłano więcej niż jedno zdjęcie ramki, każde jest opisane swoją pozycją (*Pierwsza*, *Środkowa*, *Ostatnia*). Każdy widok zawiera oznaczenia innych przeanalizowanych elementów oraz odpowiadające im opisy. Przesuwaj zdjęcia, aby wyświetlić kolejne wyniki analizy. Kliknięcie zdjęcia otwiera je w trybie pełnoekranowym. Poniżej wyników analizy znajduje się sekcja *Rekomendacje* — wspólna dla całej analizy — zawierająca praktyczne wskazówki i sugerowane działania opracowane na podstawie analizy AI. Pomagają one zidentyfikować potencjalne problemy oraz podjąć świadome decyzje dotyczące dalszego postępowania.
+- **Analiza nie powiodła się** — analizy nie udało się ukończyć. Spróbuj ponownie dodać zdjęcia ramki pszczelej i wysłać je do analizy.
 
 Gdy analiza ramki pszczelej zostanie ukończona, wysyłane jest powiadomienie push, które po kliknięciu otwiera bezpośrednio jej wynik.
 
@@ -1496,19 +1510,19 @@ Figure: Zakładka Ule - przykładowy widok listy uli {#fig-beehives-beehive-with
 
 Widok *Szczegóły* ula umożliwia monitorowanie danych pomiarowych pochodzących z urządzeń pomiarowych (Scale, VitalSensor) oraz zarządzanie zapisami dotyczącymi pracy przy konkretnym ulu (m.in. przeglądami czy notatkami). Do zakładki szczegółów można przejść bezpośrednio z zakładki *Ule*, po kliknięciu w kafelek z wybranym ulem. 
 
-Widok *Szczegóły* został podzielony na kilka mniejszych zakładek:
+Widok *Szczegóły* został podzielony na kilka mniejszych zakładek, wszystkie widoczne bezpośrednio w jednym pasku — *Stan ula*, *Syrop*, *FrameSense*, *Notatki*, *Przegląd*, *Zadania*, *Badania*, *Próbki*:
 
 - *Stan ula*
-- *Przegląd*
+- *Syrop*
 - *FrameSense*
-- *Więcej*:
-    - *Notatki*
-    - *Zadania*
-    - *Badania*
-    - *Próbki*
+- *Notatki*
+- *Przegląd*
+- *Zadania*
+- *Badania*
+- *Próbki*
 
 !!! note
-    Podział na dwie grupy pojawia się dopiero wtedy, gdy zakładek treściowych jest więcej niż pięć. Jeśli jest ich pięć lub mniej (np. gdy ul nie ma VitalSensora albo Twój plan nie obejmuje badań czy FrameSense), wszystkie mieszczą się w jednym pasku i zakładka *Więcej* w ogóle się nie pojawia. Kliknięcie *Więcej* przełącza pasek między obiema grupami.
+    To, które zakładki widzisz, może się różnić: *FrameSense*, *Badania* i *Próbki* zależą od Twojego planu (a w przypadku *Próbek* także od tego, czy VitalSensor jest lub był powiązany z ulem), a udostępnienie o ograniczonym dostępie pokazuje wyłącznie *Stan ula* i *Syrop*. Gdy zakładek jest więcej niż mieści się na ekranie, pasek przewija się w bok — osobnej zakładki *Więcej* już nie ma.
 
 
 #### 4.1 Stan ula
@@ -1594,7 +1608,19 @@ Zakładka *FrameSense* prezentuje historię analiz AI ramek pszczelich, wykonany
 **Najważniejsze informacje:**
 
 - **Lista analiz** – pokazuje każdą analizę ramki wraz ze statusem: *Analizujemy*, *Analiza zakończona* lub *Analiza nie powiodła się*.
-- **Szczegóły analizy** – po otwarciu zakończonej analizy wyświetlane jest przesłane zdjęcie z oznaczeniami poszczególnych elementów oraz podsumowanie zawartości plastra, obejmujące udział czerwiu, zapasów pokarmu oraz pustej i zasłoniętej powierzchni, a także spis pszczół oraz mateczniki. Poniżej znajduje się również sekcja z rekomendacjami, które pomogą Ci rozwiązać potencjalne problemy wykryte podczas analizy ramki oraz podjąć świadome decyzje i działania naprawcze. Zobacz [9. FrameSense](#analiza-ramki), aby dowiedzieć się więcej.
+- **Szczegóły analizy** – po otwarciu zakończonej analizy wyświetlane są przesłane zdjęcia z oznaczeniami poszczególnych elementów oraz podsumowanie zawartości plastra, obejmujące udział czerwiu, zapasów pokarmu oraz pustej i zasłoniętej powierzchni, a także spis pszczół oraz mateczniki. Gdy przesłano więcej niż jedno zdjęcie ramki, każde jest opisane swoją pozycją (*Pierwsza*, *Środkowa*, *Ostatnia*). Poniżej znajduje się również sekcja z rekomendacjami, które pomogą Ci rozwiązać potencjalne problemy wykryte podczas analizy ramki oraz podjąć świadome decyzje i działania naprawcze. Zobacz [9. FrameSense](#analiza-ramki), aby dowiedzieć się więcej.
+
+#### 4.7 Kalkulator syropu
+
+Zakładka *Syrop* to kalkulator syropu cukrowego — wylicza, ile cukru i wody połączyć, aby uzyskać wybraną ilość syropu o potrzebnym stężeniu. Nie wymaga żadnego urządzenia pomiarowego i jest widoczna przy każdym ulu, także w udostępnieniu o ograniczonym dostępie.
+
+**Najważniejsze informacje:**
+
+- **Proporcja** – wybierz jedną z trzech proporcji cukru do wody wagowo: **1:1** (rzadki — wiosną, na pobudzenie rodziny), **3:2** (średni — uniwersalny, lato i jesień) lub **2:1** (gęsty — jesienią, na zapas zimowy). Kalkulator otwiera się na proporcji 3:2.
+- **Ilość** – wpisz, ile litrów syropu chcesz przygotować (0,1–2000 l).
+- **Wynik** – po wpisaniu ilości karta pokazuje, ile **wody** i **cukru** (w kilogramach lub funtach, zależnie od ustawionej jednostki) potrzeba według przepisu, wraz z wynikową **masą syropu**, procentowym udziałem cukru w masie oraz gramami cukru na litr.
+- **Ostrzeżenia** – w zależności od wybranej proporcji możesz zobaczyć przypomnienie, aby nie gotować syropu (gotowanie tworzy HMF, szkodliwy dla pszczół), albo informację, że syrop 2:1 to roztwór nasycony, który w chłodnym karmidle krystalizuje, chyba że rozpuścisz go w gorącej wodzie i podasz ciepły.
+- **Jak przygotować** – poniżej wyniku znajduje się przewodnik krok po kroku: użyj czystego białego cukru, odważ go zamiast odmierzać objętościowo, zdejmij wodę z ognia przed wsypaniem cukru, mieszaj aż się w pełni rozpuści, podawaj letni, rób tyle, ile rodzina zabierze w ciągu kilku dni, unikaj rozlewania (przyciąga rabunek) i sprawdź karmidło po 2–4 dniach. Przypomina też, by nie karmić w czasie pożytku, z którego chcesz odebrać miód, bo cukier trafi wtedy do miodu.
 
 <a id="omowienie-ustawien-pasieki"></a>
 
@@ -2354,11 +2380,11 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 ### 1. Rejestracja i logowanie
 
-- **Rejestracja:** Pobierz aplikację mobilną Apisense lub wejdź na stronę internetową systemu. Wybierz *Załóż konto*, wypełnij dane (nazwa użytkownika, e-mail, telefon), utwórz hasło spełniające wymagania i kliknij *Zarejestruj*.
+- **Rejestracja:** Pobierz aplikację mobilną Apisense lub wejdź na stronę internetową systemu. Wybierz *Załóż konto*, wypełnij dane (nazwa użytkownika, e-mail, telefon), utwórz hasło spełniające wymagania i kliknij *Dalej* — albo zamiast formularza użyj *Załóż konto z Google* / *Zarejestruj się, używając konta Apple*. Potwierdź konto na ekranie *Potwierdź adres e-mail*: otwórz link wysłany na skrzynkę albo, gdy już to zrobiłeś, kliknij *Już potwierdziłem*.
 
 > [Wideo](#wideo-rejestracja), [Rejestracja](#1-rejestracja)
 
-- **Logowanie:** Uruchom aplikację lub stronę internetową, w widoku *Zaloguj się* wpisz nazwę użytkownika lub e-mail oraz hasło, następnie kliknij *Zaloguj się*. Hasła nie pamiętasz? Kliknij *Nie pamiętasz hasła?* i zresetuj je samodzielnie.
+- **Logowanie:** Uruchom aplikację lub stronę internetową, w widoku *Zaloguj się* wpisz nazwę użytkownika lub e-mail oraz hasło, następnie kliknij *Zaloguj się* — albo użyj *Zaloguj się z Google* / *Zaloguj się, używając konta Apple*. Hasła nie pamiętasz? Kliknij *Nie pamiętasz hasła?* i zresetuj je samodzielnie.
 
 > [Logowanie](#2-logowanie)
 
@@ -2387,6 +2413,10 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 - **Usuwanie ula:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Kliknij ikonę **⋮** będąc w zakładce *Szczegóły* i wybierz *Ustawienia*. W widoku *Ustawienia ula* kliknij przycisk *Usuń ul*.
 
 > [Usuwanie ula](#23-usuwanie-ula)
+
+- **Przenoszenie ula do innej pasieki:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Kliknij ikonę **⋮** będąc w zakładce *Szczegóły* i wybierz *Ustawienia*. W widoku *Ustawienia ula* kliknij *Przenieś ul* (tylko właściciel), wybierz docelową pasiekę z hubem i potwierdź.
+
+> [Przenoszenie ula do innej pasieki](#24-przenoszenie-ula-do-innej-pasieki)
 
 - **Dodawanie przeglądów:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Wybierz *Dodaj...* -> *Przegląd* z dolnego menu. Załącz łącznie 4 wymagane zdjęcia ramek (kliknij *Zobacz przykład*, jeśli nie wiesz, jak powinny wyglądać). Odpowiedz na pytania. Żółta strzałka w prawo umożliwia przejście do następnego pytania. Kliknij *Zakończ przegląd* (żółty przycisk w ostatnim oknie przeglądu) by zapisać. Rozpoczęty przegląd można zapisać jako szkic (przechowywany 24 godziny); zakończony przegląd można później edytować lub usunąć z menu dodatkowego lub klikając ikonę ołówka/kosza na liście przeglądów.
 
@@ -2424,7 +2454,7 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 > [Dodawanie badania](#41-dodawanie-badania)
 
-- **Dodawanie analizy ramki:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Z dolnego menu wybierz *Dodaj... -> FrameSense*. Umieść ramkę w obrysie widoku aparatu, zrób lub wgraj jedno zdjęcie ramki pszczelej i kliknij *Wyślij do analizy*. Wynik (*Analizujemy* / *Analiza zakończona* / *Analiza nie powiodła się*) śledź w zakładce *FrameSense*. Wejdź w szczegóły analizy i sprawdź podsumowanie oraz rekomendacje.
+- **Dodawanie analizy ramki:** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Z dolnego menu wybierz *Dodaj... -> FrameSense*. Uzupełnij wymagane pole *Środkowa* (umieść ramkę w obrysie widoku aparatu) oraz opcjonalnie pola *Pierwsza* / *Ostatnia*, następnie kliknij *Wyślij do analizy*. Wynik (*Analizujemy* / *Analiza zakończona* / *Analiza nie powiodła się*) śledź w zakładce *FrameSense*. Wejdź w szczegóły analizy i sprawdź podsumowanie oraz rekomendacje.
 
 > [FrameSense](#analiza-ramki)
 
