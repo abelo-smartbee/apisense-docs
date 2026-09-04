@@ -1608,7 +1608,7 @@ Zakładka *FrameSense* prezentuje historię analiz AI ramek pszczelich, wykonany
 **Najważniejsze informacje:**
 
 - **Lista analiz** – pokazuje każdą analizę ramki wraz ze statusem: *Analizujemy*, *Analiza zakończona* lub *Analiza nie powiodła się*.
-- **Szczegóły analizy** – po otwarciu zakończonej analizy wyświetlane są przesłane zdjęcia z oznaczeniami poszczególnych elementów oraz podsumowanie zawartości plastra, obejmujące udział czerwiu, zapasów pokarmu oraz pustej i zasłoniętej powierzchni, a także spis pszczół oraz mateczniki. Gdy przesłano więcej niż jedno zdjęcie ramki, każde jest opisane swoją pozycją (*Pierwsza*, *Środkowa*, *Ostatnia*). Poniżej znajduje się również sekcja z rekomendacjami, które pomogą Ci rozwiązać potencjalne problemy wykryte podczas analizy ramki oraz podjąć świadome decyzje i działania naprawcze. Zobacz [9. FrameSense](#analiza-ramki), aby dowiedzieć się więcej.
+- **Szczegóły analizy** – po otwarciu zakończonej analizy wyświetlane są przesłane zdjęcia z oznaczeniami poszczególnych elementów oraz podsumowanie zawartości plastra, obejmujące udział czerwiu, zapasów pokarmu oraz pustej i zasłoniętej powierzchni, a także spis pszczół oraz mateczniki. Gdy przesłano więcej niż jedno zdjęcie ramki, każde jest opisane swoją pozycją (*Pierwsza*, *Środkowa*, *Ostatnia*). Poniżej znajduje się również sekcja z rekomendacjami, które pomogą Ci rozwiązać potencjalne problemy wykryte podczas analizy ramki oraz podjąć świadome decyzje i działania naprawcze. Zobacz [5. FrameSense](#analiza-ramki), aby dowiedzieć się więcej.
 
 #### 4.7 Kalkulator syropu
 
@@ -2472,7 +2472,7 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 > [Wideo](#wideo-dodaj-ul), [Omówienie listy uli (zakładka Ule)](#omowienie-listy-uli)
 
-- **Zawartość ula (zakładka Szczegóły):** Górne zakładki to *Stan ula*, *Przegląd* i *FrameSense*; *Notatki*, *Zadania*, *Badania* i *Próbki* znajdziesz pod *Więcej*. Możesz wyświetlić również wykresy poszczególnych parametrów np. Przybytek miodu.
+- **Zawartość ula (zakładka Szczegóły):** Górne zakładki to *Stan ula*, *Syrop*, *FrameSense*, *Notatki*, *Przegląd*, *Zadania*, *Badania* i *Próbki* — gdy nie mieszczą się na ekranie, pasek przewija się w bok. Możesz wyświetlić również wykresy poszczególnych parametrów np. Przybytek miodu.
 
 > [Omówienie zawartości ula (zakładka Szczegóły)](#omowienie-zawartosci-ula)
 

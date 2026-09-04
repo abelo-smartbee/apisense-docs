@@ -1612,7 +1612,7 @@ The *FrameSense* tab presents the history of AI analyses of bee frames performed
 **Most important information:**
 
 - **Analysis list** – shows every frame analysis with its status: *Analysing*, *Analysis completed* or *Analysis failed*.
-- **Analysis details** – after opening a completed analysis, the submitted photo(s) with marked elements and a comb contents summary are displayed, including brood, food stores, empty and obscured area, as well as a bee count and queen cells. When more than one frame photo was submitted, each is labelled with its position (*First*, *Middle*, *Last*). Below there is also a recommendations section that helps you address potential problems detected during the frame analysis and take informed corrective actions. See [9. FrameSense](#analiza-ramki) for details.
+- **Analysis details** – after opening a completed analysis, the submitted photo(s) with marked elements and a comb contents summary are displayed, including brood, food stores, empty and obscured area, as well as a bee count and queen cells. When more than one frame photo was submitted, each is labelled with its position (*First*, *Middle*, *Last*). Below there is also a recommendations section that helps you address potential problems detected during the frame analysis and take informed corrective actions. See [5. FrameSense](#analiza-ramki) for details.
 
 #### 4.7 Syrup calculator
 
@@ -2473,7 +2473,7 @@ Below you will find a summary of the most important activities in the Apisense P
 
 > [Video](#video-add-hive), [Hive list overview (Hives tab)](#omowienie-listy-uli)
 
-- **Hive contents (Details tab):** The top tabs are *Hive state*, *Inspection* and *FrameSense*; *Notes*, *Tasks*, *Examinations* and *Samples* live under *More*. You can also display charts of individual parameters, e.g. Honey gain.
+- **Hive contents (Details tab):** The top tabs are *Hive state*, *Syrup*, *FrameSense*, *Notes*, *Inspection*, *Tasks*, *Examinations* and *Samples* — when they don't fit on screen, the bar scrolls sideways. You can also display charts of individual parameters, e.g. Honey gain.
 
 > [Hive contents overview (Details tab)](#omowienie-zawartosci-ula)
 
