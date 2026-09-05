@@ -266,6 +266,8 @@ def main() -> None:
 
     # 3. relative site links only resolve on docs.apisense.ai — make them absolute
     html = html.replace('href="../downloads/', f'href="{SITE}downloads/')
+    html = html.replace('href="../manual/', f'href="{SITE}manual/')
+    html = html.replace('href="short/"', f'href="{SITE}assembly/short/"')
     html = html.replace('href="../"', f'href="{SITE}"')
     # a downloaded file cannot "download" a remote PDF; open it instead
     html = html.replace(f'href="{SITE}downloads/files/Apisense_Box_Assembly_Instruction.pdf" download',
