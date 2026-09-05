@@ -13,12 +13,13 @@ language (see LOCALES), because these travel as e-mail attachments.
 
 from __future__ import annotations
 
-import re
-import shutil
 import subprocess
 import sys
 import tempfile
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from pdf_lib import check_names, compress, find_chrome, rtl_locales, size_note  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 STANDALONE = ROOT / "docs" / "assembly" / "Apisense_BOX_Instrukcja_montazu_standalone.html"
@@ -63,8 +64,6 @@ LOCALES = {
     "ar": "Apisense_BOX_Dalil_al-tarkib_ar.pdf",
 }
 
-CHROME_CANDIDATES = ["google-chrome", "google-chrome-stable", "chromium", "chromium-browser"]
-
 # The deck reveals itself on scroll; print needs every slide already settled.
 FREEZE = """
 <style id="print-freeze">
@@ -74,84 +73,8 @@ FREEZE = """
 """
 
 
-def rtl_locales(html: str) -> set[str]:
-    """The right-to-left locales, read out of the page instead of copied here.
-
-    A second hand-maintained copy is a copy that drifts, and the failure it
-    drifts into is silent: a PDF printed LTR from a mirrored page looks
-    perfectly well-typeset to anyone who cannot read the language. So this
-    parses `window.APISENSE_RTL` from the markup and refuses to print if the
-    declaration is not where it expects — the same bargain `ROOT_TAG` makes a
-    few lines further down.
-    """
-    match = re.search(r"window\.APISENSE_RTL\s*=\s*\[([^\]]*)\]", html)
-    if match is None:
-        raise SystemExit(
-            "nie znaleziono window.APISENSE_RTL w wersji standalone — bez tego"
-            " nie wiadomo, które locale drukować od prawej do lewej;"
-            " sprawdź skrypt startowy w docs/assembly/index.html"
-        )
-    return set(re.findall(r"'([a-z]{2})'", match.group(1)))
-
-
-def check_names() -> list[tuple[str, list[str]]]:
-    """Refuse to print if two locales share a file name; report near-misses.
-
-    Sibling languages name this document almost identically — Norwegian and
-    Swedish both call it *Monteringsanvisning*, Czech and Slovak differ by one
-    preposition. A duplicate would not error: the second locale would simply
-    overwrite the first, leaving a full-looking output directory one file short,
-    with one language silently replaced by another. So the full names are
-    checked hard.
-
-    Stripping the `_<loc>` suffix is checked too, but only reported — the
-    collisions there are real (no/sv) and tolerated. That report is the answer
-    to "is the suffix load-bearing?": when it lists anything, it is.
-    """
-    dupes: dict[str, list[str]] = {}
-    for loc, name in LOCALES.items():
-        dupes.setdefault(name, []).append(loc)
-    clashing = {name: locs for name, locs in dupes.items() if len(locs) > 1}
-    if clashing:
-        raise SystemExit(
-            "kolizja nazw plików PDF — jedno locale nadpisałoby drugie: "
-            + "; ".join(f"{name} ← {', '.join(locs)}" for name, locs in clashing.items())
-        )
-
-    bare: dict[str, list[str]] = {}
-    for loc, name in LOCALES.items():
-        stem = name.removesuffix(".pdf").removesuffix(f"_{loc}")
-        bare.setdefault(stem, []).append(loc)
-    return sorted((stem, locs) for stem, locs in bare.items() if len(locs) > 1)
-
-
-def find_chrome() -> str:
-    for name in CHROME_CANDIDATES:
-        path = shutil.which(name)
-        if path:
-            return path
-    raise SystemExit("nie znaleziono Chrome ani Chromium — zainstaluj jedno z: " + ", ".join(CHROME_CANDIDATES))
-
-
-def compress(pdf: Path) -> float | None:
-    """Shrink with Ghostscript. /printer keeps images at 300 dpi — anything
-    lower starts to soften the QR codes, which have to stay scannable."""
-    gs = shutil.which("gs")
-    if not gs:
-        return None
-    tmp = pdf.with_suffix(".gs.pdf")
-    subprocess.run(
-        [gs, "-q", "-dNOPAUSE", "-dBATCH", "-sDEVICE=pdfwrite",
-         "-dPDFSETTINGS=/printer", "-dCompatibilityLevel=1.5",
-         f"-sOutputFile={tmp}", str(pdf)],
-        check=True, capture_output=True,
-    )
-    tmp.replace(pdf)
-    return pdf.stat().st_size / 1_048_576
-
-
 def main(argv: list[str]) -> None:
-    shared = check_names()
+    shared = check_names(LOCALES)
     for stem, locs in shared:
         print(f"  uwaga: {stem} to nazwa wspólna dla {', '.join(locs)} — rozróżnia je sufiks locale")
 
@@ -178,7 +101,7 @@ def main(argv: list[str]) -> None:
     # The locale is preset by rewriting this exact string on <html>. If index.html
     # ever spells it differently, the replace would quietly do nothing and every
     # PDF would come out Polish — a wrong-language file looks perfectly fine.
-    rtl = rtl_locales(html)
+    rtl = rtl_locales(html, "wersji standalone")
     print(f"  locale od prawej do lewej: {', '.join(sorted(rtl)) or '(brak)'}")
 
     ROOT_TAG = '<html lang="pl" data-lang="pl" dir="ltr">'
@@ -217,9 +140,7 @@ def main(argv: list[str]) -> None:
                 capture_output=True,
             )
             raw = out.stat().st_size / 1_048_576
-            saved = compress(out)
-            note = f"{raw:.1f} → {saved:.1f} MB" if saved else f"{raw:.1f} MB, bez kompresji"
-            print(f"  {loc}  → {out.relative_to(ROOT)}  ({note})")
+            print(f"  {loc}  → {out.relative_to(ROOT)}  ({size_note(raw, compress(out))})")
 
 
 if __name__ == "__main__":

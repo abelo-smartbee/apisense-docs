@@ -18,7 +18,20 @@ Grafiki leżą w `docs/assembly/figs/`. Z tego pliku powstają dwa artefakty:
   wysyłany mailem jako załącznik),
 - `tools/build_pdf.py` → dwadzieścia PDF-ów, po jednym na locale.
 
-Oba regeneruj **raz, na końcu**. Przegenerowanie w połowie migracji zapieka stan
+Obok decku żyje **instrukcja skrócona** — `docs/assembly/short/index.html`, ta
+sama treść ściśnięta na jeden arkusz A4 poziomo, do druku jako wkładka do
+pudełka. Ten sam mechanizm `[lang]` i ten sam klucz `localStorage`, więc
+przycisk w nagłówku decku otwiera ją w bieżącym języku. Grafiki bierze z
+`figs/` (te same `pdf-*.svg` co deck plus `qr-*.svg` i `badge-*.svg`).
+`tools/build_short_pdf.py` drukuje ją do `docs/assembly/pdf/short/` — i
+**odmawia**, gdy w którymś locale treść nie mieści się na stronie: arkusz ma
+`overflow: hidden`, więc `Pages: 1` nic nie dowodzi, dlatego strona sama
+raportuje przepełnione pudełka w `data-overflow`, a skrypt to czyta przez
+`--dump-dom`. Po każdej zmianie treści odpal `--check`; jeśli locale wystaje,
+zmniejsz mu `font-size` `.sheet` w ostatniej regule stylu strony (progi są tam
+opisane).
+
+Wszystko regeneruj **raz, na końcu**. Przegenerowanie w połowie migracji zapieka stan
 przejściowy w dwudziestu plikach naraz.
 
 ## Zasada: ramka od grafika, ekran z suite'u
