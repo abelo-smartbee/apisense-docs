@@ -1951,6 +1951,7 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
         finishes fetching the ones that never entered the viewport — they
         come out blank. So force every image in and wait before printing. ── */
   var printBtn = document.getElementById('print');
+  var shortLink = document.getElementById('short');
 
   function loadAllImages() {
     return Promise.all(Array.prototype.map.call(document.images, function (img) {
@@ -2115,10 +2116,6 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
        looks fine to anyone who cannot read it. */
     root.dir = window.APISENSE_RTL.indexOf(l) > -1 ? 'rtl' : 'ltr';
     localStorage.setItem('apisense-asm-lang', l);
-    /* Keep the link's base as authored: build_standalone.py rewrites it to an
-       absolute URL for the mailed copy, and a relative one would not survive. */
-    var short = document.getElementById('short');
-    short.href = short.href.split('?')[0] + '?lang=' + l;
     syncLang();
   }
 
@@ -2308,6 +2305,11 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
   function syncLang() {
     var cur = root.getAttribute('data-lang');
     syncFigures(cur);
+    /* The quick guide reads the same localStorage key, so the ?lang= is for a
+       link copied elsewhere. Rebuilt from the authored href, not the resolved
+       one: build_standalone.py rewrites it to an absolute URL for the mailed
+       copy, and that base has to survive the switch. */
+    shortLink.setAttribute('href', shortLink.getAttribute('href').split('?')[0] + '?lang=' + cur);
     langSelect.value = cur;
     var head = HEAD_TEXT[cur] || HEAD_TEXT.pl;
     printBtn.title = head.print;

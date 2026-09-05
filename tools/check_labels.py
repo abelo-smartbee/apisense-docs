@@ -19,6 +19,7 @@ dowodzi, że etykieta jest wyrenderowana — rozjazd ARB↔deck to sygnał do
 sprawdzenia na zrzucie, nie automatyczna poprawka w ciemno.
 
     python3 tools/check_labels.py            # exit 1 przy rozjazdach
+    python3 tools/check_labels.py docs/assembly/short/index.html   # inna strona
 """
 from __future__ import annotations
 
@@ -52,7 +53,7 @@ def main() -> int:
     for k, v in key2val["en"].items():
         en_v2k.setdefault(v, k)
 
-    html = HTML.read_text(encoding="utf-8")
+    html = Path(sys.argv[1]).read_text(encoding="utf-8") if len(sys.argv) > 1 else HTML.read_text(encoding="utf-8")
     # grupy = przebiegi kolejnych spanów językowych; nowa grupa, gdy locale
     # się powtarza (ten sam parser co tools/check_i18n.py)
     tokens = re.findall(r'<span lang="(\w+)"[^>]*>((?:(?!</span>).)*)</span>', html, re.S)

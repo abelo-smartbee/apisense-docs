@@ -20,11 +20,13 @@ Fix by shrinking that locale's `.sheet` font-size in the page's last style rule.
 from __future__ import annotations
 
 import re
-import shutil
 import subprocess
 import sys
 import tempfile
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from pdf_lib import check_names, compress, find_chrome, rtl_locales, size_note  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "docs" / "assembly" / "short" / "index.html"
@@ -55,25 +57,9 @@ LOCALES = {
     "ar": "Apisense_BOX_Al-dalil_al-mukhtasar_ar.pdf",
 }
 
-CHROME_CANDIDATES = ["google-chrome", "google-chrome-stable", "chromium", "chromium-browser"]
 ROOT_TAG = '<html lang="pl" data-lang="pl" dir="ltr">'
 CHROME_FLAGS = ["--headless=new", "--disable-gpu", "--no-sandbox", "--allow-file-access-from-files",
                 "--virtual-time-budget=15000", "--window-size=1400,1000"]
-
-
-def find_chrome() -> str:
-    for name in CHROME_CANDIDATES:
-        path = shutil.which(name)
-        if path:
-            return path
-    raise SystemExit("nie znaleziono Chrome ani Chromium — zainstaluj jedno z: " + ", ".join(CHROME_CANDIDATES))
-
-
-def rtl_locales(html: str) -> set[str]:
-    match = re.search(r"window\.APISENSE_RTL\s*=\s*\[([^\]]*)\]", html)
-    if match is None:
-        raise SystemExit("nie znaleziono window.APISENSE_RTL w docs/assembly/short/index.html")
-    return set(re.findall(r"'([a-z]{2})'", match.group(1)))
 
 
 def localized(html: str, loc: str, rtl: set[str]) -> str:
@@ -98,31 +84,24 @@ def overflow(chrome: str, src: Path) -> str:
     return match.group(1)
 
 
-def compress(pdf: Path) -> float | None:
-    gs = shutil.which("gs")
-    if not gs:
-        return None
-    tmp = pdf.with_suffix(".gs.pdf")
-    subprocess.run(
-        [gs, "-q", "-dNOPAUSE", "-dBATCH", "-sDEVICE=pdfwrite",
-         "-dPDFSETTINGS=/printer", "-dCompatibilityLevel=1.5",
-         f"-sOutputFile={tmp}", str(pdf)],
-        check=True, capture_output=True,
-    )
-    tmp.replace(pdf)
-    return pdf.stat().st_size / 1_048_576
-
-
 def main(argv: list[str]) -> int:
-    check_only = "--check" in argv
+    flags = [a for a in argv if a.startswith("--")]
+    unknown_flags = [f for f in flags if f != "--check"]
+    if unknown_flags:
+        # A typo here must not degrade into a full twenty-file build.
+        raise SystemExit(f"nieznana opcja: {', '.join(unknown_flags)} (dostępna: --check)")
+    check_only = "--check" in flags
     locales = [a for a in argv if not a.startswith("--")] or list(LOCALES)
     unknown = [l for l in locales if l not in LOCALES]
     if unknown:
         raise SystemExit(f"nieznane locale: {', '.join(unknown)} (dostępne: {', '.join(LOCALES)})")
 
+    for stem, locs in check_names(LOCALES):
+        print(f"  uwaga: {stem} to nazwa wspólna dla {', '.join(locs)} — rozróżnia je sufiks locale")
+
     chrome = find_chrome()
     html = SRC.read_text(encoding="utf-8")
-    rtl = rtl_locales(html)
+    rtl = rtl_locales(html, "docs/assembly/short/index.html")
     if not check_only:
         OUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -151,9 +130,7 @@ def main(argv: list[str]) -> int:
                 check=True, capture_output=True,
             )
             raw = out.stat().st_size / 1_048_576
-            saved = compress(out)
-            note = f"{raw:.1f} → {saved:.1f} MB" if saved else f"{raw:.1f} MB, bez kompresji"
-            print(f"  {loc}  → {out.relative_to(ROOT)}  ({note})")
+            print(f"  {loc}  → {out.relative_to(ROOT)}  ({size_note(raw, compress(out))})")
         finally:
             src.unlink(missing_ok=True)
 
