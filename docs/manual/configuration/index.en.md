@@ -287,11 +287,12 @@ Figure: Apisense VitalSensor installation animation {#fig-sensor-mounting-animat
 
 ![Apisense VitalSensor installation animation](../pictures/montaz-sensora-animated.svg){width=400}
 
-- **Location** — the compact Apisense VitalSensor is installed non-invasively inside the hive, ideally in the upper corner of the central bee frame, so as not to disrupt bee activity and ventilation; vertically, so the QR code sticker is visible from above when the frame is inserted. Within BLE range of the Apisense Hub (up to approx. 35 m).
+- **Location** — the compact Apisense VitalSensor is installed non-invasively inside the hive, ideally in the upper corner of the central bee frame, so as not to disrupt bee activity and ventilation; vertically, with the housing openings facing up (the QR code sticker stays at the back, so scan it before mounting). Within BLE range of the Apisense Hub (up to approx. 35 m).
 
+- **Brood chamber only** — the VitalSensor is intended for installation in the brood chamber only. Do not install it in the honey super or on frames used to harvest honey for consumption — this keeps the VitalSensor and the whole monitoring system working correctly. The sensor housing is made of food-contact-approved material.
 - **Installation — step by step**
 
-  1. **Attach the VitalSensor to the central frame** — mount the started VitalSensor to the bee frame using the special mounting clips included in the kit. The Apisense VitalSensor should be seated securely on the central frame (at the cluster), so it cannot shift, and mounted vertically so the QR code sticker is visible from above when the frame is inserted. A correctly mounted VitalSensor is shown in [](#fig-sensor-on-frame).
+  1. **Attach the VitalSensor to the central frame** — mount the started VitalSensor to the bee frame using the special mounting clips included in the kit. The Apisense VitalSensor should be seated securely on the central frame (at the cluster), so it cannot shift, and mounted vertically with the housing openings facing up (the QR code sticker stays at the back). A correctly mounted VitalSensor is shown in [](#fig-sensor-on-frame).
 
   Figure: Correct VitalSensor installation on the bee frame {#fig-sensor-on-frame}
 
