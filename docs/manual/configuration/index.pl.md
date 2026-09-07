@@ -267,9 +267,10 @@ Figure: Animacja montażu Apisense VitalSensor {#fig-sensor-mounting-animation}
 
 ![Animacja montażu Apisense VitalSensor](../pictures/montaz-sensora-animated.svg){width=400}
 
-- **Umiejscowienie** — urządzenie niewielkich rozmiarów Apisense VitalSensor montuje się bezinwazyjnie wewnątrz ula, najlepiej w górnym rogu centralnej ramki pszczelej, tak, aby nie zakłócać pracy pszczół i wentylacji; pionowo, aby naklejka z kodem QR była widoczna od góry po włożeniu ramki do ula. Odległość od Apisense Huba w zasięgu łączności BLE (do ok. 35 m).
+- **Umiejscowienie** — urządzenie niewielkich rozmiarów Apisense VitalSensor montuje się bezinwazyjnie wewnątrz ula, najlepiej w górnym rogu centralnej ramki pszczelej, tak, aby nie zakłócać pracy pszczół i wentylacji; pionowo, otworami w obudowie do góry (naklejka z kodem QR zostaje z tyłu, dlatego zeskanuj ją przed montażem). Odległość od Apisense Huba w zasięgu łączności BLE (do ok. 35 m).
+- **Tylko w rodni** — VitalSensor przeznaczony jest wyłącznie do montażu w rodni. Nie instaluj urządzenia w miodni ani na ramkach przeznaczonych do pozyskiwania miodu do spożycia — zapewnia to prawidłowe działanie VitalSensora i całego systemu monitoringu. Obudowa sensora wykonana jest z materiału dopuszczonego do kontaktu z żywnością.
 - **Montaż - krok po kroku**
-  1. **Umieść VitalSensor na centralnej ramce** — uruchomiony VitalSensor zamontuj do ramki pszczelej przy użyciu specjalnych uchwytów montażowych dołączonych do zestawu. Apisense VitalSensor powinien zostać stabilnie osadzony na centralnej ramce (w kłębie), tak, aby się nie przemieszczał, a także zamontowany pionowo, aby naklejka z kodem QR była widoczna od góry po włożeniu ramki do ula. Prawidłowo przymocowany VitalSensor do ramki pszczelej został przedstawiony na [](#fig-sensor-on-frame).
+  1. **Umieść VitalSensor na centralnej ramce** — uruchomiony VitalSensor zamontuj do ramki pszczelej przy użyciu specjalnych uchwytów montażowych dołączonych do zestawu. Apisense VitalSensor powinien zostać stabilnie osadzony na centralnej ramce (w kłębie), tak, aby się nie przemieszczał, a także zamontowany pionowo, otworami w obudowie do góry (naklejka z kodem QR zostaje z tyłu). Prawidłowo przymocowany VitalSensor do ramki pszczelej został przedstawiony na [](#fig-sensor-on-frame).
 
   Figure: Prawidłowy montaż VitalSensor do ramki pszczelej {#fig-sensor-on-frame}
 
