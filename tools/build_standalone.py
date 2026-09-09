@@ -255,7 +255,7 @@ def main() -> None:
     variants = 0
     for stem, arr in re.findall(r"'([\w-]+)':\s*\[([^\]]*)\]", fig_locales.group(1)):
         for loc in re.findall(r"'(\w+)'", arr):
-            blob = (FIGS / f"{stem}.{loc}.svg").read_bytes()
+            blob = (FIGS / f"{stem}-{loc}.svg").read_bytes()
             uri = "data:image/svg+xml;base64," + base64.b64encode(blob).decode("ascii")
             marker = f'<img data-fig="{stem}" '
             if marker not in html:
