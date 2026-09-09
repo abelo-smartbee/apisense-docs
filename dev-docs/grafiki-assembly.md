@@ -314,7 +314,7 @@ większym niż grubość obwódki, więc po prostokątnym przycięciu w każdym 
 zostaje ćwiartka łuku wypełnienia ramki plus przezroczysty klin za nią. Zrzut
 jest letterboxowany, więc te kliny lądują głęboko wewnątrz modułu — clip bezela
 ich nie zakryje — i figura wygląda jak „telefon w telefonie" (tak wyglądał
-pierwszy `step03-a.pl`). `square_corners()` w generatorze zamalowuje kliny
+pierwszy `step03-a-pl`). `square_corners()` w generatorze zamalowuje kliny
 kolorem prostej krawędzi ekranu obok; odpala się automatycznie po każdym
 udanym cropie ramki.
 
@@ -377,7 +377,13 @@ python3 tools/svg_build_panels.py --locale pl  # tylko figury z własnym zrzutem
 Wariant locale powstaje **tylko dla figur, w których locale ma choć jeden
 własny zrzut** — figura złożona w całości z fallbacku byłaby bajtowym
 duplikatem bazowej, więc generator ją pomija i to wypisuje. Dzisiaj jedyny
-wariant to `step03-a.pl.svg` (polski ekran powitalny).
+wariant to `step03-a-pl.svg` (polski ekran powitalny).
+
+Separator locale w nazwie pliku to **myślnik, nie kropka**. `mkdocs-static-i18n`
+działa w trybie suffix i zagarnia każdy plik `<nazwa>.<locale>.<ext>` — także
+assety, nie tylko `.md`. Nazwany `step03-a.pl.svg` wariant publikował się jako
+`step03-a.svg` w buildzie PL (nadpisując bazę) i nigdy pod ścieżką, o którą
+prosi deck — rozdział 03 pokazywał ikonę zepsutego obrazka na docs.apisense.ai.
 
 **Panel bez zrzutu w suite dostaje wektorowy zastępnik** z `tools/assets/`:
 skaner QR (`scanner-screen`, nigdy nie zrzucany) i ekran powitalny

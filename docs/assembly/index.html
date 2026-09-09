@@ -2297,7 +2297,7 @@ h1 { font-size: clamp(2.4rem, 5.8vw, 5rem); font-weight: 300; letter-spacing: -.
       /* A locale variant comes from a data-src-<locale> attribute when the
          bundler inlined one, from figs/ on the served site. */
       if (has) want = img.getAttribute('data-src-' + cur) ||
-                      ('figs/' + stem + '.' + cur + '.svg');
+                      ('figs/' + stem + '-' + cur + '.svg');
       /* Compare against the attribute, not `img.src`: the property is resolved
          to an absolute URL and would never match, so every locale switch would
          reassign and re-trigger the reveal animation. */

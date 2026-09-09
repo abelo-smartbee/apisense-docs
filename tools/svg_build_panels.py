@@ -521,8 +521,14 @@ def build(fig: dict, art: dict[str, str], locale: str, floor: float = 0.0,
 
 
 def out_name(stem: str, locale: str | None) -> str:
-    """`step05-a.svg` for the fallback build, `step05-a.de.svg` for a locale."""
-    return stem if locale is None else stem.replace(".svg", f".{locale}.svg")
+    """`step05-a.svg` for the fallback build, `step05-a-de.svg` for a locale.
+
+    The separator is a dash, not a dot: mkdocs-static-i18n runs in suffix mode
+    and claims every `<name>.<locale>.<ext>` file, assets included. As
+    `step03-a.pl.svg` the figure was published as `step03-a.svg` in the PL build
+    and never at the path the deck asks for, so chapter 03 showed a broken
+    image on docs.apisense.ai."""
+    return stem if locale is None else stem.replace(".svg", f"-{locale}.svg")
 
 
 # (style, defs, body) per vector screen, loaded once for every stem FIGURES uses.
