@@ -1259,6 +1259,9 @@ Figure: Register sample button {#fig-add-overview-button-3}
   - **Sample collection date** - enter the date when you collected the sample (current by default).
   - **Examination type** - select the appropriate item from the drop-down list, e.g. *Dead bees*.
 
+!!! note "The list depends on the apiary location"
+    The app gets the list of sample types from the server for each apiary separately, so it can differ between apiaries. **Live bees** is available only for apiaries located in Poland (the position of the Hub decides the location). For other apiaries this option does not appear on the list.
+
 - After filling in the above fields, the yellow *Generate code* button will be displayed. Click that button and a special code will be generated in the *Examination code* field, which should be written on the sample ([](#fig-register-sample)). The sample prepared this way with the code should then be sent to the address shown in the app below the code: **Maciej Bryś, University of Life Sciences in Lublin, ul. Doświadczalna 54, 20-280 Lublin**.
 
 Figure: Register sample view {#fig-register-sample}
@@ -1277,7 +1280,7 @@ Figure: Register sample view {#fig-register-sample}
     Detailed instructions for sample collection and performing examinations (*Nosema* microscopy, *Varroa* flotation) are available in the [Lab procedures](../procedures/index.md) section.
 
 !!! tip "Shipping live bees"
-    Ship live bee samples **alive**, in ventilated transport cages that allow air access, with sugar candy (~10 bees per cage, 4 cages per hive), labelled with the test code from the app. Ship **Monday to Thursday** — via Poczta Polska or courier. Shipments via Poczta Polska may only be sent by apiary owners located in Poland. Details: [Protocol 2 — live bees](../samples/protocol-2-live-bees.md).
+    Ship live bee samples **alive**, in ventilated transport cages that allow air access, with sugar candy (~10 bees per cage, 4 cages per hive), labelled with the test code from the app. Ship **Monday to Thursday** — via Poczta Polska or courier. Shipments of live bees via Poczta Polska may only be sent by apiary owners located in Poland. Details: [Protocol 2 — live bees](../samples/protocol-2-live-bees.md).
 
 #### 3.2 Sample status
 
