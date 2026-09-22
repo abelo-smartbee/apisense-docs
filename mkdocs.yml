@@ -59,6 +59,7 @@ plugins:
                 - "Protokół 5: Miód": samples/protocol-5-honey.md
                 - Przegląd rodziny: samples/colony-inspection.md
             - Do pobrania: downloads/index.md
+            - Zgodność i informacje prawne: compliance/index.md
             - FAQ: faq/index.md
         - locale: en
           name: EN
@@ -95,6 +96,7 @@ plugins:
                 - "Protocol 5: Honey": samples/protocol-5-honey.md
                 - Colony inspection: samples/colony-inspection.md
             - Downloads: downloads/index.md
+            - Compliance & legal: compliance/index.md
             - FAQ: faq/index.md
   - caption:
       figure:
@@ -142,6 +144,7 @@ nav:
       - "Protokół 5: Miód": samples/protocol-5-honey.md
       - Przegląd rodziny: samples/colony-inspection.md
   - Do pobrania: downloads/index.md
+  - Zgodność i informacje prawne: compliance/index.md
   - FAQ: faq/index.md
 
 extra_css:
