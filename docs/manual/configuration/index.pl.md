@@ -245,9 +245,9 @@ Figure: Animacja montażu Apisense Scale {#fig-scale-mounting-animation}
 
 ![Animacja montażu Apisense Scale](../pictures/montaz-wagi-animated.svg){width=400}
 
-- **Umiejscowienie i orientacja** — Scale powinna zostać umieszczona pod ulem (lub w konstrukcji ważącej) na **stabilnym i równym podłożu, położona prostopadle do ramek w ulu**. Odległość od Apisense Huba w zasięgu łączności BLE (do ok. 35 m), bez fizycznych przeszkód tłumiących sygnał. Prawidłowe wypoziomowanie i orientacja jest **kluczowe dla dokładności pomiarów**.
+- **Umiejscowienie i orientacja** — Scale powinna zostać umieszczona pod ulem (lub w konstrukcji ważącej) na **stabilnym i równym podłożu, położona prostopadle do ramek w ulu**. Odległość od Apisense Huba w zasięgu łączności BLE (do ok. 35 m), bez fizycznych przeszkód tłumiących sygnał. Prawidłowe wypoziomowanie i orientacja jest **kluczowe dla dokładności pomiarów**. Czarne pudełko z elektroniką (na czole belki pomiarowej) skieruj **w stronę Huba** — jest w nim antena BLE i korpus ula nie może jej zasłaniać.
 - **Montaż i wypoziomowanie — krok po kroku**
-  1. **Umieść Scale w docelowym miejscu** — uruchomioną Scale ustaw tak, aby była położona na stabilnym i równym podłożu oraz zorientowana prostopadle do ramek w ulu.
+  1. **Umieść Scale w docelowym miejscu** — uruchomioną Scale ustaw tak, aby była położona na stabilnym i równym podłożu oraz zorientowana prostopadle do ramek w ulu. Czarne pudełko z elektroniką ma być skierowane w stronę Huba.
   2. **Umieść drewnianą kantówkę** — stanowiącą integralny element konstrukcji — równolegle do Scale i w odpowiedniej odległości tak, aby ciężar ula rozkładał się równomiernie na całej powierzchni zarówno Scale, jak i kantówki.
   3. **Zamontuj ul na Scale** (jeśli jeszcze nie stoi) — umieść ul na przygotowanej konstrukcji ([](#fig-scale-installation)) i upewnij się, że obciążenie nadal rozkłada się równomiernie.
 

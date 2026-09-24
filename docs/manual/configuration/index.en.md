@@ -262,11 +262,11 @@ Figure: Apisense Scale installation animation {#fig-scale-mounting-animation}
 
 ![Apisense Scale installation animation](../pictures/montaz-wagi-animated.svg){width=400}
 
-- **Location and orientation** — the Scale should be placed under the hive (or within a weighing structure) on **stable, level ground, oriented perpendicular to the frames inside the hive**. Within BLE range of the Apisense Hub (up to approx. 35 m), without physical obstacles that attenuate the signal. Correct levelling and orientation is **critical for measurement accuracy**.
+- **Location and orientation** — the Scale should be placed under the hive (or within a weighing structure) on **stable, level ground, oriented perpendicular to the frames inside the hive**. Within BLE range of the Apisense Hub (up to approx. 35 m), without physical obstacles that attenuate the signal. Correct levelling and orientation is **critical for measurement accuracy**. Point the black electronics box (at the front of the measuring beam) **towards the Hub** — it holds the BLE antenna, and the hive body must not shield it.
 
 - **Installation and levelling — step by step**
 
-  1. **Position the Scale** — place the started Scale on stable, level ground, oriented perpendicular to the hive frames.
+  1. **Position the Scale** — place the started Scale on stable, level ground, oriented perpendicular to the hive frames. The black electronics box must face the Hub.
   2. **Place the wooden levelling beam** — an integral part of the assembly — parallel to the Scale and at the correct distance so that the hive weight is distributed evenly across both the Scale and the beam.
   3. **Place the hive on the Scale** (if not already in position) — set the hive on the prepared assembly ([](#fig-scale-installation)) and verify that the load is still evenly distributed.
 
