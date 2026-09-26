@@ -3,7 +3,7 @@
 ## 1. Najważniejsze kroki
 
 1. **Przygotuj zestaw** — sprawdź zawartość opakowania (Hub, Scale, VitalSensor, zasilanie, elementy montażowe, naklejki z kodem QR).
-2. **Zarejestruj się w systemie** — zainstaluj aplikację mobilną Apisense lub przejdź na stronę [Apisense Pro AI](https://app.apisense.ai/) i załóż konto/zaloguj się do Systemu Apisense Pro AI.
+2. **Zarejestruj się w systemie** — zainstaluj aplikację mobilną Apisense lub przejdź na stronę [app.apisense.ai](https://app.apisense.ai/) i załóż konto/zaloguj się do Systemu Apisense Pro AI.
 3. **Dodaj pasiekę i ul** — podczas tworzenia pasieki przypisz do niej Hub, natomiast podczas dodawania ula przypisz mu Scale i VitalSensor. Wymienione urządzenia przypiszesz skanując kody QR znajdujące się na ich obudowach.
 4. **Uruchom urządzenia i sprawdź diody** — wystaw Hub na słońce lub podłącz przewód USB-C do kompatybilnego źródła zasilania. Włóż po dwie baterie typu AA do Scale i VitalSensora, po czym sprawdź czy diody potwierdzające poprawne uruchomienie się zaświeciły.
 5. **Poczekaj na synchronizację** — po 2 godzinach sprawdź pierwsze odczyty w systemie. Zweryfikuj dane wyświetlane w zakładkach Pasieki, Ule i Szczegóły ula (status z *Brak danych* zmieni się na aktualny).

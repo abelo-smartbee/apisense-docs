@@ -63,7 +63,7 @@ The Apisense Pro AI app delivers an intuitive, modern interface for managing api
 
 - [App Store](https://apps.apple.com/app/apisense/id6741760755)
 - [Google Play](https://play.google.com/store/apps/details?id=ai.apisense) 
-- [Web version](https://app.apisense.ai/)
+- Web version: [app.apisense.ai](https://app.apisense.ai/)
 
 <div class="app-screenshots" markdown>
 

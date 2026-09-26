@@ -3,7 +3,7 @@
 ## 1. Key Steps
 
 1. **Prepare the kit** — check the box contents (Hub, Scale, VitalSensor, power supply, mounting hardware, QR code stickers).
-2. **Register in the system** — install the Apisense mobile app or go to [Apisense Pro AI](https://app.apisense.ai/) and create an account / log in.
+2. **Register in the system** — install the Apisense mobile app or go to [app.apisense.ai](https://app.apisense.ai/) and create an account / log in.
 3. **Add your apiary and hive** — when creating the apiary, assign the Hub to it; when adding the hive, assign the Scale and VitalSensor. Assign devices by scanning the QR codes on their housings.
 4. **Start up the devices and check the LEDs** — expose the Hub to sunlight or connect a USB-C cable to a compatible power source. Insert two AA batteries into the Scale and VitalSensor, then check that the start-up indicator LEDs light up.
 5. **Wait for synchronisation** — after 2 hours check the first readings in the system. Verify data in the Apiaries, Hives, and Hive details tabs (the *No data* status will change to current readings).

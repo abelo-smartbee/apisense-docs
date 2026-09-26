@@ -77,6 +77,8 @@ Szczegółowy opis każdego z urządzeń (Hub, Scale, VitalSensor), specyfikacja
 
 ## Rejestracja / Logowanie w systemie
 
+System Apisense Pro AI jest dostępny w aplikacji mobilnej Apisense (App Store, Google Play) oraz w przeglądarce pod adresem [app.apisense.ai](https://app.apisense.ai/).
+
 Szczegółowe instrukcje krok po kroku znajdziesz w Instrukcji aplikacji:
 
 - [Rejestracja](../app-manual.md#1-rejestracja) — zakładanie nowego konta.

@@ -63,7 +63,7 @@ Aplikacja Apisense Pro AI zapewnia intuicyjny i nowoczesny interfejs do zarządz
 
 - [App Store](https://apps.apple.com/app/apisense/id6741760755)
 - [Google Play](https://play.google.com/store/apps/details?id=ai.apisense)
-- [Wersja webowa](https://app.apisense.ai/)
+- Wersja webowa: [app.apisense.ai](https://app.apisense.ai/)
 
 <div class="app-screenshots" markdown>
 

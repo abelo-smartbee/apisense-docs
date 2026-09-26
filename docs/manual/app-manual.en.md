@@ -32,7 +32,7 @@ ______________________________________________________________________
 
 ## Registration / Login
 
-The Apisense Pro AI system is available at the following address: [Apisense Pro AI](https://app.apisense.ai/) and via the Apisense mobile app, which can be downloaded from Google Play and the App Store.
+The Apisense Pro AI system is available at the following address: [app.apisense.ai](https://app.apisense.ai/) and via the Apisense mobile app, which can be downloaded from Google Play and the App Store.
 
 ### 1. Registration
 
@@ -43,7 +43,7 @@ The Apisense Pro AI system is available at the following address: [Apisense Pro 
           allowfullscreen></iframe>
 </div>
 
-- Download the mobile app and launch it, or go to the following address: [Apisense Pro AI](https://app.apisense.ai/). After launching the app, a screen will appear with the option to create an account ([](#fig-rejestracja)).
+- Download the mobile app and launch it, or go to the following address: [app.apisense.ai](https://app.apisense.ai/). After launching the app, a screen will appear with the option to create an account ([](#fig-rejestracja)).
 
 Figure: Registering with the Apisense Pro AI System - Create account start view {#fig-rejestracja}
 
@@ -90,7 +90,7 @@ Figure: Start screen after successful registration with the Apisense Pro AI Syst
 
 If you already have an account in the Apisense Pro AI System, follow these steps:
 
-- Launch the Apisense mobile app or go to the following address: [Apisense Pro AI](https://app.apisense.ai/).
+- Launch the Apisense mobile app or go to the following address: [app.apisense.ai](https://app.apisense.ai/).
 
 - In the *Sign in* view ([](#fig-logowanie)), enter the appropriate data into the designated fields, the same data you provided during registration:
 
