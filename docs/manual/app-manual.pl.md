@@ -1913,6 +1913,39 @@ Kliknij plakietkę, aby otworzyć panel *Plany*:
 
 Gdy plan wygasa, aplikacja przechodzi w tryb tylko do odczytu (patrz notatka w [2. Uzupełnianie notatek i przeglądów](#uzupelnianie-notatek-i-przegladow) oraz w innych miejscach tej instrukcji). Jeśli masz urządzenia Scale lub VitalSensor, zobaczysz też ostrzeżenie, że będą one wysyłać dane jeszcze przez 7 dni po wygaśnięciu planu, a potem przestaną — dotychczasowe dane i historia uli pozostaną dostępne, ale danych, które nie zostały zebrane w tym czasie, nie da się później odzyskać, dlatego warto odnowić plan przed upływem tych 7 dni.
 
+<a id="harvest-tab"></a>
+
+### 9. Zakładka Miody, porady dotyczące przeglądu i ustawienia aplikacji
+
+#### 9.1 Zakładka Miody (poziom pasieki)
+
+W pasiekach z wagą Scale obok zakładek *Ule*, *Zdrowie* i *Zadania* widoczna jest zakładka **Miody** (w adresie: `?tab=harvest`). Pokazuje sezon miodobrania wybranej pasieki:
+
+- **Zebrany miód** — ilość zebrana od początku bieżącego sezonu. Dopóki nie potwierdzisz miodobrań, jest to szacunek na podstawie danych ze Scale; miód potwierdzony pokazywany jest osobno.
+- **Spadki wagi do potwierdzenia** — gdy wagi wykryły spadki, których jeszcze nie potwierdzono, zakładka pokazuje wykrytą masę i pyta, ile z niej stanowił miód.
+- **Ranking miodobrania** — najlepiej produkujące ule sezonu oraz suma dla pasieki. Można przeglądać także poprzednie sezony.
+- **Etap dojrzewania miodu** — dla każdego ula ze Scale (i VitalSensorem) aplikacja pokazuje etap: *Trwa pożytek* (nie zabieraj miodu), *Miód dojrzewa* (jeszcze nie zabieraj, z szacunkiem typu *Może być gotowy w ciągu 3 dni*) lub *Miód może być gotowy* (sprawdź zasklepienie — przy ok. 2/3 zasklepionej ramki można miodobranie). Bez VitalSensora etap oceniany jest wyłącznie na podstawie danych ze Scale. Gdy ul nie ma urządzenia lub świeżych danych, aplikacja podaje powód zamiast etapu.
+
+#### 9.2 Zdarzenia wagi i potwierdzanie miodobrania
+
+Na wykresie wagi ula dzień, w którym Scale wykryła epizod zmiany wagi (spadek, wzrost lub powrót do poprzedniego poziomu), jest zacieniowany przez cały dzień i opisany. Na liście zdarzeń ula otwórz zdarzenie i odpowiedz na pytanie *Co to było?* — wybierz *Miodobranie*, *Dodanie nadstawki*, *Karmienie*, *Przegląd*, *Rójka*, *Podział*, *Zdjęcie korpusu*, *Rabunek*, *Inne* lub *Nic istotnego* (np. błąd pomiaru Scale). Przy części odpowiedzi wymagana jest krótka notatka. Odpowiedź może później zmienić tylko jej autor lub właściciel pasieki.
+
+Jeśli po wymianie urządzenia przejęło ono ul, wykres oznacza ten moment pionową linią (*Wymiana urządzenia*), a linię poprzedniego urządzenia pokazuje wyblakłą (*Poprzednie urządzenie*).
+
+#### 9.3 Porada: przegląd i miodobranie
+
+Na kafelku pasieki i w widoku pogody pasieki Apisense pokazuje, na co pozwala pogoda: **pełny przegląd**, **rzut oka z góry** lub **nie otwieraj**, wraz z oknem czasowym (np. *teraz, do 16:00*), paskiem godzin i prognozą na kolejne dni. Dotknij dnia, aby zobaczyć *Dlaczego:* — przeszkody, takie jak deszcz, silny wiatr, zbyt wysoka wilgotność, zbyt zimno, zbyt gorąco, poza godzinami lotów lub *miód nie jest jeszcze gotowy*. Ten sam widok oznacza dni z pogodą odpowiednią do miodobrania.
+
+#### 9.4 Wymiana baterii
+
+Gdy bateria urządzenia jest słaba, karta ula pokazuje *Wymień baterię* (z pozostałym procentem, jeśli jest znany). W *Wyposażeniu* ula otworzysz instrukcję krok po kroku — *Zobacz, jak wymienić baterie w VitalSensorze* lub *Zobacz, jak wymienić baterie w Scale* — z przyciskami *Wstecz* / *Dalej* i licznikiem kroków. Oba urządzenia zasilane są dwiema bateriami alkalicznymi AA. Po włożeniu nowych baterii dotknij *Wymieniłem baterię* w *Wyposażeniu* ula; urządzenie wróci przy następnej synchronizacji. Nie resetuj ani nie parauj urządzeń ponownie.
+
+#### 9.5 Alerty, motyw i język
+
+- **Alerty** — lista ma dwie zakładki: *Wymaga uwagi* (kondycja rodziny, ryzyko choroby, zmiany wagi) i *Wszystko* (dodatkowo alerty o sprzęcie). Wiersze o niskiej baterii wskazują urządzenie (Scale, VitalSensor lub Hub). Przyciskiem *Oznacz jako przeczytane* oznaczysz jedną z tych grup jako przeczytaną. W *Ustawieniach* opcja *Powiadomienia push* wyłącza powiadomienia, gdy nie korzystasz z aplikacji; wszystko nadal trafia do *Alertów*. Dotknięcie powiadomienia o usuniętym rekordzie pokazuje komunikat *Ten rekord został usunięty*.
+- **Motyw** — *Ustawienia* → *Motyw*: *Zgodnie z systemem*, *Jasny* lub *Ciemny*.
+- **Języki** — aplikacja jest dostępna po polsku, angielsku, niemiecku, hiszpańsku, francusku, norwesku, włosku, turecku, portugalsku, niderlandzku i arabsku (układ od prawej do lewej).
+
 ______________________________________________________________________
 
 <a id="monitorowanie-parametrow"></a>

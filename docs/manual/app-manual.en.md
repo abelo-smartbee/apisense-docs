@@ -1916,6 +1916,39 @@ Tap the chip to open the *Plans* sheet:
 
 When a plan expires, the app switches to view-only mode (see the note in [2. Filling in notes and inspections](#filling-in-notes-and-inspections) and throughout this manual). If you have Scale or VitalSensor devices, you'll also see a warning that they will keep sending data for 7 more days after expiry, after which they stop — your existing data and hive history stay available, but data missed during that gap cannot be recovered later, so it's worth renewing before the 7 days run out.
 
+<a id="harvest-tab"></a>
+
+### 9. Harvest tab, inspection advice and app settings
+
+#### 9.1 Harvest tab (apiary level)
+
+Apiaries with a Scale show a **Harvest** tab next to *Hives*, *Health* and *Tasks* (the tab is named in the address as `?tab=harvest`). It follows the honey season of the chosen apiary:
+
+- **Honey harvested** — the amount collected since the start of the current season. Until you confirm the harvests it is an estimate from Scale data; confirmed honey is shown separately.
+- **Weight drops to confirm** — when the Scales detected weight drops that have not been confirmed yet, the tab shows how much weight was detected and asks how much of it was honey.
+- **Harvest ranking** — the best-producing hives of the season and the apiary total. Past seasons can be browsed as well as the one in progress.
+- **Honey ripening stage** — for each hive with a Scale (and a VitalSensor) the app shows the stage: *Nectar flow on* (don't take the honey), *Honey is ripening* (don't take it yet, with an estimate such as *May be ready within 3 days*) or *Honey may be ready* (check the capping — with about 2/3 of the frame capped you can harvest). Without a VitalSensor the stage is judged from Scale data only. When a hive has no device or no fresh data, the app says why instead of a stage.
+
+#### 9.2 Weight events and confirming a harvest
+
+On the hive's weight chart, a day on which the Scale detected a weight episode (a drop, a rise or a return to the previous level) is shaded for the whole day, with a caption. In the hive's events list open an event and answer *What was it?* — choose *Harvest*, *Super added*, *Feeding*, *Inspection*, *Swarm*, *Split*, *Box removed*, *Robbing*, *Other*, or *Nothing relevant* (e.g. a Scale measurement error). A short note is required for some answers. Only the author of an answer or the apiary owner can change it later.
+
+If a device took over the hive after a replacement, the chart marks the moment with a vertical line (*Device replaced*) and shows the earlier device's line faded (*Former device*).
+
+#### 9.3 Inspection and harvest advice
+
+On the apiary tile and in the apiary's weather view, Apisense shows what the weather permits: a **full inspection**, **a quick look from the top** or **do not open**, with the time window (e.g. *now, until 16:00*), an hour strip and a forecast for the next days. Tap a day to see *Why:* — the blockers, such as rain, strong wind, too humid, too cold, too hot, outside flight hours or *the honey is not ready yet*. The same view marks the days with weather suitable for a honey harvest.
+
+#### 9.4 Replacing batteries
+
+When a device battery is low, the hive card shows *Replace the battery* (with the percentage left if known). In the hive's *Equipment* you can open a step-by-step guide — *See how to replace the VitalSensor batteries* or *See how to replace the Scale batteries* — with *Back* / *Next* and a step counter. Both devices use two AA alkaline batteries. After inserting fresh batteries, tap *I replaced the battery* in the hive's *Equipment*; the device returns on the next sync. Do not reset or re-pair the devices.
+
+#### 9.5 Alerts, theme and language
+
+- **Alerts** — the list has two tabs: *Needs attention* (colony condition, disease risk, weight changes) and *Everything* (which adds equipment alerts). Low-battery rows name the device (Scale, VitalSensor or Hub). Use the *Mark as read* pill to mark either group as read. In *Settings*, *Push notifications* turns off notifications while you are not using the app; everything still reaches *Alerts*. Tapping a notification about a record that has since been deleted shows *This record has been deleted*.
+- **Theme** — *Settings* → *Theme*: *Follow system*, *Light* or *Dark*.
+- **Languages** — the app is available in Polish, English, German, Spanish, French, Norwegian, Italian, Turkish, Portuguese, Dutch and Arabic (right-to-left layout).
+
 ______________________________________________________________________
 
 <a id="monitorowanie-parametrow"></a>
