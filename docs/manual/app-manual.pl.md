@@ -1713,6 +1713,8 @@ Figure: Widok Ustawienia ula - sekcja Informacje o matce {#fig-beehive-settings-
 - **Pochodzenie matki** – jedna z wartości: *Własna hodowla*, *Zakup krajowy*, *Zakup zagraniczny*, *Nieznane*.
 - **Sposób unasiennienia matki** – jedna z wartości: *Naturalny*, *Sztuczny*, *Nieznany*.
 
+<a id="wyposazenie-ula"></a>
+
 #### 6.3 Wyposażenie
 
 Sekcja *Wyposażenie* prezentuje urządzenia pomiarowe przypisane do danego ula oraz ich aktualny stan.
@@ -1743,6 +1745,46 @@ Figure: Widok Ustawienia ula - sekcja Wyposażenie - szczegóły Scale oraz Vita
 Figure: Widok Ustawienia ula - sekcja Wyposażenie - szczegóły Scale oraz VitalSensor (2) {#fig-beehive-settings-sensor}
 
 ![figure](pictures/beehive_settings_sensor.png){width=200}
+
+<a id="wymiana-baterii"></a>
+
+#### 6.4 Wymiana baterii w Scale i VitalSensorze
+
+Scale i VitalSensor zasilane są dwiema bateriami **AA alkalicznymi** (2 × AA). O tym, że baterie trzeba wymienić, aplikacja informuje na kilka sposobów:
+
+- na kafelku ula (zakładka *Ule*) pojawia się komunikat *Wymień baterię — pozostało ok. …%* (lub *Wymień baterię*, gdy poziom nie jest znany), a gdy bateria jest całkowicie rozładowana — *Bateria wyczerpana*,
+- w zakładce *Alerty* pojawia się alert o niskim poziomie baterii ze wskazaniem konkretnego urządzenia (*Scale* lub *VitalSensor*) — patrz [Alerty](#powiadomienia).
+
+**Jak otworzyć instrukcję wymiany.** Instrukcję krok po kroku otworzysz na dwa sposoby:
+
+- klikając alert o niskiej baterii w zakładce *Alerty* — aplikacja przeniesie Cię do pasieki i od razu wyświetli instrukcję dla właściwego urządzenia,
+- z widoku *Ustawienia ula* → *Wyposażenie* ([6.3 Wyposażenie](#wyposazenie-ula)), wybierając *Zobacz, jak wymienić baterie w VitalSensor* lub *Zobacz, jak wymienić baterie w Scale*.
+
+Instrukcja ma formę ilustrowanych kroków, między którymi przechodzisz przyciskami *Dalej* / *Wstecz* (licznik pokazuje, na którym kroku jesteś).
+
+**VitalSensor** — przygotuj dwie nowe baterie AA alkaliczne, a następnie:
+
+1. Otwórz pokrywkę.
+2. Wyjmij obie zużyte baterie.
+3. Włóż 2 × AA alkaliczne, kierując się oznaczeniami + i − w komorze baterii.
+4. Zamknij pokrywkę i umieść VitalSensor z powrotem w ulu, w zasięgu Huba.
+
+**Scale** — przygotuj klucz imbusowy 4 mm, klucz Torx T6 i dwie nowe baterie AA alkaliczne, a następnie:
+
+1. Odkręć kątowniki — dwie śruby kluczem imbusowym 4 mm.
+2. Otwórz czarne pudełko — odkręć cztery śrubki górnej pokrywy kluczem Torx T6 i zdejmij pokrywę.
+3. Wyjmij obie zużyte baterie z kasety.
+4. Włóż 2 × AA alkaliczne — w przeciwnych kierunkach, zgodnie z oznaczeniami + i −.
+5. Załóż górną pokrywę i dokręć cztery śrubki Torx T6.
+6. Załóż kątowniki i dokręć dwie śruby kluczem imbusowym 4 mm, a następnie ustaw Scale z powrotem pod ulem, w zasięgu Huba.
+
+**Po wymianie: przycisk *Wymieniłem baterię*.** W *Ustawieniach ula* → *Wyposażenie* kliknij *Wymieniłem baterię* przy urządzeniu, w którym wymieniłeś baterie (z instrukcji otwartej z alertu przejdziesz tam przyciskiem *Przejdź do wyposażenia*). Aplikacja potwierdzi to komunikatem *Wymiana baterii potwierdzona* — urządzenie wróci do pomiarów już przy najbliższej synchronizacji, bez czekania, aż Hub sam je odnajdzie. Kliknięcie przycisku nie jest konieczne, ale przyspiesza powrót danych.
+
+!!! warning
+    Po wymianie baterii **nie resetuj** Huba ani urządzeń, **nie paruj ich ponownie** i nie usuwaj ich z ula. Dane zaktualizują się automatycznie, gdy Hub jest online — może to potrwać do kilku godzin. Zobacz też [FAQ: Co zrobić po wymianie baterii](#faq-po-wymianie-baterii).
+
+!!! note
+    Przycisk *Wymieniłem baterię* jest dostępny dla właściciela pasieki oraz osób z pełnym dostępem do udostępnionej pasieki. Hub nie ma wymiennych baterii — ładowany jest z panelu fotowoltaicznego lub z sieci.
 
 <a id="interpretacja-statusow"></a>
 
@@ -1914,37 +1956,106 @@ Kliknij plakietkę, aby otworzyć panel *Plany*:
 Gdy plan wygasa, aplikacja przechodzi w tryb tylko do odczytu (patrz notatka w [2. Uzupełnianie notatek i przeglądów](#uzupelnianie-notatek-i-przegladow) oraz w innych miejscach tej instrukcji). Jeśli masz urządzenia Scale lub VitalSensor, zobaczysz też ostrzeżenie, że będą one wysyłać dane jeszcze przez 7 dni po wygaśnięciu planu, a potem przestaną — dotychczasowe dane i historia uli pozostaną dostępne, ale danych, które nie zostały zebrane w tym czasie, nie da się później odzyskać, dlatego warto odnowić plan przed upływem tych 7 dni.
 
 <a id="harvest-tab"></a>
+<a id="honey-intelligence"></a>
 
-### 9. Zakładka Miody, porady dotyczące przeglądu i ustawienia aplikacji
+### 9. Honey Intelligence
 
-#### 9.1 Zakładka Miody (poziom pasieki)
+**Honey Intelligence** podpowiada, kiedy Twój miód jest gotowy. Na podstawie danych z wagi Scale (a jeśli ul ma także VitalSensor — również z jego pomiarów) aplikacja automatycznie rozpoznaje pożytek, dojrzewanie i gotowość miodu oraz kluczowe zdarzenia, takie jak miodobranie, i pokazuje cały proces wraz z jego etapami na wykresie wagi ula. Dzięki temu widzisz, kiedy warunki sprzyjają miodobraniu, a wykryte zdarzenia możesz w razie potrzeby potwierdzić. W zakładce *Zbiory* porównasz produkcję miodu we wszystkich ulach pasieki i prześledzisz łączny zbiór z całego sezonu — od pojedynczego ula po całą pasiekę.
 
-W pasiekach z wagą Scale obok zakładek *Ule*, *Zdrowie* i *Zadania* widoczna jest zakładka **Miody** (w adresie: `?tab=harvest`). Pokazuje sezon miodobrania wybranej pasieki:
+Honey Intelligence składa się z trzech elementów:
 
-- **Zebrany miód** — ilość zebrana od początku bieżącego sezonu. Dopóki nie potwierdzisz miodobrań, jest to szacunek na podstawie danych ze Scale; miód potwierdzony pokazywany jest osobno.
-- **Spadki wagi do potwierdzenia** — gdy wagi wykryły spadki, których jeszcze nie potwierdzono, zakładka pokazuje wykrytą masę i pyta, ile z niej stanowił miód.
-- **Ranking miodobrania** — najlepiej produkujące ule sezonu oraz suma dla pasieki. Można przeglądać także poprzednie sezony.
-- **Etap dojrzewania miodu** — dla każdego ula ze Scale (i VitalSensorem) aplikacja pokazuje etap: *Trwa pożytek* (nie zabieraj miodu), *Miód dojrzewa* (jeszcze nie zabieraj, z szacunkiem typu *Może być gotowy w ciągu 3 dni*) lub *Miód może być gotowy* (sprawdź zasklepienie — przy ok. 2/3 zasklepionej ramki można miodobranie). Bez VitalSensora etap oceniany jest wyłącznie na podstawie danych ze Scale. Gdy ul nie ma urządzenia lub świeżych danych, aplikacja podaje powód zamiast etapu.
+- zakładki **Zbiory** na poziomie pasieki — podsumowanie sezonu i ranking uli ([9.1](#zakladka-zbiory)),
+- **etapów miodu na kafelku pasieki** — gdzie jest miód w Twoich ulach i ile uli jest gotowych ([9.2](#etapy-miodu-na-kafelku)),
+- **sekcji *Waga* w widoku ula** — etap miodu w ulu, przebieg na wykresie oraz wykryte zdarzenia i ich potwierdzanie ([9.3](#honey-sekcja-waga)).
 
-#### 9.2 Zdarzenia wagi i potwierdzanie miodobrania
+!!! note
+    Honey Intelligence działa w ulach z wagą **Scale**. VitalSensor nie jest wymagany, ale zwiększa trafność oceny — bez niego etap miodu oceniany jest wyłącznie na podstawie danych ze Scale (aplikacja informuje o tym komunikatem *Bez VitalSensora oceniamy tylko po danych ze Scale.*).
 
-Na wykresie wagi ula dzień, w którym Scale wykryła epizod zmiany wagi (spadek, wzrost lub powrót do poprzedniego poziomu), jest zacieniowany przez cały dzień i opisany. Na liście zdarzeń ula otwórz zdarzenie i odpowiedz na pytanie *Co to było?* — wybierz *Miodobranie*, *Dodanie nadstawki*, *Karmienie*, *Przegląd*, *Rójka*, *Podział*, *Zdjęcie korpusu*, *Rabunek*, *Inne* lub *Nic istotnego* (np. błąd pomiaru Scale). Przy części odpowiedzi wymagana jest krótka notatka. Odpowiedź może później zmienić tylko jej autor lub właściciel pasieki.
+<a id="zakladka-zbiory"></a>
 
-Jeśli po wymianie urządzenia przejęło ono ul, wykres oznacza ten moment pionową linią (*Wymiana urządzenia*), a linię poprzedniego urządzenia pokazuje wyblakłą (*Poprzednie urządzenie*).
+#### 9.1 Zakładka Zbiory
 
-#### 9.3 Porada: przegląd i miodobranie
+W pasiekach z wagą Scale obok zakładek *Ule*, *Zdrowie* i *Zadania* widoczna jest zakładka **Zbiory**. Pokazuje ona sezon miodobrania wybranej pasieki, od góry:
 
-Na kafelku pasieki i w widoku pogody pasieki Apisense pokazuje, na co pozwala pogoda: **pełny przegląd**, **rzut oka z góry** lub **nie otwieraj**, wraz z oknem czasowym (np. *teraz, do 16:00*), paskiem godzin i prognozą na kolejne dni. Dotknij dnia, aby zobaczyć *Dlaczego:* — przeszkody, takie jak deszcz, silny wiatr, zbyt wysoka wilgotność, zbyt zimno, zbyt gorąco, poza godzinami lotów lub *miód nie jest jeszcze gotowy*. Ten sam widok oznacza dni z pogodą odpowiednią do miodobrania.
+- **Wybór sezonu** — domyślnie bieżący sezon (*Sezon: 2026 - w trakcie*); możesz przełączyć się na poprzednie sezony, aby porównać wyniki.
+- **Zebrany miód** — ilość miodu zebrana od początku sezonu. Dopóki nie potwierdzisz miodobrań, jest to szacunek na podstawie danych ze Scale (*Szacunek z danych Scale, dopóki nie potwierdzisz miodobrań.*). Miód, którego zbiór potwierdziłeś, pokazywany jest osobno jako *Potwierdzony miód od początku sezonu*.
+- **Spadki wagi do potwierdzenia** — jeśli wagi wykryły spadki masy, których jeszcze nie potwierdzono, zobaczysz ich łączną masę i pytanie, ile z tego było miodem. Potwierdzenia dokonujesz w zdarzeniach poszczególnych uli (patrz [9.3](#honey-sekcja-waga)).
+- **Ranking zbiorów** — najlepiej produkujące ule w sezonie wraz z sumą zbiorów z całej pasieki (*Suma zbiorów z pasieki*).
+- **Sezon miodobrania** — okres miodobrania obowiązujący dla pasieki (np. *1 maja - 20 sierpnia*). Sezon powtarza się co roku w te same dni i jest tylko do odczytu.
 
-#### 9.4 Wymiana baterii
+Jeśli w danym sezonie wagi nie wykryły jeszcze żadnego miodobrania, zakładka wyświetla komunikat *Urządzenia Scale nie wykryły jeszcze miodobrań w sezonie …*.
 
-Gdy bateria urządzenia jest słaba, karta ula pokazuje *Wymień baterię* (z pozostałym procentem, jeśli jest znany). W *Wyposażeniu* ula otworzysz instrukcję krok po kroku — *Zobacz, jak wymienić baterie w VitalSensorze* lub *Zobacz, jak wymienić baterie w Scale* — z przyciskami *Wstecz* / *Dalej* i licznikiem kroków. Oba urządzenia zasilane są dwiema bateriami alkalicznymi AA. Po włożeniu nowych baterii dotknij *Wymieniłem baterię* w *Wyposażeniu* ula; urządzenie wróci przy następnej synchronizacji. Nie resetuj ani nie parauj urządzeń ponownie.
+<a id="etapy-miodu-na-kafelku"></a>
 
-#### 9.5 Alerty, motyw i język
+#### 9.2 Etapy miodu na kafelku pasieki
 
-- **Alerty** — lista ma dwie zakładki: *Wymaga uwagi* (kondycja rodziny, ryzyko choroby, zmiany wagi) i *Wszystko* (dodatkowo alerty o sprzęcie). Wiersze o niskiej baterii wskazują urządzenie (Scale, VitalSensor lub Hub). Przyciskiem *Oznacz jako przeczytane* oznaczysz jedną z tych grup jako przeczytaną. W *Ustawieniach* opcja *Powiadomienia push* wyłącza powiadomienia, gdy nie korzystasz z aplikacji; wszystko nadal trafia do *Alertów*. Dotknięcie powiadomienia o usuniętym rekordzie pokazuje komunikat *Ten rekord został usunięty*.
-- **Motyw** — *Ustawienia* → *Motyw*: *Zgodnie z systemem*, *Jasny* lub *Ciemny*.
-- **Języki** — aplikacja jest dostępna po polsku, angielsku, niemiecku, hiszpańsku, francusku, norwesku, włosku, turecku, portugalsku, niderlandzku i arabsku (układ od prawej do lewej).
+Na kafelku pasieki w zakładce *Pasieki* Honey Intelligence pokazuje, na jakim etapie jest miód w monitorowanych ulach, np. *Miód dojrzewa · 2 z 10 monitorowanych uli gotowych*, wraz ze wskazówką, co robić dalej. Wyróżniamy trzy etapy:
+
+| Etap | Co oznacza | Co robić |
+| :--- | :--------- | :------- |
+| **Trwa pożytek** | Masa ula rośnie — pszczoły znoszą nektar. Przy etapie może być widoczne tempo przyrostu (np. *Trwa pożytek · 1,2 kg/dzień*). | *Pożytek trwa - nie zabieraj miodu.* |
+| **Miód dojrzewa** | Pożytek się skończył, a pszczoły odparowują wodę z nektaru — masa powoli spada. Aplikacja podaje orientacyjny termin, np. *Może być gotowy w ciągu 3 dni* lub *Może być gotowy za 4-7 dni*. | *Jeszcze nie odbieraj - miód odparowuje.* |
+| **Miód może być gotowy** | Odparowywanie jest na ukończeniu, masa się ustabilizowała. | *Sprawdź zasklep - przy ok. 2/3 zasklepionej ramki możesz odbierać.* |
+
+Pod etapem widoczny jest pasek **Najbliższe 7 dni**, w którym kolor dnia odpowiada etapowi miodu (*pożytek*, *dojrzewa*, *może być gotowy*). Dni, w których miód *może być* gotowy, mają przerywane obramowanie — to szacunek, a nie konkretna data. W tym samym pasku pojawiają się też ikony rekomendacji pogodowych (patrz [10. Rekomendacje pogodowe](#rekomendacje-pogodowe)).
+
+!!! note
+    Jeśli miód wygląda na dojrzały poza sezonem miodobrania, aplikacja poinformuje o tym komunikatem *Miód wygląda na dojrzały, ale to poza sezonem miodobrania*.
+
+<a id="honey-sekcja-waga"></a>
+
+#### 9.3 Sekcja Waga: etap miodu, przebieg na wykresie i wykryte zdarzenia
+
+W widoku ula (zakładka *Szczegóły* → *Stan ula*) w sekcji **Waga** znajdziesz trzy elementy Honey Intelligence.
+
+**Etap miodu w ulu.** Nad wykresem wagi widoczny jest etap miodu w tym konkretnym ulu (*Trwa pożytek*, *Miód dojrzewa*, *Miód może być gotowy*) z trzystopniowym paskiem *pożytek → dojrzewanie → gotowe*, wskazówką, co robić, oraz wyjaśnieniem po *Dlaczego:* (np. *masa rośnie od 3 dni*, *woda wciąż wychodzi z ula*, *odparowywanie na ukończeniu*). Poniżej widoczna jest ilość miodu zebrana z ula w sezonie oraz jego miejsce w rankingu pasieki (np. *Miejsce w pasiece: 2 z 10*). Gdy ocena nie jest możliwa, zamiast etapu aplikacja podaje powód, np. *Dodaj Scale do tego ula, aby śledzić dojrzewanie miodu.*, *Brak świeżych danych z ula.* lub *Jeszcze liczymy - pierwszy wynik pojawi się wkrótce.*
+
+**Przebieg na wykresie wagi.** Na wykresie wagi okresy są podświetlone kolorem odpowiadającym etapowi: *pożytek trwa*, *dojrzewanie*, *gotowe - sprawdź zasklep* oraz *spokój* (brak wyraźnych zmian). Na wykresie oznaczone są również wykryte zdarzenia — legenda rozróżnia *odbiór potwierdzony*, *czeka na potwierdzenie* (znacznik **?**) i *inne zdarzenie*. Zdarzenia widać na wykresie od zakresu 7 dni wzwyż — Scale potrzebuje około tygodnia danych, żeby je rozpoznać.
+
+Jeśli w ulu wymieniono urządzenie, wykres oznacza ten moment pionową linią (*Wymiana urządzenia*), a dane poprzedniego urządzenia pokazuje wyblakłą linią (*Poprzednie urządzenie*).
+
+**Wykryte zdarzenia i ich potwierdzanie.** Pod wykresem znajduje się lista **Zdarzenia** z sezonu. Scale wykrywa nietypowe zmiany wagi: spadki (*Wykryty nietypowy spadek wagi o …*), wzrosty (*Wykryty wzrost wagi o …*) oraz chwilowe zmiany, po których waga wraca do poprzedniego poziomu. Zdarzenia oczekujące na Twoją ocenę są oznaczone jako *Do potwierdzenia*. Aby potwierdzić zdarzenie:
+
+1. Kliknij zdarzenie na liście.
+2. W oknie *Potwierdź zmianę wagi* odpowiedz na pytanie *Co to było?*, wybierając jedną z opcji: *Miodobranie*, *Nadstawka*, *Karmienie*, *Przegląd*, *Rójka*, *Podział rodziny*, *Zabranie korpusu*, *Rabunek*, *Inne* lub *Nic istotnego (np. błąd pomiaru Scale)*.
+3. Przy odpowiedzi *Inne* wymagana jest krótka notatka (*Napisz, co się stało.*); przy *Nic istotnego* możesz ją dodać opcjonalnie.
+4. Zapisz odpowiedź — pojawi się komunikat *Zapisano odpowiedź.*, a zdarzenie zostanie oznaczone jako *Twoja ocena*.
+
+Potwierdzone miodobrania trafiają do sumy *Potwierdzony miód* w zakładce *Zbiory* i do rankingu uli. Odpowiedź może później zmienić tylko jej autor lub właściciel pasieki.
+
+!!! tip
+    Aplikacja może też zapytać o zdarzenie sama — np. *Nietypowy spadek wagi w ulu: Wykryliśmy spadek o ok. 12 kg w nocy z … na … - co to było?*. Odpowiedź zapisuje się tak samo jak z listy zdarzeń. Regularne potwierdzanie zdarzeń sprawia, że statystyki zbiorów są dokładne.
+
+<a id="rekomendacje-pogodowe"></a>
+
+### 10. Rekomendacje pogodowe
+
+**Rekomendacje pogodowe** pomagają zaplanować odpowiedni czas na pracę przy ulach. Na podstawie prognozy pogody dla lokalizacji pasieki aplikacja podpowiada, kiedy można wykonać **szybki przegląd od góry** (bez wyjmowania ramek), **pełny przegląd** ula lub **miodobranie**. Na dziś pokazuje konkretne godzinowe okna, w których warunki sprzyjają danej czynności, a na najbliższe 7 dni — które dni prawdopodobnie zapewnią odpowiednie warunki. Dzięki temu możesz z wyprzedzeniem zaplanować wizyty w pasiece.
+
+#### 10.1 Gdzie znaleźć rekomendacje
+
+Rekomendacje pogodowe widoczne są na **kafelku pasieki** w zakładce *Pasieki*:
+
+- **Okno na dziś** — wiersz z najbliższym oknem, np. *Pełny przegląd: 10:00 - 16:00*, *Szybki przegląd: teraz, do 15:00* lub *Przegląd: dziś brak okna na przegląd*. Kliknij strzałkę przy wierszu, aby rozwinąć **pasek godzin** z oceną każdej godziny, legendą oraz wyjaśnieniem po *Dlaczego:*.
+- **Najbliższe 7 dni** — pasek dni (*dziś*, a potem kolejne dni tygodnia) z ikonami czynności, na które prawdopodobnie pozwoli pogoda danego dnia. Ten sam pasek pokazuje etapy miodu (patrz [9.2](#etapy-miodu-na-kafelku)).
+
+#### 10.2 Co oznaczają ikony i kolory
+
+| Ikona | Znaczenie |
+| :---- | :-------- |
+| ![](pictures/work_advice_full.png) | **Pełny przegląd** — pogoda pozwala otworzyć ul i przejrzeć ramki. |
+| ![](pictures/work_advice_quick.png) | **Szybko od góry** — pogoda pozwala tylko na krótki rzut oka od góry, bez wyjmowania ramek. |
+| brak ikony | **Nie otwieraj** — tego dnia pogoda nie sprzyja otwieraniu ula. |
+| ![](pictures/work_advice_harvest.png) | **Pogoda na zbiór miodu** — pogoda pozwala na miodobranie, a ule są gotowe. Ikona pojawia się tylko wtedy, gdy miód może być gotowy — sama dobra pogoda nie wystarcza. |
+
+Na rozwiniętym pasku godzin kolor i ikona każdej godziny oznaczają poziom: najciemniejsze pole — *pełny przegląd*, jaśniejsze — *szybko od góry*, najbledsze, z obramowaniem — *nie otwieraj* (w trybie ciemnym odcienie są odwrócone; legenda pod paskiem pokazuje tylko te poziomy, które faktycznie występują). Ikona łyżki do miodu na pasku godzin oznacza godziny odpowiednie do miodobrania.
+
+#### 10.3 Dlaczego nie teraz?
+
+Po rozwinięciu okna na dziś sekcja *Dlaczego:* wymienia przeszkody osobno dla przeglądu (*Przegląd:*) i miodobrania (*Miodobranie:*), np.: *deszcz*, *silny wiatr*, *zbyt wilgotno*, *za zimno*, *za gorąco*, *poza porą lotów*, *za mało czasu na pełny przegląd*, *za mało czasu na miodobranie*, *miód jeszcze nie jest gotowy* lub *poza sezonem miodobrania*.
+
+!!! note
+    Rekomendacje mają charakter pomocniczy — przed otwarciem ula zawsze oceń warunki na miejscu.
 
 ______________________________________________________________________
 
@@ -2109,7 +2220,7 @@ Trendy umożliwiają analizę ogólnego kierunku zmian danego parametru w czasie
 
 #### 2.1 Jak wyświetlić trend
 
-Trendy dostępne są w tej samej sekcji, co wykresy poszczególnych parametrów ([](#fig-notifications-problems-details)). Aby je wyświetlić, należy wykonać poniższe kroki:
+Trendy dostępne są w tej samej sekcji, co wykresy poszczególnych parametrów ([](#fig-beehive-details-chart-with-trend)). Aby je wyświetlić, należy wykonać poniższe kroki:
 
 Figure: Widok Szczegóły ula - wykres wagi wraz z naniesionym trendem {#fig-beehive-details-chart-with-trend}
 
@@ -2143,49 +2254,50 @@ Wykorzystanie trendów w analizie danych umożliwia:
 
 ______________________________________________________________________
 
-## Powiadomienia
+<a id="powiadomienia"></a>
+<a id="alerty"></a>
 
-System powiadomień w aplikacji informuje użytkownika o istotnych zdarzeniach w pasiece, stanie urządzeń monitorujących oraz o zalecanych działaniach związanych z prowadzeniem uli. Informacje przekazywane są w formie powiadomień oraz rekomendacji generowanych na podstawie danych z czujników, obserwacji i analizy systemowej. Dzięki temu użytkownik może szybciej reagować na pojawiające się problemy, a także podejmować decyzje dotyczące dalszego prowadzenia pasieki.
+## Alerty (powiadomienia)
 
-Powiadomienia generowane przez system są dostępne **w aplikacji** — w sekcji powiadomień można przeglądać komunikaty i zapoznać się z ich szczegółami. Niezależnie od tego aplikacja może wysyłać **powiadomienia push** na telefon, także wtedy, gdy z niej nie korzystasz. Którymi kategoriami ma się to dziać, ustawisz w *Ustawienia konta > Powiadomienia* — patrz [1.1 Edycja danych](#11-edycja-danych).
-
-!!! note
-    Zakładka *Problemy* jest dostępna tylko w planach obejmujących alerty chorobowe. Jeśli Twój plan ich nie obejmuje (np. wersja próbna AI), znika cały górny pasek zakładek, a widok *Powiadomienia* pokazuje wyłącznie powiadomienia techniczne.
+**Alerty** to jedno miejsce, w którym znajdziesz wszystkie ważne powiadomienia z Twoich pasiek — z wyraźnie wyróżnionymi tymi, które wymagają Twojej uwagi. Aplikacja informuje o stanie rodzin i zagrożeniu chorobami, zmianach wagi, stanie sprzętu (np. niski poziom baterii, utrata połączenia) i innych ważnych zdarzeniach. Wystarczy kliknąć alert, aby przejść bezpośrednio do właściwego ula, urządzenia lub informacji w aplikacji. Dzięki temu możesz szybko reagować bez ciągłego sprawdzania każdej pasieki i każdego ula z osobna.
 
 <a id="powiadoienia-gdzie"></a>
 
-### 1. Gdzie znaleźć powiadomienia w aplikacji
+### 1. Gdzie znaleźć alerty
 
-Powiadomienia w aplikacji możesz znaleźć realizując poniższe kroki:
+Alerty otworzysz, wybierając **Alerty** (ikona dzwonka) w dolnym menu aplikacji. Liczba przy ikonie pokazuje, ile jest nieprzeczytanych alertów. Ten sam widok, zawężony do danej pasieki lub ula, możesz otworzyć także z poziomu pasieki i ula.
 
-- Z zakładki *Pasieki* (widok startowy widoczny zaraz po zalogowaniu się do aplikacji Apisense) przejdź do zakładki *Ule*. W tym celu kliknij kafelek z wybraną pasieką.
-- Z zakładki *Ule* przejdź do zakładki *Powiadomienia*. W tym celu kliknij ikonę z dzwonkiem znajdującą się w dolnym menu, podobnie jak zakładka *Ule*.
-- W rezultacie zostanie otwarty widok *Powiadomień*, z domyślnie wybraną zakładką *Problemy* ([](#fig-notifications-problems-details)).
-- Oprócz zakładki *Problemy* możesz przejść również do zakładki *Techniczne*, wybierając odpowiednią opcję z górnego menu.
+### 2. Widok Alerty
 
-### 2. Kategorie powiadomień
+Widok *Alerty* składa się z:
 
-Powiadomienia w aplikacji są dostępne w zakładce *Powiadomienia*. Powiadomienia dzielą się na następujące kategorie, które odpowiadają poszczególnym zakładkom ([](#fig-notifications-problems-details)):
+- **Dwóch zakładek:**
+    - **Wymaga uwagi** — alerty dotyczące stanu rodziny, zagrożenia chorobowego lub zmian wagi, czyli te, na które warto zareagować.
+    - **Wszystko** — wszystkie alerty, w tym także dotyczące stanu sprzętu (bateria, łączność urządzeń).
+- **Filtrów pasiek** — pod zakładkami znajduje się rząd przycisków: *Wszystko* oraz po jednym dla każdej pasieki (własnej i udostępnionej). Wybierz pasiekę, aby zobaczyć tylko jej alerty. Jeśli masz tylko jedną pasiekę, filtry nie są wyświetlane.
+- **Listy alertów** — pogrupowanej według dni, od najnowszych. Każdy wiersz pokazuje, czego dotyczy alert, kiedy się pojawił, wartość i próg (np. *przy progu 30 °C*) oraz skąd pochodzi (*Pasieka:*, *ul:*). Alerty o niskiej baterii wskazują dodatkowo konkretne urządzenie (*Scale*, *VitalSensor* lub *Hub*). Nieprzeczytane alerty są oznaczone kropką.
 
-- **Problemy** – powiadomienia związane ze stanem zdrowia rodzin pszczelich, dotyczące wykrytych chorób takich jak Warroza wraz z zalecanym postępowaniem w celu zwalczenia konkretnej choroby.
-- **Techniczne** – powiadomienia dotyczące działania urządzeń monitorujących, np. niski poziom baterii lub brak zasięgu.
+### 3. Przejście do szczegółów
 
-Figure: Zakładka Powiadomienia - przykładowe powiadomienia chorobowe i techniczne (zakładki Problemy i Techniczne) (1) {#fig-notifications-problems-details}
+Kliknięcie alertu oznacza go jako przeczytany i przenosi Cię w odpowiednie miejsce w aplikacji, np.:
 
-![figure](pictures/notifications_problems_details.png){width=200}
+- alert chorobowy — do szczegółów epizodu choroby i rekomendacji,
+- alert o zmianie wagi lub temperatury — do odpowiedniego wykresu ula, z zaznaczonym okresem, którego dotyczy alert,
+- alert o niskiej baterii — do pasieki, z od razu otwartą instrukcją wymiany baterii w danym urządzeniu (patrz [6.4 Wymiana baterii w Scale i VitalSensorze](#wymiana-baterii)),
+- przypomnienie o zadaniu — do zadania w kalendarzu, a zaproszenie do udostępnionej pasieki — do zaproszenia.
 
-Figure: Zakładka Powiadomienia - przykładowe powiadomienia chorobowe i techniczne (zakładki Problemy i Techniczne) (2) {#fig-notifications-technical}
+Jeśli element, którego dotyczył alert, został w międzyczasie usunięty, zobaczysz komunikat *Ten element został usunięty*.
 
-![figure](pictures/notifications_technical.png){width=200}
+### 4. Oznaczanie jako przeczytane
 
-Nowe powiadomienia pojawiają się automatycznie na odpowiedniej liście w zależności od ich rodzaju. Nieodczytane komunikaty są wyświetlane pogrubioną czcionką, a po otwarciu wracają do zwykłej grubości — po tym poznasz, że zostały już przeczytane.
+Aby oznaczyć wiele alertów naraz, użyj przycisku *Oznacz jako przeczytane* i wybierz grupę: *Wymagające uwagi* lub *Wszystkie*. Jeśli wybrany jest filtr pasieki, oznaczone zostaną tylko alerty tej pasieki. Oznaczenie jako przeczytane nie przenosi alertu do innej zakładki — alert pozostaje na liście, zmienia się tylko jego wyróżnienie.
 
-Szczegóły otwierasz kliknięciem wiersza, ale obie zakładki zachowują się inaczej. W zakładce *Problemy* otworzy się osobny widok epizodu choroby. W zakładce *Techniczne* wiersz rozwinie się w miejscu i pełna treść komunikatu pojawi się pod jego tytułem.
+### 5. Powiadomienia push
 
-!!! tip
-    Aby jednym kliknięciem oznaczyć wszystkie powiadomienia w zakładce *Techniczne* jako przeczytane, użyj przycisku *Oznacz wszystkie jako przeczytane*. Zakres działania przycisku zależy od miejsca, z którego zostanie użyty:
-    - z poziomu pojedynczego ula — zostaną oznaczone jako przeczytane wyłącznie powiadomienia techniczne dotyczące tego ula,
-    - z poziomu pasieki — zostaną oznaczone jako przeczytane wszystkie powiadomienia techniczne dotyczące tej pasieki oraz znajdujących się w niej uli.
+Niezależnie od widoku *Alerty* aplikacja może wysyłać **powiadomienia push** na telefon, gdy z niej nie korzystasz. Włączysz lub wyłączysz je w *Ustawieniach konta* → *Powiadomienia* → *Powiadomienia push* (patrz [Edycja danych](#edycja-danych-uzytkownika)). Wyłączenie powiadomień push nie powoduje utraty alertów — wszystkie i tak trafiają do widoku *Alerty*.
+
+!!! note
+    Alerty chorobowe są dostępne tylko w planach obejmujących wykrywanie chorób, a alerty wagi, temperatury i połączenia — w planach z monitoringiem urządzeń (patrz [Twój plan](#twoj-plan)).
 
 ______________________________________________________________________
 
@@ -2248,18 +2360,15 @@ Aby edytować dane użytkownika, należy:
     - **Hasło**
     - **Powiadomienia**
     - **Język**
+    - **Motyw**
     - **Jednostka temperatury**
     - **Jednostka wagi**
 
     Poniżej listy znajdują się przycisk *Usuń konto*, informacja o dofinansowaniu ze środków UE oraz numer wersji aplikacji.
 
 - Aby zmienić wartość, kliknij wiersz — otworzy się osobny ekran edycji. Przykładowo przy zmianie hasła zostaniesz poproszony o wprowadzenie nowego hasła oraz jego powtórzenie ([](#fig-app-settings)).
-- **Zapis zmian** wygląda różnie w zależności od ekranu. *Język*, *Jednostka temperatury* i *Jednostka wagi* zapisują się **natychmiast po wyborze** — nie ma tam przycisku zapisu. Na pozostałych ekranach przyciski pojawiają się dopiero po zmianie wartości i są to przyciski **z ikonami**: **✓** zapisuje, **⊗** zamyka ekran bez zapisu.
-- Wiersz **Powiadomienia** otwiera osobny ekran z trzema przełącznikami powiadomień push:
-
-    - *Alerty* — „Powiadamiaj o chorobach, gdy nie korzystam z aplikacji",
-    - *Stan urządzeń* — „Powiadamiaj, gdy występują problemy z wagą lub czujnikiem",
-    - *Przypomnienia* — „Wysyłaj przypomnienia o zaplanowanym zadaniu na dzień przed zadaniem".
+- **Zapis zmian** wygląda różnie w zależności od ekranu. *Język*, *Motyw*, *Jednostka temperatury* i *Jednostka wagi* zapisują się **natychmiast po wyborze** — nie ma tam przycisku zapisu. Na pozostałych ekranach przyciski pojawiają się dopiero po zmianie wartości i są to przyciski **z ikonami**: **✓** zapisuje, **⊗** zamyka ekran bez zapisu.
+- Wiersz **Powiadomienia** otwiera ekran z przełącznikiem *Powiadomienia push* — „Wysyłaj powiadomienia, gdy nie korzystam z aplikacji. Wszystko i tak trafia do Alertów.” Wyłączenie go nie powoduje utraty alertów — wszystkie są nadal dostępne w zakładce *Alerty* (patrz [Alerty](#powiadomienia)).
 
 Figure: Ustawienia konta - przykładowy widok ustawień oraz zmiana hasła (1) {#fig-app-settings}
 
@@ -2300,6 +2409,20 @@ W *Ustawieniach konta* jednostki miar ustawia się w **dwóch niezależnych wier
 - **Jednostka wagi** — *Kilogramy (kg)* lub *Funty (lbs)*.
 
 Wybór zapisuje się natychmiast po kliknięciu, bez osobnego przycisku zapisu, a zmiany są widoczne od razu na wszystkich wykresach i odczytach w aplikacji.
+
+<a id="motyw-i-jezyk"></a>
+
+### 4. Motyw i język
+
+**Motyw.** W *Ustawieniach konta* kliknij wiersz **Motyw** i wybierz wygląd aplikacji:
+
+- *Jak w systemie* — aplikacja przełącza się między jasnym a ciemnym wyglądem razem z ustawieniami telefonu,
+- *Jasny*,
+- *Ciemny*.
+
+**Język.** W *Ustawieniach konta* kliknij wiersz **Język** i wybierz jeden z dostępnych języków: polski, angielski, niemiecki, hiszpański, francuski, włoski, niderlandzki, norweski, portugalski, turecki lub arabski. Po wybraniu języka arabskiego układ aplikacji zmienia się na układ od prawej do lewej.
+
+W obu przypadkach wybór zapisuje się natychmiast po kliknięciu, bez osobnego przycisku zapisu.
 
 ______________________________________________________________________
 
@@ -2347,11 +2470,11 @@ ______________________________________________________________________
 
 ### 3. Regularne sprawdzanie alarmów
 
-- Sprawdzaj zakładkę ***Powiadomienia*** w aplikacji, aby nie przeoczyć krytycznych zdarzeń, takich jak wykrycie choroby.
+- Sprawdzaj zakładkę ***Alerty*** w aplikacji — zwłaszcza *Wymaga uwagi* — aby nie przeoczyć krytycznych zdarzeń, takich jak wykrycie choroby czy nietypowy spadek wagi.
 
 ### 4. Kontrola poziomu baterii przed sezonem
 
-- Przed sezonem sprawdź w aplikacji poziom baterii wszystkich urządzeń monitorujących stan Twoich pasiek. Wymień baterie (2×AA w Scale i VitalSensor) przy niskim poziomie; Hub ładuj przez panel fotowoltaiczny lub sieć. Unikaj przerw w transmisji w szczycie sezonu. Po wymianie baterii w Scale lub VitalSensor nie trzeba ponownie parować urządzenia ani zmieniać ustawień w aplikacji — wystarczy umieścić urządzenie w zasięgu Huba i poczekać na synchronizację danych (szczegóły: [FAQ — po wymianie baterii](../faq/index.md#po-wymianie-baterii)).
+- Przed sezonem sprawdź w aplikacji poziom baterii wszystkich urządzeń monitorujących stan Twoich pasiek. Wymień baterie (2×AA w Scale i VitalSensor) przy niskim poziomie; Hub ładuj przez panel fotowoltaiczny lub sieć. Unikaj przerw w transmisji w szczycie sezonu. Po wymianie baterii w Scale lub VitalSensor nie trzeba ponownie parować urządzenia ani zmieniać ustawień w aplikacji — wystarczy umieścić urządzenie w zasięgu Huba i poczekać na synchronizację danych; możesz też kliknąć *Wymieniłem baterię* w *Wyposażeniu* ula, aby przyspieszyć powrót danych (instrukcja krok po kroku: [Wymiana baterii w Scale i VitalSensorze](#wymiana-baterii); szczegóły: [FAQ — po wymianie baterii](../faq/index.md#po-wymianie-baterii)).
 
 ### 5. Aktualizacje
 
@@ -2384,6 +2507,8 @@ Jeśli nie pamiętasz hasła, zresetuj je samodzielnie: na ekranie logowania kli
 
 **Rozwiązanie:** tak, jest to jak najbardziej możliwe. Przykładowo, pszczelarz może dołożyć półkorpus, co spowoduje wzrost całkowitej masy ula. Jednocześnie, jeśli rodzina pszczela jest osłabiona, produkcja miodu może się zmniejszyć. W takiej sytuacji na wykresie wagi ula widoczny będzie wyraźny wzrost wynikający z dołożenia półkorpusu. Natomiast na wykresie przybytku masa dodanego półkorpusu nie zostanie uwzględniona, dzięki czemu wykres będzie odzwierciedlał wyłącznie rzeczywistą zmianę ilości miodu. W efekcie na wykresie przybytku widoczny będzie spadek związany z ograniczoną aktywnością pszczół, a nie sztuczny wzrost wynikający z ingerencji pszczelarza.
 
+<a id="faq-po-wymianie-baterii"></a>
+
 #### 1.5 Co zrobić po wymianie baterii w Scale lub VitalSensor?
 
 **Rozwiązanie:** po wymianie baterii wystarczy:
@@ -2394,7 +2519,7 @@ Jeśli nie pamiętasz hasła, zresetuj je samodzielnie: na ekranie logowania kli
 
 Zaktualizowane dane pojawią się w aplikacji automatycznie - może to potrwać do kilku godzin, pod warunkiem że Hub poprawnie komunikuje się z systemem (nie jest w trybie offline - rozładowana bateria/brak łączności).
 
-Po zakończeniu wymiany baterii **nie są wymagane** żadne dodatkowe czynności w aplikacji ani na urządzeniu Hub, Scale ani VitalSensor. Nie należy ponownie parować urządzeń, dodawać ich do ula ani naciskać przycisku RESET.
+Po zakończeniu wymiany baterii **nie są wymagane** żadne dodatkowe czynności na urządzeniu Hub, Scale ani VitalSensor. W aplikacji możesz opcjonalnie kliknąć *Wymieniłem baterię* w *Ustawieniach ula* → *Wyposażenie* — urządzenie wróci wtedy do pomiarów już przy najbliższej synchronizacji (patrz [Wymiana baterii w Scale i VitalSensorze](#wymiana-baterii)). Nie należy ponownie parować urządzeń, dodawać ich do ula ani naciskać przycisku RESET.
 
 #### 1.6 Czy po wymianie baterii muszę ponownie sparować urządzenie, dodać je do ula lub usunąć ul z aplikacji?
 
@@ -2516,6 +2641,22 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 > [Omówienie ustawień pasieki](#omowienie-ustawien-pasieki), [Omówienie ustawień ula](#omowienie-ustawien-ula)
 
+- **Wymiana baterii:** Kliknij alert o niskiej baterii lub w *Ustawieniach ula* → *Wyposażenie* wybierz *Zobacz, jak wymienić baterie…*. Po wymianie kliknij *Wymieniłem baterię*. Nie resetuj ani nie paruj urządzeń ponownie.
+
+> [Wymiana baterii w Scale i VitalSensorze](#wymiana-baterii)
+
+- **Honey Intelligence:** Etap miodu (*Trwa pożytek*, *Miód dojrzewa*, *Miód może być gotowy*) zobaczysz na kafelku pasieki i w sekcji *Waga* ula, gdzie potwierdzisz też wykryte zdarzenia (*Co to było?*). Podsumowanie sezonu i ranking uli znajdziesz w zakładce *Zbiory* pasieki.
+
+> [Honey Intelligence](#honey-intelligence)
+
+- **Rekomendacje pogodowe:** Na kafelku pasieki sprawdź okno na dziś (np. *Szybki przegląd: teraz, do 15:00*) i ikony czynności na najbliższe 7 dni.
+
+> [Rekomendacje pogodowe](#rekomendacje-pogodowe)
+
+- **Motyw i język:** *Ustawienia konta* → *Motyw* (*Jak w systemie*, *Jasny*, *Ciemny*) lub *Język*.
+
+> [Motyw i język](#motyw-i-jezyk)
+
 ### 5. Monitorowanie i analiza danych
 
 - **Parametry (temperatura, wilgotność, ciśnienie, waga, przybytek miodu):** Kliknij kafelek wybranej pasieki. Kliknij kafelek wybranego ula. Bieżące wartości są widoczne w zakładce *Szczegóły* ula, podzakładka *Stan ula*, w sekcjach *Waga*, *Warunki*.
@@ -2532,9 +2673,9 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 ### 6. Powiadomienia
 
-- **Powiadomienia:** Kliknij kafelek wybranej pasieki. Wybierz zakładkę *Powiadomienia* z dolnego menu. Dostępne są kategorie: *Problemy* (m.in. choroby) oraz *Techniczne* (urządzenia, łączność).
+- **Alerty:** Z dolnego menu wybierz *Alerty* (ikona dzwonka). Zakładka *Wymaga uwagi* zawiera alerty o stanie rodziny, chorobach i zmianach wagi, a *Wszystko* — także alerty o sprzęcie. Filtruj alerty według pasieki i kliknij alert, aby przejść do właściwego ula lub urządzenia.
 
-> [Powiadomienia](#powiadomienia)
+> [Alerty](#powiadomienia)
 
 ### 7. Asystent AI
 
@@ -2544,7 +2685,7 @@ Poniżej znajdziesz skrót najważniejszych czynności w aplikacji Apisense Pro 
 
 ### 8. Konto
 
-- **Edycja danych użytkownika:** W widoku startowym *Pasieki* kliknij ikonę **⋮** i wybierz *Ustawienia*. Możesz zmienić wyświetlaną nazwę, e-mail, telefon, doświadczenie, hasło, powiadomienia push, język oraz jednostki temperatury i wagi. Z tego miejsca możesz też usunąć konto.
+- **Edycja danych użytkownika:** W widoku startowym *Pasieki* kliknij ikonę **⋮** i wybierz *Ustawienia*. Możesz zmienić wyświetlaną nazwę, e-mail, telefon, doświadczenie, hasło, powiadomienia push, język, motyw oraz jednostki temperatury i wagi. Z tego miejsca możesz też usunąć konto.
 
 > [Edycja danych użytkownika](#edycja-danych-uzytkownika)
 

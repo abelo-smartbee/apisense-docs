@@ -1717,6 +1717,8 @@ Figure: Hive settings view - Queen information section {#fig-beehive-settings-qu
 - **Queen origin** – one of: *Own breeding*, *Purchase domestic*, *Purchase foreign*, *Unknown*.
 - **Queen insemination method** – one of: *Natural*, *Artificial*, *Unknown*.
 
+<a id="wyposazenie-ula"></a>
+
 #### 6.3 Equipment
 
 The *Equipment* section presents the measurement devices assigned to a given hive and their current status.
@@ -1747,6 +1749,46 @@ Figure: Hive settings view - Equipment section - Scale and VitalSensor details (
 Figure: Hive settings view - Equipment section - Scale and VitalSensor details (2) {#fig-beehive-settings-sensor}
 
 ![figure](pictures/beehive_settings_sensor.png){width=200}
+
+<a id="wymiana-baterii"></a>
+
+#### 6.4 Replacing the batteries in the Scale and VitalSensor
+
+The Scale and the VitalSensor are powered by two **AA alkaline** batteries (2 × AA). The app tells you the batteries need replacing in several ways:
+
+- the hive tile (*Hives* tab) shows *Replace the battery — about …% left* (or *Replace the battery* when the level is unknown), and *Battery depleted* once the battery is completely flat,
+- the *Alerts* tab shows a low-battery alert naming the specific device (*Scale* or *VitalSensor*) — see [Alerts](#powiadomienia).
+
+**How to open the replacement guide.** You can open the step-by-step guide in two ways:
+
+- by clicking the low-battery alert in the *Alerts* tab — the app takes you to the apiary and opens the guide for the right device straight away,
+- from *Hive settings* → *Equipment* ([6.3 Equipment](#wyposazenie-ula)), by choosing *See how to replace the VitalSensor batteries* or *See how to replace the Scale batteries*.
+
+The guide consists of illustrated steps you move through with the *Next* / *Back* buttons (a counter shows which step you are on).
+
+**VitalSensor** — have two fresh AA alkaline batteries ready, then:
+
+1. Open the lid.
+2. Take out both used batteries.
+3. Insert 2 × AA alkaline, following the + and − markings inside the battery compartment.
+4. Close the lid and put the VitalSensor back in the hive, within range of the Hub.
+
+**Scale** — have a 4 mm hex key, a Torx T6 key and two fresh AA alkaline batteries ready, then:
+
+1. Unscrew the brackets — two bolts with the 4 mm hex key.
+2. Open the black box — undo the four top-cover screws with the Torx T6 key and lift the cover off.
+3. Remove both used batteries from the holder.
+4. Insert 2 × AA alkaline — in opposite directions, following the + and − markings.
+5. Refit the top cover and tighten the four Torx T6 screws.
+6. Refit the brackets and tighten the two bolts with the 4 mm hex key, then put the Scale back under the hive, within range of the Hub.
+
+**After the replacement: the *I replaced the battery* button.** In *Hive settings* → *Equipment*, click *I replaced the battery* next to the device whose batteries you replaced (from a guide opened via an alert you get there with the *Go to equipment* button). The app confirms with *Battery replacement confirmed* — the device is back on the next sync instead of waiting for the Hub to find it on its own. Clicking the button is not required, but it brings the data back sooner.
+
+!!! warning
+    After replacing the batteries, **do not reset** the Hub or the devices, **do not re-pair** them and do not remove them from the hive. The data updates automatically once the Hub is online — this can take up to a few hours. See also [FAQ: After replacing the batteries](#faq-po-wymianie-baterii).
+
+!!! note
+    The *I replaced the battery* button is available to the apiary owner and to people with full access to a shared apiary. The Hub has no replaceable batteries — it is charged from the photovoltaic panel or from mains power.
 
 <a id="interpretacja-statusow"></a>
 
@@ -1917,37 +1959,106 @@ Tap the chip to open the *Plans* sheet:
 When a plan expires, the app switches to view-only mode (see the note in [2. Filling in notes and inspections](#filling-in-notes-and-inspections) and throughout this manual). If you have Scale or VitalSensor devices, you'll also see a warning that they will keep sending data for 7 more days after expiry, after which they stop — your existing data and hive history stay available, but data missed during that gap cannot be recovered later, so it's worth renewing before the 7 days run out.
 
 <a id="harvest-tab"></a>
+<a id="honey-intelligence"></a>
 
-### 9. Harvest tab, inspection advice and app settings
+### 9. Honey Intelligence
 
-#### 9.1 Harvest tab (apiary level)
+**Honey Intelligence** tells you when your honey is ready. Based on data from the Scale (and, if the hive also has a VitalSensor, its measurements too), the app automatically detects nectar flows, honey ripening and honey readiness, as well as key events such as honey harvests, and shows the whole process and its stages on the hive weight chart. You can see when the conditions are right for harvesting and confirm detected events when needed. In the *Harvest* tab you compare honey production across all hives in the apiary and track the total harvest for the whole season — from a single hive to the entire apiary.
 
-Apiaries with a Scale show a **Harvest** tab next to *Hives*, *Health* and *Tasks* (the tab is named in the address as `?tab=harvest`). It follows the honey season of the chosen apiary:
+Honey Intelligence consists of three parts:
 
-- **Honey harvested** — the amount collected since the start of the current season. Until you confirm the harvests it is an estimate from Scale data; confirmed honey is shown separately.
-- **Weight drops to confirm** — when the Scales detected weight drops that have not been confirmed yet, the tab shows how much weight was detected and asks how much of it was honey.
-- **Harvest ranking** — the best-producing hives of the season and the apiary total. Past seasons can be browsed as well as the one in progress.
-- **Honey ripening stage** — for each hive with a Scale (and a VitalSensor) the app shows the stage: *Nectar flow on* (don't take the honey), *Honey is ripening* (don't take it yet, with an estimate such as *May be ready within 3 days*) or *Honey may be ready* (check the capping — with about 2/3 of the frame capped you can harvest). Without a VitalSensor the stage is judged from Scale data only. When a hive has no device or no fresh data, the app says why instead of a stage.
+- the **Harvest** tab at apiary level — the season summary and the hive ranking ([9.1](#zakladka-zbiory)),
+- **honey stages on the apiary tile** — where the honey in your hives stands and how many hives are ready ([9.2](#etapy-miodu-na-kafelku)),
+- the **Weight section of the hive view** — the honey stage of the hive, its course on the chart, and detected events and how to confirm them ([9.3](#honey-sekcja-waga)).
 
-#### 9.2 Weight events and confirming a harvest
+!!! note
+    Honey Intelligence works in hives with a **Scale**. A VitalSensor is not required but makes the assessment more accurate — without it the honey stage is judged on Scale data only (the app says so with *Without a VitalSensor we judge by Scale data only.*).
 
-On the hive's weight chart, a day on which the Scale detected a weight episode (a drop, a rise or a return to the previous level) is shaded for the whole day, with a caption. In the hive's events list open an event and answer *What was it?* — choose *Harvest*, *Super added*, *Feeding*, *Inspection*, *Swarm*, *Split*, *Box removed*, *Robbing*, *Other*, or *Nothing relevant* (e.g. a Scale measurement error). A short note is required for some answers. Only the author of an answer or the apiary owner can change it later.
+<a id="zakladka-zbiory"></a>
 
-If a device took over the hive after a replacement, the chart marks the moment with a vertical line (*Device replaced*) and shows the earlier device's line faded (*Former device*).
+#### 9.1 Harvest tab
 
-#### 9.3 Inspection and harvest advice
+In apiaries with a Scale, a **Harvest** tab appears next to the *Hives*, *Health* and *Tasks* tabs. It shows the harvest season of the selected apiary, from top to bottom:
 
-On the apiary tile and in the apiary's weather view, Apisense shows what the weather permits: a **full inspection**, **a quick look from the top** or **do not open**, with the time window (e.g. *now, until 16:00*), an hour strip and a forecast for the next days. Tap a day to see *Why:* — the blockers, such as rain, strong wind, too humid, too cold, too hot, outside flight hours or *the honey is not ready yet*. The same view marks the days with weather suitable for a honey harvest.
+- **Season selector** — the current season by default (*Season 2026 - in progress*); switch to previous seasons to compare results.
+- **Honey harvested** — the amount of honey harvested since the start of the season. Until you confirm the harvests, this is an estimate from Scale data (*An estimate from Scale data until you confirm the harvests.*). Honey whose harvest you have confirmed is shown separately as *Confirmed honey since the start of the season*.
+- **Weight drops to confirm** — if the scales detected weight drops that have not been confirmed yet, you will see their total mass and a question about how much of it was honey. You confirm them in each hive's events (see [9.3](#honey-sekcja-waga)).
+- **Harvest ranking** — the best-producing hives of the season together with the harvest total for the whole apiary (*Apiary harvest total*).
+- **Harvest season** — the harvest period that applies to the apiary (e.g. *1 May - 20 August*). The season repeats every year on the same dates and is read-only.
 
-#### 9.4 Replacing batteries
+If the scales have not detected any harvest in a season yet, the tab shows *Scale devices have not detected any harvest in the … season yet.*
 
-When a device battery is low, the hive card shows *Replace the battery* (with the percentage left if known). In the hive's *Equipment* you can open a step-by-step guide — *See how to replace the VitalSensor batteries* or *See how to replace the Scale batteries* — with *Back* / *Next* and a step counter. Both devices use two AA alkaline batteries. After inserting fresh batteries, tap *I replaced the battery* in the hive's *Equipment*; the device returns on the next sync. Do not reset or re-pair the devices.
+<a id="etapy-miodu-na-kafelku"></a>
 
-#### 9.5 Alerts, theme and language
+#### 9.2 Honey stages on the apiary tile
 
-- **Alerts** — the list has two tabs: *Needs attention* (colony condition, disease risk, weight changes) and *Everything* (which adds equipment alerts). Low-battery rows name the device (Scale, VitalSensor or Hub). Use the *Mark as read* pill to mark either group as read. In *Settings*, *Push notifications* turns off notifications while you are not using the app; everything still reaches *Alerts*. Tapping a notification about a record that has since been deleted shows *This record has been deleted*.
-- **Theme** — *Settings* → *Theme*: *Follow system*, *Light* or *Dark*.
-- **Languages** — the app is available in Polish, English, German, Spanish, French, Norwegian, Italian, Turkish, Portuguese, Dutch and Arabic (right-to-left layout).
+On the apiary tile in the *Apiaries* tab, Honey Intelligence shows the stage of the honey in the monitored hives, e.g. *Honey is ripening · 2 of 10 monitored hives ready*, together with a hint on what to do next. There are three stages:
+
+| Stage | What it means | What to do |
+| :---- | :------------ | :--------- |
+| **Nectar flow on** | The hive's mass is rising — the bees are bringing in nectar. The stage may show the rate of gain (e.g. *Nectar flow on · 1.2 kg/day*). | *The flow is on - don't take the honey.* |
+| **Honey is ripening** | The flow has ended and the bees are evaporating water from the nectar — the mass is slowly falling. The app gives an approximate time frame, e.g. *May be ready within 3 days* or *May be ready in 4-7 days*. | *Don't take it yet - the honey is still drying.* |
+| **Honey may be ready** | Evaporation is near its end and the mass has settled. | *Check the capping - with about 2/3 of the frame capped you can harvest.* |
+
+Below the stage there is a **Next 7 days** strip in which each day's colour matches the honey stage (*flow on*, *ripening*, *may be ready*). Days on which the honey *may be* ready have a dashed outline — an estimate, not a fixed date. The same strip also shows the weather recommendation icons (see [10. Weather recommendations](#rekomendacje-pogodowe)).
+
+!!! note
+    If the honey looks ripe outside the harvest season, the app says so with *The honey looks ripe, but it's outside the harvest season*.
+
+<a id="honey-sekcja-waga"></a>
+
+#### 9.3 Weight section: honey stage, course on the chart and detected events
+
+In the hive view (*Details* tab → *Hive state*), the **Weight** section contains three Honey Intelligence elements.
+
+**The honey stage of the hive.** Above the weight chart you see the honey stage of that particular hive (*Nectar flow on*, *Honey is ripening*, *Honey may be ready*) with a three-step bar *flow → ripening → ready*, a hint on what to do, and an explanation after *Why:* (e.g. *the mass has been rising for 3 days*, *water is still leaving the hive*, *evaporation is near its end*). Below it you see how much honey was harvested from the hive this season and its place in the apiary ranking (e.g. *Place in the apiary: 2 of 10*). When no assessment is possible, the app gives the reason instead of a stage, e.g. *Add a Scale to this hive to follow the honey ripening.*, *No fresh data from the hive.* or *Still calculating - the first result will appear soon.*
+
+**The course on the weight chart.** On the weight chart, periods are highlighted in the colour of their stage: *flow on*, *ripening*, *ready - check the capping* and *calm* (no clear changes). Detected events are marked on the chart too — the legend distinguishes *harvest confirmed*, *awaiting confirmation* (a **?** marker) and *other event*. Events appear on the chart from the 7-day range upwards — the Scale needs about a week of data to recognise them.
+
+If a device in the hive was replaced, the chart marks that moment with a vertical line (*Device replaced*) and shows the previous device's data as a faded line (*Former device*).
+
+**Detected events and confirming them.** Below the chart there is the season's **Events** list. The Scale detects unusual weight changes: drops (*Unusual weight drop of … detected*), rises (*Weight rise of … detected*) and temporary changes after which the weight returns to its previous level. Events waiting for your assessment are marked *To confirm*. To confirm an event:
+
+1. Click the event in the list.
+2. In the *Confirm the weight change* window, answer *What was it?* by choosing one of: *Harvest*, *Super added*, *Feeding*, *Inspection*, *Swarm*, *Split*, *Box removed*, *Robbing*, *Other* or *Nothing relevant (e.g. a Scale measurement error)*.
+3. For *Other*, a short note is required (*Write what happened.*); for *Nothing relevant* you can optionally add one.
+4. Save the answer — the app confirms with *Answer saved.* and the event is marked *Your answer*.
+
+Confirmed harvests count towards *Confirmed honey* in the *Harvest* tab and the hive ranking. Only the author of an answer or the apiary owner can change it later.
+
+!!! tip
+    The app may also ask about an event on its own — e.g. *Unusual weight drop in the hive: We detected a drop of about 12 kg on the night of … to … - what was it?*. The answer is saved in the same way as from the events list. Confirming events regularly keeps your harvest statistics accurate.
+
+<a id="rekomendacje-pogodowe"></a>
+
+### 10. Weather recommendations
+
+**Weather recommendations** help you plan the right time for hive work. Based on the weather forecast for the apiary's location, the app suggests when you can do a **quick top-only inspection** (without taking frames out), a **full inspection** of the hive, or a **honey harvest**. For today it shows the specific hourly windows in which conditions suit each activity, and for the next 7 days — which days are likely to offer suitable conditions. This helps you plan your apiary visits in advance.
+
+#### 10.1 Where to find the recommendations
+
+The weather recommendations are shown on the **apiary tile** in the *Apiaries* tab:
+
+- **Today's window** — a row with the nearest window, e.g. *Full inspection: 10:00 - 16:00*, *Quick inspection: now, until 15:00* or *Inspection: no window for an inspection today*. Click the arrow next to the row to expand the **hour strip** with a rating of each hour, a legend and an explanation after *Why:*.
+- **Next 7 days** — a strip of days (*today*, then the following weekdays) with icons of the activities the weather is likely to allow on each day. The same strip shows the honey stages (see [9.2](#etapy-miodu-na-kafelku)).
+
+#### 10.2 What the icons and colours mean
+
+| Icon | Meaning |
+| :--- | :------ |
+| ![](pictures/work_advice_full.png) | **Full inspection** — the weather allows opening the hive and going through the frames. |
+| ![](pictures/work_advice_quick.png) | **A quick look from the top** — the weather allows only a short look from the top, without taking frames out. |
+| no icon | **Do not open** — the weather that day is not suitable for opening the hive. |
+| ![](pictures/work_advice_harvest.png) | **Weather for a honey harvest** — the weather allows a harvest and the hives are ready. The icon appears only when the honey may be ready — good weather alone is not enough. |
+
+On the expanded hour strip, the colour and icon of each hour show its level: the darkest cell — *full inspection*, a lighter one — *a quick look from the top*, the palest, outlined one — *do not open* (in dark mode the shades are reversed; the legend under the strip lists only the levels that actually appear). The honey dipper icon on the hour strip marks hours suitable for a harvest.
+
+#### 10.3 Why not now?
+
+After expanding today's window, the *Why:* section lists the obstacles separately for an inspection (*Inspection:*) and a harvest (*Honey harvest:*), e.g.: *rain*, *strong wind*, *too humid*, *too cold*, *too hot*, *outside flight hours*, *not enough time left today for a full inspection*, *not enough time left today for a honey harvest*, *the honey is not ready yet* or *outside the harvest season*.
+
+!!! note
+    The recommendations are for guidance only — always assess the conditions on site before opening a hive.
 
 ______________________________________________________________________
 
@@ -2110,7 +2221,7 @@ Trends enable analysis of the general direction of changes of a given parameter 
 
 #### 2.1 How to display a trend
 
-Trends are available in the same section as the charts of individual parameters ([](#fig-notifications-problems-details)). To display them, follow these steps:
+Trends are available in the same section as the charts of individual parameters ([](#fig-beehive-details-chart-with-trend)). To display them, follow these steps:
 
 Figure: Hive Details view - weight chart with overlaid trend {#fig-beehive-details-chart-with-trend}
 
@@ -2144,49 +2255,50 @@ Using trends in data analysis enables:
 
 ______________________________________________________________________
 
-## Notifications
+<a id="powiadomienia"></a>
+<a id="notifications"></a>
 
-The notification system in the app informs the user about important events in the apiary, the status of monitoring devices and recommended activities related to running the hives. The information is provided in the form of notifications and recommendations generated based on data from sensors, observations and system analysis. Thanks to this, the user can react more quickly to emerging problems and also make decisions about the further running of the apiary.
+## Alerts (notifications)
 
-Notifications generated by the system are available **in the app** — in the notifications section you can review messages and read their details. On top of that, the app can send **push notifications** to your phone, including when you are not using it. You choose which categories do that in *Account settings > Notifications* — see [1.1 Editing data](#11-editing-data).
-
-!!! Note
-    The *Problems* tab is only available on plans that include disease alerts. If your plan does not (the AI trial, for example), the whole top tab bar disappears and the *Notifications* view shows technical notifications only. 
+**Alerts** keep all important notifications from your apiaries in one place, with the ones that need your attention clearly highlighted. The app notifies you about colony condition and disease risk, weight changes, equipment status (e.g. low battery, lost connection) and other important events. Simply tap an alert to go directly to the relevant hive, device or information in the app. This way you can react quickly without constantly checking every apiary and hive.
 
 <a id="powiadoienia-gdzie"></a>
 
-### 1. Where to find notifications in the app
+### 1. Where to find alerts
 
-You can find notifications in the app by following these steps:
+Open alerts by choosing **Alerts** (the bell icon) in the app's bottom menu. The number on the icon shows how many alerts are unread. The same view, narrowed to a given apiary or hive, can also be opened from the apiary and hive screens.
 
-- From the *Apiaries* tab (the start view shown right after logging in to the Apisense app) go to the *Hives* tab. To do so, click the tile of the chosen apiary.
-- From the *Hives* tab go to the *Notifications* tab. To do so, click the bell icon in the bottom menu, similar to the *Hives* tab.
-- As a result, the *Notifications* view will open, with the *Problems* tab selected by default ([](#fig-notifications-problems-details)).
-- In addition to the *Problems* tab, you can also go to the *Technical* tab by choosing the appropriate option from the top menu.
+### 2. The Alerts view
 
-### 2. Notification categories
+The *Alerts* view consists of:
 
-Notifications in the app are available in the *Notifications* tab. Notifications are divided into the following categories that correspond to individual tabs ([](#fig-notifications-problems-details)):
+- **Two tabs:**
+    - **Needs attention** — alerts about colony condition, disease risk or weight changes, i.e. the ones worth reacting to.
+    - **Everything** — all alerts, including those about equipment condition (battery, device connectivity).
+- **Apiary filters** — below the tabs there is a row of chips: *All* plus one per apiary (your own and shared ones). Choose an apiary to see only its alerts. If you have only one apiary, the filters are not shown.
+- **The alert list** — grouped by day, newest first. Each row shows what the alert is about, when it arrived, the value and the threshold (e.g. *threshold 30 °C*) and where it comes from (*Apiary:*, *hive:*). Low-battery alerts also name the specific device (*Scale*, *VitalSensor* or *Hub*). Unread alerts are marked with a dot.
 
-- **Problems** – notifications related to the health status of bee colonies, regarding detected diseases such as Varroa, along with recommended steps to combat the specific disease.
-- **Technical** – notifications regarding the operation of monitoring devices, e.g. low battery level or no signal coverage.
+### 3. Going to the details
 
-Figure: Notifications tab - sample disease and technical notifications (Problems and Technical tabs) (1) {#fig-notifications-problems-details}
+Clicking an alert marks it as read and takes you to the relevant place in the app, for example:
 
-![figure](pictures/notifications_problems_details.png){width=200}
+- a disease alert — to the disease episode details and recommendations,
+- a weight or temperature alert — to the relevant hive chart, with the period the alert refers to highlighted,
+- a low-battery alert — to the apiary, with the battery replacement guide for that device opened straight away (see [6.4 Replacing the batteries in the Scale and VitalSensor](#wymiana-baterii)),
+- a task reminder — to the task in the calendar, and an invitation to a shared apiary — to the invitation.
 
-Figure: Notifications tab - sample disease and technical notifications (Problems and Technical tabs) (2) {#fig-notifications-technical}
+If the item the alert referred to has been deleted in the meantime, you will see the message *This record has been deleted*.
 
-![figure](pictures/notifications_technical.png){width=200}
+### 4. Marking as read
 
-New notifications appear automatically on the appropriate list depending on their type. Unread messages are displayed in bold and return to regular weight once opened — that is how you tell they have been read.
+To mark many alerts at once, use the *Mark as read* button and choose a group: *Needs attention* or *All*. If an apiary filter is selected, only that apiary's alerts are marked. Marking as read does not move an alert to another tab — it stays in the list, only its highlight changes.
 
-You open the details by clicking the row, but the two tabs behave differently. In the *Problems* tab a separate disease episode view opens. In the *Technical* tab the row expands in place and the full message appears below its title.
+### 5. Push notifications
 
-!!! tip
-    To mark every notification in the *Technical* tab as read in one click, use the *Mark all as read* button. The scope of the button depends on where it is used:
-    - from a single hive — only technical notifications for that hive are marked as read,
-    - from the apiary level — all technical notifications for that apiary and the hives in it are marked as read.
+Independently of the *Alerts* view, the app can send **push notifications** to your phone when you are not using it. You turn them on or off in *Account settings* → *Notifications* → *Push notifications* (see [Editing data](#edycja-danych-uzytkownika)). Turning push notifications off does not lose any alerts — they all still reach the *Alerts* view.
+
+!!! note
+    Disease alerts are available only on plans that include disease detection, and weight, temperature and connection alerts — on plans with device monitoring (see [Your plan](#twoj-plan)).
 
 ______________________________________________________________________
 
@@ -2249,18 +2361,15 @@ To edit user data:
     - **Password**
     - **Notifications**
     - **Language**
+    - **Theme**
     - **Temperature unit**
     - **Weight unit**
 
     Below the list you will find the *Delete Account* button, the EU funding notice and the app version number.
 
 - To change a value, tap the row — a separate edit screen opens. For example, when changing the password you will be asked to enter a new password and to repeat it ([](#fig-app-settings)).
-- **Saving works differently per screen.** *Language*, *Temperature unit* and *Weight unit* save **immediately on selection** — there is no save button there. On the other screens the buttons appear only once you change a value, and they are **icon buttons**: **✓** saves, **⊗** closes the screen without saving.
-- The **Notifications** row opens a separate screen with three push-notification toggles:
-
-    - *Alerts* — "Notify about diseases when not using the app",
-    - *Device Status* — "Notify when there are problems with scale or sensor",
-    - *Reminders* — "Send reminders about scheduled tasks a day before".
+- **Saving works differently per screen.** *Language*, *Theme*, *Temperature unit* and *Weight unit* save **immediately on selection** — there is no save button there. On the other screens the buttons appear only once you change a value, and they are **icon buttons**: **✓** saves, **⊗** closes the screen without saving.
+- The **Notifications** row opens a screen with the *Push notifications* toggle — "Send notifications when I am not using the app. Everything still reaches Alerts." Turning it off does not lose any alerts — they all remain available in the *Alerts* tab (see [Alerts](#powiadomienia)).
 
 Figure: Account settings - sample view of the settings and password change (1) {#fig-app-settings}
 
@@ -2300,6 +2409,20 @@ In *Account settings* the measurement units are set in **two independent rows** 
 - **Weight unit** — *Kilograms (kg)* or *Pounds (lbs)*.
 
 The choice is saved immediately on tap, with no separate save button, and changes take effect right away across all charts and readings in the app.
+
+<a id="motyw-i-jezyk"></a>
+
+### 4. Theme and language
+
+**Theme.** In *Account settings* click the **Theme** row and choose how the app looks:
+
+- *Follow system* — the app switches between light and dark together with your phone's settings,
+- *Light*,
+- *Dark*.
+
+**Language.** In *Account settings* click the **Language** row and choose one of the available languages: Polish, English, German, Spanish, French, Italian, Dutch, Norwegian, Portuguese, Turkish or Arabic. With Arabic selected, the app switches to a right-to-left layout.
+
+In both cases the choice is saved immediately on tap, with no separate save button.
 
 ______________________________________________________________________
 
@@ -2348,11 +2471,11 @@ ______________________________________________________________________
 
 ### 3. Regularly checking alerts
 
-- Check the ***Notifications*** tab in the app so as not to miss critical events such as disease detection.
+- Check the ***Alerts*** tab in the app — especially *Needs attention* — so as not to miss critical events such as disease detection or an unusual weight drop.
 
 ### 4. Battery level check before the season
 
-- Before the season, check in the app the battery level of all devices monitoring the status of your apiaries. Replace the batteries (2×AA in the Scale and VitalSensor) when the level is low; charge the Hub via the photovoltaic panel or mains. Avoid transmission interruptions at the peak of the season. After replacing the batteries in a Scale or VitalSensor you do not need to re-pair the device or change app settings — simply place the device within the Hub's range and wait for data synchronisation (details: [FAQ — after battery replacement](../faq/index.md#after-battery-replacement)).
+- Before the season, check in the app the battery level of all devices monitoring the status of your apiaries. Replace the batteries (2×AA in the Scale and VitalSensor) when the level is low; charge the Hub via the photovoltaic panel or mains. Avoid transmission interruptions at the peak of the season. After replacing the batteries in a Scale or VitalSensor you do not need to re-pair the device or change app settings — simply place the device within the Hub's range and wait for data synchronisation; you can also click *I replaced the battery* in the hive's *Equipment* to bring the data back sooner (step-by-step guide: [Replacing the batteries in the Scale and VitalSensor](#wymiana-baterii); details: [FAQ — after battery replacement](../faq/index.md#after-battery-replacement)).
 
 ### 5. Updates
 
@@ -2385,6 +2508,8 @@ If you have forgotten your password, reset it yourself: on the sign-in screen ta
 
 **Solution:** yes, this is entirely possible. For example, a beekeeper may add a honey super, which will cause the total hive mass to increase. At the same time, if the bee colony is weakened, honey production may decrease. In such a situation, the hive weight chart will show a clear increase resulting from adding the honey super. However, on the honey gain chart, the mass of the added honey super will not be taken into account, so the chart will reflect only the actual change in the amount of honey. As a result, the honey gain chart will show a decrease related to limited bee activity, rather than an artificial increase resulting from beekeeper intervention.
 
+<a id="faq-po-wymianie-baterii"></a>
+
 #### 1.5 After replacing the batteries in a Scale or VitalSensor — what next?
 
 **Solution:** after replacing the batteries:
@@ -2395,7 +2520,7 @@ If you have forgotten your password, reset it yourself: on the sign-in screen ta
 
 Updated data will appear in the app automatically - this may take up to several hours, provided that the Hub is communicating properly with the system (it is not offline - discharged battery/no connectivity).
 
-After completing the battery replacement, **no additional steps** are required in the app or on the Hub, Scale or VitalSensor device. Do not re-pair devices, add them to the hive again, or press the RESET button.
+After completing the battery replacement, **no additional steps** are required on the Hub, Scale or VitalSensor device. In the app you can optionally click *I replaced the battery* in *Hive settings* → *Equipment* — the device then comes back on the next sync (see [Replacing the batteries in the Scale and VitalSensor](#wymiana-baterii)). Do not re-pair devices, add them to the hive again, or press the RESET button.
 
 #### 1.6 Do I need to re-pair the device, re-add it to the hive, or remove the hive from the app after replacing the batteries?
 
@@ -2517,6 +2642,22 @@ Below you will find a summary of the most important activities in the Apisense P
 
 > [Apiary settings overview](#omowienie-ustawien-pasieki), [Hive settings overview](#omowienie-ustawien-ula)
 
+- **Replacing batteries:** Click the low-battery alert, or in *Hive settings* → *Equipment* choose *See how to replace the … batteries*. After the replacement, click *I replaced the battery*. Do not reset or re-pair the devices.
+
+> [Replacing the batteries in the Scale and VitalSensor](#wymiana-baterii)
+
+- **Honey Intelligence:** The honey stage (*Nectar flow on*, *Honey is ripening*, *Honey may be ready*) is shown on the apiary tile and in the hive's *Weight* section, where you also confirm detected events (*What was it?*). The season summary and hive ranking are in the apiary's *Harvest* tab.
+
+> [Honey Intelligence](#honey-intelligence)
+
+- **Weather recommendations:** On the apiary tile, check today's window (e.g. *Quick inspection: now, until 15:00*) and the activity icons for the next 7 days.
+
+> [Weather recommendations](#rekomendacje-pogodowe)
+
+- **Theme and language:** *Account settings* → *Theme* (*Follow system*, *Light*, *Dark*) or *Language*.
+
+> [Theme and language](#motyw-i-jezyk)
+
 ### 5. Monitoring and data analysis
 
 - **Parameters (temperature, humidity, pressure, weight, honey gain):** Click the chosen apiary tile. Click the chosen hive tile. The current values are visible in the hive *Details* tab, *Hive state* sub-tab, in the *Weight* and *Conditions* sections.
@@ -2533,9 +2674,9 @@ Below you will find a summary of the most important activities in the Apisense P
 
 ### 6. Notifications
 
-- **Notifications:** Click the chosen apiary tile. Choose the *Notifications* tab from the bottom menu. The available categories are: *Problems* (including diseases) and *Technical* (devices, connectivity).
+- **Alerts:** Choose *Alerts* (the bell icon) from the bottom menu. The *Needs attention* tab holds alerts about colony condition, diseases and weight changes, and *Everything* also includes equipment alerts. Filter alerts by apiary and click an alert to go to the right hive or device.
 
-> [Notifications](#notifications)
+> [Alerts](#powiadomienia)
 
 ### 7. AI Assistant
 
@@ -2545,7 +2686,7 @@ Below you will find a summary of the most important activities in the Apisense P
 
 ### 8. Account
 
-- **Editing user data:** In the *Apiaries* start view click the **⋮** icon and choose *Settings*. You can change your display name, email, phone, experience, password, push notifications, language and the temperature and weight units. From this place you can also delete your account.
+- **Editing user data:** In the *Apiaries* start view click the **⋮** icon and choose *Settings*. You can change your display name, email, phone, experience, password, push notifications, language, theme and the temperature and weight units. From this place you can also delete your account.
 
 > [Editing user data](#edycja-danych-uzytkownika)
 
