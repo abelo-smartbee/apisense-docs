@@ -1982,7 +1982,7 @@ In apiaries with a Scale, a **Harvest** tab appears next to the *Hives*, *Health
 
 - **Season selector** — the current season by default (*Season 2026 - in progress*); switch to previous seasons to compare results.
 - **Honey harvested** — the amount of honey harvested since the start of the season. Until you confirm the harvests, this is an estimate from Scale data (*An estimate from Scale data until you confirm the harvests.*). Honey whose harvest you have confirmed is shown separately as *Confirmed honey since the start of the season*.
-- **Weight drops to confirm** — if the scales detected weight drops that have not been confirmed yet, you will see their total mass and a question about how much of it was honey. You confirm them in each hive's events (see [9.3](#honey-sekcja-waga)).
+- **Weight drops to confirm** — if the Scale devices detected weight drops that have not been confirmed yet, you will see their total mass and a question about how much of it was honey. You confirm them in each hive's events (see [9.3](#honey-sekcja-waga)).
 - **Harvest ranking** — all hives with a Scale in the apiary, sorted from the one with the highest honey production this season; the length of each hive's bar shows its result against the best hive. Below the list you see the harvest total for the whole apiary (*Apiary harvest total*).
 - **Harvest season** — the harvest period that applies to the apiary (e.g. *1 May - 20 August*). The season repeats every year on the same dates and is read-only.
 
@@ -1990,7 +1990,7 @@ Figure: Harvest tab - season summary and harvest ranking {#fig-honey-harvest-tab
 
 ![figure](pictures/honey_harvest_tab.png){width=200}
 
-If the scales have not detected any harvest in a season yet, the tab shows *Scale devices have not detected any harvest in the … season yet.*
+If the Scale devices have not detected any harvest in a season yet, the tab shows *Scale devices have not detected any harvest in the … season yet.*
 
 <a id="etapy-miodu-na-kafelku"></a>
 

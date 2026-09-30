@@ -1960,7 +1960,7 @@ Gdy plan wygasa, aplikacja przechodzi w tryb tylko do odczytu (patrz notatka w [
 
 ### 9. Honey Intelligence
 
-**Honey Intelligence** podpowiada, kiedy Twój miód jest gotowy. Na podstawie danych z wagi Scale (a jeśli ul ma także VitalSensor — również z jego pomiarów) aplikacja automatycznie rozpoznaje pożytek, dojrzewanie i gotowość miodu oraz kluczowe zdarzenia, takie jak miodobranie, i pokazuje cały proces wraz z jego etapami na wykresie wagi ula. Dzięki temu widzisz, kiedy warunki sprzyjają miodobraniu, a wykryte zdarzenia możesz w razie potrzeby potwierdzić. W zakładce *Zbiory* porównasz produkcję miodu we wszystkich ulach pasieki i prześledzisz łączny zbiór z całego sezonu — od pojedynczego ula po całą pasiekę.
+**Honey Intelligence** podpowiada, kiedy Twój miód jest gotowy. Na podstawie danych ze Scale (a jeśli ul ma także VitalSensor — również z jego pomiarów) aplikacja automatycznie rozpoznaje pożytek, dojrzewanie i gotowość miodu oraz kluczowe zdarzenia, takie jak miodobranie, i pokazuje cały proces wraz z jego etapami na wykresie wagi ula. Dzięki temu widzisz, kiedy warunki sprzyjają miodobraniu, a wykryte zdarzenia możesz w razie potrzeby potwierdzić. W zakładce *Zbiory* porównasz produkcję miodu we wszystkich ulach pasieki i prześledzisz łączny zbiór z całego sezonu — od pojedynczego ula po całą pasiekę.
 
 Honey Intelligence składa się z trzech elementów:
 
@@ -1969,25 +1969,25 @@ Honey Intelligence składa się z trzech elementów:
 - **sekcji *Waga* w widoku ula** — etap miodu w ulu, przebieg na wykresie oraz wykryte zdarzenia i ich potwierdzanie ([9.3](#honey-sekcja-waga)).
 
 !!! note
-    Honey Intelligence działa w ulach z wagą **Scale**. Do śledzenia dojrzewania miodu potrzebny jest także **VitalSensor** — jeśli ul go nie ma, zamiast etapu miodu aplikacja wyświetla komunikat *Dodaj VitalSensor do tego ula, aby śledzić dojrzewanie miodu.* Zbiory i wykryte zdarzenia wagi są dostępne już z samą wagą Scale.
+    Honey Intelligence działa w ulach ze **Scale**. Do śledzenia dojrzewania miodu potrzebny jest także **VitalSensor** — jeśli ul go nie ma, zamiast etapu miodu aplikacja wyświetla komunikat *Dodaj VitalSensor do tego ula, aby śledzić dojrzewanie miodu.* Zbiory i wykryte zdarzenia wagi są dostępne już z samym Scale.
 
 <a id="zakladka-zbiory"></a>
 
 #### 9.1 Zakładka Zbiory
 
-W pasiekach z wagą Scale obok zakładek *Ule*, *Zdrowie* i *Zadania* widoczna jest zakładka **Zbiory**. Pokazuje ona sezon miodobrania wybranej pasieki, od góry:
+W pasiekach ze Scale obok zakładek *Ule*, *Zdrowie* i *Zadania* widoczna jest zakładka **Zbiory**. Pokazuje ona sezon miodobrania wybranej pasieki, od góry:
 
 - **Wybór sezonu** — domyślnie bieżący sezon (*Sezon: 2026 - w trakcie*); możesz przełączyć się na poprzednie sezony, aby porównać wyniki.
 - **Zebrany miód** — ilość miodu zebrana od początku sezonu. Dopóki nie potwierdzisz miodobrań, jest to szacunek na podstawie danych ze Scale (*Szacunek z danych Scale, dopóki nie potwierdzisz miodobrań.*). Miód, którego zbiór potwierdziłeś, pokazywany jest osobno jako *Potwierdzony miód od początku sezonu*.
-- **Spadki wagi do potwierdzenia** — jeśli wagi wykryły spadki masy, których jeszcze nie potwierdzono, zobaczysz ich łączną masę i pytanie, ile z tego było miodem. Potwierdzenia dokonujesz w zdarzeniach poszczególnych uli (patrz [9.3](#honey-sekcja-waga)).
-- **Ranking zbiorów** — wszystkie ule z wagą Scale w pasiece, posortowane od tego z największą produkcją miodu w sezonie; długość paska przy każdym ulu pokazuje jego wynik na tle najlepszego ula. Pod listą widoczna jest suma zbiorów z całej pasieki (*Suma zbiorów z pasieki*).
+- **Spadki wagi do potwierdzenia** — jeśli urządzenia Scale wykryły spadki masy, których jeszcze nie potwierdzono, zobaczysz ich łączną masę i pytanie, ile z tego było miodem. Potwierdzenia dokonujesz w zdarzeniach poszczególnych uli (patrz [9.3](#honey-sekcja-waga)).
+- **Ranking zbiorów** — wszystkie ule ze Scale w pasiece, posortowane od tego z największą produkcją miodu w sezonie; długość paska przy każdym ulu pokazuje jego wynik na tle najlepszego ula. Pod listą widoczna jest suma zbiorów z całej pasieki (*Suma zbiorów z pasieki*).
 - **Sezon miodobrania** — okres miodobrania obowiązujący dla pasieki (np. *1 maja - 20 sierpnia*). Sezon powtarza się co roku w te same dni i jest tylko do odczytu.
 
 Figure: Zakładka Zbiory - podsumowanie sezonu i ranking zbiorów {#fig-honey-harvest-tab}
 
 ![figure](pictures/honey_harvest_tab.png){width=200}
 
-Jeśli w danym sezonie wagi nie wykryły jeszcze żadnego miodobrania, zakładka wyświetla komunikat *Urządzenia Scale nie wykryły jeszcze miodobrań w sezonie …*.
+Jeśli w danym sezonie urządzenia Scale nie wykryły jeszcze żadnego miodobrania, zakładka wyświetla komunikat *Urządzenia Scale nie wykryły jeszcze miodobrań w sezonie …*.
 
 <a id="etapy-miodu-na-kafelku"></a>
 
