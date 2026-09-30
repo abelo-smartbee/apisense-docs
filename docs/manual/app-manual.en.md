@@ -1756,7 +1756,7 @@ Figure: Hive settings view - Equipment section - Scale and VitalSensor details (
 
 The Scale and the VitalSensor are powered by two **AA alkaline** batteries (2 × AA). The app tells you the batteries need replacing in several ways:
 
-- the hive tile (*Hives* tab) shows *Replace the battery — about …% left* (or *Replace the battery* when the level is unknown), and *Battery depleted* once the battery is completely flat,
+- the hive tile (*Hives* tab) shows *Replace the battery — about …% left*, and *Battery depleted* once the battery is completely flat,
 - the *Alerts* tab shows a low-battery alert naming the specific device (*Scale* or *VitalSensor*) — see [Alerts](#powiadomienia).
 
 **How to open the replacement guide.** You can open the step-by-step guide in two ways:
@@ -1968,11 +1968,11 @@ When a plan expires, the app switches to view-only mode (see the note in [2. Fil
 Honey Intelligence consists of three parts:
 
 - the **Harvest** tab at apiary level — the season summary and the hive ranking ([9.1](#zakladka-zbiory)),
-- **honey stages on the apiary tile** — where the honey in your hives stands and how many hives are ready ([9.2](#etapy-miodu-na-kafelku)),
+- **honey stages on the apiary tile** — what stage the honey in your hives is at and which of them are ready for a harvest ([9.2](#etapy-miodu-na-kafelku)),
 - the **Weight section of the hive view** — the honey stage of the hive, its course on the chart, and detected events and how to confirm them ([9.3](#honey-sekcja-waga)).
 
 !!! note
-    Honey Intelligence works in hives with a **Scale**. A VitalSensor is not required but makes the assessment more accurate — without it the honey stage is judged on Scale data only (the app says so with *Without a VitalSensor we judge by Scale data only.*).
+    Honey Intelligence works in hives with a **Scale**. Following the honey ripening also needs a **VitalSensor** — if the hive has none, the app shows *Add a VitalSensor to this hive to follow the honey ripening.* instead of the honey stage. Harvests and detected weight events are available with the Scale alone.
 
 <a id="zakladka-zbiory"></a>
 
@@ -1983,8 +1983,12 @@ In apiaries with a Scale, a **Harvest** tab appears next to the *Hives*, *Health
 - **Season selector** — the current season by default (*Season 2026 - in progress*); switch to previous seasons to compare results.
 - **Honey harvested** — the amount of honey harvested since the start of the season. Until you confirm the harvests, this is an estimate from Scale data (*An estimate from Scale data until you confirm the harvests.*). Honey whose harvest you have confirmed is shown separately as *Confirmed honey since the start of the season*.
 - **Weight drops to confirm** — if the scales detected weight drops that have not been confirmed yet, you will see their total mass and a question about how much of it was honey. You confirm them in each hive's events (see [9.3](#honey-sekcja-waga)).
-- **Harvest ranking** — the best-producing hives of the season together with the harvest total for the whole apiary (*Apiary harvest total*).
+- **Harvest ranking** — all hives with a Scale in the apiary, sorted from the one with the highest honey production this season; the length of each hive's bar shows its result against the best hive. Below the list you see the harvest total for the whole apiary (*Apiary harvest total*).
 - **Harvest season** — the harvest period that applies to the apiary (e.g. *1 May - 20 August*). The season repeats every year on the same dates and is read-only.
+
+Figure: Harvest tab - season summary and harvest ranking {#fig-honey-harvest-tab}
+
+![figure](pictures/honey_harvest_tab.png){width=200}
 
 If the scales have not detected any harvest in a season yet, the tab shows *Scale devices have not detected any harvest in the … season yet.*
 
@@ -2002,6 +2006,10 @@ On the apiary tile in the *Apiaries* tab, Honey Intelligence shows the stage of 
 
 Below the stage there is a **Next 7 days** strip in which each day's colour matches the honey stage (*flow on*, *ripening*, *may be ready*). Days on which the honey *may be* ready have a dashed outline — an estimate, not a fixed date. The same strip also shows the weather recommendation icons (see [10. Weather recommendations](#rekomendacje-pogodowe)).
 
+Figure: Apiary tile - honey stage and the Next 7 days strip {#fig-honey-apiary-tile-stage}
+
+![figure](pictures/honey_apiary_tile_stage.png){width=200}
+
 !!! note
     If the honey looks ripe outside the harvest season, the app says so with *The honey looks ripe, but it's outside the harvest season*.
 
@@ -2011,7 +2019,11 @@ Below the stage there is a **Next 7 days** strip in which each day's colour matc
 
 In the hive view (*Details* tab → *Hive state*), the **Weight** section contains three Honey Intelligence elements.
 
-**The honey stage of the hive.** Above the weight chart you see the honey stage of that particular hive (*Nectar flow on*, *Honey is ripening*, *Honey may be ready*) with a three-step bar *flow → ripening → ready*, a hint on what to do, and an explanation after *Why:* (e.g. *the mass has been rising for 3 days*, *water is still leaving the hive*, *evaporation is near its end*). Below it you see how much honey was harvested from the hive this season and its place in the apiary ranking (e.g. *Place in the apiary: 2 of 10*). When no assessment is possible, the app gives the reason instead of a stage, e.g. *Add a Scale to this hive to follow the honey ripening.*, *No fresh data from the hive.* or *Still calculating - the first result will appear soon.*
+Figure: Hive view - Weight section with the honey stage, chart and events {#fig-honey-hive-weight-section}
+
+![figure](pictures/honey_hive_weight_section.png){width=200}
+
+**The honey stage of the hive.** Above the weight chart you see the honey stage of that particular hive (*Nectar flow on*, *Honey is ripening*, *Honey may be ready*) with a three-step bar *flow → ripening → ready*, a hint on what to do, and an explanation after *Why:* (e.g. *the mass has been rising for 3 days*, *water is still leaving the hive*, *evaporation is near its end*). Below it you see how much honey was harvested from the hive this season and its place in the apiary ranking (e.g. *Place in the apiary: 2 of 10*). When no assessment is possible, the app gives the reason instead of a stage, e.g. *Add a VitalSensor to this hive to follow the honey ripening.*, *No fresh data from the hive.* or *Still calculating - the first result will appear soon.*
 
 **The course on the weight chart.** On the weight chart, periods are highlighted in the colour of their stage: *flow on*, *ripening*, *ready - check the capping* and *calm* (no clear changes). Detected events are marked on the chart too — the legend distinguishes *harvest confirmed*, *awaiting confirmation* (a **?** marker) and *other event*. Events appear on the chart from the 7-day range upwards — the Scale needs about a week of data to recognise them.
 
@@ -2035,6 +2047,10 @@ Confirmed harvests count towards *Confirmed honey* in the *Harvest* tab and the 
 
 **Weather recommendations** help you plan the right time for hive work. Based on the weather forecast for the apiary's location, the app suggests when you can do a **quick top-only inspection** (without taking frames out), a **full inspection** of the hive, or a **honey harvest**. For today it shows the specific hourly windows in which conditions suit each activity, and for the next 7 days — which days are likely to offer suitable conditions. This helps you plan your apiary visits in advance.
 
+Figure: Apiary tile - weather recommendations (today's window and the next 7 days) {#fig-weather-advice-apiary-tile}
+
+![figure](pictures/weather_advice_apiary_tile.png){width=200}
+
 #### 10.1 Where to find the recommendations
 
 The weather recommendations are shown on the **apiary tile** in the *Apiaries* tab:
@@ -2049,9 +2065,9 @@ The weather recommendations are shown on the **apiary tile** in the *Apiaries* t
 | ![](pictures/work_advice_full.png) | **Full inspection** — the weather allows opening the hive and going through the frames. |
 | ![](pictures/work_advice_quick.png) | **A quick look from the top** — the weather allows only a short look from the top, without taking frames out. |
 | no icon | **Do not open** — the weather that day is not suitable for opening the hive. |
-| ![](pictures/work_advice_harvest.png) | **Weather for a honey harvest** — the weather allows a harvest and the hives are ready. The icon appears only when the honey may be ready — good weather alone is not enough. |
+| ![](pictures/work_advice_harvest.png) | **Weather for a honey harvest** — the weather allows a harvest and at least one monitored hive in the apiary has ready honey (or is forecast to be ready by that day). So the icon can also appear while a nectar flow is still on in some hives. It does not appear outside the harvest season, when the weather does not allow a harvest, or when no monitored hive has ready honey yet (the *Why:* section then shows *the honey is not ready yet*). |
 
-On the expanded hour strip, the colour and icon of each hour show its level: the darkest cell — *full inspection*, a lighter one — *a quick look from the top*, the palest, outlined one — *do not open* (in dark mode the shades are reversed; the legend under the strip lists only the levels that actually appear). The honey dipper icon on the hour strip marks hours suitable for a harvest.
+On the expanded hour strip, the colour and icon of each hour show its level: the darkest cell — *full inspection*, a lighter one — *a quick look from the top*, the palest, outlined one — *do not open* (in dark mode the shades are reversed; the legend under the strip lists only the levels that actually appear). The honey dipper icon on the hour strip marks hours suitable for a harvest (on the same terms as in the day strip).
 
 #### 10.3 Why not now?
 
@@ -2262,11 +2278,15 @@ ______________________________________________________________________
 
 **Alerts** keep all important notifications from your apiaries in one place, with the ones that need your attention clearly highlighted. The app notifies you about colony condition and disease risk, weight changes, equipment status (e.g. low battery, lost connection) and other important events. Simply tap an alert to go directly to the relevant hive, device or information in the app. This way you can react quickly without constantly checking every apiary and hive.
 
+Figure: Alerts view - Needs attention and Everything tabs and apiary filters {#fig-alerts-view}
+
+![figure](pictures/alerts_view.png){width=200}
+
 <a id="powiadoienia-gdzie"></a>
 
 ### 1. Where to find alerts
 
-Open alerts by choosing **Alerts** (the bell icon) in the app's bottom menu. The number on the icon shows how many alerts are unread. The same view, narrowed to a given apiary or hive, can also be opened from the apiary and hive screens.
+Open alerts by choosing **Alerts** (the bell icon) in the app's bottom menu. The number on the icon shows how many alerts are unread. By default you see alerts from all apiaries — to see only one apiary's alerts, use the apiary filter (see below).
 
 ### 2. The Alerts view
 

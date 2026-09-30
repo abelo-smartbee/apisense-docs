@@ -1752,7 +1752,7 @@ Figure: Widok Ustawienia ula - sekcja Wyposażenie - szczegóły Scale oraz Vita
 
 Scale i VitalSensor zasilane są dwiema bateriami **AA alkalicznymi** (2 × AA). O tym, że baterie trzeba wymienić, aplikacja informuje na kilka sposobów:
 
-- na kafelku ula (zakładka *Ule*) pojawia się komunikat *Wymień baterię — pozostało ok. …%* (lub *Wymień baterię*, gdy poziom nie jest znany), a gdy bateria jest całkowicie rozładowana — *Bateria wyczerpana*,
+- na kafelku ula (zakładka *Ule*) pojawia się komunikat *Wymień baterię — pozostało ok. …%*, a gdy bateria jest całkowicie rozładowana — *Bateria wyczerpana*,
 - w zakładce *Alerty* pojawia się alert o niskim poziomie baterii ze wskazaniem konkretnego urządzenia (*Scale* lub *VitalSensor*) — patrz [Alerty](#powiadomienia).
 
 **Jak otworzyć instrukcję wymiany.** Instrukcję krok po kroku otworzysz na dwa sposoby:
@@ -1965,11 +1965,11 @@ Gdy plan wygasa, aplikacja przechodzi w tryb tylko do odczytu (patrz notatka w [
 Honey Intelligence składa się z trzech elementów:
 
 - zakładki **Zbiory** na poziomie pasieki — podsumowanie sezonu i ranking uli ([9.1](#zakladka-zbiory)),
-- **etapów miodu na kafelku pasieki** — gdzie jest miód w Twoich ulach i ile uli jest gotowych ([9.2](#etapy-miodu-na-kafelku)),
+- **etapów miodu na kafelku pasieki** — na jakim etapie jest miód w Twoich ulach i w których z nich można już wykonać miodobranie ([9.2](#etapy-miodu-na-kafelku)),
 - **sekcji *Waga* w widoku ula** — etap miodu w ulu, przebieg na wykresie oraz wykryte zdarzenia i ich potwierdzanie ([9.3](#honey-sekcja-waga)).
 
 !!! note
-    Honey Intelligence działa w ulach z wagą **Scale**. VitalSensor nie jest wymagany, ale zwiększa trafność oceny — bez niego etap miodu oceniany jest wyłącznie na podstawie danych ze Scale (aplikacja informuje o tym komunikatem *Bez VitalSensora oceniamy tylko po danych ze Scale.*).
+    Honey Intelligence działa w ulach z wagą **Scale**. Do śledzenia dojrzewania miodu potrzebny jest także **VitalSensor** — jeśli ul go nie ma, zamiast etapu miodu aplikacja wyświetla komunikat *Dodaj VitalSensor do tego ula, aby śledzić dojrzewanie miodu.* Zbiory i wykryte zdarzenia wagi są dostępne już z samą wagą Scale.
 
 <a id="zakladka-zbiory"></a>
 
@@ -1980,8 +1980,12 @@ W pasiekach z wagą Scale obok zakładek *Ule*, *Zdrowie* i *Zadania* widoczna j
 - **Wybór sezonu** — domyślnie bieżący sezon (*Sezon: 2026 - w trakcie*); możesz przełączyć się na poprzednie sezony, aby porównać wyniki.
 - **Zebrany miód** — ilość miodu zebrana od początku sezonu. Dopóki nie potwierdzisz miodobrań, jest to szacunek na podstawie danych ze Scale (*Szacunek z danych Scale, dopóki nie potwierdzisz miodobrań.*). Miód, którego zbiór potwierdziłeś, pokazywany jest osobno jako *Potwierdzony miód od początku sezonu*.
 - **Spadki wagi do potwierdzenia** — jeśli wagi wykryły spadki masy, których jeszcze nie potwierdzono, zobaczysz ich łączną masę i pytanie, ile z tego było miodem. Potwierdzenia dokonujesz w zdarzeniach poszczególnych uli (patrz [9.3](#honey-sekcja-waga)).
-- **Ranking zbiorów** — najlepiej produkujące ule w sezonie wraz z sumą zbiorów z całej pasieki (*Suma zbiorów z pasieki*).
+- **Ranking zbiorów** — wszystkie ule z wagą Scale w pasiece, posortowane od tego z największą produkcją miodu w sezonie; długość paska przy każdym ulu pokazuje jego wynik na tle najlepszego ula. Pod listą widoczna jest suma zbiorów z całej pasieki (*Suma zbiorów z pasieki*).
 - **Sezon miodobrania** — okres miodobrania obowiązujący dla pasieki (np. *1 maja - 20 sierpnia*). Sezon powtarza się co roku w te same dni i jest tylko do odczytu.
+
+Figure: Zakładka Zbiory - podsumowanie sezonu i ranking zbiorów {#fig-honey-harvest-tab}
+
+![figure](pictures/honey_harvest_tab.png){width=200}
 
 Jeśli w danym sezonie wagi nie wykryły jeszcze żadnego miodobrania, zakładka wyświetla komunikat *Urządzenia Scale nie wykryły jeszcze miodobrań w sezonie …*.
 
@@ -1999,6 +2003,10 @@ Na kafelku pasieki w zakładce *Pasieki* Honey Intelligence pokazuje, na jakim e
 
 Pod etapem widoczny jest pasek **Najbliższe 7 dni**, w którym kolor dnia odpowiada etapowi miodu (*pożytek*, *dojrzewa*, *może być gotowy*). Dni, w których miód *może być* gotowy, mają przerywane obramowanie — to szacunek, a nie konkretna data. W tym samym pasku pojawiają się też ikony rekomendacji pogodowych (patrz [10. Rekomendacje pogodowe](#rekomendacje-pogodowe)).
 
+Figure: Kafelek pasieki - etap miodu i pasek Najbliższe 7 dni {#fig-honey-apiary-tile-stage}
+
+![figure](pictures/honey_apiary_tile_stage.png){width=200}
+
 !!! note
     Jeśli miód wygląda na dojrzały poza sezonem miodobrania, aplikacja poinformuje o tym komunikatem *Miód wygląda na dojrzały, ale to poza sezonem miodobrania*.
 
@@ -2008,7 +2016,11 @@ Pod etapem widoczny jest pasek **Najbliższe 7 dni**, w którym kolor dnia odpow
 
 W widoku ula (zakładka *Szczegóły* → *Stan ula*) w sekcji **Waga** znajdziesz trzy elementy Honey Intelligence.
 
-**Etap miodu w ulu.** Nad wykresem wagi widoczny jest etap miodu w tym konkretnym ulu (*Trwa pożytek*, *Miód dojrzewa*, *Miód może być gotowy*) z trzystopniowym paskiem *pożytek → dojrzewanie → gotowe*, wskazówką, co robić, oraz wyjaśnieniem po *Dlaczego:* (np. *masa rośnie od 3 dni*, *woda wciąż wychodzi z ula*, *odparowywanie na ukończeniu*). Poniżej widoczna jest ilość miodu zebrana z ula w sezonie oraz jego miejsce w rankingu pasieki (np. *Miejsce w pasiece: 2 z 10*). Gdy ocena nie jest możliwa, zamiast etapu aplikacja podaje powód, np. *Dodaj Scale do tego ula, aby śledzić dojrzewanie miodu.*, *Brak świeżych danych z ula.* lub *Jeszcze liczymy - pierwszy wynik pojawi się wkrótce.*
+Figure: Widok ula - sekcja Waga z etapem miodu, wykresem i zdarzeniami {#fig-honey-hive-weight-section}
+
+![figure](pictures/honey_hive_weight_section.png){width=200}
+
+**Etap miodu w ulu.** Nad wykresem wagi widoczny jest etap miodu w tym konkretnym ulu (*Trwa pożytek*, *Miód dojrzewa*, *Miód może być gotowy*) z trzystopniowym paskiem *pożytek → dojrzewanie → gotowe*, wskazówką, co robić, oraz wyjaśnieniem po *Dlaczego:* (np. *masa rośnie od 3 dni*, *woda wciąż wychodzi z ula*, *odparowywanie na ukończeniu*). Poniżej widoczna jest ilość miodu zebrana z ula w sezonie oraz jego miejsce w rankingu pasieki (np. *Miejsce w pasiece: 2 z 10*). Gdy ocena nie jest możliwa, zamiast etapu aplikacja podaje powód, np. *Dodaj VitalSensor do tego ula, aby śledzić dojrzewanie miodu.*, *Brak świeżych danych z ula.* lub *Jeszcze liczymy - pierwszy wynik pojawi się wkrótce.*
 
 **Przebieg na wykresie wagi.** Na wykresie wagi okresy są podświetlone kolorem odpowiadającym etapowi: *pożytek trwa*, *dojrzewanie*, *gotowe - sprawdź zasklep* oraz *spokój* (brak wyraźnych zmian). Na wykresie oznaczone są również wykryte zdarzenia — legenda rozróżnia *odbiór potwierdzony*, *czeka na potwierdzenie* (znacznik **?**) i *inne zdarzenie*. Zdarzenia widać na wykresie od zakresu 7 dni wzwyż — Scale potrzebuje około tygodnia danych, żeby je rozpoznać.
 
@@ -2032,6 +2044,10 @@ Potwierdzone miodobrania trafiają do sumy *Potwierdzony miód* w zakładce *Zbi
 
 **Rekomendacje pogodowe** pomagają zaplanować odpowiedni czas na pracę przy ulach. Na podstawie prognozy pogody dla lokalizacji pasieki aplikacja podpowiada, kiedy można wykonać **szybki przegląd od góry** (bez wyjmowania ramek), **pełny przegląd** ula lub **miodobranie**. Na dziś pokazuje konkretne godzinowe okna, w których warunki sprzyjają danej czynności, a na najbliższe 7 dni — które dni prawdopodobnie zapewnią odpowiednie warunki. Dzięki temu możesz z wyprzedzeniem zaplanować wizyty w pasiece.
 
+Figure: Kafelek pasieki - rekomendacje pogodowe (okno na dziś i najbliższe 7 dni) {#fig-weather-advice-apiary-tile}
+
+![figure](pictures/weather_advice_apiary_tile.png){width=200}
+
 #### 10.1 Gdzie znaleźć rekomendacje
 
 Rekomendacje pogodowe widoczne są na **kafelku pasieki** w zakładce *Pasieki*:
@@ -2046,9 +2062,9 @@ Rekomendacje pogodowe widoczne są na **kafelku pasieki** w zakładce *Pasieki*:
 | ![](pictures/work_advice_full.png) | **Pełny przegląd** — pogoda pozwala otworzyć ul i przejrzeć ramki. |
 | ![](pictures/work_advice_quick.png) | **Szybko od góry** — pogoda pozwala tylko na krótki rzut oka od góry, bez wyjmowania ramek. |
 | brak ikony | **Nie otwieraj** — tego dnia pogoda nie sprzyja otwieraniu ula. |
-| ![](pictures/work_advice_harvest.png) | **Pogoda na zbiór miodu** — pogoda pozwala na miodobranie, a ule są gotowe. Ikona pojawia się tylko wtedy, gdy miód może być gotowy — sama dobra pogoda nie wystarcza. |
+| ![](pictures/work_advice_harvest.png) | **Pogoda na zbiór miodu** — pogoda pozwala na miodobranie, a co najmniej jeden monitorowany ul w pasiece ma miód gotowy (lub według prognozy będzie gotowy do tego dnia). Ikona może więc pojawić się także wtedy, gdy w części uli trwa jeszcze pożytek. Nie pojawia się poza sezonem miodobrania, gdy pogoda nie pozwala na miodobranie ani gdy w żadnym monitorowanym ulu miód nie jest jeszcze gotowy (wtedy w sekcji *Dlaczego:* widać *miód jeszcze nie jest gotowy*). |
 
-Na rozwiniętym pasku godzin kolor i ikona każdej godziny oznaczają poziom: najciemniejsze pole — *pełny przegląd*, jaśniejsze — *szybko od góry*, najbledsze, z obramowaniem — *nie otwieraj* (w trybie ciemnym odcienie są odwrócone; legenda pod paskiem pokazuje tylko te poziomy, które faktycznie występują). Ikona łyżki do miodu na pasku godzin oznacza godziny odpowiednie do miodobrania.
+Na rozwiniętym pasku godzin kolor i ikona każdej godziny oznaczają poziom: najciemniejsze pole — *pełny przegląd*, jaśniejsze — *szybko od góry*, najbledsze, z obramowaniem — *nie otwieraj* (w trybie ciemnym odcienie są odwrócone; legenda pod paskiem pokazuje tylko te poziomy, które faktycznie występują). Ikona łyżki do miodu na pasku godzin oznacza godziny odpowiednie do miodobrania (na tych samych zasadach co w pasku dni).
 
 #### 10.3 Dlaczego nie teraz?
 
@@ -2261,11 +2277,15 @@ ______________________________________________________________________
 
 **Alerty** to jedno miejsce, w którym znajdziesz wszystkie ważne powiadomienia z Twoich pasiek — z wyraźnie wyróżnionymi tymi, które wymagają Twojej uwagi. Aplikacja informuje o stanie rodzin i zagrożeniu chorobami, zmianach wagi, stanie sprzętu (np. niski poziom baterii, utrata połączenia) i innych ważnych zdarzeniach. Wystarczy kliknąć alert, aby przejść bezpośrednio do właściwego ula, urządzenia lub informacji w aplikacji. Dzięki temu możesz szybko reagować bez ciągłego sprawdzania każdej pasieki i każdego ula z osobna.
 
+Figure: Widok Alerty - zakładki Wymaga uwagi i Wszystko oraz filtry pasiek {#fig-alerts-view}
+
+![figure](pictures/alerts_view.png){width=200}
+
 <a id="powiadoienia-gdzie"></a>
 
 ### 1. Gdzie znaleźć alerty
 
-Alerty otworzysz, wybierając **Alerty** (ikona dzwonka) w dolnym menu aplikacji. Liczba przy ikonie pokazuje, ile jest nieprzeczytanych alertów. Ten sam widok, zawężony do danej pasieki lub ula, możesz otworzyć także z poziomu pasieki i ula.
+Alerty otworzysz, wybierając **Alerty** (ikona dzwonka) w dolnym menu aplikacji. Liczba przy ikonie pokazuje, ile jest nieprzeczytanych alertów. Domyślnie widoczne są alerty ze wszystkich pasiek — aby zobaczyć alerty tylko jednej pasieki, użyj filtra pasiek (patrz niżej).
 
 ### 2. Widok Alerty
 
