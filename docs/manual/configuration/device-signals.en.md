@@ -4,8 +4,8 @@ Reference page: **what I see on the device → what it means → what to do**.
 
 If you're looking for a solution to a specific problem (e.g. "device not reporting"), start with [Troubleshooting](troubleshooting.md). This page helps interpret the signals themselves — LED, button, startup sequence — regardless of whether something is broken.
 
-!!! note "Page status"
-    Page in progress, to be filled in by the embedded team. Sections marked **TODO** need to be completed based on current firmware. If a given device does not have a particular signal (e.g. no buzzer), state that explicitly instead of skipping the section.
+!!! info "The LEDs only confirm actions"
+    None of the devices shows battery level or errors on its LED.
 
 ---
 
@@ -13,58 +13,61 @@ If you're looking for a solution to a specific problem (e.g. "device not reporti
 
 ### LED
 
-!!! todo "TODO (embedded)"
-    Fill in all LED states based on Hub firmware. Each row = one distinguishable pattern (color + blink sequence). If the LED is multi-color — list every combination. If a signal requires context (e.g. "only during boot") — note it in the *Context* column.
+The Hub button holds two LEDs: **blue** and **red**. They only confirm the actions in the table. They stay off at all other times — also when the Hub works normally and sleeps between measurements.
 
-| What I see | Context | What it means | What to do |
+| What I see | When | What it means | What to do |
 |---|---|---|---|
-| _e.g. green LED solid_ | _after pressing Power_ | _Hub running, connectivity OK_ | _nothing — normal state_ |
-| TODO | TODO | TODO | TODO |
+| Blue blinks 3 times, then red blinks once | After the Hub starts or restarts | The Hub is starting up | Nothing — normal state |
+| Blue blinks once | After a short press of the button (shorter than 3 s) | The Hub woke up | Nothing — normal state |
+| Blue blinks 2 times | After you connect a USB charger | The Hub woke up and starts charging | Nothing — normal state |
+| Blue blinks 3 times | On its own, when the panel gets enough light | The built-in solar panel starts charging | Nothing — there is nothing to connect |
+| Blue blinks 4 times | After you connect an external 12 V charger | The Hub woke up and starts charging | Nothing — normal state |
+| Blue blinks 3 times, slowly | While you hold the button longer than 10 s | No action | Nothing |
+| LEDs are off | At all other times | The Hub works normally or sleeps | Nothing — normal state |
 
 ### Power button
 
-!!! todo "TODO (embedded)"
-    List every recognized button action. Cover: short press, long press (how many seconds), double press, combinations (e.g. holding while inserting power = factory reset?). If an action does not exist — state it explicitly.
+The Hub reacts when you **release** the button. A very light touch is ignored.
 
 | User action | Effect | Signal |
 |---|---|---|
-| _short press (<1s)_ | _wake / status check_ | _LED blinks green once_ |
-| TODO | TODO | TODO |
+| Press shorter than 3 s | The Hub wakes up | Blue blinks once |
+| Hold for 3 to 10 s | The Hub restarts | Startup sequence: blue 3 times, then red once. The LEDs light up only once the Hub comes back up |
+| Hold longer than 10 s | No action | Blue blinks 3 times, slowly — while the button is still held |
 
 ### Startup sequence
 
-!!! todo "TODO (embedded)"
-    Describe what the user sees 0–60s after pressing Power or connecting power. Step by step: when the LED turns on, when it goes off, when the Hub is ready. Provide approximate timings.
+After every start and every restart the Hub shows the same sequence: the blue LED blinks 3 times, then the red LED blinks once. Then the LEDs go off.
 
 ### Charging
 
-!!! todo "TODO (embedded)"
-    How to recognize that the Hub is gaining energy (solar panel / USB-C / additional PV panel)? Does the LED show this, or only the app? How to distinguish "charging" vs "fully charged" vs "not charging despite a connected source"?
+The Hub confirms only the **start** of charging. The number of blue blinks tells you the power source:
+
+- 2 blinks — USB charger,
+- 3 blinks — built-in solar panel,
+- 4 blinks — external 12 V charger.
+
+The LED does not show that charging continues or that the battery is full.
 
 ### Low battery
 
-!!! todo "TODO (embedded)"
-    Threshold for triggering the warning (e.g. <20%). How it's signaled locally (LED). What the Hub does at very low battery (sleep / shutdown).
+The Hub does not signal a low battery on its LEDs.
 
 ### No LTE connectivity
 
-!!! todo "TODO (embedded)"
-    Does the LED distinguish: no SIM / no network registration / no signal / server unreachable? Is there any local signal at all, or only visible in the app?
+The Hub does not signal a lost LTE connection on its LEDs.
 
 ### No BLE connectivity
 
-!!! todo "TODO (embedded)"
-    Signal when no VitalSensor/Scale connects to the Hub. Versus partial signal (some devices OK, some not).
+The Hub does not signal a lost connection to a VitalSensor or Scale on its LEDs.
 
 ### Factory reset
 
-!!! todo "TODO (embedded)"
-    Trigger procedure (button combination / hold time). What the user sees that confirms the reset went through. What exactly is wiped (network config, BLE pairings, certificates?).
+The Hub has no factory reset function. Only a restart is available: hold the button for 3 to 10 s.
 
 ### Critical error state
 
-!!! todo "TODO (embedded)"
-    Does the firmware have a "panic" / "cannot continue" state? How signaled. What the user should do (RMA, reset, contact support).
+The Hub does not signal errors on its LEDs.
 
 ---
 
@@ -72,47 +75,41 @@ If you're looking for a solution to a specific problem (e.g. "device not reporti
 
 ### LED
 
-!!! todo "TODO (embedded)"
-    All LED states for the VitalSensor. The [Configuration manual](index.md#3-first-start-up) only says *"the indicator LED should light up"* — expand: what color, how many seconds, blinking or solid.
+The VitalSensor has one LED. You can see it through the housing.
 
-| What I see | Context | What it means | What to do |
+| What I see | When | What it means | What to do |
 |---|---|---|---|
-| TODO | TODO | TODO | TODO |
+| Fast blinking (about 5 times per second) | After you insert the batteries, usually for about 15 s | The VitalSensor started | Nothing — normal state |
+| Slow blinking (about once per second), up to 2 minutes | After 12 hours without a connection to the Hub | The VitalSensor searches for a connection again | Nothing — the device does this on its own |
+| LED is off | At all other times | The VitalSensor works normally and takes measurements | Nothing — normal state |
 
 ### Button
 
-!!! todo "TODO (embedded)"
-    Does the VitalSensor have any user-accessible button at all? If not — state explicitly. If yes — list actions.
+The VitalSensor has no button.
 
 ### Battery insertion sequence
 
-!!! todo "TODO (embedded)"
-    What the user sees 0–30s after inserting 2× AA. When the LED turns on, how long, when it goes off. When the VitalSensor starts looking for the Hub.
+After you insert 2× AA, the LED starts to blink fast. It usually blinks for about 15 s, then goes off. A dark LED means normal operation: the VitalSensor works and waits for the next measurement cycle.
 
 ### Low battery
 
-!!! todo "TODO (embedded)"
-    Warning threshold, LED signal, when the device stops sending data.
+The VitalSensor does not signal a low battery on its LED.
 
 ### Pairing / discovery with the Hub
 
-!!! todo "TODO (embedded)"
-    How does the user know the VitalSensor is searching for the Hub? How long does first discovery take? Is the LED different when found vs when searching?
+The LED does not show whether the VitalSensor connected to the Hub.
 
 ### No BLE range
 
-!!! todo "TODO (embedded)"
-    Local signal when the Hub is out of range / shielded. Whether the VitalSensor retries periodically and how that's visible.
+The LED does not show a lost connection as it happens. After 12 hours without a connection the VitalSensor searches again on its own — the LED then blinks slowly, for up to 2 minutes.
 
 ### Reset
 
-!!! todo "TODO (embedded)"
-    Is there a user-accessible reset (e.g. removing batteries for 10s — this is described in `troubleshooting.md`)? Is there a full factory reset?
+The VitalSensor has no reset button.
 
 ### Sensor fault
 
-!!! todo "TODO (embedded)"
-    Does the firmware distinguish a failure of a specific sensor (NOx, VOC, RH, T, microphone)? Is there a local signal, or only telemetry?
+The VitalSensor does not signal errors on its LED. Error information goes to the system together with the measurements.
 
 ---
 
@@ -120,56 +117,38 @@ If you're looking for a solution to a specific problem (e.g. "device not reporti
 
 ### LED
 
-!!! todo "TODO (embedded)"
-    All LED states for the Scale. The [Configuration manual](index.md#3-first-start-up) mentions the LED lighting up at startup — expand as for Hub/VitalSensor.
+The Scale has one LED. The LED is **inside the black housing** — you must open the housing to see it.
 
-| What I see | Context | What it means | What to do |
+| What I see | When | What it means | What to do |
 |---|---|---|---|
-| TODO | TODO | TODO | TODO |
+| Fast blinking (about 5 times per second) | After you insert the batteries, usually for about 15 s | The Scale started | Nothing — normal state |
+| Slow blinking (about once per second), up to 2 minutes | After 12 hours without a connection to the Hub | The Scale searches for a connection again | Nothing — the device does this on its own |
+| LED is off | At all other times | The Scale works normally and takes measurements | Nothing — normal state |
 
 ### Button
 
-!!! todo "TODO (embedded)"
-    Does the Scale have any user-accessible button? If not — state explicitly.
+The Scale has no button.
 
 ### Battery insertion sequence
 
-!!! todo "TODO (embedded)"
-    What the user sees after inserting 2× AA, before closing the battery compartment. How long the LED stays on. When the Scale starts looking for the Hub and performs the first measurement.
+After you insert 2× AA, before you close the housing, the LED starts to blink fast. It usually blinks for about 15 s, then goes off. A dark LED means normal operation: the Scale works and waits for the next measurement cycle.
 
 ### Calibration
 
-!!! todo "TODO (embedded)"
-    Does the Scale perform any auto-calibration at startup (load cell zeroing)? How does the user know it's running? Is there a user-triggered calibration? If not — state explicitly.
+The Scale has no button, so there is no tare on the device.
 
 ### Low battery
 
-!!! todo "TODO (embedded)"
-    Threshold, signal, behavior. The Scale has a 36-month battery life claim — also include roughly when the warning will appear before end of life.
+The Scale does not signal a low battery on its LED.
 
 ### No BLE range
 
-!!! todo "TODO (embedded)"
-    Local signal when the Hub is out of range.
+The LED does not show a lost connection as it happens. After 12 hours without a connection the Scale searches again on its own — the LED then blinks slowly, for up to 2 minutes. You can see this only with the housing open.
 
 ### Reset
 
-!!! todo "TODO (embedded)"
-    Procedure, signal, scope (does it wipe calibration?).
+The Scale has no reset button.
 
 ### Error state
 
-!!! todo "TODO (embedded)"
-    Does the firmware signal a load cell fault (e.g. damaged, disconnected, overloaded)? Local signal or only telemetry.
-
----
-
-## Page conventions
-
-To keep the page readable while it's being filled in:
-
-- **One "What I see" cell = one distinguishable state.** Don't merge multiple patterns into a single row.
-- **Non-technical language.** Not "code E001" — instead "the LED blinked yellow three times".
-- **No firmware jargon.** A user does not know what a "watchdog reset" is — write "the device restarted itself".
-- **If something does not exist — state it explicitly** (e.g. "the VitalSensor has no external button"). Absence of a feature is information.
-- **Update on firmware changes.** Any change to signaling in firmware → PR to this page in the same sprint.
+The Scale does not signal errors on its LED. Error information goes to the system together with the measurements.

@@ -4,8 +4,8 @@ Strona referencyjna: **co widzę na urządzeniu → co to znaczy → co zrobić*
 
 Jeśli szukasz rozwiązania konkretnego problemu (np. „urządzenie nie zgłasza się"), zacznij od [Rozwiązywania problemów](troubleshooting.md). Ta strona pomaga zinterpretować same sygnały — dioda, przycisk, sekwencja startu — niezależnie od tego, czy coś nie działa.
 
-!!! note "Status strony"
-    Strona w trakcie uzupełniania przez zespół embedded. Sekcje oznaczone **TODO** wymagają dopisania na podstawie aktualnego firmware. Jeśli dane urządzenie nie posiada określonego sygnału (np. brak buzzera) — zapisz to jawnie zamiast pomijać sekcję.
+!!! info "Diody tylko potwierdzają działanie"
+    Żadne z urządzeń nie pokazuje diodą poziomu baterii ani błędów.
 
 ---
 
@@ -13,58 +13,61 @@ Jeśli szukasz rozwiązania konkretnego problemu (np. „urządzenie nie zgłasz
 
 ### Dioda LED
 
-!!! todo "TODO (embedded)"
-    Wypełnić wszystkie stany LED na podstawie firmware Huba. Każdy wiersz = jeden rozróżnialny wzorzec (kolor + sekwencja migania). Jeśli LED jest wielokolorowy — wypisać każdą kombinację. Jeśli sygnał wymaga kontekstu (np. „tylko podczas boot") — dopisać w kolumnie *Kontekst*.
+W przycisku Huba są dwie diody: **niebieska** i **czerwona**. Diody tylko potwierdzają działania z tabeli. Przez resztę czasu nie świecą — także wtedy, gdy Hub pracuje normalnie i jest uśpiony między pomiarami.
 
-| Co widzę | Kontekst | Co to znaczy | Co zrobić |
+| Co widzę | Kiedy | Co to znaczy | Co zrobić |
 |---|---|---|---|
-| _np. zielona dioda świeci ciągle_ | _po wciśnięciu Power_ | _Hub uruchomiony, łączność OK_ | _nic — stan normalny_ |
-| TODO | TODO | TODO | TODO |
+| Niebieska miga 3 razy, potem czerwona 1 raz | Po uruchomieniu lub restarcie Huba | Hub się uruchamia | Nic — stan normalny |
+| Niebieska miga 1 raz | Po krótkim naciśnięciu przycisku (krócej niż 3 s) | Hub się wybudził | Nic — stan normalny |
+| Niebieska miga 2 razy | Po podłączeniu ładowarki USB | Hub się wybudził i zaczyna ładowanie | Nic — stan normalny |
+| Niebieska miga 3 razy | Samoczynnie, gdy na panel pada dość światła | Wbudowany panel solarny zaczyna ładowanie | Nic — nie trzeba niczego podłączać |
+| Niebieska miga 4 razy | Po podłączeniu zewnętrznej ładowarki 12 V | Hub się wybudził i zaczyna ładowanie | Nic — stan normalny |
+| Niebieska miga 3 razy, powoli | W trakcie trzymania przycisku dłużej niż 10 s | Brak działania | Nic |
+| Diody nie świecą | Przez resztę czasu | Hub pracuje normalnie lub jest uśpiony | Nic — stan normalny |
 
 ### Przycisk Power
 
-!!! todo "TODO (embedded)"
-    Wypisać wszystkie rozpoznawane akcje przycisku. Uwzględnić: short press, long press (ile sekund), double press, kombinacje (np. trzymanie przy włożeniu zasilania = factory reset?). Jeśli któraś akcja nie istnieje — napisać wprost.
+Hub reaguje w chwili **puszczenia** przycisku. Bardzo krótkie muśnięcie przycisku jest ignorowane.
 
 | Akcja użytkownika | Efekt | Sygnalizacja |
 |---|---|---|
-| _short press (<1s)_ | _wybudzenie / status check_ | _LED mignie raz na zielono_ |
-| TODO | TODO | TODO |
+| Naciśnięcie krótsze niż 3 s | Hub się wybudza | Niebieska miga 1 raz |
+| Przytrzymanie od 3 do 10 s | Hub się restartuje | Sekwencja uruchomienia: niebieska 3 razy, potem czerwona 1 raz. Diody zaświecą się dopiero, gdy Hub wstanie po restarcie |
+| Przytrzymanie dłużej niż 10 s | Brak działania | Niebieska miga 3 razy, powoli — jeszcze w trakcie trzymania |
 
 ### Sekwencja uruchomienia
 
-!!! todo "TODO (embedded)"
-    Opisać co user widzi 0–60s po wciśnięciu Power lub po podłączeniu zasilania. Krok po kroku: kiedy LED się zaświeca, kiedy gaśnie, kiedy Hub jest gotowy. Podać orientacyjne czasy.
+Po każdym uruchomieniu i po każdym restarcie Hub pokazuje tę samą sekwencję: niebieska dioda miga 3 razy, potem czerwona 1 raz. Później diody gasną.
 
 ### Ładowanie
 
-!!! todo "TODO (embedded)"
-    Jak rozpoznać że Hub łapie energię (panel solarny / USB-C / dodatkowy panel PV)? Czy LED to pokazuje, czy tylko aplikacja? Jak rozróżnić „ładuje" vs „naładowany" vs „nie ładuje mimo podłączonego źródła"?
+Hub potwierdza diodą tylko **początek** ładowania. Liczba mignięć niebieskiej diody mówi, skąd pochodzi energia:
+
+- 2 mignięcia — ładowarka USB,
+- 3 mignięcia — wbudowany panel solarny,
+- 4 mignięcia — zewnętrzna ładowarka 12 V.
+
+Dioda nie pokazuje, że ładowanie trwa ani że bateria jest pełna.
 
 ### Niski stan baterii
 
-!!! todo "TODO (embedded)"
-    Próg włączenia ostrzeżenia (np. <20%). Jak sygnalizowane lokalnie (LED). Co Hub robi przy bardzo niskim stanie (sleep / shutdown).
+Hub nie sygnalizuje diodą niskiego stanu baterii.
 
 ### Brak łączności LTE
 
-!!! todo "TODO (embedded)"
-    Czy LED rozróżnia: brak SIM / brak rejestracji w sieci / brak zasięgu / serwer nieosiągalny? Czy jest jakakolwiek lokalna sygnalizacja, czy widoczne tylko w aplikacji?
+Hub nie sygnalizuje diodą braku łączności LTE.
 
 ### Brak łączności BLE
 
-!!! todo "TODO (embedded)"
-    Sygnalizacja gdy żaden VitalSensor/Scale nie łączy się z Hubem. Vs sygnalizacja częściowa (część urządzeń OK, część nie).
+Hub nie sygnalizuje diodą braku połączenia z VitalSensorem lub Scale.
 
 ### Factory reset
 
-!!! todo "TODO (embedded)"
-    Procedura wywołania (kombinacja przycisków / czas trzymania). Co user widzi że poszedł reset. Co dokładnie się kasuje (konfiguracja sieci, parowania BLE, certyfikaty?).
+Hub nie ma funkcji przywracania ustawień fabrycznych. Dostępny jest tylko restart: przytrzymaj przycisk od 3 do 10 s.
 
 ### Stan błędu krytycznego
 
-!!! todo "TODO (embedded)"
-    Czy firmware ma stan „panic" / „nie da się dalej działać"? Jak sygnalizowane. Jak user ma się zachować (RMA, reset, kontakt support).
+Hub nie sygnalizuje diodą błędów.
 
 ---
 
@@ -72,47 +75,41 @@ Jeśli szukasz rozwiązania konkretnego problemu (np. „urządzenie nie zgłasz
 
 ### Dioda LED
 
-!!! todo "TODO (embedded)"
-    Wszystkie stany LED VitalSensora. W [Instrukcji konfiguracji](index.md#3-pierwsze-uruchomienie) jest tylko *„dioda sygnalizacyjna powinna się zaświecić"* — rozwiń: jaki kolor, ile sekund, czy miga, czy świeci ciągle.
+VitalSensor ma jedną diodę. Widać ją przez obudowę.
 
-| Co widzę | Kontekst | Co to znaczy | Co zrobić |
+| Co widzę | Kiedy | Co to znaczy | Co zrobić |
 |---|---|---|---|
-| TODO | TODO | TODO | TODO |
+| Szybkie miganie (około 5 razy na sekundę) | Po włożeniu baterii, zwykle przez około 15 s | VitalSensor się uruchomił | Nic — stan normalny |
+| Wolne miganie (około 1 raz na sekundę), do 2 minut | Po 12 godzinach bez połączenia z Hubem | VitalSensor ponownie szuka połączenia | Nic — urządzenie robi to samo z siebie |
+| Dioda nie świeci | Przez resztę czasu | VitalSensor pracuje normalnie i wykonuje pomiary | Nic — stan normalny |
 
 ### Przycisk
 
-!!! todo "TODO (embedded)"
-    Czy VitalSensor ma w ogóle przycisk dostępny dla usera? Jeśli nie — napisać wprost. Jeśli tak — wypisać akcje.
+VitalSensor nie ma przycisku.
 
 ### Sekwencja po włożeniu baterii
 
-!!! todo "TODO (embedded)"
-    Co user widzi 0–30s po włożeniu 2× AA. Kiedy LED zaczyna świecić, jak długo, kiedy gaśnie. Kiedy VitalSensor zaczyna szukać Huba.
+Po włożeniu 2× AA dioda zaczyna szybko migać. Miga zwykle około 15 s, potem gaśnie. Zgaszona dioda oznacza normalną pracę: VitalSensor działa i czeka na kolejny cykl pomiarowy.
 
 ### Niski stan baterii
 
-!!! todo "TODO (embedded)"
-    Próg ostrzeżenia, sygnalizacja LED, kiedy urządzenie przestaje wysyłać dane.
+VitalSensor nie sygnalizuje diodą niskiego stanu baterii.
 
 ### Pairing / discovery z Hubem
 
-!!! todo "TODO (embedded)"
-    Jak user pozna że VitalSensor szuka Huba? Jak długo trwa pierwsze wykrycie? Czy LED się różni gdy znalazł vs gdy szuka?
+Dioda nie pokazuje, czy VitalSensor połączył się z Hubem.
 
 ### Brak zasięgu BLE
 
-!!! todo "TODO (embedded)"
-    Sygnalizacja lokalna gdy Hub poza zasięgiem / ekranowany. Czy VitalSensor próbuje cyklicznie i jak to widać.
+Na bieżąco dioda nie pokazuje braku zasięgu. Po 12 godzinach bez połączenia VitalSensor sam ponawia szukanie — dioda miga wtedy wolno, do 2 minut.
 
 ### Reset
 
-!!! todo "TODO (embedded)"
-    Czy istnieje user-accessible reset (np. wyjęcie baterii na 10s — taki sposób jest opisany w `troubleshooting.md`)? Czy istnieje pełny factory reset?
+VitalSensor nie ma przycisku resetu.
 
 ### Błąd czujnika
 
-!!! todo "TODO (embedded)"
-    Czy firmware rozróżnia awarię konkretnego czujnika (NOx, VOC, RH, T, mikrofon)? Czy jest sygnalizacja lokalna, czy tylko w danych telemetrycznych?
+VitalSensor nie sygnalizuje diodą błędów. Informacje o błędach trafiają do systemu razem z pomiarami.
 
 ---
 
@@ -120,56 +117,38 @@ Jeśli szukasz rozwiązania konkretnego problemu (np. „urządzenie nie zgłasz
 
 ### Dioda LED
 
-!!! todo "TODO (embedded)"
-    Wszystkie stany LED Scale. W [Instrukcji konfiguracji](index.md#3-pierwsze-uruchomienie) jest informacja że dioda zapala się przy starcie — rozwiń jak Hub/VitalSensor.
+Scale ma jedną diodę. Dioda jest **wewnątrz czarnej obudowy** — żeby ją zobaczyć, trzeba otworzyć obudowę.
 
-| Co widzę | Kontekst | Co to znaczy | Co zrobić |
+| Co widzę | Kiedy | Co to znaczy | Co zrobić |
 |---|---|---|---|
-| TODO | TODO | TODO | TODO |
+| Szybkie miganie (około 5 razy na sekundę) | Po włożeniu baterii, zwykle przez około 15 s | Scale się uruchomił | Nic — stan normalny |
+| Wolne miganie (około 1 raz na sekundę), do 2 minut | Po 12 godzinach bez połączenia z Hubem | Scale ponownie szuka połączenia | Nic — urządzenie robi to samo z siebie |
+| Dioda nie świeci | Przez resztę czasu | Scale pracuje normalnie i wykonuje pomiary | Nic — stan normalny |
 
 ### Przycisk
 
-!!! todo "TODO (embedded)"
-    Scale ma w ogóle przycisk dostępny dla usera? Jeśli nie — napisać wprost.
+Scale nie ma przycisku.
 
 ### Sekwencja po włożeniu baterii
 
-!!! todo "TODO (embedded)"
-    Co user widzi po włożeniu 2× AA, przed zamknięciem komory baterii. Jak długo świeci LED. Kiedy Scale zaczyna szukać Huba i wykonywać pierwszy pomiar.
+Po włożeniu 2× AA, jeszcze przed zamknięciem obudowy, dioda zaczyna szybko migać. Miga zwykle około 15 s, potem gaśnie. Zgaszona dioda oznacza normalną pracę: Scale działa i czeka na kolejny cykl pomiarowy.
 
 ### Kalibracja
 
-!!! todo "TODO (embedded)"
-    Czy Scale wykonuje jakąkolwiek auto-kalibrację po starcie (zerowanie tensometru)? Jak user pozna że trwa? Czy jest user-triggered kalibracja? Jeśli nie — napisać wprost.
+Scale nie ma przycisku, więc tarowania na urządzeniu nie ma.
 
 ### Niski stan baterii
 
-!!! todo "TODO (embedded)"
-    Próg, sygnalizacja, zachowanie. Scale ma claim 36 miesięcy żywotności — warto też podać orientacyjnie kiedy ostrzeżenie się pojawi przed końcem.
+Scale nie sygnalizuje diodą niskiego stanu baterii.
 
 ### Brak zasięgu BLE
 
-!!! todo "TODO (embedded)"
-    Sygnalizacja lokalna gdy Hub poza zasięgiem.
+Na bieżąco dioda nie pokazuje braku zasięgu. Po 12 godzinach bez połączenia Scale sam ponawia szukanie — dioda miga wtedy wolno, do 2 minut. Zobaczysz to tylko przy otwartej obudowie.
 
 ### Reset
 
-!!! todo "TODO (embedded)"
-    Procedura, sygnalizacja, zakres (czy kasuje kalibrację?).
+Scale nie ma przycisku resetu.
 
 ### Stan błędu
 
-!!! todo "TODO (embedded)"
-    Czy firmware sygnalizuje błąd tensometru (np. uszkodzony, odłączony, przeciążony)? Lokalna sygnalizacja czy tylko telemetria.
-
----
-
-## Konwencje strony
-
-Aby strona pozostała czytelna podczas uzupełniania:
-
-- **Jedna kolumna „Co widzę" = jeden rozróżnialny stan.** Nie łączyć kilku wzorców w jednym wierszu.
-- **Język nietechniczny.** Nie „kod E001" — zamiast tego „dioda mignęła 3 razy żółto".
-- **Brak żargonu firmware.** User nie wie co to „watchdog reset" — pisz „urządzenie samoczynnie się zrestartowało".
-- **Jeśli czegoś nie ma — zapisać wprost** (np. „VitalSensor nie posiada zewnętrznego przycisku"). Brak informacji jest informacją.
-- **Aktualizacja przy zmianie firmware.** Każda zmiana sygnalizacji w firmware → PR do tej strony w tym samym sprincie.
+Scale nie sygnalizuje diodą błędów. Informacje o błędach trafiają do systemu razem z pomiarami.

@@ -45,6 +45,7 @@ plugins:
                     - Przegląd: manual/configuration/index.md
                     - Konfiguracja w skrócie: manual/configuration/quick-guide.md
                     - Dobre praktyki: manual/configuration/best-practices.md
+                    - Sygnalizacja urządzeń: manual/configuration/device-signals.md
             - Rozwiązywanie problemów: manual/configuration/troubleshooting.md
             - Badania:
                 - Przegląd: procedures/index.md
@@ -81,6 +82,7 @@ plugins:
                     - Overview: manual/configuration/index.md
                     - Quick Guide: manual/configuration/quick-guide.md
                     - Best Practices: manual/configuration/best-practices.md
+                    - Device signals: manual/configuration/device-signals.md
             - Troubleshooting: manual/configuration/troubleshooting.md
             - Lab procedures:
                 - Overview: procedures/index.md
@@ -128,6 +130,7 @@ nav:
           - Przegląd: manual/configuration/index.md
           - Konfiguracja w skrócie: manual/configuration/quick-guide.md
           - Dobre praktyki: manual/configuration/best-practices.md
+          - Sygnalizacja urządzeń: manual/configuration/device-signals.md
   - Rozwiązywanie problemów: manual/configuration/troubleshooting.md
   - Badania:
       - Przegląd: procedures/index.md
