@@ -194,7 +194,7 @@ W tym kroku po raz pierwszy uruchomisz urządzenia Apisense (Hub, Scale, VitalSe
     - USB-C – podłącz przewód USB-C do kompatybilnego źródła zasilania.
     - Dodatkowy panel PV – podłącz panel i wystaw go na światło słoneczne.
 - **Apisense Scale** — umieść dwie baterie typu AA w komorze baterii Scale, zwracając uwagę na prawidłową polaryzację (+ i −) zgodnie z oznaczeniami wewnątrz komory. Przed zamknięciem komory i skręceniem upewnij się, że dioda sygnalizacyjna Scale zaświeciła się, co potwierdza, że baterie zostały umieszczone prawidłowo i urządzenie zostało pomyślnie uruchomione. Następnie szczelnie zamknij pokrywę komory i skręć obudowę.
-- **Apisense VitalSensor** — umieść dwie baterie typu AA w komorze baterii urządzenia, zwracając uwagę na prawidłową polaryzację (+ i −) zgodnie z oznaczeniami wewnątrz komory. Po włożeniu baterii upewnij się, że pokrywa komory jest zamknięta. Jeżeli baterie zostały umieszczone prawidło, dioda sygnalizacyjna VitalSensora powinna się zaświecić.
+- **Apisense VitalSensor** — umieść dwie baterie typu AA w komorze baterii urządzenia, zwracając uwagę na prawidłową polaryzację (+ i −) zgodnie z oznaczeniami wewnątrz komory. Po włożeniu baterii upewnij się, że pokrywa komory jest zamknięta. Jeżeli baterie zostały umieszczone prawidło, dioda sygnalizacyjna VitalSensora powinna się zaświecić. Co oznaczają sygnały diod, opisuje strona [Sygnalizacja urządzeń](device-signals.md).
 
 !!! note "Uwaga"
     Pierwsze odczyty z urządzeń pomiarowych w aplikacji powinny pojawić się w ciągu maksymalnie 2 godzin od ich uruchomienia. Przed przystąpieniem do montażu należy zweryfikować w aplikacji, czy odczyty są widoczne — pozwoli to upewnić się, że urządzenia zostały prawidłowo zarejestrowane w systemie i działają poprawnie.

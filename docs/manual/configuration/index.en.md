@@ -208,7 +208,7 @@ In this step you will start up the Apisense devices (Hub, Scale, VitalSensor) fo
 
 - **Apisense Scale** — insert two AA batteries into the Scale battery compartment, observing correct polarity (+ and −) as marked inside the compartment. Before closing and screwing the compartment shut, verify that the Scale indicator LED lights up, confirming the batteries are correctly installed and the device has started successfully. Then close the compartment lid securely and tighten the housing.
 
-- **Apisense VitalSensor** — insert two AA batteries into the device battery compartment, observing correct polarity (+ and −) as marked inside the compartment. After inserting the batteries, make sure the compartment cover is closed. If the batteries are installed correctly, the VitalSensor indicator LED should light up.
+- **Apisense VitalSensor** — insert two AA batteries into the device battery compartment, observing correct polarity (+ and −) as marked inside the compartment. After inserting the batteries, make sure the compartment cover is closed. If the batteries are installed correctly, the VitalSensor indicator LED should light up. For the meaning of the LED signals see [Device signals](device-signals.md).
 
 !!! note "Note"
     The first readings from the measurement devices should appear in the app within a maximum of 2 hours of start-up. Before proceeding with installation, verify in the app that readings are visible — this confirms the devices are correctly registered in the system and operating properly.
